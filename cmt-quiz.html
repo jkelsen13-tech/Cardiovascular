@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>CMT Practice Test — Cardiovascular Monitor Technician</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#1e293b; --panel2:#273449; --ink:#e2e8f0; --muted:#94a3b8;
+    --accent:#38bdf8; --accent2:#0ea5e9; --green:#16a34a; --greenbg:#052e16; --greenbd:#22c55e;
+    --red:#dc2626; --redbg:#3f0d0d; --redbd:#ef4444; --amber:#f59e0b; --line:#334155;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5; padding:0 0 40px;
+  }
+  header{
+    background:linear-gradient(135deg,#0369a1,#0c4a6e); padding:16px 18px; position:sticky; top:0; z-index:20;
+    box-shadow:0 2px 10px rgba(0,0,0,.4);
+  }
+  header h1{margin:0; font-size:18px; letter-spacing:.3px}
+  header p{margin:2px 0 0; font-size:12px; color:#bae6fd}
+  .wrap{max-width:780px; margin:0 auto; padding:16px}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:18px; margin:14px 0}
+  h2{font-size:17px; margin:0 0 12px}
+  h3{font-size:14px; color:var(--accent); margin:18px 0 8px; text-transform:uppercase; letter-spacing:.5px}
+  .btn{
+    display:block; width:100%; background:var(--accent2); color:#fff; border:none; border-radius:12px;
+    padding:15px 16px; font-size:16px; font-weight:600; cursor:pointer; margin:8px 0; text-align:left;
+    transition:transform .05s, background .15s;
+  }
+  .btn:active{transform:scale(.99)}
+  .btn.secondary{background:var(--panel2); border:1px solid var(--line)}
+  .btn.ghost{background:transparent; border:1px solid var(--line); text-align:center}
+  .btn small{display:block; font-weight:400; font-size:12px; color:#cbd5e1; margin-top:3px}
+  .row{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+  .pill{background:var(--panel2); border:1px solid var(--line); border-radius:20px; padding:4px 11px; font-size:12px; color:var(--muted)}
+  label{font-size:13px; color:var(--muted)}
+  input[type=number]{
+    background:var(--panel2); border:1px solid var(--line); color:var(--ink); border-radius:10px;
+    padding:10px 12px; font-size:16px; width:90px; text-align:center;
+  }
+  .topic-btn{
+    background:var(--panel2); border:1px solid var(--line); color:var(--ink); border-radius:11px;
+    padding:13px 14px; font-size:14px; cursor:pointer; display:flex; justify-content:space-between; align-items:center;
+    width:100%; margin:7px 0; text-align:left;
+  }
+  .topic-btn .cnt{font-size:12px; color:var(--muted); background:var(--bg); padding:2px 9px; border-radius:12px; border:1px solid var(--line)}
+  .topic-btn.weighted{border-color:var(--accent2)}
+  /* progress */
+  .progress-bar{height:7px; background:var(--panel2); border-radius:6px; overflow:hidden; margin:0 0 4px}
+  .progress-fill{height:100%; background:var(--accent); width:0; transition:width .3s}
+  .meta{display:flex; justify-content:space-between; font-size:12px; color:var(--muted); margin-bottom:14px}
+  .topictag{display:inline-block; background:var(--panel2); border:1px solid var(--line); color:var(--accent);
+    font-size:11px; padding:3px 9px; border-radius:12px; margin-bottom:10px; text-transform:uppercase; letter-spacing:.4px}
+  .qtext{font-size:18px; font-weight:600; margin:6px 0 16px; line-height:1.4}
+  .opt{
+    display:block; width:100%; text-align:left; background:var(--panel2); border:2px solid var(--line);
+    color:var(--ink); border-radius:12px; padding:14px 15px; font-size:15px; margin:9px 0; cursor:pointer;
+    transition:border-color .12s, background .12s;
+  }
+  .opt:hover:not(:disabled){border-color:var(--accent)}
+  .opt:disabled{cursor:default}
+  .opt .ltr{display:inline-block; width:24px; height:24px; line-height:24px; text-align:center; border-radius:6px;
+    background:var(--bg); margin-right:10px; font-weight:700; font-size:13px; vertical-align:middle}
+  .opt.correct{background:var(--greenbg); border-color:var(--greenbd)}
+  .opt.correct .ltr{background:var(--greenbd); color:#fff}
+  .opt.wrong{background:var(--redbg); border-color:var(--redbd)}
+  .opt.wrong .ltr{background:var(--redbd); color:#fff}
+  .feedback{border-radius:12px; padding:14px; margin:14px 0 4px; font-size:14px; display:none; border:1px solid}
+  .feedback.show{display:block}
+  .feedback.ok{background:var(--greenbg); border-color:var(--greenbd)}
+  .feedback.no{background:var(--redbg); border-color:var(--redbd)}
+  .feedback .verdict{font-weight:700; margin-bottom:6px; font-size:15px}
+  .feedback.ok .verdict{color:var(--greenbd)}
+  .feedback.no .verdict{color:#fca5a5}
+  .flagnote{background:#3b2f0b; border:1px solid var(--amber); color:#fde68a; border-radius:10px;
+    padding:10px 12px; font-size:12.5px; margin:12px 0}
+  .flagnote b{color:var(--amber)}
+  .diagram{background:#f8fafc; border-radius:12px; padding:8px; margin:4px 0 16px; text-align:center}
+  .diagram svg{max-width:100%; height:auto}
+  .nav{display:flex; gap:10px; margin-top:8px}
+  .nav .btn{margin:0}
+  /* results */
+  .score-circle{width:140px; height:140px; border-radius:50%; margin:0 auto 14px; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; border:8px solid var(--line)}
+  .score-circle.pass{border-color:var(--greenbd)}
+  .score-circle.fail{border-color:var(--redbd)}
+  .score-circle .pct{font-size:34px; font-weight:800}
+  .score-circle .lbl{font-size:12px; color:var(--muted)}
+  .verdict-big{text-align:center; font-size:22px; font-weight:800; margin:4px 0 2px}
+  .verdict-big.pass{color:var(--greenbd)}
+  .verdict-big.fail{color:#fca5a5}
+  .breakdown-row{display:flex; justify-content:space-between; align-items:center; padding:9px 0; border-bottom:1px solid var(--line); font-size:14px}
+  .breakdown-row:last-child{border-bottom:none}
+  .bd-bar{height:8px; border-radius:5px; background:var(--panel2); flex:1; margin:0 12px; overflow:hidden}
+  .bd-fill{height:100%}
+  .missed{background:var(--panel2); border:1px solid var(--line); border-left:4px solid var(--redbd); border-radius:10px; padding:13px; margin:10px 0; font-size:14px}
+  .missed .mq{font-weight:600; margin-bottom:8px}
+  .missed .ans{font-size:13px; margin:3px 0}
+  .missed .ans.good{color:var(--greenbd)}
+  .missed .ans.bad{color:#fca5a5}
+  .missed .exp{font-size:13px; color:var(--muted); margin-top:7px; border-top:1px dashed var(--line); padding-top:7px}
+  .hidden{display:none!important}
+  .src-note{font-size:11.5px; color:var(--muted); margin-top:18px; border-top:1px solid var(--line); padding-top:12px}
+  .center{text-align:center}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🫀 CMT Practice Test</h1>
+  <p>Cardiovascular Monitor Technician — DMV-style study quiz</p>
+</header>
+
+<div class="wrap">
+
+  <!-- ============ HOME / MODE SELECT ============ -->
+  <div id="home">
+    <div class="card">
+      <h2>Choose a study mode</h2>
+      <button class="btn" onclick="startRandomSetup()">🎲 Random Practice Test
+        <small>Randomized mix from the whole bank — set your own length</small></button>
+      <button class="btn secondary" onclick="showTopics()">📚 Study by Topic
+        <small>Drill one module at a time to hit weak areas</small></button>
+      <div class="row" style="margin-top:14px; justify-content:space-between">
+        <span class="pill" id="bankCount">— questions in bank</span>
+        <span class="pill">Pass mark: 80%</span>
+      </div>
+    </div>
+
+    <!-- Random setup -->
+    <div class="card hidden" id="randomSetup">
+      <h2>Random Practice Test</h2>
+      <div class="row" style="margin-bottom:14px">
+        <label for="qcount">Number of questions:</label>
+        <input type="number" id="qcount" value="25" min="1" max="999">
+      </div>
+      <div class="row" style="margin-bottom:8px">
+        <button class="pill" style="cursor:pointer" onclick="setCount(10)">10</button>
+        <button class="pill" style="cursor:pointer" onclick="setCount(25)">25</button>
+        <button class="pill" style="cursor:pointer" onclick="setCount(50)">50</button>
+        <button class="pill" style="cursor:pointer" onclick="setCountAll()">All</button>
+      </div>
+      <button class="btn" onclick="beginRandom()">Start test ▶</button>
+      <button class="btn ghost" onclick="hide('randomSetup')">Cancel</button>
+    </div>
+
+    <!-- Topic list -->
+    <div class="card hidden" id="topicList">
+      <h2>Study by Topic</h2>
+      <p style="font-size:13px;color:var(--muted);margin-top:-4px">Modules with more questions are weighted heavier in the study guide. Highlighted modules are the instructor's heaviest emphasis.</p>
+      <div id="topicButtons"></div>
+      <button class="btn ghost" onclick="hide('topicList')">Cancel</button>
+    </div>
+
+    <div class="src-note">
+      <b>Built entirely from your uploaded materials:</b> the lecture slideshows (History &amp; Topographic Anatomy,
+      Respiratory A&amp;P) and Class Study Guide as the content pulled from; the Week 1–3 Student Assignment Booklets
+      and the slideshows' own "Progress Check" questions as the model for question style, scope, and difficulty
+      (labeling diagrams, term definitions, measurement ranges, rhythm criteria); and the Study Guide for topic
+      weighting. No outside content was added except where a question is marked with a ⚑ flag. Diagrams are clean
+      schematic reconstructions drawn to match the source descriptions and the booklet labeling exercises; they are
+      illustrative, not to anatomical scale.
+    </div>
+  </div>
+
+  <!-- ============ QUIZ ============ -->
+  <div id="quiz" class="hidden">
+    <div class="card">
+      <div class="progress-bar"><div class="progress-fill" id="pfill"></div></div>
+      <div class="meta">
+        <span id="qprogress">Question 1 of 25</span>
+        <span id="qscore">Score: 0/0</span>
+      </div>
+      <span class="topictag" id="qtopic"></span>
+      <div class="diagram hidden" id="qdiagram"></div>
+      <div class="qtext" id="qtext"></div>
+      <div id="qoptions"></div>
+      <div class="feedback" id="qfeedback">
+        <div class="verdict" id="qverdict"></div>
+        <div id="qexplain"></div>
+      </div>
+      <div class="flagnote hidden" id="qflag"></div>
+      <div class="nav">
+        <button class="btn ghost" id="quitBtn" onclick="confirmQuit()" style="flex:0 0 90px">Quit</button>
+        <button class="btn" id="nextBtn" onclick="nextQuestion()" disabled>Next ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RESULTS ============ -->
+  <div id="results" class="hidden">
+    <div class="card center">
+      <div class="score-circle" id="scoreCircle">
+        <div class="pct" id="scorePct">0%</div>
+        <div class="lbl" id="scoreRaw">0 / 0</div>
+      </div>
+      <div class="verdict-big" id="verdictBig">—</div>
+      <p style="color:var(--muted);font-size:13px;margin:4px 0 0" id="verdictSub"></p>
+    </div>
+
+    <div class="card">
+      <h2>Performance by topic</h2>
+      <div id="topicBreakdown"></div>
+    </div>
+
+    <div class="card" id="weakCard">
+      <h2>Topics you missed most</h2>
+      <div id="weakTopics"></div>
+    </div>
+
+    <div class="card" id="missedCard">
+      <h2>Review — missed questions</h2>
+      <div id="missedList"></div>
+    </div>
+
+    <button class="btn" onclick="retake()">🔄 Retake (re-randomize)</button>
+    <button class="btn secondary" onclick="goHome()">🏠 Back to menu</button>
+  </div>
+
+</div>
+
+<script>
+/* ============================================================
+   CMT PRACTICE TEST  —  question bank + engine
+   Content sourced from the uploaded Class Study Guide and the
+   Week 1-3 Student Assignment Booklets. ⚑ marks any added
+   connecting fact or flagged ambiguity.
+   ============================================================ */
+
+/* ---------- TOPIC DEFINITIONS (order = study-guide order) ---------- */
+const TOPICS = {
+  history: {name:"ECG History & The Profession",   weighted:false},
+  topo:    {name:"Topographic Anatomy",            weighted:false},
+  resp:    {name:"Respiratory System",             weighted:false},
+  blood:   {name:"Blood & Vasculature",            weighted:true},
+  circ:    {name:"Pulmonary & Systemic Circuits",  weighted:false},
+  anatomy: {name:"Heart Anatomy",                  weighted:true},
+  electro: {name:"Electrophysiology & Conduction", weighted:true},
+  leads:   {name:"Leads & Cardiac Axis",           weighted:true},
+  waves:   {name:"ECG Waves & Measurements",       weighted:true},
+  rhythms: {name:"ECG Rhythms",                    weighted:true},
+  therapy: {name:"Electrical Therapy (AED/Pacing)",weighted:false},
+  twelve:  {name:"12-Lead ECG & ACS",              weighted:true},
+  terms:   {name:"National Testing Terminology",   weighted:false}
+};
+
+/* ---------- DIAGRAMS (schematic SVG, numbered for labeling Qs) ---------- */
+const DIAGRAMS = {};
+
+DIAGRAMS.directional = `
+<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Directional terms on a body in anatomic position">
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:11px sans-serif;fill:#334155}.ax{stroke:#0ea5e9;stroke-width:2;marker-end:url(#ar)}</style>
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#0ea5e9"/></marker></defs>
+<!-- body outline (front, arms out, palms forward = anatomic position) -->
+<g fill="#cbd5e1" stroke="#64748b" stroke-width="1.5">
+<circle cx="180" cy="40" r="18"/>
+<rect x="162" y="58" width="36" height="70" rx="10"/>
+<rect x="120" y="64" width="42" height="14" rx="7"/><rect x="198" y="64" width="42" height="14" rx="7"/>
+<rect x="118" y="78" width="14" height="46" rx="7"/><rect x="228" y="78" width="14" height="46" rx="7"/>
+<rect x="164" y="126" width="14" height="70" rx="7"/><rect x="182" y="126" width="14" height="70" rx="7"/>
+</g>
+<line x1="180" y1="20" x2="180" y2="210" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="184" y="206" class="lab">midline</text>
+<!-- arrows -->
+<line class="ax" x1="300" y1="120" x2="300" y2="35"/><text x="288" y="28" class="n">1</text>
+<line class="ax" x1="300" y1="140" x2="300" y2="225"/><text x="288" y="244" class="n">2</text>
+<line class="ax" x1="150" y1="70" x2="125" y2="70"/><text x="108" y="74" class="n">3</text>
+<line class="ax" x1="210" y1="70" x2="178" y2="70" /><text x="214" y="74" class="n">4</text>
+<line class="ax" x1="125" y1="100" x2="125" y2="80"/><text x="100" y="98" class="n">5</text>
+<line class="ax" x1="125" y1="110" x2="125" y2="124"/><text x="100" y="124" class="n">6</text>
+<text x="120" y="56" class="lab">Right</text><text x="216" y="56" class="lab">Left</text>
+</svg>`;
+
+DIAGRAMS.planes = `
+<svg viewBox="0 0 340 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Planes of the body">
+<style>.n{font:bold 14px sans-serif;fill:#0c4a6e}.lab{font:11px sans-serif;fill:#334155}</style>
+<ellipse cx="170" cy="120" rx="46" ry="92" fill="#cbd5e1" stroke="#64748b" stroke-width="1.5"/>
+<!-- frontal/coronal: vertical plane facing viewer (front/back) -->
+<polygon points="118,40 222,40 222,200 118,200" fill="#38bdf8" opacity="0.30" stroke="#0ea5e9"/>
+<text x="226" y="46" class="n">1</text>
+<!-- sagittal: vertical plane left/right (edge-on) -->
+<polygon points="150,30 190,52 190,210 150,188" fill="#a78bfa" opacity="0.35" stroke="#7c3aed"/>
+<text x="146" y="28" class="n">2</text>
+<!-- transverse: horizontal -->
+<polygon points="100,120 240,120 226,138 114,138" fill="#34d399" opacity="0.40" stroke="#059669"/>
+<text x="244" y="132" class="n">3</text>
+</svg>`;
+
+DIAGRAMS.landmarks = `
+<svg viewBox="0 0 320 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anterior chest landmark lines">
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:10px sans-serif;fill:#334155}.ln{stroke:#dc2626;stroke-width:2}</style>
+<path d="M70,40 Q160,18 250,40 L250,230 Q160,250 70,230 Z" fill="#fde0d0" stroke="#9c6b4f" stroke-width="1.5"/>
+<line x1="80" y1="55" x2="240" y2="55" stroke="#9c6b4f" stroke-width="2"/><text x="92" y="50" class="lab">clavicle (5)</text>
+<rect x="153" y="58" width="14" height="120" rx="3" fill="#e2c4b5" stroke="#9c6b4f"/><text x="170" y="150" class="lab">sternum (6)</text>
+<line class="ln" x1="160" y1="50" x2="160" y2="240"/><text x="150" y="44" class="n">1</text>
+<line class="ln" x1="118" y1="58" x2="118" y2="240"/><text x="108" y="52" class="n">2</text>
+<line class="ln" x1="86" y1="70" x2="86" y2="235"/><text x="78" y="64" class="n">3</text>
+<line class="ln" x1="72" y1="95" x2="72" y2="232"/><text x="60" y="90" class="n">4</text>
+</svg>`;
+
+DIAGRAMS.heart = `
+<svg viewBox="0 0 380 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Heart structures, anterior cutaway">
+<style>.n{font:bold 12px sans-serif;fill:#7f1d1d}.lab{font:10px sans-serif;fill:#334155}</style>
+<!-- great vessels -->
+<path d="M150,20 Q150,70 175,90 L155,90 Q140,55 132,20 Z" fill="#3b82f6" stroke="#1e3a8a"/><text x="120" y="18" class="n">1</text>
+<path d="M150,18 Q210,10 210,70 L196,68 Q196,40 158,40 Z" fill="#dc2626" stroke="#7f1d1d"/><text x="214" y="20" class="n">2</text>
+<path d="M168,30 Q186,40 186,80 L172,80 Q172,48 160,42 Z" fill="#3b82f6" stroke="#1e3a8a"/><text x="170" y="26" class="n">3</text>
+<path d="M214,90 Q236,86 246,104 L232,112 Q224,100 212,104 Z" fill="#dc2626" stroke="#7f1d1d"/><text x="250" y="100" class="n">4</text>
+<!-- chambers -->
+<path d="M150,95 Q110,90 105,135 Q103,165 140,165 L150,150 Z" fill="#93c5fd" stroke="#1e3a8a"/><text x="92" y="120" class="n">5</text>
+<path d="M196,95 Q244,90 250,140 Q250,168 210,168 L200,150 Z" fill="#fca5a5" stroke="#7f1d1d"/><text x="256" y="124" class="n">6</text>
+<path d="M120,168 Q108,230 165,280 L172,170 Q150,176 120,168 Z" fill="#93c5fd" stroke="#1e3a8a"/><text x="100" y="225" class="n">11</text>
+<path d="M210,168 Q255,225 178,285 L176,170 Q200,176 210,168 Z" fill="#fca5a5" stroke="#7f1d1d"/><text x="246" y="220" class="n">12</text>
+<!-- valves -->
+<line x1="138" y1="160" x2="170" y2="160" stroke="#16a34a" stroke-width="4"/><text x="120" y="158" class="n">7</text>
+<line x1="180" y1="160" x2="212" y2="160" stroke="#16a34a" stroke-width="4"/><text x="216" y="158" class="n">8</text>
+<line x1="160" y1="92" x2="176" y2="92" stroke="#a16207" stroke-width="4"/><text x="150" y="86" class="n">9</text>
+<line x1="178" y1="86" x2="194" y2="86" stroke="#a16207" stroke-width="4"/><text x="196" y="80" class="n">10</text>
+<!-- septum, ivc, apex, chordae, papillary -->
+<line x1="174" y1="170" x2="174" y2="278" stroke="#475569" stroke-width="3" stroke-dasharray="3 3"/><text x="178" y="240" class="n">13</text>
+<path d="M135,300 Q140,250 150,200 L160,205 Q150,255 150,300 Z" fill="#3b82f6" stroke="#1e3a8a"/><text x="118" y="300" class="n">14</text>
+<text x="160" y="300" class="n">15</text><line x1="170" y1="285" x2="168" y2="296" stroke="#7f1d1d"/>
+<line x1="150" y1="165" x2="150" y2="220" stroke="#64748b" stroke-width="1"/><line x1="160" y1="165" x2="156" y2="225" stroke="#64748b" stroke-width="1"/><text x="128" y="200" class="n">16</text>
+<path d="M150,225 q6,8 12,0" fill="#7f1d1d"/><text x="168" y="232" class="n">17</text>
+</svg>`;
+
+DIAGRAMS.layers = `
+<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Layers of the heart wall">
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:10px sans-serif;fill:#334155}.ld{stroke:#0ea5e9;stroke-width:1.2}</style>
+<ellipse cx="160" cy="120" rx="120" ry="100" fill="#fef3c7" stroke="#a16207" stroke-width="3"/>
+<ellipse cx="160" cy="120" rx="104" ry="86" fill="#fde68a" stroke="#ca8a04" stroke-width="2"/>
+<ellipse cx="160" cy="120" rx="92" ry="76" fill="#fff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="3 3"/>
+<ellipse cx="160" cy="120" rx="80" ry="66" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+<ellipse cx="160" cy="120" rx="52" ry="44" fill="#b91c1c" stroke="#7f1d1d" stroke-width="14"/>
+<ellipse cx="160" cy="120" rx="40" ry="32" fill="#fca5a5" stroke="#0ea5e9" stroke-width="2"/>
+<text x="160" y="124" text-anchor="middle" class="lab">heart chamber</text>
+<line class="ld" x1="160" y1="20" x2="160" y2="6"/><text x="155" y="6" class="n">1</text>
+<line class="ld" x1="120" y1="38" x2="90" y2="14"/><text x="78" y="12" class="n">2</text>
+<line class="ld" x1="110" y1="50" x2="40" y2="40"/><text x="28" y="42" class="n">3</text>
+<line class="ld" x1="95" y1="62" x2="22" y2="78"/><text x="10" y="80" class="n">4</text>
+<line class="ld" x1="108" y1="92" x2="40" y2="135"/><text x="28" y="140" class="n">5</text>
+<line class="ld" x1="122" y1="108" x2="80" y2="190"/><text x="74" y="204" class="n">6</text>
+</svg>`;
+
+DIAGRAMS.conduction = `
+<svg viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cardiac conduction system">
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:10px sans-serif;fill:#334155}.pt{fill:#f59e0b;stroke:#b45309;stroke-width:1}.pth{stroke:#f59e0b;stroke-width:2.5;fill:none}</style>
+<path d="M150,30 Q90,30 80,110 Q70,200 150,290 Q230,200 220,110 Q210,30 150,30 Z" fill="#fee2e2" stroke="#9c6b6b" stroke-width="1.5"/>
+<line x1="150" y1="120" x2="150" y2="285" stroke="#cbd5e1" stroke-width="2"/>
+<!-- SA node -->
+<circle class="pt" cx="118" cy="80" r="7"/><text x="92" y="70" class="n">1</text>
+<!-- internodal pathways -->
+<path class="pth" d="M118,80 Q130,110 150,128"/><text x="60" y="116" class="n">2</text>
+<!-- AV node -->
+<circle class="pt" cx="150" cy="130" r="7"/><text x="158" y="126" class="n">3</text>
+<!-- Bundle of His -->
+<path class="pth" d="M150,137 L150,160"/><text x="158" y="156" class="n">4</text>
+<!-- bundle branches -->
+<path class="pth" d="M150,160 Q120,180 112,250"/><text x="78" y="210" class="n">5</text>
+<path class="pth" d="M150,160 Q180,180 188,250"/><text x="196" y="210" class="n">6</text>
+<!-- purkinje -->
+<path class="pth" d="M112,250 q-8,18 -18,26 M112,250 q4,20 -2,30 M188,250 q8,18 18,26 M188,250 q-4,20 2,30"/>
+<text x="206" y="296" class="n">7</text>
+</svg>`;
+
+DIAGRAMS.ecgwave = `
+<svg viewBox="0 0 420 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ECG waveform components">
+<defs><pattern id="grid" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12,0 L0,0 0,12" fill="none" stroke="#fbcfe8" stroke-width="0.6"/></pattern></defs>
+<rect x="0" y="0" width="420" height="240" fill="url(#grid)"/>
+<line x1="0" y1="140" x2="420" y2="140" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4 3"/>
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:10px sans-serif;fill:#334155}.pt{stroke:#0ea5e9;stroke-width:1.2}</style>
+<path d="M10,140 L40,140 Q60,108 80,140 L110,140 L120,150 L132,40 L144,160 L154,140 L210,140 Q240,104 270,140 L300,140 Q322,128 344,140 L410,140"
+ fill="none" stroke="#111827" stroke-width="2.5"/>
+<!-- P -->
+<line class="pt" x1="60" y1="108" x2="60" y2="50"/><text x="55" y="44" class="n">1</text>
+<!-- QRS -->
+<line class="pt" x1="132" y1="40" x2="132" y2="20"/><text x="127" y="16" class="n">2</text>
+<!-- T -->
+<line class="pt" x1="240" y1="104" x2="240" y2="50"/><text x="235" y="44" class="n">3</text>
+<!-- U -->
+<line class="pt" x1="322" y1="128" x2="322" y2="86"/><text x="317" y="80" class="n">4</text>
+<!-- PR segment -->
+<line class="pt" x1="95" y1="140" x2="95" y2="186"/><text x="88" y="200" class="n">5</text>
+<!-- PR interval bracket -->
+<path d="M60,210 L120,210" stroke="#16a34a" stroke-width="2"/><path d="M60,205 L60,215 M120,205 L120,215" stroke="#16a34a" stroke-width="2"/><text x="84" y="228" class="n">6</text>
+<!-- ST segment -->
+<line class="pt" x1="180" y1="140" x2="180" y2="186"/><text x="173" y="200" class="n">7</text>
+<!-- QT interval bracket -->
+<path d="M120,210 L270,210" stroke="#7c3aed" stroke-width="2" transform="translate(0,-26)"/>
+<path d="M120,179 L120,189 M270,179 L270,189" stroke="#7c3aed" stroke-width="2"/><text x="190" y="178" class="n">8</text>
+</svg>`;
+
+DIAGRAMS.graphpaper = `
+<svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ECG graph paper">
+<defs>
+<pattern id="sm" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M10,0 L0,0 0,10" fill="none" stroke="#f9a8d4" stroke-width="0.7"/></pattern>
+<pattern id="lg" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M50,0 L0,0 0,50" fill="none" stroke="#db2777" stroke-width="1.6"/></pattern>
+</defs>
+<rect x="10" y="10" width="300" height="200" fill="url(#sm)"/>
+<rect x="10" y="10" width="300" height="200" fill="url(#lg)"/>
+<rect x="10" y="10" width="300" height="200" fill="none" stroke="#db2777" stroke-width="1.6"/>
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:10px sans-serif;fill:#334155}</style>
+<rect x="60" y="60" width="10" height="10" fill="#38bdf8" opacity="0.6"/><text x="74" y="58" class="n">1</text>
+<rect x="110" y="110" width="50" height="50" fill="#a78bfa" opacity="0.35"/><text x="164" y="138" class="n">2</text>
+<path d="M230,160 L230,80 L250,80 L250,160" fill="none" stroke="#16a34a" stroke-width="2.5"/><text x="256" y="84" class="n">3</text>
+<text x="225" y="200" class="lab">standardization</text>
+</svg>`;
+
+DIAGRAMS.leads = `
+<svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Einthoven's triangle and standard limb leads">
+<style>.n{font:bold 13px sans-serif;fill:#0c4a6e}.lab{font:11px sans-serif;fill:#334155}.el{font:bold 11px sans-serif}</style>
+<polygon points="70,60 250,60 160,210" fill="#e0f2fe" stroke="#0ea5e9" stroke-width="2"/>
+<circle cx="70" cy="60" r="9" fill="#fff" stroke="#111"/><text x="40" y="50" class="el" fill="#111">RA</text>
+<circle cx="250" cy="60" r="9" fill="#111"/><text x="262" y="50" class="el" fill="#111">LA</text>
+<circle cx="160" cy="210" r="9" fill="#dc2626"/><text x="172" y="222" class="el" fill="#dc2626">LL</text>
+<text x="150" y="52" class="n">1</text>
+<text x="92" y="150" class="n">2</text>
+<text x="214" y="150" class="n">3</text>
+<text x="64" y="78" class="lab">−</text><text x="244" y="78" class="lab">+ / −</text><text x="150" y="200" class="lab">+</text>
+</svg>`;
+
+/* ---------- QUESTION BANK ---------- */
+/* fields: t=topic key, q=question, o=options[4], a=correct index,
+   e=explanation, d=diagram key (optional), f=flag note (optional) */
+const BANK = [
+
+/* ===================== ECG HISTORY & THE PROFESSION ===================== */
+{t:"history",q:"What is the difference between an electrocardiograph and an electrocardiogram?",
+ o:["They are two words for the same thing","The electrocardiograph is the instrument used to record the heart's electrical activity; the electrocardiogram is the graphic representation of that activity","The electrocardiograph measures oxygen; the electrocardiogram measures CO2","The electrocardiogram is the machine; the electrocardiograph is the printout"],a:1,
+ e:"The electrocardiograph is the instrument that records the heart's electrical activity; the electrocardiogram is the graphic representation (the tracing) of that activity."},
+{t:"history",q:"What does the abbreviation 'EKG' come from (vs. 'ECG')?",
+ o:["It is a typo for ECG","ElektroKardioGramm — the German spelling","Electronic Kardiac Graph","Echocardiogram"],a:1,
+ e:"ECG = ElectroCardioGram (English); EKG = ElektroKardioGramm (the German spelling). They mean the same thing."},
+{t:"history",q:"Who is credited with INVENTING the ECG (electrocardiograph), and in what year?",
+ o:["Augustus Waller, 1887","Willem Einthoven, 1902","Carlo Matteucci, 1842","Dr. Alfred Cohn, 1909"],a:1,
+ e:"Willem Einthoven is credited with inventing the electrocardiograph in 1902 (the string galvanometer). He won the Nobel Prize in 1924."},
+{t:"history",q:"Willem Einthoven's recording device was known as the:",
+ o:["Capillary electrometer","String galvanometer","Sphygmomanometer","Capnograph"],a:1,
+ e:"Einthoven's device was the string galvanometer — a fine silver-coated quartz filament suspended in a magnetic field; the heart's impulses moved the filament, magnified and recorded on photographic paper."},
+{t:"history",q:"Einthoven reduced the number of electrodes/leads to three. Which three locations did he use?",
+ o:["Both arms and the mouth","Right arm, left arm, and left leg","Chest and back","Both legs and the chest"],a:1,
+ e:"Einthoven reduced the leads to three — the right arm, left arm, and left leg — forming Einthoven's Triangle, a concept still used today."},
+{t:"history",q:"Einthoven's Triangle describes how the extremities create which shape around the heart's electric field?",
+ o:["A circle","An equilateral triangle","A square","A straight line"],a:1,
+ e:"In Einthoven's Triangle the extremities (right arm, left arm, left leg) create an equilateral triangle around the heart's electric field, providing three distinct points of view."},
+{t:"history",q:"Who published/recorded the FIRST human ECG using a capillary electrometer (1887)?",
+ o:["Willem Einthoven","Augustus Waller","Luigi Galvani","Paul Zoll"],a:1,
+ e:"Augustus Waller recorded the first human ECG using a capillary electrometer, demonstrating the heart's electrical activity could be measured externally on the skin."},
+{t:"history",q:"In 1842, Dr. Carlo Matteucci demonstrated which key concept using frogs?",
+ o:["That oxygen is carried by red blood cells","That the heart produces measurable electrical currents and is an electrical organ, not just a mechanical pump","That blood pressure is measured in mm/Hg","That the lungs perform gas exchange"],a:1,
+ e:"Matteucci connected a beating frog heart to a galvanometer, showing the heart produces measurable electrical currents intrinsically — it is an electrical organ, not merely a mechanical pump."},
+{t:"history",q:"In 1786, Dr. Luigi Galvani is credited with first noting:",
+ o:["Electrical current in skeletal muscle","The invention of the 12-lead ECG","The cause of myocardial infarction","Pulse oximetry"],a:0,
+ e:"In 1786, Luigi Galvani first noted electrical current in skeletal muscle — an early precursor concept to the ECG."},
+{t:"history",q:"A myocardial infarction (heart attack) became clinically recognized in approximately what year?",
+ o:["1786","1842","1910","1980"],a:2,
+ e:"Myocardial infarction became clinically recognized in 1910 — an occlusion in a coronary artery causing insufficient blood flow and death of heart tissue."},
+{t:"history",q:"The American Heart Association was founded in what year?",
+ o:["1902","1924","1947","1968"],a:1,
+ e:"The American Heart Association was founded in 1924 — the same year Einthoven won the Nobel Prize."},
+{t:"history",q:"Who introduced the first electrocardiogram machine to the United States (1909)?",
+ o:["Dr. Alfred Cohn","Augustus Waller","Dr. Claude Beck","Willem Einthoven"],a:0,
+ e:"Dr. Alfred Cohn introduced the first electrocardiogram machine to the U.S. in 1909."},
+
+/* ===================== TOPOGRAPHIC ANATOMY ===================== */
+{t:"topo",q:"Describe the correct anatomic position.",
+ o:["Lying flat on the back with arms folded","Standing facing forward, feet flat, arms at the sides with palms facing forward","Seated upright with legs crossed and hands on the knees","Standing with the back to the examiner and palms facing backward"],a:1,
+ e:"Anatomic position is standing, facing forward, feet flat, arms extended at the sides with the palms facing forward. Right and left always refer to the patient's right and left."},
+{t:"topo",q:"In anatomic position, when a chart says 'right side,' whose right does it mean?",
+ o:["The examiner's right","The patient's right","Whichever side is closest to the equipment","It varies by facility"],a:1,
+ e:"Right and left always refer to the patient's own right and left, not the observer's."},
+{t:"topo",q:"Which directional term means 'toward the rear / behind'?",
+ o:["Anterior","Posterior","Proximal","Lateral"],a:1,
+ e:"Posterior means after, behind, or toward the rear. Anterior means in front of / front."},
+{t:"topo",q:"Which term means 'away from / farther from the origin'?",
+ o:["Proximal","Distal","Medial","Superior"],a:1,
+ e:"Distal = away from / farther from the origin. Proximal = near / closer to the origin."},
+{t:"topo",q:"'Toward the mid-line, away from the side' describes which term?",
+ o:["Lateral","Medial","Superior","Distal"],a:1,
+ e:"Medial means toward the mid-line/middle, away from the side. Lateral means toward the side, away from the mid-line."},
+{t:"topo",q:"The term 'visceral' relates to which of the following?",
+ o:["A body cavity wall","Organs within body cavities","The mid-line of the body","The surface of the skin"],a:1,
+ e:"Visceral relates to organs within body cavities; parietal relates to a body-cavity wall."},
+{t:"topo",q:"On the diagram, which arrow indicates SUPERIOR?",d:"directional",
+ o:["1","2","3","4"],a:0,
+ e:"Superior means above/over — arrow 1 points upward (toward the head)."},
+{t:"topo",q:"On the diagram, which arrow indicates a LATERAL direction (away from the mid-line)?",d:"directional",
+ o:["1","2","3","6"],a:2,
+ e:"Arrow 3 points away from the dashed mid-line toward the side = lateral. Arrow 4 points toward the mid-line = medial."},
+{t:"topo",q:"On the diagram, which arrow indicates PROXIMAL on the arm?",d:"directional",
+ o:["5","6","1","4"],a:0,
+ e:"Proximal is closer to the origin (toward the shoulder) — arrow 5. Arrow 6 (toward the hand) is distal."},
+{t:"topo",q:"Which plane divides the body into front and back portions?",d:"planes",
+ o:["Frontal (coronal) plane","Transverse (axial) plane","Sagittal (lateral) plane","Midaxillary plane"],a:0,
+ e:"The frontal (coronal) plane divides the body front/back. On the diagram it is plane 1."},
+{t:"topo",q:"Which plane divides the body into top and bottom portions?",d:"planes",
+ o:["Frontal plane (1)","Sagittal plane (2)","Transverse (axial) plane (3)","None of these"],a:2,
+ e:"The transverse (axial) plane divides the body top/bottom — plane 3 on the diagram."},
+{t:"topo",q:"The sagittal plane divides the body into which portions?",d:"planes",
+ o:["Front and back","Top and bottom","Left and right","Inner and outer"],a:2,
+ e:"The sagittal (lateral) plane divides the body left/right. It is also called the mid-line when it runs down the middle."},
+{t:"topo",q:"The 'collarbone' is also known as the:",
+ o:["Sternum","Clavicle","Axilla","Scapula"],a:1,
+ e:"The clavicle is the collarbone. The sternum is the breastbone and the axilla is the underarm."},
+{t:"topo",q:"The 'breastbone' is also known as the:",
+ o:["Clavicle","Axilla","Sternum","Sternal border"],a:2,
+ e:"The sternum is the breastbone. Its lateral edge is the sternal border."},
+{t:"topo",q:"The axilla refers to which body region?",
+ o:["The underarm","The collarbone","The space between ribs","The mid-line"],a:0,
+ e:"The axilla is the underarm — the basis for the axillary landmark lines."},
+{t:"topo",q:"What are the intercostal spaces?",
+ o:["The spaces between the vertebrae","The spaces between the ribs","The chambers of the heart","The lines used for limb leads"],a:1,
+ e:"Intercostal spaces are the spaces between the ribs. They are numbered according to the rib that lies superior to the space."},
+{t:"topo",q:"How many intercostal spaces are there?",
+ o:["9","10","11","12"],a:2,
+ e:"There are 11 intercostal spaces. Each is numbered for the rib immediately above (superior to) it."},
+{t:"topo",q:"Intercostal spaces are numbered according to:",
+ o:["The rib that lies superior (above) to the space","The rib that lies inferior (below) the space","Their distance from the sternum","The order the technician palpates them"],a:0,
+ e:"A space is numbered according to the rib that lies superior to it."},
+{t:"topo",q:"The sternal border (edge) is defined as:",
+ o:["The top of the breastbone only","The lateral edge of the sternum that meets the intercostal space","The mid-line of the body","The line through the nipples"],a:1,
+ e:"The sternal border is the lateral edge of the sternum where it meets the intercostal space — a key landmark for chest-lead placement."},
+{t:"topo",q:"On the chest-landmark diagram, which line is the MIDSTERNAL line?",d:"landmarks",
+ o:["1","2","3","4"],a:0,
+ e:"Line 1 runs down the middle of the sternum = midsternal line (the midline). Lines 2-4 move progressively laterally: midclavicular, anterior axillary, midaxillary — the named landmark lines listed in the Topographic Anatomy slideshow."},
+{t:"topo",q:"The 'midline' of the body corresponds to which plane?",
+ o:["Frontal plane","Transverse plane","Sagittal plane","Coronal plane"],a:2,
+ e:"The midline is the imaginary line down the middle of the body dividing it into right and left halves — also called the sagittal plane."},
+{t:"topo",q:"'Superior' has which anatomical synonym, and 'Inferior' has which?",
+ o:["Ventral; Dorsal","Cranial; Caudal","Proximal; Distal","Medial; Lateral"],a:1,
+ e:"Superior = cranial (toward the head); Inferior = caudal (toward the lower body). Likewise Anterior = ventral and Posterior = dorsal."},
+{t:"topo",q:"'Anterior' has which synonym, and 'Posterior' has which?",
+ o:["Cranial; Caudal","Ventral; Dorsal","Superficial; Deep","Medial; Lateral"],a:1,
+ e:"Anterior = ventral (toward the front); Posterior = dorsal (toward the back)."},
+{t:"topo",q:"The directional term 'SUPERFICIAL' means:",
+ o:["Away from the surface, deeper into the body","Toward or on the surface of the body","Toward the head","Toward the midline"],a:1,
+ e:"Superficial means toward or on the surface of the body; 'deep' means away from the surface, further into the body."},
+{t:"topo",q:"'Proximal' is best defined as:",
+ o:["Farther from the point of attachment or trunk","Closer to the point of attachment or to the trunk of the body","Toward the surface","Toward the head"],a:1,
+ e:"Proximal is closer to the point of attachment or to the trunk; distal is farther from the point of attachment or trunk."},
+{t:"topo",q:"An injury to the right forearm would be described as being ______ to the right elbow.",
+ o:["Proximal","Distal","Medial","Superior"],a:1,
+ e:"The forearm is farther from the trunk than the elbow, so an injury there is distal to the elbow."},
+{t:"topo",q:"Topographic anatomy is also known as:",
+ o:["Cellular anatomy","Regional anatomy","Microscopic anatomy","Developmental anatomy"],a:1,
+ e:"Topographic anatomy (regional anatomy) studies the relationships between structures within specific regions of the body — used to know where leads need to be placed."},
+{t:"topo",q:"Which two planes are the KEY views for ECG/electrode placement?",
+ o:["Sagittal and frontal","Frontal and transverse","Transverse and sagittal","Midaxillary and midclavicular"],a:1,
+ e:"The frontal (coronal) and transverse (axial) planes are the key ECG views — the limb leads view the frontal plane and the chest leads view the transverse plane."},
+{t:"topo",q:"The sternal angle (Angle of Louis) is used to locate which intercostal space?",
+ o:["The first intercostal space","The second intercostal space","The fourth intercostal space","The fifth intercostal space"],a:1,
+ e:"The sternal angle (Angle of Louis) is used to locate the second intercostal space — a key starting landmark for chest-lead placement."},
+{t:"topo",q:"The chest organs are protected by how many ribs?",
+ o:["10 ribs","11 ribs","12 ribs","14 ribs"],a:2,
+ e:"There are 12 ribs protecting the chest organs, and 11 intercostal spaces between them."},
+{t:"topo",q:"Which axillary (side-chest) landmark line runs down from the FRONT of the axilla?",
+ o:["Midaxillary line","Anterior axillary line","Posterior axillary line","Midclavicular line"],a:1,
+ e:"The anterior axillary line runs down from the front of the axilla; the midaxillary line runs from the middle of the axilla, and the posterior axillary line from the back."},
+{t:"topo",q:"The midclavicular line is the imaginary line running down the body from the:",
+ o:["Middle of the clavicle","Edge of the sternum","Front of the axilla","Center of the chest"],a:0,
+ e:"The midclavicular line runs down from the middle of the clavicle and helps identify the appropriate lateral positions for chest leads."},
+{t:"topo",q:"Before x-ray was invented (1895), which methods were used to assess underlying structures?",
+ o:["MRI and CT","Inspection, auscultation, palpation, and percussion","Ultrasound and echocardiography","Pulse oximetry and capnography"],a:1,
+ e:"Before x-ray, providers relied on inspection, auscultation, palpation, and percussion, using surface landmarks as guides to deeper structures."},
+
+/* ===================== RESPIRATORY SYSTEM ===================== */
+{t:"resp",q:"What is the PRIMARY function of the respiratory system?",
+ o:["To pump blood through the body","To supply the blood with oxygen to be delivered to the body and remove carbon dioxide","To produce hormones for metabolism","To filter waste from the blood"],a:1,
+ e:"Its primary function is to supply blood with oxygen for delivery to the body, and to get rid of carbon dioxide and water (waste products of respiration)."},
+{t:"resp",q:"Homeostasis is best defined as:",
+ o:["A rapid rise and fall of cell voltage","When the body maintains a stable, balanced internal environment","The exchange of gases in the alveoli","The movement of air into the lungs"],a:1,
+ e:"Homeostasis is when the body maintains a stable and balanced environment; all body systems work together to maintain it."},
+{t:"resp",q:"The UPPER airway includes all structures up to and ending at the:",
+ o:["Trachea","Vocal cords (larynx)","Alveoli","Bronchioles"],a:1,
+ e:"The upper airway includes all structures above and ending at the vocal cords (larynx). The lower airway is everything below the larynx."},
+{t:"resp",q:"Which structure acts as a flap to cover the airway when swallowing, directing food to the stomach?",
+ o:["Epiglottis","Pharynx","Larynx","Trachea"],a:0,
+ e:"The epiglottis acts as a flap covering the airway when solids or fluids are swallowed, directing them to the stomach."},
+{t:"resp",q:"Which structure serves BOTH the respiratory and digestive systems?",
+ o:["Trachea","Pharynx","Alveoli","Bronchioles"],a:1,
+ e:"The pharynx serves both the respiratory and digestive systems; at the larynx, air is directed to the lower airways and food to the stomach."},
+{t:"resp",q:"The lower airway includes which of the following?",
+ o:["Nose, pharynx and larynx","Trachea, bronchi, bronchioles and alveoli","Diaphragm and chest-wall muscles","Vocal cords and epiglottis"],a:1,
+ e:"The lower airway consists of the structures below the larynx: trachea, bronchi, bronchioles and alveoli."},
+{t:"resp",q:"Gas exchange with the blood occurs primarily in the:",
+ o:["Trachea and bronchi","Terminal bronchioles and alveoli","Pharynx and larynx","Pleural membrane"],a:1,
+ e:"It is in the terminal bronchioles and alveoli that the pulmonary capillaries make contact and oxygen/carbon dioxide are exchanged with the blood."},
+{t:"resp",q:"What is the ONLY way to oxygenate the blood?",
+ o:["Diffusion at the cellular level","Respiration","Transportation","Vasodilation"],a:1,
+ e:"The study guide states the only way to oxygenate the blood is through respiration."},
+{t:"resp",q:"VENTILATION is best defined as:",
+ o:["The exchange of oxygen and carbon dioxide at the cellular level","The simple movement of air into and out of the lungs","The transport of oxygen to the cells","Movement of gas from high to low concentration"],a:1,
+ e:"Ventilation is simply the air movement into and out of the lungs. It has two parts: inhalation and exhalation."},
+{t:"resp",q:"During INHALATION, the diaphragm:",
+ o:["Relaxes upward, forcing air out","Contracts downward, allowing the lungs to expand with air","Stays still while the ribs move","Secretes pleural fluid"],a:1,
+ e:"During inhalation the diaphragm contracts downward, allowing the lungs to expand with air. Exhalation is the reverse — the diaphragm relaxes and air is forced out."},
+{t:"resp",q:"RESPIRATION is best defined as:",
+ o:["Only the movement of air into the lungs","The exchange of carbon dioxide and oxygen, occurring in the lungs and at the cellular level","The pumping action of the heart","The numbering of the intercostal spaces"],a:1,
+ e:"Respiration is the exchange of CO2 and O2, occurring not just in the lungs but in the body at the cellular level. Its three phases are pulmonary ventilation, diffusion and transportation."},
+{t:"resp",q:"Which of the following is NOT one of the three phases of respiration?",
+ o:["Pulmonary ventilation","Diffusion","Transportation","Vasoconstriction"],a:3,
+ e:"The three phases of respiration are pulmonary ventilation (inhalation/exhalation), diffusion, and transportation. Vasoconstriction is a vascular response, not a phase of respiration."},
+{t:"resp",q:"DIFFUSION is best defined as:",
+ o:["Air moving into and out of the lungs","A gas moving from an area of high concentration to an area of lower concentration","The heart contracting to push blood","Blood returning to the heart through the veins"],a:1,
+ e:"Diffusion is when a gas moves from an area of high concentration to an area of lower concentration — the actual exchange of O2 and CO2."},
+{t:"resp",q:"'Deadspace' in the respiratory system refers to:",
+ o:["The alveoli where exchange occurs","The air passages above the terminal bronchioles where NO gas exchange takes place","The space inside the pleural membrane","The mediastinum"],a:1,
+ e:"Deadspace is where no gas exchange occurs — all air passages above the terminal bronchioles and alveoli."},
+{t:"resp",q:"What is the normal respiratory rate for adults?",
+ o:["6 to 10 breaths per minute","12 to 20 breaths per minute","20 to 30 breaths per minute","30 to 40 breaths per minute"],a:1,
+ e:"The normal adult respiratory rate is typically 12–20 breaths per minute. Children and infants breathe at faster rates."},
+{t:"resp",q:"Pulse oximetry measures which of the following?",
+ o:["Carbon dioxide level in exhaled air","Oxygen saturation of the blood","Blood pressure","Heart rate variability"],a:1,
+ e:"Pulse oximetry is a noninvasive tool to evaluate the oxygen saturation of the blood, shown as a waveform, a number, or both."},
+{t:"resp",q:"What is a NORMAL value for pulse oximetry (SpO2)?",
+ o:["80–85%","88–92%","94–99%","100% only"],a:2,
+ e:"A normal pulse oximetry value is 94–99%."},
+{t:"resp",q:"Which of the following can give a FALSE pulse oximetry reading?",
+ o:["Fingernail polish and skin pigmentation","A normal heart rate","Sitting upright","Drinking water"],a:0,
+ e:"Limitations of pulse oximetry include blood abnormalities, systemic infection, fingernail polish, skin pigmentation, and certain poisons."},
+{t:"resp",q:"Capnography measures the patient's:",
+ o:["Oxygen saturation","Carbon dioxide","Blood pressure","Cardiac axis"],a:1,
+ e:"Capnography is the measurement of the patient's carbon dioxide and is a real-time tool for assessing ventilation, metabolism and perfusion."},
+{t:"resp",q:"What is the NORMAL range for end-tidal CO2 on capnography?",
+ o:["10–20 mm/Hg","35–45 mm/Hg","50–60 mm/Hg","94–99 mm/Hg"],a:1,
+ e:"Normal capnography range is 35–45 mm/Hg (millimeters of mercury)."},
+{t:"resp",q:"During CPR, the American Heart Association recommends capnography (ETCO2) be greater than what value to indicate high-quality chest compressions?",
+ o:["> 5 mm/Hg","> 10 mm/Hg","> 35 mm/Hg","> 45 mm/Hg"],a:1,
+ e:"The AHA recommends capnography be > 10 mm/Hg to indicate high-quality chest compressions during CPR."},
+{t:"resp",q:"If CPR is being performed, you would expect the ETCO2 value on your monitor to be:",
+ o:["Higher than normal (above 45)","Lower than normal","Exactly 40","Zero"],a:1,
+ e:"During CPR the ETCO2 value is expected to be low/below the normal range, and the AHA target of >10 mm/Hg is used to gauge compression quality. The slideshow gives an optimal target of 20 mm/Hg during CPR."},
+{t:"resp",q:"During CPR, the capnography (EtCO2) goal for effective compressions is greater than or equal to ___, with an optimal value of ___.",
+ o:["5 mm/Hg; 10 mm/Hg","10 mm/Hg; 20 mm/Hg","20 mm/Hg; 35 mm/Hg","35 mm/Hg; 45 mm/Hg"],a:1,
+ e:"During CPR the EtCO2 goal is ≥10 mm/Hg, optimally 20 mm/Hg. A considerable increase in EtCO2 signals return of spontaneous circulation (ROSC)."},
+{t:"resp",q:"A sudden, considerable INCREASE in EtCO2 during CPR most likely indicates:",
+ o:["The patient is being over-ventilated","Return of spontaneous circulation (ROSC)","A dead battery in the monitor","Hyperventilation"],a:1,
+ e:"During return of spontaneous circulation (ROSC) there is a considerable increase in EtCO2 (mm/Hg)."},
+{t:"resp",q:"What is the normal range for blood pH?",
+ o:["6.8 – 7.2","7.35 – 7.45","7.5 – 8.0","6.0 – 7.0"],a:1,
+ e:"Normal blood pH is slightly alkaline, in the range of 7.35–7.45. Even small changes can disrupt oxygen delivery, heart and brain function, and cellular metabolism."},
+{t:"resp",q:"How does carbon dioxide (CO2) affect blood pH?",
+ o:["Increased CO2 decreases acidity (raises pH)","Increased CO2 increases acidity (lowers pH)","CO2 has no effect on pH","CO2 only affects oxygen levels"],a:1,
+ e:"Increased CO2 increases acidity (lowers pH); decreased CO2 decreases acidity (raises pH). The respiratory system controls CO2 removal to help maintain acid-base balance."},
+{t:"resp",q:"Which sequence correctly describes the body's structural organization?",
+ o:["Organs → cells → tissues → systems","Cells → tissues → organs → organ systems → organism","Systems → organs → cells → tissues","Tissues → cells → organs → organism"],a:1,
+ e:"Cells make up tissues, tissues make up organs, organs make up organ systems, and organ systems make up an organism."},
+{t:"resp",q:"Which part of the upper airway is the nose and nasal cavity, where air is filtered, warmed, and humidified?",
+ o:["Oropharynx","Nasopharynx","Hypopharynx","Larynx"],a:1,
+ e:"The nasopharynx (nose/nasal cavity) is the primary entryway for air, where it is filtered, warmed, and humidified. The oropharynx (mouth) does not filter or humidify."},
+{t:"resp",q:"The hypopharynx is best described as:",
+ o:["The voice box housing the vocal cords","A muscular tube (throat) that passes both air to the larynx and food to the esophagus","The tiny air sacs for gas exchange","The windpipe"],a:1,
+ e:"The hypopharynx is a muscular tube serving as a passageway for both air (to the larynx) and food (to the esophagus); the epiglottis directs each appropriately."},
+{t:"resp",q:"How many lobes do the right and left lungs have?",
+ o:["Right has 2 lobes; left has 3 lobes","Right has 3 lobes; left has 2 lobes","Both lungs have 3 lobes","Both lungs have 2 lobes"],a:1,
+ e:"The right lung has three lobes; the left lung has two lobes (leaving room for the heart)."},
+{t:"resp",q:"The trachea (windpipe) is best described as:",
+ o:["A pair of spongy organs","A rigid tube that directs air into the lungs","The tiny air sacs at the end of bronchioles","A dome-shaped muscle"],a:1,
+ e:"The trachea (windpipe) is a rigid tube that directs air into the lungs, then splits into the right and left bronchi."},
+{t:"resp",q:"The membrane surrounding the lungs has two layers. They are the:",
+ o:["Epicardium and endocardium","Parietal and visceral pleura","Tunica intima and media","Fibrous and serous pericardium"],a:1,
+ e:"The pleura has a parietal layer and a visceral layer, with pleural fluid between them to reduce friction and allow the lungs to expand and contract."},
+{t:"resp",q:"What is the purpose of the pleural fluid?",
+ o:["To carry oxygen to the cells","To provide a lubricated space that reduces friction and allows lung expansion/contraction","To generate the heartbeat","To filter incoming air"],a:1,
+ e:"Pleural fluid lubricates the pleural cavity, reducing friction so the lungs can expand and contract optimally."},
+{t:"resp",q:"The diaphragm is best described as:",
+ o:["A rigid tube directing air to the lungs","A dome-shaped muscle, the primary muscle of breathing, separating the abdominal and thoracic cavities","A pair of air sacs","The voice box"],a:1,
+ e:"The diaphragm is a dome-shaped muscle — the primary muscle of breathing — that separates the abdominal and thoracic cavities and moves downward during inspiration."},
+{t:"resp",q:"What are the PRIMARY muscles of breathing?",
+ o:["The pectoral and abdominal muscles","The diaphragm and the intercostal muscles","The neck (cervical) muscles only","The cardiac muscle"],a:1,
+ e:"The diaphragm and the intercostal muscles are the primary muscles of breathing; neck, abdominal, and pectoral muscles are accessory muscles."},
+{t:"resp",q:"Which part of the brain controls breathing?",
+ o:["The cerebellum","The brain stem (medulla oblongata and pons)","The frontal lobe","The spinal cord alone"],a:1,
+ e:"The brain stem — the medulla oblongata and pons — controls breathing; chemoreceptors in the ventral medulla initiate ventilation based on CO2 and pH levels in the cerebral spinal fluid."},
+{t:"resp",q:"Ventilation cycles (respiratory rate) are initiated by chemoreceptors that primarily monitor:",
+ o:["Oxygen levels only","Carbon dioxide and pH levels in the cerebral spinal fluid","Blood pressure","Body temperature"],a:1,
+ e:"Chemoreceptors in the medulla initiate the ventilation cycle based on carbon dioxide and pH levels in the cerebral spinal fluid; other receptors monitor O2, CO2, and pH as backups."},
+{t:"resp",q:"In pulse oximetry, which type of light is absorbed mainly by OXYGENATED blood?",
+ o:["Red light","Infrared light","Ultraviolet light","Green light"],a:1,
+ e:"Infrared light is absorbed mainly by oxygenated blood, while red light is absorbed mainly by deoxygenated blood; the photodetector compares the two to calculate SpO2."},
+{t:"resp",q:"Why is a normal SpO2 of 94–99% (and NOT 100%) emphasized?",
+ o:["100% is impossible to achieve","Oxygen is classified as a drug and excess oxygen can cause oxygen toxicity","The sensor cannot read 100%","100% means the patient is not breathing"],a:1,
+ e:"Oxygen is classified as a drug and should be dosed as such; the normal target is 94–99%, not 100%, because excess oxygen can lead to oxygen toxicity (CNS or pulmonary)."},
+{t:"resp",q:"Carbon monoxide poisoning is a limitation of pulse oximetry because it:",
+ o:["Speeds up the heart rate","Can cause a falsely reassuring reading since the sensor cannot distinguish it properly","Has no effect on the reading","Increases the true oxygen saturation"],a:1,
+ e:"Pulse oximetry limitations include blood abnormalities (e.g., sickle cell), barriers (nail polish, skin pigmentation, sepsis), and poisoning such as carbon monoxide, which can produce misleading readings."},
+
+/* ===================== BLOOD & VASCULATURE ===================== */
+{t:"blood",q:"Approximately what percentage of blood is plasma?",
+ o:["About 25%","About 45%","About 55%","About 75%"],a:2,
+ e:"Blood is about 55% plasma (liquid) and about 45% other elements (red cells, white cells, platelets)."},
+{t:"blood",q:"Red blood cells (erythrocytes) are mainly responsible for:",
+ o:["Forming clots","Fighting infection","Delivering oxygen/nutrients and removing cellular waste such as CO2","Producing plasma"],a:2,
+ e:"Erythrocytes deliver oxygen and nutrients to the cells and remove cellular wastes such as carbon dioxide."},
+{t:"blood",q:"White blood cells (leukocytes) are important for:",
+ o:["Carrying oxygen","Protecting the body against infectious or foreign substances","Forming clots","Carrying carbon dioxide"],a:1,
+ e:"Leukocytes protect the body against infectious or foreign substances that could harm homeostasis."},
+{t:"blood",q:"Which blood component forms clots to prevent blood loss after injury?",
+ o:["Plasma","Platelets","Red blood cells","White blood cells"],a:1,
+ e:"Platelets are the body's defense mechanism for forming clots in the event of injury, preventing blood loss."},
+{t:"blood",q:"Which vessels carry blood AWAY from the heart?",
+ o:["Veins","Arteries","Venules","Capillaries"],a:1,
+ e:"Arteries carry blood away from the heart and branch into smaller arterioles. Veins carry blood toward the heart."},
+{t:"blood",q:"Which vessels have valves to prevent backflow of blood?",
+ o:["Arteries","Arterioles","Veins","Capillaries"],a:2,
+ e:"Veins have valves to prevent backflow because their pressure is much lower; arteries do not have valves."},
+{t:"blood",q:"Where does diffusion (delivery of oxygen/nutrients and removal of waste) occur in the vasculature?",
+ o:["In the arteries","In the capillaries","In the veins","In the venules"],a:1,
+ e:"Capillaries have intimate contact with tissue cells and directly serve cellular needs; this is where diffusion (cellular respiration) takes place."},
+{t:"blood",q:"What are the three layers (tunics) of a blood-vessel wall, from inner to outer?",
+ o:["Endocardium, myocardium, epicardium","Tunica intima, tunica media, tunica adventitia/externa","Plasma, platelets, leukocytes","Frontal, sagittal, transverse"],a:1,
+ e:"The three tunics are the tunica intima (innermost), tunica media (middle), and tunica adventitia/externa (external)."},
+{t:"blood",q:"The middle tunic (tunica media) of a blood vessel is mostly made of:",
+ o:["Nervous tissue","Smooth muscle cells","Cardiac muscle","Adipose tissue"],a:1,
+ e:"The middle tunic is mostly smooth muscle, regulated by sympathetic vasomotor nerve fibers and chemicals, producing vasoconstriction or vasodilation."},
+{t:"blood",q:"VASOCONSTRICTION occurs when:",
+ o:["The lumen diameter increases as smooth muscle relaxes","The lumen diameter decreases as smooth muscle contracts","The vein valves close","The heart contracts"],a:1,
+ e:"Vasoconstriction is when the lumen diameter decreases as the smooth muscle contracts. Vasodilation is the opposite."},
+{t:"blood",q:"VASODILATION occurs when:",
+ o:["The lumen diameter increases as smooth muscle relaxes","The lumen diameter decreases as smooth muscle contracts","Platelets form a clot","Blood pressure rises sharply"],a:0,
+ e:"Vasodilation is when the lumen diameter increases as the smooth muscle relaxes."},
+{t:"blood",q:"The SYSTOLIC blood pressure (top number) represents:",
+ o:["Pressure remaining in arteries when the heart relaxes","Pressure exerted on the arteries when the heart contracts/pumps","The pressure inside the veins","The pressure in the lungs"],a:1,
+ e:"Systolic pressure is the pressure exerted on the arteries when the heart contracts. Diastolic (bottom number) is the remaining pressure when the heart relaxes."},
+{t:"blood",q:"One complete contraction and relaxation of the heart is called a:",
+ o:["Cardiac axis","Cardiac cycle","Action potential","Refractory period"],a:1,
+ e:"Together, the contraction and relaxation of the heart is called a cardiac cycle."},
+{t:"blood",q:"Blood pressure is measured in which units, using which device?",
+ o:["Beats per minute, with calipers","Millimeters of mercury (mm/Hg), with a sphygmomanometer","Millivolts, with an ECG","Percent, with a pulse oximeter"],a:1,
+ e:"Blood pressure is measured in millimeters of mercury (mm/Hg) with a sphygmomanometer (BP cuff)."},
+{t:"blood",q:"Hypertension in an adult is defined as a blood pressure over:",
+ o:["120/80","130/85","140/90","160/100"],a:2,
+ e:"Hypertension (high blood pressure) is defined as over 140/90 in an adult and may be asymptomatic."},
+{t:"blood",q:"Hypotension should be considered when the systolic pressure is less than ___ and diastolic less than ___.",
+ o:["120 / 80","100 / 70","90 / 60","80 / 50"],a:2,
+ e:"Hypotension should be considered if systolic is less than 90 mm/Hg and diastolic less than 60 mm/Hg."},
+{t:"blood",q:"A blood pressure cuff that is too SMALL will tend to give:",
+ o:["False low readings","False high readings","Accurate readings","No reading at all"],a:1,
+ e:"A cuff that is too small will give false high readings; the appropriate size cuff should be used."},
+{t:"blood",q:"Orthostatic hypotension is best described as:",
+ o:["A drop in blood pressure when the patient stands up","High blood pressure during exercise","Blood pressure that rises when lying down","Low oxygen saturation on standing"],a:0,
+ e:"Orthostatic hypotension is when blood pressure drops as the patient stands up; symptoms may include dizziness and syncope (fainting)."},
+{t:"blood",q:"When blood pressure is taken manually, readings are recorded in:",
+ o:["Odd numbers","Even numbers","Tenths","Percentages"],a:1,
+ e:"All blood pressure readings done manually are recorded in even numbers; only a machine produces odd readings."},
+{t:"blood",q:"ATHEROSCLEROSIS is best described as:",
+ o:["Hardening and thickening of the arteries with loss of elasticity","Deposition of plaques of fatty material on the inner walls of arteries","Inflammation of the heart valves","Low blood pressure on standing"],a:1,
+ e:"Atherosclerosis is the deposition of fatty plaques on the inner arterial walls; LDL cholesterol damages the lining and plaque narrows the artery."},
+{t:"blood",q:"ARTERIOSCLEROSIS is best described as:",
+ o:["Fatty plaque deposits on the inner artery wall","Arteries becoming thickened and hardened with decreased elasticity, restricting flow","A clot traveling through the bloodstream","Backflow of blood through a valve"],a:1,
+ e:"Arteriosclerosis is when arteries become thickened and hardened and elasticity is decreased, restricting blood flow."},
+{t:"blood",q:"A piece of plaque or clot that breaks free and travels until it blocks a smaller artery is called a/an:",
+ o:["Thrombus","Embolism","Aneurysm","Ischemia"],a:1,
+ e:"When a piece breaks free and travels the bloodstream to block a smaller artery, it is called an embolism. A clot that forms in place is a thrombus."},
+
+/* ===================== CIRCULATION ===================== */
+{t:"circ",q:"Which side of the heart is the pump for the PULMONARY circuit?",
+ o:["The left side","The right side","Both sides equally","Neither — the lungs pump it"],a:1,
+ e:"The right side of the heart is the pump for the pulmonary circuit, sending deoxygenated blood to the lungs."},
+{t:"circ",q:"The pulmonary circuit is responsible for:",
+ o:["Delivering oxygenated blood to the body's cells","Circulating deoxygenated blood to the lungs to drop off CO2 and pick up oxygen","Pumping blood into the aorta","Removing waste through the kidneys"],a:1,
+ e:"The pulmonary circuit circulates deoxygenated blood to the lungs to deliver CO2 to be exhaled and pick up oxygen, returning it to the heart."},
+{t:"circ",q:"Deoxygenated blood leaves the right side of the heart through which vessel?",
+ o:["Aorta","Pulmonary artery","Pulmonary vein","Superior vena cava"],a:1,
+ e:"Blood is pumped through the pulmonary artery to the right and left lung capillary beds."},
+{t:"circ",q:"After gas exchange in the lungs, oxygenated blood returns to the LEFT side of the heart through the:",
+ o:["Pulmonary arteries","Pulmonary veins","Vena cavae","Coronary arteries"],a:1,
+ e:"Oxygenated blood returns to the left side of the heart through the pulmonary veins to be delivered to the body."},
+{t:"circ",q:"Which side of the heart is the pump for the SYSTEMIC circuit?",
+ o:["The right side","The left side","Both sides","The atria only"],a:1,
+ e:"The left side of the heart is the pump for the systemic circuit, delivering oxygenated blood to the body's cells."},
+{t:"circ",q:"In the systemic circuit, oxygenated blood is pumped out of the heart into the:",
+ o:["Pulmonary artery","Aorta","Superior vena cava","Pulmonary vein"],a:1,
+ e:"Blood is pumped into the aorta, which branches at the aortic arch to deliver oxygen-rich blood to the upper and lower body."},
+{t:"circ",q:"Deoxygenated blood returning from the LOWER body reaches the heart via the:",
+ o:["Superior vena cava","Inferior vena cava","Pulmonary vein","Aorta"],a:1,
+ e:"From the lower extremities, blood travels the great saphenous vein and eventually the inferior vena cava; the upper body returns via the superior vena cava."},
+{t:"circ",q:"Which statement about the two circuits is correct?",
+ o:["The right side pumps the systemic circuit; the left pumps the pulmonary circuit","The right side pumps the pulmonary circuit; the left pumps the systemic circuit","Both circuits are pumped by the atria","The aorta belongs to the pulmonary circuit"],a:1,
+ e:"The right side = pulmonary circuit (to the lungs); the left side = systemic circuit (to the body)."},
+
+/* ===================== HEART ANATOMY ===================== */
+{t:"anatomy",q:"The heart is located in the center of the chest, behind the sternum and between the lungs, in a space called the:",
+ o:["Pleural cavity","Mediastinum","Pericardial sac only","Thoracic inlet"],a:1,
+ e:"The heart sits in the mediastinum — behind the sternum and between the lungs. It is roughly the size of a fist, shaped like an inverted cone."},
+{t:"anatomy",q:"The heart is best described as:",
+ o:["A purely mechanical pump","A purely electrical organ","Both a mechanical AND an electrical system","A storage organ for blood"],a:2,
+ e:"The heart is both a mechanical (pump) and an electrical (conduction) system."},
+{t:"anatomy",q:"The double-walled sac that encloses the heart is the:",
+ o:["Myocardium","Pericardium","Endocardium","Mediastinum"],a:1,
+ e:"The heart is enclosed in a double-walled sac called the pericardium (peri = around, cardi = heart)."},
+{t:"anatomy",q:"Which is a function of the fibrous pericardium?",
+ o:["Generating the heartbeat","Protecting the heart, anchoring it, and preventing overfilling with blood","Carrying oxygenated blood to the body","Producing red blood cells"],a:1,
+ e:"The tough fibrous pericardium protects the heart, anchors it to surrounding structures, and prevents overfilling with blood."},
+{t:"anatomy",q:"What are the three layers of the heart wall, from outer to inner?",
+ o:["Pericardium, mediastinum, septum","Epicardium, myocardium, endocardium","Tunica intima, media, externa","Atria, ventricles, valves"],a:1,
+ e:"The heart wall has three layers: epicardium (visceral pericardium, outer), myocardium (middle), and endocardium (inner)."},
+{t:"anatomy",q:"Which heart-wall layer contains the muscle cells responsible for contraction?",
+ o:["Epicardium","Myocardium","Endocardium","Pericardium"],a:1,
+ e:"The myocardium is the middle wall containing the muscle cells for contraction."},
+{t:"anatomy",q:"Which heart-wall layer contains the electrical conduction system?",
+ o:["Epicardium (outer wall)","Myocardium","Endocardium","Tunica media"],a:0,
+ e:"The outer wall, the epicardium, contains the electrical conduction system. The inner endocardium contains nerves and coronary vessels."},
+{t:"anatomy",q:"On the heart layers diagram, which number is the MYOCARDIUM?",d:"layers",
+ o:["3","4","5","6"],a:2,
+ e:"Layer 5 (the thick muscular layer) is the myocardium. Layer 4 is the epicardium and layer 6 is the endocardium."},
+{t:"anatomy",q:"On the heart layers diagram, which number is the ENDOCARDIUM (innermost layer)?",d:"layers",
+ o:["1","4","5","6"],a:3,
+ e:"Layer 6, the innermost layer lining the chamber, is the endocardium."},
+{t:"anatomy",q:"On the heart layers diagram, which number is the FIBROUS PERICARDIUM (outer sac)?",d:"layers",
+ o:["1","3","5","6"],a:0,
+ e:"Layer 1, the outermost tough sac, is the fibrous pericardium."},
+{t:"anatomy",q:"Cardiac muscle cells are connected end-to-end by structures that allow impulses to pass cell to cell, called:",
+ o:["Chordae tendineae","Intercalated disks","Purkinje fibers","Papillary muscles"],a:1,
+ e:"Cardiac muscle cells are connected end to end by intercalated disks, which let stimulation pass from cell to cell for rhythmic contraction."},
+{t:"anatomy",q:"The muscular wall that separates the right and left sides of the heart is the:",
+ o:["Septum","Mediastinum","Pericardium","Apex"],a:0,
+ e:"The septum is the muscle wall that separates the right and left sides of the heart."},
+{t:"anatomy",q:"Which chambers are the 'receiving' chambers of the heart?",
+ o:["The ventricles","The atria","The valves","The septa"],a:1,
+ e:"The atria are the upper receiving chambers; the ventricles are the lower discharge chambers."},
+{t:"anatomy",q:"Why is the LEFT ventricle much larger/thicker than the right?",
+ o:["It receives blood from the lungs","It must pump blood to the entire body (systemic circuit)","It holds more blood","It contains the SA node"],a:1,
+ e:"The left ventricle is much larger because it must pump blood through the systemic circuit to the entire body."},
+{t:"anatomy",q:"The TRICUSPID valve is located between the:",
+ o:["Left atrium and left ventricle","Right atrium and right ventricle","Right ventricle and pulmonary artery","Left ventricle and aorta"],a:1,
+ e:"The tricuspid valve (three cusps) lies between the right atrium and right ventricle."},
+{t:"anatomy",q:"The MITRAL (bicuspid) valve is located between the:",
+ o:["Right atrium and right ventricle","Left atrium and left ventricle","Left ventricle and aorta","Right ventricle and pulmonary artery"],a:1,
+ e:"The mitral (bicuspid) valve has two cusps and lies between the left atrium and left ventricle."},
+{t:"anatomy",q:"How many cusps does the tricuspid valve have, and how does it compare to the mitral valve?",
+ o:["Two cusps; smaller than the mitral","Three cusps; larger and thinner than the mitral (which has two cusps)","Three cusps; identical to the mitral","Four cusps; thicker than the mitral"],a:1,
+ e:"The tricuspid valve has three cusps and is larger and thinner than the mitral (bicuspid) valve, which has only two cusps."},
+{t:"anatomy",q:"The pulmonic and aortic valves are classified as which type of valve?",
+ o:["Atrioventricular (AV) valves","Semilunar (SL) valves","Bicuspid valves","One-way mitral valves"],a:1,
+ e:"The pulmonic and aortic valves are semilunar (SL) valves with three half-moon-shaped cusps; they prevent backflow from the great vessels into the ventricles."},
+{t:"anatomy",q:"What are the 'heart strings'?",
+ o:["The bundle branches","The chordae tendineae","The coronary arteries","The Purkinje fibers"],a:1,
+ e:"The chordae tendineae are thin, string-like strands of connective tissue attached to the AV valves and papillary muscles — sometimes called the 'heart strings.'"},
+{t:"anatomy",q:"The chordae tendineae attach the AV valves to which structures?",
+ o:["The semilunar valves","The papillary muscles","The coronary arteries","The pericardium"],a:1,
+ e:"Chordae tendineae attach on the underside of the AV valves and to the papillary muscles, anchoring the valves and preventing them from bulging back into the atria."},
+{t:"anatomy",q:"What makes the normal heart sounds?",
+ o:["Blood rushing through the arteries","The closing of the heart valves","The contraction of the atria only","Electrical impulses in the SA node"],a:1,
+ e:"The heart sounds are made by the closing of the valves: the first sound (lubb) is the tricuspid and mitral valves closing; the second (dupp) is the pulmonic and aortic valves closing."},
+{t:"anatomy",q:"The first heart sound ('lubb') occurs when which valves close?",
+ o:["The pulmonic and aortic (semilunar) valves","The tricuspid and mitral (AV) valves","Only the aortic valve","Only the tricuspid valve"],a:1,
+ e:"The first heart sound (lubb) occurs during ventricular contraction when the tricuspid and mitral valves close."},
+{t:"anatomy",q:"A third heart sound in a person OLDER than 40 years of age is considered:",
+ o:["Completely normal","Abnormal and possibly a sign of heart failure","A sign of dehydration","Caused by the semilunar valves opening"],a:1,
+ e:"A third heart sound may be heard during ventricular refilling; in persons older than 40 it is considered abnormal and may signal heart failure."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the TRICUSPID valve?",d:"heart",
+ o:["7","8","9","10"],a:0,
+ e:"Number 7 sits between the right atrium (5) and right ventricle (11) = tricuspid valve. Number 8 (between left atrium and left ventricle) is the mitral valve."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the AORTA?",d:"heart",
+ o:["1","2","3","4"],a:1,
+ e:"Number 2 is the large red arching vessel = aorta. Number 1 is the superior vena cava and number 3 is the pulmonary artery."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the LEFT VENTRICLE?",d:"heart",
+ o:["5","11","12","6"],a:2,
+ e:"Number 12 is the thick-walled lower-left chamber = left ventricle. Number 11 is the right ventricle."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the SUPERIOR VENA CAVA?",d:"heart",
+ o:["1","2","3","14"],a:0,
+ e:"Number 1 is the blue vessel entering the top of the right atrium = superior vena cava. Number 14 is the inferior vena cava."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the INTERVENTRICULAR SEPTUM?",d:"heart",
+ o:["7","13","15","16"],a:1,
+ e:"Number 13 is the dividing wall between the two ventricles = interventricular septum."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the RIGHT ATRIUM?",d:"heart",
+ o:["5","6","11","12"],a:0,
+ e:"Number 5 is the upper-right receiving chamber = right atrium. Number 6 is the left atrium."},
+{t:"anatomy",q:"On the heart diagram, which number indicates the chordae tendineae ('heart strings')?",d:"heart",
+ o:["13","15","16","17"],a:2,
+ e:"Number 16 marks the thin strands running from the AV valve to the papillary muscle (17) = chordae tendineae."},
+
+/* ===================== ELECTROPHYSIOLOGY & CONDUCTION ===================== */
+{t:"electro",q:"Which property describes the ability of pacemaker cells to initiate their own impulse spontaneously, without outside influence?",
+ o:["Excitability","Automaticity","Conductivity","Contractility"],a:1,
+ e:"Automaticity is the ability of pacemaker cells to initiate an impulse spontaneously/automatically without outside influence (seen in the SA node, AV node and Purkinje fibers)."},
+{t:"electro",q:"EXCITABILITY (irritability) of a cardiac cell refers to:",
+ o:["The ability to initiate its own impulse","The ability to respond to an outside stimulus","The ability to pass an impulse to neighboring cells","The ability to shorten and contract"],a:1,
+ e:"Excitability (also called irritability) is the ability of a cell to respond to an external stimulus (chemical, mechanical or electrical)."},
+{t:"electro",q:"CONDUCTIVITY refers to a cardiac cell's ability to:",
+ o:["Initiate an impulse spontaneously","Receive an electrical impulse and conduct it to an adjoining cardiac cell","Respond to an outside stimulus","Increase blood pressure"],a:1,
+ e:"Conductivity is the ability of a cell to receive an electrical impulse and conduct it to an adjoining cell; the intercalated disks are responsible for this."},
+{t:"electro",q:"CONTRACTILITY refers to the ability of myocardial cells to:",
+ o:["Generate their own impulse","Shorten and cause the muscle to contract","Conduct impulses to other cells","Resist outside stimulation"],a:1,
+ e:"Contractility is the ability of the myocardial cells to respond to an impulse by shortening (or prolonging the response) — causing the muscle to contract."},
+{t:"electro",q:"What is the PRIMARY (inherent) pacemaker of the heart and its normal rate?",
+ o:["The AV node, 40–60 bpm","The SA node, 60–100 bpm","The Purkinje fibers, 20–40 bpm","The Bundle of His, 100–180 bpm"],a:1,
+ e:"The SA node is the primary/inherent pacemaker, normally firing at 60–100 beats per minute."},
+{t:"electro",q:"What is the inherent rate of the AV node (the 'backup' pacemaker)?",
+ o:["60–100 bpm","40–60 bpm","20–40 bpm","100–180 bpm"],a:1,
+ e:"The AV node is lower in the conduction system and serves as a backup, with a slower inherent rate of 40–60 bpm."},
+{t:"electro",q:"What is the inherent rate of the Purkinje fibers (the heart's 'last resort')?",
+ o:["60–100 bpm","40–60 bpm","20–40 bpm","Greater than 100 bpm"],a:2,
+ e:"The Purkinje fibers are the end point of the conduction system and the last line of defense, with the slowest rate of 20–40 bpm."},
+{t:"electro",q:"As the impulse from the SA node reaches the AV node, what happens?",
+ o:["It speeds up to reach the ventricles faster","It is slowed down to let the ventricles fill with blood","It stops completely","It reverses direction"],a:1,
+ e:"At the AV node the impulse is slowed to allow the ventricles to fill with blood and the atria to prepare for repolarization."},
+{t:"electro",q:"Place the conduction pathway in the correct order after the SA node.",
+ o:["AV node → Bundle of His → bundle branches → Purkinje fibers","Bundle of His → AV node → Purkinje fibers → bundle branches","Purkinje fibers → AV node → Bundle of His → bundle branches","Bundle branches → Purkinje fibers → AV node → Bundle of His"],a:0,
+ e:"After the SA node and atria, the impulse goes to the AV node, then the Bundle of His, down the right and left bundle branches, and finally to the Purkinje fibers."},
+{t:"electro",q:"A heart rate below 60 bpm is called:",
+ o:["Tachycardia","Bradycardia","Asystole","Fibrillation"],a:1,
+ e:"A heart rate below 60 bpm is bradycardia. Above 100 bpm is tachycardia."},
+{t:"electro",q:"A heart rate greater than 100 bpm is called:",
+ o:["Bradycardia","Tachycardia","Sinus arrhythmia","Idioventricular rhythm"],a:1,
+ e:"A rate greater than 100 bpm is tachycardia."},
+{t:"electro",q:"The SYMPATHETIC nervous system (fight-or-flight) has what effect on the heart?",
+ o:["Slows heart rate and vasoconstricts","Speeds up heart rate, increases respirations, and vasodilates","Has no effect on the heart","Stops the SA node"],a:1,
+ e:"The sympathetic system secretes epinephrine/norepinephrine, so heart rate speeds up, respirations increase, and blood vessels vasodilate."},
+{t:"electro",q:"Stimulation of the vagal nerve (parasympathetic) causes:",
+ o:["An increase in heart rate","A decrease in heart rate","Vasodilation of all vessels","Increased automaticity"],a:1,
+ e:"The vagal nerve is part of the parasympathetic system; when stimulated it causes a decrease in heart rate."},
+{t:"electro",q:"The 'Sodium Pump' is responsible for which electrical event?",
+ o:["The cardiac cycle","An action potential","The QT interval","The standardization wave"],a:1,
+ e:"The 'Sodium Pump' is responsible for an action potential — a short-lasting event in which the cell's membrane potential rapidly rises and falls."},
+{t:"electro",q:"Which ion is normally found OUTSIDE (extracellular) the cell and rushes in during depolarization?",
+ o:["Potassium (K+)","Sodium (Na+)","Magnesium (Mg2+)","Phosphate"],a:1,
+ e:"Sodium (Na+) is normally extracellular; when cells are stimulated, Na+ rushes into the cell, making the inside more positive (depolarization)."},
+{t:"electro",q:"POLARIZATION ('ready' state) of a cardiac cell describes:",
+ o:["The inside of the cell becoming more positive","Electrical charges existing on either side of the membrane, with the inside more negative — the resting/ready state","Total loss of all electrical activity","The shortening of the muscle"],a:1,
+ e:"Polarization is the 'ready' resting state — charges exist on either side of the membrane and the inside is more negative than the outside."},
+{t:"electro",q:"DEPOLARIZATION ('discharge') is the movement of charged particles that causes:",
+ o:["The inside of the cell to become more positive (forming a spike on the EKG)","The inside to return to its negative resting charge","The cell to stop responding to stimuli","Vasodilation"],a:0,
+ e:"Depolarization is the discharge state — Na+ rushes in, the inside becomes more positive, forming a spike waveform on the EKG."},
+{t:"electro",q:"REPOLARIZATION ('recovery') is the process in which:",
+ o:["Sodium rushes into the cell","The inside of the cell is restored to its negative resting charge as K+ leaves","The cell contracts","The cell becomes more excitable than normal"],a:1,
+ e:"Repolarization is the recovery state — Na+ flow stops, K+ leaves, and the inside returns to its negative resting charge."},
+{t:"electro",q:"Which structures have very FEW sodium channels, so slowing/blocking sodium affects them strongly?",
+ o:["The atria and ventricles","The Purkinje fibers","The SA and AV nodes","The papillary muscles"],a:2,
+ e:"The SA and AV nodes have very few sodium channels; if sodium flow is slowed or blocked, the result can be a slower heart rate and less excitable cells."},
+{t:"electro",q:"On the conduction-system diagram, which number is the SA NODE?",d:"conduction",
+ o:["1","3","4","7"],a:0,
+ e:"Number 1, located high in the right atrium, is the SA node — the primary pacemaker."},
+{t:"electro",q:"On the conduction-system diagram, which number is the AV NODE?",d:"conduction",
+ o:["1","2","3","7"],a:2,
+ e:"Number 3, near the center where the atria meet the ventricles, is the AV node."},
+{t:"electro",q:"On the conduction-system diagram, which number indicates the PURKINJE FIBERS?",d:"conduction",
+ o:["4","5","6","7"],a:3,
+ e:"Number 7 marks the fibers spreading through the ventricular walls = Purkinje fibers."},
+{t:"electro",q:"On the conduction-system diagram, which number is the BUNDLE OF HIS (AV bundle)?",d:"conduction",
+ o:["2","3","4","5"],a:2,
+ e:"Number 4, the short segment just below the AV node before the branches split, is the Bundle of His.",
+ f:"The instructor's booklet diagram shows 8 labeled areas; this schematic labels the 7 conduction structures named in the study guide (SA node, internodal pathways, AV node, Bundle of His, right and left bundle branches, Purkinje fibers). The instructor may also count an item such as the interatrial pathway or a bundle-branch fascicle as the 8th."},
+
+/* ===================== LEADS & CARDIAC AXIS ===================== */
+{t:"leads",q:"What is the purpose of ECG leads?",
+ o:["To pump blood through the heart","To give the technician different views of the heart's electrical activity","To measure oxygen saturation","To deliver a defibrillation shock"],a:1,
+ e:"Leads give the technician views of the heart's electrical activity; cables transmit the electrical impulses created by the action potentials."},
+{t:"leads",q:"Electricity in the heart normally flows from:",
+ o:["Positive to negative","Negative to positive","High to low pressure","Apex to base"],a:1,
+ e:"Electric flow goes from NEGATIVE to POSITIVE. Flow toward the positive electrode makes an upright deflection; toward the negative electrode makes an inverted one."},
+{t:"leads",q:"On the ECG, electricity flowing TOWARD the positive electrode produces:",
+ o:["An inverted (downward) pattern","An upright pattern","A flat isoelectric line","No deflection at all"],a:1,
+ e:"Flow toward the positive electrode produces an upright pattern; flow toward the negative electrode produces an inverted pattern."},
+{t:"leads",q:"A flat line on the ECG indicating no electrical flow is called the:",
+ o:["Spike","Isoelectric line (baseline)","QRS complex","Standardization wave"],a:1,
+ e:"No electrical flow produces a flat line called the isoelectric line, or baseline."},
+{t:"leads",q:"Who labeled the ECG waves PQRST and is credited with the triangle of leads?",
+ o:["Paul Zoll","Einthoven","Dr. Claude Beck","Dr. Frank Pantridge"],a:1,
+ e:"Einthoven showed each wave represents specific electrical activity and labeled them PQRST; Einthoven's triangle is based on the views of the heart."},
+{t:"leads",q:"The STANDARD limb leads (I, II, III) are what type of lead?",
+ o:["Unipolar","Bipolar","Augmented","Precordial"],a:1,
+ e:"Standard leads are BIPOLAR — they view the heart from a negative to a positive lead."},
+{t:"leads",q:"For the standard limb leads, which limb/electrode is color-coded WHITE?",
+ o:["Left arm","Right arm","Left leg","Right leg"],a:1,
+ e:"Right Arm is WHITE, Left Arm is BLACK, Left Leg is RED ('white on right, smoke over fire')."},
+{t:"leads",q:"In Lead I, the electrodes are oriented:",
+ o:["Right arm (−) to left arm (+), with the left leg as ground","Right arm (−) to left leg (+), with the left arm as ground","Left arm (−) to left leg (+), with the right arm as ground","Left leg (−) to right arm (+)"],a:0,
+ e:"Lead I is Right Arm (−) to Left Arm (+); the Left Leg acts as a ground."},
+{t:"leads",q:"Which lead is MOST commonly used for CONTINUOUS monitoring?",
+ o:["Lead I","Lead II","Lead III","Lead aVR"],a:1,
+ e:"Lead II (Right Arm − to Left Leg +) is most commonly used for continuous monitoring."},
+{t:"leads",q:"In Lead III, the electrodes are oriented:",
+ o:["Right arm (−) to left arm (+)","Right arm (−) to left leg (+)","Left arm (−) to left leg (+), with the right arm as ground","Left leg (−) to left arm (+)"],a:2,
+ e:"Lead III is Left Arm (−) to Left Leg (+); the Right Arm acts as ground."},
+{t:"leads",q:"The AUGMENTED leads (aVR, aVL, aVF) are what type of lead?",
+ o:["Bipolar","Unipolar","Precordial","Ground"],a:1,
+ e:"Augmented leads are UNIPOLAR — they view the positive electrode from a central terminal created by the other two leads."},
+{t:"leads",q:"What does the 'aV' in aVR, aVL, aVF stand for?",
+ o:["Anterior view","Augmented voltage","Atrial vector","Average value"],a:1,
+ e:"'aV' stands for augmented voltage; the third letter gives the direction of the view (R = right arm, L = left arm, F = left foot)."},
+{t:"leads",q:"The standard limb leads and augmented leads both provide a view of the heart along which plane?",
+ o:["Transverse plane","Frontal plane","Sagittal plane","Horizontal plane"],a:1,
+ e:"The standard and augmented leads use Einthoven's triangle and view the FRONTAL plane of the heart."},
+{t:"leads",q:"The main difference between the STANDARD leads and the AUGMENTED leads is that:",
+ o:["Standard leads are bipolar; augmented leads are unipolar","Standard leads are unipolar; augmented leads are bipolar","Standard leads view the transverse plane; augmented view the sagittal plane","There is no difference"],a:0,
+ e:"Standard leads are bipolar (negative to positive); augmented leads are unipolar (viewing the positive from a central terminal)."},
+{t:"leads",q:"How many electrodes are used to obtain the precordial (chest) leads V1–V6, and which plane do they view?",
+ o:["Three electrodes; the frontal plane","Six electrodes; the transverse plane","Ten electrodes; the sagittal plane","Four electrodes; the frontal plane"],a:1,
+ e:"There are six precordial (chest) leads (V1–V6), which are unipolar and provide six views across the transverse plane."},
+{t:"leads",q:"The precordial (chest) leads are what type of lead?",
+ o:["Bipolar","Unipolar","Augmented limb","Ground"],a:1,
+ e:"Precordial leads are unipolar leads placed in specific chest locations, viewing the transverse plane."},
+{t:"leads",q:"What is the cardiac axis?",
+ o:["The speed of the ECG paper","The major direction of the overall electrical activity of the heart","The distance between two R waves","The point where the QRS meets the ST segment"],a:1,
+ e:"The cardiac axis is the major direction of the heart's overall electrical activity; ventricular activity is most important."},
+{t:"leads",q:"Which leads are used to determine a patient's cardiac axis?",
+ o:["Leads V1 and V6","Leads I and aVF","Leads II and III","Leads aVR and aVL"],a:1,
+ e:"Limb leads I and aVF are used to determine the cardiac axis. (Three leads — I, II and aVF — are referenced for axis determination.)"},
+{t:"leads",q:"A normal cardiac axis falls between which degrees on the hexaxial reference system?",
+ o:["−30 and +30 degrees","0 and 90 degrees","90 and 180 degrees","−90 and 0 degrees"],a:1,
+ e:"Most healthy individuals have a normal axis between 0 and 90 degrees on the hexaxial reference system."},
+{t:"leads",q:"How does the cardiac axis affect the ECG?",
+ o:["It changes the speed of the paper","It changes the appearance of the waves","It eliminates the P wave","It has no effect on waveforms"],a:1,
+ e:"The axis of the patient's overall electrical activity will change the appearance of the waves."},
+{t:"leads",q:"On the Einthoven's triangle diagram, which side represents Lead I (RA to LA)?",d:"leads",
+ o:["1","2","3","none"],a:0,
+ e:"Side 1, the top of the triangle connecting RA and LA, is Lead I (RA − to LA +)."},
+{t:"leads",q:"Limb leads should ideally be placed where on the extremities?",
+ o:["As proximal (close to the trunk) as possible","As distal (far out on the limb) as possible","Directly over the heart","On the chest only"],a:1,
+ e:"Limb leads should be placed as distal on the limbs as possible; circumstances may force a more proximal placement, which should be reported."},
+
+/* ===================== ECG WAVES & MEASUREMENTS ===================== */
+{t:"waves",q:"What does the P WAVE represent?",
+ o:["Ventricular depolarization","The stimulation (depolarization) of the right and left atria","Ventricular repolarization","The resting baseline"],a:1,
+ e:"The P wave reflects the stimulation/depolarization of the right and left atria. The SA-node impulse itself is not recorded."},
+{t:"waves",q:"The QRS complex represents:",
+ o:["Atrial depolarization","Ventricular depolarization (and triggers ventricular contraction)","Ventricular repolarization","Atrial repolarization only"],a:1,
+ e:"The QRS complex represents the impulse from the AV node to the Purkinje fibers — ventricular depolarization — which triggers ventricular contraction."},
+{t:"waves",q:"Why is the QRS complex much larger than the P wave?",
+ o:["The paper speeds up during the QRS","The ventricles have much greater muscle mass than the atria","The atria are not depolarizing","The QRS is measured in different units"],a:1,
+ e:"The QRS is larger because ventricular depolarization involves a much greater muscle mass than atrial depolarization."},
+{t:"waves",q:"The QRS complex is ALWAYS called the QRS complex, even if:",
+ o:["The patient is in bradycardia","Some of the Q, R, or S waves are not visible","The P wave is inverted","The rhythm is irregular"],a:1,
+ e:"It is always called the QRS complex even if some of the waves are not visible."},
+{t:"waves",q:"The T WAVE represents:",
+ o:["Atrial depolarization","Ventricular depolarization","Ventricular repolarization (recovery and recharging of the cells)","The PR interval"],a:2,
+ e:"The T wave represents ventricular repolarization — the recovery of the heart and recharging of the cells."},
+{t:"waves",q:"The PR INTERVAL represents the time for the impulse to travel:",
+ o:["Through the ventricles only","From the SA node to the AV node (atrial contraction to the start of ventricular contraction)","From the Purkinje fibers back to the SA node","Across the T wave"],a:1,
+ e:"The PR interval represents the time for the impulse to go from the SA node to the AV node — from atrial contraction to the beginning of ventricular contraction."},
+{t:"waves",q:"A PROLONGED PR interval indicates:",
+ o:["The impulse was delayed passing through the atria or AV node","An abnormal pathway bypassing the AV node","Complete loss of atrial activity","Ventricular fibrillation"],a:0,
+ e:"A prolonged PR interval indicates the impulse was delayed at the atria or AV node. A shortened PR interval may indicate a pathway bypassing the AV node."},
+{t:"waves",q:"The QT INTERVAL represents:",
+ o:["Atrial depolarization only","Total ventricular activity, from ventricular depolarization to repolarization","The PR segment","The isoelectric baseline"],a:1,
+ e:"The QT interval represents total ventricular activity — from the time the ventricles depolarize to the time they repolarize."},
+{t:"waves",q:"A DEPRESSED ST segment suggests, while an ELEVATED ST segment suggests:",
+ o:["Ischemia; myocardial injury","Myocardial injury; ischemia","Atrial enlargement; bundle branch block","Normal finding; normal finding"],a:0,
+ e:"A depressed ST segment suggests ischemia; an elevated ST segment suggests myocardial injury."},
+{t:"waves",q:"The J POINT is defined as the point where the:",
+ o:["P wave meets the QRS","QRS and the ST segment meet","T wave ends","R-R interval is measured"],a:1,
+ e:"The J point is where the QRS and the ST segment meet."},
+{t:"waves",q:"The U WAVE is most often associated with:",
+ o:["High potassium","Very LOW potassium","Atrial fibrillation","Bundle branch block"],a:1,
+ e:"The U wave is a late waveform following the T wave, usually a result of very low potassium. It is smaller than the T wave and not always visible."},
+{t:"waves",q:"Atrial repolarization occurs during which part of the ECG?",
+ o:["The T wave","The PR segment (it is hidden by ventricular depolarization)","The U wave","The QT interval"],a:1,
+ e:"The PR segment represents activation of the AV node, Bundle of His, bundle branches and Purkinje fibers; atrial repolarization occurs during this time and is hidden by the QRS."},
+{t:"waves",q:"On the ECG waveform diagram, which number is the P WAVE?",d:"ecgwave",
+ o:["1","2","3","4"],a:0,
+ e:"Number 1 is the first small upward bump before the QRS = P wave (atrial depolarization)."},
+{t:"waves",q:"On the ECG waveform diagram, which number is the QRS COMPLEX?",d:"ecgwave",
+ o:["1","2","3","4"],a:1,
+ e:"Number 2 is the tall sharp spike = QRS complex (ventricular depolarization)."},
+{t:"waves",q:"On the ECG waveform diagram, which number is the T WAVE?",d:"ecgwave",
+ o:["1","2","3","4"],a:2,
+ e:"Number 3 is the rounded wave after the QRS = T wave (ventricular repolarization)."},
+{t:"waves",q:"On the ECG waveform diagram, which number marks the PR INTERVAL?",d:"ecgwave",
+ o:["5","6","7","8"],a:1,
+ e:"Bracket 6 spans from the start of the P wave to the start of the QRS = PR interval."},
+{t:"waves",q:"On the ECG waveform diagram, which number marks the QT INTERVAL?",d:"ecgwave",
+ o:["5","6","7","8"],a:3,
+ e:"Bracket 8 spans from the start of the QRS to the end of the T wave = QT interval."},
+{t:"waves",q:"During the QRS complex (number 2 on the diagram), what is happening in the heart?",d:"ecgwave",
+ o:["The atria are depolarizing","The ventricles are depolarizing and about to contract","The ventricles are repolarizing","The heart is at rest"],a:1,
+ e:"The QRS represents ventricular depolarization; after it begins, the ventricles contract."},
+{t:"waves",q:"What is the EXPECTED measurement range for a normal PR interval?",
+ o:["0.04 – 0.10 second","0.12 – 0.20 second","0.20 – 0.40 second","Less than 0.04 second"],a:1,
+ e:"In a sinus-generated rhythm the PR interval measures 0.12–0.20 second (3 to 5 small blocks) and is constant."},
+{t:"waves",q:"What is the EXPECTED (normal) measurement for the QRS complex?",
+ o:["Generally less than 0.12 second","0.12 – 0.20 second","0.20 – 0.40 second","Greater than 0.40 second"],a:0,
+ e:"A normal QRS measurement is generally less than 0.12 second."},
+{t:"waves",q:"The cardiac cycle (one complete heartbeat) is approximately how long?",
+ o:["0.4 second","0.8 second","1.2 seconds","2.0 seconds"],a:1,
+ e:"The cardiac cycle is one complete heartbeat, approximately 0.8 second, or about 72 beats per minute."},
+{t:"waves",q:"What is the standard speed at which the ECG paper runs through the machine?",
+ o:["10 millimeters per second","25 millimeters per second","50 millimeters per second","100 millimeters per second"],a:1,
+ e:"The standard rate the ECG runs is 25 millimeters per second."},
+{t:"waves",q:"On the ECG graph paper, what do the HORIZONTAL lines (amplitude up/down) represent?",
+ o:["Time, measured in seconds","Voltage, measured in millivolts","Heart rate in bpm","Oxygen saturation"],a:1,
+ e:"Voltage is the upward/downward deflection, interpreted using the horizontal lines, measured in millivolts. Time is read using the vertical lines."},
+{t:"waves",q:"On the ECG graph paper, what do the VERTICAL lines (across the paper) represent?",
+ o:["Voltage in millivolts","Time in seconds","Distance in millimeters only","Cardiac axis in degrees"],a:1,
+ e:"Time is interpreted using the vertical lines and tells how long electrical activity took to travel from one area to another; it is measured in seconds."},
+{t:"waves",q:"Each SMALL box ACROSS the ECG graph paper represents how much time?",
+ o:["0.04 second","0.20 second","0.10 second","1 second"],a:0,
+ e:"Each small box across the paper = 0.04 second; five small boxes (one large box) = 0.20 second.",
+ f:"The study guide states each large box across = 0.20 second and that there are five small boxes per large box, so each small box across = 0.04 second (this value follows directly from the guide's statements)."},
+{t:"waves",q:"Each LARGE box ACROSS the ECG graph paper represents how much time?",
+ o:["0.04 second","0.12 second","0.20 second","0.40 second"],a:2,
+ e:"The distance between two heavy lines is five small boxes = one large box = 0.20 second across."},
+{t:"waves",q:"On the graph-paper diagram, which item is ONE LARGE box (5 small boxes)?",d:"graphpaper",
+ o:["1","2","3","none"],a:1,
+ e:"Item 2 is the large box bounded by the heavy lines (five small boxes per side) = 0.20 second across / 0.5 mV up-down."},
+{t:"waves",q:"The standardization wave can be measured as what height and width?",
+ o:["1 mV high (10 small squares) and 0.20 second wide (5 small squares)","0.5 mV high and 0.04 second wide","2 mV high and 1 second wide","0.1 mV high and 0.12 second wide"],a:0,
+ e:"The standardization wave is 1 millivolt high (10 small squares) and 0.20 second across (5 small squares)."},
+{t:"waves",q:"On most ECG paper, the small 'tic' marks across the top usually appear every:",
+ o:["1 second","3 seconds (15 large squares apart)","6 seconds","10 seconds"],a:1,
+ e:"Most paper produces a tic mark every 3 seconds, which is 15 large squares apart (some paper marks every second = 5 large squares)."},
+{t:"waves",q:"For a REGULAR rhythm, the MOST accurate way to calculate rate is to:",
+ o:["Count R waves in a 6-second strip and multiply by 10","Count the small squares between two R waves and divide by 1,500","Count large blocks between two R waves and divide by 300","Estimate by the width of the QRS"],a:1,
+ e:"For regular rhythms, the most accurate method is to count small squares between two R waves and divide by 1,500 (time-consuming, regular rhythms only)."},
+{t:"waves",q:"The FASTEST way to estimate heart rate is to:",
+ o:["Divide 1,500 by the small squares between R waves","Count large blocks between R waves and divide by 300","Count the number of R waves in a 6-second strip and multiply by 10","Measure the QT interval"],a:2,
+ e:"The fastest method is to count R waves in a 6-second printout and multiply by 10 — least accurate, gives only an estimate."},
+{t:"waves",q:"A quick method for regular rhythms is to count the number of LARGE blocks between two R waves and divide by:",
+ o:["10","300","1,500","60"],a:1,
+ e:"Counting large blocks between two R waves and dividing by 300 is a faster method, used only with regular rhythms."},
+{t:"waves",q:"What is the recommended ORDER of the systematic approach to interpreting a rhythm?",
+ o:["Rate → Regularity → QRS → P wave → PR → QT","Regularity → Rate → P wave → PR interval → QRS → QT interval","P wave → QRS → Rate → Regularity → PR → QT","QT → QRS → PR → P wave → Rate → Regularity"],a:1,
+ e:"The systematic approach is: 1) Regularity, 2) Rate, 3) P-wave analysis, 4) PR-interval analysis, 5) QRS analysis, 6) QT-interval measurement."},
+{t:"waves",q:"In step 1 (regularity), the rhythm is checked by measuring and comparing the:",
+ o:["P-P interval only","R-to-R interval across the strip","QT interval","Height of the T waves"],a:1,
+ e:"Regularity is determined by measuring the R-to-R interval and comparing it across the entire strip."},
+{t:"waves",q:"In Lead II, a normal SINUS P wave will always:",
+ o:["Be inverted","Deflect upright and precede every QRS","Follow the QRS complex","Be absent"],a:1,
+ e:"In Lead II the sinus P wave always deflects upright, is regular, precedes the QRS, and there is only one P wave per cardiac cycle."},
+{t:"waves",q:"An instrument used to measure the distance between two points on an ECG strip is called a:",
+ o:["Sphygmomanometer","Caliper","Capnograph","Defibrillator"],a:1,
+ e:"Calipers measure the distance between two points; one leg is fixed on the start point and the other is moved to the end point."},
+{t:"waves",q:"Common causes of artifact on the ECG include all of the following EXCEPT:",
+ o:["Muscle tremors or shivering","Patient movement or loose electrodes","Nearby electrical equipment","A normal, well-adhered electrode on dry skin"],a:3,
+ e:"Artifact is caused by muscle tremors, shivers, movement, loose electrodes, or nearby electrical equipment — not by a properly applied electrode."},
+{t:"waves",q:"An ECG measurement that falls between two lines (e.g., between 0.12 and 0.16 second) should be:",
+ o:["Rounded up to the nearest line","Recorded as an odd value such as 0.14 second by the technician","Ignored","Recorded only by the machine"],a:1,
+ e:"The technician adjusts the measurement accordingly — e.g., between 0.12 and 0.16 second would be 0.14 second. (Note: the guide also stresses that truly odd/precise readings come from the machine.)"},
+
+/* ===================== ECG RHYTHMS ===================== */
+{t:"rhythms",q:"Sinus rhythms are generated in which structure?",
+ o:["The AV node","The sinoatrial (SA) node","The Purkinje fibers","The ventricles"],a:1,
+ e:"Sinus rhythms originate in the sinoatrial (SA) node, the inherent primary pacemaker (60–100 bpm)."},
+{t:"rhythms",q:"What is the rate range for a normal SINUS RHYTHM?",
+ o:["Less than 60 bpm","60–100 bpm","100–160 bpm","150–250 bpm"],a:1,
+ e:"Normal sinus rhythm has a rate of 60–100 bpm, regular rhythm, upright uniform P waves (one per QRS), PR 0.12–0.20 s, and QRS ≤0.12 s."},
+{t:"rhythms",q:"SINUS BRADYCARDIA is defined by a rate of:",
+ o:["Less than 60 bpm","60–100 bpm","100–160 bpm","Greater than 160 bpm"],a:0,
+ e:"Sinus bradycardia has a rate less than 60 bpm with otherwise normal sinus features (regular, upright P waves, normal PR and QRS)."},
+{t:"rhythms",q:"SINUS TACHYCARDIA typically has a rate of:",
+ o:["Less than 60 bpm","60–100 bpm","100–160 bpm","250–350 bpm"],a:2,
+ e:"Sinus tachycardia is 100–160 bpm, regular, with normal upright P waves before each QRS, PR 0.12–0.20 s, QRS ≤0.12 s."},
+{t:"rhythms",q:"In SINUS ARRHYTHMIA, the irregularity in the R-R intervals is usually related to:",
+ o:["Atrial fibrillation","The patient's breathing pattern (shortening with inspiration, lengthening with expiration)","A complete heart block","A premature ventricular contraction"],a:1,
+ e:"In sinus arrhythmia the rate increases on inspiration and decreases on expiration (vagal stimulation), giving the rhythm a regular irregularity."},
+{t:"rhythms",q:"Rhythms originating in the atria are reflected in the ECG by an abnormal:",
+ o:["QRS complex","P wave morphology (flattened, notched, peaked, sawtooth, or diphasic)","T wave only","ST segment"],a:1,
+ e:"In atrial rhythms the P-wave morphology differs from a sinus P wave — it may appear flattened, notched, peaked, sawtooth, or diphasic."},
+{t:"rhythms",q:"'Diphasic' P wave means the wave:",
+ o:["Is completely absent","Goes first above the isoelectric line, then dips below it","Is taller than the QRS","Is always inverted"],a:1,
+ e:"Diphasic means the P wave goes first above the isoelectric line and then dips below it."},
+{t:"rhythms",q:"In a WANDERING PACEMAKER, why does the P-wave morphology change?",
+ o:["The ventricles are fibrillating","The pacemaker site changes from beat to beat","The AV node is completely blocked","There is no electrical activity"],a:1,
+ e:"In a wandering pacemaker the pacemaker site changes, so the P-wave morphology and PR intervals vary slightly; rhythm can be slightly irregular."},
+{t:"rhythms",q:"In ATRIAL FIBRILLATION, the P waves are:",
+ o:["Tall and peaked","Replaced by chaotic fibrillatory waves (no true P wave produced)","Sawtooth-shaped and regular","Inverted before each QRS"],a:1,
+ e:"In A-fib the atria fibrillate ineffectively, so no P wave is produced — only chaotic fibrillatory undulations of the baseline."},
+{t:"rhythms",q:"In atrial fibrillation, the VENTRICULAR rhythm is described as:",
+ o:["Perfectly regular","Grossly irregular with no pattern","Regular with a sawtooth pattern","Absent"],a:1,
+ e:"The ventricular rhythm in A-fib is grossly irregular, having no pattern to its irregularity. The atrial rate exceeds 350 bpm and is unmeasurable."},
+{t:"rhythms",q:"Atrial fibrillation with a ventricular rate OVER 100 bpm is called:",
+ o:["Controlled","Uncontrolled (rapid ventricular response)","Sinus arrhythmia","Junctional escape"],a:1,
+ e:"If the ventricular rate is over 100 bpm it has a 'rapid ventricular response' and is 'uncontrolled'; 100 or less is 'controlled.'"},
+{t:"rhythms",q:"The hallmark 'sawtooth' (flutter) waves are seen in which rhythm?",
+ o:["Atrial fibrillation","Atrial flutter","Sinus bradycardia","Ventricular fibrillation"],a:1,
+ e:"In atrial flutter the atria produce a series of well-defined 'flutter' waves with a sawtooth appearance; atrial rate is 250–350 bpm."},
+{t:"rhythms",q:"Why is the PR interval NOT measured in atrial flutter?",
+ o:["The patient has no atria","The proximity of the flutter waves to the QRS makes a PRI impossible to determine","The QRS is always wide","There is no AV node"],a:1,
+ e:"The proximity of the flutter wave to the QRS often makes it impossible to determine a PR interval, so the PRI is not measured in atrial flutter."},
+{t:"rhythms",q:"ATRIAL TACHYCARDIA usually has a heart rate of:",
+ o:["60–100 bpm","100–150 bpm","150–250 bpm","250–350 bpm"],a:2,
+ e:"In atrial tachycardia the atrial and ventricular rates are equal, usually 150–250 bpm; P waves may be flattened, notched, or hidden in the preceding T wave."},
+{t:"rhythms",q:"A Premature Atrial Contraction (PAC) is caused by:",
+ o:["A complete block at the AV node","An irritable focus within the atria taking over for a single beat","Loss of all atrial activity","A ventricular escape beat"],a:1,
+ e:"A PAC occurs when an irritable focus in the atria takes over the pacemaking for a single beat, interrupting the underlying rhythm."},
+{t:"rhythms",q:"Two ectopic beats occurring together are called a:",
+ o:["Run","Couplet","Bigeminy","Trigeminy"],a:1,
+ e:"Ectopic beats can occur in pairs (couplets), runs (three or more), or in patterns. A pair is a couplet."},
+{t:"rhythms",q:"Junctional rhythms occur in the pacemaking cells of the:",
+ o:["SA node","AV junction","Ventricles","Purkinje fibers"],a:1,
+ e:"Junctional rhythms occur in the pacemaking cells of the AV junction, from failure of the inherent pacemaker or from irritability."},
+{t:"rhythms",q:"In junctional rhythms, if a P wave is visible it usually appears:",
+ o:["Tall and peaked","Inverted (and may come before, during, or after the QRS)","Sawtooth-shaped","Wider than the QRS"],a:1,
+ e:"Because of retrograde conduction toward the atria, the junctional P wave appears inverted and can occur before, during, or after the QRS."},
+{t:"rhythms",q:"In a junctional rhythm, if the P wave occurs BEFORE the QRS, the PR interval will be:",
+ o:["Greater than 0.20 second","Less than 0.12 second","Exactly 0.16 second","Unmeasurable"],a:1,
+ e:"If the P wave precedes the QRS in a junctional rhythm, the PR interval measures less than 0.12 second."},
+{t:"rhythms",q:"What is the rate of a JUNCTIONAL ESCAPE rhythm?",
+ o:["20–40 bpm","40–60 bpm","60–100 bpm","100–180 bpm"],a:1,
+ e:"A junctional escape rhythm is 40–60 bpm (the inherent AV junctional rate), regular, with the inverted/absent P wave pattern."},
+{t:"rhythms",q:"An ACCELERATED JUNCTIONAL rhythm has a rate of:",
+ o:["20–40 bpm","40–60 bpm","60–100 bpm","100–180 bpm"],a:2,
+ e:"Accelerated junctional rhythm is 60–100 bpm; junctional tachycardia is 100–180 bpm."},
+{t:"rhythms",q:"JUNCTIONAL TACHYCARDIA has a rate of:",
+ o:["40–60 bpm","60–100 bpm","100–180 bpm","250–350 bpm"],a:2,
+ e:"Junctional tachycardia is 100–180 bpm, with atrial and ventricular rates equal and a regular R-R."},
+{t:"rhythms",q:"Supraventricular tachycardia (SVT) is best described as:",
+ o:["A single specific arrhythmia","A term for several regular tachyarrhythmias that share unidentifiable P waves and a common rate range","A ventricular rhythm","A type of heart block"],a:1,
+ e:"SVT is NOT one specific arrhythmia but a term for several regular tachyarrhythmias with indiscernible P waves in a common rate range (e.g., sinus tach, atrial flutter, atrial tach, junctional tach)."},
+{t:"rhythms",q:"Heart blocks are categorized based on:",
+ o:["The patient's age","The severity of the obstruction at the AV node","The width of the P wave","The color of the lead"],a:1,
+ e:"Heart blocks are categorized by the severity of the obstruction at the AV node: first-degree, second-degree Type I, second-degree Type II, and third-degree (complete)."},
+{t:"rhythms",q:"A FIRST-DEGREE heart block is identified by:",
+ o:["A PR interval consistently greater than 0.20 second","Dropped QRS complexes in a pattern","Complete dissociation of P waves and QRS","A chaotic baseline"],a:0,
+ e:"In a first-degree block the impulse is simply delayed at the AV junction; the PR interval is constant but always greater than 0.20 second."},
+{t:"rhythms",q:"In SECOND-DEGREE TYPE I (Wenckebach) heart block, the PR interval:",
+ o:["Stays constant then a QRS drops","Progressively gets LONGER until a P wave is not followed by a QRS, then the cycle repeats","Is always less than 0.12 second","Cannot be measured at all"],a:1,
+ e:"In Wenckebach (Type I), the PR interval progressively lengthens until one P wave is not followed by a QRS; then the cycle starts again (grouped beating)."},
+{t:"rhythms",q:"In SECOND-DEGREE TYPE II heart block, the PR interval of the conducted beats is:",
+ o:["Progressively longer","Constant (normal or prolonged), with more P waves than QRS complexes","Always absent","Always less than 0.12 second"],a:1,
+ e:"In Type II the AV junction selectively blocks or conducts impulses; the PRI of conducted beats stays constant, producing more P waves than QRS complexes."},
+{t:"rhythms",q:"The defining feature of THIRD-DEGREE (complete) heart block is:",
+ o:["A progressively lengthening PR interval","Complete dissociation between the P waves and the QRS complexes (no relationship)","A sawtooth baseline","A rate over 150 bpm"],a:1,
+ e:"In complete heart block none of the atrial impulses get through; there is complete dissociation between P waves and QRS complexes (no PRI)."},
+{t:"rhythms",q:"In third-degree heart block, if the escape focus controlling the ventricles is JUNCTIONAL, the ventricular rate is about:",
+ o:["20–40 bpm","40–60 bpm","60–100 bpm","100–150 bpm"],a:1,
+ e:"If a junctional focus controls the ventricles, the rate is 40–60 bpm (QRS <0.12 s). If the focus is ventricular, it is 20–40 bpm with a wide QRS."},
+{t:"rhythms",q:"Ventricular rhythms always have a QRS complex that is:",
+ o:["Narrow, less than 0.12 second","Wide, greater than 0.12 second","Completely absent","Identical to the P wave"],a:1,
+ e:"Ventricular rhythms have wide QRS complexes greater than 0.12 second because conduction is essentially reversed from normal."},
+{t:"rhythms",q:"A Premature Ventricular Contraction (PVC) typically appears:",
+ o:["Narrow with a preceding P wave","Wide and bizarre, with no preceding P wave; the T wave is often opposite the QRS","Sawtooth-shaped","Inverted but narrow"],a:1,
+ e:"A PVC is wide and bizarre (≥0.12 s), is not preceded by a P wave, and its T wave is frequently opposite in direction to the QRS. PVCs indicate myocardial irritability."},
+{t:"rhythms",q:"Why is the location of a PVC important to note (R-on-T phenomenon)?",
+ o:["It changes the patient's blood pressure reading","A PVC during the vulnerable phase of the cardiac cycle could trigger a more serious rhythm","It affects the P-wave shape","It alters the cardiac axis"],a:1,
+ e:"A PVC occurring during the vulnerable phase (R-on-T) could result in a more serious rhythm, so its location is important to note."},
+{t:"rhythms",q:"VENTRICULAR TACHYCARDIA typically has a rate of:",
+ o:["20–40 bpm","60–100 bpm","150–250 bpm","Less than 60 bpm"],a:2,
+ e:"V-tach is usually 150–250 bpm (can exceed 250 if it progresses to ventricular flutter), with wide bizarre QRS complexes and no preceding P waves."},
+{t:"rhythms",q:"In VENTRICULAR FIBRILLATION, the ECG shows:",
+ o:["A regular sawtooth pattern","A totally chaotic baseline with NO discernible waves or complexes","Tall peaked T waves","A flat straight line"],a:1,
+ e:"In V-fib the baseline is totally chaotic with no discernible waves or complexes (no rate, rhythm, P waves, PRI, or QRS)."},
+{t:"rhythms",q:"ASYSTOLE on the ECG appears as:",
+ o:["A chaotic baseline","A straight (flat) line — absence of all electrical activity","A sawtooth pattern","Wide bizarre QRS complexes"],a:1,
+ e:"Asystole is the absence of all electrical activity, producing a straight line ('flatline'); it is very resistant to resuscitation."},
+{t:"rhythms",q:"An IDIOVENTRICULAR rhythm has a ventricular rate of:",
+ o:["20–40 bpm (can drop below 20), with wide bizarre QRS complexes","40–60 bpm with narrow QRS","60–100 bpm","Over 150 bpm"],a:0,
+ e:"An idioventricular rhythm is usually 20–40 bpm (can drop below 20) with wide, bizarre QRS complexes greater than 0.12 second."},
+{t:"rhythms",q:"PVCs occurring in succession such as couplets or runs indicate:",
+ o:["A normal healthy heart","Increased myocardial irritability","Improved cardiac output","A first-degree heart block"],a:1,
+ e:"PVCs in succession (couplets, runs, or grouped beating) are an indication of increased myocardial irritation."},
+
+/* ===================== ELECTRICAL THERAPY ===================== */
+{t:"therapy",q:"An AED, combined with good CPR, is designed primarily to:",
+ o:["Diagnose a heart attack","Improve survival rates of patients in cardiac arrest","Measure blood pressure","Replace the need for advanced providers"],a:1,
+ e:"An AED along with good CPR has proven to improve survival rates of patients in cardiac arrest."},
+{t:"therapy",q:"Who performed the first successful open-heart defibrillation on a human (a 14-year-old boy) in 1947?",
+ o:["Paul Zoll","Dr. Claude Beck","William Kouwenhoven","Dr. Frank Pantridge"],a:1,
+ e:"Dr. Claude Beck completed the first open-heart defibrillation on a human in 1947, shocking the boy's heart at 110 volts until rhythm was restored."},
+{t:"therapy",q:"Who became known as the 'Father of Modern Cardiac Therapy' and preferred closed-chest over open-chest defibrillation?",
+ o:["Dr. Claude Beck","Paul Zoll","Einthoven","Robert Rullman"],a:1,
+ e:"Paul Zoll became known as the Father of Modern Cardiac Therapy; he favored closed-chest defibrillation and co-founded Zoll Medical in 1980."},
+{t:"therapy",q:"The 'Heart Aid' (1978) was significant because it was:",
+ o:["The first implantable pacemaker","The first commercially available AED designed for minimally trained lay providers","The first 12-lead ECG machine","The first open-heart defibrillator"],a:1,
+ e:"The Heart Aid was the first commercially available AED for minimally trained lay providers, featuring real-time voice coaching and adhesive electrode pads."},
+{t:"therapy",q:"Pacemaker therapy is used to treat which conditions?",
+ o:["Only high blood pressure","Heart block, bradycardia, tachycardia, and other dysrhythmias","Only myocardial infarction","Respiratory failure"],a:1,
+ e:"Pacemakers treat heart block, bradycardia, tachycardia, and other dysrhythmias by monitoring the heart's rhythm and stimulating when needed."},
+{t:"therapy",q:"A pacemaker that stimulates BOTH the atria and the ventricles is called a:",
+ o:["Single-chamber pacemaker","Dual-chamber pacemaker","Triggered pacemaker","Temporary pacemaker"],a:1,
+ e:"Pacemakers that stimulate both the atria and ventricles are dual-chamber; those stimulating one are single-chamber."},
+{t:"therapy",q:"What are the three components of a pacemaker?",
+ o:["Battery, antenna, and screen","Pulse generator, leads, and electrodes","SA node, AV node, and Bundle of His","Cuff, gauge, and bulb"],a:1,
+ e:"The components of a pacemaker are the pulse generator, leads, and electrodes."},
+{t:"therapy",q:"A pacemaker set to 'inhibited' mode will:",
+ o:["Fire according to a fixed plan regardless of the heart's activity","Fire only when needed, sensing and inhibiting its response when it detects the patient's own complex","Never fire","Only pace the atria"],a:1,
+ e:"An inhibited pacemaker fires only when needed; it can inhibit its response when it senses the patient's own underlying complex. A 'triggered' pacemaker fires on a fixed plan."},
+{t:"therapy",q:"On the ECG, a paced beat appears as a:",
+ o:["Sawtooth wave","An unnaturally straight, sharp spike before the captured wave","Wide T wave","Chaotic baseline"],a:1,
+ e:"The pacemaker impulse appears as an unnaturally straight, sharp spike; when captured it is followed by a P wave (atrial) or a wide QRS (ventricular)."},
+{t:"therapy",q:"FAILURE TO CAPTURE is seen on the ECG as:",
+ o:["A pacemaker spike WITHOUT a following P wave or QRS","No pacemaker spikes where there should be","A spike after a spontaneous beat","A perfectly normal paced rhythm"],a:0,
+ e:"Failure to capture is when the pacer spike does not trigger the heart — a spike is seen without a following P wave (atrial) or QRS (ventricular)."},
+{t:"therapy",q:"FAILURE TO PACE is seen on the ECG as:",
+ o:["A spike followed by a captured QRS","No pacemaker spikes where there should be spikes","A spike right after a natural QRS","A sawtooth flutter pattern"],a:1,
+ e:"Failure to pace means the pacemaker does not deliver the stimulus when it should — there are no pacemaker spikes where there should be (caused by a weak battery or mechanical problem)."},
+{t:"therapy",q:"FAILURE TO SENSE occurs when the pacemaker:",
+ o:["Does not deliver any impulse","Does not sense the heart's own activity and fires inappropriately (a spike appears after a spontaneous P or QRS)","Captures every beat normally","Only paces during sleep"],a:1,
+ e:"Failure to sense is when the pacer does not detect the heart's natural activity and fires inappropriately — a spike is seen after a spontaneous P wave or QRS."},
+{t:"therapy",q:"The 'atrial kick' that is lost during ventricular-only pacing refers to:",
+ o:["The shock delivered by an AED","The extra blood the atria push into the ventricle, which is reduced without coordinated atrial contraction","The spike on the ECG","The closing of the AV valves"],a:1,
+ e:"Without the atrial kick, the amount of blood flowing from the atria to the ventricle decreases, which can cause hemodynamic instability ('pacemaker syndrome,' vertigo and hypotension)."},
+
+/* ===================== 12-LEAD & ACS ===================== */
+{t:"twelve",q:"The 12-lead ECG is considered the 'gold standard' for:",
+ o:["Continuous bedside monitoring","Diagnostic ECGs","Measuring blood pressure","Detecting low oxygen"],a:1,
+ e:"The 12-lead ECG is the gold standard for diagnostic ECGs, providing 12 views along the frontal and transverse planes."},
+{t:"twelve",q:"How many electrodes are used to obtain a standard 12-lead ECG?",
+ o:["Three","Six","Ten","Twelve"],a:2,
+ e:"The 12 different views are obtained using ten electrodes (four limb and six chest)."},
+{t:"twelve",q:"With the four limb leads, how many views of the heart are obtained, and in which plane?",
+ o:["Six views in the frontal plane","Six views in the transverse plane","Three views in the sagittal plane","Twelve views in the frontal plane"],a:0,
+ e:"The four limb leads provide six views in the frontal plane — three bipolar (I, II, III) and three augmented (aVR, aVL, aVF)."},
+{t:"twelve",q:"If a patient has a right below-the-knee amputation, where should the right leg lead be placed (and what else should the technician do)?",
+ o:["On the chest, with no documentation needed","On the right thigh, with the left lead also moved to the left thigh; notify the provider","Left arm; no notification","It cannot be done"],a:1,
+ e:"Place the lead on the right thigh and also move the left leg lead to the left thigh to mimic it; the provider should be made aware of the reason and location."},
+{t:"twelve",q:"A patient complaining of chest pain should have a 12-lead ECG within how many minutes, per the AHA?",
+ o:["Within 1 minute","Within 10 minutes","Within 30 minutes","Within 60 minutes"],a:1,
+ e:"Per the American Heart Association, a patient complaining of chest pain should have a 12-lead ECG within 10 minutes ('Time is tissue!')."},
+{t:"twelve",q:"A technician should treat the ECG machine's automatic interpretation by:",
+ o:["Relying on it completely","Never relying on the machine interpretation alone","Ignoring all machine output","Reporting only the machine's reading"],a:1,
+ e:"The machine calculates measurements and offers an interpretation, but the technician should never rely on the machine interpretation alone."},
+{t:"twelve",q:"What is a bundle branch block?",
+ o:["A blockage of a coronary artery","A delay or blockage along the pathway that electrical impulses travel to the ventricles","A leaking heart valve","A clot in the lungs"],a:1,
+ e:"A bundle branch block is a delay or blockage along the pathway electrical impulses travel to make the heart beat, affecting the right or left ventricle."},
+{t:"twelve",q:"To distinguish a right vs. left bundle branch block, after identifying a WIDE QRS you look at which lead?",
+ o:["Lead II","Lead aVF","V1","V6"],a:2,
+ e:"Once the QRS is wide, go to lead V1: if the terminal force is ABOVE the baseline (big R wave) it is RBBB; if BELOW the baseline (big S wave) it is LBBB."},
+{t:"twelve",q:"In V1, a wide QRS with the terminal force BELOW the baseline (big S wave) indicates:",
+ o:["Right bundle branch block (RBBB)","Left bundle branch block (LBBB)","First-degree AV block","Normal conduction"],a:1,
+ e:"A wide QRS with terminal force below the baseline (big S wave) in V1 indicates LBBB; above the baseline (big R) indicates RBBB."},
+{t:"twelve",q:"Acute Coronary Syndrome (ACS) refers to events that lead to:",
+ o:["Increased blood flow to the heart","Thrombotic occlusion or plaque rupture causing symptomatic ischemia or infarction","A faster heart rate only","High blood pressure only"],a:1,
+ e:"ACS refers to any event causing thrombotic occlusion or plaque rupture, producing symptomatic ischemia or infarction by decreasing or blocking blood flow in the heart."},
+{t:"twelve",q:"Which is a NON-MODIFIABLE risk factor for ACS?",
+ o:["Smoking","Obesity","Age, gender, and family history","High cholesterol"],a:2,
+ e:"Non-modifiable risk factors are gender, age, and family history. Modifiable ones include hypertension, hyperlipidemia, obesity, stress, drug/alcohol use, and smoking."},
+{t:"twelve",q:"Chest pain due to the heart not getting enough oxygen is called:",
+ o:["Angina pectoris","Asystole","Bradycardia","Diffusion"],a:0,
+ e:"When the heart's high oxygen demand is not met, the patient may complain of angina (chest pain), or angina pectoris."},
+{t:"twelve",q:"What is the difference between a STEMI and an NSTEMI?",
+ o:["A STEMI is a complete occlusion of a coronary artery (with ST elevation); an NSTEMI is an incomplete occlusion","A STEMI has no ST elevation; an NSTEMI has ST elevation","They are the same thing","NSTEMI is always fatal; STEMI is never serious"],a:0,
+ e:"A STEMI involves complete occlusion with ST-segment elevation and the greatest mortality; an NSTEMI is an incomplete occlusion, often with an unremarkable ECG."},
+{t:"twelve",q:"For a patient with an NSTEMI, treatment focus is on:",
+ o:["Antiplatelet therapy","Immediate open-heart surgery","Defibrillation","Pacemaker insertion"],a:0,
+ e:"NSTEMI accounts for the majority of ACS patients; treatment focus is on antiplatelet therapy. (The difference from unstable angina is determined by lab values.)"},
+{t:"twelve",q:"For a STEMI, the treatment focus is on:",
+ o:["Antiplatelet therapy only","Reperfusion of the affected area of the heart","Lowering the respiratory rate","Vasoconstriction"],a:1,
+ e:"In a STEMI there is complete occlusion; treatment focuses on reperfusion of the involved area of the heart, so a quick, accurate 12-lead is essential."},
+{t:"twelve",q:"The Left Anterior Descending (LAD) coronary artery is nicknamed the 'widow maker' because:",
+ o:["It supplies the SA node","Most sudden-death STEMIs result from a proximal LAD occlusion","It is the smallest artery","It only supplies the right atrium"],a:1,
+ e:"The LAD supplies ~40% of the left ventricular mass and feeds the anterior and septal walls; most sudden-death STEMIs come from a proximal LAD occlusion — the 'widow maker.'"},
+{t:"twelve",q:"The Right Coronary Artery (RCA) supplies the SA and AV nodes, so its occlusion may cause:",
+ o:["Tachycardia and high blood pressure","Bradycardia or AV blocks","A faster respiratory rate","Loss of the T wave only"],a:1,
+ e:"The RCA supplies the inferior wall, right ventricle, and the SA and AV nodes; if compromised, the patient may experience bradycardia or AV blocks."},
+{t:"twelve",q:"Why does aspirin help in the management of a forming coronary clot?",
+ o:["It dissolves cholesterol instantly","It deactivates platelets so they are not sticky and do not contribute to the clot","It raises blood pressure","It speeds up the heart rate"],a:1,
+ e:"Aspirin deactivates platelets so they are not sticky and do not contribute to the clot; the standard is 162–325 mg chewed for rapid blood levels (~15 minutes)."},
+{t:"twelve",q:"The Left Circumflex artery (LCA) primarily feeds which walls of the left ventricle?",
+ o:["The anterior and septal walls","The lateral and posterior walls","The inferior wall only","The right ventricle"],a:1,
+ e:"The left circumflex artery goes around to the back of the heart and feeds the lateral and posterior walls of the left ventricle (and the SA node in ~45% of patients)."},
+
+/* ===================== NATIONAL TESTING TERMINOLOGY ===================== */
+{t:"terms",q:"ANGINA is defined as:",
+ o:["Chest pain (often from the heart not getting enough oxygen)","A fast heart rate","Hardening of the arteries","An irregular rhythm"],a:0,
+ e:"Angina is chest pain; it occurs when the heart's oxygen demand is not met (angina pectoris)."},
+{t:"terms",q:"ISCHEMIA refers to:",
+ o:["Death of tissue","Tissue being deprived of oxygen due to restricted blood flow","An extra heart sound","A normal heart rhythm"],a:1,
+ e:"Ischemia is when tissue loses its necessary oxygen supply due to restricted blood flow (e.g., from a clot or plaque); a depressed ST segment can suggest ischemia."},
+{t:"terms",q:"A MYOCARDIAL INFARCTION occurs when:",
+ o:["The heart valves leak","Heart tissue dies due to lack of oxygenated blood (e.g., a blocked coronary artery)","The atria fibrillate","The blood pressure drops on standing"],a:1,
+ e:"In a myocardial infarction, the heart is restricted of blood flow (clot or plaque), the tissue loses oxygen (ischemia), and if untreated the affected area dies; irreversible damage can occur in 3–4 minutes."},
+{t:"terms",q:"The MEDIASTINUM is:",
+ o:["The space in the center of the chest (between the lungs) where the heart sits","The outer layer of the heart","A heart valve","A type of lead"],a:0,
+ e:"The mediastinum is the central chest space, behind the sternum and between the lungs, where the heart is located."},
+{t:"terms",q:"A MURMUR is best described as:",
+ o:["A normal first heart sound","An abnormal heart sound, often related to valve or blood-flow turbulence","The pacemaker spike","The isoelectric line"],a:1,
+ e:"A murmur is an abnormal heart sound. (Normal heart sounds are the 'lubb-dupp' of the valves closing; abnormal sounds such as murmurs relate to turbulent flow or valve issues.)",
+ f:"The booklet lists MURMUR as a required national-testing term; the study guide describes normal heart sounds and notes an abnormal third sound, but does not give a one-line definition of 'murmur,' so this standard definition is provided."},
+{t:"terms",q:"The PACEMAKER NODE of the heart (its natural pacemaker) is the:",
+ o:["AV node","SA node","Bundle of His","Purkinje fibers"],a:1,
+ e:"The SA node is the heart's natural pacemaker ('pacemaker node'), with an inherent rate of 60–100 bpm."},
+{t:"terms",q:"DEPOLARIZATION is best defined as:",
+ o:["The recovery of the cell to its resting negative charge","The movement of charged particles making the inside of the cell more positive","The resting/ready state","The absence of all electrical activity"],a:1,
+ e:"Depolarization (discharge) is the movement of charged particles that makes the inside of the cell more positive, forming the spike on the ECG."},
+{t:"terms",q:"REPOLARIZATION is best defined as:",
+ o:["The inside of the cell becoming more positive","The recovery state — the inside of the cell is restored to its negative charge","The contraction of the muscle","Loss of all electrical activity"],a:1,
+ e:"Repolarization (recovery) restores the inside of the cell to its negative resting charge as potassium leaves the cell."},
+{t:"terms",q:"An ARTIFACT on the ECG is:",
+ o:["A normal P wave","Interference (e.g., from movement or loose leads) that can be mistaken for a waveform","A type of heart block","The standardization mark"],a:1,
+ e:"Artifact is interference (muscle tremor, movement, loose electrodes, nearby equipment) that can be confused with true waveforms."},
+{t:"terms",q:"AGONAL rhythm is associated with:",
+ o:["A healthy resting heart","A dying heart (very slow, often deteriorating rhythm)","Atrial flutter","Normal sinus rhythm"],a:1,
+ e:"Agonal refers to the rhythm of a dying heart — very slow and unreliable (as seen with an idioventricular/dying-heart rhythm).",
+ f:"The booklet lists AGONAL as a required term; the study guide describes idioventricular rhythm as 'less reliable as the heart dies' but does not formally define 'agonal,' so this standard description is provided."},
+{t:"terms",q:"The BASELINE (isoelectric line) is:",
+ o:["The tall QRS spike","The flat line representing no electrical flow","The T wave","The standardization wave"],a:1,
+ e:"The baseline/isoelectric line is the flat line produced when there is no electrical flow influencing the deflection."},
+{t:"terms",q:"ECTOPIC FIRING (an ectopic beat) refers to a beat that:",
+ o:["Originates from the SA node normally","Arises from fibers OUTSIDE the region normally responsible for impulse formation","Is the standardization mark","Cannot be seen on the ECG"],a:1,
+ e:"An ectopic beat arises from fibers outside the region normally responsible for impulse formation, classified by origin as a PAC, PJC, or PVC; they interrupt the rhythm's regularity."},
+{t:"terms",q:"The term STRIATED, used to describe cardiac muscle, means the muscle:",
+ o:["Is smooth with no markings","Has a striped (banded) appearance","Is under voluntary control","Has no nucleus"],a:1,
+ e:"Striated means striped/banded in appearance. Cardiac muscle is striated like skeletal muscle but is not under voluntary control.",
+ f:"The booklet lists STRIATED as a required term; the study guide notes cardiac muscle resembles skeletal muscle, which is striated. The 'striped appearance' definition is the standard meaning."},
+{t:"terms",q:"The R-R interval is used primarily to determine:",
+ o:["The PR interval","The regularity (rhythm) and ventricular rate","Atrial repolarization","The cardiac axis"],a:1,
+ e:"The R-R interval is measured and compared across the strip to determine regularity, and (when regular) is used to calculate the ventricular rate."},
+
+];
+
+/* ============================================================
+   ENGINE
+   ============================================================ */
+let session = null; // {questions:[], idx, answers:[], answered:bool}
+
+function el(id){return document.getElementById(id);}
+function hide(id){el(id).classList.add('hidden');}
+function show(id){el(id).classList.remove('hidden');}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+
+/* index bank with stable ids */
+BANK.forEach((q,i)=>q._id=i);
+
+function bankCountByTopic(){
+  const c={}; Object.keys(TOPICS).forEach(k=>c[k]=0);
+  BANK.forEach(q=>c[q.t]=(c[q.t]||0)+1);
+  return c;
+}
+
+function init(){
+  el('bankCount').textContent = BANK.length + ' questions in bank';
+}
+
+/* ---------- mode: random ---------- */
+function startRandomSetup(){ hide('topicList'); show('randomSetup'); el('qcount').value=Math.min(25,BANK.length); }
+function setCount(n){ el('qcount').value=Math.min(n,BANK.length); }
+function setCountAll(){ el('qcount').value=BANK.length; }
+function beginRandom(){
+  let n=parseInt(el('qcount').value,10);
+  if(isNaN(n)||n<1) n=1; if(n>BANK.length) n=BANK.length;
+  const qs=shuffle(BANK.slice()).slice(0,n);
+  launch(qs,'Random Practice Test');
+}
+
+/* ---------- mode: topic ---------- */
+function showTopics(){
+  hide('randomSetup'); show('topicList');
+  const c=bankCountByTopic();
+  const box=el('topicButtons'); box.innerHTML='';
+  Object.keys(TOPICS).forEach(k=>{
+    if(c[k]===0) return;
+    const b=document.createElement('button');
+    b.className='topic-btn'+(TOPICS[k].weighted?' weighted':'');
+    b.innerHTML='<span>'+(TOPICS[k].weighted?'★ ':'')+TOPICS[k].name+'</span><span class="cnt">'+c[k]+'</span>';
+    b.onclick=()=>{ const qs=shuffle(BANK.filter(q=>q.t===k)); launch(qs,TOPICS[k].name); };
+    box.appendChild(b);
+  });
+}
+
+/* ---------- launch quiz ---------- */
+function launch(questions,label){
+  // randomize option order per question while tracking the correct index
+  const prepared = questions.map(q=>{
+    const opts = q.o.map((text,i)=>({text,correct:i===q.a}));
+    shuffle(opts);
+    return {ref:q, opts, answer:opts.findIndex(o=>o.correct)};
+  });
+  session={label,questions:prepared,idx:0,answers:new Array(prepared.length).fill(null),score:0};
+  hide('home'); hide('results'); show('quiz');
+  window.scrollTo(0,0);
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const s=session, cur=s.questions[s.idx], q=cur.ref;
+  el('pfill').style.width=((s.idx)/s.questions.length*100)+'%';
+  el('qprogress').textContent='Question '+(s.idx+1)+' of '+s.questions.length;
+  el('qscore').textContent='Score: '+s.score+'/'+s.idx;
+  el('qtopic').textContent=TOPICS[q.t].name;
+
+  // diagram
+  const dbox=el('qdiagram');
+  if(q.d && DIAGRAMS[q.d]){ dbox.innerHTML=DIAGRAMS[q.d]; show('qdiagram'); }
+  else { dbox.innerHTML=''; hide('qdiagram'); }
+
+  el('qtext').textContent=q.q;
+
+  // options
+  const ob=el('qoptions'); ob.innerHTML='';
+  const letters=['A','B','C','D','E','F'];
+  cur.opts.forEach((o,i)=>{
+    const btn=document.createElement('button');
+    btn.className='opt';
+    btn.innerHTML='<span class="ltr">'+letters[i]+'</span>'+o.text;
+    btn.onclick=()=>chooseAnswer(i);
+    ob.appendChild(btn);
+  });
+
+  // feedback / flag reset
+  const fb=el('qfeedback'); fb.className='feedback'; el('qexplain').textContent='';
+  const flag=el('qflag'); flag.classList.add('hidden'); flag.innerHTML='';
+  el('nextBtn').disabled=true;
+  el('nextBtn').textContent = (s.idx===s.questions.length-1)?'See results ▶':'Next ▶';
+}
+
+function chooseAnswer(choice){
+  const s=session, cur=s.questions[s.idx], q=cur.ref;
+  if(s.answers[s.idx]!==null) return; // already answered
+  s.answers[s.idx]=choice;
+  const correct=cur.answer;
+  const buttons=el('qoptions').querySelectorAll('.opt');
+  buttons.forEach((b,i)=>{
+    b.disabled=true;
+    if(i===correct) b.classList.add('correct');
+    if(i===choice && choice!==correct) b.classList.add('wrong');
+  });
+  const right=(choice===correct);
+  if(right) s.score++;
+  el('qscore').textContent='Score: '+s.score+'/'+(s.idx+1);
+
+  const fb=el('qfeedback');
+  fb.className='feedback show '+(right?'ok':'no');
+  el('qverdict').textContent=right?'✓ Correct':'✗ Incorrect';
+  let exp=q.e;
+  if(!right){ exp='Correct answer: '+cur.opts[correct].text+'. '+q.e; }
+  el('qexplain').textContent=exp;
+
+  if(q.f){ const flag=el('qflag'); flag.classList.remove('hidden'); flag.innerHTML='<b>⚑ Flag:</b> '+q.f; }
+
+  el('nextBtn').disabled=false;
+  el('nextBtn').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+function nextQuestion(){
+  const s=session;
+  if(s.answers[s.idx]===null) return; // must answer
+  if(s.idx<s.questions.length-1){ s.idx++; window.scrollTo(0,0); renderQuestion(); }
+  else { showResults(); }
+}
+
+function confirmQuit(){
+  if(confirm('Quit this quiz and return to the menu? Progress will be lost.')) goHome();
+}
+
+/* ---------- results ---------- */
+function showResults(){
+  const s=session;
+  hide('quiz'); show('results'); window.scrollTo(0,0);
+  const total=s.questions.length, correct=s.score;
+  const pct=Math.round(correct/total*100);
+  el('scorePct').textContent=pct+'%';
+  el('scoreRaw').textContent=correct+' / '+total;
+  const pass=pct>=80;
+  const circle=el('scoreCircle'); circle.className='score-circle '+(pass?'pass':'fail');
+  const vb=el('verdictBig'); vb.className='verdict-big '+(pass?'pass':'fail');
+  vb.textContent=pass?'PASS':'FAIL';
+  el('verdictSub').textContent=pass
+    ? 'You scored at or above the 80% pass mark. Keep drilling the topics below to stay sharp.'
+    : 'Below the 80% pass mark. Focus on the missed topics below, then retake.';
+
+  // per-topic breakdown
+  const byTopic={};
+  s.questions.forEach((cur,i)=>{
+    const t=cur.ref.t;
+    if(!byTopic[t]) byTopic[t]={right:0,total:0};
+    byTopic[t].total++;
+    if(s.answers[i]===cur.answer) byTopic[t].right++;
+  });
+  const bd=el('topicBreakdown'); bd.innerHTML='';
+  Object.keys(TOPICS).forEach(t=>{
+    if(!byTopic[t]) return;
+    const d=byTopic[t], p=Math.round(d.right/d.total*100);
+    const color = p>=80?'#22c55e':(p>=50?'#f59e0b':'#ef4444');
+    const row=document.createElement('div'); row.className='breakdown-row';
+    row.innerHTML='<span style="flex:0 0 42%">'+TOPICS[t].name+'</span>'+
+      '<div class="bd-bar"><div class="bd-fill" style="width:'+p+'%;background:'+color+'"></div></div>'+
+      '<span style="flex:0 0 70px;text-align:right">'+d.right+'/'+d.total+' ('+p+'%)</span>';
+    bd.appendChild(row);
+  });
+
+  // weak topics (missed most)
+  const weak=Object.keys(byTopic).map(t=>({t,miss:byTopic[t].total-byTopic[t].right,total:byTopic[t].total}))
+    .filter(x=>x.miss>0).sort((a,b)=>b.miss-a.miss);
+  const wc=el('weakTopics');
+  if(weak.length===0){
+    el('weakCard').querySelector('h2').textContent='Topics you missed most';
+    wc.innerHTML='<p style="color:var(--greenbd);font-size:14px">🎉 No missed questions — perfect across every topic!</p>';
+  } else {
+    wc.innerHTML='';
+    weak.forEach(x=>{
+      const row=document.createElement('div'); row.className='breakdown-row';
+      row.innerHTML='<span>'+TOPICS[x.t].name+'</span><span style="color:#fca5a5">missed '+x.miss+' of '+x.total+'</span>';
+      wc.appendChild(row);
+    });
+  }
+
+  // missed question review
+  const ml=el('missedList'); ml.innerHTML='';
+  let any=false;
+  s.questions.forEach((cur,i)=>{
+    if(s.answers[i]===cur.answer) return;
+    any=true;
+    const q=cur.ref;
+    const div=document.createElement('div'); div.className='missed';
+    const yourTxt = s.answers[i]!==null ? cur.opts[s.answers[i]].text : '(no answer)';
+    let html='<div class="mq"><span class="topictag">'+TOPICS[q.t].name+'</span><br>'+q.q+'</div>';
+    html+='<div class="ans bad">Your answer: '+yourTxt+'</div>';
+    html+='<div class="ans good">Correct answer: '+cur.opts[cur.answer].text+'</div>';
+    html+='<div class="exp">'+q.e+'</div>';
+    if(q.f) html+='<div class="exp" style="color:#fde68a">⚑ '+q.f+'</div>';
+    div.innerHTML=html;
+    ml.appendChild(div);
+  });
+  if(!any){ el('missedCard').classList.add('hidden'); }
+  else { el('missedCard').classList.remove('hidden'); }
+}
+
+function retake(){
+  // re-randomize the same pool (topic set or random count)
+  const pool = session.questions.map(c=>c.ref);
+  launch(shuffle(pool.slice()), session.label);
+}
+function goHome(){
+  session=null;
+  hide('quiz'); hide('results'); show('home');
+  hide('randomSetup'); hide('topicList');
+  window.scrollTo(0,0);
+}
+
+init();
+</script>
+</body>
+</html>
