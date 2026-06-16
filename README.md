@@ -7,7 +7,9 @@ Cardiovascular Monitor Technician (CMT) class, modeled on a DMV-style practice t
 Open **`cmt-quiz.html`** in any web browser. No internet, server, or install required.
 
 ## Modes
-- **Random Practice Test** — randomized subset (default 25; the count is adjustable).
+- **Random Practice Test** — randomized subset (default 25; adjustable up to the full
+  bank). Choose exactly which sections to draw from with per-section checkboxes, and
+  the available-question count updates to match your selection.
 - **Study by Topic** — drill one module at a time to target weak areas.
 
 ## Features
@@ -17,6 +19,10 @@ Open **`cmt-quiz.html`** in any web browser. No internet, server, or install req
 - Embedded schematic diagrams with numbered-structure identification questions
   (directional terms, body planes, chest landmarks, heart structures, heart-wall layers,
   cardiac conduction system, ECG waveform, ECG graph paper, Einthoven's triangle).
+- **📎 Slide-reference photos** pulled from the course slide decks, shown above the
+  question on Position/Direction, Flow, and Oscillation topics (directional terms, body
+  planes, landmark lines, circulation circuits, conduction system, autonomic control,
+  ECG paper, ECG waveform/intervals, action potentials, and deflection direction).
 - Results screen: score, pass/fail (80% pass mark), per-topic breakdown,
   "topics you missed most," full review of every missed question with its explanation,
   and a Retake button that re-randomizes.
