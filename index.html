@@ -82,6 +82,16 @@
   .flagnote b{color:var(--amber)}
   .diagram{background:#f8fafc; border-radius:12px; padding:8px; margin:4px 0 16px; text-align:center}
   .diagram svg{max-width:100%; height:auto}
+  .slideref{margin:4px 0 16px; padding:0}
+  .slideref figcaption{font-size:13px; font-weight:600; color:var(--muted); margin-bottom:6px}
+  .slideref img{display:block; max-width:100%; height:auto; border-radius:12px; border:1px solid var(--line)}
+  .setup-block{margin-bottom:16px}
+  .section-picker{display:grid; grid-template-columns:1fr 1fr; gap:6px; margin:10px 0}
+  .section-picker label{display:flex; align-items:center; gap:8px; font-size:13px; background:var(--panel2); border:1px solid var(--line); border-radius:8px; padding:8px 10px; cursor:pointer; line-height:1.25}
+  .section-picker label .scnt{margin-left:auto; color:var(--muted); font-variant-numeric:tabular-nums}
+  .section-picker input{accent-color:var(--redbd); width:16px; height:16px; flex:none}
+  .hint{font-size:12px; color:var(--muted); margin:4px 0 0}
+  @media (max-width:520px){ .section-picker{grid-template-columns:1fr} }
   .nav{display:flex; gap:10px; margin-top:8px}
   .nav .btn{margin:0}
   /* results */
@@ -123,7 +133,7 @@
     <div class="card">
       <h2>Choose a study mode</h2>
       <button class="btn" onclick="startRandomSetup()">🎲 Random Practice Test
-        <small>Randomized mix from the whole bank — set your own length</small></button>
+        <small>Pick your sections and length — randomized mix, up to the full bank</small></button>
       <button class="btn secondary" onclick="showTopics()">📚 Study by Topic
         <small>Drill one module at a time to hit weak areas</small></button>
       <div class="row" style="margin-top:14px; justify-content:space-between">
@@ -135,16 +145,33 @@
     <!-- Random setup -->
     <div class="card hidden" id="randomSetup">
       <h2>Random Practice Test</h2>
-      <div class="row" style="margin-bottom:14px">
-        <label for="qcount">Number of questions:</label>
-        <input type="number" id="qcount" value="25" min="1" max="999">
+
+      <div class="setup-block">
+        <div class="row" style="justify-content:space-between; align-items:center">
+          <label>Sections to draw from:</label>
+          <span class="row" style="gap:8px">
+            <button class="pill" style="cursor:pointer" onclick="selectAllSections(true)">Select all</button>
+            <button class="pill" style="cursor:pointer" onclick="selectAllSections(false)">Clear</button>
+          </span>
+        </div>
+        <div id="sectionPicker" class="section-picker"></div>
+        <p class="hint" id="poolInfo"></p>
       </div>
-      <div class="row" style="margin-bottom:8px">
-        <button class="pill" style="cursor:pointer" onclick="setCount(10)">10</button>
-        <button class="pill" style="cursor:pointer" onclick="setCount(25)">25</button>
-        <button class="pill" style="cursor:pointer" onclick="setCount(50)">50</button>
-        <button class="pill" style="cursor:pointer" onclick="setCountAll()">All</button>
+
+      <div class="setup-block">
+        <div class="row" style="margin-bottom:8px">
+          <label for="qcount">Number of questions:</label>
+          <input type="number" id="qcount" value="25" min="1" max="999">
+        </div>
+        <div class="row">
+          <button class="pill" style="cursor:pointer" onclick="setCount(10)">10</button>
+          <button class="pill" style="cursor:pointer" onclick="setCount(25)">25</button>
+          <button class="pill" style="cursor:pointer" onclick="setCount(50)">50</button>
+          <button class="pill" style="cursor:pointer" onclick="setCount(100)">100</button>
+          <button class="pill" style="cursor:pointer" onclick="setCountAll()">All</button>
+        </div>
       </div>
+
       <button class="btn" onclick="beginRandom()">Start test ▶</button>
       <button class="btn ghost" onclick="hide('randomSetup')">Cancel</button>
     </div>
@@ -177,6 +204,10 @@
         <span id="qscore">Score: 0/0</span>
       </div>
       <span class="topictag" id="qtopic"></span>
+      <figure class="slideref hidden" id="qslideref">
+        <figcaption>📎 Slide reference</figcaption>
+        <img id="qslideimg" alt="Slide reference" />
+      </figure>
       <div class="diagram hidden" id="qdiagram"></div>
       <div class="qtext" id="qtext"></div>
       <div id="qoptions"></div>
@@ -490,40 +521,40 @@ const BANK = [
  e:"Dr. Alfred Cohn introduced the first electrocardiogram machine to the U.S. in 1909."},
 
 /* ===================== TOPOGRAPHIC ANATOMY ===================== */
-{t:"topo",q:"Describe the correct anatomic position.",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"Describe the correct anatomic position.",
  o:["Lying flat on the back with arms folded","Standing facing forward, feet flat, arms at the sides with palms facing forward","Seated upright with legs crossed and hands on the knees","Standing with the back to the examiner and palms facing backward"],a:1,
  e:"Anatomic position is standing, facing forward, feet flat, arms extended at the sides with the palms facing forward. Right and left always refer to the patient's right and left."},
-{t:"topo",q:"In anatomic position, when a chart says 'right side,' whose right does it mean?",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"In anatomic position, when a chart says 'right side,' whose right does it mean?",
  o:["The examiner's right","The patient's right","Whichever side is closest to the equipment","It varies by facility"],a:1,
  e:"Right and left always refer to the patient's own right and left, not the observer's."},
-{t:"topo",q:"Which directional term means 'toward the rear / behind'?",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"Which directional term means 'toward the rear / behind'?",
  o:["Anterior","Posterior","Proximal","Lateral"],a:1,
  e:"Posterior means after, behind, or toward the rear. Anterior means in front of / front."},
-{t:"topo",q:"Which term means 'away from / farther from the origin'?",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"Which term means 'away from / farther from the origin'?",
  o:["Proximal","Distal","Medial","Superior"],a:1,
  e:"Distal = away from / farther from the origin. Proximal = near / closer to the origin."},
-{t:"topo",q:"'Toward the mid-line, away from the side' describes which term?",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"'Toward the mid-line, away from the side' describes which term?",
  o:["Lateral","Medial","Superior","Distal"],a:1,
  e:"Medial means toward the mid-line/middle, away from the side. Lateral means toward the side, away from the mid-line."},
 {t:"topo",q:"The term 'visceral' relates to which of the following?",
  o:["A body cavity wall","Organs within body cavities","The mid-line of the body","The surface of the skin"],a:1,
  e:"Visceral relates to organs within body cavities; parietal relates to a body-cavity wall."},
-{t:"topo",q:"On the diagram, which arrow indicates SUPERIOR?",d:"directional",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"On the diagram, which arrow indicates SUPERIOR?",d:"directional",
  o:["1","2","3","4"],a:0,
  e:"Superior means above/over — arrow 1 points upward (toward the head)."},
-{t:"topo",q:"On the diagram, which arrow indicates a LATERAL direction (away from the mid-line)?",d:"directional",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"On the diagram, which arrow indicates a LATERAL direction (away from the mid-line)?",d:"directional",
  o:["1","2","3","6"],a:2,
  e:"Arrow 3 points away from the dashed mid-line toward the side = lateral. Arrow 4 points toward the mid-line = medial."},
-{t:"topo",q:"On the diagram, which arrow indicates PROXIMAL on the arm?",d:"directional",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"On the diagram, which arrow indicates PROXIMAL on the arm?",d:"directional",
  o:["5","6","1","4"],a:0,
  e:"Proximal is closer to the origin (toward the shoulder) — arrow 5. Arrow 6 (toward the hand) is distal."},
-{t:"topo",q:"Which plane divides the body into front and back portions?",d:"planes",
+{t:"topo",img:"images/slides/body-planes.jpg",q:"Which plane divides the body into front and back portions?",d:"planes",
  o:["Frontal (coronal) plane","Transverse (axial) plane","Sagittal (lateral) plane","Midaxillary plane"],a:0,
  e:"The frontal (coronal) plane divides the body front/back. On the diagram it is plane 1."},
-{t:"topo",q:"Which plane divides the body into top and bottom portions?",d:"planes",
+{t:"topo",img:"images/slides/body-planes.jpg",q:"Which plane divides the body into top and bottom portions?",d:"planes",
  o:["Frontal plane (1)","Sagittal plane (2)","Transverse (axial) plane (3)","None of these"],a:2,
  e:"The transverse (axial) plane divides the body top/bottom — plane 3 on the diagram."},
-{t:"topo",q:"The sagittal plane divides the body into which portions?",d:"planes",
+{t:"topo",img:"images/slides/body-planes.jpg",q:"The sagittal plane divides the body into which portions?",d:"planes",
  o:["Front and back","Top and bottom","Left and right","Inner and outer"],a:2,
  e:"The sagittal (lateral) plane divides the body left/right. It is also called the mid-line when it runs down the middle."},
 {t:"topo",q:"The 'collarbone' is also known as the:",
@@ -535,55 +566,55 @@ const BANK = [
 {t:"topo",q:"The axilla refers to which body region?",
  o:["The underarm","The collarbone","The space between ribs","The mid-line"],a:0,
  e:"The axilla is the underarm — the basis for the axillary landmark lines."},
-{t:"topo",q:"What are the intercostal spaces?",
+{t:"topo",img:"images/slides/intercostal-spaces.jpg",q:"What are the intercostal spaces?",
  o:["The spaces between the vertebrae","The spaces between the ribs","The chambers of the heart","The lines used for limb leads"],a:1,
  e:"Intercostal spaces are the spaces between the ribs. They are numbered according to the rib that lies superior to the space."},
-{t:"topo",q:"How many intercostal spaces are there?",
+{t:"topo",img:"images/slides/intercostal-spaces.jpg",q:"How many intercostal spaces are there?",
  o:["9","10","11","12"],a:2,
  e:"There are 11 intercostal spaces. Each is numbered for the rib immediately above (superior to) it."},
-{t:"topo",q:"Intercostal spaces are numbered according to:",
+{t:"topo",img:"images/slides/intercostal-spaces.jpg",q:"Intercostal spaces are numbered according to:",
  o:["The rib that lies superior (above) to the space","The rib that lies inferior (below) the space","Their distance from the sternum","The order the technician palpates them"],a:0,
  e:"A space is numbered according to the rib that lies superior to it."},
-{t:"topo",q:"The sternal border (edge) is defined as:",
+{t:"topo",img:"images/slides/sternal-angle.jpg",q:"The sternal border (edge) is defined as:",
  o:["The top of the breastbone only","The lateral edge of the sternum that meets the intercostal space","The mid-line of the body","The line through the nipples"],a:1,
  e:"The sternal border is the lateral edge of the sternum where it meets the intercostal space — a key landmark for chest-lead placement."},
-{t:"topo",q:"On the chest-landmark diagram, which line is the MIDSTERNAL line?",d:"landmarks",
+{t:"topo",img:"images/slides/chest-landmark-lines.jpg",q:"On the chest-landmark diagram, which line is the MIDSTERNAL line?",d:"landmarks",
  o:["1","2","3","4"],a:0,
  e:"Line 1 runs down the middle of the sternum = midsternal line (the midline). Lines 2-4 move progressively laterally: midclavicular, anterior axillary, midaxillary — the named landmark lines listed in the Topographic Anatomy slideshow."},
-{t:"topo",q:"The 'midline' of the body corresponds to which plane?",
+{t:"topo",img:"images/slides/body-planes.jpg",q:"The 'midline' of the body corresponds to which plane?",
  o:["Frontal plane","Transverse plane","Sagittal plane","Coronal plane"],a:2,
  e:"The midline is the imaginary line down the middle of the body dividing it into right and left halves — also called the sagittal plane."},
-{t:"topo",q:"'Superior' has which anatomical synonym, and 'Inferior' has which?",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"'Superior' has which anatomical synonym, and 'Inferior' has which?",
  o:["Ventral; Dorsal","Cranial; Caudal","Proximal; Distal","Medial; Lateral"],a:1,
  e:"Superior = cranial (toward the head); Inferior = caudal (toward the lower body). Likewise Anterior = ventral and Posterior = dorsal."},
-{t:"topo",q:"'Anterior' has which synonym, and 'Posterior' has which?",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"'Anterior' has which synonym, and 'Posterior' has which?",
  o:["Cranial; Caudal","Ventral; Dorsal","Superficial; Deep","Medial; Lateral"],a:1,
  e:"Anterior = ventral (toward the front); Posterior = dorsal (toward the back)."},
-{t:"topo",q:"The directional term 'SUPERFICIAL' means:",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"The directional term 'SUPERFICIAL' means:",
  o:["Away from the surface, deeper into the body","Toward or on the surface of the body","Toward the head","Toward the midline"],a:1,
  e:"Superficial means toward or on the surface of the body; 'deep' means away from the surface, further into the body."},
-{t:"topo",q:"'Proximal' is best defined as:",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"'Proximal' is best defined as:",
  o:["Farther from the point of attachment or trunk","Closer to the point of attachment or to the trunk of the body","Toward the surface","Toward the head"],a:1,
  e:"Proximal is closer to the point of attachment or to the trunk; distal is farther from the point of attachment or trunk."},
-{t:"topo",q:"An injury to the right forearm would be described as being ______ to the right elbow.",
+{t:"topo",img:"images/slides/directional-terms.jpg",q:"An injury to the right forearm would be described as being ______ to the right elbow.",
  o:["Proximal","Distal","Medial","Superior"],a:1,
  e:"The forearm is farther from the trunk than the elbow, so an injury there is distal to the elbow."},
 {t:"topo",q:"Topographic anatomy is also known as:",
  o:["Cellular anatomy","Regional anatomy","Microscopic anatomy","Developmental anatomy"],a:1,
  e:"Topographic anatomy (regional anatomy) studies the relationships between structures within specific regions of the body — used to know where leads need to be placed."},
-{t:"topo",q:"Which two planes are the KEY views for ECG/electrode placement?",
+{t:"topo",img:"images/slides/body-planes.jpg",q:"Which two planes are the KEY views for ECG/electrode placement?",
  o:["Sagittal and frontal","Frontal and transverse","Transverse and sagittal","Midaxillary and midclavicular"],a:1,
  e:"The frontal (coronal) and transverse (axial) planes are the key ECG views — the limb leads view the frontal plane and the chest leads view the transverse plane."},
-{t:"topo",q:"The sternal angle (Angle of Louis) is used to locate which intercostal space?",
+{t:"topo",img:"images/slides/sternal-angle.jpg",q:"The sternal angle (Angle of Louis) is used to locate which intercostal space?",
  o:["The first intercostal space","The second intercostal space","The fourth intercostal space","The fifth intercostal space"],a:1,
  e:"The sternal angle (Angle of Louis) is used to locate the second intercostal space — a key starting landmark for chest-lead placement."},
 {t:"topo",q:"The chest organs are protected by how many ribs?",
  o:["10 ribs","11 ribs","12 ribs","14 ribs"],a:2,
  e:"There are 12 ribs protecting the chest organs, and 11 intercostal spaces between them."},
-{t:"topo",q:"Which axillary (side-chest) landmark line runs down from the FRONT of the axilla?",
+{t:"topo",img:"images/slides/chest-landmark-lines.jpg",q:"Which axillary (side-chest) landmark line runs down from the FRONT of the axilla?",
  o:["Midaxillary line","Anterior axillary line","Posterior axillary line","Midclavicular line"],a:1,
  e:"The anterior axillary line runs down from the front of the axilla; the midaxillary line runs from the middle of the axilla, and the posterior axillary line from the back."},
-{t:"topo",q:"The midclavicular line is the imaginary line running down the body from the:",
+{t:"topo",img:"images/slides/chest-landmark-lines.jpg",q:"The midclavicular line is the imaginary line running down the body from the:",
  o:["Middle of the clavicle","Edge of the sternum","Front of the axilla","Center of the chest"],a:0,
  e:"The midclavicular line runs down from the middle of the clavicle and helps identify the appropriate lateral positions for chest leads."},
 {t:"topo",q:"Before x-ray was invented (1895), which methods were used to assess underlying structures?",
@@ -781,28 +812,28 @@ const BANK = [
  e:"When a piece breaks free and travels the bloodstream to block a smaller artery, it is called an embolism. A clot that forms in place is a thrombus."},
 
 /* ===================== CIRCULATION ===================== */
-{t:"circ",q:"Which side of the heart is the pump for the PULMONARY circuit?",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"Which side of the heart is the pump for the PULMONARY circuit?",
  o:["The left side","The right side","Both sides equally","Neither — the lungs pump it"],a:1,
  e:"The right side of the heart is the pump for the pulmonary circuit, sending deoxygenated blood to the lungs."},
-{t:"circ",q:"The pulmonary circuit is responsible for:",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"The pulmonary circuit is responsible for:",
  o:["Delivering oxygenated blood to the body's cells","Circulating deoxygenated blood to the lungs to drop off CO2 and pick up oxygen","Pumping blood into the aorta","Removing waste through the kidneys"],a:1,
  e:"The pulmonary circuit circulates deoxygenated blood to the lungs to deliver CO2 to be exhaled and pick up oxygen, returning it to the heart."},
-{t:"circ",q:"Deoxygenated blood leaves the right side of the heart through which vessel?",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"Deoxygenated blood leaves the right side of the heart through which vessel?",
  o:["Aorta","Pulmonary artery","Pulmonary vein","Superior vena cava"],a:1,
  e:"Blood is pumped through the pulmonary artery to the right and left lung capillary beds."},
-{t:"circ",q:"After gas exchange in the lungs, oxygenated blood returns to the LEFT side of the heart through the:",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"After gas exchange in the lungs, oxygenated blood returns to the LEFT side of the heart through the:",
  o:["Pulmonary arteries","Pulmonary veins","Vena cavae","Coronary arteries"],a:1,
  e:"Oxygenated blood returns to the left side of the heart through the pulmonary veins to be delivered to the body."},
-{t:"circ",q:"Which side of the heart is the pump for the SYSTEMIC circuit?",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"Which side of the heart is the pump for the SYSTEMIC circuit?",
  o:["The right side","The left side","Both sides","The atria only"],a:1,
  e:"The left side of the heart is the pump for the systemic circuit, delivering oxygenated blood to the body's cells."},
-{t:"circ",q:"In the systemic circuit, oxygenated blood is pumped out of the heart into the:",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"In the systemic circuit, oxygenated blood is pumped out of the heart into the:",
  o:["Pulmonary artery","Aorta","Superior vena cava","Pulmonary vein"],a:1,
  e:"Blood is pumped into the aorta, which branches at the aortic arch to deliver oxygen-rich blood to the upper and lower body."},
-{t:"circ",q:"Deoxygenated blood returning from the LOWER body reaches the heart via the:",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"Deoxygenated blood returning from the LOWER body reaches the heart via the:",
  o:["Superior vena cava","Inferior vena cava","Pulmonary vein","Aorta"],a:1,
  e:"From the lower extremities, blood travels the great saphenous vein and eventually the inferior vena cava; the upper body returns via the superior vena cava."},
-{t:"circ",q:"Which statement about the two circuits is correct?",
+{t:"circ",img:"images/slides/circulation-circuits.jpg",q:"Which statement about the two circuits is correct?",
  o:["The right side pumps the systemic circuit; the left pumps the pulmonary circuit","The right side pumps the pulmonary circuit; the left pumps the systemic circuit","Both circuits are pumped by the atria","The aorta belongs to the pulmonary circuit"],a:1,
  e:"The right side = pulmonary circuit (to the lungs); the left side = systemic circuit (to the body)."},
 
@@ -867,10 +898,10 @@ const BANK = [
 {t:"anatomy",q:"The chordae tendineae attach the AV valves to which structures?",
  o:["The semilunar valves","The papillary muscles","The coronary arteries","The pericardium"],a:1,
  e:"Chordae tendineae attach on the underside of the AV valves and to the papillary muscles, anchoring the valves and preventing them from bulging back into the atria."},
-{t:"anatomy",q:"What makes the normal heart sounds?",
+{t:"anatomy",img:"images/slides/heart-valves.jpg",q:"What makes the normal heart sounds?",
  o:["Blood rushing through the arteries","The closing of the heart valves","The contraction of the atria only","Electrical impulses in the SA node"],a:1,
  e:"The heart sounds are made by the closing of the valves: the first sound (lubb) is the tricuspid and mitral valves closing; the second (dupp) is the pulmonic and aortic valves closing."},
-{t:"anatomy",q:"The first heart sound ('lubb') occurs when which valves close?",
+{t:"anatomy",img:"images/slides/heart-valves.jpg",q:"The first heart sound ('lubb') occurs when which valves close?",
  o:["The pulmonic and aortic (semilunar) valves","The tricuspid and mitral (AV) valves","Only the aortic valve","Only the tricuspid valve"],a:1,
  e:"The first heart sound (lubb) occurs during ventricular contraction when the tricuspid and mitral valves close."},
 {t:"anatomy",q:"A third heart sound in a person OLDER than 40 years of age is considered:",
@@ -911,19 +942,19 @@ const BANK = [
 {t:"electro",q:"CONTRACTILITY refers to the ability of myocardial cells to:",
  o:["Generate their own impulse","Shorten and cause the muscle to contract","Conduct impulses to other cells","Resist outside stimulation"],a:1,
  e:"Contractility is the ability of the myocardial cells to respond to an impulse by shortening (or prolonging the response) — causing the muscle to contract."},
-{t:"electro",q:"What is the PRIMARY (inherent) pacemaker of the heart and its normal rate?",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"What is the PRIMARY (inherent) pacemaker of the heart and its normal rate?",
  o:["The AV node, 40–60 bpm","The SA node, 60–100 bpm","The Purkinje fibers, 20–40 bpm","The Bundle of His, 100–180 bpm"],a:1,
  e:"The SA node is the primary/inherent pacemaker, normally firing at 60–100 beats per minute."},
-{t:"electro",q:"What is the inherent rate of the AV node (the 'backup' pacemaker)?",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"What is the inherent rate of the AV node (the 'backup' pacemaker)?",
  o:["60–100 bpm","40–60 bpm","20–40 bpm","100–180 bpm"],a:1,
  e:"The AV node is lower in the conduction system and serves as a backup, with a slower inherent rate of 40–60 bpm."},
-{t:"electro",q:"What is the inherent rate of the Purkinje fibers (the heart's 'last resort')?",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"What is the inherent rate of the Purkinje fibers (the heart's 'last resort')?",
  o:["60–100 bpm","40–60 bpm","20–40 bpm","Greater than 100 bpm"],a:2,
  e:"The Purkinje fibers are the end point of the conduction system and the last line of defense, with the slowest rate of 20–40 bpm."},
-{t:"electro",q:"As the impulse from the SA node reaches the AV node, what happens?",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"As the impulse from the SA node reaches the AV node, what happens?",
  o:["It speeds up to reach the ventricles faster","It is slowed down to let the ventricles fill with blood","It stops completely","It reverses direction"],a:1,
  e:"At the AV node the impulse is slowed to allow the ventricles to fill with blood and the atria to prepare for repolarization."},
-{t:"electro",q:"Place the conduction pathway in the correct order after the SA node.",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"Place the conduction pathway in the correct order after the SA node.",
  o:["AV node → Bundle of His → bundle branches → Purkinje fibers","Bundle of His → AV node → Purkinje fibers → bundle branches","Purkinje fibers → AV node → Bundle of His → bundle branches","Bundle branches → Purkinje fibers → AV node → Bundle of His"],a:0,
  e:"After the SA node and atria, the impulse goes to the AV node, then the Bundle of His, down the right and left bundle branches, and finally to the Purkinje fibers."},
 {t:"electro",q:"A heart rate below 60 bpm is called:",
@@ -932,28 +963,28 @@ const BANK = [
 {t:"electro",q:"A heart rate greater than 100 bpm is called:",
  o:["Bradycardia","Tachycardia","Sinus arrhythmia","Idioventricular rhythm"],a:1,
  e:"A rate greater than 100 bpm is tachycardia."},
-{t:"electro",q:"The SYMPATHETIC nervous system (fight-or-flight) has what effect on the heart?",
+{t:"electro",img:"images/slides/autonomic-influence.jpg",q:"The SYMPATHETIC nervous system (fight-or-flight) has what effect on the heart?",
  o:["Slows heart rate and vasoconstricts","Speeds up heart rate, increases respirations, and vasodilates","Has no effect on the heart","Stops the SA node"],a:1,
  e:"The sympathetic system secretes epinephrine/norepinephrine, so heart rate speeds up, respirations increase, and blood vessels vasodilate."},
-{t:"electro",q:"Stimulation of the vagal nerve (parasympathetic) causes:",
+{t:"electro",img:"images/slides/autonomic-influence.jpg",q:"Stimulation of the vagal nerve (parasympathetic) causes:",
  o:["An increase in heart rate","A decrease in heart rate","Vasodilation of all vessels","Increased automaticity"],a:1,
  e:"The vagal nerve is part of the parasympathetic system; when stimulated it causes a decrease in heart rate."},
-{t:"electro",q:"The 'Sodium Pump' is responsible for which electrical event?",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"The 'Sodium Pump' is responsible for which electrical event?",
  o:["The cardiac cycle","An action potential","The QT interval","The standardization wave"],a:1,
  e:"The 'Sodium Pump' is responsible for an action potential — a short-lasting event in which the cell's membrane potential rapidly rises and falls."},
-{t:"electro",q:"Which ion is normally found OUTSIDE (extracellular) the cell and rushes in during depolarization?",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"Which ion is normally found OUTSIDE (extracellular) the cell and rushes in during depolarization?",
  o:["Potassium (K+)","Sodium (Na+)","Magnesium (Mg2+)","Phosphate"],a:1,
  e:"Sodium (Na+) is normally extracellular; when cells are stimulated, Na+ rushes into the cell, making the inside more positive (depolarization)."},
-{t:"electro",q:"POLARIZATION ('ready' state) of a cardiac cell describes:",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"POLARIZATION ('ready' state) of a cardiac cell describes:",
  o:["The inside of the cell becoming more positive","Electrical charges existing on either side of the membrane, with the inside more negative — the resting/ready state","Total loss of all electrical activity","The shortening of the muscle"],a:1,
  e:"Polarization is the 'ready' resting state — charges exist on either side of the membrane and the inside is more negative than the outside."},
-{t:"electro",q:"DEPOLARIZATION ('discharge') is the movement of charged particles that causes:",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"DEPOLARIZATION ('discharge') is the movement of charged particles that causes:",
  o:["The inside of the cell to become more positive (forming a spike on the EKG)","The inside to return to its negative resting charge","The cell to stop responding to stimuli","Vasodilation"],a:0,
  e:"Depolarization is the discharge state — Na+ rushes in, the inside becomes more positive, forming a spike waveform on the EKG."},
-{t:"electro",q:"REPOLARIZATION ('recovery') is the process in which:",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"REPOLARIZATION ('recovery') is the process in which:",
  o:["Sodium rushes into the cell","The inside of the cell is restored to its negative resting charge as K+ leaves","The cell contracts","The cell becomes more excitable than normal"],a:1,
  e:"Repolarization is the recovery state — Na+ flow stops, K+ leaves, and the inside returns to its negative resting charge."},
-{t:"electro",q:"Which structures have very FEW sodium channels, so slowing/blocking sodium affects them strongly?",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"Which structures have very FEW sodium channels, so slowing/blocking sodium affects them strongly?",
  o:["The atria and ventricles","The Purkinje fibers","The SA and AV nodes","The papillary muscles"],a:2,
  e:"The SA and AV nodes have very few sodium channels; if sodium flow is slowed or blocked, the result can be a slower heart rate and less excitable cells."},
 {t:"electro",q:"On the conduction-system diagram, which number is the SA NODE?",d:"conduction",
@@ -974,13 +1005,13 @@ const BANK = [
 {t:"leads",q:"What is the purpose of ECG leads?",
  o:["To pump blood through the heart","To give the technician different views of the heart's electrical activity","To measure oxygen saturation","To deliver a defibrillation shock"],a:1,
  e:"Leads give the technician views of the heart's electrical activity; cables transmit the electrical impulses created by the action potentials."},
-{t:"leads",q:"Electricity in the heart normally flows from:",
+{t:"leads",img:"images/slides/deflection-direction.jpg",q:"Electricity in the heart normally flows from:",
  o:["Positive to negative","Negative to positive","High to low pressure","Apex to base"],a:1,
  e:"Electric flow goes from NEGATIVE to POSITIVE. Flow toward the positive electrode makes an upright deflection; toward the negative electrode makes an inverted one."},
-{t:"leads",q:"On the ECG, electricity flowing TOWARD the positive electrode produces:",
+{t:"leads",img:"images/slides/deflection-direction.jpg",q:"On the ECG, electricity flowing TOWARD the positive electrode produces:",
  o:["An inverted (downward) pattern","An upright pattern","A flat isoelectric line","No deflection at all"],a:1,
  e:"Flow toward the positive electrode produces an upright pattern; flow toward the negative electrode produces an inverted pattern."},
-{t:"leads",q:"A flat line on the ECG indicating no electrical flow is called the:",
+{t:"leads",img:"images/slides/deflection-direction.jpg",q:"A flat line on the ECG indicating no electrical flow is called the:",
  o:["Spike","Isoelectric line (baseline)","QRS complex","Standardization wave"],a:1,
  e:"No electrical flow produces a flat line called the isoelectric line, or baseline."},
 {t:"leads",q:"Who labeled the ECG waves PQRST and is credited with the triangle of leads?",
@@ -1007,13 +1038,13 @@ const BANK = [
 {t:"leads",q:"What does the 'aV' in aVR, aVL, aVF stand for?",
  o:["Anterior view","Augmented voltage","Atrial vector","Average value"],a:1,
  e:"'aV' stands for augmented voltage; the third letter gives the direction of the view (R = right arm, L = left arm, F = left foot)."},
-{t:"leads",q:"The standard limb leads and augmented leads both provide a view of the heart along which plane?",
+{t:"leads",img:"images/slides/body-planes.jpg",q:"The standard limb leads and augmented leads both provide a view of the heart along which plane?",
  o:["Transverse plane","Frontal plane","Sagittal plane","Horizontal plane"],a:1,
  e:"The standard and augmented leads use Einthoven's triangle and view the FRONTAL plane of the heart."},
 {t:"leads",q:"The main difference between the STANDARD leads and the AUGMENTED leads is that:",
  o:["Standard leads are bipolar; augmented leads are unipolar","Standard leads are unipolar; augmented leads are bipolar","Standard leads view the transverse plane; augmented view the sagittal plane","There is no difference"],a:0,
  e:"Standard leads are bipolar (negative to positive); augmented leads are unipolar (viewing the positive from a central terminal)."},
-{t:"leads",q:"How many electrodes are used to obtain the precordial (chest) leads V1–V6, and which plane do they view?",
+{t:"leads",img:"images/slides/body-planes.jpg",q:"How many electrodes are used to obtain the precordial (chest) leads V1–V6, and which plane do they view?",
  o:["Three electrodes; the frontal plane","Six electrodes; the transverse plane","Ten electrodes; the sagittal plane","Four electrodes; the frontal plane"],a:1,
  e:"There are six precordial (chest) leads (V1–V6), which are unipolar and provide six views across the transverse plane."},
 {t:"leads",q:"The precordial (chest) leads are what type of lead?",
@@ -1039,40 +1070,40 @@ const BANK = [
  e:"Limb leads should be placed as distal on the limbs as possible; circumstances may force a more proximal placement, which should be reported."},
 
 /* ===================== ECG WAVES & MEASUREMENTS ===================== */
-{t:"waves",q:"What does the P WAVE represent?",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"What does the P WAVE represent?",
  o:["Ventricular depolarization","The stimulation (depolarization) of the right and left atria","Ventricular repolarization","The resting baseline"],a:1,
  e:"The P wave reflects the stimulation/depolarization of the right and left atria. The SA-node impulse itself is not recorded."},
-{t:"waves",q:"The QRS complex represents:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The QRS complex represents:",
  o:["Atrial depolarization","Ventricular depolarization (and triggers ventricular contraction)","Ventricular repolarization","Atrial repolarization only"],a:1,
  e:"The QRS complex represents the impulse from the AV node to the Purkinje fibers — ventricular depolarization — which triggers ventricular contraction."},
-{t:"waves",q:"Why is the QRS complex much larger than the P wave?",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"Why is the QRS complex much larger than the P wave?",
  o:["The paper speeds up during the QRS","The ventricles have much greater muscle mass than the atria","The atria are not depolarizing","The QRS is measured in different units"],a:1,
  e:"The QRS is larger because ventricular depolarization involves a much greater muscle mass than atrial depolarization."},
-{t:"waves",q:"The QRS complex is ALWAYS called the QRS complex, even if:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The QRS complex is ALWAYS called the QRS complex, even if:",
  o:["The patient is in bradycardia","Some of the Q, R, or S waves are not visible","The P wave is inverted","The rhythm is irregular"],a:1,
  e:"It is always called the QRS complex even if some of the waves are not visible."},
-{t:"waves",q:"The T WAVE represents:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The T WAVE represents:",
  o:["Atrial depolarization","Ventricular depolarization","Ventricular repolarization (recovery and recharging of the cells)","The PR interval"],a:2,
  e:"The T wave represents ventricular repolarization — the recovery of the heart and recharging of the cells."},
-{t:"waves",q:"The PR INTERVAL represents the time for the impulse to travel:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The PR INTERVAL represents the time for the impulse to travel:",
  o:["Through the ventricles only","From the SA node to the AV node (atrial contraction to the start of ventricular contraction)","From the Purkinje fibers back to the SA node","Across the T wave"],a:1,
  e:"The PR interval represents the time for the impulse to go from the SA node to the AV node — from atrial contraction to the beginning of ventricular contraction."},
-{t:"waves",q:"A PROLONGED PR interval indicates:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"A PROLONGED PR interval indicates:",
  o:["The impulse was delayed passing through the atria or AV node","An abnormal pathway bypassing the AV node","Complete loss of atrial activity","Ventricular fibrillation"],a:0,
  e:"A prolonged PR interval indicates the impulse was delayed at the atria or AV node. A shortened PR interval may indicate a pathway bypassing the AV node."},
-{t:"waves",q:"The QT INTERVAL represents:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The QT INTERVAL represents:",
  o:["Atrial depolarization only","Total ventricular activity, from ventricular depolarization to repolarization","The PR segment","The isoelectric baseline"],a:1,
  e:"The QT interval represents total ventricular activity — from the time the ventricles depolarize to the time they repolarize."},
-{t:"waves",q:"A DEPRESSED ST segment suggests, while an ELEVATED ST segment suggests:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"A DEPRESSED ST segment suggests, while an ELEVATED ST segment suggests:",
  o:["Ischemia; myocardial injury","Myocardial injury; ischemia","Atrial enlargement; bundle branch block","Normal finding; normal finding"],a:0,
  e:"A depressed ST segment suggests ischemia; an elevated ST segment suggests myocardial injury."},
-{t:"waves",q:"The J POINT is defined as the point where the:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The J POINT is defined as the point where the:",
  o:["P wave meets the QRS","QRS and the ST segment meet","T wave ends","R-R interval is measured"],a:1,
  e:"The J point is where the QRS and the ST segment meet."},
-{t:"waves",q:"The U WAVE is most often associated with:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"The U WAVE is most often associated with:",
  o:["High potassium","Very LOW potassium","Atrial fibrillation","Bundle branch block"],a:1,
  e:"The U wave is a late waveform following the T wave, usually a result of very low potassium. It is smaller than the T wave and not always visible."},
-{t:"waves",q:"Atrial repolarization occurs during which part of the ECG?",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"Atrial repolarization occurs during which part of the ECG?",
  o:["The T wave","The PR segment (it is hidden by ventricular depolarization)","The U wave","The QT interval"],a:1,
  e:"The PR segment represents activation of the AV node, Bundle of His, bundle branches and Purkinje fibers; atrial repolarization occurs during this time and is hidden by the QRS."},
 {t:"waves",q:"On the ECG waveform diagram, which number is the P WAVE?",d:"ecgwave",
@@ -1090,49 +1121,49 @@ const BANK = [
 {t:"waves",q:"On the ECG waveform diagram, which number marks the QT INTERVAL?",d:"ecgwave",
  o:["5","6","7","8"],a:3,
  e:"Bracket 8 spans from the start of the QRS to the end of the T wave = QT interval."},
-{t:"waves",q:"During the QRS complex (number 2 on the diagram), what is happening in the heart?",d:"ecgwave",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"During the QRS complex (number 2 on the diagram), what is happening in the heart?",d:"ecgwave",
  o:["The atria are depolarizing","The ventricles are depolarizing and about to contract","The ventricles are repolarizing","The heart is at rest"],a:1,
  e:"The QRS represents ventricular depolarization; after it begins, the ventricles contract."},
-{t:"waves",q:"What is the EXPECTED measurement range for a normal PR interval?",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"What is the EXPECTED measurement range for a normal PR interval?",
  o:["0.04 – 0.10 second","0.12 – 0.20 second","0.20 – 0.40 second","Less than 0.04 second"],a:1,
  e:"In a sinus-generated rhythm the PR interval measures 0.12–0.20 second (3 to 5 small blocks) and is constant."},
-{t:"waves",q:"What is the EXPECTED (normal) measurement for the QRS complex?",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"What is the EXPECTED (normal) measurement for the QRS complex?",
  o:["Generally less than 0.12 second","0.12 – 0.20 second","0.20 – 0.40 second","Greater than 0.40 second"],a:0,
  e:"A normal QRS measurement is generally less than 0.12 second."},
 {t:"waves",q:"The cardiac cycle (one complete heartbeat) is approximately how long?",
  o:["0.4 second","0.8 second","1.2 seconds","2.0 seconds"],a:1,
  e:"The cardiac cycle is one complete heartbeat, approximately 0.8 second, or about 72 beats per minute."},
-{t:"waves",q:"What is the standard speed at which the ECG paper runs through the machine?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"What is the standard speed at which the ECG paper runs through the machine?",
  o:["10 millimeters per second","25 millimeters per second","50 millimeters per second","100 millimeters per second"],a:1,
  e:"The standard rate the ECG runs is 25 millimeters per second."},
-{t:"waves",q:"On the ECG graph paper, what do the HORIZONTAL lines (amplitude up/down) represent?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"On the ECG graph paper, what do the HORIZONTAL lines (amplitude up/down) represent?",
  o:["Time, measured in seconds","Voltage, measured in millivolts","Heart rate in bpm","Oxygen saturation"],a:1,
  e:"Voltage is the upward/downward deflection, interpreted using the horizontal lines, measured in millivolts. Time is read using the vertical lines."},
-{t:"waves",q:"On the ECG graph paper, what do the VERTICAL lines (across the paper) represent?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"On the ECG graph paper, what do the VERTICAL lines (across the paper) represent?",
  o:["Voltage in millivolts","Time in seconds","Distance in millimeters only","Cardiac axis in degrees"],a:1,
  e:"Time is interpreted using the vertical lines and tells how long electrical activity took to travel from one area to another; it is measured in seconds."},
-{t:"waves",q:"Each SMALL box ACROSS the ECG graph paper represents how much time?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"Each SMALL box ACROSS the ECG graph paper represents how much time?",
  o:["0.04 second","0.20 second","0.10 second","1 second"],a:0,
  e:"Each small box across the paper = 0.04 second; five small boxes (one large box) = 0.20 second."},
-{t:"waves",q:"Each LARGE box ACROSS the ECG graph paper represents how much time?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"Each LARGE box ACROSS the ECG graph paper represents how much time?",
  o:["0.04 second","0.12 second","0.20 second","0.40 second"],a:2,
  e:"The distance between two heavy lines is five small boxes = one large box = 0.20 second across."},
 {t:"waves",q:"On the graph-paper diagram, which item is ONE LARGE box (5 small boxes)?",d:"graphpaper",
  o:["1","2","3","none"],a:1,
  e:"Item 2 is the large box bounded by the heavy lines (five small boxes per side) = 0.20 second across / 0.5 mV up-down."},
-{t:"waves",q:"The standardization wave can be measured as what height and width?",
+{t:"waves",img:"images/slides/ecg-standardization-wave.jpg",q:"The standardization wave can be measured as what height and width?",
  o:["1 mV high (10 small squares) and 0.20 second wide (5 small squares)","0.5 mV high and 0.04 second wide","2 mV high and 1 second wide","0.1 mV high and 0.12 second wide"],a:0,
  e:"The standardization wave is 1 millivolt high (10 small squares) and 0.20 second across (5 small squares)."},
-{t:"waves",q:"On most ECG paper, the small 'tic' marks across the top usually appear every:",
+{t:"waves",img:"images/slides/ecg-tic-marks.jpg",q:"On most ECG paper, the small 'tic' marks across the top usually appear every:",
  o:["1 second","3 seconds (15 large squares apart)","6 seconds","10 seconds"],a:1,
  e:"Most paper produces a tic mark every 3 seconds, which is 15 large squares apart (some paper marks every second = 5 large squares)."},
-{t:"waves",q:"For a REGULAR rhythm, the MOST accurate way to calculate rate is to:",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"For a REGULAR rhythm, the MOST accurate way to calculate rate is to:",
  o:["Count R waves in a 6-second strip and multiply by 10","Count the small squares between two R waves and divide by 1,500","Count large blocks between two R waves and divide by 300","Estimate by the width of the QRS"],a:1,
  e:"For regular rhythms, the most accurate method is to count small squares between two R waves and divide by 1,500 (time-consuming, regular rhythms only)."},
-{t:"waves",q:"The FASTEST way to estimate heart rate is to:",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"The FASTEST way to estimate heart rate is to:",
  o:["Divide 1,500 by the small squares between R waves","Count large blocks between R waves and divide by 300","Count the number of R waves in a 6-second strip and multiply by 10","Measure the QT interval"],a:2,
  e:"The fastest method is to count R waves in a 6-second printout and multiply by 10 — least accurate, gives only an estimate."},
-{t:"waves",q:"A quick method for regular rhythms is to count the number of LARGE blocks between two R waves and divide by:",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"A quick method for regular rhythms is to count the number of LARGE blocks between two R waves and divide by:",
  o:["10","300","1,500","60"],a:1,
  e:"Counting large blocks between two R waves and dividing by 300 is a faster method, used only with regular rhythms."},
 {t:"waves",q:"What is the recommended ORDER of the systematic approach to interpreting a rhythm?",
@@ -1141,7 +1172,7 @@ const BANK = [
 {t:"waves",q:"In step 1 (regularity), the rhythm is checked by measuring and comparing the:",
  o:["P-P interval only","R-to-R interval across the strip","QT interval","Height of the T waves"],a:1,
  e:"Regularity is determined by measuring the R-to-R interval and comparing it across the entire strip."},
-{t:"waves",q:"In Lead II, a normal SINUS P wave will always:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"In Lead II, a normal SINUS P wave will always:",
  o:["Be inverted","Deflect upright and precede every QRS","Follow the QRS complex","Be absent"],a:1,
  e:"In Lead II the sinus P wave always deflects upright, is regular, precedes the QRS, and there is only one P wave per cardiac cycle."},
 {t:"waves",q:"An instrument used to measure the distance between two points on an ECG strip is called a:",
@@ -1150,7 +1181,7 @@ const BANK = [
 {t:"waves",q:"Common causes of artifact on the ECG include all of the following EXCEPT:",
  o:["Muscle tremors or shivering","Patient movement or loose electrodes","Nearby electrical equipment","A normal, well-adhered electrode on dry skin"],a:3,
  e:"Artifact is caused by muscle tremors, shivers, movement, loose electrodes, or nearby electrical equipment — not by a properly applied electrode."},
-{t:"waves",q:"An ECG measurement that falls between two lines (e.g., between 0.12 and 0.16 second) should be:",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"An ECG measurement that falls between two lines (e.g., between 0.12 and 0.16 second) should be:",
  o:["Rounded up to the nearest line","Recorded as an odd value such as 0.14 second by the technician","Ignored","Recorded only by the machine"],a:1,
  e:"The technician adjusts the measurement accordingly — e.g., between 0.12 and 0.16 second would be 0.14 second. (Note: the guide also stresses that truly odd/precise readings come from the machine.)"},
 
@@ -1315,7 +1346,7 @@ const BANK = [
 {t:"twelve",q:"How many electrodes are used to obtain a standard 12-lead ECG?",
  o:["Three","Six","Ten","Twelve"],a:2,
  e:"The 12 different views are obtained using ten electrodes (four limb and six chest)."},
-{t:"twelve",q:"With the four limb leads, how many views of the heart are obtained, and in which plane?",
+{t:"twelve",img:"images/slides/body-planes.jpg",q:"With the four limb leads, how many views of the heart are obtained, and in which plane?",
  o:["Six views in the frontal plane","Six views in the transverse plane","Three views in the sagittal plane","Twelve views in the frontal plane"],a:0,
  e:"The four limb leads provide six views in the frontal plane — three bipolar (I, II, III) and three augmented (aVR, aVL, aVF)."},
 {t:"twelve",q:"If a patient has a right below-the-knee amputation, where should the right leg lead be placed (and what else should the technician do)?",
@@ -1384,13 +1415,13 @@ const BANK = [
  o:["A normal first heart sound","An abnormal heart sound, often related to valve or blood-flow turbulence","The pacemaker spike","The isoelectric line"],a:1,
  e:"A murmur is an abnormal heart sound. (Normal heart sounds are the 'lubb-dupp' of the valves closing; abnormal sounds such as murmurs relate to turbulent flow or valve issues.)",
  f:"The booklet lists MURMUR as a required national-testing term; the study guide describes normal heart sounds and notes an abnormal third sound, but does not give a one-line definition of 'murmur,' so this standard definition is provided."},
-{t:"terms",q:"The PACEMAKER NODE of the heart (its natural pacemaker) is the:",
+{t:"terms",img:"images/slides/conduction-system.jpg",q:"The PACEMAKER NODE of the heart (its natural pacemaker) is the:",
  o:["AV node","SA node","Bundle of His","Purkinje fibers"],a:1,
  e:"The SA node is the heart's natural pacemaker ('pacemaker node'), with an inherent rate of 60–100 bpm."},
-{t:"terms",q:"DEPOLARIZATION is best defined as:",
+{t:"terms",img:"images/slides/action-potential.jpg",q:"DEPOLARIZATION is best defined as:",
  o:["The recovery of the cell to its resting negative charge","The movement of charged particles making the inside of the cell more positive","The resting/ready state","The absence of all electrical activity"],a:1,
  e:"Depolarization (discharge) is the movement of charged particles that makes the inside of the cell more positive, forming the spike on the ECG."},
-{t:"terms",q:"REPOLARIZATION is best defined as:",
+{t:"terms",img:"images/slides/action-potential.jpg",q:"REPOLARIZATION is best defined as:",
  o:["The inside of the cell becoming more positive","The recovery state — the inside of the cell is restored to its negative charge","The contraction of the muscle","Loss of all electrical activity"],a:1,
  e:"Repolarization (recovery) restores the inside of the cell to its negative resting charge as potassium leaves the cell."},
 {t:"terms",q:"An ARTIFACT on the ECG is:",
@@ -1400,7 +1431,7 @@ const BANK = [
  o:["A healthy resting heart","A dying heart (very slow, often deteriorating rhythm)","Atrial flutter","Normal sinus rhythm"],a:1,
  e:"Agonal refers to the rhythm of a dying heart — very slow and unreliable (as seen with an idioventricular/dying-heart rhythm).",
  f:"The booklet lists AGONAL as a required term; the study guide describes idioventricular rhythm as 'less reliable as the heart dies' but does not formally define 'agonal,' so this standard description is provided."},
-{t:"terms",q:"The BASELINE (isoelectric line) is:",
+{t:"terms",img:"images/slides/deflection-direction.jpg",q:"The BASELINE (isoelectric line) is:",
  o:["The tall QRS spike","The flat line representing no electrical flow","The T wave","The standardization wave"],a:1,
  e:"The baseline/isoelectric line is the flat line produced when there is no electrical flow influencing the deflection."},
 {t:"terms",q:"ECTOPIC FIRING (an ectopic beat) refers to a beat that:",
@@ -1430,7 +1461,7 @@ const BANK = [
 {t:"circ",q:"The two LARGEST arteries leaving the heart are the:",
  o:["Coronary and carotid arteries","Pulmonary artery and the aorta","Subclavian and renal arteries","Superior and inferior vena cava"],a:1,
  e:"Progress Check answer: the largest arteries from the heart are the Pulmonary Artery and the Aorta. (The vena cavae are veins, not arteries.)"},
-{t:"circ",q:"When do the coronary arteries primarily receive their blood flow?",
+{t:"circ",img:"images/slides/coronary-perfusion-systole-diastole.jpg",q:"When do the coronary arteries primarily receive their blood flow?",
  o:["During systole, when the semilunar valves are open","During diastole, when the semilunar valves are closed and blood is circulated through the heart's own pathway","Only during exercise","They receive no blood flow from the heart"],a:1,
  e:"During systole the semilunar valves are open and blood takes the path of least resistance to the body; during diastole the semilunar valves close and blood is circulated through the heart's own (coronary) pathway."},
 {t:"circ",q:"On the coronary artery diagram, which number indicates the LEFT ANTERIOR DESCENDING (LAD) artery?",d:"coronary",
@@ -1541,10 +1572,10 @@ const BANK = [
 {t:"pharm",q:"SODIUM CHANNEL BLOCKERS (such as quinidine and flecainide) work by:",
  o:["Increasing the force of contraction","Slowing electrical conduction in the heart by blocking sodium channels","Increasing blood volume","Blocking calcium channels"],a:1,
  e:"Sodium channel blockers slow the electrical conduction in the heart by blocking sodium channels. Examples: quinidine, flecainide."},
-{t:"pharm",q:"In the sympathetic 'fight-or-flight' response, epinephrine and norepinephrine are secreted by the:",
+{t:"pharm",img:"images/slides/autonomic-influence.jpg",q:"In the sympathetic 'fight-or-flight' response, epinephrine and norepinephrine are secreted by the:",
  o:["Pituitary gland","Adrenal glands","Thyroid gland","Pancreas"],a:1,
  e:"The sympathetic nervous system sends commands to the adrenal glands, which secrete epinephrine (adrenaline) and norepinephrine (noradrenaline) to stimulate the heart and blood vessels."},
-{t:"pharm",q:"Which analogy do the slides use to contrast the sympathetic and parasympathetic systems?",
+{t:"pharm",img:"images/slides/autonomic-influence.jpg",q:"Which analogy do the slides use to contrast the sympathetic and parasympathetic systems?",
  o:["Sympathetic is the 'brake pedal'; parasympathetic is the 'gas pedal'","Sympathetic is the 'gas pedal' (increases rate/contractility); parasympathetic is the 'brake pedal' (rest and digest)","Both are the 'gas pedal'","Both are the 'brake pedal'"],a:1,
  e:"The sympathetic system is the 'gas pedal' — fight or flight, increasing rate and contractility to meet demand. The parasympathetic system is the 'brake pedal' — rest and digest, slowing the SA and AV nodes via the vagus nerve."},
 {t:"pharm",q:"Antidiuretic hormone (ADH, vasopressin) affects blood pressure by:",
@@ -1561,13 +1592,13 @@ const BANK = [
 {t:"electro",q:"What are the TWO types of cardiac cells?",
  o:["Plasma cells and platelets","Cardiomyocytes (cardiac myocytes) and pacemaker cells","Erythrocytes and leukocytes","Neurons and glial cells"],a:1,
  e:"The two types of cardiac cells are cardiomyocytes (cardiac myocytes — pumping ability) and pacemaker cells (which govern rhythm)."},
-{t:"electro",q:"During the ABSOLUTE refractory period (from the beginning of the QRS complex to midway through the T wave):",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"During the ABSOLUTE refractory period (from the beginning of the QRS complex to midway through the T wave):",
  o:["A premature impulse can easily start a new beat","Absolutely no impulse can be generated, and no premature impulse can initiate another cardiac cycle","The atria are repolarizing","The ventricles are filling"],a:1,
  e:"From the beginning of the QRS to midway through the T wave (ventricular depolarization and the start of repolarization), absolutely no impulse can be generated — no premature impulse can initiate another cardiac cycle. The Electrophysiology deck labels this the 'ABSOLUTE Refractory Period.'"},
-{t:"electro",q:"The 'vulnerable period' — from midway through the T wave to the end of the T wave — is significant because:",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"The 'vulnerable period' — from midway through the T wave to the end of the T wave — is significant because:",
  o:["No impulse can occur at all","The ventricles are mostly repolarized and a premature impulse COULD initiate another cardiac cycle","The atria contract","The SA node is firing"],a:1,
  e:"From midway through the T wave to the end of the T wave, the ventricles are mostly repolarized and close to the ready (polarized) state; a premature impulse could initiate another cardiac cycle — this is the vulnerable period, labeled the 'RELATIVE Refractory Period' in the Electrophysiology deck."},
-{t:"electro",q:"Place the electrical events of one cardiac cycle in the correct order.",
+{t:"electro",img:"images/slides/conduction-system.jpg",q:"Place the electrical events of one cardiac cycle in the correct order.",
  o:["Ventricular depolarization → atrial depolarization → AV delay → repolarization","Atrial depolarization → atrioventricular (AV) delay → ventricular depolarization → repolarization","Repolarization → AV delay → atrial depolarization → ventricular depolarization","AV delay → repolarization → atrial depolarization → ventricular depolarization"],a:1,
  e:"The cycle breakdown is: atrial depolarization (initiated by the SA node) → AV delay (the AV node slows conduction to allow atrial contraction) → ventricular depolarization (rapid His–Purkinje conduction) → repolarization (return to resting state). These do not all happen at the same time."},
 
@@ -1592,13 +1623,13 @@ const BANK = [
  e:"The ECG is a graphic representation of the heart's ELECTRICAL activity only; it does NOT tell us about MECHANICAL activity, so the patient must be physically assessed (blood pressure, pulse, color, level of consciousness, etc.)."},
 
 /* ===================== WAVES & MEASUREMENTS (added: EP slides) ===================== */
-{t:"waves",q:"Each SMALL box UP or DOWN on the ECG graph paper represents how much VOLTAGE?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"Each SMALL box UP or DOWN on the ECG graph paper represents how much VOLTAGE?",
  o:["0.04 mV","0.1 mV","0.5 mV","1 mV"],a:1,
  e:"Reading up or down the paper measures voltage in millivolts: each small box is 0.1 mV (and 0.04 second across)."},
-{t:"waves",q:"Each LARGE box UP or DOWN on the ECG graph paper represents how much VOLTAGE?",
+{t:"waves",img:"images/slides/ecg-paper.jpg",q:"Each LARGE box UP or DOWN on the ECG graph paper represents how much VOLTAGE?",
  o:["0.1 mV","0.2 mV","0.5 mV","1 mV"],a:2,
  e:"Each large box is 0.5 mV up/down (and 0.20 second across); a large box is five small boxes."},
-{t:"waves",q:"A normal QT interval should measure:",
+{t:"waves",img:"images/slides/ecg-waveform.jpg",q:"A normal QT interval should measure:",
  o:["More than the R-to-R interval","Less than half of the R-to-R (complex-to-complex) interval","Exactly equal to the PR interval","More than 0.40 second in all patients"],a:1,
  e:"The QT interval represents all ventricular activity and should measure less than half of the R-to-R (complex-to-complex) interval; it is corrected for heart rate, and a long QT may be dangerous."},
 
@@ -1641,10 +1672,10 @@ const BANK = [
 {t:"electro",q:"Chloride, bicarbonate, and phosphate are examples of:",
  o:["Cations (positively charged ions)","Anions (negatively charged ions)","Proteins","Pacemaker cells"],a:1,
  e:"Anions are negatively charged ions; examples include chloride, bicarbonate, and phosphate."},
-{t:"electro",q:"The RESTING MEMBRANE POTENTIAL of most cells (slightly more negative inside than outside) ranges between:",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"The RESTING MEMBRANE POTENTIAL of most cells (slightly more negative inside than outside) ranges between:",
  o:["0 and +20 mV","-70 and -90 mV","-10 and -20 mV","+70 and +90 mV"],a:1,
  e:"Every cell is slightly more negative on the inside than the outside; the resting membrane potential of most cells ranges between -70 and -90 millivolts, making each cell a tiny 'battery.'"},
-{t:"electro",q:"An ACTION POTENTIAL is best described as:",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"An ACTION POTENTIAL is best described as:",
  o:["A permanent change in the cell's charge","A short-lasting event in which the cell's electrical membrane potential rapidly rises and falls, brought on by a rapid change in membrane permeability to certain ions","The mechanical contraction of the heart","The flow of blood through the coronary arteries"],a:1,
  e:"An action potential is a short-lasting event in which the electrical membrane potential of a cell rapidly rises and falls, brought on by a rapid change in membrane permeability to certain ions."},
 {t:"electro",q:"Which of the following are considered EXCITABLE cells?",
@@ -1656,7 +1687,7 @@ const BANK = [
 {t:"electro",q:"The ESCAPE mechanism occurs when:",
  o:["A lower site speeds up and takes over from a faster site","The normal pacemaker slows down or fails, and a lower pacing site assumes pacemaker responsibility","The SA node fires faster than normal","The ventricles stop contracting entirely"],a:1,
  e:"Escape mechanism: the normal pacemaker slows down or fails, and a lower pacing site assumes pacemaker responsibility."},
-{t:"electro",q:"How does the sodium-potassium (Na+/K+) pump reset the ion gradient after an action potential?",
+{t:"electro",img:"images/slides/action-potential.jpg",q:"How does the sodium-potassium (Na+/K+) pump reset the ion gradient after an action potential?",
  o:["It moves 3 K+ out and 2 Na+ in","It actively transports 3 Na+ out and 2 K+ in, using ATP","It allows ions to drift freely without energy","It moves only calcium out of the cell"],a:1,
  e:"During each heartbeat sodium enters the cell during depolarization; the pump actively transports 3 Na+ out and 2 K+ in, using ATP, to reset the ion gradient and maintain the resting membrane potential."},
 {t:"electro",q:"Digoxin (a common heart medication) strengthens contractions by:",
@@ -1689,14 +1720,44 @@ function init(){
 }
 
 /* ---------- mode: random ---------- */
-function startRandomSetup(){ hide('topicList'); show('randomSetup'); el('qcount').value=Math.min(25,BANK.length); }
-function setCount(n){ el('qcount').value=Math.min(n,BANK.length); }
-function setCountAll(){ el('qcount').value=BANK.length; }
-function beginRandom(){
+function startRandomSetup(){ hide('topicList'); show('randomSetup'); buildSectionPicker(); el('qcount').value=Math.min(25,Math.max(1,randomPool().length)); }
+
+function availableTopics(){ const c=bankCountByTopic(); return Object.keys(TOPICS).filter(k=>c[k]>0); }
+
+function buildSectionPicker(){
+  const c=bankCountByTopic();
+  const box=el('sectionPicker'); box.innerHTML='';
+  availableTopics().forEach(k=>{
+    const lab=document.createElement('label');
+    lab.innerHTML='<input type="checkbox" class="secchk" value="'+k+'" checked onchange="refreshPool()">'
+      +'<span>'+TOPICS[k].name+'</span><span class="scnt">'+c[k]+'</span>';
+    box.appendChild(lab);
+  });
+  refreshPool();
+}
+function selectedSections(){ return Array.from(document.querySelectorAll('.secchk')).filter(c=>c.checked).map(c=>c.value); }
+function selectAllSections(on){ document.querySelectorAll('.secchk').forEach(c=>c.checked=on); refreshPool(); }
+function randomPool(){ const sel=selectedSections(); return BANK.filter(q=>sel.indexOf(q.t)>-1); }
+function refreshPool(){
+  const pool=randomPool().length, sel=selectedSections().length;
+  el('poolInfo').textContent = sel ? (pool+' question'+(pool===1?'':'s')+' available across '+sel+' section'+(sel===1?'':'s'))
+                                   : 'Select at least one section to draw from.';
+  el('qcount').max=Math.max(1,pool);
   let n=parseInt(el('qcount').value,10);
-  if(isNaN(n)||n<1) n=1; if(n>BANK.length) n=BANK.length;
-  const qs=shuffle(BANK.slice()).slice(0,n);
-  launch(qs,'Random Practice Test');
+  if(isNaN(n)||n<1) el('qcount').value=Math.min(25,Math.max(1,pool));
+  else if(n>pool) el('qcount').value=Math.max(1,pool);
+}
+function setCount(n){ el('qcount').value=Math.min(n,Math.max(1,randomPool().length)); }
+function setCountAll(){ el('qcount').value=Math.max(1,randomPool().length); }
+function beginRandom(){
+  const pool=randomPool();
+  if(pool.length===0){ alert('Please select at least one section to draw from.'); return; }
+  let n=parseInt(el('qcount').value,10);
+  if(isNaN(n)||n<1) n=1; if(n>pool.length) n=pool.length;
+  const qs=shuffle(pool.slice()).slice(0,n);
+  const label = selectedSections().length===availableTopics().length
+    ? 'Random Practice Test' : 'Custom Practice Test ('+selectedSections().length+' sections)';
+  launch(qs,label);
 }
 
 /* ---------- mode: topic ---------- */
@@ -1734,6 +1795,10 @@ function renderQuestion(){
   el('qprogress').textContent='Question '+(s.idx+1)+' of '+s.questions.length;
   el('qscore').textContent='Score: '+s.score+'/'+s.idx;
   el('qtopic').textContent=TOPICS[q.t].name;
+
+  // slide-reference image (shown above the question text)
+  if(q.img){ el('qslideimg').src=q.img; show('qslideref'); }
+  else { el('qslideimg').removeAttribute('src'); hide('qslideref'); }
 
   // diagram
   const dbox=el('qdiagram');
