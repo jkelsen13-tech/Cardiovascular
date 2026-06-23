@@ -6,11 +6,23 @@ Cardiovascular Monitor Technician (CMT) class, modeled on a DMV-style practice t
 ## Use
 Open **`cmt-quiz.html`** in any web browser. No internet, server, or install required.
 
+## Structure
+Every question is tagged with a **module** (a class test unit) and a **unit** (one source
+deck inside a module). The study picker is built dynamically from these tags, so adding a
+new deck later is just new questions tagged `module:N / unit:M` — the new unit, module
+preset, and Module Test appear automatically with no code changes. (Topic overlap never
+implies the same unit — source/timing decides.)
+
+Module 1 = Unit 1 (History, Topographic & Respiratory), Unit 2 (Cardiovascular A&P),
+Unit 3 (Leads, Waves & Electrophysiology).
+
 ## Modes
 - **Random Practice Test** — randomized subset (default 25; adjustable up to the full
-  bank). Choose exactly which sections to draw from with per-section checkboxes, and
-  the available-question count updates to match your selection.
-- **Study by Topic** — drill one module at a time to target weak areas.
+  pool). Scope it by checking any units, a whole module preset, or Everything / Final
+  Practice; the available-question count updates and caps to your selection.
+- **Module Test** — a dedicated practice test scoped to one module's full pool (all its
+  units combined) to simulate that module's exam; test-length default, editable.
+- **Study by Topic** — drill one topic, limited to topics within your selected scope.
 
 ## Features
 - One question at a time with instant feedback (correct in green, wrong in red).
