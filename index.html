@@ -92,6 +92,19 @@
   .section-picker input{accent-color:var(--redbd); width:16px; height:16px; flex:none}
   .hint{font-size:12px; color:var(--muted); margin:4px 0 0}
   @media (max-width:520px){ .section-picker{grid-template-columns:1fr} }
+  .slots{display:flex; flex-direction:column; gap:8px; margin:6px 0 14px}
+  .slot-row{display:flex; align-items:center; gap:10px; flex-wrap:wrap}
+  .slot-num{flex:0 0 32px; height:32px; display:flex; align-items:center; justify-content:center; background:var(--panel2); border:1px solid var(--line); border-radius:6px; font-weight:700; font-size:13px}
+  .slot-line{flex:0 1 24px; height:1px; background:var(--line); min-width:10px}
+  .slot-sel{flex:1 1 200px; min-width:150px; padding:9px 10px; background:var(--panel2); color:var(--ink); border:1px solid var(--line); border-radius:8px; font-size:14px}
+  .slot-row.slot-ok .slot-sel{border-color:var(--greenbd); background:var(--greenbg)}
+  .slot-row.slot-no .slot-sel{border-color:var(--redbd); background:var(--redbg)}
+  .slot-correct{flex:1 1 100%; font-size:12.5px; color:var(--greenbd); padding-left:42px}
+  #checkBtn{margin-top:6px}
+  .missed .slot-mini{display:flex; flex-wrap:wrap; gap:6px 14px; margin:6px 0}
+  .missed .slot-mini span{font-size:13px}
+  .missed .smi-no{color:#fca5a5}
+  .missed .smi-ok{color:var(--greenbd)}
   .nav{display:flex; gap:10px; margin-top:8px}
   .nav .btn{margin:0}
   /* results */
@@ -1694,6 +1707,29 @@ const BANK = [
  o:["Speeding up the Na+/K+ pump","Inhibiting the Na+/K+ pump, which leads to increased intracellular calcium","Removing all calcium from the cell","Blocking the SA node directly"],a:1,
  e:"Digoxin inhibits the Na+/K+ pump; this leads to increased intracellular calcium, strengthening contractions — useful in heart failure."},
 
+/* ===================== NEW INTERACTIVE TYPES: ORDERING & LABELING ===================== */
+/* qtype:"order" -> ordered sequence in `order`; per-slot partial credit.
+   qtype:"label" -> diagram `d` with markers [[markerLabel, correctTerm], ...]; per-marker partial credit. */
+{t:"electro", qtype:"order",
+ q:"Order the normal impulse flow through the heart's electrical conduction system from start to finish.",
+ order:["SA Node","Internodal Pathways","AV Node","Bundle of His","Bundle Branches","Purkinje Fibers"],
+ e:"Normal conduction pathway: SA Node → Internodal Pathways → AV Node → Bundle of His → Bundle Branches → Purkinje Fibers."},
+
+{t:"circ", qtype:"order",
+ q:"List in REVERSE order, starting at the Aorta, the pathway that a blood cell has taken through the heart.",
+ order:["Aortic Valve","Left Ventricle","Mitral Valve","Left Atrium","Pulmonary Veins","Capillary beds at the Alveoli","Pulmonary Artery","Pulmonic Valve","Right Ventricle","Tricuspid Valve","Right Atrium","Superior/Inferior Vena Cava"],
+ e:"Forward path ending at the aorta: Superior/Inferior Vena Cava → Right Atrium → Tricuspid Valve → Right Ventricle → Pulmonic Valve → Pulmonary Artery → Capillary beds at the Alveoli → Pulmonary Veins → Left Atrium → Mitral Valve → Left Ventricle → Aortic Valve → Aorta. Listed in reverse from the aorta, the 12 slots are as shown."},
+
+{t:"anatomy", qtype:"label", d:"layers",
+ q:"Identify the areas of the cross section of the heart tissue.",
+ markers:[["1","Fibrous pericardium"],["2","Parietal pericardium"],["3","Pericardial cavity"],["4","Visceral pericardium"],["5","Myocardium"],["6","Endocardium"]],
+ e:"From the outer sac inward: 1 Fibrous pericardium, 2 Parietal pericardium, 3 Pericardial cavity, 4 Visceral pericardium (epicardium), 5 Myocardium, 6 Endocardium. (Confirmed against the labeled cross-section in the Cardiovascular A&P slides.)"},
+
+{t:"anatomy", qtype:"label", d:"heart",
+ q:"Identify the structures of the heart.",
+ markers:[["1","Superior Vena Cava"],["2","Aorta"],["3","Pulmonary Artery"],["4","Pulmonary Veins"],["5","Right Atrium"],["6","Left Atrium"],["7","Tricuspid Valve"],["8","Mitral Valve"],["9","Pulmonic Valve"],["10","Aortic Valve"],["11","Right Ventricle"],["12","Left Ventricle"],["13","Interventricular Septum"],["14","Inferior Vena Cava"],["15","Apex"],["16","Chordae Tendineae"],["17","Papillary Muscle"]],
+ e:"Heart diagram key: 1 Superior Vena Cava, 2 Aorta, 3 Pulmonary Artery, 4 Pulmonary Veins, 5 Right Atrium, 6 Left Atrium, 7 Tricuspid Valve, 8 Mitral Valve, 9 Pulmonic Valve, 10 Aortic Valve, 11 Right Ventricle, 12 Left Ventricle, 13 Interventricular Septum, 14 Inferior Vena Cava, 15 Apex, 16 Chordae Tendineae, 17 Papillary Muscle."},
+
 ];
 
 /* ============================================================
@@ -1777,11 +1813,20 @@ function showTopics(){
 
 /* ---------- launch quiz ---------- */
 function launch(questions,label){
-  // randomize option order per question while tracking the correct index
   const prepared = questions.map(q=>{
+    const kind = q.qtype || 'mc';
+    if(kind==='order'){
+      const seq=q.order.slice();
+      return {ref:q, kind, seq, options:shuffle(seq.slice()), nslots:seq.length};
+    }
+    if(kind==='label'){
+      const markers=q.markers.map(m=>({n:m[0], a:m[1]}));
+      return {ref:q, kind, markers, options:shuffle(markers.map(m=>m.a)), nslots:markers.length};
+    }
+    // multiple choice: randomize option order, track the correct index
     const opts = q.o.map((text,i)=>({text,correct:i===q.a}));
     shuffle(opts);
-    return {ref:q, opts, answer:opts.findIndex(o=>o.correct)};
+    return {ref:q, kind:'mc', opts, answer:opts.findIndex(o=>o.correct), nslots:1};
   });
   session={label,questions:prepared,idx:0,answers:new Array(prepared.length).fill(null),score:0};
   hide('home'); hide('results'); show('quiz');
@@ -1789,11 +1834,23 @@ function launch(questions,label){
   renderQuestion();
 }
 
+/* points earned for question i: 1 for a correct MC; for order/label the
+   fraction of slots correct (per-slot partial credit). */
+function fmtScore(x){ return Number.isInteger(x) ? x : (Math.round(x*100)/100); }
+function qPoints(i){
+  const s=session, cur=s.questions[i], a=s.answers[i];
+  if(a===null||a===undefined) return 0;
+  if(cur.kind==='mc') return a===cur.answer?1:0;
+  return a.correct/cur.nslots;
+}
+function qFull(i){ return qPoints(i) >= 1-1e-9; }
+function slotKey(cur){ return cur.kind==='order' ? cur.seq : cur.markers.map(m=>m.a); }
+
 function renderQuestion(){
   const s=session, cur=s.questions[s.idx], q=cur.ref;
   el('pfill').style.width=((s.idx)/s.questions.length*100)+'%';
   el('qprogress').textContent='Question '+(s.idx+1)+' of '+s.questions.length;
-  el('qscore').textContent='Score: '+s.score+'/'+s.idx;
+  el('qscore').textContent='Score: '+fmtScore(s.score)+'/'+s.idx;
   el('qtopic').textContent=TOPICS[q.t].name;
 
   // slide-reference image (shown above the question text)
@@ -1807,16 +1864,20 @@ function renderQuestion(){
 
   el('qtext').textContent=q.q;
 
-  // options
+  // answer area — multiple choice, or ordering/labeling slots
   const ob=el('qoptions'); ob.innerHTML='';
-  const letters=['A','B','C','D','E','F'];
-  cur.opts.forEach((o,i)=>{
-    const btn=document.createElement('button');
-    btn.className='opt';
-    btn.innerHTML='<span class="ltr">'+letters[i]+'</span>'+o.text;
-    btn.onclick=()=>chooseAnswer(i);
-    ob.appendChild(btn);
-  });
+  if(cur.kind==='order' || cur.kind==='label'){
+    renderSlots(cur, ob);
+  } else {
+    const letters=['A','B','C','D','E','F'];
+    cur.opts.forEach((o,i)=>{
+      const btn=document.createElement('button');
+      btn.className='opt';
+      btn.innerHTML='<span class="ltr">'+letters[i]+'</span>'+o.text;
+      btn.onclick=()=>chooseAnswer(i);
+      ob.appendChild(btn);
+    });
+  }
 
   // feedback / flag reset
   const fb=el('qfeedback'); fb.className='feedback'; el('qexplain').textContent='';
@@ -1838,7 +1899,7 @@ function chooseAnswer(choice){
   });
   const right=(choice===correct);
   if(right) s.score++;
-  el('qscore').textContent='Score: '+s.score+'/'+(s.idx+1);
+  el('qscore').textContent='Score: '+fmtScore(s.score)+'/'+(s.idx+1);
 
   const fb=el('qfeedback');
   fb.className='feedback show '+(right?'ok':'no');
@@ -1849,6 +1910,56 @@ function chooseAnswer(choice){
 
   if(q.f){ const flag=el('qflag'); flag.classList.remove('hidden'); flag.innerHTML='<b>⚑ Flag:</b> '+q.f; }
 
+  el('nextBtn').disabled=false;
+  el('nextBtn').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+
+/* ---------- ordering / labeling render + grade ---------- */
+function renderSlots(cur, ob){
+  const wrap=document.createElement('div'); wrap.className='slots';
+  const n=cur.nslots;
+  for(let i=0;i<n;i++){
+    const row=document.createElement('div'); row.className='slot-row';
+    const num=document.createElement('span'); num.className='slot-num';
+    num.textContent = cur.kind==='label' ? cur.markers[i].n : (i+1);
+    const line=document.createElement('span'); line.className='slot-line';
+    const sel=document.createElement('select'); sel.className='slot-sel'; sel.dataset.key=i;
+    const ph=document.createElement('option'); ph.value=''; ph.textContent='— select —'; sel.appendChild(ph);
+    cur.options.forEach(o=>{ const op=document.createElement('option'); op.value=o; op.textContent=o; sel.appendChild(op); });
+    row.appendChild(num); row.appendChild(line); row.appendChild(sel);
+    wrap.appendChild(row);
+  }
+  ob.appendChild(wrap);
+  const btn=document.createElement('button'); btn.className='btn'; btn.id='checkBtn';
+  btn.textContent='Check answers ▶'; btn.onclick=gradeSlots;
+  ob.appendChild(btn);
+}
+
+function gradeSlots(){
+  const s=session, cur=s.questions[s.idx], q=cur.ref;
+  if(s.answers[s.idx]!==null) return; // already graded
+  const key=slotKey(cur);
+  const sels=el('qoptions').querySelectorAll('.slot-sel');
+  let correct=0; const picks=[];
+  sels.forEach(sel=>{
+    const k=+sel.dataset.key, val=sel.value, ok=(val===key[k]);
+    picks[k]=val; if(ok) correct++;
+    sel.disabled=true;
+    const row=sel.closest('.slot-row');
+    row.classList.add(ok?'slot-ok':'slot-no');
+    if(!ok){ const c=document.createElement('span'); c.className='slot-correct'; c.textContent='✓ Correct: '+key[k]; row.appendChild(c); }
+  });
+  s.answers[s.idx]={correct, picks};
+  s.score += correct/cur.nslots;
+  el('qscore').textContent='Score: '+fmtScore(s.score)+'/'+(s.idx+1);
+
+  const full=(correct===cur.nslots);
+  const fb=el('qfeedback'); fb.className='feedback show '+(full?'ok':'no');
+  el('qverdict').textContent = full ? '✓ All correct' : ('◐ '+correct+' / '+cur.nslots+' correct');
+  el('qexplain').textContent=q.e;
+  if(q.f){ const flag=el('qflag'); flag.classList.remove('hidden'); flag.innerHTML='<b>⚑ Flag:</b> '+q.f; }
+
+  const cb=el('checkBtn'); if(cb) cb.disabled=true;
   el('nextBtn').disabled=false;
   el('nextBtn').scrollIntoView({behavior:'smooth',block:'nearest'});
 }
@@ -1871,7 +1982,7 @@ function showResults(){
   const total=s.questions.length, correct=s.score;
   const pct=Math.round(correct/total*100);
   el('scorePct').textContent=pct+'%';
-  el('scoreRaw').textContent=correct+' / '+total;
+  el('scoreRaw').textContent=fmtScore(correct)+' / '+total;
   const pass=pct>=80;
   const circle=el('scoreCircle'); circle.className='score-circle '+(pass?'pass':'fail');
   const vb=el('verdictBig'); vb.className='verdict-big '+(pass?'pass':'fail');
@@ -1880,13 +1991,13 @@ function showResults(){
     ? 'You scored at or above the 80% pass mark. Keep drilling the topics below to stay sharp.'
     : 'Below the 80% pass mark. Focus on the missed topics below, then retake.';
 
-  // per-topic breakdown
+  // per-topic breakdown (point-based so partial credit counts)
   const byTopic={};
   s.questions.forEach((cur,i)=>{
     const t=cur.ref.t;
     if(!byTopic[t]) byTopic[t]={right:0,total:0};
     byTopic[t].total++;
-    if(s.answers[i]===cur.answer) byTopic[t].right++;
+    byTopic[t].right += qPoints(i);
   });
   const bd=el('topicBreakdown'); bd.innerHTML='';
   Object.keys(TOPICS).forEach(t=>{
@@ -1896,13 +2007,13 @@ function showResults(){
     const row=document.createElement('div'); row.className='breakdown-row';
     row.innerHTML='<span style="flex:0 0 42%">'+TOPICS[t].name+'</span>'+
       '<div class="bd-bar"><div class="bd-fill" style="width:'+p+'%;background:'+color+'"></div></div>'+
-      '<span style="flex:0 0 70px;text-align:right">'+d.right+'/'+d.total+' ('+p+'%)</span>';
+      '<span style="flex:0 0 70px;text-align:right">'+fmtScore(d.right)+'/'+d.total+' ('+p+'%)</span>';
     bd.appendChild(row);
   });
 
   // weak topics (missed most)
   const weak=Object.keys(byTopic).map(t=>({t,miss:byTopic[t].total-byTopic[t].right,total:byTopic[t].total}))
-    .filter(x=>x.miss>0).sort((a,b)=>b.miss-a.miss);
+    .filter(x=>x.miss>0.001).sort((a,b)=>b.miss-a.miss);
   const wc=el('weakTopics');
   if(weak.length===0){
     el('weakCard').querySelector('h2').textContent='Topics you missed most';
@@ -1911,7 +2022,7 @@ function showResults(){
     wc.innerHTML='';
     weak.forEach(x=>{
       const row=document.createElement('div'); row.className='breakdown-row';
-      row.innerHTML='<span>'+TOPICS[x.t].name+'</span><span style="color:#fca5a5">missed '+x.miss+' of '+x.total+'</span>';
+      row.innerHTML='<span>'+TOPICS[x.t].name+'</span><span style="color:#fca5a5">missed '+fmtScore(x.miss)+' of '+x.total+'</span>';
       wc.appendChild(row);
     });
   }
@@ -1920,14 +2031,28 @@ function showResults(){
   const ml=el('missedList'); ml.innerHTML='';
   let any=false;
   s.questions.forEach((cur,i)=>{
-    if(s.answers[i]===cur.answer) return;
+    if(qFull(i)) return; // perfect (or fully correct) — skip
     any=true;
     const q=cur.ref;
     const div=document.createElement('div'); div.className='missed';
-    const yourTxt = s.answers[i]!==null ? cur.opts[s.answers[i]].text : '(no answer)';
     let html='<div class="mq"><span class="topictag">'+TOPICS[q.t].name+'</span><br>'+q.q+'</div>';
-    html+='<div class="ans bad">Your answer: '+yourTxt+'</div>';
-    html+='<div class="ans good">Correct answer: '+cur.opts[cur.answer].text+'</div>';
+    if(cur.kind==='mc'){
+      const yourTxt = s.answers[i]!==null ? cur.opts[s.answers[i]].text : '(no answer)';
+      html+='<div class="ans bad">Your answer: '+yourTxt+'</div>';
+      html+='<div class="ans good">Correct answer: '+cur.opts[cur.answer].text+'</div>';
+    } else {
+      const key=slotKey(cur), a=s.answers[i], picks=a?a.picks:[];
+      const correct=a?a.correct:0;
+      html+='<div class="ans bad">'+correct+' / '+cur.nslots+' correct</div>';
+      html+='<div class="slot-mini">';
+      for(let k=0;k<cur.nslots;k++){
+        const lbl = cur.kind==='label' ? cur.markers[k].n : (k+1);
+        const got = picks[k]||'(blank)';
+        const ok = got===key[k];
+        html+='<span class="'+(ok?'smi-ok':'smi-no')+'">'+lbl+': '+(ok?got:(got+' → '+key[k]))+'</span>';
+      }
+      html+='</div>';
+    }
     html+='<div class="exp">'+q.e+'</div>';
     if(q.f) html+='<div class="exp" style="color:#fde68a">⚑ '+q.f+'</div>';
     div.innerHTML=html;

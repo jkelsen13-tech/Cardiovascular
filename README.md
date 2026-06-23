@@ -23,6 +23,9 @@ Open **`cmt-quiz.html`** in any web browser. No internet, server, or install req
   question on Position/Direction, Flow, and Oscillation topics (directional terms, body
   planes, landmark lines, circulation circuits, conduction system, autonomic control,
   ECG paper, ECG waveform/intervals, action potentials, and deflection direction).
+- **Interactive ordering & labeling questions** (Canvas-style), graded per slot with
+  partial credit (e.g. "9 / 12 correct"): sequence the conduction pathway and the
+  reverse blood-flow path; label the heart-wall layers and heart-structure diagrams.
 - Results screen: score, pass/fail (80% pass mark), per-topic breakdown,
   "topics you missed most," full review of every missed question with its explanation,
   and a Retake button that re-randomizes.
