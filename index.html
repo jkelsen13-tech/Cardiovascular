@@ -82,6 +82,7 @@
   .flagnote b{color:var(--amber)}
   .diagram{background:#f8fafc; border-radius:12px; padding:8px; margin:4px 0 16px; text-align:center}
   .diagram svg{max-width:100%; height:auto}
+  .diagram img{max-width:100%; height:auto; border-radius:8px}
   .slideref{margin:4px 0 16px; padding:0}
   .slideref figcaption{font-size:13px; font-weight:600; color:var(--muted); margin-bottom:6px}
   .slideref img{display:block; max-width:100%; height:auto; border-radius:12px; border:1px solid var(--line)}
@@ -906,15 +907,15 @@ const BANK = [
 {t:"anatomy", module:1, unit:2,q:"Which heart-wall layer contains the electrical conduction system?",
  o:["Epicardium (outer wall)","Myocardium","Endocardium","Tunica media"],a:0,
  e:"The outer wall, the epicardium, contains the electrical conduction system. The inner endocardium contains nerves and coronary vessels."},
-{t:"anatomy", module:1, unit:2,q:"On the heart layers diagram, which number is the MYOCARDIUM?",d:"layers",
- o:["3","4","5","6"],a:2,
- e:"Layer 5 (the thick muscular layer) is the myocardium. Layer 4 is the epicardium and layer 6 is the endocardium."},
-{t:"anatomy", module:1, unit:2,q:"On the heart layers diagram, which number is the ENDOCARDIUM (innermost layer)?",d:"layers",
- o:["1","4","5","6"],a:3,
- e:"Layer 6, the innermost layer lining the chamber, is the endocardium."},
-{t:"anatomy", module:1, unit:2,q:"On the heart layers diagram, which number is the FIBROUS PERICARDIUM (outer sac)?",d:"layers",
- o:["1","3","5","6"],a:0,
- e:"Layer 1, the outermost tough sac, is the fibrous pericardium."},
+{t:"anatomy", module:1, unit:2,q:"On the heart-wall layers diagram, which letter marks the MYOCARDIUM (the thick muscular layer)?",dimg:"images/diagrams/heart-layers-labeled.jpg",
+ o:["A","C","E","F"],a:3,
+ e:"F marks the myocardium — the thick muscular middle layer. Inner→outer: E endocardium, F myocardium, D visceral pericardium, A pericardial cavity, C parietal pericardium, B fibrous pericardium."},
+{t:"anatomy", module:1, unit:2,q:"On the heart-wall layers diagram, which letter marks the ENDOCARDIUM (innermost lining)?",dimg:"images/diagrams/heart-layers-labeled.jpg",
+ o:["B","D","E","F"],a:2,
+ e:"E marks the endocardium — the innermost layer lining the heart chambers."},
+{t:"anatomy", module:1, unit:2,q:"On the heart-wall layers diagram, which letter marks the FIBROUS PERICARDIUM (the tough outer sac)?",dimg:"images/diagrams/heart-layers-labeled.jpg",
+ o:["A","B","D","F"],a:1,
+ e:"B marks the fibrous pericardium — the tough outermost sac."},
 {t:"anatomy", module:1, unit:2,q:"Cardiac muscle cells are connected end-to-end by structures that allow impulses to pass cell to cell, called:",
  o:["Chordae tendineae","Intercalated disks","Purkinje fibers","Papillary muscles"],a:1,
  e:"Cardiac muscle cells are connected end to end by intercalated disks, which let stimulation pass from cell to cell for rhythmic contraction."},
@@ -1153,22 +1154,22 @@ const BANK = [
 {t:"waves", module:1, unit:3,img:"images/slides/ecg-waveform.jpg",q:"Atrial repolarization occurs during which part of the ECG?",
  o:["The T wave","The PR segment (it is hidden by ventricular depolarization)","The U wave","The QT interval"],a:1,
  e:"The PR segment represents activation of the AV node, Bundle of His, bundle branches and Purkinje fibers; atrial repolarization occurs during this time and is hidden by the QRS."},
-{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number is the P WAVE?",d:"ecgwave",
+{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number is the P WAVE?",dimg:"images/diagrams/ecg-waveform-labeled.jpg",
  o:["1","2","3","4"],a:0,
  e:"Number 1 is the first small upward bump before the QRS = P wave (atrial depolarization)."},
-{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number is the QRS COMPLEX?",d:"ecgwave",
+{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number is the QRS COMPLEX?",dimg:"images/diagrams/ecg-waveform-labeled.jpg",
  o:["1","2","3","4"],a:1,
  e:"Number 2 is the tall sharp spike = QRS complex (ventricular depolarization)."},
-{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number is the T WAVE?",d:"ecgwave",
- o:["1","2","3","4"],a:2,
- e:"Number 3 is the rounded wave after the QRS = T wave (ventricular repolarization)."},
-{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number marks the PR INTERVAL?",d:"ecgwave",
+{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number is the T WAVE?",dimg:"images/diagrams/ecg-waveform-labeled.jpg",
+ o:["1","2","3","4"],a:3,
+ e:"Number 4 is the rounded wave after the QRS = T wave (ventricular repolarization). On this diagram: 1 P wave, 2 QRS complex, 3 ST segment, 4 T wave, 5 U wave."},
+{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number marks the PR INTERVAL?",dimg:"images/diagrams/ecg-waveform-labeled.jpg",
  o:["5","6","7","8"],a:1,
  e:"Bracket 6 spans from the start of the P wave to the start of the QRS = PR interval."},
-{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number marks the QT INTERVAL?",d:"ecgwave",
+{t:"waves", module:1, unit:3,q:"On the ECG waveform diagram, which number marks the QT INTERVAL?",dimg:"images/diagrams/ecg-waveform-labeled.jpg",
  o:["5","6","7","8"],a:3,
  e:"Bracket 8 spans from the start of the QRS to the end of the T wave = QT interval."},
-{t:"waves", module:1, unit:3,img:"images/slides/ecg-waveform.jpg",q:"During the QRS complex (number 2 on the diagram), what is happening in the heart?",d:"ecgwave",
+{t:"waves", module:1, unit:3,q:"During the QRS complex (number 2 on the diagram), what is happening in the heart?",dimg:"images/diagrams/ecg-waveform-labeled.jpg",
  o:["The atria are depolarizing","The ventricles are depolarizing and about to contract","The ventricles are repolarizing","The heart is at rest"],a:1,
  e:"The QRS represents ventricular depolarization; after it begins, the ventricles contract."},
 {t:"waves", module:1, unit:3,img:"images/slides/ecg-waveform.jpg",q:"What is the EXPECTED measurement range for a normal PR interval?",
@@ -1754,10 +1755,10 @@ const BANK = [
  order:["Aortic Valve","Left Ventricle","Mitral Valve","Left Atrium","Pulmonary Veins","Capillary beds at the Alveoli","Pulmonary Artery","Pulmonic Valve","Right Ventricle","Tricuspid Valve","Right Atrium","Superior/Inferior Vena Cava"],
  e:"Forward path ending at the aorta: Superior/Inferior Vena Cava → Right Atrium → Tricuspid Valve → Right Ventricle → Pulmonic Valve → Pulmonary Artery → Capillary beds at the Alveoli → Pulmonary Veins → Left Atrium → Mitral Valve → Left Ventricle → Aortic Valve → Aorta. Listed in reverse from the aorta, the 12 slots are as shown."},
 
-{t:"anatomy", module:1, unit:2, qtype:"label", d:"layers",
+{t:"anatomy", module:1, unit:2, qtype:"label", dimg:"images/diagrams/heart-layers-labeled.jpg",
  q:"Identify the areas of the cross section of the heart tissue.",
- markers:[["1","Fibrous pericardium"],["2","Parietal pericardium"],["3","Pericardial cavity"],["4","Visceral pericardium"],["5","Myocardium"],["6","Endocardium"]],
- e:"From the outer sac inward: 1 Fibrous pericardium, 2 Parietal pericardium, 3 Pericardial cavity, 4 Visceral pericardium (epicardium), 5 Myocardium, 6 Endocardium. (Confirmed against the labeled cross-section in the Cardiovascular A&P slides.)"},
+ markers:[["A","Pericardial cavity"],["B","Fibrous pericardium"],["C","Parietal pericardium"],["D","Visceral pericardium"],["E","Endocardium"],["F","Myocardium"]],
+ e:"From the inner lining outward: E Endocardium, F Myocardium, D Visceral pericardium (epicardium), A Pericardial cavity, C Parietal pericardium, B Fibrous pericardium. (Keyed against the labeled cross-section in the Cardiovascular A&P slides, CV1 p9.)"},
 
 {t:"anatomy", module:1, unit:2, qtype:"label", d:"heart",
  q:"Identify the structures of the heart.",
@@ -1966,9 +1967,10 @@ function renderQuestion(){
   if(q.img){ el('qslideimg').src=q.img; show('qslideref'); }
   else { el('qslideimg').removeAttribute('src'); hide('qslideref'); }
 
-  // diagram
+  // diagram — real extracted image (dimg) takes precedence over schematic SVG (d)
   const dbox=el('qdiagram');
-  if(q.d && DIAGRAMS[q.d]){ dbox.innerHTML=DIAGRAMS[q.d]; show('qdiagram'); }
+  if(q.dimg){ dbox.innerHTML='<img src="'+q.dimg+'" alt="diagram">'; show('qdiagram'); }
+  else if(q.d && DIAGRAMS[q.d]){ dbox.innerHTML=DIAGRAMS[q.d]; show('qdiagram'); }
   else { dbox.innerHTML=''; hide('qdiagram'); }
 
   el('qtext').textContent=q.q;
