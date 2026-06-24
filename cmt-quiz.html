@@ -1797,8 +1797,13 @@ function init(){
    unknown units/modules fall back to "Unit N" / "Module N".
    RULE: topic overlap does NOT imply same unit — source/timing decides, so
    a future rhythms/AED deck for a new module gets its own unit, never this one. */
-const UNIT_LABELS={1:"Unit 1 — History, Topographic & Respiratory",2:"Unit 2 — Cardiovascular A&P",3:"Unit 3 — Leads, Waves & Electrophysiology"};
-const MODULE_LABELS={1:"Module 1"};
+const UNIT_LABELS={1:"Unit 1 — History, Topographic & Respiratory",2:"Unit 2 — Cardiovascular A&P",3:"Unit 3 — Leads, Waves & Electrophysiology",
+  4:"Unit 4 — Rhythm Interpretation & Sinus Rhythms"};
+const MODULE_LABELS={1:"Module 1",2:"Module 2"};
+/* Module 2 / Unit 4 is reserved for the rhythm decks (05 Systematic Approach + 06 Walraven
+   Sinus Rhythms). It appears in the picker automatically once its questions (module:2,unit:4)
+   are added — per the source/timing rule, that rhythm content is its own unit, not folded
+   into Unit 3 by topic. */
 function allUnits(){ return [...new Set(BANK.map(q=>q.unit))].sort((a,b)=>a-b); }
 function allModules(){ return [...new Set(BANK.map(q=>q.module))].sort((a,b)=>a-b); }
 function unitsOfModule(m){ return [...new Set(BANK.filter(q=>q.module===m).map(q=>q.unit))].sort((a,b)=>a-b); }
