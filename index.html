@@ -955,25 +955,25 @@ const BANK = [
 {t:"anatomy", module:1, unit:2,q:"A third heart sound in a person OLDER than 40 years of age is considered:",
  o:["Completely normal","Abnormal and possibly a sign of heart failure","A sign of dehydration","Caused by the semilunar valves opening"],a:1,
  e:"A third heart sound may be heard during ventricular refilling; in persons older than 40 it is considered abnormal and may signal heart failure."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the TRICUSPID valve?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the TRICUSPID valve?",d:"heart",
  o:["7","8","9","10"],a:0,
  e:"Number 7 sits between the right atrium (5) and right ventricle (11) = tricuspid valve. Number 8 (between left atrium and left ventricle) is the mitral valve."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the AORTA?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the AORTA?",d:"heart",
  o:["1","2","3","4"],a:1,
  e:"Number 2 is the large red arching vessel = aorta. Number 1 is the superior vena cava and number 3 is the pulmonary artery."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the LEFT VENTRICLE?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the LEFT VENTRICLE?",d:"heart",
  o:["5","11","12","6"],a:2,
  e:"Number 12 is the thick-walled lower-left chamber = left ventricle. Number 11 is the right ventricle."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the SUPERIOR VENA CAVA?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the SUPERIOR VENA CAVA?",d:"heart",
  o:["1","2","3","14"],a:0,
  e:"Number 1 is the blue vessel entering the top of the right atrium = superior vena cava. Number 14 is the inferior vena cava."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the INTERVENTRICULAR SEPTUM?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the INTERVENTRICULAR SEPTUM?",d:"heart",
  o:["7","13","15","16"],a:1,
  e:"Number 13 is the dividing wall between the two ventricles = interventricular septum."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the RIGHT ATRIUM?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the RIGHT ATRIUM?",d:"heart",
  o:["5","6","11","12"],a:0,
  e:"Number 5 is the upper-right receiving chamber = right atrium. Number 6 is the left atrium."},
-{t:"anatomy", module:1, unit:2,q:"On the heart diagram, which number indicates the chordae tendineae ('heart strings')?",d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true,q:"On the heart diagram, which number indicates the chordae tendineae ('heart strings')?",d:"heart",
  o:["13","15","16","17"],a:2,
  e:"Number 16 marks the thin strands running from the AV valve to the papillary muscle (17) = chordae tendineae."},
 
@@ -1756,13 +1756,18 @@ const BANK = [
 
 {t:"anatomy", module:1, unit:2, qtype:"label", dimg:"images/diagrams/heart-layers-labeled.jpg",
  q:"Identify the areas of the cross section of the heart tissue.",
- markers:[["A","Pericardial cavity"],["B","Fibrous pericardium"],["C","Parietal pericardium"],["D","Visceral pericardium"],["E","Endocardium"],["F","Myocardium"]],
- e:"From the inner lining outward: E Endocardium, F Myocardium, D Visceral pericardium (epicardium), A Pericardial cavity, C Parietal pericardium, B Fibrous pericardium. (Keyed against the labeled cross-section in the Cardiovascular A&P slides, CV1 p9.)"},
+ markers:[["A","Pericardial cavity"],["B","Fibrous pericardium"],["C","Parietal layer of serous pericardium"],["D","Epicardium (visceral layer of serous pericardium)"],["E","Endocardium"],["F","Myocardium"]],
+ e:"From the inner lining outward: E Endocardium, F Myocardium, D Epicardium (visceral layer of serous pericardium), A Pericardial cavity, C Parietal layer of serous pericardium, B Fibrous pericardium. (Keyed leader-by-leader against the booklet diagram and slide CV1 p9.)"},
 
-{t:"anatomy", module:1, unit:2, qtype:"label", d:"heart",
+{t:"anatomy", module:1, unit:2, draft:true, qtype:"label", dimg:"images/diagrams/heart-structures-labeled.jpg",
  q:"Identify the structures of the heart.",
- markers:[["1","Superior Vena Cava"],["2","Aorta"],["3","Pulmonary Artery"],["4","Pulmonary Veins"],["5","Right Atrium"],["6","Left Atrium"],["7","Tricuspid Valve"],["8","Mitral Valve"],["9","Pulmonic Valve"],["10","Aortic Valve"],["11","Right Ventricle"],["12","Left Ventricle"],["13","Interventricular Septum"],["14","Inferior Vena Cava"],["15","Apex"],["16","Chordae Tendineae"],["17","Papillary Muscle"]],
- e:"Heart diagram key: 1 Superior Vena Cava, 2 Aorta, 3 Pulmonary Artery, 4 Pulmonary Veins, 5 Right Atrium, 6 Left Atrium, 7 Tricuspid Valve, 8 Mitral Valve, 9 Pulmonic Valve, 10 Aortic Valve, 11 Right Ventricle, 12 Left Ventricle, 13 Interventricular Septum, 14 Inferior Vena Cava, 15 Apex, 16 Chordae Tendineae, 17 Papillary Muscle."},
+ markers:[["1","Superior Vena Cava"],["2","Aorta"],["3","Pulmonary Arteries"],["4","Pulmonary Veins"],["5","Right Atrium"],["6","Left Atrium"],["7","Tricuspid Valve"],["8","Bicuspid Valve"],["9","Pulmonic Valve"],["10","Aortic Valve"],["11","Right Ventricle"],["12","Left Ventricle"],["13","Interventricular Septum"],["14","Inferior Vena Cava"],["15","Apex"],["16","Chordae Tendineae"],["17","Papillary Muscles"]],
+ e:"DRAFT — the marker-to-number mapping for this booklet diagram is not yet confirmed (awaiting the professor's key) and is excluded from graded pools. Confirmed term pool: Bicuspid Valve, Tricuspid Valve, Right Ventricle, Left Ventricle, Inferior Vena Cava, Chordae Tendineae, Papillary Muscles, Interventricular Septum, Aorta, Pulmonary Arteries, Superior Vena Cava, Pulmonary Veins, Left Atrium, Right Atrium."},
+
+{t:"resp", module:1, unit:1, qtype:"label", dimg:"images/diagrams/respiratory-structures-labeled.jpg",
+ q:"Label the structures of the respiratory system.",
+ markers:[["1","Nasal cavity"],["2","Oral cavity"],["3","Pharynx"],["4","Larynx"],["5","Trachea"],["6","Bronchus"],["7","Bronchiole"],["8","Alveoli"],["9","Diaphragm"]],
+ e:"Air travels: 1 Nasal cavity → 2 Oral cavity → 3 Pharynx → 4 Larynx → 5 Trachea → 6 Bronchus → 7 Bronchiole → 8 Alveoli (gas exchange); 9 Diaphragm is the primary muscle of breathing. (Keyed against the booklet diagram; larynx-then-trachea order confirmed by the Respiratory A&P slideshow, p25.)"},
 
 ];
 
@@ -1781,12 +1786,12 @@ BANK.forEach((q,i)=>q._id=i);
 
 function bankCountByTopic(){
   const c={}; Object.keys(TOPICS).forEach(k=>c[k]=0);
-  BANK.forEach(q=>c[q.t]=(c[q.t]||0)+1);
+  activeBank().forEach(q=>c[q.t]=(c[q.t]||0)+1);
   return c;
 }
 
 function init(){
-  el('bankCount').textContent = BANK.length + ' questions in bank';
+  el('bankCount').textContent = activeBank().length + ' questions in bank';
   pickerUnits = new Set(allUnits());
 }
 
@@ -1804,11 +1809,13 @@ const MODULE_LABELS={1:"Module 1",2:"Module 2"};
    Sinus Rhythms). It appears in the picker automatically once its questions (module:2,unit:4)
    are added — per the source/timing rule, that rhythm content is its own unit, not folded
    into Unit 3 by topic. */
-function allUnits(){ return [...new Set(BANK.map(q=>q.unit))].sort((a,b)=>a-b); }
-function allModules(){ return [...new Set(BANK.map(q=>q.module))].sort((a,b)=>a-b); }
-function unitsOfModule(m){ return [...new Set(BANK.filter(q=>q.module===m).map(q=>q.unit))].sort((a,b)=>a-b); }
-function unitCount(u){ return BANK.filter(q=>q.unit===u).length; }
-function moduleCount(m){ return BANK.filter(q=>q.module===m).length; }
+/* draft questions (e.g. an unverified diagram key) are excluded from all graded pools */
+function activeBank(){ return BANK.filter(q=>!q.draft); }
+function allUnits(){ return [...new Set(activeBank().map(q=>q.unit))].sort((a,b)=>a-b); }
+function allModules(){ return [...new Set(activeBank().map(q=>q.module))].sort((a,b)=>a-b); }
+function unitsOfModule(m){ return [...new Set(activeBank().filter(q=>q.module===m).map(q=>q.unit))].sort((a,b)=>a-b); }
+function unitCount(u){ return activeBank().filter(q=>q.unit===u).length; }
+function moduleCount(m){ return activeBank().filter(q=>q.module===m).length; }
 function unitLabel(u){ return UNIT_LABELS[u]||('Unit '+u); }
 function moduleLabel(m){ return MODULE_LABELS[m]||('Module '+m); }
 
@@ -1847,7 +1854,7 @@ function syncUnitChecks(){ document.querySelectorAll('.unitchk').forEach(cb=>cb.
 function toggleUnit(u,on){ if(on) pickerUnits.add(+u); else pickerUnits.delete(+u); refreshPool(); }
 function selectModule(m){ pickerUnits=new Set(unitsOfModule(m)); syncUnitChecks(); refreshPool(); }
 function selectEverything(){ pickerUnits=new Set(allUnits()); syncUnitChecks(); refreshPool(); }
-function randomPool(){ return BANK.filter(q=>pickerUnits.has(q.unit)); }
+function randomPool(){ return activeBank().filter(q=>pickerUnits.has(q.unit)); }
 function scopeLabel(){
   const us=[...pickerUnits];
   if(us.length===allUnits().length) return 'Final Practice — All Units';
@@ -1896,7 +1903,7 @@ function showModuleSetup(m){
 function setMCount(n){ el('mcount').value=Math.min(n,Math.max(1,moduleCount(moduleTestM))); }
 function setMCountAll(){ el('mcount').value=Math.max(1,moduleCount(moduleTestM)); }
 function beginModuleTest(){
-  const pool=BANK.filter(q=>q.module===moduleTestM);
+  const pool=activeBank().filter(q=>q.module===moduleTestM);
   let n=parseInt(el('mcount').value,10);
   if(isNaN(n)||n<1) n=1; if(n>pool.length) n=pool.length;
   launch(shuffle(pool.slice()).slice(0,n), moduleLabel(moduleTestM)+' Test');
@@ -1906,7 +1913,7 @@ function beginModuleTest(){
 function showTopics(){
   hide('randomSetup'); hide('moduleList'); hide('moduleSetup'); show('topicList');
   if(pickerUnits.size===0) pickerUnits=new Set(allUnits());
-  const inScope=BANK.filter(q=>pickerUnits.has(q.unit));
+  const inScope=activeBank().filter(q=>pickerUnits.has(q.unit));
   const c={}; inScope.forEach(q=>c[q.t]=(c[q.t]||0)+1);
   el('topicScopeNote').textContent='Scope: '+scopeLabel()+'. Only topics within it are shown — change scope in Random Practice Test.';
   const box=el('topicButtons'); box.innerHTML='';
