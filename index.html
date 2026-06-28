@@ -1754,12 +1754,12 @@ const BANK = [
 /* ===================== NEW INTERACTIVE TYPES: ORDERING & LABELING ===================== */
 /* qtype:"order" -> ordered sequence in `order`; per-slot partial credit.
    qtype:"label" -> diagram `d` with markers [[markerLabel, correctTerm], ...]; per-marker partial credit. */
-{t:"electro", module:1, unit:2, qtype:"order",
+{t:"electro", module:1, unit:2, qtype:"order", dimg:"images/diagrams/heart-conduction-diagram.jpg",
  q:"Order the normal impulse flow through the heart's electrical conduction system from start to finish.",
  order:["SA Node","Internodal Pathways","AV Node","Bundle of His","Bundle Branches","Purkinje Fibers"],
  e:"Normal conduction pathway: SA Node → Internodal Pathways → AV Node → Bundle of His → Bundle Branches → Purkinje Fibers."},
 
-{t:"circ", module:1, unit:2, qtype:"order",
+{t:"circ", module:1, unit:2, qtype:"order", dimg:"images/diagrams/heart-bloodflow-diagram.jpg",
  q:"List in REVERSE order, starting at the Aorta, the pathway that a blood cell has taken through the heart.",
  order:["Aortic Valve","Left Ventricle","Mitral Valve","Left Atrium","Pulmonary Veins","Capillary beds at the Alveoli","Pulmonary Artery","Pulmonic Valve","Right Ventricle","Tricuspid Valve","Right Atrium","Superior/Inferior Vena Cava"],
  e:"Forward path ending at the aorta: Superior/Inferior Vena Cava → Right Atrium → Tricuspid Valve → Right Ventricle → Pulmonic Valve → Pulmonary Artery → Capillary beds at the Alveoli → Pulmonary Veins → Left Atrium → Mitral Valve → Left Ventricle → Aortic Valve → Aorta. Listed in reverse from the aorta, the 12 slots are as shown."},
