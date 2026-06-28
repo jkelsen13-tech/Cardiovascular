@@ -159,6 +159,8 @@
         <small>Simulate one module's exam — its full unit pool combined</small></button>
       <button class="btn secondary" onclick="showTopics()">📚 Study by Topic
         <small>Drill one topic within your selected scope</small></button>
+      <button class="btn secondary" onclick="showLabeling()">🏷️ Labeling Diagrams
+        <small>Canvas-style diagram matching — partial credit per marker</small></button>
       <div class="row" style="margin-top:14px; justify-content:space-between">
         <span class="pill" id="bankCount">— questions in bank</span>
         <span class="pill">Pass mark: 80%</span>
@@ -230,6 +232,14 @@
       <p class="hint" id="topicScopeNote" style="margin-top:-4px"></p>
       <div id="topicButtons"></div>
       <button class="btn ghost" onclick="hide('topicList')">Cancel</button>
+    </div>
+
+    <!-- Labeling Diagrams -->
+    <div class="card hidden" id="labelingList">
+      <h2>Labeling Diagrams</h2>
+      <p class="hint" style="margin-top:-4px">Canvas-style matching — pick a diagram or sequence to fill in. Graded per marker with partial credit (X / Y correct).</p>
+      <div id="labelingButtons"></div>
+      <button class="btn ghost" onclick="hide('labelingList')">Cancel</button>
     </div>
 
     <div class="src-note">
@@ -1927,6 +1937,27 @@ function showTopics(){
   });
 }
 
+/* ---------- mode: labeling diagrams (interactive matching questions) ---------- */
+function showLabeling(){
+  hide('randomSetup'); hide('moduleList'); hide('moduleSetup'); hide('topicList'); show('labelingList');
+  const qs=activeBank().filter(q=>q.qtype==='label'||q.qtype==='order');
+  const box=el('labelingButtons'); box.innerHTML='';
+  if(qs.length>1){
+    const all=document.createElement('button'); all.className='btn';
+    all.textContent='▶ Practice all ('+qs.length+')';
+    all.onclick=()=>launch(shuffle(qs.slice()),'Labeling Diagrams');
+    box.appendChild(all);
+  }
+  qs.forEach(q=>{
+    const b=document.createElement('button'); b.className='topic-btn';
+    const kind=q.qtype==='order'?'Ordering':'Labeling';
+    const slots=(q.qtype==='order'?q.order.length:q.markers.length);
+    b.innerHTML='<span>'+q.q+'</span><span class="cnt">'+kind+' · '+slots+'</span>';
+    b.onclick=()=>launch([q], kind+' diagram');
+    box.appendChild(b);
+  });
+}
+
 /* ---------- launch quiz ---------- */
 function launch(questions,label){
   const prepared = questions.map(q=>{
@@ -2187,7 +2218,7 @@ function retake(){
 function goHome(){
   session=null;
   hide('quiz'); hide('results'); show('home');
-  hide('randomSetup'); hide('topicList'); hide('moduleList'); hide('moduleSetup');
+  hide('randomSetup'); hide('topicList'); hide('moduleList'); hide('moduleSetup'); hide('labelingList');
   window.scrollTo(0,0);
 }
 
