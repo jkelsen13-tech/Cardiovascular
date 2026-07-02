@@ -1,7 +1,7 @@
 # Cardiovascular Monitor Technician — Practice Test
 
 A single self-contained, offline, mobile-friendly HTML study quiz for the
-Cardiovascular Monitor Technician (CMT) class, modeled on a DMV-style practice test.
+Cardiovascular Monitor Technician (CMT) class.
 
 ## Use
 Open **`cmt-quiz.html`** in any web browser. No internet, server, or install required.
