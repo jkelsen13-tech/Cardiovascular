@@ -113,6 +113,18 @@
   .missed .slot-mini span{font-size:13px}
   .missed .smi-no{color:#fca5a5}
   .missed .smi-ok{color:var(--greenbd)}
+  .ecg-strip{background:#fff; border:1px solid var(--line); border-radius:10px; overflow-x:auto; margin:6px 0 14px; -webkit-overflow-scrolling:touch}
+  .ecg-fields{display:flex; flex-direction:column; gap:10px; margin-bottom:12px}
+  .ecg-field{display:flex; flex-wrap:wrap; align-items:center; gap:8px}
+  .ecg-field>label{flex:0 0 92px; font-weight:600; font-size:13px}
+  .ecg-field input,.ecg-field select{flex:1 1 160px; min-width:130px; padding:9px 10px; background:var(--panel2); color:var(--ink); border:1px solid var(--line); border-radius:8px; font-size:14px}
+  .ecg-field .fb{flex:1 1 100%; font-size:12px; color:var(--muted); padding-left:100px}
+  .ecg-field.ok input,.ecg-field.ok select{border-color:var(--greenbd); background:var(--greenbg)}
+  .ecg-field.no input,.ecg-field.no select{border-color:var(--redbd); background:var(--redbg)}
+  .ecg-field.ok .fb{color:var(--greenbd)}
+  .ecg-field.no .fb{color:#fca5a5}
+  .ecg-verdict{font-weight:700; margin:8px 0; min-height:18px}
+  .ecg-verdict.ok{color:var(--greenbd)}.ecg-verdict.part{color:var(--amber)}.ecg-verdict.no{color:#fca5a5}
   .nav{display:flex; gap:10px; margin-top:8px}
   .nav .btn{margin:0}
   /* results */
@@ -151,7 +163,7 @@
 
   <!-- ============ HOME / MODE SELECT ============ -->
   <div id="home">
-    <div class="card">
+    <div class="card" id="homeMenu">
       <h2>Choose a study mode</h2>
       <button class="btn" onclick="startRandomSetup()">🎲 Random Practice Test
         <small>Pick units/modules and length — randomized mix from your selected scope</small></button>
@@ -161,6 +173,8 @@
         <small>Drill one topic within your selected scope</small></button>
       <button class="btn secondary" onclick="showLabeling()">🏷️ Labeling Diagrams
         <small>Canvas-style diagram matching — partial credit per marker</small></button>
+      <button class="btn secondary" onclick="showEcg()">🫀 ECG Rhythm Practice
+        <small>Label generated rhythm strips — Regularity / Rate / P / PRI / QRS / Interpret</small></button>
       <div class="row" style="margin-top:14px; justify-content:space-between">
         <span class="pill" id="bankCount">— questions in bank</span>
         <span class="pill">Pass mark: 80%</span>
@@ -240,6 +254,62 @@
       <p class="hint" style="margin-top:-4px">Canvas-style matching — pick a diagram or sequence to fill in. Graded per marker with partial credit (X / Y correct).</p>
       <div id="labelingButtons"></div>
       <button class="btn ghost" onclick="hide('labelingList')">Cancel</button>
+    </div>
+
+    <!-- ECG Rhythm Practice: home -->
+    <div class="card hidden" id="ecgHome">
+      <h2>🫀 ECG Rhythm Practice</h2>
+      <p class="hint" style="margin-top:-4px">Realistic rhythm strips generated fresh on every render. Label each with the class 6-field worksheet format; graded per field with partial credit.</p>
+      <button class="btn" onclick="ecgStartPractice()">Practice Mode
+        <small>Pick a rhythm to drill (or Random) — instant feedback after each strip</small></button>
+      <div class="setup-block" style="margin-top:14px">
+        <div class="row" style="margin-bottom:8px">
+          <label for="ecgTestCount">Test Mode — number of strips:</label>
+          <input type="number" id="ecgTestCount" value="5" min="1" max="20">
+        </div>
+        <button class="btn secondary" onclick="ecgBeginTest()">Start Test ▶
+          <small>Random strips back-to-back, graded at the end with a per-field breakdown</small></button>
+      </div>
+      <button class="btn ghost" onclick="ecgBackHome()">Back</button>
+    </div>
+
+    <!-- ECG practice: pick a rhythm -->
+    <div class="card hidden" id="ecgPick">
+      <h2>Practice — pick a rhythm</h2>
+      <div id="ecgPickBtns"></div>
+      <button class="btn ghost" onclick="showEcg()">Back</button>
+    </div>
+
+    <!-- ECG quiz: strip + 6 fields -->
+    <div class="card hidden" id="ecgQuiz">
+      <div class="row" style="justify-content:space-between; margin-bottom:6px"><span class="topictag" id="ecgProgress"></span></div>
+      <div class="ecg-strip" id="ecgStrip"></div>
+      <div class="ecg-fields">
+        <div class="ecg-field"><label for="ecg_reg">Regularity:</label><input id="ecg_reg" autocomplete="off" placeholder="Regular / Irregular"><span class="fb" id="ecgfb_reg"></span></div>
+        <div class="ecg-field"><label for="ecg_rate">Rate:</label><input id="ecg_rate" autocomplete="off" placeholder="beats per minute"><span class="fb" id="ecgfb_rate"></span></div>
+        <div class="ecg-field"><label for="ecg_p">P Waves:</label><input id="ecg_p" autocomplete="off" placeholder="present / upright / absent / …"><span class="fb" id="ecgfb_p"></span></div>
+        <div class="ecg-field"><label for="ecg_pri">PRI:</label><input id="ecg_pri" autocomplete="off" placeholder="seconds, or none"><span class="fb" id="ecgfb_pri"></span></div>
+        <div class="ecg-field"><label for="ecg_qrs">QRS:</label><input id="ecg_qrs" autocomplete="off" placeholder="narrow / wide / none"><span class="fb" id="ecgfb_qrs"></span></div>
+        <div class="ecg-field"><label for="ecg_interpret">Interpret:</label><select id="ecg_interpret"></select><span class="fb" id="ecgfb_interpret"></span></div>
+      </div>
+      <div class="ecg-verdict" id="ecgVerdict"></div>
+      <button class="btn" id="ecgCheckBtn" onclick="ecgCheck()">Check answers ▶</button>
+      <button class="btn" id="ecgNextBtn" style="display:none" onclick="ecgNext()">Next ▶</button>
+      <button class="btn ghost" onclick="showEcg()">Quit</button>
+    </div>
+
+    <!-- ECG test results -->
+    <div class="card hidden" id="ecgResults">
+      <h2>ECG Test Results</h2>
+      <div class="center" style="margin:8px 0">
+        <div style="font-size:40px; font-weight:800" id="ecgScorePct"></div>
+        <span class="pill" id="ecgScoreRaw"></span>
+      </div>
+      <div id="ecgMissed"></div>
+      <div class="nav" style="margin-top:12px">
+        <button class="btn" onclick="ecgBeginTest()">Retake ▶</button>
+        <button class="btn ghost" onclick="showEcg()">ECG menu</button>
+      </div>
     </div>
 
     <div class="src-note">
@@ -2295,8 +2365,160 @@ function goHome(){
   session=null;
   hide('quiz'); hide('results'); show('home');
   hide('randomSetup'); hide('topicList'); hide('moduleList'); hide('moduleSetup'); hide('labelingList');
+  hide('ecgHome'); hide('ecgPick'); hide('ecgQuiz'); hide('ecgResults'); show('homeMenu');
   window.scrollTo(0,0);
 }
+
+/* ================= ECG RHYTHM PRACTICE ================= */
+var ECG_PXMM=6, ECG_PXS=25*ECG_PXMM, ECG_PXMV=10*ECG_PXMM, ECG_SEC=6.5;
+var ECG_W=Math.round(ECG_SEC*ECG_PXS), ECG_H=42*ECG_PXMM, ECG_BASE=Math.round(ECG_H*0.60);
+function ecgRnd(a,b){return a+Math.random()*(b-a);}
+function ecgGauss(t,c,w,a){return a*Math.exp(-((t-c)*(t-c))/(2*w*w));}
+function ecgTri(t,c,w,a){var d=Math.abs(t-c);return d>=w?0:a*(1-d/w);}
+function ecgQRS(t,tr,wide){var w=wide?0.055:0.038,y=0;
+  y+=ecgTri(t,tr-w*0.7,w*0.45,-0.13); y+=ecgTri(t,tr,w*0.5,(wide?1.5:1.35)); y+=ecgTri(t,tr+w*0.8,w*0.6,-(wide?0.6:0.32)); return y;}
+function ecgWideVT(t,tr){var w=0.13,d=t-tr; if(Math.abs(d)>w)return 0; return 1.15*Math.sin(Math.PI*(d+w)/(2*w))*(d<0?1:-0.9);}
+function ecgBuildSinus(opt){
+  var rate=Math.round(ecgRnd(opt.rateMin,opt.rateMax)),rr=60/rate,beats=[],t=ecgRnd(0.15,0.45),phase=ecgRnd(0,6.28),i=0;
+  while(t<ECG_SEC+0.6){beats.push(t);var step=rr;
+    if(opt.resp)step=rr*(1+0.18*Math.sin(2*Math.PI*t/4+phase)); else if(opt.jitter)step=rr*(1+ecgRnd(-opt.jitter,opt.jitter));
+    t+=step; if(++i>60)break;}
+  var wander=ecgRnd(0.01,0.035),wph=ecgRnd(0,6.28);
+  function yfn(x){var y=wander*Math.sin(2*Math.PI*x/2.6+wph);
+    for(var k=0;k<beats.length;k++){var tr=beats[k];
+      if(opt.pwave==='inverted')y+=ecgGauss(x,tr-0.10,0.04,-0.12); else if(opt.pwave)y+=ecgGauss(x,tr-0.16,0.045,0.17);
+      y+=ecgQRS(x,tr,opt.wide);
+      if(opt.tw!==false)y+=ecgGauss(x,tr+(opt.wide?0.34:0.30),0.078,opt.wide?-0.30:0.33);}
+    return y;}
+  var fp=beats[1];
+  return {yfn:yfn,rate:rate,features:{firstP:opt.pwave===true?(fp-0.16):null,firstQRS:fp,pri:opt.pwave===true?0.16:null}};}
+function ecgBuildAfib(){var beats=[],t=ecgRnd(0.2,0.4),i=0;
+  while(t<ECG_SEC+0.6){beats.push(t);t+=ecgRnd(0.42,1.02);if(++i>60)break;}
+  var vr=Math.round(60/((beats[beats.length-1]-beats[0])/(beats.length-1)));
+  var fib=[];for(var k=0;k<6;k++)fib.push([ecgRnd(4.5,8),ecgRnd(0.02,0.055),ecgRnd(0,6.28)]);
+  function yfn(x){var y=0.02*Math.sin(2*Math.PI*x/2.6);
+    for(var f=0;f<fib.length;f++)y+=fib[f][1]*Math.sin(2*Math.PI*fib[f][0]*x+fib[f][2]);
+    for(var b=0;b<beats.length;b++){y+=ecgQRS(x,beats[b],false);y+=ecgGauss(x,beats[b]+0.30,0.078,0.26);}return y;}
+  return {yfn:yfn,rate:vr,features:{firstP:null,firstQRS:beats[1],pri:null,noP:true}};}
+function ecgBuildVfib(){var comps=[];for(var k=0;k<7;k++)comps.push([ecgRnd(3,8),ecgRnd(0.25,0.8),ecgRnd(0,6.28),ecgRnd(-0.4,0.4)]);
+  function yfn(x){var y=0;for(var c=0;c<comps.length;c++)y+=comps[c][1]*Math.sin(2*Math.PI*(comps[c][0]+comps[c][3]*x)*x+comps[c][2]);return y*0.7;}
+  return {yfn:yfn,rate:null,features:{firstP:null,firstQRS:null,pri:null,chaotic:true}};}
+function ecgBuild3rd(){var arate=Math.round(ecgRnd(70,92)),vrate=Math.round(ecgRnd(35,45));
+  var pT=[],t=ecgRnd(0.1,0.4),i=0;while(t<ECG_SEC+0.6){pT.push(t);t+=60/arate;if(++i>60)break;}
+  var qT=[],t2=ecgRnd(0.2,0.7);i=0;while(t2<ECG_SEC+0.6){qT.push(t2);t2+=60/vrate;if(++i>40)break;}
+  function yfn(x){var y=0.015*Math.sin(2*Math.PI*x/2.6);
+    for(var p=0;p<pT.length;p++)y+=ecgGauss(x,pT[p],0.045,0.17);
+    for(var q=0;q<qT.length;q++){y+=ecgQRS(x,qT[q],true);y+=ecgGauss(x,qT[q]+0.34,0.08,-0.30);}return y;}
+  return {yfn:yfn,rate:vrate,arate:arate,features:{firstP:pT[1],firstQRS:qT[0],pri:null,dissoc:true}};}
+function ecgBuildVT(){var rate=Math.round(ecgRnd(150,200)),rr=60/rate,beats=[],t=ecgRnd(0.1,0.3),i=0;
+  while(t<ECG_SEC+0.6){beats.push(t);t+=rr;if(++i>80)break;}
+  function yfn(x){var y=0;for(var b=0;b<beats.length;b++)y+=ecgWideVT(x,beats[b]);return y;}
+  return {yfn:yfn,rate:rate,features:{firstP:null,firstQRS:beats[1],pri:null}};}
+var ECG_RHYTHMS=[
+ {id:"nsr",name:"Normal Sinus Rhythm",build:function(){return ecgBuildSinus({rateMin:62,rateMax:96,pwave:true,jitter:0.03});},
+  ans:{reg:"regular",rate:[60,100],p:["present","upright","uniform"],pri:[0.12,0.20],qrs:"narrow"},
+  why:{reg:"R-R intervals are equal.",rate:"60-100 bpm.",p:"One upright, uniform P before every QRS.",pri:"Constant 0.12-0.20 s.",qrs:"Narrow (<0.12 s) supraventricular conduction.",interpret:"All sinus rules normal."}},
+ {id:"stach",name:"Sinus Tachycardia",build:function(){return ecgBuildSinus({rateMin:104,rateMax:150,pwave:true,jitter:0.02});},
+  ans:{reg:"regular",rate:[101,160],p:["present","upright","uniform"],pri:[0.12,0.20],qrs:"narrow"},
+  why:{reg:"Regular R-R.",rate:">100 bpm (usually <160).",p:"Upright P before each QRS (may crowd the T at fast rates).",pri:"0.12-0.20 s.",qrs:"Narrow.",interpret:"Sinus rules but rate >100."}},
+ {id:"sbrad",name:"Sinus Bradycardia",build:function(){return ecgBuildSinus({rateMin:42,rateMax:58,pwave:true,jitter:0.03});},
+  ans:{reg:"regular",rate:[35,59],p:["present","upright","uniform"],pri:[0.12,0.20],qrs:"narrow"},
+  why:{reg:"Regular R-R.",rate:"<60 bpm.",p:"Upright P before each QRS.",pri:"0.12-0.20 s.",qrs:"Narrow.",interpret:"Sinus rules but rate <60."}},
+ {id:"afib",name:"Atrial Fibrillation",build:ecgBuildAfib,
+  ans:{reg:"irregular",rate:[50,130],p:["none","absent","fibrillatory","no p"],pri:"none",qrs:"narrow"},
+  why:{reg:"Irregularly irregular R-R.",rate:"Ventricular rate varies.",p:"No true P waves - fibrillatory baseline.",pri:"Not measurable (no P).",qrs:"Narrow.",interpret:"Irregularly irregular, no P waves."}},
+ {id:"vfib",name:"Ventricular Fibrillation",build:ecgBuildVfib,
+  ans:{reg:"irregular",rate:"none",p:["none","absent","no p"],pri:"none",qrs:"none"},
+  why:{reg:"Chaotic, no organized rhythm.",rate:"None - not measurable.",p:"None.",pri:"None.",qrs:"No organized QRS complexes.",interpret:"Chaotic, no P/QRS/T - a lethal rhythm."}},
+ {id:"chb",name:"Complete (3rd Degree) Heart Block",build:ecgBuild3rd,
+  ans:{reg:"regular",rate:[30,50],p:["present","regular","more p"],pri:"none",qrs:"wide"},
+  why:{reg:"P-P regular AND R-R regular, but independent.",rate:"Ventricular (escape) rate is slow (~30-45).",p:"P waves present and regular; more Ps than QRS.",pri:"No consistent PRI - P and QRS are unrelated (AV dissociation).",qrs:"Wide (ventricular escape).",interpret:"P and QRS march out independently."}},
+ {id:"sarr",name:"Sinus Arrhythmia",build:function(){return ecgBuildSinus({rateMin:62,rateMax:95,pwave:true,resp:true});},
+  ans:{reg:"irregular",rate:[60,100],p:["present","upright","uniform"],pri:[0.12,0.20],qrs:"narrow"},
+  why:{reg:"Irregular - R-R varies with breathing.",rate:"60-100 bpm.",p:"Upright P before every QRS.",pri:"Constant 0.12-0.20 s.",qrs:"Narrow.",interpret:"Sinus with rate varying on respiration."}},
+ {id:"junc",name:"Junctional Rhythm",build:function(){return ecgBuildSinus({rateMin:42,rateMax:58,pwave:false});},
+  ans:{reg:"regular",rate:[40,60],p:["none","absent","inverted","retrograde","no p"],pri:"none",qrs:"narrow"},
+  why:{reg:"Regular R-R.",rate:"40-60 bpm (junctional escape).",p:"No upright P (absent, or inverted/retrograde).",pri:"None or very short.",qrs:"Narrow (originates at the AV junction).",interpret:"Narrow, 40-60, no normal P."}},
+ {id:"vtach",name:"Ventricular Tachycardia",build:ecgBuildVT,
+  ans:{reg:"regular",rate:[100,250],p:["none","absent","no p"],pri:"none",qrs:"wide"},
+  why:{reg:"Regular R-R.",rate:"Fast, >100 bpm.",p:"No identifiable P waves.",pri:"None.",qrs:"Wide and bizarre (ventricular origin).",interpret:"Fast, wide, regular, no P waves."}}
+];
+function ecgNum(s){var m=(s||"").replace(",",".").match(/-?\d*\.?\d+/);return m?parseFloat(m[0]):null;}
+function ecgHas(s,words){s=(s||"").toLowerCase();for(var i=0;i<words.length;i++)if(s.indexOf(words[i])>-1)return true;return false;}
+function ecgGrade(R,f){var ans=R.ans,r={};var u=(f.reg||"").toLowerCase();
+  r.reg=ans.reg==="irregular"?ecgHas(u,["irreg"]):(ecgHas(u,["reg"])&&!ecgHas(u,["irreg"]));
+  if(ans.rate==="none")r.rate=ecgHas(f.rate,["none","n/a","not","0"]); else{var n=ecgNum(f.rate);r.rate=n!==null&&n>=ans.rate[0]-6&&n<=ans.rate[1]+6;}
+  r.p=ecgHas(f.p,ans.p);
+  if(ans.pri==="none")r.pri=ecgHas(f.pri,["none","absent","n/a","variable","no","0"]); else{var pn=ecgNum(f.pri);r.pri=pn!==null&&pn>=ans.pri[0]-0.02&&pn<=ans.pri[1]+0.02;}
+  var qn=ecgNum(f.qrs),qu=(f.qrs||"").toLowerCase();
+  if(ans.qrs==="none")r.qrs=ecgHas(qu,["none","absent","no","chaotic"]);
+  else if(ans.qrs==="wide")r.qrs=ecgHas(qu,["wide",">0.12","> 0.12",">.12"])||(qn!==null&&qn>=0.12);
+  else r.qrs=ecgHas(qu,["narrow","<0.12","< 0.12","<.12"])||(qn!==null&&qn<0.12&&qn>0);
+  r.interpret=(f.interpret===R.name);
+  r.correct=(r.reg?1:0)+(r.rate?1:0)+(r.p?1:0)+(r.pri?1:0)+(r.qrs?1:0)+(r.interpret?1:0);
+  return r;}
+/* ---- SVG rendering ---- */
+function ecgPath(yfn){var d="",dt=0.0035,first=true;
+  for(var t=0;t<ECG_SEC;t+=dt){var x=(t*ECG_PXS).toFixed(1),y=(ECG_BASE-yfn(t)*ECG_PXMV).toFixed(1); d+=(first?"M":"L")+x+" "+y+" ";first=false;}
+  return d;}
+function ecgSvg(strip,annotate){
+  var s='<svg viewBox="0 0 '+ECG_W+' '+ECG_H+'" width="100%" preserveAspectRatio="xMinYMid meet" xmlns="http://www.w3.org/2000/svg" style="min-width:'+ECG_W+'px">';
+  s+='<defs><pattern id="ecgSm" width="'+ECG_PXMM+'" height="'+ECG_PXMM+'" patternUnits="userSpaceOnUse"><path d="M'+ECG_PXMM+' 0H0V'+ECG_PXMM+'" fill="none" stroke="#f6cbd3" stroke-width="0.6"/></pattern>';
+  s+='<pattern id="ecgLg" width="'+(5*ECG_PXMM)+'" height="'+(5*ECG_PXMM)+'" patternUnits="userSpaceOnUse"><rect width="'+(5*ECG_PXMM)+'" height="'+(5*ECG_PXMM)+'" fill="url(#ecgSm)"/><path d="M'+(5*ECG_PXMM)+' 0H0V'+(5*ECG_PXMM)+'" fill="none" stroke="#e79aa8" stroke-width="1.1"/></pattern></defs>';
+  s+='<rect width="'+ECG_W+'" height="'+ECG_H+'" fill="#fffdfd"/><rect width="'+ECG_W+'" height="'+ECG_H+'" fill="url(#ecgLg)"/>';
+  s+='<path d="'+ecgPath(strip.yfn)+'" fill="none" stroke="#151515" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>';
+  if(annotate){var f=strip.features,X=function(t){return (t*ECG_PXS).toFixed(1);};
+    if(f.firstP!=null){var px=X(f.firstP);s+='<line x1="'+px+'" y1="'+(ECG_BASE-70)+'" x2="'+px+'" y2="'+(ECG_BASE-26)+'" stroke="#c026d3" stroke-width="2"/><polygon points="'+px+','+(ECG_BASE-24)+' '+(px-4)+','+(ECG_BASE-34)+' '+(px+4)+','+(ECG_BASE-34)+'" fill="#c026d3"/><text x="'+px+'" y="'+(ECG_BASE-74)+'" fill="#c026d3" font-size="13" font-weight="700" text-anchor="middle">P</text>';}
+    if(f.firstQRS!=null){var qx=X(f.firstQRS);s+='<text x="'+qx+'" y="'+(ECG_BASE-96)+'" fill="#2563eb" font-size="13" font-weight="700" text-anchor="middle">QRS</text><line x1="'+qx+'" y1="'+(ECG_BASE-92)+'" x2="'+qx+'" y2="'+(ECG_BASE-84)+'" stroke="#2563eb" stroke-width="2"/>';}
+    if(f.firstP!=null&&f.firstQRS!=null){var a=X(f.firstP),b=X(f.firstQRS),yb=ECG_BASE+34;s+='<path d="M'+a+' '+(yb-6)+' V'+yb+' H'+b+' V'+(yb-6)+'" fill="none" stroke="#16a34a" stroke-width="2"/><text x="'+((parseFloat(a)+parseFloat(b))/2)+'" y="'+(yb+16)+'" fill="#16a34a" font-size="12" font-weight="700" text-anchor="middle">PRI</text>';}
+    var note=f.chaotic?"No organized P / QRS / T":(f.dissoc?"P and QRS independent (AV dissociation)":(f.noP?"No P waves - fibrillatory baseline":""));
+    if(note)s+='<text x="10" y="20" fill="#b91c1c" font-size="13" font-weight="700">'+note+'</text>';
+  }
+  return s+'</svg>';}
+/* ---- UI / modes ---- */
+var ecgSession=null;
+function ecgDropdown(){var extra=["Atrial Flutter","Asystole","Idioventricular Rhythm","First-Degree AV Block"];
+  var names=ECG_RHYTHMS.map(function(r){return r.name;}).concat(extra);
+  names.sort();var o='<option value="">\u2014 choose \u2014</option>';names.forEach(function(n){o+='<option value="'+n+'">'+n+'</option>';});return o;}
+function ecgHideAll(){['randomSetup','topicList','moduleList','moduleSetup','labelingList','ecgHome','ecgPick','ecgQuiz','ecgResults'].forEach(hide);}
+function showEcg(){ecgHideAll();show('homeMenu');show('ecgHome');window.scrollTo(0,0);}
+function ecgBackHome(){ecgHideAll();show('homeMenu');window.scrollTo(0,0);}
+function ecgPickRandom(){return Math.floor(Math.random()*ECG_RHYTHMS.length);}
+function ecgStartPractice(){ecgHideAll();show('homeMenu');show('ecgPick');var box=el('ecgPickBtns');box.innerHTML='';
+  var rnd=document.createElement('button');rnd.className='btn';rnd.textContent='\ud83c\udfb2 Random rhythm';rnd.onclick=function(){ecgBegin('practice',ecgPickRandom(),true);};box.appendChild(rnd);
+  ECG_RHYTHMS.forEach(function(R,i){var b=document.createElement('button');b.className='topic-btn';b.innerHTML='<span>'+R.name+'</span><span class="cnt">drill</span>';b.onclick=function(){ecgBegin('practice',i,false);};box.appendChild(b);});}
+function ecgBeginTest(){var n=parseInt(el('ecgTestCount').value,10);if(isNaN(n)||n<1)n=5;if(n>20)n=20;
+  var q=[];for(var i=0;i<n;i++)q.push(ecgPickRandom());ecgSession={mode:'test',queue:q,idx:0,results:[]};ecgHideAll();hide('homeMenu');show('ecgQuiz');ecgRender();}
+function ecgBegin(mode,typeIdx,isRandom){ecgSession={mode:mode,typeIdx:typeIdx,isRandom:isRandom,queue:[typeIdx],idx:0,results:[]};ecgHideAll();hide('homeMenu');show('ecgQuiz');ecgRender();}
+function ecgRender(){var S=ecgSession,ri=S.queue[S.idx],R=ECG_RHYTHMS[ri],strip=R.build();S.current={R:R,strip:strip};
+  el('ecgProgress').textContent=(S.mode==='test')?('Strip '+(S.idx+1)+' of '+S.queue.length):(R.name+' \u2014 practice');
+  el('ecgStrip').innerHTML=ecgSvg(strip,false);
+  ['reg','rate','p','pri','qrs'].forEach(function(k){var e=el('ecg_'+k);e.value='';e.disabled=false;e.parentNode.className='ecg-field';var fb=el('ecgfb_'+k);if(fb)fb.textContent='';});
+  var sel=el('ecg_interpret');sel.innerHTML=ecgDropdown();sel.value='';sel.disabled=false;sel.parentNode.className='ecg-field';el('ecgfb_interpret').textContent='';
+  el('ecgCheckBtn').style.display='';el('ecgCheckBtn').disabled=false;el('ecgNextBtn').style.display='none';
+  el('ecgVerdict').textContent='';el('ecgVerdict').className='ecg-verdict';window.scrollTo(0,0);}
+function ecgCheck(){var S=ecgSession,R=S.current.R;
+  var f={reg:el('ecg_reg').value,rate:el('ecg_rate').value,p:el('ecg_p').value,pri:el('ecg_pri').value,qrs:el('ecg_qrs').value,interpret:el('ecg_interpret').value};
+  var g=ecgGrade(R,f);S.results.push({name:R.name,g:g});
+  var ct={reg:(R.ans.reg==="irregular"?"Irregular":"Regular"),rate:(R.ans.rate==="none"?"None":R.ans.rate[0]+"-"+R.ans.rate[1]+" bpm"),
+    p:R.why.p,pri:(R.ans.pri==="none"?"None / not measurable":R.ans.pri[0]+"-"+R.ans.pri[1]+" s"),qrs:(R.ans.qrs==="none"?"None":R.ans.qrs==="wide"?"Wide (>0.12 s)":"Narrow (<0.12 s)"),interpret:R.name};
+  ['reg','rate','p','pri','qrs','interpret'].forEach(function(k){var e=el('ecg_'+k);e.disabled=true;e.parentNode.className='ecg-field '+(g[k]?'ok':'no');
+    var fb=el('ecgfb_'+k);if(fb)fb.innerHTML=(g[k]?'\u2713 ':'\u2717 ')+'<b>'+ct[k]+'</b> \u2014 '+R.why[k];});
+  el('ecgStrip').innerHTML=ecgSvg(S.current.strip,true);
+  var v=el('ecgVerdict');v.className='ecg-verdict '+(g.correct===6?'ok':(g.correct>=3?'part':'no'));v.textContent=g.correct+' / 6 fields correct';
+  el('ecgCheckBtn').style.display='none';var nb=el('ecgNextBtn');nb.style.display='';
+  nb.textContent=(S.mode==='test')?((S.idx<S.queue.length-1)?'Next strip \u25b6':'See results \u25b6'):'Try another \u25b6';}
+function ecgNext(){var S=ecgSession;
+  if(S.mode==='practice'){S.queue=[S.isRandom?ecgPickRandom():S.typeIdx];S.idx=0;S.results=[];ecgRender();return;}
+  if(S.idx<S.queue.length-1){S.idx++;ecgRender();}else ecgShowResults();}
+function ecgShowResults(){var S=ecgSession;ecgHideAll();hide('homeMenu');show('ecgResults');
+  var tot=S.results.length*6,got=0;S.results.forEach(function(r){got+=r.g.correct;});
+  el('ecgScorePct').textContent=Math.round(got/tot*100)+'%';el('ecgScoreRaw').textContent=got+' / '+tot+' fields';
+  var byF={reg:0,rate:0,p:0,pri:0,qrs:0,interpret:0},fl={reg:"Regularity",rate:"Rate",p:"P Waves",pri:"PRI",qrs:"QRS",interpret:"Interpret"};
+  S.results.forEach(function(r){for(var k in byF)if(!r.g[k])byF[k]++;});
+  var rows='';S.results.forEach(function(r,i){rows+='<div class="breakdown-row"><span>Strip '+(i+1)+': '+r.name+'</span><span style="color:'+(r.g.correct===6?'#22c55e':(r.g.correct>=3?'#f59e0b':'#fca5a5'))+'">'+r.g.correct+'/6</span></div>';});
+  var fields='';for(var k in byF)if(byF[k])fields+='<div class="breakdown-row"><span>'+fl[k]+'</span><span style="color:#fca5a5">missed '+byF[k]+'</span></div>';
+  el('ecgMissed').innerHTML='<h3 style="font-size:14px;margin:10px 0 4px">Per-strip</h3>'+rows+(fields?'<h3 style="font-size:14px;margin:12px 0 4px">Fields missed most</h3>'+fields:'');window.scrollTo(0,0);}
 
 init();
 </script>
