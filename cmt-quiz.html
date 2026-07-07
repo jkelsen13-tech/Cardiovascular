@@ -1929,6 +1929,126 @@ const BANK = [
 {t:"rhythms", module:2, unit:4,q:"Normal sinus rhythm rarely requires treatment unless it is associated with:",
  o:["Underlying pathology such as sinus node dysfunction or digoxin toxicity","Any rate over 80 bpm","A single upright P wave","A constant PR interval"],a:0,
  e:"NSR provides adequate, coordinated blood flow and rarely needs treatment unless it is tied to underlying pathology (e.g., sinus node dysfunction or digoxin toxicity)."},
+{t:"rhythms", module:6, unit:3,q:"AV heart blocks are categorized by the severity of the obstruction at the AV node. How many distinct types are recognized?",
+ o:["Two","Three","Four","Six"],a:2,
+ e:"There are four AV blocks: first-degree, second-degree Type I (Wenckebach), second-degree Type II (Mobitz II), and third-degree (complete) heart block."},
+{t:"rhythms", module:6, unit:3,q:"In a FIRST-DEGREE AV block, the AV node:",
+ o:["Blocks every impulse completely","Holds each impulse longer than normal but eventually conducts every one","Conducts some impulses and blocks others intermittently","Has no relationship between P waves and QRS complexes"],a:1,
+ e:"First-degree block is a delay, not a true block: the AV node holds each impulse longer than normal, but every impulse is eventually conducted to the ventricles."},
+{t:"rhythms", module:6, unit:3,q:"The hallmark of first-degree AV block on the ECG is a PR interval that is:",
+ o:["Less than 0.12 second","Greater than 0.20 second and constant across the strip","Progressively lengthening beat to beat","Not measurable"],a:1,
+ e:"First-degree block shows a PRI greater than 0.20 second that stays constant across the entire strip, and every P wave is still followed by a QRS."},
+{t:"rhythms", module:6, unit:3,q:"Because first-degree block only DELAYS conduction, on the rhythm strip you will see:",
+ o:["Some P waves with no QRS","Every P wave still followed by a QRS complex","More QRS complexes than P waves","Absent P waves"],a:1,
+ e:"Every impulse is conducted, so each P wave is followed by a QRS. First-degree block is a condition layered on an underlying rhythm, which must also be identified."},
+{t:"rhythms", module:6, unit:3,q:"First-degree AV block is usually:",
+ o:["A medical emergency requiring an immediate pacemaker","Asymptomatic and often benign — common in athletes or people with high vagal tone","Immediately life-threatening","Always caused by myocardial infarction"],a:1,
+ e:"First-degree block is usually asymptomatic and often a benign normal variant (athletes, high vagal tone) that needs no treatment on its own, though it can mark electrolyte, medication, or structural causes."},
+{t:"rhythms", module:6, unit:3,q:"A feature common to BOTH types of second-degree AV block is that:",
+ o:["Every P wave is followed by a QRS","Not all P waves are followed by a QRS complex","The PR interval is always normal","There are more QRS complexes than P waves"],a:1,
+ e:"In both Type I and Type II, the AV junction is unreliable and selectively blocks some impulses, so not every P wave is followed by a QRS complex."},
+{t:"rhythms", module:6, unit:3,q:"In second-degree Type I (Wenckebach) block, the PR interval:",
+ o:["Stays constant, then a beat suddenly drops","Progressively lengthens until one P wave is not conducted, then the cycle repeats","Is never measurable","Is always less than 0.12 second"],a:1,
+ e:"In Wenckebach each impulse is delayed a little longer than the last — the PRI progressively lengthens ('going, going, gone') until one P wave is blocked, then the cycle starts over."},
+{t:"rhythms", module:6, unit:3,q:"The rhythm of a Wenckebach (Type I) block is best described as:",
+ o:["Perfectly regular","Irregular, with characteristic grouped beating","Chaotic with no identifiable P waves","Regular with a wide QRS"],a:1,
+ e:"As the PRI lengthens, the R-R interval shortens until a beat drops, producing an irregular rhythm with characteristic 'grouped beating.'"},
+{t:"rhythms", module:6, unit:3,q:"Second-degree Type I (Wenckebach) block is generally:",
+ o:["A benign rhythm, often seen in young, healthy people or athletes","Always a medical emergency","Always treated with a permanent pacemaker","A rhythm with no P waves"],a:0,
+ e:"Type I is usually benign, especially in young healthy individuals or athletes; concern rises only with symptoms, progression, or structural heart disease."},
+{t:"rhythms", module:6, unit:3,q:"In second-degree Type II (Mobitz II) block, the PR interval of the CONDUCTED beats is:",
+ o:["Progressively lengthening","Constant, with sudden, unpredictable dropped beats","Never measurable","Always shorter than 0.12 second"],a:1,
+ e:"In Mobitz II the PRI of conducted beats stays constant; some P waves are suddenly not followed by a QRS, with no progressive delay to warn of the dropped beat."},
+{t:"rhythms", module:6, unit:3,q:"Compared with the QRS complexes, a Type II second-degree block always has:",
+ o:["Fewer P waves than QRS","An equal number of P waves and QRS","More P waves than QRS complexes","No P waves at all"],a:2,
+ e:"Because some atrial impulses are blocked, there are always more P waves than QRS complexes; the ventricular rate is often one-half, one-third, or one-fourth of the atrial rate."},
+{t:"rhythms", module:6, unit:3,q:"Second-degree Type II (Mobitz II) block is clinically important because it:",
+ o:["Is always completely benign","Can rapidly progress to complete heart block and often requires a permanent pacemaker","Never causes any symptoms","Dangerously speeds the heart"],a:1,
+ e:"Mobitz II is an unstable, dangerous rhythm that can rapidly progress to complete heart block or asystole; it often requires a permanent pacemaker."},
+{t:"rhythms", module:6, unit:3,q:"The KEY ECG difference between Mobitz I and Mobitz II is that:",
+ o:["Mobitz I has a constant PRI while Mobitz II lengthens","Mobitz I progressively lengthens the PRI before a dropped beat; Mobitz II keeps the PRI constant","Both have absent P waves","Both always have a wide QRS"],a:1,
+ e:"Mobitz I (Wenckebach) shows progressive PRI lengthening before a dropped beat; Mobitz II keeps the PRI constant and drops beats suddenly and unpredictably."},
+{t:"rhythms", module:6, unit:3,q:"In THIRD-DEGREE (complete) heart block, the atria and ventricles:",
+ o:["Are perfectly synchronized","Function completely independently (AV dissociation) because no impulse crosses the AV node","Both stop beating entirely","Beat together at the same fast rate"],a:1,
+ e:"In complete heart block the block at the AV node is total; sinus impulses cannot reach the ventricles, so an escape focus paces them and the atria and ventricles beat in a totally dissociated fashion."},
+{t:"rhythms", module:6, unit:3,q:"In complete heart block, if a JUNCTIONAL escape focus controls the ventricles, the ventricular rate is typically:",
+ o:["100–150 bpm","40–60 bpm","20–40 bpm","Over 250 bpm"],a:1,
+ e:"A junctional escape focus paces the ventricles at 40–60 bpm with a narrow QRS; a lower ventricular focus is slower, 20–40 bpm, with a wide QRS."},
+{t:"rhythms", module:6, unit:3,q:"In complete heart block, a VENTRICULAR (rather than junctional) escape focus produces a QRS that is:",
+ o:["Less than 0.12 second (narrow)","0.12 second or greater (wide)","Completely absent","An inverted P wave"],a:1,
+ e:"A junctional focus gives a narrow QRS (<0.12 s) at 40–60 bpm; a lower ventricular focus gives a wide QRS (≥0.12 s) at a slower 20–40 bpm."},
+{t:"rhythms", module:6, unit:3,q:"In complete heart block, the relationship between P waves and QRS complexes is:",
+ o:["Every P is followed by a QRS","There is NO consistent relationship, and no PRI can be measured","The PRI progressively lengthens","Exactly one P for every two QRS"],a:1,
+ e:"Because none of the atrial impulses are conducted, the P waves have no relationship to the QRS complexes and no PRI can be measured; a P wave may even land on top of a QRS."},
+{t:"rhythms", module:6, unit:3,q:"Complete (third-degree) heart block is best described as:",
+ o:["A benign normal variant","A medical emergency whose definitive treatment is a permanent pacemaker","A rhythm treated only with rest","A result of athletic conditioning"],a:1,
+ e:"Complete heart block is life-threatening; the definitive treatment is a permanent pacemaker to restore coordinated atrial and ventricular contraction and adequate blood flow."},
+{t:"rhythms", module:6, unit:3,q:"A strip shows the PR interval getting progressively longer until a QRS is dropped, then the pattern repeats. This is:",
+ o:["First-degree block","Second-degree Type I (Wenckebach)","Second-degree Type II (Mobitz II)","Third-degree (complete) block"],a:1,
+ e:"Progressive PRI lengthening ending in a dropped beat, then repeating, is the signature of Wenckebach (Mobitz I)."},
+{t:"rhythms", module:6, unit:3,q:"A strip shows every P wave conducted with a constant PR interval of 0.28 second throughout. This is:",
+ o:["First-degree AV block","Wenckebach","Mobitz II","Complete heart block"],a:0,
+ e:"A constant PRI greater than 0.20 second with every P wave still conducted defines first-degree AV block."},
+{t:"rhythms", module:6, unit:3,q:"A strip shows regular P waves at about 75 bpm and regular QRS complexes at about 35 bpm, with NO relationship between them. This is:",
+ o:["First-degree block","Wenckebach","Sinus bradycardia","Third-degree (complete) heart block"],a:3,
+ e:"Independent, regular atrial and ventricular rates with no P–QRS relationship (AV dissociation) and a slow ventricular escape is complete heart block."},
+{t:"therapy", module:6, unit:3,q:"An artificial pacemaker fires when the heart's intrinsic pacemakers (e.g., the SA node) fail. On the ECG its impulse appears as:",
+ o:["A wide, slurred QRS","A sharp, unnaturally straight vertical line (a 'spike')","An inverted P wave","A sawtooth baseline"],a:1,
+ e:"A pacemaker impulse shows on the strip as a 'spike' — an unnaturally straight, sharp vertical line."},
+{t:"therapy", module:6, unit:3,q:"The goal of an artificial pacemaker is to provide an atrial and/or ventricular rate that:",
+ o:["Is as fast as possible","Maintains adequate end-organ perfusion and sufficient blood pressure","Eliminates all P waves","Deliberately widens the QRS"],a:1,
+ e:"The pacemaker provides an appropriate rate of contraction to maintain adequate end-organ perfusion and sufficient blood pressure."},
+{t:"therapy", module:6, unit:3,q:"A TRANSCUTANEOUS pacemaker is:",
+ o:["A permanent implanted device","An external emergency device delivering impulses through pads on the skin","A catheter threaded into the heart chamber","A biventricular CRT device"],a:1,
+ e:"Transcutaneous pacing is a noninvasive, external emergency method using skin pads; effective acutely (severe bradycardia, heart block) but uncomfortable from muscle contraction and not for long-term use."},
+{t:"therapy", module:6, unit:3,q:"When setting up transcutaneous pacing, the milliamps (mA) are increased until the monitor:",
+ o:["Shows asystole","'Captures' the rhythm — usually set about 5–10 mA above the capture threshold","Stops sensing entirely","Produces a sawtooth pattern"],a:1,
+ e:"The rate is set around 60–80 and the mA are raised until the pacer 'captures' the rhythm, generally 5–10 mA above the capture threshold (often 80–100 mA)."},
+{t:"therapy", module:6, unit:3,q:"A TRANSVENOUS pacemaker is best described as:",
+ o:["A permanent device implanted under the collarbone","A temporary method using a catheter inserted into the appropriate chamber to pace","External pads placed on the chest","A CRT device for chronic heart failure"],a:1,
+ e:"Transvenous pacing is temporary — a catheter is threaded into the chamber to pace, often for severe bradycardia, until a permanent pacemaker can be placed."},
+{t:"therapy", module:6, unit:3,q:"Permanent IMPLANTED pacemakers are indicated for all of the following EXCEPT:",
+ o:["Symptomatic bradycardias","Heart blocks","Atrial fibrillation with a slow ventricular response","Normal exercise-induced sinus tachycardia"],a:3,
+ e:"Implanted pacemakers manage bradycardias, heart blocks, and AFib with slow ventricular response — not a normal, physiologic exercise-induced sinus tachycardia."},
+{t:"therapy", module:6, unit:3,q:"The three main components of a pacemaker are the:",
+ o:["Pulse generator, leads, and electrodes","Cuff, bladder, and gauge","Pads, gel, and cable only","Sensor and printer"],a:0,
+ e:"A pacemaker consists of a pulse generator, one or more leads, and electrodes that anchor to the myocardium of the paced chamber."},
+{t:"therapy", module:6, unit:3,q:"A 'DEMAND' (synchronous) pulse generator differs from a 'CONTINUOUS' (asynchronous) one in that the demand setting:",
+ o:["Fires at a constant preset rate no matter what","Monitors the heart and fires only when the rate drops below a set threshold","Never fires at all","Always widens the QRS"],a:1,
+ e:"Demand ('on demand'/synchronous) pacing monitors intrinsic activity and paces only when needed, conserving battery; continuous (asynchronous) pacing fires at a constant preset rate regardless of the heart's own activity."},
+{t:"therapy", module:6, unit:3,q:"In INHIBITED mode, the pacemaker:",
+ o:["Fires on a fixed schedule, ignoring the heart","Withholds ('inhibits') its impulse whenever it senses the heart is beating adequately on its own","Always fires during the T wave","Cannot sense intrinsic beats"],a:1,
+ e:"An inhibited pacemaker delivers an impulse only if it does not sense a beat within a set time frame; it is 'inhibited' from firing when the heart is beating adequately on its own."},
+{t:"therapy", module:6, unit:3,q:"A single-chamber ATRIAL pacemaker places its lead in the right atrium. A captured beat shows:",
+ o:["A spike followed by a widened QRS","A spike followed by a P wave, with a normal PR interval","No spike at all","A sawtooth baseline"],a:1,
+ e:"An atrial pacemaker's spike generates a P wave (which may look unusual); because conduction below the atria is intact, the PRI should be normal."},
+{t:"therapy", module:6, unit:3,q:"A single-chamber VENTRICULAR pacemaker produces a spike followed by a QRS that is:",
+ o:["Narrow and completely normal","Wide (widened), similar in appearance to a PVC","Absent","Replaced by an inverted P wave"],a:1,
+ e:"A ventricular pacer spike is followed by a widened QRS because pacing begins in the ventricle rather than following the normal conduction path — similar in appearance to a PVC."},
+{t:"therapy", module:6, unit:3,q:"On the ECG, a DUAL-CHAMBER pacemaker that is pacing both chambers shows:",
+ o:["No spikes","A single spike only","Two spikes — one before the P wave and one before the QRS","A spike only during the T wave"],a:2,
+ e:"A dual-chamber pacemaker shows a spike at the P wave and a spike at the QRS, coordinating atrial and ventricular contraction to mimic the heart's natural rhythm."},
+{t:"therapy", module:6, unit:3,q:"A BIVENTRICULAR pacemaker (cardiac resynchronization therapy, CRT) is used mainly to:",
+ o:["Speed up a normal heart","Resynchronize the left and right ventricles in heart-failure patients with ventricular dyssynchrony","Replace the SA node in athletes","Treat exercise-induced sinus tachycardia"],a:1,
+ e:"Biventricular/CRT pacing coordinates contraction of the left and right ventricles in heart-failure patients whose ventricles beat inefficiently out of sync, improving cardiac output."},
+{t:"therapy", module:6, unit:3,q:"When the heart is paced by the VENTRICLE only, the important 'atrial kick' is lost. This can:",
+ o:["Increase stroke volume","Decrease blood flow from the atria to the ventricle, sometimes causing 'pacemaker syndrome' (vertigo, hypotension)","Speed the sinus rate","Narrow the QRS"],a:1,
+ e:"Ventricular-only pacing omits the atrial kick, decreasing blood moving from atria to ventricle; the resulting hemodynamic instability is called 'pacemaker syndrome' (vertigo and hypotension)."},
+{t:"therapy", module:6, unit:3,q:"FAILURE TO CAPTURE appears on the ECG as:",
+ o:["A pacemaker spike that IS followed by the expected P wave or QRS","A pacemaker spike that is NOT followed by a P wave (atrial) or QRS (ventricular)","No spikes anywhere on the strip","A sawtooth baseline"],a:1,
+ e:"Failure to capture means the spike fires but does not stimulate the chamber — a spike appears with no resulting P wave or QRS. Causes include lead problems, loose connections, a weak battery, or a raised pacing threshold."},
+{t:"therapy", module:6, unit:3,q:"FAILURE TO SENSE occurs when the pacemaker does not detect the heart's own beats and therefore:",
+ o:["Never fires at all","Fires inappropriately — e.g., a spike appearing just after a spontaneous P wave or QRS","Widens every QRS","Only fires during exercise"],a:1,
+ e:"Failure to sense means the device misses intrinsic activity and fires when it should not; a spike can appear right after a spontaneous P wave or QRS. If it fires during ventricular repolarization it can provoke a lethal arrhythmia."},
+{t:"therapy", module:6, unit:3,q:"FAILURE TO PACE is recognized on the strip by:",
+ o:["Extra spikes falling on the T wave","No pacemaker spikes where a spike should appear","A widened but captured QRS","A sawtooth flutter pattern"],a:1,
+ e:"Failure to pace means the generator does not deliver a stimulus when it should, so there are no pacemaker spikes where they are expected — usually from a weak battery or a mechanical problem."},
+{t:"therapy", module:6, unit:3,q:"A pacemaker spike that lands during the RELATIVE REFRACTORY period (on the T wave) is dangerous because it may:",
+ o:["Improve capture","Fall on this vulnerable phase of repolarization and provoke a lethal ventricular arrhythmia","Conserve battery life","Narrow the QRS"],a:1,
+ e:"A spike on the vulnerable relative refractory period (the T wave) can trigger a lethal ventricular arrhythmia — a key reason proper sensing matters."},
+{t:"therapy", module:6, unit:3,q:"Pacemaker therapy is best understood as a device that:",
+ o:["Permanently replaces the heart's normal conduction system","Attempts to MIMIC SA-node function — a paced beat does not truly replace normal conduction","Stops all intrinsic electrical activity","Eliminates the QRS complex"],a:1,
+ e:"Pacing attempts to mimic SA-node function, but a paced beat does not replace the heart's own conduction — for example, ventricular-only pacing leaves out the atrial kick."},
 ];
 
 /* ============================================================
@@ -1952,7 +2072,7 @@ function bankCountByTopic(){
 
 function init(){
   el('bankCount').textContent = activeBank().length + ' questions in bank';
-  pickerUnits = new Set(allUnits());
+  pickerUnits = new Set(allUnitKeys());
 }
 
 /* ---------- UNIT / MODULE scope (built dynamically from the bank) ----------
@@ -1962,21 +2082,35 @@ function init(){
    unknown units/modules fall back to "Unit N" / "Module N".
    RULE: topic overlap does NOT imply same unit — source/timing decides, so
    a future rhythms/AED deck for a new module gets its own unit, never this one. */
+/* Unit labels: keys can be a bare unit number (used when that unit number is unique to
+   one module) OR a "module:unit" composite (used when the same unit number appears in more
+   than one module and each needs its own name). unitLabel() checks the composite key first. */
 const UNIT_LABELS={1:"Unit 1 — History, Topographic & Respiratory",2:"Unit 2 — Cardiovascular A&P",3:"Unit 3 — Leads, Waves & Electrophysiology",
-  4:"Unit 4 — Rhythm Interpretation & Sinus Rhythms"};
-const MODULE_LABELS={1:"Module 1",2:"Module 2"};
+  4:"Unit 4 — Rhythm Interpretation & Sinus Rhythms",
+  "6:3":"Unit 3 — Heart Blocks & Pacemakers"};
+const MODULE_LABELS={1:"Module 1",2:"Module 2",6:"Module 6"};
 /* Module 2 / Unit 4 is reserved for the rhythm decks (05 Systematic Approach + 06 Walraven
-   Sinus Rhythms). It appears in the picker automatically once its questions (module:2,unit:4)
-   are added — per the source/timing rule, that rhythm content is its own unit, not folded
-   into Unit 3 by topic. */
+   Sinus Rhythms). Module 6 / Unit 3 holds the 09 Walraven Basic AV Blocks + 10 Pacemakers
+   decks. Because units are keyed per module ("module:unit"), Module 6's Unit 3 is a separate
+   pool from Module 1's Unit 3 and their questions never merge. Each appears in the picker
+   automatically once its questions are added — per the source/timing rule, this block/pacing
+   content is its own unit, not folded into another by topic. */
 /* draft questions (e.g. an unverified diagram key) are excluded from all graded pools */
 function activeBank(){ return BANK.filter(q=>!q.draft); }
 function allUnits(){ return [...new Set(activeBank().map(q=>q.unit))].sort((a,b)=>a-b); }
 function allModules(){ return [...new Set(activeBank().map(q=>q.module))].sort((a,b)=>a-b); }
 function unitsOfModule(m){ return [...new Set(activeBank().filter(q=>q.module===m).map(q=>q.unit))].sort((a,b)=>a-b); }
 function unitCount(u){ return activeBank().filter(q=>q.unit===u).length; }
+/* Units are scoped PER MODULE: the selection key is "module:unit", so the same unit
+   number can legitimately reappear in a different module (e.g. Module 1 Unit 3 and
+   Module 6 Unit 3 are distinct pools) without their questions merging. */
+function unitKey(q){ return q.module+':'+q.unit; }
+function mkKey(m,u){ return m+':'+u; }
+function allUnitKeys(){ return [...new Set(activeBank().map(unitKey))].sort((a,b)=>{var A=a.split(':').map(Number),B=b.split(':').map(Number);return A[0]-B[0]||A[1]-B[1];}); }
+function unitKeysOfModule(m){ return unitsOfModule(m).map(u=>mkKey(m,u)); }
+function unitCountKey(m,u){ return activeBank().filter(q=>q.module===m&&q.unit===u).length; }
 function moduleCount(m){ return activeBank().filter(q=>q.module===m).length; }
-function unitLabel(u){ return UNIT_LABELS[u]||('Unit '+u); }
+function unitLabel(u,m){ return (m!==undefined&&UNIT_LABELS[m+':'+u])||UNIT_LABELS[u]||('Unit '+u); }
 function moduleLabel(m){ return MODULE_LABELS[m]||('Module '+m); }
 
 let pickerUnits=new Set();   // current scope (units selected), shared by Random + Study by Topic
@@ -1984,7 +2118,7 @@ let pickerUnits=new Set();   // current scope (units selected), shared by Random
 /* ---------- mode: random ---------- */
 function startRandomSetup(){
   hide('topicList'); hide('moduleList'); hide('moduleSetup'); show('randomSetup');
-  if(pickerUnits.size===0) pickerUnits=new Set(allUnits());
+  if(pickerUnits.size===0) pickerUnits=new Set(allUnitKeys());
   buildUnitPicker();
   el('qcount').value=Math.min(25,Math.max(1,randomPool().length));
 }
@@ -1999,10 +2133,11 @@ function buildUnitPicker(){
     head.appendChild(title); head.appendChild(preset); grp.appendChild(head);
     unitsOfModule(m).forEach(u=>{
       const lab=document.createElement('label');
-      const cb=document.createElement('input'); cb.type='checkbox'; cb.className='unitchk'; cb.value=u;
-      cb.checked=pickerUnits.has(u); cb.onchange=()=>toggleUnit(u,cb.checked);
-      const name=document.createElement('span'); name.textContent=unitLabel(u);
-      const cnt=document.createElement('span'); cnt.className='scnt'; cnt.textContent=unitCount(u);
+      const key=mkKey(m,u);
+      const cb=document.createElement('input'); cb.type='checkbox'; cb.className='unitchk'; cb.value=key;
+      cb.checked=pickerUnits.has(key); cb.onchange=()=>toggleUnit(key,cb.checked);
+      const name=document.createElement('span'); name.textContent=unitLabel(u,m);
+      const cnt=document.createElement('span'); cnt.className='scnt'; cnt.textContent=unitCountKey(m,u);
       lab.appendChild(cb); lab.appendChild(name); lab.appendChild(cnt);
       grp.appendChild(lab);
     });
@@ -2010,15 +2145,15 @@ function buildUnitPicker(){
   });
   refreshPool();
 }
-function syncUnitChecks(){ document.querySelectorAll('.unitchk').forEach(cb=>cb.checked=pickerUnits.has(+cb.value)); }
-function toggleUnit(u,on){ if(on) pickerUnits.add(+u); else pickerUnits.delete(+u); refreshPool(); }
-function selectModule(m){ pickerUnits=new Set(unitsOfModule(m)); syncUnitChecks(); refreshPool(); }
-function selectEverything(){ pickerUnits=new Set(allUnits()); syncUnitChecks(); refreshPool(); }
-function randomPool(){ return activeBank().filter(q=>pickerUnits.has(q.unit)); }
+function syncUnitChecks(){ document.querySelectorAll('.unitchk').forEach(cb=>cb.checked=pickerUnits.has(cb.value)); }
+function toggleUnit(k,on){ if(on) pickerUnits.add(k); else pickerUnits.delete(k); refreshPool(); }
+function selectModule(m){ pickerUnits=new Set(unitKeysOfModule(m)); syncUnitChecks(); refreshPool(); }
+function selectEverything(){ pickerUnits=new Set(allUnitKeys()); syncUnitChecks(); refreshPool(); }
+function randomPool(){ return activeBank().filter(q=>pickerUnits.has(unitKey(q))); }
 function scopeLabel(){
   const us=[...pickerUnits];
-  if(us.length===allUnits().length) return 'Final Practice — All Units';
-  for(const m of allModules()){ const mu=unitsOfModule(m); if(mu.length===us.length && mu.every(u=>pickerUnits.has(u))) return moduleLabel(m)+' Practice'; }
+  if(us.length===allUnitKeys().length) return 'Final Practice — All Units';
+  for(const m of allModules()){ const mu=unitKeysOfModule(m); if(mu.length===us.length && mu.every(k=>pickerUnits.has(k))) return moduleLabel(m)+' Practice'; }
   return 'Custom Practice ('+us.length+' unit'+(us.length===1?'':'s')+')';
 }
 function refreshPool(){
@@ -2072,8 +2207,8 @@ function beginModuleTest(){
 /* ---------- mode: topic (scoped to the selected units) ---------- */
 function showTopics(){
   hide('randomSetup'); hide('moduleList'); hide('moduleSetup'); show('topicList');
-  if(pickerUnits.size===0) pickerUnits=new Set(allUnits());
-  const inScope=activeBank().filter(q=>pickerUnits.has(q.unit));
+  if(pickerUnits.size===0) pickerUnits=new Set(allUnitKeys());
+  const inScope=activeBank().filter(q=>pickerUnits.has(unitKey(q)));
   const c={}; inScope.forEach(q=>c[q.t]=(c[q.t]||0)+1);
   el('topicScopeNote').textContent='Scope: '+scopeLabel()+'. Only topics within it are shown — change scope in Random Practice Test.';
   const box=el('topicButtons'); box.innerHTML='';

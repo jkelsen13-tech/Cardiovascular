@@ -13,8 +13,14 @@ new deck later is just new questions tagged `module:N / unit:M` — the new unit
 preset, and Module Test appear automatically with no code changes. (Topic overlap never
 implies the same unit — source/timing decides.)
 
-Module 1 = Unit 1 (History, Topographic & Respiratory), Unit 2 (Cardiovascular A&P),
-Unit 3 (Leads, Waves & Electrophysiology).
+Units are scoped **per module**: the picker keys on the `module:unit` pair, so the same unit
+number can appear in more than one module without their pools merging (e.g. Module 1's
+Unit 3 and Module 6's Unit 3 are separate decks).
+
+- **Module 1** — Unit 1 (History, Topographic & Respiratory), Unit 2 (Cardiovascular A&P),
+  Unit 3 (Leads, Waves & Electrophysiology).
+- **Module 2** — Unit 4 (Rhythm Interpretation & Sinus Rhythms).
+- **Module 6** — Unit 3 (Heart Blocks & Pacemakers).
 
 ## Modes
 - **Random Practice Test** — randomized subset (default 25; adjustable up to the full
@@ -53,7 +59,7 @@ source. Diagrams are clean schematic reconstructions drawn to match the source d
 and the booklet labeling exercises; they are illustrative and not to anatomical scale.
 
 ## Bank
-311 questions across 13 modules: ECG History & The Profession, Topographic Anatomy,
+457 questions across the topic set: ECG History & The Profession, Topographic Anatomy,
 Respiratory System, Blood & Vasculature, Pulmonary & Systemic Circuits, Heart Anatomy,
 Electrophysiology & Conduction, Leads & Cardiac Axis, ECG Waves & Measurements,
 ECG Rhythms, Electrical Therapy (AED/Pacing), 12-Lead ECG & ACS, and National Testing Terminology.
