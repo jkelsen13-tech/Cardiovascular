@@ -1,0 +1,34 @@
+    <!-- Kahoot-style Review: setup -->
+    <div class="card hidden" id="kahootHome">
+      <h2>🎯 Kahoot-Style Review</h2>
+      <p class="hint" style="margin-top:-4px">Pick a unit. Each round shows ONE question strip at the top and four answer boxes — the correct answer plus three possible answers pulled from the same unit's answer bank.</p>
+      <div id="kahootUnits"></div>
+      <div class="setup-block" style="margin-top:10px">
+        <div class="row" style="margin-bottom:8px">
+          <label for="khcount">Questions per round:</label>
+          <input type="number" id="khcount" value="10" min="1" max="999">
+        </div>
+      </div>
+      <button class="btn ghost" onclick="hide('kahootHome')">Cancel</button>
+    </div>
+
+    <!-- Kahoot-style Review: play -->
+    <div class="card hidden" id="kahootPlay">
+      <div class="kh-hud"><span id="khProgress">—</span><span class="kh-score" id="khScore">Score: 0</span></div>
+      <div class="kh-qstrip" id="khStrip">—</div>
+      <div class="kh-grid" id="khGrid"></div>
+      <div class="kh-banner" id="khBanner"></div>
+      <button class="btn hidden" id="khNextBtn" onclick="khNext()">Next ▶</button>
+      <button class="btn ghost" onclick="khQuit()">End round</button>
+    </div>
+
+    <!-- Kahoot-style Review: results -->
+    <div class="card hidden" id="kahootResults">
+      <h2>Round complete</h2>
+      <div class="score-circle" id="khCircle"><span class="pct" id="khPct">0%</span><span class="lbl" id="khRaw">0 / 0</span></div>
+      <div class="verdict-big" id="khVerdict">—</div>
+      <div id="khMissed"></div>
+      <button class="btn" onclick="showKahoot()">Play again ▶</button>
+      <button class="btn ghost" onclick="khHome()">Back to menu</button>
+    </div>
+
