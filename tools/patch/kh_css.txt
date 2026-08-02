@@ -1,0 +1,29 @@
+
+  /* ---- Kahoot-style Review (self-contained mode) ---- */
+  .kh-qstrip{
+    position:sticky; top:64px; z-index:15; background:#2b1145; color:#fff; border-radius:12px;
+    padding:22px 18px; font-size:19px; font-weight:700; text-align:center; line-height:1.35;
+    box-shadow:0 4px 14px rgba(30,10,50,.35); margin:6px 0 16px;
+  }
+  .kh-qstrip img{max-width:100%; border-radius:8px; margin-top:12px}
+  .kh-hud{display:flex; justify-content:space-between; align-items:center; font-size:13px; color:var(--muted); margin:2px 2px 10px}
+  .kh-hud .kh-score{font-weight:800; color:var(--ink)}
+  .kh-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+  @media (max-width:520px){ .kh-grid{grid-template-columns:1fr} }
+  .kh-ans{
+    border:none; border-radius:10px; min-height:74px; padding:16px 14px; font-size:15.5px; font-weight:700;
+    color:#fff; text-align:left; cursor:pointer; display:flex; align-items:center; gap:10px;
+    box-shadow:0 3px 0 rgba(0,0,0,.25); transition:transform .06s, filter .15s;
+  }
+  .kh-ans:hover:not(:disabled){filter:brightness(1.08)}
+  .kh-ans:active:not(:disabled){transform:scale(.98)}
+  .kh-ans:disabled{cursor:default; opacity:.55}
+  .kh-ans .kh-shape{font-size:18px; flex:none}
+  .kh-ans.k0{background:#e21b3c}.kh-ans.k1{background:#1368ce}.kh-ans.k2{background:#d89e00}.kh-ans.k3{background:#26890c}
+  .kh-ans.kh-right{opacity:1; outline:4px solid #fff; box-shadow:0 0 0 4px #16a34a}
+  .kh-ans.kh-wrongpick{opacity:1; outline:4px solid #fff; box-shadow:0 0 0 4px #111}
+  .kh-banner{border-radius:10px; padding:14px; margin:14px 0 4px; text-align:center; font-weight:800; font-size:17px; display:none}
+  .kh-banner.show{display:block}
+  .kh-banner.ok{background:var(--greenbg); color:var(--greenbd)}
+  .kh-banner.no{background:var(--redbg); color:#dc2626}
+  .kh-exp{font-size:13px; font-weight:500; margin-top:6px; text-align:left; color:var(--ink)}
