@@ -1,0 +1,772 @@
+{
+  "date": "2026-09-09",
+  "scope": "General question-bank teaching upgrade; ECG trainer unchanged.",
+  "questionCount": 611,
+  "corrections": [
+    {
+      "bankIndex": 41,
+      "before": "The chest organs are protected by how many ribs?",
+      "after": "How many pairs of ribs normally protect the chest organs?"
+    },
+    {
+      "bankIndex": 51,
+      "before": "Gas exchange with the blood occurs primarily in the:",
+      "after": "Gas exchange with the blood occurs primarily in the:"
+    },
+    {
+      "bankIndex": 52,
+      "before": "What is the ONLY way to oxygenate the blood?",
+      "after": "In normal breathing, which process exchanges oxygen and carbon dioxide between alveolar air and blood?"
+    },
+    {
+      "bankIndex": 58,
+      "before": "'Deadspace' in the respiratory system refers to:",
+      "after": "'Deadspace' in the respiratory system refers to:"
+    },
+    {
+      "bankIndex": 61,
+      "before": "What is a NORMAL value for pulse oximetry (SpO2)?",
+      "after": "Which expected SpO2 range is used in the supplied respiratory slideshow?"
+    },
+    {
+      "bankIndex": 72,
+      "before": "Which part of the upper airway is the nose and nasal cavity, where air is filtered, warmed, and humidified?",
+      "after": "Which part of the pharynx lies directly behind the nasal cavity?"
+    },
+    {
+      "bankIndex": 83,
+      "before": "Why is a normal SpO2 of 94–99% (and NOT 100%) emphasized?",
+      "after": "Why should supplemental oxygen be given to a prescribed target rather than automatically increased?"
+    },
+    {
+      "bankIndex": 86,
+      "before": "Red blood cells (erythrocytes) are mainly responsible for:",
+      "after": "Red blood cells (erythrocytes) are mainly responsible for:"
+    },
+    {
+      "bankIndex": 121,
+      "before": "Which heart-wall layer contains the electrical conduction system?",
+      "after": "The ventricular Purkinje network runs mainly just beneath which lining?"
+    },
+    {
+      "bankIndex": 158,
+      "before": "The 'Sodium Pump' is responsible for which electrical event?",
+      "after": "What is the main role of the sodium–potassium pump in cardiac cells?"
+    },
+    {
+      "bankIndex": 163,
+      "before": "Which structures have very FEW sodium channels, so slowing/blocking sodium affects them strongly?",
+      "after": "In the SA and AV nodes, which ion mainly carries the phase-0 depolarizing upstroke?"
+    },
+    {
+      "bankIndex": 199,
+      "before": "The J POINT is defined as the point where the:",
+      "after": "The J POINT is defined as the point where the:"
+    },
+    {
+      "bankIndex": 299,
+      "before": "A MYOCARDIAL INFARCTION occurs when:",
+      "after": "A MYOCARDIAL INFARCTION occurs when:"
+    },
+    {
+      "bankIndex": 323,
+      "before": "What is the formula for CARDIAC OUTPUT (CO)?",
+      "after": "What is the formula for CARDIAC OUTPUT (CO)?"
+    },
+    {
+      "bankIndex": 368,
+      "before": "A normal QT interval should measure:",
+      "after": "Which statement correctly distinguishes QT from QTc?"
+    },
+    {
+      "bankIndex": 373,
+      "before": "A NORMAL cardiac axis is indicated when the QRS is:",
+      "after": "Which pair of clearly positive QRS deflections supports the normal 0° to +90° axis quadrant?"
+    },
+    {
+      "bankIndex": 374,
+      "before": "LEFT axis deviation is indicated when the QRS is:",
+      "after": "Which QRS pattern supports LEFT axis deviation beyond −30°?"
+    },
+    {
+      "bankIndex": 375,
+      "before": "RIGHT axis deviation is indicated when the QRS is:",
+      "after": "RIGHT axis deviation is indicated when the QRS is:"
+    },
+    {
+      "bankIndex": 376,
+      "before": "EXTREME axis deviation is indicated when the QRS is:",
+      "after": "EXTREME axis deviation is indicated when the QRS is:"
+    },
+    {
+      "bankIndex": 555,
+      "before": "Treatment of ventricular standstill includes:",
+      "after": "For an unresponsive adult with pulseless ventricular standstill/asystole, which approach matches the current cardiac-arrest algorithm?"
+    }
+  ],
+  "visuals": [
+    {
+      "id": "v001",
+      "chapter": 1,
+      "page": 16,
+      "title": "History and Topographic Anatomy",
+      "file": "5-01-History-of-the-ECG-and-Topographic-Anatomy.pdf",
+      "src": "study/images/v001.jpg",
+      "sha256": "297d67366a5d8ad0392e7ebb05f5fc436757e644e91adeb0ad4459a3defc180c",
+      "sourceSha256": "55b4b225a478109456ee6cc8211ebaaa9f4f3e3dae882583283322e4e77c4b84",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "v002",
+      "chapter": 1,
+      "page": 27,
+      "title": "History and Topographic Anatomy",
+      "file": "5-01-History-of-the-ECG-and-Topographic-Anatomy.pdf",
+      "src": "study/images/v002.jpg",
+      "sha256": "070f0759ec189381beaed059da2d7cd0509ee483b118abbebbe29f07ca75f0ff",
+      "sourceSha256": "55b4b225a478109456ee6cc8211ebaaa9f4f3e3dae882583283322e4e77c4b84",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        18,
+        19,
+        20,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "id": "v003",
+      "chapter": 1,
+      "page": 28,
+      "title": "History and Topographic Anatomy",
+      "file": "5-01-History-of-the-ECG-and-Topographic-Anatomy.pdf",
+      "src": "study/images/v003.jpg",
+      "sha256": "ba04dcb4741179bc8f1e9fd5e50d3c0c303b77c4b4ec14295deddf098de2bd23",
+      "sourceSha256": "55b4b225a478109456ee6cc8211ebaaa9f4f3e3dae882583283322e4e77c4b84",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        21,
+        22,
+        23,
+        32,
+        39
+      ]
+    },
+    {
+      "id": "v004",
+      "chapter": 1,
+      "page": 32,
+      "title": "History and Topographic Anatomy",
+      "file": "5-01-History-of-the-ECG-and-Topographic-Anatomy.pdf",
+      "src": "study/images/v004.jpg",
+      "sha256": "ae48f6d652d1079e5f41e1ed87352cf390302968efc177555cbfdcc450d351af",
+      "sourceSha256": "55b4b225a478109456ee6cc8211ebaaa9f4f3e3dae882583283322e4e77c4b84",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        24,
+        25,
+        27,
+        28,
+        29,
+        30,
+        40,
+        41
+      ]
+    },
+    {
+      "id": "v005",
+      "chapter": 1,
+      "page": 30,
+      "title": "History and Topographic Anatomy",
+      "file": "5-01-History-of-the-ECG-and-Topographic-Anatomy.pdf",
+      "src": "study/images/v005.jpg",
+      "sha256": "de2330539691214dbe90c3be1b899656becadc64dc4b06dd2e16dfca489960c5",
+      "sourceSha256": "55b4b225a478109456ee6cc8211ebaaa9f4f3e3dae882583283322e4e77c4b84",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        26,
+        31,
+        42,
+        43
+      ]
+    },
+    {
+      "id": "v006",
+      "chapter": 2,
+      "page": 10,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v006.jpg",
+      "sha256": "13e567dd58ad569653b11b4fab10a2f45acb2f54ed51c07d7d2d3f2eddb9186a",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        47,
+        48,
+        49,
+        72,
+        73
+      ]
+    },
+    {
+      "id": "v007",
+      "chapter": 2,
+      "page": 13,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v007.jpg",
+      "sha256": "4989fc5679d03ee396ec28d30d2a793ba6bc96366799f82d234521e5f6131a27",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        45,
+        50,
+        51,
+        58,
+        74,
+        75
+      ]
+    },
+    {
+      "id": "v008",
+      "chapter": 2,
+      "page": 17,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v008.jpg",
+      "sha256": "5e9ce01145a096575f130724420da3796191221f8cacee221434ce4ab119457d",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        76,
+        77,
+        78,
+        392
+      ]
+    },
+    {
+      "id": "v009",
+      "chapter": 2,
+      "page": 27,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v009.jpg",
+      "sha256": "abe565d2a886de665c82ad02253a60fe5d4b1b37de9d8320b93322a89bce4faa",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        53,
+        54,
+        79
+      ]
+    },
+    {
+      "id": "v010",
+      "chapter": 2,
+      "page": 33,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v010.jpg",
+      "sha256": "3dd3d570820c295e01d91effe57f5358c8d086a5341d72a5bffc0eeebf0a768c",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        52,
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "id": "v011",
+      "chapter": 2,
+      "page": 45,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v011.jpg",
+      "sha256": "ce95ad771c0648154cf5207711a5430bc32d79631587c3ffe89a71baec2cb36f",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        60,
+        61,
+        62,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "id": "v012",
+      "chapter": 2,
+      "page": 49,
+      "title": "Respiratory Anatomy and Physiology",
+      "file": "11-02-Respiratory-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v012.jpg",
+      "sha256": "6f412d738532adf21e05d1853ef248818938d73051df44d9fb44f988a398cf5e",
+      "sourceSha256": "08eebc7be2d5850daa8006806b37b273b7aaa81b03e5381c142f1cf92b63c0ae",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "id": "v013",
+      "chapter": 3,
+      "page": 9,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "crop": [
+        0.47,
+        0.29,
+        0.99,
+        0.98
+      ],
+      "src": "study/images/v013.jpg",
+      "sha256": "e68b51c17d9dec7591cec8ca8af42872b0922f4a91074a851b6b4ea6863853ff",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 749,
+      "height": 559,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        390
+      ]
+    },
+    {
+      "id": "v014",
+      "chapter": 3,
+      "page": 28,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v014.jpg",
+      "sha256": "b6aac4f32c54dbf765db5e50cf6d5b44c3e9efafe340fafb05523e1a65121770",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        329,
+        330,
+        331,
+        332
+      ]
+    },
+    {
+      "id": "v016",
+      "chapter": 3,
+      "page": 47,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v016.jpg",
+      "sha256": "7c041551db39960bb48983bd86885a564fade6890da243892e81f8d07fd7d304",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        94,
+        95
+      ]
+    },
+    {
+      "id": "v017",
+      "chapter": 3,
+      "page": 51,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v017.jpg",
+      "sha256": "393e8b3f02d92948a8f3a16c5788ba0a2b78066919936386c6b694815e17936f",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        104,
+        105,
+        106,
+        333,
+        342,
+        343,
+        344,
+        345,
+        578,
+        579
+      ]
+    },
+    {
+      "id": "v018",
+      "chapter": 3,
+      "page": 66,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v018.jpg",
+      "sha256": "82666f323ba7c3d9116061d85f21b2833ada765b592b9b35ac98d1ea929cdef8",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        126,
+        127,
+        128,
+        389
+      ]
+    },
+    {
+      "id": "v019",
+      "chapter": 3,
+      "page": 105,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v019.jpg",
+      "sha256": "6771f0e683dc463529ad52020dda05716680a335f17a84e7a7e846cebe9fe9be",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        164,
+        165,
+        166,
+        167,
+        228,
+        302,
+        359,
+        388
+      ]
+    },
+    {
+      "id": "v020",
+      "chapter": 3,
+      "page": 115,
+      "title": "Cardiovascular System Anatomy and Physiology",
+      "file": "6-03-Cardiovascular-System-Anatomy-and-Physiology.pdf",
+      "src": "study/images/v020.jpg",
+      "sha256": "5037ff089098447caf0368310ee56e446a74486872fe0d2093924fd66e9cdac9",
+      "sourceSha256": "90ecf6a6621d75d065e12010f14c0d87af3010f83fb2b75af3962c57abd5e2be",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        156,
+        157,
+        351,
+        352
+      ]
+    },
+    {
+      "id": "v021",
+      "chapter": 4,
+      "page": 26,
+      "title": "Electrophysiology — Leads, Waves and Measurements",
+      "file": "9-04-Electrophysiology-Leads-Waves-and-Measurements.pdf",
+      "src": "study/images/v021.jpg",
+      "sha256": "697ab2b43108ee2dbc78b53ca2bbe4fca94c4823a756cf19ae6989d335af2c55",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        4,
+        5,
+        173,
+        175,
+        176,
+        177,
+        188,
+        363
+      ]
+    },
+    {
+      "id": "v022",
+      "chapter": 4,
+      "page": 40,
+      "title": "Electrophysiology — Leads, Waves and Measurements",
+      "file": "9-04-Electrophysiology-Leads-Waves-and-Measurements.pdf",
+      "src": "study/images/v022.jpg",
+      "sha256": "6a641a53f79888b4ce2ffd100f4db6802a4e93e9a0105bebb33b2cf65d4413e3",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        168,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        279,
+        280
+      ]
+    },
+    {
+      "id": "v023",
+      "chapter": 4,
+      "page": 46,
+      "title": "Electrophysiology — Leads, Waves and Measurements",
+      "file": "9-04-Electrophysiology-Leads-Waves-and-Measurements.pdf",
+      "src": "study/images/v023.jpg",
+      "sha256": "81d1d5d6a4e21ed902105f5c8a22f51c4caba4ff37a2ef501153eb75936249cd",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        190,
+        191,
+        192,
+        193,
+        194,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        207,
+        209,
+        224
+      ]
+    },
+    {
+      "id": "v024",
+      "chapter": 4,
+      "page": 51,
+      "title": "Electrophysiology — Leads, Waves and Measurements",
+      "file": "9-04-Electrophysiology-Leads-Waves-and-Measurements.pdf",
+      "crop": [
+        0.5,
+        0.27,
+        0.99,
+        0.98
+      ],
+      "src": "study/images/v024.jpg",
+      "sha256": "040da10840a93b2387f9ed8c4bcf6a6910b081620d85aaf6d82d5715d719f644",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765",
+      "width": 706,
+      "height": 575,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        195,
+        196,
+        205,
+        208
+      ]
+    },
+    {
+      "id": "v025",
+      "chapter": 4,
+      "page": 58,
+      "title": "Electrophysiology — Leads, Waves and Measurements",
+      "file": "9-04-Electrophysiology-Leads-Waves-and-Measurements.pdf",
+      "crop": [
+        0.5,
+        0.27,
+        0.99,
+        0.98
+      ],
+      "src": "study/images/v025.jpg",
+      "sha256": "bd62c9bb681c65de2f83aa879165a2c735a216ef6605bfd8c2e2c8bb30abe7e5",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765",
+      "width": 706,
+      "height": 575,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        197,
+        206,
+        368
+      ]
+    },
+    {
+      "id": "v026",
+      "chapter": 10,
+      "page": 6,
+      "title": "Pacemakers",
+      "file": "7-10-Pacemakers.pdf",
+      "src": "study/images/v026.jpg",
+      "sha256": "5759d44470e85e4fe2a673c7f66e1ea9b7e636ab44266881a3603613de174c0a",
+      "sourceSha256": "814864361e2391594054b4e670c1a2396a01ef13d6c3ae3acdc70788ce5a927e",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        269,
+        271
+      ]
+    },
+    {
+      "id": "v027",
+      "chapter": 10,
+      "page": 11,
+      "title": "Pacemakers",
+      "file": "7-10-Pacemakers.pdf",
+      "src": "study/images/v027.jpg",
+      "sha256": "0d3d9212317fcdbc68b02f86cff6e282a445dabcabf351f7424eb002e5e5d2e7",
+      "sourceSha256": "814864361e2391594054b4e670c1a2396a01ef13d6c3ae3acdc70788ce5a927e",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        270,
+        277
+      ]
+    },
+    {
+      "id": "v028",
+      "chapter": 11,
+      "page": 4,
+      "title": "Circulation in the Heart — ACS and 12-Lead ECG",
+      "file": "3-11-Circulation-in-the-Heart-ACS-and-12-Lead-ECG.pdf",
+      "src": "study/images/v028.jpg",
+      "sha256": "c9b72720f6871ac388a7bedbd51f94d4e229a468911338de3e9c564a6bfc0f53",
+      "sourceSha256": "6ca6634bb3eca59ba15d1f01b5c3345b79ea549527f35ddbb51753c0ca498b8b",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        293,
+        294,
+        296,
+        580,
+        581,
+        610
+      ]
+    },
+    {
+      "id": "v029",
+      "chapter": 11,
+      "page": 35,
+      "title": "Circulation in the Heart — ACS and 12-Lead ECG",
+      "file": "3-11-Circulation-in-the-Heart-ACS-and-12-Lead-ECG.pdf",
+      "src": "study/images/v029.jpg",
+      "sha256": "141ee61f4d77b1c92f118145a01ef66970ea73c1462d96cb61d677e2e7d240b2",
+      "sourceSha256": "6ca6634bb3eca59ba15d1f01b5c3345b79ea549527f35ddbb51753c0ca498b8b",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        596
+      ]
+    },
+    {
+      "id": "v030",
+      "chapter": 11,
+      "page": 51,
+      "title": "Circulation in the Heart — ACS and 12-Lead ECG",
+      "file": "3-11-Circulation-in-the-Heart-ACS-and-12-Lead-ECG.pdf",
+      "src": "study/images/v030.jpg",
+      "sha256": "b9ee712ac9210e2dd3506a73ce7216d514e9c3cec74e0031ed853a8f03ccd1c2",
+      "sourceSha256": "6ca6634bb3eca59ba15d1f01b5c3345b79ea549527f35ddbb51753c0ca498b8b",
+      "width": 1440,
+      "height": 810,
+      "preparation": "PDF rendered at uniform 1440-pixel page width; optional rectangular crop; JPEG quality 88, no drawing or waveform manipulation.",
+      "questionIndices": [
+        601
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "chapter": 2,
+      "page": 16,
+      "reason": "Video still does not teach airway landmarks as well as the p.13 illustration."
+    },
+    {
+      "chapter": 3,
+      "page": 43,
+      "reason": "Text-only slide; p.66 provides the circulation illustration."
+    },
+    {
+      "chapter": 3,
+      "page": 44,
+      "reason": "Text-only slide; p.66 provides the circulation illustration."
+    },
+    {
+      "chapter": 3,
+      "page": 48,
+      "reason": "Watermarked stock illustration; not added."
+    }
+  ],
+  "externalImages": [],
+  "rights": "Images are from user-supplied teaching PDFs. They are not represented as openly licensed. Existing slide credits are retained when present; cropped illustrations retain their chapter/page provenance. No paid licenses introduced.",
+  "limitations": [
+    "32 existing course-reference assets are reused after answers without exact PDF-page re-verification.",
+    "General bank explanations were checked for presence and scoring consistency, not certified by a clinician.",
+    "Illustrations explain concepts; they are not additional verified diagnostic ECG strips.",
+    "Static client code and the public repository remain inspectable."
+  ]
+}

@@ -1,0 +1,30 @@
+name: Full study training verification
+on:
+  push:
+    branches: [study-teaching-20260909]
+  pull_request:
+    paths:
+      - 'study/**'
+      - 'index.html'
+      - 'cmt-quiz.html'
+      - 'tools/study/**'
+      - '.github/workflows/study-validation.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser dependencies on the hosted runner
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Verify the complete question bank and teaching feedback
+        run: node tools/study/verify.cjs
+      - name: Verify the existing ECG trainer
+        run: node tools/ecg/verify.cjs
