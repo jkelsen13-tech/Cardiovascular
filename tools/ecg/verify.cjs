@@ -75,7 +75,7 @@ const server=http.createServer((req,res)=>{
   await page.waitForFunction(()=>ecgSession.done);
   assert.equal(await page.locator('#ecgVerdict').innerText(),c.fields.length+' / '+c.fields.length+' fields correct');
   assert.equal(requests.filter(x=>x.includes('/reviews/')).length,1);
-  assert.equal(await page.locator('#ecgReview h3').innerText(),r.classification);
+  assert.equal(await page.locator('#ecgReview h3').textContent(),r.classification);
   await page.evaluate(()=>ecgCheck());assert.equal(await page.evaluate(()=>ecgSession.results.length),1);
   page.off('request',listener);
  }
@@ -136,6 +136,13 @@ const server=http.createServer((req,res)=>{
   const screenshot=await page.screenshot({type:'jpeg',quality:45,fullPage:false});
   console.log('ECG_SCREENSHOT_'+width+'='+screenshot.toString('base64'));
  }
+ // The static review loader must also work with a local file URL on the cloud runner.
+ await page.goto(require('node:url').pathToFileURL(path.join(root,'index.html')).href);
+ await page.evaluate(()=>ecgBegin('practice',ECG_CASES[0].id,false));await page.waitForFunction(()=>ecgSession.imageReady);
+ for(const f of first.fields){await page.locator('[data-field="'+f+'"] input[value="'+r.fields[f].answer+'"]').check();}
+ await page.locator('#ecgCheckBtn').click();await page.waitForFunction(()=>ecgSession.done);
+ assert.equal(await page.evaluate(()=>ecgSession.results[0].correct),first.fields.length);
+ console.log('Browser: file:// image and delayed review loading passed.');
  // Existing bank and navigation still initialize on both entry points.
  for(const entry of ['index.html','cmt-quiz.html']){
   await page.goto(url+'/'+entry);assert(await page.evaluate(()=>BANK.length>400));
