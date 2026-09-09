@@ -39,7 +39,7 @@ const server=http.createServer((req,res)=>{
      check(Math.abs(session.score-expected)<1e-9,'slot score '+q._id);
      gradeSlots();check(Math.abs(session.score-expected)<1e-9,'duplicate slots');
      check(document.querySelector('#qexplain').textContent.includes(q.e),'slot explanation');
-     check(document.querySelectorAll('.study-slot-review li').length===key.length,'slot notes');
+     check(document.querySelectorAll('#qfeedback .study-slot-review li').length===key.length,'slot notes');
      showResults();
     }slots++;continue;
    }

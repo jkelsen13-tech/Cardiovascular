@@ -307,6 +307,7 @@ const StudyTeaching = (() => {
     const im=document.createElement('img');im.src=src;im.alt=alt;viewport.appendChild(im);dialog.appendChild(viewport);
     dialog.showModal();close.focus();
   }
+  const references={"51":{"title":"Gas exchange and conducting airways","url":"https://www.ncbi.nlm.nih.gov/books/NBK594996/"},"52":{"title":"Gas exchange and conducting airways","url":"https://www.ncbi.nlm.nih.gov/books/NBK594996/"},"58":{"title":"Gas exchange and conducting airways","url":"https://www.ncbi.nlm.nih.gov/books/NBK594996/"},"61":{"title":"FDA: Pulse Oximeter Basics","url":"https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics"},"83":{"title":"FDA: Pulse Oximeter Basics","url":"https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics"},"121":{"title":"Heart anatomy and subendocardial conduction","url":"https://www.ncbi.nlm.nih.gov/books/NBK482452/"},"163":{"title":"Physiology of the sinoatrial node","url":"https://www.ncbi.nlm.nih.gov/books/NBK459238/"},"299":{"title":"Myocardial viability and ischemic injury","url":"https://www.ncbi.nlm.nih.gov/books/NBK592410/"},"373":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"374":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"375":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"376":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"555":{"title":"AHA 2025 Adult Advanced Life Support","url":"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"}};
   function feedback(parent,q,picked) {
     parent.querySelectorAll('.study-extra').forEach(n=>n.remove());
     const box=document.createElement('div');box.className='study-extra';
@@ -321,7 +322,10 @@ const StudyTeaching = (() => {
       q.slotNotes.forEach((note,i)=>text(list,'li',(q.markers?q.markers[i][0]+': ':'')+note));
       box.appendChild(detail);
     }
-    media(box,q);parent.appendChild(box);
+    media(box,q);
+    const ref=references[q._id];
+    if(ref){const p=text(box,'p','Reference: ','study-source');const a=text(p,'a',ref.title);a.href=ref.url;a.target='_blank';a.rel='noopener noreferrer';}
+    parent.appendChild(box);
   }
   return {reason,media,feedback,visuals};
 })();
