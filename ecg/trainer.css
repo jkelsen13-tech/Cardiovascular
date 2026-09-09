@@ -19,3 +19,5 @@
 #ecgQuiz .ecg-verdict {font-weight:700;}
 #ecgQuiz p,#ecgResults p {overflow-wrap:anywhere;}
 @media (max-width:600px) {#ecgQuiz .ecg-options {grid-template-columns:1fr;} #ecgQuiz .ecg-field {padding:10px;} }
+
+#ecgQuiz [hidden] {display:none!important;}

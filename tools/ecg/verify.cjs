@@ -61,6 +61,7 @@ const server=http.createServer((req,res)=>{
   assert.equal(await page.locator('#ecgProgress').innerText(),'Practice strip');
   assert.equal(await page.locator('#ecgStrip img').getAttribute('alt'),'ECG strip for interpretation');
   assert.equal(await page.locator('#ecgReview').isVisible(),false);
+  assert.equal(await page.locator('#ecgRetryImage').isVisible(),false);
   assert.equal(await page.locator('[data-field="rhythm"]').isVisible(),false);
   assert.equal(await page.locator('#ecgCheckBtn').isDisabled(),true);
   assert.equal(requests.filter(x=>x.includes('/reviews/')).length,0);
