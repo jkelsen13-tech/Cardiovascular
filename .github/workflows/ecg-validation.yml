@@ -1,0 +1,28 @@
+name: ECG training verification
+on:
+  push:
+    branches: [ecg-source-strips-20260909]
+  pull_request:
+    paths:
+      - 'ecg/**'
+      - 'index.html'
+      - 'cmt-quiz.html'
+      - 'tools/ecg/**'
+      - '.github/workflows/ecg-validation.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies on the hosted runner
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Check image integrity, grading and browser behavior
+        run: node tools/ecg/verify.cjs

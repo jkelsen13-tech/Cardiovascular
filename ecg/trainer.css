@@ -1,0 +1,23 @@
+/* Scoped ECG training styles; waveform pixels are never drawn by code. */
+#ecgQuiz .ecg-strip {overflow:auto;background:white;max-width:100%;border:1px solid var(--line);border-radius:8px;}
+#ecgQuiz .ecg-strip img {display:block;width:100%;height:auto;max-width:none;}
+#ecgQuiz .ecg-strip.ecg-expanded img {width:1600px;}
+#ecgQuiz .ecg-fields {display:grid;gap:16px;margin:18px 0;}
+#ecgQuiz .ecg-field {display:block;min-width:0;margin:0;padding:12px;border:1px solid var(--line);border-radius:10px;}
+#ecgQuiz .ecg-field[hidden] {display:none;}
+#ecgQuiz legend {font-weight:700;padding:0 5px;}
+#ecgQuiz .ecg-options {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px;}
+#ecgQuiz .ecg-choice {display:flex;align-items:flex-start;gap:8px;padding:12px;border:1px solid var(--line);border-radius:8px;cursor:pointer;min-height:44px;line-height:1.45;}
+#ecgQuiz .ecg-choice:has(input:checked) {outline:2px solid var(--accent);}
+#ecgQuiz .ecg-choice input {flex:none;min-width:0;width:18px;height:18px;margin:2px 0 0;accent-color:var(--accent);}
+#ecgQuiz .ecg-choice:focus-within {outline:3px solid var(--accent);outline-offset:2px;}
+#ecgQuiz .ecg-feedback {line-height:1.6;margin:12px 0 0;}
+#ecgQuiz .ecg-field.ok {border-color:var(--greenbd);}
+#ecgQuiz .ecg-field.no {border-color:var(--redbd);}
+#ecgQuiz #ecgReview {padding:12px;border:1px solid var(--line);border-radius:8px;line-height:1.6;margin:12px 0;}
+#ecgResults .ecg-result {border-top:1px solid var(--line);padding:14px 0;line-height:1.6;}
+#ecgQuiz .ecg-verdict {font-weight:700;}
+#ecgQuiz p,#ecgResults p {overflow-wrap:anywhere;}
+@media (max-width:600px) {#ecgQuiz .ecg-options {grid-template-columns:1fr;} #ecgQuiz .ecg-field {padding:10px;} }
+
+#ecgQuiz [hidden] {display:none!important;}

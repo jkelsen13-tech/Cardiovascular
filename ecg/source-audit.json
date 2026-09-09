@@ -1,0 +1,430 @@
+[
+  {
+    "id": "a6d28f",
+    "source": {
+      "file": "05 - Systematic Approach to Rhythm Interpretation.pdf",
+      "page": 64,
+      "evidencePages": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "sha256": "3935e62efa18617ccb6f23db76218019cf521ae4d99b2cae67e35a93da350600",
+      "embeddedImage": "Image88.jpg",
+      "originalSize": [
+        750,
+        281
+      ],
+      "crop": [
+        0,
+        0,
+        750,
+        281
+      ],
+      "assetSha256": "06cb93b6c931a3b3e3fd93ea779b21271914614c8f4bece67539f5a309807c7d",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "QT endpoint insufficient for enforcing the course's exact 0.40 s answer; QTc not calculated."
+    }
+  },
+  {
+    "id": "b9e407",
+    "source": {
+      "file": "06 - Chapter 4 - Sinus Rhythms.pdf",
+      "page": 20,
+      "evidencePages": [
+        20
+      ],
+      "sha256": "2ba4aa06372ef99c4879e16b592f55fbdabce960bee6de8cc21d5aa260f701c7",
+      "embeddedImage": "Image85.jpg",
+      "originalSize": [
+        563,
+        187
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        187
+      ],
+      "assetSha256": "475f4a18e91f79c5138ad3453d9e9fc8a6f720ad8ea8d136589c26efe0454f75",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "c2f861",
+    "source": {
+      "file": "06 - Chapter 4 - Sinus Rhythms.pdf",
+      "page": 29,
+      "evidencePages": [
+        22,
+        29
+      ],
+      "sha256": "2ba4aa06372ef99c4879e16b592f55fbdabce960bee6de8cc21d5aa260f701c7",
+      "embeddedImage": "Image114.jpg",
+      "originalSize": [
+        563,
+        228
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "5f52392deace7ec98a05c1b6633bda791aca61ef636fc8fafcbbada074c898e6",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "moderate",
+      "limitation": "P and preceding T overlap. PR measurement omitted; sinus classification is source-supported and visually consistent, with moderate confidence."
+    }
+  },
+  {
+    "id": "d7a350",
+    "source": {
+      "file": "06 - Chapter 4 - Sinus Rhythms.pdf",
+      "page": 39,
+      "evidencePages": [
+        39
+      ],
+      "sha256": "2ba4aa06372ef99c4879e16b592f55fbdabce960bee6de8cc21d5aa260f701c7",
+      "embeddedImage": "Image167.jpg",
+      "originalSize": [
+        563,
+        228
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "1ceac21f4293b94a48066f3229a4d33ee11d47cefbf021db6e83aec4150b4928",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "e4b916",
+    "source": {
+      "file": "07 - Chapter 5 - Atrial Rhythms.pdf",
+      "page": 30,
+      "evidencePages": [
+        30
+      ],
+      "sha256": "a031d01c98cd673c00f1b00378dd1b929645e40c95e2158a7af34b9616832ce4",
+      "embeddedImage": "Image120.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "9530f3aa3edea12cc1668c1d750caf70ef7aaeed286566ac695258d96129c1df",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "f8c205",
+    "source": {
+      "file": "07 - Chapter 5 - Atrial Rhythms.pdf",
+      "page": 42,
+      "evidencePages": [
+        42
+      ],
+      "sha256": "a031d01c98cd673c00f1b00378dd1b929645e40c95e2158a7af34b9616832ce4",
+      "embeddedImage": "Image163.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "75c06f514351fbcfa545b3fb320caa623ba5fd0746a6bf1f4846246b74b444a4",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "g3d782",
+    "source": {
+      "file": "09 - Chapter 7 - Heart Blocks.pdf",
+      "page": 10,
+      "evidencePages": [
+        10
+      ],
+      "sha256": "38b44d28f79c0b0673d2a928b9adfc63b8137502cb9efc26490724c1713496de",
+      "embeddedImage": "Image49.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "h5e139",
+    "source": {
+      "file": "09 - Chapter 7 - Heart Blocks.pdf",
+      "page": 20,
+      "evidencePages": [
+        20
+      ],
+      "sha256": "38b44d28f79c0b0673d2a928b9adfc63b8137502cb9efc26490724c1713496de",
+      "embeddedImage": "Image74.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "j1f624",
+    "source": {
+      "file": "09 - Chapter 7 - Heart Blocks.pdf",
+      "page": 50,
+      "evidencePages": [
+        43,
+        50
+      ],
+      "sha256": "38b44d28f79c0b0673d2a928b9adfc63b8137502cb9efc26490724c1713496de",
+      "embeddedImage": "Image152.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Single-lead source example; some P waves overlap QRS/T. Narrow QRS here is not a universal complete-block rule."
+    }
+  },
+  {
+    "id": "k8a473",
+    "source": {
+      "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+      "page": 16,
+      "evidencePages": [
+        16
+      ],
+      "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+      "embeddedImage": "Image69.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "m2b695",
+    "source": {
+      "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+      "page": 20,
+      "evidencePages": [
+        19,
+        20
+      ],
+      "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+      "embeddedImage": "Image81.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "moderate",
+      "limitation": "Moderate-confidence source-supported rhythm classification; a hidden P wave and precise focus are not directly observed."
+    }
+  },
+  {
+    "id": "n6c048",
+    "source": {
+      "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+      "page": 23,
+      "evidencePages": [
+        23
+      ],
+      "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+      "embeddedImage": "Image89.jpg",
+      "originalSize": [
+        563,
+        229
+      ],
+      "crop": [
+        0,
+        0,
+        563,
+        212
+      ],
+      "assetSha256": "34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+    }
+  },
+  {
+    "id": "p4d827",
+    "source": {
+      "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+      "page": 31,
+      "evidencePages": [
+        25,
+        28,
+        31
+      ],
+      "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+      "embeddedImage": "Image114.jpg",
+      "originalSize": [
+        868,
+        192
+      ],
+      "crop": [
+        0,
+        0,
+        868,
+        192
+      ],
+      "assetSha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+      "pixelIdentityChecked": true,
+      "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+      "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+    },
+    "verification": {
+      "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+      "reviewDate": "2026-09-09",
+      "confidence": "high for the assessed features",
+      "limitation": "R-peak tops are clipped in the source. Only timing, visible QRS bases and broad SVT interpretation are tested."
+    }
+  }
+]
