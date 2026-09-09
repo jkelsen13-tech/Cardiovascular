@@ -63,3 +63,7 @@ and the booklet labeling exercises; they are illustrative and not to anatomical 
 Respiratory System, Blood & Vasculature, Pulmonary & Systemic Circuits, Heart Anatomy,
 Electrophysiology & Conduction, Leads & Cardiac Axis, ECG Waves & Measurements,
 ECG Rhythms, Electrical Therapy (AED/Pacing), 12-Lead ECG & ACS, and National Testing Terminology.
+
+## Source-based ECG training
+
+The ECG practice mode uses 13 reviewed course raster strips with staged observations, delayed answer review, exact option scoring and per-strip provenance. Keep the `ecg/` folder beside either HTML entry point. See [ECG-REVIEW.md](ECG-REVIEW.md) for coverage, source limits, rejected examples and verification. The original question bank and other study modes are preserved.
