@@ -30,7 +30,7 @@ for(const width of [390,768,1280]){
  await page.setViewportSize({width,height:900});await page.evaluate(()=>ASPT.open());await page.locator('#asptHome nav [data-id="path"]').click();
  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'page overflow '+width);
  if(width===390)console.log('ASPT_SCREENSHOT_390='+(await page.screenshot({type:'jpeg',quality:65})).toString('base64'));
- await page.locator('.aspt-lesson-list [data-id="waves"]').click();await page.locator('#asptLesson [data-action="zoom"][data-id="g03"]').click();assert(await page.locator('dialog').isVisible());await page.keyboard.press('Escape');assert.equal(await page.locator('.aspt-zoom').count(),0);
+ await page.locator('.aspt-lesson-list [data-id="waves"]').click();await page.locator('#asptLesson [data-action="zoom"][data-id="g03"]').click();assert(await page.locator('dialog').isVisible());await page.keyboard.press('Escape');await page.locator('.aspt-zoom').waitFor({state:'detached'});
 }
 assert.deepEqual(errors,[]);console.log('PASS 91 exact guide terms, 26 competencies, 176 checklist rows, 19 lessons, 6 source image hashes/dimensions, 192 answer selections across both entries, navigation/results, responsive layout, keyboard zoom.');
 }finally{await browser.close();}})().then(()=>server.close()).catch(e=>{console.error(e);server.close();process.exitCode=1;});

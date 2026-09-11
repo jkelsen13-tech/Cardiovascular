@@ -14,13 +14,13 @@ const ASPT = (() => {
     b.textContent='← Return to ASPT exam study';b.onclick=()=>open();document.getElementById(id).prepend(b);return b;
   });
   const oldHome=goHome;
-  goHome=function(){oldHome();root.classList.add('hidden');fromExam=false;returns.forEach(b=>b.classList.add('hidden'));};
+  goHome=function(){oldHome();root.classList.add('hidden');document.getElementById('home').classList.remove('aspt-active');fromExam=false;returns.forEach(b=>b.classList.add('hidden'));};
   const homeButton=document.createElement('button');homeButton.className='btn';homeButton.type='button';
   homeButton.id='asptLaunch';homeButton.textContent='ASPT National EKG Exam';
   const sm=document.createElement('small');sm.textContent='September 22 • guide checklist, 91 terms, illustrated lessons and exam-focused practice';homeButton.appendChild(sm);
   homeButton.onclick=()=>open();document.getElementById('homeMenu').insertBefore(homeButton,document.getElementById('homeMenu').children[1]);
 
-  function open(){goHome();if(typeof khHideAll==='function')khHideAll();hide('homeMenu');show('home');show('asptHome');render();window.scrollTo(0,0);}
+  function open(){goHome();if(typeof khHideAll==='function')khHideAll();hide('homeMenu');show('home');show('asptHome');document.getElementById('home').classList.add('aspt-active');render();window.scrollTo(0,0);}
   function figure(id){
     const v=D.images[id]||StudyTeaching.visuals[id];if(!v)return '';
     const citation=v.source||('Chapter '+v.chapter+', page '+v.page);
