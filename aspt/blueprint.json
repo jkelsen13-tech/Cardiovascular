@@ -1,0 +1,487 @@
+{
+  "terms": [
+    {
+      "n": 1,
+      "name": "ANGINA",
+      "page": 5
+    },
+    {
+      "n": 2,
+      "name": "AORTA",
+      "page": 5
+    },
+    {
+      "n": 3,
+      "name": "AORTIC VALVE",
+      "page": 5
+    },
+    {
+      "n": 4,
+      "name": "APEX",
+      "page": 5
+    },
+    {
+      "n": 5,
+      "name": "ARTERIOSCLEROSIS",
+      "page": 5
+    },
+    {
+      "n": 6,
+      "name": "ATHEROSCLEROSIS",
+      "page": 5
+    },
+    {
+      "n": 7,
+      "name": "ATRIA (UM)",
+      "page": 5
+    },
+    {
+      "n": 8,
+      "name": "AV BUNDLE",
+      "page": 5
+    },
+    {
+      "n": 9,
+      "name": "AV NODE",
+      "page": 5
+    },
+    {
+      "n": 10,
+      "name": "BASE OF HEART",
+      "page": 5
+    },
+    {
+      "n": 11,
+      "name": "BUNDLE BRANCHES",
+      "page": 5
+    },
+    {
+      "n": 12,
+      "name": "BUNDLE OF HIS",
+      "page": 5
+    },
+    {
+      "n": 13,
+      "name": "CARDIAC MUSCLE",
+      "page": 5
+    },
+    {
+      "n": 14,
+      "name": "CORONARY ARTERIES",
+      "page": 5
+    },
+    {
+      "n": 15,
+      "name": "DIASTOLE",
+      "page": 5
+    },
+    {
+      "n": 16,
+      "name": "ENDOCARDIUM",
+      "page": 5
+    },
+    {
+      "n": 17,
+      "name": "EPICARDIUM",
+      "page": 5
+    },
+    {
+      "n": 18,
+      "name": "INFERIOR VENA CAVA",
+      "page": 5
+    },
+    {
+      "n": 19,
+      "name": "INTERCALATED DISKS",
+      "page": 5
+    },
+    {
+      "n": 20,
+      "name": "ISCHEMIA",
+      "page": 5
+    },
+    {
+      "n": 21,
+      "name": "MEDIASTINUM",
+      "page": 5
+    },
+    {
+      "n": 22,
+      "name": "MITRAL VALVE",
+      "page": 5
+    },
+    {
+      "n": 23,
+      "name": "MURMUR",
+      "page": 5
+    },
+    {
+      "n": 24,
+      "name": "MYOCARDIAL INFARCTION",
+      "page": 5
+    },
+    {
+      "n": 25,
+      "name": "MYOCARDIUM",
+      "page": 5
+    },
+    {
+      "n": 26,
+      "name": "PACEMAKER NODE",
+      "page": 5
+    },
+    {
+      "n": 27,
+      "name": "PERICARDIUM",
+      "page": 5
+    },
+    {
+      "n": 28,
+      "name": "PULMONARY ARTERY",
+      "page": 5
+    },
+    {
+      "n": 29,
+      "name": "PULMONARY CIRCULATION",
+      "page": 5
+    },
+    {
+      "n": 30,
+      "name": "PULMONARY VALVE",
+      "page": 6
+    },
+    {
+      "n": 31,
+      "name": "PULMONARY VEIN",
+      "page": 6
+    },
+    {
+      "n": 32,
+      "name": "PURKINJE FIBERS",
+      "page": 6
+    },
+    {
+      "n": 33,
+      "name": "RHEUMATIC FEVER",
+      "page": 6
+    },
+    {
+      "n": 34,
+      "name": "SA NODE",
+      "page": 6
+    },
+    {
+      "n": 35,
+      "name": "SEPTUM",
+      "page": 6
+    },
+    {
+      "n": 36,
+      "name": "STRIATED",
+      "page": 6
+    },
+    {
+      "n": 37,
+      "name": "SUPERIOR VENA CAVA",
+      "page": 6
+    },
+    {
+      "n": 38,
+      "name": "SYSTEMIC CIRCULATION",
+      "page": 6
+    },
+    {
+      "n": 39,
+      "name": "SYSTOLE",
+      "page": 6
+    },
+    {
+      "n": 40,
+      "name": "TRICUSPID VALVE",
+      "page": 6
+    },
+    {
+      "n": 41,
+      "name": "VALVE",
+      "page": 6
+    },
+    {
+      "n": 42,
+      "name": "VASOCONSTRICTION",
+      "page": 6
+    },
+    {
+      "n": 43,
+      "name": "VASODILATION",
+      "page": 6
+    },
+    {
+      "n": 44,
+      "name": "VENTRICLES",
+      "page": 6
+    },
+    {
+      "n": 45,
+      "name": "AGONAL",
+      "page": 6
+    },
+    {
+      "n": 46,
+      "name": "ARRHYTHMIA",
+      "page": 6
+    },
+    {
+      "n": 47,
+      "name": "ARTIFACT",
+      "page": 6
+    },
+    {
+      "n": 48,
+      "name": "ASYSTOLE",
+      "page": 6
+    },
+    {
+      "n": 49,
+      "name": "AUGMENTED LEADS",
+      "page": 6
+    },
+    {
+      "n": 50,
+      "name": "AVR, AVL, AVF",
+      "page": 6
+    },
+    {
+      "n": 51,
+      "name": "BASELINE",
+      "page": 6
+    },
+    {
+      "n": 52,
+      "name": "BRADYCARDIA",
+      "page": 6
+    },
+    {
+      "n": 53,
+      "name": "CARDIAC CYCLE",
+      "page": 6
+    },
+    {
+      "n": 54,
+      "name": "DEPOLARIZATION",
+      "page": 6
+    },
+    {
+      "n": 55,
+      "name": "ECG/EKG",
+      "page": 6
+    },
+    {
+      "n": 56,
+      "name": "ECTOPIC FIRING",
+      "page": 6
+    },
+    {
+      "n": 57,
+      "name": "ELECTOCARDIOGRAPH",
+      "page": 6
+    },
+    {
+      "n": 58,
+      "name": "ELECTROCARDIOGRAM",
+      "page": 6
+    },
+    {
+      "n": 59,
+      "name": "ELECTRODE",
+      "page": 6
+    },
+    {
+      "n": 60,
+      "name": "ELECTROLYTE GEL",
+      "page": 6
+    },
+    {
+      "n": 61,
+      "name": "INTERCOSTAL SPACES",
+      "page": 6
+    },
+    {
+      "n": 62,
+      "name": "INTERVALS",
+      "page": 6
+    },
+    {
+      "n": 63,
+      "name": "LEADS",
+      "page": 7
+    },
+    {
+      "n": 64,
+      "name": "MIDAXILLARY",
+      "page": 7
+    },
+    {
+      "n": 65,
+      "name": "MIDCLAVICULAR",
+      "page": 7
+    },
+    {
+      "n": 66,
+      "name": "MYOCARDIAL INFARCTION",
+      "page": 7
+    },
+    {
+      "n": 67,
+      "name": "PACEMAKER",
+      "page": 7
+    },
+    {
+      "n": 68,
+      "name": "POLARIZATION",
+      "page": 7
+    },
+    {
+      "n": 69,
+      "name": "P-Q-R-S-T-U WAVES",
+      "page": 7
+    },
+    {
+      "n": 70,
+      "name": "PRECORDAL LEADS",
+      "page": 7
+    },
+    {
+      "n": 71,
+      "name": "REPOLARIZATION",
+      "page": 7
+    },
+    {
+      "n": 72,
+      "name": "RESTING PHASE",
+      "page": 7
+    },
+    {
+      "n": 73,
+      "name": "R-R COMPLEX",
+      "page": 7
+    },
+    {
+      "n": 74,
+      "name": "SEGMENTS",
+      "page": 7
+    },
+    {
+      "n": 75,
+      "name": "SINUS RHYTHM",
+      "page": 7
+    },
+    {
+      "n": 76,
+      "name": "STANDARD/BIPOLAR LEADS",
+      "page": 7
+    },
+    {
+      "n": 77,
+      "name": "STANDARDIZATION",
+      "page": 7
+    },
+    {
+      "n": 78,
+      "name": "TACHYCARDIA",
+      "page": 7
+    },
+    {
+      "n": 79,
+      "name": "ALVEOLI",
+      "page": 7
+    },
+    {
+      "n": 80,
+      "name": "BRONCHI",
+      "page": 7
+    },
+    {
+      "n": 81,
+      "name": "BRONCHIOLES",
+      "page": 7
+    },
+    {
+      "n": 82,
+      "name": "DIFFUSION",
+      "page": 7
+    },
+    {
+      "n": 83,
+      "name": "EXHALATION",
+      "page": 7
+    },
+    {
+      "n": 84,
+      "name": "INHALATION",
+      "page": 7
+    },
+    {
+      "n": 85,
+      "name": "LARYNX",
+      "page": 7
+    },
+    {
+      "n": 86,
+      "name": "LUNGS",
+      "page": 7
+    },
+    {
+      "n": 87,
+      "name": "NASAL",
+      "page": 7
+    },
+    {
+      "n": 88,
+      "name": "PHARYNX",
+      "page": 7
+    },
+    {
+      "n": 89,
+      "name": "TRACHEA",
+      "page": 7
+    },
+    {
+      "n": 90,
+      "name": "TRANSPORTATION",
+      "page": 7
+    },
+    {
+      "n": 91,
+      "name": "VENTILATION",
+      "page": 7
+    }
+  ],
+  "competencies": [
+    "1a",
+    "1b",
+    "1c",
+    "1d",
+    "1e",
+    "1f",
+    "1g",
+    "1h",
+    "2a",
+    "2b",
+    "2c",
+    "2d",
+    "2e",
+    "3a",
+    "3b",
+    "3c",
+    "3d",
+    "3e",
+    "4a",
+    "4b",
+    "4c",
+    "4d",
+    "4e",
+    "4f",
+    "4g",
+    "4h"
+  ]
+}

@@ -188,6 +188,7 @@
 </style>
 <link rel="stylesheet" href="ecg/trainer.css">
 <link rel="stylesheet" href="study/teaching.css">
+<link rel="stylesheet" href="aspt/exam.css">
 </head>
 <body>
 <header>
@@ -209,9 +210,9 @@
       <button class="btn secondary" onclick="showLabeling()">🏷️ Labeling Diagrams
         <small>Canvas-style diagram matching — partial credit per marker</small></button>
       <button class="btn secondary" onclick="showKahoot()">🎯 Kahoot-Style Review
-        <small>One question strip up top, four big answer boxes — distractors drawn from the same unit's answer bank</small></button>
+        <small>One question strip up top, four big answer boxes — each question keeps its reviewed answer choices</small></button>
       <button class="btn secondary" onclick="showEcg()">🫀 ECG Rhythm Practice
-        <small>Label generated rhythm strips — Observe the ECG before identifying its rhythm</small></button>
+        <small>Interpret source ECG strips — Observe the ECG before identifying its rhythm</small></button>
       <div class="row" style="margin-top:14px; justify-content:space-between">
         <span class="pill" id="bankCount">— questions in bank</span>
         <span class="pill">Pass mark: 80%</span>
@@ -5589,13 +5590,13 @@ const BANK = [
     "unit": 2,
     "q": "PERICARDITIS is:",
     "o": [
-      "Inflammation of the pericardium, usually caused by infection",
+      "Inflammation of the sac surrounding the heart",
       "Inflammation of the heart muscle",
       "Infection of the inner lining of the heart",
       "Narrowing of the coronary arteries"
     ],
     "a": 0,
-    "e": "Pericarditis is inflammation of the pericardium caused by infection; viral usually resolves, while bacterial may lead to fluid build-up between the layers."
+    "e": "Pericarditis affects the pericardial sac; myocarditis affects heart muscle and endocarditis affects the inner lining or valves. Pericarditis can have infectious or noninfectious causes, so inflammation does not establish infection."
   },
   {
     "t": "patho",
@@ -10222,5 +10223,7 @@ init();
 </script>
 <script src="study/teaching.js"></script>
 <script src="ecg/trainer.js"></script>
+<script src="aspt/content.js"></script>
+<script src="aspt/exam.js"></script>
 </body>
 </html>
