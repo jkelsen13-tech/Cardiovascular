@@ -1,0 +1,1801 @@
+{
+  "guide": "2026 ASPT EKG Certification Study Guide (revised January 2026)",
+  "coverage": [
+    {
+      "id": "1a",
+      "label": "The Heart: terminology on the word list",
+      "lesson": "disease",
+      "page": 3,
+      "also": [
+        "anatomy",
+        "muscle",
+        "circulation",
+        "pressure"
+      ],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor."
+    },
+    {
+      "id": "1b",
+      "label": "The Heart: general description",
+      "lesson": "anatomy",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "The slides' searchable text does not fully define apex/base, conus arteriosus or trabeculae carneae. The guide diagram identifies the latter structures; basic definitions are supplied as an explicit supplemental anatomy clarification."
+    },
+    {
+      "id": "1c",
+      "label": "The Heart: function",
+      "lesson": "circulation",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "1d",
+      "label": "The Heart: structure and function of each part",
+      "lesson": "anatomy",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "The slides' searchable text does not fully define apex/base, conus arteriosus or trabeculae carneae. The guide diagram identifies the latter structures; basic definitions are supplied as an explicit supplemental anatomy clarification."
+    },
+    {
+      "id": "1e",
+      "label": "The Heart: circulation within the heart",
+      "lesson": "circulation",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "1f",
+      "label": "The Heart: specifics of the myocardium",
+      "lesson": "muscle",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "1g",
+      "label": "The Heart: common disorders and diseases",
+      "lesson": "disease",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor."
+    },
+    {
+      "id": "1h",
+      "label": "The Heart: blood pressure",
+      "lesson": "pressure",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "The slides explain pressure physiology but do not provide a complete manual blood-pressure procedure. Practical technique remains an instructor reinforcement item."
+    },
+    {
+      "id": "2a",
+      "label": "Respiration: terms",
+      "lesson": "airway",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "2b",
+      "label": "Respiration: ventilation — inhalation and exhalation",
+      "lesson": "respiration",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "2c",
+      "label": "Respiration: normal rate",
+      "lesson": "respiration",
+      "page": 3,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "2d",
+      "label": "Respiration: three phases of respiration",
+      "lesson": "respiration",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "2e",
+      "label": "Respiration: pathway and parts",
+      "lesson": "airway",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "3a",
+      "label": "Conduction System: terminology",
+      "lesson": "conduction",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "3b",
+      "label": "Conduction System: function",
+      "lesson": "conduction",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "3c",
+      "label": "Conduction System: parts, location and function of each",
+      "lesson": "conduction",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "3d",
+      "label": "Conduction System: order of impulse",
+      "lesson": "conduction",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "3e",
+      "label": "Conduction System: relationship to pumping",
+      "lesson": "cycle",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "'Resting phase' is ambiguous in the guide. Class electrical-ready terminology and mechanical diastole are distinguished here; confirm the intended wording if your instructor uses a specific numbered phase."
+    },
+    {
+      "id": "4a",
+      "label": "Electrocardiograph/gram: terminology",
+      "lesson": "instrument",
+      "page": 4,
+      "also": [
+        "limb",
+        "waves",
+        "measure",
+        "rhythms"
+      ],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "Instrument-specific operation and mounting/signing procedures are not fully taught by the slides. Obtain the expected practical workflow from the instructor; the documentation requirement remains in Exam-Day Requirements."
+    },
+    {
+      "id": "4b",
+      "label": "Electrocardiograph/gram: function",
+      "lesson": "instrument",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Instrument-specific operation and mounting/signing procedures are not fully taught by the slides. Obtain the expected practical workflow from the instructor; the documentation requirement remains in Exam-Day Requirements."
+    },
+    {
+      "id": "4c",
+      "label": "Electrocardiograph/gram: the EKG instrument",
+      "lesson": "instrument",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "Instrument-specific operation and mounting/signing procedures are not fully taught by the slides. Obtain the expected practical workflow from the instructor; the documentation requirement remains in Exam-Day Requirements."
+    },
+    {
+      "id": "4d",
+      "label": "Electrocardiograph/gram: cardiac cycle",
+      "lesson": "cycle",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "'Resting phase' is ambiguous in the guide. Class electrical-ready terminology and mechanical diastole are distinguished here; confirm the intended wording if your instructor uses a specific numbered phase."
+    },
+    {
+      "id": "4e",
+      "label": "Electrocardiograph/gram: P–Q–R–S–T meaning and appearance",
+      "lesson": "waves",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "The guide asks about U but its diagram does not show a reliably distinct U wave. The slides describe it, but the mechanism is not uniquely established; learn recognition without forcing a visible U."
+    },
+    {
+      "id": "4f",
+      "label": "Electrocardiograph/gram: paper parts and measurements",
+      "lesson": "measure",
+      "page": 4,
+      "also": [],
+      "group": "Competencies",
+      "status": "Covered completely",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "4g",
+      "label": "Electrocardiograph/gram: lead-wire placement, measurements, markings and patient prep",
+      "lesson": "placement",
+      "page": 4,
+      "also": [
+        "limb",
+        "prep"
+      ],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "4h",
+      "label": "Electrocardiograph/gram: artifacts and other arrhythmias",
+      "lesson": "artifacts",
+      "page": 4,
+      "also": [
+        "rhythms"
+      ],
+      "group": "Competencies",
+      "status": "Covered but needs reinforcement",
+      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+    },
+    {
+      "id": "T1",
+      "group": "Terminology",
+      "label": "1. ANGINA",
+      "page": 5,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 1
+    },
+    {
+      "id": "T2",
+      "group": "Terminology",
+      "label": "2. AORTA",
+      "page": 5,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 2
+    },
+    {
+      "id": "T3",
+      "group": "Terminology",
+      "label": "3. AORTIC VALVE",
+      "page": 5,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 3
+    },
+    {
+      "id": "T4",
+      "group": "Terminology",
+      "label": "4. APEX",
+      "page": 5,
+      "lesson": "anatomy",
+      "status": "Covered but needs reinforcement",
+      "note": "Apex appears anatomically; its definition needs reinforcement beyond the searchable slide text.",
+      "term": 4
+    },
+    {
+      "id": "T5",
+      "group": "Terminology",
+      "label": "5. ARTERIOSCLEROSIS",
+      "page": 5,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 5
+    },
+    {
+      "id": "T6",
+      "group": "Terminology",
+      "label": "6. ATHEROSCLEROSIS",
+      "page": 5,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 6
+    },
+    {
+      "id": "T7",
+      "group": "Terminology",
+      "label": "7. ATRIA (UM)",
+      "page": 5,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 7
+    },
+    {
+      "id": "T8",
+      "group": "Terminology",
+      "label": "8. AV BUNDLE",
+      "page": 5,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 8
+    },
+    {
+      "id": "T9",
+      "group": "Terminology",
+      "label": "9. AV NODE",
+      "page": 5,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 9
+    },
+    {
+      "id": "T10",
+      "group": "Terminology",
+      "label": "10. BASE OF HEART",
+      "page": 5,
+      "lesson": "anatomy",
+      "status": "Covered but needs reinforcement",
+      "note": "Base orientation is not clearly defined in searchable class text; supplemental anatomy clarification is included.",
+      "term": 10
+    },
+    {
+      "id": "T11",
+      "group": "Terminology",
+      "label": "11. BUNDLE BRANCHES",
+      "page": 5,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 11
+    },
+    {
+      "id": "T12",
+      "group": "Terminology",
+      "label": "12. BUNDLE OF HIS",
+      "page": 5,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 12
+    },
+    {
+      "id": "T13",
+      "group": "Terminology",
+      "label": "13. CARDIAC MUSCLE",
+      "page": 5,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 13
+    },
+    {
+      "id": "T14",
+      "group": "Terminology",
+      "label": "14. CORONARY ARTERIES",
+      "page": 5,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 14
+    },
+    {
+      "id": "T15",
+      "group": "Terminology",
+      "label": "15. DIASTOLE",
+      "page": 5,
+      "lesson": "pressure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 15
+    },
+    {
+      "id": "T16",
+      "group": "Terminology",
+      "label": "16. ENDOCARDIUM",
+      "page": 5,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 16
+    },
+    {
+      "id": "T17",
+      "group": "Terminology",
+      "label": "17. EPICARDIUM",
+      "page": 5,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 17
+    },
+    {
+      "id": "T18",
+      "group": "Terminology",
+      "label": "18. INFERIOR VENA CAVA",
+      "page": 5,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 18
+    },
+    {
+      "id": "T19",
+      "group": "Terminology",
+      "label": "19. INTERCALATED DISKS",
+      "page": 5,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 19
+    },
+    {
+      "id": "T20",
+      "group": "Terminology",
+      "label": "20. ISCHEMIA",
+      "page": 5,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 20
+    },
+    {
+      "id": "T21",
+      "group": "Terminology",
+      "label": "21. MEDIASTINUM",
+      "page": 5,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 21
+    },
+    {
+      "id": "T22",
+      "group": "Terminology",
+      "label": "22. MITRAL VALVE",
+      "page": 5,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 22
+    },
+    {
+      "id": "T23",
+      "group": "Terminology",
+      "label": "23. MURMUR",
+      "page": 5,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 23
+    },
+    {
+      "id": "T24",
+      "group": "Terminology",
+      "label": "24. MYOCARDIAL INFARCTION",
+      "page": 5,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 24
+    },
+    {
+      "id": "T25",
+      "group": "Terminology",
+      "label": "25. MYOCARDIUM",
+      "page": 5,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 25
+    },
+    {
+      "id": "T26",
+      "group": "Terminology",
+      "label": "26. PACEMAKER NODE",
+      "page": 5,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 26
+    },
+    {
+      "id": "T27",
+      "group": "Terminology",
+      "label": "27. PERICARDIUM",
+      "page": 5,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 27
+    },
+    {
+      "id": "T28",
+      "group": "Terminology",
+      "label": "28. PULMONARY ARTERY",
+      "page": 5,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 28
+    },
+    {
+      "id": "T29",
+      "group": "Terminology",
+      "label": "29. PULMONARY CIRCULATION",
+      "page": 5,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 29
+    },
+    {
+      "id": "T30",
+      "group": "Terminology",
+      "label": "30. PULMONARY VALVE",
+      "page": 6,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 30
+    },
+    {
+      "id": "T31",
+      "group": "Terminology",
+      "label": "31. PULMONARY VEIN",
+      "page": 6,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 31
+    },
+    {
+      "id": "T32",
+      "group": "Terminology",
+      "label": "32. PURKINJE FIBERS",
+      "page": 6,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 32
+    },
+    {
+      "id": "T33",
+      "group": "Terminology",
+      "label": "33. RHEUMATIC FEVER",
+      "page": 6,
+      "lesson": "disease",
+      "status": "Covered but needs reinforcement",
+      "note": "Named as a valve-disease cause in chapter 03 p.36; CDC supplies the additional explanation.",
+      "term": 33
+    },
+    {
+      "id": "T34",
+      "group": "Terminology",
+      "label": "34. SA NODE",
+      "page": 6,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 34
+    },
+    {
+      "id": "T35",
+      "group": "Terminology",
+      "label": "35. SEPTUM",
+      "page": 6,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 35
+    },
+    {
+      "id": "T36",
+      "group": "Terminology",
+      "label": "36. STRIATED",
+      "page": 6,
+      "lesson": "muscle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 36
+    },
+    {
+      "id": "T37",
+      "group": "Terminology",
+      "label": "37. SUPERIOR VENA CAVA",
+      "page": 6,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 37
+    },
+    {
+      "id": "T38",
+      "group": "Terminology",
+      "label": "38. SYSTEMIC CIRCULATION",
+      "page": 6,
+      "lesson": "circulation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 38
+    },
+    {
+      "id": "T39",
+      "group": "Terminology",
+      "label": "39. SYSTOLE",
+      "page": 6,
+      "lesson": "pressure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 39
+    },
+    {
+      "id": "T40",
+      "group": "Terminology",
+      "label": "40. TRICUSPID VALVE",
+      "page": 6,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 40
+    },
+    {
+      "id": "T41",
+      "group": "Terminology",
+      "label": "41. VALVE",
+      "page": 6,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 41
+    },
+    {
+      "id": "T42",
+      "group": "Terminology",
+      "label": "42. VASOCONSTRICTION",
+      "page": 6,
+      "lesson": "pressure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 42
+    },
+    {
+      "id": "T43",
+      "group": "Terminology",
+      "label": "43. VASODILATION",
+      "page": 6,
+      "lesson": "pressure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 43
+    },
+    {
+      "id": "T44",
+      "group": "Terminology",
+      "label": "44. VENTRICLES",
+      "page": 6,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 44
+    },
+    {
+      "id": "T45",
+      "group": "Terminology",
+      "label": "45. AGONAL",
+      "page": 6,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 45
+    },
+    {
+      "id": "T46",
+      "group": "Terminology",
+      "label": "46. ARRHYTHMIA",
+      "page": 6,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 46
+    },
+    {
+      "id": "T47",
+      "group": "Terminology",
+      "label": "47. ARTIFACT",
+      "page": 6,
+      "lesson": "artifacts",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 47
+    },
+    {
+      "id": "T48",
+      "group": "Terminology",
+      "label": "48. ASYSTOLE",
+      "page": 6,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 48
+    },
+    {
+      "id": "T49",
+      "group": "Terminology",
+      "label": "49. AUGMENTED LEADS",
+      "page": 6,
+      "lesson": "limb",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 49
+    },
+    {
+      "id": "T50",
+      "group": "Terminology",
+      "label": "50. AVR, AVL, AVF",
+      "page": 6,
+      "lesson": "limb",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 50
+    },
+    {
+      "id": "T51",
+      "group": "Terminology",
+      "label": "51. BASELINE",
+      "page": 6,
+      "lesson": "waves",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 51
+    },
+    {
+      "id": "T52",
+      "group": "Terminology",
+      "label": "52. BRADYCARDIA",
+      "page": 6,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 52
+    },
+    {
+      "id": "T53",
+      "group": "Terminology",
+      "label": "53. CARDIAC CYCLE",
+      "page": 6,
+      "lesson": "cycle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 53
+    },
+    {
+      "id": "T54",
+      "group": "Terminology",
+      "label": "54. DEPOLARIZATION",
+      "page": 6,
+      "lesson": "cycle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 54
+    },
+    {
+      "id": "T55",
+      "group": "Terminology",
+      "label": "55. ECG/EKG",
+      "page": 6,
+      "lesson": "instrument",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 55
+    },
+    {
+      "id": "T56",
+      "group": "Terminology",
+      "label": "56. ECTOPIC FIRING",
+      "page": 6,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 56
+    },
+    {
+      "id": "T57",
+      "group": "Terminology",
+      "label": "57. ELECTOCARDIOGRAPH",
+      "page": 6,
+      "lesson": "instrument",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 57
+    },
+    {
+      "id": "T58",
+      "group": "Terminology",
+      "label": "58. ELECTROCARDIOGRAM",
+      "page": 6,
+      "lesson": "instrument",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 58
+    },
+    {
+      "id": "T59",
+      "group": "Terminology",
+      "label": "59. ELECTRODE",
+      "page": 6,
+      "lesson": "prep",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 59
+    },
+    {
+      "id": "T60",
+      "group": "Terminology",
+      "label": "60. ELECTROLYTE GEL",
+      "page": 6,
+      "lesson": "prep",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 60
+    },
+    {
+      "id": "T61",
+      "group": "Terminology",
+      "label": "61. INTERCOSTAL SPACES",
+      "page": 6,
+      "lesson": "foundation",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 61
+    },
+    {
+      "id": "T62",
+      "group": "Terminology",
+      "label": "62. INTERVALS",
+      "page": 6,
+      "lesson": "measure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 62
+    },
+    {
+      "id": "T63",
+      "group": "Terminology",
+      "label": "63. LEADS",
+      "page": 7,
+      "lesson": "limb",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 63
+    },
+    {
+      "id": "T64",
+      "group": "Terminology",
+      "label": "64. MIDAXILLARY",
+      "page": 7,
+      "lesson": "placement",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 64
+    },
+    {
+      "id": "T65",
+      "group": "Terminology",
+      "label": "65. MIDCLAVICULAR",
+      "page": 7,
+      "lesson": "placement",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 65
+    },
+    {
+      "id": "T66",
+      "group": "Terminology",
+      "label": "66. MYOCARDIAL INFARCTION",
+      "page": 7,
+      "lesson": "disease",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 66
+    },
+    {
+      "id": "T67",
+      "group": "Terminology",
+      "label": "67. PACEMAKER",
+      "page": 7,
+      "lesson": "conduction",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 67
+    },
+    {
+      "id": "T68",
+      "group": "Terminology",
+      "label": "68. POLARIZATION",
+      "page": 7,
+      "lesson": "cycle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 68
+    },
+    {
+      "id": "T69",
+      "group": "Terminology",
+      "label": "69. P-Q-R-S-T-U WAVES",
+      "page": 7,
+      "lesson": "waves",
+      "status": "Covered but needs reinforcement",
+      "note": "P–T are explained, but the guide diagram has no distinct U. Do not invent it.",
+      "term": 69
+    },
+    {
+      "id": "T70",
+      "group": "Terminology",
+      "label": "70. PRECORDAL LEADS",
+      "page": 7,
+      "lesson": "placement",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 70
+    },
+    {
+      "id": "T71",
+      "group": "Terminology",
+      "label": "71. REPOLARIZATION",
+      "page": 7,
+      "lesson": "cycle",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 71
+    },
+    {
+      "id": "T72",
+      "group": "Terminology",
+      "label": "72. RESTING PHASE",
+      "page": 7,
+      "lesson": "cycle",
+      "status": "Covered but needs reinforcement",
+      "note": "The guide does not define the intended electrical versus mechanical meaning.",
+      "term": 72
+    },
+    {
+      "id": "T73",
+      "group": "Terminology",
+      "label": "73. R-R COMPLEX",
+      "page": 7,
+      "lesson": "measure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 73
+    },
+    {
+      "id": "T74",
+      "group": "Terminology",
+      "label": "74. SEGMENTS",
+      "page": 7,
+      "lesson": "waves",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 74
+    },
+    {
+      "id": "T75",
+      "group": "Terminology",
+      "label": "75. SINUS RHYTHM",
+      "page": 7,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 75
+    },
+    {
+      "id": "T76",
+      "group": "Terminology",
+      "label": "76. STANDARD/BIPOLAR LEADS",
+      "page": 7,
+      "lesson": "limb",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 76
+    },
+    {
+      "id": "T77",
+      "group": "Terminology",
+      "label": "77. STANDARDIZATION",
+      "page": 7,
+      "lesson": "measure",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 77
+    },
+    {
+      "id": "T78",
+      "group": "Terminology",
+      "label": "78. TACHYCARDIA",
+      "page": 7,
+      "lesson": "rhythms",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 78
+    },
+    {
+      "id": "T79",
+      "group": "Terminology",
+      "label": "79. ALVEOLI",
+      "page": 7,
+      "lesson": "respiration",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 79
+    },
+    {
+      "id": "T80",
+      "group": "Terminology",
+      "label": "80. BRONCHI",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 80
+    },
+    {
+      "id": "T81",
+      "group": "Terminology",
+      "label": "81. BRONCHIOLES",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 81
+    },
+    {
+      "id": "T82",
+      "group": "Terminology",
+      "label": "82. DIFFUSION",
+      "page": 7,
+      "lesson": "respiration",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 82
+    },
+    {
+      "id": "T83",
+      "group": "Terminology",
+      "label": "83. EXHALATION",
+      "page": 7,
+      "lesson": "respiration",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 83
+    },
+    {
+      "id": "T84",
+      "group": "Terminology",
+      "label": "84. INHALATION",
+      "page": 7,
+      "lesson": "respiration",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 84
+    },
+    {
+      "id": "T85",
+      "group": "Terminology",
+      "label": "85. LARYNX",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 85
+    },
+    {
+      "id": "T86",
+      "group": "Terminology",
+      "label": "86. LUNGS",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 86
+    },
+    {
+      "id": "T87",
+      "group": "Terminology",
+      "label": "87. NASAL",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 87
+    },
+    {
+      "id": "T88",
+      "group": "Terminology",
+      "label": "88. PHARYNX",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 88
+    },
+    {
+      "id": "T89",
+      "group": "Terminology",
+      "label": "89. TRACHEA",
+      "page": 7,
+      "lesson": "airway",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 89
+    },
+    {
+      "id": "T90",
+      "group": "Terminology",
+      "label": "90. TRANSPORTATION",
+      "page": 7,
+      "lesson": "respiration",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 90
+    },
+    {
+      "id": "T91",
+      "group": "Terminology",
+      "label": "91. VENTILATION",
+      "page": 7,
+      "lesson": "respiration",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "term": 91
+    },
+    {
+      "id": "D1",
+      "group": "Diagrams",
+      "label": "ASPT guide: heart anatomy",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered but needs reinforcement",
+      "note": "Every label explained; conus/trabeculae require a flagged supplemental anatomy reference."
+    },
+    {
+      "id": "D2",
+      "group": "Diagrams",
+      "label": "ASPT guide: precordial placement",
+      "page": 8,
+      "lesson": "placement",
+      "status": "Covered completely",
+      "note": "V1–V6 explained with correct landmarks; p.9 wording clarified."
+    },
+    {
+      "id": "D3",
+      "group": "Diagrams",
+      "label": "ASPT guide: waveform",
+      "page": 9,
+      "lesson": "waves",
+      "status": "Covered but needs reinforcement",
+      "note": "P–T explained from the image. U and exact uncalibrated measurements cannot be identified reliably."
+    },
+    {
+      "id": "H1",
+      "group": "Diagram labels",
+      "label": "Superior vena cava",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Returns blood from the upper body to the right atrium."
+    },
+    {
+      "id": "H2",
+      "group": "Diagram labels",
+      "label": "Inferior vena cava",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Returns blood from the lower body to the right atrium."
+    },
+    {
+      "id": "H3",
+      "group": "Diagram labels",
+      "label": "Right atrium",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Receives systemic venous blood before the tricuspid valve."
+    },
+    {
+      "id": "H4",
+      "group": "Diagram labels",
+      "label": "Tricuspid valve",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Separates right atrium and right ventricle; limits backward flow during ventricular contraction."
+    },
+    {
+      "id": "H5",
+      "group": "Diagram labels",
+      "label": "Right ventricle",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Pumps blood through its outflow region and pulmonary valve toward the lungs."
+    },
+    {
+      "id": "H6",
+      "group": "Diagram labels",
+      "label": "Conus arteriosus",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Missing from class materials",
+      "note": "No adequate class definition located. ASPT guide topic retained with a labeled supplemental anatomy explanation."
+    },
+    {
+      "id": "H7",
+      "group": "Diagram labels",
+      "label": "Pulmonary valve",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Semilunar valve between the right ventricular outflow and pulmonary trunk."
+    },
+    {
+      "id": "H8",
+      "group": "Diagram labels",
+      "label": "Pulmonary trunk",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "The common vessel leaving the right ventricle before it branches toward the lungs."
+    },
+    {
+      "id": "H9",
+      "group": "Diagram labels",
+      "label": "Left pulmonary artery",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Carries blood toward the left lung; oxygen-poor in normal adult circulation."
+    },
+    {
+      "id": "H10",
+      "group": "Diagram labels",
+      "label": "Left pulmonary veins",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Return oxygen-rich blood from the left lung to the left atrium."
+    },
+    {
+      "id": "H11",
+      "group": "Diagram labels",
+      "label": "Left atrium",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Receives pulmonary venous blood before the mitral valve."
+    },
+    {
+      "id": "H12",
+      "group": "Diagram labels",
+      "label": "Mitral valve",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "The left AV/bicuspid valve between the left atrium and ventricle."
+    },
+    {
+      "id": "H13",
+      "group": "Diagram labels",
+      "label": "Left ventricle",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Pumps into the aorta and has the thick systemic-pumping muscle wall."
+    },
+    {
+      "id": "H14",
+      "group": "Diagram labels",
+      "label": "Aortic valve",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Semilunar valve between left ventricle and aorta."
+    },
+    {
+      "id": "H15",
+      "group": "Diagram labels",
+      "label": "Ascending aorta",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "The initial upward part of the aorta after the aortic valve."
+    },
+    {
+      "id": "H16",
+      "group": "Diagram labels",
+      "label": "Arch of aorta",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "The curved continuation of the ascending aorta."
+    },
+    {
+      "id": "H17",
+      "group": "Diagram labels",
+      "label": "Interatrial septum",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Separates the right and left atria."
+    },
+    {
+      "id": "H18",
+      "group": "Diagram labels",
+      "label": "Interventricular septum",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Separates the right and left ventricles."
+    },
+    {
+      "id": "H19",
+      "group": "Diagram labels",
+      "label": "Papillary muscle",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Ventricular muscle that tensions the chordae tendineae."
+    },
+    {
+      "id": "H20",
+      "group": "Diagram labels",
+      "label": "Chordae tendineae",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Covered completely",
+      "note": "Cords between AV valve cusps and papillary muscles; not semilunar valve supports."
+    },
+    {
+      "id": "H21",
+      "group": "Diagram labels",
+      "label": "Trabeculae carneae",
+      "page": 8,
+      "lesson": "anatomy",
+      "status": "Missing from class materials",
+      "note": "No adequate class definition located. ASPT guide topic retained with a labeled supplemental anatomy explanation."
+    },
+    {
+      "id": "O1",
+      "group": "Guide details",
+      "label": "Circulatory overview: heart, blood and vessels",
+      "lesson": "blood",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O2",
+      "group": "Guide details",
+      "label": "Arteries and arterioles: direction, oxygen pattern and thick walls",
+      "lesson": "blood",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O3",
+      "group": "Guide details",
+      "label": "Veins and venules: return flow and valves",
+      "lesson": "blood",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O4",
+      "group": "Guide details",
+      "label": "Capillaries: microscopic exchange vessels",
+      "lesson": "blood",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O5",
+      "group": "Guide details",
+      "label": "Pulmonary route and gas exchange",
+      "lesson": "circulation",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O6",
+      "group": "Guide details",
+      "label": "Systemic route and tissue exchange",
+      "lesson": "circulation",
+      "page": 5,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O7",
+      "group": "Guide details",
+      "label": "Inhalation",
+      "lesson": "respiration",
+      "page": 3,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O8",
+      "group": "Guide details",
+      "label": "Exhalation",
+      "lesson": "respiration",
+      "page": 3,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O9",
+      "group": "Guide details",
+      "label": "Lead-wire placement",
+      "lesson": "placement",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O10",
+      "group": "Guide details",
+      "label": "What leads measure",
+      "lesson": "limb",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O11",
+      "group": "Guide details",
+      "label": "Lead-wire markings",
+      "lesson": "limb",
+      "page": 4,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "O12",
+      "group": "Guide details",
+      "label": "Proper patient preparation",
+      "lesson": "prep",
+      "page": 4,
+      "status": "Covered but needs reinforcement",
+      "note": "Proper patient preparation is an explicit ASPT topic, but the class slides give only a partial practical workflow. Review identification, safety, skin preparation and equipment steps with your instructor."
+    },
+    {
+      "id": "O13",
+      "group": "Guide details",
+      "label": "Midclavicular vs anterior axillary wording",
+      "lesson": "foundation",
+      "page": 9,
+      "status": "Covered completely",
+      "note": "Guide detail included with class context; corrections are explicit where the guide is misleading."
+    },
+    {
+      "id": "A01",
+      "group": "Testing requirements",
+      "label": "Supervisor/instructor letter",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A02",
+      "group": "Testing requirements",
+      "label": "Mounted and signed EKG in the packet",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A03",
+      "group": "Testing requirements",
+      "label": "Risk of an ungraded test",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A04",
+      "group": "Testing requirements",
+      "label": "Interpretation on the submitted EKG",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A05",
+      "group": "Testing requirements",
+      "label": "Exam format",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A06",
+      "group": "Testing requirements",
+      "label": "Time limit",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A07",
+      "group": "Testing requirements",
+      "label": "Pass mark and credential",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A08",
+      "group": "Testing requirements",
+      "label": "Read and allocate time",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A09",
+      "group": "Testing requirements",
+      "label": "Skipped questions",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A10",
+      "group": "Testing requirements",
+      "label": "Check registration details",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A11",
+      "group": "Testing requirements",
+      "label": "#2 pencil and complete marks",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A12",
+      "group": "Testing requirements",
+      "label": "Keep the answer sheet scannable",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A13",
+      "group": "Testing requirements",
+      "label": "Name, event number and signature",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A14",
+      "group": "Testing requirements",
+      "label": "No writing in the test booklet",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A15",
+      "group": "Testing requirements",
+      "label": "Return materials together",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A16",
+      "group": "Testing requirements",
+      "label": "Minimize erasures",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A17",
+      "group": "Testing requirements",
+      "label": "Results",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A18",
+      "group": "Testing requirements",
+      "label": "Retake fee",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A19",
+      "group": "Testing requirements",
+      "label": "Annual renewal window",
+      "page": 2,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A20",
+      "group": "Testing requirements",
+      "label": "Continuing education",
+      "page": 3,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A21",
+      "group": "Testing requirements",
+      "label": "Keep contact details current",
+      "page": 1,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    },
+    {
+      "id": "A22",
+      "group": "Testing requirements",
+      "label": "Optional further resource",
+      "page": 9,
+      "lesson": "exam-day",
+      "status": "Missing from class materials",
+      "note": "Included directly from the ASPT guide in Exam-Day Requirements. Administrative rules are not academic class-slide content."
+    }
+  ],
+  "images": {
+    "g01": {
+      "src": "aspt/images/g01.jpg",
+      "title": "ASPT guide: heart anatomy",
+      "source": "ASPT 2026 guide, page 8",
+      "cue": "Trace blood flow and identify all 21 labels below.",
+      "lesson": "anatomy",
+      "type": "guide",
+      "width": 1652,
+      "height": 920,
+      "sha256": "e0d0da76660130b2e8a4ad96dad24494eb67999e853262168013065714fa6d04",
+      "embeddedName": "Image60.jpg",
+      "sourceSha256": "a84e830d1f0a28cffb2a33588e009b442bf1c3e7e9424afa45804f646b864645"
+    },
+    "g02": {
+      "src": "aspt/images/g02.png",
+      "title": "ASPT guide: precordial placement",
+      "source": "ASPT 2026 guide, page 8",
+      "cue": "Identify V1–V6 by anatomical landmarks; picture colors are not a universal wire-color key.",
+      "lesson": "placement",
+      "type": "guide",
+      "width": 997,
+      "height": 699,
+      "sha256": "5bf5731dbd91c087bb7b94a5e9ff165c6037fd5e498ffa2afc388f66f0bc5f4d",
+      "embeddedName": "Image61.jp2",
+      "sourceSha256": "a84e830d1f0a28cffb2a33588e009b442bf1c3e7e9424afa45804f646b864645"
+    },
+    "g03": {
+      "src": "aspt/images/g03.png",
+      "title": "ASPT guide: waveform",
+      "source": "ASPT 2026 guide, page 9",
+      "cue": "Identify P, Q, R, S and T in each sequence. No distinct U is reliably visible. Calibration is not stated.",
+      "lesson": "waves",
+      "type": "guide",
+      "width": 914,
+      "height": 153,
+      "sha256": "6f2aef265acdace4fb6728f5e1543a1759bf98695570c753ecdb904de1e1f98f",
+      "embeddedName": "Image67.png",
+      "sourceSha256": "a84e830d1f0a28cffb2a33588e009b442bf1c3e7e9424afa45804f646b864645"
+    },
+    "s01": {
+      "src": "aspt/images/s01.jpg",
+      "title": "Class: paper scale",
+      "source": "Chapter 04, page 7",
+      "cue": "Read time across and voltage vertically; calculations depend on speed and gain.",
+      "lesson": "measure",
+      "type": "slide",
+      "width": 1440,
+      "height": 810,
+      "sha256": "f337570545f5ce353b2531f6b8cb768b4eeb1e66e9a1bbba6cc09ff2a68639d1",
+      "embeddedName": null,
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765"
+    },
+    "s02": {
+      "src": "aspt/images/s02.jpg",
+      "title": "Class: interference comparison 1",
+      "source": "Chapter 04, page 63",
+      "cue": "Compare major baseline disturbance above with finer noise below. Source labels describe demonstrated causes; the appearance alone is not a unique diagnosis.",
+      "lesson": "artifacts",
+      "type": "slide",
+      "width": 1213,
+      "height": 1014,
+      "sha256": "5880eba47db029fe101d3e4eb7b47d5588f91f8aa094c8a99b98d817849f712d",
+      "embeddedName": "Image472.jpg",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765"
+    },
+    "s03": {
+      "src": "aspt/images/s03.jpg",
+      "title": "Class: interference comparison 2",
+      "source": "Chapter 04, page 64",
+      "cue": "Compare tremor-associated noise with patient-movement distortion. Assess the patient and verify electrode contact.",
+      "lesson": "artifacts",
+      "type": "slide",
+      "width": 1213,
+      "height": 1014,
+      "sha256": "6b2b923cbb79714457e19fe37334c1cb7f16f0e9a8fc70846701010e9e02b201",
+      "embeddedName": "Image481.jpg",
+      "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765"
+    }
+  }
+}
