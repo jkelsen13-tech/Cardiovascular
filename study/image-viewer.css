@@ -1,0 +1,14 @@
+dialog.image-viewer{position:fixed;inset:0;margin:auto;width:min(1400px,96vw);max-width:96vw;height:92vh;height:92dvh;max-height:92dvh;padding:12px;box-sizing:border-box;border:1px solid #64748b;border-radius:12px;background:#fff;color:#172033;overflow:hidden}
+dialog.image-viewer[open]{display:flex;flex-direction:column;gap:8px}
+dialog.image-viewer::backdrop{background:#0f1724bf}
+dialog.image-viewer .iv-controls{display:flex;flex-wrap:wrap;gap:6px;align-items:center;flex:none;overflow:visible;background:transparent}
+dialog.image-viewer button{font:inherit;min-height:44px;min-width:44px;padding:8px 12px;margin:0;border:1px solid #64748b;border-radius:8px;background:#eff6ff;color:#173d7a;cursor:pointer}
+dialog.image-viewer output{min-width:52px;text-align:center;font-size:14px}
+dialog.image-viewer .iv-hint{font-size:13px;line-height:1.4;margin:0;flex:none}
+dialog.image-viewer .iv-stage{position:relative;flex:1;min-height:0;width:100%;max-width:100%;max-height:none;overflow:hidden;background:#f1f5f9;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none;overscroll-behavior:contain}
+dialog.image-viewer .iv-stage:active{cursor:grabbing}
+dialog.image-viewer .iv-stage img{position:absolute;left:0;top:0;display:block;max-width:none!important;max-height:none!important;min-width:0;margin:0;padding:0;object-fit:fill;transform-origin:0 0;pointer-events:none;user-select:none;-webkit-user-drag:none}
+dialog.image-viewer .iv-error{margin:0;flex:none}
+dialog.image-viewer [hidden]{display:none!important}
+dialog.image-viewer button:focus-visible,dialog.image-viewer .iv-stage:focus-visible{outline:3px solid #2563eb;outline-offset:-3px}
+@media(max-height:450px){dialog.image-viewer{height:96dvh;max-height:96dvh}.image-viewer .iv-hint{display:none}}

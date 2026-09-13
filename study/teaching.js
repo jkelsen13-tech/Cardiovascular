@@ -296,17 +296,7 @@ const StudyTeaching = (() => {
     zoom.onclick=()=>{if(!loaded)return;openImage(src,im.alt);};
     parent.appendChild(detail);
   }
-  function openImage(src,alt) {
-    let dialog=document.getElementById('study-image-dialog');
-    if(!dialog){dialog=document.createElement('dialog');dialog.id='study-image-dialog';document.body.appendChild(dialog);}
-    dialog.innerHTML='';
-    dialog.setAttribute('aria-label','Enlarged course illustration');
-    const close=text(dialog,'button','Close image','study-zoom');close.type='button';close.onclick=()=>dialog.close();
-    const hint=text(dialog,'p','Scroll within the image to inspect the original proportions.');
-    const viewport=document.createElement('div');viewport.className='study-image-viewport';viewport.tabIndex=0;viewport.setAttribute('aria-label','Scrollable enlarged illustration');
-    const im=document.createElement('img');im.src=src;im.alt=alt;viewport.appendChild(im);dialog.appendChild(viewport);
-    dialog.showModal();close.focus();
-  }
+  function openImage(src,alt) { ImageViewer.open(src,alt); }
   const references={"51":{"title":"Gas exchange and conducting airways","url":"https://www.ncbi.nlm.nih.gov/books/NBK594996/"},"52":{"title":"Gas exchange and conducting airways","url":"https://www.ncbi.nlm.nih.gov/books/NBK594996/"},"58":{"title":"Gas exchange and conducting airways","url":"https://www.ncbi.nlm.nih.gov/books/NBK594996/"},"61":{"title":"FDA: Pulse Oximeter Basics","url":"https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics"},"83":{"title":"FDA: Pulse Oximeter Basics","url":"https://www.fda.gov/consumers/consumer-updates/pulse-oximeter-basics"},"121":{"title":"Heart anatomy and subendocardial conduction","url":"https://www.ncbi.nlm.nih.gov/books/NBK482452/"},"163":{"title":"Physiology of the sinoatrial node","url":"https://www.ncbi.nlm.nih.gov/books/NBK459238/"},"299":{"title":"Myocardial viability and ischemic injury","url":"https://www.ncbi.nlm.nih.gov/books/NBK592410/"},"373":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"374":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"375":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"376":{"title":"Electrical axis interpretation","url":"https://www.ncbi.nlm.nih.gov/books/NBK470532/"},"555":{"title":"AHA 2025 Adult Advanced Life Support","url":"https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"}};
   function feedback(parent,q,picked) {
     parent.querySelectorAll('.study-extra').forEach(n=>n.remove());
