@@ -1,0 +1,24 @@
+name: Mobile image viewer verification
+on:
+  push:
+    branches: [mobile-image-zoom]
+  pull_request:
+    paths: ['study/image-viewer*', 'tools/study/viewer.cjs']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium webkit
+      - run: node tools/study/viewer.cjs
+      - run: node tools/study/verify.cjs
+      - run: node tools/aspt/verify.cjs
+      - run: node tools/ecg/verify.cjs
