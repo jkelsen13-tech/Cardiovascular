@@ -1,0 +1,576 @@
+{
+  "date": "2026-09-13",
+  "scope": "All 19 ASPT lessons, all 91 terms, 24 focus questions, linked topic practice, figures/captions, coverage notes and five final-review groups.",
+  "rule": "Keep every explicitly listed guide competency, term and figure label. Keep basic class explanation needed to learn it. Exclude advanced class extensions from focused ASPT practice; do not claim exclusions are guaranteed absent from the exam.",
+  "sourceReview": "Read all 911 pages of the 13 supplied chapter PDFs as text; verified the relevant source passages for revised lesson points. Reused existing reviewed image assets without alteration.",
+  "retained": {
+    "terms": 91,
+    "competencies": 26,
+    "coverageRows": 176,
+    "guideFigureLabels": 21,
+    "focusQuestions": 24
+  },
+  "practice": {
+    "beforeUnique": 227,
+    "afterUnique": 180,
+    "excluded": [
+      {
+        "bankIndex": 15,
+        "question": "Which term means 'away from / farther from the origin'?"
+      },
+      {
+        "bankIndex": 20,
+        "question": "On a limb, which directional term means closer to the point of attachment (toward the shoulder or hip)?"
+      },
+      {
+        "bankIndex": 23,
+        "question": "The sagittal plane divides the body into which portions?"
+      },
+      {
+        "bankIndex": 28,
+        "question": "How many intercostal spaces are there?"
+      },
+      {
+        "bankIndex": 41,
+        "question": "How many pairs of ribs normally protect the chest organs?"
+      },
+      {
+        "bankIndex": 85,
+        "question": "Approximately what percentage of blood is plasma?"
+      },
+      {
+        "bankIndex": 92,
+        "question": "What are the three layers (tunics) of a blood-vessel wall, from inner to outer?"
+      },
+      {
+        "bankIndex": 93,
+        "question": "The middle tunic (tunica media) of a blood vessel is mostly made of:"
+      },
+      {
+        "bankIndex": 121,
+        "question": "The ventricular Purkinje network runs mainly just beneath which lining?"
+      },
+      {
+        "bankIndex": 580,
+        "question": "The major coronary artery players named in class are:"
+      },
+      {
+        "bankIndex": 581,
+        "question": "Veins returning wastes to the right atrium from the heart include the:"
+      },
+      {
+        "bankIndex": 106,
+        "question": "A piece of plaque or clot that breaks free and travels until it blocks a smaller artery is called a/an:"
+      },
+      {
+        "bankIndex": 338,
+        "question": "MYOCARDITIS (inflammation of the heart muscle) may lead to:"
+      },
+      {
+        "bankIndex": 340,
+        "question": "Which of the following is a NON-MODIFIABLE risk factor for heart disease?"
+      },
+      {
+        "bankIndex": 341,
+        "question": "Which of the following is a MODIFIABLE risk factor for heart disease?"
+      },
+      {
+        "bankIndex": 319,
+        "question": "STROKE VOLUME (SV) is best defined as:"
+      },
+      {
+        "bankIndex": 320,
+        "question": "Which three factors influence STROKE VOLUME?"
+      },
+      {
+        "bankIndex": 322,
+        "question": "CARDIAC OUTPUT (CO) refers to:"
+      },
+      {
+        "bankIndex": 323,
+        "question": "What is the formula for CARDIAC OUTPUT (CO)?"
+      },
+      {
+        "bankIndex": 325,
+        "question": "EJECTION FRACTION (EF) is a measurement that indicates:"
+      },
+      {
+        "bankIndex": 58,
+        "question": "'Deadspace' in the respiratory system refers to:"
+      },
+      {
+        "bankIndex": 73,
+        "question": "The hypopharynx is best described as:"
+      },
+      {
+        "bankIndex": 46,
+        "question": "Homeostasis is best defined as:"
+      },
+      {
+        "bankIndex": 63,
+        "question": "Capnography measures the patient's:"
+      },
+      {
+        "bankIndex": 64,
+        "question": "What is the NORMAL range for end-tidal CO2 on capnography?"
+      },
+      {
+        "bankIndex": 69,
+        "question": "What is the normal range for blood pH?"
+      },
+      {
+        "bankIndex": 70,
+        "question": "How does carbon dioxide (CO2) affect blood pH?"
+      },
+      {
+        "bankIndex": 80,
+        "question": "Which part of the brain controls breathing?"
+      },
+      {
+        "bankIndex": 81,
+        "question": "Ventilation cycles (respiratory rate) are initiated by chemoreceptors that primarily monitor:"
+      },
+      {
+        "bankIndex": 270,
+        "question": "A pacemaker that stimulates BOTH the atria and the ventricles is called a:"
+      },
+      {
+        "bankIndex": 277,
+        "question": "The 'atrial kick' that is lost during ventricular-only pacing refers to:"
+      },
+      {
+        "bankIndex": 158,
+        "question": "What is the main role of the sodium–potassium pump in cardiac cells?"
+      },
+      {
+        "bankIndex": 159,
+        "question": "Which ion is normally found OUTSIDE (extracellular) the cell and rushes in during depolarization?"
+      },
+      {
+        "bankIndex": 163,
+        "question": "In the SA and AV nodes, which ion mainly carries the phase-0 depolarizing upstroke?"
+      },
+      {
+        "bankIndex": 382,
+        "question": "An ACTION POTENTIAL is best described as:"
+      },
+      {
+        "bankIndex": 386,
+        "question": "How does the sodium-potassium (Na+/K+) pump reset the ion gradient after an action potential?"
+      },
+      {
+        "bankIndex": 172,
+        "question": "Who labeled the ECG waves PQRST and is credited with the triangle of leads?"
+      },
+      {
+        "bankIndex": 278,
+        "question": "The 12-lead ECG is considered the 'gold standard' for:"
+      },
+      {
+        "bankIndex": 227,
+        "question": "An ECG measurement that falls between two lines (e.g., between 0.12 and 0.16 second) should be:"
+      },
+      {
+        "bankIndex": 368,
+        "question": "Which statement correctly distinguishes QT from QTc?"
+      },
+      {
+        "bankIndex": 175,
+        "question": "In Lead I, the electrodes are oriented:"
+      },
+      {
+        "bankIndex": 177,
+        "question": "In Lead III, the electrodes are oriented:"
+      },
+      {
+        "bankIndex": 281,
+        "question": "If a patient has a right below-the-knee amputation, where should the right leg lead be placed (and what else should the technician do)?"
+      },
+      {
+        "bankIndex": 363,
+        "question": "In Lead II, the electrodes are oriented:"
+      },
+      {
+        "bankIndex": 274,
+        "question": "FAILURE TO CAPTURE is seen on the ECG as:"
+      },
+      {
+        "bankIndex": 275,
+        "question": "FAILURE TO PACE is seen on the ECG as:"
+      },
+      {
+        "bankIndex": 276,
+        "question": "FAILURE TO SENSE occurs when the pacemaker:"
+      }
+    ],
+    "scopedOverrides": [
+      160,
+      161,
+      162,
+      200,
+      201,
+      262,
+      303,
+      304
+    ]
+  },
+  "lessons": [
+    {
+      "id": "foundation",
+      "title": "Start here: anatomical directions and landmarks",
+      "checked": true,
+      "sourcePoints": [
+        "Chapter 01, pp. 24–28",
+        "Chapter 01, pp. 29–33; ASPT term 61",
+        "Chapter 01, pp. 29–33; ASPT terms 64–65 and guide pp. 8–9",
+        "Chapter 01, p. 28; Chapter 04, pp. 20–40"
+      ],
+      "removedPractice": [
+        15,
+        20,
+        23,
+        28,
+        41
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "blood",
+      "title": "Foundation: blood, vessels and oxygen delivery",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–49",
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–46",
+        "ASPT guide, p. 4; Chapter 03, pp. 47–49",
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–49",
+        "Chapter 03, pp. 98–102; foundation for circulation and transportation",
+        "Basic clarification of the guide's color convention, p. 4"
+      ],
+      "removedPractice": [
+        85,
+        92,
+        93
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "anatomy",
+      "title": "Heart location, chambers, valves and the guide diagram",
+      "checked": true,
+      "sourcePoints": [
+        "Chapter 03, pp. 4–9; ASPT terms 4, 10, 21. Apex/base: brief guide-term clarification.",
+        "Chapter 03, pp. 18–22; ASPT guide, p. 8",
+        "Chapter 03, pp. 27–32; ASPT guide, p. 8",
+        "Chapter 03, pp. 27–32; ASPT guide, p. 8. Conus/trabeculae: brief guide-label clarification.",
+        "ASPT guide, p. 8"
+      ],
+      "removedPractice": [],
+      "removedFigures": []
+    },
+    {
+      "id": "muscle",
+      "title": "Myocardium, heart layers and cell properties",
+      "checked": true,
+      "sourcePoints": [
+        "Chapter 03, pp. 7–11; ASPT terms 16, 17, 25, 27",
+        "Chapter 03, pp. 7–11; ASPT terms 13, 19, 36",
+        "Chapter 03, pp. 18–22; Chapter 11, pp. 4–6",
+        "Chapter 03, pp. 103–111; foundation for the conduction-system requirement"
+      ],
+      "removedPractice": [
+        121
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "circulation",
+      "title": "Trace blood flow forward and backward",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT guide, pp. 4–5, 8; Chapter 03, pp. 43–49, 66–89",
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–49",
+        "ASPT term 14; Chapter 11, pp. 4–6",
+        "Chapter 03, p. 44"
+      ],
+      "removedPractice": [
+        580,
+        581
+      ],
+      "removedFigures": [
+        "v028"
+      ]
+    },
+    {
+      "id": "disease",
+      "title": "Common disorders: simple class definitions",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT terms 1, 20, 24, 66; Chapter 11, pp. 7–21",
+        "ASPT terms 5–6; Chapter 03, p. 50",
+        "ASPT competency 1g and term 23; Chapter 03, pp. 33–36",
+        "ASPT competency 1g; Chapter 03, pp. 39–40",
+        "ASPT competency 1g; Chapter 03, pp. 36, 42. Basic clarification: inflammation is not always infection.",
+        "ASPT term 33; Chapter 03, p. 36"
+      ],
+      "removedPractice": [
+        106,
+        338,
+        340,
+        341
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "pressure",
+      "title": "Blood pressure and pumping mechanics",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competency 1h; Chapter 03, p. 57",
+        "ASPT terms 15, 39; Chapter 03, p. 57",
+        "ASPT terms 42–43; Chapter 03, p. 47",
+        "ASPT competency 1h; source limitation"
+      ],
+      "removedPractice": [
+        319,
+        320,
+        322,
+        323,
+        325
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "airway",
+      "title": "Respiratory pathway and parts",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competency 2e and terms 79–89; Chapter 02, pp. 8–18",
+        "Chapter 02, pp. 8–12",
+        "Chapter 02, pp. 12–16; ASPT terms 79–81",
+        "Chapter 02, pp. 13–18"
+      ],
+      "removedPractice": [
+        58,
+        73
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "respiration",
+      "title": "Ventilation, diffusion, transportation and normal rate",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competency 2d; Chapter 02, pp. 3–7, 26–40",
+        "ASPT competency 2b and terms 83–84, 91; Chapter 02, pp. 26–31",
+        "ASPT terms 82, 90; Chapter 02, pp. 32–40",
+        "ASPT competency 2c; Chapter 02, pp. 41–43"
+      ],
+      "removedPractice": [
+        46,
+        63,
+        64,
+        69,
+        70,
+        80,
+        81
+      ],
+      "removedFigures": [
+        "v012"
+      ]
+    },
+    {
+      "id": "conduction",
+      "title": "Conduction pathway, locations and functions",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competencies 3b–3e; Chapter 03, pp. 103–111",
+        "ASPT terms 9, 26, 34; Chapter 03, pp. 104–107",
+        "ASPT terms 8, 11, 12, 32; Chapter 03, pp. 105–108",
+        "Chapter 03, pp. 104–108; foundation for rhythm recognition",
+        "ASPT term 67; Chapter 10, pp. 2, 6–9, 15"
+      ],
+      "removedPractice": [
+        270,
+        277
+      ],
+      "removedFigures": [
+        "v027"
+      ]
+    },
+    {
+      "id": "cycle",
+      "title": "Electrical readiness, activation, recovery and pumping",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competency 4d and term 53; Chapter 03, pp. 23–26",
+        "ASPT terms 54, 68, 71; Chapter 04, p. 123",
+        "Chapter 04, pp. 46–58; foundation for PQRST",
+        "ASPT term 72; Chapter 03, p. 57; Chapter 04, p. 123"
+      ],
+      "removedPractice": [
+        158,
+        159,
+        163,
+        382,
+        386
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "instrument",
+      "title": "Recorder, tracing, electrodes and signal meaning",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT terms 55, 57–58; Chapter 01, pp. 8–9",
+        "ASPT terms 59, 63; Chapter 04, pp. 20–40",
+        "ASPT competency 4b; Chapter 04, pp. 4, 46",
+        "ASPT competencies 4c, 4f–4g and guide p. 2; class workflow is incomplete"
+      ],
+      "removedPractice": [
+        172,
+        278
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "waves",
+      "title": "Read P–Q–R–S–T/U and the guide's waveform",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competency 4e and term 69; Chapter 04, pp. 48–55",
+        "Chapter 04, pp. 50, 57; ASPT term 69",
+        "ASPT terms 51, 62, 74; Chapter 04, pp. 47, 51–56",
+        "ASPT guide, p. 9",
+        "ASPT guide, p. 9; Chapter 04, pp. 5–17"
+      ],
+      "removedPractice": [],
+      "removedFigures": []
+    },
+    {
+      "id": "measure",
+      "title": "Paper scale, calibration and measurements",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT competency 4f; Chapter 04, pp. 5–17",
+        "ASPT term 77; Chapter 04, pp. 5–17",
+        "ASPT terms 62, 73–74; Chapter 04, pp. 51–58",
+        "Chapter 05, pp. 5–31; supports the paper-measurement requirement",
+        "Worked practice using the class paper scale and rate methods"
+      ],
+      "removedPractice": [
+        227,
+        368
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "limb",
+      "title": "Limb leads, markings and what each view measures",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT terms 63, 76; Chapter 04, pp. 24–33",
+        "ASPT terms 49–50; Chapter 04, pp. 34–40",
+        "ASPT competency 4g; Chapter 04, pp. 24–40",
+        "ASPT competency 4g; Chapter 04, pp. 20–41"
+      ],
+      "removedPractice": [
+        175,
+        177,
+        281,
+        363
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "placement",
+      "title": "Place V1–V6 using the guide diagram",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT guide, p. 8; required placement clarified by the existing placement reference",
+        "ASPT guide, p. 8; Chapter 01, pp. 29–33",
+        "ASPT guide, p. 8; Chapter 01, pp. 29–33",
+        "Chapter 01, pp. 24–33; Chapter 04, pp. 24–40",
+        "ASPT guide, p. 9; Chapter 01, pp. 29–33"
+      ],
+      "removedPractice": [],
+      "removedFigures": []
+    },
+    {
+      "id": "prep",
+      "title": "Patient preparation and signal acquisition",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT terms 59–60 and competency 4g; Chapter 04, pp. 20, 41",
+        "Chapter 04, pp. 41, 63–64",
+        "Chapter 04, pp. 20–41, 63–64",
+        "ASPT competency 4g and guide pp. 2–3; source gap"
+      ],
+      "removedPractice": [
+        281
+      ],
+      "removedFigures": []
+    },
+    {
+      "id": "artifacts",
+      "title": "Recognize artifacts without mistaking them for rhythms",
+      "checked": true,
+      "sourcePoints": [
+        "ASPT term 47 and competency 4h; Chapter 04, pp. 63–64",
+        "Chapter 04, pp. 63–64",
+        "Chapter 04, pp. 20, 41, 63–64; foundation for reliable recording"
+      ],
+      "removedPractice": [],
+      "removedFigures": []
+    },
+    {
+      "id": "rhythms",
+      "title": "Systematic rhythm recognition for this blueprint",
+      "checked": true,
+      "sourcePoints": [
+        "Chapter 05, pp. 2–31; ASPT competency 4h",
+        "Chapter 06, pp. 11–49; ASPT terms 52, 75, 78",
+        "ASPT competency 4h; Chapters 05–10",
+        "Existing source-verified ECG practice; class interpretation workflow",
+        "ASPT terms 45–48, 56; Chapters 05–10"
+      ],
+      "removedPractice": [
+        274,
+        275,
+        276
+      ],
+      "removedFigures": []
+    }
+  ],
+  "retainedUnfamiliarClassTopics": [
+    {
+      "topic": "Regurgitation, stenosis, atresia",
+      "source": "Chapter 03 p.33"
+    },
+    {
+      "topic": "Cardiomyopathy and heart failure",
+      "source": "Chapter 03 pp.39–40"
+    },
+    {
+      "topic": "Pericarditis, myocarditis, endocarditis",
+      "source": "Chapter 03 p.42"
+    },
+    {
+      "topic": "Arteriosclerosis and atherosclerosis",
+      "source": "Chapter 03 p.50"
+    },
+    {
+      "topic": "Rheumatic fever",
+      "source": "ASPT term 33; Chapter 03 p.36"
+    }
+  ],
+  "removedEmphasis": [
+    "Separate thrombus/embolus vocabulary comparison",
+    "Cardiac output and ejection fraction calculations/details",
+    "Blood pH and capnography values/curves",
+    "Ion-channel phases, ionic pump stoichiometry and action-potential diagrams",
+    "Detailed pacemaker configurations and malfunction troubleshooting",
+    "Coronary branch/venous anatomy memorization",
+    "QTc calculations and unnecessary duration calculations"
+  ],
+  "limitations": "ASPT gives broad competencies rather than a complete official question list. Basic required terms lacking adequate slide definitions remain explicitly flagged; no prescribed topic was removed."
+}

@@ -14,7 +14,7 @@
       ],
       "group": "Competencies",
       "status": "Covered but needs reinforcement",
-      "note": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor."
+      "note": "Rheumatic fever is required by the guide but only named as a valve-disease cause in Chapter 03 p.36. Keep the basic definition here; ask your instructor if further detail is expected."
     },
     {
       "id": "1b",
@@ -74,7 +74,7 @@
       "also": [],
       "group": "Competencies",
       "status": "Covered but needs reinforcement",
-      "note": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor."
+      "note": "Rheumatic fever is required by the guide but only named as a valve-disease cause in Chapter 03 p.36. Keep the basic definition here; ask your instructor if further detail is expected."
     },
     {
       "id": "1h",
@@ -603,7 +603,7 @@
       "page": 6,
       "lesson": "disease",
       "status": "Covered but needs reinforcement",
-      "note": "Named as a valve-disease cause in chapter 03 p.36; CDC supplies the additional explanation.",
+      "note": "Explicit ASPT term; Chapter 03 p.36 gives the valve-disease connection. Full disease mechanism is outside this focused review.",
       "term": 33
     },
     {
@@ -1193,7 +1193,7 @@
       "page": 8,
       "lesson": "anatomy",
       "status": "Covered but needs reinforcement",
-      "note": "Every label explained; conus/trabeculae require a flagged supplemental anatomy reference."
+      "note": "The slides' searchable text does not fully define apex/base, conus arteriosus or trabeculae carneae. The guide diagram identifies the latter structures; basic definitions are supplied as an explicit supplemental anatomy clarification."
     },
     {
       "id": "D2",
@@ -1211,7 +1211,7 @@
       "page": 9,
       "lesson": "waves",
       "status": "Covered but needs reinforcement",
-      "note": "P–T explained from the image. U and exact uncalibrated measurements cannot be identified reliably."
+      "note": "The guide asks about U but its diagram does not show a reliably distinct U wave. The slides describe it, but the mechanism is not uniquely established; learn recognition without forcing a visible U."
     },
     {
       "id": "H1",
@@ -1797,5 +1797,6 @@
       "embeddedName": "Image481.jpg",
       "sourceSha256": "ffbde10b2cdcfa4dec530b24849857a8b1cb7dbd90b12f6e3ed7aea0e3a2e765"
     }
-  }
+  },
+  "scopeRevision": "2026-09-13"
 }
