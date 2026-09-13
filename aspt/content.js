@@ -13,7 +13,7 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -63,7 +63,7 @@ const ASPT_DATA = {
       "id": 4,
       "term": "APEX",
       "simple": "The pointed lower tip of the heart.",
-      "clinical": "It is formed mainly by the left ventricle and points down and toward the patient's left; do not confuse it with the broad base.",
+      "clinical": "Identify the pointed tip, directed downward and toward the patient's left. Do not confuse it with the broad base.",
       "lesson": "anatomy",
       "page": 5,
       "sources": [
@@ -85,7 +85,7 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -105,7 +105,7 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -175,7 +175,7 @@ const ASPT_DATA = {
       "id": 10,
       "term": "BASE OF HEART",
       "simple": "The broad upper/posterior part of the heart opposite its tip.",
-      "clinical": "It is largely atrial, especially left atrial; the great-vessel region is superior. It is not the pointed lower apex.",
+      "clinical": "Identify the broad upper/back part opposite the apex. Only this basic orientation is needed here.",
       "lesson": "anatomy",
       "page": 5,
       "sources": [
@@ -247,7 +247,7 @@ const ASPT_DATA = {
       "id": 14,
       "term": "CORONARY ARTERIES",
       "simple": "The arteries that supply the heart muscle itself.",
-      "clinical": "They arise from the aortic root and belong to the systemic circulation; they are not the blood path through the chambers.",
+      "clinical": "They supply the myocardium with oxygen. They are different from the main blood-flow route through the chambers.",
       "lesson": "circulation",
       "page": 5,
       "sources": [
@@ -273,7 +273,7 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "23–26, 47, 57, 101–102"
+          "47, 57"
         ]
       ],
       "status": "Covered completely",
@@ -283,7 +283,7 @@ const ASPT_DATA = {
       "id": 16,
       "term": "ENDOCARDIUM",
       "simple": "The thin inner lining of the heart chambers and valves.",
-      "clinical": "It is inside the myocardium. The ventricular Purkinje network is subendocardial, not an outer epicardial network.",
+      "clinical": "Endocardium is the inner lining; myocardium is the muscle layer; epicardium is the outer layer.",
       "lesson": "muscle",
       "page": 5,
       "sources": [
@@ -299,7 +299,7 @@ const ASPT_DATA = {
       "id": 17,
       "term": "EPICARDIUM",
       "simple": "The outer surface layer of the heart wall.",
-      "clinical": "It is also the visceral layer of the serous pericardium; distinguish it from the surrounding fibrous sac.",
+      "clinical": "Locate it outside the myocardium. The pericardium is the sac surrounding the heart.",
       "lesson": "muscle",
       "page": 5,
       "sources": [
@@ -335,7 +335,7 @@ const ASPT_DATA = {
       "id": 19,
       "term": "INTERCALATED DISKS",
       "simple": "Junctions connecting neighboring cardiac muscle cells.",
-      "clinical": "Mechanical connections hold cells together; gap junctions allow electrical communication. The slides also spell them 'discs'.",
+      "clinical": "These connections let neighboring cardiac muscle cells work together. The slides also spell them 'discs'.",
       "lesson": "muscle",
       "page": 5,
       "sources": [
@@ -357,7 +357,7 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -403,13 +403,13 @@ const ASPT_DATA = {
       "id": 23,
       "term": "MURMUR",
       "simple": "An extra heart sound associated with turbulent blood flow.",
-      "clinical": "It can accompany valve disease; normal S1 and S2 are primarily associated with valve closure.",
+      "clinical": "Distinguish an abnormal flow sound from the normal sounds of valves closing.",
       "lesson": "disease",
       "page": 5,
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -423,13 +423,13 @@ const ASPT_DATA = {
       "id": 24,
       "term": "MYOCARDIAL INFARCTION",
       "simple": "Death of heart muscle caused by ischemia.",
-      "clinical": "Distinguish infarction from temporary reduced oxygen supply or chest discomfort alone; no fixed minute threshold defines it.",
+      "clinical": "Infarction means muscle death; ischemia means inadequate blood supply and angina means chest discomfort.",
       "lesson": "disease",
       "page": 5,
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -479,7 +479,7 @@ const ASPT_DATA = {
       "id": 27,
       "term": "PERICARDIUM",
       "simple": "The sac surrounding and protecting the heart.",
-      "clinical": "Its fibrous and serous components help anchor the heart and reduce friction; it is not the muscle layer.",
+      "clinical": "It surrounds the heart and helps protect it and reduce friction. It is not the heart muscle.",
       "lesson": "muscle",
       "page": 5,
       "sources": [
@@ -590,14 +590,14 @@ const ASPT_DATA = {
     {
       "id": 33,
       "term": "RHEUMATIC FEVER",
-      "simple": "An inflammatory illness that can follow a group A strep infection.",
-      "clinical": "It can damage heart valves. The slides list it as a cause of valve disease but do not fully explain it; a CDC clarification is supplied.",
+      "simple": "An inflammatory illness that can damage heart valves.",
+      "clinical": "The guide lists this term; Chapter 03 p.36 names it as a cause of valve problems. Learn that connection here.",
       "lesson": "disease",
       "page": 6,
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -605,7 +605,7 @@ const ASPT_DATA = {
         ]
       ],
       "status": "Covered but needs reinforcement",
-      "note": "Named as a valve-disease cause in chapter 03 p.36; CDC supplies the additional explanation."
+      "note": "Explicit ASPT term; Chapter 03 p.36 gives the valve-disease connection. Full disease mechanism is outside this focused review."
     },
     {
       "id": 34,
@@ -703,13 +703,13 @@ const ASPT_DATA = {
       "id": 39,
       "term": "SYSTOLE",
       "simple": "The contracting/ejecting portion of the cardiac cycle.",
-      "clinical": "During ventricular ejection the semilunar valves are open; electrical depolarization precedes the mechanical response.",
+      "clinical": "Compare contraction during systole with relaxation/filling during diastole.",
       "lesson": "pressure",
       "page": 6,
       "sources": [
         [
           3,
-          "23–26, 47, 57, 101–102"
+          "47, 57"
         ]
       ],
       "status": "Covered completely",
@@ -751,13 +751,13 @@ const ASPT_DATA = {
       "id": 42,
       "term": "VASOCONSTRICTION",
       "simple": "Narrowing of a blood vessel's lumen.",
-      "clinical": "Contraction of vascular smooth muscle increases resistance; compare with widening during vasodilation.",
+      "clinical": "A narrower vessel offers more resistance to blood flow. Compare with widening during vasodilation.",
       "lesson": "pressure",
       "page": 6,
       "sources": [
         [
           3,
-          "23–26, 47, 57, 101–102"
+          "47, 57"
         ]
       ],
       "status": "Covered completely",
@@ -767,13 +767,13 @@ const ASPT_DATA = {
       "id": 43,
       "term": "VASODILATION",
       "simple": "Widening of a blood vessel's lumen.",
-      "clinical": "Relaxation of vascular smooth muscle reduces resistance; the change is in vessel diameter, not heartbeat rate.",
+      "clinical": "A wider vessel offers less resistance to blood flow. This describes vessel width, not heart rate.",
       "lesson": "pressure",
       "page": 6,
       "sources": [
         [
           3,
-          "23–26, 47, 57, 101–102"
+          "47, 57"
         ]
       ],
       "status": "Covered completely",
@@ -1007,17 +1007,17 @@ const ASPT_DATA = {
       "id": 53,
       "term": "CARDIAC CYCLE",
       "simple": "One complete heartbeat, including electrical and mechanical events.",
-      "clinical": "At 75/min one cycle is 60/75 = 0.8 s; cycle length changes with rate.",
+      "clinical": "One cycle includes contraction (systole) and relaxation (diastole). It is one beat, not a whole minute of beats.",
       "lesson": "cycle",
       "page": 6,
       "sources": [
         [
           3,
-          "110–111"
+          "23–26, 57"
         ],
         [
           4,
-          "4, 19, 48–61, 123–139"
+          "46–58, 123"
         ]
       ],
       "status": "Covered completely",
@@ -1033,11 +1033,11 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "110–111"
+          "23–26, 57"
         ],
         [
           4,
-          "4, 19, 48–61, 123–139"
+          "46–58, 123"
         ]
       ],
       "status": "Covered completely",
@@ -1273,7 +1273,7 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -1307,17 +1307,17 @@ const ASPT_DATA = {
       "id": 68,
       "term": "POLARIZATION",
       "simple": "The electrically ready state with charge separation across a cell membrane.",
-      "clinical": "This is the electrical starting condition; it is not identical to ventricular filling or an ECG flat line.",
+      "clinical": "Use the class shorthand 'ready'. Depolarization is discharge and repolarization is recovery.",
       "lesson": "cycle",
       "page": 7,
       "sources": [
         [
           3,
-          "110–111"
+          "23–26, 57"
         ],
         [
           4,
-          "4, 19, 48–61, 123–139"
+          "46–58, 123"
         ]
       ],
       "status": "Covered completely",
@@ -1327,7 +1327,7 @@ const ASPT_DATA = {
       "id": 69,
       "term": "P-Q-R-S-T-U WAVES",
       "simple": "Named ECG deflections associated with cardiac electrical events.",
-      "clinical": "P: atrial depolarization; Q/R/S: ventricular depolarization; T: ventricular repolarization. A U wave is not always visible and its mechanism is not uniquely established.",
+      "clinical": "P = atrial depolarization; QRS = ventricular depolarization; T = ventricular repolarization. U may follow T but is not always visible; its cause is uncertain.",
       "lesson": "waves",
       "page": 7,
       "sources": [
@@ -1369,11 +1369,11 @@ const ASPT_DATA = {
       "sources": [
         [
           3,
-          "110–111"
+          "23–26, 57"
         ],
         [
           4,
-          "4, 19, 48–61, 123–139"
+          "46–58, 123"
         ]
       ],
       "status": "Covered completely",
@@ -1383,17 +1383,17 @@ const ASPT_DATA = {
       "id": 72,
       "term": "RESTING PHASE",
       "simple": "The recovery/ready period between activations, depending on context.",
-      "clinical": "The guide does not specify an action-potential phase. Separate polarized electrical readiness from mechanical diastole.",
+      "clinical": "The guide does not define this precisely. Keep electrical readiness separate from diastole, the relaxation/filling part of pumping.",
       "lesson": "cycle",
       "page": 7,
       "sources": [
         [
           3,
-          "110–111"
+          "23–26, 57"
         ],
         [
           4,
-          "4, 19, 48–61, 123–139"
+          "46–58, 123"
         ]
       ],
       "status": "Covered but needs reinforcement",
@@ -1547,17 +1547,13 @@ const ASPT_DATA = {
       "id": 79,
       "term": "ALVEOLI",
       "simple": "Tiny lung air sacs where most gas exchange occurs.",
-      "clinical": "Their thin walls lie next to pulmonary capillaries; terminal bronchioles are conducting airways, not the primary exchange surface.",
+      "clinical": "Find the air sacs next to tiny blood vessels. These are the main gas-exchange sites, unlike the larger airways.",
       "lesson": "respiration",
       "page": 7,
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "status": "Covered completely",
@@ -1583,7 +1579,7 @@ const ASPT_DATA = {
       "id": 81,
       "term": "BRONCHIOLES",
       "simple": "Small airway branches leading toward the gas-exchange region.",
-      "clinical": "Terminal bronchioles conduct air; respiratory bronchioles lead into alveolar ducts and sacs.",
+      "clinical": "Follow bronchi → bronchioles → alveoli. Alveoli are the main gas-exchange site.",
       "lesson": "airway",
       "page": 7,
       "sources": [
@@ -1605,11 +1601,7 @@ const ASPT_DATA = {
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "status": "Covered completely",
@@ -1619,17 +1611,13 @@ const ASPT_DATA = {
       "id": 83,
       "term": "EXHALATION",
       "simple": "Movement of air out of the lungs.",
-      "clinical": "Quiet expiration normally follows relaxation and elastic recoil; compare the direction of diaphragm movement with inspiration.",
+      "clinical": "During quiet exhalation the diaphragm relaxes and air moves out; during inhalation it contracts downward.",
       "lesson": "respiration",
       "page": 7,
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "status": "Covered completely",
@@ -1645,11 +1633,7 @@ const ASPT_DATA = {
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "status": "Covered completely",
@@ -1745,11 +1729,7 @@ const ASPT_DATA = {
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "status": "Covered completely",
@@ -1765,11 +1745,7 @@ const ASPT_DATA = {
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "status": "Covered completely",
@@ -1791,10 +1767,10 @@ const ASPT_DATA = {
       "requirement": "Intercostal spaces, midclavicular and midaxillary landmarks, and accurate lead placement.",
       "prerequisites": [],
       "body": [
-        "PREREQUISITE / FOUNDATION: Use the patient's own right and left. Anatomical position faces forward with palms forward. Superior/inferior mean toward head/feet; anterior/posterior mean front/back; medial/lateral mean toward/away from the midline.",
-        "The sternum is the breastbone and the clavicle is the collarbone. The sternal angle helps locate the second rib; count spaces below ribs. There are normally 12 rib pairs and 11 intercostal spaces on each side.",
-        "The midclavicular line drops through the middle of the clavicle. Anterior axillary runs down the front of the axilla; midaxillary down its middle. Guide p.9 conflates these landmarks; use these distinct definitions.",
-        "Frontal views separate front/back and are used by limb leads. Transverse views cut across the chest and are used by V1–V6."
+        "Use the patient's right and left. Anterior means front; posterior means back. Superior means toward the head; inferior means toward the feet. Medial means toward the middle; lateral means toward the side.",
+        "The sternum is the breastbone; the clavicle is the collarbone. Intercostal spaces are gaps between ribs, numbered for the rib just above. The sternal angle helps you start counting.",
+        "Midclavicular runs down from the middle of the clavicle. Anterior axillary runs down the front of the armpit; midaxillary runs down its middle. These landmarks locate chest electrodes.",
+        "Limb leads view the frontal plane (front/back view); chest leads view the transverse plane (across the chest)."
       ],
       "sources": [
         [
@@ -1812,24 +1788,25 @@ const ASPT_DATA = {
         12,
         13,
         14,
-        15,
         16,
         18,
         19,
-        20,
         21,
         22,
-        23,
         27,
-        28,
         29,
         30,
         31,
         39,
         40,
-        41,
         42,
         43
+      ],
+      "bodyRefs": [
+        "Chapter 01, pp. 24–28",
+        "Chapter 01, pp. 29–33; ASPT term 61",
+        "Chapter 01, pp. 29–33; ASPT terms 64–65 and guide pp. 8–9",
+        "Chapter 01, p. 28; Chapter 04, pp. 20–40"
       ]
     },
     {
@@ -1843,12 +1820,12 @@ const ASPT_DATA = {
       "requirement": "The guide's circulatory-system overview names the heart, blood, arteries, arterioles, capillaries, venules and veins.",
       "prerequisites": [],
       "body": [
-        "Blood transports gases, nutrients and wastes. Plasma is the liquid medium; red cells carry oxygen in hemoglobin; white cells defend against infection; platelets support clotting.",
-        "Arteries carry blood away from the heart; veins carry it toward the heart. Capillaries are the exchange vessels. The pulmonary circuit reverses the usual systemic oxygen pattern without changing these directional definitions.",
-        "Arteries have relatively thick muscular walls to withstand pressure. Arterioles are small arteries leading toward capillary beds. Venules collect blood from capillaries into veins; many veins have valves that reduce backflow, but not every vein has valves.",
-        "Capillaries are microscopic, thin-walled exchange vessels. Red cells often pass single file. The guide calls them a mix of arterial and venous blood; more precisely, blood changes gas and nutrient content as it traverses the capillary bed, rather than the capillary being a separate mixing chamber.",
-        "The guide's blue coloring is a diagram convention: oxygen-poor blood is dark red, not blue. Its 'only artery/vein' wording is understood here in normal adult circulation, not as an exception-free rule for every circulation.",
-        "Perfusion means enough tissue blood flow to meet cell needs. Ventilation, oxygen saturation and perfusion are related but are not interchangeable measures."
+        "The circulatory system consists of the heart, blood and blood vessels. Blood carries oxygen and nutrients to cells and removes carbon dioxide and wastes.",
+        "Arteries carry blood away from the heart; veins carry it back. Arterioles are small arteries and venules are small veins. Capillaries are tiny exchange vessels where oxygen and nutrients leave the blood and wastes enter it.",
+        "Artery walls withstand pumping pressure. Many veins have valves to reduce backward flow. Capillary walls are thin so exchange can occur.",
+        "In the pulmonary circuit, arteries carry oxygen-poor blood to the lungs and veins return oxygen-rich blood to the heart. Name a vessel by its direction, not its oxygen content.",
+        "Red blood cells carry oxygen using hemoglobin. Plasma is the liquid portion; white cells help fight infection and platelets help clotting. Perfusion means supplying tissues with enough blood.",
+        "Blue is a diagram color for oxygen-poor blood, not its actual color. Read the guide's vessel descriptions in the context of normal adult circulation."
       ],
       "sources": [
         [
@@ -1860,16 +1837,21 @@ const ASPT_DATA = {
         "v018"
       ],
       "bank": [
-        85,
         86,
         87,
         88,
         89,
         90,
         91,
-        92,
-        93,
         328
+      ],
+      "bodyRefs": [
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–49",
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–46",
+        "ASPT guide, p. 4; Chapter 03, pp. 47–49",
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–49",
+        "Chapter 03, pp. 98–102; foundation for circulation and transportation",
+        "Basic clarification of the guide's color convention, p. 4"
       ]
     },
     {
@@ -1888,11 +1870,11 @@ const ASPT_DATA = {
         "blood"
       ],
       "body": [
-        "The heart is a fist-sized hollow muscular pump in the mediastinum, behind the sternum and between the lungs. Its pointed apex faces inferiorly and leftward; its broad base is superior/posterior.",
-        "Atria receive blood; ventricles eject it. Right heart → lungs; left heart → body. Interatrial and interventricular septa separate the respective chambers.",
-        "AV valves: tricuspid on the right and mitral/bicuspid on the left. Semilunar valves: pulmonic at the right ventricular exit and aortic at the left ventricular exit. Pressure differences control opening and closing.",
-        "Chordae tendineae connect AV valve cusps to papillary muscles and help prevent prolapse during contraction. They do not attach to semilunar valves. Trabeculae carneae are muscular ridges inside ventricles; the conus arteriosus is the right ventricular outflow region leading to the pulmonary trunk.",
-        "On the guide diagram, trace the ascending aorta into its arch; identify the venae cavae, pulmonary trunk/arteries/veins, all four chambers and valves, both septa, papillary muscle, chordae and ventricular ridges. A question may ask location, function, or the next structure blood reaches—not just a label."
+        "The heart is a muscular pump about the size of a fist, behind the sternum and between the lungs in the mediastinum. The apex is its pointed lower tip; the base is the broad part opposite the tip.",
+        "The right and left atria receive blood. The right ventricle pumps to the lungs; the left ventricle pumps to the body. The septa are walls separating the right and left chambers.",
+        "Tricuspid: right atrium to right ventricle. Mitral/bicuspid: left atrium to left ventricle. Pulmonary valve: right ventricle to pulmonary trunk. Aortic valve: left ventricle to aorta. Valves help keep blood flowing one way.",
+        "On the guide diagram, chordae tendineae are cords connecting AV valves to papillary muscles. They help stop the valves from turning backward. Trabeculae carneae are muscle ridges inside the ventricles; conus arteriosus is the right ventricular outlet toward the pulmonary valve.",
+        "Identify each label below, say its simple job, and trace where blood goes next. The two unusual labels remain because they are printed on the ASPT guide diagram."
       ],
       "sources": [
         [
@@ -1925,7 +1907,14 @@ const ASPT_DATA = {
         136
       ],
       "gap": "The slides' searchable text does not fully define apex/base, conus arteriosus or trabeculae carneae. The guide diagram identifies the latter structures; basic definitions are supplied as an explicit supplemental anatomy clarification.",
-      "extra": "anatomy"
+      "extra": "anatomy",
+      "bodyRefs": [
+        "Chapter 03, pp. 4–9; ASPT terms 4, 10, 21. Apex/base: brief guide-term clarification.",
+        "Chapter 03, pp. 18–22; ASPT guide, p. 8",
+        "Chapter 03, pp. 27–32; ASPT guide, p. 8",
+        "Chapter 03, pp. 27–32; ASPT guide, p. 8. Conus/trabeculae: brief guide-label clarification.",
+        "ASPT guide, p. 8"
+      ]
     },
     {
       "id": "muscle",
@@ -1941,10 +1930,10 @@ const ASPT_DATA = {
         "anatomy"
       ],
       "body": [
-        "From inside outward: endocardium → myocardium → epicardium. The pericardial sac surrounds the heart; serous fluid reduces friction.",
-        "Cardiac muscle is striated and involuntary. Intercalated discs provide cell-to-cell mechanical and electrical connections. The left ventricle is thicker because it pumps against greater systemic resistance.",
-        "Automaticity means initiating an impulse; excitability means responding; conductivity means transmitting; contractility means shortening. These are different functions, not synonyms.",
-        "Electrical activation and muscle contraction are coupled, but an ECG alone cannot establish a pulse. Coronary blood supply is essential for the myocardium's oxygen needs."
+        "Heart wall layers, inside to outside: endocardium (inner lining), myocardium (muscle), epicardium (outer layer). The pericardium is the sac around the heart.",
+        "Cardiac muscle is involuntary and striated: it works without conscious control and looks striped under a microscope. Intercalated discs connect neighboring cardiac muscle cells.",
+        "The left ventricle has thicker muscle because it pumps blood to the whole body. Coronary arteries supply the heart muscle itself.",
+        "Four class properties: automaticity = starts an impulse; excitability = responds to an impulse; conductivity = carries an impulse; contractility = contracts."
       ],
       "sources": [
         [
@@ -1959,7 +1948,6 @@ const ASPT_DATA = {
       "bank": [
         119,
         120,
-        121,
         125,
         128,
         145,
@@ -1967,6 +1955,12 @@ const ASPT_DATA = {
         147,
         148,
         356
+      ],
+      "bodyRefs": [
+        "Chapter 03, pp. 7–11; ASPT terms 16, 17, 25, 27",
+        "Chapter 03, pp. 7–11; ASPT terms 13, 19, 36",
+        "Chapter 03, pp. 18–22; Chapter 11, pp. 4–6",
+        "Chapter 03, pp. 103–111; foundation for the conduction-system requirement"
       ]
     },
     {
@@ -1986,10 +1980,10 @@ const ASPT_DATA = {
         "blood"
       ],
       "body": [
-        "Forward route: body veins → superior/inferior vena cava → right atrium → tricuspid valve → right ventricle → pulmonic valve → pulmonary trunk/arteries → lung capillaries → pulmonary veins → left atrium → mitral valve → left ventricle → aortic valve → aorta → systemic arteries → arterioles → tissue capillaries → venules → veins.",
-        "Pulmonary circulation connects right heart, lungs and left heart. Systemic circulation connects left heart, body tissues and right heart.",
-        "Coronary arteries arise from the aortic root and supply the myocardium. Coronary venous blood returns mainly through the coronary sinus to the right atrium. Coronary circulation is part of the systemic circuit.",
-        "Practice the route backward too: just before the aorta is the aortic valve, then the left ventricle. In a multiple-choice question, name the direction first, then the structure."
+        "Blood-flow route: body → venae cavae → right atrium → tricuspid valve → right ventricle → pulmonary valve → pulmonary arteries → lungs → pulmonary veins → left atrium → mitral valve → left ventricle → aortic valve → aorta → body.",
+        "Pulmonary circulation is the heart–lung route. Systemic circulation is the heart–body route. In lung capillaries, blood releases carbon dioxide and picks up oxygen; in body capillaries, it delivers oxygen and picks up wastes.",
+        "Coronary arteries supply oxygen to the heart muscle. For this review, learn their basic job rather than memorizing individual coronary branches.",
+        "Practice the main blood-flow sequence forward and backward, as the class requests. For example: immediately before the aorta is the aortic valve, and before that is the left ventricle."
       ],
       "sources": [
         [
@@ -2003,8 +1997,7 @@ const ASPT_DATA = {
       ],
       "visuals": [
         "g01",
-        "v018",
-        "v028"
+        "v018"
       ],
       "bank": [
         107,
@@ -2014,14 +2007,18 @@ const ASPT_DATA = {
         111,
         112,
         113,
-        114,
-        580,
-        581
+        114
+      ],
+      "bodyRefs": [
+        "ASPT guide, pp. 4–5, 8; Chapter 03, pp. 43–49, 66–89",
+        "ASPT guide, pp. 4–5; Chapter 03, pp. 45–49",
+        "ASPT term 14; Chapter 11, pp. 4–6",
+        "Chapter 03, p. 44"
       ]
     },
     {
       "id": "disease",
-      "title": "Common disorders and the vocabulary traps",
+      "title": "Common disorders: simple class definitions",
       "domain": "Heart",
       "guide": [
         3,
@@ -2035,17 +2032,17 @@ const ASPT_DATA = {
         "circulation"
       ],
       "body": [
-        "Ischemia is inadequate blood supply; angina is a symptom of myocardial ischemia; infarction is myocardial cell death. These are not interchangeable.",
-        "Arteriosclerosis is arterial stiffening/thickening; atherosclerosis is plaque buildup. A thrombus forms in place, while an embolus travels. A narrowed coronary lumen threatens myocardial oxygen supply.",
-        "Valve stenosis restricts forward flow; regurgitation permits backward leakage; atresia is failure of a normal valve opening to form. Turbulent flow may cause a murmur.",
-        "Cardiomyopathy affects heart muscle; heart failure is inability to meet circulatory needs. Pericarditis, myocarditis and endocarditis affect different layers. Risk factors may be modifiable (such as smoking) or nonmodifiable (such as age/family history).",
-        "Rheumatic fever can follow a group A streptococcal infection and can damage valves. The class lists it as a valve-disease cause but does not explain the process fully; the CDC explanation is a labeled supplement.",
-        "ASPT does not specify which individual arrhythmias or diseases dominate the exam. Do not treat the class's extra ACS details or treatment doses as a published ASPT weighting."
+        "Ischemia means inadequate blood supply and oxygen. Angina is chest discomfort from insufficient oxygen to heart muscle. Myocardial infarction means heart muscle has died from loss of blood supply.",
+        "Arteriosclerosis means hardening or thickening of artery walls. Atherosclerosis means plaque buildup in arteries. Plaque in coronary arteries can reduce blood supply to heart muscle.",
+        "Valve problems: regurgitation = backward leakage; stenosis = a narrowed valve opening; atresia = the normal opening did not form. A murmur is an abnormal sound caused by turbulent blood flow.",
+        "Cardiomyopathy means disease of heart muscle. Heart failure means the heart cannot pump enough blood to meet the body's needs. Learn these simple meanings here.",
+        "Match the name to the affected layer: pericarditis = inflammation of the surrounding sac; myocarditis = inflammation of heart muscle; endocarditis = inflammation of the inner lining/valves, commonly due to infection. Inflammation does not automatically mean infection.",
+        "Rheumatic fever is an inflammatory illness that can damage heart valves. It is explicitly on the ASPT term list and named as a valve-disease cause in class. The class does not teach its full mechanism."
       ],
       "sources": [
         [
           3,
-          "33–42, 50–56"
+          "33–42, 50"
         ],
         [
           11,
@@ -2059,7 +2056,6 @@ const ASPT_DATA = {
       "bank": [
         104,
         105,
-        106,
         297,
         298,
         299,
@@ -2070,14 +2066,19 @@ const ASPT_DATA = {
         333,
         334,
         335,
-        338,
         339,
-        340,
-        341,
         337
       ],
-      "gap": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor.",
-      "extra": "rheumatic"
+      "gap": "Rheumatic fever is required by the guide but only named as a valve-disease cause in Chapter 03 p.36. Keep the basic definition here; ask your instructor if further detail is expected.",
+      "extra": "rheumatic",
+      "bodyRefs": [
+        "ASPT terms 1, 20, 24, 66; Chapter 11, pp. 7–21",
+        "ASPT terms 5–6; Chapter 03, p. 50",
+        "ASPT competency 1g and term 23; Chapter 03, pp. 33–36",
+        "ASPT competency 1g; Chapter 03, pp. 39–40",
+        "ASPT competency 1g; Chapter 03, pp. 36, 42. Basic clarification: inflammation is not always infection.",
+        "ASPT term 33; Chapter 03, p. 36"
+      ]
     },
     {
       "id": "pressure",
@@ -2094,16 +2095,15 @@ const ASPT_DATA = {
         "muscle"
       ],
       "body": [
-        "Blood pressure is the pressure blood exerts on arterial walls, reported in mmHg. Systolic is the high pressure associated with ventricular contraction; diastolic is the lower pressure during relaxation/filling.",
-        "Do not confuse pressure with rate (beats/min) or volume (mL). Vasoconstriction narrows a lumen and increases resistance; vasodilation widens it and decreases resistance.",
-        "Stroke volume is volume ejected per beat; cardiac output = stroke volume × heart rate. These class concepts explain why filling time, force and rate affect perfusion.",
-        "For example, 70 mL/beat × 70 beats/min = 4.9 L/min. Ejection fraction is the fraction of filled ventricular volume ejected; it is not blood pressure.",
-        "The guide does not specify a hypertension threshold or a detailed manual-BP protocol. The class provides basic systole/diastole teaching; practical cuff technique needs instructor reinforcement rather than an invented exam rule."
+        "Blood pressure is the pressure blood exerts on artery walls. It is recorded as systolic over diastolic, in mmHg.",
+        "Systolic is the top number, associated with ventricular contraction. Diastolic is the bottom number, associated with ventricular relaxation and filling.",
+        "Vasoconstriction means a vessel narrows; vasodilation means it widens. These change resistance to blood flow.",
+        "Learn these meanings and their relationship to pumping. The guide does not give a detailed cuff procedure; ask your instructor for the practical steps expected."
       ],
       "sources": [
         [
           3,
-          "23–26, 47, 57, 101–102"
+          "47, 57"
         ]
       ],
       "visuals": [
@@ -2114,14 +2114,15 @@ const ASPT_DATA = {
         95,
         96,
         97,
-        98,
-        319,
-        320,
-        322,
-        323,
-        325
+        98
       ],
-      "gap": "The slides explain pressure physiology but do not provide a complete manual blood-pressure procedure. Practical technique remains an instructor reinforcement item."
+      "gap": "The slides explain pressure physiology but do not provide a complete manual blood-pressure procedure. Practical technique remains an instructor reinforcement item.",
+      "bodyRefs": [
+        "ASPT competency 1h; Chapter 03, p. 57",
+        "ASPT terms 15, 39; Chapter 03, p. 57",
+        "ASPT terms 42–43; Chapter 03, p. 47",
+        "ASPT competency 1h; source limitation"
+      ]
     },
     {
       "id": "airway",
@@ -2138,10 +2139,10 @@ const ASPT_DATA = {
         "blood"
       ],
       "body": [
-        "Trace air from nose/nasal cavity or mouth → pharynx → larynx → trachea → main bronchi → smaller bronchi → bronchioles → respiratory region → alveoli.",
-        "The nasal cavity filters, warms and humidifies air. The pharynx is the throat passage; the larynx is the voice box; the epiglottis helps protect the airway during swallowing.",
-        "Right lung: three lobes. Left lung: two. The pleura surrounds the lungs and its lubricated surfaces reduce friction. The diaphragm lies below and changes chest volume.",
-        "Separate conducting airways from gas-exchange surfaces. Terminal bronchioles conduct air; alveoli and the respiratory zone provide gas exchange. The guide/slides' loose bronchiole wording should not move the primary exchange site into the trachea."
+        "Air pathway: nose or mouth → pharynx → larynx → trachea → bronchi → bronchioles → alveoli.",
+        "The nose filters, warms and moistens air. The pharynx is the throat passage; the larynx is the voice box; the trachea is the windpipe. The epiglottis helps cover the airway during swallowing.",
+        "Bronchi are the main branches into the lungs; bronchioles are smaller branches. Alveoli are the tiny air sacs where gas exchange occurs.",
+        "The right lung has three lobes and the left has two. The pleura surrounds the lungs and reduces friction. The diaphragm is the main muscle below the lungs used in breathing."
       ],
       "sources": [
         [
@@ -2160,14 +2161,18 @@ const ASPT_DATA = {
         49,
         50,
         51,
-        58,
         72,
-        73,
         74,
         75,
         76,
         77,
         78
+      ],
+      "bodyRefs": [
+        "ASPT competency 2e and terms 79–89; Chapter 02, pp. 8–18",
+        "Chapter 02, pp. 8–12",
+        "Chapter 02, pp. 12–16; ASPT terms 79–81",
+        "Chapter 02, pp. 13–18"
       ]
     },
     {
@@ -2185,30 +2190,23 @@ const ASPT_DATA = {
         "blood"
       ],
       "body": [
-        "Ventilation moves air. During inspiration the diaphragm contracts downward, chest volume rises and pressure falls. During quiet expiration relaxation and elastic recoil reduce volume and move air outward.",
-        "Diffusion exchanges gases down partial-pressure gradients across thin respiratory surfaces. Transportation carries gases in blood between lungs and tissues.",
-        "The course's three phases are ventilation, diffusion and transportation. Ventilation alone is not proof of adequate oxygen delivery.",
-        "The class teaches a normal resting adult respiratory rate of 12–20 breaths/min. Oxygen saturation and end-tidal CO2 are different measurements: SpO2 relates to oxygen saturation; capnography relates to exhaled CO2.",
-        "Foundations from class: homeostasis, the medullary/brainstem influence on breathing, and CO2–pH relationships explain why breathing and circulation work together. These are supporting class concepts, not extra published ASPT domains."
+        "The three phases taught in class are ventilation, diffusion and transportation.",
+        "Ventilation moves air in and out. During inhalation, the diaphragm contracts downward and the chest expands, drawing air in. During quiet exhalation, it relaxes and air moves out.",
+        "Diffusion moves oxygen and carbon dioxide across the thin boundary between alveoli and blood. Transportation carries the gases in blood between the lungs and body tissues.",
+        "The normal resting adult respiratory rate taught in class is 12–20 breaths per minute. Know the rate, the three phases, and the direction of air and gas movement."
       ],
       "sources": [
         [
           2,
-          "3–7, 26–42, 43–55"
-        ],
-        [
-          3,
-          "98–99"
+          "3–7, 26–42"
         ]
       ],
       "visuals": [
         "v009",
-        "v010",
-        "v012"
+        "v010"
       ],
       "bank": [
         45,
-        46,
         52,
         53,
         54,
@@ -2216,13 +2214,13 @@ const ASPT_DATA = {
         56,
         57,
         59,
-        63,
-        64,
-        69,
-        70,
-        79,
-        80,
-        81
+        79
+      ],
+      "bodyRefs": [
+        "ASPT competency 2d; Chapter 02, pp. 3–7, 26–40",
+        "ASPT competency 2b and terms 83–84, 91; Chapter 02, pp. 26–31",
+        "ASPT terms 82, 90; Chapter 02, pp. 32–40",
+        "ASPT competency 2c; Chapter 02, pp. 41–43"
       ]
     },
     {
@@ -2241,11 +2239,11 @@ const ASPT_DATA = {
         "anatomy"
       ],
       "body": [
-        "Normal pathway: SA node → atrial/internodal conduction → AV node → AV bundle/Bundle of His → right and left bundle branches → Purkinje fibers.",
-        "The SA node is high in the right atrium near the superior vena cava. The AV node is low in the right atrial septal region; it delays conduction. The His–Purkinje system then distributes the impulse through the ventricles.",
-        "Intrinsic rates taught in class: SA 60–100/min, junctional 40–60/min, ventricular escape 20–40/min. These are reference ranges, not measurements to assume from a strip.",
-        "Atrial activation precedes ventricular activation; AV delay supports filling. An artificial pacemaker has a generator, leads and electrodes and may show a sharp pacing spike. Natural pacemaker tissue and implanted hardware are different meanings of 'pacemaker'.",
-        "On the conduction diagram, identify each location, then explain what would be delayed or lost if that part failed. AV bundle and Bundle of His are the same structure."
+        "Normal impulse order: SA node → AV node → AV bundle/Bundle of His → right and left bundle branches → Purkinje fibers.",
+        "The SA node is in the upper right atrium and normally starts the beat. The AV node is lower in the right atrial area and delays the impulse so the atria can empty before the ventricles contract.",
+        "The His bundle and bundle branches carry the impulse toward the ventricles. Purkinje fibers spread it through the ventricular walls. AV bundle and Bundle of His are two names for the same structure.",
+        "The class reference rates are SA 60–100/min, junctional/AV 40–60/min and ventricular/Purkinje 20–40/min. These are reference ranges; measure the actual rate on a strip.",
+        "'Pacemaker' can mean the heart's natural impulse source or an artificial device that supplies impulses. A device has a generator and leads/electrodes; its impulse may appear as a sharp spike."
       ],
       "sources": [
         [
@@ -2259,7 +2257,7 @@ const ASPT_DATA = {
       ],
       "visuals": [
         "v019",
-        "v027"
+        "v026"
       ],
       "bank": [
         149,
@@ -2271,10 +2269,15 @@ const ASPT_DATA = {
         165,
         166,
         167,
-        270,
         271,
-        277,
         302
+      ],
+      "bodyRefs": [
+        "ASPT competencies 3b–3e; Chapter 03, pp. 103–111",
+        "ASPT terms 9, 26, 34; Chapter 03, pp. 104–107",
+        "ASPT terms 8, 11, 12, 32; Chapter 03, pp. 105–108",
+        "Chapter 03, pp. 104–108; foundation for rhythm recognition",
+        "ASPT term 67; Chapter 10, pp. 2, 6–9, 15"
       ]
     },
     {
@@ -2291,40 +2294,40 @@ const ASPT_DATA = {
         "conduction"
       ],
       "body": [
-        "Polarization describes charge separation and electrical readiness. Depolarization activates cardiac cells; repolarization is recovery toward the resting electrical state.",
-        "Ion gradients and channels make electrical activity possible. The sodium–potassium pump maintains gradients; it is not identical to the rapidly changing action potential.",
-        "P precedes atrial contraction, and QRS precedes ventricular contraction. T represents ventricular electrical recovery. Electrical events and mechanical systole/diastole are related but are not the same thing.",
-        "Cycle duration = 60 ÷ rate in beats/min. At 75/min the cycle is 0.8 s; at 100/min it is 0.6 s. A fixed 0.8 s is not correct at every rate.",
-        "The guide's 'resting phase' is not assigned to a numbered action-potential phase. Learn the context instead of assuming it always means the ECG baseline or ventricular diastole."
+        "A cardiac cycle is one complete heartbeat: contraction and relaxation.",
+        "Class shorthand: polarization = ready; depolarization = discharge/activation; repolarization = recovery. Learn these three meanings without memorizing ion-channel phases.",
+        "P represents atrial electrical activation, QRS ventricular activation and T ventricular recovery. The electrical signal leads to pumping, but the ECG alone does not prove there is an effective pulse.",
+        "'Resting phase' is on the guide list without a precise definition. Distinguish electrical readiness from diastole, the mechanical relaxation/filling part of the cycle."
       ],
       "sources": [
         [
           3,
-          "110–111"
+          "23–26, 57"
         ],
         [
           4,
-          "4, 19, 48–61, 123–139"
+          "46–58, 123"
         ]
       ],
       "visuals": [
         "v023"
       ],
       "bank": [
-        158,
-        159,
         160,
         161,
         162,
-        163,
         303,
         304,
         359,
-        365,
-        382,
-        386
+        365
       ],
-      "gap": "'Resting phase' is ambiguous in the guide. Class electrical-ready terminology and mechanical diastole are distinguished here; confirm the intended wording if your instructor uses a specific numbered phase."
+      "gap": "'Resting phase' is not precisely defined by the guide. Learn the class ready/discharge/recovery language and the separate meaning of diastole; clarify the wording with your instructor.",
+      "bodyRefs": [
+        "ASPT competency 4d and term 53; Chapter 03, pp. 23–26",
+        "ASPT terms 54, 68, 71; Chapter 04, p. 123",
+        "Chapter 04, pp. 46–58; foundation for PQRST",
+        "ASPT term 72; Chapter 03, p. 57; Chapter 04, p. 123"
+      ]
     },
     {
       "id": "instrument",
@@ -2339,10 +2342,10 @@ const ASPT_DATA = {
         "cycle"
       ],
       "body": [
-        "The electrocardiograph is the instrument; the electrocardiogram is the tracing. ECG and EKG refer to the same test, not an ultrasound echocardiogram.",
-        "Skin electrodes detect potential differences; lead wires connect them to the machine, which displays or prints electrical views. A standard 12-lead study uses ten electrodes.",
-        "The record shows electrical activity and can reveal rate, rhythm and conduction patterns. It does not independently demonstrate an effective pulse, normal blood pressure or adequate perfusion.",
-        "Before measurements, check speed, gain, identification, lead labels and tracing quality. Device-specific controls and mounting instructions are not described in detail by the ASPT guide or slides."
+        "The electrocardiograph is the machine; the electrocardiogram is the tracing. ECG and EKG name the same test.",
+        "Electrodes are the contacts on the skin; lead wires connect them to the machine. A lead is an electrical view. Ten electrodes produce the standard twelve views.",
+        "The ECG records heart electrical activity. It helps assess rate, rhythm and conduction; it does not independently prove an effective pulse.",
+        "Check patient identification, lead labels, paper speed, calibration and tracing quality. The specific machine controls and mounted-EKG paperwork need your instructor's practical demonstration."
       ],
       "sources": [
         [
@@ -2362,13 +2365,17 @@ const ASPT_DATA = {
         0,
         1,
         168,
-        172,
-        278,
         279,
         283,
         365
       ],
-      "gap": "Instrument-specific operation and mounting/signing procedures are not fully taught by the slides. Obtain the expected practical workflow from the instructor; the documentation requirement remains in Exam-Day Requirements."
+      "gap": "Instrument-specific operation and mounting/signing procedures are not fully taught by the slides. Obtain the expected practical workflow from the instructor; the documentation requirement remains in Exam-Day Requirements.",
+      "bodyRefs": [
+        "ASPT terms 55, 57–58; Chapter 01, pp. 8–9",
+        "ASPT terms 59, 63; Chapter 04, pp. 20–40",
+        "ASPT competency 4b; Chapter 04, pp. 4, 46",
+        "ASPT competencies 4c, 4f–4g and guide p. 2; class workflow is incomplete"
+      ]
     },
     {
       "id": "waves",
@@ -2385,11 +2392,11 @@ const ASPT_DATA = {
         "instrument"
       ],
       "body": [
-        "P is the small atrial-depolarization deflection before QRS. Q is an initial negative deflection before R; R is a positive deflection; S is negative after R. Q, R and S together represent ventricular depolarization—not three separate chamber events.",
-        "T is the broader ventricular-repolarization wave after QRS. Atrial repolarization is usually obscured by QRS. A U wave may follow T but is not always visible; do not invent one on an image.",
-        "A segment lies between waves/complexes; an interval includes one or more waves. The J point is QRS end/ST beginning. The baseline is the reference level.",
-        "On the guide p.9 image, find two repeating sequences: small rounded P, small initial downward Q, tall positive R, negative S, then broad T. No distinct U is reliably visible. This is a teaching diagram; lead, speed and gain are not explicitly documented, so no exact patient QT or rate is keyed from it.",
-        "Test yourself by pointing to a deflection, naming it and stating the electrical event. 'Ventricular contraction' is a mechanical consequence; the QRS directly records depolarization."
+        "P is the small atrial-depolarization wave before QRS. Within QRS, Q is a negative deflection before R, R is positive, and S is negative after R. The whole QRS represents ventricular depolarization.",
+        "T follows QRS and represents ventricular repolarization. Atrial repolarization is usually hidden by QRS. A U wave may follow T, but is not always visible.",
+        "The baseline is the reference line. A segment is between waves; an interval includes a wave or complex. The J point is the end of QRS/start of ST.",
+        "In the guide image, identify the small P, initial downward Q, tall R, downward S and broad T in each sequence. No separate U is clearly visible.",
+        "Point to a wave and state its electrical event. Do not calculate an exact interval from this teaching diagram unless its timing scale is established."
       ],
       "sources": [
         [
@@ -2418,7 +2425,14 @@ const ASPT_DATA = {
         208,
         209
       ],
-      "gap": "The guide asks about U but its diagram does not show a reliably distinct U wave. The slides describe it, but the mechanism is not uniquely established; learn recognition without forcing a visible U."
+      "gap": "The guide asks about U but its diagram does not show a reliably distinct U wave. The slides describe it, but the mechanism is not uniquely established; learn recognition without forcing a visible U.",
+      "bodyRefs": [
+        "ASPT competency 4e and term 69; Chapter 04, pp. 48–55",
+        "Chapter 04, pp. 50, 57; ASPT term 69",
+        "ASPT terms 51, 62, 74; Chapter 04, pp. 47, 51–56",
+        "ASPT guide, p. 9",
+        "ASPT guide, p. 9; Chapter 04, pp. 5–17"
+      ]
     },
     {
       "id": "measure",
@@ -2434,11 +2448,11 @@ const ASPT_DATA = {
         "waves"
       ],
       "body": [
-        "At 25 mm/s: 1 small box (1 mm) = 0.04 s; 1 large box (5 mm) = 0.20 s. At 10 mm/mV: 1 small vertical box = 0.1 mV; 1 large vertical box = 0.5 mV.",
-        "Time runs horizontally; voltage runs vertically. The course calibration mark is 10 mm tall (1 mV) and 5 mm wide (0.20 s). Always check the actual machine scale first.",
-        "PR: P onset to QRS onset, usually 0.12–0.20 s. QRS: complex onset to end, normally narrow (<0.12 s in the usual adult rhythm classification; the class's expected range is about 0.06–0.10 s). QT: QRS onset to T end; QTc adjusts for rate.",
-        "For regular rhythms at 25 mm/s, rate ≈ 1500/small boxes or 300/large boxes between R peaks. For an available six-second strip, count QRS complexes ×10 as an estimate, especially when irregular.",
-        "Worked examples: four small boxes of PR = 4×0.04 = 0.16 s; four large R–R boxes = 300/4 = 75/min; seven QRS complexes in six seconds ≈70/min. Do not force precision when boundaries or calibration are unclear."
+        "At 25 mm/s, one small horizontal box is 0.04 second and one large box is 0.20 second. Time runs across the paper.",
+        "At 10 mm/mV, one small vertical box is 0.1 mV and one large box is 0.5 mV. The class standardization mark is 10 mm (1 mV) high and 5 mm (0.20 second) wide.",
+        "PR: start of P to start of QRS; normal 0.12–0.20 second. QRS: start to end of the complex; expected less than 0.12 second. QT: start of QRS to end of T. Know the endpoints before measuring.",
+        "For a regular rhythm at 25 mm/s: rate = 1500 ÷ small boxes between R peaks, or 300 ÷ large boxes. For a known six-second strip, count QRS complexes and multiply by 10 for an estimate.",
+        "Examples: four small boxes of PR = 0.16 second; four large R–R boxes = 75/min; seven QRS complexes in six seconds ≈70/min. Check the paper scale and use only visible boundaries."
       ],
       "sources": [
         [
@@ -2470,10 +2484,15 @@ const ASPT_DATA = {
         220,
         221,
         225,
-        227,
         366,
-        367,
-        368
+        367
+      ],
+      "bodyRefs": [
+        "ASPT competency 4f; Chapter 04, pp. 5–17",
+        "ASPT term 77; Chapter 04, pp. 5–17",
+        "ASPT terms 62, 73–74; Chapter 04, pp. 51–58",
+        "Chapter 05, pp. 5–31; supports the paper-measurement requirement",
+        "Worked practice using the class paper scale and rate methods"
       ]
     },
     {
@@ -2491,11 +2510,10 @@ const ASPT_DATA = {
         "instrument"
       ],
       "body": [
-        "Standard bipolar leads: I compares right arm (−) to left arm (+); II right arm (−) to left leg (+); III left arm (−) to left leg (+). Lead II is commonly used for rhythm monitoring.",
-        "aVR views toward the right arm, aVL toward the left arm and aVF toward the left foot, each relative to a derived reference. All six limb leads view the frontal plane.",
-        "The class's AHA-style limb colors are RA white, LA black, RL green, LL red. The right-leg electrode is the noise/reference connection, often called ground. Always read the cable's printed RA/LA/RL/LL labels; other color systems exist.",
-        "For a diagnostic resting ECG, place limb electrodes on the limbs with corresponding placements symmetrical as the class teaches. Torso placement for monitoring is a different configuration and can change the tracing.",
-        "Ten electrodes provide twelve views: four limb electrodes plus six chest electrodes. Do not confuse electrode count, cable count, named leads and lead views."
+        "Standard/bipolar limb leads compare two points: I = right arm (−) to left arm (+); II = right arm (−) to left leg (+); III = left arm (−) to left leg (+). Lead II is commonly used for rhythm monitoring.",
+        "Augmented leads are aVR (right arm), aVL (left arm) and aVF (left foot). Standard and augmented limb leads give six views in the frontal plane.",
+        "Class limb colors: right arm white, left arm black, right leg green, left leg red. Read the printed RA/LA/RL/LL labels. The right-leg connection helps reduce interference.",
+        "Put limb electrodes on the limbs in corresponding positions. Four limb electrodes plus six chest electrodes give twelve electrical views."
       ],
       "sources": [
         [
@@ -2510,9 +2528,7 @@ const ASPT_DATA = {
       "bank": [
         173,
         174,
-        175,
         176,
-        177,
         178,
         179,
         180,
@@ -2521,11 +2537,15 @@ const ASPT_DATA = {
         189,
         279,
         280,
-        281,
         360,
         361,
-        362,
-        363
+        362
+      ],
+      "bodyRefs": [
+        "ASPT terms 63, 76; Chapter 04, pp. 24–33",
+        "ASPT terms 49–50; Chapter 04, pp. 34–40",
+        "ASPT competency 4g; Chapter 04, pp. 24–40",
+        "ASPT competency 4g; Chapter 04, pp. 20–41"
       ]
     },
     {
@@ -2544,11 +2564,11 @@ const ASPT_DATA = {
         "limb"
       ],
       "body": [
-        "V1: fourth intercostal space, right sternal border. V2: fourth intercostal space, left sternal border.",
-        "V4: fifth intercostal space, left midclavicular line. Locate V4 before V3; V3 goes halfway between V2 and V4.",
-        "V5: left anterior axillary line at V4's horizontal level. V6: left midaxillary line at the same level. Do not follow a sloping rib downward when placing V5/V6.",
-        "The guide picture supports spatial orientation, but its colors are not a universal cable-color key. Count spaces and identify the named lines; do not use a nipple as a substitute landmark.",
-        "The guide p.9 prose misdescribes the anterior axillary line. The class's chest-landmark definitions and the AHA/ACCF/HRS placement standard provide the clarification used here."
+        "V1: fourth intercostal space at the right sternal border. V2: fourth intercostal space at the left sternal border.",
+        "V4: fifth intercostal space on the left midclavicular line. Place V4 before V3; V3 goes halfway between V2 and V4.",
+        "V5: left anterior axillary line, level with V4. V6: left midaxillary line, level with V4. Keep V4–V6 at the same horizontal height.",
+        "Use the patient's right and left and the anatomical landmarks. The picture's colors are not a substitute for the wire labels.",
+        "The guide's anterior-axillary wording is unclear. Use the class landmark definitions: front of the armpit for anterior axillary, middle of the armpit for midaxillary."
       ],
       "sources": [
         [
@@ -2575,7 +2595,14 @@ const ASPT_DATA = {
         43,
         182
       ],
-      "extra": "placement"
+      "extra": "placement",
+      "bodyRefs": [
+        "ASPT guide, p. 8; required placement clarified by the existing placement reference",
+        "ASPT guide, p. 8; Chapter 01, pp. 29–33",
+        "ASPT guide, p. 8; Chapter 01, pp. 29–33",
+        "Chapter 01, pp. 24–33; Chapter 04, pp. 24–40",
+        "ASPT guide, p. 9; Chapter 01, pp. 29–33"
+      ]
     },
     {
       "id": "prep",
@@ -2590,10 +2617,10 @@ const ASPT_DATA = {
         "placement"
       ],
       "body": [
-        "The class specifies clean, dry skin with electrodes fully adhering and conductive gel providing good contact. Check electrode contact and cable connections before accepting a noisy tracing.",
-        "Position the patient flat as tolerated, with legs uncrossed, relaxed and still. Explain that movement and muscle tension can affect the recording.",
-        "Use the printed cable labels and correct anatomical sites. Confirm recording settings and assess the tracing for artifact before treating a technical problem as an arrhythmia.",
-        "The slides' brief acquisition advice is not a complete patient-identification, infection-control, equipment-operation or mounting procedure. These practical details need instructor/equipment-specific reinforcement; they are not silently supplied as ASPT exam rules."
+        "Use clean, dry skin and electrodes that stick well. Conductive gel helps the skin contact transmit the signal.",
+        "Keep the patient relaxed and still, lying flat as tolerated with legs uncrossed. Movement and muscle tension can create artifact.",
+        "Check the correct wire labels, electrode positions, connections and tracing quality before accepting the recording.",
+        "The guide requires proper preparation, but the slides do not supply the full practical checklist. Get the patient-identification, equipment and mounting steps from your instructor."
       ],
       "sources": [
         [
@@ -2607,10 +2634,15 @@ const ASPT_DATA = {
       "bank": [
         189,
         226,
-        281,
         305
       ],
-      "gap": "Proper patient preparation is an explicit ASPT topic, but the class slides give only a partial practical workflow. Review identification, safety, skin preparation and equipment steps with your instructor."
+      "gap": "Proper patient preparation is an explicit ASPT topic, but the class slides give only a partial practical workflow. Review identification, safety, skin preparation and equipment steps with your instructor.",
+      "bodyRefs": [
+        "ASPT terms 59–60 and competency 4g; Chapter 04, pp. 20, 41",
+        "Chapter 04, pp. 41, 63–64",
+        "Chapter 04, pp. 20–41, 63–64",
+        "ASPT competency 4g and guide pp. 2–3; source gap"
+      ]
     },
     {
       "id": "artifacts",
@@ -2626,10 +2658,9 @@ const ASPT_DATA = {
         "waves"
       ],
       "body": [
-        "The class examples show broad baseline disturbance with loose contact or patient movement, and fine rapid interference with electrical noise or muscle tremor. Source captions name the demonstrated causes; appearance alone does not always establish the cause.",
-        "On the first slide, compare the major wandering disturbance above with fine repetitive noise below. On the second, compare tremor-related fine noise with broad movement distortion. Look for genuine complexes continuing through interference.",
-        "Assess the patient, inspect contact/cables and consider another lead or a repeat tracing. Never dismiss a possible dangerous rhythm only because it resembles an artifact example.",
-        "A flat trace can reflect a lead/connection problem as well as absent electrical activity; the recording and the patient must both be checked."
+        "Artifact is interference on the tracing rather than the heart's electrical signal. Class examples include loose electrodes, electrical interference, muscle tremor and patient movement.",
+        "In these slides, compare the disturbed baseline and fine noise with the heart complexes. Use the source captions to learn the example; appearance alone may not prove the cause.",
+        "Check the patient, electrode contact and cables. A loose connection can produce a flat or noisy trace, so do not judge the patient's condition from the picture alone."
       ],
       "sources": [
         [
@@ -2644,6 +2675,11 @@ const ASPT_DATA = {
       "bank": [
         226,
         305
+      ],
+      "bodyRefs": [
+        "ASPT term 47 and competency 4h; Chapter 04, pp. 63–64",
+        "Chapter 04, pp. 63–64",
+        "Chapter 04, pp. 20, 41, 63–64; foundation for reliable recording"
       ]
     },
     {
@@ -2662,11 +2698,11 @@ const ASPT_DATA = {
         "artifacts"
       ],
       "body": [
-        "Read in sequence: regularity → rate → P waves/atrial activity → PR relationship → QRS width → rhythm conclusion. Consider QT only when the image supports it. Do not start with a diagnosis and invent its features.",
-        "Normal sinus pattern: consistent sinus P before each QRS, a stable measurable PR, usually narrow QRS and adult rate 60–100/min. Slow and fast sinus patterns retain sinus atrial organization; rate alone does not establish their origin.",
-        "The class broadens recognition to atrial fibrillation/flutter, ectopy, junctional rhythms, AV blocks, ventricular rhythms and pacing. ASPT's guide says 'other arrhythmias' without a complete subtype list or weighting; these are relevant class expansion, not a claimed official exam roster.",
-        "Use the existing source-verified ECG trainer for actual strip reasoning. It has 13 reviewed examples. Some class rhythms still lack a completed strip audit; a textbook description is not substituted for a verified image.",
-        "Asystole and agonal terminology describe serious patterns, but determine circulation from the patient rather than an ECG image alone. This section focuses on recognition, not expanding the guide into treatment algorithms."
+        "Use the class sequence: regularity → rate → P waves → PR interval → QRS width → rhythm conclusion. Measure QT only when the strip supports it.",
+        "Normal sinus rhythm starts in the SA node, has a consistent P before each QRS and an adult rate of 60–100/min. Bradycardia means below 60/min; tachycardia means above 100/min. Rate alone does not name the rhythm.",
+        "Learn the class recognition patterns for sinus, atrial, junctional, ventricular, AV-block and paced rhythms. The guide says 'other arrhythmias' without naming every subtype or its exam weighting.",
+        "Use the source ECG trainer to practice reading real examples. Identify what is visible before selecting a rhythm; do not assume textbook features are present.",
+        "Know the guide terms ectopic firing, arrhythmia, asystole and agonal. Focus here on recognizing the recording, with patient assessment kept separate from the ECG."
       ],
       "sources": [
         [
@@ -2714,12 +2750,16 @@ const ASPT_DATA = {
         262,
         263,
         273,
-        274,
-        275,
-        276,
         306,
         308,
         310
+      ],
+      "bodyRefs": [
+        "Chapter 05, pp. 2–31; ASPT competency 4h",
+        "Chapter 06, pp. 11–49; ASPT terms 52, 75, 78",
+        "ASPT competency 4h; Chapters 05–10",
+        "Existing source-verified ECG practice; class interpretation workflow",
+        "ASPT terms 45–48, 56; Chapters 05–10"
       ]
     }
   ],
@@ -2936,7 +2976,7 @@ const ASPT_DATA = {
       ],
       "group": "Competencies",
       "status": "Covered but needs reinforcement",
-      "note": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor."
+      "note": "Rheumatic fever is required by the guide but only named as a valve-disease cause in Chapter 03 p.36. Keep the basic definition here; ask your instructor if further detail is expected."
     },
     {
       "id": "1b",
@@ -2996,7 +3036,7 @@ const ASPT_DATA = {
       "also": [],
       "group": "Competencies",
       "status": "Covered but needs reinforcement",
-      "note": "Rheumatic fever is named but not adequately explained in the class slides. Review the supplied CDC clarification and confirm the expected course detail with the instructor."
+      "note": "Rheumatic fever is required by the guide but only named as a valve-disease cause in Chapter 03 p.36. Keep the basic definition here; ask your instructor if further detail is expected."
     },
     {
       "id": "1h",
@@ -3525,7 +3565,7 @@ const ASPT_DATA = {
       "page": 6,
       "lesson": "disease",
       "status": "Covered but needs reinforcement",
-      "note": "Named as a valve-disease cause in chapter 03 p.36; CDC supplies the additional explanation.",
+      "note": "Explicit ASPT term; Chapter 03 p.36 gives the valve-disease connection. Full disease mechanism is outside this focused review.",
       "term": 33
     },
     {
@@ -4115,7 +4155,7 @@ const ASPT_DATA = {
       "page": 8,
       "lesson": "anatomy",
       "status": "Covered but needs reinforcement",
-      "note": "Every label explained; conus/trabeculae require a flagged supplemental anatomy reference."
+      "note": "The slides' searchable text does not fully define apex/base, conus arteriosus or trabeculae carneae. The guide diagram identifies the latter structures; basic definitions are supplied as an explicit supplemental anatomy clarification."
     },
     {
       "id": "D2",
@@ -4133,7 +4173,7 @@ const ASPT_DATA = {
       "page": 9,
       "lesson": "waves",
       "status": "Covered but needs reinforcement",
-      "note": "P–T explained from the image. U and exact uncalibrated measurements cannot be identified reliably."
+      "note": "The guide asks about U but its diagram does not show a reliably distinct U wave. The slides describe it, but the mechanism is not uniquely established; learn recognition without forcing a visible U."
     },
     {
       "id": "H1",
@@ -4803,7 +4843,7 @@ const ASPT_DATA = {
         "Normal resting adult heart rate: 60–100/min; bradycardia <60; tachycardia >100. These identify rate categories, not rhythm origin.",
         "Normal resting adult respiratory rate from class: 12–20/min.",
         "At 25 mm/s: small horizontal box 0.04 s; large 0.20 s. At 10 mm/mV: small vertical box 0.1 mV; large 0.5 mV; 1 mV = 10 mm.",
-        "PR endpoints and usual adult range: P onset → QRS onset, 0.12–0.20 s. QRS onset → end; narrow <0.12 s. QT: QRS onset → T end; evaluate rate correction.",
+        "PR: start of P → start of QRS, 0.12–0.20 s. QRS: start → end, expected <0.12 s. QT: start of QRS → end of T.",
         "Lead I RA−/LA+; II RA−/LL+; III LA−/LL+. Class AHA limb markings: RA white, LA black, RL green, LL red; read the wire labels.",
         "V1/V2 fourth intercostal space at right/left sternal borders; V4 fifth left intercostal space, midclavicular; V3 halfway V2–V4; V5/V6 at V4 height on anterior/midaxillary lines.",
         "Blood-flow order, valve locations, and SA → AV → His → branches → Purkinje order.",
@@ -4837,7 +4877,6 @@ const ASPT_DATA = {
         "Four small boxes at 25 mm/s = 0.16 s; five = 0.20 s.",
         "Regular rhythm: 300/large R–R boxes or 1500/small R–R boxes. Four large boxes = 75/min.",
         "Irregular rhythm: seven QRS complexes in a known six-second window ≈70/min; count the whole available window correctly.",
-        "Cycle duration = 60/rate; 75/min = 0.8 s. Cardiac output = stroke volume × rate; 70×70 mL/min = 4.9 L/min.",
         "Do not infer exact measurements from an uncalibrated diagram or an indistinct wave boundary."
       ]
     },
@@ -5279,15 +5318,15 @@ const ASPT_DATA = {
       "t": "terms",
       "module": "ASPT",
       "unit": "Exam focus",
-      "q": "At 100 beats/min, the approximate duration of one cardiac cycle is:",
+      "q": "What is one complete cardiac cycle?",
       "o": [
-        "0.6 s",
-        "0.8 s in every patient",
-        "1.0 s",
-        "100 s"
+        "One contraction and relaxation of the heart",
+        "Only the P wave",
+        "One minute of heartbeats",
+        "Only the relaxation period"
       ],
       "a": 0,
-      "e": "60 seconds ÷ 100 beats = 0.6 seconds per beat. The commonly taught 0.8 s example applies to 75/min."
+      "e": "A cardiac cycle is one complete heartbeat, including contraction (systole) and relaxation (diastole). A single wave or one minute of beats is not the whole cycle."
     },
     {
       "_id": "aspt-gel",
@@ -5319,7 +5358,7 @@ const ASPT_DATA = {
         "It is an ECG calibration setting"
       ],
       "a": 0,
-      "e": "The class names rheumatic fever among causes of valve disease. The CDC supplement explains that this inflammatory illness can follow a group A strep infection; it is not a synonym for infarction."
+      "e": "Chapter 03 p.36 names rheumatic fever as a cause of valve problems. That is the connection needed here; it is not another name for myocardial infarction."
     },
     {
       "_id": "aspt-bundle",
@@ -5461,15 +5500,15 @@ const ASPT_DATA = {
       "t": "waves",
       "module": "ASPT",
       "unit": "Exam focus",
-      "q": "Can this guide diagram establish an exact patient QTc by itself?",
+      "q": "Can you measure an exact time interval from this teaching diagram without knowing its paper speed?",
       "o": [
         "Yes, from the rhythm name alone",
-        "Yes, every diagram has a standard speed",
-        "No; calibration and a suitable QT/rate measurement must be established",
-        "Yes, QTc always equals PR"
+        "Yes, every diagram has a stated paper speed",
+        "No; establish the timing scale before measuring",
+        "Yes, all intervals have the same length"
       ],
       "a": 2,
-      "e": "The diagram does not explicitly document lead, speed or gain, and it is presented for naming waves. Do not manufacture a patient measurement from a teaching illustration.",
+      "e": "The guide uses this image to identify waves. It does not state a timing scale, so an exact interval cannot be assumed.",
       "img": "aspt/images/g03.png"
     },
     {
@@ -5504,5 +5543,120 @@ const ASPT_DATA = {
       "a": 0,
       "e": "The guide states the format, time and pass score, but does not state the number of exam questions. Do not mistake a practice-set size for an official count."
     }
-  ]
+  ],
+  "visualCues": {
+    "v017": "Find the plaque narrowing the artery. Connect the picture to atherosclerosis and reduced blood supply.",
+    "v025": "Locate the start of QRS and the end of T: these are the QT endpoints. This is a teaching diagram."
+  },
+  "practiceExplanations": {
+    "90": "Many veins have valves that reduce backward flow. In this basic comparison, choose veins rather than arteries or capillaries.",
+    "91": "Capillaries are the exchange vessels: oxygen and nutrients move to tissues, while carbon dioxide and wastes enter the blood.",
+    "104": "Atherosclerosis is plaque buildup inside arteries. Plaque narrows the space available for blood flow.",
+    "160": "Polarization is the class 'ready' state. Depolarization is discharge/activation and repolarization is recovery.",
+    "161": "Depolarization is electrical activation. P represents atrial activation and QRS represents ventricular activation.",
+    "162": "Repolarization is electrical recovery toward the ready state. T represents ventricular repolarization.",
+    "168": "Leads provide different electrical views of the heart. The electrode contacts and connecting wires allow the machine to record those views.",
+    "200": "The class notes that a U wave may follow T and can be associated with low potassium. Its cause is uncertain and it is not always visible.",
+    "201": "Atrial repolarization is usually hidden by the QRS complex. P represents atrial depolarization, while T represents ventricular repolarization.",
+    "237": "The R–R intervals in atrial fibrillation vary without a repeating pattern: irregularly irregular. Compare the ventricular intervals rather than looking for regular spacing.",
+    "262": "Asystole is absence of detectable ventricular electrical activity, often appearing flat. Check the patient and the recording connections; a flat line alone can be a technical problem.",
+    "299": "Myocardial infarction means heart muscle death from inadequate blood supply. Ischemia means inadequate supply; angina is the related chest discomfort.",
+    "308": "Ectopic firing means an impulse starts outside the usual pacemaker site. The class groups beats by atrial, junctional or ventricular origin.",
+    "339": "Endocarditis affects the inner heart lining and valves, commonly through infection. Pericarditis affects the surrounding sac; myocarditis affects muscle.",
+    "359": "Atrial depolarization comes first, then AV delay, ventricular depolarization and repolarization. The AV delay lets the atria empty before ventricular contraction."
+  },
+  "scopeNote": "Focused review: ASPT-listed topics and the basic class information needed to understand them. Advanced class extensions are excluded from this practice pool. The guide does not specify every possible question, so this is a study-priority filter, not a guarantee that an omitted detail cannot be tested.",
+  "practiceOverrides": {
+    "160": {
+      "q": "Which class term means the cardiac cell is electrically ready?",
+      "o": [
+        "Depolarization",
+        "Polarization",
+        "Repolarization",
+        "Contraction"
+      ],
+      "a": 1,
+      "e": "Polarization is the ready state. Depolarization is activation and repolarization is recovery.",
+      "studyLegacy": null,
+      "studyRef": "v023"
+    },
+    "161": {
+      "q": "Depolarization means:",
+      "o": [
+        "Electrical activation",
+        "Electrical recovery",
+        "Mechanical relaxation only",
+        "Widening of a blood vessel"
+      ],
+      "a": 0,
+      "e": "Depolarization is electrical activation: atrial activation produces P and ventricular activation produces QRS.",
+      "studyLegacy": null,
+      "studyRef": "v023"
+    },
+    "162": {
+      "q": "Repolarization means:",
+      "o": [
+        "Starting the impulse at the SA node",
+        "Electrical recovery toward the ready state",
+        "A narrowed valve opening",
+        "Movement of air into the lungs"
+      ],
+      "a": 1,
+      "e": "Repolarization is electrical recovery. The T wave represents ventricular repolarization.",
+      "studyLegacy": null,
+      "studyRef": "v023"
+    },
+    "200": {
+      "q": "Which association with a U wave is mentioned in Chapter 04?",
+      "o": [
+        "High potassium",
+        "Low potassium",
+        "Every case of atrial fibrillation",
+        "Every normal heartbeat"
+      ],
+      "a": 1
+    },
+    "201": {
+      "o": [
+        "The T wave",
+        "Usually hidden by the QRS complex",
+        "The U wave",
+        "Only after the T wave"
+      ],
+      "a": 1
+    },
+    "262": {
+      "o": [
+        "A flat or nearly flat trace with no detectable ventricular electrical activity",
+        "Regular narrow QRS complexes",
+        "A sawtooth pattern",
+        "A normal P wave before every QRS"
+      ],
+      "a": 0
+    },
+    "303": {
+      "o": [
+        "Electrical activation of cardiac cells",
+        "Electrical recovery of cardiac cells",
+        "Blood leaking through a valve",
+        "Air leaving the lungs"
+      ],
+      "a": 0,
+      "e": "Depolarization is the discharge/activation state. Compare it with repolarization, the recovery state.",
+      "studyLegacy": null,
+      "studyRef": "v023"
+    },
+    "304": {
+      "o": [
+        "The mechanical ejection of blood",
+        "Electrical recovery toward the ready state",
+        "The first impulse from the SA node",
+        "A measurement of blood pressure"
+      ],
+      "a": 1,
+      "e": "Repolarization is electrical recovery. It follows activation and prepares cells for a later beat.",
+      "studyLegacy": null,
+      "studyRef": "v023"
+    }
+  }
 };

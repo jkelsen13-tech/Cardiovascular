@@ -280,7 +280,7 @@ const StudyTeaching = (() => {
     text(detail,'summary',v?'Study the slide · Chapter '+v.chapter+' · page '+v.page:'Study the existing course illustration');
     const figure=document.createElement('figure'); detail.appendChild(figure);
     const status=text(figure,'p','Open the illustration to study it.','study-image-status');
-    const im=document.createElement('img'); im.alt=v?v.cue:'Course reference illustration for this explanation'; im.decoding='async';
+    const im=document.createElement('img'); im.alt=v?(q.studyCue||v.cue):'Course reference illustration for this explanation'; im.decoding='async';
     if(v){im.width=v.width;im.height=v.height;}
     figure.appendChild(im);
     const zoom=text(figure,'button','Enlarge image','study-zoom');zoom.type='button';zoom.hidden=true;
@@ -291,7 +291,7 @@ const StudyTeaching = (() => {
     const retry=text(figure,'button','Retry image','study-zoom');retry.type='button';retry.hidden=true;
     retry.onclick=()=>{retry.hidden=true;getImage();};
     detail.addEventListener('toggle',()=>{if(detail.open&&!im.getAttribute('src'))getImage();});
-    if(v){text(figure,'figcaption',v.title+' — supplied chapter PDF, page '+v.page+'.');text(detail,'p',v.cue,'study-cue');}
+    if(v){text(figure,'figcaption',v.title+' — supplied chapter PDF, page '+v.page+'.');text(detail,'p',q.studyCue||v.cue,'study-cue');}
     else text(figure,'figcaption','Existing project reference; exact source page has not been reverified in this update.');
     zoom.onclick=()=>{if(!loaded)return;openImage(src,im.alt);};
     parent.appendChild(detail);

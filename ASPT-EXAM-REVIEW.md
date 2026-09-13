@@ -1,60 +1,65 @@
-# ASPT National EKG Exam — September 22, 2026
+# ASPT exam scope review — September 13, 2026
 
-The existing site had 611 active class questions, shared answer explanations and source illustrations, and a separate 13-example source ECG trainer. It had no dedicated ASPT blueprint. This addition preserves those engines and adds 19 lessons, all 91 numbered guide terms, 26 competency mappings, 176 audit rows, 24 focused practice questions, a diagram lab and a separate 22-item Exam-Day Requirements reference.
+The entire ASPT section was rechecked following the request to keep exam preparation at the level of the supplied slides. This review supersedes the broader explanatory emphasis in the September 11 version.
 
-## Sources and scope
+## What was reviewed
 
-Primary: supplied 2026 EKG Study Guide .docx 2.pdf, 9 pages, revised January 2026. Compared against all 13 supplied numbered chapter PDFs (911 pages), the existing question bank, source images and prior ECG/study audits. The combined slideshow file itself was not available; all 13 constituent chapter PDFs were used. ZIP patch copies were not reapplied over the functioning repository. The guide supplies exam scope; no exam question count or rhythm subtype weighting is invented.
+All 19 lessons, all 91 numbered terms, 24 focus questions, every linked class-question selection, image captions, coverage notes and all five final-review groups. The 13 supplied chapter PDFs contain 911 pages; their text was reread and the passages supporting the revised lesson points were checked. Every lesson point now has a nearby source reference.
 
-## Coverage
+## Scope rule
+
+Keep every explicit ASPT competency, terminology entry and diagram label. Use only the basic explanation needed to understand it. The guide's broad headings do not publish every possible exam question, so exclusion from focused practice is a study-priority decision, not a claim that a detail cannot be tested.
+
+All 26 competencies, 91 terms, 176 checklist rows and 21 heart-diagram labels remain. Required terms that the class does not adequately explain still have visible gap notices. Exam-day requirements are unchanged.
+
+## Changes across the section
+
+- Simplified all 19 lessons and selected terminology explanations.
+- Removed emphasis on cardiac-output/ejection-fraction calculations, capnography and blood-pH values, detailed ion channels and sodium-pump mechanisms, coronary branch memorization and pacemaker malfunction troubleshooting.
+- Removed 47 unique class questions from the focused pool: 227 → 180. The 24-question focus set remains, with cycle and waveform-measurement questions simplified.
+- Removed the capnography and detailed pacemaker-configuration figures from these lessons. Basic electrical vocabulary now uses the PQRST teaching figure instead of action-potential diagrams.
+- Simplified plaque and QT image captions so extra terminology does not reappear in image feedback.
+- Corrected the focused atrial-repolarization answer to “usually hidden by QRS.” Scoped question copies keep the general class bank unchanged.
+- Preserved existing images, original waveform geometry, scoring, navigation and other study modes.
+
+## Section 6: what is actually in the slides
+
+| Topic retained at definition level | Class source |
+| --- | --- |
+| Regurgitation, stenosis, atresia | Chapter 03 p.33 |
+| Rheumatic fever as a valve-disease cause | Chapter 03 p.36; ASPT term 33 |
+| Cardiomyopathy | Chapter 03 p.39 |
+| Heart failure | Chapter 03 p.40 |
+| Pericarditis, myocarditis, endocarditis | Chapter 03 p.42 |
+| Arteriosclerosis, atherosclerosis | Chapter 03 p.50 |
+| Ischemia, angina, infarction | Chapter 11 pp.7–21; ASPT terms 1, 20, 24, 66 |
+
+The thrombus/embolus comparison, risk-factor expansion and rheumatic-fever mechanism were removed from the lesson. The familiar class disorders stay as simple “what it means / which structure it affects” points.
+
+## Required guide details that remain
+
+Apex/base, conus arteriosus and trabeculae carneae stay as short definitions because they are guide terms or diagram labels. They are not expanded into advanced anatomy. Placement corrections preserve the required V1–V6 landmarks. The guide's unclear “resting phase,” incomplete U-wave depiction and practical-workflow gaps remain flagged.
+
+## Provenance
+
+Three guide figures: p.8 heart and chest placement; p.9 wave identification. Three class figures: Chapter 04 p.7 paper scale and pp.63–64 artifacts. Existing cited class illustrations are reused. No images were added or altered in this scope revision. No external images or paid assets were introduced. Full image hashes and provenance remain in aspt/coverage.json.
+
+The September 11 guide-label/placement references are retained solely to support necessary clarifications, not as extra assigned study:
+- [Supplemental anatomy: heart, chambers and supporting structures](https://www.ncbi.nlm.nih.gov/books/NBK482452/)
+- [Placement clarification: AHA/ACCF/HRS ECG standardization statement](https://www.jacc.org/doi/10.1016/j.jacc.2007.01.024)
+- [Supplemental anatomy: right ventricular outflow and trabeculae](https://pmc.ncbi.nlm.nih.gov/articles/PMC3473916/)
+- [Supplemental anatomy: apex and base](https://content.byui.edu/file/2b0b1b6e-50ac-44a0-a596-903e16d582d3/8/mod2.pdf)
+
+## Coverage and limitations
 
 - Covered but needs reinforcement: 17
 - Covered completely: 135
 - Missing from class materials: 24
 
-Statuses describe source coverage, not learner mastery. The 24 missing-from-class rows include 22 administrative requirements supplied by the guide and two uncommon heart labels given explicit supplemental explanations. No topic is omitted for lack of class coverage. The exhaustive machine-readable checklist is aspt/coverage.json and the website Coverage checklist; aspt/blueprint.json preserves the 91 exact numbered terms and 26 competency IDs independently for regression checks.
-
-## Images and preparation
-
-- g01: ASPT 2026 guide, page 8; aspt/images/g01.jpg; 1652 × 920; SHA-256 e0d0da76660130b2e8a4ad96dad24494eb67999e853262168013065714fa6d04.
-- g02: ASPT 2026 guide, page 8; aspt/images/g02.png; 997 × 699; SHA-256 5bf5731dbd91c087bb7b94a5e9ff165c6037fd5e498ffa2afc388f66f0bc5f4d.
-- g03: ASPT 2026 guide, page 9; aspt/images/g03.png; 914 × 153; SHA-256 6f2aef265acdace4fb6728f5e1543a1759bf98695570c753ecdb904de1e1f98f.
-- s01: Chapter 04, page 7; aspt/images/s01.jpg; 1440 × 810; SHA-256 f337570545f5ce353b2531f6b8cb768b4eeb1e66e9a1bbba6cc09ff2a68639d1.
-- s02: Chapter 04, page 63; aspt/images/s02.jpg; 1213 × 1014; SHA-256 5880eba47db029fe101d3e4eb7b47d5588f91f8aa094c8a99b98d817849f712d.
-- s03: Chapter 04, page 64; aspt/images/s03.jpg; 1213 × 1014; SHA-256 6b2b923cbb79714457e19fe37334c1cb7f16f0e9a8fc70846701010e9e02b201.
-
-Three guide figures: heart anatomy (p.8), precordial placement (p.8), waveform naming (p.9). Three class figures: Chapter 04 p.7 paper scale and pp.63–64 artifact comparisons. Existing cited class figures are reused within the related lessons. No external images and no paid image licenses were introduced. Supplied educational sources retain their original ownership; this audit records provenance, not a claim of a newly obtained open redistribution license.
-
-The heart image was decoded at native dimensions and JPEG-encoded for presentation. The chest JP2 was losslessly decoded to PNG at native dimensions. The waveform's transparent background was composited onto white at native dimensions; no waveform geometry was redrawn or altered. The paper-scale slide was rendered as a whole page. Both artifact figures preserve the exact original embedded JPEG bytes. Image hashes and native dimensions are verified in hosted tests. The guide logo and tiny non-instructional graphic were excluded. No patient strip was generated from a rhythm name.
-
-## Interpretation and corrections
-
-The guide waveform is an educational naming diagram, not a newly verified clinical rhythm strip. Its visible P/Q/R/S/T positions support seven image questions; no distinct U, exact rate or QTc is invented. Source images use neutral g/s identifiers. No new diagnosis-bearing image caption is presented as a rhythm question. Labeled study images intentionally teach structures; existing delayed feedback/source-ECG protections remain intact. The static study site's answer bank is not a secure testing system.
-
-The guide's anterior axillary wording is clarified with class landmarks and the AHA standard. R-R complex is explained as R–R interval. Duplicate myocardial infarction entries 24/66 and AV bundle/His aliases are retained. ELECTOCARDIOGRAPH and PRECORDAL are retained for lookup with correct terminology in explanations. Blue venous blood and universal pulmonary-vessel exception wording are explicitly corrected for normal adult physiology. QRS describes ventricular depolarization, not directly contraction. A resting phase and U-wave mechanism are not given fabricated certainty.
-
-Existing question 337 was corrected: pericarditis is inflammation of the pericardial sac, with infectious or noninfectious causes. Its original explanation incorrectly equated inflammation with infection. The corrected question is included in topic practice. Source: [NHLBI causes of heart inflammation](https://www.nhlbi.nih.gov/health/heart-inflammation/causes). The other 610 BANK questions and scoring architecture are preserved. See STUDY-REVIEW.md and ECG-REVIEW.md for earlier changes and remaining rhythm-image gaps. No additional rhythms are claimed verified in this addition.
-
-## Supplemental text, not class claims
-
-- [Supplemental anatomy: heart, chambers and supporting structures](https://www.ncbi.nlm.nih.gov/books/NBK482452/)
-- [Supplemental explanation: CDC, About Rheumatic Fever](https://www.cdc.gov/group-a-strep/about/rheumatic-fever.html)
-- [Placement clarification: AHA/ACCF/HRS ECG standardization statement](https://www.jacc.org/doi/10.1016/j.jacc.2007.01.024)
-- [Supplemental anatomy: right ventricular outflow and trabeculae](https://pmc.ncbi.nlm.nih.gov/articles/PMC3473916/)
-- [Supplemental anatomy: apex and base](https://content.byui.edu/file/2b0b1b6e-50ac-44a0-a596-903e16d582d3/8/mod2.pdf)
-
-These clarify apex/base, conus/trabeculae, rheumatic fever and exact precordial placement. They do not expand the official exam blueprint. Patient preparation, equipment operation, mounting/signing and practical blood-pressure technique remain clearly flagged for instructor reinforcement where the slides are incomplete.
-
-## Exam-day discrepancy
-
-Guide p.2 requires a qualified supervisor/instructor letter documenting five recent mounted EKGs, plus one mounted and signed EKG in the packet. Page 3 uses less-specific singular wording. The website preserves both and advises confirming the packet with the instructor. Missing requirements can leave the test ungraded. The format is multiple choice, one correct answer, maximum 90 minutes, 80% pass; interpretation on the submitted EKG is optional. All other guide administration, scan-sheet, retake, renewal and CE instructions remain in their own section.
+These are source-coverage statuses, not a prediction of learner performance. “Missing from class materials” includes 22 administrative items supplied directly by ASPT and two required diagram labels. The complete audit is in aspt/coverage.json and aspt/scope-audit.json. The excluded-question list is recorded there for review.
 
 ## Verification
 
-The hosted workflow tests exact term numbering against the extracted blueprint, every checklist status, lesson navigation, source-image integrity/rendering, all four choices of each new question in both entry points, scoring idempotence, explanations, returns from quiz/results, 390/768/1280 layouts and keyboard image enlargement. It also runs the pre-existing complete study and ECG verification suites. Consult the PR and workflow result for actual pass/fail status; this document describes the checks, not an unrun result.
+Hosted checks cover all lesson/source mappings, unchanged exact guide-term numbering and competencies, excluded-question filtering, every answer option in focused topic practice, explanations, images, both entry points, mobile layout and keyboard controls. The existing 611-question and source ECG suites also run. See the linked pull request/workflow results for the executed status.
 
-## Limits and next expansion
-
-Source gaps are visible in the app. No guarantee of official question distribution or passing score prediction is made. Prioritize practical preparation/mounting confirmation, the ambiguous guide terms, and remaining source-strip verification before adding more questions. A future expansion can add individually reviewed practice questions for more terminology and class rhythm examples without replacing the source-first workflow.
-
-All processing used existing attachments read-only and in-memory preparation; repository writes and tests occur on GitHub. No new local files or browser persistence are used.
+No local files were created; existing attachments were read only, content was prepared in memory and repository writes/tests ran remotely.

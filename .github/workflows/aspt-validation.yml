@@ -1,7 +1,7 @@
 name: ASPT exam verification
 on:
   push:
-    branches: [aspt-exam-20260911]
+    branches: [aspt-scope-20260913]
   pull_request:
     paths: ['aspt/**', 'tools/aspt/**', '.github/workflows/aspt-validation.yml']
 permissions:
