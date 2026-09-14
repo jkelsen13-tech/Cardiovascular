@@ -343,14 +343,25 @@
 .ecg-3d-labels{position:absolute;inset:0;pointer-events:none;}
 .ecg-3d-label{position:absolute;transform:translate(-50%,-50%);padding:2px 4px;background:#101723e8;color:#fff;border:1px solid #91a5bd;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap;}
 .ecg-3d-label[data-kind="conduction"]{color:#fff0ad;border-color:#bdae72;}
+.ecg-3d-label[data-active="true"]{color:#fff6bd;border-color:#ffe66b;box-shadow:0 0 0 1px #101723,0 0 10px #ffe66b;z-index:2;}
+.ecg-3d-label[data-kind="valve"]{border-width:2px;box-shadow:0 0 0 1px #101723,0 0 8px currentColor;}
+.ecg-3d-label[data-kind="valve"][data-state="open"]{color:#8fffd1;border-color:#36d399;}
+.ecg-3d-label[data-kind="valve"][data-state="closed"]{color:#e4ebf4;border-color:#8fa0b6;}
+.ecg-3d-label[data-kind="valve"][data-state="opening"],.ecg-3d-label[data-kind="valve"][data-state="closing"]{color:#ffe7a0;border-color:#ffc857;}
+.ecg-3d-label[data-kind="valve"][data-state="transition"]{color:#e8ddff;border-color:#b8a7d9;}
 .ecg-3d-options label{color:#eef3ff;display:flex;align-items:center;gap:7px;min-height:44px;font-size:13px;}
 .ecg-3d-options input{width:18px;height:18px;accent-color:#ffe66b;}
+.ecg-3d-options select{min-height:38px;padding:6px 28px 6px 8px;border:1px solid #73839b;border-radius:7px;background:#243044;color:#f5f7ff;font:inherit;}
 .ecg-3d-help,.ecg-3d-status,.ecg-3d-key,.ecg-3d-attribution{font-size:12px;line-height:1.5;}
 .ecg-3d-status,.ecg-3d-help{color:#c1cbda;}
+.ecg-3d-cycle-readout{display:grid;gap:6px;margin:8px 0;padding:9px 10px;border:1px solid #53647a;border-radius:9px;background:#101723;color:#f5f7ff;font-size:12px;line-height:1.4;}
+.ecg-3d-cycle-readout p{margin:0;}
+.ecg-3d-flow-state{padding-left:8px;border-left:4px solid #78d8ff;}
+.ecg-3d-valve-state{padding-left:8px;border-left:4px solid #ffc857;font-weight:700;}
 .ecg-3d-direction{color:#fff0ad;font-size:13px;min-height:3em;}
 .ecg-3d-key summary{cursor:pointer;min-height:44px;display:flex;align-items:center;}
 .ecg-3d-attribution a{color:var(--es-accent);}
-@media(max-width:420px){.ecg-3d-toolbar button{flex:1 1 40%;}.ecg-3d-label{font-size:9px;padding:1px 3px;}.ecg-3d-options{gap:6px 12px;}}
+@media(max-width:420px){.ecg-3d-toolbar button{flex:1 1 40%;}.ecg-3d-label{font-size:9px;padding:1px 3px;}.ecg-3d-label[data-kind="valve"]{font-size:8px;}.ecg-3d-options{gap:6px 12px;}.ecg-3d-cycle-readout{font-size:11px;}}
 @media(forced-colors:active){.ecg-3d-label{forced-color-adjust:none;}.ecg-3d-viewport{border:2px solid CanvasText;}}
 
 .ecg-3d-leader{position:absolute;height:1px;background:#b9cbd27a;transform-origin:0 0;pointer-events:none;}

@@ -9,7 +9,7 @@ window.EcgHeart3D = (() => {
  async function mount(host, initial, failed) {
   let disposed=false, raf=0, observer, inter, stage=initial.stage, playing=initial.playing;
   let touchEnabled=false;
-  let visible=true, cutaway=false, conduction=true, blood=true, labels=true, yaw=0,pitch=0,distance=5.5;
+  let visible=true, cutaway=false, conduction=true, blood=true, labels=true, showValves=false, labelMode="clean", yaw=0,pitch=0,distance=5.5;
   const reduced=matchMedia("(prefers-reduced-motion: reduce)");
   const scene=new T.Scene(), camera=new T.PerspectiveCamera(38,1,.01,100);
   const renderer=new T.WebGLRenderer({antialias:false,alpha:true,powerPreference:"low-power"});
@@ -18,9 +18,10 @@ window.EcgHeart3D = (() => {
   renderer.setClearColor(0x141a24,1);
   const canvas=renderer.domElement;canvas.className="ecg-3d-canvas";canvas.tabIndex=0;
   canvas.setAttribute("role","img");canvas.setAttribute("aria-label","Rotatable anatomical heart. Arrow keys rotate; plus and minus zoom. Front view restores patient orientation.");
-  host.innerHTML='<div class="ecg-3d-toolbar"><button type="button" data-action="cut" aria-pressed="false">Cutaway</button><button type="button" data-action="front">Reset / front view</button><button type="button" data-action="in" aria-label="Zoom in">Zoom +</button><button type="button" data-action="out" aria-label="Zoom out">Zoom −</button><button type="button" data-action="touch" aria-pressed="false">Enable touch rotation</button></div><div class="ecg-3d-viewport"><div class="ecg-3d-labels" aria-hidden="true"></div></div><div class="ecg-3d-options"><label><input type="checkbox" data-option="conduction" checked>Conduction</label><label><input type="checkbox" data-option="blood" checked>Blood flow</label><label><input type="checkbox" data-option="labels" checked>Labels</label></div><p class="ecg-3d-help">Mouse drag rotates. Touch scrolls the page by default; enable touch rotation for orbit and pinch, then unlock page scrolling. Arrow keys rotate when the heart has focus. Labels show anatomical structures; bright paths and arrows are teaching overlays.</p><p class="ecg-3d-direction" role="status"></p><details class="ecg-3d-key"><summary>Structure and flow key</summary><p>RA: right atrium; LA: left atrium; RV: right ventricle; LV: left ventricle. SVC/IVC: superior/inferior vena cava; PA: pulmonary artery; PV: pulmonary veins. In cutaway: TV = tricuspid valve; MV = mitral valve; Pulm V = pulmonary valve; Aortic V = aortic valve.</p><p>Deoxygenated blood: SVC/IVC → RA → tricuspid valve → RV → pulmonary valve → PA. Oxygenated blood: PV → LA → mitral valve → LV → aortic valve → aorta.</p><p>SA → atria → AV → His → right/left bundle branches → Purkinje. Overlays and chamber motion are schematic, not a patient-specific electrophysiology or fluid simulation.</p></details>';
+  host.innerHTML='<div class="ecg-3d-toolbar"><button type="button" data-action="cut" aria-pressed="false">Cutaway</button><button type="button" data-action="front">Reset / front view</button><button type="button" data-action="in" aria-label="Zoom in">Zoom +</button><button type="button" data-action="out" aria-label="Zoom out">Zoom −</button><button type="button" data-action="touch" aria-pressed="false">Enable touch rotation</button></div><div class="ecg-3d-viewport"><div class="ecg-3d-labels" aria-hidden="true"></div></div><div class="ecg-3d-cycle-readout" role="status" aria-live="polite"><p class="ecg-3d-flow-state"></p><p class="ecg-3d-valve-state"></p></div><div class="ecg-3d-options"><label><input type="checkbox" data-option="conduction" checked>Conduction</label><label><input type="checkbox" data-option="blood" checked>Blood flow</label><label><input type="checkbox" data-option="labels" checked>Labels</label><label>Label mode <select data-option="label-mode" aria-label="Label mode"><option value="clean" selected>Clean</option><option value="conduction">Conduction</option><option value="blood">Blood flow</option><option value="anatomy">Anatomy</option></select></label><label><input type="checkbox" data-option="valves">Show valves</label></div><p class="ecg-3d-help">Mouse drag rotates. Touch scrolls the page by default; enable touch rotation for orbit and pinch, then unlock page scrolling. Arrow keys rotate when the heart has focus. Labels show anatomical structures; bright paths and arrows are teaching overlays.</p><p class="ecg-3d-direction" role="status"></p><details class="ecg-3d-key"><summary>Structure and flow key</summary><p>RA: right atrium; LA: left atrium; RV: right ventricle; LV: left ventricle. SVC/IVC: superior/inferior vena cava; PA: pulmonary artery; PV: pulmonary veins. In cutaway: TV = tricuspid valve; MV = mitral valve; Pulm V = pulmonary valve; Aortic V = aortic valve.</p><p>Deoxygenated blood: SVC/IVC → RA → tricuspid valve → RV → pulmonary valve → PA. Oxygenated blood: PV → LA → mitral valve → LV → aortic valve → aorta.</p><p>SA → atria → AV → His → right/left bundle branches → Purkinje. Overlays and chamber motion are schematic, not a patient-specific electrophysiology or fluid simulation.</p></details>';
   const viewport=host.querySelector(".ecg-3d-viewport");viewport.prepend(canvas);
   const labelLayer=host.querySelector(".ecg-3d-labels"), direction=host.querySelector(".ecg-3d-direction");
+  const flowState=host.querySelector(".ecg-3d-flow-state"),valveState=host.querySelector(".ecg-3d-valve-state");
   const model=new T.Group();scene.add(model);
   scene.add(new T.HemisphereLight(0xffffff,0x53647a,2.5));
   const key=new T.DirectionalLight(0xffffff,3);key.position.set(-3,5,6);scene.add(key);
@@ -28,7 +29,7 @@ window.EcgHeart3D = (() => {
   const overlays=new T.Group();scene.add(overlays);
   const clipping=new T.Plane(V(0,0,-1),.12);
   const bounds=[new T.Plane(V(1,0,0),1.65),new T.Plane(V(-1,0,0),1.65),new T.Plane(V(0,1,0),1.65),new T.Plane(V(0,-1,0),1.65),new T.Plane(V(0,0,1),1.65),new T.Plane(V(0,0,-1),1.65)];
-  const meshes=[],points={},labelItems=[],pivots=[],paths=[],flows=[];
+  const meshes=[],points={},labelItems=[],pivots=[],paths=[],flows=[],valveLabels={},valveMeshes={};
   let ready=false;
   function dispose(){
    if(disposed)return;disposed=true;cancelAnimationFrame(raf);
@@ -43,8 +44,10 @@ window.EcgHeart3D = (() => {
   function renderLabels(){
    const box=viewport.getBoundingClientRect(),sides=[[],[]];
    labelItems.forEach(item=>{
-    const {el,line,point,kind}=item;
-    el.hidden=!labels||(kind==="conduction"&&!conduction)||(kind==="valve"&&!cutaway);
+    const {el,line,point,kind,id}=item;
+    const sets={clean:["ra","rv","la","lv","aorta","pa"],conduction:["ra","rv","la","lv","sa","avnode","his","rbb","lbb","purkinje"],blood:["svc","ivc","ra","rv","pa","vein","la","lv","aorta"],anatomy:["svc","ivc","ra","rv","pa","vein","la","lv","aorta","sa","avnode","his","rbb","lbb","purkinje"]};
+    const inMode=kind==="valve"?showValves:sets[labelMode].includes(id);
+    el.hidden=!labels||!inMode||(kind==="conduction"&&!conduction);
     const p=point.clone().project(camera);el.hidden=el.hidden||p.z>1||p.z< -1;
     line.hidden=el.hidden;if(el.hidden)return;
     item.px=(p.x*.5+.5)*box.width;item.py=(-p.y*.5+.5)*box.height;
@@ -72,24 +75,39 @@ window.EcgHeart3D = (() => {
    const atrial=stage==="p",vent=stage==="qrs"||stage==="st";
    pivots.forEach(({pivot,type})=>{const active=type==="atrial"?atrial:vent;pivot.scale.setScalar(active?1-.035*pulse:1);});
    flows.forEach(f=>{
-    const phase=(stage==="p"||stage==="pr"||stage==="tp")?"fill":(stage==="qrs"||stage==="st")?"eject":"none";
+    const phase=flowPhase();
     const active=f.phase===phase;
     f.group.visible=blood&&active;
-    f.arrows.forEach((a,i)=>{const t=((moving?time*.00014:0)+i/3+.12)%1;const p=f.curve.getPoint(t);a.position.copy(p);a.quaternion.setFromUnitVectors(V(0,1,0),f.curve.getTangent(t).normalize());});
+    f.material.opacity=moving?.82+.18*pulse:1;f.haloMaterial.opacity=moving?.38+.14*pulse:.46;
+    f.arrows.forEach((a,i)=>{const t=((moving?time*.00018:0)+i/f.arrows.length+.08)%1;const p=f.curve.getPoint(t);a.position.copy(p);a.quaternion.setFromUnitVectors(V(0,1,0),f.curve.getTangent(t).normalize());a.scale.setScalar(moving?.92+.18*pulse:1);});
    });
    renderer.render(scene,camera);renderLabels();
    if(moving)raf=requestAnimationFrame(draw);
   }
+  function flowPhase(){return(stage==="p"||stage==="pr"||stage==="tp")?"fill":(stage==="qrs"||stage==="st")?"eject":"none";}
   function sync(next){
-   stage=next.stage;playing=next.playing;host.dataset.stage=stage;
+   stage=next.stage;playing=next.playing;host.dataset.stage=stage;host.dataset.flowPhase=flowPhase();
    const atrial=stage==="p",vent=stage==="qrs"||stage==="st",repol=stage==="t";
    meshes.forEach(m=>{const n=m.name;const active=/atrium/.test(n)?atrial:/ventricle|septum/.test(n)?vent:false;m.material.emissive.set(active?0x773219:repol&&/ventricle/.test(n)?0x423073:0);m.material.emissiveIntensity=active?.8:.4;});
    paths.forEach(p=>{p.object.visible=conduction;const active=p.phase==="atrial"?atrial:p.phase==="av"?stage==="pr":p.phase==="vent"?stage==="qrs":false;p.material.color.set(active?0xffe66b:0x8398a5);p.material.opacity=active?1:.32;});
+   const activeLabels={p:["sa","ra","la"],pr:["avnode","ra","la","rv","lv"],qrs:["his","rbb","lbb","purkinje","rv","lv","pa","aorta"],st:["rv","lv","pa","aorta"],t:["rv","lv"],u:[],tp:["svc","ivc","vein","ra","la","rv","lv"]}[stage];
+   labelItems.forEach(item=>item.el.dataset.active=String(activeLabels.includes(item.id)));
+   const valveStages={
+    p:{tv:"OPEN",mv:"OPEN",pv:"CLOSED",av:"CLOSED"},pr:{tv:"OPEN",mv:"OPEN",pv:"CLOSED",av:"CLOSED"},
+    qrs:{tv:"CLOSING",mv:"CLOSING",pv:"OPENING",av:"OPENING"},st:{tv:"CLOSED",mv:"CLOSED",pv:"OPEN",av:"OPEN"},
+    t:{tv:"CLOSED",mv:"CLOSED",pv:"CLOSING",av:"CLOSING"},u:{tv:"TRANSITION",mv:"TRANSITION",pv:"TRANSITION",av:"TRANSITION"},
+    tp:{tv:"OPEN",mv:"OPEN",pv:"CLOSED",av:"CLOSED"}
+   };
+   const states=valveStages[stage];
+   for(const [id,value] of Object.entries(states)){const mesh=valveMeshes[id],item=valveLabels[id];if(mesh){const color=value==="OPEN"?0x36d399:value==="CLOSED"?0x7c8ca5:value==="TRANSITION"?0xb8a7d9:0xffc857;mesh.material.emissive.set(color);mesh.material.emissiveIntensity=value==="OPEN"?.9:value==="CLOSED"?.28:.75;}if(item){item.el.textContent=(id==="pv"?"Pulm V":id==="av"?"Aortic V":id.toUpperCase())+" "+value;item.el.dataset.state=value.toLowerCase();}}
+   host.dataset.valves=Object.entries(states).map(([id,value])=>id+":"+value).join(",");
+   flowState.textContent={p:"FLOW → SVC / IVC → right atrium → tricuspid → right ventricle; pulmonary veins → left atrium → mitral → left ventricle.",pr:"FLOW → Ventricular filling continues through the open tricuspid and mitral valves.",qrs:"FLOW → Ventricular ejection begins toward the pulmonary artery and aorta.",st:"FLOW → Right ventricle → pulmonary valve → pulmonary artery; left ventricle → aortic valve → aorta.",t:"FLOW → Ejection slows as the ventricles relax.",u:"FLOW → Transition toward filling; no separate U-wave mechanical event is assigned.",tp:"FLOW → Passive filling resumes through the tricuspid and mitral valves."}[stage];
+   valveState.textContent={p:"VALVES • Tricuspid + mitral OPEN • Aortic + pulmonary CLOSED",pr:"VALVES • Tricuspid + mitral OPEN • Aortic + pulmonary CLOSED",qrs:"VALVES • Tricuspid + mitral CLOSING • Aortic + pulmonary OPENING",st:"VALVES • Tricuspid + mitral CLOSED • Aortic + pulmonary OPEN",t:"VALVES • Aortic + pulmonary CLOSING • Tricuspid + mitral CLOSED",u:"VALVES • Transition toward filling",tp:"VALVES • Tricuspid + mitral OPEN • Aortic + pulmonary CLOSED"}[stage];
    direction.textContent={p:"Atria depolarize and contract; arrows show atrial flow into the ventricles.",pr:"AV nodal delay; ventricular filling continues.",qrs:"His–Purkinje activation depolarizes the ventricles; contraction and ejection follow.",st:"Ventricles remain depolarized; schematic ejection continues.",t:"Ventricular repolarization and relaxation; ejection arrows fade.",u:"U wave: possible late recovery. No separate mechanical event is assigned.",tp:"Electrical baseline; schematic passive filling."}[stage];
    draw();
   }
-  function label(text,point,kind="structure"){
-   const el=document.createElement("span");el.className="ecg-3d-label";el.textContent=text;el.dataset.kind=kind;const line=document.createElement("i");line.className="ecg-3d-leader";labelLayer.append(line,el);labelItems.push({el,line,point,kind});
+  function label(text,point,kind="structure",id=""){
+   const el=document.createElement("span");el.className="ecg-3d-label";el.textContent=text;el.dataset.kind=kind;el.dataset.structure=id;const line=document.createElement("i");line.className="ecg-3d-leader";labelLayer.append(line,el);const item={el,line,point,kind,id};labelItems.push(item);return item;
   }
   function curveLine(coords,color,phase,r=.015){
    const curve=new T.CatmullRomCurve3(coords);
@@ -98,11 +116,13 @@ window.EcgHeart3D = (() => {
   }
   function flow(coords,phase,color){
    const curve=new T.CatmullRomCurve3(coords),group=new T.Group();overlays.add(group);
-   const material=new T.MeshBasicMaterial({color,transparent:true,opacity:.8,depthTest:false});
-   const tube=new T.Mesh(new T.TubeGeometry(curve,32,.009,4,false),material);tube.renderOrder=11;group.add(tube);
+   const haloMaterial=new T.MeshBasicMaterial({color:0x07121d,transparent:true,opacity:.46,depthTest:false});
+   const halo=new T.Mesh(new T.TubeGeometry(curve,36,.032,6,false),haloMaterial);halo.renderOrder=10;group.add(halo);
+   const material=new T.MeshBasicMaterial({color,transparent:true,opacity:1,depthTest:false});
+   const tube=new T.Mesh(new T.TubeGeometry(curve,36,.018,6,false),material);tube.renderOrder=11;group.add(tube);
    const arrows=[];
-   for(let i=0;i<3;i++){const a=new T.Mesh(new T.ConeGeometry(.045,.12,7),material);a.renderOrder=12;group.add(a);arrows.push(a);}
-   flows.push({group,curve,phase,arrows});
+   for(let i=0;i<5;i++){const a=new T.Mesh(new T.ConeGeometry(.065,.18,9),material);a.renderOrder=12;group.add(a);arrows.push(a);}
+   flows.push({group,curve,phase,arrows,material,haloMaterial});
   }
   const drag=new Map();let last;
   function pointerDown(e){if(e.pointerType==="touch"&&!touchEnabled)return;canvas.setPointerCapture(e.pointerId);drag.set(e.pointerId,[e.clientX,e.clientY]);last=null;}
@@ -126,7 +146,7 @@ window.EcgHeart3D = (() => {
    draw();
   }));
   host.querySelectorAll("[data-option]").forEach(el=>el.addEventListener("change",()=>{
-   if(el.dataset.option==="conduction")conduction=el.checked;if(el.dataset.option==="blood")blood=el.checked;if(el.dataset.option==="labels")labels=el.checked;sync({stage,playing});
+   if(el.dataset.option==="conduction")conduction=el.checked;if(el.dataset.option==="blood")blood=el.checked;if(el.dataset.option==="labels")labels=el.checked;if(el.dataset.option==="valves")showValves=el.checked;if(el.dataset.option==="label-mode")labelMode=el.value;host.dataset.labelMode=labelMode;sync({stage,playing});
   }));
   try {
    const [heart,vessels]=await Promise.all([load(window.EcgHeartModelData.heart),load(window.EcgHeartModelData.vessels)]);
@@ -142,6 +162,7 @@ window.EcgHeart3D = (() => {
    model.scale.setScalar(scale);model.position.copy(mid.multiplyScalar(-scale));model.updateMatrixWorld(true);
    for(const [id,n] of Object.entries({ra:"right_cardiac_atrium",la:"left_cardiac_atrium",rv:"right_ventricle",lv:"left_ventricle",tv:"tricuspid_valve",mv:"mitral_valve",pv:"pulmonary_valve",av:"aortic_valve",svc:"superior_vena_cava",ivc:"inferior_vena_cava",pa:"pulmonary_trunk",aorta:"ascending_aorta",vein:"pulmonary_vein",septum:"interventricular_septum"}))points[id]=center(n);
    model.traverse(o=>{if(!o.isMesh)return;meshes.push(o);o.material?.dispose();const name=o.name.toLowerCase();const blue=/vena_cava|right_cardiac_atrium|right_ventricle|pulmonary_(artery|trunk)/.test(name);o.material=new T.MeshStandardMaterial({color:blue?0x6a91b3:0xbf716a,roughness:.65,metalness:0,side:T.DoubleSide,clippingPlanes:bounds});});
+   for(const [id,part] of Object.entries({tv:"tricuspid_valve",mv:"mitral_valve",pv:"pulmonary_valve",av:"aortic_valve"}))valveMeshes[id]=find(part);
    for(const m of meshes.filter(m=>/cardiac_atrium|(?:left|right)_ventricle/.test(m.name))){
     const pivot=new T.Group(),world=new T.Box3().setFromObject(m).getCenter(V());scene.add(pivot);pivot.position.copy(world);pivot.attach(m);pivots.push({pivot,type:/atrium/.test(m.name)?"atrial":"vent"}); // modest illustrative contraction around each chamber
    }
@@ -154,16 +175,16 @@ window.EcgHeart3D = (() => {
    curveLine([his,rb,front(p.rv).add(V(-.1,-.18,0))],0xffe66b,"vent");
    curveLine([his,lb,apex],0xffe66b,"vent");
    [p.rv,p.lv].forEach(v=>[-1,1].forEach(sign=>curveLine([front(v).add(V(0,-.22,0)),front(v).add(V(sign*.16,-.08,.02)),front(v).add(V(sign*.18,.07,.02))],0xffe66b,"vent",.009)));
-   for(const [name,point] of [["SA",sa],["AV",avn]]){const mat=new T.MeshBasicMaterial({color:0xfff29b,depthTest:false});const o=new T.Mesh(new T.SphereGeometry(.04,10,8),mat);o.position.copy(point);o.renderOrder=13;overlays.add(o);paths.push({object:o,material:mat,phase:name==="SA"?"atrial":"av"});label(name,point,"conduction");}
-   label("His",his,"conduction");label("RBB",rb,"conduction");label("LBB",lb,"conduction");label("Purkinje",apex,"conduction");
+   for(const [name,point] of [["SA",sa],["AV",avn]]){const mat=new T.MeshBasicMaterial({color:0xfff29b,depthTest:false});const o=new T.Mesh(new T.SphereGeometry(.04,10,8),mat);o.position.copy(point);o.renderOrder=13;overlays.add(o);paths.push({object:o,material:mat,phase:name==="SA"?"atrial":"av"});label(name,point,"conduction",name==="SA"?"sa":"avnode");}
+   label("His",his,"conduction","his");label("RBB",rb,"conduction","rbb");label("LBB",lb,"conduction","lbb");label("Purkinje",apex,"conduction","purkinje");
    flow([front(p.svc),front(p.ra),front(p.tv),front(p.rv)],"fill",0x78d8ff);
    flow([front(p.ivc),front(p.ra),front(p.tv),front(p.rv)],"fill",0x78d8ff);
    meshes.filter(m=>/pulmonary_vein_/.test(m.name)).forEach(m=>flow([front(new T.Box3().setFromObject(m).getCenter(V())),front(p.la),front(p.mv),front(p.lv)],"fill",0xffa79a));
    flow([front(p.rv),front(p.pv),front(p.pa).add(V(0,.12,0))],"eject",0x78d8ff);
    flow([front(p.lv),front(p.av),front(p.aorta).add(V(0,.15,0))],"eject",0xffa79a);
-   for(const [name,id] of [["TV","tv"],["MV","mv"],["Pulm V","pv"],["Aortic V","av"]])label(name,front(p[id]),"valve");
-   for(const [name,id] of [["RA","ra"],["LA","la"],["RV","rv"],["LV","lv"],["SVC","svc"],["IVC","ivc"],["PA","pa"],["Aorta","aorta"],["PV","vein"]])label(name,front(p[id]));
-   host.dataset.ready="true";host.dataset.meshes=String(meshes.length);
+   for(const [name,id] of [["TV","tv"],["MV","mv"],["Pulm V","pv"],["Aortic V","av"]])valveLabels[id]=label(name,front(p[id]),"valve",id);
+   for(const [name,id] of [["RA","ra"],["LA","la"],["RV","rv"],["LV","lv"],["SVC","svc"],["IVC","ivc"],["PA","pa"],["Aorta","aorta"],["PV","vein"]])label(name,front(p[id]),"structure",id);
+   host.dataset.ready="true";host.dataset.meshes=String(meshes.length);host.dataset.flowArrows=String(flows.reduce((n,f)=>n+f.arrows.length,0));host.dataset.labelMode=labelMode;
    host.dataset.frontRightLeft=String(p.ra.x<p.la.x);
    document.addEventListener("visibilitychange",visibility);reduced.addEventListener?.("change",motion);
    observer=new ResizeObserver(resize);observer.observe(viewport);
