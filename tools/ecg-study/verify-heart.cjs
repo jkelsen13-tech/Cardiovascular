@@ -1,4 +1,4 @@
-// Visual QA reference: design-qa.md; captures are uploaded as anatomical-heart-review.
+// Visual QA reference: design-qa.md covers label clarity, blood journey, and ECG timing; captures are uploaded as anatomical-heart-review.
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
