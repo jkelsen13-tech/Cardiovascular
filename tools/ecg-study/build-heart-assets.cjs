@@ -33,7 +33,6 @@ const sources = [
   }
   const model={id,url:base+file,gitBlobSha:sha,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length,triangles,vertices,meshes:json.meshes.length,nodes:json.nodes.map(n=>({name:n.name,mesh:n.mesh})),textures:0};
   report.models.push(model);
-  fs.writeFileSync('ecg-study/assets/'+id+'.glb',bytes);
   embedded[id]=bytes.toString('base64');
  }
  fs.writeFileSync('ecg-study/assets/model-data.js','/* Original CC BY 4.0 GLBs encoded for offline file:// compatibility. See ATTRIBUTION.md. */\nwindow.EcgHeartModelData='+JSON.stringify(embedded)+';\n');

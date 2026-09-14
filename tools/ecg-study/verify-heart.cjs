@@ -1,0 +1,66 @@
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const {pathToFileURL}=require('node:url');
+const {chromium}=require('playwright');
+(async()=>{
+ const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const page=await browser.newPage({viewport:{width:1280,height:1000}});
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ const requests=[];page.on('request',r=>requests.push(r.url()));
+ const url=pathToFileURL(path.resolve('index.html')).href;
+ fs.mkdirSync('review-heart',{recursive:true});
+ try{
+  await page.goto(url);
+  assert(!requests.some(s=>/model-data|three-gltf|heart-3d/.test(s)),'3D must be lazy');
+  await page.locator('#ecgStudyLaunch').click();
+  await page.waitForSelector('#ecg3DHost[data-ready="true"]',{timeout:30000});
+  assert.equal(await page.locator('#ecg3DHost').getAttribute('data-meshes'),'51');
+  assert.equal(await page.locator('#ecg3DHost').getAttribute('data-front-right-left'),'true');
+  assert.equal(await page.locator('#ecgSimpleHeart').isVisible(),false);
+  await page.screenshot({path:'review-heart/desktop-front.png',fullPage:true});
+  for(let i=0;i<7;i++){
+   await page.locator('#ecgStageSlider').evaluate((el,n)=>{el.value=String(n);el.dispatchEvent(new Event('input',{bubbles:true}));},i);
+   const id=['p','pr','qrs','st','t','u','tp'][i];
+   assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'),id);
+   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-stage'),id);
+  }
+  await page.locator('[data-action="cut"]').click();
+  assert.equal(await page.locator('[data-action="cut"]').getAttribute('aria-pressed'),'true');
+  await page.screenshot({path:'review-heart/desktop-cutaway.png',fullPage:true});
+  for(const key of ['conduction','blood','labels']){const el=page.locator('[data-option="'+key+'"]');await el.uncheck();assert.equal(await el.isChecked(),false);await el.check();}
+  await page.locator('.ecg-3d-canvas').focus();
+  const before=await page.evaluate(()=>EcgStudy.getState().stage);
+  await page.keyboard.press('ArrowRight');await page.keyboard.press('+');
+  assert.equal(await page.evaluate(()=>EcgStudy.getState().stage),before,'orbit must not change ECG stage');
+  await page.locator('[data-action="front"]').click();
+  await page.locator('#ecgPlayBtn').click();
+  assert.equal(await page.evaluate(()=>EcgStudy.getState().playing),true);
+  await page.locator('#ecgTabCards').click();
+  assert.equal(await page.locator('.ecg-3d-canvas').count(),0);
+  assert.equal(await page.evaluate(()=>EcgStudy.getState().playing),false);
+  await page.locator('#ecgTabSlider').click();
+  await page.waitForSelector('#ecg3DHost[data-ready="true"]');
+  await page.locator('#ecgViewSimple').click();assert(await page.locator('.ecg-heart-svg').isVisible());
+  await page.locator('#ecgView3D').click();await page.waitForSelector('#ecg3DHost[data-ready="true"]');
+  await page.setViewportSize({width:390,height:844});
+  await page.emulateMedia({reducedMotion:'reduce'});
+  await page.locator('[data-action="cut"]').click();
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await page.screenshot({path:'review-heart/portrait-cutaway.png',fullPage:true});
+  await page.locator('#ecgStudyBack').click();
+  assert.equal(await page.locator('.ecg-3d-canvas').count(),0);
+  assert.equal(requests.filter(s=>/^https?:/.test(s)).length,0,'file:// operation must not issue runtime network requests');
+  assert.deepEqual(errors,[]);
+  const fallback=await browser.newPage();
+  await fallback.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){if(/^webgl/.test(type))return null;return original.call(this,type,...args);};});
+  await fallback.goto(url);await fallback.locator('#ecgStudyLaunch').click();
+  await fallback.waitForFunction(()=>document.querySelector('#ecg3DStatus')?.textContent.includes('3D unavailable'));
+  assert(await fallback.locator('.ecg-heart-svg').isVisible());
+  await fallback.locator('#ecgStageNext').click();
+  assert.equal(await fallback.locator('#ecgInstrument').getAttribute('data-stage'),'pr');
+  await fallback.screenshot({path:'review-heart/webgl-fallback.png',fullPage:true});
+  await fallback.close();
+  console.log('PASS: lazy GLB load; all 51 meshes; anatomical front mapping; seven shared stages; controls; keyboard isolation; disposal; reduced-motion portrait; offline file URL; WebGL fallback; no page errors.');
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exit(1)});

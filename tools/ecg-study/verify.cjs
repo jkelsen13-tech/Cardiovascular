@@ -85,6 +85,7 @@ const server = http.createServer((req, res) => {
       await page.goto(url + '/' + entry);
       assert(await page.locator('#ecgStudyLaunch').isVisible());
       await page.locator('#ecgStudyLaunch').click();
+      await page.locator('#ecgViewSimple').click();
       assert(await page.locator('#ecgStudyHome').isVisible());
       assert(!(await page.locator('#homeMenu').isVisible()));
 
@@ -209,6 +210,7 @@ const server = http.createServer((req, res) => {
 
     await page.goto(url);
     await page.locator('#ecgStudyLaunch').click();
+      await page.locator('#ecgViewSimple').click();
     await page.locator('#ecgStageSlider').focus();
     await page.keyboard.press('ArrowRight');
     assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'), 'pr');
@@ -221,6 +223,7 @@ const server = http.createServer((req, res) => {
       await page.setViewportSize({width, height: 900});
       await page.goto(url);
       await page.locator('#ecgStudyLaunch').click();
+      await page.locator('#ecgViewSimple').click();
       assert(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'overflow ' + width);
       const rightBox = await page.locator('#ecgPatientRight').boundingBox();
       const leftBox = await page.locator('#ecgPatientLeft').boundingBox();
@@ -249,6 +252,7 @@ const server = http.createServer((req, res) => {
 
     await page.goto(require('node:url').pathToFileURL(path.join(root, 'index.html')).href);
     await page.locator('#ecgStudyLaunch').click();
+      await page.locator('#ecgViewSimple').click();
     assert.equal(await page.locator('#ecgStageCaption').innerText(), D.stages[0].caption);
 
     assert.deepEqual(errors, []);
