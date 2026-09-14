@@ -41,16 +41,14 @@ const {chromium}=require('playwright');
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),9,'blood-flow mode shows routing labels only');
   await page.locator('[data-option="valves"]').check();
   assert.equal(await page.locator('.ecg-3d-label[data-kind="valve"]:not([hidden])').count(),4);
-  await page.screenshot({path:'review-heart/desktop-cutaway.png',fullPage:true});
-  await page.locator('.ecg-3d-viewport').scrollIntoViewIfNeeded();
-  await page.waitForTimeout(250);
   await page.locator('[data-option="label-mode"]').selectOption('conduction');
-  await page.waitForTimeout(50);
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-label-mode'),'conduction');
   assert.equal(await page.locator('.ecg-3d-label[data-kind="conduction"]:not([hidden])').count(),6);
   await page.locator('[data-option="label-mode"]').selectOption('anatomy');
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),19,'anatomy mode plus optional valves exposes all labels');
   for(const key of ['conduction','blood','labels','valves']){const el=page.locator('[data-option="'+key+'"]');await el.uncheck();assert.equal(await el.isChecked(),false);await el.check();}
+  await page.locator('[data-option="label-mode"]').selectOption('blood');
+  await page.screenshot({path:'review-heart/desktop-cutaway.png',fullPage:true});
   await page.locator('[data-option="label-mode"]').selectOption('clean');
   await page.locator('.ecg-3d-canvas').focus();
   const before=await page.evaluate(()=>EcgStudy.getState().stage);
