@@ -42,6 +42,7 @@ const {chromium}=require('playwright');
   await page.locator('[data-option="valves"]').check();
   assert.equal(await page.locator('.ecg-3d-label[data-kind="valve"]:not([hidden])').count(),4);
   await page.screenshot({path:'review-heart/desktop-cutaway.png',fullPage:true});
+  await page.locator('.ecg-3d-viewport').scrollIntoViewIfNeeded();
   await page.locator('[data-option="label-mode"]').selectOption('conduction');
   assert.equal(await page.locator('.ecg-3d-label[data-kind="conduction"]:not([hidden])').count(),6);
   await page.locator('[data-option="label-mode"]').selectOption('anatomy');
