@@ -30,7 +30,7 @@ This is a reference anatomy illustration, not a clinical simulation. Chamber mov
 
 The upstream mapping has conflicting left/right inferior pulmonary vein labels. All pulmonary vein labels here are generic PV. No inferior pulmonary vein laterality is asserted. The source meshes and coordinate relationships remain unchanged.
 
-The front basis is derived from RA→LA and ventricles→atria. Viewer-left is patient-right in that front view. Rotation changes screen positions; a persistent orientation note and Reset / front view explain this.
+The front basis is derived from RA→LA, orthogonalized against the IVC→SVC superior direction. Viewer-left is patient-right in that front view. Rotation changes screen positions; a persistent orientation note and Reset / front view explain this.
 
 Cutaway uses an uncapped clipping plane: it reveals interior surfaces but does not create a watertight surgical cut. Conduction nodes, bundle branches, Purkinje branches and blood arrows are schematic overlays using chamber/valve landmarks. Overlay depth testing is disabled to keep these teaching paths visible through exterior anatomy.
 

@@ -88,7 +88,10 @@ const EcgStudy = (() => {
       };
       const instance = await window.EcgHeart3D.mount(host,{stage:D.stages[state.stage].id,playing:state.playing},fail);
       if (generation !== heartGeneration) { instance.dispose(); return; }
-      heartView = instance; simple.hidden = true; syncHeart();
+      heartView = instance; simple.hidden = true;
+      const sliderRow = root.querySelector(".ecg-slider-row");
+      if (sliderRow) host.querySelector(".ecg-3d-viewport").after(sliderRow);
+      syncHeart();
       status.textContent = "Anatomical 3D heart ready. Use Reset / front view to restore the orientation shown below.";
     } catch (e) {
       if (generation !== heartGeneration) return;
@@ -309,7 +312,7 @@ const EcgStudy = (() => {
           <div><strong>Electrical event</strong> ${escape(st.event)}</div>
           <div><strong>Heart location</strong> ${escape(st.location)}</div>
         </div>
-        <p class="hint" style="color:#9b97b0;text-align:center;margin:0 8px 8px">${escape(st.heart)}</p>
+        <p class="hint" id="ecgHeartHint" style="color:#9b97b0;text-align:center;margin:0 8px 8px">${escape(st.heart)}</p>
         <div class="ecg-slider-row">
           <label for="ecgStageSlider">ECG part</label>
           <div class="ecg-slider-dots" aria-hidden="true">${dotsHtml(state.stage)}</div>
@@ -492,7 +495,7 @@ const EcgStudy = (() => {
     const assoc = inst.querySelectorAll(".ecg-assoc div");
     if (assoc[0]) assoc[0].innerHTML = "<strong>Electrical event</strong> " + escape(st.event);
     if (assoc[1]) assoc[1].innerHTML = "<strong>Heart location</strong> " + escape(st.location);
-    const hint = inst.querySelector(".ecg-slider-row")?.previousElementSibling;
+    const hint = inst.querySelector("#ecgHeartHint");
     if (hint && hint.classList.contains("hint")) hint.textContent = st.heart;
     const slider = document.getElementById("ecgStageSlider");
     if (slider) {

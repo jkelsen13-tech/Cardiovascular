@@ -135,7 +135,8 @@ window.EcgHeart3D = (() => {
    const find=part=>{let hit;model.traverse(o=>{if(o.isMesh&&o.name.toLowerCase().includes(part))hit=o;});if(!hit)throw Error("Missing anatomical mesh: "+part);return hit;};
    const center=part=>new T.Box3().setFromObject(find(part)).getCenter(V());
    const ra=center("right_cardiac_atrium"),la=center("left_cardiac_atrium"),rv=center("right_ventricle"),lv=center("left_ventricle");
-   const x=la.clone().sub(ra).normalize(),y=ra.clone().add(la).sub(rv).sub(lv).normalize();y.addScaledVector(x,-y.dot(x)).normalize();const z=x.clone().cross(y).normalize();
+   const y=center("superior_vena_cava").sub(center("inferior_vena_cava")).normalize();
+   const x=la.clone().sub(ra);x.addScaledVector(y,-x.dot(y)).normalize();const z=x.clone().cross(y).normalize();
    model.quaternion.setFromRotationMatrix(new T.Matrix4().makeBasis(x,y,z).invert());
    model.updateMatrixWorld(true);let box=new T.Box3().setFromObject(heart),mid=box.getCenter(V()),size=box.getSize(V());const scale=2.4/Math.max(size.y,size.x);
    model.scale.setScalar(scale);model.position.copy(mid.multiplyScalar(-scale));model.updateMatrixWorld(true);

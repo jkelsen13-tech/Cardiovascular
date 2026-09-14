@@ -18,6 +18,7 @@ const {chromium}=require('playwright');
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-meshes'),'51');
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-front-right-left'),'true');
   assert.equal(await page.locator('#ecgSimpleHeart').isVisible(),false);
+  assert.equal(await page.locator('#ecg3DHost .ecg-slider-row').count(),1,'shared slider stays adjacent to canvas');
   await page.screenshot({path:'review-heart/desktop-front.png',fullPage:true});
   for(let i=0;i<7;i++){
    await page.locator('#ecgStageSlider').evaluate((el,n)=>{el.value=String(n);el.dispatchEvent(new Event('input',{bubbles:true}));},i);
