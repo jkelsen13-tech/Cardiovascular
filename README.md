@@ -4,7 +4,7 @@ A single self-contained, offline, mobile-friendly HTML study quiz for the
 Cardiovascular Monitor Technician (CMT) class.
 
 ## Use
-Open **`cmt-quiz.html`** in any web browser. No internet, server, or install required.
+Open **`cmt-quiz.html`** (or **`index.html`**) in any web browser. No internet, server, or install required. Choose **ECG Waves & Intervals** on the home menu for flashcards and the interactive conduction slider; use **ECG Rhythm Practice** for source-strip interpretation.
 
 ## Structure
 Every question is tagged with a **module** (a class test unit) and a **unit** (one source
@@ -41,6 +41,10 @@ Unit 3 and Module 6's Unit 3 are separate decks).
   question on Position/Direction, Flow, and Oscillation topics (directional terms, body
   planes, landmark lines, circulation circuits, conduction system, autonomic control,
   ECG paper, ECG waveform/intervals, action potentials, and deflection direction).
+- **ECG Waves & Intervals** — flip flashcards (including reverse term↔definition), an interactive
+  six-stage ECG/heart slider with persistent patient L/R labels, optional PR/QRS/ST/J/QT landmarks,
+  and a short quiz with immediate feedback. Native SVG/CSS (not pasted screenshots). Open it from
+  the home menu; keep the `ecg-study/` folder beside the HTML for downloaded copies.
 - **Interactive ordering & labeling questions** (Canvas-style), graded per slot with
   partial credit (e.g. "9 / 12 correct"): sequence the conduction pathway and the
   reverse blood-flow path; label the heart-wall layers and heart-structure diagrams.

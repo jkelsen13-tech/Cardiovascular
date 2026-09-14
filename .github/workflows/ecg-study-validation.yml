@@ -1,0 +1,33 @@
+name: ECG waves study verification
+on:
+  push:
+    paths:
+      - 'ecg-study/**'
+      - 'tools/ecg-study/**'
+      - 'index.html'
+      - 'cmt-quiz.html'
+      - '.github/workflows/ecg-study-validation.yml'
+  pull_request:
+    paths:
+      - 'ecg-study/**'
+      - 'tools/ecg-study/**'
+      - 'index.html'
+      - 'cmt-quiz.html'
+      - '.github/workflows/ecg-study-validation.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test dependencies on the hosted runner
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Verify ECG waves study module
+        run: node tools/ecg-study/verify.cjs
