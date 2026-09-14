@@ -1,4 +1,5 @@
-// Visual QA reference: design-qa.md; captures are uploaded as anatomical-heart-review.\nconst assert=require('node:assert/strict');
+// Visual QA reference: design-qa.md; captures are uploaded as anatomical-heart-review.
+const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const {pathToFileURL}=require('node:url');
