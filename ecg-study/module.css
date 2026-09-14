@@ -99,7 +99,7 @@
   border: 1px solid #2a2f3d;
 }
 .ecg-instrument svg { display: block; width: 100%; height: auto; max-width: 100%; min-width: 0; }
-.ecg-ecg-svg { margin-bottom: 8px; min-width: 0; }
+.ecg-ecg-svg { margin-bottom: 8px; min-width: 0; min-height: 96px; }
 .ecg-wave-dim { stroke: var(--es-wave-dim); fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .ecg-wave-active { stroke: var(--es-wave); fill: none; stroke-width: 3.1; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(196,181,253,.45)); }
 .ecg-cursor { stroke: #d8b4fe; stroke-width: 1.4; stroke-dasharray: 3 4; }

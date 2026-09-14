@@ -132,21 +132,16 @@ const EcgStudy = (() => {
       <g class="ecg-landmarks" aria-hidden="true">
         <path d="M${ECG.p0},128 L${ECG.q0},128" stroke="#4ade80" stroke-width="2"/>
         <path d="M${ECG.p0},124 L${ECG.p0},132 M${ECG.q0},124 L${ECG.q0},132" stroke="#4ade80" stroke-width="2"/>
-        <text x="${(ECG.p0 + ECG.q0) / 2}" y="142" text-anchor="middle" fill="#86efac" font-size="10" font-weight="700">PR 0.12–0.20 s</text>
-        <path d="M${ECG.q0},114 L${ECG.j},114" stroke="#38bdf8" stroke-width="2"/>
-        <path d="M${ECG.q0},110 L${ECG.q0},118 M${ECG.j},110 L${ECG.j},118" stroke="#38bdf8" stroke-width="2"/>
-        <text x="${(ECG.q0 + ECG.j) / 2 + 24}" y="110" text-anchor="middle" fill="#7dd3fc" font-size="10" font-weight="700">QRS &lt; 0.12 s</text>
-        <circle cx="${ECG.j}" cy="${ECG.y}" r="4" fill="#fbbf24" stroke="#fff" stroke-width="1"/>
-        <text x="${ECG.j + 12}" y="74" text-anchor="start" fill="#fcd34d" font-size="10" font-weight="700">J point</text>
-        <path d="M${ECG.j},152 L${ECG.t0},152" stroke="#f59e0b" stroke-width="2"/>
-        <path d="M${ECG.j},148 L${ECG.j},156 M${ECG.t0},148 L${ECG.t0},156" stroke="#f59e0b" stroke-width="2"/>
-        <text x="${(ECG.j + ECG.t0) / 2}" y="166" text-anchor="middle" fill="#fcd34d" font-size="10" font-weight="700">ST</text>
-        <path d="M${ECG.q0},176 L${ECG.t1},176" stroke="#a78bfa" stroke-width="2"/>
-        <path d="M${ECG.q0},172 L${ECG.q0},180 M${ECG.t1},172 L${ECG.t1},180" stroke="#a78bfa" stroke-width="2"/>
-        <text x="${(ECG.q0 + ECG.t1) / 2}" y="190" text-anchor="middle" fill="#ddd6fe" font-size="10" font-weight="700">QT (rate-dependent)</text>
+        <text x="${(ECG.p0 + ECG.q0) / 2}" y="144" text-anchor="middle" fill="#86efac" font-size="11" font-weight="700">PR</text>
+        <path d="M${ECG.q0},12 L${ECG.j},12" stroke="#38bdf8" stroke-width="2"/>
+        <path d="M${ECG.q0},8 L${ECG.q0},16 M${ECG.j},8 L${ECG.j},16" stroke="#38bdf8" stroke-width="2"/>
+        <text x="230" y="14" text-anchor="start" fill="#7dd3fc" font-size="11" font-weight="700">QRS</text>
+        <circle cx="${ECG.j}" cy="${ECG.y}" r="4.5" fill="#fbbf24" stroke="#fff" stroke-width="1"/>
+        <text x="${ECG.j + 10}" y="76" text-anchor="start" fill="#fcd34d" font-size="11" font-weight="700">J</text>
+        <path d="M${ECG.j},136 L${ECG.t0},136" stroke="#f59e0b" stroke-width="2"/>
+        <text x="${(ECG.j + ECG.t0) / 2}" y="148" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="700">ST</text>
       </g>` : "";
-    const vbH = landmarks ? 200 : 150;
-    return `<svg class="ecg-ecg-svg" viewBox="0 0 640 ${vbH}" role="img" aria-hidden="true">
+    return `<svg class="ecg-ecg-svg" viewBox="0 0 640 150" role="img" aria-hidden="true">
       <title>Simplified ECG waveform</title>
       <line x1="20" y1="${ECG.y}" x2="${ECG.end}" y2="${ECG.y}" stroke="#2a3140" stroke-width="1"/>
       <path class="ecg-wave-dim" d="${FULL}"/>
@@ -166,14 +161,14 @@ const EcgStudy = (() => {
       <path class="ecg-chamber ecg-atria" d="M140,40 C140,18 110,8 90,30 C66,56 74,92 102,104 L140,96 L178,104 C206,92 214,56 190,30 C170,8 140,18 140,40 Z"/>
       <path class="ecg-chamber ecg-ventricles" d="M102,104 C74,128 84,172 140,196 C196,172 206,128 178,104 L140,116 Z"/>
       <path class="ecg-heart-outline" d="M140,40 C140,18 110,8 90,30 C62,58 70,112 140,196 C210,112 218,58 190,30 C170,8 140,18 140,40 Z"/>
-      <path class="ecg-path ecg-path-atrial ecg-path-to-av" d="M108,72 Q126,88 140,114"/>
+      <path class="ecg-path ecg-path-atrial ecg-path-to-av" d="M96,68 Q122,86 140,114"/>
       <path class="ecg-path ecg-path-vent" d="M140,118 L140,140"/>
       <path class="ecg-path ecg-path-vent" d="M140,140 Q116,154 104,178"/>
       <path class="ecg-path ecg-path-vent" d="M140,140 Q164,154 176,178"/>
       <path class="ecg-path ecg-path-vent" d="M104,178 q-8,10 -16,14 M104,178 q4,12 0,18 M176,178 q8,10 16,14 M176,178 q-4,12 0,18"/>
       <path class="ecg-repol" d="M112,150 Q124,166 136,176"/>
       <path class="ecg-repol" d="M168,150 Q156,166 144,176"/>
-      <circle class="ecg-node-sa" id="ecgSaNode" cx="108" cy="72" r="8" data-chamber="right-atrium"/>
+      <circle class="ecg-node-sa" id="ecgSaNode" cx="96" cy="68" r="8" data-chamber="right-atrium"/>
       <circle class="ecg-node-av" id="ecgAvNode" cx="140" cy="116" r="7" data-chamber="av-junction"/>
     </svg>`;
   }
@@ -256,7 +251,7 @@ const EcgStudy = (() => {
     return `<div id="ecgCardsPanel">
       <p class="ecg-progress" id="ecgCardProgress">Card ${state.card + 1} of ${n} · Known ${knownN} / ${D.cards.length}</p>
       <div class="ecg-chip-row">
-        <button type="button" class="ecg-chip" id="ecgReverseBtn" aria-pressed="${state.reverse}">Reverse (definition ↔ term)</button>
+          <button type="button" class="ecg-chip" id="ecgReverseBtn" aria-pressed="${state.reverse}">Show definitions first</button>
         <button type="button" class="ecg-chip" id="ecgReviewOnlyBtn" aria-pressed="${state.reviewOnly}">Study-again pile</button>
       </div>
       <div class="ecg-card-scene">

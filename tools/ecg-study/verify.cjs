@@ -107,7 +107,8 @@ const server = http.createServer((req, res) => {
         assert(land.includes(needle), 'missing ' + needle);
       }
       assert(!/normal QT is|0\.36–0\.44/i.test(land));
-      assert((await page.locator('#ecgInstrument').innerHTML()).includes('QT (rate-dependent)'));
+      assert((await page.locator('#ecgLandmarkBox').innerText()).includes('QT interval'));
+      assert((await page.locator('#ecgInstrument svg text').filter({hasText: 'J'}).count()) > 0);
 
       await page.locator('#ecgTabCards').click();
       assert(await page.locator('#ecgFlashcard').isVisible());
