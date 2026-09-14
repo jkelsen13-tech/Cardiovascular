@@ -180,7 +180,7 @@ const EcgStudy = (() => {
     const active = SEG[stageId];
     const cx = CURSOR[stageId];
     const on = (id) => ids.indexOf(stageId) === ids.indexOf(id) ? " is-on" : "";
-    return `<svg class="ecg-ecg-svg" viewBox="0 0 640 200" role="img" aria-hidden="true">
+    return `<svg class="ecg-ecg-svg" viewBox="0 0 640 208" role="img" aria-hidden="true">
       <title>Simplified ECG waveform</title>
       <line x1="20" y1="${ECG.y}" x2="${ECG.end}" y2="${ECG.y}" stroke="#2a3140" stroke-width="1"/>
       <path class="ecg-wave-dim" d="${FULL}"/>
@@ -458,6 +458,7 @@ const EcgStudy = (() => {
     root.querySelector("#ecgLandmarksToggle")?.addEventListener("change", (e) => {
       state.landmarks = e.target.checked;
       renderAll();
+      document.getElementById("ecgInstrument")?.scrollIntoView({block: "start"});
     });
 
     root.querySelector("#ecgFlashcard")?.addEventListener("click", flipCard);

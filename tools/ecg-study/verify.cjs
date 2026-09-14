@@ -99,6 +99,10 @@ const server = http.createServer((req, res) => {
       assert(sa.x < av.x, 'SA node belongs in the right atrium (viewer left)');
 
       assert.equal(await page.locator('#ecgStageCaption').innerText(), D.stages[0].caption);
+      const headerBox = await page.locator('header').boundingBox();
+      const instBox = await page.locator('#ecgInstrument').boundingBox();
+      assert(headerBox && instBox);
+      assert(instBox.y + 4 >= headerBox.y + headerBox.height, 'ECG tracing must sit below the sticky header');
       for (let i = 0; i < D.stages.length; i++) {
         await page.locator('#ecgStageSlider').evaluate((el, n) => {
           el.value = String(n);
@@ -116,7 +120,7 @@ const server = http.createServer((req, res) => {
 
       assert((await page.locator('#ecgInstrument svg [data-wave="u"]').count()) > 0);
       assert((await page.locator('#ecgInstrument svg [data-landmark="j"]').count()) > 0);
-      assert.equal((await page.locator('#ecgInstrument svg [data-wave="u"]').innerText()).trim(), 'U');
+      assert.equal((await page.locator('#ecgInstrument svg [data-wave="u"]').textContent()).trim(), 'U');
 
       await page.locator('#ecgStageSlider').evaluate((el) => {
         el.value = '3';
@@ -129,6 +133,9 @@ const server = http.createServer((req, res) => {
       assert.equal(await page.locator('#ecgLandmarkBox').isVisible(), false);
       await page.locator('#ecgLandmarksToggle').check();
       assert(await page.locator('#ecgLandmarkBox').isVisible());
+      const instAfterLand = await page.locator('#ecgInstrument').boundingBox();
+      const headerAfterLand = await page.locator('header').boundingBox();
+      assert(instAfterLand.y + 4 >= headerAfterLand.y + headerAfterLand.height, 'landmarks tracing must sit below the sticky header');
       const land = await page.locator('#ecgLandmarkBox').innerText();
       for (const needle of ['PR interval', 'PR segment', 'QT interval', 'ST segment', 'J point', 'QRS duration', 'U wave', 'TP segment', '0.12–0.20', '< 0.12', 'J junction']) {
         assert(land.includes(needle), 'missing ' + needle);
@@ -139,7 +146,7 @@ const server = http.createServer((req, res) => {
       for (const id of ['pr-int', 'pr-seg', 'qrs-dur', 'j', 'st-seg', 'qt-int', 'tp-seg', 'u']) {
         assert((await page.locator('#ecgInstrument svg [data-landmark="' + id + '"]').count()) > 0, 'on-trace landmark ' + id);
       }
-      const trace = await page.locator('#ecgInstrument svg').innerText();
+      const trace = await page.locator('#ecgInstrument .ecg-ecg-svg').evaluate((el) => el.textContent || '');
       for (const label of ['PR interval', 'PR segment', 'QRS duration', 'ST segment', 'QT interval', 'TP segment', 'U wave']) {
         assert(trace.includes(label), 'trace missing ' + label);
       }
