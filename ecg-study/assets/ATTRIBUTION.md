@@ -9,6 +9,8 @@ Pinned source commit: f1a3a63f110e27ff0736047d52d04dba5d3087f9
 - Heart: VH_Female/v1.2/VH_F_Heart.glb; 1,745,284 bytes; Git blob 7e4709ac174f4f43bedb80ed488fdcb62d02aac3; SHA-256 9afdfb2ccf926869813582cfe150dce8cb28377417a968a4f29a5b8dc060428b.
 - Heart vasculature: VH_Female/v1.2/VH_F_Blood_Vasculature_Heart.glb; 2,512,720 bytes; Git blob d2758268f1811f5fb259ee0433199c74c6dff268; SHA-256 c7f196de2d36a354bf740176d3886c95a17da6b74d744423f2f82b61cf36af24.
 
+Heart v1.2 citation: Browne, Kristen, and Heidi Schlehlein. 2022. 3D Reference Organ for Heart, Female v1.2. https://doi.org/10.48539/HBM384.VWVH.465.
+
 Model geometry: Kristen Browne and Heidi Schlehlein, HuBMAP / Human Reference Atlas; derived from the National Library of Medicine Visible Human Dataset. Source library citation: Browne, Kristen, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, and Katy Börner. HuBMAP CCF 3D Reference Object Library. https://humanatlas.io/3d-reference-library
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. The complete source license is preserved in CC-BY-4.0.txt. No endorsement is implied.
@@ -30,7 +32,7 @@ The upstream mapping has conflicting left/right inferior pulmonary vein labels. 
 
 The front basis is derived from RA→LA and ventricles→atria. Viewer-left is patient-right in that front view. Rotation changes screen positions; a persistent orientation note and Reset / front view explain this.
 
-Cutaway uses an unclapped clipping plane: it reveals interior surfaces but does not create a watertight surgical cut. Conduction nodes, bundle branches, Purkinje branches and blood arrows are schematic overlays using chamber/valve landmarks. Overlay depth testing is disabled to keep these teaching paths visible through exterior anatomy.
+Cutaway uses an uncapped clipping plane: it reveals interior surfaces but does not create a watertight surgical cut. Conduction nodes, bundle branches, Purkinje branches and blood arrows are schematic overlays using chamber/valve landmarks. Overlay depth testing is disabled to keep these teaching paths visible through exterior anatomy.
 
 P illustrates atrial depolarization and contraction/filling; PR illustrates AV delay and filling; QRS illustrates His–Purkinje ventricular activation followed by contraction/ejection; ST illustrates continued depolarization/ejection; T illustrates repolarization/relaxation; TP illustrates baseline/passive filling. U has no invented mechanical event.
 

@@ -4,8 +4,11 @@ on:
     paths: ['ecg-study/**','tools/ecg-study/**','index.html','cmt-quiz.html','.github/workflows/ecg-study-validation.yml']
   pull_request:
     paths: ['ecg-study/**','tools/ecg-study/**','index.html','cmt-quiz.html','.github/workflows/ecg-study-validation.yml']
+concurrency:
+  group: heart-verification-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
-  contents: read
+  contents: write
 jobs:
   verify:
     runs-on: ubuntu-latest
@@ -26,3 +29,12 @@ jobs:
         with:
           name: anatomical-heart-review
           path: review-heart/
+      - name: Temporary remote visual-review snapshots
+        if: success() && github.ref == 'refs/heads/codex/ecg-anatomical-heart-3d'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add review-heart
+          git diff --cached --quiet && exit 0
+          git commit -m "Record temporary anatomical heart review screenshots"
+          git push origin HEAD:codex/ecg-anatomical-heart-3d

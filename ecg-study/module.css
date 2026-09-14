@@ -339,7 +339,7 @@
 .ecg-view-choice button,.ecg-3d-toolbar button{font:inherit;font-size:13px;min-height:44px;padding:9px 12px;border:1px solid #73839b;border-radius:9px;background:#243044;color:#f5f7ff;cursor:pointer;}
 .ecg-view-choice button[aria-pressed="true"],.ecg-3d-toolbar button[aria-pressed="true"]{background:#f3e4a8;color:#171923;border-color:#fff;}
 .ecg-3d-viewport{position:relative;width:100%;min-height:300px;border:1px solid #53647a;border-radius:12px;overflow:hidden;}
-.ecg-3d-canvas{display:block;width:100%;height:100%;touch-action:none;}
+.ecg-3d-canvas{display:block;width:100%;height:100%;touch-action:pan-y;}
 .ecg-3d-labels{position:absolute;inset:0;pointer-events:none;}
 .ecg-3d-label{position:absolute;transform:translate(-50%,-50%);padding:2px 4px;background:#101723e8;color:#fff;border:1px solid #91a5bd;border-radius:4px;font-size:10px;font-weight:700;white-space:nowrap;}
 .ecg-3d-label[data-kind="conduction"]{color:#fff0ad;border-color:#bdae72;}
