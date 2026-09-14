@@ -46,10 +46,67 @@ const EcgStudy = (() => {
     quizDone: false
   };
   let playTimer = null;
+  let heartView = null, heartGeneration = 0, heartAssets = null;
+  let use3D = true;
+  const moduleBase = new URL(".", document.currentScript.src).href;
+  function releaseHeart() { heartGeneration++; heartView?.dispose(); heartView = null; }
+  function syncHeart() { heartView?.sync({stage:D.stages[state.stage].id,playing:state.playing}); }
+  function scriptFile(path) {
+    return new Promise((resolve,reject) => {
+      const script = document.createElement("script");
+      script.src = moduleBase + path; script.onload = resolve;
+      script.onerror = () => { script.remove(); reject(new Error("3D asset unavailable")); };
+      document.head.appendChild(script);
+    });
+  }
+  function loadHeartAssets() {
+    if (!heartAssets) heartAssets = (async () => {
+      if (!window.EcgThree) await scriptFile("vendor/three-gltf.min.js");
+      if (!window.EcgHeartModelData) await scriptFile("assets/model-data.js");
+      if (!window.EcgHeart3D) await scriptFile("heart-3d.js");
+    })().catch(e => { heartAssets = null; throw e; });
+    return heartAssets;
+  }
+  async function mountHeart() {
+    if (!use3D || state.tab !== "slider") return;
+    const generation = heartGeneration;
+    const host = root.querySelector("#ecg3DHost");
+    const status = root.querySelector("#ecg3DStatus");
+    const simple = root.querySelector("#ecgSimpleHeart");
+    if (!host || !status) return;
+    status.textContent = "Loading anatomical 3D heart…";
+    try {
+      await loadHeartAssets();
+      if (generation !== heartGeneration) return;
+      host.hidden = false;
+      const fail = message => {
+        if (generation !== heartGeneration) return;
+        heartView = null; use3D = false;
+        renderAll();
+        root.querySelector("#ecg3DStatus").textContent = message;
+      };
+      const instance = await window.EcgHeart3D.mount(host,{stage:D.stages[state.stage].id,playing:state.playing},fail);
+      if (generation !== heartGeneration) { instance.dispose(); return; }
+      heartView = instance; simple.hidden = true;
+      const sliderRow = root.querySelector(".ecg-slider-row");
+      if (sliderRow) host.querySelector(".ecg-3d-viewport").after(sliderRow);
+      syncHeart();
+      status.textContent = "Anatomical 3D heart ready. Use Reset / front view to restore the orientation shown below.";
+    } catch (e) {
+      if (generation !== heartGeneration) return;
+      use3D = false; host.hidden = true; simple.hidden = false;
+      status.textContent = "3D unavailable. The simplified heart and all study controls remain available.";
+      root.querySelector("#ecgView3D")?.setAttribute("aria-pressed","false");
+      root.querySelector("#ecgViewSimple")?.setAttribute("aria-pressed","true");
+    }
+  }
+  document.addEventListener("visibilitychange", () => { if (document.hidden) stopPlay(); });
+
 
   const oldHome = goHome;
   goHome = function () {
     stopPlay();
+    releaseHeart();
     root.classList.add("hidden");
     document.getElementById("home").classList.remove("ecg-study-active");
     oldHome();
@@ -94,6 +151,7 @@ const EcgStudy = (() => {
       btn.setAttribute("aria-pressed", "false");
       btn.textContent = "Play cycle";
     }
+    syncHeart();
   }
   function togglePlay() {
     if (state.playing) { stopPlay(); return; }
@@ -103,6 +161,7 @@ const EcgStudy = (() => {
       btn.setAttribute("aria-pressed", "true");
       btn.textContent = "Pause";
     }
+    syncHeart();
     playTimer = setInterval(() => {
       setStage((state.stage + 1) % D.stages.length);
     }, 2200);
@@ -231,7 +290,13 @@ const EcgStudy = (() => {
     return `<div id="ecgSliderPanel">
       <div class="ecg-instrument" id="ecgInstrument" data-stage="${st.id}">
         ${ecgSvg(st.id, state.landmarks)}
-        <div class="ecg-heart-frame">
+        <div class="ecg-view-choice" role="group" aria-label="Heart view">
+          <button type="button" id="ecgView3D" aria-pressed="${use3D}">3D anatomy</button>
+          <button type="button" id="ecgViewSimple" aria-pressed="${!use3D}">Simplified view</button>
+        </div>
+        <p id="ecg3DStatus" class="ecg-3d-status" role="status">${use3D ? "Loading anatomical heart…" : "Simplified schematic heart."}</p>
+        <div id="ecg3DHost" class="ecg-3d-host" hidden></div>
+        <div id="ecgSimpleHeart"><div class="ecg-heart-frame">
           <div class="ecg-side-label" id="ecgPatientRight"><span>${escape(D.patient.viewerLeft)}</span><small>viewer’s left</small></div>
           ${heartSvg()}
           <div class="ecg-side-label" id="ecgPatientLeft"><span>${escape(D.patient.viewerRight)}</span><small>viewer’s right</small></div>
@@ -240,12 +305,13 @@ const EcgStudy = (() => {
           <span><i class="ecg-swatch" aria-hidden="true"></i> SA node</span>
           <span><i class="ecg-swatch ring" aria-hidden="true"></i> AV node</span>
         </div>
+        </div>
         <p class="ecg-caption" id="ecgStageCaption">${escape(st.caption)}</p>
         <div class="ecg-assoc">
           <div><strong>Electrical event</strong> ${escape(st.event)}</div>
           <div><strong>Heart location</strong> ${escape(st.location)}</div>
         </div>
-        <p class="hint" style="color:#9b97b0;text-align:center;margin:0 8px 8px">${escape(st.heart)}</p>
+        <p class="hint" id="ecgHeartHint" style="color:#9b97b0;text-align:center;margin:0 8px 8px">${escape(st.heart)}</p>
         <div class="ecg-slider-row">
           <label for="ecgStageSlider">ECG part</label>
           <div class="ecg-slider-dots" aria-hidden="true">${dotsHtml(state.stage)}</div>
@@ -260,7 +326,8 @@ const EcgStudy = (() => {
         </div>
         <p class="ecg-sr-only" id="ecgStageLive" role="status" aria-live="polite">${escape(st.aria)}</p>
       </div>
-      <p class="ecg-orient-note">${escape(D.patient.note)}</p>
+      <p class="ecg-orient-note"><strong>Front view: viewer LEFT = PATIENT RIGHT; viewer RIGHT = PATIENT LEFT.</strong> Rotating the 3D heart changes its screen position. Use Reset / front view to restore this orientation.</p>
+      <p class="ecg-3d-attribution">3D anatomy: HuBMAP / HRA, Kristen Browne and Heidi Schlehlein, CC BY 4.0. <a href="${moduleBase}assets/ATTRIBUTION.md">Source, license and model limitations</a>.</p>
       <div class="ecg-controls">
         <label class="ecg-toggle"><input type="checkbox" id="ecgLandmarksToggle" ${state.landmarks ? "checked" : ""}> Show intervals &amp; landmarks (PR interval/segment, QRS duration, J point, ST, QT, U, TP)</label>
       </div>
@@ -397,17 +464,20 @@ const EcgStudy = (() => {
   }
 
   function renderAll() {
+    releaseHeart();
     root.innerHTML = shell();
     bind();
     if (state.playing && state.tab === "slider") {
       const btn = root.querySelector("#ecgPlayBtn");
       if (btn) { btn.setAttribute("aria-pressed", "true"); btn.textContent = "Pause"; }
     } else if (state.tab !== "slider") stopPlay();
+    if (state.tab === "slider") mountHeart();
   }
 
   function setStage(i, fromUser) {
     const n = D.stages.length;
     state.stage = ((i % n) + n) % n;
+    syncHeart();
     if (fromUser) stopPlay();
     if (state.tab !== "slider") return;
     const st = D.stages[state.stage];
@@ -424,7 +494,7 @@ const EcgStudy = (() => {
     const assoc = inst.querySelectorAll(".ecg-assoc div");
     if (assoc[0]) assoc[0].innerHTML = "<strong>Electrical event</strong> " + escape(st.event);
     if (assoc[1]) assoc[1].innerHTML = "<strong>Heart location</strong> " + escape(st.location);
-    const hint = inst.querySelector(".ecg-slider-row")?.previousElementSibling;
+    const hint = inst.querySelector("#ecgHeartHint");
     if (hint && hint.classList.contains("hint")) hint.textContent = st.heart;
     const slider = document.getElementById("ecgStageSlider");
     if (slider) {
@@ -437,6 +507,8 @@ const EcgStudy = (() => {
   }
 
   function bind() {
+    root.querySelector("#ecgView3D")?.addEventListener("click", () => { use3D = true; renderAll(); root.querySelector("#ecgView3D")?.focus(); });
+    root.querySelector("#ecgViewSimple")?.addEventListener("click", () => { use3D = false; renderAll(); root.querySelector("#ecgViewSimple")?.focus(); });
     root.querySelector("#ecgStudyBack")?.addEventListener("click", () => goHome());
     root.querySelector("#ecgThemeBtn")?.addEventListener("click", () => {
       state.theme = state.theme === "dark" ? "light" : "dark";

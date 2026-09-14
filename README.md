@@ -72,3 +72,11 @@ ECG Rhythms, Electrical Therapy (AED/Pacing), 12-Lead ECG & ACS, and National Te
 ## Source-based ECG training
 
 The ECG practice mode uses 13 reviewed course raster strips with staged observations, delayed answer review, exact option scoring and per-strip provenance. Keep the `ecg/` folder beside either HTML entry point. See [ECG-REVIEW.md](ECG-REVIEW.md) for coverage, source limits, rejected examples and verification. The original question bank and other study modes are preserved.
+
+## Anatomical 3D ECG heart
+
+The ECG study slider now lazy-loads an anatomical HRA heart with separate chambers, valves and major vessels. Choose **3D anatomy** or **Simplified view**. The anatomical viewer supports cutaway, reset/front, drag/pinch/keyboard orbit and zoom, conduction, blood-flow arrows and labels. The same seven-stage state drives the tracing, text and heart; flashcards and quiz remain unchanged.
+
+Keep the entire `ecg-study/` folder for offline use. Assets are base64-packaged GLBs decoded locally so direct `file://` opening needs no server. Model loading or WebGL failure automatically retains the simplified SVG. The 3D payload is about 5.7 MB plus a local Three.js/GLTFLoader bundle, loaded only when the anatomical module view opens.
+
+See [model attribution and limitations](ecg-study/assets/ATTRIBUTION.md) and [exact asset manifest](ecg-study/assets/model-manifest.json). The heart is reference anatomy; contraction, conduction and blood arrows are schematic teaching overlays. The U wave has no invented mechanical event. On small screens, use cutaway and overlay toggles to reduce crowding. Reset/front restores patient-right on the viewer's left after rotation.
