@@ -81,10 +81,9 @@ const EcgStudy = (() => {
       host.hidden = false;
       const fail = message => {
         if (generation !== heartGeneration) return;
-        heartView = null; use3D = false; host.hidden = true; simple.hidden = false;
-        status.textContent = message;
-        root.querySelector("#ecgView3D")?.setAttribute("aria-pressed","false");
-        root.querySelector("#ecgViewSimple")?.setAttribute("aria-pressed","true");
+        heartView = null; use3D = false;
+        renderAll();
+        root.querySelector("#ecg3DStatus").textContent = message;
       };
       const instance = await window.EcgHeart3D.mount(host,{stage:D.stages[state.stage].id,playing:state.playing},fail);
       if (generation !== heartGeneration) { instance.dispose(); return; }
