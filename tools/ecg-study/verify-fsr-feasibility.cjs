@@ -39,6 +39,7 @@ const shaders={"vertex":"#version 300 es\nprecision highp float;\nin vec2 positi
  fs.writeFileSync(runtimePath,original.replace('const renderer=new T.WebGLRenderer','const renderer=window.__benchmarkRenderer=new T.WebGLRenderer'));
  try{
  await page.goto(pathToFileURL(path.resolve('index.html')).href);await page.locator('#ecgStudyLaunch').click();await page.waitForSelector('#ecg3DHost[data-ready="true"]',{timeout:30000});
+ await page.locator('.ecg-3d-canvas').scrollIntoViewIfNeeded();await page.waitForTimeout(100);
  const native=await page.evaluate(()=>{
  const renderer=window.__benchmarkRenderer,canvas=renderer.domElement,gl=canvas.getContext('webgl2'),results=[];
  for(const scale of [1,1.5,2]){renderer.setPixelRatio(1.5/scale);
