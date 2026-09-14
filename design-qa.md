@@ -28,3 +28,16 @@
 - No runtime network requests or console/page errors.
 
 final result: passed
+
+## Blood journey and ECG timing extension
+
+- Compared the Clean and QRS/Blood flow portrait captures from workflow run 34909633730 at commit 2ffdaf2825dec71b6d99c805f907256fb68383dd.
+- P0/P1: none.
+- P2 endpoint-label crowding: resolved by retaining the existing nine Blood flow labels and using compact two-line endpoint badges; no additional leader lines were introduced.
+- The unabridged guide explicitly distinguishes deoxygenated systemic return, pulmonary oxygenation outside the heart, oxygenated pulmonary-vein return, and systemic aortic output.
+- Each ECG stage includes a visible node/electrical-to-mechanical relationship, with the U wave explicitly receiving no invented mechanical event.
+- Clean remains the default; valve labels remain optional.
+- Portrait horizontal overflow: none.
+- Hosted regression, offline loading, reduced motion, WebGL fallback, existing slider, cards, quiz, landmarks, and orientation: passed.
+
+final result: passed
