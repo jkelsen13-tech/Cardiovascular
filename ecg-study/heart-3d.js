@@ -27,6 +27,7 @@ window.EcgHeart3D = (() => {
   const fill=new T.DirectionalLight(0xb9d7ff,1.3);fill.position.set(4,-1,-3);scene.add(fill);
   const overlays=new T.Group();scene.add(overlays);
   const clipping=new T.Plane(V(0,0,-1),.12);
+  const bounds=[new T.Plane(V(1,0,0),1.65),new T.Plane(V(-1,0,0),1.65),new T.Plane(V(0,1,0),1.65),new T.Plane(V(0,-1,0),1.65),new T.Plane(V(0,0,1),1.65),new T.Plane(V(0,0,-1),1.65)];
   const meshes=[],points={},labelItems=[],pivots=[],paths=[],flows=[];
   let ready=false;
   function dispose(){
@@ -40,8 +41,27 @@ window.EcgHeart3D = (() => {
   function motion(){cancelAnimationFrame(raf);draw();}
   function resize(){if(disposed)return;const w=viewport.clientWidth;renderer.setSize(w,Math.max(300,Math.min(420,w*.95)),false);camera.aspect=canvas.width/canvas.height;camera.updateProjectionMatrix();draw();}
   function renderLabels(){
-   const box=viewport.getBoundingClientRect();
-   labelItems.forEach(({el,point,kind})=>{el.hidden=!labels||(kind==="conduction"&&!conduction)||(kind==="valve"&&!cutaway);if(el.hidden)return;const p=point.clone().project(camera);el.style.left=(p.x*.5+.5)*box.width+"px";el.style.top=(-p.y*.5+.5)*box.height+"px";el.hidden=p.z>1||p.z< -1;});
+   const box=viewport.getBoundingClientRect(),sides=[[],[]];
+   labelItems.forEach(item=>{
+    const {el,line,point,kind}=item;
+    el.hidden=!labels||(kind==="conduction"&&!conduction)||(kind==="valve"&&!cutaway);
+    const p=point.clone().project(camera);el.hidden=el.hidden||p.z>1||p.z< -1;
+    line.hidden=el.hidden;if(el.hidden)return;
+    item.px=(p.x*.5+.5)*box.width;item.py=(-p.y*.5+.5)*box.height;
+    sides[p.x<0?0:1].push(item);
+   });
+   sides.forEach((items,side)=>{
+    items.sort((a,b)=>a.py-b.py);
+    const gap=Math.min(22,(box.height-32)/Math.max(items.length,1));
+    let lastY=10;
+    items.forEach((item,i)=>{
+     const x=side?box.width-38:38,y=clamp(item.py,lastY+gap,box.height-12-gap*(items.length-i-1));
+     lastY=y;item.el.style.left=x+"px";item.el.style.top=y+"px";
+     const dx=x-item.px,dy=y-item.py;
+     item.line.style.left=item.px+"px";item.line.style.top=item.py+"px";
+     item.line.style.width=Math.hypot(dx,dy)+"px";item.line.style.transform="rotate("+Math.atan2(dy,dx)+"rad)";
+    });
+   });
   }
   function draw(time=0){
    if(disposed||!ready||document.hidden||!visible)return;
@@ -69,7 +89,7 @@ window.EcgHeart3D = (() => {
    draw();
   }
   function label(text,point,kind="structure"){
-   const el=document.createElement("span");el.className="ecg-3d-label";el.textContent=text;el.dataset.kind=kind;labelLayer.append(el);labelItems.push({el,point,kind});
+   const el=document.createElement("span");el.className="ecg-3d-label";el.textContent=text;el.dataset.kind=kind;const line=document.createElement("i");line.className="ecg-3d-leader";labelLayer.append(line,el);labelItems.push({el,line,point,kind});
   }
   function curveLine(coords,color,phase,r=.015){
    const curve=new T.CatmullRomCurve3(coords);
@@ -102,7 +122,7 @@ window.EcgHeart3D = (() => {
    const a=b.dataset.action;if(a==="touch"){touchEnabled=!touchEnabled;drag.clear();last=null;canvas.style.touchAction=touchEnabled?"none":"pan-y";b.setAttribute("aria-pressed",String(touchEnabled));b.textContent=touchEnabled?"Unlock page scrolling":"Enable touch rotation";}
    if(a==="front"){yaw=pitch=0;distance=5.5;}
    if(a==="in")distance=clamp(distance-.4,3.3,8);if(a==="out")distance=clamp(distance+.4,3.3,8);
-   if(a==="cut"){cutaway=!cutaway;b.setAttribute("aria-pressed",String(cutaway));b.textContent=cutaway?"Exterior":"Cutaway";meshes.forEach(m=>m.material.clippingPlanes=cutaway?[clipping]:[]);}
+   if(a==="cut"){cutaway=!cutaway;b.setAttribute("aria-pressed",String(cutaway));b.textContent=cutaway?"Exterior":"Cutaway";meshes.forEach(m=>m.material.clippingPlanes=cutaway?[...bounds,clipping]:bounds);}
    draw();
   }));
   host.querySelectorAll("[data-option]").forEach(el=>el.addEventListener("change",()=>{
@@ -117,13 +137,14 @@ window.EcgHeart3D = (() => {
    const ra=center("right_cardiac_atrium"),la=center("left_cardiac_atrium"),rv=center("right_ventricle"),lv=center("left_ventricle");
    const x=la.clone().sub(ra).normalize(),y=ra.clone().add(la).sub(rv).sub(lv).normalize();y.addScaledVector(x,-y.dot(x)).normalize();const z=x.clone().cross(y).normalize();
    model.quaternion.setFromRotationMatrix(new T.Matrix4().makeBasis(x,y,z).invert());
-   model.updateMatrixWorld(true);let box=new T.Box3().setFromObject(model),mid=box.getCenter(V()),size=box.getSize(V());const scale=2.8/Math.max(size.y,size.x);
+   model.updateMatrixWorld(true);let box=new T.Box3().setFromObject(heart),mid=box.getCenter(V()),size=box.getSize(V());const scale=2.4/Math.max(size.y,size.x);
    model.scale.setScalar(scale);model.position.copy(mid.multiplyScalar(-scale));model.updateMatrixWorld(true);
    for(const [id,n] of Object.entries({ra:"right_cardiac_atrium",la:"left_cardiac_atrium",rv:"right_ventricle",lv:"left_ventricle",tv:"tricuspid_valve",mv:"mitral_valve",pv:"pulmonary_valve",av:"aortic_valve",svc:"superior_vena_cava",ivc:"inferior_vena_cava",pa:"pulmonary_trunk",aorta:"ascending_aorta",vein:"pulmonary_vein",septum:"interventricular_septum"}))points[id]=center(n);
-   model.traverse(o=>{if(!o.isMesh)return;meshes.push(o);o.material?.dispose();const name=o.name.toLowerCase();const blue=/vena_cava|right_cardiac_atrium|right_ventricle|pulmonary_(artery|trunk)/.test(name);o.material=new T.MeshStandardMaterial({color:blue?0x6a91b3:0xbf716a,roughness:.65,metalness:0,side:T.DoubleSide});});
+   model.traverse(o=>{if(!o.isMesh)return;meshes.push(o);o.material?.dispose();const name=o.name.toLowerCase();const blue=/vena_cava|right_cardiac_atrium|right_ventricle|pulmonary_(artery|trunk)/.test(name);o.material=new T.MeshStandardMaterial({color:blue?0x6a91b3:0xbf716a,roughness:.65,metalness:0,side:T.DoubleSide,clippingPlanes:bounds});});
    for(const m of meshes.filter(m=>/cardiac_atrium|(?:left|right)_ventricle/.test(m.name))){
     const pivot=new T.Group(),world=new T.Box3().setFromObject(m).getCenter(V());scene.add(pivot);pivot.position.copy(world);pivot.attach(m);pivots.push({pivot,type:/atrium/.test(m.name)?"atrial":"vent"}); // modest illustrative contraction around each chamber
    }
+   points.ivc.copy(points.ra.clone().add(points.ivc.clone().sub(points.ra).clampLength(0,1.0)));
    const p=points,front=v=>v.clone().add(V(0,0,.12));
    const sa=front(p.ra).add(V(-.08,.17,0)),avn=front(p.tv).add(V(.03,.06,0)),his=front(p.septum).lerp(avn,.55),apex=front(p.lv).add(V(0,-.24,0));
    curveLine([sa,front(p.ra),avn],0xffe66b,"atrial");curveLine([sa,front(p.la),front(p.mv)],0xffe66b,"atrial");

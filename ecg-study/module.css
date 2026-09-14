@@ -352,3 +352,6 @@
 .ecg-3d-attribution a{color:var(--es-accent);}
 @media(max-width:420px){.ecg-3d-toolbar button{flex:1 1 40%;}.ecg-3d-label{font-size:9px;padding:1px 3px;}.ecg-3d-options{gap:6px 12px;}}
 @media(forced-colors:active){.ecg-3d-label{forced-color-adjust:none;}.ecg-3d-viewport{border:2px solid CanvasText;}}
+
+.ecg-3d-leader{position:absolute;height:1px;background:#b9cbd27a;transform-origin:0 0;pointer-events:none;}
+.ecg-3d-label{z-index:1;}

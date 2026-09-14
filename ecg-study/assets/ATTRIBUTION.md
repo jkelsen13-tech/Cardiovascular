@@ -15,7 +15,7 @@ Model geometry: Kristen Browne and Heidi Schlehlein, HuBMAP / Human Reference At
 
 License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. The complete source license is preserved in CC-BY-4.0.txt. No endorsement is implied.
 
-Geometry bytes are unchanged. App modifications are base64 transport packaging, runtime orientation/recentering, new materials, clipping for cutaway, modest illustrative chamber scaling, and independently authored conduction/blood-flow overlays. No mesh is represented as a measured conduction pathway.
+Geometry bytes are unchanged. App modifications are base64 transport packaging, runtime orientation/recentering, new materials, clipping distant vascular continuations to the local heart view, clipping for cutaway, modest illustrative chamber scaling, and independently authored conduction/blood-flow overlays. No mesh is represented as a measured conduction pathway.
 
 ## Mesh inventory and budget
 Heart: 14 meshes, 43,560 vertices, 85,914 triangles.
