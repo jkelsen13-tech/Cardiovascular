@@ -1,4 +1,4 @@
-// Visual QA reference: design-qa.md; captures are uploaded as anatomical-heart-review.
+// Visual QA reference: design-qa.md covers label clarity, blood journey, and ECG timing; captures are uploaded as anatomical-heart-review.
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
@@ -22,6 +22,10 @@ const {chromium}=require('playwright');
   assert(Number(await page.locator('#ecg3DHost').getAttribute('data-flow-arrows'))>=30,'flow must use multiple large directional arrows');
   assert(await page.locator('.ecg-3d-flow-state').textContent());
   assert(await page.locator('.ecg-3d-valve-state').textContent());
+  assert((await page.locator('.ecg-3d-route-deoxy').textContent()).includes('SVC / IVC'));
+  assert((await page.locator('.ecg-3d-route-oxy').textContent()).includes('pulmonary veins'));
+  assert((await page.locator('.ecg-3d-oxygenation').textContent()).includes('OXYGENATION OCCURS IN THE LUNGS'));
+  assert((await page.locator('.ecg-3d-oxygenation').textContent()).includes('not inside a heart chamber'));
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),6,'clean mode is the uncluttered default');
   assert.equal(await page.locator('[data-option="valves"]').isChecked(),false);
   assert.equal(await page.locator('#ecgSimpleHeart').isVisible(),false);
@@ -31,7 +35,9 @@ const {chromium}=require('playwright');
    await page.locator('#ecgStageSlider').evaluate((el,n)=>{el.value=String(n);el.dispatchEvent(new Event('input',{bubbles:true}));},i);
    const id=['p','pr','qrs','st','t','u','tp'][i];
    const valves=['tv:OPEN,mv:OPEN,pv:CLOSED,av:CLOSED','tv:OPEN,mv:OPEN,pv:CLOSED,av:CLOSED','tv:CLOSING,mv:CLOSING,pv:OPENING,av:OPENING','tv:CLOSED,mv:CLOSED,pv:OPEN,av:OPEN','tv:CLOSED,mv:CLOSED,pv:CLOSING,av:CLOSING','tv:TRANSITION,mv:TRANSITION,pv:TRANSITION,av:TRANSITION','tv:OPEN,mv:OPEN,pv:CLOSED,av:CLOSED'][i];
+   const timing=['P WAVE + SA NODE','PR SEGMENT + AV NODE','QRS + HIS / RBB / LBB / PURKINJE','ST SEGMENT','T WAVE','U WAVE','TP SEGMENT'][i];
    assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'),id);
+   assert((await page.locator('.ecg-3d-node-state').textContent()).includes(timing));
    assert.equal(await page.locator('#ecg3DHost').getAttribute('data-valves'),valves);
    assert.equal(await page.locator('#ecg3DHost').getAttribute('data-stage'),id);
   }
@@ -39,6 +45,11 @@ const {chromium}=require('playwright');
   assert.equal(await page.locator('[data-action="cut"]').getAttribute('aria-pressed'),'true');
   await page.locator('[data-option="label-mode"]').selectOption('blood');
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-label-mode'),'blood');
+  assert.equal(await page.locator('#ecg3DHost').getAttribute('data-blood-label-detail'),'routes');
+  assert((await page.locator('.ecg-3d-label[data-structure="svc"]').textContent()).includes('DEOXY IN'));
+  assert((await page.locator('.ecg-3d-label[data-structure="vein"]').textContent()).includes('OXY IN'));
+  assert((await page.locator('.ecg-3d-label[data-structure="pa"]').textContent()).includes('LUNGS'));
+  assert((await page.locator('.ecg-3d-label[data-structure="aorta"]').textContent()).includes('BODY'));
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),9,'blood-flow mode shows routing labels only');
   await page.locator('[data-option="valves"]').check();
   assert.equal(await page.locator('.ecg-3d-label[data-kind="valve"]:not([hidden])').count(),4);
@@ -100,6 +111,6 @@ const {chromium}=require('playwright');
   assert.equal(await fallback.locator('#ecgInstrument').getAttribute('data-stage'),'pr');
   await fallback.screenshot({path:'review-heart/webgl-fallback.png',fullPage:true});
   await fallback.close();
-  console.log('PASS: lazy GLB load; all 51 meshes; anatomical front mapping; seven shared stages; explicit valve states; prominent flow arrows; clean/conduction/blood/anatomy labels; controls; keyboard isolation; disposal; reduced-motion portrait; offline file URL; WebGL fallback; no page errors.');
+  console.log('PASS: lazy GLB load; all 51 meshes; anatomical front mapping; seven shared stages; explicit oxygenation route and ECG/node timing; valve states; prominent flow arrows; clean/conduction/blood/anatomy labels; controls; keyboard isolation; disposal; reduced-motion portrait; offline file URL; WebGL fallback; no page errors.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

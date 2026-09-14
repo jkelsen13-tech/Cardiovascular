@@ -349,15 +349,22 @@
 .ecg-3d-label[data-kind="valve"][data-state="closed"]{color:#e4ebf4;border-color:#8fa0b6;}
 .ecg-3d-label[data-kind="valve"][data-state="opening"],.ecg-3d-label[data-kind="valve"][data-state="closing"]{color:#ffe7a0;border-color:#ffc857;}
 .ecg-3d-label[data-kind="valve"][data-state="transition"]{color:#e8ddff;border-color:#b8a7d9;}
+.ecg-3d-label[data-route="endpoint"]{max-width:104px;padding:3px 5px;white-space:pre-line;text-align:center;line-height:1.08;font-size:8px;border-width:2px;}
 .ecg-3d-options label{color:#eef3ff;display:flex;align-items:center;gap:7px;min-height:44px;font-size:13px;}
 .ecg-3d-options input{width:18px;height:18px;accent-color:#ffe66b;}
 .ecg-3d-options select{min-height:38px;padding:6px 28px 6px 8px;border:1px solid #73839b;border-radius:7px;background:#243044;color:#f5f7ff;font:inherit;}
 .ecg-3d-help,.ecg-3d-status,.ecg-3d-key,.ecg-3d-attribution{font-size:12px;line-height:1.5;}
 .ecg-3d-status,.ecg-3d-help{color:#c1cbda;}
-.ecg-3d-cycle-readout{display:grid;gap:6px;margin:8px 0;padding:9px 10px;border:1px solid #53647a;border-radius:9px;background:#101723;color:#f5f7ff;font-size:12px;line-height:1.4;}
+.ecg-3d-cycle-readout{display:grid;gap:7px;margin:8px 0;padding:10px;border:1px solid #53647a;border-radius:9px;background:#101723;color:#f5f7ff;font-size:12px;line-height:1.4;}
+.ecg-3d-cycle-readout h4{margin:0;color:#fff;font-size:13px;}
 .ecg-3d-cycle-readout p{margin:0;}
-.ecg-3d-flow-state{padding-left:8px;border-left:4px solid #78d8ff;}
-.ecg-3d-valve-state{padding-left:8px;border-left:4px solid #ffc857;font-weight:700;}
+.ecg-3d-route,.ecg-3d-oxygenation,.ecg-3d-flow-state,.ecg-3d-valve-state,.ecg-3d-node-state{padding-left:8px;border-left:4px solid #91a5bd;}
+.ecg-3d-route-deoxy{border-color:#78d8ff;}
+.ecg-3d-route-oxy{border-color:#ff9f91;}
+.ecg-3d-oxygenation{border-color:#d8c6ff;color:#eee7ff;}
+.ecg-3d-flow-state{border-color:#78d8ff;}
+.ecg-3d-valve-state{border-color:#ffc857;font-weight:700;}
+.ecg-3d-node-state{border-color:#ffe66b;color:#fff0ad;}
 .ecg-3d-direction{color:#fff0ad;font-size:13px;min-height:3em;}
 .ecg-3d-key summary{cursor:pointer;min-height:44px;display:flex;align-items:center;}
 .ecg-3d-attribution a{color:var(--es-accent);}
