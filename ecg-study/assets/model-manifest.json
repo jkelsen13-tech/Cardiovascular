@@ -1,0 +1,287 @@
+{
+  "sourceCommit": "f1a3a63f110e27ff0736047d52d04dba5d3087f9",
+  "license": "CC BY 4.0",
+  "runtime": "three@0.180.0",
+  "models": [
+    {
+      "id": "heart",
+      "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Heart.glb",
+      "gitBlobSha": "7e4709ac174f4f43bedb80ed488fdcb62d02aac3",
+      "sha256": "9afdfb2ccf926869813582cfe150dce8cb28377417a968a4f29a5b8dc060428b",
+      "bytes": 1745284,
+      "triangles": 85914,
+      "vertices": 43560,
+      "meshes": 14,
+      "nodes": [
+        {
+          "name": "VH_F_heart"
+        },
+        {
+          "name": "VH_F_cardiac_chamber"
+        },
+        {
+          "name": "VH_F_interventricular_septum",
+          "mesh": 0
+        },
+        {
+          "name": "VH_F_left_cardiac_atrium",
+          "mesh": 1
+        },
+        {
+          "name": "VH_F_left_ventricle",
+          "mesh": 2
+        },
+        {
+          "name": "VH_F_right_cardiac_atrium",
+          "mesh": 3
+        },
+        {
+          "name": "VH_F_right_ventricle",
+          "mesh": 4
+        },
+        {
+          "name": "VH_F_papillary_muscle_of_heart"
+        },
+        {
+          "name": "VH_F_papillary_muscle_of_heart_ant",
+          "mesh": 5
+        },
+        {
+          "name": "VH_F_papillary_muscle_of_heart_antlat",
+          "mesh": 6
+        },
+        {
+          "name": "VH_F_papillary_muscle_of_heart_med",
+          "mesh": 7
+        },
+        {
+          "name": "VH_F_papillary_muscle_of_heart_pos",
+          "mesh": 8
+        },
+        {
+          "name": "VH_F_papillary_muscle_of_heart_posmed",
+          "mesh": 9
+        },
+        {
+          "name": "VH_F_valve"
+        },
+        {
+          "name": "VH_F_aortic_valve",
+          "mesh": 10
+        },
+        {
+          "name": "VH_F_pulmonary_valve",
+          "mesh": 11
+        },
+        {
+          "name": "VH_F_mitral_valve",
+          "mesh": 12
+        },
+        {
+          "name": "VH_F_tricuspid_valve",
+          "mesh": 13
+        }
+      ],
+      "textures": 0
+    },
+    {
+      "id": "vessels",
+      "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Blood_Vasculature_Heart.glb",
+      "gitBlobSha": "d2758268f1811f5fb259ee0433199c74c6dff268",
+      "sha256": "c7f196de2d36a354bf740176d3886c95a17da6b74d744423f2f82b61cf36af24",
+      "bytes": 2512720,
+      "triangles": 123064,
+      "vertices": 62827,
+      "meshes": 37,
+      "nodes": [
+        {
+          "name": "VH_F_blood_vasculature_of_heart"
+        },
+        {
+          "name": "VH_F_veins_of_heart"
+        },
+        {
+          "name": "VH_F_pulmonary_vein"
+        },
+        {
+          "name": "VH_F_pulmonary_vein_L_sup",
+          "mesh": 0
+        },
+        {
+          "name": "VH_F_pulmonary_vein_R_inf",
+          "mesh": 1
+        },
+        {
+          "name": "VH_F_pulmonary_vein_R_sup",
+          "mesh": 2
+        },
+        {
+          "name": "VH_F_pulmonary_vein_L_inf",
+          "mesh": 3
+        },
+        {
+          "name": "VH_F_cardiac_vein"
+        },
+        {
+          "name": "VH_F_coronary_sinus",
+          "mesh": 4
+        },
+        {
+          "name": "VH_F_great_cardiac_vein",
+          "mesh": 5
+        },
+        {
+          "name": "VH_F_middle_cardiac_vein",
+          "mesh": 6
+        },
+        {
+          "name": "VH_F_oblique_vein_of_left_atrium",
+          "mesh": 7
+        },
+        {
+          "name": "VH_F_left_marginal_vein",
+          "mesh": 8
+        },
+        {
+          "name": "VH_F_posterior_vein_of_left_ventricle",
+          "mesh": 9
+        },
+        {
+          "name": "VH_F_anterior_cardiac_vein",
+          "mesh": 10
+        },
+        {
+          "name": "VH_F_small_cardiac_vein",
+          "mesh": 11
+        },
+        {
+          "name": "VH_F_vena_cava"
+        },
+        {
+          "name": "VH_F_superior_vena_cava",
+          "mesh": 12
+        },
+        {
+          "name": "VH_F_inferior_vena_cava"
+        },
+        {
+          "name": "VH_F_inferior_vena_cava_a",
+          "mesh": 13
+        },
+        {
+          "name": "VH_F_inferior_vena_cava_b",
+          "mesh": 14
+        },
+        {
+          "name": "VH_F_arteries_of_heart"
+        },
+        {
+          "name": "VH_F_left_anterior_descending_artery",
+          "mesh": 15
+        },
+        {
+          "name": "VH_F_left_circumflex_artery",
+          "mesh": 16
+        },
+        {
+          "name": "VH_F_diagonal_branch_of_left_anterior_descending_artery",
+          "mesh": 17
+        },
+        {
+          "name": "VH_F_left_coronary_artery",
+          "mesh": 18
+        },
+        {
+          "name": "VH_F_left_marginal_branch",
+          "mesh": 19
+        },
+        {
+          "name": "VH_F_left_posterior_descending_branch_of_circumflex_branch_of_left_coronary_artery",
+          "mesh": 20
+        },
+        {
+          "name": "VH_F_posterior_left_ventricular_branch",
+          "mesh": 21
+        },
+        {
+          "name": "VH_F_right_coronary_artery",
+          "mesh": 22
+        },
+        {
+          "name": "VH_F_right_marginal_artery",
+          "mesh": 23
+        },
+        {
+          "name": "VH_F_pulmonary_artery"
+        },
+        {
+          "name": "VH_F_pulmonary_artery_L",
+          "mesh": 24
+        },
+        {
+          "name": "VH_F_pulmonary_trunk",
+          "mesh": 25
+        },
+        {
+          "name": "VH_F_pulmonary_artery_R",
+          "mesh": 26
+        },
+        {
+          "name": "VH_F_aorta"
+        },
+        {
+          "name": "VH_F_aortic_arch",
+          "mesh": 27
+        },
+        {
+          "name": "VH_F_ascending_aorta",
+          "mesh": 28
+        },
+        {
+          "name": "VH_F_descending_aorta"
+        },
+        {
+          "name": "VH_F_descending_aorta_a",
+          "mesh": 29
+        },
+        {
+          "name": "VH_F_descending_aorta_b",
+          "mesh": 30
+        },
+        {
+          "name": "VH_F_left_common_carotid_artery"
+        },
+        {
+          "name": "VH_F_left_common_carotid_artery_a",
+          "mesh": 31
+        },
+        {
+          "name": "VH_F_left_common_carotid_artery_b",
+          "mesh": 32
+        },
+        {
+          "name": "VH_F_left_subclavian_artery"
+        },
+        {
+          "name": "VH_F_left_subclavian_artery_a",
+          "mesh": 33
+        },
+        {
+          "name": "VH_F_left_subclavian_artery_b",
+          "mesh": 34
+        },
+        {
+          "name": "VH_F_brachiocephalic_artery_b",
+          "mesh": 35
+        },
+        {
+          "name": "VH_F_brachiocephalic_artery_a",
+          "mesh": 36
+        }
+      ],
+      "textures": 0
+    }
+  ],
+  "runtimeBytes": 745478,
+  "offlineCompanionBytes": 5677489
+}
