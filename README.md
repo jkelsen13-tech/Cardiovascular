@@ -42,8 +42,9 @@ Unit 3 and Module 6's Unit 3 are separate decks).
   planes, landmark lines, circulation circuits, conduction system, autonomic control,
   ECG paper, ECG waveform/intervals, action potentials, and deflection direction).
 - **ECG Waves & Intervals** — flip flashcards (including reverse term↔definition), an interactive
-  six-stage ECG/heart slider with persistent patient L/R labels, optional PR/QRS/ST/J/QT landmarks,
-  and a short quiz with immediate feedback. Native SVG/CSS (not pasted screenshots). Open it from
+  seven-stage ECG/heart slider (P → PR → QRS → ST → T → U → TP) with persistent patient L/R labels,
+  optional PR/QRS/J/ST/QT/U/TP landmarks on the tracing, and a short quiz with immediate feedback.
+  Native SVG/CSS (not pasted screenshots). Open it from
   the home menu; keep the `ecg-study/` folder beside the HTML for downloaded copies.
 - **Interactive ordering & labeling questions** (Canvas-style), graded per slot with
   partial credit (e.g. "9 / 12 correct"): sequence the conduction pathway and the

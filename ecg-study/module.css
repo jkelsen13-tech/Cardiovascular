@@ -20,6 +20,7 @@
   --es-focus: #2563eb;
   color: var(--es-ink);
   overflow-wrap: anywhere;
+  scroll-margin-top: 72px;
 }
 
 .ecg-study[data-theme="dark"] {
@@ -55,7 +56,7 @@
   display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;
   justify-content: space-between; margin-bottom: 12px;
 }
-.ecg-study-head h2 { margin: 0; font-size: 18px; }
+.ecg-study-head h2 { margin: 0; font-size: 18px; scroll-margin-top: 72px; }
 .ecg-study-tools { display: flex; flex-wrap: wrap; gap: 8px; }
 .ecg-study-tools .btn { width: auto; margin: 0; padding: 10px 12px; font-size: 14px; }
 
@@ -97,14 +98,17 @@
   border-radius: 16px;
   padding: 14px 12px 12px;
   border: 1px solid #2a2f3d;
+  overflow: hidden;
+  scroll-margin-top: 72px;
 }
 .ecg-instrument svg { display: block; width: 100%; height: auto; max-width: 100%; min-width: 0; }
-.ecg-ecg-svg { margin-bottom: 8px; min-width: 0; min-height: 96px; }
+.ecg-ecg-svg { margin-bottom: 8px; min-width: 0; min-height: 128px; }
 .ecg-wave-dim { stroke: var(--es-wave-dim); fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
 .ecg-wave-active { stroke: var(--es-wave); fill: none; stroke-width: 3.1; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(196,181,253,.45)); }
 .ecg-cursor { stroke: #d8b4fe; stroke-width: 1.4; stroke-dasharray: 3 4; }
 .ecg-label { fill: #8b849e; font: 600 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 .ecg-label.is-on { fill: #e9d5ff; }
+.ecg-j-mark { pointer-events: none; }
 
 .ecg-heart-frame {
   display: grid;
@@ -159,6 +163,12 @@
 .ecg-instrument[data-stage="t"] .ecg-ventricles { fill: rgba(80,50,90,.4); stroke: #f0abfc; }
 .ecg-instrument[data-stage="t"] .ecg-repol { stroke: #f0abfc; }
 .ecg-instrument[data-stage="t"] .ecg-path-vent { stroke: #e879f9; }
+
+.ecg-instrument[data-stage="u"] .ecg-ventricles { fill: rgba(72,48,88,.18); stroke: #d8b4fe; }
+.ecg-instrument[data-stage="u"] .ecg-repol { stroke: #e9d5ff; opacity: .45; }
+.ecg-instrument[data-stage="u"] .ecg-repol-late { stroke: #f5d0fe; opacity: .95; stroke-width: 2.2; }
+.ecg-instrument[data-stage="u"] .ecg-path-vent { stroke: #a78bfa; opacity: .42; }
+.ecg-instrument[data-stage="u"] .ecg-chamber { opacity: .88; }
 
 .ecg-instrument[data-stage="tp"] .ecg-chamber,
 .ecg-instrument[data-stage="tp"] .ecg-path { opacity: .45; }

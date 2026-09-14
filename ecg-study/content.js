@@ -59,21 +59,33 @@ var ECG_STUDY = {
       aria: "T wave. Ventricular repolarization. Ventricles electrically reset."
     },
     {
+      id: "u",
+      name: "U wave",
+      caption: "U wave: Small deflection after the T wave (often best seen in some leads; may be absent).",
+      event: "Late ventricular / Purkinje repolarization",
+      location: "Ventricles (late recovery)",
+      heart: "The ventricles are mostly reset. A subtle late recovery — possible delayed repolarization after T — may appear as a small U wave. It is often small or not visible.",
+      aria: "U wave. Small deflection after the T wave. Possible delayed ventricular or Purkinje repolarization. Often small or not visible."
+    },
+    {
       id: "tp",
       name: "TP segment",
       caption: "TP segment: Electrical baseline between beats.",
       event: "Resting baseline",
       location: "Whole heart at rest",
-      heart: "No wave of activation. This is the electrical baseline between beats.",
+      heart: "No wave of activation after T (and after U, when a U wave is present). This is the electrical baseline between beats.",
       aria: "TP segment. Electrical baseline between beats. The heart diagram is at rest."
     }
   ],
   landmarks: [
     {id: "pr-int", name: "PR interval", span: "Start of P → start of QRS", normal: "Normal 0.12–0.20 sec"},
+    {id: "pr-seg", name: "PR segment", span: "End of P → start of QRS (the flat stretch after P)", normal: ""},
     {id: "qrs-dur", name: "QRS duration", span: "Start of QRS → J point", normal: "Normal < 0.12 sec"},
-    {id: "j", name: "J point", span: "Exact point where QRS ends and ST begins", normal: ""},
+    {id: "j", name: "J point", span: "Exact point where QRS ends and ST begins (sometimes called the J junction / end of QRS)", normal: ""},
     {id: "st-seg", name: "ST segment", span: "End of QRS (J point) → start of T", normal: ""},
-    {id: "qt-int", name: "QT interval", span: "Start of QRS → end of T", normal: "QT varies with rate; QTc is the correction. No single millisecond cutoff is taught here."}
+    {id: "qt-int", name: "QT interval", span: "Start of QRS → end of T", normal: "QT varies with rate; QTc is the correction. No single millisecond cutoff is taught here."},
+    {id: "u", name: "U wave", span: "Small deflection after T (when present), before the remaining TP baseline", normal: ""},
+    {id: "tp-seg", name: "TP segment", span: "After U (or after T if U is absent) → next P. Electrical baseline between beats.", normal: ""}
   ],
   cards: [
     {
@@ -90,6 +102,11 @@ var ECG_STUDY = {
       id: "t-wave",
       term: "T wave",
       definition: "Ventricular repolarization — “Ventricles reset.” Ventricles electrically reset."
+    },
+    {
+      id: "u-wave",
+      term: "U wave",
+      definition: "Small wave after T; may represent delayed ventricular/Purkinje fiber repolarization; often small or not visible."
     },
     {
       id: "qrs-dir",
@@ -119,7 +136,7 @@ var ECG_STUDY = {
     {
       id: "j-point",
       term: "J point",
-      definition: "The exact point where the QRS ends and the ST segment begins."
+      definition: "The exact point where the QRS ends and the ST segment begins (sometimes called the J junction / end of QRS)."
     },
     {
       id: "pr-seg",
@@ -281,6 +298,30 @@ var ECG_STUDY = {
       options: ["Seen as a second P wave after T", "Usually hidden in the QRS", "The TP segment", "The J point"],
       answer: 1,
       explain: "Atrial repolarization occurs during ventricular depolarization and is usually buried in the QRS."
+    },
+    {
+      id: "u-what",
+      prompt: "The U wave is:",
+      options: [
+        "A small deflection after the T wave (may be absent)",
+        "The first downward wave of the QRS",
+        "Another name for the PR segment",
+        "The peak of the R wave"
+      ],
+      answer: 0,
+      explain: "The U wave is a small wave after T. It may represent delayed ventricular or Purkinje-fiber repolarization and is often small or not visible."
+    },
+    {
+      id: "u-where",
+      prompt: "When a U wave is present, it sits:",
+      options: [
+        "Between the P wave and the QRS",
+        "After the T wave, before or within the TP baseline",
+        "Inside the QRS complex",
+        "Before the P wave of the same beat"
+      ],
+      answer: 1,
+      explain: "U follows T and occurs in the diastolic stretch heading into the TP segment. It is not always seen."
     }
   ]
 };

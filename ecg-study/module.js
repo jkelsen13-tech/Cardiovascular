@@ -110,48 +110,89 @@ const EcgStudy = (() => {
 
   /* ---- SVG: ECG tracing (native, not screenshots) ---- */
   const ECG = {
-    p0: 48, p1: 108, q0: 168, j: 218, t0: 298, t1: 398, end: 622, y: 86
+    p0: 48, p1: 108, q0: 168, j: 218, t0: 298, t1: 398, u0: 412, u1: 478, end: 622, y: 108
   };
   const SEG = {
-    p: `M${ECG.p0},${ECG.y} C58,86 66,56 78,56 C90,56 98,86 ${ECG.p1},${ECG.y}`,
+    p: `M${ECG.p0},${ECG.y} C58,108 66,78 78,78 C90,78 98,108 ${ECG.p1},${ECG.y}`,
     pr: `M${ECG.p1},${ECG.y} L${ECG.q0},${ECG.y}`,
-    qrs: `M${ECG.q0},${ECG.y} L176,100 L188,20 L204,118 L${ECG.j},${ECG.y}`,
+    qrs: `M${ECG.q0},${ECG.y} L176,122 L188,42 L204,140 L${ECG.j},${ECG.y}`,
     st: `M${ECG.j},${ECG.y} L${ECG.t0},${ECG.y}`,
-    t: `M${ECG.t0},${ECG.y} C318,86 332,50 348,50 C368,50 384,86 ${ECG.t1},${ECG.y}`,
-    tp: `M${ECG.t1},${ECG.y} L${ECG.end},${ECG.y}`
+    t: `M${ECG.t0},${ECG.y} C318,108 332,72 348,72 C368,72 384,108 ${ECG.t1},${ECG.y}`,
+    u: `M${ECG.u0},${ECG.y} C424,108 430,94 442,94 C454,94 466,108 ${ECG.u1},${ECG.y}`,
+    tp: `M${ECG.u1},${ECG.y} L${ECG.end},${ECG.y}`
   };
-  const CURSOR = { p: 78, pr: 138, qrs: 188, st: 258, t: 348, tp: 510 };
-  const FULL = `M20,${ECG.y} L${ECG.p0},${ECG.y} C58,86 66,56 78,56 C90,56 98,86 ${ECG.p1},${ECG.y} L${ECG.q0},${ECG.y} L176,100 L188,20 L204,118 L${ECG.j},${ECG.y} L${ECG.t0},${ECG.y} C318,86 332,50 348,50 C368,50 384,86 ${ECG.t1},${ECG.y} L${ECG.end},${ECG.y}`;
+  const CURSOR = { p: 78, pr: 138, qrs: 188, st: 258, t: 348, u: 442, tp: 550 };
+  const FULL = `M20,${ECG.y} L${ECG.p0},${ECG.y} C58,108 66,78 78,78 C90,78 98,108 ${ECG.p1},${ECG.y} L${ECG.q0},${ECG.y} L176,122 L188,42 L204,140 L${ECG.j},${ECG.y} L${ECG.t0},${ECG.y} C318,108 332,72 348,72 C368,72 384,108 ${ECG.t1},${ECG.y} L${ECG.u0},${ECG.y} C424,108 430,94 442,94 C454,94 466,108 ${ECG.u1},${ECG.y} L${ECG.end},${ECG.y}`;
+
+  function bracket(x1, x2, y, color) {
+    return `<path d="M${x1},${y} L${x2},${y}" stroke="${color}" stroke-width="2"/>
+      <path d="M${x1},${y - 4} L${x1},${y + 4} M${x2},${y - 4} L${x2},${y + 4}" stroke="${color}" stroke-width="2"/>`;
+  }
+
+  function jPointMark(stageId, landmarks) {
+    const callout = stageId === "qrs" || stageId === "st";
+    const note = (callout && !landmarks)
+      ? `<text class="ecg-j-note" x="${ECG.j + 16}" y="${ECG.y + 24}" text-anchor="start" fill="#fde68a" font-size="10" font-weight="700">J point — end of QRS / start of ST</text>`
+      : "";
+    return `<g class="ecg-j-mark" data-landmark="j" aria-hidden="true">
+      <line x1="${ECG.j}" y1="${ECG.y - 12}" x2="${ECG.j}" y2="${ECG.y + 12}" stroke="#fbbf24" stroke-width="1.6"/>
+      <circle cx="${ECG.j}" cy="${ECG.y}" r="5.2" fill="#fbbf24" stroke="#fff" stroke-width="1.5"/>
+      <text x="${ECG.j + 11}" y="${ECG.y - 12}" text-anchor="start" fill="#fcd34d" font-size="12" font-weight="800">J</text>
+      ${note}
+    </g>`;
+  }
+
+  function landmarkOverlay() {
+    return `<g class="ecg-landmarks" aria-hidden="true">
+      <g data-landmark="qt-int">
+        ${bracket(ECG.q0, ECG.t1, 18, "#f9a8d4")}
+        <text x="${(ECG.q0 + ECG.t1) / 2}" y="14" text-anchor="middle" fill="#f9a8d4" font-size="11" font-weight="700">QT interval</text>
+      </g>
+      <g data-landmark="qrs-dur">
+        ${bracket(ECG.q0, ECG.j, 36, "#38bdf8")}
+        <text x="${ECG.j + 8}" y="40" text-anchor="start" fill="#7dd3fc" font-size="11" font-weight="700">QRS duration</text>
+      </g>
+      <g data-landmark="pr-int">
+        ${bracket(ECG.p0, ECG.q0, 154, "#4ade80")}
+        <text x="${(ECG.p0 + ECG.q0) / 2}" y="168" text-anchor="middle" fill="#86efac" font-size="11" font-weight="700">PR interval</text>
+      </g>
+      <g data-landmark="pr-seg">
+        ${bracket(ECG.p1, ECG.q0, 176, "#34d399")}
+        <text x="${(ECG.p1 + ECG.q0) / 2}" y="190" text-anchor="middle" fill="#6ee7b7" font-size="10" font-weight="700">PR segment</text>
+      </g>
+      <g data-landmark="st-seg">
+        ${bracket(ECG.j, ECG.t0, 154, "#f59e0b")}
+        <text x="${(ECG.j + ECG.t0) / 2}" y="168" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="700">ST segment</text>
+      </g>
+      <g data-landmark="u">
+        ${bracket(ECG.u0, ECG.u1, 154, "#c4b5fd")}
+        <text x="${(ECG.u0 + ECG.u1) / 2}" y="168" text-anchor="middle" fill="#ddd6fe" font-size="11" font-weight="700">U wave</text>
+      </g>
+      <g data-landmark="tp-seg">
+        ${bracket(ECG.u1, ECG.end, 176, "#94a3b8")}
+        <text x="${(ECG.u1 + ECG.end) / 2}" y="190" text-anchor="middle" fill="#cbd5e1" font-size="11" font-weight="700">TP segment</text>
+      </g>
+    </g>`;
+  }
 
   function ecgSvg(stageId, landmarks) {
     const ids = D.stages.map((s) => s.id);
     const active = SEG[stageId];
     const cx = CURSOR[stageId];
     const on = (id) => ids.indexOf(stageId) === ids.indexOf(id) ? " is-on" : "";
-    const land = landmarks ? `
-      <g class="ecg-landmarks" aria-hidden="true">
-        <path d="M${ECG.p0},128 L${ECG.q0},128" stroke="#4ade80" stroke-width="2"/>
-        <path d="M${ECG.p0},124 L${ECG.p0},132 M${ECG.q0},124 L${ECG.q0},132" stroke="#4ade80" stroke-width="2"/>
-        <text x="${(ECG.p0 + ECG.q0) / 2}" y="144" text-anchor="middle" fill="#86efac" font-size="11" font-weight="700">PR</text>
-        <path d="M${ECG.q0},12 L${ECG.j},12" stroke="#38bdf8" stroke-width="2"/>
-        <path d="M${ECG.q0},8 L${ECG.q0},16 M${ECG.j},8 L${ECG.j},16" stroke="#38bdf8" stroke-width="2"/>
-        <text x="230" y="14" text-anchor="start" fill="#7dd3fc" font-size="11" font-weight="700">QRS</text>
-        <circle cx="${ECG.j}" cy="${ECG.y}" r="4.5" fill="#fbbf24" stroke="#fff" stroke-width="1"/>
-        <text x="${ECG.j + 10}" y="76" text-anchor="start" fill="#fcd34d" font-size="11" font-weight="700">J</text>
-        <path d="M${ECG.j},136 L${ECG.t0},136" stroke="#f59e0b" stroke-width="2"/>
-        <text x="${(ECG.j + ECG.t0) / 2}" y="148" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="700">ST</text>
-      </g>` : "";
-    return `<svg class="ecg-ecg-svg" viewBox="0 0 640 150" role="img" aria-hidden="true">
+    return `<svg class="ecg-ecg-svg" viewBox="0 0 640 208" role="img" aria-hidden="true">
       <title>Simplified ECG waveform</title>
       <line x1="20" y1="${ECG.y}" x2="${ECG.end}" y2="${ECG.y}" stroke="#2a3140" stroke-width="1"/>
       <path class="ecg-wave-dim" d="${FULL}"/>
       <path class="ecg-wave-active" d="${active}"/>
-      <line class="ecg-cursor" x1="${cx}" y1="18" x2="${cx}" y2="118"/>
+      <line class="ecg-cursor" x1="${cx}" y1="36" x2="${cx}" y2="148"/>
       <circle cx="${cx}" cy="${ECG.y}" r="4.5" fill="#c4b5fd" stroke="#f5f3ff" stroke-width="1.2"/>
-      <text class="ecg-label${on("p")}" x="78" y="44" text-anchor="middle">P</text>
-      <text class="ecg-label${on("qrs")}" x="188" y="14" text-anchor="middle">QRS</text>
-      <text class="ecg-label${on("t")}" x="348" y="38" text-anchor="middle">T</text>
-      ${land}
+      <text class="ecg-label${on("p")}" data-wave="p" x="78" y="66" text-anchor="middle">P</text>
+      <text class="ecg-label${on("qrs")}" data-wave="qrs" x="158" y="38" text-anchor="middle">QRS</text>
+      <text class="ecg-label${on("t")}" data-wave="t" x="348" y="60" text-anchor="middle">T</text>
+      <text class="ecg-label${on("u")}" data-wave="u" x="442" y="82" text-anchor="middle">U</text>
+      ${jPointMark(stageId, landmarks)}
+      ${landmarks ? landmarkOverlay() : ""}
     </svg>`;
   }
 
@@ -168,6 +209,7 @@ const EcgStudy = (() => {
       <path class="ecg-path ecg-path-vent" d="M104,178 q-8,10 -16,14 M104,178 q4,12 0,18 M176,178 q8,10 16,14 M176,178 q-4,12 0,18"/>
       <path class="ecg-repol" d="M112,150 Q124,166 136,176"/>
       <path class="ecg-repol" d="M168,150 Q156,166 144,176"/>
+      <path class="ecg-repol ecg-repol-late" d="M100,186 Q122,200 140,194 Q158,200 180,186"/>
       <circle class="ecg-node-sa" id="ecgSaNode" cx="96" cy="68" r="8" data-chamber="right-atrium"/>
       <circle class="ecg-node-av" id="ecgAvNode" cx="140" cy="116" r="7" data-chamber="av-junction"/>
     </svg>`;
@@ -220,7 +262,7 @@ const EcgStudy = (() => {
       </div>
       <p class="ecg-orient-note">${escape(D.patient.note)}</p>
       <div class="ecg-controls">
-        <label class="ecg-toggle"><input type="checkbox" id="ecgLandmarksToggle" ${state.landmarks ? "checked" : ""}> Show intervals &amp; landmarks (PR, QRS, ST, J point, QT)</label>
+        <label class="ecg-toggle"><input type="checkbox" id="ecgLandmarksToggle" ${state.landmarks ? "checked" : ""}> Show intervals &amp; landmarks (PR interval/segment, QRS duration, J point, ST, QT, U, TP)</label>
       </div>
       <div class="ecg-landmark-list" id="ecgLandmarkBox" ${state.landmarks ? "" : "hidden"}>
         <h3>Intervals &amp; landmarks</h3>
@@ -284,7 +326,7 @@ const EcgStudy = (() => {
   function quizPanel() {
     if (!state.quizOrder.length) {
       return `<div id="ecgQuizPanel">
-        <p>Short practice covering waves, Q/R/S, intervals, the J point, normals, and patient-right orientation. Feedback appears immediately after each answer.</p>
+        <p>Short practice covering waves (including the U wave), Q/R/S, intervals, the J point, normals, and patient-right orientation. Feedback appears immediately after each answer.</p>
         <button type="button" class="btn" id="ecgQuizStart">Start quiz (${D.quiz.length} questions)</button>
       </div>`;
     }
@@ -416,6 +458,7 @@ const EcgStudy = (() => {
     root.querySelector("#ecgLandmarksToggle")?.addEventListener("change", (e) => {
       state.landmarks = e.target.checked;
       renderAll();
+      document.getElementById("ecgInstrument")?.scrollIntoView({block: "start"});
     });
 
     root.querySelector("#ecgFlashcard")?.addEventListener("click", flipCard);
