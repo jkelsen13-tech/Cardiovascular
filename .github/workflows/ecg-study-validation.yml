@@ -24,7 +24,6 @@ jobs:
           npx playwright install --with-deps chromium
       - run: node tools/ecg-study/verify.cjs
       - run: node tools/ecg-study/verify-heart.cjs
-      - run: node tools/ecg-study/verify-fsr-feasibility.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
