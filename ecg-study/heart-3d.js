@@ -91,7 +91,7 @@ window.EcgHeart3D = (() => {
    meshes.forEach(m=>{const n=m.name;const active=/atrium/.test(n)?atrial:/ventricle|septum/.test(n)?vent:false;m.material.emissive.set(active?0x773219:repol&&/ventricle/.test(n)?0x423073:0);m.material.emissiveIntensity=active?.8:.4;});
    paths.forEach(p=>{p.object.visible=conduction;const active=p.phase==="atrial"?atrial:p.phase==="av"?stage==="pr":p.phase==="vent"?stage==="qrs":false;p.material.color.set(active?0xffe66b:0x8398a5);p.material.opacity=active?1:.32;});
    const activeLabels={p:["sa","ra","la"],pr:["avnode","ra","la","rv","lv"],qrs:["his","rbb","lbb","purkinje","rv","lv","pa","aorta"],st:["rv","lv","pa","aorta"],t:["rv","lv"],u:[],tp:["svc","ivc","vein","ra","la","rv","lv"]}[stage];
-   const routeNames={svc:"SVC\nDEOXYGENATED IN",ivc:"IVC\nDEOXYGENATED IN",pa:"PA\nTO LUNGS",vein:"PULMONARY VEINS\nOXYGENATED IN",aorta:"AORTA\nTO BODY"};
+   const routeNames={svc:"SVC\nDEOXY IN",ivc:"IVC\nDEOXY IN",pa:"PA\nLUNGS",vein:"PV\nOXY IN",aorta:"AORTA\nBODY"};
    labelItems.forEach(item=>{item.el.dataset.active=String(activeLabels.includes(item.id));if(item.kind==="structure"){const route=labelMode==="blood"?routeNames[item.id]:null;item.el.textContent=route||item.baseText;item.el.dataset.route=route?"endpoint":"";}});
    host.dataset.bloodLabelDetail=labelMode==="blood"?"routes":"short";
    const valveStages={
