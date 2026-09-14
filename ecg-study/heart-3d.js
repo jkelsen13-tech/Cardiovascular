@@ -46,8 +46,8 @@ window.EcgHeart3D = (() => {
    labelItems.forEach(item=>{
     const {el,line,point,kind,id}=item;
     const sets={clean:["ra","rv","la","lv","aorta","pa"],conduction:["ra","rv","la","lv","sa","avnode","his","rbb","lbb","purkinje"],blood:["svc","ivc","ra","rv","pa","vein","la","lv","aorta"],anatomy:["svc","ivc","ra","rv","pa","vein","la","lv","aorta","sa","avnode","his","rbb","lbb","purkinje"]};
-    const inMode=sets[labelMode].includes(id);
-    el.hidden=!labels||!inMode||(kind==="conduction"&&!conduction)||(kind==="valve"&&!showValves);
+    const inMode=kind==="valve"?showValves:sets[labelMode].includes(id);
+    el.hidden=!labels||!inMode||(kind==="conduction"&&!conduction);
     const p=point.clone().project(camera);el.hidden=el.hidden||p.z>1||p.z< -1;
     line.hidden=el.hidden;if(el.hidden)return;
     item.px=(p.x*.5+.5)*box.width;item.py=(-p.y*.5+.5)*box.height;
