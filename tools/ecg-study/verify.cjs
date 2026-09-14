@@ -18,7 +18,7 @@ assert.doesNotMatch(read('ecg-study/module.css') + read('ecg-study/content.js'),
 
 const ctx = {};
 vm.runInNewContext(read('ecg-study/content.js') + ';this.data=ECG_STUDY;', ctx);
-const D = ctx.data;
+const D = JSON.parse(JSON.stringify(ctx.data));
 assert.equal(D.cards.length, 17);
 assert.equal(D.stages.length, 6);
 assert.deepEqual(D.stages.map((s) => s.id), ['p', 'pr', 'qrs', 'st', 't', 'tp']);
