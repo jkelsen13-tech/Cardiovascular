@@ -19,28 +19,43 @@ assert.doesNotMatch(read('ecg-study/module.css') + read('ecg-study/content.js'),
 const ctx = {};
 vm.runInNewContext(read('ecg-study/content.js') + ';this.data=ECG_STUDY;', ctx);
 const D = JSON.parse(JSON.stringify(ctx.data));
-assert.equal(D.cards.length, 17);
-assert.equal(D.stages.length, 6);
-assert.deepEqual(D.stages.map((s) => s.id), ['p', 'pr', 'qrs', 'st', 't', 'tp']);
+assert.equal(D.cards.length, 18);
+assert.equal(D.stages.length, 7);
+assert.deepEqual(D.stages.map((s) => s.id), ['p', 'pr', 'qrs', 'st', 't', 'u', 'tp']);
 assert.equal(D.patient.viewerLeft, 'PATIENT RIGHT');
 assert.equal(D.patient.viewerRight, 'PATIENT LEFT');
 assert.match(D.normals.pr, /0\.12–0\.20/);
 assert.match(D.normals.qrs, /<\s*0\.12/);
 assert.doesNotMatch(JSON.stringify(D.landmarks), /0\.36|0\.44|400 ms|0\.40 s normal/i);
-assert.equal(D.quiz.length, 17);
+assert.equal(D.quiz.length, 19);
 for (const q of D.quiz) {
   assert.equal(q.options.length, 4);
   assert(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4);
   assert(q.explain.length > 20);
 }
-assert.equal(new Set(D.cards.map((c) => c.id)).size, 17);
+assert.equal(new Set(D.cards.map((c) => c.id)).size, 18);
 assert(D.stages[0].caption.includes('Signal spreads through the atria'));
 assert(D.stages[1].caption.includes('pauses briefly at the AV node'));
 assert(D.stages[2].heart.toLowerCase().includes('atrial repolarization'));
 assert(D.stages[3].caption.includes('electrically active'));
 assert(D.stages[4].caption.includes('electrically reset'));
-assert(D.stages[5].caption.includes('baseline between beats'));
-console.log('Data: 17 cards, 6 stages, 17 quiz items, orientation and normals locked.');
+assert.match(D.stages[5].caption, /U wave/i);
+assert.match(D.stages[5].caption, /after the T wave/i);
+assert(D.stages[6].caption.includes('baseline between beats'));
+const uCard = D.cards.find((c) => c.id === 'u-wave');
+assert(uCard);
+assert.equal(uCard.term, 'U wave');
+assert.match(uCard.definition, /after T/i);
+assert.match(uCard.definition, /Purkinje/i);
+const jCard = D.cards.find((c) => c.id === 'j-point');
+assert.match(jCard.definition, /exact point where the QRS ends and the ST segment begins/i);
+assert(D.landmarks.some((l) => l.id === 'j' && /J junction/i.test(l.span)));
+assert(D.landmarks.some((l) => l.id === 'pr-seg' && /PR segment/i.test(l.name)));
+assert(D.landmarks.some((l) => l.id === 'tp-seg' && /TP segment/i.test(l.name)));
+assert(D.landmarks.some((l) => l.id === 'u' && /U wave/i.test(l.name)));
+assert(D.quiz.filter((q) => /U wave/i.test(q.prompt)).length >= 2);
+assert(D.quiz.some((q) => /after the T wave, before or within the TP/i.test(q.options[q.answer])));
+console.log('Data: 18 cards, 7 stages, 19 quiz items, U wave + J point, orientation and normals locked.');
 
 const server = http.createServer((req, res) => {
   const name = decodeURIComponent(req.url.split('?')[0]);
@@ -95,24 +110,59 @@ const server = http.createServer((req, res) => {
         assert.equal(await page.locator('#ecgStageSlider').getAttribute('aria-valuetext'), D.stages[i].name);
       }
       await page.locator('#ecgStagePrev').click();
-      assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'), 't');
+      assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'), 'u');
       await page.locator('#ecgStageNext').click();
       assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'), 'tp');
+
+      assert((await page.locator('#ecgInstrument svg [data-wave="u"]').count()) > 0);
+      assert((await page.locator('#ecgInstrument svg [data-landmark="j"]').count()) > 0);
+      assert.equal((await page.locator('#ecgInstrument svg [data-wave="u"]').innerText()).trim(), 'U');
+
+      await page.locator('#ecgStageSlider').evaluate((el) => {
+        el.value = '3';
+        el.dispatchEvent(new Event('input', {bubbles: true}));
+        el.dispatchEvent(new Event('change', {bubbles: true}));
+      });
+      assert.equal(await page.locator('#ecgInstrument').getAttribute('data-stage'), 'st');
+      assert((await page.locator('#ecgInstrument svg .ecg-j-note').count()) > 0);
 
       assert.equal(await page.locator('#ecgLandmarkBox').isVisible(), false);
       await page.locator('#ecgLandmarksToggle').check();
       assert(await page.locator('#ecgLandmarkBox').isVisible());
       const land = await page.locator('#ecgLandmarkBox').innerText();
-      for (const needle of ['PR interval', 'QT interval', 'ST segment', 'J point', 'QRS duration', '0.12–0.20', '< 0.12']) {
+      for (const needle of ['PR interval', 'PR segment', 'QT interval', 'ST segment', 'J point', 'QRS duration', 'U wave', 'TP segment', '0.12–0.20', '< 0.12', 'J junction']) {
         assert(land.includes(needle), 'missing ' + needle);
       }
       assert(!/normal QT is|0\.36–0\.44/i.test(land));
       assert((await page.locator('#ecgLandmarkBox').innerText()).includes('QT interval'));
       assert((await page.locator('#ecgInstrument svg text').filter({hasText: 'J'}).count()) > 0);
+      for (const id of ['pr-int', 'pr-seg', 'qrs-dur', 'j', 'st-seg', 'qt-int', 'tp-seg', 'u']) {
+        assert((await page.locator('#ecgInstrument svg [data-landmark="' + id + '"]').count()) > 0, 'on-trace landmark ' + id);
+      }
+      const trace = await page.locator('#ecgInstrument svg').innerText();
+      for (const label of ['PR interval', 'PR segment', 'QRS duration', 'ST segment', 'QT interval', 'TP segment', 'U wave']) {
+        assert(trace.includes(label), 'trace missing ' + label);
+      }
 
       await page.locator('#ecgTabCards').click();
       assert(await page.locator('#ecgFlashcard').isVisible());
-      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 17/);
+      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 18/);
+      let foundU = false;
+      for (let i = 0; i < 18; i++) {
+        if ((await page.locator('#ecgCardFront').innerText()).trim() === 'U wave') {
+          foundU = true;
+          await page.locator('#ecgCardFlip').click();
+          assert.match(await page.locator('#ecgCardBack').innerText(), /after T/i);
+          await page.locator('#ecgCardFlip').click();
+          break;
+        }
+        await page.locator('#ecgCardNext').click();
+      }
+      assert(foundU, 'U wave flashcard missing');
+      for (let i = 0; i < 18; i++) {
+        if (/Card 1 of 18/.test(await page.locator('#ecgCardProgress').innerText())) break;
+        await page.locator('#ecgCardPrev').click();
+      }
       const front = await page.locator('#ecgCardFront').innerText();
       await page.locator('#ecgReverseBtn').click();
       const reversedFront = await page.locator('#ecgCardFront').innerText();
@@ -121,9 +171,9 @@ const server = http.createServer((req, res) => {
       await page.locator('#ecgCardFlip').click();
       assert(await page.locator('#ecgFlashcard').evaluate((el) => el.classList.contains('is-flipped')));
       await page.locator('#ecgCardNext').click();
-      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 2 of 17/);
+      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 2 of 18/);
       await page.locator('#ecgCardShuffle').click();
-      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 17/);
+      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 18/);
       await page.locator('#ecgAgainBtn').click();
       await page.locator('#ecgKnowBtn').click();
       await page.locator('#ecgReviewOnlyBtn').click();
