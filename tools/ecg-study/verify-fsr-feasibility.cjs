@@ -24,7 +24,7 @@ const shaders={"vertex":"#version 300 es\nprecision highp float;\nin vec2 positi
  const w=Math.floor(c.width/scale),h=Math.floor(c.height/scale),pixels=new Uint8Array(w*h*4);
  for(let y=0;y<h;y++)for(let x=0;x<w;x++){const n=(y*w+x)*4;const value=x>w*.45+y*.13?210:50;pixels.set([value,Math.round(40+150*y/h),90,255],n);}
  const input=texture(w,h,pixels);
- function render(){pass(easu,input,w,h,fb);pass(rcas,intermediate,c.width,c.height,null);gl.finish();}
+ function render(){pass(easu,input,w,h,fb);pass(rcas,intermediate,c.width,c.height,null);gl.readPixels(0,0,1,1,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array(4));}
  for(let i=0;i<5;i++)render();
  const ms=[];for(let i=0;i<30;i++){const start=performance.now();render();ms.push(performance.now()-start);}
  ms.sort((a,b)=>a-b);const out=new Uint8Array(c.width*c.height*4);gl.readPixels(0,0,c.width,c.height,gl.RGBA,gl.UNSIGNED_BYTE,out);if(gl.getError()!==gl.NO_ERROR)throw Error('GL error');
@@ -42,7 +42,7 @@ const shaders={"vertex":"#version 300 es\nprecision highp float;\nin vec2 positi
  const native=await page.evaluate(()=>{
  const renderer=window.__benchmarkRenderer,canvas=renderer.domElement,gl=canvas.getContext('webgl2'),results=[];
  for(const scale of [1,1.5,2]){renderer.setPixelRatio(1.5/scale);
- const ms=[];for(let i=0;i<35;i++){const start=performance.now();canvas.dispatchEvent(new KeyboardEvent('keydown',{key:'Home',bubbles:true}));gl.finish();if(i>=5)ms.push(performance.now()-start);}
+ const ms=[];for(let i=0;i<35;i++){const start=performance.now();canvas.dispatchEvent(new KeyboardEvent('keydown',{key:'Home',bubbles:true}));gl.readPixels(0,0,1,1,gl.RGBA,gl.UNSIGNED_BYTE,new Uint8Array(4));if(i>=5)ms.push(performance.now()-start);}
  ms.sort((a,b)=>a-b);results.push({scale,width:canvas.width,height:canvas.height,medianMs:ms[15],p95Ms:ms[28]});}
  return results;});
  console.log(JSON.stringify({device:'CI SwiftShader, 390x844 CSS viewport; NOT physical iPhone',upscalingOnly:result,sceneOnly:native},null,2));
