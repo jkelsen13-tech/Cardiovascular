@@ -206,7 +206,7 @@ var ECG_STUDY = {
     {
       id: "rate-1500",
       term: "Most accurate regular-rate method?",
-      definition: "At the standard 25 mm/s paper speed: 1500 ÷ the number of small boxes between consecutive R waves. This is more precise than the 300 method."
+      definition: "For a regular rhythm at the standard 25 mm/s paper speed: 1500 ÷ the number of small boxes between consecutive R waves. This is more precise than the 300 method."
     },
     {
       id: "rate-300",
