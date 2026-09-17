@@ -177,6 +177,31 @@ var ECG_STUDY = {
       id: "orient",
       term: "Patient-view orientation",
       definition: "From the front: screen LEFT = patient RIGHT; screen RIGHT = patient LEFT."
+    },
+    {
+      id: "rate-6-sec",
+      term: "Heart rate — 6-second strip",
+      definition: "Fast estimate: count the R waves in a 6-second strip and multiply by 10. This is an estimate and is especially useful for irregular rhythms."
+    },
+    {
+      id: "rate-1500",
+      term: "Heart rate — 1500 method",
+      definition: "For a regular rhythm at the standard 25 mm/s paper speed: 1500 ÷ the number of small boxes between consecutive R waves. This is more precise than the 300 method."
+    },
+    {
+      id: "rate-300",
+      term: "Heart rate — 300 method",
+      definition: "For a regular rhythm at the standard 25 mm/s paper speed: 300 ÷ the number of large boxes between consecutive R waves. This is quick, but less precise than the 1500/small-box method."
+    },
+    {
+      id: "pr-four-boxes",
+      term: "PR interval — 4 small boxes",
+      definition: "At the standard 25 mm/s paper speed, each small horizontal box is 0.04 sec. 4 boxes × 0.04 sec = 0.16 sec."
+    },
+    {
+      id: "ecg-paper-mnemonic",
+      term: "Across = seconds. Up = volts.",
+      definition: "Across the ECG from left to right measures time in seconds. Up and down show the measured electrical signal's voltage (amplitude)."
     }
   ],
   quiz: [
