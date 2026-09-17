@@ -179,14 +179,34 @@ var ECG_STUDY = {
       definition: "From the front: screen LEFT = patient RIGHT; screen RIGHT = patient LEFT."
     },
     {
+      id: "paper-small-horizontal",
+      term: "One small horizontal box?",
+      definition: "0.04 sec at the standard ECG paper speed of 25 mm/s."
+    },
+    {
+      id: "paper-large-horizontal",
+      term: "One large horizontal box?",
+      definition: "0.20 sec at the standard ECG paper speed of 25 mm/s."
+    },
+    {
+      id: "paper-small-vertical",
+      term: "One small vertical box?",
+      definition: "0.1 mV at the standard ECG calibration of 10 mm/mV."
+    },
+    {
+      id: "paper-large-vertical",
+      term: "One large vertical box?",
+      definition: "0.5 mV at the standard ECG calibration of 10 mm/mV."
+    },
+    {
       id: "rate-6-sec",
-      term: "Heart rate — 6-second strip",
-      definition: "Fast estimate: count the R waves in a 6-second strip and multiply by 10. This is an estimate and is especially useful for irregular rhythms."
+      term: "Fastest heart-rate estimate?",
+      definition: "Use a 6-second strip: count the R waves and multiply by 10. This is an estimate and is especially useful for irregular rhythms."
     },
     {
       id: "rate-1500",
-      term: "Heart rate — 1500 method",
-      definition: "For a regular rhythm at the standard 25 mm/s paper speed: 1500 ÷ the number of small boxes between consecutive R waves. This is more precise than the 300 method."
+      term: "Most accurate regular-rate method?",
+      definition: "At the standard 25 mm/s paper speed: 1500 ÷ the number of small boxes between consecutive R waves. This is more precise than the 300 method."
     },
     {
       id: "rate-300",
