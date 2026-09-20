@@ -102,7 +102,9 @@ window.LeadTorso3D = (() => {
     function worldPoint(local){const p=local.clone();root.localToWorld(p);return p;}
     function occluded(point){if(bodySurface!=="opaque")return false;return worldPoint(point).z<-.015;}
     function candidatePositions(base,id,family,width,height){const preferred={v1:[-30,-25],v2:[30,-27],v3:[34,-9],v4:[30,15],v5:[34,-20],v6:[36,16],ra:[-32,-8],la:[32,-8],rl:[-28,18],ll:[28,18]}[id]||[0,-28],extra=family==="limb"?48:40;const [dx,dy]=preferred;return [[dx,dy],[dx,dy-extra],[dx,dy+extra],[dx-extra,dy],[dx+extra,dy],[0,-extra],[0,extra]].map(([x,y])=>({x:clamp(base.x+x,26,width-26),y:clamp(base.y+y,34,height-26)}));}
-    function overlap(a,b){return Math.abs(a.x-b.x)<48&&Math.abs(a.y-b.y)<38;}
+    // Marker buttons are 44px touch targets. Keep enough center-to-center space
+    // for the full boxes plus a small visual gutter on narrow phone viewports.
+    function overlap(a,b){return Math.abs(a.x-b.x)<52&&Math.abs(a.y-b.y)<50;}
     function placeLeader(item,base,pos){const dx=pos.x-base.x,dy=pos.y-base.y,len=Math.hypot(dx,dy),angle=Math.atan2(dy,dx)*180/Math.PI;item.leader.style.left=base.x+"px";item.leader.style.top=base.y+"px";item.leader.style.width=Math.max(0,len-12)+"px";item.leader.style.transform=`rotate(${angle}deg)`;}
     function projectLabels(){const rect=viewport.getBoundingClientRect(),placed=[];markerItems.forEach((item)=>{const p=worldPoint(item.point);p.project(camera);const base={x:(p.x*.5+.5)*rect.width,y:(-p.y*.5+.5)*rect.height},hidden=!layers.leads||p.z>1||p.z< -1||Math.abs(p.x)>1.08||Math.abs(p.y)>1.08||occluded(item.point);item.button.hidden=hidden;item.leader.hidden=hidden;if(hidden)return;const candidates=candidatePositions(base,item.id,item.family,rect.width,rect.height),pos=candidates.find((next)=>!placed.some((other)=>overlap(next,other)))||candidates[0];placed.push(pos);item.button.style.left=pos.x+"px";item.button.style.top=pos.y+"px";placeLeader(item,base,pos);});}
     function draw(){if(disposed||document.hidden||!visible)return;cameraPose();renderer.render(scene,camera);projectLabels();}
