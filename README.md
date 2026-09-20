@@ -4,7 +4,7 @@ A single self-contained, offline, mobile-friendly HTML study quiz for the
 Cardiovascular Monitor Technician (CMT) class.
 
 ## Use
-Open **`cmt-quiz.html`** (or **`index.html`**) in any web browser. No internet, server, or install required. Choose **ECG Waves & Intervals** on the home menu for flashcards and the interactive conduction slider; use **ECG Rhythm Practice** for source-strip interpretation.
+Open **`cmt-quiz.html`** (or **`index.html`**) in any web browser. No internet, server, or install required. Choose **ECG Waves & Intervals** on the home menu for flashcards and the interactive conduction slider; use **ECG Rhythm Practice** for source-strip interpretation. Choose **Lead Placement Lab** for a guided 3D/2D torso walkthrough, chest and limb lead exploration, reversible placement flashcards, and a placement quiz.
 
 ## Structure
 Every question is tagged with a **module** (a class test unit) and a **unit** (one source
@@ -46,6 +46,12 @@ Unit 3 and Module 6's Unit 3 are separate decks).
   optional PR/QRS/J/ST/QT/U/TP landmarks on the tracing, and a short quiz with immediate feedback.
   Native SVG/CSS (not pasted screenshots). Open it from
   the home menu; keep the `ecg-study/` folder beside the HTML for downloaded copies.
+- **Lead Placement Lab** — guided placement in the preferred V1 → V2 → V4 → V3 → V5 → V6
+  sequence, a rotatable upper-torso surface with optional schematic skeleton/muscle/landmark layers,
+  chest and limb lead exploration, reversible flashcards, and mixed placement/plane/pairing quizzes.
+  The viewer preserves front-view patient orientation (viewer left = patient right), is touch rotation
+  opt-in, and falls back to a native SVG/HTML torso map if WebGL is unavailable. Keep the
+  `lead-placement/` folder beside the HTML for offline use.
 - **Interactive ordering & labeling questions** (Canvas-style), graded per slot with
   partial credit (e.g. "9 / 12 correct"): sequence the conduction pathway and the
   reverse blood-flow path; label the heart-wall layers and heart-structure diagrams.
@@ -80,3 +86,13 @@ The ECG study slider now lazy-loads an anatomical HRA heart with separate chambe
 Keep the entire `ecg-study/` folder for offline use. Assets are base64-packaged GLBs decoded locally so direct `file://` opening needs no server. Model loading or WebGL failure automatically retains the simplified SVG. The 3D payload is about 5.7 MB plus a local Three.js/GLTFLoader bundle, loaded only when the anatomical module view opens.
 
 See [model attribution and limitations](ecg-study/assets/ATTRIBUTION.md) and [exact asset manifest](ecg-study/assets/model-manifest.json). The heart is reference anatomy; contraction, conduction and blood arrows are schematic teaching overlays. The U wave has no invented mechanical event. On small screens, use cutaway and overlay toggles to reduce crowding. Reset/front restores patient-right on the viewer's left after rotation.
+
+## Lead-placement 3D torso
+
+The Lead Placement Lab lazy-loads an optimized HuBMAP HRA / Visible Human Male v1.2 skin GLB,
+licensed CC BY 4.0. The source model is 5,931,700 bytes and 185,314 triangles; the local optimized
+model is 2,410,628 bytes and 92,656 triangles before base64 packaging. It reuses the existing local
+Three.js/GLTFLoader runtime and makes no runtime network request. Sternum, clavicles, ribs, muscle,
+landmark lines and lead markers are schematic programmatic overlays rather than claimed source-model
+structures. See [asset attribution and limitations](lead-placement/assets/ATTRIBUTION.md) and the
+[exact manifest](lead-placement/assets/model-manifest.json).
