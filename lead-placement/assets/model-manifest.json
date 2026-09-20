@@ -1,0 +1,31 @@
+{
+  "sourceOrganization": "HuBMAP Human Reference Atlas",
+  "sourceCommit": "f1a3a63f110e27ff0736047d52d04dba5d3087f9",
+  "license": "CC BY 4.0",
+  "runtime": "three@0.180.0 (shared local bundle)",
+  "source": {
+    "path": "VH_Male/v1.2/VH_M_Skin.glb",
+    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2/VH_M_Skin.glb",
+    "gitBlobSha": "57b4af235eb34e2dce104b619c55b09ec44dae63",
+    "sha256": "8cab299d04323e6364938a271647df5671138a2177f412e741a0d6bd4536ee1c",
+    "bytes": 5931700,
+    "meshes": 1,
+    "vertices": 92659,
+    "triangles": 185314,
+    "textures": 0
+  },
+  "optimized": {
+    "sha256": "02964abbb68b9232ce0e833ae4d517bece6167f2f113174a01d0886f3b9872b1",
+    "bytes": 2410628,
+    "meshes": 1,
+    "vertices": 46330,
+    "triangles": 92656,
+    "textures": 0,
+    "extensionsUsed": [],
+    "recipe": [
+      "gltf-transform weld input.glb welded.glb",
+      "gltf-transform simplify welded.glb optimized.glb --ratio 0.5 --error 0.002"
+    ]
+  },
+  "teachingOverlays": "Procedural/schematic Three.js geometry; not part of the HRA mesh"
+}

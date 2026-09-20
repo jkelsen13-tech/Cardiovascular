@@ -350,11 +350,25 @@ const EcgStudy = (() => {
     return D.cards[vis[state.card]];
   }
 
+  function leadCardVisual(card) {
+    if (!card.visual) return "";
+    const coords = {v1:[43,38],v2:[50,38],v3:[57,49],v4:[64,59],v5:[76,59],v6:[86,59]};
+    const p = coords[card.visual];
+    if (!p) return "";
+    const x = p[0] * 1.8, y = p[1] * 1.5;
+    return `<svg class="ecg-lead-card-thumb" viewBox="0 0 180 150" role="img" aria-label="Front torso thumbnail highlighting ${escape(card.visual.toUpperCase())}">
+      <path d="M55 18 Q90 2 125 18 L156 44 L139 140 H41 L24 44 Z"/>
+      <path d="M90 28 L90 112 M90 32 Q68 25 50 38 M90 32 Q112 25 130 38"/>
+      <circle cx="${x}" cy="${y}" r="7"/><text x="${x}" y="${y + 3}" text-anchor="middle">${escape(card.visual.toUpperCase())}</text>
+    </svg>`;
+  }
+
   function cardsPanel() {
     const vis = visibleCardIds();
     const card = currentCard();
     const front = state.reverse ? card.definition : card.term;
     const back = state.reverse ? card.term : card.definition;
+    const visual = leadCardVisual(card);
     const n = vis.length;
     const knownN = D.cards.filter((c) => state.known[c.id]).length;
     return `<div id="ecgCardsPanel">
@@ -368,11 +382,11 @@ const EcgStudy = (() => {
           aria-pressed="${state.flipped}" aria-label="Flashcard. ${state.flipped ? "Showing back" : "Showing front"}. Activate to flip.">
           <div class="ecg-card-face ecg-card-front">
             <div class="ecg-card-kicker">${state.reverse ? "Definition" : "Term"}</div>
-            <div class="ecg-card-text" id="ecgCardFront">${escape(front)}</div>
+            ${!state.reverse ? visual : ""}<div class="ecg-card-text" id="ecgCardFront">${escape(front)}</div>
           </div>
           <div class="ecg-card-face ecg-card-back">
             <div class="ecg-card-kicker">${state.reverse ? "Term" : "Definition"}</div>
-            <div class="ecg-card-text" id="ecgCardBack">${escape(back)}</div>
+            ${state.reverse ? visual : ""}<div class="ecg-card-text" id="ecgCardBack">${escape(back)}</div>
           </div>
         </div>
       </div>

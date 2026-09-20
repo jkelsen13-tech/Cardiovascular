@@ -293,6 +293,10 @@
 .ecg-card-kicker { font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--es-accent); margin-bottom: 8px; }
 .ecg-card-text { font-size: 20px; font-weight: 750; line-height: 1.35; }
 .ecg-card-back .ecg-card-text { font-size: 17px; font-weight: 600; }
+.ecg-lead-card-thumb { width: 140px; height: 112px; margin-bottom: 4px; }
+.ecg-lead-card-thumb path { fill: #b9786d33; stroke: var(--es-muted); stroke-width: 2; }
+.ecg-lead-card-thumb circle { fill: #facc15; stroke: #422006; stroke-width: 2; }
+.ecg-lead-card-thumb text { fill: #161616; font: 800 8px system-ui; }
 .ecg-progress { font-size: 13px; color: var(--es-muted); margin-bottom: 6px; }
 .ecg-chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
 .ecg-chip {
