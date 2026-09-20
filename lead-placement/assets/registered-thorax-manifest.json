@@ -1,0 +1,2345 @@
+{
+  "source": {
+    "organization": "Database Center for Life Science (DBCLS)",
+    "dataset": "BodyParts3D / Anatomography 4.x shared coordinate frame",
+    "downloadEndpoint": "https://lifesciencedb.jp/bp3d/download.cgi",
+    "license": "CC BY 4.0 (current designated LSDB license page; historical distribution notices said CC BY-SA 2.1 Japan)",
+    "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+    "selectedObjects": 50,
+    "uncompressedObjBytes": 28650246,
+    "vertices": 220218,
+    "triangles": 420806
+  },
+  "processing": {
+    "skinCropSourceZMm": [
+      850,
+      1500
+    ],
+    "sourceToGltf": {
+      "description": "x'=x/1000; y'=(z-1175)/1000; z'=-y/1000",
+      "scale": 0.001,
+      "sourceOriginMm": [
+        0,
+        0,
+        1175
+      ],
+      "matrixColumnMajor": [
+        0.001,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -0.001,
+        0,
+        0,
+        0.001,
+        0,
+        0,
+        0,
+        -1.175,
+        0,
+        1
+      ]
+    },
+    "simplification": "deterministic vertex clustering per named structure",
+    "cellsMm": {
+      "body": 2.5,
+      "skeleton": 1.5,
+      "cartilage": 1.2,
+      "muscle": 1.5
+    },
+    "registration": "No individual transform or recentering; one identical affine transform for every structure."
+  },
+  "optimized": {
+    "path": "registered-thorax.glb",
+    "bytes": 3529136,
+    "sha256": "465222925f5f63a47cd4e204ffb74a5852f157e6e27e48390fe671caf22d4f78",
+    "vertices": 96542,
+    "triangles": 194563,
+    "structures": 50
+  },
+  "anchors": {
+    "method": "Derived from named rib, costal-cartilage, sternum, clavicle, pectoralis-major and skin geometry before optimization; surface points use model-space ray projection.",
+    "values": {
+      "v1": {
+        "sourceMm": [
+          -23.9735,
+          -217.840941988198,
+          1233.5575
+        ],
+        "gltfMeters": [
+          -0.023973500000000002,
+          0.05855749999999989,
+          0.217840941988198
+        ]
+      },
+      "v2": {
+        "sourceMm": [
+          24.1852,
+          -218.29800759897626,
+          1233.5575
+        ],
+        "gltfMeters": [
+          0.024185199999999997,
+          0.05855749999999989,
+          0.21829800759897625
+        ]
+      },
+      "v3": {
+        "sourceMm": [
+          50.1727825,
+          -228.19795425317272,
+          1199.16625
+        ],
+        "gltfMeters": [
+          0.0501727825,
+          0.02416624999999999,
+          0.2281979542531727
+        ]
+      },
+      "v4": {
+        "sourceMm": [
+          76.160365,
+          -218.98951418358877,
+          1164.775
+        ],
+        "gltfMeters": [
+          0.076160365,
+          -0.01022499999999991,
+          0.21898951418358878
+        ]
+      },
+      "v5": {
+        "sourceMm": [
+          194.262,
+          -118.71824790770926,
+          1164.775
+        ],
+        "gltfMeters": [
+          0.194262,
+          -0.01022499999999991,
+          0.11871824790770925
+        ]
+      },
+      "v6": {
+        "sourceMm": [
+          247.363,
+          -63.9755,
+          1164.775
+        ],
+        "gltfMeters": [
+          0.247363,
+          -0.01022499999999991,
+          0.06397549999999999
+        ]
+      }
+    },
+    "checks": {
+      "patientRightNegativeX": true,
+      "v4V5V6SameSourceZ": true
+    }
+  },
+  "structures": [
+    {
+      "fj": "FJ1446",
+      "bp": "BP23178",
+      "fma": "FMA45874",
+      "name": "Abdominal part of right pectoralis major",
+      "layer": "muscle",
+      "sourceFile": "FJ1446_BP23178_FMA45874_Abdominal part of right pectoralis major.obj",
+      "sourceSha256": "df4d9d0e3a3826543dd97bcd5ed1d0c686001a22da84a97b7a236f02b289b497",
+      "sourceBytes": 104638,
+      "original": {
+        "vertices": 1019,
+        "triangles": 1536,
+        "boundsMm": {
+          "min": [
+            -180.896,
+            -213.628,
+            1104.78
+          ],
+          "max": [
+            -48,
+            -81.7564,
+            1277.94
+          ]
+        }
+      },
+      "croppedTriangles": 1536,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 680,
+        "triangles": 1355,
+        "boundsMeters": {
+          "min": [
+            -0.18089599999999997,
+            -0.06994000000000006,
+            0.08203546666666667
+          ],
+          "max": [
+            -0.0481468,
+            0.10284799999999995,
+            0.21362799999999998
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ1446M",
+      "bp": "BP23068",
+      "fma": "FMA45875",
+      "name": "Abdominal part of left pectoralis major",
+      "layer": "muscle",
+      "sourceFile": "FJ1446M_BP23068_FMA45875_Abdominal part of left pectoralis major.obj",
+      "sourceSha256": "1752fa0aa1b27099ec4ea74c5d303b11b0f3824915c76ac0441cdaf474140676",
+      "sourceBytes": 103613,
+      "original": {
+        "vertices": 1019,
+        "triangles": 1536,
+        "boundsMm": {
+          "min": [
+            48,
+            -213.628,
+            1104.78
+          ],
+          "max": [
+            180.896,
+            -81.7564,
+            1277.94
+          ]
+        }
+      },
+      "croppedTriangles": 1536,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 680,
+        "triangles": 1355,
+        "boundsMeters": {
+          "min": [
+            0.0481468,
+            -0.06994000000000006,
+            0.08203546666666667
+          ],
+          "max": [
+            0.18089599999999997,
+            0.10284799999999995,
+            0.21362799999999998
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ1447",
+      "bp": "BP23304",
+      "fma": "FMA34690",
+      "name": "Clavicular part of right pectoralis major",
+      "layer": "muscle",
+      "sourceFile": "FJ1447_BP23304_FMA34690_Clavicular part of right pectoralis major.obj",
+      "sourceSha256": "8946eb62e954e216065235ed2fd434137b5a0b7d9c53663eccb429bbcec1191a",
+      "sourceBytes": 141116,
+      "original": {
+        "vertices": 1492,
+        "triangles": 1846,
+        "boundsMm": {
+          "min": [
+            -194.262,
+            -145.096,
+            1234.51
+          ],
+          "max": [
+            -26.4139,
+            -82,
+            1335.9
+          ]
+        }
+      },
+      "croppedTriangles": 1846,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 766,
+        "triangles": 1528,
+        "boundsMeters": {
+          "min": [
+            -0.19426200000000002,
+            0.059844166666666525,
+            0.082278935
+          ],
+          "max": [
+            -0.02656074285714286,
+            0.1603599999999999,
+            0.145096
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ1447M",
+      "bp": "BP23261",
+      "fma": "FMA34691",
+      "name": "Clavicular part of left pectoralis major",
+      "layer": "muscle",
+      "sourceFile": "FJ1447M_BP23261_FMA34691_Clavicular part of left pectoralis major.obj",
+      "sourceSha256": "970a5628001bd21a0cc41dd6cb8e9f7425f79f0d2eee3d6c28bd713bcea9f8dc",
+      "sourceBytes": 139794,
+      "original": {
+        "vertices": 1495,
+        "triangles": 1846,
+        "boundsMm": {
+          "min": [
+            26.4139,
+            -145.096,
+            1234.51
+          ],
+          "max": [
+            194.262,
+            -82,
+            1335.9
+          ]
+        }
+      },
+      "croppedTriangles": 1846,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 766,
+        "triangles": 1528,
+        "boundsMeters": {
+          "min": [
+            0.02656074285714286,
+            0.05984333333333348,
+            0.08227893499999998
+          ],
+          "max": [
+            0.19426200000000002,
+            0.1603599999999999,
+            0.145096
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ1464",
+      "bp": "BP23276",
+      "fma": "FMA79979",
+      "name": "Sternocostal part of right pectoralis major",
+      "layer": "muscle",
+      "sourceFile": "FJ1464_BP23276_FMA79979_Sternocostal part of right pectoralis major.obj",
+      "sourceSha256": "89f0094691e07d11ce3be57ad19dc986b83aa822b74a6a7b22fe2e3af4f8939c",
+      "sourceBytes": 556430,
+      "original": {
+        "vertices": 5480,
+        "triangles": 7114,
+        "boundsMm": {
+          "min": [
+            -187.848,
+            -219.353,
+            1140.61
+          ],
+          "max": [
+            -4.81557,
+            -81,
+            1313.8
+          ]
+        }
+      },
+      "croppedTriangles": 7114,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2937,
+        "triangles": 5876,
+        "boundsMeters": {
+          "min": [
+            -0.1874487,
+            -0.0343900000000001,
+            0.0812702380952381
+          ],
+          "max": [
+            -0.00481557,
+            0.13878499999999985,
+            0.21935300000000002
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ1464M",
+      "bp": "BP24065",
+      "fma": "FMA79980",
+      "name": "Sternocostal part of left pectoralis major",
+      "layer": "muscle",
+      "sourceFile": "FJ1464M_BP24065_FMA79980_Sternocostal part of left pectoralis major.obj",
+      "sourceSha256": "08ba0e1a81a15e5c4052fb2b7c8959a7a607437a885e7c32f1d4438375f0ee8c",
+      "sourceBytes": 550997,
+      "original": {
+        "vertices": 5466,
+        "triangles": 7114,
+        "boundsMm": {
+          "min": [
+            4.81557,
+            -219.353,
+            1140.61
+          ],
+          "max": [
+            187.848,
+            -81,
+            1313.8
+          ]
+        }
+      },
+      "croppedTriangles": 7114,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2937,
+        "triangles": 5875,
+        "boundsMeters": {
+          "min": [
+            0.00481557,
+            -0.0343900000000001,
+            0.0812702380952381
+          ],
+          "max": [
+            0.1874487,
+            0.13878499999999985,
+            0.21935300000000002
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ2810",
+      "bp": "BP22617",
+      "fma": "FMA7163",
+      "name": "Skin",
+      "layer": "body",
+      "sourceFile": "FJ2810_BP22617_FMA7163_Skin.obj",
+      "sourceSha256": "b96705b91fb861e4f63ca116c5fdc2c79d772083e9595ba1c0122a86ff2f7282",
+      "sourceBytes": 14465138,
+      "original": {
+        "vertices": 102467,
+        "triangles": 203382,
+        "boundsMm": {
+          "min": [
+            -334.119,
+            -246.783,
+            -78.1112
+          ],
+          "max": [
+            332.825,
+            45.2476,
+            1641.36
+          ]
+        }
+      },
+      "croppedTriangles": 63343,
+      "clusterCellMm": 2.5,
+      "optimized": {
+        "vertices": 29409,
+        "triangles": 59652,
+        "boundsMeters": {
+          "min": [
+            -0.28005,
+            -0.325481,
+            -0.0452476
+          ],
+          "max": [
+            0.278855,
+            0.3252366666666667,
+            0.225523
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3153",
+      "bp": "BP22299",
+      "fma": "FMA7488",
+      "name": "Xiphoid process",
+      "layer": "skeleton",
+      "sourceFile": "FJ3153_BP22299_FMA7488_Xiphoid process.obj",
+      "sourceSha256": "78c5b7418f7a20e567c7fe238626febaa054faf623aa1fbda5d6f84d0906832d",
+      "sourceBytes": 55901,
+      "original": {
+        "vertices": 495,
+        "triangles": 922,
+        "boundsMm": {
+          "min": [
+            -10.3378,
+            -213.353,
+            1164.02
+          ],
+          "max": [
+            10.6039,
+            -198.509,
+            1184.5
+          ]
+        }
+      },
+      "croppedTriangles": 922,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 258,
+        "triangles": 515,
+        "boundsMeters": {
+          "min": [
+            -0.010225283750000001,
+            -0.010960000000000036,
+            0.1985576666666667
+          ],
+          "max": [
+            0.010355342142857143,
+            0.0095,
+            0.213318
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3178",
+      "bp": "BP22232",
+      "fma": "FMA7487",
+      "name": "Body of sternum",
+      "layer": "skeleton",
+      "sourceFile": "FJ3178_BP22232_FMA7487_Body of sternum.obj",
+      "sourceSha256": "2778645a031486a98f2e26be0c67f664f2de391a5e760427db96a403e676391f",
+      "sourceBytes": 373931,
+      "original": {
+        "vertices": 3691,
+        "triangles": 4646,
+        "boundsMm": {
+          "min": [
+            -23.6149,
+            -213.832,
+            1179.65
+          ],
+          "max": [
+            23.9556,
+            -165.166,
+            1289.64
+          ]
+        }
+      },
+      "croppedTriangles": 4646,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1518,
+        "triangles": 3067,
+        "boundsMeters": {
+          "min": [
+            -0.023494766666666663,
+            0.004660000000000082,
+            0.165231
+          ],
+          "max": [
+            0.023612200000000007,
+            0.11455857142857166,
+            0.213832
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3225",
+      "bp": "BP23877",
+      "fma": "FMA8472",
+      "name": "Left tenth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3225_BP23877_FMA8472_Left tenth rib.obj",
+      "sourceSha256": "38da43831695ce20a30e75bfea67ef8b30d6d809acc06047e43cc669735764e9",
+      "sourceBytes": 431812,
+      "original": {
+        "vertices": 3419,
+        "triangles": 6826,
+        "boundsMm": {
+          "min": [
+            15.5623,
+            -117.715,
+            1022.96
+          ],
+          "max": [
+            122.349,
+            -11.3545,
+            1158.99
+          ]
+        }
+      },
+      "croppedTriangles": 6826,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1904,
+        "triangles": 3831,
+        "boundsMeters": {
+          "min": [
+            0.015570299999999999,
+            -0.15183142857142867,
+            0.0113666
+          ],
+          "max": [
+            0.122349,
+            -0.016069999999999935,
+            0.11760933333333333
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3226",
+      "bp": "BP22277",
+      "fma": "FMA8532",
+      "name": "Left eleventh rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3226_BP22277_FMA8532_Left eleventh rib.obj",
+      "sourceSha256": "a319bfed8a58a63a92b21360115816ea9d4d088a8e089ad67608db0f6ddd8ce7",
+      "sourceBytes": 303913,
+      "original": {
+        "vertices": 2435,
+        "triangles": 4866,
+        "boundsMm": {
+          "min": [
+            16.279,
+            -96.0117,
+            1008.06
+          ],
+          "max": [
+            110.054,
+            -17.9614,
+            1121.74
+          ]
+        }
+      },
+      "croppedTriangles": 4866,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1404,
+        "triangles": 2826,
+        "boundsMeters": {
+          "min": [
+            0.016279,
+            -0.16678250000000003,
+            0.0179675
+          ],
+          "max": [
+            0.11001166666666666,
+            -0.053398750000000064,
+            0.09593705555555555
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3227",
+      "bp": "BP22319",
+      "fma": "FMA8534",
+      "name": "Left twelfth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3227_BP22319_FMA8534_Left twelfth rib.obj",
+      "sourceSha256": "6a67f81f9442f9ab46f685d0835904410a4e2d314d95258014a512374008da04",
+      "sourceBytes": 170630,
+      "original": {
+        "vertices": 1411,
+        "triangles": 2818,
+        "boundsMm": {
+          "min": [
+            16.8903,
+            -66.0698,
+            1011.33
+          ],
+          "max": [
+            85.2211,
+            -28.0149,
+            1089.16
+          ]
+        }
+      },
+      "croppedTriangles": 2818,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 839,
+        "triangles": 1676,
+        "boundsMeters": {
+          "min": [
+            0.01695665,
+            -0.16361,
+            0.02802625
+          ],
+          "max": [
+            0.08520167499999999,
+            -0.08592399999999997,
+            0.06596856666666666
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3228",
+      "bp": "BP22221",
+      "fma": "FMA7987",
+      "name": "Left first rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3228_BP22221_FMA7987_Left first rib.obj",
+      "sourceSha256": "6a19fc2a31580adbe8186e7df47dce050ee28ecd1ac61c0f4f594e764a3c794f",
+      "sourceBytes": 200486,
+      "original": {
+        "vertices": 1641,
+        "triangles": 3276,
+        "boundsMm": {
+          "min": [
+            13.8004,
+            -130.42,
+            1310.07
+          ],
+          "max": [
+            68.4546,
+            -64.417,
+            1370.48
+          ]
+        }
+      },
+      "croppedTriangles": 3276,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 885,
+        "triangles": 1784,
+        "boundsMeters": {
+          "min": [
+            0.013925763636363638,
+            0.135125,
+            0.06446183333333334
+          ],
+          "max": [
+            0.0684246,
+            0.19540600000000016,
+            0.13029454545454547
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3229",
+      "bp": "BP22527",
+      "fma": "FMA8012",
+      "name": "Left second rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3229_BP22527_FMA8012_Left second rib.obj",
+      "sourceSha256": "6451db218e0d23b4f32350cb1704c5c6f4cc891826d25109368c685cd4ebd62a",
+      "sourceBytes": 354866,
+      "original": {
+        "vertices": 2862,
+        "triangles": 5594,
+        "boundsMm": {
+          "min": [
+            14.7349,
+            -167.127,
+            1273.51
+          ],
+          "max": [
+            95.661,
+            -50.6468,
+            1359.03
+          ]
+        }
+      },
+      "croppedTriangles": 5594,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1559,
+        "triangles": 3147,
+        "boundsMeters": {
+          "min": [
+            0.01475975,
+            0.09867187499999977,
+            0.050762257142857155
+          ],
+          "max": [
+            0.09563864999999999,
+            0.1839112499999999,
+            0.167060875
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3230",
+      "bp": "BP22294",
+      "fma": "FMA8039",
+      "name": "Left third rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3230_BP22294_FMA8039_Left third rib.obj",
+      "sourceSha256": "8690da802ef43712bb17dcbb35e33d7b210ebbfd365297b8516fee9fb07ab008",
+      "sourceBytes": 459671,
+      "original": {
+        "vertices": 3637,
+        "triangles": 7254,
+        "boundsMm": {
+          "min": [
+            12.7243,
+            -179.257,
+            1243.84
+          ],
+          "max": [
+            107.633,
+            -36.8579,
+            1335.98
+          ]
+        }
+      },
+      "croppedTriangles": 7254,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2046,
+        "triangles": 4130,
+        "boundsMeters": {
+          "min": [
+            0.0127243,
+            0.06891800000000012,
+            0.036875500000000005
+          ],
+          "max": [
+            0.1076215,
+            0.1609425000000001,
+            0.179257
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3231",
+      "bp": "BP22488",
+      "fma": "FMA8148",
+      "name": "Left fourth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3231_BP22488_FMA8148_Left fourth rib.obj",
+      "sourceSha256": "62f81d0f6e799c759d048b0d7e4e6ea0ccf59eebc76deb8c5f4f4b93ebe56c7a",
+      "sourceBytes": 564170,
+      "original": {
+        "vertices": 4445,
+        "triangles": 8850,
+        "boundsMm": {
+          "min": [
+            12.9057,
+            -192.195,
+            1211.1
+          ],
+          "max": [
+            116.281,
+            -23.1919,
+            1315.35
+          ]
+        }
+      },
+      "croppedTriangles": 8850,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2515,
+        "triangles": 5057,
+        "boundsMeters": {
+          "min": [
+            0.0129738,
+            0.03616500000000019,
+            0.023209399999999998
+          ],
+          "max": [
+            0.11628100000000001,
+            0.1402862500000001,
+            0.192124
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3232",
+      "bp": "BP22285",
+      "fma": "FMA8093",
+      "name": "Left fifth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3232_BP22285_FMA8093_Left fifth rib.obj",
+      "sourceSha256": "134ed1994bcf99a0827baca7e4548b952ede8cebcd9c32ff9bba83694fe2af82",
+      "sourceBytes": 622026,
+      "original": {
+        "vertices": 4912,
+        "triangles": 9710,
+        "boundsMm": {
+          "min": [
+            14.0045,
+            -197.688,
+            1172.17
+          ],
+          "max": [
+            125.768,
+            -12.7227,
+            1291.32
+          ]
+        }
+      },
+      "croppedTriangles": 9710,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2755,
+        "triangles": 5550,
+        "boundsMeters": {
+          "min": [
+            0.01402644,
+            -0.002814999999999827,
+            0.0127227
+          ],
+          "max": [
+            0.125768,
+            0.11625,
+            0.19763157142857138
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3233",
+      "bp": "BP22298",
+      "fma": "FMA8202",
+      "name": "Left sixth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3233_BP22298_FMA8202_Left sixth rib.obj",
+      "sourceSha256": "4a9e0c4b951c18cad19c92f8e1d6bf900294e33e3197df0bf3ee470d5f740b03",
+      "sourceBytes": 656948,
+      "original": {
+        "vertices": 5172,
+        "triangles": 10264,
+        "boundsMm": {
+          "min": [
+            12.7754,
+            -193.495,
+            1137.9
+          ],
+          "max": [
+            133.054,
+            -3.6444,
+            1266.83
+          ]
+        }
+      },
+      "croppedTriangles": 10264,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2926,
+        "triangles": 5875,
+        "boundsMeters": {
+          "min": [
+            0.012802524999999999,
+            -0.037074999999999816,
+            0.0036728
+          ],
+          "max": [
+            0.133039,
+            0.09180699999999979,
+            0.193495
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3234",
+      "bp": "BP22332",
+      "fma": "FMA8256",
+      "name": "Left seventh rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3234_BP22332_FMA8256_Left seventh rib.obj",
+      "sourceSha256": "1cf8ddde6c1e25053e0d96d140abca16e21ca44004ea254bde2b74aec1bbd28c",
+      "sourceBytes": 642046,
+      "original": {
+        "vertices": 5054,
+        "triangles": 10032,
+        "boundsMm": {
+          "min": [
+            12.3825,
+            -180.208,
+            1105.19
+          ],
+          "max": [
+            135.778,
+            -4.49795,
+            1240.25
+          ]
+        }
+      },
+      "croppedTriangles": 10032,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2894,
+        "triangles": 5823,
+        "boundsMeters": {
+          "min": [
+            0.012403850000000001,
+            -0.0697058333333332,
+            0.004537965
+          ],
+          "max": [
+            0.13577799999999998,
+            0.06512999999999988,
+            0.18015466666666669
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3235",
+      "bp": "BP23684",
+      "fma": "FMA8310",
+      "name": "Left eighth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3235_BP23684_FMA8310_Left eighth rib.obj",
+      "sourceSha256": "2fce674e4ab849da6c60fbeba69330ab2708c47b2dfeb7e63bcf31d8f0b8cd71",
+      "sourceBytes": 532419,
+      "original": {
+        "vertices": 4211,
+        "triangles": 8336,
+        "boundsMm": {
+          "min": [
+            12.3704,
+            -162.675,
+            1074.65
+          ],
+          "max": [
+            131.638,
+            -4.56957,
+            1211.32
+          ]
+        }
+      },
+      "croppedTriangles": 8336,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2339,
+        "triangles": 4706,
+        "boundsMeters": {
+          "min": [
+            0.01243078,
+            -0.1003125,
+            0.00457118
+          ],
+          "max": [
+            0.13162000000000001,
+            0.036293333333333296,
+            0.1625607142857143
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3236",
+      "bp": "BP22343",
+      "fma": "FMA8391",
+      "name": "Left ninth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3236_BP22343_FMA8391_Left ninth rib.obj",
+      "sourceSha256": "a85a2feb2b1adf0d40c64daf505cce78277c3f0998df00dcaded3b58d7c35d46",
+      "sourceBytes": 481426,
+      "original": {
+        "vertices": 3805,
+        "triangles": 7576,
+        "boundsMm": {
+          "min": [
+            14.5582,
+            -135.602,
+            1050.09
+          ],
+          "max": [
+            127.783,
+            -7.52766,
+            1185.36
+          ]
+        }
+      },
+      "croppedTriangles": 7576,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2182,
+        "triangles": 4403,
+        "boundsMeters": {
+          "min": [
+            0.014590900000000002,
+            -0.12479222222222211,
+            0.0075299550000000005
+          ],
+          "max": [
+            0.127781,
+            0.010262857142857228,
+            0.13547733333333334
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3237",
+      "bp": "BP23283",
+      "fma": "FMA13323",
+      "name": "Left clavicle",
+      "layer": "skeleton",
+      "sourceFile": "FJ3237_BP23283_FMA13323_Left clavicle.obj",
+      "sourceSha256": "a7eda265732db6c87ab0fb8c8f78a274882ceca59510991b0e7b32078c08152f",
+      "sourceBytes": 69345,
+      "original": {
+        "vertices": 602,
+        "triangles": 1176,
+        "boundsMm": {
+          "min": [
+            8.37873,
+            -147.078,
+            1308.53
+          ],
+          "max": [
+            143.942,
+            -54.3875,
+            1355.18
+          ]
+        }
+      },
+      "croppedTriangles": 1176,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 564,
+        "triangles": 1124,
+        "boundsMeters": {
+          "min": [
+            0.00837873,
+            0.13352999999999998,
+            0.054387500000000005
+          ],
+          "max": [
+            0.14394200000000001,
+            0.18018000000000006,
+            0.14707800000000001
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3239",
+      "bp": "BP21373",
+      "fma": "FMA8005",
+      "name": "Left first costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3239_BP21373_FMA8005_Left first costal cartilage.obj",
+      "sourceSha256": "5ae7390557de025f0be9a3044664d2996e442013688e27dfc18e323001eb32fb",
+      "sourceBytes": 42423,
+      "original": {
+        "vertices": 418,
+        "triangles": 642,
+        "boundsMm": {
+          "min": [
+            19.4952,
+            -150.812,
+            1296.87
+          ],
+          "max": [
+            56.1953,
+            -122.324,
+            1320.25
+          ]
+        }
+      },
+      "croppedTriangles": 642,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 256,
+        "triangles": 511,
+        "boundsMeters": {
+          "min": [
+            0.0194952,
+            0.1218699999999999,
+            0.12234990000000001
+          ],
+          "max": [
+            0.056135466666666675,
+            0.14512444444444464,
+            0.150812
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3242",
+      "bp": "BP22752",
+      "fma": "FMA8031",
+      "name": "Left second costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3242_BP22752_FMA8031_Left second costal cartilage.obj",
+      "sourceSha256": "33ec240cf5e4f5dd11a5ee3b19ce2d026baa207650729be12134852a64b6a732",
+      "sourceBytes": 35836,
+      "original": {
+        "vertices": 330,
+        "triangles": 588,
+        "boundsMm": {
+          "min": [
+            10.2025,
+            -178.245,
+            1270.17
+          ],
+          "max": [
+            48.0573,
+            -157.748,
+            1288.01
+          ]
+        }
+      },
+      "croppedTriangles": 588,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 248,
+        "triangles": 492,
+        "boundsMeters": {
+          "min": [
+            0.0102025,
+            0.09517000000000007,
+            0.157748
+          ],
+          "max": [
+            0.04790054999999999,
+            0.1128166666666666,
+            0.17822500000000002
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3245",
+      "bp": "BP22750",
+      "fma": "FMA8058",
+      "name": "Left third costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3245_BP22750_FMA8058_Left third costal cartilage.obj",
+      "sourceSha256": "bf21ca805673e90d2fa277bd369b1f9b427de0ad7aa8291144ec7248b3b689fe",
+      "sourceBytes": 36238,
+      "original": {
+        "vertices": 328,
+        "triangles": 604,
+        "boundsMm": {
+          "min": [
+            13.0945,
+            -190.074,
+            1242.4
+          ],
+          "max": [
+            50.7226,
+            -171.438,
+            1259.99
+          ]
+        }
+      },
+      "croppedTriangles": 604,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 259,
+        "triangles": 515,
+        "boundsMeters": {
+          "min": [
+            0.0130945,
+            0.06740000000000008,
+            0.171563
+          ],
+          "max": [
+            0.050635440000000004,
+            0.08492499999999996,
+            0.19007400000000002
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3248",
+      "bp": "BP22751",
+      "fma": "FMA8167",
+      "name": "Left fourth costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3248_BP22751_FMA8167_Left fourth costal cartilage.obj",
+      "sourceSha256": "9b35ba20fb4eb7f2e9f71cb71b1d3fa0bce4fa132106b9186bf624f8993d7154",
+      "sourceBytes": 40361,
+      "original": {
+        "vertices": 371,
+        "triangles": 658,
+        "boundsMm": {
+          "min": [
+            14.3017,
+            -198.577,
+            1211.08
+          ],
+          "max": [
+            59.7768,
+            -184.326,
+            1235.57
+          ]
+        }
+      },
+      "croppedTriangles": 658,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 275,
+        "triangles": 546,
+        "boundsMeters": {
+          "min": [
+            0.0143017,
+            0.03611500000000001,
+            0.184326
+          ],
+          "max": [
+            0.05973587500000001,
+            0.060569999999999936,
+            0.198577
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3251",
+      "bp": "BP21380",
+      "fma": "FMA8112",
+      "name": "Left fifth costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3251_BP21380_FMA8112_Left fifth costal cartilage.obj",
+      "sourceSha256": "46de52741e3407a108c40a584714afc0aa6201818ea4dab0fe162583d3c4bbcb",
+      "sourceBytes": 66165,
+      "original": {
+        "vertices": 594,
+        "triangles": 1086,
+        "boundsMm": {
+          "min": [
+            17.7153,
+            -209.038,
+            1171.61
+          ],
+          "max": [
+            82.0336,
+            -189.325,
+            1215.24
+          ]
+        }
+      },
+      "croppedTriangles": 1086,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 434,
+        "triangles": 864,
+        "boundsMeters": {
+          "min": [
+            0.0177153,
+            -0.003369999999999891,
+            0.189333
+          ],
+          "max": [
+            0.08197355999999999,
+            0.0401550000000002,
+            0.209038
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3254",
+      "bp": "BP21377",
+      "fma": "FMA8221",
+      "name": "Left sixth costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3254_BP21377_FMA8221_Left sixth costal cartilage.obj",
+      "sourceSha256": "53dfca2e5124c10f68f68cc4b2ef01c4edebc3124a5ed61fe06d46befa28ab68",
+      "sourceBytes": 91328,
+      "original": {
+        "vertices": 815,
+        "triangles": 1498,
+        "boundsMm": {
+          "min": [
+            13.8622,
+            -212.161,
+            1137.58
+          ],
+          "max": [
+            93.0014,
+            -185.172,
+            1197.28
+          ]
+        }
+      },
+      "croppedTriangles": 1498,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 607,
+        "triangles": 1211,
+        "boundsMeters": {
+          "min": [
+            0.0138622,
+            -0.0374050000000002,
+            0.185172
+          ],
+          "max": [
+            0.0930014,
+            0.022228000000000067,
+            0.212161
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3255",
+      "bp": "BP22753",
+      "fma": "FMA8275",
+      "name": "Left seventh costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3255_BP22753_FMA8275_Left seventh costal cartilage.obj",
+      "sourceSha256": "80a1b623c7d3805f51d141d783bc148f3e1a216b77620a2953ca940c00784528",
+      "sourceBytes": 150515,
+      "original": {
+        "vertices": 1367,
+        "triangles": 2314,
+        "boundsMm": {
+          "min": [
+            3.32896,
+            -213.216,
+            1102.58
+          ],
+          "max": [
+            108.457,
+            -170.904,
+            1186.41
+          ]
+        }
+      },
+      "croppedTriangles": 2314,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 924,
+        "triangles": 1850,
+        "boundsMeters": {
+          "min": [
+            0.0034998475,
+            -0.07242000000000007,
+            0.1709305
+          ],
+          "max": [
+            0.10843699999999999,
+            0.011380000000000109,
+            0.21321600000000002
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3290",
+      "bp": "BP22794",
+      "fma": "FMA7486",
+      "name": "Manubrium",
+      "layer": "skeleton",
+      "sourceFile": "FJ3290_BP22794_FMA7486_Manubrium.obj",
+      "sourceSha256": "734e95c8265b6458f2db41a04c61ba706ed9b55ea1aefa9d0a8f048310651a68",
+      "sourceBytes": 164391,
+      "original": {
+        "vertices": 1446,
+        "triangles": 2546,
+        "boundsMm": {
+          "min": [
+            -27.4497,
+            -178.588,
+            1280.27
+          ],
+          "max": [
+            27.4497,
+            -130.801,
+            1325.25
+          ]
+        }
+      },
+      "croppedTriangles": 2546,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 850,
+        "triangles": 1704,
+        "boundsMeters": {
+          "min": [
+            -0.0272897,
+            0.10543875000000003,
+            0.130801
+          ],
+          "max": [
+            0.0273362,
+            0.15025,
+            0.178588
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3330",
+      "bp": "BP22326",
+      "fma": "FMA8445",
+      "name": "Right tenth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3330_BP22326_FMA8445_Right tenth rib.obj",
+      "sourceSha256": "ad4dccb79323905d88a155253ddae8fb276fe0ab6302cd856530d08baafbdf82",
+      "sourceBytes": 434445,
+      "original": {
+        "vertices": 3415,
+        "triangles": 6820,
+        "boundsMm": {
+          "min": [
+            -123.648,
+            -117.687,
+            1022.98
+          ],
+          "max": [
+            -16.8729,
+            -11.3593,
+            1158.98
+          ]
+        }
+      },
+      "croppedTriangles": 6820,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1890,
+        "triangles": 3803,
+        "boundsMeters": {
+          "min": [
+            -0.123648,
+            -0.15181857142857155,
+            0.0113659
+          ],
+          "max": [
+            -0.0168975,
+            -0.01608416666666676,
+            0.11755
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3331",
+      "bp": "BP22303",
+      "fma": "FMA8531",
+      "name": "Right eleventh rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3331_BP22303_FMA8531_Right eleventh rib.obj",
+      "sourceSha256": "29bf864f0504b20c290aa48abd9d655a6a8e5a563c1f80495c7ba2be16576ec1",
+      "sourceBytes": 306359,
+      "original": {
+        "vertices": 2437,
+        "triangles": 4866,
+        "boundsMm": {
+          "min": [
+            -111.353,
+            -96.0183,
+            1008.08
+          ],
+          "max": [
+            -17.5963,
+            -17.962,
+            1121.73
+          ]
+        }
+      },
+      "croppedTriangles": 4866,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1424,
+        "triangles": 2862,
+        "boundsMeters": {
+          "min": [
+            -0.111344,
+            -0.16682999999999992,
+            0.017962
+          ],
+          "max": [
+            -0.0175963,
+            -0.05341222222222223,
+            0.09585447142857142
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3332",
+      "bp": "BP22528",
+      "fma": "FMA8533",
+      "name": "Right twelfth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3332_BP22528_FMA8533_Right twelfth rib.obj",
+      "sourceSha256": "136feff5b7a8a596c7a2b62bea426aaf6389a3da944a71a71790a4c2691ecfd8",
+      "sourceBytes": 172027,
+      "original": {
+        "vertices": 1412,
+        "triangles": 2818,
+        "boundsMm": {
+          "min": [
+            -86.5332,
+            -66.0973,
+            1011.34
+          ],
+          "max": [
+            -18.2125,
+            -27.9922,
+            1089.17
+          ]
+        }
+      },
+      "croppedTriangles": 2818,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 829,
+        "triangles": 1662,
+        "boundsMeters": {
+          "min": [
+            -0.08651305,
+            -0.163592,
+            0.027992200000000002
+          ],
+          "max": [
+            -0.018317450000000002,
+            -0.08592500000000018,
+            0.06600561999999999
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3333",
+      "bp": "BP21366",
+      "fma": "FMA7875",
+      "name": "Right first costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3333_BP21366_FMA7875_Right first costal cartilage.obj",
+      "sourceSha256": "5c8d82a785fb34d753164a0d3f5368c82c84f06821d2e3e29bbe22080d2caf33",
+      "sourceBytes": 45235,
+      "original": {
+        "vertices": 436,
+        "triangles": 676,
+        "boundsMm": {
+          "min": [
+            -56.1874,
+            -150.757,
+            1296.91
+          ],
+          "max": [
+            -19.5121,
+            -122.171,
+            1320.22
+          ]
+        }
+      },
+      "croppedTriangles": 676,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 264,
+        "triangles": 526,
+        "boundsMeters": {
+          "min": [
+            -0.05613325714285715,
+            0.12191000000000009,
+            0.12228607999999998
+          ],
+          "max": [
+            -0.0195121,
+            0.1451640000000002,
+            0.150757
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3334",
+      "bp": "BP22293",
+      "fma": "FMA7857",
+      "name": "Right first rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3334_BP22293_FMA7857_Right first rib.obj",
+      "sourceSha256": "ea7d23529b902df78aa02faa1ced1929477c06f49ee941e4b2aae668330251ae",
+      "sourceBytes": 201982,
+      "original": {
+        "vertices": 1642,
+        "triangles": 3276,
+        "boundsMm": {
+          "min": [
+            -69.7641,
+            -130.424,
+            1310.07
+          ],
+          "max": [
+            -15.1109,
+            -64.4146,
+            1370.48
+          ]
+        }
+      },
+      "croppedTriangles": 3276,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 881,
+        "triangles": 1785,
+        "boundsMeters": {
+          "min": [
+            -0.0697641,
+            0.13510333333333324,
+            0.06449976666666667
+          ],
+          "max": [
+            -0.015211845454545455,
+            0.19539600000000018,
+            0.1302918125
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3335",
+      "bp": "BP21383",
+      "fma": "FMA7886",
+      "name": "Right second costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3335_BP21383_FMA7886_Right second costal cartilage.obj",
+      "sourceSha256": "98f173ff6aa109c173cf9401fe2843cce125fbe4c37dec3cdca20b51084d94d5",
+      "sourceBytes": 41651,
+      "original": {
+        "vertices": 383,
+        "triangles": 658,
+        "boundsMm": {
+          "min": [
+            -48.187,
+            -178.261,
+            1270.12
+          ],
+          "max": [
+            -10.2446,
+            -157.745,
+            1288.02
+          ]
+        }
+      },
+      "croppedTriangles": 658,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 279,
+        "triangles": 554,
+        "boundsMeters": {
+          "min": [
+            -0.048187,
+            0.09511999999999989,
+            0.157745
+          ],
+          "max": [
+            -0.0102446,
+            0.1128599999999999,
+            0.178256
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3336",
+      "bp": "BP22251",
+      "fma": "FMA7882",
+      "name": "Right second rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3336_BP22251_FMA7882_Right second rib.obj",
+      "sourceSha256": "c3c4acf9bf84f4b6bcde4dbf215c750da1f5c5cc68ab42e6c8b6693b11ea2fce",
+      "sourceBytes": 357986,
+      "original": {
+        "vertices": 2861,
+        "triangles": 5594,
+        "boundsMm": {
+          "min": [
+            -96.9721,
+            -167.157,
+            1273.55
+          ],
+          "max": [
+            -16.0495,
+            -50.6529,
+            1359.03
+          ]
+        }
+      },
+      "croppedTriangles": 5594,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 1554,
+        "triangles": 3131,
+        "boundsMeters": {
+          "min": [
+            -0.096938,
+            0.09867777777777792,
+            0.05081698
+          ],
+          "max": [
+            -0.0160814,
+            0.1839699999999998,
+            0.1669537142857143
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3337",
+      "bp": "BP21360",
+      "fma": "FMA7913",
+      "name": "Right third costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3337_BP21360_FMA7913_Right third costal cartilage.obj",
+      "sourceSha256": "fce39adfab01b0619df6143fc03da771e7be9e0dc2d253a0402784dead4679b1",
+      "sourceBytes": 41763,
+      "original": {
+        "vertices": 386,
+        "triangles": 652,
+        "boundsMm": {
+          "min": [
+            -50.7242,
+            -190.108,
+            1242.38
+          ],
+          "max": [
+            -13.051,
+            -171.421,
+            1259.98
+          ]
+        }
+      },
+      "croppedTriangles": 652,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 268,
+        "triangles": 533,
+        "boundsMeters": {
+          "min": [
+            -0.050724200000000004,
+            0.0673800000000001,
+            0.17142099999999996
+          ],
+          "max": [
+            -0.013051,
+            0.08498000000000001,
+            0.190108
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3338",
+      "bp": "BP22334",
+      "fma": "FMA7909",
+      "name": "Right third rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3338_BP22334_FMA7909_Right third rib.obj",
+      "sourceSha256": "e14e8eaaf3eaba8dc7c214dd8224ace97df68f56d31beb989e867076bc5c6096",
+      "sourceBytes": 463164,
+      "original": {
+        "vertices": 3634,
+        "triangles": 7254,
+        "boundsMm": {
+          "min": [
+            -108.947,
+            -179.268,
+            1243.82
+          ],
+          "max": [
+            -14.024,
+            -36.829,
+            1335.97
+          ]
+        }
+      },
+      "croppedTriangles": 7254,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2024,
+        "triangles": 4088,
+        "boundsMeters": {
+          "min": [
+            -0.108939,
+            0.06890066666666689,
+            0.03688386666666667
+          ],
+          "max": [
+            -0.014128766666666669,
+            0.1609466666666667,
+            0.179268
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3339",
+      "bp": "BP21410",
+      "fma": "FMA7976",
+      "name": "Right fourth costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3339_BP21410_FMA7976_Right fourth costal cartilage.obj",
+      "sourceSha256": "2e6f362cb2e2541cdd379e2d7286f5719c666e1d204076c302719b13978034ad",
+      "sourceBytes": 43261,
+      "original": {
+        "vertices": 391,
+        "triangles": 694,
+        "boundsMm": {
+          "min": [
+            -59.9068,
+            -198.587,
+            1211.1
+          ],
+          "max": [
+            -14.3111,
+            -184.204,
+            1235.56
+          ]
+        }
+      },
+      "croppedTriangles": 694,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 293,
+        "triangles": 584,
+        "boundsMeters": {
+          "min": [
+            -0.059906799999999996,
+            0.03616000000000008,
+            0.184204
+          ],
+          "max": [
+            -0.0143111,
+            0.06055999999999995,
+            0.19858699999999999
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3340",
+      "bp": "BP22336",
+      "fma": "FMA7957",
+      "name": "Right fourth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3340_BP22336_FMA7957_Right fourth rib.obj",
+      "sourceSha256": "bedef7dd347f8668a2fd4de79d571cebad8a6cb306e179297ac9fa8aa5529fd3",
+      "sourceBytes": 567074,
+      "original": {
+        "vertices": 4435,
+        "triangles": 8832,
+        "boundsMm": {
+          "min": [
+            -117.593,
+            -192.192,
+            1211.1
+          ],
+          "max": [
+            -15.0119,
+            -23.1945,
+            1315.35
+          ]
+        }
+      },
+      "croppedTriangles": 8832,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2508,
+        "triangles": 5044,
+        "boundsMeters": {
+          "min": [
+            -0.117593,
+            0.03611499999999978,
+            0.02320985
+          ],
+          "max": [
+            -0.01505882,
+            0.14022727272727276,
+            0.19215066666666666
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3341",
+      "bp": "BP21376",
+      "fma": "FMA8070",
+      "name": "Right fifth costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3341_BP21376_FMA8070_Right fifth costal cartilage.obj",
+      "sourceSha256": "7d6a9cf8835d7d58e44c1029b27612432786c258e77abe5b629e01627c5abb4f",
+      "sourceBytes": 72810,
+      "original": {
+        "vertices": 652,
+        "triangles": 1168,
+        "boundsMm": {
+          "min": [
+            -82.1658,
+            -209.036,
+            1171.61
+          ],
+          "max": [
+            -17.6996,
+            -189.316,
+            1215.25
+          ]
+        }
+      },
+      "croppedTriangles": 1168,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 467,
+        "triangles": 930,
+        "boundsMeters": {
+          "min": [
+            -0.08187658571428572,
+            -0.003380000000000109,
+            0.189316
+          ],
+          "max": [
+            -0.0176996,
+            0.04019000000000005,
+            0.20898
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3342",
+      "bp": "BP22307",
+      "fma": "FMA8066",
+      "name": "Right fifth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3342_BP22307_FMA8066_Right fifth rib.obj",
+      "sourceSha256": "7375d50a05530a18c1b5684886d470c1799253b4cceffbcc93c0248545b3c8fc",
+      "sourceBytes": 626812,
+      "original": {
+        "vertices": 4910,
+        "triangles": 9710,
+        "boundsMm": {
+          "min": [
+            -127.079,
+            -197.651,
+            1172.16
+          ],
+          "max": [
+            -15.3142,
+            -12.7276,
+            1291.32
+          ]
+        }
+      },
+      "croppedTriangles": 9710,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2804,
+        "triangles": 5651,
+        "boundsMeters": {
+          "min": [
+            -0.127079,
+            -0.0028049999999998363,
+            0.0127276
+          ],
+          "max": [
+            -0.01533884,
+            0.11624399999999992,
+            0.19758880000000004
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3343",
+      "bp": "BP22071",
+      "fma": "FMA8194",
+      "name": "Right sixth costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3343_BP22071_FMA8194_Right sixth costal cartilage.obj",
+      "sourceSha256": "21254bf943da0b309de0f6719cbf1c09539a65545a5e706b068f1261452bcf84",
+      "sourceBytes": 103141,
+      "original": {
+        "vertices": 971,
+        "triangles": 1546,
+        "boundsMm": {
+          "min": [
+            -93.6974,
+            -212.187,
+            1137.56
+          ],
+          "max": [
+            -13.8655,
+            -184.749,
+            1197.25
+          ]
+        }
+      },
+      "croppedTriangles": 1546,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 615,
+        "triangles": 1226,
+        "boundsMeters": {
+          "min": [
+            -0.09330095714285715,
+            -0.03744000000000006,
+            0.18485530000000003
+          ],
+          "max": [
+            -0.013866300000000002,
+            0.022224999999999908,
+            0.21218700000000001
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3344",
+      "bp": "BP22272",
+      "fma": "FMA8175",
+      "name": "Right sixth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3344_BP22272_FMA8175_Right sixth rib.obj",
+      "sourceSha256": "00c82e5fe46f58567578dd66ff98a570b8495ce1bef7f26392bdc201d84b3cc0",
+      "sourceBytes": 661483,
+      "original": {
+        "vertices": 5168,
+        "triangles": 10246,
+        "boundsMm": {
+          "min": [
+            -134.349,
+            -193.505,
+            1137.91
+          ],
+          "max": [
+            -14.8373,
+            -3.64141,
+            1265.7
+          ]
+        }
+      },
+      "croppedTriangles": 10246,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2925,
+        "triangles": 5902,
+        "boundsMeters": {
+          "min": [
+            -0.134349,
+            -0.03694714285714281,
+            0.00366818
+          ],
+          "max": [
+            -0.014845033333333334,
+            0.0905816666666667,
+            0.193477
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3345",
+      "bp": "BP21381",
+      "fma": "FMA8248",
+      "name": "Right seventh costal cartilage",
+      "layer": "cartilage",
+      "sourceFile": "FJ3345_BP21381_FMA8248_Right seventh costal cartilage.obj",
+      "sourceSha256": "62db8ee22c64127930c5c3451dcd841267d49ff8add3294f10d7a9dad9ea5b84",
+      "sourceBytes": 167200,
+      "original": {
+        "vertices": 1538,
+        "triangles": 2450,
+        "boundsMm": {
+          "min": [
+            -109.909,
+            -213.208,
+            1102.56
+          ],
+          "max": [
+            49.5653,
+            -170.775,
+            1186.45
+          ]
+        }
+      },
+      "croppedTriangles": 2450,
+      "clusterCellMm": 1.2,
+      "optimized": {
+        "vertices": 977,
+        "triangles": 1952,
+        "boundsMeters": {
+          "min": [
+            -0.109909,
+            -0.07238000000000011,
+            0.170785
+          ],
+          "max": [
+            -0.004797759999999999,
+            0.0113900000000001,
+            0.213208
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3346",
+      "bp": "BP22330",
+      "fma": "FMA8229",
+      "name": "Right seventh rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3346_BP22330_FMA8229_Right seventh rib.obj",
+      "sourceSha256": "b91e96dcb05423c614bec2e1a9309e2097dc3f4bee97248c894c04311b4632e7",
+      "sourceBytes": 647068,
+      "original": {
+        "vertices": 5058,
+        "triangles": 10032,
+        "boundsMm": {
+          "min": [
+            -137.085,
+            -180.203,
+            1105.19
+          ],
+          "max": [
+            -13.6897,
+            -4.48691,
+            1240.27
+          ]
+        }
+      },
+      "croppedTriangles": 10032,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2885,
+        "triangles": 5818,
+        "boundsMeters": {
+          "min": [
+            -0.137085,
+            -0.06965875000000006,
+            0.00450007
+          ],
+          "max": [
+            -0.013725033333333334,
+            0.06516750000000002,
+            0.18014049999999998
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3347",
+      "bp": "BP23993",
+      "fma": "FMA8283",
+      "name": "Right eighth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3347_BP23993_FMA8283_Right eighth rib.obj",
+      "sourceSha256": "09b796b3987bd982a0d0bd986b7fd2bc6512ac88a96c83fd041b0c13cbf12674",
+      "sourceBytes": 535420,
+      "original": {
+        "vertices": 4199,
+        "triangles": 8336,
+        "boundsMm": {
+          "min": [
+            -132.968,
+            -162.678,
+            1074.66
+          ],
+          "max": [
+            -13.6765,
+            -4.56449,
+            1211.33
+          ]
+        }
+      },
+      "croppedTriangles": 8336,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2368,
+        "triangles": 4768,
+        "boundsMeters": {
+          "min": [
+            -0.132968,
+            -0.1003125,
+            0.00456449
+          ],
+          "max": [
+            -0.013711733333333333,
+            0.03629999999999996,
+            0.16254871428571432
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3348",
+      "bp": "BP23888",
+      "fma": "FMA8364",
+      "name": "Right ninth rib",
+      "layer": "skeleton",
+      "sourceFile": "FJ3348_BP23888_FMA8364_Right ninth rib.obj",
+      "sourceSha256": "d9195a65a4ef628ce51c0f47ecaf76a3347ce195a5947bd888e5524ff9754456",
+      "sourceBytes": 484835,
+      "original": {
+        "vertices": 3808,
+        "triangles": 7576,
+        "boundsMm": {
+          "min": [
+            -129.098,
+            -135.632,
+            1050.09
+          ],
+          "max": [
+            -15.8646,
+            -7.52907,
+            1185.37
+          ]
+        }
+      },
+      "croppedTriangles": 7576,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 2126,
+        "triangles": 4282,
+        "boundsMeters": {
+          "min": [
+            -0.12909800000000002,
+            -0.12476666666666687,
+            0.00755636
+          ],
+          "max": [
+            -0.015900266666666666,
+            0.010298888888888769,
+            0.13544033333333333
+          ]
+        }
+      }
+    },
+    {
+      "fj": "FJ3362",
+      "bp": "BP23174",
+      "fma": "FMA13322",
+      "name": "Right clavicle",
+      "layer": "skeleton",
+      "sourceFile": "FJ3362_BP23174_FMA13322_Right clavicle.obj",
+      "sourceSha256": "ea1c86d112c0635759ecf6ca9633b023b87e16511f01d6ef165b98d729316970",
+      "sourceBytes": 67957,
+      "original": {
+        "vertices": 583,
+        "triangles": 1146,
+        "boundsMm": {
+          "min": [
+            -145.277,
+            -146.948,
+            1308.62
+          ],
+          "max": [
+            -9.66165,
+            -54.4125,
+            1355.44
+          ]
+        }
+      },
+      "croppedTriangles": 1146,
+      "clusterCellMm": 1.5,
+      "optimized": {
+        "vertices": 545,
+        "triangles": 1086,
+        "boundsMeters": {
+          "min": [
+            -0.145277,
+            0.13361999999999988,
+            0.0544125
+          ],
+          "max": [
+            -0.009661649999999999,
+            0.18044000000000004,
+            0.146948
+          ]
+        }
+      }
+    }
+  ]
+}

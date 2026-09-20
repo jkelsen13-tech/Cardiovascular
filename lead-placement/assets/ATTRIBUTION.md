@@ -1,46 +1,101 @@
 # Lead Placement Lab 3D asset attribution and limitations
 
-The local body-surface payload in `torso-model-data.js` is an optimized derivative of the HuBMAP Human Reference Atlas male skin model. It is decoded in memory by the repository's existing local Three.js/GLTFLoader bundle. The study module makes no model, texture, decoder, CDN, analytics, API, or other network request at runtime.
+The local payload in `torso-model-data.js` is an optimized derivative of a
+registered BodyParts3D / Anatomography thorax subset. It is decoded in memory by
+the repository's local Three.js/GLTFLoader bundle. The study module makes no
+model, texture, decoder, CDN, analytics, API or other network request at runtime.
 
 ## Exact source and license
 
-- Source organization: HuBMAP Human Reference Atlas (HRA), based on the National Library of Medicine Visible Human Male dataset.
-- Source repository: https://github.com/hubmapconsortium/ccf-3d-reference-object-library
-- Pinned source commit: `f1a3a63f110e27ff0736047d52d04dba5d3087f9`
-- Source file: `VH_Male/v1.2/VH_M_Skin.glb`
-- Source URL: https://github.com/hubmapconsortium/ccf-3d-reference-object-library/blob/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2/VH_M_Skin.glb
-- Git blob SHA: `57b4af235eb34e2dce104b619c55b09ec44dae63`
-- Original SHA-256: `8cab299d04323e6364938a271647df5671138a2177f412e741a0d6bd4536ee1c`
-- License: Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/
-- Full license text: `CC-BY-4.0.txt`
+- Source organization: Database Center for Life Science (DBCLS), Research Organization of Information and Systems, Japan.
+- Dataset: BodyParts3D / Anatomography.
+- Download page: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html
+- Official selective mesh endpoint: https://lifesciencedb.jp/bp3d/download.cgi
+- License: Creative Commons Attribution 4.0 International (CC BY 4.0).
+- Designated license page: https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html
+- Accessed: 2026-09-20.
 
-Requested citation: Browne, K., Schlehlein, H., Herr II, B. W., Quardokus, E., Bueckle, A., and Börner, K. (2022). *HuBMAP CCF 3D Reference Object Library*. https://humanatlas.io/3d-reference-library
+Attribution: **BodyParts3D, © Database Center for Life Science (DBCLS), Research Organization of Information and Systems, licensed
+under CC BY 4.0.** Modifications are described below. No endorsement by DBCLS or
+the BodyParts3D authors is implied.
 
-The HRA source notes that this reference skin was created from the Visible Human Male dataset supplied by the National Library of Medicine. No endorsement by HuBMAP, HRA, NIH, NLM, the model authors, or the Visible Human Project is implied.
+The currently designated archive license and the release README were updated on
+2025-02-27 to CC BY 4.0. Some older project pages and historical distributions
+still display the former CC BY-SA 2.1 Japan notice. This derivative follows the
+current license designated by the archive licensor; the historical discrepancy
+is recorded here rather than silently omitted.
 
-## Optimization and size
+## Exact selected anatomy
 
-The original GLB contains one mesh, 92,659 vertices and 185,314 triangles, with no images or textures. It is 5,931,700 bytes.
+Fifty named source meshes are included, all in the same BodyParts3D 4.x body
+coordinate frame:
 
-For mobile study use, the source was processed with glTF Transform CLI 4.2.1:
+- skin: `FJ2810`
+- manubrium, sternal body and xiphoid: `FJ3290`, `FJ3178`, `FJ3153`
+- right/left clavicles: `FJ3362`, `FJ3237`
+- all twelve paired ribs
+- paired costal cartilages 1–7
+- abdominal, clavicular and sternocostal parts of right and left pectoralis major
 
-1. `weld`
-2. `simplify --ratio 0.5 --error 0.002`
+The per-structure FJ/BP/FMA identifiers, source hashes, bounds and processed
+counts are in `registered-thorax-manifest.json`.
 
-The optimized GLB contains one mesh, 46,330 vertices and 92,656 triangles, with no images, textures, Draco, Meshopt, or external buffers. It is 2,410,628 bytes and has SHA-256 `02964abbb68b9232ce0e833ae4d517bece6167f2f113174a01d0886f3b9872b1`. Base64 packaging increases the checked-in JavaScript payload; the original and optimized binary GLBs are not duplicated in the repository.
+## Registration and processing
 
-## What comes from the model
+The source OBJs total 28,650,246 bytes, 220,218 vertices and 420,806 triangles.
+They are not individually centered, fitted, rotated or scaled. A single transform
+is applied identically to every structure to convert source millimetres and axes
+to glTF metres/Y-up:
 
-Only the body/skin surface comes from the HRA GLB. The default camera frames the upper thorax and retains enough lateral surface to demonstrate the anterior and midaxillary lines. The rest of the full-body mesh remains in the GLB, outside the default camera frame.
+`x'=x/1000; y'=(z-1175)/1000; z'=-y/1000`
 
-## Schematic overlays and limitations
+Only the skin envelope is cropped, at source `z=850..1500 mm`, to remove the
+upper head and lower body while retaining the neck/lower-face orientation, upper thorax and axillary surface. Named
+meshes remain separate. Conservative deterministic vertex clustering is applied
+per structure at 1.2–2.5 mm. The resulting GLB contains 50 meshes, 96,542
+vertices and 194,563 triangles. It is 3,529,136 bytes and has SHA-256
+`465222925f5f63a47cd4e204ffb74a5852f157e6e27e48390fe671caf22d4f78`.
 
-The sternum, clavicles, ribs, pectoral layer, intercostal-space guides, surface landmark lines and electrode markers are independently authored Three.js teaching overlays. They are not meshes extracted from HRA, are not patient measurements, and must not be interpreted as separable source-model anatomy. The muscle layer is optional and schematic.
+## Placement anchors
 
-Lead-marker positions are normalized teaching coordinates placed relative to the HRA surface. They encode the course rules: V1/V2 at the fourth intercostal space on the right/left sternal borders; V4 at the fifth space on the left midclavicular line; V3 halfway between V2 and V4; and V5/V6 level with V4 on the left anterior/midaxillary lines. They do not account for individual body habitus, breast tissue, deformity, age, or clinical variation.
+V1–V6 are not manually aligned to a foreign body. Anchors are calculated before
+optimization from the named real geometry:
 
-The source body is a single male reference anatomy and is not representative of every patient. The module teaches landmark relationships rather than claiming patient-specific anatomical fidelity. Limb markers at the lower edge of the upper-torso view use downward labels to indicate that RL/LL continue to the lower limbs; their actual placement remains textual.
+- the fourth intercostal level is derived from ribs/costal cartilages 4 and 5;
+- the fifth intercostal level is derived from ribs/costal cartilages 5 and 6;
+- sternal borders come from the sternum mesh at the derived level;
+- the left midclavicular line comes from the midpoint of the left clavicle mesh;
+- the anterior axillary line uses the lateral boundary of the left pectoralis
+  major at the V4 level;
+- the midaxillary position uses the lateral-most registered skin cross-section;
+- V3 is halfway between V2 and V4 and is reprojected to the skin;
+- all anterior anchors are projected onto the same-atlas skin surface.
+
+The build asserts that V1 is on patient right, V2 is on patient left and V4/V5/V6
+share one source-coordinate vertical level. These are reference-atlas teaching
+anchors, not patient measurements.
+
+## Exclusions and limitations
+
+This is one adult male reference anatomy and is not representative of every
+patient or body habitus. The module teaches landmark relationships and does not
+claim patient-specific or diagnostic accuracy.
+
+External/internal intercostal and serratus meshes were evaluated but excluded:
+the four intercostal meshes alone exceed 377,000 triangles and 33 MB of OBJ data,
+while the lead lesson needs the real rib spaces rather than muscle-fibre detail.
+The optional muscle layer therefore shows real pectoralis-major geometry only.
+Unrelated organs, skull, hands and lower-body anatomy are also excluded.
+
+Landmark guides, leader lines, text labels and electrode markers are instructional
+overlays anchored to the real meshes; they are not presented as anatomical tissue.
+Individual patients may require palpation and clinical adjustment beyond this
+reference model.
 
 ## Runtime and accessibility
 
-The module reuses the repository's local `three@0.180.0`/GLTFLoader bundle (MIT; see `../../ecg-study/vendor/THREE-LICENSE.txt`). DPR is capped at 1.5, antialiasing is disabled, rendering occurs only after interaction/state changes, and the viewer pauses when hidden or offscreen. Touch rotation is opt-in so vertical page scrolling remains available. A native SVG/HTML torso diagram is the automatic WebGL fallback and provides equivalent lead facts in text.
+The module reuses local `three@0.180.0`/GLTFLoader (MIT; see
+`../../ecg-study/vendor/THREE-LICENSE.txt`). The GLB has no textures, external
+buffers or compression decoder. The offline base64 wrapper is generated from the
+verified GLB. The viewer caps device pixel ratio, renders on state/interaction
+changes, pauses when hidden and retains the native 2D fallback.

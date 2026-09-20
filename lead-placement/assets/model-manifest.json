@@ -1,31 +1,68 @@
 {
-  "sourceOrganization": "HuBMAP Human Reference Atlas",
-  "sourceCommit": "f1a3a63f110e27ff0736047d52d04dba5d3087f9",
+  "sourceOrganization": "Database Center for Life Science (DBCLS), Research Organization of Information and Systems",
+  "sourceDataset": "BodyParts3D / Anatomography",
+  "sourceCoordinateFrame": "BodyParts3D 4.x shared coordinate frame",
   "license": "CC BY 4.0",
+  "licenseUrl": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
   "runtime": "three@0.180.0 (shared local bundle)",
   "source": {
-    "path": "VH_Male/v1.2/VH_M_Skin.glb",
-    "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Male/v1.2/VH_M_Skin.glb",
-    "gitBlobSha": "57b4af235eb34e2dce104b619c55b09ec44dae63",
-    "sha256": "8cab299d04323e6364938a271647df5671138a2177f412e741a0d6bd4536ee1c",
-    "bytes": 5931700,
-    "meshes": 1,
-    "vertices": 92659,
-    "triangles": 185314,
-    "textures": 0
-  },
-  "optimized": {
-    "sha256": "02964abbb68b9232ce0e833ae4d517bece6167f2f113174a01d0886f3b9872b1",
-    "bytes": 2410628,
-    "meshes": 1,
-    "vertices": 46330,
-    "triangles": 92656,
+    "downloadPage": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+    "selectiveDownloadEndpoint": "https://lifesciencedb.jp/bp3d/download.cgi",
+    "objects": 50,
+    "uncompressedObjBytes": 28650246,
+    "vertices": 220218,
+    "triangles": 420806,
     "textures": 0,
-    "extensionsUsed": [],
-    "recipe": [
-      "gltf-transform weld input.glb welded.glb",
-      "gltf-transform simplify welded.glb optimized.glb --ratio 0.5 --error 0.002"
+    "structures": [
+      "skin (FJ2810)",
+      "manubrium (FJ3290)",
+      "body of sternum (FJ3178)",
+      "xiphoid process (FJ3153)",
+      "right clavicle (FJ3362)",
+      "left clavicle (FJ3237)",
+      "right and left ribs 1-12",
+      "right and left costal cartilages 1-7",
+      "bilateral abdominal, clavicular and sternocostal parts of pectoralis major"
     ]
   },
-  "teachingOverlays": "Procedural/schematic Three.js geometry; not part of the HRA mesh"
+  "optimized": {
+    "path": "registered-thorax.glb",
+    "sha256": "465222925f5f63a47cd4e204ffb74a5852f157e6e27e48390fe671caf22d4f78",
+    "bytes": 3529136,
+    "meshes": 50,
+    "vertices": 96542,
+    "triangles": 194563,
+    "textures": 0,
+    "extensionsUsed": [],
+    "skinCropSourceZMm": [850, 1500],
+    "recipe": [
+      "retain only the documented 50-structure thorax subset",
+      "crop only the skin mesh to source z=850..1500 mm, retaining the neck/lower-face orientation and upper thorax",
+      "apply deterministic per-structure vertex clustering (1.2-2.5 mm)",
+      "apply one identical source-to-glTF axis/unit/origin transform to every structure",
+      "generate indexed normals and package as uncompressed GLB"
+    ]
+  },
+  "registration": {
+    "verified": true,
+    "basis": "All source FJ meshes are members of one BodyParts3D 4.x body-coordinate system; no structure is individually moved, scaled or fitted.",
+    "sourceToGltf": "x'=x/1000; y'=(z-1175)/1000; z'=-y/1000",
+    "patientRight": "negative source/glTF x",
+    "patientLeft": "positive source/glTF x"
+  },
+  "anchors": {
+    "source": "Derived before optimization from named ribs, costal cartilages, sternum, left clavicle, pectoralis-major and skin geometry.",
+    "v1": [-0.0239735, 0.0585575, 0.217840942],
+    "v2": [0.0241852, 0.0585575, 0.218298008],
+    "v3": [0.050172783, 0.02416625, 0.228197954],
+    "v4": [0.076160365, -0.010225, 0.218989514],
+    "v5": [0.194262, -0.010225, 0.118718248],
+    "v6": [0.247363, -0.010225, 0.0639755],
+    "checks": {
+      "v1PatientRight": true,
+      "v2PatientLeft": true,
+      "v4V5V6SameVerticalLevel": true
+    }
+  },
+  "details": "registered-thorax-manifest.json"
 }
