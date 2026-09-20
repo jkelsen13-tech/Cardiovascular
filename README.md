@@ -47,7 +47,8 @@ Unit 3 and Module 6's Unit 3 are separate decks).
   Native SVG/CSS (not pasted screenshots). Open it from
   the home menu; keep the `ecg-study/` folder beside the HTML for downloaded copies.
 - **Lead Placement Lab** — guided placement in the preferred V1 → V2 → V4 → V3 → V5 → V6
-  sequence, a rotatable upper-torso surface with optional schematic skeleton/muscle/landmark layers,
+  sequence, a rotatable registered upper-torso surface with real rib, sternum, clavicle, costal-cartilage
+  and pectoralis-major geometry plus anatomy-derived landmark layers,
   chest and limb lead exploration, reversible flashcards, and mixed placement/plane/pairing quizzes.
   The viewer preserves front-view patient orientation (viewer left = patient right), is touch rotation
   opt-in, and falls back to a native SVG/HTML torso map if WebGL is unavailable. Keep the
@@ -89,10 +90,14 @@ See [model attribution and limitations](ecg-study/assets/ATTRIBUTION.md) and [ex
 
 ## Lead-placement 3D torso
 
-The Lead Placement Lab lazy-loads an optimized HuBMAP HRA / Visible Human Male v1.2 skin GLB,
-licensed CC BY 4.0. The source model is 5,931,700 bytes and 185,314 triangles; the local optimized
-model is 2,410,628 bytes and 92,656 triangles before base64 packaging. It reuses the existing local
-Three.js/GLTFLoader runtime and makes no runtime network request. Sternum, clavicles, ribs, muscle,
-landmark lines and lead markers are schematic programmatic overlays rather than claimed source-model
-structures. See [asset attribution and limitations](lead-placement/assets/ATTRIBUTION.md) and the
-[exact manifest](lead-placement/assets/model-manifest.json).
+The Lead Placement Lab lazy-loads a torso subset from BodyParts3D / Anatomography by the Database
+Center for Life Science (DBCLS), licensed CC BY 4.0. Skin, sternum, clavicles, all paired ribs,
+costal cartilages 1–7 and all three parts of the bilateral pectoralis major come from the same
+verified BodyParts3D coordinate frame. The 50 selected source OBJs total 28,650,246 bytes and
+420,806 triangles. After a source-coordinate torso crop and conservative per-structure vertex
+clustering, the local GLB is 3,529,136 bytes and 194,563 triangles before base64 packaging. The
+module reuses the existing local Three.js/GLTFLoader runtime and makes no runtime network request.
+Instructional landmark lines and lead markers are derived from and projected onto that registered
+geometry; they are overlays, not additional anatomical meshes. See [asset attribution and
+limitations](lead-placement/assets/ATTRIBUTION.md), the [summary manifest](lead-placement/assets/model-manifest.json),
+and the [per-structure build manifest](lead-placement/assets/registered-thorax-manifest.json).
