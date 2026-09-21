@@ -75,6 +75,22 @@ The build asserts that V1 is on patient right, V2 is on patient left and V4/V5/V
 share one source-coordinate vertical level. These are reference-atlas teaching
 anchors, not patient measurements.
 
+## Thoracic landmark lesson derivation
+
+The Sternal Angle lesson and intercostal-space overlays do not add or move
+anatomical meshes. At runtime, the viewer resolves the registered FJ meshes by
+name. It locates the manubriosternal junction from the closest sampled surface
+pair on manubrium `FJ3290` and sternal body `FJ3178`. Rib 2 is highlighted
+with its named bilateral rib and costal-cartilage meshes.
+
+The 2nd through 5th intercostal-space guides are generated between the anterior
+medial points of the adjacent registered costal-cartilage levels (2/3, 3/4,
+4/5 and 5/6). The 4th-space guide also passes through the unchanged V1 and V2
+anchors; the 5th-space guide passes through unchanged V4. The existing V4–V6
+guide is generated through the three verified electrode anchors, whose model
+Y coordinate is identical. These are instructional overlays derived from the
+registered atlas geometry, not additional anatomical tissue.
+
 ## Exclusions and limitations
 
 This is one adult male reference anatomy and is not representative of every
