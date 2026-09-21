@@ -40,7 +40,7 @@ var LEAD_PLACEMENT = {
   },
   landmarkLessons: [
     {id:"sternal-angle",label:"Sternal angle",stepId:"sternal-angle"},
-    {id:"count-ics",label:"Count intercostal spaces",stepId:"rib2"},
+    {id:"count-ics",label:"Count intercostal spaces",stepId:"count-ics"},
     {id:"v1v2-ics4",label:"V1/V2 at 4th ICS",stepId:"v1v2-ics4"},
     {id:"v4-ics5",label:"V4 at 5th ICS",stepId:"v4-ics5"},
     {id:"v4-v6-level",label:"V4–V6 same height",stepId:"v4-v6-level"}
