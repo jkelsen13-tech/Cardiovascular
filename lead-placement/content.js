@@ -67,7 +67,7 @@ var LEAD_PLACEMENT = {
     {id:"avf",name:"aVF",placement:"Positive viewing direction: left foot",landmark:"Left foot / left leg electrode",plane:"Frontal plane",side:"Inferior",mnemonic:"F in aVF means foot."}
   ],
   landmarks: [
-    {id:"sternal-angle",name:"Sternal angle / Angle of Louis",placement:"Manubriosternal junction",mnemonic:"Use it to find rib 2 and begin counting intercostal spaces.",structureIds:["FJ3290","FJ3178"],anchor:{fallbackPercent:[50,31],model:[0,0.11,0.179],tolerance:0.035},derivedFrom:["manubrium","sternal-body"]},
+    {id:"sternal-angle",name:"Sternal angle / Angle of Louis",placement:"Manubriosternal junction",mnemonic:"Use it to find rib 2 and begin counting intercostal spaces.",structureIds:["FJ3290","FJ3178"],anchor:{fallbackPercent:[49,31],model:[-0.00667,0.11303,0.17696],tolerance:0.035},derivedFrom:["manubrium","sternal-body"]},
     {id:"rib2",name:"Rib 2",placement:"Second rib and costal cartilage at the sternal-angle level",mnemonic:"The sternal angle leads to rib 2.",structureIds:["FJ3229","FJ3336","FJ3242","FJ3335"],anchor:{fallbackPercent:[50,34],model:[0,0.104,0.174],tolerance:0.045}},
     {id:"ics2",name:"2nd intercostal space",placement:"Space immediately below rib 2, between ribs 2 and 3",mnemonic:"Rib above gives the space its number.",derivedFrom:["rib2","rib3"],anchor:{fallbackPercent:[50,36],model:[0,0.09,0.182],tolerance:0.04}},
     {id:"rib3",name:"Rib 3",placement:"Third rib and costal cartilage",mnemonic:"The space immediately below is the 3rd ICS.",structureIds:["FJ3230","FJ3338","FJ3245","FJ3337"],anchor:{fallbackPercent:[50,38],model:[0,0.076,0.185],tolerance:0.045}},
