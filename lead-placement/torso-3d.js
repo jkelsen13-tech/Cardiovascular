@@ -33,7 +33,7 @@ window.LeadTorso3D = (() => {
 
   async function mount(host,options={}) {
     let disposed=false,visible=true,touchEnabled=false,yaw=0,pitch=0,distance=1.42,pointerMoved=false;
-    let active=options.active||"v1",labelActive=options.activeLabel||active,labelMode=options.labelMode||"all",showAllLabels=options.showAllLabels??labelMode!=="guided",polarity=options.polarity||{},electrodeColors=options.electrodeColors||{ra:"#f8fafc",la:"#111827",rl:"#22c55e",ll:"#ef4444"},layers={body:true,skeleton:true,muscle:false,landmarks:true,leads:true};
+    let active=options.active||"v1",labelActive=options.activeLabel||active,labelMode=options.labelMode||"all",showAllLabels=options.showAllLabels??labelMode!=="guided",polarity=options.polarity||{},electrodeColors=options.electrodeColors||{ra:"#f8fafc",la:"#111827",rl:"#22c55e",ll:"#ef4444"},electrodeLabels=options.electrodeLabels||{ra:"RA — WHITE",la:"LA — BLACK",rl:"RL — GREEN",ll:"LL — RED"},layers={body:true,skeleton:true,muscle:false,landmarks:true,leads:true};
     let bodySurface="translucent",resizeObserver,intersectionObserver,highlighted=new Set();
     const onSelect=typeof options.onSelect==="function"?options.onSelect:()=>{};
     const onSurfaceTap=typeof options.onSurfaceTap==="function"?options.onSurfaceTap:()=>{};
@@ -98,7 +98,7 @@ window.LeadTorso3D = (() => {
       const button=document.createElement("button");button.type="button";button.className=`lead-3d-marker-button ${family}`;button.dataset.marker=id;button.textContent=label;button.setAttribute("aria-label",family==="limb"?`${label} external limb-electrode teaching label`:`${label} placement callout`);if(family==="limb")button.style.setProperty("--node-color",String(color));button.addEventListener("click",()=>onSelect(id,{modelPoint:point.toArray()}));
       const leader=makeLeader();labelLayer.append(button);markerItems.push({id,label,point:point.clone(),group,button,leader,tag,family});
     }
-    CHEST_IDS.forEach((id)=>addMarker(id,id.toUpperCase(),leadAnchor(id)));addMarker("ra","RA",leadAnchor("ra"),"limb");addMarker("la","LA",leadAnchor("la"),"limb");addMarker("rl","RL",leadAnchor("rl"),"limb");addMarker("ll","LL",leadAnchor("ll"),"limb");
+    CHEST_IDS.forEach((id)=>addMarker(id,id.toUpperCase(),leadAnchor(id)));addMarker("ra",electrodeLabels.ra,leadAnchor("ra"),"limb");addMarker("la",electrodeLabels.la,leadAnchor("la"),"limb");addMarker("rl",electrodeLabels.rl,leadAnchor("rl"),"limb");addMarker("ll",electrodeLabels.ll,leadAnchor("ll"),"limb");
 
     function cameraPose(){camera.position.set(Math.sin(yaw)*distance,.015+Math.sin(pitch)*distance*.45,Math.cos(yaw)*distance);camera.lookAt(0,0,.08);}
     function worldPoint(local){const p=local.clone();root.localToWorld(p);return p;}
