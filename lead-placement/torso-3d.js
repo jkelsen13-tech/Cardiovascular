@@ -12,7 +12,7 @@ window.LeadTorso3D = (() => {
     ra:[-.245,.145,.07], la:[.245,.145,.07], rl:[-.15,-.29,.04], ll:[.15,-.29,.04]
   };
   const STRUCTURES = {
-    sternum:["FJ3153","FJ3178","FJ3290"], clavicles:["FJ3237","FJ3362"],
+    sternum:["FJ3153","FJ3178","FJ3290"], manubrium:["FJ3290"], "sternal-body":["FJ3178"], clavicles:["FJ3237","FJ3362"],
     ribs:[" rib"], ics4:["FJ3231","FJ3232","FJ3248","FJ3251","FJ3339","FJ3340","FJ3341","FJ3342"],
     ics5:["FJ3232","FJ3233","FJ3251","FJ3254","FJ3341","FJ3342","FJ3343","FJ3344"]
   };
@@ -98,7 +98,7 @@ window.LeadTorso3D = (() => {
     function derivedBand(id,number,group=lessonGroup){const points=gapPath(number),curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,32,.0044,8,false),basic(0x55e7ff,.96,true));mesh.userData={id,structure:id,kind:"derived-intercostal-space",derivedFrom:["rib"+number,"rib"+(number+1)]};mesh.renderOrder=10;group.add(mesh);landmarkItems.push(mesh);return {mesh,point:points[Math.floor(points.length/2)].clone()};}
     function addLessonVisual(mesh,modes){mesh.userData.lessonModes=modes;mesh.visible=false;lessonVisuals.push(mesh);return mesh;}
     function addLessonLabel(id,text,point,modes,side="right"){const label=document.createElement("span");label.className="lead-3d-anatomy-label";label.dataset.lessonLabel=id;label.dataset.side=side;label.textContent=text;label.hidden=true;labelLayer.append(label);lessonLabels.push({id,label,point:point.clone(),modes});}
-    const anglePoint=closestJunction("sternal-angle","sternum"),angleDot=new T.Mesh(new T.SphereGeometry(.010,18,12),basic(0xffe15b,1,true));angleDot.position.copy(anglePoint);angleDot.renderOrder=12;addLessonVisual(angleDot,["sternal-angle","rib2"]);lessonGroup.add(angleDot);
+    const anglePoint=closestJunction("manubrium","sternal-body"),angleDot=new T.Mesh(new T.SphereGeometry(.010,18,12),basic(0xffe15b,1,true));angleDot.position.copy(anglePoint);angleDot.renderOrder=12;addLessonVisual(angleDot,["sternal-angle","rib2"]);lessonGroup.add(angleDot);
     const rib2Point=medialPoint("rib2","left"),angleConnector=new T.Mesh(new T.TubeGeometry(new T.CatmullRomCurve3([anglePoint,rib2Point]),18,.0024,7,false),basic(0xffe15b,.96,true));angleConnector.renderOrder=11;addLessonVisual(angleConnector,["rib2"]);lessonGroup.add(angleConnector);
     const space2=derivedBand("ics2",2),space3=derivedBand("ics3",3),space4=derivedBand("ics4",4,landmarkGroup),space5=derivedBand("ics5",5,landmarkGroup);
     addLessonVisual(space2.mesh,["ics2","count-ics"]);addLessonVisual(space3.mesh,["count-ics"]);
