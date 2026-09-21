@@ -40,7 +40,7 @@ window.LeadTorso3D = (() => {
     const source=window.LeadTorsoModelData?.registered||window.LeadTorsoModelData?.thorax||window.LeadTorsoModelData?.skin;
     if(!T||!source)throw new Error("Registered thorax payload is unavailable");
 
-    const scene=new T.Scene(),camera=new T.PerspectiveCamera(31,1,.01,20),raycaster=new T.Raycaster();
+    const scene=new T.Scene(),camera=new T.PerspectiveCamera(31,1,.01,20);
     const renderer=new T.WebGLRenderer({antialias:false,alpha:true,powerPreference:"low-power"});
     renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.5));renderer.setClearColor(0x0d1623,1);
     const canvas=renderer.domElement;canvas.className="lead-3d-canvas";canvas.tabIndex=0;canvas.setAttribute("role","application");
@@ -57,7 +57,7 @@ window.LeadTorso3D = (() => {
     const fill=new T.DirectionalLight(0x8ccfff,.62);fill.position.set(2,0,2);scene.add(fill);
     const root=new T.Group();scene.add(root);
     const landmarkGroup=new T.Group(),lessonGroup=new T.Group(),leadGroup=new T.Group(),feedbackGroup=new T.Group();root.add(landmarkGroup,lessonGroup,leadGroup,feedbackGroup);
-    const bodyMeshes=[],skeletonMeshes=[],muscleMeshes=[],structureMeshes=[],markerItems=[],landmarkItems=[],lessonVisuals=[],lessonLabels=[],materials=[];
+    const bodyMeshes=[],skeletonMeshes=[],muscleMeshes=[],structureMeshes=[],markerItems=[],landmarkItems=[],lessonVisuals=[],lessonLabels=[],hitItems=[],materials=[];
     let modelScene;
 
     function material(opts){const m=new T.MeshStandardMaterial(opts);materials.push(m);return m;}
@@ -81,7 +81,7 @@ window.LeadTorso3D = (() => {
     root.add(modelScene);
 
     function basic(color,opacity=1,depthTest=true){const m=new T.MeshBasicMaterial({color,transparent:opacity<1,opacity,depthTest,depthWrite:false});materials.push(m);return m;}
-    function tube(id,points,color=0x7ce2ff,r=.0025,opacity=.92){const curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,24,r,7,false),basic(color,opacity,true));mesh.userData={id,structure:id,kind:"landmark"};mesh.renderOrder=8;landmarkGroup.add(mesh);landmarkItems.push(mesh);return mesh;}
+    function tube(id,points,color=0x7ce2ff,r=.0025,opacity=.92){const curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,24,r,7,false),basic(color,opacity,true));mesh.userData={id,structure:id,kind:"landmark"};mesh.renderOrder=8;landmarkGroup.add(mesh);landmarkItems.push(mesh);hitItems.push({id,points:curve.getPoints(20),object:mesh});return mesh;}
     const gold=0xffda61,cyan=0x72e4ff;
     tube("right-sternal-border",[V(-.024,-.055,.219),V(-.024,.145,.202)],gold,.0023);tube("left-sternal-border",[V(.024,-.055,.219),V(.024,.145,.202)],gold,.0023);
     tube("mcl",[V(.076,-.19,.165),leadAnchor("v4"),V(.076,.165,.16)],cyan,.0024);tube("aal",[V(.194,-.19,.11),leadAnchor("v5"),V(.194,.13,.13)],cyan,.0024);tube("mal",[V(.247,-.19,.03),leadAnchor("v6"),V(.247,.12,.055)],cyan,.0024);
@@ -95,10 +95,10 @@ window.LeadTorso3D = (() => {
     function medialPoint(id,side){const sign=side==="left"?1:-1,meshes=meshesFor(id).filter((mesh)=>String(mesh.name||"").toLowerCase().includes("cartilage")),points=meshes.flatMap(vertexPoints).filter((point)=>Math.sign(point.x||sign)===sign);if(!points.length)return leadAnchor(id);points.sort((a,b)=>Math.abs(a.x)-Math.abs(b.x)||b.z-a.z);const sample=points.slice(0,Math.min(32,points.length)),sum=sample.reduce((out,p)=>out.add(p),V());return sum.multiplyScalar(1/sample.length);}
     function closestJunction(aId,bId){const a=meshesFor(aId).flatMap(vertexPoints),b=meshesFor(bId).flatMap(vertexPoints);let best=Infinity,pa=a[0]||leadAnchor("sternal-angle"),pb=b[0]||pa;const stepA=Math.max(1,Math.floor(a.length/900)),stepB=Math.max(1,Math.floor(b.length/900));for(let i=0;i<a.length;i+=stepA)for(let j=0;j<b.length;j+=stepB){const d=a[i].distanceToSquared(b[j]);if(d<best){best=d;pa=a[i];pb=b[j];}}return pa.clone().add(pb).multiplyScalar(.5);}
     function gapPath(number){const upper="rib"+number,lower="rib"+(number+1),right=medialPoint(upper,"right").add(medialPoint(lower,"right")).multiplyScalar(.5),left=medialPoint(upper,"left").add(medialPoint(lower,"left")).multiplyScalar(.5),middle=right.clone().add(left).multiplyScalar(.5);middle.z=Math.max(right.z,left.z)+.006;if(number===4)return [right,leadAnchor("v1"),leadAnchor("v2"),left];if(number===5)return [right,middle,leadAnchor("v4"),left];return [right,middle,left];}
-    function derivedBand(id,number,group=lessonGroup){const points=gapPath(number),curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,32,.0044,8,false),basic(0x55e7ff,.96,true));mesh.userData={id,structure:id,kind:"derived-intercostal-space",derivedFrom:["rib"+number,"rib"+(number+1)]};mesh.renderOrder=10;group.add(mesh);landmarkItems.push(mesh);return {mesh,point:points[Math.floor(points.length/2)].clone()};}
+    function derivedBand(id,number,group=lessonGroup){const points=gapPath(number),curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,32,.0044,8,false),basic(0x55e7ff,.96,true));mesh.userData={id,structure:id,kind:"derived-intercostal-space",derivedFrom:["rib"+number,"rib"+(number+1)]};mesh.renderOrder=10;group.add(mesh);landmarkItems.push(mesh);hitItems.push({id,points:curve.getPoints(24),object:mesh});return {mesh,point:points[Math.floor(points.length/2)].clone()};}
     function addLessonVisual(mesh,modes){mesh.userData.lessonModes=modes;mesh.visible=false;lessonVisuals.push(mesh);return mesh;}
     function addLessonLabel(id,text,point,modes,side="right"){const label=document.createElement("span");label.className="lead-3d-anatomy-label";label.dataset.lessonLabel=id;label.dataset.side=side;label.textContent=text;label.hidden=true;labelLayer.append(label);lessonLabels.push({id,label,point:point.clone(),modes});}
-    const anglePoint=closestJunction("manubrium","sternal-body"),angleDot=new T.Mesh(new T.SphereGeometry(.010,18,12),basic(0xffe15b,1,true));angleDot.position.copy(anglePoint);angleDot.userData={id:"sternal-angle",structure:"sternal-angle",kind:"derived-junction"};angleDot.renderOrder=12;addLessonVisual(angleDot,["sternal-angle","rib2"]);lessonGroup.add(angleDot);
+    const anglePoint=closestJunction("manubrium","sternal-body"),angleDot=new T.Mesh(new T.SphereGeometry(.010,18,12),basic(0xffe15b,1,true));angleDot.position.copy(anglePoint);angleDot.userData={id:"sternal-angle",structure:"sternal-angle",kind:"derived-junction"};angleDot.renderOrder=12;hitItems.push({id:"sternal-angle",points:[anglePoint],object:angleDot});addLessonVisual(angleDot,["sternal-angle","rib2"]);lessonGroup.add(angleDot);
     const rib2Point=medialPoint("rib2","left"),angleConnector=new T.Mesh(new T.TubeGeometry(new T.CatmullRomCurve3([anglePoint,rib2Point]),18,.0024,7,false),basic(0xffe15b,.96,true));angleConnector.renderOrder=11;addLessonVisual(angleConnector,["rib2"]);lessonGroup.add(angleConnector);
     const space2=derivedBand("ics2",2),space3=derivedBand("ics3",3),space4=derivedBand("ics4",4,landmarkGroup),space5=derivedBand("ics5",5,landmarkGroup);
     addLessonVisual(space2.mesh,["ics2","count-ics"]);addLessonVisual(space3.mesh,["count-ics"]);
@@ -112,7 +112,7 @@ window.LeadTorso3D = (() => {
     addLessonLabel("same-height","V4 ─── V5 ─── V6 · SAME HEIGHT",leadAnchor("v5"),["v4-v6-level"],"left");
     addLessonLabel("aal-v5","ANTERIOR AXILLARY · V5",leadAnchor("aal"),["v5-axillary"],"left");
     addLessonLabel("mal-v6","MIDAXILLARY · V6",leadAnchor("mal"),["v6-axillary"],"left");
-    host.dataset.sternalAngleSource="FJ3290+FJ3178";host.dataset.intercostalDerivation="adjacent-registered-rib-cartilage-meshes";host.dataset.landmarkHitTesting="raycast-derived-geometry";
+    host.dataset.sternalAngleSource="FJ3290+FJ3178";host.dataset.intercostalDerivation="adjacent-registered-rib-cartilage-meshes";host.dataset.landmarkHitTesting="sampled-derived-geometry";
 
     function makeLeader(){const line=document.createElement("span");line.className="lead-3d-marker-line";line.setAttribute("aria-hidden","true");labelLayer.append(line);return line;}
     function addMarker(id,label,point,family="chest"){
@@ -153,8 +153,7 @@ window.LeadTorso3D = (() => {
     function canvasPoint(e){const rect=canvas.getBoundingClientRect();return {x:(e.clientX-rect.left)/rect.width*2-1,y:-(e.clientY-rect.top)/rect.height*2+1,pixelX:e.clientX-rect.left,pixelY:e.clientY-rect.top,rect};}
     function screenPoint(local,rect){const p=worldPoint(local);p.project(camera);return {x:(p.x*.5+.5)*rect.width,y:(-p.y*.5+.5)*rect.height};}
     function closestPointOnViewRay(normalized,target){const origin=camera.position.clone(),through=V(normalized.x,normalized.y,.5).unproject(camera),direction=through.sub(origin).normalize();root.worldToLocal(origin);root.worldToLocal(through.copy(camera.position).add(direction));direction.copy(through).sub(origin).normalize();const t=Math.max(0,target.clone().sub(origin).dot(direction));return origin.add(direction.multiplyScalar(t));}
-    function selectAt(e){const n=canvasPoint(e),pointer=new T.Vector2(n.x,n.y);raycaster.setFromCamera(pointer,camera);const hit=raycaster.intersectObjects([leadGroup,landmarkGroup,lessonGroup],true).find((entry)=>{let object=entry.object;while(object&&object!==root){if(object.userData?.id||object.userData?.structure)return true;object=object.parent;}return false;});if(hit){let object=hit.object;while(object&&object!==root&&!object.userData?.id&&!object.userData?.structure)object=object.parent;const id=object?.userData?.id||object?.userData?.structure;if(id){const local=root.worldToLocal(hit.point.clone());onSelect(id,{modelPoint:local.toArray()});return;}}
-      const supplied=options.anchors||{},target=options.quizTarget||"",targetItems=target&&supplied[target]?.model?[{id:target,point:V(...supplied[target].model)}]:[],candidates=markerItems.map((item)=>({id:item.id,point:item.point})).concat(targetItems.length?targetItems:Object.entries(supplied).filter(([,anchor])=>Array.isArray(anchor?.model)).map(([id,anchor])=>({id,point:V(...anchor.model)}))),nearestScreen=candidates.map((item)=>{const projected=screenPoint(item.point,n.rect);return {...item,distance:Math.hypot(projected.x-n.pixelX,projected.y-n.pixelY)};}).sort((a,b)=>a.distance-b.distance)[0];
+    function selectAt(e){const n=canvasPoint(e),target=options.quizTarget||"",supplied=options.anchors||{},semantic=hitItems.filter((item)=>!target||item.id===target).flatMap((item)=>item.points.map((point)=>({id:item.id,point}))),targetAnchor=target&&supplied[target]?.model?[{id:target,point:V(...supplied[target].model)}]:[],candidates=markerItems.map((item)=>({id:item.id,point:item.point})).concat(semantic,targetAnchor),nearestScreen=candidates.map((item)=>{const projected=screenPoint(item.point,n.rect);return {...item,distance:Math.hypot(projected.x-n.pixelX,projected.y-n.pixelY)};}).sort((a,b)=>a.distance-b.distance)[0];
       if(nearestScreen&&nearestScreen.distance<=24){onSelect(nearestScreen.id,{modelPoint:nearestScreen.point.toArray()});return;}
       const fallbackId=target||CHEST_IDS[0],anchor=leadAnchor(fallbackId),pickedPoint=anchor?closestPointOnViewRay(n,anchor):null,distance=anchor&&pickedPoint?pickedPoint.distanceTo(anchor):Infinity;onSurfaceTap({point:pickedPoint?.toArray()||null,nearest:fallbackId,distance});}
         canvas.addEventListener("pointerdown",(e)=>{if(e.pointerType==="touch"&&!touchEnabled)return;canvas.setPointerCapture(e.pointerId);pointers.set(e.pointerId,[e.clientX,e.clientY]);startPoint=[e.clientX,e.clientY];pointerMoved=false;});
