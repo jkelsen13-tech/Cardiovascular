@@ -74,6 +74,7 @@ var LEAD_PLACEMENT = {
     {id:"ics3",name:"3rd intercostal space",placement:"Space immediately below rib 3, between ribs 3 and 4",mnemonic:"Rib above gives the space its number.",derivedFrom:["rib3","rib4"],anchor:{fallbackPercent:[50,40],model:[0,0.063,0.193],tolerance:0.04}},
     {id:"rib4",name:"Rib 4",placement:"Fourth rib and costal cartilage",mnemonic:"The space immediately below is the 4th ICS.",structureIds:["FJ3231","FJ3340","FJ3248","FJ3339"],anchor:{fallbackPercent:[50,42],model:[0,0.049,0.198],tolerance:0.045}},
     {id:"rib5",name:"Rib 5",placement:"Fifth rib and costal cartilage",mnemonic:"The space immediately below is the 5th ICS.",structureIds:["FJ3232","FJ3342","FJ3251","FJ3341"],anchor:{fallbackPercent:[50,50],model:[0,0.019,0.204],tolerance:0.045}},
+    {id:"rib6",name:"Rib 6",placement:"Sixth rib and costal cartilage",mnemonic:"Rib 6 bounds the lower side of the 5th ICS.",structureIds:["FJ3233","FJ3344","FJ3254","FJ3343"],anchor:{fallbackPercent:[50,55],model:[0,-0.008,0.205],tolerance:0.045}},
     {id:"sternum",name:"Sternum",placement:"Midline breastbone",mnemonic:"Find the sternum before finding its right and left borders."},
     {id:"right-sternal-border",name:"Right sternal border",placement:"Patient-right edge of the sternum",mnemonic:"V1 touches the patient's right edge of the sternum."},
     {id:"left-sternal-border",name:"Left sternal border",placement:"Patient-left edge of the sternum",mnemonic:"V2 touches the patient's left edge of the sternum."},
