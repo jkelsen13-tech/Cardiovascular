@@ -37,3 +37,36 @@
 .lead-tap-legend .learner::before{background:#ef4444}.lead-tap-legend .answer::before{background:#22c55e}
 .lead-identify-dot{left:auto;top:auto;width:44px;height:44px}
 @media(max-width:560px){.lead-3d-marker-button{min-width:44px}}
+
+
+/* Explicit electrode-color and lead-type teaching aids. Anatomy and anchor positions are unchanged. */
+.lead-concept-bar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:0 0 9px}
+.lead-concept-bar button{min-height:44px;padding:8px 7px;border:1px solid var(--lead-line);border-radius:9px;background:var(--lead-panel2);color:var(--lead-ink);font:700 12px/1.2 system-ui;cursor:pointer}
+.lead-concept-bar button[aria-pressed="true"]{background:#f5e3a1;color:#151d29;border-color:#b99a36}
+.lead-concept-bar button:disabled{cursor:not-allowed;opacity:.48}
+.lead-concept-legends{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 12px}
+.lead-concept-legend{min-width:0;padding:9px 10px;border:1px solid var(--lead-line);border-radius:10px;background:#f7f9fc;color:#182235}
+.lead-concept-legend[hidden]{display:none}
+.lead-concept-legend h3{margin:0 0 6px;font-size:13px;color:#182235}
+.lead-concept-legend p{margin:3px 0;font-size:12px;line-height:1.35}
+.lead-color-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px 9px}
+.lead-color-grid span{display:flex;align-items:center;gap:6px;min-width:0;font-size:12px;line-height:1.25;font-weight:700}
+.lead-color-grid i{flex:0 0 13px;width:13px;height:13px;border:1px solid #64748b;border-radius:50%;background:var(--node-color);box-shadow:0 0 0 1px #fff}
+.lead-chest-badge{margin:6px 0 8px;padding:7px 9px;border:1px solid #dec04e;border-radius:8px;background:#fff1a8;color:#332700;text-align:center;font-size:12px;line-height:1.25;font-weight:900;letter-spacing:.015em}
+.lead-map-node{position:absolute;z-index:4;width:16px;height:16px;transform:translate(-50%,-50%);border:2px solid #fff;border-radius:50%;background:var(--node-color);box-shadow:0 0 0 2px #0f172a,0 0 9px 2px var(--node-color);pointer-events:none}
+.lead-map-marker.limb-map-label{z-index:5;width:auto;min-width:0;min-height:30px;padding:5px 7px;border-radius:7px;border:2px solid var(--node-color);background:#101722;color:#fff;white-space:nowrap;font-size:8px;line-height:1}
+.lead-map-marker.limb-map-label[data-node="ra"],.lead-map-marker.limb-map-label[data-node="rl"]{transform:translate(13px,-50%)}
+.lead-map-marker.limb-map-label[data-node="la"],.lead-map-marker.limb-map-label[data-node="ll"]{transform:translate(calc(-100% - 13px),-50%)}
+.lead-map-marker.limb-map-label[data-node="ra"]{background:#f8fafc;color:#111827;border-color:#64748b}
+.lead-map-marker.limb-map-label[data-node="la"]{background:#111827;color:#fff;border-color:#f8fafc}
+.lead-map-marker.limb-map-label[data-node="rl"]{background:#14532d;color:#fff;border-color:#22c55e}
+.lead-map-marker.limb-map-label[data-node="ll"]{background:#7f1d1d;color:#fff;border-color:#ef4444}
+@media(max-width:620px){
+  .lead-concept-bar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .lead-concept-legends{grid-template-columns:1fr}
+  .lead-color-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:390px){
+  .lead-color-grid{grid-template-columns:1fr}
+  .lead-map-marker.limb-map-label{font-size:7px;padding:4px;min-height:28px}
+}
