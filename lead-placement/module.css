@@ -76,13 +76,37 @@
 .lead-lesson-picker{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:center;gap:8px;margin:0 0 9px;padding:7px 9px;border:1px solid var(--lead-line);border-radius:10px;background:#f7f9fc;color:#182235}
 .lead-lesson-picker strong{font-size:11px;letter-spacing:.075em}
 .lead-lesson-picker select{width:100%;min-height:38px;border:1px solid #64748b;border-radius:7px;background:#fff;color:#182235;padding:5px 7px;font:inherit}
-.lead-3d-anatomy-label{position:absolute;z-index:6;max-width:155px;padding:4px 6px;border:1px solid #5ee7ff;border-radius:6px;background:#07121eef;color:#fff;font:900 9px/1.15 system-ui;letter-spacing:.02em;white-space:normal;pointer-events:none;box-shadow:0 0 0 1px #07121e,0 2px 8px #0008}
+.lead-3d-anatomy-label{position:absolute;z-index:6;max-width:155px;padding:4px 6px;border:1px solid #5ee7ff;border-radius:6px;background:#07121eef;color:#fff;font:900 11px/1.2 system-ui;letter-spacing:.02em;white-space:normal;pointer-events:none;box-shadow:0 0 0 1px #07121e,0 2px 8px #0008}
 .lead-3d-anatomy-label[data-collision="right"]{transform:translate(8px,-50%)}
 .lead-3d-anatomy-label[data-collision="left"]{transform:translate(calc(-100% - 8px),-50%)}
-.lead-map-lesson-label{position:absolute;z-index:6;transform:translate(8px,-50%);max-width:128px;padding:3px 5px;border:1px solid #5ee7ff;border-radius:5px;background:#07121eef;color:#fff;font:800 7px/1.15 system-ui;pointer-events:none}
+.lead-map-lesson-label{position:absolute;z-index:6;transform:translate(8px,-50%);max-width:128px;padding:3px 5px;border:1px solid #5ee7ff;border-radius:5px;background:#07121eef;color:#fff;font:800 9px/1.2 system-ui;pointer-events:none}
 .lead-map-level-guide{position:absolute;z-index:4;left:63%;top:58%;width:21%;height:3px;transform:translateY(-50%);border-radius:3px;background:#5ee7ff;box-shadow:0 0 8px #5ee7ff}
-.lead-map-level-text{position:absolute;z-index:6;left:63%;top:61%;padding:3px 5px;border-radius:5px;background:#07121eef;color:#fff;font:800 7px/1.15 system-ui}
+.lead-map-level-text{position:absolute;z-index:6;left:63%;top:61%;padding:3px 5px;border-radius:5px;background:#07121eef;color:#fff;font:800 9px/1.2 system-ui}
 @media(max-width:560px){
   .lead-lesson-picker{grid-template-columns:1fr;gap:4px}
-  .lead-3d-anatomy-label{max-width:118px;font-size:8px}
+  .lead-3d-anatomy-label{max-width:132px;font-size:10px}
+}
+
+/* Thoracic-lesson fallback decluttering: labels move, anatomical/electrode anchors do not. */
+.lead-map[data-lesson="sternal-angle"] [data-map-marker^="v"],
+.lead-map[data-lesson="rib2"] [data-map-marker^="v"],
+.lead-map[data-lesson="ics2"] [data-map-marker^="v"],
+.lead-map[data-lesson="count-ics"] [data-map-marker^="v"]{display:none}
+.lead-map[data-lesson="v1v2-ics4"] [data-map-marker^="v"]:not([data-map-marker="v1"]):not([data-map-marker="v2"]),
+.lead-map[data-lesson="v4-ics5"] [data-map-marker^="v"]:not([data-map-marker="v4"]),
+.lead-map[data-lesson="v4-v6-level"] [data-map-marker^="v"]:not([data-map-marker="v4"]):not([data-map-marker="v5"]):not([data-map-marker="v6"]){display:none}
+.lead-map[data-lesson="count-ics"] .lead-map-lesson-label{max-width:86px;padding:2px 4px;font-size:9px;white-space:nowrap}
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib2"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib3"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib4"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib5"]{transform:translate(calc(-100% - 12px),-50%)}
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics2"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics3"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics4"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics5"]{transform:translate(12px,-50%)}
+.lead-map[data-lesson="count-ics"] .lead-map-lesson-label::before{content:"";position:absolute;top:50%;width:12px;border-top:1px solid #5ee7ff}
+.lead-map[data-lesson="count-ics"] [data-lesson-label^="rib"]::before{right:-12px}
+.lead-map[data-lesson="count-ics"] [data-lesson-label^="ics"]::before{left:-12px}
+@media(max-width:430px){
+  .lead-map[data-lesson="count-ics"] .lead-map-lesson-label{font-size:8px}
 }
