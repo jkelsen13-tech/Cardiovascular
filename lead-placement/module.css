@@ -86,3 +86,27 @@
   .lead-lesson-picker{grid-template-columns:1fr;gap:4px}
   .lead-3d-anatomy-label{max-width:132px;font-size:10px}
 }
+
+/* Thoracic-lesson fallback decluttering: labels move, anatomical/electrode anchors do not. */
+.lead-map[data-lesson="sternal-angle"] [data-map-marker^="v"],
+.lead-map[data-lesson="rib2"] [data-map-marker^="v"],
+.lead-map[data-lesson="ics2"] [data-map-marker^="v"],
+.lead-map[data-lesson="count-ics"] [data-map-marker^="v"]{display:none}
+.lead-map[data-lesson="v1v2-ics4"] [data-map-marker^="v"]:not([data-map-marker="v1"]):not([data-map-marker="v2"]),
+.lead-map[data-lesson="v4-ics5"] [data-map-marker^="v"]:not([data-map-marker="v4"]),
+.lead-map[data-lesson="v4-v6-level"] [data-map-marker^="v"]:not([data-map-marker="v4"]):not([data-map-marker="v5"]):not([data-map-marker="v6"]){display:none}
+.lead-map[data-lesson="count-ics"] .lead-map-lesson-label{max-width:86px;padding:2px 4px;font-size:9px;white-space:nowrap}
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib2"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib3"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib4"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="rib5"]{transform:translate(calc(-100% - 12px),-50%)}
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics2"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics3"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics4"],
+.lead-map[data-lesson="count-ics"] [data-lesson-label="ics5"]{transform:translate(12px,-50%)}
+.lead-map[data-lesson="count-ics"] .lead-map-lesson-label::before{content:"";position:absolute;top:50%;width:12px;border-top:1px solid #5ee7ff}
+.lead-map[data-lesson="count-ics"] [data-lesson-label^="rib"]::before{right:-12px}
+.lead-map[data-lesson="count-ics"] [data-lesson-label^="ics"]::before{left:-12px}
+@media(max-width:430px){
+  .lead-map[data-lesson="count-ics"] .lead-map-lesson-label{font-size:8px}
+}
