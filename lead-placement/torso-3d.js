@@ -12,7 +12,7 @@ window.LeadTorso3D = (() => {
     ra:[-.245,.145,.07], la:[.245,.145,.07], rl:[-.15,-.29,.04], ll:[.15,-.29,.04]
   };
   const STRUCTURES = {
-    sternum:["FJ3153","FJ3178","FJ3290"], clavicles:["FJ3237","FJ3362"],
+    sternum:["FJ3153","FJ3178","FJ3290"], manubrium:["FJ3290"], "sternal-body":["FJ3178"], clavicles:["FJ3237","FJ3362"],
     ribs:[" rib"], ics4:["FJ3231","FJ3232","FJ3248","FJ3251","FJ3339","FJ3340","FJ3341","FJ3342"],
     ics5:["FJ3232","FJ3233","FJ3251","FJ3254","FJ3341","FJ3342","FJ3343","FJ3344"]
   };
@@ -27,13 +27,13 @@ window.LeadTorso3D = (() => {
   }
   function nodeFj(node){return String(node.userData?.fj||node.name||"").split(/[ _]/)[0];}
   function leadAnchor(id){
-    const supplied=window.LEAD_PLACEMENT?.leads?.find((item)=>item.id===id)?.anchor?.model;
+    const supplied=[...(window.LEAD_PLACEMENT?.leads||[]),...(window.LEAD_PLACEMENT?.landmarks||[])].find((item)=>item.id===id)?.anchor?.model;
     return V(...(Array.isArray(supplied)?supplied:VERIFIED_ANCHORS[id]));
   }
 
   async function mount(host,options={}) {
     let disposed=false,visible=true,touchEnabled=false,yaw=0,pitch=0,distance=1.42,pointerMoved=false;
-    let active=options.active||"v1",labelActive=options.activeLabel||active,labelMode=options.labelMode||"all",showAllLabels=options.showAllLabels??labelMode!=="guided",polarity=options.polarity||{},electrodeColors=options.electrodeColors||{ra:"#f8fafc",la:"#111827",rl:"#22c55e",ll:"#ef4444"},electrodeLabels=options.electrodeLabels||{ra:"RA — WHITE",la:"LA — BLACK",rl:"RL — GREEN",ll:"LL — RED"},layers={body:true,skeleton:true,muscle:false,landmarks:true,leads:true};
+    let active=options.active||"v1",labelActive=options.activeLabel||active,labelMode=options.labelMode||"all",showAllLabels=options.showAllLabels??labelMode!=="guided",polarity=options.polarity||{},lessonMode=options.lesson||"",electrodeColors=options.electrodeColors||{ra:"#f8fafc",la:"#111827",rl:"#22c55e",ll:"#ef4444"},electrodeLabels=options.electrodeLabels||{ra:"RA — WHITE",la:"LA — BLACK",rl:"RL — GREEN",ll:"LL — RED"},layers={body:true,skeleton:true,muscle:false,landmarks:true,leads:true};
     let bodySurface="translucent",resizeObserver,intersectionObserver,highlighted=new Set();
     const onSelect=typeof options.onSelect==="function"?options.onSelect:()=>{};
     const onSurfaceTap=typeof options.onSurfaceTap==="function"?options.onSurfaceTap:()=>{};
@@ -56,8 +56,8 @@ window.LeadTorso3D = (() => {
     const key=new T.DirectionalLight(0xfff7ed,1.75);key.position.set(-1.5,2.5,3);scene.add(key);
     const fill=new T.DirectionalLight(0x8ccfff,.62);fill.position.set(2,0,2);scene.add(fill);
     const root=new T.Group();scene.add(root);
-    const landmarkGroup=new T.Group(),leadGroup=new T.Group(),feedbackGroup=new T.Group();root.add(landmarkGroup,leadGroup,feedbackGroup);
-    const bodyMeshes=[],skeletonMeshes=[],muscleMeshes=[],structureMeshes=[],markerItems=[],landmarkItems=[],materials=[];
+    const landmarkGroup=new T.Group(),lessonGroup=new T.Group(),leadGroup=new T.Group(),feedbackGroup=new T.Group();root.add(landmarkGroup,lessonGroup,leadGroup,feedbackGroup);
+    const bodyMeshes=[],skeletonMeshes=[],muscleMeshes=[],structureMeshes=[],markerItems=[],landmarkItems=[],lessonVisuals=[],lessonLabels=[],materials=[];
     let modelScene;
 
     function material(opts){const m=new T.MeshStandardMaterial(opts);materials.push(m);return m;}
@@ -84,9 +84,35 @@ window.LeadTorso3D = (() => {
     function tube(id,points,color=0x7ce2ff,r=.0025,opacity=.92){const curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,24,r,7,false),basic(color,opacity,true));mesh.userData={id,structure:id,kind:"landmark"};mesh.renderOrder=8;landmarkGroup.add(mesh);landmarkItems.push(mesh);return mesh;}
     const gold=0xffda61,cyan=0x72e4ff;
     tube("right-sternal-border",[V(-.024,-.055,.219),V(-.024,.145,.202)],gold,.0023);tube("left-sternal-border",[V(.024,-.055,.219),V(.024,.145,.202)],gold,.0023);
-    tube("ics4",[V(-.115,.050,.166),leadAnchor("v1"),leadAnchor("v2"),V(.115,.050,.177)],gold,.0032);tube("ics5",[V(-.02,-.012,.212),leadAnchor("v4"),V(.12,-.010,.194)],gold,.0032);
     tube("mcl",[V(.076,-.19,.165),leadAnchor("v4"),V(.076,.165,.16)],cyan,.0024);tube("aal",[V(.194,-.19,.11),leadAnchor("v5"),V(.194,.13,.13)],cyan,.0024);tube("mal",[V(.247,-.19,.03),leadAnchor("v6"),V(.247,.12,.055)],cyan,.0024);
     tube("v4-level",[leadAnchor("v4"),leadAnchor("v5"),leadAnchor("v6")],0xffffff,.0018,.72);
+
+
+    /* Lesson geometry is derived at runtime from the registered named atlas meshes. */
+    function selectorsFor(id){return window.LEAD_PLACEMENT?.landmarks?.find((item)=>item.id===id)?.structureIds||STRUCTURES[id]||[];}
+    function meshesFor(id){const ids=selectorsFor(id);return structureMeshes.filter((mesh)=>ids.includes(nodeFj(mesh)));}
+    function vertexPoints(mesh){const attr=mesh.geometry?.attributes?.position,points=[];if(!attr)return points;for(let i=0;i<attr.count;i++)points.push(V(attr.getX(i),attr.getY(i),attr.getZ(i)).applyMatrix4(mesh.matrix));return points;}
+    function medialPoint(id,side){const sign=side==="left"?1:-1,meshes=meshesFor(id).filter((mesh)=>String(mesh.name||"").toLowerCase().includes("cartilage")),points=meshes.flatMap(vertexPoints).filter((point)=>Math.sign(point.x||sign)===sign);if(!points.length)return leadAnchor(id);points.sort((a,b)=>Math.abs(a.x)-Math.abs(b.x)||b.z-a.z);const sample=points.slice(0,Math.min(32,points.length)),sum=sample.reduce((out,p)=>out.add(p),V());return sum.multiplyScalar(1/sample.length);}
+    function closestJunction(aId,bId){const a=meshesFor(aId).flatMap(vertexPoints),b=meshesFor(bId).flatMap(vertexPoints);let best=Infinity,pa=a[0]||leadAnchor("sternal-angle"),pb=b[0]||pa;const stepA=Math.max(1,Math.floor(a.length/900)),stepB=Math.max(1,Math.floor(b.length/900));for(let i=0;i<a.length;i+=stepA)for(let j=0;j<b.length;j+=stepB){const d=a[i].distanceToSquared(b[j]);if(d<best){best=d;pa=a[i];pb=b[j];}}return pa.clone().add(pb).multiplyScalar(.5);}
+    function gapPath(number){const upper="rib"+number,lower="rib"+(number+1),right=medialPoint(upper,"right").add(medialPoint(lower,"right")).multiplyScalar(.5),left=medialPoint(upper,"left").add(medialPoint(lower,"left")).multiplyScalar(.5),middle=right.clone().add(left).multiplyScalar(.5);middle.z=Math.max(right.z,left.z)+.006;if(number===4)return [right,leadAnchor("v1"),leadAnchor("v2"),left];if(number===5)return [right,middle,leadAnchor("v4"),left];return [right,middle,left];}
+    function derivedBand(id,number,group=lessonGroup){const points=gapPath(number),curve=new T.CatmullRomCurve3(points),mesh=new T.Mesh(new T.TubeGeometry(curve,32,.0044,8,false),basic(0x55e7ff,.96,true));mesh.userData={id,structure:id,kind:"derived-intercostal-space",derivedFrom:["rib"+number,"rib"+(number+1)]};mesh.renderOrder=10;group.add(mesh);landmarkItems.push(mesh);return {mesh,point:points[Math.floor(points.length/2)].clone()};}
+    function addLessonVisual(mesh,modes){mesh.userData.lessonModes=modes;mesh.visible=false;lessonVisuals.push(mesh);return mesh;}
+    function addLessonLabel(id,text,point,modes,side="right"){const label=document.createElement("span");label.className="lead-3d-anatomy-label";label.dataset.lessonLabel=id;label.dataset.side=side;label.textContent=text;label.hidden=true;labelLayer.append(label);lessonLabels.push({id,label,point:point.clone(),modes});}
+    const anglePoint=closestJunction("manubrium","sternal-body"),angleDot=new T.Mesh(new T.SphereGeometry(.010,18,12),basic(0xffe15b,1,true));angleDot.position.copy(anglePoint);angleDot.renderOrder=12;addLessonVisual(angleDot,["sternal-angle","rib2"]);lessonGroup.add(angleDot);
+    const rib2Point=medialPoint("rib2","left"),angleConnector=new T.Mesh(new T.TubeGeometry(new T.CatmullRomCurve3([anglePoint,rib2Point]),18,.0024,7,false),basic(0xffe15b,.96,true));angleConnector.renderOrder=11;addLessonVisual(angleConnector,["rib2"]);lessonGroup.add(angleConnector);
+    const space2=derivedBand("ics2",2),space3=derivedBand("ics3",3),space4=derivedBand("ics4",4,landmarkGroup),space5=derivedBand("ics5",5,landmarkGroup);
+    addLessonVisual(space2.mesh,["ics2","count-ics"]);addLessonVisual(space3.mesh,["count-ics"]);
+    addLessonLabel("sternal-angle","STERNAL ANGLE · ANGLE OF LOUIS",anglePoint,["sternal-angle","rib2"],"right");
+    addLessonLabel("rib2","RIB 2",leadAnchor("rib2"),["rib2","ics2","count-ics"],"left");
+    addLessonLabel("ics2","2nd INTERCOSTAL SPACE",space2.point,["ics2","count-ics"],"right");
+    [["rib3","RIB 3","left"],["ics3","3rd ICS","right"],["rib4","RIB 4","left"],["ics4","4th ICS","right"],["rib5","RIB 5","left"],["ics5","5th ICS","right"]].forEach(([id,text,side])=>addLessonLabel(id,text,leadAnchor(id),["count-ics"],side));
+    addLessonLabel("ics4-pair","4th ICS · V1 + V2",leadAnchor("ics4"),["v1v2-ics4"],"right");
+    addLessonLabel("ics4-level","4th ICS · V1 / V2",leadAnchor("ics4"),["v4-ics5"],"left");
+    addLessonLabel("ics5-v4","5th ICS · V4",leadAnchor("ics5"),["v4-ics5"],"right");
+    addLessonLabel("same-height","V4 ─── V5 ─── V6 · SAME HEIGHT",leadAnchor("v5"),["v4-v6-level"],"left");
+    addLessonLabel("aal-v5","ANTERIOR AXILLARY · V5",leadAnchor("aal"),["v5-axillary"],"left");
+    addLessonLabel("mal-v6","MIDAXILLARY · V6",leadAnchor("mal"),["v6-axillary"],"left");
+    host.dataset.sternalAngleSource="FJ3290+FJ3178";host.dataset.intercostalDerivation="adjacent-registered-rib-cartilage-meshes";
 
     function makeLeader(){const line=document.createElement("span");line.className="lead-3d-marker-line";line.setAttribute("aria-hidden","true");labelLayer.append(line);return line;}
     function addMarker(id,label,point,family="chest"){
@@ -109,13 +135,15 @@ window.LeadTorso3D = (() => {
     function overlap(a,b){return Math.abs(a.x-b.x)<(a.width+b.width)/2+6&&Math.abs(a.y-b.y)<(a.height+b.height)/2+6;}
     function placeLeader(item,base,pos){const dx=pos.x-base.x,dy=pos.y-base.y,len=Math.hypot(dx,dy),angle=Math.atan2(dy,dx)*180/Math.PI;item.leader.style.left=base.x+"px";item.leader.style.top=base.y+"px";item.leader.style.width=Math.max(0,len-10)+"px";item.leader.style.transform=`rotate(${angle}deg)`;}
     function crosses(a,b){const side=(p,q,r)=>(q.x-p.x)*(r.y-p.y)-(q.y-p.y)*(r.x-p.x);return side(a.a,a.b,b.a)*side(a.a,a.b,b.b)<0&&side(b.a,b.b,a.a)*side(b.a,b.b,a.b)<0;}
+    function projectLessonLabels(){const rect=viewport.getBoundingClientRect();lessonLabels.forEach((item)=>{const show=layers.landmarks&&item.modes.includes(lessonMode);item.label.hidden=!show;if(!show)return;const p=worldPoint(item.point);p.project(camera);if(p.z>1||p.z< -1){item.label.hidden=true;return;}const x=(p.x*.5+.5)*rect.width,y=(-p.y*.5+.5)*rect.height,offset=item.label.dataset.side==="left"?-10:10;item.label.style.left=x+offset+"px";item.label.style.top=y+"px";item.label.dataset.collision=item.label.dataset.side;});}
     function projectLabels(){const rect=viewport.getBoundingClientRect(),placed=[],segments=[],tagOffsets={v1:[-19,-17],v2:[7,-17],v3:[7,-17],v4:[7,-17],v5:[7,-17],v6:[7,-17]},projected=markerItems.map((item)=>{const p=worldPoint(item.point);p.project(camera);const base={x:(p.x*.5+.5)*rect.width,y:(-p.y*.5+.5)*rect.height},hidden=!layers.leads||p.z>1||p.z< -1||Math.abs(p.x)>1.08||Math.abs(p.y)>1.08||occluded(item.point);item.button.hidden=true;item.leader.hidden=true;if(item.tag){item.tag.hidden=hidden;if(!hidden){const [tx,ty]=tagOffsets[item.id]||[7,-17];item.tag.style.left=base.x+tx+"px";item.tag.style.top=base.y+ty+"px";}}return {item,base,hidden};});projected.filter(({item,hidden})=>!hidden&&(labelMode!=="guided"||showAllLabels||item.id===labelActive||item.family==="limb"&&Object.hasOwn(polarity,item.id))).sort((a,b)=>Number(b.item.id===labelActive)-Number(a.item.id===labelActive)).forEach(({item,base})=>{item.button.hidden=false;item.button.style.visibility="hidden";const boxWidth=Math.max(44,item.button.offsetWidth),boxHeight=Math.max(44,item.button.offsetHeight),candidates=candidatePositions(base,item.id,item.family,rect.width,rect.height,boxWidth,boxHeight),pos=candidates.find((next)=>!placed.some((other)=>overlap(next,other))&&!segments.some((segment)=>crosses({a:base,b:next},segment)));if(!pos){item.button.hidden=true;item.leader.hidden=true;return;}item.button.style.visibility="";item.leader.hidden=false;placed.push(pos);segments.push({a:base,b:pos});item.button.style.left=pos.x+"px";item.button.style.top=pos.y+"px";placeLeader(item,base,pos);});}
-    function draw(){if(disposed||document.hidden||!visible)return;cameraPose();renderer.render(scene,camera);projectLabels();}
+    function draw(){if(disposed||document.hidden||!visible)return;cameraPose();renderer.render(scene,camera);projectLabels();projectLessonLabels();}
     function resize(){if(disposed)return;const width=Math.max(280,viewport.clientWidth),height=Math.max(360,Math.min(560,width*1.08));renderer.setSize(width,height,false);camera.aspect=width/height;camera.updateProjectionMatrix();draw();}
-    function applyLayers(next=layers){layers={...layers,...next};bodyMeshes.forEach((o)=>o.visible=layers.body&&bodySurface!=="hidden");skeletonMeshes.forEach((o)=>o.visible=layers.skeleton);muscleMeshes.forEach((o)=>o.visible=layers.muscle);landmarkGroup.visible=layers.landmarks;leadGroup.visible=layers.leads;host.dataset.layers=Object.entries(layers).filter(([,value])=>value).map(([key])=>key).join(",");draw();}
+    function applyLayers(next=layers){layers={...layers,...next};bodyMeshes.forEach((o)=>o.visible=layers.body&&bodySurface!=="hidden");skeletonMeshes.forEach((o)=>o.visible=layers.skeleton);muscleMeshes.forEach((o)=>o.visible=layers.muscle);landmarkGroup.visible=layers.landmarks;lessonGroup.visible=layers.landmarks;leadGroup.visible=layers.leads;host.dataset.layers=Object.entries(layers).filter(([,value])=>value).map(([key])=>key).join(",");draw();}
     function setBodyOpacity(value){bodySurface=["opaque","translucent","hidden"].includes(value)?value:"translucent";bodyMeshes.forEach((o)=>{o.visible=layers.body&&bodySurface!=="hidden";o.material.opacity=bodySurface==="opaque"?.94:.14;o.material.transparent=bodySurface!=="opaque";o.material.depthWrite=bodySurface==="opaque";});host.dataset.bodySurface=bodySurface;draw();}
-    function matchesStructure(mesh,id){const fj=nodeFj(mesh),name=String(mesh.name||"").toLowerCase(),selectors=STRUCTURES[id]||[];return selectors.some((selector)=>selector.startsWith("FJ")?fj===selector:name.includes(selector.trim()));}
+    function matchesStructure(mesh,id){const fj=nodeFj(mesh),name=String(mesh.name||"").toLowerCase(),selectors=selectorsFor(id);return selectors.some((selector)=>selector.startsWith("FJ")?fj===selector:name.includes(selector.trim()));}
     function highlight(ids){const selected=new Set(Array.isArray(ids)?ids:[ids]);highlighted=selected;active=[...selected][0]||"";host.dataset.highlight=[...selected].join(",");markerItems.forEach((item)=>{const on=selected.has(item.id),primary=item.id===labelActive,relevant=primary||Object.hasOwn(polarity,item.id);item.group.scale.setScalar(on?1.38:.82);item.group.children.forEach((o)=>{if(o.material)o.material.opacity=on?1:.45;});item.button.dataset.active=String(primary);item.button.dataset.dimmed=String(!relevant);item.button.setAttribute("aria-current",primary?"true":"false");});landmarkItems.forEach((item)=>{const on=selected.has(item.userData.id);item.material.opacity=on?1:.2;item.scale.setScalar(on?1.6:1);});structureMeshes.forEach((mesh)=>{const on=[...selected].some((id)=>matchesStructure(mesh,id)||mesh.userData.structure===id);mesh.material.emissive.setHex(on?0xffa600:0x000000);mesh.material.emissiveIntensity=on?.58:0;});draw();}
+    function setLesson(next=""){lessonMode=next||"";lessonVisuals.forEach((mesh)=>mesh.visible=layers.landmarks&&mesh.userData.lessonModes.includes(lessonMode));host.dataset.lesson=lessonMode;draw();}
     function setLabels(next={}){if(next.mode)labelMode=next.mode;if("all" in next)showAllLabels=!!next.all;if("active" in next)labelActive=next.active||"";if("polarity" in next)polarity=next.polarity||{};markerItems.forEach((item)=>{const primary=item.id===labelActive,relevant=primary||Object.hasOwn(polarity,item.id),value=polarity[item.id];item.button.textContent=item.label+(value?` ${value}`:"");item.button.dataset.active=String(primary);item.button.dataset.dimmed=String(!relevant);item.button.setAttribute("aria-current",primary?"true":"false");item.button.setAttribute("aria-label",item.family==="limb"?`${item.label} ${value||"electrode"}; external limb-electrode teaching label`:`${item.label} placement callout`);});host.dataset.labelMode=labelMode;host.dataset.allLabels=String(showAllLabels);host.dataset.activeLabel=labelActive;host.dataset.polarity=Object.entries(polarity).map(([id,value])=>`${id}:${value}`).join(",");draw();}
     function setPose(nextYaw,nextPitch=0,nextDistance=1.42){yaw=clamp(nextYaw,-1.05,1.05);pitch=clamp(nextPitch,-.32,.32);distance=clamp(nextDistance,1.05,2.2);draw();}
     function front(){setPose(0,0,1.42);}function oblique(side){setPose(side==="left"?.72:-.72,-.02,1.45);}function zoom(delta){setPose(yaw,pitch,distance+delta);}
@@ -140,10 +168,10 @@ window.LeadTorso3D = (() => {
     function contextLost(e){e.preventDefault();if(!disposed)options.onFailure?.("3D graphics became unavailable. The 2D placement diagram remains active.");dispose();}canvas.addEventListener("webglcontextlost",contextLost);
     function setTouch(enabled){touchEnabled=!!enabled;pointers.clear();canvas.style.touchAction=touchEnabled?"none":"pan-y";host.dataset.touch=String(touchEnabled);}function visibilityChange(){if(!document.hidden)draw();}
     document.addEventListener("visibilitychange",visibilityChange);resizeObserver=new ResizeObserver(resize);resizeObserver.observe(viewport);intersectionObserver=new IntersectionObserver((entries)=>{visible=entries[0]?.isIntersecting!==false;if(visible)draw();},{threshold:.01});intersectionObserver.observe(viewport);
-    applyLayers();setBodyOpacity("translucent");highlight(options.highlights||[active]);setLabels({mode:labelMode,all:showAllLabels,active:labelActive,polarity});resize();host.dataset.ready="true";host.dataset.triangles="194563";host.dataset.structures="50";host.dataset.bodyMeshes=String(bodyMeshes.length);host.dataset.skeletonMeshes=String(skeletonMeshes.length);host.dataset.muscleMeshes=String(muscleMeshes.length);host.dataset.markers=String(markerItems.length);host.dataset.frontRightLeft="true";host.dataset.registeredAnatomy="true";host.dataset.source="BodyParts3D";
+    applyLayers();setBodyOpacity("translucent");highlight(options.highlights||[active]);setLabels({mode:labelMode,all:showAllLabels,active:labelActive,polarity});resize();setLesson(lessonMode);host.dataset.ready="true";host.dataset.triangles="194563";host.dataset.structures="50";host.dataset.bodyMeshes=String(bodyMeshes.length);host.dataset.skeletonMeshes=String(skeletonMeshes.length);host.dataset.muscleMeshes=String(muscleMeshes.length);host.dataset.markers=String(markerItems.length);host.dataset.frontRightLeft="true";host.dataset.registeredAnatomy="true";host.dataset.source="BodyParts3D";
     function dispose(){if(disposed)return;disposed=true;resizeObserver?.disconnect();intersectionObserver?.disconnect();document.removeEventListener("visibilitychange",visibilityChange);canvas.removeEventListener("webglcontextlost",contextLost);scene.traverse((o)=>o.geometry?.dispose());materials.forEach((m)=>m.dispose());renderer.dispose();renderer.forceContextLoss();host.replaceChildren();}
     function setView(preset){if(preset==="left-oblique")oblique("left");else if(preset==="right-oblique")oblique("right");else front();}
-    return {dispose,draw,front,reset:front,oblique,setView,zoom,setTouch,setLayers:applyLayers,setBodyOpacity,highlight,setLabels,showQuizResult,select:(id)=>onSelect(id)};
+    return {dispose,draw,front,reset:front,oblique,setView,zoom,setTouch,setLayers:applyLayers,setBodyOpacity,highlight,setLabels,setLesson,showQuizResult,select:(id)=>onSelect(id)};
   }
   return {mount};
 })();
