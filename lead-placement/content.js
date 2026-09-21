@@ -8,6 +8,15 @@ var LEAD_PLACEMENT = {
     viewerRight: "PATIENT LEFT",
     note: "Default front view: viewer left is the patient's right; viewer right is the patient's left."
   },
+  nodeColors: {
+    standard: "AHA limb-electrode colors",
+    nodes: {
+      ra: {name:"RA",colorName:"white",hex:"#f8fafc"},
+      la: {name:"LA",colorName:"black",hex:"#111827"},
+      rl: {name:"RL",colorName:"green",hex:"#22c55e"},
+      ll: {name:"LL",colorName:"red",hex:"#ef4444"}
+    }
+  },
   chestSequence: ["v1", "v2", "v4", "v3", "v5", "v6"],
   leads: [
     {id:"v1",name:"V1",family:"chest",side:"Patient right",placement:"4th intercostal space, right sternal border",landmark:"Right sternal border at the 4th intercostal space",landmarkIds:["ics4","right-sternal-border"],plane:"Transverse plane",mnemonic:"V1 starts on the patient's right beside the sternum.",anchor:{fallbackPercent:[43,43],model:[-0.0239735,0.0585575,0.217840942],tolerance:0.035}},
@@ -53,7 +62,13 @@ var LEAD_PLACEMENT = {
     {id:"v5",lead:"V5",target:"v5",highlights:["v4","v5","aal","v4-level"]},
     {id:"mal",lead:"Find the midaxillary line",target:"mal",highlights:["mal","v4","v4-level"]},
     {id:"v6",lead:"V6",target:"v6",highlights:["v4","v5","v6","mal","v4-level"]},
-    {id:"review",lead:"Full review",target:"v4",highlights:["v1","v2","v3","v4","v5","v6"],placement:"V1 → V2 → V4 → V3 → V5 → V6.",cue:"Sternal pair, anchor V4, fill V3, then move laterally without dropping."}
+    {id:"review",lead:"Full chest-lead review",target:"v4",highlights:["v1","v2","v3","v4","v5","v6"],placement:"V1 → V2 → V4 → V3 → V5 → V6.",cue:"Sternal pair, anchor V4, fill V3, then move laterally without dropping."},
+    {id:"lead-i-polarity",lead:"Lead I polarity",target:"lead-i",activeElectrode:"la",highlights:["ra","la","rl"],placement:"RA(−) → LA(+). RL is ground and is not a positive or negative pole.",cue:"Lead I travels leftward across the shoulders.",polarity:{ra:"−",la:"+",rl:"GND"}},
+    {id:"lead-ii-polarity",lead:"Lead II polarity",target:"lead-ii",activeElectrode:"ll",highlights:["ra","ll","rl"],placement:"RA(−) → LL(+). RL is ground and is not a positive or negative pole.",cue:"Lead II travels down and left toward the positive left-leg electrode.",polarity:{ra:"−",ll:"+",rl:"GND"}},
+    {id:"lead-iii-polarity",lead:"Lead III polarity",target:"lead-iii",activeElectrode:"ll",highlights:["la","ll","rl"],placement:"LA(−) → LL(+). RL is ground and is not a positive or negative pole.",cue:"Lead III travels inferiorly from left arm to left leg.",polarity:{la:"−",ll:"+",rl:"GND"}},
+    {id:"avr-polarity",lead:"aVR polarity",target:"avr",activeElectrode:"ra",highlights:["ra","la","ll","rl"],placement:"RA is positive; LA and LL form the combined negative reference. RL is ground.",cue:"aVR looks toward the right arm.",polarity:{ra:"+",la:"− ref",ll:"− ref",rl:"GND"}},
+    {id:"avl-polarity",lead:"aVL polarity",target:"avl",activeElectrode:"la",highlights:["ra","la","ll","rl"],placement:"LA is positive; RA and LL form the combined negative reference. RL is ground.",cue:"aVL looks toward the left arm.",polarity:{la:"+",ra:"− ref",ll:"− ref",rl:"GND"}},
+    {id:"avf-polarity",lead:"aVF polarity",target:"avf",activeElectrode:"ll",highlights:["ra","la","ll","rl"],placement:"LL is positive; RA and LA form the combined negative reference. RL is ground.",cue:"aVF looks inferiorly toward the left foot.",polarity:{ll:"+",ra:"− ref",la:"− ref",rl:"GND"}}
   ],
   cards: [],
   quiz: []
