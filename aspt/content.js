@@ -6930,20 +6930,20 @@ const ASPT_DATA = {
       "level": 4,
       "category": "origin-comparison",
       "concept": "two-feature-ventricular",
-      "q": "A slow rhythm has wide, bizarre QRS complexes and no preceding P waves. Which conclusion best uses both findings?",
+      "q": "A slow rhythm shows wide, bizarre QRS complexes without preceding P waves. Which complete origin-and-pattern interpretation is most consistent?",
       "o": [
-        "The pattern strongly supports ventricular origin; the slow rate may fit an idioventricular escape pattern",
-        "The impulse is sinus because the rhythm is slow",
-        "The impulse is atrial because P waves are absent",
-        "The impulse is junctional because every escape rhythm is junctional"
+        "Idioventricular escape: slow rate with wide ventricular complexes and no preceding P waves",
+        "Junctional escape: 40–60/min with inverted or hidden P waves and narrow conducted QRS complexes",
+        "Sinus bradycardia: below 60/min with a consistent sinus P before each narrow conducted QRS",
+        "Atrial fibrillation with slow response: irregularly irregular R–R intervals, no true P waves, and conducted QRS complexes"
       ],
       "a": 0,
-      "e": "Wide bizarre QRS complexes without preceding P waves strongly support ventricular morphology; the slow rate is consistent with an idioventricular escape pattern.",
+      "e": "The slow rate plus wide, bizarre complexes without preceding P waves is the complete course pattern for an idioventricular escape rhythm.",
       "wrong": [
         "",
-        "Rate does not establish sinus origin, and sinus impulses should have sinus P waves.",
-        "Absent P waves alone do not establish atrial origin; the wide ventricular complexes point lower.",
-        "Escape rhythms may arise from the junction or ventricles; morphology distinguishes them."
+        "Junctional escape may be slow and may hide/invert P waves, but its conducted QRS is expected to be narrow in this comparison.",
+        "Sinus bradycardia requires consistent sinus P waves before conducted QRS complexes; the stem supplies neither feature.",
+        "Slow atrial fibrillation can lack true P waves, but it requires an irregularly irregular ventricular response rather than this ventricular-morphology pattern."
       ],
       "sourceRefs": [
         "Chapters 07–08, pp. 4–45 and 7–31",
