@@ -44,5 +44,6 @@ for(const q of qs)assert(coveredIds.has(q.id),'question absent from coverage mat
 assert(matrix.coverage.some(row=>row.status==='limited / flagged'&&/AGONAL/.test(row.concept)),'agonal warning absent');
 for(const id of ['s19-034','s19-035'])assert(/working|inferred|association/i.test(qs.find(q=>q.id===id).e),'agonal overstatement '+id);
 assert(/SCHEMATIC TEACHING DIAGRAM/.test(exam),'schematic strip labeling missing');
+assert(!/aria-label="\$\{label\}/.test(exam),'visual aria-label reveals answer');
 assert(/@media\(max-width:620px\)/.test(css),'Section 19 mobile CSS missing');
 console.log(JSON.stringify({questions:qs.length,levels,visuals:visualIds.length,flashcards:cards.length,categories:new Set(qs.map(q=>q.category)).size,coverageRows:matrix.coverage.length},null,2));
