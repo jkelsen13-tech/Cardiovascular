@@ -36,6 +36,10 @@ const visualDirections=/\b(?:inspect|view|compare)\b[^.?!]*(?:strip|waveform|ima
 for(const q of qs)assert(!visualDirections.test(q.q),'Section 19 visual-dependent wording remains '+q.id);
 assert(exam.includes("q.level>=3"),'hard mode level gate missing');
 assert(!exam.includes("length>=10"),'retired hard-mode visual target remains');
+const grouped=[...new Set(qs.map(q=>q.attemptGroup).filter(Boolean))];
+assert(grouped.length>=5,'too few near-duplicate concept families tracked');
+for(const name of grouped)assert(qs.filter(q=>q.attemptGroup===name).length>=2,'single-item attempt group '+name);
+assert(exam.includes("usedGroups")&&exam.includes("q.attemptGroup"),'concept-family suppression missing');
 assert(exam.includes("new Set(pool.map(q=>q.category))"),'category balancing missing');
 assert(exam.includes("Math.random()*wordings.length"),'wording randomization missing');
 assert(exam.includes("practice-hard"),'hard mode action missing');
