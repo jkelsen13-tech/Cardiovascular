@@ -60,9 +60,9 @@
     ]
   },
   "selectionRules": {
-    "normal": "24 questions, category-balanced, answer-order randomized, primarily Levels 2–4, with safe wording variants where supplied.",
-    "hard": "24 questions, Levels 3–4 only, category-balanced, emphasizing close conceptual distinctions and multi-feature reasoning without image interpretation.",
-    "invariant": "Question concepts are tracked by category and concept id so category rounds are filled before narrow repeats."
+    "normal": "24 questions, category- and concept-family-balanced, answer-order randomized, primarily Levels 2–4, with safe wording variants where supplied.",
+    "hard": "24 questions, Levels 3–4 only, category- and concept-family-balanced, emphasizing close conceptual distinctions and multi-feature reasoning without image interpretation.",
+    "invariant": "Question ids are unique; category rounds are filled first; attemptGroup metadata suppresses near-duplicate concept families unless the eligible pool cannot fill the attempt otherwise."
   },
   "coverage": [
     {
