@@ -24,6 +24,8 @@ for(const q of qs){
   assert(Array.isArray(q.wrong)&&q.wrong.length===q.o.length,'missing distractor rationales '+q.id);
   q.o.forEach((_,i)=>{if(i!==q.a)assert(q.wrong[i]&&q.wrong[i].trim(),'missing wrong-answer rationale '+q.id+' option '+i);});
   assert(q.e&&q.e.length>20,'weak explanation '+q.id);
+  assert(!q.sourceRefs.some(ref=>ref==='Chapters 05–10'),'blanket source range '+q.id);
+  assert(!q.o.some(opt=>/AV junction is absent|solely because|completely absent ventricular activity/i.test(opt)),'reviewed-out distractor returned '+q.id);
 }
 assert(levels[2]+levels[3]+levels[4]>levels[1]*8,'Level 1 dominates');
 assert(qs.filter(q=>q.level>=3).length>=24,'hard pool too small');
@@ -40,6 +42,7 @@ for(const card of cards)assert(card.front&&card.back&&card.sourceRefs?.length,'i
 const coveredIds=new Set(matrix.coverage.flatMap(row=>row.questionIds));
 for(const q of qs)assert(coveredIds.has(q.id),'question absent from coverage matrix '+q.id);
 assert(matrix.coverage.some(row=>row.status==='limited / flagged'&&/AGONAL/.test(row.concept)),'agonal warning absent');
+for(const id of ['s19-034','s19-035'])assert(/working|inferred|association/i.test(qs.find(q=>q.id===id).e),'agonal overstatement '+id);
 assert(/SCHEMATIC TEACHING DIAGRAM/.test(exam),'schematic strip labeling missing');
 assert(/@media\(max-width:620px\)/.test(css),'Section 19 mobile CSS missing');
 console.log(JSON.stringify({questions:qs.length,levels,visuals:visualIds.length,flashcards:cards.length,categories:new Set(qs.map(q=>q.category)).size,coverageRows:matrix.coverage.length},null,2));
