@@ -6557,18 +6557,18 @@ const ASPT_DATA = {
       "concept": "vf-vs-asystole",
       "q": "Which distinction correctly separates ventricular fibrillation from asystole on the recording?",
       "o": [
-        "Ventricular fibrillation is chaotic with no discernible complexes; asystole lacks detectable ventricular electrical activity",
-        "Ventricular fibrillation retains a measurable irregular QRS rate; asystole has irregularly spaced QRS complexes",
-        "Ventricular fibrillation has organized wide QRS complexes; asystole has a chaotic fibrillatory baseline",
-        "Ventricular fibrillation and asystole are distinguished primarily by regular versus irregular R–R intervals"
+        "Ventricular fibrillation is chaotic with no discernible QRS complexes; asystole has no detectable ventricular electrical activity",
+        "Ventricular fibrillation has an irregularly irregular series of narrow QRS complexes; asystole has no QRS complexes",
+        "Ventricular fibrillation has organized wide polymorphic QRS complexes; asystole has a nearly flat baseline",
+        "Ventricular fibrillation has organized atrial waves between QRS complexes; asystole has a chaotic baseline"
       ],
       "a": 0,
       "e": "VF is a chaotic baseline with no discernible waves or complexes; asystole is absence of detectable ventricular electrical activity.",
       "wrong": [
         "",
-        "VF has no discernible organized QRS complexes, and asystole does not have recurring QRS complexes to count.",
-        "Organized wide QRS complexes describe a ventricular rhythm such as VT/idioventricular activity, while a chaotic baseline fits VF rather than asystole.",
-        "Neither pattern supplies organized R waves for a meaningful regular-versus-irregular R–R comparison."
+        "Irregularly irregular narrow QRS complexes with no true P waves describe atrial fibrillation, not ventricular fibrillation.",
+        "Organized wide complexes describe a ventricular tachycardia-type pattern, not the absence of discernible complexes in VF.",
+        "Organized atrial waves and a chaotic asystolic baseline reverse/mix neighboring atrial-flutter and VF features."
       ],
       "sourceRefs": [
         "ASPT guide terms 45 and 48 (p. 6)",
@@ -6586,18 +6586,18 @@ const ASPT_DATA = {
       "concept": "asystole-visual",
       "q": "The schematic shows a nearly flat trace with no QRS complexes. What is the best course-aligned response?",
       "o": [
-        "Recognize possible asystole, while urgently checking the patient and recording connections",
-        "Classify the trace as ventricular fibrillation because neither pattern has true P waves",
-        "Classify the trace as idioventricular because an extremely slow rate can approach zero",
-        "Classify the trace as low-voltage sinus rhythm before checking for recurring P–QRS cycles"
+        "Treat it as possible asystole while urgently assessing the patient and verifying the recording",
+        "Treat fine ventricular fibrillation as proven because very small baseline undulations are visible",
+        "Treat a disconnected lead as proven because no QRS complexes are visible",
+        "Treat an agonal rhythm as proven because the apparent ventricular rate is zero"
       ],
       "a": 0,
-      "e": "Asystole means no detectable ventricular electrical activity, but a flat trace can also be a lead/settings problem; assess the patient and verify the recording.",
+      "e": "A nearly flat trace raises possible asystole, but neither asystole, fine VF, nor technical failure should be declared from this teaching line without patient and recording verification.",
       "wrong": [
         "",
-        "VF should show a chaotic fibrillatory baseline rather than a nearly flat trace.",
-        "Idioventricular rhythm still produces slow, wide QRS complexes; a line without QRS complexes does not show a measurable slow rate.",
-        "Low-voltage sinus rhythm still requires recurring sinus P–QRS cycles, which are not visible here."
+        "Small baseline variation alone does not prove fine VF; the course requires assessment of what is actually visible plus recording verification.",
+        "A disconnected lead can mimic this pattern, but absence of QRS complexes does not prove the lead is disconnected.",
+        "The guide does not formally define exact agonal ECG criteria, and an unverified apparent rate of zero cannot prove that label."
       ],
       "sourceRefs": [
         "ASPT guide terms 45 and 48 (p. 6)",
@@ -6614,20 +6614,20 @@ const ASPT_DATA = {
       "level": 2,
       "category": "terminal-patterns",
       "concept": "agonal-caution",
-      "q": "Which statement most accurately preserves the course's flagged working description of AGONAL?",
+      "q": "The ASPT guide lists AGONAL but does not formally define exact ECG criteria. Which Section 19 study-note phrasing is most defensible?",
       "o": [
-        "The guide lists the term without a formal definition; nearby material supports only a cautious association with a very slow deteriorating terminal pattern",
-        "Any adult rhythm below 60/min should be labeled agonal before its origin is determined",
-        "AGONAL is interchangeable with asystole whenever no P wave is visible",
-        "A single wide premature complex is enough to classify the entire rhythm as agonal"
+        "Flagged working association with very slow deterioration from nearby course material; do not use the ECG alone to claim circulation status",
+        "A formal synonym for every idioventricular rhythm, regardless of context",
+        "A formal synonym for asystole whenever no P wave is visible",
+        "A rate-only label for any adult rhythm below 60/min"
       ],
       "a": 0,
-      "e": "AGONAL is not formally defined in the guide. Section 19 retains only a flagged working association with very slow deterioration from nearby course material and does not claim ECG-only confirmation of circulation.",
+      "e": "The defensible course note is explicitly a flagged working association inferred from nearby deterioration material, not a formal guide definition or ECG-only circulation conclusion.",
       "wrong": [
         "",
-        "Below 60/min defines bradycardia by rate; it does not establish the inferred agonal association.",
-        "Asystole means no detectable ventricular activity, while the limited agonal material should not be treated as an identical term.",
-        "One ventricular ectopic complex does not establish a terminal deteriorating pattern."
+        "Nearby idioventricular material informs the association, but the guide does not establish that every idioventricular rhythm is formally AGONAL.",
+        "Asystole is absence of detectable ventricular activity; lack of a P wave alone does not make it AGONAL or asystole.",
+        "Below 60/min defines bradycardia by rate and does not establish the inferred AGONAL association."
       ],
       "sourceRefs": [
         "ASPT guide term 45 (p. 6; term listed, not formally defined)",
@@ -6644,20 +6644,20 @@ const ASPT_DATA = {
       "level": 3,
       "category": "terminal-patterns",
       "concept": "agonal-neighbor",
-      "q": "⚠ LEAST CONSISTENT — Which finding is least consistent with Section 19's cautious working association for AGONAL?",
+      "q": "⚠ OVERSTATES SUPPORT — Which statement would overstate what Section 19 can claim about AGONAL?",
       "o": [
-        "A stable 60–100/min rhythm with consistent sinus P waves before each QRS",
-        "A very slow deteriorating terminal pattern described only as a working association",
-        "A very slow ventricular escape-type pattern linked by nearby course material to deterioration as the heart dies",
-        "A pattern that still requires patient assessment rather than an ECG-only claim about circulation"
+        "The guide supplies a complete formal ECG definition that can confirm a patient's circulation status from the tracing alone",
+        "The guide lists AGONAL as a required term without a complete formal definition",
+        "Nearby course material supports only a cautious working association with very slow deterioration",
+        "Patient assessment remains necessary; the tracing alone does not establish effective circulation"
       ],
       "a": 0,
-      "e": "A stable normal-sinus pattern is least consistent with the limited working association drawn from nearby very slow deteriorating/terminal material.",
+      "e": "Claiming a complete formal ECG definition or ECG-only circulation conclusion exceeds the authorized material.",
       "wrong": [
         "",
-        "This wording preserves that the description is an association, not a formal guide definition.",
-        "Nearby idioventricular/dying-heart material is the basis for the limited inference.",
-        "The Section 19 caution keeps patient assessment separate from the tracing and avoids an ECG-only circulation claim."
+        "This is the documented scope limitation, not an overstatement.",
+        "This accurately labels the description as a cautious working association rather than a settled definition.",
+        "This preserves the required distinction between rhythm recognition and patient assessment."
       ],
       "sourceRefs": [
         "ASPT guide term 45 (p. 6; term listed, not formally defined)",
@@ -6703,20 +6703,20 @@ const ASPT_DATA = {
       "level": 3,
       "category": "national-terms",
       "concept": "arrhythmia-negative",
-      "q": "⚠ NOT — Which statement is NOT required for a rhythm to be called an arrhythmia?",
+      "q": "⚠ INCORRECT — Which statement about ARRHYTHMIA is incorrect?",
       "o": [
-        "The R–R intervals must be irregular",
-        "The rate may be abnormal",
-        "Impulse conduction may be abnormal",
-        "The rhythm pattern may be abnormal"
+        "The term is limited to rhythms with irregular R–R intervals",
+        "The term includes abnormalities of heart rate",
+        "The term includes abnormalities of impulse conduction",
+        "A rhythm can be regular yet still be an arrhythmia"
       ],
       "a": 0,
-      "e": "Arrhythmias can be regular; the term covers abnormalities of rate, rhythm, or conduction.",
+      "e": "Arrhythmia is not limited to irregular R–R spacing; abnormalities of rate or conduction may be regular.",
       "wrong": [
         "",
-        "An abnormal rate can fall under the arrhythmia definition.",
-        "Abnormal conduction can fall under the arrhythmia definition.",
-        "An abnormal rhythm pattern can fall under the arrhythmia definition."
+        "An abnormal rate falls within the course definition of arrhythmia.",
+        "Abnormal impulse conduction falls within the course definition of arrhythmia.",
+        "Regularity does not exclude arrhythmia; some abnormal rhythms repeat regularly."
       ],
       "sourceRefs": [
         "ASPT guide terms 45–48, 52, 56, 75, 78 (pp. 6–7)",
@@ -6734,18 +6734,18 @@ const ASPT_DATA = {
       "concept": "brady-definition",
       "q": "A rhythm is 58/min with inverted P waves close to each QRS. Which statement is most accurate?",
       "o": [
-        "It is bradycardic by rate, and the P morphology suggests junctional rather than sinus origin",
-        "It is sinus bradycardia because every slow rhythm is sinus",
-        "It is idioventricular because every rate below 60/min is ventricular",
-        "It is atrial fibrillation because the rate is below 60/min"
+        "It is bradycardic by rate, and the inverted P morphology suggests junctional rather than sinus origin",
+        "It is sinus bradycardia because a P wave is present before each QRS",
+        "It is accelerated junctional rhythm because inverted P waves establish junctional origin",
+        "It is an ectopic atrial rhythm because every nonsinus P wave must originate in the atria"
       ],
       "a": 0,
       "e": "The rate establishes bradycardia, while inverted P waves near narrow QRS complexes suggest junctional origin; rate alone does not establish sinus origin.",
       "wrong": [
         "",
-        "Slow rate alone cannot establish SA-node origin.",
-        "Ventricular origin requires ventricular morphology, not merely a rate below 60.",
-        "Atrial fibrillation is identified by chaotic atrial activity/no true P waves and irregularly irregular R–R spacing, not simply a slow rate."
+        "A P wave's presence is not enough for sinus origin; its inverted morphology argues against the expected sinus P.",
+        "Inverted P waves support junctional origin, but 58/min fits the junctional escape range rather than the taught accelerated junctional range.",
+        "Nonsinus P morphology must be interpreted with its relationship to QRS; an inverted P close to QRS favors junctional origin rather than proving atrial ectopy."
       ],
       "sourceRefs": [
         "ASPT guide terms 52, 75, 78 (pp. 6–7)",
@@ -6818,18 +6818,18 @@ const ASPT_DATA = {
       "concept": "sawtooth-vs-peaked",
       "q": "Which distinction is correct?",
       "o": [
-        "Peaked describes one P-wave shape; sawtooth describes repeating organized flutter activity",
-        "Peaked describes repeating flutter waves; sawtooth describes one tall atrial deflection",
-        "Both terms describe a single P wave, with sawtooth indicating only greater height",
-        "The terms differ only in amplitude; neither depends on whether the atrial pattern repeats"
+        "Peaked describes one P-wave morphology; sawtooth describes repeating organized flutter activity",
+        "Peaked describes repeating sharp atrial deflections; sawtooth describes one isolated tall P wave",
+        "Peaked is an atrial morphology term; sawtooth describes ventricular repolarization between QRS complexes",
+        "Both are atrial descriptions, but they differ only in amplitude rather than in whether the pattern repeats"
       ],
       "a": 0,
       "e": "A peaked P is a single morphology term, while sawtooth refers to organized repeating flutter activity.",
       "wrong": [
         "",
         "This reverses a single peaked P morphology and a repeating sawtooth flutter pattern.",
-        "Sawtooth is a repeating organized atrial pattern, not merely a taller single P wave.",
-        "Repetition and organization are the key distinctions; amplitude alone does not make a pattern sawtooth."
+        "Sawtooth activity is organized atrial activity, not ventricular repolarization.",
+        "Repetition and organization—not amplitude alone—separate sawtooth flutter activity from one peaked P wave."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
@@ -6847,17 +6847,17 @@ const ASPT_DATA = {
       "q": "Across the teaching strip, P-wave shape changes before otherwise conducted QRS complexes. What mechanism best explains this course pattern?",
       "o": [
         "The pacemaker site changes from beat to beat",
-        "The ventricles are fibrillating",
-        "There is no atrial electrical activity",
-        "Every impulse begins in the same SA-node site"
+        "One ectopic atrial focus fires every beat with a consistent abnormal P shape",
+        "The AV junction controls every beat, producing a consistent inverted or hidden P pattern",
+        "The SA node controls every beat while only ventricular QRS morphology changes"
       ],
       "a": 0,
       "e": "In a wandering pacemaker, the pacemaker site changes, so P morphology and sometimes PR timing vary.",
       "wrong": [
         "",
-        "Ventricular fibrillation would not show organized conducted QRS complexes.",
-        "Changing visible P waves demonstrate atrial activity is present.",
-        "A single unchanged SA origin should produce a consistent sinus P morphology."
+        "One fixed atrial focus should produce a consistent abnormal P morphology rather than several changing shapes.",
+        "A fixed junctional focus should produce a consistent inverted/hidden relationship to QRS rather than varying atrial shapes.",
+        "The diagram changes P-wave morphology while QRS complexes remain conducted, so the change is atrial pacemaker location rather than QRS morphology."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
@@ -6875,18 +6875,18 @@ const ASPT_DATA = {
       "concept": "absent-vs-flat",
       "q": "Which statement correctly distinguishes an absent P wave from a flattened P wave?",
       "o": [
-        "Absent means no identifiable true P wave; flattened means a low-amplitude P wave is still present",
-        "Absent means a low-amplitude P remains measurable; flattened means no true P can be identified",
-        "Absent means the P is hidden within QRS or T; flattened means the P is inverted below baseline",
-        "Both terms should be treated as no true P wave when determining rhythm origin"
+        "Absent means no identifiable true P wave; flattened means a low-amplitude P wave is still identifiable",
+        "Absent means the P wave is always hidden in the preceding T wave; flattened means it is always hidden in QRS",
+        "Both absent and flattened P waves preserve a measurable P onset for the PR interval",
+        "Flattened means the P wave is inverted below baseline; absent means it is merely low amplitude"
       ],
       "a": 0,
       "e": "A flattened P wave remains identifiable at low amplitude; absent means no true P wave can be identified.",
       "wrong": [
         "",
-        "This reverses the two terms: a flattened P remains present, while absent means no true P is identifiable.",
-        "A hidden P may be unidentifiable, but flattened does not mean inverted; an inverted P is a separate morphology.",
-        "A flattened P is still a true identifiable atrial deflection and should not be treated as absent."
+        "A P may be unidentifiable for different reasons; neither term requires one specific hiding location.",
+        "An absent P supplies no identifiable onset, while a flattened P may remain measurable if its onset is visible.",
+        "Inverted is a direction term and low amplitude is flattened; neither definition correctly describes an absent P."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
@@ -6929,15 +6929,15 @@ const ASPT_DATA = {
       "level": 4,
       "category": "origin-comparison",
       "concept": "two-feature-ventricular",
-      "q": "A slow rhythm has wide, bizarre QRS complexes and no preceding P waves. Which conclusion uses both findings correctly?",
+      "q": "A slow rhythm has wide, bizarre QRS complexes and no preceding P waves. Which conclusion best uses both findings?",
       "o": [
-        "The impulse is ventricular in origin; the slow rate may fit an idioventricular escape pattern",
+        "The pattern strongly supports ventricular origin; the slow rate may fit an idioventricular escape pattern",
         "The impulse is sinus because the rhythm is slow",
         "The impulse is atrial because P waves are absent",
         "The impulse is junctional because every escape rhythm is junctional"
       ],
       "a": 0,
-      "e": "Wide bizarre QRS complexes without preceding P waves establish ventricular morphology; the slow rate supports an idioventricular escape pattern.",
+      "e": "Wide bizarre QRS complexes without preceding P waves strongly support ventricular morphology; the slow rate is consistent with an idioventricular escape pattern.",
       "wrong": [
         "",
         "Rate does not establish sinus origin, and sinus impulses should have sinus P waves.",
@@ -6957,20 +6957,20 @@ const ASPT_DATA = {
       "level": 3,
       "category": "terminal-patterns",
       "concept": "flatline-artifact",
-      "q": "A monitor displays a flat line. Which response has priority before treating the tracing itself as proof of asystole?",
+      "q": "A monitor displays a flat line. Which next step is most appropriate before assigning a rhythm label from the tracing?",
       "o": [
-        "Assess the patient and verify leads, connections, and recording settings",
-        "Assume atrial fibrillation because no true P waves are visible, then calculate an R–R pattern",
-        "Label the rhythm agonal from the apparent slowness before checking the recording",
-        "Measure PR and QRS intervals to distinguish first-degree from complete AV block"
+        "Assess the patient and verify leads, connections, gain, and recording settings",
+        "Increase gain first and label low-voltage sinus rhythm if any deflection appears",
+        "Change paper speed first and accept asystole if the longer display remains flat",
+        "Calculate the rate over a longer window to decide between agonal rhythm and asystole"
       ],
       "a": 0,
-      "e": "A disconnected lead or settings problem can mimic a flat trace, so patient assessment and recording verification have priority.",
+      "e": "A disconnected lead or settings problem can mimic a flat trace, so patient assessment and verification of the recording system come before a definitive rhythm label.",
       "wrong": [
         "",
-        "Atrial fibrillation requires ventricular responses and an irregularly irregular R–R pattern; a flat technical-looking trace supplies neither.",
-        "The limited agonal association cannot be assigned from apparent slowness on an unverified flat trace.",
-        "PR and QRS measurements require identifiable atrial and ventricular complexes, which are absent from the displayed line."
+        "Gain adjustment can help troubleshoot, but it does not replace patient assessment or verification of leads/connections and cannot by itself prove sinus rhythm.",
+        "Paper speed changes the horizontal time scale; it does not verify electrical contact or prove asystole.",
+        "A rate cannot be calculated without ventricular complexes, and the guide does not provide exact agonal ECG criteria."
       ],
       "sourceRefs": [
         "ASPT guide terms 45 and 48 (p. 6)",
