@@ -6748,8 +6748,9 @@ const ASPT_DATA = {
         "Nonsinus P morphology must be interpreted with its relationship to QRS; an inverted P close to QRS favors junctional origin rather than proving atrial ectopy."
       ],
       "sourceRefs": [
-        "ASPT guide terms 52, 75, 78 (pp. 6–7)",
-        "Chapter 06, pp. 11–49"
+        "ASPT guide term 52 (p. 6)",
+        "Chapter 06, pp. 11–49 (rate distinction)",
+        "Chapter 08, pp. 7–31 (junctional P morphology/origin)"
       ]
     },
     {
@@ -7015,7 +7016,7 @@ const ASPT_DATA = {
       "level": 4,
       "category": "af-vs-flutter",
       "concept": "rr-af-application",
-      "q": "R–R intervals are 0.62 s, 0.91 s, 0.70 s, 1.08 s, and 0.66 s with no repeating pattern, and no true P waves are visible. Which interpretation is strongest?",
+      "q": "R–R intervals are 0.62 s, 0.91 s, 0.70 s, 1.08 s, and 0.66 s with no repeating pattern. No true P waves or organized flutter waves are visible; the baseline is chaotic. Which interpretation is strongest?",
       "o": [
         "Atrial fibrillation",
         "Atrial flutter with variable ventricular conduction",
@@ -7023,10 +7024,10 @@ const ASPT_DATA = {
         "Irregular junctional rhythm"
       ],
       "a": 0,
-      "e": "Unpredictable R–R variation plus absent true P waves is the two-feature pattern for atrial fibrillation.",
+      "e": "Unpredictable R–R variation plus a chaotic baseline without true P waves or organized flutter activity is the multi-feature pattern for atrial fibrillation.",
       "wrong": [
         "",
-        "Atrial flutter requires organized flutter activity; variable conduction alone does not explain the absent true P waves and fibrillatory pattern.",
+        "Atrial flutter requires organized flutter activity; variable conduction may make R–R spacing irregular, but the stem explicitly describes a chaotic baseline without organized flutter waves.",
         "Sinus arrhythmia retains sinus P waves and usually shows a breathing-related patterned irregularity.",
         "Junctional rhythms may hide or invert P waves, but they do not produce the chaotic atrial baseline plus irregularly irregular pattern described."
       ],
@@ -7294,7 +7295,10 @@ const ASPT_DATA = {
       "status": "supported",
       "sourceRefs": [
         "ASPT guide terms 52, 75, 78 (pp. 6–7)",
-        "Chapter 06, pp. 11–49"
+        "Chapter 06, pp. 11–49",
+        "ASPT guide term 52 (p. 6)",
+        "Chapter 06, pp. 11–49 (rate distinction)",
+        "Chapter 08, pp. 7–31 (junctional P morphology/origin)"
       ],
       "questionIds": [
         "s19-009",
