@@ -5758,21 +5758,21 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "rr-interval",
-      "concept": "rr-irregularity-reported",
-      "q": "A rhythm report notes that successive R–R intervals are unequal and vary without a repeating pattern. Which property is established?",
+      "concept": "atrial-vs-ventricular-regularity",
+      "q": "P–P intervals are approximately equal, but successive R–R intervals are unequal. Which conclusion is supported?",
       "o": [
-        "The ventricular rhythm is irregular",
-        "The atrial rhythm is irregular",
-        "The PR interval is prolonged",
-        "The QRS duration is widened"
+        "The atrial rhythm is regular while the ventricular rhythm is irregular",
+        "Both the atrial and ventricular rhythms are regular",
+        "The atrial rhythm is irregular while the ventricular rhythm is regular",
+        "Neither atrial nor ventricular regularity can be assessed from these intervals"
       ],
       "a": 0,
-      "e": "R–R intervals compare successive ventricular depolarizations; unpredictable inequality establishes an irregular ventricular rhythm.",
+      "e": "P–P intervals describe atrial timing and R–R intervals describe ventricular timing, so this combination indicates regular atrial activity with an irregular ventricular response.",
       "wrong": [
         "",
-        "R–R spacing evaluates ventricular timing. Atrial regularity requires comparison of atrial activity such as P–P intervals.",
-        "PR prolongation requires measuring from P-wave onset to QRS onset, not comparing R waves.",
-        "QRS duration describes the width of one ventricular complex, not the spacing between complexes."
+        "Equal P–P intervals support atrial regularity, but unequal R–R intervals do not support ventricular regularity.",
+        "The interval findings show the reverse: P–P is regular and R–R is irregular.",
+        "Both properties can be assessed here because the stem supplies both P–P and R–R comparisons."
       ],
       "sourceRefs": [
         "Chapter 04, pp. 46–58",
@@ -5837,7 +5837,8 @@ const ASPT_DATA = {
       "studyRef": "v019",
       "variants": [
         "The tracing meets every criterion for a sinus rhythm. Which pacemaker site is therefore required?"
-      ]
+      ],
+      "attemptGroup": "sinus-origin-label"
     },
     {
       "id": "s19-007",
@@ -5865,7 +5866,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "Chapter 06, pp. 11–49",
         "Section 19 lesson body 2–3"
-      ]
+      ],
+      "attemptGroup": "sinus-origin-label"
     },
     {
       "id": "s19-008",
@@ -5949,7 +5951,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "ASPT guide terms 52, 75, 78 (pp. 6–7)",
         "Chapter 06, pp. 11–49"
-      ]
+      ],
+      "attemptGroup": "rate-thresholds"
     },
     {
       "id": "s19-011",
@@ -6064,7 +6067,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
         "Section 19 lesson body 3"
-      ]
+      ],
+      "attemptGroup": "diphasic-core"
     },
     {
       "id": "s19-015",
@@ -6073,26 +6077,27 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "p-morphology",
-      "concept": "diphasic-description",
-      "q": "A P wave begins above the isoelectric baseline and then continues below it before returning to baseline. Which morphology term applies?",
+      "concept": "inverted-vs-diphasic-pairing",
+      "q": "A report describes P wave A as entirely below the isoelectric baseline and P wave B as having one component above and one below baseline. Which pairing is correct?",
       "o": [
-        "Diphasic",
-        "Inverted",
-        "Notched",
-        "Flattened"
+        "A is inverted; B is diphasic",
+        "A is diphasic; B is inverted",
+        "A is flattened; B is notched",
+        "A is notched; B is peaked"
       ],
       "a": 0,
-      "e": "A diphasic P wave has components on opposite sides of the isoelectric baseline.",
+      "e": "An inverted P wave is directed below baseline, while a diphasic P wave has components on opposite sides of baseline.",
       "wrong": [
         "",
-        "An inverted P wave is directed below the baseline rather than having components on both sides.",
-        "A notched P wave has two same-side humps separated by an indentation.",
-        "A flattened P wave is low-amplitude, not defined by crossing to the opposite side of baseline."
+        "This reverses the definitions: the baseline-crossing wave is diphasic, not the wave entirely below baseline.",
+        "Flattened describes low amplitude, and notched describes two same-side humps; neither matches the stated pair.",
+        "Notched describes two same-side humps, while peaked describes one prominent apex; neither matches the stated pair."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
         "Section 19 lesson body 3"
-      ]
+      ],
+      "attemptGroup": "diphasic-core"
     },
     {
       "id": "s19-016",
@@ -6101,21 +6106,21 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "p-morphology",
-      "concept": "notched-description",
-      "q": "A P wave has two positive humps separated by a small indentation and never crosses the isoelectric baseline. Which description fits best?",
+      "concept": "notched-vs-diphasic-distinction",
+      "q": "Which statement correctly distinguishes a notched P wave from a diphasic P wave?",
       "o": [
-        "Notched",
-        "Diphasic",
-        "Flattened",
-        "Sawtooth"
+        "A notched P wave has two same-side humps; a diphasic P wave has components on opposite sides of baseline",
+        "A notched P wave crosses baseline; a diphasic P wave has two same-side humps",
+        "A notched P wave is defined only by low amplitude; a diphasic P wave remains entirely below baseline",
+        "A notched P wave is a repeating sawtooth pattern; a diphasic P wave has no identifiable atrial deflection"
       ],
       "a": 0,
-      "e": "Two same-side humps separated by an indentation describe a notched P wave.",
+      "e": "Notched morphology has two same-side humps separated by an indentation; diphasic morphology has components on opposite sides of baseline.",
       "wrong": [
         "",
-        "A diphasic P wave has components on opposite sides of the baseline.",
-        "A flattened P wave is low-amplitude without two distinct humps.",
-        "Sawtooth activity consists of organized repeating flutter waves, not one P wave with an indentation."
+        "This reverses the defining features of notched and diphasic morphology.",
+        "Low amplitude describes flattened morphology, while a wave entirely below baseline is inverted.",
+        "Repeating sawtooth activity describes atrial flutter, and absence of an atrial deflection is not diphasic morphology."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
@@ -6129,26 +6134,27 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "p-morphology",
-      "concept": "peaked-description",
-      "q": "A P wave is present as one narrow, prominent positive apex rather than two humps or a baseline crossing. Which morphology term applies?",
+      "concept": "against-peaked-morphology",
+      "q": "⚠ AGAINST — Which finding would argue against calling a P wave peaked and instead support flattened morphology?",
       "o": [
-        "Peaked",
-        "Flattened",
-        "Diphasic",
-        "Absent"
+        "The P wave is low-amplitude with no prominent apex",
+        "The P wave has one narrow, prominent positive apex",
+        "The P wave has two positive humps separated by an indentation",
+        "The P wave has components on opposite sides of the isoelectric baseline"
       ],
       "a": 0,
-      "e": "A single narrow, prominent positive apex matches the course's peaked P-wave morphology term.",
+      "e": "Flattened morphology is low-amplitude without a prominent apex; a peaked P wave has a narrow, prominent apex.",
       "wrong": [
         "",
-        "A flattened P wave has low amplitude rather than a prominent apex.",
-        "A diphasic P wave has components on opposite sides of the baseline.",
-        "Absent means no identifiable P wave; this description explicitly identifies one."
+        "A narrow, prominent positive apex supports peaked morphology.",
+        "Two same-side humps support notched morphology, not flattened morphology.",
+        "Components on opposite sides of baseline support diphasic morphology, not flattened morphology."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
         "Section 19 lesson body 3"
-      ]
+      ],
+      "negative": true
     },
     {
       "id": "s19-018",
@@ -6157,21 +6163,21 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "p-morphology",
-      "concept": "flattened-description",
-      "q": "A P wave remains identifiable but has very low amplitude and no prominent apex. Which morphology term applies?",
+      "concept": "absent-vs-flattened-pairing",
+      "q": "Rhythm A has no identifiable true P waves. Rhythm B has low-amplitude P waves that remain identifiable. Which description is correct?",
       "o": [
-        "Flattened",
-        "Peaked",
-        "Inverted",
-        "Sawtooth"
+        "A has absent P waves; B has flattened P waves",
+        "A has flattened P waves; B has absent P waves",
+        "A has inverted P waves; B has diphasic P waves",
+        "A has notched P waves; B has peaked P waves"
       ],
       "a": 0,
-      "e": "A present but low-amplitude P wave is described as flattened.",
+      "e": "No identifiable true P waves are absent, while identifiable low-amplitude P waves are flattened rather than absent.",
       "wrong": [
         "",
-        "A peaked P wave has a narrow, prominent apex.",
-        "An inverted P wave is directed below baseline rather than merely reduced in amplitude.",
-        "Sawtooth describes organized repeating flutter activity, not one low-amplitude P wave."
+        "This reverses absent and flattened morphology: low-amplitude but identifiable P waves are not absent.",
+        "Inverted P waves remain identifiable below baseline, and diphasic P waves cross baseline; neither description matches.",
+        "Notched P waves have two same-side humps, and peaked P waves have a prominent apex; neither description matches."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45",
@@ -6206,7 +6212,8 @@ const ASPT_DATA = {
       ],
       "variants": [
         "No true P waves are visible, the baseline is fibrillatory, and no R–R pattern repeats. Which rhythm is supported?"
-      ]
+      ],
+      "attemptGroup": "af-core-pattern"
     },
     {
       "id": "s19-020",
@@ -6234,7 +6241,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "Chapter 07, pp. 4–45"
       ],
-      "negative": true
+      "negative": true,
+      "attemptGroup": "af-flutter-comparison"
     },
     {
       "id": "s19-021",
@@ -6261,7 +6269,8 @@ const ASPT_DATA = {
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45"
-      ]
+      ],
+      "attemptGroup": "af-flutter-comparison"
     },
     {
       "id": "s19-022",
@@ -6288,7 +6297,8 @@ const ASPT_DATA = {
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45"
-      ]
+      ],
+      "attemptGroup": "af-flutter-comparison"
     },
     {
       "id": "s19-023",
@@ -6297,25 +6307,27 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 4,
       "category": "af-vs-flutter",
-      "concept": "flutter-organized-activity",
-      "q": "A rhythm description reports several organized atrial deflections between QRS complexes, repeating in a sawtooth pattern. Which interpretation is best supported even if R–R regularity is not provided?",
+      "concept": "flutter-limits-of-inference",
+      "q": "⚠ NOT JUSTIFIED — A rhythm is described only as having organized, repeating sawtooth atrial activity between QRS complexes. Which conclusion is NOT justified without additional R–R information?",
       "o": [
-        "Atrial flutter",
-        "Atrial fibrillation",
-        "Junctional rhythm",
-        "Ventricular fibrillation"
+        "The ventricular response is irregularly irregular",
+        "The atrial activity is organized",
+        "The atrial finding favors flutter over atrial fibrillation",
+        "Ventricular regularity still must be assessed by comparing R–R intervals"
       ],
       "a": 0,
-      "e": "Organized, repeating sawtooth atrial activity is the taught distinguishing feature of atrial flutter.",
+      "e": "Sawtooth atrial activity supports atrial flutter, but ventricular regularity cannot be assigned until the R–R intervals are compared.",
       "wrong": [
         "",
-        "Atrial fibrillation has chaotic atrial activity and no true organized P-wave pattern.",
-        "A junctional rhythm may have inverted or hidden P waves, not continuous organized sawtooth atrial activity.",
-        "Ventricular fibrillation lacks organized QRS complexes and is not defined by repeating atrial waves."
+        "The stem explicitly describes organized atrial activity.",
+        "Organized sawtooth activity favors atrial flutter over the chaotic atrial activity of atrial fibrillation.",
+        "Because R–R information is missing, this is the appropriate limitation rather than an unsupported rhythm conclusion."
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45"
-      ]
+      ],
+      "negative": true,
+      "attemptGroup": "af-flutter-comparison"
     },
     {
       "id": "s19-024",
@@ -6342,7 +6354,8 @@ const ASPT_DATA = {
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45"
-      ]
+      ],
+      "attemptGroup": "af-core-pattern"
     },
     {
       "id": "s19-025",
@@ -6405,21 +6418,21 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "junctional-origin",
-      "concept": "junctional-p-description",
-      "q": "A regular rhythm has narrow QRS complexes, and each visible P wave is inverted and located just before its QRS. Which origin is most consistent with the course pattern?",
+      "concept": "ectopic-atrial-vs-junctional",
+      "q": "Which finding would shift an origin interpretation away from the AV junction and toward an ectopic atrial focus?",
       "o": [
-        "AV junction",
-        "SA node",
-        "Ventricular focus",
-        "Atrial flutter"
+        "A premature abnormal P wave followed by a narrow conducted QRS",
+        "An inverted P wave immediately after a narrow QRS",
+        "A P wave hidden within an otherwise narrow QRS",
+        "A premature wide, bizarre QRS with no preceding P wave"
       ],
       "a": 0,
-      "e": "A visible junctional P wave is commonly inverted and may occur before, during, or after a narrow QRS.",
+      "e": "A premature abnormal P wave followed by a narrow conducted QRS supports ectopic atrial firing rather than junctional origin.",
       "wrong": [
         "",
-        "A sinus rhythm requires the SA node and consistent sinus P-wave morphology rather than a retrograde inverted pattern.",
-        "A ventricular focus is associated with a wide, bizarre QRS rather than a narrow conducted complex.",
-        "Atrial flutter produces organized repeating flutter waves, not one inverted P wave associated with each QRS."
+        "An inverted P wave after a narrow QRS is a taught junctional relationship.",
+        "A P wave hidden within a narrow QRS can occur with junctional origin.",
+        "A premature wide, bizarre QRS without a preceding P wave supports ventricular ectopy, not ectopic atrial origin."
       ],
       "sourceRefs": [
         "Chapter 08, pp. 7–31"
@@ -6479,7 +6492,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "Section 19 lesson body 3",
         "Existing authorized Section 19 ventricular-origin bank material"
-      ]
+      ],
+      "attemptGroup": "ventricular-origin-pattern"
     },
     {
       "id": "s19-030",
@@ -6507,7 +6521,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "Section 19 lesson body 3",
         "Existing authorized Section 19 ventricular-origin bank material"
-      ]
+      ],
+      "attemptGroup": "ventricular-origin-pattern"
     },
     {
       "id": "s19-031",
@@ -6573,21 +6588,21 @@ const ASPT_DATA = {
       "unit": 4,
       "level": 3,
       "category": "terminal-patterns",
-      "concept": "asystole-text-assessment",
-      "q": "A monitor description reports a nearly flat baseline with no identifiable QRS complexes. What is the best course-aligned response?",
+      "concept": "asystole-vs-agonal-terminology",
+      "q": "Which statement best preserves the course distinction between asystole and the limited agonal terminology?",
       "o": [
-        "Treat it as possible asystole while urgently assessing the patient and verifying the recording",
-        "Treat fine ventricular fibrillation as proven because tiny baseline variations were reported",
-        "Treat a disconnected lead as proven because no QRS complexes were reported",
-        "Treat agonal rhythm as proven because the apparent ventricular rate is zero"
+        "Asystole means no detectable ventricular electrical activity; agonal is a flagged working association with a very slow deteriorating terminal pattern",
+        "Asystole and agonal rhythm are exact synonyms for any slow ventricular rhythm",
+        "Asystole has very slow organized QRS complexes, while agonal rhythm has no ventricular electrical activity",
+        "Either label by itself proves that effective circulation is absent without patient assessment"
       ],
       "a": 0,
-      "e": "A nearly flat baseline with no QRS complexes raises possible asystole, but patient assessment and recording verification are still required.",
+      "e": "The course defines asystole by absent ventricular electrical activity but treats agonal only as a flagged working association because the guide does not formally define exact ECG criteria.",
       "wrong": [
         "",
-        "Tiny baseline variation alone does not prove fine ventricular fibrillation; the recording and patient still require verification.",
-        "A disconnected lead can mimic a flat line, but absent QRS complexes do not prove a technical failure.",
-        "The guide does not formally define exact agonal ECG criteria, and an unverified apparent rate of zero cannot prove that label."
+        "The course does not treat the terms as synonyms; asystole and the limited agonal association describe different ideas.",
+        "This reverses the distinction: organized slow ventricular activity is not the definition of asystole.",
+        "The course cautions against inferring effective circulation from an ECG label alone; patient assessment remains necessary."
       ],
       "sourceRefs": [
         "ASPT guide terms 45 and 48 (p. 6)",
@@ -6623,7 +6638,8 @@ const ASPT_DATA = {
         "Chapter 09, pp. 7–50 (nearby idioventricular/deterioration context)",
         "Section 19 flagged working description"
       ],
-      "f": "The ASPT guide lists AGONAL but does not formally define it; this question preserves the existing Section 19 caution and does not claim ECG-only confirmation."
+      "f": "The ASPT guide lists AGONAL but does not formally define it; this question preserves the existing Section 19 caution and does not claim ECG-only confirmation.",
+      "attemptGroup": "agonal-caution"
     },
     {
       "id": "s19-035",
@@ -6654,7 +6670,8 @@ const ASPT_DATA = {
         "Section 19 flagged working description"
       ],
       "negative": true,
-      "f": "AGONAL remains a flagged term because the guide lists it without a complete formal definition."
+      "f": "AGONAL remains a flagged term because the guide lists it without a complete formal definition.",
+      "attemptGroup": "agonal-caution"
     },
     {
       "id": "s19-036",
@@ -6740,7 +6757,8 @@ const ASPT_DATA = {
         "ASPT guide term 52 (p. 6)",
         "Chapter 06, pp. 11–49 (rate distinction)",
         "Chapter 08, pp. 7–31 (junctional P morphology/origin)"
-      ]
+      ],
+      "attemptGroup": "rate-thresholds"
     },
     {
       "id": "s19-039",
@@ -6768,7 +6786,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "ASPT guide terms 52, 75, 78 (pp. 6–7)",
         "Chapter 06, pp. 11–49"
-      ]
+      ],
+      "attemptGroup": "rate-thresholds"
     },
     {
       "id": "s19-040",
@@ -6935,7 +6954,8 @@ const ASPT_DATA = {
       "sourceRefs": [
         "Chapters 07–08, pp. 4–45 and 7–31",
         "Section 19 lesson body 3"
-      ]
+      ],
+      "attemptGroup": "ventricular-origin-pattern"
     },
     {
       "id": "s19-046",
@@ -7020,7 +7040,8 @@ const ASPT_DATA = {
       ],
       "sourceRefs": [
         "Chapter 07, pp. 4–45"
-      ]
+      ],
+      "attemptGroup": "af-core-pattern"
     },
     {
       "id": "s19-049",
