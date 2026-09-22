@@ -10,7 +10,7 @@ const ASPT = (() => {
   const linkLesson=id=>lesson(id)?button(lesson(id).title,'lesson',id):button('Exam-Day Requirements','tab','exam-day');
   function section19Panel(){
     const cards=(D.section19Flashcards||[]).map((card,i)=>'<details class="s19-card"><summary><span>Card '+(i+1)+'</span>'+escape(card.front)+'</summary><p>'+escape(card.back)+'</p><small>'+escape(card.sourceRefs.join(' · '))+'</small></details>').join('');
-    return '<section class="s19-panel" aria-labelledby="s19PracticeTitle"><p class="aspt-kicker">Section 19 exam practice</p><h4 id="s19PracticeTitle">Rhythm discrimination bank</h4><p>Normal attempts draw 24 balanced questions, primarily Levels 2–4. Answer order and safe wording variants are randomized.</p><div class="aspt-links">'+button('Start Section 19 test','practice','rhythms')+button('🔥 HARD MODE','practice-hard','rhythms')+button('Open source ECG trainer','ecg')+'</div><details class="s19-deck"><summary>Study '+D.section19Flashcards.length+' Section 19 comparison flashcards</summary><div class="s19-card-grid">'+cards+'</div></details></section>';
+    return '<section class="s19-panel" aria-labelledby="s19PracticeTitle"><p class="aspt-kicker">Section 19 exam practice</p><h4 id="s19PracticeTitle">Rhythm discrimination bank</h4><p>Normal attempts draw 24 category- and concept-balanced questions, primarily Levels 2–4. Answer order and safe wording variants are randomized.</p><div class="aspt-links">'+button('Start Section 19 test','practice','rhythms')+button('🔥 HARD MODE','practice-hard','rhythms')+button('Open source ECG trainer','ecg')+'</div><details class="s19-deck"><summary>Study '+D.section19Flashcards.length+' Section 19 comparison flashcards</summary><div class="s19-card-grid">'+cards+'</div></details></section>';
   }
   let tab='path', current='foundation', fromExam=false;
   const returns=['quiz','results'].map(id=>{
@@ -50,20 +50,22 @@ const ASPT = (() => {
   function terms(query){const rows=D.terms.filter(t=>(t.id+' '+t.term+' '+t.simple+' '+t.clinical).toLowerCase().includes(query.toLowerCase()));root.querySelector('#asptTermCount').textContent=rows.length+' of 91 terms';root.querySelector('#asptTerms').innerHTML=rows.map(t=>'<article class="aspt-term"><h4>'+t.id+'. '+escape(t.term)+'</h4><strong>In simple language</strong><p>'+escape(t.simple)+'</p><strong>For multiple-choice questions</strong><p>'+escape(t.clinical)+'</p><small>ASPT EXAM REQUIREMENT · guide p. '+t.page+' · '+escape(t.status)+'</small><p class="aspt-source">Class explanation: '+escape(source(t.sources))+'</p>'+linkLesson(t.lesson)+'</article>').join('');}
   function audit(){const q=root.querySelector('#asptAuditSearch').value.toLowerCase(),status=root.querySelector('#asptAuditStatus').value;const rows=D.coverage.filter(r=>(status==='All statuses'||r.status===status)&&(r.id+' '+r.label+' '+r.group+' '+r.note).toLowerCase().includes(q));root.querySelector('#asptAuditCount').textContent=rows.length+' of '+D.coverage.length+' checklist items';root.querySelector('#asptAudit').innerHTML=rows.map(r=>'<article class="aspt-audit-row"><strong>'+escape(r.id+' · '+r.label)+'</strong><p class="aspt-status">'+escape(r.status)+'</p><p>'+escape(r.note)+'</p><small>'+escape(r.group)+' · ASPT guide p. '+r.page+'</small><div>'+linkLesson(r.lesson)+(r.also||[]).map(linkLesson).join('')+'</div></article>').join('');}
   function section19Pick(hard=false){
-    const limit=24, used=new Set(), picked=[];
+    const limit=24, used=new Set(), usedGroups=new Set(), picked=[];
     const pool=shuffle((D.section19Questions||[]).filter(q=>!hard||q.level>=3).map(q=>({...q})));
-    const take=q=>{if(!q||used.has(q.id)||picked.length>=limit)return false;used.add(q.id);picked.push(q);return true;};
+    const group=q=>q.attemptGroup||q.concept||q.id;
+    const take=(q,allowGroupRepeat=false)=>{if(!q||used.has(q.id)||picked.length>=limit||(!allowGroupRepeat&&usedGroups.has(group(q))))return false;used.add(q.id);usedGroups.add(group(q));picked.push(q);return true;};
     const categories=shuffle([...new Set(pool.map(q=>q.category))]);
     while(picked.length<limit){
       let moved=false;
       for(const category of shuffle(categories.slice())){
-        const q=pool.find(x=>x.category===category&&!used.has(x.id));
+        const q=pool.find(x=>x.category===category&&!used.has(x.id)&&!usedGroups.has(group(x)));
         if(take(q))moved=true;
         if(picked.length>=limit)break;
       }
       if(!moved)break;
     }
     for(const q of pool){if(picked.length>=limit)break;take(q);}
+    for(const q of pool){if(picked.length>=limit)break;take(q,true);}
     return shuffle(picked).map(q=>{
       const wordings=[q.q,...(q.variants||[])];
       return {...q,_id:q.id,asptFocused:true,q:wordings[Math.floor(Math.random()*wordings.length)]};
