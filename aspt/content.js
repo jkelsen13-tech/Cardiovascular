@@ -828,8 +828,8 @@ const ASPT_DATA = {
           "15–28"
         ]
       ],
-      "status": "Covered completely",
-      "note": "Definition and multiple-choice distinction supplied; class sources are listed."
+      "status": "Covered but needs reinforcement",
+      "note": "The ASPT guide lists AGONAL but does not formally define it. Section 19 preserves a limited, flagged course-aligned description and avoids ECG-only claims about circulation."
     },
     {
       "id": 46,
@@ -3684,8 +3684,8 @@ const ASPT_DATA = {
       "label": "45. AGONAL",
       "page": 6,
       "lesson": "rhythms",
-      "status": "Covered completely",
-      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "status": "Covered but needs reinforcement",
+      "note": "The ASPT guide lists AGONAL but does not formally define it. Section 19 preserves a limited, flagged course-aligned description and avoids ECG-only claims about circulation.",
       "term": 45
     },
     {
