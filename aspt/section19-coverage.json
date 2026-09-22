@@ -40,12 +40,28 @@
       "level3": 25,
       "level4": 9
     },
-    "visualQuestionCount": 13,
-    "flashcardCount": 13
+    "visualQuestionCount": 0,
+    "flashcardCount": 13,
+    "rewrittenImageDependentQuestionCount": 13,
+    "rewrittenImageDependentQuestionIds": [
+      "s19-004",
+      "s19-005",
+      "s19-015",
+      "s19-016",
+      "s19-017",
+      "s19-018",
+      "s19-022",
+      "s19-023",
+      "s19-027",
+      "s19-030",
+      "s19-033",
+      "s19-040",
+      "s19-042"
+    ]
   },
   "selectionRules": {
     "normal": "24 questions, category-balanced, answer-order randomized, primarily Levels 2–4, with safe wording variants where supplied.",
-    "hard": "24 questions, Levels 3–4 only, category-balanced, with a target of at least 10 native schematic waveform/rhythm-strip questions when available.",
+    "hard": "24 questions, Levels 3–4 only, category-balanced, emphasizing close conceptual distinctions and multi-feature reasoning without image interpretation.",
     "invariant": "Question concepts are tracked by category and concept id so category rounds are filled before narrow repeats."
   },
   "coverage": [
@@ -476,135 +492,7 @@
       ]
     }
   ],
-  "visuals": [
-    {
-      "questionId": "s19-004",
-      "diagramId": "s19_rr_irregular",
-      "concept": "rr-visual-irregular",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 04, pp. 46–58",
-        "Chapter 05, pp. 2–31"
-      ]
-    },
-    {
-      "questionId": "s19-005",
-      "diagramId": "s19_rr_regular",
-      "concept": "rr-visual-regular",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 04, pp. 46–58",
-        "Chapter 05, pp. 2–31"
-      ]
-    },
-    {
-      "questionId": "s19-015",
-      "diagramId": "s19_p_diphasic",
-      "concept": "diphasic-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45",
-        "Section 19 lesson body 3"
-      ]
-    },
-    {
-      "questionId": "s19-016",
-      "diagramId": "s19_p_notched",
-      "concept": "notched-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45",
-        "Section 19 lesson body 3"
-      ]
-    },
-    {
-      "questionId": "s19-017",
-      "diagramId": "s19_p_peaked",
-      "concept": "peaked-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45",
-        "Section 19 lesson body 3"
-      ]
-    },
-    {
-      "questionId": "s19-018",
-      "diagramId": "s19_p_flattened",
-      "concept": "flattened-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45",
-        "Section 19 lesson body 3"
-      ]
-    },
-    {
-      "questionId": "s19-022",
-      "diagramId": "s19_af_strip",
-      "concept": "af-visual",
-      "level": 4,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45"
-      ]
-    },
-    {
-      "questionId": "s19-023",
-      "diagramId": "s19_flutter_strip",
-      "concept": "flutter-visual",
-      "level": 4,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45"
-      ]
-    },
-    {
-      "questionId": "s19-027",
-      "diagramId": "s19_junctional_strip",
-      "concept": "junctional-p-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 08, pp. 7–31"
-      ]
-    },
-    {
-      "questionId": "s19-030",
-      "diagramId": "s19_ventricular_strip",
-      "concept": "pvc-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Section 19 lesson body 3",
-        "Existing authorized Section 19 ventricular-origin bank material"
-      ]
-    },
-    {
-      "questionId": "s19-033",
-      "diagramId": "s19_asystole_strip",
-      "concept": "asystole-visual",
-      "level": 3,
-      "sourceRefs": [
-        "ASPT guide terms 45 and 48 (p. 6)",
-        "Section 19 lesson body 5",
-        "Existing authorized Section 19 terminal-rhythm bank material"
-      ]
-    },
-    {
-      "questionId": "s19-040",
-      "diagramId": "s19_paced_strip",
-      "concept": "paced-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 10, pp. 15–28"
-      ]
-    },
-    {
-      "questionId": "s19-042",
-      "diagramId": "s19_wandering_p",
-      "concept": "wandering-pacemaker-visual",
-      "level": 3,
-      "sourceRefs": [
-        "Chapter 07, pp. 4–45",
-        "Section 19 lesson body 3"
-      ]
-    }
-  ],
+  "visuals": [],
   "flashcards": [
     {
       "front": "A-fib vs atrial flutter",
@@ -709,8 +597,28 @@
   "limitations": [
     "The original course PDFs and ZIP archives are not stored in this repository; the repository retains audited chapter/page references and extracted study content.",
     "AGONAL is listed by the ASPT guide but not formally defined there. Section 19 presents only a flagged working association inferred from nearby course material and avoids an ECG-only circulation claim.",
-    "All new strips are explicitly labeled schematic teaching diagrams and are not presented as patient or diagnostic tracings.",
+    "Section 19 quiz questions are text-only; no answer depends on inspecting an ECG strip, waveform image, or graphical morphology example.",
     "Ventricular-origin items are traced to the existing authorized Section 19 bank/lesson because the repository does not retain a dedicated ventricular-rhythm source PDF.",
     "No question requires calculations beyond the Section 19 course workflow."
-  ]
+  ],
+  "formatPolicy": {
+    "quiz": "Section 19 questions are answerable from text alone and do not require inspection of an ECG strip, waveform image, or graphical morphology example.",
+    "retiredImageDependentQuestionCount": 13,
+    "rewrittenQuestionIds": [
+      "s19-004",
+      "s19-005",
+      "s19-015",
+      "s19-016",
+      "s19-017",
+      "s19-018",
+      "s19-022",
+      "s19-023",
+      "s19-027",
+      "s19-030",
+      "s19-033",
+      "s19-040",
+      "s19-042"
+    ],
+    "removedAssets": "Thirteen Section 19-only native SVG diagram definitions and their generator/style were removed; no standalone repository image files were affected."
+  }
 }
