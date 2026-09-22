@@ -6652,7 +6652,7 @@ const ASPT_DATA = {
         "Patient assessment remains necessary; the tracing alone does not establish effective circulation"
       ],
       "a": 0,
-      "e": "Claiming a complete formal ECG definition or ECG-only circulation conclusion exceeds the authorized material.",
+      "e": "Claiming complete formal ECG criteria or an ECG-only circulation conclusion exceeds the limited working association supported by the authorized material.",
       "wrong": [
         "",
         "This is the documented scope limitation, not an overstatement.",
