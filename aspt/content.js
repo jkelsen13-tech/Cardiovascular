@@ -5658,5 +5658,1940 @@ const ASPT_DATA = {
       "studyLegacy": null,
       "studyRef": "v023"
     }
-  }
+  },
+  "section19OriginalQuestionCount": 21,
+  "section19Questions": [
+    {
+      "id": "s19-001",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 1,
+      "category": "workflow",
+      "concept": "systematic-order",
+      "q": "Which sequence follows the course's systematic rhythm-interpretation approach?",
+      "o": [
+        "Regularity → rate → P waves → PR interval → QRS → QT when supported",
+        "Rate → QRS → P waves → regularity → PR interval → QT",
+        "P waves → QT → rate → QRS → regularity → PR interval",
+        "QRS → rate → QT → P waves → PR interval → regularity"
+      ],
+      "a": 0,
+      "e": "The class sequence begins with regularity and rate, then evaluates P waves, PR, QRS, and QT only when the strip supports it.",
+      "wrong": [
+        "",
+        "That sequence begins with rate and postpones regularity, reversing the taught first two steps.",
+        "That sequence measures QT before establishing the basic rhythm features.",
+        "That sequence begins with QRS and does not follow the course workflow."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31",
+        "ASPT competency 4h"
+      ]
+    },
+    {
+      "id": "s19-002",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "rr-interval",
+      "concept": "rr-purpose",
+      "q": "Comparing successive R–R intervals most directly evaluates which two ventricular properties?",
+      "o": [
+        "Ventricular regularity and ventricular rate where applicable",
+        "Atrial regularity and P-wave height",
+        "AV conduction time and QRS width",
+        "Cardiac axis and ventricular voltage"
+      ],
+      "a": 0,
+      "e": "R–R comparisons assess ventricular rhythm regularity and can support ventricular-rate determination.",
+      "wrong": [
+        "",
+        "P–P intervals and P morphology address atrial activity, not R–R comparison.",
+        "PR and QRS are separate measurements; neither is obtained by comparing R waves.",
+        "Axis and voltage require lead/morphology information, not R–R spacing."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "variants": [
+        "Which pair of measurements is supported by comparing one R wave with the next?"
+      ]
+    },
+    {
+      "id": "s19-003",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "rr-interval",
+      "concept": "rr-applied-irregular",
+      "q": "Successive R–R intervals measure 0.78 s, 1.03 s, 0.69 s, and 1.14 s with no repeating pattern. What property is demonstrated?",
+      "o": [
+        "An irregular ventricular rhythm",
+        "A prolonged PR interval",
+        "A variable atrial rate proven from P–P intervals",
+        "A widened QRS duration"
+      ],
+      "a": 0,
+      "e": "Unequal R–R intervals without a repeating pattern demonstrate irregular ventricular timing.",
+      "wrong": [
+        "",
+        "PR duration requires measuring from P onset to QRS onset; R–R values cannot establish it.",
+        "These measurements are R–R, so they describe ventricular timing rather than directly proving P–P behavior.",
+        "QRS duration is measured within one complex, not between successive R waves."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "variants": [
+        "R–R measurements vary unpredictably from beat to beat. Which rhythm property has been established?"
+      ]
+    },
+    {
+      "id": "s19-004",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "rr-interval",
+      "concept": "rr-visual-irregular",
+      "q": "Inspect the teaching strip. Which statement is best supported by the R-wave spacing?",
+      "o": [
+        "The ventricular rhythm is irregular",
+        "The ventricular rhythm is regular",
+        "The PR interval is prolonged",
+        "The atrial rhythm is regular"
+      ],
+      "a": 0,
+      "e": "The R peaks are separated by visibly unequal intervals, so the ventricular rhythm is irregular.",
+      "wrong": [
+        "",
+        "Regular ventricular rhythm would show approximately equal R–R spacing.",
+        "The strip is designed to compare R–R spacing; it does not provide a reliable PR measurement.",
+        "R-wave spacing alone does not establish atrial regularity."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "d": "s19_rr_irregular"
+    },
+    {
+      "id": "s19-005",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "rr-interval",
+      "concept": "rr-visual-regular",
+      "q": "Inspect the teaching strip. Which finding is demonstrated?",
+      "o": [
+        "Approximately equal R–R intervals",
+        "No ventricular depolarization",
+        "Chaotic atrial activity",
+        "Progressively lengthening PR intervals"
+      ],
+      "a": 0,
+      "e": "The R peaks are evenly spaced, demonstrating a regular ventricular rhythm.",
+      "wrong": [
+        "",
+        "Visible repeating QRS complexes show ventricular depolarization is present.",
+        "A regular schematic baseline does not demonstrate the chaotic atrial activity of atrial fibrillation.",
+        "The diagram tests R–R spacing and does not show progressive PR change."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "d": "s19_rr_regular"
+    },
+    {
+      "id": "s19-006",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "sinus-origin",
+      "concept": "sinus-sa-node",
+      "q": "A rhythm has the characteristics required to be called sinus. Which structure must be initiating the impulses?",
+      "o": [
+        "SA node",
+        "AV junction",
+        "Purkinje system",
+        "Ventricular myocardium"
+      ],
+      "a": 0,
+      "e": "Sinus means the impulse originates in the sinoatrial (SA) node: SINUS = SA.",
+      "wrong": [
+        "",
+        "An AV-junctional impulse is junctional, not sinus, even if the ventricular rhythm is regular.",
+        "A Purkinje or distal conduction-system origin is ventricular, not sinus.",
+        "A ventricular myocardial focus produces a ventricular origin, not a sinus origin."
+      ],
+      "sourceRefs": [
+        "Chapter 03, p. 105",
+        "Chapters 05–10"
+      ],
+      "studyRef": "v019",
+      "variants": [
+        "The tracing meets every criterion for a sinus rhythm. Which pacemaker site is therefore required?"
+      ]
+    },
+    {
+      "id": "s19-007",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "sinus-origin",
+      "concept": "reverse-nonsinus",
+      "q": "An impulse originates from the AV junction rather than the SA node. Which origin classification no longer applies?",
+      "o": [
+        "Sinus origin",
+        "Junctional origin",
+        "Ectopic origin",
+        "Nonsinus origin"
+      ],
+      "a": 0,
+      "e": "Sinus origin specifically requires initiation in the SA node; an AV-junctional impulse is not sinus.",
+      "wrong": [
+        "",
+        "AV-junctional origin is the finding given, so it still applies.",
+        "An impulse outside the usual SA pacemaker site may be described as ectopic in the course terminology.",
+        "Nonsinus origin still applies because the impulse did not start in the SA node."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-008",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "sinus-origin",
+      "concept": "sinus-multifeature",
+      "q": "Which combination is most consistent with normal sinus rhythm as taught in this section?",
+      "o": [
+        "SA-node origin + consistent P before each QRS + adult rate 60–100/min",
+        "AV-junctional origin + inverted P waves + adult rate 60–100/min",
+        "Atrial ectopic origin + changing P morphology + regular QRS complexes",
+        "Ventricular origin + wide QRS complexes + no preceding P waves"
+      ],
+      "a": 0,
+      "e": "Normal sinus rhythm combines SA-node origin, a consistent sinus P before each QRS, and an adult rate of 60–100/min.",
+      "wrong": [
+        "",
+        "A rate in range does not convert a junctional rhythm with inverted P waves into sinus rhythm.",
+        "Changing P morphology suggests a shifting or ectopic atrial pacemaker rather than a consistent sinus origin.",
+        "Wide complexes without preceding P waves support ventricular rather than sinus origin."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-009",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "rate-terms",
+      "concept": "rate-alone",
+      "q": "A regular rhythm has an adult rate of 54/min. What can be concluded from rate alone?",
+      "o": [
+        "It is bradycardic, but its origin is not yet established",
+        "It is sinus bradycardia",
+        "It is a junctional escape rhythm",
+        "It is an idioventricular rhythm"
+      ],
+      "a": 0,
+      "e": "Below 60/min establishes bradycardia, but rate alone does not identify sinus, junctional, or ventricular origin.",
+      "wrong": [
+        "",
+        "Sinus bradycardia also requires evidence of sinus origin.",
+        "A junctional escape rhythm requires junctional morphology/origin evidence, not rate alone.",
+        "An idioventricular rhythm requires ventricular features such as wide QRS morphology, not rate alone."
+      ],
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "id": "s19-010",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 1,
+      "category": "rate-terms",
+      "concept": "normal-sinus-rate",
+      "q": "Which adult rate range is taught for normal sinus rhythm?",
+      "o": [
+        "60–100/min",
+        "Below 60/min",
+        "101–160/min",
+        "20–40/min"
+      ],
+      "a": 0,
+      "e": "The course teaches 60–100/min for normal adult sinus rhythm.",
+      "wrong": [
+        "",
+        "Below 60/min is bradycardia.",
+        "A rate above 100/min is tachycardia; rate alone still does not prove sinus origin.",
+        "20–40/min is associated with a ventricular escape/idioventricular range in the class material."
+      ],
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "id": "s19-011",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "ectopy-origin",
+      "concept": "ectopic-definition",
+      "q": "An ectopic beat is best described as an impulse that:",
+      "o": [
+        "originates outside the site's normal pacemaker impulse formation",
+        "originates in the SA node but conducts through an abnormal pathway",
+        "originates normally but produces an unusually shaped T wave",
+        "follows a sinus impulse after a prolonged AV-nodal delay"
+      ],
+      "a": 0,
+      "e": "Ectopic firing means an impulse starts outside the region normally responsible for impulse formation.",
+      "wrong": [
+        "",
+        "An SA-node impulse remains sinus in origin even if conduction later changes.",
+        "An isolated T-wave change does not define where an impulse began.",
+        "A prolonged AV delay describes conduction timing, not an ectopic origin."
+      ],
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ],
+      "variants": [
+        "Which description best separates ectopic firing from an ordinary sinus impulse?"
+      ]
+    },
+    {
+      "id": "s19-012",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "ectopy-origin",
+      "concept": "origin-application",
+      "q": "A premature beat has a different P-wave shape but is followed by a narrow QRS. Within the course's origin framework, which source is most consistent?",
+      "o": [
+        "Ectopic atrial focus",
+        "SA node with unchanged sinus activation",
+        "Ventricular focus",
+        "Asystole"
+      ],
+      "a": 0,
+      "e": "A changed premature P morphology supports an ectopic atrial impulse; the narrow conducted QRS does not make it ventricular.",
+      "wrong": [
+        "",
+        "A sinus impulse should retain the expected sinus P morphology rather than produce a distinctly premature abnormal P.",
+        "A ventricular focus is associated with a premature wide, bizarre QRS without a preceding P wave.",
+        "Asystole is absence of detectable ventricular electrical activity, not a conducted premature beat."
+      ],
+      "sourceRefs": [
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "id": "s19-013",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "p-morphology",
+      "concept": "atrial-p-morphology",
+      "q": "When a rhythm originates outside the SA node but within the atria, which ECG feature most directly reflects the changed atrial activation?",
+      "o": [
+        "P-wave morphology",
+        "R–R interval alone",
+        "QRS duration alone",
+        "QT interval alone"
+      ],
+      "a": 0,
+      "e": "Atrial origin is reflected most directly by P-wave morphology, which may be flattened, notched, peaked, diphasic, or otherwise different from the sinus P.",
+      "wrong": [
+        "",
+        "R–R timing describes ventricular regularity and does not by itself locate the atrial impulse.",
+        "QRS duration mainly describes ventricular depolarization and does not by itself establish atrial origin.",
+        "QT spans ventricular depolarization and repolarization, not atrial impulse origin."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-014",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 1,
+      "category": "p-morphology",
+      "concept": "diphasic-definition",
+      "q": "What does diphasic mean when describing a P wave?",
+      "o": [
+        "It has components on both sides of the isoelectric baseline",
+        "It is entirely inverted below the baseline",
+        "It is split into two positive peaks",
+        "It is too small to identify"
+      ],
+      "a": 0,
+      "e": "A diphasic P wave crosses the isoelectric baseline, with components on opposite sides.",
+      "wrong": [
+        "",
+        "An entirely negative wave is inverted, not diphasic.",
+        "Two positive humps describe a notched appearance; they do not cross to the opposite side of baseline.",
+        "A flattened or absent P wave is not the same as a biphasic waveform."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ]
+    },
+    {
+      "id": "s19-015",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "diphasic-visual",
+      "q": "Which P-wave description best matches the teaching diagram?",
+      "o": [
+        "Diphasic",
+        "Inverted",
+        "Notched",
+        "Peaked"
+      ],
+      "a": 0,
+      "e": "The waveform has one component above and one below the isoelectric baseline, so it is diphasic.",
+      "wrong": [
+        "",
+        "An inverted P wave remains below the baseline rather than crossing it.",
+        "A notched P wave has two same-side peaks.",
+        "A peaked P wave has a single narrow, prominent positive apex."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "d": "s19_p_diphasic"
+    },
+    {
+      "id": "s19-016",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "notched-visual",
+      "q": "Which P-wave description best matches the teaching diagram?",
+      "o": [
+        "Notched",
+        "Diphasic",
+        "Flattened",
+        "Sawtooth"
+      ],
+      "a": 0,
+      "e": "Two positive humps separated by a small indentation create a notched P-wave appearance.",
+      "wrong": [
+        "",
+        "A diphasic wave has portions on opposite sides of baseline.",
+        "A flattened P wave has low amplitude without two distinct peaks.",
+        "Sawtooth activity repeats as organized flutter waves rather than forming one notched P wave."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "d": "s19_p_notched"
+    },
+    {
+      "id": "s19-017",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "peaked-visual",
+      "q": "Which P-wave description best matches the teaching diagram?",
+      "o": [
+        "Peaked",
+        "Flattened",
+        "Diphasic",
+        "Absent"
+      ],
+      "a": 0,
+      "e": "The waveform has a narrow, prominent positive apex, matching the course's peaked morphology term.",
+      "wrong": [
+        "",
+        "A flattened P wave would have low amplitude.",
+        "A diphasic wave would cross the baseline.",
+        "The P wave is visibly present."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "d": "s19_p_peaked"
+    },
+    {
+      "id": "s19-018",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "flattened-visual",
+      "q": "Which P-wave description best matches the teaching diagram?",
+      "o": [
+        "Flattened",
+        "Peaked",
+        "Inverted",
+        "Sawtooth"
+      ],
+      "a": 0,
+      "e": "The P wave is present but low-amplitude and flattened.",
+      "wrong": [
+        "",
+        "A peaked P wave is narrow and prominent.",
+        "An inverted P wave lies below baseline.",
+        "Sawtooth describes repeated organized flutter activity, not one low-amplitude P wave."
+      ],
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "d": "s19_p_flattened"
+    },
+    {
+      "id": "s19-019",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "af-vs-flutter",
+      "concept": "af-two-feature",
+      "q": "A tracing has no identifiable true P waves and its R–R intervals vary without a repeating pattern. Which rhythm description best fits?",
+      "o": [
+        "Atrial fibrillation",
+        "Atrial flutter",
+        "Junctional rhythm",
+        "Normal sinus rhythm"
+      ],
+      "a": 0,
+      "e": "Atrial fibrillation combines chaotic atrial activity/no true P waves with an irregularly irregular ventricular response.",
+      "wrong": [
+        "",
+        "Atrial flutter has organized flutter activity, commonly a sawtooth pattern where visible.",
+        "A junctional rhythm may have absent or inverted P waves, but the course pattern is not a chaotic fibrillatory baseline with irregularly irregular R–R spacing.",
+        "Normal sinus rhythm requires consistent sinus P waves before conducted QRS complexes."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "variants": [
+        "No true P waves are visible, the baseline is fibrillatory, and no R–R pattern repeats. Which rhythm is supported?"
+      ]
+    },
+    {
+      "id": "s19-020",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "af-vs-flutter",
+      "concept": "against-af",
+      "q": "⚠ AGAINST — Which finding would argue AGAINST atrial fibrillation?",
+      "o": [
+        "Organized repeating sawtooth atrial activity",
+        "No true organized P waves",
+        "A fibrillatory baseline",
+        "R–R intervals with no repeating pattern"
+      ],
+      "a": 0,
+      "e": "Organized sawtooth atrial activity supports atrial flutter, not the chaotic atrial activity of atrial fibrillation.",
+      "wrong": [
+        "",
+        "No true organized P waves is consistent with atrial fibrillation.",
+        "A fibrillatory baseline is consistent with atrial fibrillation.",
+        "Irregularly irregular R–R spacing is a key ventricular feature of atrial fibrillation."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "negative": true
+    },
+    {
+      "id": "s19-021",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "af-vs-flutter",
+      "concept": "flutter-vs-af",
+      "q": "Which feature most strongly favors atrial flutter over atrial fibrillation?",
+      "o": [
+        "Organized repeating flutter waves",
+        "No true P waves with a chaotic baseline",
+        "No repeating R–R pattern",
+        "Completely absent ventricular activity"
+      ],
+      "a": 0,
+      "e": "Organized repeating flutter waves, classically sawtooth where taught, favor atrial flutter.",
+      "wrong": [
+        "",
+        "A chaotic baseline without true P waves favors atrial fibrillation.",
+        "No repeating R–R pattern favors atrial fibrillation's irregularly irregular ventricular response.",
+        "Absent ventricular activity describes asystole, not atrial flutter."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-022",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "af-vs-flutter",
+      "concept": "af-visual",
+      "q": "Inspect the schematic teaching strip. Which interpretation is best supported?",
+      "o": [
+        "Atrial fibrillation: no true P waves and irregularly irregular R–R spacing",
+        "Atrial flutter: organized sawtooth atrial activity",
+        "Normal sinus rhythm: one consistent P before each QRS",
+        "Asystole: no detectable ventricular electrical activity"
+      ],
+      "a": 0,
+      "e": "The strip shows a chaotic fibrillatory baseline without organized P waves and unpredictably spaced QRS complexes.",
+      "wrong": [
+        "",
+        "The baseline is not organized into repeating sawtooth flutter waves.",
+        "Consistent sinus P waves are not visible and the R–R spacing is not regular.",
+        "QRS complexes are present, so ventricular electrical activity is not absent."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_af_strip"
+    },
+    {
+      "id": "s19-023",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "af-vs-flutter",
+      "concept": "flutter-visual",
+      "q": "Inspect the schematic teaching strip. Which interpretation is best supported?",
+      "o": [
+        "Atrial flutter with organized sawtooth atrial activity",
+        "Atrial fibrillation with a chaotic baseline",
+        "Junctional rhythm with inverted P waves",
+        "Ventricular fibrillation with no discernible complexes"
+      ],
+      "a": 0,
+      "e": "The baseline contains organized, repeating sawtooth flutter activity.",
+      "wrong": [
+        "",
+        "Atrial fibrillation is chaotic and lacks organized repeating atrial activity.",
+        "A junctional rhythm may have inverted P waves, not continuous organized sawtooth waves.",
+        "Ventricular fibrillation has no discernible organized complexes; this strip contains organized atrial activity and QRS complexes."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_flutter_strip"
+    },
+    {
+      "id": "s19-024",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "af-vs-flutter",
+      "concept": "af-combination",
+      "q": "Which combination correctly describes atrial fibrillation?",
+      "o": [
+        "Chaotic atrial activity + no true P waves + irregular ventricular response",
+        "Organized sawtooth atrial activity + repeating flutter waves",
+        "Inverted P waves + regular junctional ventricular response",
+        "Normal sinus activation + prolonged AV conduction"
+      ],
+      "a": 0,
+      "e": "Atrial fibrillation is defined here by chaotic atrial activity/no true P waves and an irregularly irregular ventricular response.",
+      "wrong": [
+        "",
+        "Organized sawtooth activity describes atrial flutter.",
+        "Inverted P waves with a regular response point toward junctional origin, not atrial fibrillation.",
+        "Normal sinus activation with AV delay describes a conduction issue, not fibrillatory atrial activity."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-025",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "af-vs-flutter",
+      "concept": "flutter-pr",
+      "q": "Why may the PR interval be unmeasurable in atrial flutter?",
+      "o": [
+        "Flutter waves may lie too close to the QRS to identify a single P onset",
+        "The ventricles do not depolarize",
+        "Every QRS is wider than 0.12 s",
+        "The AV junction is absent"
+      ],
+      "a": 0,
+      "e": "The course notes that proximity of flutter waves to the QRS can prevent identification of a discrete PR interval.",
+      "wrong": [
+        "",
+        "Atrial flutter can conduct to the ventricles and produce QRS complexes.",
+        "QRS width does not explain why a discrete P onset cannot be identified.",
+        "The AV junction is present; organized flutter activity is the measurement issue."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-026",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "junctional-origin",
+      "concept": "junctional-site",
+      "q": "A rhythm initiated in the pacemaking cells of the AV junction is classified by what origin?",
+      "o": [
+        "Junctional",
+        "Sinus",
+        "Atrial fibrillation",
+        "Ventricular"
+      ],
+      "a": 0,
+      "e": "An impulse initiated in the AV junction has a junctional origin.",
+      "wrong": [
+        "",
+        "Sinus origin requires the SA node.",
+        "Atrial fibrillation is chaotic atrial activity, not a label for every nonsinus impulse.",
+        "Ventricular origin begins below the AV junction in ventricular tissue/conduction structures."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-027",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "junctional-origin",
+      "concept": "junctional-p-visual",
+      "q": "The teaching strip shows a narrow QRS preceded by an inverted P wave. Which origin is most consistent with the course pattern?",
+      "o": [
+        "AV junction",
+        "SA node",
+        "Ventricular focus",
+        "Atrial flutter"
+      ],
+      "a": 0,
+      "e": "A visible junctional P wave is commonly inverted and may occur before, during, or after a narrow QRS.",
+      "wrong": [
+        "",
+        "A sinus P wave is expected to have the consistent sinus morphology rather than a retrograde inverted pattern.",
+        "A ventricular focus is associated with a wide, bizarre QRS rather than this narrow complex.",
+        "Atrial flutter produces organized repeating flutter waves, not one inverted P before each QRS."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_junctional_strip"
+    },
+    {
+      "id": "s19-028",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "origin-comparison",
+      "concept": "origin-morphology-matrix",
+      "q": "Which origin-to-morphology pairing is correctly matched?",
+      "o": [
+        "Atrial ectopic → altered P shape; junctional → inverted/hidden P; ventricular → wide QRS without preceding P",
+        "Atrial ectopic → wide QRS only; junctional → sawtooth baseline; ventricular → normal sinus P",
+        "Atrial ectopic → flatline; junctional → chaotic baseline; ventricular → notched P only",
+        "Atrial ectopic → paced spike; junctional → normal sinus P; ventricular → narrow QRS required"
+      ],
+      "a": 0,
+      "e": "The course distinguishes altered atrial P morphology, inverted/hidden junctional P waves, and wide ventricular complexes without preceding P waves.",
+      "wrong": [
+        "",
+        "Those morphologies are mismatched: wide QRS suggests ventricular origin and sawtooth suggests flutter.",
+        "Flatline and chaotic baseline describe asystole/VF-type patterns, not the stated origins.",
+        "A pacing spike identifies artificial stimulation, while normal sinus P and required narrow QRS do not fit the listed origins."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-029",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "ventricular-origin",
+      "concept": "ventricular-qrs",
+      "q": "Which finding most directly supports a ventricular rather than atrial or junctional origin in this course?",
+      "o": [
+        "A wide, bizarre QRS without a preceding P wave",
+        "A changed P-wave shape followed by a narrow QRS",
+        "An inverted P wave near a narrow QRS",
+        "A consistent sinus P before each QRS"
+      ],
+      "a": 0,
+      "e": "Ventricular impulses spread abnormally through ventricular tissue, producing a wide, bizarre QRS without a preceding P wave.",
+      "wrong": [
+        "",
+        "A changed P before a narrow QRS supports ectopic atrial origin.",
+        "An inverted P near a narrow QRS supports junctional origin.",
+        "A consistent sinus P before each QRS supports SA-node origin."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-030",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "ventricular-origin",
+      "concept": "pvc-visual",
+      "q": "A premature complex in the teaching strip is wide and bizarre and has no preceding P wave. Which origin best fits?",
+      "o": [
+        "Ventricular ectopic focus",
+        "Ectopic atrial focus",
+        "SA node",
+        "AV junction with a narrow conducted QRS"
+      ],
+      "a": 0,
+      "e": "A premature wide, bizarre QRS without a preceding P wave is the taught PVC/ventricular-origin pattern.",
+      "wrong": [
+        "",
+        "An atrial ectopic beat is identified by an abnormal premature P wave and is usually conducted through a narrower QRS.",
+        "A sinus impulse should be preceded by a consistent sinus P wave.",
+        "The diagram's wide complex does not match the narrow conducted QRS expected in the neighboring junctional pattern."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_ventricular_strip"
+    },
+    {
+      "id": "s19-031",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "ventricular-origin",
+      "concept": "idioventricular",
+      "q": "Which combination matches the class description of an idioventricular rhythm?",
+      "o": [
+        "Very slow ventricular rate with wide, bizarre QRS complexes",
+        "Rate 60–100/min with consistent sinus P waves",
+        "Irregularly irregular R–R intervals with no true P waves",
+        "Organized sawtooth atrial activity with narrow QRS complexes"
+      ],
+      "a": 0,
+      "e": "The class description pairs idioventricular origin with a very slow rate and wide, bizarre ventricular complexes.",
+      "wrong": [
+        "",
+        "That combination describes normal sinus features.",
+        "That combination describes atrial fibrillation.",
+        "That combination describes atrial flutter activity."
+      ],
+      "sourceRefs": [
+        "Chapter 09, pp. 7–50",
+        "ASPT term 45 caution"
+      ]
+    },
+    {
+      "id": "s19-032",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "terminal-patterns",
+      "concept": "vf-vs-asystole",
+      "q": "Which distinction correctly separates ventricular fibrillation from asystole on the recording?",
+      "o": [
+        "Ventricular fibrillation is chaotic with no discernible complexes; asystole lacks detectable ventricular electrical activity",
+        "Ventricular fibrillation has organized sawtooth waves; asystole has irregular QRS complexes",
+        "Ventricular fibrillation has inverted P waves; asystole has wide QRS complexes",
+        "Ventricular fibrillation is a slow sinus rhythm; asystole is a junctional rhythm"
+      ],
+      "a": 0,
+      "e": "VF is a chaotic baseline with no discernible waves or complexes; asystole is absence of detectable ventricular electrical activity.",
+      "wrong": [
+        "",
+        "Sawtooth activity is atrial flutter, and asystole does not contain irregular QRS complexes.",
+        "Inverted P waves and wide QRS complexes describe junctional/ventricular origins, not VF versus asystole.",
+        "Neither VF nor asystole is classified as the stated organized rhythm."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-033",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "terminal-patterns",
+      "concept": "asystole-visual",
+      "q": "The schematic shows a nearly flat trace with no QRS complexes. What is the best course-aligned response?",
+      "o": [
+        "Recognize possible asystole, while urgently checking the patient and recording connections",
+        "Call it controlled atrial fibrillation because P waves are absent",
+        "Call it agonal solely because the rate is slow",
+        "Conclude normal sinus rhythm with low voltage"
+      ],
+      "a": 0,
+      "e": "Asystole means no detectable ventricular electrical activity, but a flat trace can also be a lead/settings problem; assess the patient and verify the recording.",
+      "wrong": [
+        "",
+        "Atrial fibrillation should have ventricular QRS responses, not a flat trace without ventricular activity.",
+        "The course's limited agonal definition should not be assigned from a flat technical-looking trace solely by rate.",
+        "Normal sinus rhythm requires recurring sinus P–QRS cycles."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_asystole_strip"
+    },
+    {
+      "id": "s19-034",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "terminal-patterns",
+      "concept": "agonal-caution",
+      "q": "Which statement stays within the course's limited treatment of AGONAL?",
+      "o": [
+        "It describes a very slow, deteriorating terminal rhythm pattern; circulation cannot be judged from ECG alone",
+        "It is any rhythm below 60/min and therefore always sinus bradycardia",
+        "It is identical to asystole in every recording",
+        "It is confirmed whenever one wide QRS appears"
+      ],
+      "a": 0,
+      "e": "Section 19 uses a limited, flagged definition: a very slow, deteriorating terminal pattern, with patient assessment kept separate from the ECG.",
+      "wrong": [
+        "",
+        "Bradycardia is a rate term and does not by itself establish an agonal or sinus rhythm.",
+        "Asystole is absence of detectable ventricular activity; the terms should not be treated as identical.",
+        "One wide QRS supports ventricular morphology but does not by itself establish an agonal pattern."
+      ],
+      "sourceRefs": [
+        "ASPT guide term 45",
+        "Chapter 09, pp. 7–50"
+      ],
+      "f": "The ASPT guide lists AGONAL but does not formally define it; this question preserves the existing Section 19 caution and does not claim ECG-only confirmation."
+    },
+    {
+      "id": "s19-035",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "terminal-patterns",
+      "concept": "agonal-neighbor",
+      "q": "Which finding is LEAST consistent with the course's cautious description of an agonal pattern?",
+      "o": [
+        "A stable 60–100/min rhythm with consistent sinus P waves before each QRS",
+        "A very slow deteriorating terminal pattern",
+        "A very slow ventricular escape-type pattern described as less reliable as the heart dies",
+        "A pattern requiring patient assessment rather than an ECG-only circulation claim"
+      ],
+      "a": 0,
+      "e": "A stable normal-sinus pattern is least consistent with the limited description of a very slow deteriorating terminal rhythm.",
+      "wrong": [
+        "",
+        "That phrase is the course's cautious working definition.",
+        "The existing source link to a dying-heart/idioventricular pattern is the basis for the warning.",
+        "The course explicitly separates ECG recognition from assessment of effective circulation."
+      ],
+      "sourceRefs": [
+        "ASPT guide term 45",
+        "Chapter 09, pp. 7–50"
+      ],
+      "negative": true,
+      "f": "AGONAL remains a flagged term because the guide lists it without a complete formal definition."
+    },
+    {
+      "id": "s19-036",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 1,
+      "category": "national-terms",
+      "concept": "arrhythmia-definition",
+      "q": "Which definition best matches ARRHYTHMIA in the Section 19 terminology?",
+      "o": [
+        "An abnormality of heart rate, rhythm, or impulse conduction",
+        "Any rhythm with unequal R–R intervals",
+        "Only a rhythm that begins in the ventricles",
+        "Any adult rate above 100/min"
+      ],
+      "a": 0,
+      "e": "Arrhythmia is an abnormality of rate, rhythm, or impulse conduction and is not limited to irregular rhythms.",
+      "wrong": [
+        "",
+        "Some arrhythmias are regular, so unequal R–R spacing is not required.",
+        "Arrhythmias may be sinus, atrial, junctional, ventricular, or conduction-related.",
+        "Above 100/min defines tachycardia by rate, not every form of arrhythmia."
+      ],
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "id": "s19-037",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "national-terms",
+      "concept": "arrhythmia-negative",
+      "q": "⚠ NOT — Which statement is NOT required for a rhythm to be called an arrhythmia?",
+      "o": [
+        "The R–R intervals must be irregular",
+        "The rate may be abnormal",
+        "Impulse conduction may be abnormal",
+        "The rhythm pattern may be abnormal"
+      ],
+      "a": 0,
+      "e": "Arrhythmias can be regular; the term covers abnormalities of rate, rhythm, or conduction.",
+      "wrong": [
+        "",
+        "An abnormal rate can fall under the arrhythmia definition.",
+        "Abnormal conduction can fall under the arrhythmia definition.",
+        "An abnormal rhythm pattern can fall under the arrhythmia definition."
+      ],
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ],
+      "negative": true
+    },
+    {
+      "id": "s19-038",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "rate-terms",
+      "concept": "brady-definition",
+      "q": "A rhythm is 58/min with inverted P waves close to each QRS. Which statement is most accurate?",
+      "o": [
+        "It is bradycardic by rate, and the P morphology suggests junctional rather than sinus origin",
+        "It is sinus bradycardia because every slow rhythm is sinus",
+        "It is idioventricular because every rate below 60/min is ventricular",
+        "It is atrial fibrillation because the rate is below 60/min"
+      ],
+      "a": 0,
+      "e": "The rate establishes bradycardia, while inverted P waves near narrow QRS complexes suggest junctional origin; rate alone does not establish sinus origin.",
+      "wrong": [
+        "",
+        "Slow rate alone cannot establish SA-node origin.",
+        "Ventricular origin requires ventricular morphology, not merely a rate below 60.",
+        "Atrial fibrillation is identified by chaotic atrial activity/no true P waves and irregularly irregular R–R spacing, not simply a slow rate."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-039",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "rate-terms",
+      "concept": "tachy-definition",
+      "q": "A rhythm is 118/min. Which conclusion is justified before morphology is reviewed?",
+      "o": [
+        "Tachycardia is present, but sinus, atrial, junctional, or ventricular origin remains undetermined",
+        "Sinus tachycardia is proven",
+        "Ventricular tachycardia is proven",
+        "Atrial flutter is proven"
+      ],
+      "a": 0,
+      "e": "Above 100/min establishes tachycardia in an adult, but morphology and rhythm features are needed to identify origin.",
+      "wrong": [
+        "",
+        "Sinus origin requires sinus P-wave evidence.",
+        "Ventricular origin requires wide ventricular morphology and related findings.",
+        "Atrial flutter requires organized flutter activity, not rate alone."
+      ],
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "id": "s19-040",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "paced-rhythms",
+      "concept": "paced-visual",
+      "q": "What feature in the teaching strip identifies artificial pacing rather than an intrinsic ectopic beat?",
+      "o": [
+        "A narrow, unnaturally straight spike immediately before the captured complex",
+        "An irregularly irregular R–R pattern",
+        "A sawtooth atrial baseline",
+        "A diphasic P wave"
+      ],
+      "a": 0,
+      "e": "A pacemaker impulse appears as a sharp pacing spike before the captured atrial or ventricular response.",
+      "wrong": [
+        "",
+        "Irregularly irregular R–R spacing supports atrial fibrillation, not pacing by itself.",
+        "Sawtooth activity supports atrial flutter.",
+        "Diphasic describes P-wave morphology and does not identify a pacemaker stimulus."
+      ],
+      "sourceRefs": [
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_paced_strip"
+    },
+    {
+      "id": "s19-041",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "sawtooth-vs-peaked",
+      "q": "Which distinction is correct?",
+      "o": [
+        "Peaked describes one P-wave shape; sawtooth describes repeating organized flutter activity",
+        "Peaked and sawtooth are interchangeable names for atrial fibrillation",
+        "Sawtooth means the P wave crosses the baseline once",
+        "Peaked means there are no true P waves"
+      ],
+      "a": 0,
+      "e": "A peaked P is a single morphology term, while sawtooth refers to organized repeating flutter activity.",
+      "wrong": [
+        "",
+        "Atrial fibrillation is chaotic and lacks organized repeating P/flutter waves.",
+        "Crossing the baseline with opposite components describes diphasic morphology.",
+        "No true P waves is associated with atrial fibrillation, not the definition of peaked."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-042",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "wandering-pacemaker-visual",
+      "q": "Across the teaching strip, P-wave shape changes before otherwise conducted QRS complexes. What mechanism best explains this course pattern?",
+      "o": [
+        "The pacemaker site changes from beat to beat",
+        "The ventricles are fibrillating",
+        "There is no atrial electrical activity",
+        "Every impulse begins in the same SA-node site"
+      ],
+      "a": 0,
+      "e": "In a wandering pacemaker, the pacemaker site changes, so P morphology and sometimes PR timing vary.",
+      "wrong": [
+        "",
+        "Ventricular fibrillation would not show organized conducted QRS complexes.",
+        "Changing visible P waves demonstrate atrial activity is present.",
+        "A single unchanged SA origin should produce a consistent sinus P morphology."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "d": "s19_wandering_p"
+    },
+    {
+      "id": "s19-043",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "p-morphology",
+      "concept": "absent-vs-flat",
+      "q": "Which statement correctly distinguishes an absent P wave from a flattened P wave?",
+      "o": [
+        "Absent means no identifiable true P wave; flattened means a low-amplitude P wave is still present",
+        "Both terms mean organized sawtooth flutter activity",
+        "Absent means inverted; flattened means diphasic",
+        "Both prove ventricular origin"
+      ],
+      "a": 0,
+      "e": "A flattened P wave remains identifiable at low amplitude; absent means no true P wave can be identified.",
+      "wrong": [
+        "",
+        "Sawtooth activity is a separate organized flutter pattern.",
+        "Inverted and diphasic are distinct direction/phase descriptions.",
+        "P-wave appearance must be combined with QRS and rhythm features; neither statement alone proves ventricular origin."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-044",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "origin-comparison",
+      "concept": "two-feature-origin",
+      "q": "A regular rhythm has narrow QRS complexes. P waves are inverted and may appear before, within, or after QRS. Which origin is most consistent?",
+      "o": [
+        "AV junction",
+        "SA node",
+        "Ventricular focus",
+        "Atrial fibrillation"
+      ],
+      "a": 0,
+      "e": "The combination of inverted/hidden P waves near a narrow QRS is the course pattern for junctional origin.",
+      "wrong": [
+        "",
+        "SA-node origin requires consistent sinus P waves.",
+        "Ventricular origin produces wide, bizarre QRS complexes.",
+        "Atrial fibrillation lacks true organized P waves and has an irregularly irregular ventricular response."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-045",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "origin-comparison",
+      "concept": "two-feature-ventricular",
+      "q": "A slow rhythm has wide, bizarre QRS complexes and no preceding P waves. Which conclusion uses both findings correctly?",
+      "o": [
+        "The impulse is ventricular in origin; the slow rate may fit an idioventricular escape pattern",
+        "The impulse is sinus because the rhythm is slow",
+        "The impulse is atrial because P waves are absent",
+        "The impulse is junctional because every escape rhythm is junctional"
+      ],
+      "a": 0,
+      "e": "Wide bizarre QRS complexes without preceding P waves establish ventricular morphology; the slow rate supports an idioventricular escape pattern.",
+      "wrong": [
+        "",
+        "Rate does not establish sinus origin, and sinus impulses should have sinus P waves.",
+        "Absent P waves alone do not establish atrial origin; the wide ventricular complexes point lower.",
+        "Escape rhythms may arise from the junction or ventricles; morphology distinguishes them."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-046",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "terminal-patterns",
+      "concept": "flatline-artifact",
+      "q": "A monitor displays a flat line. Which finding must be resolved before treating the tracing itself as proof of asystole?",
+      "o": [
+        "Whether the patient and recording connections/settings confirm true absence of ventricular activity",
+        "Whether the P waves are peaked or notched",
+        "Whether the R–R intervals are exactly equal",
+        "Whether the rhythm rate is above 100/min"
+      ],
+      "a": 0,
+      "e": "A disconnected lead or settings problem can mimic a flat trace, so patient assessment and recording verification are required.",
+      "wrong": [
+        "",
+        "P morphology cannot be judged on a flat technical-looking trace and does not resolve connectivity.",
+        "There are no visible R waves to compare.",
+        "A rate cannot be calculated without detectable ventricular complexes."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-047",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "ventricular-origin",
+      "concept": "against-ventricular",
+      "q": "⚠ AGAINST — Which finding argues most strongly AGAINST a ventricular origin?",
+      "o": [
+        "A consistent P wave before each narrow QRS",
+        "A wide bizarre QRS without a preceding P wave",
+        "A premature wide complex",
+        "A slow rhythm made of wide QRS complexes"
+      ],
+      "a": 0,
+      "e": "Consistent P waves before narrow conducted QRS complexes support supraventricular/sinus activation rather than a ventricular pacemaker focus.",
+      "wrong": [
+        "",
+        "That is the taught ventricular-origin morphology.",
+        "A premature wide complex is consistent with a ventricular ectopic beat.",
+        "A slow wide-complex rhythm can fit idioventricular origin."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "negative": true
+    },
+    {
+      "id": "s19-048",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "af-vs-flutter",
+      "concept": "rr-af-application",
+      "q": "R–R intervals are 0.62 s, 0.91 s, 0.70 s, 1.08 s, and 0.66 s with no repeating pattern, and no true P waves are visible. Which interpretation is strongest?",
+      "o": [
+        "Atrial fibrillation",
+        "Atrial flutter solely because the atrial waves are fast",
+        "Sinus arrhythmia",
+        "Regular junctional rhythm"
+      ],
+      "a": 0,
+      "e": "Unpredictable R–R variation plus absent true P waves is the two-feature pattern for atrial fibrillation.",
+      "wrong": [
+        "",
+        "Atrial flutter requires organized flutter activity; speed alone is not enough.",
+        "Sinus arrhythmia retains sinus P waves and usually shows a breathing-related patterned irregularity.",
+        "A regular junctional rhythm should not have irregularly irregular R–R spacing."
+      ],
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "id": "s19-049",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 2,
+      "category": "av-blocks",
+      "concept": "first-degree",
+      "q": "Which finding identifies first-degree AV block in the course material?",
+      "o": [
+        "A constant PR interval greater than 0.20 s with every P conducted",
+        "Progressive PR lengthening until a QRS is dropped",
+        "Constant PR intervals with intermittent dropped QRS complexes",
+        "No relationship between P waves and QRS complexes"
+      ],
+      "a": 0,
+      "e": "First-degree AV block delays conduction: the PR interval is constant but greater than 0.20 s, and each P is conducted.",
+      "wrong": [
+        "",
+        "Progressive lengthening with a dropped QRS describes second-degree Type I.",
+        "Constant conducted PR intervals with dropped QRS complexes describes second-degree Type II.",
+        "AV dissociation describes third-degree block."
+      ],
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    },
+    {
+      "id": "s19-050",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "av-blocks",
+      "concept": "wenckebach",
+      "q": "The PR interval lengthens beat by beat until one P wave is not followed by a QRS, then the pattern repeats. Which rhythm is described?",
+      "o": [
+        "Second-degree AV block Type I (Wenckebach)",
+        "First-degree AV block",
+        "Second-degree AV block Type II",
+        "Third-degree AV block"
+      ],
+      "a": 0,
+      "e": "Progressive PR lengthening followed by a dropped QRS is the taught Wenckebach pattern.",
+      "wrong": [
+        "",
+        "First-degree block has a prolonged but constant PR with every P conducted.",
+        "Type II has constant PR intervals in conducted beats with dropped QRS complexes.",
+        "Third-degree block has atrial and ventricular dissociation rather than a repeating lengthen-then-drop pattern."
+      ],
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    },
+    {
+      "id": "s19-051",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 3,
+      "category": "av-blocks",
+      "concept": "mobitz-ii",
+      "q": "Conducted beats have the same PR interval, but occasional P waves are not followed by QRS complexes. Which description fits?",
+      "o": [
+        "Second-degree AV block Type II",
+        "Second-degree AV block Type I",
+        "First-degree AV block",
+        "Atrial fibrillation"
+      ],
+      "a": 0,
+      "e": "Type II keeps a constant PR interval in conducted beats while intermittently blocking atrial impulses.",
+      "wrong": [
+        "",
+        "Type I progressively lengthens the PR before a dropped QRS.",
+        "First-degree block conducts every P wave.",
+        "Atrial fibrillation has no true organized P waves and irregularly irregular R–R timing."
+      ],
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    },
+    {
+      "id": "s19-052",
+      "t": "rhythms",
+      "module": 2,
+      "unit": 4,
+      "level": 4,
+      "category": "av-blocks",
+      "concept": "complete-block",
+      "q": "P waves march through regularly and QRS complexes march through at a separate slower rate, with no consistent PR relationship. Which conclusion fits?",
+      "o": [
+        "Third-degree (complete) AV block",
+        "First-degree AV block",
+        "Atrial flutter",
+        "Normal sinus rhythm"
+      ],
+      "a": 0,
+      "e": "Independent atrial and ventricular rhythms with no P–QRS relationship indicate complete AV dissociation/third-degree block.",
+      "wrong": [
+        "",
+        "First-degree block preserves one-to-one conduction with a constant prolonged PR.",
+        "Atrial flutter produces organized flutter waves rather than independent sinus P waves and QRS complexes.",
+        "Normal sinus rhythm has a consistent P before each conducted QRS."
+      ],
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    }
+  ],
+  "section19Flashcards": [
+    {
+      "front": "A-fib vs atrial flutter",
+      "back": "A-fib → chaotic atrial activity/no true P waves + irregularly irregular ventricular rhythm. Flutter → organized flutter/sawtooth activity.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "front": "Sinus rhythm origin",
+      "back": "SA node. Memory cue: SINUS = SA.",
+      "sourceRefs": [
+        "Chapter 03, p. 105",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "front": "R–R interval",
+      "back": "Compare R waves to assess ventricular regularity and ventricular rate where applicable.",
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ]
+    },
+    {
+      "front": "Diphasic P wave",
+      "back": "P wave has components on both sides of the isoelectric baseline.",
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ]
+    },
+    {
+      "front": "Abnormal atrial P morphology",
+      "back": "A changed atrial activation site may produce flattened, notched, peaked, or diphasic P morphology.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "front": "Junctional origin",
+      "back": "Impulse begins in the AV junction; visible P waves are commonly inverted and may fall before, within, or after QRS.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "front": "Ventricular origin",
+      "back": "Wide, bizarre QRS without a preceding P wave supports ventricular origin.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "front": "Ectopic firing",
+      "back": "Impulse begins outside the region normally responsible for pacemaker impulse formation.",
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "front": "Rate alone",
+      "back": "Below 60/min = bradycardia; above 100/min = tachycardia. Rate alone does not identify rhythm origin.",
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ]
+    },
+    {
+      "front": "Asystole",
+      "back": "No detectable ventricular electrical activity. Verify the patient and recording because a lead/settings problem can mimic a flat line.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "front": "AGONAL — course caution",
+      "back": "Very slow, deteriorating terminal pattern. The guide's definition is limited; do not infer effective circulation from ECG alone.",
+      "sourceRefs": [
+        "ASPT guide term 45",
+        "Chapter 09, pp. 7–50"
+      ]
+    },
+    {
+      "front": "Systematic rhythm sequence",
+      "back": "Regularity → rate → P waves → PR interval → QRS → QT only when supported.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31",
+        "ASPT competency 4h"
+      ]
+    },
+    {
+      "front": "AV block comparison",
+      "back": "1°: constant PR >0.20 s. Type I: longer, longer, drop. Type II: constant PR with dropped QRS. 3°: P and QRS unrelated.",
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    }
+  ],
+  "section19Coverage": [
+    {
+      "concept": "Systematic interpretation workflow",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31",
+        "ASPT competency 4h"
+      ],
+      "questionIds": [
+        "s19-001"
+      ]
+    },
+    {
+      "concept": "R–R interval: ventricular regularity/rate",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "questionIds": [
+        "s19-002",
+        "s19-003",
+        "s19-004",
+        "s19-005"
+      ]
+    },
+    {
+      "concept": "Sinus origin and normal sinus features",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 03, p. 105",
+        "Chapters 05–10"
+      ],
+      "questionIds": [
+        "s19-006",
+        "s19-007",
+        "s19-008",
+        "s19-010"
+      ]
+    },
+    {
+      "concept": "Bradycardia/tachycardia as rate terms",
+      "status": "supported",
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ],
+      "questionIds": [
+        "s19-009",
+        "s19-038",
+        "s19-039"
+      ]
+    },
+    {
+      "concept": "Ectopic firing and atrial origin",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-011",
+        "s19-012",
+        "s19-013"
+      ]
+    },
+    {
+      "concept": "P-wave morphology: diphasic, inverted, flattened, notched, peaked, sawtooth, absent",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-014",
+        "s19-015",
+        "s19-016",
+        "s19-017",
+        "s19-018",
+        "s19-041",
+        "s19-042",
+        "s19-043"
+      ]
+    },
+    {
+      "concept": "Atrial fibrillation vs atrial flutter",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-019",
+        "s19-020",
+        "s19-021",
+        "s19-022",
+        "s19-023",
+        "s19-024",
+        "s19-025",
+        "s19-048"
+      ]
+    },
+    {
+      "concept": "Junctional origin",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-026",
+        "s19-027",
+        "s19-044"
+      ]
+    },
+    {
+      "concept": "Ventricular origin and idioventricular/PVC morphology",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-028",
+        "s19-029",
+        "s19-030",
+        "s19-031",
+        "s19-045",
+        "s19-047"
+      ]
+    },
+    {
+      "concept": "Ventricular fibrillation, asystole, and recording verification",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31, 64–71",
+        "Chapter 06, pp. 11–49",
+        "Chapter 07, pp. 4–45",
+        "Chapter 08, pp. 7–31",
+        "Chapter 09, pp. 7–50",
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-032",
+        "s19-033",
+        "s19-046"
+      ]
+    },
+    {
+      "concept": "AGONAL terminology",
+      "status": "limited / flagged",
+      "sourceRefs": [
+        "ASPT guide term 45",
+        "Chapter 09, pp. 7–50"
+      ],
+      "questionIds": [
+        "s19-034",
+        "s19-035"
+      ],
+      "note": "Preserve the existing warning: the guide lists the term but does not provide a complete formal definition."
+    },
+    {
+      "concept": "Arrhythmia terminology",
+      "status": "supported",
+      "sourceRefs": [
+        "ASPT guide pp. 6–7",
+        "Chapters 05–10"
+      ],
+      "questionIds": [
+        "s19-036",
+        "s19-037"
+      ]
+    },
+    {
+      "concept": "Paced rhythm spike/capture",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-040"
+      ]
+    },
+    {
+      "concept": "AV block patterns",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ],
+      "questionIds": [
+        "s19-049",
+        "s19-050",
+        "s19-051",
+        "s19-052"
+      ]
+    }
+  ]
 };
