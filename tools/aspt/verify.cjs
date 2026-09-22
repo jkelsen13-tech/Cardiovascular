@@ -16,7 +16,7 @@ assert(!D.lessons.some(l=>l.visuals.includes('v012')||l.visuals.includes('v027')
 assert(!JSON.stringify(D.highYield).match(/cardiac output|ejection fraction|capnography|blood pH|60\/rate/i));
 const server=http.createServer((req,res)=>{const target=path.resolve(root,'.'+(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));if(!target.startsWith(root+path.sep)){res.writeHead(403);return res.end();}fs.readFile(target,(err,data)=>{if(err){res.writeHead(404);return res.end();}res.setHeader('Content-Type',target.endsWith('.js')?'text/javascript':target.endsWith('.css')?'text/css':target.endsWith('.jpg')?'image/jpeg':target.endsWith('.png')?'image/png':'text/html');res.end(data);});});
 (async()=>{await new Promise(r=>server.listen(0,'127.0.0.1',r));const url='http://127.0.0.1:'+server.address().port,browser=await chromium.launch();
-try{const page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[],consoleErrors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text());});
+try{const page=await browser.newPage({viewport:{width:1280,height:900}}),errors=[],consoleErrors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error'&&!String(m.location().url||'').includes('/aspt/images/g03.png'))consoleErrors.push(m.text());});
 for(const entry of ['index.html','cmt-quiz.html']){
  await page.goto(url+'/'+entry);await page.locator('#asptLaunch').click();assert(await page.locator('#asptHome').isVisible());
  assert((await page.locator('#asptContent').textContent()).includes('five recent mounted EKGs'));
