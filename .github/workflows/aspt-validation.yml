@@ -21,6 +21,8 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Verify ASPT coverage and teaching flow
         run: node tools/aspt/verify.cjs
+      - name: Verify Section 19 difficulty, coverage, and visuals
+        run: node tools/aspt/verify-section19.cjs
       - name: Verify existing study questions
         run: node tools/study/verify.cjs
       - name: Verify source ECG trainer

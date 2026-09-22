@@ -2,3 +2,23 @@
 .aspt header{position:static;background:transparent;color:inherit;box-shadow:none;padding:0}.aspt button,.aspt input,.aspt select{color:#172a3a}.aspt h2,.aspt h3,.aspt h4{color:#173046}.aspt-zoom button{background:#edf3f8}.aspt a:hover{text-decoration:underline}
 
 #home.aspt-active>.src-note{display:none}
+
+/* Section 19: tiered rhythm practice and comparison flashcards. */
+.s19-panel{margin:20px 0;padding:18px;border:2px solid #7c3aed;border-radius:16px;background:linear-gradient(135deg,#faf5ff,#fff)}
+.s19-panel h4{margin-top:0}
+.s19-panel .aspt-links button[data-action="practice-hard"]{background:#7c2d12;border-color:#7c2d12;color:#fff;font-weight:800}
+.s19-deck{margin-top:16px}
+.s19-deck>summary{cursor:pointer;font-weight:800;color:#5b21b6}
+.s19-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
+.s19-card{border:1px solid #c4b5fd;border-radius:12px;background:#fff;overflow:hidden}
+.s19-card summary{cursor:pointer;padding:12px;font-weight:700;min-height:48px}
+.s19-card summary span{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7c3aed;margin-bottom:4px}
+.s19-card p{margin:0;padding:0 12px 8px;line-height:1.45}
+.s19-card small{display:block;padding:0 12px 12px;color:#64748b}
+.s19-wave{display:block;width:100%;height:auto}
+@media(max-width:620px){
+  .s19-panel{padding:14px;margin:14px 0}
+  .s19-card-grid{grid-template-columns:1fr}
+  .s19-panel .aspt-links{display:grid;grid-template-columns:1fr}
+  .s19-panel .aspt-links button{width:100%;min-height:48px}
+}

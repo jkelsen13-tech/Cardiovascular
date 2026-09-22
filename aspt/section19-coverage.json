@@ -1,0 +1,716 @@
+{
+  "section": 19,
+  "title": "ECG Rhythms / National Testing Terminology",
+  "authoritativeBase": "ASPT_DATA rhythms lesson and its cited Chapters 05–10; related waveform foundations in Chapter 04; ASPT competency 4h and terms 45, 46, 48, 52, 56, 75, 78.",
+  "generatedFromBranch": "codex/section-19-hard-mode",
+  "inventory": {
+    "originalQuestionCount": 21,
+    "originalQuestionIds": [
+      222,
+      223,
+      228,
+      229,
+      230,
+      232,
+      233,
+      234,
+      235,
+      236,
+      237,
+      238,
+      239,
+      240,
+      261,
+      262,
+      263,
+      273,
+      306,
+      308,
+      310
+    ],
+    "originalDedicatedVisualQuestionCount": 0,
+    "originalDedicatedFlashcardCount": 0,
+    "originalTerminologyCardCount": 7,
+    "revisedQuestionCount": 21,
+    "addedQuestionCount": 31,
+    "currentQuestionCount": 52,
+    "difficultyCounts": {
+      "level1": 4,
+      "level2": 14,
+      "level3": 25,
+      "level4": 9
+    },
+    "visualQuestionCount": 13,
+    "flashcardCount": 13
+  },
+  "selectionRules": {
+    "normal": "24 questions, category-balanced, answer-order randomized, primarily Levels 2–4, with safe wording variants where supplied.",
+    "hard": "24 questions, Levels 3–4 only, category-balanced, with a target of at least 10 native schematic waveform/rhythm-strip questions when available.",
+    "invariant": "Question concepts are tracked by category and concept id so category rounds are filled before narrow repeats."
+  },
+  "coverage": [
+    {
+      "concept": "Systematic interpretation workflow",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31",
+        "ASPT competency 4h"
+      ],
+      "questionIds": [
+        "s19-001"
+      ]
+    },
+    {
+      "concept": "R–R interval: ventricular regularity/rate",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ],
+      "questionIds": [
+        "s19-002",
+        "s19-003",
+        "s19-004",
+        "s19-005"
+      ]
+    },
+    {
+      "concept": "Sinus origin and normal sinus features",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 06, pp. 11–49",
+        "Section 19 lesson body 2–3",
+        "ASPT guide terms 52, 75, 78 (pp. 6–7)"
+      ],
+      "questionIds": [
+        "s19-006",
+        "s19-007",
+        "s19-008",
+        "s19-010"
+      ]
+    },
+    {
+      "concept": "Bradycardia/tachycardia as rate terms",
+      "status": "supported",
+      "sourceRefs": [
+        "ASPT guide terms 52, 75, 78 (pp. 6–7)",
+        "Chapter 06, pp. 11–49",
+        "ASPT guide term 52 (p. 6)",
+        "Chapter 06, pp. 11–49 (rate distinction)",
+        "Chapter 08, pp. 7–31 (junctional P morphology/origin)"
+      ],
+      "questionIds": [
+        "s19-009",
+        "s19-038",
+        "s19-039"
+      ]
+    },
+    {
+      "concept": "Ectopic firing and atrial origin",
+      "status": "supported",
+      "sourceRefs": [
+        "ASPT guide term 56 (p. 6)",
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ],
+      "questionIds": [
+        "s19-011",
+        "s19-012",
+        "s19-013"
+      ]
+    },
+    {
+      "concept": "P-wave morphology: diphasic, inverted, flattened, notched, peaked, sawtooth, absent",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ],
+      "questionIds": [
+        "s19-014",
+        "s19-015",
+        "s19-016",
+        "s19-017",
+        "s19-018",
+        "s19-041",
+        "s19-042",
+        "s19-043"
+      ]
+    },
+    {
+      "concept": "Atrial fibrillation vs atrial flutter",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45"
+      ],
+      "questionIds": [
+        "s19-019",
+        "s19-020",
+        "s19-021",
+        "s19-022",
+        "s19-023",
+        "s19-024",
+        "s19-025",
+        "s19-048"
+      ]
+    },
+    {
+      "concept": "Junctional origin",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31",
+        "Chapters 07–08, pp. 4–45 and 7–31",
+        "Section 19 lesson body 3"
+      ],
+      "questionIds": [
+        "s19-026",
+        "s19-027",
+        "s19-044"
+      ]
+    },
+    {
+      "concept": "Ventricular origin and idioventricular/PVC morphology",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapters 07–08, pp. 4–45 and 7–31",
+        "Section 19 lesson body 3",
+        "Existing authorized Section 19 ventricular-origin bank material"
+      ],
+      "questionIds": [
+        "s19-028",
+        "s19-029",
+        "s19-030",
+        "s19-031",
+        "s19-045",
+        "s19-047"
+      ]
+    },
+    {
+      "concept": "Ventricular fibrillation, asystole, and recording verification",
+      "status": "supported",
+      "sourceRefs": [
+        "ASPT guide terms 45 and 48 (p. 6)",
+        "Section 19 lesson body 5",
+        "Existing authorized Section 19 terminal-rhythm bank material"
+      ],
+      "questionIds": [
+        "s19-032",
+        "s19-033",
+        "s19-046"
+      ]
+    },
+    {
+      "concept": "AGONAL terminology",
+      "status": "limited / flagged",
+      "sourceRefs": [
+        "ASPT guide term 45 (p. 6; term listed, not formally defined)",
+        "Chapter 09, pp. 7–50 (nearby idioventricular/deterioration context)",
+        "Section 19 flagged working description"
+      ],
+      "questionIds": [
+        "s19-034",
+        "s19-035"
+      ],
+      "note": "Preserve the existing warning: the guide lists the term but does not provide a complete formal definition."
+    },
+    {
+      "concept": "Arrhythmia terminology",
+      "status": "supported",
+      "sourceRefs": [
+        "ASPT guide terms 45–48, 52, 56, 75, 78 (pp. 6–7)",
+        "Section 19 lesson body 5"
+      ],
+      "questionIds": [
+        "s19-036",
+        "s19-037"
+      ]
+    },
+    {
+      "concept": "Paced rhythm spike/capture",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 10, pp. 15–28"
+      ],
+      "questionIds": [
+        "s19-040"
+      ]
+    },
+    {
+      "concept": "AV block patterns",
+      "status": "supported",
+      "sourceRefs": [
+        "Chapter 09, pp. 7–50",
+        "Section 19 lesson body 3"
+      ],
+      "questionIds": [
+        "s19-049",
+        "s19-050",
+        "s19-051",
+        "s19-052"
+      ]
+    }
+  ],
+  "terminology": [
+    {
+      "id": 45,
+      "term": "AGONAL",
+      "status": "Covered but needs reinforcement",
+      "note": "The ASPT guide lists AGONAL but does not formally define it. Section 19 preserves a limited, flagged course-aligned description and avoids ECG-only claims about circulation.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    },
+    {
+      "id": 46,
+      "term": "ARRHYTHMIA",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    },
+    {
+      "id": 48,
+      "term": "ASYSTOLE",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    },
+    {
+      "id": 52,
+      "term": "BRADYCARDIA",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    },
+    {
+      "id": 56,
+      "term": "ECTOPIC FIRING",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    },
+    {
+      "id": 75,
+      "term": "SINUS RHYTHM",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    },
+    {
+      "id": 78,
+      "term": "TACHYCARDIA",
+      "status": "Covered completely",
+      "note": "Definition and multiple-choice distinction supplied; class sources are listed.",
+      "sources": [
+        [
+          5,
+          "2–31, 64–71"
+        ],
+        [
+          6,
+          "11–49"
+        ],
+        [
+          7,
+          "4–45"
+        ],
+        [
+          8,
+          "7–31"
+        ],
+        [
+          9,
+          "7–50"
+        ],
+        [
+          10,
+          "15–28"
+        ]
+      ]
+    }
+  ],
+  "visuals": [
+    {
+      "questionId": "s19-004",
+      "diagramId": "s19_rr_irregular",
+      "concept": "rr-visual-irregular",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ]
+    },
+    {
+      "questionId": "s19-005",
+      "diagramId": "s19_rr_regular",
+      "concept": "rr-visual-regular",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ]
+    },
+    {
+      "questionId": "s19-015",
+      "diagramId": "s19_p_diphasic",
+      "concept": "diphasic-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ]
+    },
+    {
+      "questionId": "s19-016",
+      "diagramId": "s19_p_notched",
+      "concept": "notched-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ]
+    },
+    {
+      "questionId": "s19-017",
+      "diagramId": "s19_p_peaked",
+      "concept": "peaked-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ]
+    },
+    {
+      "questionId": "s19-018",
+      "diagramId": "s19_p_flattened",
+      "concept": "flattened-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ]
+    },
+    {
+      "questionId": "s19-022",
+      "diagramId": "s19_af_strip",
+      "concept": "af-visual",
+      "level": 4,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "questionId": "s19-023",
+      "diagramId": "s19_flutter_strip",
+      "concept": "flutter-visual",
+      "level": 4,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "questionId": "s19-027",
+      "diagramId": "s19_junctional_strip",
+      "concept": "junctional-p-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    },
+    {
+      "questionId": "s19-030",
+      "diagramId": "s19_ventricular_strip",
+      "concept": "pvc-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Section 19 lesson body 3",
+        "Existing authorized Section 19 ventricular-origin bank material"
+      ]
+    },
+    {
+      "questionId": "s19-033",
+      "diagramId": "s19_asystole_strip",
+      "concept": "asystole-visual",
+      "level": 3,
+      "sourceRefs": [
+        "ASPT guide terms 45 and 48 (p. 6)",
+        "Section 19 lesson body 5",
+        "Existing authorized Section 19 terminal-rhythm bank material"
+      ]
+    },
+    {
+      "questionId": "s19-040",
+      "diagramId": "s19_paced_strip",
+      "concept": "paced-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 10, pp. 15–28"
+      ]
+    },
+    {
+      "questionId": "s19-042",
+      "diagramId": "s19_wandering_p",
+      "concept": "wandering-pacemaker-visual",
+      "level": 3,
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45",
+        "Section 19 lesson body 3"
+      ]
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "A-fib vs atrial flutter",
+      "back": "A-fib → chaotic atrial activity/no true P waves + irregularly irregular ventricular rhythm. Flutter → organized flutter/sawtooth activity.",
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "front": "Sinus rhythm origin",
+      "back": "SA node. Memory cue: SINUS = SA.",
+      "sourceRefs": [
+        "Chapter 03, p. 105",
+        "Chapter 06, pp. 11–49"
+      ]
+    },
+    {
+      "front": "R–R interval",
+      "back": "Compare R waves to assess ventricular regularity and ventricular rate where applicable.",
+      "sourceRefs": [
+        "Chapter 04, pp. 46–58",
+        "Chapter 05, pp. 2–31"
+      ]
+    },
+    {
+      "front": "Diphasic P wave",
+      "back": "P wave has components on both sides of the isoelectric baseline.",
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "front": "Abnormal atrial P morphology",
+      "back": "A changed atrial activation site may produce flattened, notched, peaked, or diphasic P morphology.",
+      "sourceRefs": [
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "front": "Junctional origin",
+      "back": "Impulse begins in the AV junction; visible P waves are commonly inverted and may fall before, within, or after QRS.",
+      "sourceRefs": [
+        "Chapter 08, pp. 7–31"
+      ]
+    },
+    {
+      "front": "Ventricular origin",
+      "back": "Wide, bizarre QRS without a preceding P wave supports ventricular origin.",
+      "sourceRefs": [
+        "Section 19 lesson body 3",
+        "Existing authorized Section 19 ventricular-origin bank material"
+      ]
+    },
+    {
+      "front": "Ectopic firing",
+      "back": "Impulse begins outside the region normally responsible for pacemaker impulse formation.",
+      "sourceRefs": [
+        "ASPT guide term 56 (p. 6)",
+        "Chapter 07, pp. 4–45"
+      ]
+    },
+    {
+      "front": "Rate alone",
+      "back": "Below 60/min = bradycardia; above 100/min = tachycardia. Rate alone does not identify rhythm origin.",
+      "sourceRefs": [
+        "ASPT guide terms 52, 75, 78 (pp. 6–7)",
+        "Chapter 06, pp. 11–49"
+      ]
+    },
+    {
+      "front": "Asystole",
+      "back": "No detectable ventricular electrical activity. Verify the patient and recording because a lead/settings problem can mimic a flat line.",
+      "sourceRefs": [
+        "ASPT guide term 48 (p. 6)",
+        "Section 19 lesson body 5"
+      ]
+    },
+    {
+      "front": "AGONAL — course caution",
+      "back": "Very slow, deteriorating terminal pattern. The guide's definition is limited; do not infer effective circulation from ECG alone.",
+      "sourceRefs": [
+        "ASPT guide term 45 (p. 6; not formally defined)",
+        "Chapter 09, pp. 7–50"
+      ]
+    },
+    {
+      "front": "Systematic rhythm sequence",
+      "back": "Regularity → rate → P waves → PR interval → QRS → QT only when supported.",
+      "sourceRefs": [
+        "Chapter 05, pp. 2–31",
+        "ASPT competency 4h"
+      ]
+    },
+    {
+      "front": "AV block comparison",
+      "back": "1°: constant PR >0.20 s. Type I: longer, longer, drop. Type II: constant PR with dropped QRS. 3°: P and QRS unrelated.",
+      "sourceRefs": [
+        "Chapter 09, pp. 7–50"
+      ]
+    }
+  ],
+  "limitations": [
+    "The original course PDFs and ZIP archives are not stored in this repository; the repository retains audited chapter/page references and extracted study content.",
+    "AGONAL is listed by the ASPT guide but not formally defined there. Section 19 presents only a flagged working association inferred from nearby course material and avoids an ECG-only circulation claim.",
+    "All new strips are explicitly labeled schematic teaching diagrams and are not presented as patient or diagnostic tracings.",
+    "Ventricular-origin items are traced to the existing authorized Section 19 bank/lesson because the repository does not retain a dedicated ventricular-rhythm source PDF.",
+    "No question requires calculations beyond the Section 19 course workflow."
+  ]
+}
