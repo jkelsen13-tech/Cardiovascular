@@ -1,0 +1,71 @@
+name: Deployed main-site HTTPS smoke
+on:
+  pull_request:
+    paths: ['.github/workflows/main-site-live-smoke.yml']
+permissions:
+  contents: read
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing browser verification dependencies
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Pin exact deployed runtime and normal HTTPS
+        run: |
+          mkdir -p "$RUNNER_TEMP/live-main-site"
+          echo "CARDIO_BASE_URL=https://jkelsen13-tech.github.io/Cardiovascular/" >> "$GITHUB_ENV"
+          echo "CHROMIUM_PATH=$(node -p "require('playwright').chromium.executablePath()")" >> "$GITHUB_ENV"
+          echo "HEART_V3_PRESERVATION_EVIDENCE=$RUNNER_TEMP/live-main-site/preservation" >> "$GITHUB_ENV"
+          echo "FC_BROWSER_DIR=$RUNNER_TEMP/live-main-site/four-chamber" >> "$GITHUB_ENV"
+          echo "HEART_V3_ROUTE_EVIDENCE=$RUNNER_TEMP/live-main-site/routes" >> "$GITHUB_ENV"
+          echo "LIVE_STUDY_RECEIPT=$RUNNER_TEMP/live-main-site/live-study-ecg.json" >> "$GITHUB_ENV"
+          python3 - <<'PYCODE'
+          from pathlib import Path
+          from urllib.request import urlopen
+          import json,subprocess,os
+          expected='449d6db75ebbe9dea3676bb36ca1ea75e03a290d'
+          changed=subprocess.check_output(['git','diff','--name-only',expected,'HEAD'],text=True).splitlines()
+          assert changed==['.github/workflows/main-site-live-smoke.yml'],changed
+          local=json.loads(Path('BUILD-IDENTITY.json').read_text())
+          assert local['runtimeSnapshotSHA256']=='f82e95edde529c64168551fcdc43a9d1898b7ef1ac814ede7c1b48cd612eb42c'
+          with urlopen('https://jkelsen13-tech.github.io/Cardiovascular/BUILD-IDENTITY.json',timeout=30) as r:
+           assert r.status==200;live=json.load(r)
+          assert live==local
+          Path(os.environ['RUNNER_TEMP'],'live-main-site','source.json').write_text(json.dumps({'expectedDeployedCommit':expected,'verificationHead':subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip(),'onlyWorkflowDiff':changed,'runtimeSnapshotSHA256':local['runtimeSnapshotSHA256'],'normalHTTPS':True},indent=2))
+          PYCODE
+      - name: Live preservation and synthetic progress gate
+        run: |
+          node tools/heart-v3/teaching-clarity-preservation.cjs --browser-only
+      - name: Live four-chamber and signed flow
+        run: |
+          node tools/heart-v3/four-chamber-browser.cjs
+      - name: Live all26 microscopic UI stages
+        run: |
+          node - <<'JSCODE'
+          const fs=require('node:fs'),path=require('node:path');let s=fs.readFileSync('tools/heart-v3/routes-browser.cjs','utf8');s=s.replaceAll("x.startsWith('http://127.0.0.1:')","x.startsWith(new URL(process.env.CARDIO_BASE_URL).href)");fs.writeFileSync(path.join(process.env.RUNNER_TEMP,'main-live-routes.cjs'),s);
+          JSCODE
+          NODE_PATH="$GITHUB_WORKSPACE/node_modules" node "$RUNNER_TEMP/main-live-routes.cjs"
+      - name: Live existing ECG anatomical study
+        run: |
+          node tools/ecg-study/verify-heart.cjs
+      - name: Live original study and source-strip grading
+        run: |
+          cat > "$RUNNER_TEMP/main-live-study.cjs" <<'JSCODE'
+          const {chromium}=require('playwright'),A=require('node:assert/strict'),fs=require('node:fs');
+          (async()=>{const base='https://jkelsen13-tech.github.io/Cardiovascular/',b=await chromium.launch({executablePath:process.env.CHROMIUM_PATH,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});const result={base,context:'Fresh isolated browser context; synthetic sentinel only; no owner profile or existing storage accessed',checks:[],errors:[],failed:[]};try{const context=await b.newContext({viewport:{width:1024,height:900},hasTouch:true});const p=await context.newPage();p.on('pageerror',e=>result.errors.push(e.message));p.on('requestfailed',r=>result.failed.push({url:r.url(),reason:r.failure()?.errorText}));await p.goto(base);await p.evaluate(()=>localStorage.setItem('release.synthetic.sentinel','keep'));A.equal(await p.evaluate(()=>BANK.length),611);await p.locator('button[onclick="startRandomSetup()"]').click();A.equal(await p.locator('#randomSetup').isVisible(),true);await p.evaluate(()=>launch([BANK.find(q=>!q.qtype&&Array.isArray(q.o))],'Isolated release smoke'));const before=await p.locator('#qoptions .opt').allTextContents();const answer=await p.evaluate(()=>session.questions[session.idx].answer);await p.locator('#qoptions .opt').nth(answer).click();A.match(await p.locator('#qverdict').textContent(),/Correct/);A.match(await p.locator('#qexplain').textContent(),/Why:/);A.deepEqual(await p.locator('#qoptions .opt').allTextContents(),before);result.checks.push('Original611-bank Random Practice entry, actual graded MC, explanation and stable rendered options');await p.evaluate(()=>goHome());await p.locator('button[onclick="showEcg()"]').click();await p.locator('button[onclick="ecgStartPractice()"]').click();await p.locator('#ecgPickBtns button').nth(1).click();await p.waitForFunction(()=>ecgSession?.imageReady);A.equal(await p.locator('#ecgStrip img').evaluate(e=>e.naturalWidth>0),true);A.equal(await p.locator('#ecgReview').isVisible(),false);for(const f of await p.locator('#ecgFields fieldset').all())await f.locator('input[type=radio]').first().check();await p.click('#ecgCheckBtn');await p.waitForFunction(()=>ecgSession?.done);A.equal(await p.locator('#ecgReview').isVisible(),true);A.match(await p.locator('#ecgVerdict').textContent(),/fields correct/);result.checks.push('Actual ECG strip image, observation inputs, delayed source review and per-field feedback');A.equal(await p.evaluate(()=>localStorage.getItem('release.synthetic.sentinel')),'keep');await p.reload();A.equal(await p.evaluate(()=>localStorage.getItem('release.synthetic.sentinel')),'keep');A.deepEqual(result.errors,[]);A.deepEqual(result.failed,[]);result.status='PASS';fs.writeFileSync(process.env.LIVE_STUDY_RECEIPT,JSON.stringify(result,null,2));console.log(JSON.stringify(result));}finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});
+          JSCODE
+          NODE_PATH="$GITHUB_WORKSPACE/node_modules" node "$RUNNER_TEMP/main-live-study.cjs"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-main-site-verification
+          path: ${{ runner.temp }}/live-main-site/**/*.json
