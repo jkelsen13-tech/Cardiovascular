@@ -1,0 +1,65 @@
+{
+  "schema": "heart-v3-anatomy-manifest-1",
+  "sourceCommit": "f1a3a63f110e27ff0736047d52d04dba5d3087f9",
+  "sourceMeshes": 51,
+  "sourceTriangles": 208978,
+  "sourceLicense": "CC BY 4.0",
+  "sources": [
+    {
+      "id": "heart",
+      "sha256": "9afdfb2ccf926869813582cfe150dce8cb28377417a968a4f29a5b8dc060428b",
+      "bytes": 1745284,
+      "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Heart.glb"
+    },
+    {
+      "id": "vessels",
+      "sha256": "c7f196de2d36a354bf740176d3886c95a17da6b74d744423f2f82b61cf36af24",
+      "bytes": 2512720,
+      "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Blood_Vasculature_Heart.glb"
+    }
+  ],
+  "sourceBytesUnchangedAt": "ecg-study/assets/model-data.js",
+  "derivative": "Shared registration and 1e-6 display-unit quantization; all source triangles retained",
+  "sourceUnits": "Not established; display units are not millimeters",
+  "internalRepresentation": "Independent representative teaching reconstruction, not scanned chamber lumens",
+  "modelSeparation": "Numerical blood volume drives a per-chamber display-volume calibration. Molecular/illustrative fields do not compute the circulation solution.",
+  "processingCommand": "node tools/heart-v3/derive-geometry.cjs",
+  "validationCommands": [
+    "node tools/heart-v3/geometry.cjs",
+    "node tools/heart-v3/geometry-browser.cjs",
+    "node tools/heart-v3/geometry-offscreen-browser.cjs",
+    "node tools/heart-v3/geometry-profile.cjs"
+  ],
+  "files": [
+    {
+      "file": "heart-study-v3/anatomy.js",
+      "bytes": 41409,
+      "sha256": "6fe6edd532808c654f85d8e30ff8eeb56caa85d10fd4bab6b30caf3780943ff1"
+    },
+    {
+      "file": "heart-study-v3/renderer.js",
+      "bytes": 18322,
+      "sha256": "2700af8cb100bc181ea5ec66e59466e4b4d794e830dbb9603d7cce9149bd2356"
+    },
+    {
+      "file": "heart-study-v3/assets/source-geometry.js",
+      "bytes": 5871952,
+      "sha256": "5f3f615dce33e883f327630724009ba424f90866aa4b00dc30023007bf76315c"
+    },
+    {
+      "file": "heart-study-v3/assets/source-inventory.json",
+      "bytes": 41785,
+      "sha256": "dab203b32d0e8dc5f3342c07d4333cb49cc32c95e45e8905c3b16c94de2b97fa"
+    },
+    {
+      "file": "heart-study-v3/assets/ATTRIBUTION.md",
+      "bytes": 2241,
+      "sha256": "5105912ab74b3f7ef0fc2b3db4691d937527a1e76844b3e5144de4486c16c27d"
+    },
+    {
+      "file": "heart-study-v3/assets/CC-BY-4.0.txt",
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Respiratory anatomy explorer preview</title>
+<link rel="stylesheet" href="simulation-core/module.css">
+<style>
+  *{box-sizing:border-box} body{margin:0;background:#edf2f7;color:#15243a;font:16px/1.55 system-ui,sans-serif}main,body>header,footer{max-width:1040px;margin:auto;padding:16px}.hidden{display:none!important}h1{font-size:clamp(24px,4vw,34px);line-height:1.2}#homeMenu button{display:block;min-height:44px;padding:12px;margin:12px 0;background:#20334e;color:white;border:1px solid #809cb5;border-radius:9px;font:inherit;cursor:pointer}#homeMenu small{display:block}a{color:#165985}:focus-visible{outline:3px solid #bd6e00;outline-offset:3px}footer{font-size:14px}.preview-scope{border-left:4px solid #317895;padding:8px 12px;background:#e0edf4}
+</style>
+</head>
+<body>
+<header><h1>Respiratory anatomy explorer</h1><p class="preview-scope">Respiratory-only preview. Course images, the heart and other study modes remain in the complete private study package.</p></header>
+<main id="home"><section id="homeMenu" aria-label="Respiratory preview home"><p>Explore breathing anatomy, follow an airway toward gas exchange, or return to respiratory lessons and untimed practice.</p></section></main>
+<footer>Educational prototype. Gross anatomy and magnified instructional reconstruction are identified separately. Physical iPad/Safari and educator qualification remain pending. Preview progress is stored separately from the full study app.</footer>
+<script>
+  function goHome(){document.getElementById('homeMenu').classList.remove('hidden');}
+</script>
+<script src="simulation-core/controller.js"></script>
+<script src="simulation-core/progress.js"></script>
+<script src="simulation-core/content.js"></script>
+<script src="respiratory-study/mechanics.js"></script>
+<script src="simulation-core/module.js"></script>
+<script>
+  document.getElementById('heartSimulatorLaunch').remove();
+  CardiorespiratoryStudy.open('respiratory');
+</script>
+</body>
+</html>

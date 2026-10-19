@@ -1,0 +1,89 @@
+{
+  "sourceSha256": "a6a81718f4d0974bcbab47c6dc38efc941ad5c7f5f256bf7ff112c710a7fd932",
+  "derivedSha256": "71ef7cfc01436246450ac7dbf80f96d5b9c62c5057fe3c62b8164f4850382894",
+  "license": "CC BY 4.0",
+  "sourceManifest": "model-manifest.json",
+  "sharedTransform": {
+    "sourceCenter": [
+      -0.004961557686328888,
+      0.4785911738872528,
+      -0.0801189293852076
+    ],
+    "scale": 14.347444832568888,
+    "units": "illustrative scene units; source convention meters, physical scale unvalidated",
+    "axes": "+X patient left, +Y superior; +Z assumed anterior, educator review pending"
+  },
+  "members": {
+    "left-upper": [
+      "VH_F_hilum_upper_L",
+      "VH_F_lingula_superior_bronchopulmonary_segment",
+      "VH_F_left_anterior_bronchopulmonary_segment",
+      "VH_F_left_apical_bronchopulmonary_segment",
+      "VH_F_left_posterior_bronchopulmonary_segment",
+      "VH_F_lingula_inferior_bronchopulmonary_segment"
+    ],
+    "left-lower": [
+      "VH_F_left_superior_bronchopulmonary_segment",
+      "VH_F_left_posterior_basal_bronchopulmonary_segment",
+      "VH_F_left_anterior_basal_bronchopulmonary_segment",
+      "VH_F_left_lateral_basal_bronchopulmonary_segment",
+      "VH_F_left_medial_basal_bronchopulmonary_segment",
+      "VH_F_hilum_lower_L"
+    ],
+    "right-lower": [
+      "VH_F_right_medial_basal_bronchopulmonary_segment",
+      "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "VH_F_right_anterior_basal_bronchopulmonary_segment",
+      "VH_F_right_lateral_basal_bronchopulmonary_segment",
+      "VH_F_right_superior_bronchopulmonary_segment",
+      "VH_F_hilum_lower_R"
+    ],
+    "right-middle": [
+      "VH_F_right_medial_bronchopulmonary_segment",
+      "VH_F_right_lateral_bronchopulmonary_segmennt",
+      "VH_F_hilum_middle_R"
+    ],
+    "right-upper": [
+      "VH_F_right_anterior_bronchopulmonary_segm",
+      "VH_F_right_apical_bronchopulmonary_segment",
+      "VH_F_right_posterior_bronchopulmonary_segment",
+      "VH_F_hilum_upper_R"
+    ],
+    "airways": [
+      "VH_F_carina",
+      "VH_F_lungs_left_main_bronchus",
+      "VH_F_left_superior_lobar_bronchus",
+      "VH_F_left_inferior_lobar_bronchus",
+      "VH_F_left_anterior_basal_bronchus",
+      "VH_F_left_lingula_superior_bronchus",
+      "VH_F_left_apical_bronchus",
+      "VH_F_left_posterior_basal_bronchus",
+      "VH_F_left_medial_basal_bronchus",
+      "VH_F_left_superior_bronchus",
+      "VH_F_left_anterior_bronchus",
+      "VH_F_left_posterior_bronchus",
+      "VH_F_left_lateral_basal_bronchus",
+      "VH_F_left_lingula_inferior_bronchi",
+      "VH_F_right_main_lobar_bronchus",
+      "VH_F_right_middle_lobar_bronchus",
+      "VH_F_right_superior_lobar_bronchus",
+      "VH_F_right_inferior_lobar_bronchus",
+      "VH_F_right_anterior_basal_bronchus",
+      "VH_F_right_medial_basal_bronchus",
+      "VH_F_right_apical_bronchus",
+      "VH_F_right_posterior_basal_bronchus",
+      "VH_F_right_medial_bronchus",
+      "VH_F_right_lateral_bronchus",
+      "VH_F_right_anterior_bronchus",
+      "VH_F_right_lateral_basal_bronchus",
+      "VH_F_right_superior_bronchus",
+      "VH_F_right_posterior_bronchus",
+      "VH_F_trachea"
+    ]
+  },
+  "triangles": 54594,
+  "vertices": 29239,
+  "omissions": "Dense bronchial cartilage, laryngeal cartilages and unassigned hilum geometry omitted. All selected lung segment and named airway triangle topology retained, without simplification. No microscopic geometry inferred.",
+  "adaptation": "Merge by source lobe ancestry; one shared root normalization. Runtime smooth cage deformation is authored instructional motion, not validated tissue displacement or measured mesh-volume calibration.",
+  "registration": "Diaphragm and rib context are authored schematic structures fitted in this shared lung frame, not separately centered anatomical models. See model documentation for landmarks, clearance and limitations."
+}

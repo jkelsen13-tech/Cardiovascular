@@ -1,0 +1,665 @@
+{
+  "schema": "cardiovascular-main-runtime-1",
+  "scope": "Complete existing study platform with integrated heart, respiratory, lead and study updates",
+  "runtimeSnapshotSHA256": "f82e95edde529c64168551fcdc43a9d1898b7ef1ac814ede7c1b48cd612eb42c",
+  "runtimeFiles": {
+    "cmt-quiz.html": {
+      "bytes": 516465,
+      "sha256": "3552a747692fcba9cf6013e8a4ecc81e5ecc6731d8126ab59ff7aa911fb9ae3e"
+    },
+    "favicon.svg": {
+      "bytes": 410,
+      "sha256": "1786287bf1922a0015ef7839c3ac80a0c96faaffad34c76b6ca8d8a3e726f394"
+    },
+    "index.html": {
+      "bytes": 516465,
+      "sha256": "3552a747692fcba9cf6013e8a4ecc81e5ecc6731d8126ab59ff7aa911fb9ae3e"
+    },
+    "COPYRIGHT.md": {
+      "bytes": 2048,
+      "sha256": "2446792f87a75bf9b1840fceb0e82ed1ad9cd184fb30af6313e84c81ef30bb1a"
+    },
+    "study/teaching.css": {
+      "bytes": 1810,
+      "sha256": "24754398fea2620da58e15bca3611fc9f7fe0f70ce314cd1f8cab765554465a4"
+    },
+    "study/teaching.js": {
+      "bytes": 14438,
+      "sha256": "f008ec5108f3013dd3c4c964729fd6a601a71dfe3557de9653e6cb88dfc0e1b1"
+    },
+    "study/image-viewer.css": {
+      "bytes": 1774,
+      "sha256": "88e016a520542df74ad4068cd619583fa60fa0fc9e473fa8a05e7fb5523f2343"
+    },
+    "study/image-viewer.js": {
+      "bytes": 5291,
+      "sha256": "f7534902b646c1c41dda94e01f7b7c13c5ee33cf44a6caf752200eba0b5d742c"
+    },
+    "study/source-audit.json": {
+      "bytes": 26244,
+      "sha256": "dbef4b60b9c8dede40bff53c608553723b78a2f486f6eabb26f42ed76561dd44"
+    },
+    "ecg-study/module.css": {
+      "bytes": 17351,
+      "sha256": "ee443017bcacbb127eb2f9497ee2f2602704e358e8878cad169ed44f334da25a"
+    },
+    "ecg-study/content.js": {
+      "bytes": 15513,
+      "sha256": "2c30cf2461ce14213221be9ad742e97981be70cad6c49e3cc26bc853b82258a5"
+    },
+    "ecg-study/heart-3d.js": {
+      "bytes": 33037,
+      "sha256": "444f6cae0f4edce3dcec5430ba1665c194e28745118b629ff52d88463730df7f"
+    },
+    "ecg-study/RENDERING-UPSCALING-REVIEW.md": {
+      "bytes": 5062,
+      "sha256": "b78569f48792af3ef26feacafc1b7332eca621af859aea167b4d69c5f6866ecf"
+    },
+    "ecg-study/module.js": {
+      "bytes": 32202,
+      "sha256": "db42b73b9cafd4d52cfffff8ef4044dce1cc1951cb2c67c521e733532b2cbb75"
+    },
+    "heart-study-v3/flow.js": {
+      "bytes": 6935,
+      "sha256": "1adf22c3d480afb571a43021ea8779b5f65dddcd4cd687828f36e8f574e8330a"
+    },
+    "heart-study-v3/module.css": {
+      "bytes": 33931,
+      "sha256": "aaa80b4c6f58797e7299326512d5ef2d3d49fbe5fe9654d5101240c260592fdf"
+    },
+    "heart-study-v3/content.js": {
+      "bytes": 19963,
+      "sha256": "bf549cd5e7f45f29879b40d40b89cc4770801a1571952d1fb27fc1cd0d001726"
+    },
+    "heart-study-v3/detail.js": {
+      "bytes": 38076,
+      "sha256": "3ba9f94c28a297aaa716933abbdc1e3b48157201c49d2d4c95b36112495295ae"
+    },
+    "heart-study-v3/model.js": {
+      "bytes": 15513,
+      "sha256": "b83521bc97b36a4d993a0447242792761ed111e423e20615882e6c2d3b5f299f"
+    },
+    "heart-study-v3/renderer.js": {
+      "bytes": 19860,
+      "sha256": "088eb0e99a1e76f123a0921b05167f88fa5614ef0a20bcfa716bcaa6c02e3409"
+    },
+    "heart-study-v3/explorer.css": {
+      "bytes": 3322,
+      "sha256": "3ebcfd0cb98b1db2665b3c5ff69e96a0023210888b85d7722d7a737187552067"
+    },
+    "heart-study-v3/explorer.js": {
+      "bytes": 29857,
+      "sha256": "7004fec76905168f7467c5f0b432c6ecc5668b2457e82b466911240762213284"
+    },
+    "heart-study-v3/anatomy.js": {
+      "bytes": 54291,
+      "sha256": "64108df9991cf925e740c9d46524094a5c9ac8702e862ca4fa4c4d38202f4b4b"
+    },
+    "heart-study-v3/module.js": {
+      "bytes": 80983,
+      "sha256": "2c3bbeb63a97ee80143bf293447478ad78707fab3ab087ceff292ab2bfc59a6b"
+    },
+    "lead-placement/module.css": {
+      "bytes": 20358,
+      "sha256": "63a2a13934a43e01e30fe4dd3db522fffb0b380f8522747b9b89b77f54fc30ed"
+    },
+    "lead-placement/content.js": {
+      "bytes": 24748,
+      "sha256": "2f84b5b0c03161c2531988983ac5932c1615014bda8c00161f824e22fe70d62d"
+    },
+    "lead-placement/torso-3d.js": {
+      "bytes": 31800,
+      "sha256": "ff84ca8431989e39634173dc29c081194976a9d1a1caa4eaba28485a395b53a9"
+    },
+    "lead-placement/module.js": {
+      "bytes": 35021,
+      "sha256": "9c4ce6e2d7be6c4148b4f536fc96678f150cd44a4e096acb0e2c7cfc249e21ee"
+    },
+    "aspt/section19-coverage.json": {
+      "bytes": 15649,
+      "sha256": "400b19a6841dd8932cc547b09df9cf2f178dea9bee5973e41da7256ea03ba668"
+    },
+    "aspt/exam.css": {
+      "bytes": 4167,
+      "sha256": "2d8b7bea0598af26d01e0bf5bd80e73bc5c3a47aa1712a8e167c251df07fdfca"
+    },
+    "aspt/coverage.json": {
+      "bytes": 59026,
+      "sha256": "0adaaa45feeb51298cff310ef9cae53815bc4a3409b6f5c0fff55f3d345da57b"
+    },
+    "aspt/mock-bank.js": {
+      "bytes": 90603,
+      "sha256": "cafa627b5a26fefe778b4f88db56546f914a3aedaccba370d5f29e966dd24f69"
+    },
+    "aspt/content.js": {
+      "bytes": 260666,
+      "sha256": "65cf08ca31326d233c692b745ac11989e05400422b2b0314e698f5f48ca7ef69"
+    },
+    "aspt/v2-coverage.json": {
+      "bytes": 71386,
+      "sha256": "8622b9a2bc8e66506d7579ba99e7957a002ab8e5c7a04b7c2cba29cde38838e0"
+    },
+    "aspt/exam.js": {
+      "bytes": 16376,
+      "sha256": "db1036a672b4bd5f1ede089eca525106688017acac67fc2927d491cbd128fd02"
+    },
+    "aspt/mock.js": {
+      "bytes": 10467,
+      "sha256": "0e802f1cf8babba7530be30cccf7728063c3d157c10577ef97087fb279a3cc2a"
+    },
+    "aspt/scope-audit.json": {
+      "bytes": 17933,
+      "sha256": "58b91ac4078bebb48866137dd8af789e8911a0535b14450fc168f5f90c7e4822"
+    },
+    "aspt/blueprint.json": {
+      "bytes": 7000,
+      "sha256": "48bb3ad2771b6cadc721d512c89d854d4cbf35ccd7dce10671db52fbf5a4e68c"
+    },
+    "ecg/source-audit.json": {
+      "bytes": 18092,
+      "sha256": "64e36086938adf51d3aa52e257cbcbcc3f8f8833778a47eeb4ad7fdc04f24029"
+    },
+    "ecg/trainer.css": {
+      "bytes": 1784,
+      "sha256": "86c17df546f0b8844e095ca7e6bf0148968daa742d7842e327480943615c47c6"
+    },
+    "ecg/trainer.js": {
+      "bytes": 17079,
+      "sha256": "837035e12ed6e0b991fef0d88eeac746964090cd6a7d77c6db404df5266d7315"
+    },
+    "respiratory-study/respiratory-3d.js": {
+      "bytes": 11444,
+      "sha256": "23c505d8ef3b6c7e54bccbca6e6ead8138c8c85784ee54ceca60695cf9259ce2"
+    },
+    "respiratory-study/breathing-3d.js": {
+      "bytes": 35047,
+      "sha256": "8d332bab6e682a64c33fd1d20e9dbc5f130ee57330ddd387ab92ef58659091ee"
+    },
+    "respiratory-study/mechanics.js": {
+      "bytes": 3845,
+      "sha256": "548e852e4576d7c336e94b53504bdcc2b8686a9dcb98a6ab93471f3279057eb6"
+    },
+    "respiratory-study/explorer-detail.js": {
+      "bytes": 3340,
+      "sha256": "d1e94b75099c4c771c2558ee486b282628f47b740669b8f66cced5e9a7c7f725"
+    },
+    "respiratory-study/explorer.css": {
+      "bytes": 2087,
+      "sha256": "600ffa8668a0e7b36781d6f2a33ab3b5cc76b331ef17bd041e0fcd324f7b8a17"
+    },
+    "respiratory-study/explorer.js": {
+      "bytes": 15424,
+      "sha256": "9b200b8e643578377d81b8e4e7b02062b97e66dfca64553555bfabef77429bac"
+    },
+    "docs/RESPIRATORY-V2-MODEL.md": {
+      "bytes": 8255,
+      "sha256": "e195114cccbbc67c7cdc1143e315d76e8c8cc8cc5057e30a573fb89508b3c75e"
+    },
+    "docs/HEART-V3-NUMERICAL-MODEL.md": {
+      "bytes": 2114,
+      "sha256": "9ef065a5de5c52f4f7cad2c4a81c0930651a832a5f30ebbed275696e7801701e"
+    },
+    "docs/RESPIRATORY-EXPLORER.md": {
+      "bytes": 7706,
+      "sha256": "a791be132d4d3179219898fc9f09d2666c1e6f37833d73999f4fdbed019f9fef"
+    },
+    "docs/HEART-V3-INTERFACE.md": {
+      "bytes": 2418,
+      "sha256": "2ba5c819aea161c1d2c427281ca263f5ee53d7e9f2da31c6b5efb66ae360e6f3"
+    },
+    "docs/HEART-V3-ANATOMY.md": {
+      "bytes": 6768,
+      "sha256": "366510adc7bf86fad53006fcf76b4d8e1a05694bd8005e99cb6897a8155509f3"
+    },
+    "simulation-core/module.css": {
+      "bytes": 7019,
+      "sha256": "7fe9e390c9041198bd590950181c9cf997647e04f3b242f110ec25a017eb0df4"
+    },
+    "simulation-core/content.js": {
+      "bytes": 49155,
+      "sha256": "80b37d2b44b44d3d4a6b1aa9a04da6b8901576102ca37df6fd4c8169d4ba8982"
+    },
+    "simulation-core/progress.js": {
+      "bytes": 2328,
+      "sha256": "f1ca214f0156eba3519d778f47502a6d1a6dd4f6ff8d860ef982ec715982e877"
+    },
+    "simulation-core/controller.js": {
+      "bytes": 6497,
+      "sha256": "cac357c893a28cdc835addf4638563a666900e750a95fe2ee56f63fe34ac186b"
+    },
+    "simulation-core/module.js": {
+      "bytes": 60292,
+      "sha256": "fe578b6c1602269799d4cd32762cbf34c7a6a2db03f9315cd96c591233807b4b"
+    },
+    "study/images/v027.jpg": {
+      "bytes": 177975,
+      "sha256": "0d3d9212317fcdbc68b02f86cff6e282a445dabcabf351f7424eb002e5e5d2e7"
+    },
+    "study/images/v023.jpg": {
+      "bytes": 153219,
+      "sha256": "81d1d5d6a4e21ed902105f5c8a22f51c4caba4ff37a2ef501153eb75936249cd"
+    },
+    "study/images/v012.jpg": {
+      "bytes": 124927,
+      "sha256": "6f412d738532adf21e05d1853ef248818938d73051df44d9fb44f988a398cf5e"
+    },
+    "study/images/v009.jpg": {
+      "bytes": 181578,
+      "sha256": "abe565d2a886de665c82ad02253a60fe5d4b1b37de9d8320b93322a89bce4faa"
+    },
+    "study/images/v020.jpg": {
+      "bytes": 188410,
+      "sha256": "5037ff089098447caf0368310ee56e446a74486872fe0d2093924fd66e9cdac9"
+    },
+    "study/images/v002.jpg": {
+      "bytes": 112044,
+      "sha256": "070f0759ec189381beaed059da2d7cd0509ee483b118abbebbe29f07ca75f0ff"
+    },
+    "study/images/v021.jpg": {
+      "bytes": 151668,
+      "sha256": "697ab2b43108ee2dbc78b53ca2bbe4fca94c4823a756cf19ae6989d335af2c55"
+    },
+    "study/images/v004.jpg": {
+      "bytes": 166697,
+      "sha256": "ae48f6d652d1079e5f41e1ed87352cf390302968efc177555cbfdcc450d351af"
+    },
+    "study/images/v006.jpg": {
+      "bytes": 184868,
+      "sha256": "13e567dd58ad569653b11b4fab10a2f45acb2f54ed51c07d7d2d3f2eddb9186a"
+    },
+    "study/images/v029.jpg": {
+      "bytes": 130764,
+      "sha256": "141ee61f4d77b1c92f118145a01ef66970ea73c1462d96cb61d677e2e7d240b2"
+    },
+    "study/images/v007.jpg": {
+      "bytes": 233795,
+      "sha256": "4989fc5679d03ee396ec28d30d2a793ba6bc96366799f82d234521e5f6131a27"
+    },
+    "study/images/v030.jpg": {
+      "bytes": 129917,
+      "sha256": "b9ee712ac9210e2dd3506a73ce7216d514e9c3cec74e0031ed853a8f03ccd1c2"
+    },
+    "study/images/v017.jpg": {
+      "bytes": 322699,
+      "sha256": "393e8b3f02d92948a8f3a16c5788ba0a2b78066919936386c6b694815e17936f"
+    },
+    "study/images/v011.jpg": {
+      "bytes": 176141,
+      "sha256": "ce95ad771c0648154cf5207711a5430bc32d79631587c3ffe89a71baec2cb36f"
+    },
+    "study/images/v022.jpg": {
+      "bytes": 127551,
+      "sha256": "6a641a53f79888b4ce2ffd100f4db6802a4e93e9a0105bebb33b2cf65d4413e3"
+    },
+    "study/images/v019.jpg": {
+      "bytes": 139973,
+      "sha256": "6771f0e683dc463529ad52020dda05716680a335f17a84e7a7e846cebe9fe9be"
+    },
+    "study/images/v001.jpg": {
+      "bytes": 149000,
+      "sha256": "297d67366a5d8ad0392e7ebb05f5fc436757e644e91adeb0ad4459a3defc180c"
+    },
+    "study/images/v018.jpg": {
+      "bytes": 246035,
+      "sha256": "82666f323ba7c3d9116061d85f21b2833ada765b592b9b35ac98d1ea929cdef8"
+    },
+    "study/images/v013.jpg": {
+      "bytes": 55715,
+      "sha256": "e68b51c17d9dec7591cec8ca8af42872b0922f4a91074a851b6b4ea6863853ff"
+    },
+    "study/images/v028.jpg": {
+      "bytes": 191584,
+      "sha256": "c9b72720f6871ac388a7bedbd51f94d4e229a468911338de3e9c564a6bfc0f53"
+    },
+    "study/images/v026.jpg": {
+      "bytes": 124598,
+      "sha256": "5759d44470e85e4fe2a673c7f66e1ea9b7e636ab44266881a3603613de174c0a"
+    },
+    "study/images/v005.jpg": {
+      "bytes": 135450,
+      "sha256": "de2330539691214dbe90c3be1b899656becadc64dc4b06dd2e16dfca489960c5"
+    },
+    "study/images/v025.jpg": {
+      "bytes": 34060,
+      "sha256": "bd62c9bb681c65de2f83aa879165a2c735a216ef6605bfd8c2e2c8bb30abe7e5"
+    },
+    "study/images/v014.jpg": {
+      "bytes": 175801,
+      "sha256": "b6aac4f32c54dbf765db5e50cf6d5b44c3e9efafe340fafb05523e1a65121770"
+    },
+    "study/images/v016.jpg": {
+      "bytes": 197532,
+      "sha256": "7c041551db39960bb48983bd86885a564fade6890da243892e81f8d07fd7d304"
+    },
+    "study/images/v003.jpg": {
+      "bytes": 147663,
+      "sha256": "ba04dcb4741179bc8f1e9fd5e50d3c0c303b77c4b4ec14295deddf098de2bd23"
+    },
+    "study/images/v024.jpg": {
+      "bytes": 33475,
+      "sha256": "040da10840a93b2387f9ed8c4bcf6a6910b081620d85aaf6d82d5715d719f644"
+    },
+    "study/images/v010.jpg": {
+      "bytes": 164489,
+      "sha256": "3dd3d570820c295e01d91effe57f5358c8d086a5341d72a5bffc0eeebf0a768c"
+    },
+    "study/images/v008.jpg": {
+      "bytes": 220197,
+      "sha256": "5e9ce01145a096575f130724420da3796191221f8cacee221434ce4ab119457d"
+    },
+    "ecg-study/vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    "ecg-study/vendor/three-gltf.min.js": {
+      "bytes": 584440,
+      "sha256": "ed9ffbaecd4018ea8dc90fd74ae041543d03c6fd438c8abb5b833a1cc85a7dcd"
+    },
+    "ecg-study/assets/model-manifest.json": {
+      "bytes": 6863,
+      "sha256": "87555ee94f0bf3ad83919decdb89f87fae7cb91d9d79934881ff332dbc04a0d4"
+    },
+    "ecg-study/assets/CC-BY-4.0.txt": {
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    "ecg-study/assets/ATTRIBUTION.md": {
+      "bytes": 4980,
+      "sha256": "f06c2e5e1a90f84b07dfd534e979ea0bf75de4957bab8f962c83820cd92f2cab"
+    },
+    "ecg-study/assets/model-data.js": {
+      "bytes": 5677489,
+      "sha256": "d1bf8fe79e89aa96b83bad0af9802fa942913be0762d225dee46df64cf29ccab"
+    },
+    "heart-study-v3/assets/model-manifest.json": {
+      "bytes": 2696,
+      "sha256": "eea56d7f99431f42ac7eb4cbd13d27c6e761fbf53772cb2e8e526d16b3122812"
+    },
+    "heart-study-v3/assets/CC-BY-4.0.txt": {
+      "bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    "heart-study-v3/assets/source-inventory.json": {
+      "bytes": 41785,
+      "sha256": "dab203b32d0e8dc5f3342c07d4333cb49cc32c95e45e8905c3b16c94de2b97fa"
+    },
+    "heart-study-v3/assets/source-geometry.js": {
+      "bytes": 5871952,
+      "sha256": "5f3f615dce33e883f327630724009ba424f90866aa4b00dc30023007bf76315c"
+    },
+    "heart-study-v3/assets/ATTRIBUTION.md": {
+      "bytes": 2241,
+      "sha256": "5105912ab74b3f7ef0fc2b3db4691d937527a1e76844b3e5144de4486c16c27d"
+    },
+    "lead-placement/assets/model-manifest.json": {
+      "bytes": 2786,
+      "sha256": "e63455a6399e34306ff3781f73eaf18df8b822697f45e60bed8685b5d087f2d7"
+    },
+    "lead-placement/assets/registered-thorax.glb": {
+      "bytes": 3529136,
+      "sha256": "465222925f5f63a47cd4e204ffb74a5852f157e6e27e48390fe671caf22d4f78"
+    },
+    "lead-placement/assets/CC-BY-4.0.txt": {
+      "bytes": 18657,
+      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+    },
+    "lead-placement/assets/torso-model-data.js": {
+      "bytes": 4705662,
+      "sha256": "33a2ca73783ac515a2644597584abccf8411e37249ce11ea6502912c3a56c49c"
+    },
+    "lead-placement/assets/ATTRIBUTION.md": {
+      "bytes": 6064,
+      "sha256": "0d1a2dd28e08be17b5e0c65a7e08246eb118a6876ca85136a64dd7578b47ce69"
+    },
+    "lead-placement/assets/registered-thorax-manifest.json": {
+      "bytes": 56201,
+      "sha256": "7562e9306d8365b3dc608eec575c0426bd3eb6f326ac3f5b1a63b821353d6cc0"
+    },
+    "aspt/images/s02.jpg": {
+      "bytes": 365383,
+      "sha256": "5880eba47db029fe101d3e4eb7b47d5588f91f8aa094c8a99b98d817849f712d"
+    },
+    "aspt/images/g01.jpg": {
+      "bytes": 300989,
+      "sha256": "e0d0da76660130b2e8a4ad96dad24494eb67999e853262168013065714fa6d04"
+    },
+    "aspt/images/s01.jpg": {
+      "bytes": 192830,
+      "sha256": "f337570545f5ce353b2531f6b8cb768b4eeb1e66e9a1bbba6cc09ff2a68639d1"
+    },
+    "aspt/images/g02.png": {
+      "bytes": 672605,
+      "sha256": "5bf5731dbd91c087bb7b94a5e9ff165c6037fd5e498ffa2afc388f66f0bc5f4d"
+    },
+    "aspt/images/s03.jpg": {
+      "bytes": 363810,
+      "sha256": "6b2b923cbb79714457e19fe37334c1cb7f16f0e9a8fc70846701010e9e02b201"
+    },
+    "aspt/images/g03.png": {
+      "bytes": 68944,
+      "sha256": "6f2aef265acdace4fb6728f5e1543a1759bf98695570c753ecdb904de1e1f98f"
+    },
+    "images/slides/circulation-circuits.jpg": {
+      "bytes": 288511,
+      "sha256": "89e212705e32b7894533eda2b8a3a81ec13b673e108f8ff8014d83636f3d8824"
+    },
+    "images/slides/ecg-waveform.jpg": {
+      "bytes": 216859,
+      "sha256": "7fb9ce8d1a5edccb8d6c20512fa0ce01e0da45bb6a42baa0e8985e15e6297296"
+    },
+    "images/slides/body-planes.jpg": {
+      "bytes": 166783,
+      "sha256": "49ea79774468bae380a717e16095d3d15fb262fbe8d113ad914dd5b32af33715"
+    },
+    "images/slides/heart-valves.jpg": {
+      "bytes": 215579,
+      "sha256": "952aeed7b042f434e2b5f3b5ee8683151beb2d41968d0d068a494521dadff722"
+    },
+    "images/slides/ecg-paper.jpg": {
+      "bytes": 177934,
+      "sha256": "89e62b263baebd07c05344284e486abc41894dc713f8eb2a58b0449a9889f4f8"
+    },
+    "images/slides/conduction-system.jpg": {
+      "bytes": 155194,
+      "sha256": "901950d50ed7d30c0e1ee3af6683a6fdf9fe70db5cdcda7667d210a6f8861cbc"
+    },
+    "images/slides/directional-terms.jpg": {
+      "bytes": 108914,
+      "sha256": "3ed9f95a1514f272e0b3c71ab2e84218f7c5d5074f0d81825f47692ebe94a6da"
+    },
+    "images/slides/intercostal-spaces.jpg": {
+      "bytes": 157423,
+      "sha256": "18b5239225bed65c267291dd90bebcb4072edfdcebe34a374cd997b94969d9f0"
+    },
+    "images/slides/deflection-direction.jpg": {
+      "bytes": 133130,
+      "sha256": "482634f6579261c81d1667f5ee1a257103cb1c29bc4e690bca9a757e017e1fc9"
+    },
+    "images/slides/chest-landmark-lines.jpg": {
+      "bytes": 142571,
+      "sha256": "4419fac204a92e3f51125743a15d0899b87c81842869e149481acddb3344f474"
+    },
+    "images/slides/ecg-standardization-wave.jpg": {
+      "bytes": 212624,
+      "sha256": "896617dd0c3cd9206086878859f869cd33ffd52531e328ff35432dd72200b4f2"
+    },
+    "images/slides/autonomic-influence.jpg": {
+      "bytes": 213374,
+      "sha256": "ac4048086225d62b04f28c31551e125695ef8dc3aa2eecce7ea94b4b02f6f0e9"
+    },
+    "images/slides/action-potential.jpg": {
+      "bytes": 84657,
+      "sha256": "fdd0c2e6975c018625ca6e6791cb08a1349db09ff0e525010c5d22a65453d49f"
+    },
+    "images/slides/ecg-tic-marks.jpg": {
+      "bytes": 159574,
+      "sha256": "02ca4b488c17a681fa67627ff79f187535b0093f1387825b4a933a05998d8260"
+    },
+    "images/slides/coronary-perfusion-systole-diastole.jpg": {
+      "bytes": 249648,
+      "sha256": "b01f77f04a6c4d2261026eb761e9b346950966d06cbaad20a17a979ee090dc3b"
+    },
+    "images/slides/sternal-angle.jpg": {
+      "bytes": 184232,
+      "sha256": "e56b44f186786cfcb8dfc13c20256ead9b3973fa16556448e9e7c3bcaecd7f59"
+    },
+    "images/diagrams/heart-layers-labeled.jpg": {
+      "bytes": 137460,
+      "sha256": "b6d461356ddea3888e7432013322268b23b5695c83daeab2262127521d80fc91"
+    },
+    "images/diagrams/ecg-waveform-labeled.jpg": {
+      "bytes": 134026,
+      "sha256": "116fad80ce12f88ba6c36e65ec5843ca1e268401ae282f6adb334f1423abf7a8"
+    },
+    "images/diagrams/heart-conduction-diagram.jpg": {
+      "bytes": 225899,
+      "sha256": "d131a39264da93de5c8c1644d520c689c8004f15284a7fb07de5a5d3e3a1fe3a"
+    },
+    "images/diagrams/heart-bloodflow-diagram.jpg": {
+      "bytes": 100593,
+      "sha256": "57675b265494ea0cbdf82e7c2a9fe38cd631043f19388c8f3e9eaa27a446b0f1"
+    },
+    "images/diagrams/heart-structures-labeled.jpg": {
+      "bytes": 175511,
+      "sha256": "964a2f191e9d82e9f23b26c52814863afa188732956e28fb59afce8499ab71a8"
+    },
+    "images/diagrams/respiratory-structures-labeled.jpg": {
+      "bytes": 191340,
+      "sha256": "5972bcf249903ab2b11fac2b3341c48619e8e6e4cb5b8d5f3e205a5f533534c7"
+    },
+    "ecg/reviews/j1f624.js": {
+      "bytes": 14611,
+      "sha256": "41b547fe8dfe4cb372b348bc615750ee40f3bbc7dcf27203722b00bb0bec04b9"
+    },
+    "ecg/reviews/a6d28f.js": {
+      "bytes": 16709,
+      "sha256": "dd030da48a75abdff6f12491b9a0ab370053419c8b5050cd5b7cc75f0c555bd1"
+    },
+    "ecg/reviews/h5e139.js": {
+      "bytes": 14646,
+      "sha256": "c6782b5c98037171466e7838ce1b275e7881e4a0f28b3b51687230e8709d03c9"
+    },
+    "ecg/reviews/k8a473.js": {
+      "bytes": 14219,
+      "sha256": "6da25e6a87615b4b1b222137d180efad40c5b0c9d96c31ab3a88498184a7cf55"
+    },
+    "ecg/reviews/d7a350.js": {
+      "bytes": 15180,
+      "sha256": "ec769b054598552a6ba028033f9a64c618c6152f45418358abdd0a87b3e058c7"
+    },
+    "ecg/reviews/f8c205.js": {
+      "bytes": 14725,
+      "sha256": "37889954638d0e213c3c67805056e565fc77577f91b44c9760bd3277a165480f"
+    },
+    "ecg/reviews/b9e407.js": {
+      "bytes": 13908,
+      "sha256": "1de9d564ca088320315a8a7d85f58e229ae90f8367c5715bb780c9516280724a"
+    },
+    "ecg/reviews/c2f861.js": {
+      "bytes": 15202,
+      "sha256": "e2bbd5e096d640e796628be5effb6b9d4aac698d194ae34717e88a0d2e39ba04"
+    },
+    "ecg/reviews/p4d827.js": {
+      "bytes": 15582,
+      "sha256": "1938623a190af73b0910c39c1e6a4abf18855c01c07bd2650ad6767715b61150"
+    },
+    "ecg/reviews/e4b916.js": {
+      "bytes": 15043,
+      "sha256": "c0bea365e8887e5f9e2ac5d70bdc5c7213e28855e3b07d8c62083203f8ca221c"
+    },
+    "ecg/reviews/m2b695.js": {
+      "bytes": 14708,
+      "sha256": "6c2b64bd3daafebff62f631cd703fe9fd6c7c306dc5af0e5494595096262fdbc"
+    },
+    "ecg/reviews/n6c048.js": {
+      "bytes": 14318,
+      "sha256": "ee1e338aa589c34610d79fbd662c314060324657f96ab4d14dc6e4fe6a875c98"
+    },
+    "ecg/reviews/g3d782.js": {
+      "bytes": 13951,
+      "sha256": "87ccbf63a10fa9e543c934a5b31589fd14c70adf413b45fcd585d8b96e289cea"
+    },
+    "ecg/images/n6c048.png": {
+      "bytes": 240447,
+      "sha256": "34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c"
+    },
+    "ecg/images/g3d782.png": {
+      "bytes": 238038,
+      "sha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73"
+    },
+    "ecg/images/e4b916.png": {
+      "bytes": 240092,
+      "sha256": "9530f3aa3edea12cc1668c1d750caf70ef7aaeed286566ac695258d96129c1df"
+    },
+    "ecg/images/k8a473.png": {
+      "bytes": 235679,
+      "sha256": "14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408"
+    },
+    "ecg/images/a6d28f.png": {
+      "bytes": 331326,
+      "sha256": "06cb93b6c931a3b3e3fd93ea779b21271914614c8f4bece67539f5a309807c7d"
+    },
+    "ecg/images/h5e139.png": {
+      "bytes": 237642,
+      "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997"
+    },
+    "ecg/images/b9e407.png": {
+      "bytes": 229149,
+      "sha256": "475f4a18e91f79c5138ad3453d9e9fc8a6f720ad8ea8d136589c26efe0454f75"
+    },
+    "ecg/images/c2f861.png": {
+      "bytes": 240818,
+      "sha256": "5f52392deace7ec98a05c1b6633bda791aca61ef636fc8fafcbbada074c898e6"
+    },
+    "ecg/images/f8c205.png": {
+      "bytes": 237719,
+      "sha256": "75c06f514351fbcfa545b3fb320caa623ba5fd0746a6bf1f4846246b74b444a4"
+    },
+    "ecg/images/p4d827.png": {
+      "bytes": 219275,
+      "sha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a"
+    },
+    "ecg/images/d7a350.png": {
+      "bytes": 237447,
+      "sha256": "1ceac21f4293b94a48066f3229a4d33ee11d47cefbf021db6e83aec4150b4928"
+    },
+    "ecg/images/j1f624.png": {
+      "bytes": 236995,
+      "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d"
+    },
+    "ecg/images/m2b695.png": {
+      "bytes": 237491,
+      "sha256": "564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed"
+    },
+    "respiratory-study/assets/model-manifest.json": {
+      "bytes": 25171,
+      "sha256": "8ed95e481e6e24b1eb1125d3f4ca53439e2eef31d7b9a870eae2bd9c7f685da4"
+    },
+    "respiratory-study/assets/CC-BY-4.0.txt": {
+      "bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    "respiratory-study/assets/breathing-provenance.json": {
+      "bytes": 3891,
+      "sha256": "7f76b2af3fb74f5101a7294501115122549448ef72d0f5ef5dc35b5307076398"
+    },
+    "respiratory-study/assets/ATTRIBUTION.md": {
+      "bytes": 4918,
+      "sha256": "9e2ab1ba45ce62b3c7bcc2b0599719f1c336e5bec4c90fe61112d01c3ccb8968"
+    },
+    "respiratory-study/assets/model-data.js": {
+      "bytes": 14987572,
+      "sha256": "0f248c4c6a2e10b56fbc920e43352e0c555b2dbf8f712210d9bed9a848f90481"
+    },
+    "respiratory-study/assets/airway-metadata.js": {
+      "bytes": 11503,
+      "sha256": "dffa2dc45ce22d26d2e48f906a6586caee96ca0f252397fb90c1eadcfeff1040"
+    },
+    "respiratory-study/assets/breathing-data.js": {
+      "bytes": 1341954,
+      "sha256": "71ef7cfc01436246450ac7dbf80f96d5b9c62c5057fe3c62b8164f4850382894"
+    }
+  },
+  "progressPolicy": "Existing main-site origin and storage namespaces preserved; no reset or migration.",
+  "qualification": "Instructional models. Physical iPad/Safari/VoiceOver and educator qualification pending; cloud30fps goal not met."
+}

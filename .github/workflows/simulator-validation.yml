@@ -1,0 +1,35 @@
+name: Cardiorespiratory simulator verification
+on:
+  pull_request:
+    paths: ['simulation-core/**', 'respiratory-study/**', 'ecg-study/**', 'tools/simulators/**', 'index.html', 'cmt-quiz.html']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false playwright@1.55.1
+      - run: npx playwright install --with-deps chromium
+      - run: node tools/simulators/verify.cjs
+      - run: node tools/simulators/mechanics.cjs
+      - run: node tools/simulators/geometry.cjs
+      - run: node tools/simulators/aspt-bank.cjs
+      - name: Local HTTP interaction and regression checks
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/simulator-http.log 2>&1 &
+          node tools/simulators/browser.cjs
+          node tools/simulators/answer-stability.cjs
+          node tools/simulators/breathing-browser.cjs
+          node tools/simulators/mock-browser.cjs
+          node tools/simulators/regressions.cjs
+          node tools/simulators/completion.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cardiorespiratory-review
+          path: review-simulators/

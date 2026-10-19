@@ -1,0 +1,33 @@
+{
+  "schema": "full-study-preservation-baseline-1",
+  "purpose": "Fixed reviewed protected-runtime and original-bank fingerprints. Stored independently of the current files and usable from a shallow public checkout. Updating these expected values requires a separate preservation review.",
+  "protectedSHA256": {
+    "simulation-core/content.js": "80b37d2b44b44d3d4a6b1aa9a04da6b8901576102ca37df6fd4c8169d4ba8982",
+    "simulation-core/controller.js": "cac357c893a28cdc835addf4638563a666900e750a95fe2ee56f63fe34ac186b",
+    "simulation-core/progress.js": "f1ca214f0156eba3519d778f47502a6d1a6dd4f6ff8d860ef982ec715982e877",
+    "simulation-core/module.js": "fe578b6c1602269799d4cd32762cbf34c7a6a2db03f9315cd96c591233807b4b",
+    "simulation-core/module.css": "7fe9e390c9041198bd590950181c9cf997647e04f3b242f110ec25a017eb0df4",
+    "respiratory-study/mechanics.js": "548e852e4576d7c336e94b53504bdcc2b8686a9dcb98a6ab93471f3279057eb6",
+    "respiratory-study/breathing-3d.js": "8d332bab6e682a64c33fd1d20e9dbc5f130ee57330ddd387ab92ef58659091ee",
+    "respiratory-study/explorer.js": "9b200b8e643578377d81b8e4e7b02062b97e66dfca64553555bfabef77429bac",
+    "respiratory-study/explorer-detail.js": "d1e94b75099c4c771c2558ee486b282628f47b740669b8f66cced5e9a7c7f725",
+    "respiratory-study/assets/airway-metadata.js": "dffa2dc45ce22d26d2e48f906a6586caee96ca0f252397fb90c1eadcfeff1040",
+    "respiratory-study/assets/breathing-data.js": "71ef7cfc01436246450ac7dbf80f96d5b9c62c5057fe3c62b8164f4850382894",
+    "lead-placement/module.js": "9c4ce6e2d7be6c4148b4f536fc96678f150cd44a4e096acb0e2c7cfc249e21ee",
+    "lead-placement/module.css": "63a2a13934a43e01e30fe4dd3db522fffb0b380f8522747b9b89b77f54fc30ed",
+    "lead-placement/torso-3d.js": "ff84ca8431989e39634173dc29c081194976a9d1a1caa4eaba28485a395b53a9",
+    "aspt/content.js": "65cf08ca31326d233c692b745ac11989e05400422b2b0314e698f5f48ca7ef69",
+    "aspt/mock-bank.js": "cafa627b5a26fefe778b4f88db56546f914a3aedaccba370d5f29e966dd24f69",
+    "aspt/mock.js": "0e802f1cf8babba7530be30cccf7728063c3d157c10577ef97087fb279a3cc2a",
+    "aspt/exam.js": "db1036a672b4bd5f1ede089eca525106688017acac67fc2927d491cbd128fd02",
+    "ecg-study/module.js": "db42b73b9cafd4d52cfffff8ef4044dce1cc1951cb2c67c521e733532b2cbb75",
+    "ecg-study/vendor/three-gltf.min.js": "ed9ffbaecd4018ea8dc90fd74ae041543d03c6fd438c8abb5b833a1cc85a7dcd",
+    "heart-study-v3/model.js": "b83521bc97b36a4d993a0447242792761ed111e423e20615882e6c2d3b5f299f",
+    "heart-study-v3/assets/source-geometry.js": "5f3f615dce33e883f327630724009ba424f90866aa4b00dc30023007bf76315c",
+    "heart-study-v3/assets/source-inventory.json": "dab203b32d0e8dc5f3342c07d4333cb49cc32c95e45e8905c3b16c94de2b97fa",
+    "heart-study-v3/assets/model-manifest.json": "eea56d7f99431f42ac7eb4cbd13d27c6e761fbf53772cb2e8e526d16b3122812",
+    "heart-study-v3/assets/ATTRIBUTION.md": "5105912ab74b3f7ef0fc2b3db4691d937527a1e76844b3e5144de4486c16c27d"
+  },
+  "bankLiteralSHA256": "0ab4859e04351e8ef06ad009a917f2c110c8a4279aa81a7a123a2b99d6172664",
+  "expectedBankCount": 611
+}

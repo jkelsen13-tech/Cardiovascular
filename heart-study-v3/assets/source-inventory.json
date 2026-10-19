@@ -1,0 +1,1781 @@
+{
+  "schema": "heart-v3-anatomy-1",
+  "created": "2026-10-18",
+  "sources": [
+    {
+      "id": "heart",
+      "sha256": "9afdfb2ccf926869813582cfe150dce8cb28377417a968a4f29a5b8dc060428b",
+      "bytes": 1745284,
+      "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Heart.glb"
+    },
+    {
+      "id": "vessels",
+      "sha256": "c7f196de2d36a354bf740176d3886c95a17da6b74d744423f2f82b61cf36af24",
+      "bytes": 2512720,
+      "url": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Blood_Vasculature_Heart.glb"
+    }
+  ],
+  "sourceCount": 51,
+  "sourceTriangles": 208978,
+  "registration": {
+    "x": [
+      0.5580811126698337,
+      0.3019810778137774,
+      -0.7728860849592453
+    ],
+    "y": [
+      -0.1929042281885027,
+      0.9531246143179872,
+      0.23311247999235474
+    ],
+    "z": [
+      0.8070523095984536,
+      0.018997321485339058,
+      0.5901742720147873
+    ],
+    "mid": [
+      0.1936185632560004,
+      0.40458467610801496,
+      0.0002822381819064801
+    ],
+    "scale": 32.03015225997668,
+    "basis": "Patient left: RA to LA orthogonal to IVC-to-SVC superior; anterior cross product is an inferred orthogonal basis, not independent anatomical registration",
+    "units": "Display units; source physical units not established"
+  },
+  "meshes": [
+    {
+      "name": "VH_F_interventricular_septum",
+      "source": "heart",
+      "vertices": 7783,
+      "triangles": 15566,
+      "bounds": {
+        "min": [
+          -0.774499,
+          -1.66747,
+          -0.745943
+        ],
+        "max": [
+          0.393247,
+          0.62659,
+          1.811041
+        ],
+        "center": [
+          -0.19062600000000002,
+          -0.52044,
+          0.5325489999999999
+        ],
+        "size": [
+          1.1677460000000002,
+          2.29406,
+          2.556984
+        ]
+      },
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": true,
+      "absoluteSignedVolume": 2.1653416141953508,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_cardiac_atrium",
+      "source": "heart",
+      "vertices": 4729,
+      "triangles": 9175,
+      "bounds": {
+        "min": [
+          -0.29744,
+          -0.540924,
+          -2.342135
+        ],
+        "max": [
+          1.202854,
+          1.519429,
+          0.277598
+        ],
+        "center": [
+          0.4527070000000001,
+          0.4892525,
+          -1.0322684999999998
+        ],
+        "size": [
+          1.500294,
+          2.060353,
+          2.619733
+        ]
+      },
+      "boundaryEdges": 297,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.4604762902323751,
+      "qualification": "Segmented tissue/reference surface; source does not identify a closed blood cavity"
+    },
+    {
+      "name": "VH_F_left_ventricle",
+      "source": "heart",
+      "vertices": 4913,
+      "triangles": 9822,
+      "bounds": {
+        "min": [
+          -0.494166,
+          -1.797922,
+          -0.990365
+        ],
+        "max": [
+          1.868393,
+          0.945928,
+          2.342135
+        ],
+        "center": [
+          0.6871134999999999,
+          -0.425997,
+          0.6758849999999998
+        ],
+        "size": [
+          2.362559,
+          2.74385,
+          3.3325
+        ]
+      },
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": true,
+      "absoluteSignedVolume": 7.535382124556822,
+      "qualification": "Segmented tissue/reference surface; source does not identify a closed blood cavity"
+    },
+    {
+      "name": "VH_F_right_cardiac_atrium",
+      "source": "heart",
+      "vertices": 4680,
+      "triangles": 9368,
+      "bounds": {
+        "min": [
+          -1.868393,
+          -1.298385,
+          -1.881854
+        ],
+        "max": [
+          0.340447,
+          1.563823,
+          -0.030984
+        ],
+        "center": [
+          -0.763973,
+          0.13271900000000003,
+          -0.9564189999999999
+        ],
+        "size": [
+          2.20884,
+          2.862208,
+          1.85087
+        ]
+      },
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": true,
+      "absoluteSignedVolume": 1.0918268015688533,
+      "qualification": "Segmented tissue/reference surface; source does not identify a closed blood cavity"
+    },
+    {
+      "name": "VH_F_right_ventricle",
+      "source": "heart",
+      "vertices": 8653,
+      "triangles": 17222,
+      "bounds": {
+        "min": [
+          -1.779438,
+          -1.9,
+          -0.748631
+        ],
+        "max": [
+          0.243519,
+          1.9,
+          2.02592
+        ],
+        "center": [
+          -0.7679595,
+          0,
+          0.6386445000000001
+        ],
+        "size": [
+          2.022957,
+          3.8,
+          2.774551
+        ]
+      },
+      "boundaryEdges": 98,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 2.6123473420604566,
+      "qualification": "Segmented tissue/reference surface; source does not identify a closed blood cavity"
+    },
+    {
+      "name": "VH_F_papillary_muscle_of_heart_ant",
+      "source": "heart",
+      "vertices": 376,
+      "triangles": 709,
+      "bounds": {
+        "min": [
+          -1.129453,
+          -0.873144,
+          0.610918
+        ],
+        "max": [
+          -0.711133,
+          -0.274896,
+          1.468572
+        ],
+        "center": [
+          -0.920293,
+          -0.57402,
+          1.039745
+        ],
+        "size": [
+          0.41832,
+          0.5982480000000001,
+          0.857654
+        ]
+      },
+      "boundaryEdges": 45,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.0072456434963098304,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_papillary_muscle_of_heart_antlat",
+      "source": "heart",
+      "vertices": 1504,
+      "triangles": 3004,
+      "bounds": {
+        "min": [
+          0.536833,
+          -0.908536,
+          0.237426
+        ],
+        "max": [
+          1.140842,
+          0.163295,
+          1.467401
+        ],
+        "center": [
+          0.8388374999999999,
+          -0.3726205,
+          0.8524134999999999
+        ],
+        "size": [
+          0.6040089999999999,
+          1.071831,
+          1.229975
+        ]
+      },
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": true,
+      "absoluteSignedVolume": 0.2269170488485263,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_papillary_muscle_of_heart_med",
+      "source": "heart",
+      "vertices": 50,
+      "triangles": 82,
+      "bounds": {
+        "min": [
+          -0.653423,
+          -0.686651,
+          0.248653
+        ],
+        "max": [
+          -0.54662,
+          -0.472013,
+          0.573751
+        ],
+        "center": [
+          -0.6000215,
+          -0.579332,
+          0.411202
+        ],
+        "size": [
+          0.10680299999999998,
+          0.214638,
+          0.325098
+        ]
+      },
+      "boundaryEdges": 16,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.011503225537453175,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_papillary_muscle_of_heart_pos",
+      "source": "heart",
+      "vertices": 46,
+      "triangles": 76,
+      "bounds": {
+        "min": [
+          -1.106667,
+          -0.999681,
+          0.148311
+        ],
+        "max": [
+          -0.92324,
+          -0.844935,
+          0.366876
+        ],
+        "center": [
+          -1.0149535,
+          -0.922308,
+          0.2575935
+        ],
+        "size": [
+          0.18342700000000012,
+          0.15474600000000005,
+          0.21856499999999998
+        ]
+      },
+      "boundaryEdges": 14,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.0071400157843147,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_papillary_muscle_of_heart_posmed",
+      "source": "heart",
+      "vertices": 783,
+      "triangles": 1562,
+      "bounds": {
+        "min": [
+          0.193018,
+          -1.191426,
+          0.374487
+        ],
+        "max": [
+          0.705524,
+          -0.351131,
+          1.455267
+        ],
+        "center": [
+          0.44927100000000003,
+          -0.7712785000000001,
+          0.914877
+        ],
+        "size": [
+          0.512506,
+          0.840295,
+          1.08078
+        ]
+      },
+      "boundaryEdges": 0,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": true,
+      "absoluteSignedVolume": 0.144636388061847,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_aortic_valve",
+      "source": "heart",
+      "vertices": 2110,
+      "triangles": 4136,
+      "bounds": {
+        "min": [
+          -0.612524,
+          0.216549,
+          -0.830387
+        ],
+        "max": [
+          0.244765,
+          1.142683,
+          0.078322
+        ],
+        "center": [
+          -0.18387949999999997,
+          0.679616,
+          -0.3760325
+        ],
+        "size": [
+          0.857289,
+          0.9261339999999999,
+          0.908709
+        ]
+      },
+      "boundaryEdges": 92,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.031838829964411466,
+      "qualification": "Static source surface; no leaflet rig or annulus insertion metadata"
+    },
+    {
+      "name": "VH_F_pulmonary_valve",
+      "source": "heart",
+      "vertices": 913,
+      "triangles": 1764,
+      "bounds": {
+        "min": [
+          -0.743812,
+          0.969631,
+          -0.168217
+        ],
+        "max": [
+          -0.073211,
+          1.764876,
+          0.589406
+        ],
+        "center": [
+          -0.4085115,
+          1.3672535,
+          0.2105945
+        ],
+        "size": [
+          0.670601,
+          0.7952449999999999,
+          0.7576229999999999
+        ]
+      },
+      "boundaryEdges": 62,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.01348098939616006,
+      "qualification": "Static source surface; no leaflet rig or annulus insertion metadata"
+    },
+    {
+      "name": "VH_F_mitral_valve",
+      "source": "heart",
+      "vertices": 1030,
+      "triangles": 1966,
+      "bounds": {
+        "min": [
+          -0.378888,
+          -0.546505,
+          -0.902289
+        ],
+        "max": [
+          0.751268,
+          0.431404,
+          -0.106733
+        ],
+        "center": [
+          0.18619000000000002,
+          -0.057550500000000004,
+          -0.504511
+        ],
+        "size": [
+          1.130156,
+          0.977909,
+          0.795556
+        ]
+      },
+      "boundaryEdges": 94,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.034287184025818755,
+      "qualification": "Static source surface; no leaflet rig or annulus insertion metadata"
+    },
+    {
+      "name": "VH_F_tricuspid_valve",
+      "source": "heart",
+      "vertices": 5990,
+      "triangles": 11462,
+      "bounds": {
+        "min": [
+          -1.530996,
+          -1.118394,
+          -0.704077
+        ],
+        "max": [
+          -0.273974,
+          0.444615,
+          0.329703
+        ],
+        "center": [
+          -0.902485,
+          -0.33688950000000006,
+          -0.18718699999999996
+        ],
+        "size": [
+          1.257022,
+          1.563009,
+          1.03378
+        ]
+      },
+      "boundaryEdges": 518,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.1315873150877128,
+      "qualification": "Static source surface; no leaflet rig or annulus insertion metadata"
+    },
+    {
+      "name": "VH_F_pulmonary_vein_L_sup",
+      "source": "vessels",
+      "vertices": 1090,
+      "triangles": 2118,
+      "bounds": {
+        "min": [
+          0.980784,
+          0.884294,
+          -1.075923
+        ],
+        "max": [
+          1.513143,
+          1.530912,
+          -0.016602
+        ],
+        "center": [
+          1.2469635,
+          1.207603,
+          -0.5462625
+        ],
+        "size": [
+          0.5323589999999999,
+          0.646618,
+          1.059321
+        ]
+      },
+      "boundaryEdges": 66,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.13328382620243376,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_pulmonary_vein_R_inf",
+      "source": "vessels",
+      "vertices": 822,
+      "triangles": 1596,
+      "bounds": {
+        "min": [
+          -0.078613,
+          0.168366,
+          -2.701339
+        ],
+        "max": [
+          0.554201,
+          0.808664,
+          -1.964246
+        ],
+        "center": [
+          0.23779400000000003,
+          0.48851500000000003,
+          -2.3327925
+        ],
+        "size": [
+          0.6328140000000001,
+          0.640298,
+          0.737093
+        ]
+      },
+      "boundaryEdges": 52,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.07884756265078997,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_pulmonary_vein_R_sup",
+      "source": "vessels",
+      "vertices": 1128,
+      "triangles": 2208,
+      "bounds": {
+        "min": [
+          -0.882511,
+          0.589682,
+          -2.436723
+        ],
+        "max": [
+          0.156465,
+          1.556343,
+          -1.776018
+        ],
+        "center": [
+          -0.36302300000000004,
+          1.0730125,
+          -2.1063705
+        ],
+        "size": [
+          1.0389760000000001,
+          0.966661,
+          0.6607050000000001
+        ]
+      },
+      "boundaryEdges": 52,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.0878921951486828,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_pulmonary_vein_L_inf",
+      "source": "vessels",
+      "vertices": 965,
+      "triangles": 1894,
+      "bounds": {
+        "min": [
+          0.960639,
+          0.067464,
+          -1.335123
+        ],
+        "max": [
+          1.770335,
+          0.804477,
+          -0.56484
+        ],
+        "center": [
+          1.365487,
+          0.4359705,
+          -0.9499815
+        ],
+        "size": [
+          0.809696,
+          0.737013,
+          0.770283
+        ]
+      },
+      "boundaryEdges": 40,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.039532781126382706,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_coronary_sinus",
+      "source": "vessels",
+      "vertices": 3099,
+      "triangles": 6034,
+      "bounds": {
+        "min": [
+          -0.347341,
+          -1.469107,
+          -1.232586
+        ],
+        "max": [
+          1.218953,
+          0.409081,
+          -0.560063
+        ],
+        "center": [
+          0.43580599999999997,
+          -0.530013,
+          -0.8963245
+        ],
+        "size": [
+          1.566294,
+          1.878188,
+          0.672523
+        ]
+      },
+      "boundaryEdges": 124,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.11728968665425532,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_great_cardiac_vein",
+      "source": "vessels",
+      "vertices": 3445,
+      "triangles": 6862,
+      "bounds": {
+        "min": [
+          -0.236562,
+          -0.65742,
+          -0.697057
+        ],
+        "max": [
+          1.154616,
+          1.071065,
+          2.101466
+        ],
+        "center": [
+          0.4590270000000001,
+          0.20682249999999996,
+          0.7022044999999999
+        ],
+        "size": [
+          1.391178,
+          1.728485,
+          2.798523
+        ]
+      },
+      "boundaryEdges": 26,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.010521559098537669,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_middle_cardiac_vein",
+      "source": "vessels",
+      "vertices": 1819,
+      "triangles": 3620,
+      "bounds": {
+        "min": [
+          -0.286387,
+          -1.844879,
+          -0.622522
+        ],
+        "max": [
+          0.336354,
+          -1.378737,
+          1.676315
+        ],
+        "center": [
+          0.024983499999999992,
+          -1.611808,
+          0.5268965
+        ],
+        "size": [
+          0.622741,
+          0.46614199999999983,
+          2.298837
+        ]
+      },
+      "boundaryEdges": 16,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.0013422559844351823,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_oblique_vein_of_left_atrium",
+      "source": "vessels",
+      "vertices": 484,
+      "triangles": 948,
+      "bounds": {
+        "min": [
+          0.692873,
+          0.386727,
+          -0.722331
+        ],
+        "max": [
+          0.962084,
+          0.764768,
+          -0.434568
+        ],
+        "center": [
+          0.8274785,
+          0.5757475,
+          -0.5784495
+        ],
+        "size": [
+          0.2692110000000001,
+          0.378041,
+          0.28776299999999994
+        ]
+      },
+      "boundaryEdges": 18,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.000508952108062097,
+      "qualification": "Segmented tissue/reference surface; source does not identify a closed blood cavity"
+    },
+    {
+      "name": "VH_F_left_marginal_vein",
+      "source": "vessels",
+      "vertices": 1689,
+      "triangles": 3356,
+      "bounds": {
+        "min": [
+          1.156849,
+          0.024632,
+          -0.646683
+        ],
+        "max": [
+          1.7749,
+          0.325495,
+          0.828891
+        ],
+        "center": [
+          1.4658745,
+          0.17506349999999998,
+          0.09110400000000002
+        ],
+        "size": [
+          0.6180509999999999,
+          0.300863,
+          1.475574
+        ]
+      },
+      "boundaryEdges": 20,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.003588726225991359,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_posterior_vein_of_left_ventricle",
+      "source": "vessels",
+      "vertices": 2052,
+      "triangles": 4082,
+      "bounds": {
+        "min": [
+          0.918698,
+          -1.327087,
+          -1.078217
+        ],
+        "max": [
+          1.809395,
+          -0.229504,
+          0.718853
+        ],
+        "center": [
+          1.3640465000000002,
+          -0.7782954999999999,
+          -0.179682
+        ],
+        "size": [
+          0.8906970000000001,
+          1.097583,
+          1.79707
+        ]
+      },
+      "boundaryEdges": 20,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.012022502220072976,
+      "qualification": "Segmented tissue/reference surface; source does not identify a closed blood cavity"
+    },
+    {
+      "name": "VH_F_anterior_cardiac_vein",
+      "source": "vessels",
+      "vertices": 1696,
+      "triangles": 3348,
+      "bounds": {
+        "min": [
+          -1.690711,
+          -0.293936,
+          -0.479987
+        ],
+        "max": [
+          -1.12591,
+          0.714712,
+          0.771273
+        ],
+        "center": [
+          -1.4083105,
+          0.21038800000000002,
+          0.145643
+        ],
+        "size": [
+          0.5648010000000001,
+          1.008648,
+          1.25126
+        ]
+      },
+      "boundaryEdges": 40,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.004996960602701678,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_small_cardiac_vein",
+      "source": "vessels",
+      "vertices": 2411,
+      "triangles": 4796,
+      "bounds": {
+        "min": [
+          -1.83662,
+          -1.449081,
+          -0.818465
+        ],
+        "max": [
+          -0.299441,
+          -0.627648,
+          0.101771
+        ],
+        "center": [
+          -1.0680304999999999,
+          -1.0383645000000001,
+          -0.35834699999999997
+        ],
+        "size": [
+          1.5371789999999999,
+          0.8214330000000001,
+          0.920236
+        ]
+      },
+      "boundaryEdges": 24,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.027224316125583892,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_superior_vena_cava",
+      "source": "vessels",
+      "vertices": 2036,
+      "triangles": 3978,
+      "bounds": {
+        "min": [
+          -0.912221,
+          0.85728,
+          -2.188427
+        ],
+        "max": [
+          0.177347,
+          3.472781,
+          -1.229261
+        ],
+        "center": [
+          -0.36743699999999996,
+          2.1650305,
+          -1.708844
+        ],
+        "size": [
+          1.0895679999999999,
+          2.615501,
+          0.959166
+        ]
+      },
+      "boundaryEdges": 102,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.09115622715383588,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_inferior_vena_cava_a",
+      "source": "vessels",
+      "vertices": 1838,
+      "triangles": 3614,
+      "bounds": {
+        "min": [
+          -0.778224,
+          -2.237288,
+          -2.313938
+        ],
+        "max": [
+          0.230695,
+          -0.682009,
+          -1.136455
+        ],
+        "center": [
+          -0.2737645,
+          -1.4596485,
+          -1.7251965
+        ],
+        "size": [
+          1.0089190000000001,
+          1.555279,
+          1.1774829999999998
+        ]
+      },
+      "boundaryEdges": 62,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.06771582767561737,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_inferior_vena_cava_b",
+      "source": "vessels",
+      "vertices": 5534,
+      "triangles": 10866,
+      "bounds": {
+        "min": [
+          -3.50824,
+          -8.657261,
+          -2.436055
+        ],
+        "max": [
+          -0.222095,
+          -1.929291,
+          -1.213528
+        ],
+        "center": [
+          -1.8651674999999999,
+          -5.2932760000000005,
+          -1.8247915
+        ],
+        "size": [
+          3.286145,
+          6.72797,
+          1.2225270000000001
+        ]
+      },
+      "boundaryEdges": 210,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.05485338362025284,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_anterior_descending_artery",
+      "source": "vessels",
+      "vertices": 1633,
+      "triangles": 3230,
+      "bounds": {
+        "min": [
+          -0.276612,
+          -1.213661,
+          -0.154615
+        ],
+        "max": [
+          0.496816,
+          1.228558,
+          2.06962
+        ],
+        "center": [
+          0.11010199999999998,
+          0.007448499999999969,
+          0.9575025
+        ],
+        "size": [
+          0.773428,
+          2.442219,
+          2.224235
+        ]
+      },
+      "boundaryEdges": 36,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.01368155425736969,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_circumflex_artery",
+      "source": "vessels",
+      "vertices": 760,
+      "triangles": 1482,
+      "bounds": {
+        "min": [
+          0.399689,
+          0.209843,
+          -0.717338
+        ],
+        "max": [
+          1.082783,
+          1.087459,
+          -0.155339
+        ],
+        "center": [
+          0.741236,
+          0.648651,
+          -0.4363385
+        ],
+        "size": [
+          0.6830940000000001,
+          0.877616,
+          0.561999
+        ]
+      },
+      "boundaryEdges": 38,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.004193130991555415,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_diagonal_branch_of_left_anterior_descending_artery",
+      "source": "vessels",
+      "vertices": 598,
+      "triangles": 1180,
+      "bounds": {
+        "min": [
+          0.35573,
+          -0.109573,
+          1.060637
+        ],
+        "max": [
+          1.576647,
+          0.958601,
+          1.367977
+        ],
+        "center": [
+          0.9661884999999999,
+          0.424514,
+          1.214307
+        ],
+        "size": [
+          1.220917,
+          1.068174,
+          0.30733999999999995
+        ]
+      },
+      "boundaryEdges": 14,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.007899998807482772,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_coronary_artery",
+      "source": "vessels",
+      "vertices": 335,
+      "triangles": 626,
+      "bounds": {
+        "min": [
+          -0.047387,
+          0.858346,
+          -0.303673
+        ],
+        "max": [
+          0.489865,
+          1.15996,
+          -0.05072
+        ],
+        "center": [
+          0.221239,
+          1.009153,
+          -0.1771965
+        ],
+        "size": [
+          0.537252,
+          0.30161400000000005,
+          0.25295300000000004
+        ]
+      },
+      "boundaryEdges": 44,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.004518641604670491,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_marginal_branch",
+      "source": "vessels",
+      "vertices": 551,
+      "triangles": 1084,
+      "bounds": {
+        "min": [
+          1.0736,
+          0.272704,
+          -0.332698
+        ],
+        "max": [
+          1.677208,
+          0.74106,
+          0.533321
+        ],
+        "center": [
+          1.375404,
+          0.506882,
+          0.10031150000000003
+        ],
+        "size": [
+          0.6036079999999999,
+          0.46835600000000005,
+          0.8660190000000001
+        ]
+      },
+      "boundaryEdges": 16,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.0032481326108713487,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_posterior_descending_branch_of_circumflex_branch_of_left_coronary_artery",
+      "source": "vessels",
+      "vertices": 1235,
+      "triangles": 2444,
+      "bounds": {
+        "min": [
+          -0.463188,
+          -1.86381,
+          -0.580161
+        ],
+        "max": [
+          0.306569,
+          -1.032421,
+          1.614522
+        ],
+        "center": [
+          -0.0783095,
+          -1.4481155,
+          0.5171805
+        ],
+        "size": [
+          0.769757,
+          0.8313889999999999,
+          2.194683
+        ]
+      },
+      "boundaryEdges": 24,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.006500003674936903,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_posterior_left_ventricular_branch",
+      "source": "vessels",
+      "vertices": 819,
+      "triangles": 1620,
+      "bounds": {
+        "min": [
+          0.931456,
+          -1.495273,
+          -0.975516
+        ],
+        "max": [
+          1.552916,
+          -0.337821,
+          0.375649
+        ],
+        "center": [
+          1.242186,
+          -0.916547,
+          -0.2999335
+        ],
+        "size": [
+          0.62146,
+          1.1574520000000001,
+          1.351165
+        ]
+      },
+      "boundaryEdges": 16,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.00888213881882563,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_right_coronary_artery",
+      "source": "vessels",
+      "vertices": 2751,
+      "triangles": 5446,
+      "bounds": {
+        "min": [
+          -1.75386,
+          -1.118197,
+          -1.017523
+        ],
+        "max": [
+          1.051786,
+          0.850826,
+          -0.070913
+        ],
+        "center": [
+          -0.35103699999999993,
+          -0.13368550000000007,
+          -0.544218
+        ],
+        "size": [
+          2.8056460000000003,
+          1.969023,
+          0.94661
+        ]
+      },
+      "boundaryEdges": 58,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.014981608973172167,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_right_marginal_artery",
+      "source": "vessels",
+      "vertices": 828,
+      "triangles": 1636,
+      "bounds": {
+        "min": [
+          -1.85048,
+          -0.995271,
+          -0.417843
+        ],
+        "max": [
+          -1.234408,
+          -0.561427,
+          1.091306
+        ],
+        "center": [
+          -1.542444,
+          -0.778349,
+          0.3367315000000001
+        ],
+        "size": [
+          0.616072,
+          0.433844,
+          1.509149
+        ]
+      },
+      "boundaryEdges": 18,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.004877876901614351,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_pulmonary_artery_L",
+      "source": "vessels",
+      "vertices": 1500,
+      "triangles": 2946,
+      "bounds": {
+        "min": [
+          0.444588,
+          1.146188,
+          -0.942433
+        ],
+        "max": [
+          1.950301,
+          2.158127,
+          -0.010079
+        ],
+        "center": [
+          1.1974445,
+          1.6521575,
+          -0.47625599999999996
+        ],
+        "size": [
+          1.505713,
+          1.011939,
+          0.932354
+        ]
+      },
+      "boundaryEdges": 58,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.050541755366969934,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_pulmonary_trunk",
+      "source": "vessels",
+      "vertices": 1259,
+      "triangles": 2350,
+      "bounds": {
+        "min": [
+          -0.613316,
+          1.035143,
+          -1.041063
+        ],
+        "max": [
+          0.660498,
+          2.170063,
+          0.472789
+        ],
+        "center": [
+          0.02359100000000003,
+          1.6026029999999998,
+          -0.28413700000000003
+        ],
+        "size": [
+          1.273814,
+          1.13492,
+          1.513852
+        ]
+      },
+      "boundaryEdges": 172,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.04090730276995021,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_pulmonary_artery_R",
+      "source": "vessels",
+      "vertices": 1554,
+      "triangles": 3060,
+      "bounds": {
+        "min": [
+          -0.442145,
+          1.239664,
+          -2.531479
+        ],
+        "max": [
+          0.565513,
+          2.062001,
+          -0.755002
+        ],
+        "center": [
+          0.06168400000000002,
+          1.6508325,
+          -1.6432405
+        ],
+        "size": [
+          1.0076580000000002,
+          0.8223369999999999,
+          1.776477
+        ]
+      },
+      "boundaryEdges": 52,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.04951904476824519,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_aortic_arch",
+      "source": "vessels",
+      "vertices": 3210,
+      "triangles": 6094,
+      "bounds": {
+        "min": [
+          -0.281905,
+          1.930544,
+          -1.440321
+        ],
+        "max": [
+          2.082147,
+          3.197266,
+          -0.308951
+        ],
+        "center": [
+          0.900121,
+          2.563905,
+          -0.874636
+        ],
+        "size": [
+          2.364052,
+          1.266722,
+          1.13137
+        ]
+      },
+      "boundaryEdges": 338,
+      "nonManifoldEdges": 4,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.3401867041008086,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_ascending_aorta",
+      "source": "vessels",
+      "vertices": 2764,
+      "triangles": 5344,
+      "bounds": {
+        "min": [
+          -0.838521,
+          0.531768,
+          -1.325484
+        ],
+        "max": [
+          0.209351,
+          2.73116,
+          -0.135408
+        ],
+        "center": [
+          -0.314585,
+          1.631464,
+          -0.730446
+        ],
+        "size": [
+          1.047872,
+          2.199392,
+          1.1900760000000001
+        ]
+      },
+      "boundaryEdges": 184,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.29823662290739844,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_descending_aorta_a",
+      "source": "vessels",
+      "vertices": 3040,
+      "triangles": 6004,
+      "bounds": {
+        "min": [
+          0.408952,
+          -2.505782,
+          -1.639431
+        ],
+        "max": [
+          2.175332,
+          2.187771,
+          -0.769949
+        ],
+        "center": [
+          1.2921420000000001,
+          -0.1590054999999999,
+          -1.20469
+        ],
+        "size": [
+          1.76638,
+          4.693553,
+          0.8694820000000001
+        ]
+      },
+      "boundaryEdges": 76,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 1.2173296896431014,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_descending_aorta_b",
+      "source": "vessels",
+      "vertices": 4051,
+      "triangles": 7930,
+      "bounds": {
+        "min": [
+          -3.352877,
+          -8.352641,
+          -1.446987
+        ],
+        "max": [
+          0.882559,
+          -2.111977,
+          -0.414032
+        ],
+        "center": [
+          -1.235159,
+          -5.232309,
+          -0.9305095
+        ],
+        "size": [
+          4.235436,
+          6.240664000000001,
+          1.032955
+        ]
+      },
+      "boundaryEdges": 184,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 2.125307325789017,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_common_carotid_artery_a",
+      "source": "vessels",
+      "vertices": 360,
+      "triangles": 684,
+      "bounds": {
+        "min": [
+          0.401369,
+          3.153508,
+          -0.761482
+        ],
+        "max": [
+          0.729805,
+          3.578049,
+          -0.447271
+        ],
+        "center": [
+          0.5655870000000001,
+          3.3657785000000002,
+          -0.6043765
+        ],
+        "size": [
+          0.32843600000000006,
+          0.42454100000000006,
+          0.314211
+        ]
+      },
+      "boundaryEdges": 36,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.011487578583899417,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_common_carotid_artery_b",
+      "source": "vessels",
+      "vertices": 1338,
+      "triangles": 2640,
+      "bounds": {
+        "min": [
+          0.499769,
+          3.506026,
+          -0.638513
+        ],
+        "max": [
+          0.804739,
+          5.153118,
+          0.01663
+        ],
+        "center": [
+          0.652254,
+          4.329572,
+          -0.3109415
+        ],
+        "size": [
+          0.30496999999999996,
+          1.6470920000000002,
+          0.655143
+        ]
+      },
+      "boundaryEdges": 36,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.04558413269411174,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_subclavian_artery_a",
+      "source": "vessels",
+      "vertices": 676,
+      "triangles": 1216,
+      "bounds": {
+        "min": [
+          0.987528,
+          2.90519,
+          -0.87458
+        ],
+        "max": [
+          1.463728,
+          3.543773,
+          -0.438402
+        ],
+        "center": [
+          1.225628,
+          3.2244815,
+          -0.656491
+        ],
+        "size": [
+          0.47619999999999996,
+          0.6385829999999997,
+          0.436178
+        ]
+      },
+      "boundaryEdges": 136,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.03750588675366232,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_left_subclavian_artery_b",
+      "source": "vessels",
+      "vertices": 1377,
+      "triangles": 2686,
+      "bounds": {
+        "min": [
+          1.149929,
+          3.467735,
+          -0.796729
+        ],
+        "max": [
+          1.586716,
+          4.471607,
+          -0.277132
+        ],
+        "center": [
+          1.3683225,
+          3.969671,
+          -0.5369305
+        ],
+        "size": [
+          0.43678700000000004,
+          1.0038719999999999,
+          0.5195970000000001
+        ]
+      },
+      "boundaryEdges": 74,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.10335753681229283,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_brachiocephalic_artery_b",
+      "source": "vessels",
+      "vertices": 1697,
+      "triangles": 3358,
+      "bounds": {
+        "min": [
+          -0.022863,
+          3.446672,
+          -1.64942
+        ],
+        "max": [
+          0.285204,
+          5.429035,
+          -0.988506
+        ],
+        "center": [
+          0.1311705,
+          4.4378535,
+          -1.318963
+        ],
+        "size": [
+          0.30806700000000004,
+          1.9823629999999999,
+          0.6609140000000001
+        ]
+      },
+      "boundaryEdges": 40,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.11349106430605993,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    },
+    {
+      "name": "VH_F_brachiocephalic_artery_a",
+      "source": "vessels",
+      "vertices": 383,
+      "triangles": 684,
+      "bounds": {
+        "min": [
+          0.050881,
+          3.014826,
+          -1.208412
+        ],
+        "max": [
+          0.39368,
+          3.591632,
+          -0.771545
+        ],
+        "center": [
+          0.2222805,
+          3.303229,
+          -0.9899785000000001
+        ],
+        "size": [
+          0.34279899999999996,
+          0.5768060000000004,
+          0.436867
+        ]
+      },
+      "boundaryEdges": 82,
+      "nonManifoldEdges": 0,
+      "inconsistentWindingEdges": 0,
+      "watertight": false,
+      "absoluteSignedVolume": 0.020121419015141404,
+      "qualification": "Reference surface; no dynamic attachments supplied"
+    }
+  ]
+}

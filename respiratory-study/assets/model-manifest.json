@@ -1,0 +1,1161 @@
+{
+  "id": "hra-lung",
+  "sourceURL": "https://raw.githubusercontent.com/hubmapconsortium/ccf-3d-reference-object-library/f1a3a63f110e27ff0736047d52d04dba5d3087f9/VH_Female/v1.2/VH_F_Lung.glb",
+  "sourceCommit": "f1a3a63f110e27ff0736047d52d04dba5d3087f9",
+  "creator": "Kristen Browne and Heidi Schlehlein / HuBMAP Human Reference Atlas; NLM Visible Human",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "licenseSnapshotDate": "2026-10-17",
+  "originalSha256": "a6a81718f4d0974bcbab47c6dc38efc941ad5c7f5f256bf7ff112c710a7fd932",
+  "transformedSha256": "a6a81718f4d0974bcbab47c6dc38efc941ad5c7f5f256bf7ff112c710a7fd932",
+  "bytes": 11240608,
+  "packagedBytes": 14987572,
+  "meshes": 65,
+  "triangles": 378963,
+  "animations": 0,
+  "units": "glTF meters by convention; source physical scale not independently validated",
+  "coordinates": "glTF right-handed; +Y superior and +X patient left supported by named source branch bounds; anterior Z requires educator review",
+  "transform": "One root scale to fit bounds height to 3 scene units, one shared root translation; no independent mesh fitting. Source hierarchy and relative transforms preserved.",
+  "processing": "Python 3 standard library; exact GLB bytes base64 transport only",
+  "registration": "Standalone respiratory atlas only. Not aligned or combined with male BodyParts3D thorax or isolated heart.",
+  "limits": [
+    "No nasal cavity, pharynx, bronchioles, alveolar microstructure, pleura or diaphragm meshes selected. These use explicit schematics.",
+    "Cartilage is not a complete functional larynx.",
+    "Named source branches are reference mapping, not educator-validated anatomical continuity.",
+    "378963 triangles exceed 250000 target; optional load, static reference, no physiological deformation.",
+    "No actual iPad performance certification."
+  ],
+  "nodes": [
+    {
+      "name": "VH_F_respiratory_system",
+      "mesh": null,
+      "children": [
+        1,
+        36
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lungs",
+      "mesh": null,
+      "children": [
+        2,
+        18
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_lungs_L",
+      "mesh": null,
+      "children": [
+        3,
+        4,
+        11
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_L",
+      "mesh": 0,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_L_lung_upper_lobe",
+      "mesh": null,
+      "children": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_upper_L",
+      "mesh": 1,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lingula_superior_bronchopulmonary_segment",
+      "mesh": 2,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_anterior_bronchopulmonary_segment",
+      "mesh": 3,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_apical_bronchopulmonary_segment",
+      "mesh": 4,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_posterior_bronchopulmonary_segment",
+      "mesh": 5,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lingula_inferior_bronchopulmonary_segment",
+      "mesh": 6,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_L_lung_lower_lobe",
+      "mesh": null,
+      "children": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_superior_bronchopulmonary_segment",
+      "mesh": 7,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_posterior_basal_bronchopulmonary_segment",
+      "mesh": 8,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_anterior_basal_bronchopulmonary_segment",
+      "mesh": 9,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_lateral_basal_bronchopulmonary_segment",
+      "mesh": 10,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_medial_basal_bronchopulmonary_segment",
+      "mesh": 11,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_lower_L",
+      "mesh": 12,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lungs_R",
+      "mesh": null,
+      "children": [
+        19,
+        20,
+        27,
+        31
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_R",
+      "mesh": 13,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_R_lung_lower_lobe",
+      "mesh": null,
+      "children": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_medial_basal_bronchopulmonary_segment",
+      "mesh": 14,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "mesh": 15,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_anterior_basal_bronchopulmonary_segment",
+      "mesh": 16,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_lateral_basal_bronchopulmonary_segment",
+      "mesh": 17,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_superior_bronchopulmonary_segment",
+      "mesh": 18,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_lower_R",
+      "mesh": 19,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_R_lung_middle_lobe",
+      "mesh": null,
+      "children": [
+        28,
+        29,
+        30
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_medial_bronchopulmonary_segment",
+      "mesh": 20,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_lateral_bronchopulmonary_segmennt",
+      "mesh": 21,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_middle_R",
+      "mesh": 22,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_R_lung_upper_lobe",
+      "mesh": null,
+      "children": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_anterior_bronchopulmonary_segm",
+      "mesh": 23,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_apical_bronchopulmonary_segment",
+      "mesh": 24,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_posterior_bronchopulmonary_segment",
+      "mesh": 25,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_hilum_upper_R",
+      "mesh": 26,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_tracheobronchial_tree",
+      "mesh": null,
+      "children": [
+        37,
+        49,
+        84
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_cartilage_of_tracheobronchial_tree",
+      "mesh": null,
+      "children": [
+        38,
+        41,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_corniculate_cartilage",
+      "mesh": null,
+      "children": [
+        39,
+        40
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_corniculate_cartilage_L",
+      "mesh": 27,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_corniculate_cartilage_R",
+      "mesh": 28,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_arytenoid_cartilage",
+      "mesh": null,
+      "children": [
+        42,
+        43
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_arytenoid_cartilage_R",
+      "mesh": 29,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_arytenoid_cartilage_L",
+      "mesh": 30,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_carina",
+      "mesh": 31,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_thyroid_cartilage",
+      "mesh": 32,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_tracheal_cartilage",
+      "mesh": 33,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_cricoid_cartilage",
+      "mesh": 34,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_epiglotic_cartilage",
+      "mesh": 35,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_bronchi",
+      "mesh": null,
+      "children": [
+        50,
+        66,
+        83
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_bronchi_L",
+      "mesh": null,
+      "children": [
+        51,
+        52,
+        55
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lungs_left_main_bronchus",
+      "mesh": 36,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lobar_bronchi_L",
+      "mesh": null,
+      "children": [
+        53,
+        54
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_superior_lobar_bronchus",
+      "mesh": 37,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_inferior_lobar_bronchus",
+      "mesh": 38,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_tertiary_bronchi_L",
+      "mesh": null,
+      "children": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_anterior_basal_bronchus",
+      "mesh": 39,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_lingula_superior_bronchus",
+      "mesh": 40,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_apical_bronchus",
+      "mesh": 41,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_posterior_basal_bronchus",
+      "mesh": 42,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_medial_basal_bronchus",
+      "mesh": 43,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_superior_bronchus",
+      "mesh": 44,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_anterior_bronchus",
+      "mesh": 45,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_posterior_bronchus",
+      "mesh": 46,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_lateral_basal_bronchus",
+      "mesh": 47,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_left_lingula_inferior_bronchi",
+      "mesh": 48,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_bronchi_R",
+      "mesh": null,
+      "children": [
+        67,
+        68,
+        72
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_main_lobar_bronchus",
+      "mesh": 49,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_lobar_bronchus_R",
+      "mesh": null,
+      "children": [
+        69,
+        70,
+        71
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_middle_lobar_bronchus",
+      "mesh": 50,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_superior_lobar_bronchus",
+      "mesh": 51,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_inferior_lobar_bronchus",
+      "mesh": 52,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_tertiary_bronchi_R",
+      "mesh": null,
+      "children": [
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_anterior_basal_bronchus",
+      "mesh": 53,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_medial_basal_bronchus",
+      "mesh": 54,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_apical_bronchus",
+      "mesh": 55,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_posterior_basal_bronchus",
+      "mesh": 56,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_medial_bronchus",
+      "mesh": 57,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_lateral_bronchus",
+      "mesh": 58,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_anterior_bronchus",
+      "mesh": 59,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_lateral_basal_bronchus",
+      "mesh": 60,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_superior_bronchus",
+      "mesh": 61,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_right_posterior_bronchus",
+      "mesh": 62,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_bronchial_cartilage",
+      "mesh": 63,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    },
+    {
+      "name": "VH_F_trachea",
+      "mesh": 64,
+      "children": [],
+      "matrix": null,
+      "translation": null,
+      "rotation": null,
+      "scale": null
+    }
+  ],
+  "meshInventory": [
+    {
+      "name": "VH_F_hilum_L",
+      "triangles": 1414
+    },
+    {
+      "name": "VH_F_hilum_upper_L",
+      "triangles": 792
+    },
+    {
+      "name": "VH_F_lingula_superior_bronchopulmonary_segment",
+      "triangles": 1312
+    },
+    {
+      "name": "VH_F_left_anterior_bronchopulmonary_segment",
+      "triangles": 1024
+    },
+    {
+      "name": "VH_F_left_apical_bronchopulmonary_segment",
+      "triangles": 458
+    },
+    {
+      "name": "VH_F_left_posterior_bronchopulmonary_segment",
+      "triangles": 1028
+    },
+    {
+      "name": "VH_F_lingula_inferior_bronchopulmonary_segment",
+      "triangles": 1142
+    },
+    {
+      "name": "VH_F_left_superior_bronchopulmonary_segment",
+      "triangles": 1359
+    },
+    {
+      "name": "VH_F_left_posterior_basal_bronchopulmonary_segment",
+      "triangles": 1674
+    },
+    {
+      "name": "VH_F_left_anterior_basal_bronchopulmonary_segment",
+      "triangles": 606
+    },
+    {
+      "name": "VH_F_left_lateral_basal_bronchopulmonary_segment",
+      "triangles": 616
+    },
+    {
+      "name": "VH_F_left_medial_basal_bronchopulmonary_segment",
+      "triangles": 1741
+    },
+    {
+      "name": "VH_F_hilum_lower_L",
+      "triangles": 622
+    },
+    {
+      "name": "VH_F_hilum_R",
+      "triangles": 3784
+    },
+    {
+      "name": "VH_F_right_medial_basal_bronchopulmonary_segment",
+      "triangles": 434
+    },
+    {
+      "name": "VH_F_right_posterior_basal_bronchopulmonary_segment",
+      "triangles": 1602
+    },
+    {
+      "name": "VH_F_right_anterior_basal_bronchopulmonary_segment",
+      "triangles": 2202
+    },
+    {
+      "name": "VH_F_right_lateral_basal_bronchopulmonary_segment",
+      "triangles": 784
+    },
+    {
+      "name": "VH_F_right_superior_bronchopulmonary_segment",
+      "triangles": 2158
+    },
+    {
+      "name": "VH_F_hilum_lower_R",
+      "triangles": 2276
+    },
+    {
+      "name": "VH_F_right_medial_bronchopulmonary_segment",
+      "triangles": 1950
+    },
+    {
+      "name": "VH_F_right_lateral_bronchopulmonary_segmennt",
+      "triangles": 1134
+    },
+    {
+      "name": "VH_F_hilum_middle_R",
+      "triangles": 482
+    },
+    {
+      "name": "VH_F_right_anterior_bronchopulmonary_segm",
+      "triangles": 2744
+    },
+    {
+      "name": "VH_F_right_apical_bronchopulmonary_segment",
+      "triangles": 1176
+    },
+    {
+      "name": "VH_F_right_posterior_bronchopulmonary_segment",
+      "triangles": 1224
+    },
+    {
+      "name": "VH_F_hilum_upper_R",
+      "triangles": 1026
+    },
+    {
+      "name": "VH_F_corniculate_cartilage_L",
+      "triangles": 574
+    },
+    {
+      "name": "VH_F_corniculate_cartilage_R",
+      "triangles": 776
+    },
+    {
+      "name": "VH_F_arytenoid_cartilage_R",
+      "triangles": 2384
+    },
+    {
+      "name": "VH_F_arytenoid_cartilage_L",
+      "triangles": 2400
+    },
+    {
+      "name": "VH_F_carina",
+      "triangles": 4272
+    },
+    {
+      "name": "VH_F_thyroid_cartilage",
+      "triangles": 4560
+    },
+    {
+      "name": "VH_F_tracheal_cartilage",
+      "triangles": 21180
+    },
+    {
+      "name": "VH_F_cricoid_cartilage",
+      "triangles": 3403
+    },
+    {
+      "name": "VH_F_epiglotic_cartilage",
+      "triangles": 3394
+    },
+    {
+      "name": "VH_F_lungs_left_main_bronchus",
+      "triangles": 495
+    },
+    {
+      "name": "VH_F_left_superior_lobar_bronchus",
+      "triangles": 385
+    },
+    {
+      "name": "VH_F_left_inferior_lobar_bronchus",
+      "triangles": 558
+    },
+    {
+      "name": "VH_F_left_anterior_basal_bronchus",
+      "triangles": 395
+    },
+    {
+      "name": "VH_F_left_lingula_superior_bronchus",
+      "triangles": 1052
+    },
+    {
+      "name": "VH_F_left_apical_bronchus",
+      "triangles": 270
+    },
+    {
+      "name": "VH_F_left_posterior_basal_bronchus",
+      "triangles": 750
+    },
+    {
+      "name": "VH_F_left_medial_basal_bronchus",
+      "triangles": 377
+    },
+    {
+      "name": "VH_F_left_superior_bronchus",
+      "triangles": 610
+    },
+    {
+      "name": "VH_F_left_anterior_bronchus",
+      "triangles": 530
+    },
+    {
+      "name": "VH_F_left_posterior_bronchus",
+      "triangles": 666
+    },
+    {
+      "name": "VH_F_left_lateral_basal_bronchus",
+      "triangles": 510
+    },
+    {
+      "name": "VH_F_left_lingula_inferior_bronchi",
+      "triangles": 1055
+    },
+    {
+      "name": "VH_F_right_main_lobar_bronchus",
+      "triangles": 374
+    },
+    {
+      "name": "VH_F_right_middle_lobar_bronchus",
+      "triangles": 262
+    },
+    {
+      "name": "VH_F_right_superior_lobar_bronchus",
+      "triangles": 224
+    },
+    {
+      "name": "VH_F_right_inferior_lobar_bronchus",
+      "triangles": 692
+    },
+    {
+      "name": "VH_F_right_anterior_basal_bronchus",
+      "triangles": 834
+    },
+    {
+      "name": "VH_F_right_medial_basal_bronchus",
+      "triangles": 474
+    },
+    {
+      "name": "VH_F_right_apical_bronchus",
+      "triangles": 1270
+    },
+    {
+      "name": "VH_F_right_posterior_basal_bronchus",
+      "triangles": 522
+    },
+    {
+      "name": "VH_F_right_medial_bronchus",
+      "triangles": 612
+    },
+    {
+      "name": "VH_F_right_lateral_bronchus",
+      "triangles": 458
+    },
+    {
+      "name": "VH_F_right_anterior_bronchus",
+      "triangles": 1197
+    },
+    {
+      "name": "VH_F_right_lateral_basal_bronchus",
+      "triangles": 376
+    },
+    {
+      "name": "VH_F_right_superior_bronchus",
+      "triangles": 708
+    },
+    {
+      "name": "VH_F_right_posterior_bronchus",
+      "triangles": 832
+    },
+    {
+      "name": "VH_F_bronchial_cartilage",
+      "triangles": 280500
+    },
+    {
+      "name": "VH_F_trachea",
+      "triangles": 2268
+    }
+  ]
+}

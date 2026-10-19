@@ -377,3 +377,15 @@
 
 .ecg-3d-leader{position:absolute;height:1px;background:#b9cbd27a;transform-origin:0 0;pointer-events:none;}
 .ecg-3d-label{z-index:1;}
+
+/* Readable, screen-space callouts. Limits in renderLabels prevent crowding. */
+.ecg-3d-label,.ecg-3d-label[data-route="endpoint"],.ecg-3d-label[data-kind="valve"]{font-size:var(--anatomy-font,15px);min-height:44px;max-width:150px;white-space:normal;line-height:1.15;padding:4px 6px;pointer-events:auto;}
+.ecg-3d-leader{height:var(--leader-width,2.5px);background:#e4f4ff;box-shadow:0 0 0 1px #07121d;}
+.ecg-3d-leader[data-selected="true"]{height:var(--selected-leader-width,3.5px);background:#ffe66b;}
+.ecg-3d-label[data-selected="true"]{outline:3px solid #ffe66b;z-index:3;}
+.ecg-3d-selection{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+.ecg-3d-selection label{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.ecg-3d-selection button,.ecg-3d-selection select,.ecg-3d-selection input{min-height:44px;max-width:100%;}
+.ecg-3d-selection p{flex-basis:100%;font-size:15px;}
+.ecg-3d-cycle-readout{font-size:15px;}
+.ecg-3d-label:focus-visible,.ecg-3d-selection :focus-visible{outline:3px solid #ffdb69;outline-offset:3px;}

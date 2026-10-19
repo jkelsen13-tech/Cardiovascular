@@ -1,6 +1,6 @@
 const ASPT_DATA = {
   "title": "ASPT National EKG Exam",
-  "examDate": "September 22, 2026",
+  "examDate": "Not rescheduled",
   "guideTitle": "2026 ASPT EKG Certification Study Guide (revised January 2026)",
   "terms": [
     {
@@ -1739,7 +1739,7 @@ const ASPT_DATA = {
       "id": 91,
       "term": "VENTILATION",
       "simple": "Bulk movement of air into and out of the lungs.",
-      "clinical": "Ventilation, diffusion and transportation are the three course phases; chest movement alone does not establish adequate gas exchange.",
+      "clinical": "Ventilation is bulk air movement. Diffusion and blood transportation are separate processes; chest movement alone does not establish adequate gas exchange. The guide’s unenumerated three-phases requirement remains unresolved.",
       "lesson": "respiration",
       "page": 7,
       "sources": [
@@ -2184,16 +2184,16 @@ const ASPT_DATA = {
         4,
         7
       ],
-      "requirement": "Ventilation (inhalation/exhalation), normal respiratory rate and the three phases of respiration.",
+      "requirement": "Ventilation (inhalation/exhalation), normal rate, and the guide’s unenumerated “3 phases of respiration” requirement. Exact three-part course taxonomy remains unresolved.",
       "prerequisites": [
         "airway",
         "blood"
       ],
       "body": [
-        "The three phases taught in class are ventilation, diffusion and transportation.",
+        "The guide lists “3 phases of respiration” without naming them. The retrieved course deck explicitly lists two phases of ventilation (inspiration/exhalation), and separately discusses diffusion. It does not establish a three-part taxonomy; do not substitute three expiratory capnography phases.",
         "Ventilation moves air in and out. During inhalation, the diaphragm contracts downward and the chest expands, drawing air in. During quiet exhalation, it relaxes and air moves out.",
         "Diffusion moves oxygen and carbon dioxide across the thin boundary between alveoli and blood. Transportation carries the gases in blood between the lungs and body tissues.",
-        "The normal resting adult respiratory rate taught in class is 12–20 breaths per minute. Know the rate, the three phases, and the direction of air and gas movement."
+        "The normal resting adult respiratory rate taught in class is 12–20 breaths per minute. Learn air and gas directions; the exact three-part respiration taxonomy remains unresolved and is not used for single-answer scoring."
       ],
       "sources": [
         [
@@ -2211,17 +2211,17 @@ const ASPT_DATA = {
         53,
         54,
         55,
-        56,
         57,
         59,
         79
       ],
       "bodyRefs": [
-        "ASPT competency 2d; Chapter 02, pp. 3–7, 26–40",
+        "ASPT guide p.4 competency 2d; supplied combined course PDF p. 62: “Ventilation (2 Phases)”; pp.74–83 and targeted full-text search do not establish three respiration phases.",
         "ASPT competency 2b and terms 83–84, 91; Chapter 02, pp. 26–31",
         "ASPT terms 82, 90; Chapter 02, pp. 32–40",
         "ASPT competency 2c; Chapter 02, pp. 41–43"
-      ]
+      ],
+      "gap": "Source clarification pending: competency 2d is preserved verbatim, but its three named phases have not been established. Ventilation, diffusion and blood transportation remain useful distinct concepts, not a verified ASPT taxonomy."
     },
     {
       "id": "conduction",
@@ -2774,126 +2774,144 @@ const ASPT_DATA = {
         "muscle",
         "circulation",
         "pressure"
-      ]
+      ],
+      "sourceWording": "Terminology as listed on the word list, know the meaning of each term"
     },
     {
       "id": "1b",
       "label": "The Heart: general description",
       "lesson": "anatomy",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "General description of the heart"
     },
     {
       "id": "1c",
       "label": "The Heart: function",
       "lesson": "circulation",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Function"
     },
     {
       "id": "1d",
       "label": "The Heart: structure and function of each part",
       "lesson": "anatomy",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Structure and function of each part"
     },
     {
       "id": "1e",
       "label": "The Heart: circulation within the heart",
       "lesson": "circulation",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Circulation within the heart"
     },
     {
       "id": "1f",
       "label": "The Heart: specifics of the myocardium",
       "lesson": "muscle",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Specifics of the myocardium"
     },
     {
       "id": "1g",
       "label": "The Heart: common disorders and diseases",
       "lesson": "disease",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Common disorders and diseases"
     },
     {
       "id": "1h",
       "label": "The Heart: blood pressure",
       "lesson": "pressure",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Blood pressure"
     },
     {
       "id": "2a",
       "label": "Respiration: terms",
       "lesson": "airway",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Terms"
     },
     {
       "id": "2b",
       "label": "Respiration: ventilation — inhalation and exhalation",
       "lesson": "respiration",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Ventilation"
     },
     {
       "id": "2c",
       "label": "Respiration: normal rate",
       "lesson": "respiration",
       "page": 3,
-      "also": []
+      "also": [],
+      "sourceWording": "Normal rate"
     },
     {
       "id": "2d",
       "label": "Respiration: three phases of respiration",
       "lesson": "respiration",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "3 phases of respiration"
     },
     {
       "id": "2e",
       "label": "Respiration: pathway and parts",
       "lesson": "airway",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Pathway and parts"
     },
     {
       "id": "3a",
       "label": "Conduction System: terminology",
       "lesson": "conduction",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Terminology"
     },
     {
       "id": "3b",
       "label": "Conduction System: function",
       "lesson": "conduction",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Function"
     },
     {
       "id": "3c",
       "label": "Conduction System: parts, location and function of each",
       "lesson": "conduction",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Parts, location, and function of each"
     },
     {
       "id": "3d",
       "label": "Conduction System: order of impulse",
       "lesson": "conduction",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Order of impulse"
     },
     {
       "id": "3e",
       "label": "Conduction System: relationship to pumping",
       "lesson": "cycle",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "How it relates to the pumping mechanism"
     },
     {
       "id": "4a",
@@ -2905,42 +2923,48 @@ const ASPT_DATA = {
         "waves",
         "measure",
         "rhythms"
-      ]
+      ],
+      "sourceWording": "Terminology"
     },
     {
       "id": "4b",
       "label": "Electrocardiograph/gram: function",
       "lesson": "instrument",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Function"
     },
     {
       "id": "4c",
       "label": "Electrocardiograph/gram: the EKG instrument",
       "lesson": "instrument",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "The EKG Instrument"
     },
     {
       "id": "4d",
       "label": "Electrocardiograph/gram: cardiac cycle",
       "lesson": "cycle",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "Cardiac Cycle"
     },
     {
       "id": "4e",
       "label": "Electrocardiograph/gram: P–Q–R–S–T meaning and appearance",
       "lesson": "waves",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "P-Q-R-S-T segments/waves; meaning and appearance"
     },
     {
       "id": "4f",
       "label": "Electrocardiograph/gram: paper parts and measurements",
       "lesson": "measure",
       "page": 4,
-      "also": []
+      "also": [],
+      "sourceWording": "EKG paper parts/how measurements are made"
     },
     {
       "id": "4g",
@@ -2950,7 +2974,8 @@ const ASPT_DATA = {
       "also": [
         "limb",
         "prep"
-      ]
+      ],
+      "sourceWording": "EKG lead wires: placements of each lead wire, what they measure, how they are marked. Proper patient prep"
     },
     {
       "id": "4h",
@@ -2959,7 +2984,8 @@ const ASPT_DATA = {
       "page": 4,
       "also": [
         "rhythms"
-      ]
+      ],
+      "sourceWording": "Recognizing common artifacts and other arrhythmias"
     }
   ],
   "coverage": [
@@ -3085,8 +3111,8 @@ const ASPT_DATA = {
       "page": 4,
       "also": [],
       "group": "Competencies",
-      "status": "Covered completely",
-      "note": "Covered at the guide's stated scope, with linked foundation and class explanation."
+      "status": "Unresolved source definition",
+      "note": "Guide p.4 does not enumerate its three phases. Combined course PDF p. 62 lists two ventilation phases; p.80 describes passive diffusion. No verified three-part taxonomy; excluded from single-correct mock scoring."
     },
     {
       "id": "2e",
@@ -4684,30 +4710,34 @@ const ASPT_DATA = {
     {
       "id": "A01",
       "title": "Supervisor/instructor letter",
-      "text": "Guide p.2 requires a letter stating qualification for the exam and that five mounted EKGs were performed recently. Page 3 mentions a mounted EKG recently without the five-count. Use the stricter p.2 checklist and confirm packet expectations with your instructor before September 22.",
+      "text": "Generic January 2026 guide instruction, retained as source context; it is not a new prerequisite for this owner’s retake. Guide p.2 requires a letter stating qualification for the exam and that five mounted EKGs were performed recently. Page 3 mentions a mounted EKG recently without the five-count. ",
       "page": 2,
-      "critical": true
+      "critical": false,
+      "ownerStatus": "Course passed; instructor documentation on file; no new mounted EKG requirement for this retake."
     },
     {
       "id": "A02",
       "title": "Mounted and signed EKG in the packet",
-      "text": "One mounted and signed EKG must be placed in the test packet on exam day. This is separate from documenting the five recent mounted EKGs.",
+      "text": "Generic January 2026 guide instruction, retained as source context; it is not a new prerequisite for this owner’s retake. One mounted and signed EKG must be placed in the test packet on exam day. This is separate from documenting the five recent mounted EKGs.",
       "page": 2,
-      "critical": true
+      "critical": false,
+      "ownerStatus": "Course passed; instructor documentation on file; no new mounted EKG requirement for this retake."
     },
     {
       "id": "A03",
       "title": "Risk of an ungraded test",
-      "text": "The guide explicitly says the test will not be graded if the documentation/mounted-EKG directions are not followed.",
+      "text": "Generic January 2026 guide instruction, retained as source context; it is not a new prerequisite for this owner’s retake. The guide explicitly says the test will not be graded if the documentation/mounted-EKG directions are not followed.",
       "page": 2,
-      "critical": true
+      "critical": false,
+      "ownerStatus": "Course passed; instructor documentation on file; no new mounted EKG requirement for this retake."
     },
     {
       "id": "A04",
       "title": "Interpretation on the submitted EKG",
-      "text": "Some interpretation is welcome but optional, according to the guide.",
+      "text": "Generic January 2026 guide instruction, retained as source context; it is not a new prerequisite for this owner’s retake. Some interpretation is welcome but optional, according to the guide.",
       "page": 2,
-      "critical": false
+      "critical": false,
+      "ownerStatus": "Course passed; instructor documentation on file; no new mounted EKG requirement for this retake."
     },
     {
       "id": "A05",
@@ -4719,7 +4749,7 @@ const ASPT_DATA = {
     {
       "id": "A06",
       "title": "Time limit",
-      "text": "Maximum written-exam time: 1½ hours (90 minutes). The guide does not state the number of questions.",
+      "text": "The January 2026 generic guide states 90minutes and does not state a question count. The owner confirms a 100-MCQ retake with no separate essay; retake duration is not confirmed. Practice defaults to untimed.",
       "page": 3,
       "critical": false
     },
@@ -4847,7 +4877,7 @@ const ASPT_DATA = {
         "Lead I RA−/LA+; II RA−/LL+; III LA−/LL+. Class AHA limb markings: RA white, LA black, RL green, LL red; read the wire labels.",
         "V1/V2 fourth intercostal space at right/left sternal borders; V4 fifth left intercostal space, midclavicular; V3 halfway V2–V4; V5/V6 at V4 height on anterior/midaxillary lines.",
         "Blood-flow order, valve locations, and SA → AV → His → branches → Purkinje order.",
-        "Exam: one best answer, 90 minutes maximum, 80% pass. Documentation and a mounted/signed EKG are required."
+        "Owner retake:100 multiple-choice questions, no separate essay/free response, not rescheduled. Course passed; documentation on file; no new mounted EKG requirement. Mock is untimed by default; no confirmed retake duration."
       ]
     },
     {
@@ -5549,6 +5579,7 @@ const ASPT_DATA = {
     "v025": "Locate the start of QRS and the end of T: these are the QT endpoints. This is a teaching diagram."
   },
   "practiceExplanations": {
+    "55": "External respiration exchanges gases between alveoli and blood; internal respiration exchanges gases between blood and tissues. Cellular respiration is metabolic processing, not a synonym for either exchange site. The exact three-part guide taxonomy remains unresolved.",
     "90": "Many veins have valves that reduce backward flow. In this basic comparison, choose veins rather than arteries or capillaries.",
     "91": "Capillaries are the exchange vessels: oxygen and nutrients move to tissues, while carbon dioxide and wastes enter the blood.",
     "104": "Atherosclerosis is plaque buildup inside arteries. Plaque narrows the space available for blood flow.",
@@ -7458,5 +7489,15 @@ const ASPT_DATA = {
         "s19-052"
       ]
     }
-  ]
+  ],
+  "ownerRetakeStatus": {
+    "course": "Passed",
+    "documentation": "Instructor documentation on file",
+    "priorExam": "Previously attempted",
+    "mountedEKG": "No new mounted EKG requirement for this retake",
+    "format": "100 multiple-choice questions; no separate essay/free-response component",
+    "schedule": "Not rescheduled",
+    "timing": "Retake time limit not confirmed; practice defaults to untimed",
+    "source": "Owner correction, October18,2026; distinguish from generic guide administration."
+  }
 };

@@ -1,0 +1,61 @@
+name: Heart v3 verification
+on:
+  pull_request:
+    paths: ['heart-study-v3/**', 'tools/heart-v3/**', 'simulation-core/**', 'respiratory-study/**', 'index.html', 'cmt-quiz.html']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false playwright@1.55.1
+      - run: npx playwright install --with-deps chromium
+      - name: Equations, geometry and route contracts
+        run: |
+          node tools/heart-v3/model.cjs
+          node tools/heart-v3/geometry.cjs
+          node tools/heart-v3/routes.cjs
+          HEART_V3_RELATIONS_OUTPUT="$RUNNER_TEMP/relations.json" node tools/heart-v3/visual-geometry-relations.cjs
+          node tools/heart-v3/routes-valve-attachments.cjs
+          node tools/heart-v3/four-chamber-flow.cjs
+          HEART_V3_FOUR_CHAMBER_OUTPUT="$RUNNER_TEMP/four-chamber-geometry.json" node tools/heart-v3/four-chamber-geometry.cjs
+          HEART_FC_LEDGER_EVIDENCE="$RUNNER_TEMP/four-chamber-ledger.json" node tools/heart-v3/four-chamber-ledger.cjs
+          HEART_V3_CLARITY_CPU_EVIDENCE="$RUNNER_TEMP/clarity-cpu" node tools/heart-v3/teaching-clarity-detail.cjs
+          HEART_V3_FRAMING_EVIDENCE="$RUNNER_TEMP/framing" node tools/heart-v3/teaching-clarity-framing.cjs
+      - name: Actual local runtime and prepared subpath
+        run: |
+          export CHROMIUM_PATH="$(node -p "require('playwright').chromium.executablePath()")"
+          export BASE_URL=http://127.0.0.1:8765/
+          export CARDIO_BASE_URL="$BASE_URL"
+          export HEART_V3_ROUTE_EVIDENCE="$RUNNER_TEMP/heart-v3-routes"
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/heart-v3-http.log" 2>&1 &
+          node tools/heart-v3/browser-ui.cjs
+          node tools/heart-v3/browser-fallback.cjs
+          node tools/heart-v3/browser-lifecycle.cjs
+          node tools/heart-v3/browser-loading.cjs
+          node tools/heart-v3/browser-phases.cjs
+          node tools/heart-v3/browser-label-layout.cjs
+          node tools/heart-v3/browser-touch.cjs
+          node tools/heart-v3/geometry-browser.cjs
+          node tools/heart-v3/geometry-offscreen-browser.cjs
+          node tools/heart-v3/routes-browser.cjs
+          node tools/heart-v3/routes-visual.cjs
+          node tools/heart-v3/routes-electrical.cjs
+          node tools/heart-v3/routes-laterality.cjs
+          node tools/heart-v3/respiratory-resume.cjs
+          FC_BROWSER_DIR="$RUNNER_TEMP/four-chamber-browser" node tools/heart-v3/four-chamber-browser.cjs
+          HEART_V3_PRESERVATION_EVIDENCE="$RUNNER_TEMP/preservation" node tools/heart-v3/teaching-clarity-preservation.cjs --browser-only
+          node tools/heart-v3/package-public.cjs --output "$RUNNER_TEMP/public/heart-v3-preview" --verify-browser
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: heart-v3-review
+          path: |
+            review-heart-v3/
+            ${{ runner.temp }}/heart-v3-routes/
+            ${{ runner.temp }}/public/verification/
