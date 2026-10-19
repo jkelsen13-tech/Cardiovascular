@@ -1,7 +1,7 @@
 {
   "schema": "cardiovascular-main-runtime-1",
   "scope": "Complete existing study platform with integrated heart, respiratory, lead and study updates",
-  "runtimeSnapshotSHA256": "3c9e86efc6e09f03b84e8fafea5b97f5b7c7f429fa7549fde7a80d4b5b364563",
+  "runtimeSnapshotSHA256": "f82e95edde529c64168551fcdc43a9d1898b7ef1ac814ede7c1b48cd612eb42c",
   "runtimeFiles": {
     "cmt-quiz.html": {
       "bytes": 516465,
@@ -48,8 +48,8 @@
       "sha256": "2c30cf2461ce14213221be9ad742e97981be70cad6c49e3cc26bc853b82258a5"
     },
     "ecg-study/heart-3d.js": {
-      "bytes": 32924,
-      "sha256": "bf625493a37efa43cce8321afb0a750be421afb20f99b4d37ee0a9a7ae2fb966"
+      "bytes": 33037,
+      "sha256": "444f6cae0f4edce3dcec5430ba1665c194e28745118b629ff52d88463730df7f"
     },
     "ecg-study/RENDERING-UPSCALING-REVIEW.md": {
       "bytes": 5062,

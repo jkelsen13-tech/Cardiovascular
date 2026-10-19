@@ -76,7 +76,7 @@ window.EcgHeart3D = (() => {
     item.px=(p.x*.5+.5)*box.width;item.py=(-p.y*.5+.5)*box.height;
     sides[p.x<0?0:1].push(item);
    });
-   const candidates=sides.flat().sort((a,b)=>(b.id===selected)-(a.id===selected)||Number(showValves&&b.kind==="valve")-Number(showValves&&a.kind==="valve"));
+   const candidates=sides.flat().sort((a,b)=>(b.id===selected)-(a.id===selected)||Number(showValves&&b.kind==="valve")-Number(showValves&&a.kind==="valve")||Number(labelMode==="conduction"&&b.kind==="conduction")-Number(labelMode==="conduction"&&a.kind==="conduction"));
    const keep=new Set(candidates.slice(0,parseFloat(getComputedStyle(host).getPropertyValue("--anatomy-font"))>=28?1:box.width<700?6:8));
    sides.forEach((items,side)=>{
     items.forEach(item=>{if(!keep.has(item)){item.el.hidden=item.line.hidden=true;}});

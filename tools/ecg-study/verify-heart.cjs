@@ -56,6 +56,8 @@ const {chromium}=require('playwright');
   assert.equal(await page.locator('.ecg-3d-label[data-kind="valve"]:not([hidden])').count(),4);
   await page.locator('[data-option="label-mode"]').selectOption('conduction');
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-label-mode'),'conduction');
+  await page.locator('.ecg-3d-viewport').scrollIntoViewIfNeeded();
+  await page.waitForFunction(expected=>document.querySelectorAll('.ecg-3d-label[data-kind=conduction]:not([hidden])').length===expected,labelCap-4);
   assert.equal(await page.locator('.ecg-3d-label[data-kind="conduction"]:not([hidden])').count(),labelCap-4);
   await page.locator('[data-option="label-mode"]').selectOption('anatomy');
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),labelCap,'expanded anatomy mode caps readable callouts at eight; all targets stay in the list');

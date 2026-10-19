@@ -20,11 +20,11 @@ jobs:
           node tools/heart-v3/model.cjs
           node tools/heart-v3/geometry.cjs
           node tools/heart-v3/routes.cjs
-          node tools/heart-v3/visual-geometry-relations.cjs
+          HEART_V3_RELATIONS_OUTPUT="$RUNNER_TEMP/relations.json" node tools/heart-v3/visual-geometry-relations.cjs
           node tools/heart-v3/routes-valve-attachments.cjs
           node tools/heart-v3/four-chamber-flow.cjs
-          HEART_V3_FOUR_CHAMBER_OUTPUT="$RUNNER_TEMP/four-chamber-geometry" node tools/heart-v3/four-chamber-geometry.cjs
-          HEART_FC_LEDGER_EVIDENCE="$RUNNER_TEMP/four-chamber-ledger" node tools/heart-v3/four-chamber-ledger.cjs
+          HEART_V3_FOUR_CHAMBER_OUTPUT="$RUNNER_TEMP/four-chamber-geometry.json" node tools/heart-v3/four-chamber-geometry.cjs
+          HEART_FC_LEDGER_EVIDENCE="$RUNNER_TEMP/four-chamber-ledger.json" node tools/heart-v3/four-chamber-ledger.cjs
           HEART_V3_CLARITY_CPU_EVIDENCE="$RUNNER_TEMP/clarity-cpu" node tools/heart-v3/teaching-clarity-detail.cjs
           HEART_V3_FRAMING_EVIDENCE="$RUNNER_TEMP/framing" node tools/heart-v3/teaching-clarity-framing.cjs
       - name: Actual local runtime and prepared subpath
