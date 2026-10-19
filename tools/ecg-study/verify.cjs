@@ -20,7 +20,7 @@ assert.doesNotMatch(read('ecg-study/module.css') + read('ecg-study/content.js'),
 const ctx = {};
 vm.runInNewContext(read('ecg-study/content.js') + read('lead-placement/content.js') + ';this.data=ECG_STUDY;', ctx);
 const D = JSON.parse(JSON.stringify(ctx.data));
-assert.equal(D.cards.length, 45);
+assert.equal(D.cards.length, 49); // 45 ECG cards plus 4 existing lead-placement cards.
 assert.equal(D.stages.length, 7);
 assert.deepEqual(D.stages.map((s) => s.id), ['p', 'pr', 'qrs', 'st', 't', 'u', 'tp']);
 assert.equal(D.patient.viewerLeft, 'PATIENT RIGHT');
@@ -34,7 +34,7 @@ for (const q of D.quiz) {
   assert(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4);
   assert(q.explain.length > 20);
 }
-assert.equal(new Set(D.cards.map((c) => c.id)).size, 45);
+assert.equal(new Set(D.cards.map((c) => c.id)).size, 49);
 const paperSmallHorizontal = D.cards.find((c) => c.id === 'paper-small-horizontal');
 assert.equal(paperSmallHorizontal.term, 'One small horizontal box?');
 assert.match(paperSmallHorizontal.definition, /0\.04 sec/i);
@@ -93,7 +93,7 @@ assert(D.quiz.some((q) => /after the T wave, before or within the TP/i.test(q.op
 assert(D.cards.some((c) => c.id === 'lead-v1' && /right sternal border/i.test(c.definition)));
 assert(D.cards.some((c) => c.id === 'lead-ii' && /RA\(−\) → LL\(\+\)/.test(c.definition)));
 assert(D.cards.some((c) => c.id === 'plane-chest' && /Transverse plane/i.test(c.definition)));
-console.log('Data: 45 cards, 7 stages, 19 quiz items, lead placement, paper-box cards, rate methods, ECG paper mnemonic, U wave + J point, orientation and normals locked.');
+console.log('Data: 49 cards, 7 stages, 19 quiz items, lead placement, paper-box cards, rate methods, ECG paper mnemonic, U wave + J point, orientation and normals locked.');
 
 const server = http.createServer((req, res) => {
   const name = decodeURIComponent(req.url.split('?')[0]);
@@ -192,7 +192,7 @@ const server = http.createServer((req, res) => {
 
       await page.locator('#ecgTabCards').click();
       assert(await page.locator('#ecgFlashcard').isVisible());
-      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 45/);
+      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 49/);
       let foundU = false;
       for (let i = 0; i < D.cards.length; i++) {
         if ((await page.locator('#ecgCardFront').innerText()).trim() === 'U wave') {
@@ -206,7 +206,7 @@ const server = http.createServer((req, res) => {
       }
       assert(foundU, 'U wave flashcard missing');
       for (let i = 0; i < D.cards.length; i++) {
-        if (/Card 1 of 45/.test(await page.locator('#ecgCardProgress').innerText())) break;
+        if (/Card 1 of 49/.test(await page.locator('#ecgCardProgress').innerText())) break;
         await page.locator('#ecgCardPrev').click();
       }
       const front = await page.locator('#ecgCardFront').innerText();
@@ -217,9 +217,9 @@ const server = http.createServer((req, res) => {
       await page.locator('#ecgCardFlip').click();
       assert(await page.locator('#ecgFlashcard').evaluate((el) => el.classList.contains('is-flipped')));
       await page.locator('#ecgCardNext').click();
-      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 2 of 45/);
+      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 2 of 49/);
       await page.locator('#ecgCardShuffle').click();
-      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 45/);
+      assert.match(await page.locator('#ecgCardProgress').innerText(), /Card 1 of 49/);
       await page.locator('#ecgAgainBtn').click();
       await page.locator('#ecgKnowBtn').click();
       await page.locator('#ecgReviewOnlyBtn').click();
@@ -288,7 +288,7 @@ const server = http.createServer((req, res) => {
     assert(await page.locator('#homeMenu').isVisible());
     assert(!(await page.locator('#ecgStudyHome').isVisible()));
 
-    await page.goto(require('node:url').pathToFileURL(path.join(root, 'index.html')).href);
+    await page.goto(process.env.CARDIO_BASE_URL||require('node:url').pathToFileURL(path.join(root, 'index.html')).href);
     await page.locator('#ecgStudyLaunch').click();
       await page.locator('#ecgViewSimple').click();
     assert.equal(await page.locator('#ecgStageCaption').innerText(), D.stages[0].caption);

@@ -101,3 +101,12 @@ Instructional landmark lines and lead markers are derived from and projected ont
 geometry; they are overlays, not additional anatomical meshes. See [asset attribution and
 limitations](lead-placement/assets/ATTRIBUTION.md), the [summary manifest](lead-placement/assets/model-manifest.json),
 and the [per-structure build manifest](lead-placement/assets/registered-thorax-manifest.json).
+
+
+## Integrated heart, respiratory and study update
+
+The complete main-site experience includes Heart v3's four-chamber section, signed model flow, chamber traces and26 organ-to-mechanism scenes; the preserved Heart v2 lessons/calculations and30 original questions; respiratory mechanics, connected airway explorer, magnified exchange and capnography with20 original questions; the corrected registered lead lab; and the persisted original100-question ASPT mock. The original study bank, ECG trainer, existing media and source-index answer ordering remain.
+
+All modules load local files. Existing URLs and progress namespaces remain; no progress reset or migration occurs. New anatomy assets retain their exact HRA/CC BY4.0 provenance. See [source notices](COPYRIGHT.md), [heart model](docs/HEART-V3-NUMERICAL-MODEL.md), [heart anatomy](docs/HEART-V3-ANATOMY.md), [interface/progress](docs/HEART-V3-INTERFACE.md), and [respiratory explorer](docs/RESPIRATORY-EXPLORER.md). `BUILD-IDENTITY.json` identifies the public runtime snapshot and individual file hashes.
+
+These are instructional models, not validated clinical predictions. Physical iPad/Safari, VoiceOver and educator qualification remain unexecuted. The30fps goal was not met in software-rendered cloud measurements. No private course PDF, new course-image asset, private audit/report/log or restoration archive is published with this update.
