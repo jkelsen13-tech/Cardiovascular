@@ -79,6 +79,8 @@ html.h3-active{scroll-padding-top:calc(64px + var(--h3-pocket-height,0px))}#hear
 #heartV3Study .h3-four-state{display:grid;grid-template-columns:1fr 1fr;gap:5px 8px;font-size:15px;line-height:1.25}
 #heartV3Study .h3-four-state p{margin:3px 0;border-left:3px solid #a4cbe2;padding-left:5px}
 #heartV3Study .h3-four-state span{font-variant-numeric:tabular-nums;color:#ffe6a4}
+#heartV3Study .h3-four-state .h3-volume-trend{display:block;color:#edf6fc;font-weight:650;margin:4px 0}
+#heartV3Study .h3-signed-return{display:block;color:#ffcfb4;font-size:inherit;margin-top:4px}
 #heartV3Study.h3-overview-active [data-h3-chamber-readout]{display:none}
 #heartV3Study.h3-text-large .h3-four-state{grid-template-columns:1fr;font-size:28px}
 #heartV3Study.h3-text-large .h3-circulation-overview .h3-caption{font-size:28px}
@@ -88,3 +90,7 @@ html.h3-active{scroll-padding-top:calc(64px + var(--h3-pocket-height,0px))}#hear
 #heartV3Study .h3-electrical-key[hidden]{display:none}
 #heartV3Study .h3-electrical-key button{min-height:44px;white-space:normal}
 #heartV3Study .h3-electrical-key button[aria-pressed="true"]{border:2px solid #fff;box-shadow:0 0 0 1px #fff;color:#fff}
+#heartV3Study .h3-electrical-state{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;flex-basis:100%;min-width:0}
+#heartV3Study .h3-electrical-state p{margin:0;color:#e9bdff;font-weight:650;flex:1 1 220px;overflow-wrap:anywhere}
+#heartV3Study .h3-electrical-state small{flex-basis:100%;font-size:14px;line-height:1.4;color:#d9ccef}
+#heartV3Study.h3-text-large .h3-electrical-state small{font-size:28px}

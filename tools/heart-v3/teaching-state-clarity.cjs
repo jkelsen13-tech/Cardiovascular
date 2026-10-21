@@ -1,0 +1,80 @@
+/* Exact model-state teaching cues and manual electrical stepping. No benchmark. */
+'use strict';
+const A=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const M=require('../../heart-study-v3/model.js'),F=require('../../heart-study-v3/flow.js');
+const stageOrder=['SA-node','atrial-propagation','AV-delay','His-bundle','bundle-branches','Purkinje-myocardium','ventricular-plateau','ventricular-repolarization','diastolic-recovery'];
+const inlet={ra:'systemicReturn',rv:'tricuspid',la:'pulmonaryReturn',lv:'mitral'},outlet={ra:'tricuspid',rv:'pulmonary',la:'mitral',lv:'aortic'};
+const flow=(s,id)=>s.valves[id]?.flow??s.vascularFlows[id];
+const clean=x=>JSON.parse(JSON.stringify(x));
+function expectedWindows(model){return stageOrder.map(stage=>{const rows=model.samples.filter(s=>s.cycleTime<model.period&&s.electrical.stage===stage);A(rows.length>0,stage);return{stage,first:rows[0].cycleTime,last:rows.at(-1).cycleTime,middle:(rows[0].cycleTime+rows.at(-1).cycleTime)/2};});}
+function cpu(){
+ const source=fs.readFileSync(path.join(__dirname,'../../heart-study-v3/module.js'),'utf8');
+ const take=name=>{const start=source.indexOf('  function '+name+'('),end=source.indexOf('\n  function ',start+1);A(start>=0&&end>start,'Actual controller function '+name);return source.slice(start,end);};
+ let checks=0,refill=false,reversal=false,split=false;
+ for(const heartRate of [55,75,110]){
+  const model=M.build({heartRate}),beforeModel=JSON.stringify({timing:model.timing,samples:model.samples,events:model.events}),element={dataset:{},textContent:''},overview={innerHTML:''},bloodNote={hidden:true};
+  const context={model,sample:model.sample(0),state:{time:0,playing:true,playbackSpeed:.25,mode:'four-chamber',selected:'purkinje',conductionView:'xray',route:null,parameters:{heartRate}},raf:43,cancelled:[],window:{HeartV3Flow:F},root:{querySelector:q=>q==='[data-h3-electrical-now]'?element:q==='[data-h3-circulation-overview]'?overview:q==='[data-h3-blood-qualification]'?bloodNote:null,classList:{toggle(){}}},esc:value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))};
+  context.cancelAnimationFrame=id=>context.cancelled.push(id);context.seek=t=>{context.state.time=t;context.sample=model.sample(t);};
+  vm.createContext(context);vm.runInContext(['electricalTargets','nextElectricalStage','chamberVolumeCue','updateElectricalState','updateCirculationOverview'].map(take).join('\n'),context);
+  const windows=expectedWindows(model),actual=clean(context.electricalTargets());A.deepEqual(actual.map(x=>x.stage),stageOrder);A.equal(actual[0].start,0);A.equal(actual.at(-1).end,model.period);
+  for(let i=0;i<stageOrder.length;i++){
+   const w=actual[i],expected=windows[i];A.equal(w.time,expected.middle);A.equal(w.start,expected.first);A(w.time>=w.start&&w.time<w.end);A.equal(model.sample(w.time).electrical.stage,w.stage);if(i)A.equal(actual[i-1].end,w.start);
+   // Step from a later beat; wrapping must advance that beat rather than reset it.
+   const start=3*model.period+expected.middle;context.seek(start);context.state.playing=true;context.raf=43;
+   const retained=JSON.stringify({selected:context.state.selected,mode:context.state.mode,speed:context.state.playbackSpeed,parameters:context.state.parameters});
+   const next=(i+1)%stageOrder.length;context.nextElectricalStage();
+   A.equal(context.state.playing,false);A.equal(context.raf,0);A.equal(context.cancelled.at(-1),43);A.equal(context.sample.electrical.stage,stageOrder[next]);
+   A(Math.abs(context.state.time-((i===stageOrder.length-1?4:3)*model.period+windows[next].middle))<1e-10);A(context.state.time>start);
+   A.equal(JSON.stringify({selected:context.state.selected,mode:context.state.mode,speed:context.state.playbackSpeed,parameters:context.state.parameters}),retained);
+   context.updateElectricalState();A.equal(element.dataset.electricalStage,context.sample.electrical.stage);A(element.textContent.startsWith('Electrical now: '));
+   const status=element.textContent,snapshot=JSON.stringify(context.sample);for(const selected of ['sa','avnode','his','purkinje']){context.state.selected=selected;context.updateElectricalState();A.equal(element.textContent,status);A.equal(JSON.stringify(context.sample),snapshot);}checks++;
+  }
+  // Arbitrary seeks can land between a true transition and its first sampled row.
+  for(const t of model.samples.filter((s,i,a)=>i&&s.electrical.stage!==a[i-1].electrical.stage).flatMap(s=>[s.cycleTime-model.validation.timeStep*.25,s.cycleTime])){
+   context.seek(2*model.period+t);const previous=context.sample.electrical.stage,index=stageOrder.indexOf(previous);context.nextElectricalStage();A.equal(context.sample.electrical.stage,stageOrder[(index+1)%stageOrder.length]);checks++;
+  }
+  for(const blocked of ['off','route']){context.seek(model.period+.14);const before=JSON.stringify(context.state),cancelled=context.cancelled.length;if(blocked==='off')context.state.conductionView='off';else context.state.route='routeC';const blockedState=JSON.stringify(context.state);A.equal(context.nextElectricalStage(),undefined);A.equal(JSON.stringify(context.state),blockedState);A.equal(context.cancelled.length,cancelled);Object.assign(context.state,JSON.parse(before));}
+  for(let i=0;i<129;i++){
+   context.seek(i*model.period/129);const s=context.sample,copy=JSON.stringify(s);context.updateCirculationOverview();
+   A.equal([...overview.innerHTML.matchAll(/data-h3-volume-trend="/g)].length,4);
+   for(const id of ['ra','rv','la','lv']){const net=flow(s,inlet[id])-flow(s,outlet[id]),direction=net>0?'rising':net<0?'falling':'steady',markup=context.chamberVolumeCue(F.chamber(s,id));A(markup.includes('data-net-flow="'+net+'"'));A(markup.includes('data-volume-direction="'+direction+'"'));A(markup.includes('Volume '+direction));A(markup.includes(' mL/s'));A(overview.innerHTML.includes(markup));if(['rv','lv'].includes(id)&&!s.valves[inlet[id]].open&&!s.valves[outlet[id]].open)A.equal(net,0);if(['ra','la'].includes(id)&&s[id==='ra'?'rightPhase':'leftPhase']==='ejection'&&net>0)refill=true;checks++;}
+   if(s.vascularFlows.pulmonaryReturn<0){A(overview.innerHTML.includes('data-h3-chamber-reversal="la"'));A(overview.innerHTML.includes('Pulmonary venous inflow reversed: '+s.vascularFlows.pulmonaryReturn.toFixed(1)+' mL/s'));reversal=true;}else A(!overview.innerHTML.includes('data-h3-chamber-reversal="la"'));
+   if(s.leftPhase!==s.rightPhase)split=true;A.equal(JSON.stringify(s),copy);
+  }
+  A.equal(JSON.stringify({timing:model.timing,samples:model.samples,events:model.events}),beforeModel,'Teaching cues must not alter model, stages or timing');
+ }
+ A(refill&&reversal&&split,'Exercise refill, signed reversal and distinct side phases');
+ console.log('PASS '+checks+' controller checks at HR55/75/110: four exact signed net-volume cues, atrial refill during ventricular ejection, closed-valve steady ventricles, explicit signed LA reversal; all9electrical windows, later-beat wrap and transition-adjacent stepping, pause/selection independence; no model/timing mutation.');
+}
+async function browser(){
+ const {chromium}=require('playwright'),out=process.env.CLARITY_EVIDENCE||'/workspace/scratch/heart-v4-performance-20261021/clarity-browser';fs.mkdirSync(out,{recursive:true});
+ const b=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ try{
+  const p=await b.newPage({viewport:{width:1440,height:1200},deviceScaleFactor:1,reducedMotion:'reduce'}),errors=[],records=[];p.on('pageerror',e=>errors.push(e.message));
+  await p.goto(process.env.CARDIO_BASE_URL||'http://127.0.0.1:8852/');await p.click('#heartV3Launch');await p.waitForFunction(()=>HeartV3Study.inspect().renderer?.sourceReady);await p.locator('[data-h3-mode="four-chamber"]').evaluate(e=>e.click());
+  const storage=await p.evaluate(()=>({...localStorage}));
+  const inspect=()=>p.evaluate(()=>HeartV3Study.inspect());
+  async function capture(name){await p.locator('[data-h3-render-host]').scrollIntoViewIfNeeded();await p.screenshot({path:path.join(out,name+'.png')});records.push({name,state:(await inspect()).state});}
+  for(const t of [.015,.113,.245,.255,.275,.33,.45,.7]){
+   await p.evaluate(t=>{HeartV3Study.pause();HeartV3Study.seek(t);},t);const s=(await inspect()).state.sample;
+   for(const id of ['ra','rv','la','lv']){const net=flow(s,inlet[id])-flow(s,outlet[id]),cue=p.locator('[data-h3-volume-trend="'+id+'"]');A(await cue.isVisible());A.equal(Number(await cue.getAttribute('data-net-flow')),net);A.equal(await cue.getAttribute('data-volume-direction'),net>0?'rising':net<0?'falling':'steady');A((await cue.innerText()).includes('mL/s'));}
+   A.equal(await p.locator('[data-h3-chamber-reversal="la"]').count(),s.vascularFlows.pulmonaryReturn<0?1:0);
+   if(t===.33||t===.113)await capture(t===.33?'four-chamber-ejection-net-trends':'signed-left-atrial-return');
+  }
+  await p.locator('[data-h3-action="conduction-focus"]').evaluate(e=>e.click());await p.evaluate(()=>HeartV3Study.seek(3*HeartV3Study.getModel().period+.7));
+  let previous=(await inspect()).state.time;
+  for(let n=0;n<stageOrder.length;n++){
+   const before=await inspect();await p.locator('[data-h3-action="electrical-next"]').evaluate(e=>e.click());const s=await inspect(),stage=s.state.sample.electrical.stage;
+   A.equal(stage,stageOrder[n]);A.equal(s.state.playing,false);A(s.state.time>previous);previous=s.state.time;A.deepEqual(s.camera,before.camera);A.equal(s.state.selected,before.state.selected);A.equal(await p.locator('[data-h3-electrical-now]').getAttribute('data-electrical-stage'),stage);A((await p.locator('[data-h3-electrical-now]').innerText()).startsWith('Electrical now: '));
+   const sample=clean(s.state.sample),activity=s.renderer.electricalGuides.map(e=>e.active);
+   for(const id of ['sa','avnode','his','purkinje']){await p.locator('[data-h3-electrical-select="'+id+'"]').evaluate(e=>e.click());const current=await inspect();A.equal(current.state.selected,id);A.deepEqual(current.state.sample,sample);A.deepEqual(current.renderer.electricalGuides.map(e=>e.active),activity);A.equal(await p.locator('[data-h3-electrical-now]').getAttribute('data-electrical-stage'),stage);}
+   if(stage==='SA-node'||stage==='AV-delay'||stage==='Purkinje-myocardium')await capture('electrical-'+stage);
+  }
+  // The stage readout belongs to macro overlay; the retained micro pulse model stays separate.
+  await p.selectOption('[data-h3-conduction-view]','off');A.equal(await p.locator('[data-h3-electrical-now]').isVisible(),false);await p.selectOption('[data-h3-conduction-view]','xray');
+  await p.evaluate(()=>HeartV3Study.enterRoute('routeC'));await p.waitForFunction(()=>HeartV3Study.inspect().detail?.stage);A.equal(await p.locator('[data-h3-electrical-now]').isVisible(),false);await p.locator('[data-h3-explorer-host] [data-h3-return]').evaluate(e=>e.click());await p.waitForFunction(()=>!HeartV3Study.getState().route);A(await p.locator('[data-h3-electrical-now]').isVisible());
+  for(const width of [390,768,1024]){await p.setViewportSize({width,height:1024});await p.selectOption('[data-h3-text-size]','2');A(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));A(await p.locator('[data-h3-electrical-now]').isVisible());for(const id of ['ra','rv','la','lv'])A(await p.locator('[data-h3-volume-trend="'+id+'"]').isVisible());await capture('text200-width'+width);}
+  A.deepEqual(await p.evaluate(()=>({...localStorage})),storage);A.deepEqual(errors,[]);fs.writeFileSync(path.join(out,'result.json'),JSON.stringify({passed:true,records,errors,limits:'Cloud Chromium teaching-state/interaction evidence; no benchmark, physical iPad or clinical validation'},null,2));console.log('PASS browser: simultaneous exact four-chamber cues, reversal, all9manual electrical stages, selection/activity separation, late-beat wrap, macro-only status,390/768/1024widths200%, storage and page errors. Evidence '+out);
+ }finally{await b.close();}
+}
+if(process.argv.includes('--browser'))browser().catch(e=>{console.error(e);process.exitCode=1;});else cpu();
