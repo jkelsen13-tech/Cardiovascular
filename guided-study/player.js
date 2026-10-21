@@ -286,6 +286,16 @@
     ['pointerdown', 'keydown', 'change'].forEach(function (type) { listen(doc, type, manual, true); });
     listen(doc, 'visibilitychange', function () { if (doc.hidden) action(function () { return session.pause(); }); });
     listen(audio, 'error', function () { fail(Error('Lesson narration could not load. Explore the scene or choose another lesson.')); });
+    listen(audio, 'timeupdate', function () {
+      var state = session.inspect();
+      // Software rendering can stall compositor RAFs while the media clock and
+      // media events continue. Use that existing clock to wake the same awaited
+      // update pipeline; do not create a timer or a competing model loop.
+      if (disposed || !initialized || doc.hidden || ticking || state.busy || !state.playing || state.mode !== 'guided' || audio.paused || audio.currentTime - state.audioTime < .1) return;
+      if (frame) host.cancelAnimationFrame(frame);
+      frame = 0;
+      advance();
+    });
     listen(audio, 'ended', function () { if (session.inspect().playing) action(function () { return session.tick(); }); });
     function load(id) { initialized = false; return action(function () { return session.load(id); }, true, true); }
     function dispose() {
