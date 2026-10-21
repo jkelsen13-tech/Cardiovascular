@@ -16,7 +16,7 @@ const DEFAULT_OUTPUT = '/workspace/scratch/heart-v3-public-candidate/heart-v3-pr
 const RUNTIME = [
   'heart-study-v3/module.js', 'heart-study-v3/module.css',
   'heart-study-v3/model.js', 'heart-study-v3/flow.js', 'heart-study-v3/anatomy.js',
-  'heart-study-v3/renderer.js', 'heart-study-v3/content.js', 'heart-study-v3/course.js', 'heart-study-v3/sourced-anatomy.js',
+  'heart-study-v3/renderer.js', 'heart-study-v3/content.js', 'heart-study-v3/course.js', 'heart-study-v3/vendor/shape-utils.min.js', 'heart-study-v3/vendor/THREE-LICENSE.txt', 'heart-study-v3/vendor/EARCUT-LICENSE.txt', 'heart-study-v3/vendor/BUILD.md', 'heart-study-v3/tissue-sections.js', 'heart-study-v3/sourced-anatomy.js',
   'heart-study-v3/explorer.js', 'heart-study-v3/explorer.css',
   'heart-study-v3/detail.js', 'heart-study-v3/assets/source-geometry.js',
   'heart-study-v3/assets/source-inventory.json',

@@ -38,8 +38,8 @@
     },
     {
       "file": "heart-study-v3/renderer.js",
-      "bytes": 20299,
-      "sha256": "f5695b8561e95f268267f028c3196e069cf730bdc81dbd479210521ff66e061c"
+      "bytes": 20427,
+      "sha256": "e35fb59546e948c25c7f9c89160545637bfeb2827e5cbcae0b019cc0ba92780c"
     },
     {
       "file": "heart-study-v3/assets/source-geometry.js",
@@ -53,8 +53,8 @@
     },
     {
       "file": "heart-study-v3/assets/ATTRIBUTION.md",
-      "bytes": 3147,
-      "sha256": "3bc6f59a8df2ff9ef26c730437b940ea8fd8afa27f1eb73642c32f1dc58be901"
+      "bytes": 3692,
+      "sha256": "26f27b44a8798b0a486aa700eb5287ac8b0bababaa4a92f326fc89b73403baa6"
     },
     {
       "file": "heart-study-v3/assets/CC-BY-4.0.txt",
@@ -62,9 +62,34 @@
       "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
     },
     {
+      "file": "heart-study-v3/vendor/shape-utils.min.js",
+      "bytes": 7284,
+      "sha256": "dd6ec23bc387980aa233d076040991427bb5ba9604640d14b987da465e0be81c"
+    },
+    {
+      "file": "heart-study-v3/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "file": "heart-study-v3/vendor/EARCUT-LICENSE.txt",
+      "bytes": 738,
+      "sha256": "324139c19d87af03fda38afea1590e00ca354c4159bdb2ae9e9cec070cfa46a8"
+    },
+    {
+      "file": "heart-study-v3/vendor/BUILD.md",
+      "bytes": 958,
+      "sha256": "34c6bcf8431e5127a090e72820cf741a5807aba49dec0030f195d93e022c7081"
+    },
+    {
+      "file": "heart-study-v3/tissue-sections.js",
+      "bytes": 8592,
+      "sha256": "10d04d7360e8ab2d98a4b8699d17dc3370aa18735f79626fade70ca61e154e6f"
+    },
+    {
       "file": "heart-study-v3/sourced-anatomy.js",
-      "bytes": 32028,
-      "sha256": "eee07e44c9bdeb1cf36f04085f705a925b99754dcf6c5a9e8482c0626b957ca0"
+      "bytes": 39506,
+      "sha256": "d41b5dfb828c2ba780b2919735a2280eb5446e09aa0aacce376bda14a5ea1b40"
     },
     {
       "file": "heart-study-v3/course.js",

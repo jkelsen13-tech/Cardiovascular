@@ -1,7 +1,7 @@
 name: Heart v3 verification
 on:
   pull_request:
-    paths: ['heart-study-v3/**', 'tools/heart-v3/**', 'simulation-core/**', 'respiratory-study/**', 'index.html', 'cmt-quiz.html']
+    paths: ['ecg-study/**', 'heart-study-v3/**', 'tools/heart-v3/**', 'simulation-core/**', 'respiratory-study/**', 'index.html', 'cmt-quiz.html']
 permissions:
   contents: read
 jobs:
@@ -20,6 +20,8 @@ jobs:
           node tools/heart-v3/model.cjs
           node tools/heart-v3/geometry.cjs
           node tools/heart-v3/routes.cjs
+          node tools/heart-v3/tissue-sections.cjs
+          node tools/heart-v3/wall-rim-openings.cjs
           HEART_V3_RELATIONS_OUTPUT="$RUNNER_TEMP/relations.json" node tools/heart-v3/visual-geometry-relations.cjs
           node tools/heart-v3/routes-valve-attachments.cjs
           node tools/heart-v3/four-chamber-flow.cjs
@@ -35,6 +37,7 @@ jobs:
           export HEART_V3_ROUTE_EVIDENCE="$RUNNER_TEMP/heart-v3-routes"
           python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/heart-v3-http.log" 2>&1 &
           node tools/heart-v3/sourced-anatomy-browser.cjs
+          node tools/heart-v3/retained-demonstrations-browser.cjs
           node tools/heart-v3/browser-ui.cjs
           node tools/heart-v3/browser-fallback.cjs
           node tools/heart-v3/browser-lifecycle.cjs

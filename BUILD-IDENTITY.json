@@ -1,7 +1,7 @@
 {
   "schema": "cardiovascular-anatomical-review-1",
   "scope": "Unpublished original-HRA heart revision; complete platform and existing lungs preserved",
-  "runtimeSnapshotSHA256": "8c24d73f796a48373fc87385dc481cbe557bd94d4890c79a471b757a73cb2ae2",
+  "runtimeSnapshotSHA256": "3526146031876452877ee879a70b2221e9d65fb6ab8da2a800410c5ceef257e4",
   "runtimeFiles": {
     "COPYRIGHT.md": {
       "bytes": 2048,
@@ -76,8 +76,8 @@
       "sha256": "9e9fc1ed33ba5740ed629d6f9e593f9b9783ef6c0c251e3ef2ae596b82d86825"
     },
     "docs/HEART-V3-ANATOMY.md": {
-      "bytes": 6032,
-      "sha256": "1218235ae6e80546c2033477c18d1a616951a22b4f861add37cd6f6e68be421a"
+      "bytes": 7200,
+      "sha256": "7458eb455cf2214e9ee1404906b60d63836c7b667a769524b18cb9a9ee473dfd"
     },
     "docs/HEART-V3-INTERFACE.md": {
       "bytes": 3031,
@@ -100,8 +100,8 @@
       "sha256": "b78569f48792af3ef26feacafc1b7332eca621af859aea167b4d69c5f6866ecf"
     },
     "ecg-study/assets/ATTRIBUTION.md": {
-      "bytes": 4980,
-      "sha256": "f06c2e5e1a90f84b07dfd534e979ea0bf75de4957bab8f962c83820cd92f2cab"
+      "bytes": 5205,
+      "sha256": "216aec86f0c128eac5bfb105421ef0e89ad63676185f1b3f90f42fd97dbb83b7"
     },
     "ecg-study/assets/CC-BY-4.0.txt": {
       "bytes": 18657,
@@ -120,16 +120,16 @@
       "sha256": "2c30cf2461ce14213221be9ad742e97981be70cad6c49e3cc26bc853b82258a5"
     },
     "ecg-study/heart-3d.js": {
-      "bytes": 33037,
-      "sha256": "444f6cae0f4edce3dcec5430ba1665c194e28745118b629ff52d88463730df7f"
+      "bytes": 33678,
+      "sha256": "f61dd8e7d6be54407a0136805c1de22a790b9eeb9d6c6e72c83c0127b7306ecf"
     },
     "ecg-study/module.css": {
       "bytes": 17351,
       "sha256": "ee443017bcacbb127eb2f9497ee2f2602704e358e8878cad169ed44f334da25a"
     },
     "ecg-study/module.js": {
-      "bytes": 32202,
-      "sha256": "db42b73b9cafd4d52cfffff8ef4044dce1cc1951cb2c67c521e733532b2cbb75"
+      "bytes": 32468,
+      "sha256": "de3fba67b72ee181cc3a66daa78e1ff207af5f6caa9d7700e63f8afbb959c022"
     },
     "ecg-study/vendor/THREE-LICENSE.txt": {
       "bytes": 1081,
@@ -138,6 +138,10 @@
     "ecg-study/vendor/three-gltf.min.js": {
       "bytes": 584440,
       "sha256": "ed9ffbaecd4018ea8dc90fd74ae041543d03c6fd438c8abb5b833a1cc85a7dcd"
+    },
+    "ecg-study/wall-rims.js": {
+      "bytes": 2865,
+      "sha256": "390fdfaa2be727a25ae5e358a029b3fb578b9378dc191b9255864e018f7b3f64"
     },
     "ecg/images/a6d28f.png": {
       "bytes": 331326,
@@ -264,16 +268,16 @@
       "sha256": "64108df9991cf925e740c9d46524094a5c9ac8702e862ca4fa4c4d38202f4b4b"
     },
     "heart-study-v3/assets/ATTRIBUTION.md": {
-      "bytes": 3147,
-      "sha256": "3bc6f59a8df2ff9ef26c730437b940ea8fd8afa27f1eb73642c32f1dc58be901"
+      "bytes": 3692,
+      "sha256": "26f27b44a8798b0a486aa700eb5287ac8b0bababaa4a92f326fc89b73403baa6"
     },
     "heart-study-v3/assets/CC-BY-4.0.txt": {
       "bytes": 18656,
       "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
     },
     "heart-study-v3/assets/model-manifest.json": {
-      "bytes": 3217,
-      "sha256": "cc5ab4d17ef439298441a724f30bb3c1b6f4efdb99ca28c9535498a2ccbd013b"
+      "bytes": 4072,
+      "sha256": "731fa64084eb809381464d39ca3dd56ede596aabf5b9795b8b2ea11c70550d25"
     },
     "heart-study-v3/assets/source-geometry.js": {
       "bytes": 5871952,
@@ -316,16 +320,36 @@
       "sha256": "2b8226bf1bca0b7db7ec0fcaf142e75bc649a2b00e6c20ca89faed0cdec34d16"
     },
     "heart-study-v3/module.js": {
-      "bytes": 83813,
-      "sha256": "1258c38479cc39512cac6c76c508c840f29424a138b4fe1ba022b3d602a05cd1"
+      "bytes": 84378,
+      "sha256": "d114bda98acdc5831c3fea850d1811ef173c2ea7af0a3375a014905267c488aa"
     },
     "heart-study-v3/renderer.js": {
-      "bytes": 20299,
-      "sha256": "f5695b8561e95f268267f028c3196e069cf730bdc81dbd479210521ff66e061c"
+      "bytes": 20427,
+      "sha256": "e35fb59546e948c25c7f9c89160545637bfeb2827e5cbcae0b019cc0ba92780c"
     },
     "heart-study-v3/sourced-anatomy.js": {
-      "bytes": 32028,
-      "sha256": "eee07e44c9bdeb1cf36f04085f705a925b99754dcf6c5a9e8482c0626b957ca0"
+      "bytes": 39506,
+      "sha256": "d41b5dfb828c2ba780b2919735a2280eb5446e09aa0aacce376bda14a5ea1b40"
+    },
+    "heart-study-v3/tissue-sections.js": {
+      "bytes": 8592,
+      "sha256": "10d04d7360e8ab2d98a4b8699d17dc3370aa18735f79626fade70ca61e154e6f"
+    },
+    "heart-study-v3/vendor/BUILD.md": {
+      "bytes": 958,
+      "sha256": "34c6bcf8431e5127a090e72820cf741a5807aba49dec0030f195d93e022c7081"
+    },
+    "heart-study-v3/vendor/EARCUT-LICENSE.txt": {
+      "bytes": 738,
+      "sha256": "324139c19d87af03fda38afea1590e00ca354c4159bdb2ae9e9cec070cfa46a8"
+    },
+    "heart-study-v3/vendor/THREE-LICENSE.txt": {
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    "heart-study-v3/vendor/shape-utils.min.js": {
+      "bytes": 7284,
+      "sha256": "dd6ec23bc387980aa233d076040991427bb5ba9604640d14b987da465e0be81c"
     },
     "images/diagrams/ecg-waveform-labeled.jpg": {
       "bytes": 134026,
