@@ -982,7 +982,6 @@
       }else guidedRespAnchor=Number(sim.seconds)||0;
       if(sim.sweep){if(sim.kind!=='phase'||!['inspiration','expiration'].includes(sim.phase)||!Number.isFinite(sim.anchorAudio)||!Number.isFinite(sim.endAudio)||sim.endAudio<=sim.anchorAudio)throw Error('Respiratory sweeps require a supported phase and measured positive audio bounds.');guidedRespWindow={start:sim.phase==='inspiration'?0:mechanics.Ti+.001,end:sim.phase==='inspiration'?mechanics.Ti-.001:mechanics.period-.001,audioStart:sim.anchorAudio,audioEnd:sim.endAudio};}
       guidedRespSignature=signature;
-      if(spec.monitoringView==='capnography')root.querySelector('[data-cap-marker]')?.closest('section')?.scrollIntoView({block:'center',behavior:'instant'});
     }
     if(!guidedRespCurrent(ctx))return false;const sim=spec.simulation||{kind:'hold',seconds:0};state.time=guidedRespWindow?guidedRespWindow.start+(guidedRespWindow.end-guidedRespWindow.start)*Math.max(0,Math.min(1,(audioTime-guidedRespWindow.audioStart)/(guidedRespWindow.audioEnd-guidedRespWindow.audioStart))):sim.kind==='cycle'?(guidedRespAnchor+Math.max(0,audioTime-(sim.anchorAudio||0))*(sim.speed??1))%mechanics.period:Math.max(0,Math.min(mechanics.period,guidedRespAnchor));updateClock();return true;
   }

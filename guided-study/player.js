@@ -13,7 +13,7 @@
     if (doc.getElementById('guidedStudyPlayer')) throw Error('Guided player is already mounted');
     var lessons = options.lessons || [], byId = new Map(lessons.map(function (l) { return [l.id, l]; }));
     var disposed = false, initialized = false, playPending = false, localError = '', frame = 0, ticking = false, session;
-    var listeners = [], renderedLesson = null, renderedCue = null, clip = null;
+    var listeners = [], renderedLesson = null, renderedCue = null, clip = null, focusedScene = null;
     function node(tag, text, attrs, parent) {
       var el = doc.createElement(tag);
       if (text != null) el.textContent = text;
@@ -59,6 +59,7 @@
     }
     var modes = node('div', null, { class: 'gs-row', role: 'group', 'aria-label': 'Learning mode' }, panel);
     var guidedButton = button('Open Guided (paused)', 'guided', modes), exploreButton = button('Explore', 'explore', modes);
+    var showSceneButton = button('Show scene', 'show-scene', modes);
     var modeNote = node('p', 'Guided controls the scene with narration. Explore gives you control without losing your guided place.', { class: 'gs-note', 'data-guided-mode-note': '' }, panel);
     var controls = node('div', null, { class: 'gs-row gs-transport', role: 'group', 'aria-label': 'Narration and scene controls' }, panel);
     var playButton = button('Play narration', 'play', controls), backButton = button('Back', 'back', controls), replayButton = button('Replay scene', 'replay', controls), nextButton = button('Next', 'next', controls);
@@ -98,6 +99,7 @@
       guidedButton.setAttribute('aria-pressed', String(isGuided && initialized));
       exploreButton.disabled = !l || !initialized && state.mode !== 'explore';
       exploreButton.setAttribute('aria-pressed', String(!isGuided));
+      showSceneButton.disabled = !ready || !isGuided || state.busy;
       playButton.textContent = state.playing ? 'Pause narration' : 'Play narration';
       playButton.disabled = !state.playing && (!ready || !isGuided || !state.playable || state.busy || playPending || !!state.error || !!localError);
       backButton.disabled = !ready || !isGuided || state.busy || state.cueIndex <= 0;
@@ -132,7 +134,27 @@
       write(error, message); error.hidden = !message;
       write(compactStatus, l ? (l.title || l.id) + ' · ' + (!isGuided ? 'Explore' : state.playing ? 'Playing' : 'Paused') : 'Choose a lesson');
       panel.setAttribute('aria-busy', String(state.busy));
+      followScene(state, false);
       syncLoop(state);
+    }
+    function followScene(state, force) {
+      if (state.mode !== 'guided') { focusedScene = null; return; }
+      if (!initialized || state.busy || state.error || typeof doc.querySelector !== 'function') return;
+      var l = byId.get(state.lessonId), cue = l && l.cues[state.cueIndex], scene = cue && cue.scene;
+      if (!scene) return;
+      var key = [state.lessonId, scene.organ, scene.route, scene.stage, scene.monitoringView, scene.preset].join('|');
+      if (!force && focusedScene === key) return;
+      var selectors = scene.organ === 'heart' ? ['#heartV3Study .heart-v3-viewport', '#heartV3Study [data-h3-fallback]:not([hidden])'] : scene.organ === 'lead' ? ['#leadPlacementHome .lead-3d-viewport', '#lead2DFallback:not([hidden])'] : scene.organ === 'respiratory' ? scene.monitoringView === 'capnography' ? ['#cardiorespiratoryStudy [data-cap-marker]'] : ['#cardiorespiratoryStudy .sim-breath-viewport', '#cardiorespiratoryStudy [data-explorer-fallback]'] : ['#guidedExplanationStudy'];
+      for (var i = 0; i < selectors.length; i++) {
+        var target = doc.querySelector(selectors[i]);
+        if (target && scene.monitoringView === 'capnography') target = target.closest('section');
+        if (!target || typeof target.getBoundingClientRect !== 'function' || typeof target.scrollIntoView !== 'function') continue;
+        var bounds = target.getBoundingClientRect();
+        if (!bounds.height) continue;
+        focusedScene = key;
+        if (force || bounds.top < 65 || bounds.bottom > (host.innerHeight || 768)) target.scrollIntoView({ block: 'center', behavior: 'auto' });
+        return;
+      }
     }
     function syncLoop(state) {
       if (disposed || doc.hidden || !state.playing || state.mode !== 'guided') {
@@ -152,8 +174,9 @@
       localError = e && e.message || String(e);
       if (session) { session.enterExplore(); render(session.inspect()); }
     }
-    function action(work, prepared) {
+    function action(work, prepared, follow) {
       localError = '';
+      if (follow) focusedScene = null;
       var result;
       try { result = work(); } catch (e) { fail(e); return Promise.resolve(false); }
       return Promise.resolve(result).then(function (ok) { if (ok && prepared) initialized = true; render(session.inspect()); return ok; }, function (e) { fail(e); return false; });
@@ -200,15 +223,16 @@
       action(function () { return session.inspect().mode === 'explore' ? session.returnGuided() : session.load(session.inspect().lessonId); }, true);
     });
     listen(exploreButton, 'click', function () { action(function () { return session.enterExplore(); }); });
+    listen(showSceneButton, 'click', function () { followScene(session.inspect(), true); });
     listen(playButton, 'click', function () {
       if (session.inspect().playing) { action(function () { return session.pause(); }); return; }
       // Call play before a promise/await so the HTMLAudioElement retains the gesture.
-      var result = action(function () { return session.play(); });
+      var result = action(function () { return session.play(); }, false, true);
       playPending = true; render(session.inspect());
       result.finally(function () { playPending = false; render(session.inspect()); });
     });
-    listen(backButton, 'click', function () { action(function () { return session.back(); }); });
-    listen(nextButton, 'click', function () { action(function () { return session.next(); }); });
+    listen(backButton, 'click', function () { action(function () { return session.back(); }, false, true); });
+    listen(nextButton, 'click', function () { action(function () { return session.next(); }, false, true); });
     function adjacentSection(offset) {
       var index = availableSections.findIndex(function (item) { return item.id === session.inspect().lessonId; });
       var item = availableSections[index + offset];
@@ -216,9 +240,9 @@
     }
     listen(previousSection, 'click', function () { adjacentSection(-1); });
     listen(nextSection, 'click', function () { adjacentSection(1); });
-    listen(replayButton, 'click', function () { action(function () { return session.replay(); }); });
-    listen(cueSelect, 'change', function () { action(function () { return session.seekCue(cueSelect.value); }); });
-    listen(seek, 'input', function () { action(function () { return session.seek(Number(seek.value)); }); });
+    listen(replayButton, 'click', function () { action(function () { return session.replay(); }, false, true); });
+    listen(cueSelect, 'change', function () { action(function () { return session.seekCue(cueSelect.value); }, false, true); });
+    listen(seek, 'input', function () { action(function () { return session.seek(Number(seek.value)); }, false, true); });
     function manual(event) {
       if (!event.isTrusted || disposed || !session.inspect().lessonId || session.inspect().mode !== 'guided') return;
       var target = event.target;
@@ -234,7 +258,7 @@
     listen(doc, 'visibilitychange', function () { if (doc.hidden) action(function () { return session.pause(); }); });
     listen(audio, 'error', function () { fail(Error('Lesson narration could not load. Explore the scene or choose another lesson.')); });
     listen(audio, 'ended', function () { if (session.inspect().playing) action(function () { return session.tick(); }); });
-    function load(id) { initialized = false; return action(function () { return session.load(id); }, true); }
+    function load(id) { initialized = false; return action(function () { return session.load(id); }, true, true); }
     function dispose() {
       if (disposed) return;
       disposed = true;

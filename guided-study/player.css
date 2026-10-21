@@ -13,6 +13,7 @@
 #guidedStudyPlayer button:hover:enabled{background:#e6effc;border-color:#3767a4}
 #guidedStudyPlayer button[aria-pressed=true]{background:#e2edff;border-color:#2563a9;box-shadow:inset 0 -3px #2563a9}
 #guidedStudyPlayer button[data-guided-action=play]{background:#174f9e;border-color:#174f9e;color:white;font-weight:650}
+#guidedStudyPlayer button[data-guided-action=play]:hover:enabled{background:#103e80;border-color:#103e80}
 #guidedStudyPlayer button:disabled,#guidedStudyPlayer select:disabled{opacity:.55;cursor:default}
 #guidedStudyPlayer :focus-visible{outline:3px solid #9c5400;outline-offset:3px}
 #guidedStudyPlayer label{color:#344d6e;font-size:.9em}

@@ -10,7 +10,13 @@
   ['ecg/images/a6d28f.png','06cb93b6c931a3b3e3fd93ea779b21271914614c8f4bece67539f5a309807c7d'],
   ['ecg/images/b9e407.png','475f4a18e91f79c5138ad3453d9e9fc8a6f720ad8ea8d136589c26efe0454f75'],
   ['ecg/images/c2f861.png','5f52392deace7ec98a05c1b6633bda791aca61ef636fc8fafcbbada074c898e6'],
-  ['ecg/images/d7a350.png','1ceac21f4293b94a48066f3229a4d33ee11d47cefbf021db6e83aec4150b4928']
+  ['ecg/images/d7a350.png','1ceac21f4293b94a48066f3229a4d33ee11d47cefbf021db6e83aec4150b4928'],
+  ['ecg/images/e4b916.png','9530f3aa3edea12cc1668c1d750caf70ef7aaeed286566ac695258d96129c1df'],
+  ['ecg/images/f8c205.png','75c06f514351fbcfa545b3fb320caa623ba5fd0746a6bf1f4846246b74b444a4'],
+  ['ecg/images/k8a473.png','14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408'],
+  ['ecg/images/m2b695.png','564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed'],
+  ['ecg/images/n6c048.png','34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c'],
+  ['ecg/images/p4d827.png','9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a']
  ]);
  heading.tabIndex=-1;text.style.whiteSpace='pre-wrap';qualification.className=source.className='gs-note';back.type='button';back.textContent='All study modes';back.style.minHeight='44px';back.onclick=()=>root.goHome();panel.append(tag,heading,text,figure,qualification,source,back);home.append(panel);
  let current=null,signature=null;
