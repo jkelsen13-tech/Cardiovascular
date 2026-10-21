@@ -163,35 +163,6 @@
       }
       if (!frame && !ticking) frame = host.requestAnimationFrame(advance);
     }
-    function presentScene(context) {
-      if (!context.isCurrent()) return Promise.resolve(false);
-      // The normal render callback suppresses scrolling while busy. Here the
-      // new scene is prepared but narration is still held, so reveal it before
-      // waiting for two paint opportunities. Steady ticks do not enter here.
-      followScene(Object.assign({}, session.inspect(), { busy: false }), false);
-      // Non-window hosts cannot present frames (for example a text/DOM adapter).
-      if (!doc.defaultView || typeof doc.querySelector !== 'function' || typeof host.requestAnimationFrame !== 'function') return Promise.resolve(true);
-      return new Promise(function (resolve) {
-        var id = 0, count = 0, settled = false;
-        function finish(ok) {
-          if (settled) return;
-          settled = true;
-          if (id) host.cancelAnimationFrame(id);
-          context.signal.removeEventListener('abort', cancel);
-          resolve(ok);
-        }
-        function cancel() { finish(false); }
-        function paint() {
-          id = 0;
-          if (!context.isCurrent() || disposed) { finish(false); return; }
-          if (++count === 2) { finish(true); return; }
-          id = host.requestAnimationFrame(paint);
-        }
-        context.signal.addEventListener('abort', cancel, { once: true });
-        if (context.signal.aborted) cancel();
-        else id = host.requestAnimationFrame(paint);
-      });
-    }
     async function advance() {
       frame = 0;
       if (disposed || doc.hidden || !session.inspect().playing) return;
@@ -245,7 +216,7 @@
         throw e;
       }
     }
-    session = host.GuidedStudySession.create({ lessons: lessons, audio: audio, adapters: options.adapters, storage: storage, onChange: render, resolveAudio: canResolveAudio ? resolveAudio : undefined, presentScene: presentScene });
+    session = host.GuidedStudySession.create({ lessons: lessons, audio: audio, adapters: options.adapters, storage: storage, onChange: render, resolveAudio: canResolveAudio ? resolveAudio : undefined });
     listen(lessonSelect, 'change', function () { if (lessonSelect.value) load(lessonSelect.value); });
     listen(guidedButton, 'click', function () {
       if (initialized && session.inspect().mode === 'guided') return;

@@ -56,13 +56,6 @@
    setPosition(p);
    return schedule(async function(ctx){try{
     var result=await apply(p,ctx,null,false,false);if(!ctx.isCurrent())return false;
-    // A submitted WebGL draw may still be waiting for compositor presentation.
-    // Keep the existing cold-scene audio hold through that boundary; warm ticks
-    // continue to use only the actual media clock and add no presentation loop.
-    if(hold&&state.mode==='guided'&&state.playing&&playRevision===hold.token&&typeof options.presentScene==='function'){
-     var presented=await options.presentScene(ctx);if(!ctx.isCurrent())return false;
-     if(presented===false)throw Error('Prepared lesson scene could not be presented.');
-    }
     if(hold&&audio.ended){pauseAudio();pauseAdapter();}
     else if(hold&&state.mode==='guided'&&state.playing&&playRevision===hold.token){
      try{await audio.play();}catch(e){if(ctx.isCurrent()&&playRevision===hold.token)throw Error('Narration continuation could not resume: '+(e&&e.message||e));return false;}
