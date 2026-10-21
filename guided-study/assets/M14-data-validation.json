@@ -19,6 +19,7 @@
     "fullAudioDecode": true,
     "actualSentenceAndWordAnchors": true,
     "cueBoundsAndOrdering": true,
+    "actualRespiratoryRendererSelectionEnumeration": true,
     "fullDeterministicSceneSnapshots": true,
     "explicitQualifiedExplanationCards": true,
     "rootApprovedExistingImageReferencesOnly": true,
@@ -39,8 +40,76 @@
     "accuracyClaim": null,
     "inheritedECGFingerprintMismatchUnresolved": true
   },
-  "lessonSha256": "c1bbe5eb85c421639345d1d43fb30aa45ac3ef3c57c43619308868acd499b386",
-  "assetsProvenanceSha256": "aeaaabcc77d83cc91d78bee2c1a153e0dbc1b3ee63fcb40580fbf521a5f20951",
+  "lessonSha256": "7382c7e55b3ea43a83bcd8f190d335b687cbdacfdc94729843fa28821f6e69a4",
+  "assetsProvenanceSha256": "99de17dab0d50767324cbf6d722f0cbe72b814a45d19ee94378c974593d75c33",
+  "sceneBindingsSha256": "84f47bab69e4bafcef381f57d086f5cd2b06a18a77da41476b7e1026a8d4ab25",
+  "respiratorySelectionCapability": {
+    "schema": "guided-study.M14-respiratory-capability.v1",
+    "method": "Read-only evaluation of retained data enumeration and inspection of actual adapter selection/alias source; not a browser pass",
+    "sourceFiles": {
+      "respiratory-study/breathing-3d.js": "550c16cf489cf88ab38b94fa8ad76ec88803303ea45e896d32117a568f7ecd76",
+      "respiratory-study/assets/breathing-data.js": "71ef7cfc01436246450ac7dbf80f96d5b9c62c5057fe3c62b8164f4850382894",
+      "simulation-core/module.js": "8258e2af1d9499db269693451939a4bf23afd0785331a431f4f499396b2a2255",
+      "simulation-core/content.js": "80b37d2b44b44d3d4a6b1aa9a04da6b8901576102ca37df6fd4c8169d4ba8982"
+    },
+    "rendererGrossMeshIds": [
+      "left-upper",
+      "left-lower",
+      "right-lower",
+      "right-middle",
+      "right-upper",
+      "airways"
+    ],
+    "rendererStaticSelectOptions": [
+      "rightlung",
+      "leftlung",
+      "right-upper",
+      "right-middle",
+      "right-lower",
+      "left-upper",
+      "left-lower",
+      "airways",
+      "diaphragm",
+      "ribs"
+    ],
+    "rendererDirectGrossAnchorIds": [
+      "left-upper",
+      "left-lower",
+      "right-lower",
+      "right-middle",
+      "right-upper",
+      "airways",
+      "rightlung",
+      "leftlung",
+      "diaphragm",
+      "ribs"
+    ],
+    "rendererAliases": {
+      "trachea": "airways",
+      "rightbronchus": "airways",
+      "leftbronchus": "airways",
+      "lobar": "airways"
+    },
+    "checks": {
+      "M14_07_s05": {
+        "sceneSelected": "airways",
+        "rendererSelectOptionExists": true,
+        "retainedGrossMeshExists": true,
+        "aliasRejectedAsExactSelection": "trachea",
+        "qualification": "Retained gross trachea/named-bronchi group; no new separate trachea mesh"
+      },
+      "M14_07_p07": {
+        "sceneSelected": "rightlung",
+        "rendererSelectOptionExists": true,
+        "grossAnchorExists": true,
+        "stage": "membrane",
+        "qualification": "Valid retained gross context only. Microscopic source highlighting uses journey origin, not selected rightlung. Existing explicit reconstruction/segment-anchor wording remains unchanged; no specific alveolar source selection is promised."
+      }
+    },
+    "onlyRequestedSceneSelectionChanged": true,
+    "textAudioTimingUnchanged": true,
+    "nativeRerunPending": true
+  },
   "clips": [
     {
       "id": "M14.01",

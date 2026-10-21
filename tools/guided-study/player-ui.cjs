@@ -91,6 +91,89 @@ function mediaHost(){
  const sectionLessons=[clone(lessons[0]),{...clone(lessons[0]),id:'second',title:'Second section',audio:{src:'second.mp3',duration:6}}],roll=setup(null,{lessons:sectionLessons,catalog:{declaredGapClips:87,segments:[{id:'heart',title:'First'},{id:'pending',title:'Unintegrated'},{id:'second',title:'Second'}]}});const pendingOption=find(roll.player.element,n=>n.tagName==='OPTION'&&n.value==='pending');A(pendingOption&&Object.hasOwn(pendingOption.attributes,'disabled'));A.match(attr(roll.player,'data-guided-rollout').textContent,/87 clips/);await roll.player.load('heart');await roll.click('next-section');A.equal(roll.player.inspect().lessonId,'second');A.equal(roll.player.audio.paused,true);A.equal(roll.player.audio.plays,0);await roll.click('previous-section');A.equal(roll.player.inspect().lessonId,'heart');roll.player.dispose();
  await x.click('play');A.equal(x.frames.size,1);p.dispose();A.equal(x.frames.size,0);A.equal(p.audio.paused,true);A.equal(x.home.children.includes(p.element),false);A.equal((x.doc.listeners.pointerdown||[]).length,0);A.equal(p.inspect().disposed,true);A.equal(x.home.children.includes(x.menu),true,'existing modes remain in place');
  const css=fs.readFileSync(path.resolve(__dirname,'../../guided-study/player.css'),'utf8');A.match(css,/min-height:44px/);A.doesNotMatch(css,/position\s*:\s*(fixed|sticky)/,'player cannot cover the anatomical HUD');
- const report={passed:true,checks:['normal-flow mount without autoplay or organ opening','synchronous gesture-owned audio.play','one awaited RAF chain and unchanged-clock deduplication','trusted simulator capture-phase Explore release','trusted header/menu/quiz/results navigation releases before handlers; ordinary outside content ignored','player/programmatic/focus events excluded','paused Guided restore with independent Explore snapshot','manual seek/back/next/replay and text-only cues','current cue representation qualification updates as literal text and hides without stale metadata','pause on visibility loss and audio errors; explicit recovery','real audio end handling','saved position displayed without opening anatomy','isolated persistence and full disposal','one same-origin full-Blob clip cache; no tick/seek refetch; replacement/disposal revocation and download retry','cancelled body/URL creation/disposal cannot attach late media or revoke the active prior clip','44px targets and no fixed anatomical overlay','unintegrated course sections disabled, explicit section navigation stays paused','ready guided views follow once, same-view ticks never scroll, Explore relinquishes focus, explicit Show scene restores view'],limits:'CPU DOM/event harness only; actual browser layout, trusted input, HTMLAudioElement playback and live organ adapters require root integration verification.'};
+ await testMediaWakeup();
+ const report={passed:true,checks:['normal-flow mount without autoplay or organ opening','synchronous gesture-owned audio.play','one awaited RAF chain and unchanged-clock deduplication','trusted simulator capture-phase Explore release','trusted header/menu/quiz/results navigation releases before handlers; ordinary outside content ignored','player/programmatic/focus events excluded','paused Guided restore with independent Explore snapshot','manual seek/back/next/replay and text-only cues','current cue representation qualification updates as literal text and hides without stale metadata','pause on visibility loss and audio errors; explicit recovery','real audio end handling','saved position displayed without opening anatomy','isolated persistence and full disposal','one same-origin full-Blob clip cache; no tick/seek refetch; replacement/disposal revocation and download retry','cancelled body/URL creation/disposal cannot attach late media or revoke the active prior clip','44px targets and no fixed anatomical overlay','unintegrated course sections disabled, explicit section navigation stays paused','ready guided views follow once, same-view ticks never scroll, Explore relinquishes focus, explicit Show scene restores view','stale real-media event wakes the same awaited pipeline; busy/ticking/Pause/Explore/hidden/dispose guards preserve single ownership'],limits:'CPU DOM/event harness only; actual browser layout, trusted input, HTMLAudioElement playback and live organ adapters require root integration verification.'};
  if(process.env.GUIDED_PLAYER_EVIDENCE)fs.writeFileSync(process.env.GUIDED_PLAYER_EVIDENCE,JSON.stringify(report,null,2)+'\n');console.log('PASS guided player UI: '+report.checks.length+' CPU DOM/event behavior groups.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+async function testMediaWakeup(){
+ const subchecks=[];
+ const applyCount=x=>x.calls.filter(c=>c[0]==='apply').length;
+ const defer=()=>{let resolve;const promise=new Promise(r=>resolve=r);return{promise,resolve};};
+ let tickCalls=0,tickGate=null,applyGate=null,maxConcurrent=0,concurrent=0;
+ const injectedCore={create(options){
+  const originalApply=options.adapters.heart.apply;
+  options.adapters.heart.apply=async(scene,time,ctx)=>{
+   if(applyGate){const g=applyGate;applyGate=null;g.entered.resolve();await g.release.promise;}
+   return originalApply(scene,time,ctx);
+  };
+  const s=core.create(options),tick=s.tick;
+  s.tick=async function(){tickCalls++;concurrent++;maxConcurrent=Math.max(maxConcurrent,concurrent);try{if(tickGate){const g=tickGate;tickGate=null;g.entered.resolve();await g.release.promise;}return await tick();}finally{concurrent--;}};
+  return s;
+ }};
+ const x=setup(null,{host:{GuidedStudySession:injectedCore}}),p=x.player,a=p.audio;
+ A.equal((a.listeners.timeupdate||[]).length,1,'Exactly one media-event listener is installed');
+ await p.load('heart');await x.click('play');A.equal(x.frames.size,1);
+ const oldFrame=[...x.frames.keys()][0],oldApplies=applyCount(x);
+ a.currentTime=.75;x.event(a,'timeupdate',{isTrusted:false});await x.settle();await x.settle();
+ A.equal(p.inspect().audioTime,.75);A.equal(x.presentation.time,.75,'Fallback uses actual media time');
+ A.equal(tickCalls,1);A.equal(applyCount(x),oldApplies+1);A.equal(x.frames.size,1,'The same pipeline restores one RAF');A(!x.frames.has(oldFrame),'Fallback cancels prior pending RAF');
+ subchecks.push('lagging media event cancels pending RAF, applies actual audio time, then leaves exactly one RAF');
+
+ const healthyApplies=applyCount(x),healthyTick=tickCalls,healthyFrame=[...x.frames.keys()][0];
+ a.currentTime=.8;x.event(a,'timeupdate',{isTrusted:false});await x.settle();
+ A.equal(tickCalls,healthyTick);A.equal(applyCount(x),healthyApplies);A.equal([...x.frames.keys()][0],healthyFrame);
+ x.event(a,'timeupdate',{isTrusted:false});await x.settle();A.equal(tickCalls,healthyTick);
+ subchecks.push('healthy recent updates below 100 ms and repeated events add no apply or RAF');
+
+ const tg={entered:defer(),release:defer()};tickGate=tg;a.currentTime=1.2;
+ x.event(a,'timeupdate',{isTrusted:false});await tg.entered.promise;
+ A.equal(p.inspect().busy,false,'Test isolates player ticking from session busy');A.equal(a.paused,false);A.equal(x.frames.size,0);
+ const activeTick=tickCalls;a.currentTime=1.6;
+ for(let n=0;n<4;n++)x.event(a,'timeupdate',{isTrusted:false});await x.settle();
+ A.equal(tickCalls,activeTick,'No competing tick while advance awaits');A.equal(x.frames.size,0);
+ tg.release.resolve();await x.settle();await x.settle();
+ A.equal(p.inspect().audioTime,1.6);A.equal(x.presentation.time,1.6);A.equal(x.frames.size,1);A.equal(maxConcurrent,1);
+ subchecks.push('ticking guard suppresses repeated media wakes during deferred awaited advance');
+
+ const ag={entered:defer(),release:defer()};applyGate=ag;a.currentTime=1.8;
+ const external=p.session.tick();await ag.entered.promise;
+ A.equal(p.inspect().busy,true);A.equal(a.paused,false,'Warm preparation has not paused narration');
+ const busyTick=tickCalls;a.currentTime=1.99;x.event(a,'timeupdate',{isTrusted:false});await x.settle();
+ A.equal(tickCalls,busyTick,'Busy adapter scheduled outside player advance is not superseded by fallback');
+ ag.release.resolve();A.equal(await external,true);await x.settle();
+ A.equal(p.inspect().audioTime,1.8,'In-flight operation retains its requested sample');A.equal(x.frames.size,1);A.equal(maxConcurrent,1);
+ subchecks.push('busy guard preserves an independently scheduled real session operation');
+
+ a.currentTime=2.3;x.event(a,'timeupdate',{isTrusted:false});await x.settle();await x.settle();
+ A.equal(p.inspect().audioTime,2.3);A.equal(x.presentation.selected,'rv');A.equal(x.presentation.time,2.3);A.equal(a.paused,false);A.equal(x.frames.size,1);A.equal(maxConcurrent,1);
+ subchecks.push('fallback crossing a cue uses the same cold preparation/hold/continuation path');
+
+ await p.session.pause();await x.settle();const pausedCount=tickCalls,pausedApply=applyCount(x);
+ A.equal(a.paused,true);A.equal(x.frames.size,0);a.currentTime=3.5;x.event(a,'timeupdate',{isTrusted:false});await x.settle();
+ A.equal(tickCalls,pausedCount);A.equal(applyCount(x),pausedApply);A.equal(x.frames.size,0);A.equal(p.inspect().playing,false);
+ subchecks.push('Pause rejects media wakes without scheduling, applying or resuming audio');
+
+ await x.click('play');await p.session.enterExplore();Object.assign(x.presentation,{selected:'learner camera',time:99});
+ const exploredTick=tickCalls,exploredApply=applyCount(x);a.currentTime=5;x.event(a,'timeupdate',{isTrusted:false});await x.settle();
+ A.equal(p.inspect().mode,'explore');A.equal(x.presentation.selected,'learner camera');A.equal(x.presentation.time,99);A.equal(tickCalls,exploredTick);A.equal(applyCount(x),exploredApply);A.equal(x.frames.size,0);A.equal(a.paused,true);
+ subchecks.push('Explore retains learner state and has no media-driven clock/RAF ownership');
+
+ await p.session.returnGuided();await x.click('play');x.doc.hidden=true;
+ const hiddenTicks=tickCalls,hiddenApplies=applyCount(x);a.currentTime=5.5;x.event(a,'timeupdate',{isTrusted:false});await x.settle();
+ A.equal(tickCalls,hiddenTicks);A.equal(applyCount(x),hiddenApplies);
+ x.event(x.doc,'visibilitychange',{isTrusted:false});await x.settle();A.equal(a.paused,true);A.equal(x.frames.size,0);x.doc.hidden=false;
+ subchecks.push('hidden document ignores fallback and existing visibility-loss path pauses/cancels');
+
+ await x.click('play');a.paused=true;const mediaPausedTicks=tickCalls;a.currentTime=5.9;x.event(a,'timeupdate',{isTrusted:false});await x.settle();A.equal(tickCalls,mediaPausedTicks,'Paused media cannot wake the pipeline even if session still reports playing');
+ subchecks.push('actual media paused flag suppresses stale playing state');
+
+ p.dispose();const disposedTicks=tickCalls,disposedApplies=applyCount(x);A.equal((a.listeners.timeupdate||[]).length,0);
+ a.currentTime=6;x.event(a,'timeupdate',{isTrusted:false});await x.settle();A.equal(tickCalls,disposedTicks);A.equal(applyCount(x),disposedApplies);A.equal(x.frames.size,0);
+ subchecks.push('Dispose removes its listener and forbids late media events/RAF work');
+
+ const crypto=require('node:crypto'),rootPath=path.resolve(__dirname,'../..'),hash=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+ const result={passed:true,group:19,name:'media timeupdate wakes the same awaited pipeline only when actual audio is at least 100 ms ahead',subchecks,maxConcurrentTick:maxConcurrent,sourceHashes:{session:hash(rootPath+'/guided-study/session.js'),player:hash(rootPath+'/guided-study/player.js'),originalHarness:hash(rootPath+'/tools/guided-study/player-ui.cjs')},limits:'Actual player/session with original CPU DOM/event harness and deliberate gates; no browser, GPU presentation, real media event cadence, synchronization/performance improvement, listening or Cursor claim.'};
+ if(process.env.GUIDED_TIMEUPDATE_EVIDENCE)fs.writeFileSync(process.env.GUIDED_TIMEUPDATE_EVIDENCE,JSON.stringify(result,null,2)+'\n');return result;
+
+}

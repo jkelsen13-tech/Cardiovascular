@@ -1729,7 +1729,7 @@
             "mode": "target"
           },
           "ventilation": "spontaneous",
-          "selected": "trachea",
+          "selected": "airways",
           "simulation": {
             "kind": "phase",
             "phase": "inspiration",
