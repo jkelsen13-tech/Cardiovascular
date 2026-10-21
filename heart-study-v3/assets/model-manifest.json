@@ -83,13 +83,13 @@
     },
     {
       "file": "heart-study-v3/tissue-sections.js",
-      "bytes": 14248,
-      "sha256": "b88c3be817d5b627370c2f5aab76a84b5247405a5627c20c445121d6c5ed2007"
+      "bytes": 14419,
+      "sha256": "68eaa228da6260a2744532309329ccba2997fe3ddd3e262f7503343aa188fa7e"
     },
     {
       "file": "heart-study-v3/sourced-anatomy.js",
-      "bytes": 59739,
-      "sha256": "3323493c401a983097f543d513903a7baedaba1ede896e9f9c3ef78fdb6b375c"
+      "bytes": 61381,
+      "sha256": "9fda2fd9c181d7a1fde04cd79a09897db76771abac3b96736fbc3059bff16941"
     },
     {
       "file": "heart-study-v3/course.js",
