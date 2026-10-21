@@ -113,7 +113,7 @@ const server = http.createServer((req, res) => {
 (async () => {
   await new Promise((r) => server.listen(0, '127.0.0.1', r));
   const url = 'http://127.0.0.1:' + server.address().port;
-  const browser = await chromium.launch({headless: true});
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,headless: true});
   try {
     const page = await browser.newPage({viewport: {width: 1280, height: 900}});
     const errors = [];
