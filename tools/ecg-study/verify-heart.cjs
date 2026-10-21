@@ -53,6 +53,8 @@ const {chromium}=require('playwright');
   assert((await page.locator('.ecg-3d-label[data-structure="aorta"]').textContent()).includes('BODY'));
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),labelCap,'expanded blood-flow mode caps readable callouts at eight; all names remain in the accessible list');
   await page.locator('[data-option="valves"]').check();
+  await page.locator('.ecg-3d-viewport').scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>document.querySelectorAll('.ecg-3d-label[data-kind="valve"]:not([hidden])').length===4);
   assert.equal(await page.locator('.ecg-3d-label[data-kind="valve"]:not([hidden])').count(),4);
   await page.locator('[data-option="label-mode"]').selectOption('conduction');
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-label-mode'),'conduction');

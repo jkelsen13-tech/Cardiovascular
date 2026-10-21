@@ -176,7 +176,7 @@ window.EcgHeart3D = (() => {
    else {const a=[...drag.values()];const d=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);if(last)distance=clamp(distance*last/d,3.3,8);last=d;}
    draw();
   }
-  canvas.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>6)return;const r=canvas.getBoundingClientRect(),ray=new T.Raycaster();ray.setFromCamera(new T.Vector2((e.clientX-r.left)/r.width*2-1,1-(e.clientY-r.top)/r.height*2),camera);const hits=ray.intersectObjects([...meshes,...(wallRims?.meshes()||[])]).filter(h=>h.object.visible&&(!cutaway||clipping.distanceToPoint(h.point)>=0));if(hits[0]){const id=Object.keys(structureParts).find(id=>matches(hits[0].object,id));if(id)selectStructure(id);}});
+  canvas.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>6)return;const r=canvas.getBoundingClientRect();if(!r.width||!r.height)return;const direction=V((e.clientX-r.left)/r.width*2-1,1-(e.clientY-r.top)/r.height*2,.5).unproject(camera).sub(camera.position).normalize(),hit=wallRims?.pick(camera.position,direction),hits=hit?[hit]:[];if(hits[0]){const id=Object.keys(structureParts).find(id=>matches(hits[0].object,id));if(id)selectStructure(id);}});
   canvas.addEventListener("pointerdown",pointerDown);canvas.addEventListener("pointermove",pointerMove);
   ["pointerup","pointercancel"].forEach(ev=>canvas.addEventListener(ev,e=>{drag.delete(e.pointerId);last=null;}));
   canvas.addEventListener("wheel",e=>{if(!touchEnabled)return;e.preventDefault();distance=clamp(distance+Math.sign(e.deltaY)*.3,3.3,8);draw();},{passive:false});

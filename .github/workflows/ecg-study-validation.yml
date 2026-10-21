@@ -1,9 +1,9 @@
 name: ECG waves study verification
 on:
   push:
-    paths: ['ecg-study/**','tools/ecg-study/**','index.html','cmt-quiz.html','.github/workflows/ecg-study-validation.yml']
+    paths: ['ecg-study/**','heart-study-v3/tissue-sections.js','heart-study-v3/vendor/**','tools/ecg-study/**','index.html','cmt-quiz.html','.github/workflows/ecg-study-validation.yml']
   pull_request:
-    paths: ['ecg-study/**','tools/ecg-study/**','index.html','cmt-quiz.html','.github/workflows/ecg-study-validation.yml']
+    paths: ['ecg-study/**','heart-study-v3/tissue-sections.js','heart-study-v3/vendor/**','tools/ecg-study/**','index.html','cmt-quiz.html','.github/workflows/ecg-study-validation.yml']
 concurrency:
   group: heart-verification-${{ github.ref }}
   cancel-in-progress: true
@@ -24,6 +24,11 @@ jobs:
           npx playwright install --with-deps chromium
       - run: node tools/ecg-study/verify.cjs
       - run: node tools/ecg-study/verify-heart.cjs
+      - name: Hollow rim and actual source picking
+        run: |
+          export CHROMIUM_PATH="$(node -p "require('playwright').chromium.executablePath()")"
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/ecg-rim-http.log" 2>&1 &
+          CARDIO_BASE_URL=http://127.0.0.1:8765/ node tools/ecg-study/rim-picking.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

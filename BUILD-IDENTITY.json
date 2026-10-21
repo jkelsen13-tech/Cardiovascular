@@ -1,7 +1,7 @@
 {
   "schema": "cardiovascular-anatomical-review-1",
   "scope": "Unpublished original-HRA heart revision; complete platform and existing lungs preserved",
-  "runtimeSnapshotSHA256": "7712038ac9ae5434ca2431c39598a200f61b5b1d083d8edc4a9a099d14b5d306",
+  "runtimeSnapshotSHA256": "7bf0149b28aa88ef1a0dcf53f61477430db9467da1044753ff6b763a7421de35",
   "runtimeFiles": {
     "COPYRIGHT.md": {
       "bytes": 2048,
@@ -120,8 +120,8 @@
       "sha256": "2c30cf2461ce14213221be9ad742e97981be70cad6c49e3cc26bc853b82258a5"
     },
     "ecg-study/heart-3d.js": {
-      "bytes": 33678,
-      "sha256": "f61dd8e7d6be54407a0136805c1de22a790b9eeb9d6c6e72c83c0127b7306ecf"
+      "bytes": 33631,
+      "sha256": "17c175cc340bbe2b5f6b33cab2204b304c61fb5965b50b2efec72f23fa9c9b1c"
     },
     "ecg-study/module.css": {
       "bytes": 17351,
@@ -140,8 +140,8 @@
       "sha256": "ed9ffbaecd4018ea8dc90fd74ae041543d03c6fd438c8abb5b833a1cc85a7dcd"
     },
     "ecg-study/wall-rims.js": {
-      "bytes": 2865,
-      "sha256": "390fdfaa2be727a25ae5e358a029b3fb578b9378dc191b9255864e018f7b3f64"
+      "bytes": 4758,
+      "sha256": "44e6cd4c2cc09a5497ebaef9a48020a8edfa2bc274315b4523e64c6a2ce421d7"
     },
     "ecg/images/a6d28f.png": {
       "bytes": 331326,
