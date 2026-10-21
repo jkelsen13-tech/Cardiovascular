@@ -1,0 +1,4410 @@
+{
+  "schema": "guided-study.M02-anchors.v1",
+  "units": "seconds",
+  "machineMeasured": true,
+  "humanListeningQA": false,
+  "frameGranularitySeconds": 0.01,
+  "accuracyClaim": null,
+  "clips": [
+    {
+      "id": "M02.01",
+      "sentences": [
+        {
+          "id": "M02_01.s01",
+          "text": "Find the four chambers in the heart.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 6,
+          "wordCount": 7,
+          "start": 0.0,
+          "end": 2.18,
+          "duration": 2.18
+        },
+        {
+          "id": "M02_01.s02",
+          "text": "The right atrium and left atrium receive returning blood.",
+          "firstWordIndex": 7,
+          "lastWordIndex": 15,
+          "wordCount": 9,
+          "start": 2.58,
+          "end": 6.2,
+          "duration": 3.62
+        },
+        {
+          "id": "M02_01.s03",
+          "text": "The right ventricle and left ventricle eject blood.",
+          "firstWordIndex": 16,
+          "lastWordIndex": 23,
+          "wordCount": 8,
+          "start": 6.62,
+          "end": 9.88,
+          "duration": 3.26
+        },
+        {
+          "id": "M02_01.s04",
+          "text": "The septum separates the right and left sides.",
+          "firstWordIndex": 24,
+          "lastWordIndex": 31,
+          "wordCount": 8,
+          "start": 10.36,
+          "end": 13.26,
+          "duration": 2.9
+        },
+        {
+          "id": "M02_01.s05",
+          "text": "Now trace the two connected routes.",
+          "firstWordIndex": 32,
+          "lastWordIndex": 37,
+          "wordCount": 6,
+          "start": 13.65,
+          "end": 15.64,
+          "duration": 1.99
+        },
+        {
+          "id": "M02_01.s06",
+          "text": "Blood returning from the body enters the right atrium, passes into the right ventricle, and travels to the lungs.",
+          "firstWordIndex": 38,
+          "lastWordIndex": 56,
+          "wordCount": 19,
+          "start": 16.06,
+          "end": 22.62,
+          "duration": 6.56
+        },
+        {
+          "id": "M02_01.s07",
+          "text": "Blood returning from the lungs enters the left atrium, passes into the left ventricle, and leaves for the body.",
+          "firstWordIndex": 57,
+          "lastWordIndex": 75,
+          "wordCount": 19,
+          "start": 23.12,
+          "end": 29.38,
+          "duration": 6.26
+        },
+        {
+          "id": "M02_01.s08",
+          "text": "Both sides pump during the same heartbeat, but toward different destinations.",
+          "firstWordIndex": 76,
+          "lastWordIndex": 86,
+          "wordCount": 11,
+          "start": 29.86,
+          "end": 34.62,
+          "duration": 4.76
+        },
+        {
+          "id": "M02_01.s09",
+          "text": "The right side supplies the pulmonary circuit.",
+          "firstWordIndex": 87,
+          "lastWordIndex": 93,
+          "wordCount": 7,
+          "start": 35.04,
+          "end": 37.52,
+          "duration": 2.48
+        },
+        {
+          "id": "M02_01.s10",
+          "text": "The left side supplies the systemic circuit.",
+          "firstWordIndex": 94,
+          "lastWordIndex": 100,
+          "wordCount": 7,
+          "start": 37.99,
+          "end": 40.62,
+          "duration": 2.63
+        },
+        {
+          "id": "M02_01.s11",
+          "text": "Pause here and point to each chamber.",
+          "firstWordIndex": 101,
+          "lastWordIndex": 107,
+          "wordCount": 7,
+          "start": 41.13,
+          "end": 43.39,
+          "duration": 2.26
+        },
+        {
+          "id": "M02_01.s12",
+          "text": "Use the patient's right and left, even when the front view reverses them on your screen.",
+          "firstWordIndex": 108,
+          "lastWordIndex": 123,
+          "wordCount": 16,
+          "start": 43.81,
+          "end": 49.0,
+          "duration": 5.19
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "find the four chambers",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s01",
+              "firstWordIndex": 0,
+              "lastWordIndex": 3,
+              "start": 0.0,
+              "end": 1.57
+            }
+          ]
+        },
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s02",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 2.71,
+              "end": 3.66
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02_01.s06",
+              "firstWordIndex": 45,
+              "lastWordIndex": 46,
+              "start": 18.07,
+              "end": 18.98
+            }
+          ]
+        },
+        {
+          "phrase": "left atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s02",
+              "firstWordIndex": 11,
+              "lastWordIndex": 12,
+              "start": 3.78,
+              "end": 4.69
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02_01.s07",
+              "firstWordIndex": 64,
+              "lastWordIndex": 65,
+              "start": 25.11,
+              "end": 25.97
+            }
+          ]
+        },
+        {
+          "phrase": "right ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s03",
+              "firstWordIndex": 17,
+              "lastWordIndex": 18,
+              "start": 6.71,
+              "end": 7.68
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02_01.s06",
+              "firstWordIndex": 50,
+              "lastWordIndex": 51,
+              "start": 19.96,
+              "end": 20.9
+            }
+          ]
+        },
+        {
+          "phrase": "left ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s03",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 7.79,
+              "end": 8.75
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02_01.s07",
+              "firstWordIndex": 69,
+              "lastWordIndex": 70,
+              "start": 27.02,
+              "end": 27.97
+            }
+          ]
+        },
+        {
+          "phrase": "septum",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s04",
+              "firstWordIndex": 25,
+              "lastWordIndex": 25,
+              "start": 10.45,
+              "end": 10.92
+            }
+          ]
+        },
+        {
+          "phrase": "two connected routes",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s05",
+              "firstWordIndex": 35,
+              "lastWordIndex": 37,
+              "start": 14.33,
+              "end": 15.64
+            }
+          ]
+        },
+        {
+          "phrase": "same heartbeat",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s08",
+              "firstWordIndex": 81,
+              "lastWordIndex": 82,
+              "start": 31.41,
+              "end": 32.46
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary circuit",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s09",
+              "firstWordIndex": 92,
+              "lastWordIndex": 93,
+              "start": 36.53,
+              "end": 37.52
+            }
+          ]
+        },
+        {
+          "phrase": "systemic circuit",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s10",
+              "firstWordIndex": 99,
+              "lastWordIndex": 100,
+              "start": 39.46,
+              "end": 40.62
+            }
+          ]
+        },
+        {
+          "phrase": "pause here",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s11",
+              "firstWordIndex": 101,
+              "lastWordIndex": 102,
+              "start": 41.13,
+              "end": 41.86
+            }
+          ]
+        },
+        {
+          "phrase": "patient's right and left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02_01.s12",
+              "firstWordIndex": 110,
+              "lastWordIndex": 113,
+              "start": 44.23,
+              "end": 45.8
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02_01.s01",
+          "at": 0.0,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.18,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 6
+          }
+        },
+        {
+          "id": "M02_01.s02",
+          "at": 2.58,
+          "selected": "ra",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.2,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s02",
+            "firstWordIndex": 7,
+            "lastWordIndex": 15
+          }
+        },
+        {
+          "id": "M02.01.p01",
+          "at": 2.71,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 3.66,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s02",
+            "phrase": "right atrium",
+            "occurrence": 1,
+            "firstWordIndex": 8,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M02.01.p03",
+          "at": 3.78,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.69,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s02",
+            "phrase": "left atrium",
+            "occurrence": 1,
+            "firstWordIndex": 11,
+            "lastWordIndex": 12
+          }
+        },
+        {
+          "id": "M02_01.s03",
+          "at": 6.62,
+          "selected": "rv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.88,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s03",
+            "firstWordIndex": 16,
+            "lastWordIndex": 23
+          }
+        },
+        {
+          "id": "M02.01.p05",
+          "at": 6.71,
+          "selected": "rv",
+          "flowStop": "rv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 7.68,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s03",
+            "phrase": "right ventricle",
+            "occurrence": 1,
+            "firstWordIndex": 17,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M02.01.p07",
+          "at": 7.79,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 8.75,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s03",
+            "phrase": "left ventricle",
+            "occurrence": 1,
+            "firstWordIndex": 20,
+            "lastWordIndex": 21
+          }
+        },
+        {
+          "id": "M02_01.s04",
+          "at": 10.36,
+          "selected": "septum",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.26,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s04",
+            "firstWordIndex": 24,
+            "lastWordIndex": 31
+          }
+        },
+        {
+          "id": "M02.01.p09",
+          "at": 10.45,
+          "selected": "septum",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 10.92,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s04",
+            "phrase": "septum",
+            "occurrence": 1,
+            "firstWordIndex": 25,
+            "lastWordIndex": 25
+          }
+        },
+        {
+          "id": "M02_01.s05",
+          "at": 13.65,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.64,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s05",
+            "firstWordIndex": 32,
+            "lastWordIndex": 37
+          }
+        },
+        {
+          "id": "M02_01.s06",
+          "at": 16.06,
+          "selected": "svc",
+          "flowStop": "caval-return",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s06",
+            "firstWordIndex": 38,
+            "lastWordIndex": 56
+          }
+        },
+        {
+          "id": "M02.01.p02",
+          "at": 18.07,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 18.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s06",
+            "phrase": "right atrium",
+            "occurrence": 2,
+            "firstWordIndex": 45,
+            "lastWordIndex": 46
+          }
+        },
+        {
+          "id": "M02.01.p06",
+          "at": 19.96,
+          "selected": "rv",
+          "flowStop": "rv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 20.9,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s06",
+            "phrase": "right ventricle",
+            "occurrence": 2,
+            "firstWordIndex": 50,
+            "lastWordIndex": 51
+          }
+        },
+        {
+          "id": "M02.01.destination.5.lungs",
+          "at": 22.01,
+          "selected": "pa",
+          "flowStop": "lung-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "word",
+            "end": 22.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s06",
+            "word": "lungs",
+            "firstWordIndex": 56,
+            "lastWordIndex": 56
+          }
+        },
+        {
+          "id": "M02_01.s07",
+          "at": 23.12,
+          "selected": "vein",
+          "flowStop": "pulmonary-veins",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.38,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s07",
+            "firstWordIndex": 57,
+            "lastWordIndex": 75
+          }
+        },
+        {
+          "id": "M02.01.destination.6.lungs",
+          "at": 24.13,
+          "selected": "vein",
+          "flowStop": "pulmonary-veins",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "word",
+            "end": 24.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s07",
+            "word": "lungs",
+            "firstWordIndex": 61,
+            "lastWordIndex": 61
+          }
+        },
+        {
+          "id": "M02.01.p04",
+          "at": 25.11,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 25.97,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s07",
+            "phrase": "left atrium",
+            "occurrence": 2,
+            "firstWordIndex": 64,
+            "lastWordIndex": 65
+          }
+        },
+        {
+          "id": "M02.01.p08",
+          "at": 27.02,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 27.97,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s07",
+            "phrase": "left ventricle",
+            "occurrence": 2,
+            "firstWordIndex": 69,
+            "lastWordIndex": 70
+          }
+        },
+        {
+          "id": "M02.01.destination.6.body",
+          "at": 28.9,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "word",
+            "end": 29.38,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s07",
+            "word": "body",
+            "firstWordIndex": 75,
+            "lastWordIndex": 75
+          }
+        },
+        {
+          "id": "M02_01.s08",
+          "at": 29.86,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "anchorAudio": 29.86,
+            "speed": 0.25
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 34.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s08",
+            "firstWordIndex": 76,
+            "lastWordIndex": 86
+          }
+        },
+        {
+          "id": "M02_01.s09",
+          "at": 35.04,
+          "selected": "rv",
+          "flowStop": "rv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 37.52,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s09",
+            "firstWordIndex": 87,
+            "lastWordIndex": 93
+          }
+        },
+        {
+          "id": "M02_01.s10",
+          "at": 37.99,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 40.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s10",
+            "firstWordIndex": 94,
+            "lastWordIndex": 100
+          }
+        },
+        {
+          "id": "M02_01.s11",
+          "at": 41.13,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 43.39,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s11",
+            "firstWordIndex": 101,
+            "lastWordIndex": 107
+          }
+        },
+        {
+          "id": "M02_01.s12",
+          "at": 43.81,
+          "selected": "ra",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 49.0,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02_01.s12",
+            "firstWordIndex": 108,
+            "lastWordIndex": 123
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.02",
+      "sentences": [
+        {
+          "id": "M02.02.s01",
+          "text": "Start the blood-flow journey at the right atrium.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 8,
+          "wordCount": 9,
+          "start": 0.0,
+          "end": 2.63,
+          "duration": 2.63
+        },
+        {
+          "id": "M02.02.s02",
+          "text": "The superior vena cava returns blood from much of the upper body.",
+          "firstWordIndex": 9,
+          "lastWordIndex": 20,
+          "wordCount": 12,
+          "start": 3.07,
+          "end": 7.01,
+          "duration": 3.94
+        },
+        {
+          "id": "M02.02.s03",
+          "text": "The inferior vena cava returns blood from much of the lower body.",
+          "firstWordIndex": 21,
+          "lastWordIndex": 32,
+          "wordCount": 12,
+          "start": 7.54,
+          "end": 11.62,
+          "duration": 4.08
+        },
+        {
+          "id": "M02.02.s04",
+          "text": "The coronary sinus returns much of the blood that has supplied the heart muscle itself.",
+          "firstWordIndex": 33,
+          "lastWordIndex": 47,
+          "wordCount": 15,
+          "start": 12.07,
+          "end": 16.58,
+          "duration": 4.51
+        },
+        {
+          "id": "M02.02.s05",
+          "text": "This returning blood contains less oxygen than blood leaving the lungs, but it is not completely without oxygen.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 65,
+          "wordCount": 18,
+          "start": 17.23,
+          "end": 24.0,
+          "duration": 6.77
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.02.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 8,
+              "start": 1.7,
+              "end": 2.63
+            }
+          ]
+        },
+        {
+          "phrase": "superior vena cava",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.02.s02",
+              "firstWordIndex": 10,
+              "lastWordIndex": 12,
+              "start": 3.15,
+              "end": 4.59
+            }
+          ]
+        },
+        {
+          "phrase": "inferior vena cava",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.02.s03",
+              "firstWordIndex": 22,
+              "lastWordIndex": 24,
+              "start": 7.68,
+              "end": 9.01
+            }
+          ]
+        },
+        {
+          "phrase": "coronary sinus",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.02.s04",
+              "firstWordIndex": 34,
+              "lastWordIndex": 35,
+              "start": 12.16,
+              "end": 13.22
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.02.s05",
+              "firstWordIndex": 53,
+              "lastWordIndex": 53,
+              "start": 18.96,
+              "end": 19.66
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.02.s05",
+              "firstWordIndex": 65,
+              "lastWordIndex": 65,
+              "start": 23.33,
+              "end": 24.0
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.02.s01",
+          "at": 0.0,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M02.02.s02",
+          "at": 3.07,
+          "selected": "svc",
+          "flowStop": "caval-return",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.01,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.02.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M02.02.s03",
+          "at": 7.54,
+          "selected": "ivc",
+          "flowStop": "venous-return",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.02.s03",
+            "firstWordIndex": 21,
+            "lastWordIndex": 32
+          }
+        },
+        {
+          "id": "M02.02.s04",
+          "at": 12.07,
+          "selected": "sinus",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.02.s04",
+            "firstWordIndex": 33,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M02.02.p01",
+          "at": 12.16,
+          "selected": "sinus",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 13.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.02.s04",
+            "phrase": "coronary sinus",
+            "occurrence": 1,
+            "firstWordIndex": 34,
+            "lastWordIndex": 35
+          }
+        },
+        {
+          "id": "M02.02.s05",
+          "at": 17.23,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 24.0,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.02.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.03",
+      "sentences": [
+        {
+          "id": "M02.03.s01",
+          "text": "Follow blood from the right atrium through the tricuspid valve into the right ventricle.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 13,
+          "wordCount": 14,
+          "start": 0.0,
+          "end": 4.96,
+          "duration": 4.96
+        },
+        {
+          "id": "M02.03.s02",
+          "text": "Tricuspid means three cusps.",
+          "firstWordIndex": 14,
+          "lastWordIndex": 17,
+          "wordCount": 4,
+          "start": 5.49,
+          "end": 7.55,
+          "duration": 2.06
+        },
+        {
+          "id": "M02.03.s03",
+          "text": "This is an atrioventricular valve, because it lies between an atrium and a ventricle.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 31,
+          "wordCount": 14,
+          "start": 8.07,
+          "end": 13.81,
+          "duration": 5.74
+        },
+        {
+          "id": "M02.03.s04",
+          "text": "When ventricular pressure rises, the valve closes and limits backward flow into the atrium.",
+          "firstWordIndex": 32,
+          "lastWordIndex": 45,
+          "wordCount": 14,
+          "start": 14.36,
+          "end": 20.37,
+          "duration": 6.01
+        },
+        {
+          "id": "M02.03.s05",
+          "text": "Chordae tendineae and papillary muscles help keep the valve cusps from prolapsing backward during contraction; they do not pull the valve open.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 67,
+          "wordCount": 22,
+          "start": 20.98,
+          "end": 29.92,
+          "duration": 8.94
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.03.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 5,
+              "start": 1.03,
+              "end": 1.91
+            }
+          ]
+        },
+        {
+          "phrase": "right ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.03.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 13,
+              "start": 4.02,
+              "end": 4.96
+            }
+          ]
+        },
+        {
+          "phrase": "tricuspid valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.03.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 2.2,
+              "end": 3.54
+            }
+          ]
+        },
+        {
+          "phrase": "atrioventricular valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.03.s03",
+              "firstWordIndex": 21,
+              "lastWordIndex": 22,
+              "start": 8.49,
+              "end": 10.27
+            }
+          ]
+        },
+        {
+          "phrase": "chordae tendineae",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.03.s05",
+              "firstWordIndex": 46,
+              "lastWordIndex": 47,
+              "start": 20.98,
+              "end": 22.02
+            }
+          ]
+        },
+        {
+          "phrase": "papillary muscles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.03.s05",
+              "firstWordIndex": 49,
+              "lastWordIndex": 50,
+              "start": 22.18,
+              "end": 23.25
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.03.s01",
+          "at": 0.0,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M02.03.p02",
+          "at": 2.2,
+          "selected": "tricuspid",
+          "flowStop": "tricuspid",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 3.54,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s01",
+            "phrase": "tricuspid valve",
+            "occurrence": 1,
+            "firstWordIndex": 8,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M02.03.p01",
+          "at": 4.02,
+          "selected": "rv",
+          "flowStop": "rv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s01",
+            "phrase": "right ventricle",
+            "occurrence": 1,
+            "firstWordIndex": 12,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M02.03.s02",
+          "at": 5.49,
+          "selected": "tricuspid",
+          "flowStop": "tricuspid",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.55,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s02",
+            "firstWordIndex": 14,
+            "lastWordIndex": 17
+          }
+        },
+        {
+          "id": "M02.03.s03",
+          "at": 8.07,
+          "selected": "tricuspid",
+          "flowStop": "tricuspid",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.81,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s03",
+            "firstWordIndex": 18,
+            "lastWordIndex": 31
+          }
+        },
+        {
+          "id": "M02.03.s04",
+          "at": 14.36,
+          "selected": "tricuspid",
+          "flowStop": "tricuspid",
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 20.37,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s04",
+            "firstWordIndex": 32,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M02.03.s05",
+          "at": 20.98,
+          "selected": "chordae",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.92,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s05",
+            "firstWordIndex": 46,
+            "lastWordIndex": 67
+          }
+        },
+        {
+          "id": "M02.03.p03",
+          "at": 22.18,
+          "selected": "papillary",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 23.25,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.03.s05",
+            "phrase": "papillary muscles",
+            "occurrence": 1,
+            "firstWordIndex": 49,
+            "lastWordIndex": 50
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.04",
+      "sentences": [
+        {
+          "id": "M02.04.s01",
+          "text": "The right ventricle ejects blood through the pulmonary valve into the pulmonary trunk, which branches toward the two lungs.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 18,
+          "wordCount": 19,
+          "start": 0.0,
+          "end": 7.37,
+          "duration": 7.37
+        },
+        {
+          "id": "M02.04.s02",
+          "text": "The pulmonary valve is a semilunar valve.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 25,
+          "wordCount": 7,
+          "start": 7.83,
+          "end": 10.59,
+          "duration": 2.76
+        },
+        {
+          "id": "M02.04.s03",
+          "text": "Its pocket-like cusps limit backward flow into the ventricle after ejection.",
+          "firstWordIndex": 26,
+          "lastWordIndex": 37,
+          "wordCount": 12,
+          "start": 11.01,
+          "end": 16.0,
+          "duration": 4.99
+        },
+        {
+          "id": "M02.04.s04",
+          "text": "Arteries are named for carrying blood away from the heart, not for carrying oxygen-rich blood.",
+          "firstWordIndex": 38,
+          "lastWordIndex": 53,
+          "wordCount": 16,
+          "start": 16.58,
+          "end": 23.23,
+          "duration": 6.65
+        },
+        {
+          "id": "M02.04.s05",
+          "text": "The pulmonary arteries are the important example: they carry relatively oxygen-poor blood toward the lungs.",
+          "firstWordIndex": 54,
+          "lastWordIndex": 69,
+          "wordCount": 16,
+          "start": 23.87,
+          "end": 30.72,
+          "duration": 6.85
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.04.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 2,
+              "start": 0.19,
+              "end": 1.11
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.04.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 8,
+              "start": 2.32,
+              "end": 3.42
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.04.s02",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 7.92,
+              "end": 9.0
+            }
+          ]
+        },
+        {
+          "phrase": "semilunar valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.04.s02",
+              "firstWordIndex": 24,
+              "lastWordIndex": 25,
+              "start": 9.2,
+              "end": 10.59
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary trunk",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.04.s01",
+              "firstWordIndex": 11,
+              "lastWordIndex": 12,
+              "start": 3.88,
+              "end": 5.05
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary arteries",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.04.s05",
+              "firstWordIndex": 55,
+              "lastWordIndex": 56,
+              "start": 23.96,
+              "end": 25.17
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.04.s04",
+              "firstWordIndex": 51,
+              "lastWordIndex": 51,
+              "start": 21.8,
+              "end": 22.4
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.04.s05",
+              "firstWordIndex": 64,
+              "lastWordIndex": 64,
+              "start": 28.31,
+              "end": 28.92
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.04.s01",
+          "at": 0.0,
+          "selected": "rv",
+          "flowStop": "rv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.37,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M02.04.p01",
+          "at": 2.32,
+          "selected": "pulmonary",
+          "flowStop": "pulmonary",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 3.42,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s01",
+            "phrase": "pulmonary valve",
+            "occurrence": 1,
+            "firstWordIndex": 7,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M02.04.p02",
+          "at": 3.88,
+          "selected": "pa",
+          "flowStop": "pulmonary-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 5.05,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s01",
+            "phrase": "pulmonary trunk",
+            "occurrence": 1,
+            "firstWordIndex": 11,
+            "lastWordIndex": 12
+          }
+        },
+        {
+          "id": "M02.04.s02",
+          "at": 7.83,
+          "selected": "pulmonary",
+          "flowStop": "pulmonary",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.59,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s02",
+            "firstWordIndex": 19,
+            "lastWordIndex": 25
+          }
+        },
+        {
+          "id": "M02.04.s03",
+          "at": 11.01,
+          "selected": "pulmonary",
+          "flowStop": "pulmonary",
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.0,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s03",
+            "firstWordIndex": 26,
+            "lastWordIndex": 37
+          }
+        },
+        {
+          "id": "M02.04.s04",
+          "at": 16.58,
+          "selected": "pa",
+          "flowStop": "pulmonary-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.23,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s04",
+            "firstWordIndex": 38,
+            "lastWordIndex": 53
+          }
+        },
+        {
+          "id": "M02.04.s05",
+          "at": 23.87,
+          "selected": "pa",
+          "flowStop": "pulmonary-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.72,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.04.s05",
+            "firstWordIndex": 54,
+            "lastWordIndex": 69
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.05",
+      "sentences": [
+        {
+          "id": "M02.05.s01",
+          "text": "In the pulmonary capillaries, blood comes close to air inside the alveoli without normally mixing with that air.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 17,
+          "wordCount": 18,
+          "start": 0.0,
+          "end": 7.18,
+          "duration": 7.18
+        },
+        {
+          "id": "M02.05.s02",
+          "text": "Oxygen moves into the blood, and carbon dioxide moves toward the alveolar air.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 30,
+          "wordCount": 13,
+          "start": 7.7,
+          "end": 12.96,
+          "duration": 5.26
+        },
+        {
+          "id": "M02.05.s03",
+          "text": "The pulmonary veins then return relatively oxygen-rich blood to the left atrium.",
+          "firstWordIndex": 31,
+          "lastWordIndex": 43,
+          "wordCount": 13,
+          "start": 13.51,
+          "end": 18.63,
+          "duration": 5.12
+        },
+        {
+          "id": "M02.05.s04",
+          "text": "Usually four pulmonary veins enter the left atrium.",
+          "firstWordIndex": 44,
+          "lastWordIndex": 51,
+          "wordCount": 8,
+          "start": 19.14,
+          "end": 22.53,
+          "duration": 3.39
+        },
+        {
+          "id": "M02.05.s05",
+          "text": "A vein carries blood toward the heart, so pulmonary veins remain veins even though their blood is oxygen-rich.",
+          "firstWordIndex": 52,
+          "lastWordIndex": 70,
+          "wordCount": 19,
+          "start": 23.27,
+          "end": 30.41,
+          "duration": 7.14
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "left atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s03",
+              "firstWordIndex": 42,
+              "lastWordIndex": 43,
+              "start": 17.67,
+              "end": 18.63
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.05.s04",
+              "firstWordIndex": 50,
+              "lastWordIndex": 51,
+              "start": 21.54,
+              "end": 22.53
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary veins",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s03",
+              "firstWordIndex": 32,
+              "lastWordIndex": 33,
+              "start": 13.59,
+              "end": 14.7
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.05.s04",
+              "firstWordIndex": 46,
+              "lastWordIndex": 47,
+              "start": 19.97,
+              "end": 21.17
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M02.05.s05",
+              "firstWordIndex": 60,
+              "lastWordIndex": 61,
+              "start": 25.77,
+              "end": 26.96
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary capillaries",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 3,
+              "start": 0.26,
+              "end": 1.7
+            }
+          ]
+        },
+        {
+          "phrase": "alveoli",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s01",
+              "firstWordIndex": 11,
+              "lastWordIndex": 11,
+              "start": 4.09,
+              "end": 4.95
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s02",
+              "firstWordIndex": 18,
+              "lastWordIndex": 18,
+              "start": 7.7,
+              "end": 8.23
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.05.s03",
+              "firstWordIndex": 37,
+              "lastWordIndex": 37,
+              "start": 16.17,
+              "end": 16.76
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M02.05.s05",
+              "firstWordIndex": 69,
+              "lastWordIndex": 69,
+              "start": 29.23,
+              "end": 29.81
+            }
+          ]
+        },
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s02",
+              "firstWordIndex": 24,
+              "lastWordIndex": 25,
+              "start": 9.87,
+              "end": 11.15
+            }
+          ]
+        },
+        {
+          "phrase": "capillaries",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.05.s01",
+              "firstWordIndex": 3,
+              "lastWordIndex": 3,
+              "start": 0.84,
+              "end": 1.7
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.05.s01",
+          "at": 0.0,
+          "selected": "pa",
+          "flowStop": "lung-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.18,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 17
+          }
+        },
+        {
+          "id": "M02.05.s02",
+          "at": 7.7,
+          "selected": "pa",
+          "flowStop": "lung-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s02",
+            "firstWordIndex": 18,
+            "lastWordIndex": 30
+          }
+        },
+        {
+          "id": "M02.05.s03",
+          "at": 13.51,
+          "selected": "vein",
+          "flowStop": "pulmonary-veins",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s03",
+            "firstWordIndex": 31,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M02.05.p01",
+          "at": 17.67,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 18.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s03",
+            "phrase": "left atrium",
+            "occurrence": 1,
+            "firstWordIndex": 42,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M02.05.s04",
+          "at": 19.14,
+          "selected": "vein",
+          "flowStop": "pulmonary-veins",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.53,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s04",
+            "firstWordIndex": 44,
+            "lastWordIndex": 51
+          }
+        },
+        {
+          "id": "M02.05.p03",
+          "at": 19.97,
+          "selected": "vein",
+          "flowStop": "pulmonary-veins",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 21.17,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s04",
+            "phrase": "pulmonary veins",
+            "occurrence": 2,
+            "firstWordIndex": 46,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M02.05.p02",
+          "at": 21.54,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 22.53,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s04",
+            "phrase": "left atrium",
+            "occurrence": 2,
+            "firstWordIndex": 50,
+            "lastWordIndex": 51
+          }
+        },
+        {
+          "id": "M02.05.s05",
+          "at": 23.27,
+          "selected": "vein",
+          "flowStop": "pulmonary-veins",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.41,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.05.s05",
+            "firstWordIndex": 52,
+            "lastWordIndex": 70
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.06",
+      "sentences": [
+        {
+          "id": "M02.06.s01",
+          "text": "Blood passes from the left atrium through the mitral valve into the left ventricle.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 13,
+          "wordCount": 14,
+          "start": 0.0,
+          "end": 4.63,
+          "duration": 4.63
+        },
+        {
+          "id": "M02.06.s02",
+          "text": "The mitral valve is also called the bicuspid valve because it normally has two cusps.",
+          "firstWordIndex": 14,
+          "lastWordIndex": 28,
+          "wordCount": 15,
+          "start": 5.13,
+          "end": 10.29,
+          "duration": 5.16
+        },
+        {
+          "id": "M02.06.s03",
+          "text": "Notice the thicker muscular wall of the left ventricle.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 37,
+          "wordCount": 9,
+          "start": 10.78,
+          "end": 13.63,
+          "duration": 2.85
+        },
+        {
+          "id": "M02.06.s04",
+          "text": "It must generate the pressure needed for systemic circulation.",
+          "firstWordIndex": 38,
+          "lastWordIndex": 46,
+          "wordCount": 9,
+          "start": 13.96,
+          "end": 17.17,
+          "duration": 3.21
+        },
+        {
+          "id": "M02.06.s05",
+          "text": "Compare wall thickness, not a claim that the left ventricular chamber is always larger.",
+          "firstWordIndex": 47,
+          "lastWordIndex": 60,
+          "wordCount": 14,
+          "start": 17.8,
+          "end": 22.98,
+          "duration": 5.18
+        },
+        {
+          "id": "M02.06.s06",
+          "text": "In a steady state, both ventricles pump approximately the same volume per minute.",
+          "firstWordIndex": 61,
+          "lastWordIndex": 73,
+          "wordCount": 13,
+          "start": 23.53,
+          "end": 27.82,
+          "duration": 4.29
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "left atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.06.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 5,
+              "start": 1.11,
+              "end": 1.99
+            }
+          ]
+        },
+        {
+          "phrase": "left ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.06.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 13,
+              "start": 3.68,
+              "end": 4.63
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.06.s03",
+              "firstWordIndex": 36,
+              "lastWordIndex": 37,
+              "start": 12.69,
+              "end": 13.63
+            }
+          ]
+        },
+        {
+          "phrase": "mitral valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.06.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 2.34,
+              "end": 3.3
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.06.s02",
+              "firstWordIndex": 15,
+              "lastWordIndex": 16,
+              "start": 5.2,
+              "end": 6.03
+            }
+          ]
+        },
+        {
+          "phrase": "bicuspid valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.06.s02",
+              "firstWordIndex": 21,
+              "lastWordIndex": 22,
+              "start": 6.92,
+              "end": 8.09
+            }
+          ]
+        },
+        {
+          "phrase": "thicker muscular wall",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.06.s03",
+              "firstWordIndex": 31,
+              "lastWordIndex": 33,
+              "start": 11.23,
+              "end": 12.52
+            }
+          ]
+        },
+        {
+          "phrase": "systemic circulation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.06.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 46,
+              "start": 15.79,
+              "end": 17.17
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.06.s01",
+          "at": 0.0,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M02.06.p03",
+          "at": 2.34,
+          "selected": "mitral",
+          "flowStop": "mitral",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 3.3,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s01",
+            "phrase": "mitral valve",
+            "occurrence": 1,
+            "firstWordIndex": 8,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M02.06.p01",
+          "at": 3.68,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s01",
+            "phrase": "left ventricle",
+            "occurrence": 1,
+            "firstWordIndex": 12,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M02.06.s02",
+          "at": 5.13,
+          "selected": "mitral",
+          "flowStop": "mitral",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s02",
+            "firstWordIndex": 14,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M02.06.s03",
+          "at": 10.78,
+          "selected": "wall",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s03",
+            "firstWordIndex": 29,
+            "lastWordIndex": 37
+          }
+        },
+        {
+          "id": "M02.06.p04",
+          "at": 11.23,
+          "selected": "wall",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 12.52,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s03",
+            "phrase": "thicker muscular wall",
+            "occurrence": 1,
+            "firstWordIndex": 31,
+            "lastWordIndex": 33
+          }
+        },
+        {
+          "id": "M02.06.p02",
+          "at": 12.69,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 13.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s03",
+            "phrase": "left ventricle",
+            "occurrence": 2,
+            "firstWordIndex": 36,
+            "lastWordIndex": 37
+          }
+        },
+        {
+          "id": "M02.06.s04",
+          "at": 13.96,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 17.17,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s04",
+            "firstWordIndex": 38,
+            "lastWordIndex": 46
+          }
+        },
+        {
+          "id": "M02.06.s05",
+          "at": 17.8,
+          "selected": "wall",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s05",
+            "firstWordIndex": 47,
+            "lastWordIndex": 60
+          }
+        },
+        {
+          "id": "M02.06.s06",
+          "at": 23.53,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "anchorAudio": 23.53,
+            "speed": 0.25
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.06.s06",
+            "firstWordIndex": 61,
+            "lastWordIndex": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.07",
+      "sentences": [
+        {
+          "id": "M02.07.s01",
+          "text": "The left ventricle ejects blood through the aortic valve into the aorta.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 11,
+          "wordCount": 12,
+          "start": 0.0,
+          "end": 4.32,
+          "duration": 4.32
+        },
+        {
+          "id": "M02.07.s02",
+          "text": "From there, arteries branch into smaller arteries and arterioles.",
+          "firstWordIndex": 12,
+          "lastWordIndex": 20,
+          "wordCount": 9,
+          "start": 4.76,
+          "end": 8.89,
+          "duration": 4.13
+        },
+        {
+          "id": "M02.07.s03",
+          "text": "Capillary networks bring blood close to tissue cells.",
+          "firstWordIndex": 21,
+          "lastWordIndex": 28,
+          "wordCount": 8,
+          "start": 9.4,
+          "end": 12.4,
+          "duration": 3.0
+        },
+        {
+          "id": "M02.07.s04",
+          "text": "After exchange, blood enters venules and veins, eventually returning to the right atrium.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 41,
+          "wordCount": 13,
+          "start": 12.9,
+          "end": 18.68,
+          "duration": 5.78
+        },
+        {
+          "id": "M02.07.s05",
+          "text": "The aortic valve is the second semilunar valve.",
+          "firstWordIndex": 42,
+          "lastWordIndex": 49,
+          "wordCount": 8,
+          "start": 19.56,
+          "end": 22.22,
+          "duration": 2.66
+        },
+        {
+          "id": "M02.07.s06",
+          "text": "Like the other valves, it opens and closes in response to pressure differences across it.",
+          "firstWordIndex": 50,
+          "lastWordIndex": 64,
+          "wordCount": 15,
+          "start": 22.75,
+          "end": 27.21,
+          "duration": 4.46
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s04",
+              "firstWordIndex": 40,
+              "lastWordIndex": 41,
+              "start": 17.83,
+              "end": 18.68
+            }
+          ]
+        },
+        {
+          "phrase": "left ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 2,
+              "start": 0.16,
+              "end": 0.94
+            }
+          ]
+        },
+        {
+          "phrase": "semilunar valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s05",
+              "firstWordIndex": 48,
+              "lastWordIndex": 49,
+              "start": 21.17,
+              "end": 22.22
+            }
+          ]
+        },
+        {
+          "phrase": "aortic valve",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 8,
+              "start": 2.43,
+              "end": 3.4
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.07.s05",
+              "firstWordIndex": 43,
+              "lastWordIndex": 44,
+              "start": 19.68,
+              "end": 20.56
+            }
+          ]
+        },
+        {
+          "phrase": "aorta",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s01",
+              "firstWordIndex": 11,
+              "lastWordIndex": 11,
+              "start": 3.89,
+              "end": 4.32
+            }
+          ]
+        },
+        {
+          "phrase": "arterioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s02",
+              "firstWordIndex": 20,
+              "lastWordIndex": 20,
+              "start": 7.99,
+              "end": 8.89
+            }
+          ]
+        },
+        {
+          "phrase": "venules",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.07.s04",
+              "firstWordIndex": 33,
+              "lastWordIndex": 33,
+              "start": 14.82,
+              "end": 15.59
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.07.s01",
+          "at": 0.0,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 11
+          }
+        },
+        {
+          "id": "M02.07.p02",
+          "at": 2.43,
+          "selected": "aortic",
+          "flowStop": "aortic",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 3.4,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s01",
+            "phrase": "aortic valve",
+            "occurrence": 1,
+            "firstWordIndex": 7,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M02.07.p03",
+          "at": 3.89,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s01",
+            "phrase": "aorta",
+            "occurrence": 1,
+            "firstWordIndex": 11,
+            "lastWordIndex": 11
+          }
+        },
+        {
+          "id": "M02.07.s02",
+          "at": 4.76,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.89,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s02",
+            "firstWordIndex": 12,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M02.07.s03",
+          "at": 9.4,
+          "selected": "aorta",
+          "flowStop": "systemic-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.4,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s03",
+            "firstWordIndex": 21,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M02.07.s04",
+          "at": 12.9,
+          "selected": "ivc",
+          "flowStop": "venous-return",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.68,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s04",
+            "firstWordIndex": 29,
+            "lastWordIndex": 41
+          }
+        },
+        {
+          "id": "M02.07.p01",
+          "at": 17.83,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 18.68,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s04",
+            "phrase": "right atrium",
+            "occurrence": 1,
+            "firstWordIndex": 40,
+            "lastWordIndex": 41
+          }
+        },
+        {
+          "id": "M02.07.s05",
+          "at": 19.56,
+          "selected": "aortic",
+          "flowStop": "aortic",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s05",
+            "firstWordIndex": 42,
+            "lastWordIndex": 49
+          }
+        },
+        {
+          "id": "M02.07.s06",
+          "at": 22.75,
+          "selected": "aortic",
+          "flowStop": "aortic",
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "anchorAudio": 22.75,
+            "speed": 0.25
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.21,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.07.s06",
+            "firstWordIndex": 50,
+            "lastWordIndex": 64
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.08",
+      "sentences": [
+        {
+          "id": "M02.08.s01",
+          "text": "The pulmonary and systemic circuits are connected in series.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 8,
+          "wordCount": 9,
+          "start": 0.0,
+          "end": 3.32,
+          "duration": 3.32
+        },
+        {
+          "id": "M02.08.s02",
+          "text": "Pulmonary circulation runs from the right ventricle through the lungs to the left atrium.",
+          "firstWordIndex": 9,
+          "lastWordIndex": 22,
+          "wordCount": 14,
+          "start": 3.74,
+          "end": 8.84,
+          "duration": 5.1
+        },
+        {
+          "id": "M02.08.s03",
+          "text": "Systemic circulation runs from the left ventricle through the body to the right atrium.",
+          "firstWordIndex": 23,
+          "lastWordIndex": 36,
+          "wordCount": 14,
+          "start": 9.22,
+          "end": 13.95,
+          "duration": 4.73
+        },
+        {
+          "id": "M02.08.s04",
+          "text": "The heart's own coronary circulation is part of the systemic circuit.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 47,
+          "wordCount": 11,
+          "start": 14.56,
+          "end": 18.51,
+          "duration": 3.95
+        },
+        {
+          "id": "M02.08.s05",
+          "text": "Blood-flow arrows should always follow this route.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 55,
+          "wordCount": 8,
+          "start": 19.08,
+          "end": 21.82,
+          "duration": 2.74
+        },
+        {
+          "id": "M02.08.s06",
+          "text": "Red and blue are teaching colors for relative oxygen content; human blood is never actually blue.",
+          "firstWordIndex": 56,
+          "lastWordIndex": 71,
+          "wordCount": 16,
+          "start": 22.29,
+          "end": 28.58,
+          "duration": 6.29
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s03",
+              "firstWordIndex": 35,
+              "lastWordIndex": 36,
+              "start": 12.97,
+              "end": 13.95
+            }
+          ]
+        },
+        {
+          "phrase": "left atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s02",
+              "firstWordIndex": 21,
+              "lastWordIndex": 22,
+              "start": 7.84,
+              "end": 8.84
+            }
+          ]
+        },
+        {
+          "phrase": "right ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s02",
+              "firstWordIndex": 14,
+              "lastWordIndex": 15,
+              "start": 5.68,
+              "end": 6.52
+            }
+          ]
+        },
+        {
+          "phrase": "left ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 29,
+              "start": 11.11,
+              "end": 11.99
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s06",
+              "firstWordIndex": 64,
+              "lastWordIndex": 64,
+              "start": 24.74,
+              "end": 25.3
+            }
+          ]
+        },
+        {
+          "phrase": "systemic circulation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s03",
+              "firstWordIndex": 23,
+              "lastWordIndex": 24,
+              "start": 9.22,
+              "end": 10.49
+            }
+          ]
+        },
+        {
+          "phrase": "systemic circuit",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s04",
+              "firstWordIndex": 46,
+              "lastWordIndex": 47,
+              "start": 17.39,
+              "end": 18.51
+            }
+          ]
+        },
+        {
+          "phrase": "connected in series",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s01",
+              "firstWordIndex": 6,
+              "lastWordIndex": 8,
+              "start": 2.08,
+              "end": 3.32
+            }
+          ]
+        },
+        {
+          "phrase": "coronary circulation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.08.s04",
+              "firstWordIndex": 40,
+              "lastWordIndex": 41,
+              "start": 15.48,
+              "end": 16.8
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.08.s01",
+          "at": 0.0,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 3.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M02.08.s02",
+          "at": 3.74,
+          "selected": "rv",
+          "flowStop": "rv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.84,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 22
+          }
+        },
+        {
+          "id": "M02.08.p02",
+          "at": 7.84,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 8.84,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s02",
+            "phrase": "left atrium",
+            "occurrence": 1,
+            "firstWordIndex": 21,
+            "lastWordIndex": 22
+          }
+        },
+        {
+          "id": "M02.08.s03",
+          "at": 9.22,
+          "selected": "lv",
+          "flowStop": "lv",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.95,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s03",
+            "firstWordIndex": 23,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M02.08.p01",
+          "at": 12.97,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 13.95,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s03",
+            "phrase": "right atrium",
+            "occurrence": 1,
+            "firstWordIndex": 35,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M02.08.s04",
+          "at": 14.56,
+          "selected": "lca",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.51,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s04",
+            "firstWordIndex": 37,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M02.08.s05",
+          "at": 19.08,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 55
+          }
+        },
+        {
+          "id": "M02.08.s06",
+          "at": 22.29,
+          "selected": "pa",
+          "flowStop": "lung-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.08.s06",
+            "firstWordIndex": 56,
+            "lastWordIndex": 71
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.09",
+      "sentences": [
+        {
+          "id": "M02.09.s01",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 12,
+          "wordCount": 13,
+          "start": 0.0,
+          "end": 4.2,
+          "duration": 4.2
+        },
+        {
+          "id": "M02.09.s02",
+          "text": "Arterioles regulate resistance and distribute flow.",
+          "firstWordIndex": 13,
+          "lastWordIndex": 18,
+          "wordCount": 6,
+          "start": 4.76,
+          "end": 7.89,
+          "duration": 3.13
+        },
+        {
+          "id": "M02.09.s03",
+          "text": "Capillaries are thin exchange vessels.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 23,
+          "wordCount": 5,
+          "start": 8.34,
+          "end": 10.96,
+          "duration": 2.62
+        },
+        {
+          "id": "M02.09.s04",
+          "text": "Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa.",
+          "firstWordIndex": 24,
+          "lastWordIndex": 39,
+          "wordCount": 16,
+          "start": 11.28,
+          "end": 18.25,
+          "duration": 6.97
+        },
+        {
+          "id": "M02.09.s05",
+          "text": "The lumen is the open space inside.",
+          "firstWordIndex": 40,
+          "lastWordIndex": 46,
+          "wordCount": 7,
+          "start": 19.32,
+          "end": 21.7,
+          "duration": 2.38
+        },
+        {
+          "id": "M02.09.s06",
+          "text": "Vasoconstriction narrows the lumen; vasodilation widens it.",
+          "firstWordIndex": 47,
+          "lastWordIndex": 53,
+          "wordCount": 7,
+          "start": 22.03,
+          "end": 26.05,
+          "duration": 4.02
+        },
+        {
+          "id": "M02.09.s07",
+          "text": "Many veins have valves that help limit backward flow, especially in the limbs.",
+          "firstWordIndex": 54,
+          "lastWordIndex": 66,
+          "wordCount": 13,
+          "start": 26.53,
+          "end": 31.92,
+          "duration": 5.39
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "arterioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s02",
+              "firstWordIndex": 13,
+              "lastWordIndex": 13,
+              "start": 4.76,
+              "end": 5.55
+            }
+          ]
+        },
+        {
+          "phrase": "capillaries",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s03",
+              "firstWordIndex": 19,
+              "lastWordIndex": 19,
+              "start": 8.34,
+              "end": 9.11
+            }
+          ]
+        },
+        {
+          "phrase": "tunica intima",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s04",
+              "firstWordIndex": 29,
+              "lastWordIndex": 30,
+              "start": 12.83,
+              "end": 14.18
+            }
+          ]
+        },
+        {
+          "phrase": "tunica media",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s04",
+              "firstWordIndex": 33,
+              "lastWordIndex": 34,
+              "start": 14.98,
+              "end": 15.97
+            }
+          ]
+        },
+        {
+          "phrase": "tunica externa",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s04",
+              "firstWordIndex": 38,
+              "lastWordIndex": 39,
+              "start": 16.97,
+              "end": 18.25
+            }
+          ]
+        },
+        {
+          "phrase": "lumen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s05",
+              "firstWordIndex": 41,
+              "lastWordIndex": 41,
+              "start": 19.4,
+              "end": 19.83
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.09.s06",
+              "firstWordIndex": 50,
+              "lastWordIndex": 50,
+              "start": 23.64,
+              "end": 24.13
+            }
+          ]
+        },
+        {
+          "phrase": "vasoconstriction",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s06",
+              "firstWordIndex": 47,
+              "lastWordIndex": 47,
+              "start": 22.03,
+              "end": 23.06
+            }
+          ]
+        },
+        {
+          "phrase": "vasodilation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.09.s06",
+              "firstWordIndex": 51,
+              "lastWordIndex": 51,
+              "start": 24.32,
+              "end": 25.26
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.09.s01",
+          "at": 0.0,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.2,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 12
+          }
+        },
+        {
+          "id": "M02.09.s02",
+          "at": 4.76,
+          "selected": "aorta",
+          "flowStop": "systemic-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.89,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s02",
+            "firstWordIndex": 13,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M02.09.s03",
+          "at": 8.34,
+          "selected": "aorta",
+          "flowStop": "systemic-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s03",
+            "firstWordIndex": 19,
+            "lastWordIndex": 23
+          }
+        },
+        {
+          "id": "M02.09.s04",
+          "at": 11.28,
+          "selected": "aorta",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.25,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s04",
+            "firstWordIndex": 24,
+            "lastWordIndex": 39
+          }
+        },
+        {
+          "id": "M02.09.s05",
+          "at": 19.32,
+          "selected": "aorta",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.7,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s05",
+            "firstWordIndex": 40,
+            "lastWordIndex": 46
+          }
+        },
+        {
+          "id": "M02.09.s06",
+          "at": 22.03,
+          "selected": "aorta",
+          "flowStop": "systemic-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 26.05,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s06",
+            "firstWordIndex": 47,
+            "lastWordIndex": 53
+          }
+        },
+        {
+          "id": "M02.09.s07",
+          "at": 26.53,
+          "selected": "ivc",
+          "flowStop": "venous-return",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 31.92,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.09.s07",
+            "firstWordIndex": 54,
+            "lastWordIndex": 66
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.10",
+      "sentences": [
+        {
+          "id": "M02.10.s01",
+          "text": "Blood contains plasma and formed elements.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 5,
+          "wordCount": 6,
+          "start": 0.0,
+          "end": 2.9,
+          "duration": 2.9
+        },
+        {
+          "id": "M02.10.s02",
+          "text": "Plasma is the liquid transport medium.",
+          "firstWordIndex": 6,
+          "lastWordIndex": 11,
+          "wordCount": 6,
+          "start": 3.54,
+          "end": 5.82,
+          "duration": 2.28
+        },
+        {
+          "id": "M02.10.s03",
+          "text": "Red blood cells contain hemoglobin, which carries most blood oxygen.",
+          "firstWordIndex": 12,
+          "lastWordIndex": 21,
+          "wordCount": 10,
+          "start": 6.52,
+          "end": 10.57,
+          "duration": 4.05
+        },
+        {
+          "id": "M02.10.s04",
+          "text": "White blood cells participate in immune defense.",
+          "firstWordIndex": 22,
+          "lastWordIndex": 28,
+          "wordCount": 7,
+          "start": 11.18,
+          "end": 14.06,
+          "duration": 2.88
+        },
+        {
+          "id": "M02.10.s05",
+          "text": "Platelets help form clots.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 32,
+          "wordCount": 4,
+          "start": 14.53,
+          "end": 16.27,
+          "duration": 1.74
+        },
+        {
+          "id": "M02.10.s06",
+          "text": "Carbon dioxide travels in several forms, especially as bicarbonate in plasma.",
+          "firstWordIndex": 33,
+          "lastWordIndex": 43,
+          "wordCount": 11,
+          "start": 16.74,
+          "end": 22.07,
+          "duration": 5.33
+        },
+        {
+          "id": "M02.10.s07",
+          "text": "Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "firstWordIndex": 44,
+          "lastWordIndex": 69,
+          "wordCount": 26,
+          "start": 22.71,
+          "end": 33.96,
+          "duration": 11.25
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s03",
+              "firstWordIndex": 21,
+              "lastWordIndex": 21,
+              "start": 9.99,
+              "end": 10.57
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.10.s07",
+              "firstWordIndex": 52,
+              "lastWordIndex": 52,
+              "start": 26.58,
+              "end": 27.13
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M02.10.s07",
+              "firstWordIndex": 62,
+              "lastWordIndex": 62,
+              "start": 30.33,
+              "end": 30.91
+            }
+          ]
+        },
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s06",
+              "firstWordIndex": 33,
+              "lastWordIndex": 34,
+              "start": 16.74,
+              "end": 17.84
+            }
+          ]
+        },
+        {
+          "phrase": "red blood cells",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s03",
+              "firstWordIndex": 12,
+              "lastWordIndex": 14,
+              "start": 6.52,
+              "end": 7.48
+            }
+          ]
+        },
+        {
+          "phrase": "hemoglobin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s03",
+              "firstWordIndex": 16,
+              "lastWordIndex": 16,
+              "start": 7.9,
+              "end": 8.65
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.10.s07",
+              "firstWordIndex": 60,
+              "lastWordIndex": 60,
+              "start": 29.19,
+              "end": 29.89
+            }
+          ]
+        },
+        {
+          "phrase": "white blood cells",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s04",
+              "firstWordIndex": 22,
+              "lastWordIndex": 24,
+              "start": 11.18,
+              "end": 12.14
+            }
+          ]
+        },
+        {
+          "phrase": "platelets",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s05",
+              "firstWordIndex": 29,
+              "lastWordIndex": 29,
+              "start": 14.53,
+              "end": 15.05
+            }
+          ]
+        },
+        {
+          "phrase": "bicarbonate",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s06",
+              "firstWordIndex": 41,
+              "lastWordIndex": 41,
+              "start": 20.57,
+              "end": 21.36
+            }
+          ]
+        },
+        {
+          "phrase": "tissue perfusion",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.10.s07",
+              "firstWordIndex": 44,
+              "lastWordIndex": 45,
+              "start": 22.71,
+              "end": 23.75
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.10.s01",
+          "at": 0.0,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.9,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M02.10.s02",
+          "at": 3.54,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s02",
+            "firstWordIndex": 6,
+            "lastWordIndex": 11
+          }
+        },
+        {
+          "id": "M02.10.s03",
+          "at": 6.52,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.57,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s03",
+            "firstWordIndex": 12,
+            "lastWordIndex": 21
+          }
+        },
+        {
+          "id": "M02.10.s04",
+          "at": 11.18,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.06,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s04",
+            "firstWordIndex": 22,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M02.10.s05",
+          "at": 14.53,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.27,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s05",
+            "firstWordIndex": 29,
+            "lastWordIndex": 32
+          }
+        },
+        {
+          "id": "M02.10.s06",
+          "at": 16.74,
+          "selected": "lv",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.07,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s06",
+            "firstWordIndex": 33,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M02.10.s07",
+          "at": 22.71,
+          "selected": "aorta",
+          "flowStop": "systemic-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 33.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.10.s07",
+            "firstWordIndex": 44,
+            "lastWordIndex": 69
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.11",
+      "sentences": [
+        {
+          "id": "M02.11.s01",
+          "text": "The heart muscle needs its own blood supply.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 7,
+          "wordCount": 8,
+          "start": 0.0,
+          "end": 2.19,
+          "duration": 2.19
+        },
+        {
+          "id": "M02.11.s02",
+          "text": "Coronary arteries branch from the aorta.",
+          "firstWordIndex": 8,
+          "lastWordIndex": 13,
+          "wordCount": 6,
+          "start": 2.67,
+          "end": 5.18,
+          "duration": 2.51
+        },
+        {
+          "id": "M02.11.s03",
+          "text": "Major vessels include the right coronary artery and the left coronary artery, which gives rise to the left anterior descending and circumflex arteries.",
+          "firstWordIndex": 14,
+          "lastWordIndex": 36,
+          "wordCount": 23,
+          "start": 5.73,
+          "end": 14.79,
+          "duration": 9.06
+        },
+        {
+          "id": "M02.11.s04",
+          "text": "Cardiac veins return much of this blood through the coronary sinus.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 47,
+          "wordCount": 11,
+          "start": 15.28,
+          "end": 19.45,
+          "duration": 4.17
+        },
+        {
+          "id": "M02.11.s05",
+          "text": "Left ventricular coronary flow is greatest during diastole, largely because contraction compresses vessels in the ventricular wall.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 64,
+          "wordCount": 17,
+          "start": 19.85,
+          "end": 27.93,
+          "duration": 8.08
+        },
+        {
+          "id": "M02.11.s06",
+          "text": "Valve closure is not a switch that turns coronary flow on.",
+          "firstWordIndex": 65,
+          "lastWordIndex": 75,
+          "wordCount": 11,
+          "start": 28.74,
+          "end": 32.63,
+          "duration": 3.89
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "coronary sinus",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.11.s04",
+              "firstWordIndex": 46,
+              "lastWordIndex": 47,
+              "start": 18.14,
+              "end": 19.45
+            }
+          ]
+        },
+        {
+          "phrase": "aorta",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.11.s02",
+              "firstWordIndex": 13,
+              "lastWordIndex": 13,
+              "start": 4.65,
+              "end": 5.18
+            }
+          ]
+        },
+        {
+          "phrase": "left anterior descending",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.11.s03",
+              "firstWordIndex": 31,
+              "lastWordIndex": 33,
+              "start": 11.54,
+              "end": 13.12
+            }
+          ]
+        },
+        {
+          "phrase": "circumflex",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.11.s03",
+              "firstWordIndex": 35,
+              "lastWordIndex": 35,
+              "start": 13.33,
+              "end": 14.1
+            }
+          ]
+        },
+        {
+          "phrase": "diastole",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.11.s05",
+              "firstWordIndex": 55,
+              "lastWordIndex": 55,
+              "start": 22.84,
+              "end": 23.65
+            }
+          ]
+        },
+        {
+          "phrase": "valve closure",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.11.s06",
+              "firstWordIndex": 65,
+              "lastWordIndex": 66,
+              "start": 28.74,
+              "end": 29.75
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.11.s01",
+          "at": 0.0,
+          "selected": "wall",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.19,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 7
+          }
+        },
+        {
+          "id": "M02.11.s02",
+          "at": 2.67,
+          "selected": "lca",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.18,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s02",
+            "firstWordIndex": 8,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M02.11.p02",
+          "at": 4.65,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 5.18,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s02",
+            "phrase": "aorta",
+            "occurrence": 1,
+            "firstWordIndex": 13,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M02.11.s03",
+          "at": 5.73,
+          "selected": "rca",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.79,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s03",
+            "firstWordIndex": 14,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M02.11.s04",
+          "at": 15.28,
+          "selected": "sinus",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.45,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s04",
+            "firstWordIndex": 37,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M02.11.p01",
+          "at": 18.14,
+          "selected": "sinus",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 19.45,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s04",
+            "phrase": "coronary sinus",
+            "occurrence": 1,
+            "firstWordIndex": 46,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M02.11.s05",
+          "at": 19.85,
+          "selected": "wall",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.93,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 64
+          }
+        },
+        {
+          "id": "M02.11.s06",
+          "at": 28.74,
+          "selected": "aortic",
+          "flowStop": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.11.s06",
+            "firstWordIndex": 65,
+            "lastWordIndex": 75
+          }
+        }
+      ]
+    },
+    {
+      "id": "M02.12",
+      "sentences": [
+        {
+          "id": "M02.12.s01",
+          "text": "Now trace a complete circuit yourself.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 5,
+          "wordCount": 6,
+          "start": 0.0,
+          "end": 2.49,
+          "duration": 2.49
+        },
+        {
+          "id": "M02.12.s02",
+          "text": "Begin at the right atrium.",
+          "firstWordIndex": 6,
+          "lastWordIndex": 10,
+          "wordCount": 5,
+          "start": 2.8,
+          "end": 4.66,
+          "duration": 1.86
+        },
+        {
+          "id": "M02.12.s03",
+          "text": "Name each valve and chamber, visit the lungs, return to the left side, and leave through the aorta.",
+          "firstWordIndex": 11,
+          "lastWordIndex": 28,
+          "wordCount": 18,
+          "start": 5.0,
+          "end": 11.81,
+          "duration": 6.81
+        },
+        {
+          "id": "M02.12.s04",
+          "text": "Then explain two exceptions to the shortcut that arteries contain oxygen-rich blood and veins contain oxygen-poor blood.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 47,
+          "wordCount": 19,
+          "start": 12.24,
+          "end": 21.48,
+          "duration": 9.24
+        },
+        {
+          "id": "M02.12.s05",
+          "text": "Use the actual definitions: away from the heart for arteries, toward the heart for veins.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 62,
+          "wordCount": 15,
+          "start": 22.17,
+          "end": 28.39,
+          "duration": 6.22
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.12.s02",
+              "firstWordIndex": 9,
+              "lastWordIndex": 10,
+              "start": 3.59,
+              "end": 4.66
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.12.s04",
+              "firstWordIndex": 39,
+              "lastWordIndex": 39,
+              "start": 16.87,
+              "end": 17.45
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M02.12.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 45,
+              "start": 19.97,
+              "end": 20.55
+            }
+          ]
+        },
+        {
+          "phrase": "aorta",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.12.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 11.19,
+              "end": 11.81
+            }
+          ]
+        },
+        {
+          "phrase": "trace a complete circuit",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M02.12.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 4,
+              "start": 0.3,
+              "end": 1.69
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M02.12.s01",
+          "at": 0.0,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.49,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M02.12.s02",
+          "at": 2.8,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.66,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s02",
+            "firstWordIndex": 6,
+            "lastWordIndex": 10
+          }
+        },
+        {
+          "id": "M02.12.p01",
+          "at": 3.59,
+          "selected": "ra",
+          "flowStop": "ra",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.66,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s02",
+            "phrase": "right atrium",
+            "occurrence": 1,
+            "firstWordIndex": 9,
+            "lastWordIndex": 10
+          }
+        },
+        {
+          "id": "M02.12.s03",
+          "at": 5.0,
+          "selected": "tricuspid",
+          "flowStop": "tricuspid",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.81,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s03",
+            "firstWordIndex": 11,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M02.12.destination.2.lungs",
+          "at": 7.43,
+          "selected": "pa",
+          "flowStop": "lung-bed",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "word",
+            "end": 8.06,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s03",
+            "word": "lungs",
+            "firstWordIndex": 18,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M02.12.destination.2.left",
+          "at": 8.93,
+          "selected": "la",
+          "flowStop": "la",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "word",
+            "end": 9.23,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s03",
+            "word": "left",
+            "firstWordIndex": 22,
+            "lastWordIndex": 22
+          }
+        },
+        {
+          "id": "M02.12.p02",
+          "at": 11.19,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 11.81,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s03",
+            "phrase": "aorta",
+            "occurrence": 1,
+            "firstWordIndex": 28,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M02.12.s04",
+          "at": 12.24,
+          "selected": "pa",
+          "flowStop": "pulmonary-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.48,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s04",
+            "firstWordIndex": 29,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M02.12.s05",
+          "at": 22.17,
+          "selected": "aorta",
+          "flowStop": "systemic-arteries",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.39,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M02.12.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 62
+          }
+        }
+      ]
+    }
+  ]
+}

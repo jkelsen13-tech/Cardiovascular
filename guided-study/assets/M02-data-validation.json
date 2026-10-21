@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "lessons": 12,
+  "cues": 111,
+  "sentences": 75,
+  "phraseOrDestinationCues": 36,
+  "audioHashMatches": 12,
+  "sessionContract": "accepted",
+  "phaseTargets": "Actual model sample phases on declared side",
+  "scope": "Structural and actual model phase/target validation only; no native browser or listening QA"
+}
