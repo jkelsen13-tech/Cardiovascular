@@ -1,0 +1,259 @@
+{
+  "schema": "guided-study.M08-assets.v1",
+  "scope": "Nine M08 clips with 51 explicit explanation cards; no interactive ECG measurement integration",
+  "sourcePackageLibraryFileId": "libfile_a3e407675dc081919487cbaaf31cc00c",
+  "sourcePackageFileName": "M08_ECG_Measurement_Audio.zip",
+  "sourcePackageSha256": "12321adaea3effcc28f2f2c324aeb2dbe5c9bf9b076bd5e92a36dd945ac94f26",
+  "sourcePackageCRCVerified": true,
+  "sourceZipMP3HashesVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "a248f0f4cf3f066312fe2d91e6c34980d526863f6006a98593ebe9b6815af915",
+  "audioPolicy": "Approved original MP3s copied byte-for-byte. No provider, generation, retake, external API, dependency or new cost.",
+  "alignment": {
+    "manifestSha256": "ac4f04fece7006eb4bbeced400de14d072f58ba0cf3ff08fe91063bfe90a3966",
+    "provenanceSha256": "5d81f30c44d8bb7c483f84a53b5fec1eae91f118aaf65ad27d9b85a6956c0cd3",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "flags": [
+      {
+        "clip": "M08.05",
+        "type": "WORD_DURATION",
+        "index": 26,
+        "word": "repolarization",
+        "start": 8.23,
+        "end": 9.44,
+        "duration": 1.21,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M08.08",
+        "type": "WORD_DURATION",
+        "index": 20,
+        "word": "a",
+        "start": 7.67,
+        "end": 7.7,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M08.09",
+        "type": "WORD_DURATION",
+        "index": 1,
+        "word": "a",
+        "start": 0.18,
+        "end": 0.21,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      }
+    ]
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "coursePageExtractionSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+  "courseTerminologyNotes": {
+    "M08.01": {
+      "pages": "228,230–231,234–235",
+      "note": "Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+    },
+    "M08.02": {
+      "pages": "271–275,415",
+      "note": "P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+    },
+    "M08.03": {
+      "pages": "276–278,420",
+      "note": "The J point is QRS end/ST start. No live caliper, QRS-width measurement or source strip is presented. Wide QRS is not assigned a single origin."
+    },
+    "M08.04": {
+      "pages": "273,276,279–280",
+      "note": "Electrical events and mechanical effects remain distinct. ST changes and U-wave explanations do not establish a clinical diagnosis."
+    },
+    "M08.05": {
+      "pages": "281,428",
+      "note": "The half-RR rule is qualified as a rough screen. No QT endpoint is measured and no QTc formula/result is generated."
+    },
+    "M08.06": {
+      "pages": "376,392,394,409,415,420,428",
+      "note": "Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+    },
+    "M08.07": {
+      "pages": "376",
+      "note": "The cited course page supports regularity comparison; ectopic/premature/escape distinctions follow the approved adapted narration. No calipers, ectopic waveform or pause strip are displayed."
+    },
+    "M08.08": {
+      "pages": "392,394,399–402",
+      "note": "Three large boxes equal fifteen small boxes and 100 bpm; eighteen small boxes produce about 83 bpm. The source p400 conflicting counts are not treated as measurements of the same interval. All examples are arithmetic, not measured image findings."
+    },
+    "M08.09": {
+      "pages": "376,392,409,415,420,428",
+      "note": "Conditional practice checkpoint. This lesson displays no strip or marking/caliper tool and records no answers. Existing ECG practice remains separately learner controlled; unseen numbered course figures are not recreated."
+    }
+  },
+  "bindings": {
+    "controller": "GuidedExplanation",
+    "fullScenes": true,
+    "protectedECGFilesChanged": false,
+    "existingTrainerTouched": false,
+    "practiceAnswerGateUnchanged": true,
+    "nativeExecutionVerified": false,
+    "scope": "No fake calibrated grid, strip, caliper, numeric measurement, rate calculator, QTc calculator or generated classification."
+  },
+  "counts": {
+    "lessons": 9,
+    "cues": 51,
+    "sentenceCues": 51,
+    "phraseCues": 0,
+    "explanationCards": 51,
+    "heartCues": 0,
+    "respiratoryCues": 0,
+    "ecgMeasurementCues": 0,
+    "stripIllustrations": 0
+  },
+  "clips": [
+    {
+      "id": "M08.01",
+      "file": "M08_01_adam_multilingual_v2.mp3",
+      "bytes": 548163,
+      "sha256": "b00e3ce6e8d91da2601d2a176d1bd6629cbca4638bb40b051a64f6db098031cb",
+      "duration": 33.201625,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M08.02",
+      "file": "M08_02_adam_multilingual_v2.mp3",
+      "bytes": 538968,
+      "sha256": "a228aedd56b67794ddc37fb3422e1e4d9ec25ed0b3ccd850e155f64f61f0fa09",
+      "duration": 32.626938,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M08.03",
+      "file": "M08_03_adam_multilingual_v2.mp3",
+      "bytes": 571986,
+      "sha256": "231d067d9f4430c35cc20086fae8c6428bdb026460de6a39e00504ee3cf0d817",
+      "duration": 34.690563,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M08.04",
+      "file": "M08_04_adam_multilingual_v2.mp3",
+      "bytes": 462481,
+      "sha256": "3ab8401f76ad601a235b358ff765ce585e0cb34d7a2fa7ecc527e493a6620f00",
+      "duration": 27.8465,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M08.05",
+      "file": "M08_05_adam_multilingual_v2.mp3",
+      "bytes": 497590,
+      "sha256": "b93c28477c84f0380fdf50a0470cb394ad5fadd7587b3911c1468aba04fc816d",
+      "duration": 30.040813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 26,
+          "word": "repolarization",
+          "start": 8.23,
+          "end": 9.44,
+          "duration": 1.21,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M08.06",
+      "file": "M08_06_adam_multilingual_v2.mp3",
+      "bytes": 541475,
+      "sha256": "ef69cb4d141ad342f073dcda71718a3f78c631aba5ae9f1dcee7fbf870c7f333",
+      "duration": 32.783625,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 9,
+      "totalCues": 9,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M08.07",
+      "file": "M08_07_adam_multilingual_v2.mp3",
+      "bytes": 559030,
+      "sha256": "09ccf2b72aec9d1b8713d11e640975bded3e82e877ea5ecac0e137fa10513872",
+      "duration": 33.880813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M08.08",
+      "file": "M08_08_adam_multilingual_v2.mp3",
+      "bytes": 510964,
+      "sha256": "b646aa9447c080adfb26e96c571cedb44c704b02f8b17e36d0fd8ed29ba1af44",
+      "duration": 30.876688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 20,
+          "word": "a",
+          "start": 7.67,
+          "end": 7.7,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M08.09",
+      "file": "M08_09_adam_multilingual_v2.mp3",
+      "bytes": 505531,
+      "sha256": "3a0032d709b7b6933873bab6ac6477cb12a6b365d622dc9e7f0adf233c14052f",
+      "duration": 30.537125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 1,
+          "word": "a",
+          "start": 0.18,
+          "end": 0.21,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    }
+  ]
+}

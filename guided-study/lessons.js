@@ -50,7 +50,8 @@
           "sourceSentence": "M02_01.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 6
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s02",
@@ -87,7 +88,8 @@
           "sourceSentence": "M02_01.s02",
           "firstWordIndex": 7,
           "lastWordIndex": 15
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p01",
@@ -126,7 +128,8 @@
           "occurrence": 1,
           "firstWordIndex": 8,
           "lastWordIndex": 9
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p03",
@@ -165,7 +168,8 @@
           "occurrence": 1,
           "firstWordIndex": 11,
           "lastWordIndex": 12
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s03",
@@ -202,7 +206,8 @@
           "sourceSentence": "M02_01.s03",
           "firstWordIndex": 16,
           "lastWordIndex": 23
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p05",
@@ -241,7 +246,8 @@
           "occurrence": 1,
           "firstWordIndex": 17,
           "lastWordIndex": 18
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p07",
@@ -280,7 +286,8 @@
           "occurrence": 1,
           "firstWordIndex": 20,
           "lastWordIndex": 21
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s04",
@@ -317,7 +324,8 @@
           "sourceSentence": "M02_01.s04",
           "firstWordIndex": 24,
           "lastWordIndex": 31
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p09",
@@ -356,7 +364,8 @@
           "occurrence": 1,
           "firstWordIndex": 25,
           "lastWordIndex": 25
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s05",
@@ -393,7 +402,8 @@
           "sourceSentence": "M02_01.s05",
           "firstWordIndex": 32,
           "lastWordIndex": 37
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s06",
@@ -430,7 +440,8 @@
           "sourceSentence": "M02_01.s06",
           "firstWordIndex": 38,
           "lastWordIndex": 56
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p02",
@@ -469,7 +480,8 @@
           "occurrence": 2,
           "firstWordIndex": 45,
           "lastWordIndex": 46
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p06",
@@ -508,7 +520,8 @@
           "occurrence": 2,
           "firstWordIndex": 50,
           "lastWordIndex": 51
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.destination.5.lungs",
@@ -546,7 +559,8 @@
           "word": "lungs",
           "firstWordIndex": 56,
           "lastWordIndex": 56
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s07",
@@ -583,7 +597,8 @@
           "sourceSentence": "M02_01.s07",
           "firstWordIndex": 57,
           "lastWordIndex": 75
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.destination.6.lungs",
@@ -621,7 +636,8 @@
           "word": "lungs",
           "firstWordIndex": 61,
           "lastWordIndex": 61
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p04",
@@ -660,7 +676,8 @@
           "occurrence": 2,
           "firstWordIndex": 64,
           "lastWordIndex": 65
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.p08",
@@ -699,7 +716,8 @@
           "occurrence": 2,
           "firstWordIndex": 69,
           "lastWordIndex": 70
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.01.destination.6.body",
@@ -737,7 +755,8 @@
           "word": "body",
           "firstWordIndex": 75,
           "lastWordIndex": 75
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s08",
@@ -775,7 +794,8 @@
           "sourceSentence": "M02_01.s08",
           "firstWordIndex": 76,
           "lastWordIndex": 86
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s09",
@@ -812,7 +832,8 @@
           "sourceSentence": "M02_01.s09",
           "firstWordIndex": 87,
           "lastWordIndex": 93
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s10",
@@ -849,7 +870,8 @@
           "sourceSentence": "M02_01.s10",
           "firstWordIndex": 94,
           "lastWordIndex": 100
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s11",
@@ -886,7 +908,8 @@
           "sourceSentence": "M02_01.s11",
           "firstWordIndex": 101,
           "lastWordIndex": 107
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02_01.s12",
@@ -923,7 +946,8 @@
           "sourceSentence": "M02_01.s12",
           "firstWordIndex": 108,
           "lastWordIndex": 123
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -992,7 +1016,8 @@
           "sourceSentence": "M02.02.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 8
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.02.s02",
@@ -1029,7 +1054,8 @@
           "sourceSentence": "M02.02.s02",
           "firstWordIndex": 9,
           "lastWordIndex": 20
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.02.s03",
@@ -1066,7 +1092,8 @@
           "sourceSentence": "M02.02.s03",
           "firstWordIndex": 21,
           "lastWordIndex": 32
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.02.s04",
@@ -1103,7 +1130,8 @@
           "sourceSentence": "M02.02.s04",
           "firstWordIndex": 33,
           "lastWordIndex": 47
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.02.p01",
@@ -1142,7 +1170,8 @@
           "occurrence": 1,
           "firstWordIndex": 34,
           "lastWordIndex": 35
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.02.s05",
@@ -1179,7 +1208,8 @@
           "sourceSentence": "M02.02.s05",
           "firstWordIndex": 48,
           "lastWordIndex": 65
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -1248,7 +1278,8 @@
           "sourceSentence": "M02.03.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 13
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.p02",
@@ -1287,7 +1318,8 @@
           "occurrence": 1,
           "firstWordIndex": 8,
           "lastWordIndex": 9
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.p01",
@@ -1326,7 +1358,8 @@
           "occurrence": 1,
           "firstWordIndex": 12,
           "lastWordIndex": 13
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.s02",
@@ -1363,7 +1396,8 @@
           "sourceSentence": "M02.03.s02",
           "firstWordIndex": 14,
           "lastWordIndex": 17
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.s03",
@@ -1400,7 +1434,8 @@
           "sourceSentence": "M02.03.s03",
           "firstWordIndex": 18,
           "lastWordIndex": 31
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.s04",
@@ -1437,7 +1472,8 @@
           "sourceSentence": "M02.03.s04",
           "firstWordIndex": 32,
           "lastWordIndex": 45
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.s05",
@@ -1474,7 +1510,8 @@
           "sourceSentence": "M02.03.s05",
           "firstWordIndex": 46,
           "lastWordIndex": 67
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.03.p03",
@@ -1513,7 +1550,8 @@
           "occurrence": 1,
           "firstWordIndex": 49,
           "lastWordIndex": 50
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Alignment QA flag preserved: “atrioventricular” spans 8.49–9.74 s (1.25 s); listening review is required.",
@@ -1582,7 +1620,8 @@
           "sourceSentence": "M02.04.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 18
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.04.p01",
@@ -1621,7 +1660,8 @@
           "occurrence": 1,
           "firstWordIndex": 7,
           "lastWordIndex": 8
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.04.p02",
@@ -1660,7 +1700,8 @@
           "occurrence": 1,
           "firstWordIndex": 11,
           "lastWordIndex": 12
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.04.s02",
@@ -1697,7 +1738,8 @@
           "sourceSentence": "M02.04.s02",
           "firstWordIndex": 19,
           "lastWordIndex": 25
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.04.s03",
@@ -1734,7 +1776,8 @@
           "sourceSentence": "M02.04.s03",
           "firstWordIndex": 26,
           "lastWordIndex": 37
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.04.s04",
@@ -1771,7 +1814,8 @@
           "sourceSentence": "M02.04.s04",
           "firstWordIndex": 38,
           "lastWordIndex": 53
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.04.s05",
@@ -1808,7 +1852,8 @@
           "sourceSentence": "M02.04.s05",
           "firstWordIndex": 54,
           "lastWordIndex": 69
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -1877,7 +1922,8 @@
           "sourceSentence": "M02.05.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 17
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.s02",
@@ -1914,7 +1960,8 @@
           "sourceSentence": "M02.05.s02",
           "firstWordIndex": 18,
           "lastWordIndex": 30
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.s03",
@@ -1951,7 +1998,8 @@
           "sourceSentence": "M02.05.s03",
           "firstWordIndex": 31,
           "lastWordIndex": 43
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.p01",
@@ -1990,7 +2038,8 @@
           "occurrence": 1,
           "firstWordIndex": 42,
           "lastWordIndex": 43
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.s04",
@@ -2027,7 +2076,8 @@
           "sourceSentence": "M02.05.s04",
           "firstWordIndex": 44,
           "lastWordIndex": 51
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.p03",
@@ -2066,7 +2116,8 @@
           "occurrence": 2,
           "firstWordIndex": 46,
           "lastWordIndex": 47
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.p02",
@@ -2105,7 +2156,8 @@
           "occurrence": 2,
           "firstWordIndex": 50,
           "lastWordIndex": 51
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.05.s05",
@@ -2142,7 +2194,8 @@
           "sourceSentence": "M02.05.s05",
           "firstWordIndex": 52,
           "lastWordIndex": 70
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -2211,7 +2264,8 @@
           "sourceSentence": "M02.06.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 13
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.p03",
@@ -2250,7 +2304,8 @@
           "occurrence": 1,
           "firstWordIndex": 8,
           "lastWordIndex": 9
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.p01",
@@ -2289,7 +2344,8 @@
           "occurrence": 1,
           "firstWordIndex": 12,
           "lastWordIndex": 13
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.s02",
@@ -2326,7 +2382,8 @@
           "sourceSentence": "M02.06.s02",
           "firstWordIndex": 14,
           "lastWordIndex": 28
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.s03",
@@ -2363,7 +2420,8 @@
           "sourceSentence": "M02.06.s03",
           "firstWordIndex": 29,
           "lastWordIndex": 37
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.p04",
@@ -2402,7 +2460,8 @@
           "occurrence": 1,
           "firstWordIndex": 31,
           "lastWordIndex": 33
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.p02",
@@ -2441,7 +2500,8 @@
           "occurrence": 2,
           "firstWordIndex": 36,
           "lastWordIndex": 37
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.s04",
@@ -2478,7 +2538,8 @@
           "sourceSentence": "M02.06.s04",
           "firstWordIndex": 38,
           "lastWordIndex": 46
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.s05",
@@ -2515,7 +2576,8 @@
           "sourceSentence": "M02.06.s05",
           "firstWordIndex": 47,
           "lastWordIndex": 60
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.06.s06",
@@ -2553,7 +2615,8 @@
           "sourceSentence": "M02.06.s06",
           "firstWordIndex": 61,
           "lastWordIndex": 73
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -2622,7 +2685,8 @@
           "sourceSentence": "M02.07.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 11
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.p02",
@@ -2661,7 +2725,8 @@
           "occurrence": 1,
           "firstWordIndex": 7,
           "lastWordIndex": 8
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.p03",
@@ -2700,7 +2765,8 @@
           "occurrence": 1,
           "firstWordIndex": 11,
           "lastWordIndex": 11
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.s02",
@@ -2737,7 +2803,8 @@
           "sourceSentence": "M02.07.s02",
           "firstWordIndex": 12,
           "lastWordIndex": 20
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.s03",
@@ -2774,7 +2841,8 @@
           "sourceSentence": "M02.07.s03",
           "firstWordIndex": 21,
           "lastWordIndex": 28
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.s04",
@@ -2811,7 +2879,8 @@
           "sourceSentence": "M02.07.s04",
           "firstWordIndex": 29,
           "lastWordIndex": 41
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.p01",
@@ -2850,7 +2919,8 @@
           "occurrence": 1,
           "firstWordIndex": 40,
           "lastWordIndex": 41
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.s05",
@@ -2887,7 +2957,8 @@
           "sourceSentence": "M02.07.s05",
           "firstWordIndex": 42,
           "lastWordIndex": 49
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.07.s06",
@@ -2925,7 +2996,8 @@
           "sourceSentence": "M02.07.s06",
           "firstWordIndex": 50,
           "lastWordIndex": 64
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -2994,7 +3066,8 @@
           "sourceSentence": "M02.08.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 8
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.s02",
@@ -3031,7 +3104,8 @@
           "sourceSentence": "M02.08.s02",
           "firstWordIndex": 9,
           "lastWordIndex": 22
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.p02",
@@ -3070,7 +3144,8 @@
           "occurrence": 1,
           "firstWordIndex": 21,
           "lastWordIndex": 22
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.s03",
@@ -3107,7 +3182,8 @@
           "sourceSentence": "M02.08.s03",
           "firstWordIndex": 23,
           "lastWordIndex": 36
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.p01",
@@ -3146,7 +3222,8 @@
           "occurrence": 1,
           "firstWordIndex": 35,
           "lastWordIndex": 36
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.s04",
@@ -3183,7 +3260,8 @@
           "sourceSentence": "M02.08.s04",
           "firstWordIndex": 37,
           "lastWordIndex": 47
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.s05",
@@ -3220,7 +3298,8 @@
           "sourceSentence": "M02.08.s05",
           "firstWordIndex": 48,
           "lastWordIndex": 55
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.08.s06",
@@ -3257,7 +3336,8 @@
           "sourceSentence": "M02.08.s06",
           "firstWordIndex": 56,
           "lastWordIndex": 71
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",
@@ -3297,26 +3377,11 @@
         "text": "Arteries carry blood away from the heart; veins carry it toward the heart.",
         "title": "Arteries carry blood away from the heart; veins carry it toward the heart.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": "systemic-arteries",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3326,7 +3391,8 @@
           "sourceSentence": "M02.09.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 12
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.09.s02",
@@ -3334,26 +3400,11 @@
         "text": "Arterioles regulate resistance and distribute flow.",
         "title": "Arterioles regulate resistance and distribute flow.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": "systemic-bed",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. The capillary inset is a separate instructional schematic, not gross HRA lung/body microgeometry, measured diffusion or CFD. The original four-chamber source context remains visible. Intima/media/externa, resistance-vessel caliber changes and peripheral venous valves are not separately segmented or simulated by the heart asset. Read this sentence as a text explanation alongside the retained circulation context, not a vessel-wall model."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3363,7 +3414,8 @@
           "sourceSentence": "M02.09.s02",
           "firstWordIndex": 13,
           "lastWordIndex": 18
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.09.s03",
@@ -3371,26 +3423,11 @@
         "text": "Capillaries are thin exchange vessels.",
         "title": "Capillaries are thin exchange vessels.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": "systemic-bed",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. The capillary inset is a separate instructional schematic, not gross HRA lung/body microgeometry, measured diffusion or CFD. The original four-chamber source context remains visible."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3400,7 +3437,8 @@
           "sourceSentence": "M02.09.s03",
           "firstWordIndex": 19,
           "lastWordIndex": 23
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.09.s04",
@@ -3408,26 +3446,11 @@
         "text": "Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa.",
         "title": "Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. Intima/media/externa, resistance-vessel caliber changes and peripheral venous valves are not separately segmented or simulated by the heart asset. Read this sentence as a text explanation alongside the retained circulation context, not a vessel-wall model."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3437,7 +3460,8 @@
           "sourceSentence": "M02.09.s04",
           "firstWordIndex": 24,
           "lastWordIndex": 39
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.09.s05",
@@ -3445,26 +3469,11 @@
         "text": "The lumen is the open space inside.",
         "title": "The lumen is the open space inside.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. Intima/media/externa, resistance-vessel caliber changes and peripheral venous valves are not separately segmented or simulated by the heart asset. Read this sentence as a text explanation alongside the retained circulation context, not a vessel-wall model. The section blood occupancy is a conservative pseudo-volume, not measured vessel-lumen segmentation."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3474,7 +3483,8 @@
           "sourceSentence": "M02.09.s05",
           "firstWordIndex": 40,
           "lastWordIndex": 46
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.09.s06",
@@ -3482,26 +3492,11 @@
         "text": "Vasoconstriction narrows the lumen; vasodilation widens it.",
         "title": "Vasoconstriction narrows the lumen; vasodilation widens it.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": "systemic-bed",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. The capillary inset is a separate instructional schematic, not gross HRA lung/body microgeometry, measured diffusion or CFD. The original four-chamber source context remains visible. Intima/media/externa, resistance-vessel caliber changes and peripheral venous valves are not separately segmented or simulated by the heart asset. Read this sentence as a text explanation alongside the retained circulation context, not a vessel-wall model."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3511,7 +3506,8 @@
           "sourceSentence": "M02.09.s06",
           "firstWordIndex": 47,
           "lastWordIndex": 53
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.09.s07",
@@ -3519,26 +3515,11 @@
         "text": "Many veins have valves that help limit backward flow, especially in the limbs.",
         "title": "Many veins have valves that help limit backward flow, especially in the limbs.",
         "scene": {
-          "organ": "heart",
-          "selected": "ivc",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "right"
-          },
-          "flowStop": "venous-return",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. Intima/media/externa, resistance-vessel caliber changes and peripheral venous valves are not separately segmented or simulated by the heart asset. Read this sentence as a text explanation alongside the retained circulation context, not a vessel-wall model."
+          "organ": "explanation",
+          "title": "Vessels and their walls",
+          "text": "Arteries carry blood away from the heart; veins carry it toward the heart. Arterioles regulate resistance and distribute flow. Capillaries are thin exchange vessels. Larger vessels have an inner tunica intima, a middle tunica media, and an outer tunica externa. The lumen is the open space inside. Vasoconstriction narrows the lumen; vasodilation widens it. Many veins have valves that help limit backward flow, especially in the limbs.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 296-309;322-339",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3548,7 +3529,8 @@
           "sourceSentence": "M02.09.s07",
           "firstWordIndex": 54,
           "lastWordIndex": 66
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Some narrated microscopic/composition/coronary concepts have text support only; cue details name the limits.",
@@ -3588,26 +3570,11 @@
         "text": "Blood contains plasma and formed elements.",
         "title": "Blood contains plasma and formed elements.",
         "scene": {
-          "organ": "heart",
-          "selected": "lv",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3617,7 +3584,8 @@
           "sourceSentence": "M02.10.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 5
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.10.s02",
@@ -3625,26 +3593,11 @@
         "text": "Plasma is the liquid transport medium.",
         "title": "Plasma is the liquid transport medium.",
         "scene": {
-          "organ": "heart",
-          "selected": "lv",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3654,7 +3607,8 @@
           "sourceSentence": "M02.10.s02",
           "firstWordIndex": 6,
           "lastWordIndex": 11
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.10.s03",
@@ -3662,26 +3616,11 @@
         "text": "Red blood cells contain hemoglobin, which carries most blood oxygen.",
         "title": "Red blood cells contain hemoglobin, which carries most blood oxygen.",
         "scene": {
-          "organ": "heart",
-          "selected": "lv",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3691,7 +3630,8 @@
           "sourceSentence": "M02.10.s03",
           "firstWordIndex": 12,
           "lastWordIndex": 21
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.10.s04",
@@ -3699,26 +3639,11 @@
         "text": "White blood cells participate in immune defense.",
         "title": "White blood cells participate in immune defense.",
         "scene": {
-          "organ": "heart",
-          "selected": "lv",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3728,7 +3653,8 @@
           "sourceSentence": "M02.10.s04",
           "firstWordIndex": 22,
           "lastWordIndex": 28
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.10.s05",
@@ -3736,26 +3662,11 @@
         "text": "Platelets help form clots.",
         "title": "Platelets help form clots.",
         "scene": {
-          "organ": "heart",
-          "selected": "lv",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3765,7 +3676,8 @@
           "sourceSentence": "M02.10.s05",
           "firstWordIndex": 29,
           "lastWordIndex": 32
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.10.s06",
@@ -3773,26 +3685,11 @@
         "text": "Carbon dioxide travels in several forms, especially as bicarbonate in plasma.",
         "title": "Carbon dioxide travels in several forms, especially as bicarbonate in plasma.",
         "scene": {
-          "organ": "heart",
-          "selected": "lv",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3802,7 +3699,8 @@
           "sourceSentence": "M02.10.s06",
           "firstWordIndex": 33,
           "lastWordIndex": 43
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       },
       {
         "id": "M02.10.s07",
@@ -3810,26 +3708,11 @@
         "text": "Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
         "title": "Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
         "scene": {
-          "organ": "heart",
-          "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
-          "parameters": {
-            "heartRate": 75,
-            "bloodVolume": 5000,
-            "systemicResistance": 1.05,
-            "contractility": 1
-          },
-          "bloodView": "filled",
-          "conductionView": "off",
-          "wallHighlight": false,
-          "simulation": {
-            "kind": "phase",
-            "phase": "passive-filling",
-            "side": "left"
-          },
-          "flowStop": "systemic-bed",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. The capillary inset is a separate instructional schematic, not gross HRA lung/body microgeometry, measured diffusion or CFD. The original four-chamber source context remains visible. The continuous colored cavity display represents blood occupancy. Plasma, hemoglobin, leukocytes, platelets, clotting and bicarbonate transport are explained in text; these constituents are not separately rendered or simulated. Oxygen delivery is not predicted by this instructional visualization."
+          "organ": "explanation",
+          "title": "What blood carries",
+          "text": "Blood contains plasma and formed elements. Plasma is the liquid transport medium. Red blood cells contain hemoglobin, which carries most blood oxygen. White blood cells participate in immune defense. Platelets help form clots. Carbon dioxide travels in several forms, especially as bicarbonate in plasma. Tissue perfusion means blood flowing through tissues; adequate oxygen delivery also depends on the amount of hemoglobin, its oxygen saturation, and the flow reaching those tissues.",
+          "source": "Owner-approved adapted M02 narration · course PDF pp123–137 (chambers, flow, valves),111–114 (wall); original course script lines 378-387",
+          "qualification": "Supplemental course explanation. No vessel-wall, blood-cell, measurement or treatment simulation is claimed by this card. The worked arithmetic/reference values are teaching examples, separate from the numerical heart model."
         },
         "alignment": {
           "kind": "sentence",
@@ -3839,7 +3722,8 @@
           "sourceSentence": "M02.10.s07",
           "firstWordIndex": 44,
           "lastWordIndex": 69
-        }
+        },
+        "visualStatus": "supplemental-explanation"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Some narrated microscopic/composition/coronary concepts have text support only; cue details name the limits.",
@@ -3881,15 +3765,15 @@
         "scene": {
           "organ": "heart",
           "selected": "wall",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -3898,7 +3782,7 @@
             "side": "left"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "sentence",
@@ -3908,7 +3792,8 @@
           "sourceSentence": "M02.11.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 7
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.s02",
@@ -3918,15 +3803,15 @@
         "scene": {
           "organ": "heart",
           "selected": "lca",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -3935,7 +3820,7 @@
             "side": "left"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "sentence",
@@ -3945,7 +3830,8 @@
           "sourceSentence": "M02.11.s02",
           "firstWordIndex": 8,
           "lastWordIndex": 13
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.p02",
@@ -3955,15 +3841,15 @@
         "scene": {
           "organ": "heart",
           "selected": "aorta",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -3971,8 +3857,8 @@
             "phase": "ejection",
             "side": "left"
           },
-          "flowStop": "systemic-arteries",
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed."
+          "flowStop": null,
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "phrase",
@@ -3984,7 +3870,8 @@
           "occurrence": 1,
           "firstWordIndex": 13,
           "lastWordIndex": 13
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.s03",
@@ -3994,15 +3881,15 @@
         "scene": {
           "organ": "heart",
           "selected": "rca",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -4011,7 +3898,7 @@
             "side": "left"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed. RCA/LCA can be selected here; individual LAD/circumflex selection is not exposed by this scene adapter."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "sentence",
@@ -4021,7 +3908,8 @@
           "sourceSentence": "M02.11.s03",
           "firstWordIndex": 14,
           "lastWordIndex": 36
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.s04",
@@ -4031,15 +3919,15 @@
         "scene": {
           "organ": "heart",
           "selected": "sinus",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -4048,7 +3936,7 @@
             "side": "left"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "sentence",
@@ -4058,7 +3946,8 @@
           "sourceSentence": "M02.11.s04",
           "firstWordIndex": 37,
           "lastWordIndex": 47
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.p01",
@@ -4068,15 +3957,15 @@
         "scene": {
           "organ": "heart",
           "selected": "sinus",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -4085,7 +3974,7 @@
             "side": "right"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. The selected source-vessel region is linked by its label/flow guide and external circulation map. This four-chamber section omits full gross vessel surfaces; the guide is not a measured lumen trajectory. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "phrase",
@@ -4097,7 +3986,8 @@
           "occurrence": 1,
           "firstWordIndex": 46,
           "lastWordIndex": 47
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.s05",
@@ -4107,15 +3997,15 @@
         "scene": {
           "organ": "heart",
           "selected": "wall",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -4124,7 +4014,7 @@
             "side": "left"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed. The named passive-filling phase is a diastolic inspection state, not a coronary-flow calculation."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "sentence",
@@ -4134,7 +4024,8 @@
           "sourceSentence": "M02.11.s05",
           "firstWordIndex": 48,
           "lastWordIndex": 64
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       },
       {
         "id": "M02.11.s06",
@@ -4144,15 +4035,15 @@
         "scene": {
           "organ": "heart",
           "selected": "aortic",
-          "mode": "four-chamber",
-          "preset": "four-chamber",
+          "mode": "whole",
+          "preset": "front",
           "parameters": {
             "heartRate": 75,
             "bloodVolume": 5000,
             "systemicResistance": 1.05,
             "contractility": 1
           },
-          "bloodView": "filled",
+          "bloodView": "anatomy",
           "conductionView": "off",
           "wallHighlight": false,
           "simulation": {
@@ -4161,7 +4052,7 @@
             "side": "left"
           },
           "flowStop": null,
-          "detail": "The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. This four-chamber view reports the pressure-driven semilunar valve state/flow; both semilunar leaflet surfaces are not exposed here. The separate outflow view is available in Explore. Named coronary source meshes are retained, but their external surfaces are omitted in this four-chamber section. The selected coronary region is contextual; no measured coronary-flow waveform or diastolic-perfusion solver is displayed. Valve closure is not used as a coronary on/off gate."
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson."
         },
         "alignment": {
           "kind": "sentence",
@@ -4171,7 +4062,8 @@
           "sourceSentence": "M02.11.s06",
           "firstWordIndex": 65,
           "lastWordIndex": 75
-        }
+        },
+        "visualStatus": "source-anatomy-with-qualified-physiology"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat. Some narrated microscopic/composition/coronary concepts have text support only; cue details name the limits.",
@@ -4240,7 +4132,8 @@
           "sourceSentence": "M02.12.s01",
           "firstWordIndex": 0,
           "lastWordIndex": 5
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.s02",
@@ -4277,7 +4170,8 @@
           "sourceSentence": "M02.12.s02",
           "firstWordIndex": 6,
           "lastWordIndex": 10
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.p01",
@@ -4316,7 +4210,8 @@
           "occurrence": 1,
           "firstWordIndex": 9,
           "lastWordIndex": 10
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.s03",
@@ -4353,7 +4248,8 @@
           "sourceSentence": "M02.12.s03",
           "firstWordIndex": 11,
           "lastWordIndex": 28
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.destination.2.lungs",
@@ -4391,7 +4287,8 @@
           "word": "lungs",
           "firstWordIndex": 18,
           "lastWordIndex": 18
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.destination.2.left",
@@ -4429,7 +4326,8 @@
           "word": "left",
           "firstWordIndex": 22,
           "lastWordIndex": 22
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.p02",
@@ -4468,7 +4366,8 @@
           "occurrence": 1,
           "firstWordIndex": 28,
           "lastWordIndex": 28
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.s04",
@@ -4505,7 +4404,8 @@
           "sourceSentence": "M02.12.s04",
           "firstWordIndex": 29,
           "lastWordIndex": 47
-        }
+        },
+        "visualStatus": "model-binding"
       },
       {
         "id": "M02.12.s05",
@@ -4542,7 +4442,8 @@
           "sourceSentence": "M02.12.s05",
           "firstWordIndex": 48,
           "lastWordIndex": 62
-        }
+        },
+        "visualStatus": "model-binding"
       }
     ],
     "qualification": "Existing M02 narration with machine-measured sentence/phrase cues. Alignment has 10 ms frame granularity, not a ±10 ms accuracy claim; human listening and synchronization review remain pending. The four-chamber HRA section retains all four source chambers and illustrative continuous blood occupancy. Blue/red encode relative oxygen content. The teaching itinerary spans many beats; it is not one blood particle completing a circuit in one heartbeat.",

@@ -1,0 +1,1461 @@
+/* Delivered M01 lessons: approved unchanged audio and machine-measured cue snapshots. */
+(function(root){
+ 'use strict';
+ const lessons=[
+  {
+    "id": "M01.01",
+    "module": "M01",
+    "title": "How to use this lesson",
+    "text": "Welcome. This lesson follows the website, not the order of an audiobook. We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation. Then we will use those ideas to understand E C G recordings. Each short section has a matching transcript. Pause, replay, or explore before continuing. The later rhythm and pacemaker chapters are separate study modules.",
+    "transcript": "Welcome. This lesson follows the website, not the order of an audiobook. We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation. Then we will use those ideas to understand E C G recordings. Each short section has a matching transcript. Pause, replay, or explore before continuing. The later rhythm and pacemaker chapters are separate study modules.",
+    "audio": {
+      "src": "guided-study/assets/M01_01_adam_multilingual_v2.mp3",
+      "duration": 30.275875,
+      "sha256": "60bb5df72dec4044ab6a903994061c67223a7c958ff9b78d9f5f0f44ca3a5d70"
+    },
+    "cues": [
+      {
+        "id": "M01.01.s01",
+        "at": 0,
+        "text": "Welcome.",
+        "title": "Welcome.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Welcome",
+          "text": "Welcome.",
+          "source": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 0.57,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 0
+        }
+      },
+      {
+        "id": "M01.01.s02",
+        "at": 1.86,
+        "text": "This lesson follows the website, not the order of an audiobook.",
+        "title": "This lesson follows the website, not the order of an audiobook.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Follow the website",
+          "text": "This lesson follows the website, not the order of an audiobook.",
+          "source": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 1.86,
+          "end": 5.54,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s02",
+          "firstWordIndex": 1,
+          "lastWordIndex": 11
+        }
+      },
+      {
+        "id": "M01.01.s03",
+        "at": 6.1,
+        "text": "We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation.",
+        "title": "We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation.",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "speed": 0.1,
+            "anchorAudio": 6.1
+          },
+          "detail": "Original HRA heart in retained coordinates. Whole-heart/four-chamber views support orientation; blue/red is an instructional oxygen-content convention and blood is always shades of red. No chest/sternum geometry, physical-size calibration or literal tracked blood molecule is implied."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 6.1,
+          "end": 14.1,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s03",
+          "firstWordIndex": 12,
+          "lastWordIndex": 33
+        }
+      },
+      {
+        "id": "M01.01.p01",
+        "at": 8.69,
+        "text": "We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation.",
+        "title": "Electrical signal on the original heart",
+        "scene": {
+          "organ": "heart",
+          "selected": "sa",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "speed": 0.1,
+            "anchorAudio": 8.69
+          },
+          "detail": "Original HRA heart in retained coordinates. Whole-heart/four-chamber views support orientation; blue/red is an instructional oxygen-content convention and blood is always shades of red. No chest/sternum geometry, physical-size calibration or literal tracked blood molecule is implied. The green route/yellow pulse/violet node overlay is inferred teaching geometry on the original heart, not segmented conduction tissue."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 8.69,
+          "end": 9.72,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s03",
+          "phrase": "electrical signal",
+          "occurrence": 1,
+          "firstWordIndex": 22,
+          "lastWordIndex": 23
+        }
+      },
+      {
+        "id": "M01.01.p02",
+        "at": 10.68,
+        "text": "We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation.",
+        "title": "Muscle contraction · existing cell view",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release",
+            "sweep": true,
+            "anchorAudio": 10.68,
+            "endAudio": 11.72
+          },
+          "detail": "Existing routeB cell view is an instructional reconstruction with the original heart return context. It illustrates cardiac muscle contraction; it is not measured microscopy, a whole-body cell model or a molecular solver."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 10.68,
+          "end": 11.72,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s03",
+          "phrase": "muscle contraction",
+          "occurrence": 1,
+          "firstWordIndex": 26,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M01.01.p03",
+        "at": 12.64,
+        "text": "We will explore the heart as a pump, trace its electrical signal, zoom into muscle contraction, and connect the lungs to circulation.",
+        "title": "Original lung anatomy",
+        "scene": {
+          "organ": "respiratory",
+          "stage": "whole",
+          "segment": "right-apical-segment",
+          "preset": "front",
+          "selected": "rightlung",
+          "breathing": {
+            "rate": 12,
+            "target": 0.5,
+            "resistance": 2,
+            "compliance": 0.1,
+            "mode": "target"
+          },
+          "ventilation": "spontaneous",
+          "monitoringView": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Retained HRA lung anatomy in shared source coordinates. Patient RIGHT is −X and patient LEFT is +X; gross front-surface orientation still awaits educator review. Chest/rib/diaphragm context is fitted schematic geometry. Heart and lung scenes are separate and are not falsely superimposed."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 12.64,
+          "end": 13.1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s03",
+          "phrase": "lungs",
+          "occurrence": 1,
+          "firstWordIndex": 31,
+          "lastWordIndex": 31
+        }
+      },
+      {
+        "id": "M01.01.s04",
+        "at": 14.89,
+        "text": "Then we will use those ideas to understand E C G recordings.",
+        "title": "Then we will use those ideas to understand E C G recordings.",
+        "scene": {
+          "organ": "explanation",
+          "title": "ECG study follows physiology",
+          "text": "Then we will use those ideas to understand E C G recordings.",
+          "source": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 14.89,
+          "end": 19.01,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s04",
+          "firstWordIndex": 34,
+          "lastWordIndex": 45
+        }
+      },
+      {
+        "id": "M01.01.s05",
+        "at": 19.48,
+        "text": "Each short section has a matching transcript.",
+        "title": "Each short section has a matching transcript.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Matching transcript",
+          "text": "Each short section has a matching transcript.",
+          "source": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 19.48,
+          "end": 21.93,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s05",
+          "firstWordIndex": 46,
+          "lastWordIndex": 52
+        }
+      },
+      {
+        "id": "M01.01.s06",
+        "at": 22.3,
+        "text": "Pause, replay, or explore before continuing.",
+        "title": "Pause, replay, or explore before continuing.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Pause, replay and Explore",
+          "text": "Pause, replay, or explore before continuing.",
+          "source": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 22.3,
+          "end": 25.57,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s06",
+          "firstWordIndex": 53,
+          "lastWordIndex": 58
+        }
+      },
+      {
+        "id": "M01.01.s07",
+        "at": 26.07,
+        "text": "The later rhythm and pacemaker chapters are separate study modules.",
+        "title": "The later rhythm and pacemaker chapters are separate study modules.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Later study modules",
+          "text": "The later rhythm and pacemaker chapters are separate study modules.",
+          "source": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 26.07,
+          "end": 30.03,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.01.s07",
+          "firstWordIndex": 59,
+          "lastWordIndex": 68
+        }
+      }
+    ],
+    "qualification": "Approved MP3 reused unchanged. Forced alignment uses a 10 ms frame grid, which is granularity rather than an accuracy bound. Listening/pronunciation, native visual synchronization and iPad review remain pending. Website navigation is approved adaptation, not a claim of course-PDF instructions.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "1-8;418-421;539-550",
+      "audioPackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1"
+    },
+    "sourceLabel": "Owner-approved adapted M01.01 narration · source script lines 1-8;418-421;539-550",
+    "sourceUrl": "guided-study/assets/M01-provenance.json",
+    "status": "Audio and measured scene bindings available; native integration review pending",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M01.02",
+    "module": "M01",
+    "title": "One connected transport system",
+    "text": "Begin with the whole system. Cells form tissues, tissues form organs, and organs work together in systems. Homeostasis means maintaining a relatively stable internal environment. The lungs exchange oxygen and carbon dioxide with the air. The heart creates pressure that moves blood. Blood vessels distribute that blood, and tissues exchange gases and nutrients across capillaries. Oxygen delivery depends on all of these parts, not on one monitor number alone.",
+    "transcript": "Begin with the whole system. Cells form tissues, tissues form organs, and organs work together in systems. Homeostasis means maintaining a relatively stable internal environment. The lungs exchange oxygen and carbon dioxide with the air. The heart creates pressure that moves blood. Blood vessels distribute that blood, and tissues exchange gases and nutrients across capillaries. Oxygen delivery depends on all of these parts, not on one monitor number alone.",
+    "audio": {
+      "src": "guided-study/assets/M01_02_adam_multilingual_v2.mp3",
+      "duration": 31.373063,
+      "sha256": "4c4c2561af2cb2ad545564db5b9abc5859636c865f7e89604ca299339044c834"
+    },
+    "cues": [
+      {
+        "id": "M01.02.s01",
+        "at": 0,
+        "text": "Begin with the whole system.",
+        "title": "Begin with the whole system.",
+        "scene": {
+          "organ": "explanation",
+          "title": "One connected system",
+          "text": "Begin with the whole system.",
+          "source": "Owner-approved adapted M01.02 narration · source script lines 102-115;212-217;378-387 · course PDF physical pp50,77,84,108",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 1.52,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 4
+        }
+      },
+      {
+        "id": "M01.02.s02",
+        "at": 1.98,
+        "text": "Cells form tissues, tissues form organs, and organs work together in systems.",
+        "title": "Cells form tissues, tissues form organs, and organs work together in systems.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Cells, tissues, organs and systems",
+          "text": "Cells form tissues, tissues form organs, and organs work together in systems.",
+          "source": "Owner-approved adapted M01.02 narration · source script lines 102-115;212-217;378-387 · course PDF physical pp50,77,84,108",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 1.98,
+          "end": 7.17,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s02",
+          "firstWordIndex": 5,
+          "lastWordIndex": 16
+        }
+      },
+      {
+        "id": "M01.02.s03",
+        "at": 7.73,
+        "text": "Homeostasis means maintaining a relatively stable internal environment.",
+        "title": "Homeostasis means maintaining a relatively stable internal environment.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Homeostasis",
+          "text": "Homeostasis means maintaining a relatively stable internal environment.",
+          "source": "Owner-approved adapted M01.02 narration · source script lines 102-115;212-217;378-387 · course PDF physical pp50,77,84,108",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 7.73,
+          "end": 12.18,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s03",
+          "firstWordIndex": 17,
+          "lastWordIndex": 24
+        }
+      },
+      {
+        "id": "M01.02.s04",
+        "at": 12.72,
+        "text": "The lungs exchange oxygen and carbon dioxide with the air.",
+        "title": "The lungs exchange oxygen and carbon dioxide with the air.",
+        "scene": {
+          "organ": "respiratory",
+          "stage": "membrane",
+          "segment": "right-apical-segment",
+          "preset": "front",
+          "selected": "rightlung",
+          "breathing": {
+            "rate": 12,
+            "target": 0.5,
+            "resistance": 2,
+            "compliance": 0.1,
+            "mode": "target"
+          },
+          "ventilation": "spontaneous",
+          "monitoringView": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "inspiration",
+            "sweep": true,
+            "anchorAudio": 12.72,
+            "endAudio": 16.37
+          },
+          "detail": "Magnified instructional alveolar-membrane reconstruction anchored to the selected HRA segment; no measured micro-to-gross continuity. Cyan O₂ cues travel air to blood and gold CO₂ blood to air. These are qualitative transport cues, not measured diffusion, oxygen delivery or a V/Q solver."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 12.72,
+          "end": 16.37,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s04",
+          "firstWordIndex": 25,
+          "lastWordIndex": 34
+        }
+      },
+      {
+        "id": "M01.02.s05",
+        "at": 16.83,
+        "text": "The heart creates pressure that moves blood.",
+        "title": "The heart creates pressure that moves blood.",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 16.83,
+            "endAudio": 19.07
+          },
+          "detail": "Original HRA heart in retained coordinates. Whole-heart/four-chamber views support orientation; blue/red is an instructional oxygen-content convention and blood is always shades of red. No chest/sternum geometry, physical-size calibration or literal tracked blood molecule is implied."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 16.83,
+          "end": 19.07,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s05",
+          "firstWordIndex": 35,
+          "lastWordIndex": 41
+        }
+      },
+      {
+        "id": "M01.02.s06",
+        "at": 19.48,
+        "text": "Blood vessels distribute that blood, and tissues exchange gases and nutrients across capillaries.",
+        "title": "Blood vessels distribute that blood, and tissues exchange gases and nutrients across capillaries.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Vessels and tissue exchange",
+          "text": "Blood vessels distribute that blood, and tissues exchange gases and nutrients across capillaries.",
+          "source": "Owner-approved adapted M01.02 narration · source script lines 102-115;212-217;378-387 · course PDF physical pp50,77,84,108",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 19.48,
+          "end": 25.14,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s06",
+          "firstWordIndex": 42,
+          "lastWordIndex": 54
+        }
+      },
+      {
+        "id": "M01.02.s07",
+        "at": 25.78,
+        "text": "Oxygen delivery depends on all of these parts, not on one monitor number alone.",
+        "title": "Oxygen delivery depends on all of these parts, not on one monitor number alone.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Oxygen delivery needs the whole system",
+          "text": "Oxygen delivery depends on all of these parts, not on one monitor number alone.",
+          "source": "Owner-approved adapted M01.02 narration · source script lines 102-115;212-217;378-387 · course PDF physical pp50,77,84,108",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 25.78,
+          "end": 31.08,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.02.s07",
+          "firstWordIndex": 55,
+          "lastWordIndex": 68
+        }
+      }
+    ],
+    "qualification": "Approved MP3 reused unchanged. Forced alignment uses a 10 ms frame grid, which is granularity rather than an accuracy bound. Listening/pronunciation, native visual synchronization and iPad review remain pending. Approved adaptation distinguishes gas exchange from metabolism and avoids treating a monitor value as proof of oxygen delivery; pp77/84 terminal-bronchiole wording is corrected.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "102-115;212-217;378-387",
+      "audioPackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "50,77,84,108",
+        "terminologyNote": "Approved adaptation distinguishes gas exchange from metabolism and avoids treating a monitor value as proof of oxygen delivery; pp77/84 terminal-bronchiole wording is corrected."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M01.02 narration · source script lines 102-115;212-217;378-387 · course PDF physical pp50,77,84,108",
+    "sourceUrl": "guided-study/assets/M01-provenance.json",
+    "status": "Audio and measured scene bindings available; native integration review pending",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M01.03",
+    "module": "M01",
+    "title": "Patient orientation and body planes",
+    "text": "Before we name a structure, establish the patient's directions. Right and left always mean the patient's right and left. Anterior means toward the front; posterior, toward the back. Superior means toward the head; inferior, toward the feet. Medial is toward the midline; lateral is away from it. A frontal plane separates front from back. A transverse plane separates upper from lower regions. A sagittal plane separates left from right.",
+    "transcript": "Before we name a structure, establish the patient's directions. Right and left always mean the patient's right and left. Anterior means toward the front; posterior, toward the back. Superior means toward the head; inferior, toward the feet. Medial is toward the midline; lateral is away from it. A frontal plane separates front from back. A transverse plane separates upper from lower regions. A sagittal plane separates left from right.",
+    "audio": {
+      "src": "guided-study/assets/M01_03_adam_multilingual_v2.mp3",
+      "duration": 29.857938,
+      "sha256": "c7775930e6409d11d245c8e0b3e9c7817d72d64f5d9791de139c6d1e95d5e9cb"
+    },
+    "cues": [
+      {
+        "id": "M01.03.s01",
+        "at": 0,
+        "text": "Before we name a structure, establish the patient's directions.",
+        "title": "Before we name a structure, establish the patient's directions.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Establish patient directions",
+          "text": "Before we name a structure, establish the patient's directions.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 3.4,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 8
+        }
+      },
+      {
+        "id": "M01.03.s02",
+        "at": 4.01,
+        "text": "Right and left always mean the patient's right and left.",
+        "title": "Right and left always mean the patient's right and left.",
+        "scene": {
+          "organ": "respiratory",
+          "stage": "whole",
+          "segment": "right-apical-segment",
+          "preset": "front",
+          "selected": "rightlung",
+          "breathing": {
+            "rate": 12,
+            "target": 0.5,
+            "resistance": 2,
+            "compliance": 0.1,
+            "mode": "target"
+          },
+          "ventilation": "spontaneous",
+          "monitoringView": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Retained HRA lung anatomy in shared source coordinates. Patient RIGHT is −X and patient LEFT is +X; gross front-surface orientation still awaits educator review. Chest/rib/diaphragm context is fitted schematic geometry. Heart and lung scenes are separate and are not falsely superimposed."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 4.01,
+          "end": 7.1,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s02",
+          "firstWordIndex": 9,
+          "lastWordIndex": 18
+        }
+      },
+      {
+        "id": "M01.03.s03",
+        "at": 7.62,
+        "text": "Anterior means toward the front; posterior, toward the back.",
+        "title": "Anterior means toward the front; posterior, toward the back.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Anterior and posterior",
+          "text": "Anterior means toward the front; posterior, toward the back.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 7.62,
+          "end": 11.41,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s03",
+          "firstWordIndex": 19,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M01.03.s04",
+        "at": 11.93,
+        "text": "Superior means toward the head; inferior, toward the feet.",
+        "title": "Superior means toward the head; inferior, toward the feet.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Superior and inferior",
+          "text": "Superior means toward the head; inferior, toward the feet.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 11.93,
+          "end": 15.84,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s04",
+          "firstWordIndex": 28,
+          "lastWordIndex": 36
+        }
+      },
+      {
+        "id": "M01.03.s05",
+        "at": 16.41,
+        "text": "Medial is toward the midline; lateral is away from it.",
+        "title": "Medial is toward the midline; lateral is away from it.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Medial and lateral",
+          "text": "Medial is toward the midline; lateral is away from it.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 16.41,
+          "end": 19.82,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s05",
+          "firstWordIndex": 37,
+          "lastWordIndex": 46
+        }
+      },
+      {
+        "id": "M01.03.s06",
+        "at": 20.32,
+        "text": "A frontal plane separates front from back.",
+        "title": "A frontal plane separates front from back.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Frontal plane",
+          "text": "A frontal plane separates front from back.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 20.32,
+          "end": 22.72,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s06",
+          "firstWordIndex": 47,
+          "lastWordIndex": 53
+        }
+      },
+      {
+        "id": "M01.03.s07",
+        "at": 23.25,
+        "text": "A transverse plane separates upper from lower regions.",
+        "title": "A transverse plane separates upper from lower regions.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Transverse plane",
+          "text": "A transverse plane separates upper from lower regions.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 23.25,
+          "end": 26.5,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s07",
+          "firstWordIndex": 54,
+          "lastWordIndex": 61
+        }
+      },
+      {
+        "id": "M01.03.s08",
+        "at": 26.87,
+        "text": "A sagittal plane separates left from right.",
+        "title": "A sagittal plane separates left from right.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Sagittal plane",
+          "text": "A sagittal plane separates left from right.",
+          "source": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 26.87,
+          "end": 29.58,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.03.s08",
+          "firstWordIndex": 62,
+          "lastWordIndex": 68
+        }
+      }
+    ],
+    "qualification": "Approved MP3 reused unchanged. Forced alignment uses a 10 ms frame grid, which is granularity rather than an accuracy bound. Listening/pronunciation, native visual synchronization and iPad review remain pending. Patient-centered directions and body-plane definitions use explicit explanations; no body-plane overlay is claimed.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "42-65",
+      "audioPackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "24,26,28",
+        "terminologyNote": "Patient-centered directions and body-plane definitions use explicit explanations; no body-plane overlay is claimed."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M01.03 narration · source script lines 42-65 · course PDF physical pp24,26,28",
+    "sourceUrl": "guided-study/assets/M01-provenance.json",
+    "status": "Audio and measured scene bindings available; native integration review pending",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M01.04",
+    "module": "M01",
+    "title": "Finding the heart in the chest",
+    "text": "Locate the heart behind the sternum, between the lungs, in the mediastinum. Its apex points down and toward the patient's left. The adult heart is roughly the size of that person's fist, but size varies. The rib cage normally has twelve pairs of ribs. The spaces between adjacent ribs are intercostal spaces. These chest landmarks will matter again when we place recording electrodes.",
+    "transcript": "Locate the heart behind the sternum, between the lungs, in the mediastinum. Its apex points down and toward the patient's left. The adult heart is roughly the size of that person's fist, but size varies. The rib cage normally has twelve pairs of ribs. The spaces between adjacent ribs are intercostal spaces. These chest landmarks will matter again when we place recording electrodes.",
+    "audio": {
+      "src": "guided-study/assets/M01_04_adam_multilingual_v2.mp3",
+      "duration": 27.350188,
+      "sha256": "f62b43bd145f5fa44855b3bc7c8b1e5f81a6a35e3dcc60317abd63d6b09f14cc"
+    },
+    "cues": [
+      {
+        "id": "M01.04.s01",
+        "at": 0,
+        "text": "Locate the heart behind the sternum, between the lungs, in the mediastinum.",
+        "title": "Locate the heart behind the sternum, between the lungs, in the mediastinum.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Heart in the mediastinum",
+          "text": "Locate the heart behind the sternum, between the lungs, in the mediastinum.",
+          "source": "Owner-approved adapted M01.04 narration · source script lines 42-65;218-221 · course PDF physical pp30–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 5.35,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.04.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 11
+        }
+      },
+      {
+        "id": "M01.04.s02",
+        "at": 5.93,
+        "text": "Its apex points down and toward the patient's left.",
+        "title": "Its apex points down and toward the patient's left.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Heart apex direction",
+          "text": "Its apex points down and toward the patient's left.",
+          "source": "Owner-approved adapted M01.04 narration · source script lines 42-65;218-221 · course PDF physical pp30–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 5.93,
+          "end": 9.27,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.04.s02",
+          "firstWordIndex": 12,
+          "lastWordIndex": 20
+        }
+      },
+      {
+        "id": "M01.04.s03",
+        "at": 9.7,
+        "text": "The adult heart is roughly the size of that person's fist, but size varies.",
+        "title": "The adult heart is roughly the size of that person's fist, but size varies.",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "whole",
+          "preset": "whole",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Original HRA heart in retained coordinates. Whole-heart/four-chamber views support orientation; blue/red is an instructional oxygen-content convention and blood is always shades of red. No chest/sternum geometry, physical-size calibration or literal tracked blood molecule is implied. The visible heart illustrates overall shape only; it does not compare a measured fist or show a calibrated body-size ratio."
+        },
+        "visualStatus": "model-binding",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 9.7,
+          "end": 15.12,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.04.s03",
+          "firstWordIndex": 21,
+          "lastWordIndex": 34
+        }
+      },
+      {
+        "id": "M01.04.s04",
+        "at": 15.54,
+        "text": "The rib cage normally has twelve pairs of ribs.",
+        "title": "The rib cage normally has twelve pairs of ribs.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Twelve pairs of ribs",
+          "text": "The rib cage normally has twelve pairs of ribs.",
+          "source": "Owner-approved adapted M01.04 narration · source script lines 42-65;218-221 · course PDF physical pp30–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 15.54,
+          "end": 18.55,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.04.s04",
+          "firstWordIndex": 35,
+          "lastWordIndex": 43
+        }
+      },
+      {
+        "id": "M01.04.s05",
+        "at": 18.82,
+        "text": "The spaces between adjacent ribs are intercostal spaces.",
+        "title": "The spaces between adjacent ribs are intercostal spaces.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Intercostal spaces",
+          "text": "The spaces between adjacent ribs are intercostal spaces.",
+          "source": "Owner-approved adapted M01.04 narration · source script lines 42-65;218-221 · course PDF physical pp30–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 18.82,
+          "end": 22.51,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.04.s05",
+          "firstWordIndex": 44,
+          "lastWordIndex": 51
+        }
+      },
+      {
+        "id": "M01.04.s06",
+        "at": 22.99,
+        "text": "These chest landmarks will matter again when we place recording electrodes.",
+        "title": "These chest landmarks will matter again when we place recording electrodes.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Landmarks for later electrode study",
+          "text": "These chest landmarks will matter again when we place recording electrodes.",
+          "source": "Owner-approved adapted M01.04 narration · source script lines 42-65;218-221 · course PDF physical pp30–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 22.99,
+          "end": 27.11,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.04.s06",
+          "firstWordIndex": 52,
+          "lastWordIndex": 62
+        }
+      }
+    ],
+    "qualification": "Approved MP3 reused unchanged. Forced alignment uses a 10 ms frame grid, which is granularity rather than an accuracy bound. Listening/pronunciation, native visual synchronization and iPad review remain pending. Approved narration says twelve pairs of ribs. Course pp31/45 shorthand says twelve ribs; this is not adopted literally. Sternum and mediastinal placement are explained, not falsely highlighted on the heart-only model.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "42-65;218-221",
+      "audioPackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "30–32,46,109",
+        "terminologyNote": "Approved narration says twelve pairs of ribs. Course pp31/45 shorthand says twelve ribs; this is not adopted literally. Sternum and mediastinal placement are explained, not falsely highlighted on the heart-only model."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M01.04 narration · source script lines 42-65;218-221 · course PDF physical pp30–32,46,109",
+    "sourceUrl": "guided-study/assets/M01-provenance.json",
+    "status": "Audio and measured scene bindings available; native integration review pending",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M01.05",
+    "module": "M01",
+    "title": "Additional directional terms",
+    "text": "Add four pairs of location words. Proximal means closer to a point of attachment; distal means farther from it. The wrist is distal to the elbow. Superficial means nearer the body surface; deep means farther inside. Cranial and caudal roughly indicate toward the head and toward the lower end of the trunk. Ventral and dorsal usually correspond to anterior and posterior in the human trunk. Apply each term to a named structure rather than memorizing an isolated definition.",
+    "transcript": "Add four pairs of location words. Proximal means closer to a point of attachment; distal means farther from it. The wrist is distal to the elbow. Superficial means nearer the body surface; deep means farther inside. Cranial and caudal roughly indicate toward the head and toward the lower end of the trunk. Ventral and dorsal usually correspond to anterior and posterior in the human trunk. Apply each term to a named structure rather than memorizing an isolated definition.",
+    "audio": {
+      "src": "guided-study/assets/M01_05_adam_multilingual_v2.mp3",
+      "duration": 29.622813,
+      "sha256": "a5cc68424b96b5974772005d5e4baa36ef3a6ba68538d13cf3cdd8c7bc32f601"
+    },
+    "cues": [
+      {
+        "id": "M01.05.s01",
+        "at": 0,
+        "text": "Add four pairs of location words.",
+        "title": "Add four pairs of location words.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Additional directional terms",
+          "text": "Add four pairs of location words.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 1.94,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 5
+        }
+      },
+      {
+        "id": "M01.05.s02",
+        "at": 2.21,
+        "text": "Proximal means closer to a point of attachment; distal means farther from it.",
+        "title": "Proximal means closer to a point of attachment; distal means farther from it.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Proximal and distal",
+          "text": "Proximal means closer to a point of attachment; distal means farther from it.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 2.21,
+          "end": 6.28,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s02",
+          "firstWordIndex": 6,
+          "lastWordIndex": 18
+        }
+      },
+      {
+        "id": "M01.05.s03",
+        "at": 6.6,
+        "text": "The wrist is distal to the elbow.",
+        "title": "The wrist is distal to the elbow.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Wrist relative to elbow",
+          "text": "The wrist is distal to the elbow.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 6.6,
+          "end": 8.26,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s03",
+          "firstWordIndex": 19,
+          "lastWordIndex": 25
+        }
+      },
+      {
+        "id": "M01.05.s04",
+        "at": 8.47,
+        "text": "Superficial means nearer the body surface; deep means farther inside.",
+        "title": "Superficial means nearer the body surface; deep means farther inside.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Superficial and deep",
+          "text": "Superficial means nearer the body surface; deep means farther inside.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 8.47,
+          "end": 12.6,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s04",
+          "firstWordIndex": 26,
+          "lastWordIndex": 35
+        }
+      },
+      {
+        "id": "M01.05.s05",
+        "at": 12.92,
+        "text": "Cranial and caudal roughly indicate toward the head and toward the lower end of the trunk.",
+        "title": "Cranial and caudal roughly indicate toward the head and toward the lower end of the trunk.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Cranial and caudal",
+          "text": "Cranial and caudal roughly indicate toward the head and toward the lower end of the trunk.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 12.92,
+          "end": 17.87,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s05",
+          "firstWordIndex": 36,
+          "lastWordIndex": 51
+        }
+      },
+      {
+        "id": "M01.05.s06",
+        "at": 18.54,
+        "text": "Ventral and dorsal usually correspond to anterior and posterior in the human trunk.",
+        "title": "Ventral and dorsal usually correspond to anterior and posterior in the human trunk.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Ventral and dorsal",
+          "text": "Ventral and dorsal usually correspond to anterior and posterior in the human trunk.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 18.54,
+          "end": 23.35,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s06",
+          "firstWordIndex": 52,
+          "lastWordIndex": 64
+        }
+      },
+      {
+        "id": "M01.05.s07",
+        "at": 23.92,
+        "text": "Apply each term to a named structure rather than memorizing an isolated definition.",
+        "title": "Apply each term to a named structure rather than memorizing an isolated definition.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Apply terms to a named structure",
+          "text": "Apply each term to a named structure rather than memorizing an isolated definition.",
+          "source": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 23.92,
+          "end": 29.4,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.05.s07",
+          "firstWordIndex": 65,
+          "lastWordIndex": 77
+        }
+      }
+    ],
+    "qualification": "Approved MP3 reused unchanged. Forced alignment uses a 10 ms frame grid, which is granularity rather than an accuracy bound. Listening/pronunciation, native visual synchronization and iPad review remain pending. General directional definitions are readable explanations; no limb model or directional overlay is claimed.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "42-97",
+      "audioPackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "26",
+        "terminologyNote": "General directional definitions are readable explanations; no limb model or directional overlay is claimed."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M01.05 narration · source script lines 42-97 · course PDF physical pp26",
+    "sourceUrl": "guided-study/assets/M01-provenance.json",
+    "status": "Audio and measured scene bindings available; native integration review pending",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M01.06",
+    "module": "M01",
+    "title": "Orientation checkpoint",
+    "text": "Check your orientation. In a front view of the patient, is the patient's right side on your right or your left? Pause and point to it. Then identify the sternum and the space occupied by the heart. Continue when you can explain why patient-centered directions prevent mistakes when locating chest electrodes.",
+    "transcript": "Check your orientation. In a front view of the patient, is the patient's right side on your right or your left? Pause and point to it. Then identify the sternum and the space occupied by the heart. Continue when you can explain why patient-centered directions prevent mistakes when locating chest electrodes.",
+    "audio": {
+      "src": "guided-study/assets/M01_06_adam_multilingual_v2.mp3",
+      "duration": 20.48,
+      "sha256": "306b1cef61509f03705fa9bafac229fa74a94baac266e2666d926fbeac4e8a84"
+    },
+    "cues": [
+      {
+        "id": "M01.06.s01",
+        "at": 0,
+        "text": "Check your orientation.",
+        "title": "Check your orientation.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Orientation checkpoint",
+          "text": "Check your orientation.",
+          "source": "Owner-approved adapted M01.06 narration · source script lines 66-97;134-147 · course PDF physical pp24,29–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. Learner-controlled checkpoint; no answer is recorded or automatically scored."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 1.42,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.06.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 2
+        }
+      },
+      {
+        "id": "M01.06.s02",
+        "at": 2.06,
+        "text": "In a front view of the patient, is the patient's right side on your right or your left?",
+        "title": "In a front view of the patient, is the patient's right side on your right or your left?",
+        "scene": {
+          "organ": "explanation",
+          "title": "Locate patient right in a front view",
+          "text": "In a front view of the patient, is the patient's right side on your right or your left?",
+          "source": "Owner-approved adapted M01.06 narration · source script lines 66-97;134-147 · course PDF physical pp24,29–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. Learner-controlled checkpoint; no answer is recorded or automatically scored."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 2.06,
+          "end": 6.88,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.06.s02",
+          "firstWordIndex": 3,
+          "lastWordIndex": 20
+        }
+      },
+      {
+        "id": "M01.06.s03",
+        "at": 7.3,
+        "text": "Pause and point to it.",
+        "title": "Pause and point to it.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Pause and point",
+          "text": "Pause and point to it.",
+          "source": "Owner-approved adapted M01.06 narration · source script lines 66-97;134-147 · course PDF physical pp24,29–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. Learner-controlled checkpoint; no answer is recorded or automatically scored."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 7.3,
+          "end": 8.89,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.06.s03",
+          "firstWordIndex": 21,
+          "lastWordIndex": 25
+        }
+      },
+      {
+        "id": "M01.06.s04",
+        "at": 9.53,
+        "text": "Then identify the sternum and the space occupied by the heart.",
+        "title": "Then identify the sternum and the space occupied by the heart.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Sternum and heart space",
+          "text": "Then identify the sternum and the space occupied by the heart.",
+          "source": "Owner-approved adapted M01.06 narration · source script lines 66-97;134-147 · course PDF physical pp24,29–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. Learner-controlled checkpoint; no answer is recorded or automatically scored."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 9.53,
+          "end": 13.14,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.06.s04",
+          "firstWordIndex": 26,
+          "lastWordIndex": 36
+        }
+      },
+      {
+        "id": "M01.06.s05",
+        "at": 13.65,
+        "text": "Continue when you can explain why patient-centered directions prevent mistakes when locating chest electrodes.",
+        "title": "Continue when you can explain why patient-centered directions prevent mistakes when locating chest electrodes.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Explain why patient directions matter",
+          "text": "Continue when you can explain why patient-centered directions prevent mistakes when locating chest electrodes.",
+          "source": "Owner-approved adapted M01.06 narration · source script lines 66-97;134-147 · course PDF physical pp24,29–32,46,109",
+          "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. Learner-controlled checkpoint; no answer is recorded or automatically scored."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.65,
+          "end": 20.22,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M01.06.s05",
+          "firstWordIndex": 37,
+          "lastWordIndex": 51
+        }
+      }
+    ],
+    "qualification": "Approved MP3 reused unchanged. Forced alignment uses a 10 ms frame grid, which is granularity rather than an accuracy bound. Listening/pronunciation, native visual synchronization and iPad review remain pending. Learner-controlled checkpoint with no recorded/scored answer. Sternum and complete chest relationships are readable explanations.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "66-97;134-147",
+      "audioPackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "24,29–32,46,109",
+        "terminologyNote": "Learner-controlled checkpoint with no recorded/scored answer. Sternum and complete chest relationships are readable explanations."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M01.06 narration · source script lines 66-97;134-147 · course PDF physical pp24,29–32,46,109",
+    "sourceUrl": "guided-study/assets/M01-provenance.json",
+    "status": "Audio and measured scene bindings available; native integration review pending",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  }
+];
+ const existing=Array.isArray(root.GuidedStudyLessons)?root.GuidedStudyLessons:[];
+ const present=new Set(existing.map(lesson=>lesson.id));
+ root.GuidedStudyLessons=existing.concat(lessons.filter(lesson=>!present.has(lesson.id)));
+ if(typeof module==='object'&&module.exports)module.exports=lessons;
+})(typeof window==='object'?window:globalThis);

@@ -1,0 +1,305 @@
+{
+  "schema": "guided-study.M05-assets.v1",
+  "scope": "Twelve delivered M05 respiratory lessons only; remaining course is not implied complete",
+  "sourcePackageLibraryFileId": "libfile_28dd1c1a28f48191b5b22840e611b3a7",
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "audioPolicy": "Existing delivered MP3 files copied unchanged; no provider, generation, retake, install or new cost during integration.",
+  "sourceManifestSha256": "6831a5254fb49f0d7c696669ef4be625cbc48d2c3b61bdc23019b8dbb36c8076",
+  "alignment": {
+    "manifestSha256": "640288c3aafee727db36ea61f3429364a8b3d41f1ab9756281d6215707cf8ca6",
+    "provenanceSha256": "fffc9b6db8e794bfadcf86749d82a44d01520a441f6a084ea7d7d6d35209dbe6",
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "method": "Existing PocketSphinx5.0.4 model, transcript-constrained local word/subword alignment; no transcript-word-rate estimates or audio regeneration.",
+    "flags": [
+      {
+        "clip": "M05.01",
+        "clipId": "M05.01",
+        "word": "nasopharynx",
+        "type": "MEDICAL_TERM_MODEL_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/nasopharynx",
+        "medicalSourcePronunciation": "ˌnā-zō-ˈfer-iŋ(k)s",
+        "medicalPronunciationAuthoredARPABET": "N EY Z OW F EH R IH NG K S",
+        "bundledDictionaryDefault": "N AH S AA F ER IH NG K S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Bundled word pronunciation differs from publisher first-listed medical-term pronunciation. This can affect alignment anchors; review this word and neighboring boundaries during playback. Constrained alignment does not establish actual generated pronunciation.",
+        "humanListeningPerformed": false,
+        "index": 25,
+        "start": 10.82,
+        "end": 11.79
+      },
+      {
+        "clip": "M05.05",
+        "type": "WORD_DURATION",
+        "index": 42,
+        "word": "a",
+        "start": 15.91,
+        "end": 15.94,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      }
+    ]
+  },
+  "bindings": {
+    "controller": "CardiorespiratoryStudy.guided / HeartV3Study.guided / GuidedExplanation",
+    "fullScenes": true,
+    "normalSpontaneous": true,
+    "sourceStages": [
+      "whole",
+      "trachea",
+      "primary"
+    ],
+    "representativeStages": [
+      "smaller",
+      "bronchioles",
+      "terminal",
+      "respiratory",
+      "ducts",
+      "alveoli",
+      "membrane"
+    ],
+    "sourceRegistration": "Retained shared HRA lung coordinates; heart and lung models are separate scenes, never falsely superimposed.",
+    "microscopy": "Instructional reconstructions retain a selected segment navigation marker; no measured micro-to-gross continuity.",
+    "timing": "Named existing breathing phase windows with measured audio-owned teaching sweeps; independent capnogram remains a synthetic example, not derived CO₂ or a clinical prediction.",
+    "circulation": "Named four-chamber closed-circuit itinerary, spanning many beats; no one-beat full-circuit or solved molecule trajectory claim.",
+    "explanations": "Unavailable upper-airway/pleural/intercostal/forced-breathing/control/VQ/acid-base/cellular-metabolism processes are explicit source-linked explanation cards.",
+    "scopeLimits": [
+      "No upper-airway, functional swallowing or pleural-layer geometry is claimed.",
+      "No intercostal/accessory muscle or pleural pathology solver.",
+      "No V/Q, partial-pressure/diffusion/CO₂-clearance/acid-base/neural-control solver.",
+      "Morphological movement and transport particles remain qualitative; actual iPad/listening/native synchronization pending."
+    ],
+    "nativeExecutionVerified": false
+  },
+  "courseTerminologyNotes": {
+    "M05.01": {
+      "pages": "55–57",
+      "note": "Upper-airway concepts are readable explanations; no nasal/pharyngeal mesh is claimed."
+    },
+    "M05.02": {
+      "pages": "57–60,69",
+      "note": "Incomplete laryngeal cartilage is not used as a functional swallowing/epiglottic model."
+    },
+    "M05.03": {
+      "pages": "60–62,74–75",
+      "note": "Main/primary terminology is retained; bronchiolar/alveolar scenes explicitly cross to representative reconstruction."
+    },
+    "M05.04": {
+      "pages": "61–62,71,77,84–85",
+      "note": "Scientific correction: terminal bronchioles end the conducting zone; respiratory bronchioles have alveoli and begin the respiratory zone. The source deck says gas exchange in terminal bronchioles, so its wording is not silently adopted. Physiological dead space includes alveolar dead space; no V/Q defect is simulated."
+    },
+    "M05.05": {
+      "pages": "64",
+      "note": "Pleural layers/coupling/pathology use explicit supplemental explanation, not an unsegmented lung surface presented as pleura."
+    },
+    "M05.06": {
+      "pages": "65,73–76,82–83",
+      "note": "Course inhalation/inspiration and exhalation/expiration synonyms retained. Pressure gradient drives bulk airflow; visual cage motion does not compute thoracic volume."
+    },
+    "M05.07": {
+      "pages": "65,73–75,82–83",
+      "note": "Quiet expiration is passive recoil; forced/accessory muscle recruitment is supplemental text, not a modeled intervention."
+    },
+    "M05.08": {
+      "pages": "77,79–80",
+      "note": "Partial-pressure gradients and separate O₂/CO₂ directions qualify the course concentration wording. Diffusion and capillary motion remain instructional, not measured exchange."
+    },
+    "M05.09": {
+      "pages": "75,77,83–84",
+      "note": "Scientific clarification: external/systemic tissue gas exchange and cellular metabolism are distinct; source deck tissue/cellular-respiration shorthand is not adopted as identical definitions."
+    },
+    "M05.10": {
+      "pages": "53",
+      "note": "Buffer chemistry, renal effects and pH regulation are supplemental explanations; no acid-base or CO₂-clearance solver is implied."
+    },
+    "M05.11": {
+      "pages": "81",
+      "note": "Scientific clarification: respiratory networks generate/shape the pattern; chemoreceptors modulate it. Vagal effects depend on input/context; the deck blanket increase-rate wording is not treated as a universal rule."
+    },
+    "M05.12": {
+      "pages": "75,77,83–84,123–137",
+      "note": "A multi-stop oxygen/CO₂ teaching itinerary across lungs and four-chamber heart, not a literal tracked molecule or full circulation during one beat."
+    }
+  },
+  "counts": {
+    "lessons": 12,
+    "cues": 79,
+    "sentenceCues": 63,
+    "phraseCues": 16,
+    "explanationCards": 31,
+    "respiratoryCues": 41,
+    "heartCues": 7
+  },
+  "clips": [
+    {
+      "id": "M05.01",
+      "file": "M05_01_adam_multilingual_v2.mp3",
+      "bytes": 476692,
+      "sha256": "cdbc31a4690fa49a525bb1cf0767b29df8e1324d21cece52fafe162597494817",
+      "duration": 28.734688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": [
+        {
+          "clipId": "M05.01",
+          "word": "nasopharynx",
+          "type": "MEDICAL_TERM_MODEL_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/nasopharynx",
+          "medicalSourcePronunciation": "ˌnā-zō-ˈfer-iŋ(k)s",
+          "medicalPronunciationAuthoredARPABET": "N EY Z OW F EH R IH NG K S",
+          "bundledDictionaryDefault": "N AH S AA F ER IH NG K S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Bundled word pronunciation differs from publisher first-listed medical-term pronunciation. This can affect alignment anchors; review this word and neighboring boundaries during playback. Constrained alignment does not establish actual generated pronunciation.",
+          "humanListeningPerformed": false,
+          "index": 25,
+          "start": 10.82,
+          "end": 11.79
+        }
+      ]
+    },
+    {
+      "id": "M05.02",
+      "file": "M05_02_adam_multilingual_v2.mp3",
+      "bytes": 441165,
+      "sha256": "7bf2c41c9f3bdb92230a47935fda026cea8a2e28e308a8ceb30bd1fbb09152a6",
+      "duration": 26.51425,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 4,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.03",
+      "file": "M05_03_adam_multilingual_v2.mp3",
+      "bytes": 510128,
+      "sha256": "3969859343a47e414fe9400b0732392423cf6d59bff8cd5a9755c0916a722a8e",
+      "duration": 30.824438,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 12,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.04",
+      "file": "M05_04_adam_multilingual_v2.mp3",
+      "bytes": 536878,
+      "sha256": "301b02a0ffafa08be6cba2b5d23099e23abf6d87053eb8b318c2827d609d2b96",
+      "duration": 32.496313,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.05",
+      "file": "M05_05_adam_multilingual_v2.mp3",
+      "bytes": 437403,
+      "sha256": "50400ec1e1e446e1f9d5bd859bbd85eb094e3a1469fa879757e7adf21cd808a4",
+      "duration": 26.279125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 42,
+          "word": "a",
+          "start": 15.91,
+          "end": 15.94,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M05.06",
+      "file": "M05_06_adam_multilingual_v2.mp3",
+      "bytes": 498843,
+      "sha256": "ae10fe598b200c32eff4332f9ea8c3e6c2ad41f536921b5b5370bcd8309e90ec",
+      "duration": 30.119125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.07",
+      "file": "M05_07_adam_multilingual_v2.mp3",
+      "bytes": 553178,
+      "sha256": "84c77e5f054f7a3379bb461008f08c49a3131c94b2f106a0b5e514646c4cd43b",
+      "duration": 33.515063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.08",
+      "file": "M05_08_adam_multilingual_v2.mp3",
+      "bytes": 490902,
+      "sha256": "cddf36190619663e9a71674e3eb982cabf7597f9bacf221d6dcdcc96806087de",
+      "duration": 29.622813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.09",
+      "file": "M05_09_adam_multilingual_v2.mp3",
+      "bytes": 547327,
+      "sha256": "afce999bfad53d7849cca817fc6e8876e5b4f4c7eb306d6d8f67c0c98658f6e1",
+      "duration": 33.149375,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.10",
+      "file": "M05_10_adam_multilingual_v2.mp3",
+      "bytes": 484215,
+      "sha256": "e2d79dd913b90e2f3aed4c7b72b5dc4701df58d54a0ba43f67061785d6eb2062",
+      "duration": 29.204875,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.11",
+      "file": "M05_11_adam_multilingual_v2.mp3",
+      "bytes": 538968,
+      "sha256": "ad4e89ac1099f05fc2a75fcca5b0f1235c00a69bfe2640d712c356f52c923dec",
+      "duration": 32.626938,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M05.12",
+      "file": "M05_12_adam_multilingual_v2.mp3",
+      "bytes": 505113,
+      "sha256": "a6697f1933a88b080385981123093ca6af09da6281bcdfbe14fc19e05d63725a",
+      "duration": 30.511,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 12,
+      "alignmentFlags": []
+    }
+  ]
+}

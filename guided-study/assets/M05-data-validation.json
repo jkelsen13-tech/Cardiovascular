@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "module": "M05",
+  "lessons": 12,
+  "cues": 79,
+  "sentenceCues": 63,
+  "phraseCues": 16,
+  "explanationCards": 31,
+  "respiratoryCues": 41,
+  "heartCues": 7,
+  "respiratorySweeps": 23,
+  "audioHashes": 12,
+  "audioBytes": 6020812,
+  "durationSeconds": 363.59800300000006,
+  "preservedPriorLessons": 33,
+  "fullAppendCount": 45,
+  "uniqueReload": true,
+  "sessionCoreConstruction": true,
+  "sourceStages": [
+    "trachea",
+    "primary",
+    "whole"
+  ],
+  "sourceNames": [
+    "VH_F_trachea",
+    "VH_F_right_main_lobar_bronchus",
+    "VH_F_lungs_left_main_bronchus"
+  ],
+  "representativeStages": [
+    "smaller",
+    "bronchioles",
+    "respiratory",
+    "ducts",
+    "alveoli",
+    "terminal",
+    "membrane"
+  ],
+  "allAirwayBindingsResolved": true,
+  "phaseSweepsResolved": true,
+  "normalSpontaneousFlowSign": {
+    "inspirationFlow": 2.5001135049775236,
+    "inspirationAlveolar": -5.000227009955047,
+    "expirationFlow": -2.5000007647560345,
+    "expirationAlveolar": 5.000001529512069
+  },
+  "diaphragmDownDuringInspiration": true,
+  "terminalRespiratoryDistinction": true,
+  "crossModuleSequence": [
+    {
+      "id": "M05.12.s01",
+      "at": 0,
+      "organ": "respiratory",
+      "stage": "membrane"
+    },
+    {
+      "id": "M05.12.phrase.1.pulmonary-blood",
+      "at": 3.17,
+      "organ": "heart",
+      "stage": null,
+      "selected": "vein",
+      "flowStop": "pulmonary-veins"
+    },
+    {
+      "id": "M05.12.phrase.1.left-atrium",
+      "at": 4.91,
+      "organ": "heart",
+      "stage": null,
+      "selected": "la",
+      "flowStop": "la"
+    },
+    {
+      "id": "M05.12.phrase.1.left-ventricle",
+      "at": 5.94,
+      "organ": "heart",
+      "stage": null,
+      "selected": "lv",
+      "flowStop": "lv"
+    },
+    {
+      "id": "M05.12.phrase.1.systemic-circulation",
+      "at": 7.74,
+      "organ": "heart",
+      "stage": null,
+      "selected": "aorta",
+      "flowStop": "systemic-arteries"
+    },
+    {
+      "id": "M05.12.s02",
+      "at": 9.7,
+      "organ": "heart",
+      "stage": null,
+      "selected": "aorta",
+      "flowStop": "systemic-bed"
+    },
+    {
+      "id": "M05.12.phrase.2.tissues",
+      "at": 13.97,
+      "organ": "heart",
+      "stage": null,
+      "selected": "ivc",
+      "flowStop": "venous-return"
+    },
+    {
+      "id": "M05.12.phrase.2.lungs",
+      "at": 15.16,
+      "organ": "respiratory",
+      "stage": "membrane"
+    },
+    {
+      "id": "M05.12.s03",
+      "at": 16.55,
+      "organ": "respiratory",
+      "stage": "whole",
+      "selected": "rightlung"
+    },
+    {
+      "id": "M05.12.phrase.3.exchanging-gas",
+      "at": 21.27,
+      "organ": "respiratory",
+      "stage": "membrane"
+    },
+    {
+      "id": "M05.12.s04",
+      "at": 23.09,
+      "organ": "respiratory",
+      "stage": "whole",
+      "selected": "diaphragm"
+    },
+    {
+      "id": "M05.12.phrase.4.terminal-bronchioles",
+      "at": 26.52,
+      "organ": "respiratory",
+      "stage": "terminal"
+    }
+  ],
+  "alignmentQAFlagsPreserved": 2,
+  "lessonSha256": "cb4f7d7c5a7cad8d60110afef55f48b6afc96eae4d71d8c48786a1b4833a4cef",
+  "limits": "CPU source/data/existing-model verification only. Root-owned respiratory sweep adapter, cold cross-organ audio gating, native rendering/listening, iPad and performance require integration review. No actual alveolar gas transport, neural or acid-base solver is claimed."
+}

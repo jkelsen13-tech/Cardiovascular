@@ -1,0 +1,2073 @@
+{
+  "schema": "guided-study.M03-anchors.v1",
+  "units": "seconds",
+  "machineMeasured": true,
+  "humanListeningQA": false,
+  "frameGranularitySeconds": 0.01,
+  "accuracyClaim": null,
+  "clips": [
+    {
+      "id": "M03.01",
+      "sentences": [
+        {
+          "id": "M03.01.s01",
+          "text": "Separate the heart wall from the sac around it.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 8,
+          "wordCount": 9,
+          "start": 0,
+          "end": 2.23,
+          "duration": 2.23
+        },
+        {
+          "id": "M03.01.s02",
+          "text": "The heart wall has three layers: epicardium outside, myocardium in the middle, and endocardium inside.",
+          "firstWordIndex": 9,
+          "lastWordIndex": 23,
+          "wordCount": 15,
+          "start": 2.78,
+          "end": 9.96,
+          "duration": 7.18
+        },
+        {
+          "id": "M03.01.s03",
+          "text": "The myocardium provides most of the pumping force.",
+          "firstWordIndex": 24,
+          "lastWordIndex": 31,
+          "wordCount": 8,
+          "start": 10.53,
+          "end": 13.19,
+          "duration": 2.66
+        },
+        {
+          "id": "M03.01.s04",
+          "text": "The endocardium lines the chambers and covers the valves.",
+          "firstWordIndex": 32,
+          "lastWordIndex": 40,
+          "wordCount": 9,
+          "start": 13.78,
+          "end": 16.8,
+          "duration": 3.02
+        },
+        {
+          "id": "M03.01.s05",
+          "text": "The pericardium surrounds the heart.",
+          "firstWordIndex": 41,
+          "lastWordIndex": 45,
+          "wordCount": 5,
+          "start": 17.3,
+          "end": 19.15,
+          "duration": 1.85
+        },
+        {
+          "id": "M03.01.s06",
+          "text": "Its serous layers and small amount of fluid reduce friction.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 55,
+          "wordCount": 10,
+          "start": 19.43,
+          "end": 22.8,
+          "duration": 3.37
+        },
+        {
+          "id": "M03.01.s07",
+          "text": "The visceral layer of serous pericardium is also the epicardium.",
+          "firstWordIndex": 56,
+          "lastWordIndex": 65,
+          "wordCount": 10,
+          "start": 23.35,
+          "end": 27.36,
+          "duration": 4.01
+        }
+      ],
+      "phraseAnchors": [],
+      "boundCues": [
+        {
+          "id": "M03.01.s01",
+          "at": 0,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "wall",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.23,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M03.01.s02",
+          "at": 2.78,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "wall",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 23
+          }
+        },
+        {
+          "id": "M03.01.s03",
+          "at": 10.53,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.19,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s03",
+            "firstWordIndex": 24,
+            "lastWordIndex": 31
+          }
+        },
+        {
+          "id": "M03.01.s04",
+          "at": 13.78,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "wall",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.8,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s04",
+            "firstWordIndex": 32,
+            "lastWordIndex": 40
+          }
+        },
+        {
+          "id": "M03.01.s05",
+          "at": 17.3,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "pericardium",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.15,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s05",
+            "firstWordIndex": 41,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M03.01.s06",
+          "at": 19.43,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "pericardium",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.8,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s06",
+            "firstWordIndex": 46,
+            "lastWordIndex": 55
+          }
+        },
+        {
+          "id": "M03.01.s07",
+          "at": 23.35,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "pericardium",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.36,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.01.s07",
+            "firstWordIndex": 56,
+            "lastWordIndex": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.02",
+      "sentences": [
+        {
+          "id": "M03.02.s01",
+          "text": "Most cardiomyocytes are working contractile cells; specialized cardiomyocytes initiate and conduct impulses.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 11,
+          "wordCount": 12,
+          "start": 0,
+          "end": 8.02,
+          "duration": 8.02
+        },
+        {
+          "id": "M03.02.s02",
+          "text": "They are striated, branched cells connected at intercalated discs.",
+          "firstWordIndex": 12,
+          "lastWordIndex": 20,
+          "wordCount": 9,
+          "start": 8.45,
+          "end": 12.9,
+          "duration": 4.45
+        },
+        {
+          "id": "M03.02.s03",
+          "text": "Mechanical junctions help cells remain attached during contraction.",
+          "firstWordIndex": 21,
+          "lastWordIndex": 28,
+          "wordCount": 8,
+          "start": 13.37,
+          "end": 17.21,
+          "duration": 3.84
+        },
+        {
+          "id": "M03.02.s04",
+          "text": "Gap junctions allow electrical current to pass between neighboring cells.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 38,
+          "wordCount": 10,
+          "start": 17.8,
+          "end": 22.3,
+          "duration": 4.5
+        },
+        {
+          "id": "M03.02.s05",
+          "text": "Together, these connections help groups of cells activate and contract in a coordinated way.",
+          "firstWordIndex": 39,
+          "lastWordIndex": 52,
+          "wordCount": 14,
+          "start": 22.7,
+          "end": 28.47,
+          "duration": 5.77
+        },
+        {
+          "id": "M03.02.s06",
+          "text": "The heart has intrinsic electrical activity; nerves adjust its behavior rather than commanding every individual heartbeat.",
+          "firstWordIndex": 53,
+          "lastWordIndex": 68,
+          "wordCount": 16,
+          "start": 29.34,
+          "end": 36.78,
+          "duration": 7.44
+        }
+      ],
+      "phraseAnchors": [],
+      "boundCues": [
+        {
+          "id": "M03.02.s01",
+          "at": 0,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.02,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 11
+          }
+        },
+        {
+          "id": "M03.02.phrase.1.specialized-cardiomyocytes",
+          "at": 3.81,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 5.76,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s01",
+            "phrase": "specialized cardiomyocytes",
+            "firstWordIndex": 6,
+            "lastWordIndex": 7
+          }
+        },
+        {
+          "id": "M03.02.s02",
+          "at": 8.45,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.9,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s02",
+            "firstWordIndex": 12,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M03.02.s03",
+          "at": 13.37,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 17.21,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s03",
+            "firstWordIndex": 21,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M03.02.s04",
+          "at": 17.8,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.3,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s04",
+            "firstWordIndex": 29,
+            "lastWordIndex": 38
+          }
+        },
+        {
+          "id": "M03.02.s05",
+          "at": 22.7,
+          "selected": "wall",
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 22.7,
+            "endAudio": 28.47
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.47,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s05",
+            "firstWordIndex": 39,
+            "lastWordIndex": 52
+          }
+        },
+        {
+          "id": "M03.02.s06",
+          "at": 29.34,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 36.78,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.02.s06",
+            "firstWordIndex": 53,
+            "lastWordIndex": 68
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.03",
+      "sentences": [
+        {
+          "id": "M03.03.s01",
+          "text": "Watch ventricular filling.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 2,
+          "wordCount": 3,
+          "start": 0,
+          "end": 2.17,
+          "duration": 2.17
+        },
+        {
+          "id": "M03.03.s02",
+          "text": "When ventricular pressure falls below atrial pressure, the atrioventricular valves open and blood enters the ventricles.",
+          "firstWordIndex": 3,
+          "lastWordIndex": 18,
+          "wordCount": 16,
+          "start": 2.94,
+          "end": 11.34,
+          "duration": 8.4
+        },
+        {
+          "id": "M03.03.s03",
+          "text": "Much filling is passive.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 22,
+          "wordCount": 4,
+          "start": 11.74,
+          "end": 13.26,
+          "duration": 1.52
+        },
+        {
+          "id": "M03.03.s04",
+          "text": "The slower middle portion of filling is called diastasis.",
+          "firstWordIndex": 23,
+          "lastWordIndex": 31,
+          "wordCount": 9,
+          "start": 13.8,
+          "end": 17.74,
+          "duration": 3.94
+        },
+        {
+          "id": "M03.03.s05",
+          "text": "Near the end of ventricular diastole, atrial contraction adds more blood.",
+          "firstWordIndex": 32,
+          "lastWordIndex": 42,
+          "wordCount": 11,
+          "start": 18.32,
+          "end": 23.58,
+          "duration": 5.26
+        },
+        {
+          "id": "M03.03.s06",
+          "text": "This contribution is sometimes called the atrial kick.",
+          "firstWordIndex": 43,
+          "lastWordIndex": 50,
+          "wordCount": 8,
+          "start": 24.06,
+          "end": 27.68,
+          "duration": 3.62
+        },
+        {
+          "id": "M03.03.s07",
+          "text": "Its size varies with heart rate, age, and ventricular stiffness, so it is not a fixed percentage for every person or every beat.",
+          "firstWordIndex": 51,
+          "lastWordIndex": 73,
+          "wordCount": 23,
+          "start": 28.42,
+          "end": 37.29,
+          "duration": 8.87
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "diastole",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M03.03.s05",
+              "firstWordIndex": 37,
+              "lastWordIndex": 37,
+              "start": 19.8,
+              "end": 20.62
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M03.03.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 0,
+            "endAudio": 2.17,
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.17,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 2
+          }
+        },
+        {
+          "id": "M03.03.s02",
+          "at": 2.94,
+          "selected": "mitral",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 2.94,
+            "endAudio": 11.34,
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.34,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s02",
+            "firstWordIndex": 3,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M03.03.s03",
+          "at": 11.74,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.26,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s03",
+            "firstWordIndex": 19,
+            "lastWordIndex": 22
+          }
+        },
+        {
+          "id": "M03.03.s04",
+          "at": 13.8,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 17.74,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s04",
+            "firstWordIndex": 23,
+            "lastWordIndex": 31
+          }
+        },
+        {
+          "id": "M03.03.s05",
+          "at": 18.32,
+          "selected": "la",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "atrial-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 18.32,
+            "endAudio": 23.58
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s05",
+            "firstWordIndex": 32,
+            "lastWordIndex": 42
+          }
+        },
+        {
+          "id": "M03.03.s06",
+          "at": 24.06,
+          "selected": "la",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "atrial-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.68,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s06",
+            "firstWordIndex": 43,
+            "lastWordIndex": 50
+          }
+        },
+        {
+          "id": "M03.03.s07",
+          "at": 28.42,
+          "selected": "la",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "atrial-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 37.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.03.s07",
+            "firstWordIndex": 51,
+            "lastWordIndex": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.04",
+      "sentences": [
+        {
+          "id": "M03.04.s01",
+          "text": "Next, the ventricles begin to contract.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 5,
+          "wordCount": 6,
+          "start": 0,
+          "end": 2.59,
+          "duration": 2.59
+        },
+        {
+          "id": "M03.04.s02",
+          "text": "Rising pressure closes the atrioventricular valves.",
+          "firstWordIndex": 6,
+          "lastWordIndex": 11,
+          "wordCount": 6,
+          "start": 3.02,
+          "end": 6.55,
+          "duration": 3.53
+        },
+        {
+          "id": "M03.04.s03",
+          "text": "For a brief period, the semilunar valves have not opened yet, so all four valves are closed.",
+          "firstWordIndex": 12,
+          "lastWordIndex": 28,
+          "wordCount": 17,
+          "start": 6.9,
+          "end": 13.32,
+          "duration": 6.42
+        },
+        {
+          "id": "M03.04.s04",
+          "text": "Pressure rises while ventricular volume changes very little.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 36,
+          "wordCount": 8,
+          "start": 13.8,
+          "end": 17.67,
+          "duration": 3.87
+        },
+        {
+          "id": "M03.04.s05",
+          "text": "This is isovolumetric contraction.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 40,
+          "wordCount": 4,
+          "start": 18.08,
+          "end": 20.47,
+          "duration": 2.39
+        },
+        {
+          "id": "M03.04.s06",
+          "text": "The papillary muscles also contract, supporting the closed atrioventricular valves.",
+          "firstWordIndex": 41,
+          "lastWordIndex": 50,
+          "wordCount": 10,
+          "start": 20.76,
+          "end": 26.39,
+          "duration": 5.63
+        },
+        {
+          "id": "M03.04.s07",
+          "text": "Remember the sequence: electrical activation starts first; force and pressure develop afterward.",
+          "firstWordIndex": 51,
+          "lastWordIndex": 62,
+          "wordCount": 12,
+          "start": 26.79,
+          "end": 32.8,
+          "duration": 6.01
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "papillary muscles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M03.04.s06",
+              "firstWordIndex": 42,
+              "lastWordIndex": 43,
+              "start": 20.85,
+              "end": 21.91
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M03.04.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 0,
+            "endAudio": 2.59
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.59,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M03.04.s02",
+          "at": 3.02,
+          "selected": "mitral",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.55,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s02",
+            "firstWordIndex": 6,
+            "lastWordIndex": 11
+          }
+        },
+        {
+          "id": "M03.04.s03",
+          "at": 6.9,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s03",
+            "firstWordIndex": 12,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M03.04.s04",
+          "at": 13.8,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 13.8,
+            "endAudio": 17.67
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 17.67,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s04",
+            "firstWordIndex": 29,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M03.04.s05",
+          "at": 18.08,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 20.47,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s05",
+            "firstWordIndex": 37,
+            "lastWordIndex": 40
+          }
+        },
+        {
+          "id": "M03.04.s06",
+          "at": 20.76,
+          "selected": "papillary",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 26.39,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s06",
+            "firstWordIndex": 41,
+            "lastWordIndex": 50
+          }
+        },
+        {
+          "id": "M03.04.s07",
+          "at": 26.79,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.8,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s07",
+            "firstWordIndex": 51,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M03.04.phrase.7.electrical-activation",
+          "at": 28.27,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 29.47,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s07",
+            "phrase": "electrical activation",
+            "firstWordIndex": 54,
+            "lastWordIndex": 55
+          }
+        },
+        {
+          "id": "M03.04.phrase.7.force-and-pressure",
+          "at": 30.7,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 30.7,
+            "endAudio": 32.8
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 31.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.04.s07",
+            "phrase": "force and pressure",
+            "firstWordIndex": 58,
+            "lastWordIndex": 60
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.05",
+      "sentences": [
+        {
+          "id": "M03.05.s01",
+          "text": "When ventricular pressure exceeds pressure in the pulmonary trunk and aorta, the semilunar valves open.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 14,
+          "wordCount": 15,
+          "start": 0,
+          "end": 6.44,
+          "duration": 6.44
+        },
+        {
+          "id": "M03.05.s02",
+          "text": "Blood is ejected into the pulmonary and systemic circuits.",
+          "firstWordIndex": 15,
+          "lastWordIndex": 23,
+          "wordCount": 9,
+          "start": 6.97,
+          "end": 10.67,
+          "duration": 3.7
+        },
+        {
+          "id": "M03.05.s03",
+          "text": "The atrioventricular valves remain closed during this phase.",
+          "firstWordIndex": 24,
+          "lastWordIndex": 31,
+          "wordCount": 8,
+          "start": 11.09,
+          "end": 15.23,
+          "duration": 4.14
+        },
+        {
+          "id": "M03.05.s04",
+          "text": "The two ventricles work against different pressures, but they normally eject similar stroke volumes over time.",
+          "firstWordIndex": 32,
+          "lastWordIndex": 47,
+          "wordCount": 16,
+          "start": 15.65,
+          "end": 21.83,
+          "duration": 6.18
+        },
+        {
+          "id": "M03.05.s05",
+          "text": "The heart does not empty completely with each beat; some blood remains in each ventricle after ejection.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 64,
+          "wordCount": 17,
+          "start": 22.57,
+          "end": 28.97,
+          "duration": 6.4
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "pulmonary trunk",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M03.05.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 8,
+              "start": 2.41,
+              "end": 3.34
+            }
+          ]
+        },
+        {
+          "phrase": "aorta",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M03.05.s01",
+              "firstWordIndex": 10,
+              "lastWordIndex": 10,
+              "start": 3.5,
+              "end": 4.14
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M03.05.s01",
+          "at": 0,
+          "selected": "aortic",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.44,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 14
+          }
+        },
+        {
+          "id": "M03.05.phrase.1.pulmonary-trunk",
+          "at": 2.41,
+          "selected": "pa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 3.34,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s01",
+            "phrase": "pulmonary trunk",
+            "firstWordIndex": 7,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M03.05.phrase.1.aorta",
+          "at": 3.5,
+          "selected": "aorta",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.14,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s01",
+            "phrase": "aorta",
+            "firstWordIndex": 10,
+            "lastWordIndex": 10
+          }
+        },
+        {
+          "id": "M03.05.s02",
+          "at": 6.97,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 6.97,
+            "endAudio": 10.67
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.67,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s02",
+            "firstWordIndex": 15,
+            "lastWordIndex": 23
+          }
+        },
+        {
+          "id": "M03.05.s03",
+          "at": 11.09,
+          "selected": "mitral",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.23,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s03",
+            "firstWordIndex": 24,
+            "lastWordIndex": 31
+          }
+        },
+        {
+          "id": "M03.05.s04",
+          "at": 15.65,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.83,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s04",
+            "firstWordIndex": 32,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M03.05.s05",
+          "at": 22.57,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.97,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.05.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 64
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.06",
+      "sentences": [
+        {
+          "id": "M03.06.s01",
+          "text": "As ventricular muscle relaxes, pressure falls and the semilunar valves close.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 10,
+          "wordCount": 11,
+          "start": 0,
+          "end": 5.88,
+          "duration": 5.88
+        },
+        {
+          "id": "M03.06.s02",
+          "text": "During isovolumetric relaxation, all valves are briefly closed again.",
+          "firstWordIndex": 11,
+          "lastWordIndex": 19,
+          "wordCount": 9,
+          "start": 6.59,
+          "end": 11.98,
+          "duration": 5.39
+        },
+        {
+          "id": "M03.06.s03",
+          "text": "Once ventricular pressure falls below atrial pressure, the atrioventricular valves reopen and filling resumes.",
+          "firstWordIndex": 20,
+          "lastWordIndex": 33,
+          "wordCount": 14,
+          "start": 12.73,
+          "end": 20.54,
+          "duration": 7.81
+        },
+        {
+          "id": "M03.06.s04",
+          "text": "Systole refers to contraction; diastole to relaxation and filling.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 42,
+          "wordCount": 9,
+          "start": 21.47,
+          "end": 26.32,
+          "duration": 4.85
+        },
+        {
+          "id": "M03.06.s05",
+          "text": "These terms describe mechanical events.",
+          "firstWordIndex": 43,
+          "lastWordIndex": 47,
+          "wordCount": 5,
+          "start": 27.2,
+          "end": 29.53,
+          "duration": 2.33
+        },
+        {
+          "id": "M03.06.s06",
+          "text": "An E C G is an electrical recording, so its waves are related to, but not identical with, these phases.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 67,
+          "wordCount": 20,
+          "start": 30.17,
+          "end": 37.33,
+          "duration": 7.16
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "diastole",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M03.06.s04",
+              "firstWordIndex": 38,
+              "lastWordIndex": 38,
+              "start": 23.98,
+              "end": 24.67
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M03.06.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right",
+            "sweep": true,
+            "anchorAudio": 0,
+            "endAudio": 5.88
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.88,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 10
+          }
+        },
+        {
+          "id": "M03.06.s02",
+          "at": 6.59,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s02",
+            "firstWordIndex": 11,
+            "lastWordIndex": 19
+          }
+        },
+        {
+          "id": "M03.06.s03",
+          "at": 12.73,
+          "selected": "mitral",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 12.73,
+            "endAudio": 20.54,
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 20.54,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s03",
+            "firstWordIndex": 20,
+            "lastWordIndex": 33
+          }
+        },
+        {
+          "id": "M03.06.s04",
+          "at": 21.47,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 26.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s04",
+            "firstWordIndex": 34,
+            "lastWordIndex": 42
+          }
+        },
+        {
+          "id": "M03.06.phrase.4.diastole",
+          "at": 23.98,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 24.67,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s04",
+            "phrase": "diastole",
+            "firstWordIndex": 38,
+            "lastWordIndex": 38
+          }
+        },
+        {
+          "id": "M03.06.s05",
+          "at": 27.2,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.53,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s05",
+            "firstWordIndex": 43,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M03.06.s06",
+          "at": 30.17,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "ventricular-repolarization"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 37.33,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.06.s06",
+            "firstWordIndex": 48,
+            "lastWordIndex": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.07",
+      "sentences": [
+        {
+          "id": "M03.07.s01",
+          "text": "Heart rate is beats per minute.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 5,
+          "wordCount": 6,
+          "start": 0,
+          "end": 1.29,
+          "duration": 1.29
+        },
+        {
+          "id": "M03.07.s02",
+          "text": "Stroke volume is the volume ejected by one ventricle per beat.",
+          "firstWordIndex": 6,
+          "lastWordIndex": 16,
+          "wordCount": 11,
+          "start": 1.58,
+          "end": 5.05,
+          "duration": 3.47
+        },
+        {
+          "id": "M03.07.s03",
+          "text": "Cardiac output is heart rate multiplied by stroke volume.",
+          "firstWordIndex": 17,
+          "lastWordIndex": 25,
+          "wordCount": 9,
+          "start": 5.41,
+          "end": 8.79,
+          "duration": 3.38
+        },
+        {
+          "id": "M03.07.s04",
+          "text": "For example, seventy beats per minute times seventy milliliters per beat equals four thousand nine hundred milliliters per minute, or four point nine liters per minute.",
+          "firstWordIndex": 26,
+          "lastWordIndex": 51,
+          "wordCount": 26,
+          "start": 9.09,
+          "end": 18.98,
+          "duration": 9.89
+        },
+        {
+          "id": "M03.07.s05",
+          "text": "A resting adult output around four to eight liters per minute is a broad teaching reference, not a result predicted from an E C G alone.",
+          "firstWordIndex": 52,
+          "lastWordIndex": 77,
+          "wordCount": 26,
+          "start": 19.51,
+          "end": 27.91,
+          "duration": 8.4
+        }
+      ],
+      "phraseAnchors": [],
+      "boundCues": [
+        {
+          "id": "M03.07.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 1.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.07.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M03.07.s02",
+          "at": 1.58,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.05,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.07.s02",
+            "firstWordIndex": 6,
+            "lastWordIndex": 16
+          }
+        },
+        {
+          "id": "M03.07.s03",
+          "at": 5.41,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.79,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.07.s03",
+            "firstWordIndex": 17,
+            "lastWordIndex": 25
+          }
+        },
+        {
+          "id": "M03.07.s04",
+          "at": 9.09,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.07.s04",
+            "firstWordIndex": 26,
+            "lastWordIndex": 51
+          }
+        },
+        {
+          "id": "M03.07.s05",
+          "at": 19.51,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.91,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.07.s05",
+            "firstWordIndex": 52,
+            "lastWordIndex": 77
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.08",
+      "sentences": [
+        {
+          "id": "M03.08.s01",
+          "text": "Stroke volume depends partly on preload, afterload, and contractility.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 8,
+          "wordCount": 9,
+          "start": 0,
+          "end": 5.2,
+          "duration": 5.2
+        },
+        {
+          "id": "M03.08.s02",
+          "text": "Preload relates to ventricular filling and muscle stretch before contraction.",
+          "firstWordIndex": 9,
+          "lastWordIndex": 18,
+          "wordCount": 10,
+          "start": 5.8,
+          "end": 10.18,
+          "duration": 4.38
+        },
+        {
+          "id": "M03.08.s03",
+          "text": "Afterload is the load the ventricle must overcome to eject blood.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 29,
+          "wordCount": 11,
+          "start": 10.72,
+          "end": 14.53,
+          "duration": 3.81
+        },
+        {
+          "id": "M03.08.s04",
+          "text": "Contractility is the muscle's intrinsic ability to develop force.",
+          "firstWordIndex": 30,
+          "lastWordIndex": 38,
+          "wordCount": 9,
+          "start": 15,
+          "end": 19.11,
+          "duration": 4.11
+        },
+        {
+          "id": "M03.08.s05",
+          "text": "Ejection fraction is stroke volume divided by end-diastolic volume.",
+          "firstWordIndex": 39,
+          "lastWordIndex": 48,
+          "wordCount": 10,
+          "start": 19.99,
+          "end": 24.8,
+          "duration": 4.81
+        },
+        {
+          "id": "M03.08.s06",
+          "text": "A commonly used left ventricular reference range is about fifty-five to seventy percent.",
+          "firstWordIndex": 49,
+          "lastWordIndex": 62,
+          "wordCount": 14,
+          "start": 25.54,
+          "end": 31.3,
+          "duration": 5.76
+        },
+        {
+          "id": "M03.08.s07",
+          "text": "It is not the percentage of all blood in the body pumped per beat.",
+          "firstWordIndex": 63,
+          "lastWordIndex": 76,
+          "wordCount": 14,
+          "start": 31.94,
+          "end": 35.43,
+          "duration": 3.49
+        }
+      ],
+      "phraseAnchors": [],
+      "boundCues": [
+        {
+          "id": "M03.08.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.2,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M03.08.s02",
+          "at": 5.8,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 5.8,
+            "endAudio": 10.18,
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.18,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M03.08.s03",
+          "at": 10.72,
+          "selected": "aortic",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.53,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s03",
+            "firstWordIndex": 19,
+            "lastWordIndex": 29
+          }
+        },
+        {
+          "id": "M03.08.s04",
+          "at": 15,
+          "selected": "wall",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 15,
+            "endAudio": 19.11
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.11,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s04",
+            "firstWordIndex": 30,
+            "lastWordIndex": 38
+          }
+        },
+        {
+          "id": "M03.08.s05",
+          "at": 19.99,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 24.8,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s05",
+            "firstWordIndex": 39,
+            "lastWordIndex": 48
+          }
+        },
+        {
+          "id": "M03.08.s06",
+          "at": 25.54,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 31.3,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s06",
+            "firstWordIndex": 49,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M03.08.s07",
+          "at": 31.94,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-relaxation",
+            "side": "right"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 35.43,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.08.s07",
+            "firstWordIndex": 63,
+            "lastWordIndex": 76
+          }
+        }
+      ]
+    },
+    {
+      "id": "M03.09",
+      "sentences": [
+        {
+          "id": "M03.09.s01",
+          "text": "Check the pump before moving to electricity.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 6,
+          "wordCount": 7,
+          "start": 0,
+          "end": 2.65,
+          "duration": 2.65
+        },
+        {
+          "id": "M03.09.s02",
+          "text": "Which valves are open during ventricular ejection?",
+          "firstWordIndex": 7,
+          "lastWordIndex": 13,
+          "wordCount": 7,
+          "start": 3.17,
+          "end": 6.16,
+          "duration": 2.99
+        },
+        {
+          "id": "M03.09.s03",
+          "text": "Which are open during most ventricular filling?",
+          "firstWordIndex": 14,
+          "lastWordIndex": 20,
+          "wordCount": 7,
+          "start": 6.65,
+          "end": 9.49,
+          "duration": 2.84
+        },
+        {
+          "id": "M03.09.s04",
+          "text": "What happens to cardiac output if rate changes but stroke volume also changes?",
+          "firstWordIndex": 21,
+          "lastWordIndex": 33,
+          "wordCount": 13,
+          "start": 10.13,
+          "end": 15.89,
+          "duration": 5.76
+        },
+        {
+          "id": "M03.09.s05",
+          "text": "Blood pressure reflects interactions among cardiac output, vascular resistance, and other factors.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 45,
+          "wordCount": 12,
+          "start": 16.4,
+          "end": 23.12,
+          "duration": 6.72
+        },
+        {
+          "id": "M03.09.s06",
+          "text": "A normal-looking rhythm does not prove normal pressure, normal ejection fraction, or adequate tissue perfusion.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 61,
+          "wordCount": 16,
+          "start": 23.66,
+          "end": 31,
+          "duration": 7.34
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "tissue perfusion",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M03.09.s06",
+              "firstWordIndex": 60,
+              "lastWordIndex": 61,
+              "start": 29.83,
+              "end": 31
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M03.09.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.65,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.09.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 6
+          }
+        },
+        {
+          "id": "M03.09.s02",
+          "at": 3.17,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.16,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.09.s02",
+            "firstWordIndex": 7,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M03.09.s03",
+          "at": 6.65,
+          "selected": "mitral",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "passive-filling",
+            "side": "left",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.49,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.09.s03",
+            "firstWordIndex": 14,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M03.09.s04",
+          "at": 10.13,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.89,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.09.s04",
+            "firstWordIndex": 21,
+            "lastWordIndex": 33
+          }
+        },
+        {
+          "id": "M03.09.s05",
+          "at": 16.4,
+          "selected": "aorta",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.12,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.09.s05",
+            "firstWordIndex": 34,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M03.09.s06",
+          "at": 23.66,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "ventricular-plateau"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 31,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M03.09.s06",
+            "firstWordIndex": 46,
+            "lastWordIndex": 61
+          }
+        }
+      ]
+    }
+  ]
+}

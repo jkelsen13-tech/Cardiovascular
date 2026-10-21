@@ -1,0 +1,158 @@
+{
+  "schema": "guided-study.M01-assets.v1",
+  "scope": "6 delivered M01 lessons only",
+  "sourcePackageLibraryFileId": "libfile_5bdbc3f753a0819195e13226c38410b2",
+  "sourcePackageFileName": "M01_Orientation_Audio.zip",
+  "sourcePackageSha256": "fccdad408805920e88ac50661807596250db0ddc621caec20b9f8f3e1fbe6ed1",
+  "sourcePackageCRCVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "audioPolicy": "Existing approved MP3 files copied unchanged. No external API, provider, audio generation, install or new cost.",
+  "sourceManifestSha256": "2acb7d384b2746c846f0a1af3aa3a59a4f3630c2b3cba7638b2fcb40d772f99f",
+  "alignment": {
+    "manifestSha256": "b0a675b657ea1c150843ec5f364b3f966f1e9f8bd89af967adaa2e81ac5cfeca",
+    "provenanceSha256": "66fc2db0b45a0c558f32ad38c0ebedecfa52d40c5b63d829ed3d6cbf5f16d06b",
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_REQUIRES_LISTENING_QA",
+    "flags": []
+  },
+  "bindings": {
+    "fullScenes": true,
+    "controller": "HeartV3Study.guided / CardiorespiratoryStudy.guided / GuidedExplanation",
+    "capnography": null,
+    "modelScope": "Original HRA heart/lungs; representative cardiac cell/alveolar reconstructions explicitly qualified. No invented body-plane, limb, sternum, pulse-oximeter or impedance-monitor target.",
+    "nativeExecutionVerified": false,
+    "iPadVerified": false,
+    "protectedStudyStorageMutated": false
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "courseCitationVerification": {
+    "retainedPDFHashVerified": true,
+    "retainedPageTextRead": true,
+    "sourcePageTextSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+    "auditFileSha256": "37a1111a3e7cf38b5617b591ab4a4e332415160b1a1212524b952890e9e79125",
+    "scope": "Only cited page text and retained targeted audit read; no full 911-page medical-content review. Original PDF/images are not distributed."
+  },
+  "courseTerminologyNotes": {
+    "M01.01": {
+      "pages": null,
+      "note": "Website navigation is approved adaptation, not a claim of course-PDF instructions."
+    },
+    "M01.02": {
+      "pages": "50,77,84,108",
+      "note": "Approved adaptation distinguishes gas exchange from metabolism and avoids treating a monitor value as proof of oxygen delivery; pp77/84 terminal-bronchiole wording is corrected."
+    },
+    "M01.03": {
+      "pages": "24,26,28",
+      "note": "Patient-centered directions and body-plane definitions use explicit explanations; no body-plane overlay is claimed."
+    },
+    "M01.04": {
+      "pages": "30–32,46,109",
+      "note": "Approved narration says twelve pairs of ribs. Course pp31/45 shorthand says twelve ribs; this is not adopted literally. Sternum and mediastinal placement are explained, not falsely highlighted on the heart-only model."
+    },
+    "M01.05": {
+      "pages": "26",
+      "note": "General directional definitions are readable explanations; no limb model or directional overlay is claimed."
+    },
+    "M01.06": {
+      "pages": "24,29–32,46,109",
+      "note": "Learner-controlled checkpoint with no recorded/scored answer. Sternum and complete chest relationships are readable explanations."
+    }
+  },
+  "counts": {
+    "lessons": 6,
+    "cues": 43,
+    "sentenceCues": 40,
+    "phraseCues": 3,
+    "explanationCards": 35,
+    "heartCues": 5,
+    "respiratoryCues": 3,
+    "capnographyCues": 0
+  },
+  "clips": [
+    {
+      "id": "M01.01",
+      "file": "M01_01_adam_multilingual_v2.mp3",
+      "bytes": 501351,
+      "sha256": "60bb5df72dec4044ab6a903994061c67223a7c958ff9b78d9f5f0f44ca3a5d70",
+      "duration": 30.275875,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 10,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M01.02",
+      "file": "M01_02_adam_multilingual_v2.mp3",
+      "bytes": 518906,
+      "sha256": "4c4c2561af2cb2ad545564db5b9abc5859636c865f7e89604ca299339044c834",
+      "duration": 31.373063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M01.03",
+      "file": "M01_03_adam_multilingual_v2.mp3",
+      "bytes": 494664,
+      "sha256": "c7775930e6409d11d245c8e0b3e9c7817d72d64f5d9791de139c6d1e95d5e9cb",
+      "duration": 29.857938,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 8,
+      "totalCues": 8,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M01.04",
+      "file": "M01_04_adam_multilingual_v2.mp3",
+      "bytes": 454540,
+      "sha256": "f62b43bd145f5fa44855b3bc7c8b1e5f81a6a35e3dcc60317abd63d6b09f14cc",
+      "duration": 27.350188,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M01.05",
+      "file": "M01_05_adam_multilingual_v2.mp3",
+      "bytes": 490902,
+      "sha256": "a5cc68424b96b5974772005d5e4baa36ef3a6ba68538d13cf3cdd8c7bc32f601",
+      "duration": 29.622813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M01.06",
+      "file": "M01_06_adam_multilingual_v2.mp3",
+      "bytes": 344617,
+      "sha256": "306b1cef61509f03705fa9bafac229fa74a94baac266e2666d926fbeac4e8a84",
+      "duration": 20.48,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    }
+  ]
+}

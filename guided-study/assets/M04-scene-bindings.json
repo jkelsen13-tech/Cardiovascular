@@ -1,0 +1,1442 @@
+{
+  "schema": "guided-study.M04-scene-bindings.v1",
+  "status": "Final measured runtime manifest generated; native integration review pending",
+  "alignmentTimestampsEstimated": false,
+  "timingPolicy": "Actual named electrical/model phase or existing cellular helper windows; measured sweep bounds assigned only after final alignment",
+  "bindings": {
+    "M04.01": [
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "cycle",
+          "seconds": 0,
+          "speed": 0.1,
+          "anchorAudio": 0
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "explanation",
+        "title": "Excitability: stimulus response",
+        "text": "Excitability is responding to a stimulus.",
+        "source": "Owner-approved adapted M04 narration · source script lines 388-401",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "heart",
+        "selected": "his",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "bundle-branches"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 22.82,
+          "endAudio": 25.35
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "purkinje",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "Purkinje-myocardium"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. The current electrical-stage view does not establish adequate mechanical output or perfusion."
+      }
+    ],
+    "M04.02": [
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. The normal lesson uses 75 beats/min; the stated 60–100 range is a clinical teaching reference and allows individual variation."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. The rate range is educational, not an individual diagnosis or a restriction on every healthy resting rate."
+      }
+    ],
+    "M04.03": [
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "atrial-propagation"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "avnode",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "AV-delay"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "avnode",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "AV-delay"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. The current AV-delay hold precedes ventricular activation and ejection. Blood occupancy/readouts retain filling context."
+      },
+      {
+        "organ": "heart",
+        "selected": "avnode",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "AV-delay"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "his",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "His-bundle"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Local AV delay and later rapid distribution are distinct model stages; arrow speed is not measured conduction velocity."
+      }
+    ],
+    "M04.04": [
+      {
+        "organ": "heart",
+        "selected": "avnode",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "AV-delay"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "heart",
+        "selected": "purkinje",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "Purkinje-myocardium"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly."
+      },
+      {
+        "organ": "explanation",
+        "title": "Ventricular activation and contraction direction",
+        "text": "This organization helps the ventricular muscle activate efficiently, with contraction developing from the apex toward the outflow regions.",
+        "source": "Owner-approved adapted M04 narration · source script lines 388-401",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "heart",
+        "selected": "purkinje",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "Purkinje-myocardium"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Overlay colors are teaching conventions. They are not literal tissue color, electrical energy color or a blood-flow route."
+      }
+    ],
+    "M04.05": [
+      {
+        "organ": "explanation",
+        "title": "Escape pacemakers",
+        "text": "If the normal dominant pacemaker slows or impulses fail to reach lower tissue, an escape pacemaker may emerge.",
+        "source": "Owner-approved adapted M04 narration · source script lines 388-401;539-550",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Approximate escape-rate teaching ranges",
+        "text": "Usual teaching ranges are forty to sixty beats per minute for junctional escape and twenty to forty for ventricular escape.",
+        "source": "Owner-approved adapted M04 narration · source script lines 388-401;539-550",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Approximate escape-rate teaching ranges",
+        "text": "These are approximate ranges.",
+        "source": "Owner-approved adapted M04 narration · source script lines 388-401;539-550",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "heart",
+        "selected": "avnode",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "AV-delay"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. This simulator remains the normal authored conduction reference. Escape pacemaker emergence, AV block, dominance competition and junctional/ventricular rhythm generation are not simulated. The quoted rates are approximate teaching ranges, not predictions or universal thresholds. Firing frequency and conduction velocity are separate. No pulse-distance speed calibration is claimed."
+      },
+      {
+        "organ": "explanation",
+        "title": "Conduction block and pacemaker dominance",
+        "text": "The fastest focus does not always control the heart if conduction is blocked.",
+        "source": "Owner-approved adapted M04 narration · source script lines 388-401;539-550",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M04.06": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "ventricular",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "baseline"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "ventricular",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "voltage-depolarization",
+          "sweep": true,
+          "anchorAudio": 4.71,
+          "endAudio": 7.69
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Only representative membrane/channel cues and illustrative voltage traces are shown. Specific channel kinetics, ion flux magnitudes and the 3Na⁺ out/2K⁺ in transport count are not animated or solved."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "ventricular",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "voltage-plateau",
+          "sweep": true,
+          "anchorAudio": 8.12,
+          "endAudio": 14.57
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Only representative membrane/channel cues and illustrative voltage traces are shown. Specific channel kinetics, ion flux magnitudes and the 3Na⁺ out/2K⁺ in transport count are not animated or solved."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "ventricular",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "voltage-repolarization",
+          "sweep": true,
+          "anchorAudio": 15.22,
+          "endAudio": 18.47
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Only representative membrane/channel cues and illustrative voltage traces are shown. Specific channel kinetics, ion flux magnitudes and the 3Na⁺ out/2K⁺ in transport count are not animated or solved."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "ventricular",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "voltage-plateau"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Only representative membrane/channel cues and illustrative voltage traces are shown. Specific channel kinetics, ion flux magnitudes and the 3Na⁺ out/2K⁺ in transport count are not animated or solved."
+      },
+      {
+        "organ": "explanation",
+        "title": "Sodium-potassium pump versus rapid channels",
+        "text": "The sodium-potassium pump maintains ion gradients over time; it is not the channel that produces every action-potential upstroke.",
+        "source": "Owner-approved adapted M04 narration · source script lines 442-445;520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M04.07": [
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "nodal",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "cycle",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 8.14
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "nodal",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "nodal-drift",
+          "occurrence": "last",
+          "sweep": true,
+          "anchorAudio": 8.7,
+          "endAudio": 11.93
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. This is a pacemaker cell trace, not the gross SA-node activity stage or a ventricular fast Na⁺ upstroke."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "nodal",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "nodal-drift",
+          "occurrence": "last"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Displayed thresholds/voltages illustrate this cell type; they are not universal resting or threshold values."
+      },
+      {
+        "organ": "explanation",
+        "title": "Ion charge versus membrane voltage",
+        "text": "Do not label calcium, sodium, and potassium with voltages as if those were their electrical charges.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Ion charge versus equilibrium potential",
+        "text": "An ion's charge and its equilibrium potential are different quantities.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M04.08": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "electrical"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "release",
+          "sweep": true,
+          "anchorAudio": 2.52,
+          "endAudio": 19.37
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "filaments",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "release",
+          "sweep": true,
+          "anchorAudio": 2.52,
+          "endAudio": 19.37
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "filaments",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "release",
+          "sweep": true,
+          "anchorAudio": 2.52,
+          "endAudio": 19.37
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "cycle",
+          "sweep": true,
+          "anchorAudio": 19.73,
+          "endAudio": 22.71
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "cycle",
+          "sweep": true,
+          "anchorAudio": 23.17,
+          "endAudio": 29.93
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      }
+    ],
+    "M04.09": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "myofibril",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "baseline"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "sarcomere",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "baseline"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "filaments",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "cycle",
+          "sweep": true,
+          "anchorAudio": 9.15,
+          "endAudio": 17.81
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "filaments",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "cycle",
+          "sweep": true,
+          "anchorAudio": 18.49,
+          "endAudio": 23.59
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. ATP-dependent detachment/cycling is taught qualitatively; there is no molecule-by-molecule ATP consumption model."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "sarcomere",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "cycle",
+          "sweep": true,
+          "anchorAudio": 24.21,
+          "endAudio": 29.82
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Actual actin/myosin lengths and A-band lengths stay fixed while overlap and Z-disc separation change."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "sarcomere",
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 30.36,
+          "endAudio": 33.68
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Only Z-disc spacing/overlap changes during shortening; filaments are not scaled shorter."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "myofibril",
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 34.31,
+          "endAudio": 39.29
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Micro motion is driven by regional model activation; chamber pressure is not computed from these representative sarcomeres."
+      }
+    ],
+    "M04.10": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "removal",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 23.17
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Calcium decline can overlap continuing force; mechanical relaxation lags calcium handling. The first falling calcium cue does not imply immediate loss of all tension."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "removal-visible",
+          "sweep": true,
+          "anchorAudio": 5.42,
+          "endAudio": 23.17
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Calcium decline can overlap continuing force; mechanical relaxation lags calcium handling. The first falling calcium cue does not imply immediate loss of all tension."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "cell",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "removal-visible",
+          "sweep": true,
+          "anchorAudio": 5.42,
+          "endAudio": 23.17
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Calcium decline can overlap continuing force; mechanical relaxation lags calcium handling. The first falling calcium cue does not imply immediate loss of all tension."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "filaments",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "removal-visible",
+          "sweep": true,
+          "anchorAudio": 5.42,
+          "endAudio": 23.17
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Calcium decline can overlap continuing force; mechanical relaxation lags calcium handling. The first falling calcium cue does not imply immediate loss of all tension."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pump maintenance of ion gradients",
+        "text": "The sodium-potassium pump supports the gradients that make this system possible.",
+        "source": "Owner-approved adapted M04 narration · source script lines 871-881;SUPPLEMENT",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "filaments",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "relaxed",
+          "occurrence": "last"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Relaxation remains ATP dependent even after the calcium cue has returned to baseline; it is not a passive absence-of-ECG-wave rule. Calcium decline can overlap continuing force; mechanical relaxation lags calcium handling. The first falling calcium cue does not imply immediate loss of all tension."
+      }
+    ],
+    "M04.11": [
+      {
+        "organ": "explanation",
+        "title": "What is an ion?",
+        "text": "Ions are atoms or molecules carrying an electrical charge.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Positive and negative ions",
+        "text": "Sodium, potassium, calcium, and magnesium are positive ions; chloride is a negative ion.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Electrical and chemical gradients",
+        "text": "Different concentrations inside and outside the cell, together with selective membrane permeability, create electrical and chemical gradients.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Sodium-potassium pump: three out, two in",
+        "text": "The sodium-potassium pump uses A T P to move three sodium ions out and two potassium ions in.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Gradient maintenance versus rapid channel currents",
+        "text": "This maintains gradients over time and indirectly supports calcium handling; channels carry the rapid currents of each action potential.",
+        "source": "Owner-approved adapted M04 narration · source script lines 520-538;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M04.12": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeC",
+        "stage": "ventricular",
+        "simulation": {
+          "kind": "cellular",
+          "stage": "voltage-plateau"
+        },
+        "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. The shaded single-cell refractory span is illustrative. No premature-stimulus response solver or exact absolute/relative boundary mapped to a surface T wave is claimed."
+      },
+      {
+        "organ": "explanation",
+        "title": "Refractory periods and premature stimuli",
+        "text": "Early in recovery, a new propagated response cannot be triggered normally; later, a sufficiently strong premature stimulus may trigger one.",
+        "source": "Owner-approved adapted M04 narration · source script lines 480-505;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Cellular refractoriness versus surface T waves",
+        "text": "These cellular periods do not have one exact boundary on every surface T wave.",
+        "source": "Owner-approved adapted M04 narration · source script lines 480-505;871-881",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "heart",
+        "selected": "his",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "bundle-branches"
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Return to the actual registered source-HRA His/bilateral-bundle route for impulse spread before inspecting representative cellular calcium/filament states. These are comparisons across scales, not a measured magnification of these conduction fibers."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "cycle",
+          "seconds": 0,
+          "speed": 0.1,
+          "anchorAudio": 29.86
+        },
+        "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. This explicit return restores the original registered HRA heart. The audio-owned playback demonstrates the normal model pathway; manual Explore remains available for each structure."
+      }
+    ]
+  },
+  "measuredManifestSha256": "a2fc2b5edf87ef7fcf1a8afdf038d7092b5b993cc3e837ca1c156b3f62ab7dc8",
+  "explanationCueIds": [
+    "M04.01.s04",
+    "M04.04.s03",
+    "M04.05.s01",
+    "M04.05.s02",
+    "M04.05.s03",
+    "M04.05.s05",
+    "M04.06.s06",
+    "M04.07.s04",
+    "M04.07.s05",
+    "M04.10.s05",
+    "M04.11.s01",
+    "M04.11.s02",
+    "M04.11.s03",
+    "M04.11.s04",
+    "M04.11.s05",
+    "M04.12.s02",
+    "M04.12.s03"
+  ]
+}

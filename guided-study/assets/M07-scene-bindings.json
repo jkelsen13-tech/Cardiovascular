@@ -1,0 +1,1406 @@
+{
+  "schema": "guided-study.M07-scene-bindings.v1",
+  "adapter": "LeadPlacementLab.guided",
+  "static": true,
+  "runtimeVerified": false,
+  "fields": [
+    "organ",
+    "step",
+    "preset",
+    "bodySurface",
+    "layers",
+    "showIntercostalSpaces",
+    "showElectrodeColors",
+    "showLeadTypes",
+    "allLabels",
+    "touch",
+    "simulation",
+    "detail"
+  ],
+  "scope": "Existing registered thorax/markers and24 step IDs only. No electrical or motion solver. Supplemental unsupported processes are explicit.",
+  "clips": [
+    {
+      "id": "M07.01",
+      "cues": [
+        {
+          "id": "M07.01.s01",
+          "at": 0,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The skin sensor is represented only by a teaching placement marker; contact mechanics and hardware are not modeled."
+          }
+        },
+        {
+          "id": "M07.01.s02",
+          "at": 3.53,
+          "scene": {
+            "organ": "explanation",
+            "title": "Cable and recording system",
+            "text": "A cable connects it to the recording system.",
+            "source": "Owner-approved adapted M07.01 narration · source script lines 446-479 · course PDF physical pp243,248,252,258,263",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No cable or recording-machine geometry exists in this thorax."
+          }
+        },
+        {
+          "id": "M07.01.s03",
+          "at": 6.13,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Lead I is one calculated limb view, not an additional sensor or cable."
+          }
+        },
+        {
+          "id": "M07.01.s04",
+          "at": 12.52,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Six chest markers plus four external limb labels represent 10 electrodes. The 12 lead views are comparisons; they are not 12 physical sensors."
+          }
+        },
+        {
+          "id": "M07.01.s05",
+          "at": 17.82,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Six limb views use the limb electrodes; six chest views use V1–V6. No extra sensor is created for each view."
+          }
+        },
+        {
+          "id": "M07.01.p01",
+          "at": 20.13,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Six chest views use V1–V6; this switches static placement context, not a computed waveform."
+          }
+        },
+        {
+          "id": "M07.01.s06",
+          "at": 21.57,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Keep electrode count 10 distinct from lead-view count 12."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.02",
+      "cues": [
+        {
+          "id": "M07.02.s01",
+          "at": 0,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s02",
+          "at": 3.39,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s03",
+          "at": 6.5,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-iii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s04",
+          "at": 9.76,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s05",
+          "at": 13.65,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-iii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s06",
+          "at": 18.68,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.03",
+      "cues": [
+        {
+          "id": "M07.03.s01",
+          "at": 0,
+          "scene": {
+            "organ": "lead",
+            "step": "avr-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. aVR uses RA positive with LA/LL combined reference."
+          }
+        },
+        {
+          "id": "M07.03.p01",
+          "at": 2.5,
+          "scene": {
+            "organ": "lead",
+            "step": "avl-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. LA is positive; RA and LL form its combined reference."
+          }
+        },
+        {
+          "id": "M07.03.p02",
+          "at": 3.58,
+          "scene": {
+            "organ": "lead",
+            "step": "avf-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. LL is positive; RA and LA form its combined reference."
+          }
+        },
+        {
+          "id": "M07.03.s02",
+          "at": 4.73,
+          "scene": {
+            "organ": "lead",
+            "step": "avr-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. The next measured phrases select the corresponding augmented right-arm, left-arm and left-leg views."
+          }
+        },
+        {
+          "id": "M07.03.p03",
+          "at": 6.81,
+          "scene": {
+            "organ": "lead",
+            "step": "avl-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. "
+          }
+        },
+        {
+          "id": "M07.03.p04",
+          "at": 7.77,
+          "scene": {
+            "organ": "lead",
+            "step": "avf-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. "
+          }
+        },
+        {
+          "id": "M07.03.s03",
+          "at": 11.2,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Limb views are described in the frontal plane. No cutting plane or computed electrical field is drawn."
+          }
+        },
+        {
+          "id": "M07.03.p05",
+          "at": 12.93,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Frontal-plane limb-view context; no anatomical plane or electrical field mesh."
+          }
+        },
+        {
+          "id": "M07.03.p06",
+          "at": 13.75,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-iii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Frontal-plane limb-view context; no anatomical plane or electrical field mesh."
+          }
+        },
+        {
+          "id": "M07.03.s04",
+          "at": 16.52,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Chest V1–V6 views are described in the transverse plane. The torso has no heart or moving plane; the markers provide placement context only."
+          }
+        },
+        {
+          "id": "M07.03.s05",
+          "at": 24.98,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Unipolar is traditional shorthand. Each chest view compares its chest electrode with a combined reference; no reference voltage is calculated here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.04",
+      "cues": [
+        {
+          "id": "M07.04.s01",
+          "at": 0,
+          "scene": {
+            "organ": "lead",
+            "step": "orient",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. "
+          }
+        },
+        {
+          "id": "M07.04.s02",
+          "at": 3.67,
+          "scene": {
+            "organ": "lead",
+            "step": "sternal-angle",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The registered manubrium–sternal junction locates rib 2; count the space immediately below rib 2."
+          }
+        },
+        {
+          "id": "M07.04.p01",
+          "at": 5.49,
+          "scene": {
+            "organ": "lead",
+            "step": "rib2",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Actual rib 2/costal-cartilage source structures registered at the sternal-angle level."
+          }
+        },
+        {
+          "id": "M07.04.p02",
+          "at": 6.63,
+          "scene": {
+            "organ": "lead",
+            "step": "ics2",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Derived teaching space immediately below rib 2, bounded by ribs 2 and 3."
+          }
+        },
+        {
+          "id": "M07.04.s03",
+          "at": 9.56,
+          "scene": {
+            "organ": "lead",
+            "step": "count-ics",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Numbered overlays cover 2nd–5th spaces only. Each space takes the number of the rib immediately above it."
+          }
+        },
+        {
+          "id": "M07.04.s04",
+          "at": 11.69,
+          "scene": {
+            "organ": "lead",
+            "step": "mcl",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The left midclavicular line is a derived teaching guide from the registered clavicle."
+          }
+        },
+        {
+          "id": "M07.04.s05",
+          "at": 15.67,
+          "scene": {
+            "organ": "lead",
+            "step": "aal",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The anterior and midaxillary lines are derived reference guides; the next measured phrase changes to the midaxillary line."
+          }
+        },
+        {
+          "id": "M07.04.p03",
+          "at": 17.75,
+          "scene": {
+            "organ": "lead",
+            "step": "mal",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Patient-left derived midaxillary guide; camera is explicitly left-oblique."
+          }
+        },
+        {
+          "id": "M07.04.s06",
+          "at": 21.57,
+          "scene": {
+            "organ": "lead",
+            "step": "orient",
+            "preset": "front",
+            "bodySurface": "hidden",
+            "layers": {
+              "body": false,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": false
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. All 12 rib pairs exist in the registered source thorax. Eleven intercostal spaces per side is a text explanation; only 2nd–5th numbered teaching overlays are provided."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.05",
+      "cues": [
+        {
+          "id": "M07.05.s01",
+          "at": 0,
+          "scene": {
+            "organ": "lead",
+            "step": "v1",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.p01",
+          "at": 4.45,
+          "scene": {
+            "organ": "lead",
+            "step": "v2",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s02",
+          "at": 9.0,
+          "scene": {
+            "organ": "lead",
+            "step": "v4",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s03",
+          "at": 14.13,
+          "scene": {
+            "organ": "lead",
+            "step": "v3",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s04",
+          "at": 18.13,
+          "scene": {
+            "organ": "lead",
+            "step": "v5",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.p02",
+          "at": 21.84,
+          "scene": {
+            "organ": "lead",
+            "step": "v6",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.p03",
+          "at": 24.91,
+          "scene": {
+            "organ": "lead",
+            "step": "v4-v6-level",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s05",
+          "at": 27.66,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.06",
+      "cues": [
+        {
+          "id": "M07.06.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Reliable contact and a still subject",
+            "text": "Good recordings depend on reliable skin contact, secure electrodes, correct positions, and a relaxed, still subject.",
+            "source": "Owner-approved adapted M07.06 narration · source script lines 446-479;480-505 · course PDF physical pp243,247–248,257–258,264",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No skin contact, adhesive behavior or signal-quality process is modeled."
+          }
+        },
+        {
+          "id": "M07.06.s02",
+          "at": 8.43,
+          "scene": {
+            "organ": "explanation",
+            "title": "Recording artifacts",
+            "text": "Movement, muscle activity, loose contacts, and electrical interference can distort a tracing.",
+            "source": "Owner-approved adapted M07.06 narration · source script lines 446-479;480-505 · course PDF physical pp243,247–248,257–258,264",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No motion, muscle-noise, contact-loss or mains-interference tracing is generated."
+          }
+        },
+        {
+          "id": "M07.06.s03",
+          "at": 15.23,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. The current palette is explicitly AHA limb-electrode colors: RA white, LA black, RL green, LL red. Other standards vary; read the letter labels. No alternate palette or configuration is being simulated."
+          }
+        },
+        {
+          "id": "M07.06.s04",
+          "at": 22.94,
+          "scene": {
+            "organ": "explanation",
+            "title": "Monitoring and diagnostic configurations",
+            "text": "Torso placements used for continuous monitoring are not automatically equivalent to standard diagnostic limb placements.",
+            "source": "Owner-approved adapted M07.06 narration · source script lines 446-479;480-505 · course PDF physical pp243,247–248,257–258,264",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. The thorax uses four external limb labels. These are not a demonstration of a validated torso-modified diagnostic configuration."
+          }
+        },
+        {
+          "id": "M07.06.s05",
+          "at": 31.23,
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. This model is learning context, not a recording protocol. No patient or device configuration is selected by this lesson."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.07",
+      "cues": [
+        {
+          "id": "M07.07.s01",
+          "at": 0,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Only static Lead I poles are shown. Projection of changing cardiac activity and its trace are readable concepts; no dipole, heart mesh, wavefront or generated waveform exists in this scene."
+          }
+        },
+        {
+          "id": "M07.07.s02",
+          "at": 6.07,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Toward/away deflection rules are conceptual narration. The +/− markers do not change into waveform signs, and no moving vector or strip is generated."
+          }
+        },
+        {
+          "id": "M07.07.s03",
+          "at": 15.25,
+          "scene": {
+            "organ": "explanation",
+            "title": "Small and biphasic complexes",
+            "text": "A near-perpendicular net vector can produce a small or biphasic complex.",
+            "source": "Owner-approved adapted M07.07 narration · source script lines 446-453;480-519 · course PDF physical pp244–245,267,338",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No net-vector projection, biphasic waveform or caliper measurements are generated."
+          }
+        },
+        {
+          "id": "M07.07.s04",
+          "at": 20.67,
+          "scene": {
+            "organ": "explanation",
+            "title": "An isoelectric segment",
+            "text": "An isoelectric segment does not prove that every heart cell is electrically inactive.",
+            "source": "Owner-approved adapted M07.07 narration · source script lines 446-453;480-519 · course PDF physical pp244–245,267,338",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No tracing is displayed or measured; a near-flat surface recording does not establish cellular inactivity."
+          }
+        },
+        {
+          "id": "M07.07.s05",
+          "at": 26.22,
+          "scene": {
+            "organ": "explanation",
+            "title": "Opposing signals and little net change",
+            "text": "Opposing signals or little net change can also produce a near-flat line.",
+            "source": "Owner-approved adapted M07.07 narration · source script lines 446-453;480-519 · course PDF physical pp244–245,267,338",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. A net electrical comparison can be small despite active cells; no quantitative cancellation solver is present."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.08",
+      "cues": [
+        {
+          "id": "M07.08.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Adult frontal QRS axis reference",
+            "text": "The usual adult frontal Q R S axis reference is minus thirty to plus ninety degrees.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        },
+        {
+          "id": "M07.08.s02",
+          "at": 7.13,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. Lead I and the next measured aVF phrase locate relevant limb views only."
+          }
+        },
+        {
+          "id": "M07.08.p01",
+          "at": 8.02,
+          "scene": {
+            "organ": "lead",
+            "step": "avf-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. This locates the aVF view for the conceptual quadrant screen; no observed QRS sign is supplied."
+          }
+        },
+        {
+          "id": "M07.08.s03",
+          "at": 10.86,
+          "scene": {
+            "organ": "explanation",
+            "title": "Both QRS complexes positive",
+            "text": "Both positive generally fits the normal quadrant.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        },
+        {
+          "id": "M07.08.s04",
+          "at": 14.24,
+          "scene": {
+            "organ": "explanation",
+            "title": "The I-positive/aVF-negative shortcut needs Lead II",
+            "text": "Lead one positive with a V F negative is not automatically left axis deviation: the axis may still lie between zero and minus thirty degrees.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        },
+        {
+          "id": "M07.08.s05",
+          "at": 25.59,
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. The source Lead II poles are context for the narrated borderline-region check, not measured axis data."
+          }
+        },
+        {
+          "id": "M07.08.s06",
+          "at": 31.6,
+          "scene": {
+            "organ": "explanation",
+            "title": "Axis is a clue",
+            "text": "Axis is a clue, not a diagnosis by itself.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        }
+      ]
+    }
+  ]
+}

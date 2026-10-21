@@ -1,0 +1,224 @@
+{
+  "schema": "guided-study.M03-assets.v1",
+  "scope": "M03 pumping cycle only; remaining course modules/audio are not implemented by this manifest",
+  "sourcePackageLibraryFileId": "libfile_c9b86de152a481919d5b9cc6dbadb45f",
+  "sourcePackageSha256": "b04315a0548ac45913c8100f119cd81045647f60850a3f12bdd7b8e5aa51b287",
+  "sourceNarration": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "e960bba48620124d2b620ca07c04ac103cc41e7fd54e9536accea760986a6854",
+  "audioPolicy": "Existing delivered files copied unchanged; no provider calls, synthesis, retakes or new cost during integration.",
+  "alignment": {
+    "manifestSha256": "3cb59dcb55c0da4662bc17bcb285308314dcb70203e4ea3d1da38e3ec565d572",
+    "provenanceSha256": "0e3e1cd03af5ea5a3275322454c27757ca3340f04a8a45e95e765c74d40c6161",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "decoderNote": "M03.02/.04 optional subword alignment succeeded with targeted bestpath=False; seven previously valid timings preserved. No estimated replacement timestamps.",
+    "flags": [
+      {
+        "clip": "M03.02",
+        "type": "WORD_DURATION",
+        "index": 7,
+        "word": "cardiomyocytes",
+        "start": 4.53,
+        "end": 5.76,
+        "duration": 1.23,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M03.03",
+        "type": "WORD_DURATION",
+        "index": 11,
+        "word": "atrioventricular",
+        "start": 6.66,
+        "end": 7.94,
+        "duration": 1.28,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M03.04",
+        "type": "WORD_DURATION",
+        "index": 13,
+        "word": "a",
+        "start": 7.05,
+        "end": 7.08,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M03.07",
+        "type": "WORD_DURATION",
+        "index": 69,
+        "word": "a",
+        "start": 25.2,
+        "end": 25.23,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      }
+    ]
+  },
+  "bindings": {
+    "controller": "HeartV3Study.guided",
+    "fullScenes": true,
+    "phasePolicy": "Actual named model phase or electrical-stage targets; sweeps map measured sentence/phrase bounds into that actual phase interval with no loop. Last occurrence is explicitly selected for complete post-relaxation/preload refill; the first interval remains the default for unrelated cues.",
+    "sourceGeometryLimits": [
+      "M03.01/.02 existing representative wall/tissue scenes; no segmented microscopic continuity.",
+      "Diastasis has no separate current model target.",
+      "Semilunar surface geometry/full vessels are not all exposed in four-chamber mode; synchronized model states/readouts remain.",
+      "Reference-range and CO worked-example values are independent of model outputs."
+    ],
+    "nativeExecutionVerified": false
+  },
+  "clips": [
+    {
+      "id": "M03.01",
+      "file": "M03_01_adam_multilingual_v2.mp3",
+      "bytes": 458719,
+      "sha256": "9baedd974a485cfc5dfe44ce7646b79c4387736d8d47409e54a7f44e0c55b377",
+      "duration": 27.611375,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M03.02",
+      "file": "M03_02_adam_multilingual_v2.mp3",
+      "bytes": 609185,
+      "sha256": "4f5018217c51959a6a53580e007dca24d263fb83515ec5fbcb955316c2fe0c1a",
+      "duration": 37.0155,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 7,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 7,
+          "word": "cardiomyocytes",
+          "start": 4.53,
+          "end": 5.76,
+          "duration": 1.23,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M03.03",
+      "file": "M03_03_adam_multilingual_v2.mp3",
+      "bytes": 617962,
+      "sha256": "d48fe1beee4eb1e095b87a9480eb8ea334751da57c36ecdc3929c88e1be0243d",
+      "duration": 37.564063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 11,
+          "word": "atrioventricular",
+          "start": 6.66,
+          "end": 7.94,
+          "duration": 1.28,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M03.04",
+      "file": "M03_04_adam_multilingual_v2.mp3",
+      "bytes": 545237,
+      "sha256": "6c9673bb9deb09e784915c14e92218d627ea38d9c483d9a199ce9798c436de2a",
+      "duration": 33.01875,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 9,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 13,
+          "word": "a",
+          "start": 7.05,
+          "end": 7.08,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M03.05",
+      "file": "M03_05_adam_multilingual_v2.mp3",
+      "bytes": 485051,
+      "sha256": "3a0042710f37a822d24c72214380d09ed00e2e29ba918cffd7f9dc09e161117a",
+      "duration": 29.257125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M03.06",
+      "file": "M03_06_adam_multilingual_v2.mp3",
+      "bytes": 617962,
+      "sha256": "524bcfa144629999d9589d67487fd27d0727b37772a2af61b6581f7290091588",
+      "duration": 37.564063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M03.07",
+      "file": "M03_07_adam_multilingual_v2.mp3",
+      "bytes": 474602,
+      "sha256": "3b3cf4348f7b09ef1a408727e93f68679665eba8578ef59913b1230c737590ae",
+      "duration": 28.604063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 69,
+          "word": "a",
+          "start": 25.2,
+          "end": 25.23,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M03.08",
+      "file": "M03_08_adam_multilingual_v2.mp3",
+      "bytes": 593302,
+      "sha256": "c22009951063f67997b4a361e2efb0bd8e68d75a7f32028545c8652684c63712",
+      "duration": 36.022813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M03.09",
+      "file": "M03_09_adam_multilingual_v2.mp3",
+      "bytes": 516816,
+      "sha256": "c3c635a36520f2959e5644a6c7694bdfa9bbf6e3023b8ad246a20f176c96f125",
+      "duration": 31.242438,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    }
+  ]
+}

@@ -1,0 +1,1465 @@
+{
+  "schema": "guided-study.M03-scene-bindings.v1",
+  "status": "Complete measured source cue manifest generated; native integration pending",
+  "alignmentTimestampsEstimated": false,
+  "phaseSweep": "Measured sentence/phrase bounds are assigned in lessons-m03.js; post-relaxation/full-refill cues select the last named passive-filling interval without numeric phase times.",
+  "bindings": {
+    "M03.01": [
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "wall",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "wall",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "tissue",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "wall",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated. The wall section illustrates lining layers, not scanned valve endocardium."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "pericardium",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "pericardium",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "pericardium",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated."
+      }
+    ],
+    "M03.02": [
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "tissue",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Branching cells and intercalated-disc connections are representative teaching geometry. Gap-junction current and mechanical junction strength are explained, not solved numerically. No neural command is required for each normal beat."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "tissue",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Branching cells and intercalated-disc connections are representative teaching geometry. Gap-junction current and mechanical junction strength are explained, not solved numerically. No neural command is required for each normal beat."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "tissue",
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Branching cells and intercalated-disc connections are representative teaching geometry. Gap-junction current and mechanical junction strength are explained, not solved numerically. No neural command is required for each normal beat."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "tissue",
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Branching cells and intercalated-disc connections are representative teaching geometry. Gap-junction current and mechanical junction strength are explained, not solved numerically. No neural command is required for each normal beat."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": "routeB",
+        "stage": "tissue",
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 22.7,
+          "endAudio": 28.47
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Branching cells and intercalated-disc connections are representative teaching geometry. Gap-junction current and mechanical junction strength are explained, not solved numerically. No neural command is required for each normal beat."
+      },
+      {
+        "organ": "heart",
+        "selected": "sa",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "SA-node"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. The inferred SA region and registered pathway remain on the original heart. Nerves modulate rate; the visible pulse is instructional, not a nerve or measured conduction velocity."
+      }
+    ],
+    "M03.03": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 2.17,
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "mitral",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 2.94,
+          "endAudio": 11.34,
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This model groups non-atrial filling under passive filling; it does not separately resolve or calibrate a diastasis phase. The slower mid-diastolic interval is explained here, not shown as a distinct model phase."
+      },
+      {
+        "organ": "heart",
+        "selected": "la",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "atrial-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 18.32,
+          "endAudio": 23.58
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "la",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "atrial-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "la",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "atrial-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. No fixed atrial-kick percentage is encoded or inferred from this geometry."
+      }
+    ],
+    "M03.04": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 2.59
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "mitral",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Inspect all four valve readouts at the actual model midpoint where all are closed."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 13.8,
+          "endAudio": 17.67
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "papillary",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Original source papillary muscles and representative chordal supports restrain prolapse; they do not pull valves open."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. The next two measured phrases compare electrical activation with the later mechanical pressure rise; these are explicit guided inspection times, not a continuous real-time heartbeat."
+      }
+    ],
+    "M03.05": [
+      {
+        "organ": "heart",
+        "selected": "aortic",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "right"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Both semilunar leaflet surfaces are not exposed in this all-four-chamber section. Their numerical open/closed states and gated local flow remain synchronized; the separate outflow view is available in Explore."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 6.97,
+          "endAudio": 10.67
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Ejection proceeds while AV valves remain closed; arterial reservoirs continue feeding peripheral beds between ejections."
+      },
+      {
+        "organ": "heart",
+        "selected": "mitral",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Compare settled cycle stroke volumes, not identical instantaneous left/right pressures or flows."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-relaxation",
+          "side": "right"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Continuous occupancy remains in both ventricular cavities after ejection; the numerical ESV is not zero. The reconstructed section is not a free liquid surface."
+      }
+    ],
+    "M03.06": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-relaxation",
+          "side": "right",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 5.88
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Both semilunar leaflet surfaces are not exposed in this all-four-chamber section. Their numerical open/closed states and gated local flow remain synchronized; the separate outflow view is available in Explore."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-relaxation",
+          "side": "right"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. The selected right-side isovolumetric-relaxation interval keeps all four numerical valves closed at the default lesson parameters."
+      },
+      {
+        "organ": "heart",
+        "selected": "mitral",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 12.73,
+          "endAudio": 20.54,
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-relaxation",
+          "side": "right"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "ventricular-repolarization"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an electrical-stage inspection. The current mechanical phase is displayed independently; the ECG trace is not a pressure waveform or a single-cell membrane trace."
+      }
+    ],
+    "M03.07": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Read the worked example as independent arithmetic. The current default model has its own measured-from-model HR, SV and CO values; it is not forced to equal 70×70 or 4.9 L/min. Broad reference ranges are educational, not individual predictions."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Read the worked example as independent arithmetic. The current default model has its own measured-from-model HR, SV and CO values; it is not forced to equal 70×70 or 4.9 L/min. Broad reference ranges are educational, not individual predictions."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Read the worked example as independent arithmetic. The current default model has its own measured-from-model HR, SV and CO values; it is not forced to equal 70×70 or 4.9 L/min. Broad reference ranges are educational, not individual predictions."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Read the worked example as independent arithmetic. The current default model has its own measured-from-model HR, SV and CO values; it is not forced to equal 70×70 or 4.9 L/min. Broad reference ranges are educational, not individual predictions."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Read the worked example as independent arithmetic. The current default model has its own measured-from-model HR, SV and CO values; it is not forced to equal 70×70 or 4.9 L/min. Broad reference ranges are educational, not individual predictions."
+      }
+    ],
+    "M03.08": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Preload, afterload and contractility are distinct influences. These concepts are explained without changing the model inputs mid-sentence."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 5.8,
+          "endAudio": 10.18,
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Preload relates to filling/stretch before contraction; displayed cavity volume and authored deformation are not a complete preload measurement."
+      },
+      {
+        "organ": "heart",
+        "selected": "aortic",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Both semilunar leaflet surfaces are not exposed in this all-four-chamber section. Their numerical open/closed states and gated local flow remain synchronized; the separate outflow view is available in Explore. The model systemic resistance is one afterload-related property, not the entire physiological definition."
+      },
+      {
+        "organ": "heart",
+        "selected": "wall",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-contraction",
+          "side": "left",
+          "sweep": true,
+          "anchorAudio": 15,
+          "endAudio": 19.11
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Contractility is force-generating ability; the illustrative wall does not measure a patient-specific contractile state."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. EF = (EDV−ESV)/EDV ×100%. Use the model EDV/ESV together; the reference range is separate from the current model result."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-relaxation",
+          "side": "right"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. 55–70% is the approved broad teaching reference, not a diagnosis or a range calibrated from these meshes."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "isovolumetric-relaxation",
+          "side": "right"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Ejection fraction refers to the starting ventricular cavity volume, not all blood in the body."
+      }
+    ],
+    "M03.09": [
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "mitral",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "passive-filling",
+          "side": "left",
+          "occurrence": "last"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. Changing rate can change SV; cardiac output cannot be inferred from rate alone. Try the existing mechanics laboratory in Explore."
+      },
+      {
+        "organ": "heart",
+        "selected": "aorta",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. The displayed pressure is one model result, not a prediction from ECG morphology. Arterial source geometry is summarized in the external map in this section."
+      },
+      {
+        "organ": "heart",
+        "selected": "lv",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "pulse",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": null,
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "electrical",
+          "stage": "ventricular-plateau"
+        },
+        "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. A normal-looking rhythm does not establish normal blood pressure, EF or oxygen delivery. This instructional model is not a clinical predictor."
+      }
+    ]
+  },
+  "measuredManifestSha256": "3cb59dcb55c0da4662bc17bcb285308314dcb70203e4ea3d1da38e3ec565d572"
+}

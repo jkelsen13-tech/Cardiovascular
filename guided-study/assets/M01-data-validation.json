@@ -1,0 +1,121 @@
+{
+  "schema": "guided-study.M01-data-validation.v1",
+  "result": "PASS_DATA_AUDIO_TEXT_AND_CUE_CHECKS_RUNTIME_REVIEW_PENDING",
+  "counts": {
+    "lessons": 6,
+    "cues": 43
+  },
+  "checks": {
+    "syntax": true,
+    "unchangedAudioHashes": true,
+    "fullAudioDecode": true,
+    "exactApprovedNarrationAndTranscript": true,
+    "measuredSentenceAndWordAnchors": true,
+    "cueBoundsAndOrdering": true,
+    "fullSupportedSceneFields": true,
+    "duplicateSafeAdditiveRegistration": true,
+    "protectedStudyStorageNotAccessed": true
+  },
+  "limitations": {
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "iPadQA": false,
+    "capnographyPanelRuntimeVerification": null
+  },
+  "lessonsFileSha256": "3bd5c579becff4d4efddff749b1a0b90cda02feb8655d956ab8dc2633b1e6fe5",
+  "assetsProvenanceSha256": "2334ff389af63f8fffc10d4453167924ccaf4c726e366104d5a398ac52e4bfc1",
+  "clips": [
+    {
+      "id": "M01.01",
+      "audioSha256": "60bb5df72dec4044ab6a903994061c67223a7c958ff9b78d9f5f0f44ca3a5d70",
+      "approvedTextSha256": "ac39c3adcf22cd9bc3804dd1396cf87691d541361881c81d0624e48e11118bdd",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "cues": 10,
+      "sentenceCues": 7,
+      "actualMeasuredBounds": true,
+      "initialPoseAtZero": true,
+      "measuredFirstWordStart": 0,
+      "listeningQA": false,
+      "nativeVisualSynchronizationQA": false
+    },
+    {
+      "id": "M01.02",
+      "audioSha256": "4c4c2561af2cb2ad545564db5b9abc5859636c865f7e89604ca299339044c834",
+      "approvedTextSha256": "1f4adb9b27404d0c755bdd400092c439ef44b93b64a3d6894ae7805ef32e7e9f",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "cues": 7,
+      "sentenceCues": 7,
+      "actualMeasuredBounds": true,
+      "initialPoseAtZero": true,
+      "measuredFirstWordStart": 0,
+      "listeningQA": false,
+      "nativeVisualSynchronizationQA": false
+    },
+    {
+      "id": "M01.03",
+      "audioSha256": "c7775930e6409d11d245c8e0b3e9c7817d72d64f5d9791de139c6d1e95d5e9cb",
+      "approvedTextSha256": "756a6b10ddc0cfa7df44be5bce855b4c988ea1b9dedd341b358cef09d0e39e9e",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "cues": 8,
+      "sentenceCues": 8,
+      "actualMeasuredBounds": true,
+      "initialPoseAtZero": true,
+      "measuredFirstWordStart": 0,
+      "listeningQA": false,
+      "nativeVisualSynchronizationQA": false
+    },
+    {
+      "id": "M01.04",
+      "audioSha256": "f62b43bd145f5fa44855b3bc7c8b1e5f81a6a35e3dcc60317abd63d6b09f14cc",
+      "approvedTextSha256": "af8b7468c3e8106bd30d4b77d30a20f1e90df8091b12879dc3d94e6338a10003",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "cues": 6,
+      "sentenceCues": 6,
+      "actualMeasuredBounds": true,
+      "initialPoseAtZero": true,
+      "measuredFirstWordStart": 0,
+      "listeningQA": false,
+      "nativeVisualSynchronizationQA": false
+    },
+    {
+      "id": "M01.05",
+      "audioSha256": "a5cc68424b96b5974772005d5e4baa36ef3a6ba68538d13cf3cdd8c7bc32f601",
+      "approvedTextSha256": "09a5b133fc93d8aa6dd0f9f6e24799805f161a6c4c76f5c244fc90947a642b2f",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "cues": 7,
+      "sentenceCues": 7,
+      "actualMeasuredBounds": true,
+      "initialPoseAtZero": true,
+      "measuredFirstWordStart": 0,
+      "listeningQA": false,
+      "nativeVisualSynchronizationQA": false
+    },
+    {
+      "id": "M01.06",
+      "audioSha256": "306b1cef61509f03705fa9bafac229fa74a94baac266e2666d926fbeac4e8a84",
+      "approvedTextSha256": "9874bf1b15936db6879122a8a0d35542a85595ef35f7201da83293a1de96f22a",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "cues": 5,
+      "sentenceCues": 5,
+      "actualMeasuredBounds": true,
+      "initialPoseAtZero": true,
+      "measuredFirstWordStart": 0,
+      "listeningQA": false,
+      "nativeVisualSynchronizationQA": false
+    }
+  ]
+}

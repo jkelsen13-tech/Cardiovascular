@@ -1,0 +1,180 @@
+{
+  "schema": "guided-study.M06-assets.v1",
+  "scope": "5 delivered M06 lessons only",
+  "sourcePackageLibraryFileId": "libfile_4c45ebdf373c8191a2fbf11613ddc0e4",
+  "sourcePackageFileName": "M06_Respiratory_Monitoring_Audio.zip",
+  "sourcePackageSha256": "f07eed4a123eee5179a471c989f573dd9abf325bd19b153a0434bd565c11ad8b",
+  "sourcePackageCRCVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "audioPolicy": "Existing approved MP3 files copied unchanged. No external API, provider, audio generation, install or new cost.",
+  "sourceManifestSha256": "b4376acad68caa3c99e2d03f75ddbf6b40b2be57927c3c27a212983b71665793",
+  "alignment": {
+    "manifestSha256": "cce1dce7e1f66803cd37ab1eb1568d5a34449a7b95bbaaa5a0aea53514f43276",
+    "provenanceSha256": "7deaa764fb3d3355b4020017f846ffc25791e4592fe56d812f292a1461cab49c",
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "flags": [
+      {
+        "clip": "M06.03",
+        "clipId": "M06.03",
+        "word": "dyshemoglobins",
+        "type": "MORPHEME_COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.collinsdictionary.com/us/dictionary/english/dys",
+        "supportingSources": [
+          "https://www.merriam-webster.com/dictionary/hemoglobin",
+          "https://pmc.ncbi.nlm.nih.gov/articles/PMC6684811/"
+        ],
+        "mappingAuthoredARPABET": "D IH S HH IY M AH G L OW B AH N Z",
+        "reason": "Explicit morpheme composition: publisher dys- /dɪs/ + publisher hemoglobin pronunciation + regular plural /z/. No whole-word publisher pronunciation was located in bounded research. Stress removed for model. Primary research source confirms term use only, not pronunciation. Exact word and neighboring alignment boundaries require actual playback review. Forced alignment does not establish actual spoken pronunciation.",
+        "humanListeningPerformed": false,
+        "dictionaryOriginalUnchanged": true,
+        "index": 38,
+        "start": 16.72,
+        "end": 17.88
+      }
+    ]
+  },
+  "bindings": {
+    "fullScenes": true,
+    "controller": "HeartV3Study.guided / CardiorespiratoryStudy.guided / GuidedExplanation",
+    "capnography": "Optional monitoringView:capnography requests the existing synthetic trace and real phase marker. Root-owned adapter implements this field; native panel-visibility and marker checks pending.",
+    "modelScope": "Original HRA heart/lungs; representative cardiac cell/alveolar reconstructions explicitly qualified. No invented body-plane, limb, sternum, pulse-oximeter or impedance-monitor target.",
+    "nativeExecutionVerified": false,
+    "iPadVerified": false,
+    "protectedStudyStorageMutated": false
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "courseCitationVerification": {
+    "retainedPDFHashVerified": true,
+    "retainedPageTextRead": true,
+    "sourcePageTextSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+    "auditFileSha256": "37a1111a3e7cf38b5617b591ab4a4e332415160b1a1212524b952890e9e79125",
+    "scope": "Only cited page text and retained targeted audit read; no full 911-page medical-content review. Original PDF/images are not distributed."
+  },
+  "courseTerminologyNotes": {
+    "M06.01": {
+      "pages": "89,98",
+      "note": "Respiratory rate is contextual; impedance estimation and its limits are approved supplemental explanation, not a modeled monitor signal."
+    },
+    "M06.02": {
+      "pages": "90,92",
+      "note": "Saturation, hemoglobin concentration, total oxygen content and delivery remain distinct. No pulse-oximeter or light-absorption simulation is claimed."
+    },
+    "M06.03": {
+      "pages": "91,93",
+      "note": "Approved correction: pp91/93 give 94–99% and NOT 100%; the narration does not treat 100% as automatically abnormal or proof of oxygen toxicity. Device/skin-pigmentation and carbon-monoxide limits remain contextual."
+    },
+    "M06.04": {
+      "pages": "94–96,101",
+      "note": "Existing synthetic capnogram only: dead-space, mixing, plateau and end-tidal point are named clock holds; preset 40 mmHg is independent of mechanics, not measured CO₂ or a prediction. No CPR/treatment thresholds are included."
+    },
+    "M06.05": {
+      "pages": "88–95,101",
+      "note": "Each monitoring method answers a different question. Existing synthetic capnography is explicit; other signals are explanation cards. No assessment/treatment algorithm is implied."
+    }
+  },
+  "counts": {
+    "lessons": 5,
+    "cues": 30,
+    "sentenceCues": 28,
+    "phraseCues": 2,
+    "explanationCards": 24,
+    "heartCues": 0,
+    "respiratoryCues": 6,
+    "capnographyCues": 6
+  },
+  "clips": [
+    {
+      "id": "M06.01",
+      "file": "M06_01_adam_multilingual_v2.mp3",
+      "bytes": 461227,
+      "sha256": "8e2fca2fa051db276d05b7924e60f09e6105c7dbc88a361b6c6804f699010009",
+      "duration": 27.768125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M06.02",
+      "file": "M06_02_adam_multilingual_v2.mp3",
+      "bytes": 518906,
+      "sha256": "301a579b3ca52eff39c2b143fa2f60e5555622ca4b81ca41752f0995036f6a83",
+      "duration": 31.373063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M06.03",
+      "file": "M06_03_adam_multilingual_v2.mp3",
+      "bytes": 596228,
+      "sha256": "cbf6227f9ee4476b03244d8fe64691147e9fc1498a80678c6245535110b24e1d",
+      "duration": 36.205688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": [
+        {
+          "clipId": "M06.03",
+          "word": "dyshemoglobins",
+          "type": "MORPHEME_COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.collinsdictionary.com/us/dictionary/english/dys",
+          "supportingSources": [
+            "https://www.merriam-webster.com/dictionary/hemoglobin",
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC6684811/"
+          ],
+          "mappingAuthoredARPABET": "D IH S HH IY M AH G L OW B AH N Z",
+          "reason": "Explicit morpheme composition: publisher dys- /dɪs/ + publisher hemoglobin pronunciation + regular plural /z/. No whole-word publisher pronunciation was located in bounded research. Stress removed for model. Primary research source confirms term use only, not pronunciation. Exact word and neighboring alignment boundaries require actual playback review. Forced alignment does not establish actual spoken pronunciation.",
+          "humanListeningPerformed": false,
+          "dictionaryOriginalUnchanged": true,
+          "index": 38,
+          "start": 16.72,
+          "end": 17.88
+        }
+      ]
+    },
+    {
+      "id": "M06.04",
+      "file": "M06_04_adam_multilingual_v2.mp3",
+      "bytes": 524339,
+      "sha256": "4d5bb1aefb37333f899f5d2c0683de8d45687c85e5076631aac4037277d98993",
+      "duration": 31.712625,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M06.05",
+      "file": "M06_05_adam_multilingual_v2.mp3",
+      "bytes": 590377,
+      "sha256": "33f49bad3a061953efc60e7c180e7491b03ec6e121eff930c8f5c817e090c30b",
+      "duration": 35.84,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "alignmentFlags": []
+    }
+  ]
+}

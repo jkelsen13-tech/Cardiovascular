@@ -1,0 +1,3803 @@
+{
+  "schema": "guided-study.M07-cue-anchors.v1",
+  "units": "Seconds from delivered clip start; first static pose at 0 is explicit; measuredStart retains the actual first-word onset",
+  "machineMeasured": true,
+  "humanListeningQA": false,
+  "frameGranularitySeconds": 0.01,
+  "accuracyClaim": null,
+  "clips": [
+    {
+      "id": "M07.01",
+      "sentences": [
+        {
+          "id": "M07.01.s01",
+          "text": "An electrode is the sensor contacting the skin.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 7,
+          "wordCount": 8,
+          "start": 0.0,
+          "end": 3.02,
+          "duration": 3.02
+        },
+        {
+          "id": "M07.01.s02",
+          "text": "A cable connects it to the recording system.",
+          "firstWordIndex": 8,
+          "lastWordIndex": 15,
+          "wordCount": 8,
+          "start": 3.53,
+          "end": 5.71,
+          "duration": 2.18
+        },
+        {
+          "id": "M07.01.s03",
+          "text": "An E C G lead is a calculated view of the heart's electrical activity, not simply the wire.",
+          "firstWordIndex": 16,
+          "lastWordIndex": 33,
+          "wordCount": 18,
+          "start": 6.13,
+          "end": 11.94,
+          "duration": 5.81
+        },
+        {
+          "id": "M07.01.s04",
+          "text": "A standard twelve-lead E C G uses ten electrodes to create twelve views.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 47,
+          "wordCount": 14,
+          "start": 12.52,
+          "end": 17.46,
+          "duration": 4.94
+        },
+        {
+          "id": "M07.01.s05",
+          "text": "Six are limb-lead views, and six are chest-lead views.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 58,
+          "wordCount": 11,
+          "start": 17.82,
+          "end": 21.12,
+          "duration": 3.3
+        },
+        {
+          "id": "M07.01.s06",
+          "text": "Keep those counts separate before placing anything on the body.",
+          "firstWordIndex": 59,
+          "lastWordIndex": 68,
+          "wordCount": 10,
+          "start": 21.57,
+          "end": 24.51,
+          "duration": 2.94
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "electrode",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 1,
+              "start": 0.15,
+              "end": 0.88
+            }
+          ]
+        },
+        {
+          "phrase": "cable",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s02",
+              "firstWordIndex": 9,
+              "lastWordIndex": 9,
+              "start": 3.59,
+              "end": 3.99
+            }
+          ]
+        },
+        {
+          "phrase": "E C G lead",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s03",
+              "firstWordIndex": 17,
+              "lastWordIndex": 20,
+              "start": 6.33,
+              "end": 7.59
+            }
+          ]
+        },
+        {
+          "phrase": "twelve lead E C G",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s04",
+              "firstWordIndex": 36,
+              "lastWordIndex": 40,
+              "start": 13.15,
+              "end": 14.69
+            }
+          ]
+        },
+        {
+          "phrase": "ten electrodes",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s04",
+              "firstWordIndex": 42,
+              "lastWordIndex": 43,
+              "start": 15.11,
+              "end": 15.98
+            }
+          ]
+        },
+        {
+          "phrase": "twelve views",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s04",
+              "firstWordIndex": 46,
+              "lastWordIndex": 47,
+              "start": 16.55,
+              "end": 17.46
+            }
+          ]
+        },
+        {
+          "phrase": "limb lead views",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s05",
+              "firstWordIndex": 50,
+              "lastWordIndex": 52,
+              "start": 18.28,
+              "end": 19.25
+            }
+          ]
+        },
+        {
+          "phrase": "chest lead views",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.01.s05",
+              "firstWordIndex": 56,
+              "lastWordIndex": 58,
+              "start": 20.13,
+              "end": 21.12
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.01.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 3.02,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 7
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The skin sensor is represented only by a teaching placement marker; contact mechanics and hardware are not modeled."
+          }
+        },
+        {
+          "id": "M07.01.s02",
+          "at": 3.53,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 3.53,
+            "end": 5.71,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s02",
+            "firstWordIndex": 8,
+            "lastWordIndex": 15
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Cable and recording system",
+            "text": "A cable connects it to the recording system.",
+            "source": "Owner-approved adapted M07.01 narration · source script lines 446-479 · course PDF physical pp243,248,252,258,263",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No cable or recording-machine geometry exists in this thorax."
+          }
+        },
+        {
+          "id": "M07.01.s03",
+          "at": 6.13,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 6.13,
+            "end": 11.94,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s03",
+            "firstWordIndex": 16,
+            "lastWordIndex": 33
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Lead I is one calculated limb view, not an additional sensor or cable."
+          }
+        },
+        {
+          "id": "M07.01.s04",
+          "at": 12.52,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 12.52,
+            "end": 17.46,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s04",
+            "firstWordIndex": 34,
+            "lastWordIndex": 47
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Six chest markers plus four external limb labels represent 10 electrodes. The 12 lead views are comparisons; they are not 12 physical sensors."
+          }
+        },
+        {
+          "id": "M07.01.s05",
+          "at": 17.82,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 17.82,
+            "end": 21.12,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 58
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Six limb views use the limb electrodes; six chest views use V1–V6. No extra sensor is created for each view."
+          }
+        },
+        {
+          "id": "M07.01.p01",
+          "at": 20.13,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 20.13,
+            "end": 21.12,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s05",
+            "phrase": "chest lead views",
+            "occurrence": 1,
+            "firstWordIndex": 56,
+            "lastWordIndex": 58
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Six chest views use V1–V6; this switches static placement context, not a computed waveform."
+          }
+        },
+        {
+          "id": "M07.01.s06",
+          "at": 21.57,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 21.57,
+            "end": 24.51,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.01.s06",
+            "firstWordIndex": 59,
+            "lastWordIndex": 68
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Keep electrode count 10 distinct from lead-view count 12."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.02",
+      "sentences": [
+        {
+          "id": "M07.02.s01",
+          "text": "Lead one compares the left arm with the right arm.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 9,
+          "wordCount": 10,
+          "start": 0.0,
+          "end": 3.03,
+          "duration": 3.03
+        },
+        {
+          "id": "M07.02.s02",
+          "text": "Lead two compares the left leg with the right arm.",
+          "firstWordIndex": 10,
+          "lastWordIndex": 19,
+          "wordCount": 10,
+          "start": 3.39,
+          "end": 6.18,
+          "duration": 2.79
+        },
+        {
+          "id": "M07.02.s03",
+          "text": "Lead three compares the left leg with the left arm.",
+          "firstWordIndex": 20,
+          "lastWordIndex": 29,
+          "wordCount": 10,
+          "start": 6.5,
+          "end": 9.29,
+          "duration": 2.79
+        },
+        {
+          "id": "M07.02.s04",
+          "text": "The first location named is positive in each comparison.",
+          "firstWordIndex": 30,
+          "lastWordIndex": 38,
+          "wordCount": 9,
+          "start": 9.76,
+          "end": 13.28,
+          "duration": 3.52
+        },
+        {
+          "id": "M07.02.s05",
+          "text": "The remaining limb electrode does not become the ground for that lead.",
+          "firstWordIndex": 39,
+          "lastWordIndex": 50,
+          "wordCount": 12,
+          "start": 13.65,
+          "end": 18.22,
+          "duration": 4.57
+        },
+        {
+          "id": "M07.02.s06",
+          "text": "A separate right-leg electrode commonly provides a reference or driven-right-leg function in the recording system.",
+          "firstWordIndex": 51,
+          "lastWordIndex": 68,
+          "wordCount": 18,
+          "start": 18.68,
+          "end": 24.94,
+          "duration": 6.26
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 4,
+              "start": 1.58,
+              "end": 1.92
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.02.s02",
+              "firstWordIndex": 14,
+              "lastWordIndex": 14,
+              "start": 4.5,
+              "end": 4.82
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M07.02.s03",
+              "firstWordIndex": 24,
+              "lastWordIndex": 24,
+              "start": 7.64,
+              "end": 7.96
+            },
+            {
+              "occurrence": 4,
+              "sentenceId": "M07.02.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 8.61,
+              "end": 8.96
+            }
+          ]
+        },
+        {
+          "phrase": "electrode",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s05",
+              "firstWordIndex": 42,
+              "lastWordIndex": 42,
+              "start": 14.91,
+              "end": 15.59
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.02.s06",
+              "firstWordIndex": 55,
+              "lastWordIndex": 55,
+              "start": 19.81,
+              "end": 20.43
+            }
+          ]
+        },
+        {
+          "phrase": "lead one",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s01",
+              "firstWordIndex": 0,
+              "lastWordIndex": 1,
+              "start": 0.0,
+              "end": 0.8
+            }
+          ]
+        },
+        {
+          "phrase": "lead two",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s02",
+              "firstWordIndex": 10,
+              "lastWordIndex": 11,
+              "start": 3.39,
+              "end": 3.86
+            }
+          ]
+        },
+        {
+          "phrase": "lead three",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s03",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 6.5,
+              "end": 7.04
+            }
+          ]
+        },
+        {
+          "phrase": "left arm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 5,
+              "start": 1.58,
+              "end": 2.2
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.02.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 29,
+              "start": 8.61,
+              "end": 9.29
+            }
+          ]
+        },
+        {
+          "phrase": "right arm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 2.42,
+              "end": 3.03
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.02.s02",
+              "firstWordIndex": 18,
+              "lastWordIndex": 19,
+              "start": 5.41,
+              "end": 6.18
+            }
+          ]
+        },
+        {
+          "phrase": "left leg",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s02",
+              "firstWordIndex": 14,
+              "lastWordIndex": 15,
+              "start": 4.5,
+              "end": 5.19
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.02.s03",
+              "firstWordIndex": 24,
+              "lastWordIndex": 25,
+              "start": 7.64,
+              "end": 8.33
+            }
+          ]
+        },
+        {
+          "phrase": "right leg",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s06",
+              "firstWordIndex": 53,
+              "lastWordIndex": 54,
+              "start": 19.21,
+              "end": 19.81
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.02.s06",
+              "firstWordIndex": 62,
+              "lastWordIndex": 63,
+              "start": 22.53,
+              "end": 23.08
+            }
+          ]
+        },
+        {
+          "phrase": "positive",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s04",
+              "firstWordIndex": 35,
+              "lastWordIndex": 35,
+              "start": 11.31,
+              "end": 11.94
+            }
+          ]
+        },
+        {
+          "phrase": "ground",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s05",
+              "firstWordIndex": 47,
+              "lastWordIndex": 47,
+              "start": 16.83,
+              "end": 17.32
+            }
+          ]
+        },
+        {
+          "phrase": "reference",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s06",
+              "firstWordIndex": 59,
+              "lastWordIndex": 59,
+              "start": 21.45,
+              "end": 21.98
+            }
+          ]
+        },
+        {
+          "phrase": "lead two",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.02.s02",
+              "firstWordIndex": 10,
+              "lastWordIndex": 11,
+              "start": 3.39,
+              "end": 3.86
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.02.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 3.03,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 9
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s02",
+          "at": 3.39,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 3.39,
+            "end": 6.18,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.02.s02",
+            "firstWordIndex": 10,
+            "lastWordIndex": 19
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s03",
+          "at": 6.5,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 6.5,
+            "end": 9.29,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.02.s03",
+            "firstWordIndex": 20,
+            "lastWordIndex": 29
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-iii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s04",
+          "at": 9.76,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.76,
+            "end": 13.28,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.02.s04",
+            "firstWordIndex": 30,
+            "lastWordIndex": 38
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s05",
+          "at": 13.65,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 13.65,
+            "end": 18.22,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.02.s05",
+            "firstWordIndex": 39,
+            "lastWordIndex": 50
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-iii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        },
+        {
+          "id": "M07.02.s06",
+          "at": 18.68,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 18.68,
+            "end": 24.94,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.02.s06",
+            "firstWordIndex": 51,
+            "lastWordIndex": 68
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Existing source polarity maps: I=LA positive/RA negative; II=LL positive/RA negative; III=LL positive/LA negative. References and input circuitry are explained, not simulated."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.03",
+      "sentences": [
+        {
+          "id": "M07.03.s01",
+          "text": "The augmented limb leads are a V R, a V L, and a V F.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 14,
+          "wordCount": 15,
+          "start": 0.07,
+          "end": 4.43,
+          "duration": 4.36
+        },
+        {
+          "id": "M07.03.s02",
+          "text": "They view the heart from the right arm, left arm, and left leg, using calculated references.",
+          "firstWordIndex": 15,
+          "lastWordIndex": 30,
+          "wordCount": 16,
+          "start": 4.73,
+          "end": 10.83,
+          "duration": 6.1
+        },
+        {
+          "id": "M07.03.s03",
+          "text": "Together with leads one, two, and three, they show the frontal plane.",
+          "firstWordIndex": 31,
+          "lastWordIndex": 42,
+          "wordCount": 12,
+          "start": 11.2,
+          "end": 16.12,
+          "duration": 4.92
+        },
+        {
+          "id": "M07.03.s04",
+          "text": "Chest leads V one through V six view the heart in the transverse plane, each relative to a combined reference.",
+          "firstWordIndex": 43,
+          "lastWordIndex": 62,
+          "wordCount": 20,
+          "start": 16.52,
+          "end": 24.14,
+          "duration": 7.62
+        },
+        {
+          "id": "M07.03.s05",
+          "text": "The word unipolar is traditional shorthand; a voltage measurement still requires a comparison.",
+          "firstWordIndex": 63,
+          "lastWordIndex": 75,
+          "wordCount": 13,
+          "start": 24.98,
+          "end": 30.83,
+          "duration": 5.85
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s02",
+              "firstWordIndex": 23,
+              "lastWordIndex": 23,
+              "start": 6.81,
+              "end": 7.2
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.03.s02",
+              "firstWordIndex": 26,
+              "lastWordIndex": 26,
+              "start": 7.77,
+              "end": 8.09
+            }
+          ]
+        },
+        {
+          "phrase": "frontal plane",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s03",
+              "firstWordIndex": 41,
+              "lastWordIndex": 42,
+              "start": 15.02,
+              "end": 16.12
+            }
+          ]
+        },
+        {
+          "phrase": "transverse plane",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s04",
+              "firstWordIndex": 55,
+              "lastWordIndex": 56,
+              "start": 20.42,
+              "end": 21.6
+            }
+          ]
+        },
+        {
+          "phrase": "left arm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s02",
+              "firstWordIndex": 23,
+              "lastWordIndex": 24,
+              "start": 6.81,
+              "end": 7.58
+            }
+          ]
+        },
+        {
+          "phrase": "right arm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s02",
+              "firstWordIndex": 21,
+              "lastWordIndex": 22,
+              "start": 5.84,
+              "end": 6.62
+            }
+          ]
+        },
+        {
+          "phrase": "left leg",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s02",
+              "firstWordIndex": 26,
+              "lastWordIndex": 27,
+              "start": 7.77,
+              "end": 8.62
+            }
+          ]
+        },
+        {
+          "phrase": "reference",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s04",
+              "firstWordIndex": 62,
+              "lastWordIndex": 62,
+              "start": 23.45,
+              "end": 24.14
+            }
+          ]
+        },
+        {
+          "phrase": "augmented limb leads",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 3,
+              "start": 0.2,
+              "end": 1.34
+            }
+          ]
+        },
+        {
+          "phrase": "a V R",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 7,
+              "start": 1.51,
+              "end": 2.3
+            }
+          ]
+        },
+        {
+          "phrase": "a V L",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 10,
+              "start": 2.5,
+              "end": 3.32
+            }
+          ]
+        },
+        {
+          "phrase": "a V F",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 14,
+              "start": 3.58,
+              "end": 4.43
+            }
+          ]
+        },
+        {
+          "phrase": "frontal plane",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s03",
+              "firstWordIndex": 41,
+              "lastWordIndex": 42,
+              "start": 15.02,
+              "end": 16.12
+            }
+          ]
+        },
+        {
+          "phrase": "chest leads",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s04",
+              "firstWordIndex": 43,
+              "lastWordIndex": 44,
+              "start": 16.52,
+              "end": 17.37
+            }
+          ]
+        },
+        {
+          "phrase": "V one",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 46,
+              "start": 17.37,
+              "end": 18.07
+            }
+          ]
+        },
+        {
+          "phrase": "V six",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s04",
+              "firstWordIndex": 48,
+              "lastWordIndex": 49,
+              "start": 18.37,
+              "end": 19.16
+            }
+          ]
+        },
+        {
+          "phrase": "transverse plane",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s04",
+              "firstWordIndex": 55,
+              "lastWordIndex": 56,
+              "start": 20.42,
+              "end": 21.6
+            }
+          ]
+        },
+        {
+          "phrase": "unipolar",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.03.s05",
+              "firstWordIndex": 65,
+              "lastWordIndex": 65,
+              "start": 25.33,
+              "end": 26.04
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.03.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.07,
+            "end": 4.43,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 14
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avr-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. aVR uses RA positive with LA/LL combined reference."
+          }
+        },
+        {
+          "id": "M07.03.p01",
+          "at": 2.5,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 2.5,
+            "end": 3.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s01",
+            "phrase": "a V L",
+            "occurrence": 1,
+            "firstWordIndex": 8,
+            "lastWordIndex": 10
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avl-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. LA is positive; RA and LL form its combined reference."
+          }
+        },
+        {
+          "id": "M07.03.p02",
+          "at": 3.58,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 3.58,
+            "end": 4.43,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s01",
+            "phrase": "a V F",
+            "occurrence": 1,
+            "firstWordIndex": 12,
+            "lastWordIndex": 14
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avf-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. LL is positive; RA and LA form its combined reference."
+          }
+        },
+        {
+          "id": "M07.03.s02",
+          "at": 4.73,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 4.73,
+            "end": 10.83,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s02",
+            "firstWordIndex": 15,
+            "lastWordIndex": 30
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avr-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. The next measured phrases select the corresponding augmented right-arm, left-arm and left-leg views."
+          }
+        },
+        {
+          "id": "M07.03.p03",
+          "at": 6.81,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 6.81,
+            "end": 7.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s02",
+            "phrase": "left arm",
+            "occurrence": 1,
+            "firstWordIndex": 23,
+            "lastWordIndex": 24
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avl-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. "
+          }
+        },
+        {
+          "id": "M07.03.p04",
+          "at": 7.77,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 7.77,
+            "end": 8.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s02",
+            "phrase": "left leg",
+            "occurrence": 1,
+            "firstWordIndex": 26,
+            "lastWordIndex": 27
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avf-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. "
+          }
+        },
+        {
+          "id": "M07.03.s03",
+          "at": 11.2,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 11.2,
+            "end": 16.12,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s03",
+            "firstWordIndex": 31,
+            "lastWordIndex": 42
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Limb views are described in the frontal plane. No cutting plane or computed electrical field is drawn."
+          }
+        },
+        {
+          "id": "M07.03.p05",
+          "at": 12.93,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 12.93,
+            "end": 13.43,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s03",
+            "phrase": "two",
+            "occurrence": 1,
+            "firstWordIndex": 35,
+            "lastWordIndex": 35
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Frontal-plane limb-view context; no anatomical plane or electrical field mesh."
+          }
+        },
+        {
+          "id": "M07.03.p06",
+          "at": 13.75,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 13.75,
+            "end": 14.24,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s03",
+            "phrase": "three",
+            "occurrence": 1,
+            "firstWordIndex": 37,
+            "lastWordIndex": 37
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-iii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Frontal-plane limb-view context; no anatomical plane or electrical field mesh."
+          }
+        },
+        {
+          "id": "M07.03.s04",
+          "at": 16.52,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 16.52,
+            "end": 24.14,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s04",
+            "firstWordIndex": 43,
+            "lastWordIndex": 62
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Chest V1–V6 views are described in the transverse plane. The torso has no heart or moving plane; the markers provide placement context only."
+          }
+        },
+        {
+          "id": "M07.03.s05",
+          "at": 24.98,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 24.98,
+            "end": 30.83,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.03.s05",
+            "firstWordIndex": 63,
+            "lastWordIndex": 75
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Unipolar is traditional shorthand. Each chest view compares its chest electrode with a combined reference; no reference voltage is calculated here."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.04",
+      "sentences": [
+        {
+          "id": "M07.04.s01",
+          "text": "Use the patient's landmarks, not guessed distances.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 6,
+          "wordCount": 7,
+          "start": 0.0,
+          "end": 3.22,
+          "duration": 3.22
+        },
+        {
+          "id": "M07.04.s02",
+          "text": "The sternal angle helps identify the second rib; the second intercostal space lies just below it.",
+          "firstWordIndex": 7,
+          "lastWordIndex": 22,
+          "wordCount": 16,
+          "start": 3.67,
+          "end": 9.2,
+          "duration": 5.53
+        },
+        {
+          "id": "M07.04.s03",
+          "text": "From there, count down.",
+          "firstWordIndex": 23,
+          "lastWordIndex": 26,
+          "wordCount": 4,
+          "start": 9.56,
+          "end": 11.18,
+          "duration": 1.62
+        },
+        {
+          "id": "M07.04.s04",
+          "text": "The midclavicular line descends from the midpoint of the clavicle.",
+          "firstWordIndex": 27,
+          "lastWordIndex": 36,
+          "wordCount": 10,
+          "start": 11.69,
+          "end": 15.3,
+          "duration": 3.61
+        },
+        {
+          "id": "M07.04.s05",
+          "text": "The anterior axillary line and midaxillary line descend from the front and middle of the armpit.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 52,
+          "wordCount": 16,
+          "start": 15.67,
+          "end": 21.32,
+          "duration": 5.65
+        },
+        {
+          "id": "M07.04.s06",
+          "text": "There are twelve pairs of ribs and eleven intercostal spaces on each side.",
+          "firstWordIndex": 53,
+          "lastWordIndex": 65,
+          "wordCount": 13,
+          "start": 21.57,
+          "end": 26.02,
+          "duration": 4.45
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "anterior",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s05",
+              "firstWordIndex": 38,
+              "lastWordIndex": 38,
+              "start": 15.82,
+              "end": 16.51
+            }
+          ]
+        },
+        {
+          "phrase": "intercostal spaces",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s06",
+              "firstWordIndex": 61,
+              "lastWordIndex": 62,
+              "start": 23.81,
+              "end": 25.08
+            }
+          ]
+        },
+        {
+          "phrase": "sternal angle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s02",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 3.75,
+              "end": 4.56
+            }
+          ]
+        },
+        {
+          "phrase": "second rib",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s02",
+              "firstWordIndex": 13,
+              "lastWordIndex": 14,
+              "start": 5.49,
+              "end": 6.22
+            }
+          ]
+        },
+        {
+          "phrase": "second intercostal space",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s02",
+              "firstWordIndex": 16,
+              "lastWordIndex": 18,
+              "start": 6.63,
+              "end": 8.12
+            }
+          ]
+        },
+        {
+          "phrase": "midclavicular line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s04",
+              "firstWordIndex": 28,
+              "lastWordIndex": 29,
+              "start": 11.77,
+              "end": 13.06
+            }
+          ]
+        },
+        {
+          "phrase": "clavicle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s04",
+              "firstWordIndex": 36,
+              "lastWordIndex": 36,
+              "start": 14.66,
+              "end": 15.3
+            }
+          ]
+        },
+        {
+          "phrase": "anterior axillary line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s05",
+              "firstWordIndex": 38,
+              "lastWordIndex": 40,
+              "start": 15.82,
+              "end": 17.63
+            }
+          ]
+        },
+        {
+          "phrase": "midaxillary line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.04.s05",
+              "firstWordIndex": 42,
+              "lastWordIndex": 43,
+              "start": 17.75,
+              "end": 19.07
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.04.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 3.22,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 6
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "orient",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. "
+          }
+        },
+        {
+          "id": "M07.04.s02",
+          "at": 3.67,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 3.67,
+            "end": 9.2,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s02",
+            "firstWordIndex": 7,
+            "lastWordIndex": 22
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "sternal-angle",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The registered manubrium–sternal junction locates rib 2; count the space immediately below rib 2."
+          }
+        },
+        {
+          "id": "M07.04.p01",
+          "at": 5.49,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 5.49,
+            "end": 6.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s02",
+            "phrase": "second rib",
+            "occurrence": 1,
+            "firstWordIndex": 13,
+            "lastWordIndex": 14
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "rib2",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Actual rib 2/costal-cartilage source structures registered at the sternal-angle level."
+          }
+        },
+        {
+          "id": "M07.04.p02",
+          "at": 6.63,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 6.63,
+            "end": 8.12,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s02",
+            "phrase": "second intercostal space",
+            "occurrence": 1,
+            "firstWordIndex": 16,
+            "lastWordIndex": 18
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "ics2",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Derived teaching space immediately below rib 2, bounded by ribs 2 and 3."
+          }
+        },
+        {
+          "id": "M07.04.s03",
+          "at": 9.56,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.56,
+            "end": 11.18,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s03",
+            "firstWordIndex": 23,
+            "lastWordIndex": 26
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "count-ics",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Numbered overlays cover 2nd–5th spaces only. Each space takes the number of the rib immediately above it."
+          }
+        },
+        {
+          "id": "M07.04.s04",
+          "at": 11.69,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 11.69,
+            "end": 15.3,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s04",
+            "firstWordIndex": 27,
+            "lastWordIndex": 36
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "mcl",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The left midclavicular line is a derived teaching guide from the registered clavicle."
+          }
+        },
+        {
+          "id": "M07.04.s05",
+          "at": 15.67,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 15.67,
+            "end": 21.32,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s05",
+            "firstWordIndex": 37,
+            "lastWordIndex": 52
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "aal",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The anterior and midaxillary lines are derived reference guides; the next measured phrase changes to the midaxillary line."
+          }
+        },
+        {
+          "id": "M07.04.p03",
+          "at": 17.75,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 17.75,
+            "end": 19.07,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s05",
+            "phrase": "midaxillary line",
+            "occurrence": 1,
+            "firstWordIndex": 42,
+            "lastWordIndex": 43
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "mal",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Patient-left derived midaxillary guide; camera is explicitly left-oblique."
+          }
+        },
+        {
+          "id": "M07.04.s06",
+          "at": 21.57,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 21.57,
+            "end": 26.02,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.04.s06",
+            "firstWordIndex": 53,
+            "lastWordIndex": 65
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "orient",
+            "preset": "front",
+            "bodySurface": "hidden",
+            "layers": {
+              "body": false,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": false
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. All 12 rib pairs exist in the registered source thorax. Eleven intercostal spaces per side is a text explanation; only 2nd–5th numbered teaching overlays are provided."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.05",
+      "sentences": [
+        {
+          "id": "M07.05.s01",
+          "text": "Locate V one at the fourth intercostal space, right sternal border, and V two at the fourth intercostal space, left sternal border.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 21,
+          "wordCount": 22,
+          "start": 0.0,
+          "end": 8.51,
+          "duration": 8.51
+        },
+        {
+          "id": "M07.05.s02",
+          "text": "Locate V four at the fifth intercostal space on the left midclavicular line.",
+          "firstWordIndex": 22,
+          "lastWordIndex": 34,
+          "wordCount": 13,
+          "start": 9.0,
+          "end": 13.51,
+          "duration": 4.51
+        },
+        {
+          "id": "M07.05.s03",
+          "text": "V three lies halfway between V two and V four.",
+          "firstWordIndex": 35,
+          "lastWordIndex": 44,
+          "wordCount": 10,
+          "start": 14.13,
+          "end": 17.45,
+          "duration": 3.32
+        },
+        {
+          "id": "M07.05.s04",
+          "text": "V five is at the left anterior axillary line and V six at the left midaxillary line, both horizontally level with V four.",
+          "firstWordIndex": 45,
+          "lastWordIndex": 67,
+          "wordCount": 23,
+          "start": 18.13,
+          "end": 27.17,
+          "duration": 9.04
+        },
+        {
+          "id": "M07.05.s05",
+          "text": "Practice only in the website's learning model.",
+          "firstWordIndex": 68,
+          "lastWordIndex": 74,
+          "wordCount": 7,
+          "start": 27.66,
+          "end": 30.03,
+          "duration": 2.37
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 19,
+              "lastWordIndex": 19,
+              "start": 7.18,
+              "end": 7.59
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.05.s02",
+              "firstWordIndex": 32,
+              "lastWordIndex": 32,
+              "start": 11.82,
+              "end": 12.18
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 50,
+              "lastWordIndex": 50,
+              "start": 19.11,
+              "end": 19.51
+            },
+            {
+              "occurrence": 4,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 59,
+              "lastWordIndex": 59,
+              "start": 22.87,
+              "end": 23.23
+            }
+          ]
+        },
+        {
+          "phrase": "anterior",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 51,
+              "lastWordIndex": 51,
+              "start": 19.51,
+              "end": 20.23
+            }
+          ]
+        },
+        {
+          "phrase": "V one",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 2,
+              "start": 0.48,
+              "end": 0.93
+            }
+          ]
+        },
+        {
+          "phrase": "V two",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 13,
+              "start": 4.45,
+              "end": 5.1
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.05.s03",
+              "firstWordIndex": 40,
+              "lastWordIndex": 41,
+              "start": 15.86,
+              "end": 16.54
+            }
+          ]
+        },
+        {
+          "phrase": "V three",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s03",
+              "firstWordIndex": 35,
+              "lastWordIndex": 36,
+              "start": 14.13,
+              "end": 14.67
+            }
+          ]
+        },
+        {
+          "phrase": "V four",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s02",
+              "firstWordIndex": 23,
+              "lastWordIndex": 24,
+              "start": 9.43,
+              "end": 10.02
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.05.s03",
+              "firstWordIndex": 43,
+              "lastWordIndex": 44,
+              "start": 16.7,
+              "end": 17.45
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 66,
+              "lastWordIndex": 67,
+              "start": 26.39,
+              "end": 27.17
+            }
+          ]
+        },
+        {
+          "phrase": "V five",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 46,
+              "start": 18.13,
+              "end": 18.77
+            }
+          ]
+        },
+        {
+          "phrase": "V six",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 55,
+              "lastWordIndex": 56,
+              "start": 21.84,
+              "end": 22.57
+            }
+          ]
+        },
+        {
+          "phrase": "midclavicular line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s02",
+              "firstWordIndex": 33,
+              "lastWordIndex": 34,
+              "start": 12.18,
+              "end": 13.51
+            }
+          ]
+        },
+        {
+          "phrase": "anterior axillary line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 51,
+              "lastWordIndex": 53,
+              "start": 19.51,
+              "end": 21.31
+            }
+          ]
+        },
+        {
+          "phrase": "midaxillary line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s04",
+              "firstWordIndex": 60,
+              "lastWordIndex": 61,
+              "start": 23.23,
+              "end": 24.59
+            }
+          ]
+        },
+        {
+          "phrase": "fourth intercostal space",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 7,
+              "start": 1.09,
+              "end": 2.68
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 16,
+              "lastWordIndex": 18,
+              "start": 5.29,
+              "end": 6.87
+            }
+          ]
+        },
+        {
+          "phrase": "right sternal border",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 10,
+              "start": 2.83,
+              "end": 3.9
+            }
+          ]
+        },
+        {
+          "phrase": "left sternal border",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s01",
+              "firstWordIndex": 19,
+              "lastWordIndex": 21,
+              "start": 7.18,
+              "end": 8.51
+            }
+          ]
+        },
+        {
+          "phrase": "fifth intercostal space",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.05.s02",
+              "firstWordIndex": 27,
+              "lastWordIndex": 29,
+              "start": 10.22,
+              "end": 11.62
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.05.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 8.51,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 21
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v1",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.p01",
+          "at": 4.45,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 4.45,
+            "end": 5.1,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s01",
+            "phrase": "V two",
+            "occurrence": 1,
+            "firstWordIndex": 12,
+            "lastWordIndex": 13
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v2",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s02",
+          "at": 9.0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.0,
+            "end": 13.51,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s02",
+            "firstWordIndex": 22,
+            "lastWordIndex": 34
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v4",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s03",
+          "at": 14.13,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 14.13,
+            "end": 17.45,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s03",
+            "firstWordIndex": 35,
+            "lastWordIndex": 44
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v3",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s04",
+          "at": 18.13,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 18.13,
+            "end": 27.17,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s04",
+            "firstWordIndex": 45,
+            "lastWordIndex": 67
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v5",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.p02",
+          "at": 21.84,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 21.84,
+            "end": 22.57,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s04",
+            "phrase": "V six",
+            "occurrence": 1,
+            "firstWordIndex": 55,
+            "lastWordIndex": 56
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v6",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.p03",
+          "at": 24.91,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 24.91,
+            "end": 26.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s04",
+            "phrase": "both horizontally level",
+            "occurrence": 1,
+            "firstWordIndex": 62,
+            "lastWordIndex": 64
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "v4-v6-level",
+            "preset": "left-oblique",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        },
+        {
+          "id": "M07.05.s05",
+          "at": 27.66,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 27.66,
+            "end": 30.03,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.05.s05",
+            "firstWordIndex": 68,
+            "lastWordIndex": 74
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": true,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. V1: 4th intercostal space, patient-right sternal border. V2: 4th space, patient-left sternal border. Locate V4 at 5th space / left midclavicular line before placing V3 halfway between V2 and V4. V5 and V6 stay horizontally level with V4 at the left anterior and midaxillary lines. Numbered space overlays are the teaching subset 2nd–5th, not all 11 spaces. "
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.06",
+      "sentences": [
+        {
+          "id": "M07.06.s01",
+          "text": "Good recordings depend on reliable skin contact, secure electrodes, correct positions, and a relaxed, still subject.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 15,
+          "wordCount": 16,
+          "start": 0.0,
+          "end": 7.92,
+          "duration": 7.92
+        },
+        {
+          "id": "M07.06.s02",
+          "text": "Movement, muscle activity, loose contacts, and electrical interference can distort a tracing.",
+          "firstWordIndex": 16,
+          "lastWordIndex": 27,
+          "wordCount": 12,
+          "start": 8.43,
+          "end": 14.74,
+          "duration": 6.31
+        },
+        {
+          "id": "M07.06.s03",
+          "text": "Limb-electrode colors vary by standard, so read the labels instead of relying on a color mnemonic alone.",
+          "firstWordIndex": 28,
+          "lastWordIndex": 45,
+          "wordCount": 18,
+          "start": 15.23,
+          "end": 22.04,
+          "duration": 6.81
+        },
+        {
+          "id": "M07.06.s04",
+          "text": "Torso placements used for continuous monitoring are not automatically equivalent to standard diagnostic limb placements.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 60,
+          "wordCount": 15,
+          "start": 22.94,
+          "end": 30.69,
+          "duration": 7.75
+        },
+        {
+          "id": "M07.06.s05",
+          "text": "Follow the particular recording protocol rather than treating every configuration as interchangeable.",
+          "firstWordIndex": 61,
+          "lastWordIndex": 72,
+          "wordCount": 12,
+          "start": 31.23,
+          "end": 36.98,
+          "duration": 5.75
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "electrode",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.06.s03",
+              "firstWordIndex": 29,
+              "lastWordIndex": 29,
+              "start": 15.45,
+              "end": 16.05
+            }
+          ]
+        },
+        {
+          "phrase": "skin contact",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.06.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 6,
+              "start": 2.12,
+              "end": 3.2
+            }
+          ]
+        },
+        {
+          "phrase": "electrical interference",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.06.s02",
+              "firstWordIndex": 22,
+              "lastWordIndex": 23,
+              "start": 11.76,
+              "end": 13.2
+            }
+          ]
+        },
+        {
+          "phrase": "limb electrode colors",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.06.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 30,
+              "start": 15.23,
+              "end": 16.58
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.06.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 7.92,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.06.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 15
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Reliable contact and a still subject",
+            "text": "Good recordings depend on reliable skin contact, secure electrodes, correct positions, and a relaxed, still subject.",
+            "source": "Owner-approved adapted M07.06 narration · source script lines 446-479;480-505 · course PDF physical pp243,247–248,257–258,264",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No skin contact, adhesive behavior or signal-quality process is modeled."
+          }
+        },
+        {
+          "id": "M07.06.s02",
+          "at": 8.43,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 8.43,
+            "end": 14.74,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.06.s02",
+            "firstWordIndex": 16,
+            "lastWordIndex": 27
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Recording artifacts",
+            "text": "Movement, muscle activity, loose contacts, and electrical interference can distort a tracing.",
+            "source": "Owner-approved adapted M07.06 narration · source script lines 446-479;480-505 · course PDF physical pp243,247–248,257–258,264",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No motion, muscle-noise, contact-loss or mains-interference tracing is generated."
+          }
+        },
+        {
+          "id": "M07.06.s03",
+          "at": 15.23,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 15.23,
+            "end": 22.04,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.06.s03",
+            "firstWordIndex": 28,
+            "lastWordIndex": 45
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. The current palette is explicitly AHA limb-electrode colors: RA white, LA black, RL green, LL red. Other standards vary; read the letter labels. No alternate palette or configuration is being simulated."
+          }
+        },
+        {
+          "id": "M07.06.s04",
+          "at": 22.94,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 22.94,
+            "end": 30.69,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.06.s04",
+            "firstWordIndex": 46,
+            "lastWordIndex": 60
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Monitoring and diagnostic configurations",
+            "text": "Torso placements used for continuous monitoring are not automatically equivalent to standard diagnostic limb placements.",
+            "source": "Owner-approved adapted M07.06 narration · source script lines 446-479;480-505 · course PDF physical pp243,247–248,257–258,264",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. The thorax uses four external limb labels. These are not a demonstration of a validated torso-modified diagnostic configuration."
+          }
+        },
+        {
+          "id": "M07.06.s05",
+          "at": 31.23,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 31.23,
+            "end": 36.98,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.06.s05",
+            "firstWordIndex": 61,
+            "lastWordIndex": 72
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "review",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. This model is learning context, not a recording protocol. No patient or device configuration is selected by this lesson."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.07",
+      "sentences": [
+        {
+          "id": "M07.07.s01",
+          "text": "A lead records the projection of the heart's changing electrical activity onto that lead's axis.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 14,
+          "wordCount": 15,
+          "start": 0.0,
+          "end": 5.52,
+          "duration": 5.52
+        },
+        {
+          "id": "M07.07.s02",
+          "text": "A depolarization wave moving toward its positive pole usually creates a positive deflection; moving away usually creates a negative one.",
+          "firstWordIndex": 15,
+          "lastWordIndex": 34,
+          "wordCount": 20,
+          "start": 6.07,
+          "end": 14.7,
+          "duration": 8.63
+        },
+        {
+          "id": "M07.07.s03",
+          "text": "A near-perpendicular net vector can produce a small or biphasic complex.",
+          "firstWordIndex": 35,
+          "lastWordIndex": 46,
+          "wordCount": 12,
+          "start": 15.25,
+          "end": 20.27,
+          "duration": 5.02
+        },
+        {
+          "id": "M07.07.s04",
+          "text": "An isoelectric segment does not prove that every heart cell is electrically inactive.",
+          "firstWordIndex": 47,
+          "lastWordIndex": 59,
+          "wordCount": 13,
+          "start": 20.67,
+          "end": 25.71,
+          "duration": 5.04
+        },
+        {
+          "id": "M07.07.s05",
+          "text": "Opposing signals or little net change can also produce a near-flat line.",
+          "firstWordIndex": 60,
+          "lastWordIndex": 72,
+          "wordCount": 13,
+          "start": 26.22,
+          "end": 30.63,
+          "duration": 4.41
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "positive",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s02",
+              "firstWordIndex": 21,
+              "lastWordIndex": 21,
+              "start": 8.34,
+              "end": 8.82
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.07.s02",
+              "firstWordIndex": 26,
+              "lastWordIndex": 26,
+              "start": 10.47,
+              "end": 10.99
+            }
+          ]
+        },
+        {
+          "phrase": "projection",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 4,
+              "start": 1.01,
+              "end": 1.57
+            }
+          ]
+        },
+        {
+          "phrase": "lead's axis",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s01",
+              "firstWordIndex": 13,
+              "lastWordIndex": 14,
+              "start": 4.59,
+              "end": 5.52
+            }
+          ]
+        },
+        {
+          "phrase": "depolarization",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s02",
+              "firstWordIndex": 16,
+              "lastWordIndex": 16,
+              "start": 6.16,
+              "end": 7.2
+            }
+          ]
+        },
+        {
+          "phrase": "positive deflection",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s02",
+              "firstWordIndex": 26,
+              "lastWordIndex": 27,
+              "start": 10.47,
+              "end": 11.68
+            }
+          ]
+        },
+        {
+          "phrase": "negative one",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s02",
+              "firstWordIndex": 33,
+              "lastWordIndex": 34,
+              "start": 13.89,
+              "end": 14.7
+            }
+          ]
+        },
+        {
+          "phrase": "biphasic complex",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s03",
+              "firstWordIndex": 45,
+              "lastWordIndex": 46,
+              "start": 18.64,
+              "end": 20.27
+            }
+          ]
+        },
+        {
+          "phrase": "isoelectric segment",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.07.s04",
+              "firstWordIndex": 48,
+              "lastWordIndex": 49,
+              "start": 20.8,
+              "end": 22.15
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.07.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 5.52,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.07.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 14
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Only static Lead I poles are shown. Projection of changing cardiac activity and its trace are readable concepts; no dipole, heart mesh, wavefront or generated waveform exists in this scene."
+          }
+        },
+        {
+          "id": "M07.07.s02",
+          "at": 6.07,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 6.07,
+            "end": 14.7,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.07.s02",
+            "firstWordIndex": 15,
+            "lastWordIndex": 34
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. Toward/away deflection rules are conceptual narration. The +/− markers do not change into waveform signs, and no moving vector or strip is generated."
+          }
+        },
+        {
+          "id": "M07.07.s03",
+          "at": 15.25,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 15.25,
+            "end": 20.27,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.07.s03",
+            "firstWordIndex": 35,
+            "lastWordIndex": 46
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Small and biphasic complexes",
+            "text": "A near-perpendicular net vector can produce a small or biphasic complex.",
+            "source": "Owner-approved adapted M07.07 narration · source script lines 446-453;480-519 · course PDF physical pp244–245,267,338",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No net-vector projection, biphasic waveform or caliper measurements are generated."
+          }
+        },
+        {
+          "id": "M07.07.s04",
+          "at": 20.67,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 20.67,
+            "end": 25.71,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.07.s04",
+            "firstWordIndex": 47,
+            "lastWordIndex": 59
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "An isoelectric segment",
+            "text": "An isoelectric segment does not prove that every heart cell is electrically inactive.",
+            "source": "Owner-approved adapted M07.07 narration · source script lines 446-453;480-519 · course PDF physical pp244–245,267,338",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. No tracing is displayed or measured; a near-flat surface recording does not establish cellular inactivity."
+          }
+        },
+        {
+          "id": "M07.07.s05",
+          "at": 26.22,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 26.22,
+            "end": 30.63,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.07.s05",
+            "firstWordIndex": 60,
+            "lastWordIndex": 72
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Opposing signals and little net change",
+            "text": "Opposing signals or little net change can also produce a near-flat line.",
+            "source": "Owner-approved adapted M07.07 narration · source script lines 446-453;480-519 · course PDF physical pp244–245,267,338",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. A net electrical comparison can be small despite active cells; no quantitative cancellation solver is present."
+          }
+        }
+      ]
+    },
+    {
+      "id": "M07.08",
+      "sentences": [
+        {
+          "id": "M07.08.s01",
+          "text": "The usual adult frontal Q R S axis reference is minus thirty to plus ninety degrees.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 15,
+          "wordCount": 16,
+          "start": 0.0,
+          "end": 6.61,
+          "duration": 6.61
+        },
+        {
+          "id": "M07.08.s02",
+          "text": "Leads one and a V F give a quick quadrant screen.",
+          "firstWordIndex": 16,
+          "lastWordIndex": 26,
+          "wordCount": 11,
+          "start": 7.13,
+          "end": 10.45,
+          "duration": 3.32
+        },
+        {
+          "id": "M07.08.s03",
+          "text": "Both positive generally fits the normal quadrant.",
+          "firstWordIndex": 27,
+          "lastWordIndex": 33,
+          "wordCount": 7,
+          "start": 10.86,
+          "end": 13.8,
+          "duration": 2.94
+        },
+        {
+          "id": "M07.08.s04",
+          "text": "Lead one positive with a V F negative is not automatically left axis deviation: the axis may still lie between zero and minus thirty degrees.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 58,
+          "wordCount": 25,
+          "start": 14.24,
+          "end": 25.12,
+          "duration": 10.88
+        },
+        {
+          "id": "M07.08.s05",
+          "text": "Lead two helps distinguish that borderline-normal region from a more leftward axis.",
+          "firstWordIndex": 59,
+          "lastWordIndex": 71,
+          "wordCount": 13,
+          "start": 25.59,
+          "end": 30.97,
+          "duration": 5.38
+        },
+        {
+          "id": "M07.08.s06",
+          "text": "Axis is a clue, not a diagnosis by itself.",
+          "firstWordIndex": 72,
+          "lastWordIndex": 80,
+          "wordCount": 9,
+          "start": 31.6,
+          "end": 34.99,
+          "duration": 3.39
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 45,
+              "start": 18.41,
+              "end": 18.71
+            }
+          ]
+        },
+        {
+          "phrase": "lead one",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s04",
+              "firstWordIndex": 34,
+              "lastWordIndex": 35,
+              "start": 14.24,
+              "end": 14.91
+            }
+          ]
+        },
+        {
+          "phrase": "lead two",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s05",
+              "firstWordIndex": 59,
+              "lastWordIndex": 60,
+              "start": 25.59,
+              "end": 26.31
+            }
+          ]
+        },
+        {
+          "phrase": "positive",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 11.13,
+              "end": 11.7
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.08.s04",
+              "firstWordIndex": 36,
+              "lastWordIndex": 36,
+              "start": 14.91,
+              "end": 15.55
+            }
+          ]
+        },
+        {
+          "phrase": "reference",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 8,
+              "start": 3.15,
+              "end": 3.69
+            }
+          ]
+        },
+        {
+          "phrase": "a V F",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s02",
+              "firstWordIndex": 19,
+              "lastWordIndex": 21,
+              "start": 8.02,
+              "end": 8.71
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.08.s04",
+              "firstWordIndex": 38,
+              "lastWordIndex": 40,
+              "start": 15.8,
+              "end": 16.38
+            }
+          ]
+        },
+        {
+          "phrase": "Q R S axis",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 7,
+              "start": 1.6,
+              "end": 3.15
+            }
+          ]
+        },
+        {
+          "phrase": "minus thirty",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s01",
+              "firstWordIndex": 10,
+              "lastWordIndex": 11,
+              "start": 3.85,
+              "end": 4.76
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.08.s04",
+              "firstWordIndex": 56,
+              "lastWordIndex": 57,
+              "start": 23.55,
+              "end": 24.42
+            }
+          ]
+        },
+        {
+          "phrase": "plus ninety",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s01",
+              "firstWordIndex": 13,
+              "lastWordIndex": 14,
+              "start": 5.06,
+              "end": 5.8
+            }
+          ]
+        },
+        {
+          "phrase": "quadrant",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s02",
+              "firstWordIndex": 25,
+              "lastWordIndex": 25,
+              "start": 9.3,
+              "end": 9.83
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M07.08.s03",
+              "firstWordIndex": 33,
+              "lastWordIndex": 33,
+              "start": 13.09,
+              "end": 13.8
+            }
+          ]
+        },
+        {
+          "phrase": "left axis deviation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 47,
+              "start": 18.41,
+              "end": 20.02
+            }
+          ]
+        },
+        {
+          "phrase": "lead two",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M07.08.s05",
+              "firstWordIndex": 59,
+              "lastWordIndex": 60,
+              "start": 25.59,
+              "end": 26.31
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M07.08.s01",
+          "at": 0,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 6.61,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 15
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Adult frontal QRS axis reference",
+            "text": "The usual adult frontal Q R S axis reference is minus thirty to plus ninety degrees.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        },
+        {
+          "id": "M07.08.s02",
+          "at": 7.13,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 7.13,
+            "end": 10.45,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s02",
+            "firstWordIndex": 16,
+            "lastWordIndex": 26
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-i-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. Lead I and the next measured aVF phrase locate relevant limb views only."
+          }
+        },
+        {
+          "id": "M07.08.p01",
+          "at": 8.02,
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 8.02,
+            "end": 8.71,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s02",
+            "phrase": "a V F",
+            "occurrence": 1,
+            "firstWordIndex": 19,
+            "lastWordIndex": 21
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "avf-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. This locates the aVF view for the conceptual quadrant screen; no observed QRS sign is supplied."
+          }
+        },
+        {
+          "id": "M07.08.s03",
+          "at": 10.86,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 10.86,
+            "end": 13.8,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s03",
+            "firstWordIndex": 27,
+            "lastWordIndex": 33
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Both QRS complexes positive",
+            "text": "Both positive generally fits the normal quadrant.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        },
+        {
+          "id": "M07.08.s04",
+          "at": 14.24,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 14.24,
+            "end": 25.12,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s04",
+            "firstWordIndex": 34,
+            "lastWordIndex": 58
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "The I-positive/aVF-negative shortcut needs Lead II",
+            "text": "Lead one positive with a V F negative is not automatically left axis deviation: the axis may still lie between zero and minus thirty degrees.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        },
+        {
+          "id": "M07.08.s05",
+          "at": 25.59,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 25.59,
+            "end": 30.97,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s05",
+            "firstWordIndex": 59,
+            "lastWordIndex": 71
+          },
+          "scene": {
+            "organ": "lead",
+            "step": "lead-ii-polarity",
+            "preset": "front",
+            "bodySurface": "translucent",
+            "layers": {
+              "body": true,
+              "skeleton": true,
+              "muscle": false,
+              "landmarks": true,
+              "leads": true
+            },
+            "showIntercostalSpaces": false,
+            "showElectrodeColors": true,
+            "showLeadTypes": true,
+            "allLabels": false,
+            "touch": false,
+            "simulation": {
+              "kind": "hold"
+            },
+            "detail": "Actual registered BodyParts3D thorax and existing Lead Placement Lab markers. Patient-right/left refer to the patient; front-view viewer left is patient RIGHT. The 50 source meshes include skin, sternum, clavicles, 12 rib pairs, costal cartilage and pectoralis; no heart, lungs, cable hardware or full limbs are present. Chest positions and intercostal overlays are derived reference-atlas teaching anchors, not measurements for an individual. The four limb labels point toward external limb regions, not validated diagnostic recording sites. This is a static anatomical/polarity lesson, with no ECG signal, contact-impedance or vector-projection solver. Lead RA/LA are electrode labels, not right/left atria. Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. The source Lead II poles are context for the narrated borderline-region check, not measured axis data."
+          }
+        },
+        {
+          "id": "M07.08.s06",
+          "at": 31.6,
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 31.6,
+            "end": 34.99,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M07.08.s06",
+            "firstWordIndex": 72,
+            "lastWordIndex": 80
+          },
+          "scene": {
+            "organ": "explanation",
+            "title": "Axis is a clue",
+            "text": "Axis is a clue, not a diagnosis by itself.",
+            "source": "Owner-approved adapted M07.08 narration · source script lines 470-473;512-519 · course PDF physical pp262,266,339–345",
+            "qualification": "Supplemental explanation; no corresponding 3D process, instrument measurement, generated tracing or clinical prediction. Conceptual axis explanation only: no hexaxial wheel, calibrated tracing, QRS amplitude measurement or axis solver is displayed. The displayed +/− labels identify measurement poles or combined-reference electrodes; they are not the sign of an observed QRS complex. No strip or caliper values are invented. "
+          }
+        }
+      ]
+    }
+  ]
+}

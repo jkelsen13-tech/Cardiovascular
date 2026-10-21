@@ -73,7 +73,7 @@
   }
   function rebuildMechanics() { mechanics = RespiratoryMechanics.build({...state.breathing,ventilation:state.ventilation}); state.time = Math.min(state.time,mechanics.period); }
   const runtimeMemory = new Map(), sceneSnapshots = new Map();
-  let fallbackExplorer = null,sceneReady=Promise.resolve();
+  let fallbackExplorer = null,sceneReady=Promise.resolve(),guidedRespSignature=null,guidedRespAnchor=0,guidedRespWindow=null;
   let view = null,
     generation = 0,
     raf = 0,
@@ -99,6 +99,7 @@
   }
   function release() {
     generation++;
+    guidedRespSignature=null;
     if(view?.snapshot)sceneSnapshots.set(state.system,view.snapshot());
     const explorer = view?.inspect?.().explorer;
     if (explorer && fallbackExplorer) { fallbackExplorer.go(explorer.segment); fallbackExplorer.go(explorer.route?.[explorer.index] || explorer.stage); }
@@ -955,32 +956,35 @@
     stop,
   );
   // Public, audio-neutral adapter around the existing respiratory scene.
-  let guidedRespSignature=null,guidedRespAnchor=0;
   const guidedRespCurrent=ctx=>!ctx||ctx.isCurrent();
-  async function guidedRespPrepare(scene,ctx){if(!guidedRespCurrent(ctx))return false;const cancel=()=>{generation++;};if(ctx)ctx.signal.addEventListener('abort',cancel,{once:true});try{if(state.system!=='respiratory'||root.classList.contains('hidden'))open('respiratory',{guidedContext:ctx});stop();await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();return true;}finally{if(ctx)ctx.signal.removeEventListener('abort',cancel);}}
-  function guidedRespCapture(){return JSON.parse(JSON.stringify({version:1,organ:'respiratory',state:{...state,playing:false},scene:view?.snapshot?.()||sceneSnapshots.get('respiratory')||null,fallbackJourney:fallbackExplorer?.state()?.id,signature:guidedRespSignature,anchor:guidedRespAnchor}));}
+  async function guidedRespPrepare(scene,ctx){if(!guidedRespCurrent(ctx))return false;const cancel=()=>{generation++;};if(ctx)ctx.signal.addEventListener('abort',cancel,{once:true});try{if(state.system!=='respiratory'||root.classList.contains('hidden'))open('respiratory',{guidedContext:ctx});else if(!['explore','guided'].includes(state.tab)){state.tab='explore';render(ctx);}stop();await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();return true;}finally{if(ctx)ctx.signal.removeEventListener('abort',cancel);}}
+  function guidedRespCapture(){return JSON.parse(JSON.stringify({version:1,organ:'respiratory',state:{...state,playing:false},scene:view?.snapshot?.()||sceneSnapshots.get('respiratory')||null,fallbackJourney:fallbackExplorer?.state()?.id,signature:guidedRespSignature,anchor:guidedRespAnchor,window:guidedRespWindow}));}
   async function guidedRespRestore(saved,ctx){
     if(saved?.version!==1||saved.organ!=='respiratory'||saved.state?.system!=='respiratory')throw Error('Invalid respiratory lesson scene.');
     if(!await guidedRespPrepare(null,ctx)||!guidedRespCurrent(ctx))return false;Object.assign(state,JSON.parse(JSON.stringify(saved.state)),{playing:false});rebuildMechanics();render(ctx);await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();
-    if(saved.scene&&view?.restoreSnapshot){await view.restoreSnapshot(saved.scene,ctx);if(!guidedRespCurrent(ctx))return false;}else if(saved.fallbackJourney)fallbackExplorer?.go(saved.fallbackJourney);
-    guidedRespSignature=saved.signature||null;guidedRespAnchor=Number(saved.anchor)||0;updateClock();return true;
+    if(saved.scene&&view?.restoreSnapshot){await view.restoreSnapshot(saved.scene,ctx);if(!guidedRespCurrent(ctx))return false;}else{if(saved.scene?.journey?.segment)fallbackExplorer?.go(saved.scene.journey.segment);if(saved.fallbackJourney||saved.scene?.journey?.id)fallbackExplorer?.go(saved.fallbackJourney||saved.scene.journey.id);}
+    guidedRespSignature=saved.signature||null;guidedRespAnchor=Number(saved.anchor)||0;guidedRespWindow=saved.window||null;updateClock();return true;
   }
   async function guidedRespApply(spec,audioTime,ctx){
     if(!guidedRespCurrent(ctx)||state.system!=='respiratory'||root.classList.contains('hidden'))return false;stop();const signature=JSON.stringify(spec);
     if(signature!==guidedRespSignature){
+      if(spec.monitoringView!=null&&spec.monitoringView!=='capnography')throw Error('Unsupported respiratory monitoring view.');
+      root.querySelectorAll('[data-cue]').forEach(control=>{control.checked=true;});
       const breathing={rate:12,target:.5,resistance:2,compliance:.1,mode:'target',...(spec.breathing||{})},ventilation=spec.ventilation||'spontaneous';
       if(JSON.stringify(breathing)!==JSON.stringify(state.breathing)||ventilation!==state.ventilation){state.breathing=breathing;state.ventilation=ventilation;rebuildMechanics();root.querySelector('[data-mechanics-curves]').innerHTML=mechanicsCurves();}
       state.view=spec.stage==='membrane'||spec.stage==='alveoli'?'exchange':'whole';
       if(view?.applyGuidedScene){await view.applyGuidedScene(spec,ctx);if(!guidedRespCurrent(ctx))return false;}else{if(spec.segment)fallbackExplorer?.go(spec.segment);fallbackExplorer?.go(spec.stage||'whole');}
       if(spec.selected)selectStructure(spec.selected);
-      const sim=spec.simulation||{kind:'hold',seconds:0};if(sim.kind==='phase'){
+      const sim=spec.simulation||{kind:'hold',seconds:0};guidedRespWindow=null;if(sim.kind==='phase'){
         if(sim.phase==='expiration')guidedRespAnchor=mechanics.period*.7;
         else if(sim.phase==='inspiration')guidedRespAnchor=mechanics.period*.2;
         else{const i=C.respiratoryPhases.findIndex(x=>x.id===sim.phase);if(i<0)throw Error('Unsupported guided respiratory phase.');guidedRespAnchor=(C.respiratoryPhases[i].start+(C.respiratoryPhases[i+1]?.start??5))/2/5*mechanics.period;}
       }else guidedRespAnchor=Number(sim.seconds)||0;
+      if(sim.sweep){if(sim.kind!=='phase'||!['inspiration','expiration'].includes(sim.phase)||!Number.isFinite(sim.anchorAudio)||!Number.isFinite(sim.endAudio)||sim.endAudio<=sim.anchorAudio)throw Error('Respiratory sweeps require a supported phase and measured positive audio bounds.');guidedRespWindow={start:sim.phase==='inspiration'?0:mechanics.Ti+.001,end:sim.phase==='inspiration'?mechanics.Ti-.001:mechanics.period-.001,audioStart:sim.anchorAudio,audioEnd:sim.endAudio};}
       guidedRespSignature=signature;
+      if(spec.monitoringView==='capnography')root.querySelector('[data-cap-marker]')?.closest('section')?.scrollIntoView({block:'center',behavior:'instant'});
     }
-    if(!guidedRespCurrent(ctx))return false;const sim=spec.simulation||{kind:'hold',seconds:0};state.time=sim.kind==='cycle'?(guidedRespAnchor+Math.max(0,audioTime-(sim.anchorAudio||0))*(sim.speed??1))%mechanics.period:Math.max(0,Math.min(mechanics.period,guidedRespAnchor));updateClock();return true;
+    if(!guidedRespCurrent(ctx))return false;const sim=spec.simulation||{kind:'hold',seconds:0};state.time=guidedRespWindow?guidedRespWindow.start+(guidedRespWindow.end-guidedRespWindow.start)*Math.max(0,Math.min(1,(audioTime-guidedRespWindow.audioStart)/(guidedRespWindow.audioEnd-guidedRespWindow.audioStart))):sim.kind==='cycle'?(guidedRespAnchor+Math.max(0,audioTime-(sim.anchorAudio||0))*(sim.speed??1))%mechanics.period:Math.max(0,Math.min(mechanics.period,guidedRespAnchor));updateClock();return true;
   }
   window.CardiorespiratoryStudy = {
     guided:{prepare:guidedRespPrepare,apply:guidedRespApply,capture:guidedRespCapture,restore:guidedRespRestore,pause:stop},

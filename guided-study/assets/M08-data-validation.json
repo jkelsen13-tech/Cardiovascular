@@ -1,0 +1,150 @@
+{
+  "schema": "guided-study.M08-data-validation.v1",
+  "result": "PASS_DATA_AUDIO_TEXT_AND_CUE_CHECKS_NATIVE_PRESENTATION_REVIEW_PENDING",
+  "counts": {
+    "lessons": 9,
+    "cues": 51,
+    "sentenceCues": 51,
+    "phraseCues": 0,
+    "explanationCards": 51,
+    "heartCues": 0,
+    "respiratoryCues": 0,
+    "ecgMeasurementCues": 0,
+    "stripIllustrations": 0
+  },
+  "checks": {
+    "syntax": true,
+    "exactApprovedText": true,
+    "unchangedAudioHashes": true,
+    "fullAudioDecode": true,
+    "actualSentenceAndWordAnchors": true,
+    "cueBoundsAndOrdering": true,
+    "fullExplicitExplanationScenes": true,
+    "noInventedStripOrMeasurement": true,
+    "duplicateSafeAdditiveRegistration": true,
+    "protectedECGFilesUnchanged": true,
+    "existingTrainerNeverInvoked": true,
+    "protectedStudyStorageNotAccessed": true
+  },
+  "limitations": {
+    "humanListeningQA": false,
+    "nativePresentationQA": false,
+    "iPadQA": false,
+    "clinicalQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "inheritedECGModuleFingerprintMismatchUnresolved": true
+  },
+  "lessonsFileSha256": "ba5fa23380c1b94ecc4d163856f72c808d11eebdac7a51216b0e5e5a00fb054f",
+  "assetsProvenanceSha256": "7c2b356e3f5e4dc300ea312b4f9802efd7a4f7ecea032b25858d6cf7e0d03718",
+  "clips": [
+    {
+      "id": "M08.01",
+      "sha256": "b00e3ce6e8d91da2601d2a176d1bd6629cbca4638bb40b051a64f6db098031cb",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 6,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.02",
+      "sha256": "a228aedd56b67794ddc37fb3422e1e4d9ec25ed0b3ccd850e155f64f61f0fa09",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 6,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.03",
+      "sha256": "231d067d9f4430c35cc20086fae8c6428bdb026460de6a39e00504ee3cf0d817",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 5,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.04",
+      "sha256": "3ab8401f76ad601a235b358ff765ce585e0cb34d7a2fa7ecc527e493a6620f00",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 5,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.05",
+      "sha256": "b93c28477c84f0380fdf50a0470cb394ad5fadd7587b3911c1468aba04fc816d",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 5,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.06",
+      "sha256": "ef69cb4d141ad342f073dcda71718a3f78c631aba5ae9f1dcee7fbf870c7f333",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 9,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.07",
+      "sha256": "09ccf2b72aec9d1b8713d11e640975bded3e82e877ea5ecac0e137fa10513872",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 5,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.08",
+      "sha256": "b646aa9447c080adfb26e96c571cedb44c704b02f8b17e36d0fd8ed29ba1af44",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 5,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    },
+    {
+      "id": "M08.09",
+      "sha256": "3a0032d709b7b6933873bab6ac6477cb12a6b365d622dc9e7f0adf233c14052f",
+      "unchangedAudio": true,
+      "fullDecodePass": true,
+      "exactApprovedText": true,
+      "actualSentenceAndWordAnchors": true,
+      "cues": 5,
+      "initialPoseAtZero": true,
+      "listeningQA": false,
+      "nativePresentationQA": false
+    }
+  ]
+}

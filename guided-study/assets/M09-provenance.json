@@ -1,0 +1,355 @@
+{
+  "schema": "guided-study.M09-assets.v1",
+  "scope": "Six approved M09 clips with explicit cards and four existing source-image references; no calibrated practice or clinical classification",
+  "sourcePackageLibraryFileId": "libfile_4976696c6b1c81918755dd8413279608",
+  "sourcePackageFileName": "M09_Sinus_Rhythms_Audio.zip",
+  "sourcePackageSha256": "f4ff97106f2eafb302ac5dc9ad4c5ed47f48cbc8bbcd7b1cb38ddec4b81c4cac",
+  "sourcePackageCRCVerified": true,
+  "sourceZipMP3HashesVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "426e51ae31511066b7e2b7c84c5248b7715bb998fbb113f1aff8eb6fd9d16382",
+  "audioPolicy": "Approved original MP3s copied byte-for-byte; no provider, audio generation, retake, external API, dependency or new cost.",
+  "alignment": {
+    "manifestSha256": "d50f0ea02812220e087476810d1cc46496f05023ffb4e1324ed687df2a17349a",
+    "provenanceSha256": "b4d5f53d84030418d96bb39eead3873bc3849234dab261c2700ab73faeacf460",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "flags": [
+      {
+        "clip": "M09.02",
+        "type": "WORD_DURATION",
+        "index": 6,
+        "word": "a",
+        "start": 2.67,
+        "end": 2.7,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M09.03",
+        "type": "WORD_DURATION",
+        "index": 6,
+        "word": "a",
+        "start": 2.68,
+        "end": 2.71,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      }
+    ]
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "coursePageExtractionSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+  "courseTerminologyNotes": {
+    "M09.01": {
+      "pages": "456,458",
+      "note": "Known normal-sinus source example is distinct from learner practice. The source crop has no established lead label; lead-II wording is general teaching, not identification of this image. Electrical features do not establish effective output."
+    },
+    "M09.02": {
+      "pages": "465–466,469",
+      "note": "Known sinus-bradycardia example uses approximate course-grid observations. Cause, symptoms, cardiac output and treatment cannot be inferred from its rate label."
+    },
+    "M09.03": {
+      "pages": "473–474,477,479",
+      "note": "Known sinus-tachycardia crop has P/T overlap and unreliable PR onset. The approved narration does not treat 160 bpm as a universal diagnostic ceiling."
+    },
+    "M09.04": {
+      "pages": "482–484,489",
+      "note": "Only the existing sinus-arrhythmia image is available. It has changing RR and sinus P-wave features, but breathing is not recorded and respiratory causation is not demonstrated. Respiratory mechanism remains a separate explanation."
+    },
+    "M09.05": {
+      "pages": "493,495",
+      "note": "No verified sinus-pause, arrest, exit-block or post-pause escape illustration is available. Source three-second shorthand is not used as a diagnostic or safety cutoff. This entire lesson remains explanation only."
+    },
+    "M09.06": {
+      "pages": "458,466,474,482–483,493,495",
+      "note": "Known examples support a qualified comparison, not a controlled rate-only experiment. No PAC or sinus-pause/escape example is supplied. Conditional checkpoint prompts remain learner controlled, unrecorded and unscored."
+    }
+  },
+  "existingIllustrations": [
+    {
+      "src": "ecg/images/a6d28f.png",
+      "sha256": "06cb93b6c931a3b3e3fd93ea779b21271914614c8f4bece67539f5a309807c7d",
+      "classification": "Normal sinus rhythm",
+      "source": {
+        "file": "05 - Systematic Approach to Rhythm Interpretation.pdf",
+        "page": 64,
+        "evidencePages": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "sha256": "3935e62efa18617ccb6f23db76218019cf521ae4d99b2cae67e35a93da350600",
+        "embeddedImage": "Image88.jpg",
+        "originalSize": [
+          750,
+          281
+        ],
+        "crop": [
+          0,
+          0,
+          750,
+          281
+        ],
+        "assetSha256": "06cb93b6c931a3b3e3fd93ea779b21271914614c8f4bece67539f5a309807c7d",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "QT endpoint insufficient for enforcing the course's exact 0.40 s answer; QTc not calculated."
+      }
+    },
+    {
+      "src": "ecg/images/b9e407.png",
+      "sha256": "475f4a18e91f79c5138ad3453d9e9fc8a6f720ad8ea8d136589c26efe0454f75",
+      "classification": "Sinus bradycardia",
+      "source": {
+        "file": "06 - Chapter 4 - Sinus Rhythms.pdf",
+        "page": 20,
+        "evidencePages": [
+          20
+        ],
+        "sha256": "2ba4aa06372ef99c4879e16b592f55fbdabce960bee6de8cc21d5aa260f701c7",
+        "embeddedImage": "Image85.jpg",
+        "originalSize": [
+          563,
+          187
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          187
+        ],
+        "assetSha256": "475f4a18e91f79c5138ad3453d9e9fc8a6f720ad8ea8d136589c26efe0454f75",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+      }
+    },
+    {
+      "src": "ecg/images/c2f861.png",
+      "sha256": "5f52392deace7ec98a05c1b6633bda791aca61ef636fc8fafcbbada074c898e6",
+      "classification": "Sinus tachycardia",
+      "source": {
+        "file": "06 - Chapter 4 - Sinus Rhythms.pdf",
+        "page": 29,
+        "evidencePages": [
+          22,
+          29
+        ],
+        "sha256": "2ba4aa06372ef99c4879e16b592f55fbdabce960bee6de8cc21d5aa260f701c7",
+        "embeddedImage": "Image114.jpg",
+        "originalSize": [
+          563,
+          228
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "5f52392deace7ec98a05c1b6633bda791aca61ef636fc8fafcbbada074c898e6",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "moderate",
+        "limitation": "P and preceding T overlap. PR measurement omitted; sinus classification is source-supported and visually consistent, with moderate confidence."
+      }
+    },
+    {
+      "src": "ecg/images/d7a350.png",
+      "sha256": "1ceac21f4293b94a48066f3229a4d33ee11d47cefbf021db6e83aec4150b4928",
+      "classification": "Sinus arrhythmia",
+      "source": {
+        "file": "06 - Chapter 4 - Sinus Rhythms.pdf",
+        "page": 39,
+        "evidencePages": [
+          39
+        ],
+        "sha256": "2ba4aa06372ef99c4879e16b592f55fbdabce960bee6de8cc21d5aa260f701c7",
+        "embeddedImage": "Image167.jpg",
+        "originalSize": [
+          563,
+          228
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "1ceac21f4293b94a48066f3229a4d33ee11d47cefbf021db6e83aec4150b4928",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+      }
+    }
+  ],
+  "illustrationPolicy": "Reference the four approved existing tracked images only. No copies, extraction, generated strips or newly asserted license. Retained attribution and measurement/rights limits are visible on each illustrated scene.",
+  "bindings": {
+    "controller": "GuidedExplanation",
+    "fullScenes": true,
+    "protectedECGFilesChanged": false,
+    "existingTrainerTouched": false,
+    "practiceAnswerGateUnchanged": true,
+    "nativeExecutionVerified": false,
+    "missingExamples": [
+      "sinus pause",
+      "sinus arrest",
+      "sinoatrial exit block",
+      "escape after a sinus pause",
+      "premature atrial beat comparison",
+      "ECG paired with breathing recording"
+    ]
+  },
+  "counts": {
+    "lessons": 6,
+    "cues": 31,
+    "sentenceCues": 31,
+    "phraseCues": 0,
+    "explanationCards": 31,
+    "illustratedCues": 13,
+    "uniqueExistingIllustrations": 4,
+    "heartCues": 0,
+    "respiratoryCues": 0,
+    "ecgMeasurementCues": 0
+  },
+  "clips": [
+    {
+      "id": "M09.01",
+      "file": "M09_01_adam_multilingual_v2.mp3",
+      "bytes": 517652,
+      "sha256": "595fa368159faef6679a7c2efad9c86b935f385cc3c1a4d9e6164a3db57f6c37",
+      "duration": 31.294688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 3,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M09.02",
+      "file": "M09_02_adam_multilingual_v2.mp3",
+      "bytes": 481289,
+      "sha256": "bb01074e24410330eee39f3233c07766f4bd4013da11cccb1b20aae2633721ce",
+      "duration": 29.022,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 6,
+          "word": "a",
+          "start": 2.67,
+          "end": 2.7,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M09.03",
+      "file": "M09_03_adam_multilingual_v2.mp3",
+      "bytes": 514726,
+      "sha256": "b35d6f8340986e322b3d8db0f71d7667015a9e1b10ec8a95d1ae3e164de22ce1",
+      "duration": 31.111813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 6,
+          "word": "a",
+          "start": 2.68,
+          "end": 2.71,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M09.04",
+      "file": "M09_04_adam_multilingual_v2.mp3",
+      "bytes": 478781,
+      "sha256": "7c90190f3f8b3eded403737658d457d6e0cf730f2d731e5fd3ef426879565dd4",
+      "duration": 28.86525,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M09.05",
+      "file": "M09_05_adam_multilingual_v2.mp3",
+      "bytes": 561537,
+      "sha256": "08e003489cc5f8d9d57d019c0941145015bfa271f4f5fd5981572df3cf6806ee",
+      "duration": 34.0375,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M09.06",
+      "file": "M09_06_adam_multilingual_v2.mp3",
+      "bytes": 505531,
+      "sha256": "8e402b3f942dac04d46faf11cb0a01a2b0f30e7cae6a0e5b7058620663062764",
+      "duration": 30.537125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "illustratedCues": 4,
+      "alignmentFlags": []
+    }
+  ]
+}

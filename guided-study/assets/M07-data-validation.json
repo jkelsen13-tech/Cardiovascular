@@ -1,0 +1,471 @@
+{
+  "passed": true,
+  "module": "M07",
+  "lessons": 8,
+  "cues": 58,
+  "sentenceCues": 44,
+  "phraseCues": 14,
+  "leadScenes": 47,
+  "explanationCards": 11,
+  "sourceStepCount": 24,
+  "usedSteps": [
+    "review",
+    "lead-i-polarity",
+    "lead-ii-polarity",
+    "lead-iii-polarity",
+    "avr-polarity",
+    "avl-polarity",
+    "avf-polarity",
+    "orient",
+    "sternal-angle",
+    "rib2",
+    "ics2",
+    "count-ics",
+    "mcl",
+    "aal",
+    "mal",
+    "v1",
+    "v2",
+    "v4",
+    "v3",
+    "v5",
+    "v6",
+    "v4-v6-level"
+  ],
+  "chestOrder": [
+    "v1",
+    "v2",
+    "v4",
+    "v3",
+    "v5",
+    "v6"
+  ],
+  "exactPolarityMaps": true,
+  "registeredChestSidesAndCommonHeight": true,
+  "measuredWordBounds": true,
+  "sourceAudioBytesUnchanged": true,
+  "audioHashes": 8,
+  "audioBytes": 4011645,
+  "durationSeconds": 242.25931400000002,
+  "retainedAlignmentFlags": [
+    {
+      "id": "M07.02",
+      "type": "WORD_DURATION",
+      "index": 58,
+      "word": "a",
+      "start": 21.42,
+      "end": 21.45,
+      "duration": 0.03,
+      "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+    },
+    {
+      "id": "M07.06",
+      "type": "WORD_DURATION",
+      "index": 12,
+      "word": "a",
+      "start": 5.99,
+      "end": 6.02,
+      "duration": 0.03,
+      "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+    },
+    {
+      "id": "M07.08",
+      "type": "WORD_DURATION",
+      "index": 68,
+      "word": "a",
+      "start": 29.48,
+      "end": 29.51,
+      "duration": 0.03,
+      "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+    }
+  ],
+  "preservedPriorLessons": 56,
+  "appendCount": 64,
+  "uniqueReload": true,
+  "sessionSchemaConstruction": true,
+  "records": [
+    {
+      "cue": "M07.01.s01",
+      "at": 0,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.01.s03",
+      "at": 6.13,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.01.s04",
+      "at": 12.52,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.01.s05",
+      "at": 17.82,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.01.p01",
+      "at": 20.13,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.01.s06",
+      "at": 21.57,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.02.s01",
+      "at": 0,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.02.s02",
+      "at": 3.39,
+      "step": "lead-ii-polarity",
+      "index": 19,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.02.s03",
+      "at": 6.5,
+      "step": "lead-iii-polarity",
+      "index": 20,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.02.s04",
+      "at": 9.76,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.02.s05",
+      "at": 13.65,
+      "step": "lead-iii-polarity",
+      "index": 20,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.02.s06",
+      "at": 18.68,
+      "step": "lead-ii-polarity",
+      "index": 19,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.s01",
+      "at": 0,
+      "step": "avr-polarity",
+      "index": 21,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.p01",
+      "at": 2.5,
+      "step": "avl-polarity",
+      "index": 22,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.p02",
+      "at": 3.58,
+      "step": "avf-polarity",
+      "index": 23,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.s02",
+      "at": 4.73,
+      "step": "avr-polarity",
+      "index": 21,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.p03",
+      "at": 6.81,
+      "step": "avl-polarity",
+      "index": 22,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.p04",
+      "at": 7.77,
+      "step": "avf-polarity",
+      "index": 23,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.s03",
+      "at": 11.2,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.p05",
+      "at": 12.93,
+      "step": "lead-ii-polarity",
+      "index": 19,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.p06",
+      "at": 13.75,
+      "step": "lead-iii-polarity",
+      "index": 20,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.s04",
+      "at": 16.52,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.03.s05",
+      "at": 24.98,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.04.s01",
+      "at": 0,
+      "step": "orient",
+      "index": 0,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.04.s02",
+      "at": 3.67,
+      "step": "sternal-angle",
+      "index": 1,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.p01",
+      "at": 5.49,
+      "step": "rib2",
+      "index": 2,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.p02",
+      "at": 6.63,
+      "step": "ics2",
+      "index": 3,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.s03",
+      "at": 9.56,
+      "step": "count-ics",
+      "index": 4,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.s04",
+      "at": 11.69,
+      "step": "mcl",
+      "index": 8,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.s05",
+      "at": 15.67,
+      "step": "aal",
+      "index": 12,
+      "preset": "left-oblique",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.p03",
+      "at": 17.75,
+      "step": "mal",
+      "index": 14,
+      "preset": "left-oblique",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.04.s06",
+      "at": 21.57,
+      "step": "orient",
+      "index": 0,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.05.s01",
+      "at": 0,
+      "step": "v1",
+      "index": 6,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.p01",
+      "at": 4.45,
+      "step": "v2",
+      "index": 7,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.s02",
+      "at": 9,
+      "step": "v4",
+      "index": 10,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.s03",
+      "at": 14.13,
+      "step": "v3",
+      "index": 11,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.s04",
+      "at": 18.13,
+      "step": "v5",
+      "index": 13,
+      "preset": "left-oblique",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.p02",
+      "at": 21.84,
+      "step": "v6",
+      "index": 15,
+      "preset": "left-oblique",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.p03",
+      "at": 24.91,
+      "step": "v4-v6-level",
+      "index": 16,
+      "preset": "left-oblique",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.05.s05",
+      "at": 27.66,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": true
+    },
+    {
+      "cue": "M07.06.s03",
+      "at": 15.23,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.06.s05",
+      "at": 31.23,
+      "step": "review",
+      "index": 17,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.07.s01",
+      "at": 0,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.07.s02",
+      "at": 6.07,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.08.s02",
+      "at": 7.13,
+      "step": "lead-i-polarity",
+      "index": 18,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.08.p01",
+      "at": 8.02,
+      "step": "avf-polarity",
+      "index": 23,
+      "preset": "front",
+      "intercostalSpaces": false
+    },
+    {
+      "cue": "M07.08.s05",
+      "at": 25.59,
+      "step": "lead-ii-polarity",
+      "index": 19,
+      "preset": "front",
+      "intercostalSpaces": false
+    }
+  ],
+  "hashes": {
+    "lessons": "3c0e7280e1e630eb5884e246e15e9bdd618ec3620c58992a2bbdcf00f99647e6",
+    "sourceContent": "2f84b5b0c03161c2531988983ac5932c1615014bda8c00161f824e22fe70d62d",
+    "alignmentManifest": "e116a65098798a10643921d08bb64cde32b03cdbb1109f7e66420d45aa399c32",
+    "provenance": "36ece6ab2ae3d5972427d8c58b7bb5cb2d5b8023eaa8649e227d0c140b9799a6"
+  },
+  "limits": "Data/source CPU validation only. Session adapters here are stubs. No native rendering, listening, alignment accuracy, runtime adapter behavior, clinical/specialist or Cursor validation claimed."
+}

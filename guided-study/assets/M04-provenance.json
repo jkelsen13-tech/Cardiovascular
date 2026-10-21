@@ -1,0 +1,238 @@
+{
+  "schema": "guided-study.M04-assets.v1",
+  "scope": "M04 existing conduction/cellular lessons only; remaining course is not implied complete",
+  "sourcePackageLibraryFileId": "libfile_327e0e2453dc8191ac792e95e15f0654",
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "audioPolicy": "Existing delivered MP3 files copied unchanged; no provider, generation, retake, install or new cost during integration.",
+  "sourceManifestSha256": "1ef66be80f1d17f48d097772de1acc3f870c8b8395d4edfb9eec732edbf2586f",
+  "alignment": {
+    "manifestSha256": "a2fc2b5edf87ef7fcf1a8afdf038d7092b5b993cc3e837ca1c156b3f62ab7dc8",
+    "provenanceSha256": "44fdf626a35de3307ba9c7cf668531b79543d38ec1c98fb89fb429f0fc06ece3",
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "method": "Existing PocketSphinx5.0.4 model, transcript-constrained word/subword alignment; bestpath=False optional subword pass; no retraining or transcript estimates.",
+    "flags": [
+      {
+        "clip": "M04.04",
+        "clipId": "M04.04",
+        "word": "His",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/medical/bundle%20of%20His",
+        "medicalSourcePronunciation": "-ˈhis",
+        "medicalPronunciationAuthoredARPABET": "HH IH S",
+        "bundledDictionaryDefault": "HH IH Z",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Bundled pronoun entry differs from the medical proper name. Constrained alignment cannot establish actual audio pronunciation; actual listening review required.",
+        "humanListeningPerformed": false,
+        "index": 11,
+        "start": 3.92,
+        "end": 4.46
+      }
+    ]
+  },
+  "bindings": {
+    "controller": "HeartV3Study.guided",
+    "fullScenes": true,
+    "macroNodes": "SA/AV remain on source-registered HRA heart; no deleted routeC.sa/av destination.",
+    "microRoutes": [
+      "routeC.nodal",
+      "routeC.ventricular",
+      "routeB.cell",
+      "routeB.myofibril",
+      "routeB.sarcomere",
+      "routeB.filaments"
+    ],
+    "timing": "Actual named electrical/mechanical stages or existing cellSignals/cellularEvent semantic windows; measured audio-owned sweeps/cycles, no extra clock or solver.",
+    "calcium": "SERCA/NCX use removal-visible windows from current renderer condition; shared measured blocks avoid repeated Ca1 resets.",
+    "scopeLimits": [
+      "Inferred unsegmented node/routes and illustrative activity, not measured conduction velocity.",
+      "Cell voltage/calcium/activation are distinct and do not compute chamber pressure.",
+      "Escape rhythms/AVblock/pacemaker competition/graded stimulus response and counted NaK3:2 transport are explained, not simulated.",
+      "Representative microscopic geometry; no claimed measured source continuation."
+    ],
+    "nativeExecutionVerified": false,
+    "explanationAdapter": "Unsupported mechanisms use explicit source-linked explanation cards; no unrelated 3D process is claimed.",
+    "explanationCueIds": [
+      "M04.01.s04",
+      "M04.04.s03",
+      "M04.05.s01",
+      "M04.05.s02",
+      "M04.05.s03",
+      "M04.05.s05",
+      "M04.06.s06",
+      "M04.07.s04",
+      "M04.07.s05",
+      "M04.10.s05",
+      "M04.11.s01",
+      "M04.11.s02",
+      "M04.11.s03",
+      "M04.11.s04",
+      "M04.11.s05",
+      "M04.12.s02",
+      "M04.12.s03"
+    ],
+    "nodalHandoff": "Measured calcium-current boundary11.93s ends nodal drift and begins upstroke; actual existing cell trace windows, not a fabricated voltage curve."
+  },
+  "clips": [
+    {
+      "id": "M04.01",
+      "file": "M04_01_adam_multilingual_v2.mp3",
+      "bytes": 622977,
+      "sha256": "f3da8d663b59db1f4012decedd1afc82bc604c23d2c8ec38a01745a449c893b2",
+      "duration": 37.8775,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 8,
+      "totalCues": 9,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.02",
+      "file": "M04_02_adam_multilingual_v2.mp3",
+      "bytes": 463317,
+      "sha256": "6ff64b30952b30aa15e6e602af245cd43383b6fb38133dc2e32646e24935e5c2",
+      "duration": 27.89875,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.03",
+      "file": "M04_03_adam_multilingual_v2.mp3",
+      "bytes": 490066,
+      "sha256": "548558f3fb827cce7e4330c193dcbbe1fe7a6825fea3b4b012d4340b3d534655",
+      "duration": 29.570563,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.04",
+      "file": "M04_04_adam_multilingual_v2.mp3",
+      "bytes": 501351,
+      "sha256": "7db06e2bc3242508116f024e0d64d865becf23bc9789a63407a919ae11d9fb94",
+      "duration": 30.275875,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 6,
+      "alignmentFlags": [
+        {
+          "clipId": "M04.04",
+          "word": "His",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/medical/bundle%20of%20His",
+          "medicalSourcePronunciation": "-ˈhis",
+          "medicalPronunciationAuthoredARPABET": "HH IH S",
+          "bundledDictionaryDefault": "HH IH Z",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Bundled pronoun entry differs from the medical proper name. Constrained alignment cannot establish actual audio pronunciation; actual listening review required.",
+          "humanListeningPerformed": false,
+          "index": 11,
+          "start": 3.92,
+          "end": 4.46
+        }
+      ]
+    },
+    {
+      "id": "M04.05",
+      "file": "M04_05_adam_multilingual_v2.mp3",
+      "bytes": 542729,
+      "sha256": "0b98be54911d178f0132b04ef3d1a4f133c4e4f4dcc73bf2a99b53d14aca80bb",
+      "duration": 32.862,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.06",
+      "file": "M04_06_adam_multilingual_v2.mp3",
+      "bytes": 509292,
+      "sha256": "dbd0a36af0607db2f047b18a32d947ae42bdb2518260a57ac8aeaf5047b26c4d",
+      "duration": 30.772188,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.07",
+      "file": "M04_07_adam_multilingual_v2.mp3",
+      "bytes": 518488,
+      "sha256": "811c5d9aad217063dee8885891731ae20b44635175b2e9b879765afc9f56c3c4",
+      "duration": 31.346938,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.08",
+      "file": "M04_08_adam_multilingual_v2.mp3",
+      "bytes": 499679,
+      "sha256": "31a4e0cdbf490c38a14bf6a9c098d29d5411cf96d7074259598943915be93260",
+      "duration": 30.171375,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.09",
+      "file": "M04_09_adam_multilingual_v2.mp3",
+      "bytes": 649727,
+      "sha256": "f6e6df3e439e8458d13a4f88f1e12dd37dce817d4101971ef7d7ccfec222ed69",
+      "duration": 39.549375,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 8,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.10",
+      "file": "M04_10_adam_multilingual_v2.mp3",
+      "bytes": 584525,
+      "sha256": "308df712605904b22b0f9666bb8bde1685a696300e9fd56ff7e487e72c3cb2d9",
+      "duration": 35.47425,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.11",
+      "file": "M04_11_adam_multilingual_v2.mp3",
+      "bytes": 628411,
+      "sha256": "b853a3fe4b45015ec2b68232b83273eed4bfafa908284f6d12147f506066fe8e",
+      "duration": 38.217125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M04.12",
+      "file": "M04_12_adam_multilingual_v2.mp3",
+      "bytes": 579928,
+      "sha256": "9ac3c08ae9fb09f4b100e24bfa14d507fbeb9215fc2e1220ac10569f9c4af84a",
+      "duration": 35.186938,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 12,
+      "alignmentFlags": []
+    }
+  ]
+}

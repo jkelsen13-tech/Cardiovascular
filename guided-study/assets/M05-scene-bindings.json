@@ -1,0 +1,942 @@
+{
+  "schema": "guided-study.M05-scenes.v1",
+  "status": "Source/data binding only; native rendering pending",
+  "alignmentTimestampsEstimated": false,
+  "measuredManifestSha256": "640288c3aafee727db36ea61f3429364a8b3d41f1ab9756281d6215707cf8ca6",
+  "timingPolicy": "Named existing breathing phase windows with measured audio-owned teaching sweeps; independent capnogram remains a synthetic example, not derived CO₂ or a clinical prediction.",
+  "bindings": {
+    "M05.01": [
+      {
+        "organ": "explanation",
+        "title": "Airway pathway overview",
+        "text": "Trace the air pathway.",
+        "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Nose and mouth",
+        "text": "Air enters through the nose or mouth.",
+        "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Nasal cavity functions",
+        "text": "The nasal cavity filters, warms, and humidifies air.",
+        "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pharyngeal regions",
+        "text": "The pharynx has named regions: the nasopharynx behind the nasal cavity, the oropharynx behind the oral cavity, and the laryngopharynx farther down.",
+        "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pharynx terminology",
+        "text": "These regions are not simply alternate names for the nose and mouth.",
+        "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Airway and digestive pathway",
+        "text": "The airway shares part of its route with the digestive pathway before the routes separate.",
+        "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.02": [
+      {
+        "organ": "explanation",
+        "title": "Larynx and vocal folds",
+        "text": "The larynx contains the vocal folds and connects the pharynx to the trachea.",
+        "source": "Owner-approved adapted M05.02 narration · source script lines 116-133 · course PDF physical pp57–60,69",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Swallowing and epiglottis",
+        "text": "During swallowing, coordinated movements protect the airway; the epiglottis helps cover the laryngeal opening.",
+        "source": "Owner-approved adapted M05.02 narration · source script lines 116-133 · course PDF physical pp57–60,69",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "trachea",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "explanation",
+        "title": "Upper/lower airway definitions",
+        "text": "Definitions of the upper-lower airway boundary differ among courses, so this lesson will name the actual structures rather than make the boundary itself a physiological rule.",
+        "source": "Owner-approved adapted M05.02 narration · source script lines 116-133 · course PDF physical pp57–60,69",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.03": [
+      {
+        "organ": "respiratory",
+        "stage": "trachea",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "smaller",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "rightlung",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "trachea",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "respiratory",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pleura and diaphragm are outside the air pathway",
+        "text": "Follow the route rather than treating the pleura or diaphragm as structures that air passes through.",
+        "source": "Owner-approved adapted M05.03 narration · source script lines 122-147 · course PDF physical pp60–62,74–75",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.04": [
+      {
+        "organ": "respiratory",
+        "stage": "terminal",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "terminal",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "respiratory",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "terminal",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration"
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "explanation",
+        "title": "Physiological dead space and perfusion",
+        "text": "Physiological dead space also includes ventilated alveoli that receive too little blood flow for effective exchange.",
+        "source": "Owner-approved adapted M05.04 narration · source script lines 122-133;148-175 · course PDF physical pp61–62,71,77,84–85",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.05": [
+      {
+        "organ": "explanation",
+        "title": "Visceral pleura",
+        "text": "The visceral pleura covers the lung surface.",
+        "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Parietal pleura",
+        "text": "The parietal pleura lines the inside of the thoracic wall.",
+        "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pleural fluid and coupling",
+        "text": "A thin fluid layer between them reduces friction and helps the lungs follow movements of the chest wall.",
+        "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pleural potential space",
+        "text": "This is normally a potential space, not a large air-filled gap.",
+        "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Air or fluid in pleural space",
+        "text": "Air or excess fluid entering the pleural space can interfere with expansion.",
+        "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Pleura versus airway route",
+        "text": "Keep the pleura separate from the branching airway route.",
+        "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.06": [
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 5.76
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 5.76
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "explanation",
+        "title": "External intercostal muscles",
+        "text": "External intercostal muscles help lift and expand the rib cage.",
+        "source": "Owner-approved adapted M05.06 narration · source script lines 148-175 · course PDF physical pp65,73–76,82–83",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "rightlung",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 10.87,
+          "endAudio": 29.92
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "trachea",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 10.87,
+          "endAudio": 29.92
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 10.87,
+          "endAudio": 29.92
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      }
+    ],
+    "M05.07": [
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 16.61
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "rightlung",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 16.61
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 16.61
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "explanation",
+        "title": "Forced-breathing muscle recruitment",
+        "text": "Forced breathing can recruit additional muscles, including abdominal and accessory inspiratory muscles.",
+        "source": "Owner-approved adapted M05.07 narration · source script lines 148-175 · course PDF physical pp65,73–75,82–83",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 24.23,
+          "endAudio": 27.18
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      }
+    ],
+    "M05.08": [
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 12.44
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 12.44
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 12.86,
+          "endAudio": 29.36
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 12.86,
+          "endAudio": 29.36
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 12.86,
+          "endAudio": 29.36
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      }
+    ],
+    "M05.09": [
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "rightlung",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 2.57
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 4.16,
+          "endAudio": 8.67
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "expiration",
+          "sweep": true,
+          "anchorAudio": 9.29,
+          "endAudio": 13.64
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "heart",
+        "selected": "aorta",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": "systemic-bed",
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+      },
+      {
+        "organ": "explanation",
+        "title": "Cellular respiration",
+        "text": "Cellular respiration is the chemical process by which cells use energy substrates, often consuming oxygen and producing carbon dioxide.",
+        "source": "Owner-approved adapted M05.09 narration · source script lines 148-175;378-387 · course PDF physical pp75,77,83–84",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Ventilation, exchange and metabolism",
+        "text": "These ideas connect, but they are not interchangeable names for the same event.",
+        "source": "Owner-approved adapted M05.09 narration · source script lines 148-175;378-387 · course PDF physical pp75,77,83–84",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.10": [
+      {
+        "organ": "explanation",
+        "title": "Carbon dioxide and bicarbonate",
+        "text": "Carbon dioxide participates in the bicarbonate buffer system.",
+        "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Carbon dioxide retention and pH",
+        "text": "If other factors remain similar, retaining more carbon dioxide tends to lower blood pH, while removing more tends to raise it.",
+        "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Arterial pH range",
+        "text": "Arterial blood pH is normally tightly regulated around seven point three five to seven point four five.",
+        "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Lungs and kidneys in acid-base regulation",
+        "text": "The lungs and kidneys both contribute to acid-base regulation.",
+        "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Chest rise versus carbon dioxide removal",
+        "text": "A visible chest rise alone does not tell us whether ventilation is removing carbon dioxide adequately.",
+        "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.11": [
+      {
+        "organ": "explanation",
+        "title": "Medulla and pons networks",
+        "text": "Networks in the medulla and pons generate and shape the breathing pattern.",
+        "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Central chemoreceptors",
+        "text": "Central chemoreceptors respond mainly to changes related to carbon dioxide and cerebrospinal-fluid pH.",
+        "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Peripheral chemoreceptors",
+        "text": "Peripheral chemoreceptors also respond to oxygen, carbon dioxide, and pH.",
+        "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Nerve input and breathing",
+        "text": "Sensory input through nerves, including the vagus, modifies the pattern.",
+        "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      },
+      {
+        "organ": "explanation",
+        "title": "Context for chemoreceptor and vagal effects",
+        "text": "It is too simple to say that chemoreceptors alone initiate every breath or that the vagus always increases breathing rate.",
+        "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+        "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+      }
+    ],
+    "M05.12": [
+      {
+        "organ": "respiratory",
+        "stage": "membrane",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 0,
+          "endAudio": 3.17
+        },
+        "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "heart",
+        "selected": "aorta",
+        "mode": "four-chamber",
+        "preset": "four-chamber",
+        "parameters": {
+          "heartRate": 75,
+          "bloodVolume": 5000,
+          "systemicResistance": 1.05,
+          "contractility": 1
+        },
+        "bloodView": "filled",
+        "conductionView": "off",
+        "conductionDisplay": "full-pulse",
+        "wallHighlight": false,
+        "flowStop": "systemic-bed",
+        "route": null,
+        "stage": null,
+        "simulation": {
+          "kind": "phase",
+          "phase": "ejection",
+          "side": "left"
+        },
+        "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "rightlung",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 16.55,
+          "endAudio": 21.27
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      },
+      {
+        "organ": "respiratory",
+        "stage": "whole",
+        "segment": "right-apical-segment",
+        "preset": "front",
+        "breathing": {
+          "rate": 12,
+          "target": 0.5,
+          "resistance": 2,
+          "compliance": 0.1,
+          "mode": "target"
+        },
+        "ventilation": "spontaneous",
+        "selected": "diaphragm",
+        "simulation": {
+          "kind": "phase",
+          "phase": "inspiration",
+          "sweep": true,
+          "anchorAudio": 23.09,
+          "endAudio": 26.52
+        },
+        "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+      }
+    ]
+  }
+}

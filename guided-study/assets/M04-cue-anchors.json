@@ -1,0 +1,3668 @@
+{
+  "schema": "guided-study.M04-anchors.v1",
+  "units": "seconds",
+  "machineMeasured": true,
+  "humanListeningQA": false,
+  "frameGranularitySeconds": 0.01,
+  "accuracyClaim": null,
+  "clips": [
+    {
+      "id": "M04.01",
+      "sentences": [
+        {
+          "id": "M04.01.s01",
+          "text": "Now keep the same anatomical heart and follow its electrical pathway.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 10,
+          "wordCount": 11,
+          "start": 0,
+          "end": 4.74,
+          "duration": 4.74
+        },
+        {
+          "id": "M04.01.s02",
+          "text": "Specialized cells initiate and conduct impulses, and working muscle cells produce force.",
+          "firstWordIndex": 11,
+          "lastWordIndex": 22,
+          "wordCount": 12,
+          "start": 5.25,
+          "end": 11.66,
+          "duration": 6.41
+        },
+        {
+          "id": "M04.01.s03",
+          "text": "Automaticity is spontaneous impulse generation.",
+          "firstWordIndex": 23,
+          "lastWordIndex": 27,
+          "wordCount": 5,
+          "start": 12.3,
+          "end": 15.56,
+          "duration": 3.26
+        },
+        {
+          "id": "M04.01.s04",
+          "text": "Excitability is responding to a stimulus.",
+          "firstWordIndex": 28,
+          "lastWordIndex": 33,
+          "wordCount": 6,
+          "start": 16.12,
+          "end": 18.92,
+          "duration": 2.8
+        },
+        {
+          "id": "M04.01.s05",
+          "text": "Conductivity is transmitting electrical activity.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 38,
+          "wordCount": 5,
+          "start": 19.39,
+          "end": 22.49,
+          "duration": 3.1
+        },
+        {
+          "id": "M04.01.s06",
+          "text": "Contractility is developing force.",
+          "firstWordIndex": 39,
+          "lastWordIndex": 42,
+          "wordCount": 4,
+          "start": 22.82,
+          "end": 25.35,
+          "duration": 2.53
+        },
+        {
+          "id": "M04.01.s07",
+          "text": "These properties are related but not interchangeable.",
+          "firstWordIndex": 43,
+          "lastWordIndex": 49,
+          "wordCount": 7,
+          "start": 25.8,
+          "end": 28.63,
+          "duration": 2.83
+        },
+        {
+          "id": "M04.01.s08",
+          "text": "Electrical activation organizes the sequence of contraction; it does not by itself prove that the heart is pumping effectively.",
+          "firstWordIndex": 50,
+          "lastWordIndex": 68,
+          "wordCount": 19,
+          "start": 29.13,
+          "end": 37.09,
+          "duration": 7.96
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "electrical pathway",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.01.s01",
+              "firstWordIndex": 9,
+              "lastWordIndex": 10,
+              "start": 3.39,
+              "end": 4.74
+            }
+          ]
+        },
+        {
+          "phrase": "electrical activation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.01.s08",
+              "firstWordIndex": 50,
+              "lastWordIndex": 51,
+              "start": 29.13,
+              "end": 30.34
+            }
+          ]
+        },
+        {
+          "phrase": "automaticity",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.01.s03",
+              "firstWordIndex": 23,
+              "lastWordIndex": 23,
+              "start": 12.3,
+              "end": 13.22
+            }
+          ]
+        },
+        {
+          "phrase": "excitability",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.01.s04",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 16.12,
+              "end": 17.08
+            }
+          ]
+        },
+        {
+          "phrase": "conductivity",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.01.s05",
+              "firstWordIndex": 34,
+              "lastWordIndex": 34,
+              "start": 19.39,
+              "end": 20.27
+            }
+          ]
+        },
+        {
+          "phrase": "contractility",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.01.s06",
+              "firstWordIndex": 39,
+              "lastWordIndex": 39,
+              "start": 22.82,
+              "end": 23.95
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.01.s01",
+          "at": 0,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "speed": 0.1,
+            "anchorAudio": 0
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.74,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 10
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.s02",
+          "at": 5.25,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.66,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s02",
+            "firstWordIndex": 11,
+            "lastWordIndex": 22
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.phrase.2.working-muscle-cells",
+          "at": 9.49,
+          "selected": "wall",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 9.49,
+            "endAudio": 11.66
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 10.65,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s02",
+            "phrase": "working muscle cells",
+            "firstWordIndex": 18,
+            "lastWordIndex": 20
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.s03",
+          "at": 12.3,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.56,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s03",
+            "firstWordIndex": 23,
+            "lastWordIndex": 27
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.s04",
+          "at": 16.12,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.92,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s04",
+            "firstWordIndex": 28,
+            "lastWordIndex": 33
+          },
+          "organ": "explanation",
+          "explanationTitle": "Excitability: stimulus response"
+        },
+        {
+          "id": "M04.01.s05",
+          "at": 19.39,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.49,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s05",
+            "firstWordIndex": 34,
+            "lastWordIndex": 38
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.s06",
+          "at": 22.82,
+          "selected": "wall",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 22.82,
+            "endAudio": 25.35
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 25.35,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s06",
+            "firstWordIndex": 39,
+            "lastWordIndex": 42
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.s07",
+          "at": 25.8,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.63,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s07",
+            "firstWordIndex": 43,
+            "lastWordIndex": 49
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.01.s08",
+          "at": 29.13,
+          "selected": "purkinje",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "Purkinje-myocardium"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 37.09,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.01.s08",
+            "firstWordIndex": 50,
+            "lastWordIndex": 68
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.02",
+      "sentences": [
+        {
+          "id": "M04.02.s01",
+          "text": "Find the sinoatrial node, or S A node, high in the right atrium near the superior vena cava.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 17,
+          "wordCount": 18,
+          "start": 0,
+          "end": 6.8,
+          "duration": 6.8
+        },
+        {
+          "id": "M04.02.s02",
+          "text": "It is normally the dominant pacemaker.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 23,
+          "wordCount": 6,
+          "start": 7.26,
+          "end": 9.45,
+          "duration": 2.19
+        },
+        {
+          "id": "M04.02.s03",
+          "text": "Its cells depolarize spontaneously, and activity spreads through the atrial muscle.",
+          "firstWordIndex": 24,
+          "lastWordIndex": 34,
+          "wordCount": 11,
+          "start": 9.84,
+          "end": 15.34,
+          "duration": 5.5
+        },
+        {
+          "id": "M04.02.s04",
+          "text": "A usual resting adult sinus rate is sixty to one hundred beats per minute.",
+          "firstWordIndex": 35,
+          "lastWordIndex": 48,
+          "wordCount": 14,
+          "start": 15.73,
+          "end": 20.31,
+          "duration": 4.58
+        },
+        {
+          "id": "M04.02.s05",
+          "text": "This is a clinical teaching range, not a claim that every healthy person's resting rate must fall inside it.",
+          "firstWordIndex": 49,
+          "lastWordIndex": 67,
+          "wordCount": 19,
+          "start": 21.13,
+          "end": 27.27,
+          "duration": 6.14
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "right atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.02.s01",
+              "firstWordIndex": 11,
+              "lastWordIndex": 12,
+              "start": 4.12,
+              "end": 5.02
+            }
+          ]
+        },
+        {
+          "phrase": "superior vena cava",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.02.s01",
+              "firstWordIndex": 15,
+              "lastWordIndex": 17,
+              "start": 5.31,
+              "end": 6.8
+            }
+          ]
+        },
+        {
+          "phrase": "sinoatrial node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.02.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 3,
+              "start": 0.53,
+              "end": 1.85
+            }
+          ]
+        },
+        {
+          "phrase": "S A node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.02.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 7,
+              "start": 2.11,
+              "end": 3.08
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.02.s01",
+          "at": 0,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.8,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 17
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.02.s02",
+          "at": 7.26,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.45,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.02.s02",
+            "firstWordIndex": 18,
+            "lastWordIndex": 23
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.02.s03",
+          "at": 9.84,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.34,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.02.s03",
+            "firstWordIndex": 24,
+            "lastWordIndex": 34
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.02.phrase.3.activity-spreads",
+          "at": 12.88,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "atrial-propagation"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 13.93,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.02.s03",
+            "phrase": "activity spreads",
+            "firstWordIndex": 29,
+            "lastWordIndex": 30
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.02.s04",
+          "at": 15.73,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 20.31,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.02.s04",
+            "firstWordIndex": 35,
+            "lastWordIndex": 48
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.02.s05",
+          "at": 21.13,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.27,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.02.s05",
+            "firstWordIndex": 49,
+            "lastWordIndex": 67
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.03",
+      "sentences": [
+        {
+          "id": "M04.03.s01",
+          "text": "The impulse spreads across both atria and reaches the atrioventricular node, or A V node.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 14,
+          "wordCount": 15,
+          "start": 0,
+          "end": 6.88,
+          "duration": 6.88
+        },
+        {
+          "id": "M04.03.s02",
+          "text": "Conduction slows substantially here.",
+          "firstWordIndex": 15,
+          "lastWordIndex": 18,
+          "wordCount": 4,
+          "start": 7.31,
+          "end": 9.53,
+          "duration": 2.22
+        },
+        {
+          "id": "M04.03.s03",
+          "text": "This delay helps coordinate atrial activation with ventricular activation, giving the ventricles time to fill before they contract.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 36,
+          "wordCount": 18,
+          "start": 9.92,
+          "end": 18.01,
+          "duration": 8.09
+        },
+        {
+          "id": "M04.03.s04",
+          "text": "Do not spread this delay evenly along the whole pathway.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 46,
+          "wordCount": 10,
+          "start": 18.52,
+          "end": 22.28,
+          "duration": 3.76
+        },
+        {
+          "id": "M04.03.s05",
+          "text": "After the A V node, the specialized ventricular conduction system is designed for rapid conduction.",
+          "firstWordIndex": 47,
+          "lastWordIndex": 61,
+          "wordCount": 15,
+          "start": 22.8,
+          "end": 29.32,
+          "duration": 6.52
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "A V node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.03.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 14,
+              "start": 5.85,
+              "end": 6.88
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.03.s05",
+              "firstWordIndex": 49,
+              "lastWordIndex": 51,
+              "start": 23.25,
+              "end": 24.15
+            }
+          ]
+        },
+        {
+          "phrase": "atrioventricular node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.03.s01",
+              "firstWordIndex": 9,
+              "lastWordIndex": 10,
+              "start": 3.6,
+              "end": 5.3
+            }
+          ]
+        },
+        {
+          "phrase": "atrial activation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.03.s03",
+              "firstWordIndex": 23,
+              "lastWordIndex": 24,
+              "start": 11.57,
+              "end": 12.79
+            }
+          ]
+        },
+        {
+          "phrase": "ventricular activation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.03.s03",
+              "firstWordIndex": 26,
+              "lastWordIndex": 27,
+              "start": 13,
+              "end": 14.54
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.03.s01",
+          "at": 0,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "atrial-propagation"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.88,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 14
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.03.phrase.1.atrioventricular-node",
+          "at": 3.6,
+          "selected": "avnode",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 5.3,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s01",
+            "phrase": "atrioventricular node",
+            "firstWordIndex": 9,
+            "lastWordIndex": 10
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.03.s02",
+          "at": 7.31,
+          "selected": "avnode",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.53,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s02",
+            "firstWordIndex": 15,
+            "lastWordIndex": 18
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.03.s03",
+          "at": 9.92,
+          "selected": "avnode",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.01,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s03",
+            "firstWordIndex": 19,
+            "lastWordIndex": 36
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.03.s04",
+          "at": 18.52,
+          "selected": "avnode",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.28,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s04",
+            "firstWordIndex": 37,
+            "lastWordIndex": 46
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.03.s05",
+          "at": 22.8,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "His-bundle"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s05",
+            "firstWordIndex": 47,
+            "lastWordIndex": 61
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.03.phrase.5.rapid-conduction",
+          "at": 28.07,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 29.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.03.s05",
+            "phrase": "rapid conduction",
+            "firstWordIndex": 60,
+            "lastWordIndex": 61
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.04",
+      "sentences": [
+        {
+          "id": "M04.04.s01",
+          "text": "From the A V node, the impulse enters the bundle of His, then the right and left bundle branches in the interventricular septum.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 22,
+          "wordCount": 23,
+          "start": 0,
+          "end": 9.29,
+          "duration": 9.29
+        },
+        {
+          "id": "M04.04.s02",
+          "text": "Purkinje fibers rapidly distribute activation through the ventricles.",
+          "firstWordIndex": 23,
+          "lastWordIndex": 30,
+          "wordCount": 8,
+          "start": 10.05,
+          "end": 14.41,
+          "duration": 4.36
+        },
+        {
+          "id": "M04.04.s03",
+          "text": "This organization helps the ventricular muscle activate efficiently, with contraction developing from the apex toward the outflow regions.",
+          "firstWordIndex": 31,
+          "lastWordIndex": 48,
+          "wordCount": 18,
+          "start": 14.96,
+          "end": 23.17,
+          "duration": 8.21
+        },
+        {
+          "id": "M04.04.s04",
+          "text": "The colors in the overlay represent the teaching sequence, not the physical color of electricity inside the heart.",
+          "firstWordIndex": 49,
+          "lastWordIndex": 66,
+          "wordCount": 18,
+          "start": 23.47,
+          "end": 30.04,
+          "duration": 6.57
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "A V node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.04.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 4,
+              "start": 0.5,
+              "end": 1.72
+            }
+          ]
+        },
+        {
+          "phrase": "bundle of His",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.04.s01",
+              "firstWordIndex": 9,
+              "lastWordIndex": 11,
+              "start": 3.38,
+              "end": 4.46
+            }
+          ]
+        },
+        {
+          "phrase": "right and left bundle branches",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.04.s01",
+              "firstWordIndex": 14,
+              "lastWordIndex": 18,
+              "start": 5.36,
+              "end": 7.32
+            }
+          ]
+        },
+        {
+          "phrase": "interventricular septum",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.04.s01",
+              "firstWordIndex": 21,
+              "lastWordIndex": 22,
+              "start": 7.77,
+              "end": 9.29
+            }
+          ]
+        },
+        {
+          "phrase": "Purkinje fibers",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.04.s02",
+              "firstWordIndex": 23,
+              "lastWordIndex": 24,
+              "start": 10.05,
+              "end": 11.22
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.04.s01",
+          "at": 0,
+          "selected": "avnode",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 22
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.04.phrase.1.bundle-of-his",
+          "at": 3.38,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "His-bundle"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.46,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.04.s01",
+            "phrase": "bundle of His",
+            "firstWordIndex": 9,
+            "lastWordIndex": 11
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.04.phrase.1.right-and-left-bundle-branches",
+          "at": 5.36,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 7.32,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.04.s01",
+            "phrase": "right and left bundle branches",
+            "firstWordIndex": 14,
+            "lastWordIndex": 18
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.04.s02",
+          "at": 10.05,
+          "selected": "purkinje",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "Purkinje-myocardium"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.41,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.04.s02",
+            "firstWordIndex": 23,
+            "lastWordIndex": 30
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.04.s03",
+          "at": 14.96,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.17,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.04.s03",
+            "firstWordIndex": 31,
+            "lastWordIndex": 48
+          },
+          "organ": "explanation",
+          "explanationTitle": "Ventricular activation and contraction direction"
+        },
+        {
+          "id": "M04.04.s04",
+          "at": 23.47,
+          "selected": "purkinje",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "Purkinje-myocardium"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.04,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.04.s04",
+            "firstWordIndex": 49,
+            "lastWordIndex": 66
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.05",
+      "sentences": [
+        {
+          "id": "M04.05.s01",
+          "text": "If the normal dominant pacemaker slows or impulses fail to reach lower tissue, an escape pacemaker may emerge.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 17,
+          "wordCount": 18,
+          "start": 0,
+          "end": 8.21,
+          "duration": 8.21
+        },
+        {
+          "id": "M04.05.s02",
+          "text": "Usual teaching ranges are forty to sixty beats per minute for junctional escape and twenty to forty for ventricular escape.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 37,
+          "wordCount": 20,
+          "start": 8.86,
+          "end": 16.11,
+          "duration": 7.25
+        },
+        {
+          "id": "M04.05.s03",
+          "text": "These are approximate ranges.",
+          "firstWordIndex": 38,
+          "lastWordIndex": 41,
+          "wordCount": 4,
+          "start": 16.52,
+          "end": 18.17,
+          "duration": 1.65
+        },
+        {
+          "id": "M04.05.s04",
+          "text": "Conduction speed and firing rate are different ideas: the A V node conducts slowly, while Purkinje tissue conducts rapidly.",
+          "firstWordIndex": 42,
+          "lastWordIndex": 60,
+          "wordCount": 19,
+          "start": 18.78,
+          "end": 27.85,
+          "duration": 9.07
+        },
+        {
+          "id": "M04.05.s05",
+          "text": "The fastest focus does not always control the heart if conduction is blocked.",
+          "firstWordIndex": 61,
+          "lastWordIndex": 73,
+          "wordCount": 13,
+          "start": 28.37,
+          "end": 32.42,
+          "duration": 4.05
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "A V node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.05.s04",
+              "firstWordIndex": 51,
+              "lastWordIndex": 53,
+              "start": 23.07,
+              "end": 23.98
+            }
+          ]
+        },
+        {
+          "phrase": "escape pacemaker",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.05.s01",
+              "firstWordIndex": 14,
+              "lastWordIndex": 15,
+              "start": 6.19,
+              "end": 7.31
+            }
+          ]
+        },
+        {
+          "phrase": "junctional escape",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.05.s02",
+              "firstWordIndex": 29,
+              "lastWordIndex": 30,
+              "start": 12.34,
+              "end": 13.45
+            }
+          ]
+        },
+        {
+          "phrase": "ventricular escape",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.05.s02",
+              "firstWordIndex": 36,
+              "lastWordIndex": 37,
+              "start": 14.8,
+              "end": 16.11
+            }
+          ]
+        },
+        {
+          "phrase": "Purkinje tissue",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.05.s04",
+              "firstWordIndex": 57,
+              "lastWordIndex": 58,
+              "start": 25.48,
+              "end": 26.66
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.05.s01",
+          "at": 0,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.21,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 17
+          },
+          "organ": "explanation",
+          "explanationTitle": "Escape pacemakers"
+        },
+        {
+          "id": "M04.05.s02",
+          "at": 8.86,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.11,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.05.s02",
+            "firstWordIndex": 18,
+            "lastWordIndex": 37
+          },
+          "organ": "explanation",
+          "explanationTitle": "Approximate escape-rate teaching ranges"
+        },
+        {
+          "id": "M04.05.s03",
+          "at": 16.52,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.17,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.05.s03",
+            "firstWordIndex": 38,
+            "lastWordIndex": 41
+          },
+          "organ": "explanation",
+          "explanationTitle": "Approximate escape-rate teaching ranges"
+        },
+        {
+          "id": "M04.05.s04",
+          "at": 18.78,
+          "selected": "avnode",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.85,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.05.s04",
+            "firstWordIndex": 42,
+            "lastWordIndex": 60
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.05.phrase.4.purkinje-tissue",
+          "at": 25.48,
+          "selected": "purkinje",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "Purkinje-myocardium"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 26.66,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.05.s04",
+            "phrase": "Purkinje tissue",
+            "firstWordIndex": 57,
+            "lastWordIndex": 58
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.05.s05",
+          "at": 28.37,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.42,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.05.s05",
+            "firstWordIndex": 61,
+            "lastWordIndex": 73
+          },
+          "organ": "explanation",
+          "explanationTitle": "Conduction block and pacemaker dominance"
+        }
+      ]
+    },
+    {
+      "id": "M04.06",
+      "sentences": [
+        {
+          "id": "M04.06.s01",
+          "text": "Zoom conceptually from the heart to one ventricular muscle cell.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 9,
+          "wordCount": 10,
+          "start": 0,
+          "end": 4.09,
+          "duration": 4.09
+        },
+        {
+          "id": "M04.06.s02",
+          "text": "Its action potential begins with rapid sodium entry.",
+          "firstWordIndex": 10,
+          "lastWordIndex": 17,
+          "wordCount": 8,
+          "start": 4.71,
+          "end": 7.69,
+          "duration": 2.98
+        },
+        {
+          "id": "M04.06.s03",
+          "text": "A brief early change is followed by a plateau, during which calcium entry and potassium exit both matter.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 35,
+          "wordCount": 18,
+          "start": 8.12,
+          "end": 14.57,
+          "duration": 6.45
+        },
+        {
+          "id": "M04.06.s04",
+          "text": "Potassium currents then help repolarize the cell.",
+          "firstWordIndex": 36,
+          "lastWordIndex": 42,
+          "wordCount": 7,
+          "start": 15.22,
+          "end": 18.47,
+          "duration": 3.25
+        },
+        {
+          "id": "M04.06.s05",
+          "text": "These changing currents flow through ion channels.",
+          "firstWordIndex": 43,
+          "lastWordIndex": 49,
+          "wordCount": 7,
+          "start": 19.04,
+          "end": 21.88,
+          "duration": 2.84
+        },
+        {
+          "id": "M04.06.s06",
+          "text": "The sodium-potassium pump maintains ion gradients over time; it is not the channel that produces every action-potential upstroke.",
+          "firstWordIndex": 50,
+          "lastWordIndex": 69,
+          "wordCount": 20,
+          "start": 22.33,
+          "end": 30.53,
+          "duration": 8.2
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "ventricular muscle cell",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 9,
+              "start": 2.55,
+              "end": 4.09
+            }
+          ]
+        },
+        {
+          "phrase": "action potential",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s02",
+              "firstWordIndex": 11,
+              "lastWordIndex": 12,
+              "start": 4.83,
+              "end": 5.66
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.06.s06",
+              "firstWordIndex": 67,
+              "lastWordIndex": 68,
+              "start": 28.93,
+              "end": 29.87
+            }
+          ]
+        },
+        {
+          "phrase": "sodium entry",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s02",
+              "firstWordIndex": 16,
+              "lastWordIndex": 17,
+              "start": 6.7,
+              "end": 7.69
+            }
+          ]
+        },
+        {
+          "phrase": "plateau",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s03",
+              "firstWordIndex": 26,
+              "lastWordIndex": 26,
+              "start": 10.07,
+              "end": 10.9
+            }
+          ]
+        },
+        {
+          "phrase": "calcium entry",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s03",
+              "firstWordIndex": 29,
+              "lastWordIndex": 30,
+              "start": 11.76,
+              "end": 12.69
+            }
+          ]
+        },
+        {
+          "phrase": "potassium exit",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s03",
+              "firstWordIndex": 32,
+              "lastWordIndex": 33,
+              "start": 12.81,
+              "end": 13.79
+            }
+          ]
+        },
+        {
+          "phrase": "repolarize",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s04",
+              "firstWordIndex": 40,
+              "lastWordIndex": 40,
+              "start": 16.94,
+              "end": 17.87
+            }
+          ]
+        },
+        {
+          "phrase": "sodium potassium pump",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.06.s06",
+              "firstWordIndex": 51,
+              "lastWordIndex": 53,
+              "start": 22.42,
+              "end": 23.87
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.06.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": "routeC",
+          "stage": "ventricular",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "baseline"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.09,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.06.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 9
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.06.s02",
+          "at": 4.71,
+          "selected": "lv",
+          "route": "routeC",
+          "stage": "ventricular",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "voltage-depolarization",
+            "sweep": true,
+            "anchorAudio": 4.71,
+            "endAudio": 7.69
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.69,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.06.s02",
+            "firstWordIndex": 10,
+            "lastWordIndex": 17
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.06.s03",
+          "at": 8.12,
+          "selected": "lv",
+          "route": "routeC",
+          "stage": "ventricular",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "voltage-plateau",
+            "sweep": true,
+            "anchorAudio": 8.12,
+            "endAudio": 14.57
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.57,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.06.s03",
+            "firstWordIndex": 18,
+            "lastWordIndex": 35
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.06.s04",
+          "at": 15.22,
+          "selected": "lv",
+          "route": "routeC",
+          "stage": "ventricular",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "voltage-repolarization",
+            "sweep": true,
+            "anchorAudio": 15.22,
+            "endAudio": 18.47
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.47,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.06.s04",
+            "firstWordIndex": 36,
+            "lastWordIndex": 42
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.06.s05",
+          "at": 19.04,
+          "selected": "lv",
+          "route": "routeC",
+          "stage": "ventricular",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "voltage-plateau"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.88,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.06.s05",
+            "firstWordIndex": 43,
+            "lastWordIndex": 49
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.06.s06",
+          "at": 22.33,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.53,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.06.s06",
+            "firstWordIndex": 50,
+            "lastWordIndex": 69
+          },
+          "organ": "explanation",
+          "explanationTitle": "Sodium-potassium pump versus rapid channels"
+        }
+      ]
+    },
+    {
+      "id": "M04.07",
+      "sentences": [
+        {
+          "id": "M04.07.s01",
+          "text": "Pacemaker cells do not have the same stable resting potential or the same action-potential shape as ventricular working cells.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 19,
+          "wordCount": 20,
+          "start": 0,
+          "end": 8.14,
+          "duration": 8.14
+        },
+        {
+          "id": "M04.07.s02",
+          "text": "Their membrane voltage drifts toward threshold, and calcium current contributes to the nodal upstroke.",
+          "firstWordIndex": 20,
+          "lastWordIndex": 33,
+          "wordCount": 14,
+          "start": 8.7,
+          "end": 15.14,
+          "duration": 6.44
+        },
+        {
+          "id": "M04.07.s03",
+          "text": "Threshold and resting values vary by cell type and conditions.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 43,
+          "wordCount": 10,
+          "start": 15.71,
+          "end": 19.47,
+          "duration": 3.76
+        },
+        {
+          "id": "M04.07.s04",
+          "text": "Do not label calcium, sodium, and potassium with voltages as if those were their electrical charges.",
+          "firstWordIndex": 44,
+          "lastWordIndex": 59,
+          "wordCount": 16,
+          "start": 19.74,
+          "end": 25.98,
+          "duration": 6.24
+        },
+        {
+          "id": "M04.07.s05",
+          "text": "An ion's charge and its equilibrium potential are different quantities.",
+          "firstWordIndex": 60,
+          "lastWordIndex": 69,
+          "wordCount": 10,
+          "start": 26.41,
+          "end": 30.89,
+          "duration": 4.48
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "action potential",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.07.s01",
+              "firstWordIndex": 13,
+              "lastWordIndex": 14,
+              "start": 4.51,
+              "end": 5.44
+            }
+          ]
+        },
+        {
+          "phrase": "pacemaker cells",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.07.s01",
+              "firstWordIndex": 0,
+              "lastWordIndex": 1,
+              "start": 0,
+              "end": 1.22
+            }
+          ]
+        },
+        {
+          "phrase": "threshold",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.07.s02",
+              "firstWordIndex": 25,
+              "lastWordIndex": 25,
+              "start": 10.79,
+              "end": 11.52
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.07.s03",
+              "firstWordIndex": 34,
+              "lastWordIndex": 34,
+              "start": 15.71,
+              "end": 16.31
+            }
+          ]
+        },
+        {
+          "phrase": "nodal upstroke",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.07.s02",
+              "firstWordIndex": 32,
+              "lastWordIndex": 33,
+              "start": 13.86,
+              "end": 15.14
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.07.s01",
+          "at": 0,
+          "selected": "sa",
+          "route": "routeC",
+          "stage": "nodal",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "cycle",
+            "sweep": true,
+            "anchorAudio": 0,
+            "endAudio": 8.14
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.14,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.07.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 19
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.07.s02",
+          "at": 8.7,
+          "selected": "sa",
+          "route": "routeC",
+          "stage": "nodal",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "nodal-drift",
+            "occurrence": "last",
+            "sweep": true,
+            "anchorAudio": 8.7,
+            "endAudio": 11.93
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.14,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.07.s02",
+            "firstWordIndex": 20,
+            "lastWordIndex": 33
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.07.phrase.2.calcium-current",
+          "at": 11.93,
+          "selected": "sa",
+          "route": "routeC",
+          "stage": "nodal",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "nodal-upstroke",
+            "sweep": true,
+            "anchorAudio": 11.93,
+            "endAudio": 15.14
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 12.96,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.07.s02",
+            "phrase": "calcium current",
+            "firstWordIndex": 27,
+            "lastWordIndex": 28
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.07.s03",
+          "at": 15.71,
+          "selected": "sa",
+          "route": "routeC",
+          "stage": "nodal",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "nodal-drift",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.47,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.07.s03",
+            "firstWordIndex": 34,
+            "lastWordIndex": 43
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.07.s04",
+          "at": 19.74,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 25.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.07.s04",
+            "firstWordIndex": 44,
+            "lastWordIndex": 59
+          },
+          "organ": "explanation",
+          "explanationTitle": "Ion charge versus membrane voltage"
+        },
+        {
+          "id": "M04.07.s05",
+          "at": 26.41,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.89,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.07.s05",
+            "firstWordIndex": 60,
+            "lastWordIndex": 69
+          },
+          "organ": "explanation",
+          "explanationTitle": "Ion charge versus equilibrium potential"
+        }
+      ]
+    },
+    {
+      "id": "M04.08",
+      "sentences": [
+        {
+          "id": "M04.08.s01",
+          "text": "Now connect electricity to force.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 4,
+          "wordCount": 5,
+          "start": 0,
+          "end": 1.9,
+          "duration": 1.9
+        },
+        {
+          "id": "M04.08.s02",
+          "text": "Calcium entering a cardiac muscle cell triggers a larger calcium release from the sarcoplasmic reticulum, the cell's internal calcium store.",
+          "firstWordIndex": 5,
+          "lastWordIndex": 24,
+          "wordCount": 20,
+          "start": 2.52,
+          "end": 10.59,
+          "duration": 8.07
+        },
+        {
+          "id": "M04.08.s03",
+          "text": "Calcium binds to troponin.",
+          "firstWordIndex": 25,
+          "lastWordIndex": 28,
+          "wordCount": 4,
+          "start": 11.13,
+          "end": 12.97,
+          "duration": 1.84
+        },
+        {
+          "id": "M04.08.s04",
+          "text": "This moves tropomyosin away from actin's binding sites so myosin can interact with actin.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 42,
+          "wordCount": 14,
+          "start": 13.47,
+          "end": 19.37,
+          "duration": 5.9
+        },
+        {
+          "id": "M04.08.s05",
+          "text": "The process is called excitation-contraction coupling.",
+          "firstWordIndex": 43,
+          "lastWordIndex": 49,
+          "wordCount": 7,
+          "start": 19.73,
+          "end": 22.71,
+          "duration": 2.98
+        },
+        {
+          "id": "M04.08.s06",
+          "text": "The electrical signal starts the sequence, but calcium handling and the contractile machinery determine how force develops.",
+          "firstWordIndex": 50,
+          "lastWordIndex": 66,
+          "wordCount": 17,
+          "start": 23.17,
+          "end": 29.93,
+          "duration": 6.76
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "calcium release",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s02",
+              "firstWordIndex": 14,
+              "lastWordIndex": 15,
+              "start": 5.73,
+              "end": 6.6
+            }
+          ]
+        },
+        {
+          "phrase": "sarcoplasmic reticulum",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s02",
+              "firstWordIndex": 18,
+              "lastWordIndex": 19,
+              "start": 6.83,
+              "end": 8.28
+            }
+          ]
+        },
+        {
+          "phrase": "troponin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 12.29,
+              "end": 12.97
+            }
+          ]
+        },
+        {
+          "phrase": "tropomyosin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s04",
+              "firstWordIndex": 31,
+              "lastWordIndex": 31,
+              "start": 13.97,
+              "end": 14.91
+            }
+          ]
+        },
+        {
+          "phrase": "actin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s04",
+              "firstWordIndex": 42,
+              "lastWordIndex": 42,
+              "start": 18.85,
+              "end": 19.37
+            }
+          ]
+        },
+        {
+          "phrase": "myosin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s04",
+              "firstWordIndex": 38,
+              "lastWordIndex": 38,
+              "start": 17.3,
+              "end": 18.01
+            }
+          ]
+        },
+        {
+          "phrase": "excitation contraction coupling",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.08.s05",
+              "firstWordIndex": 47,
+              "lastWordIndex": 49,
+              "start": 20.82,
+              "end": 22.71
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.08.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "electrical"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 1.9,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.08.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 4
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.08.s02",
+          "at": 2.52,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release",
+            "sweep": true,
+            "anchorAudio": 2.52,
+            "endAudio": 19.37
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.59,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.08.s02",
+            "firstWordIndex": 5,
+            "lastWordIndex": 24
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.08.s03",
+          "at": 11.13,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release",
+            "sweep": true,
+            "anchorAudio": 2.52,
+            "endAudio": 19.37
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.97,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.08.s03",
+            "firstWordIndex": 25,
+            "lastWordIndex": 28
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.08.s04",
+          "at": 13.47,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release",
+            "sweep": true,
+            "anchorAudio": 2.52,
+            "endAudio": 19.37
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.37,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.08.s04",
+            "firstWordIndex": 29,
+            "lastWordIndex": 42
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.08.s05",
+          "at": 19.73,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "cycle",
+            "sweep": true,
+            "anchorAudio": 19.73,
+            "endAudio": 22.71
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.71,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.08.s05",
+            "firstWordIndex": 43,
+            "lastWordIndex": 49
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.08.s06",
+          "at": 23.17,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "cycle",
+            "sweep": true,
+            "anchorAudio": 23.17,
+            "endAudio": 29.93
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.93,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.08.s06",
+            "firstWordIndex": 50,
+            "lastWordIndex": 66
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.09",
+      "sentences": [
+        {
+          "id": "M04.09.s01",
+          "text": "Within a muscle cell, myofibrils contain repeating sarcomeres.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 7,
+          "wordCount": 8,
+          "start": 0,
+          "end": 4.51,
+          "duration": 4.51
+        },
+        {
+          "id": "M04.09.s02",
+          "text": "Each sarcomere spans from one Z line to the next.",
+          "firstWordIndex": 8,
+          "lastWordIndex": 17,
+          "wordCount": 10,
+          "start": 4.83,
+          "end": 8.7,
+          "duration": 3.87
+        },
+        {
+          "id": "M04.09.s03",
+          "text": "At the sarcomere, myosin heads bind to actin, produce force, detach, and reset through repeated cross-bridge cycles.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 35,
+          "wordCount": 18,
+          "start": 9.15,
+          "end": 17.81,
+          "duration": 8.66
+        },
+        {
+          "id": "M04.09.s04",
+          "text": "A T P is needed for this cycle, including detachment of myosin from actin.",
+          "firstWordIndex": 36,
+          "lastWordIndex": 49,
+          "wordCount": 14,
+          "start": 18.49,
+          "end": 23.59,
+          "duration": 5.1
+        },
+        {
+          "id": "M04.09.s05",
+          "text": "Thin and thick filaments slide past one another; the filaments themselves do not become shorter.",
+          "firstWordIndex": 50,
+          "lastWordIndex": 64,
+          "wordCount": 15,
+          "start": 24.21,
+          "end": 29.82,
+          "duration": 5.61
+        },
+        {
+          "id": "M04.09.s06",
+          "text": "The distance between the sarcomere boundaries decreases.",
+          "firstWordIndex": 65,
+          "lastWordIndex": 71,
+          "wordCount": 7,
+          "start": 30.36,
+          "end": 33.68,
+          "duration": 3.32
+        },
+        {
+          "id": "M04.09.s07",
+          "text": "Many sarcomeres acting together shorten the muscle cell and contribute to ventricular pressure.",
+          "firstWordIndex": 72,
+          "lastWordIndex": 84,
+          "wordCount": 13,
+          "start": 34.31,
+          "end": 39.29,
+          "duration": 4.98
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "actin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s03",
+              "firstWordIndex": 25,
+              "lastWordIndex": 25,
+              "start": 11.92,
+              "end": 12.63
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.09.s04",
+              "firstWordIndex": 49,
+              "lastWordIndex": 49,
+              "start": 23.04,
+              "end": 23.59
+            }
+          ]
+        },
+        {
+          "phrase": "myosin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s03",
+              "firstWordIndex": 21,
+              "lastWordIndex": 21,
+              "start": 10.46,
+              "end": 11.02
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.09.s04",
+              "firstWordIndex": 47,
+              "lastWordIndex": 47,
+              "start": 22.05,
+              "end": 22.83
+            }
+          ]
+        },
+        {
+          "phrase": "myofibrils",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 4,
+              "start": 1.46,
+              "end": 2.43
+            }
+          ]
+        },
+        {
+          "phrase": "sarcomeres",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 7,
+              "start": 3.47,
+              "end": 4.51
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.09.s07",
+              "firstWordIndex": 73,
+              "lastWordIndex": 73,
+              "start": 34.53,
+              "end": 35.23
+            }
+          ]
+        },
+        {
+          "phrase": "sarcomere",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s02",
+              "firstWordIndex": 9,
+              "lastWordIndex": 9,
+              "start": 5.17,
+              "end": 5.92
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.09.s03",
+              "firstWordIndex": 20,
+              "lastWordIndex": 20,
+              "start": 9.37,
+              "end": 10.14
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M04.09.s06",
+              "firstWordIndex": 69,
+              "lastWordIndex": 69,
+              "start": 31.45,
+              "end": 32.11
+            }
+          ]
+        },
+        {
+          "phrase": "Z line",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s02",
+              "firstWordIndex": 13,
+              "lastWordIndex": 14,
+              "start": 7.25,
+              "end": 7.95
+            }
+          ]
+        },
+        {
+          "phrase": "cross bridge cycles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s03",
+              "firstWordIndex": 33,
+              "lastWordIndex": 35,
+              "start": 16.47,
+              "end": 17.81
+            }
+          ]
+        },
+        {
+          "phrase": "A T P",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.09.s04",
+              "firstWordIndex": 36,
+              "lastWordIndex": 38,
+              "start": 18.49,
+              "end": 19.24
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.09.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "myofibril",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "baseline"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.51,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 7
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.s02",
+          "at": 4.83,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "sarcomere",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "baseline"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.7,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s02",
+            "firstWordIndex": 8,
+            "lastWordIndex": 17
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.s03",
+          "at": 9.15,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "cycle",
+            "sweep": true,
+            "anchorAudio": 9.15,
+            "endAudio": 17.81
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 17.81,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s03",
+            "firstWordIndex": 18,
+            "lastWordIndex": 35
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.s04",
+          "at": 18.49,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "cycle",
+            "sweep": true,
+            "anchorAudio": 18.49,
+            "endAudio": 23.59
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.59,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s04",
+            "firstWordIndex": 36,
+            "lastWordIndex": 49
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.s05",
+          "at": 24.21,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "sarcomere",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "cycle",
+            "sweep": true,
+            "anchorAudio": 24.21,
+            "endAudio": 29.82
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s05",
+            "firstWordIndex": 50,
+            "lastWordIndex": 64
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.s06",
+          "at": 30.36,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "sarcomere",
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 30.36,
+            "endAudio": 33.68
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 33.68,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s06",
+            "firstWordIndex": 65,
+            "lastWordIndex": 71
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.s07",
+          "at": 34.31,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "myofibril",
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left",
+            "sweep": true,
+            "anchorAudio": 34.31,
+            "endAudio": 39.29
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 39.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s07",
+            "firstWordIndex": 72,
+            "lastWordIndex": 84
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.09.phrase.7.ventricular-pressure",
+          "at": 38.12,
+          "selected": "lv",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "phase",
+            "phase": "isovolumetric-contraction",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 39.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.09.s07",
+            "phrase": "ventricular pressure",
+            "firstWordIndex": 83,
+            "lastWordIndex": 84
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.10",
+      "sentences": [
+        {
+          "id": "M04.10.s01",
+          "text": "For relaxation, the free calcium concentration in the cell must fall.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 10,
+          "wordCount": 11,
+          "start": 0,
+          "end": 4.67,
+          "duration": 4.67
+        },
+        {
+          "id": "M04.10.s02",
+          "text": "Much calcium returns to the sarcoplasmic reticulum through an A T P-dependent pump.",
+          "firstWordIndex": 11,
+          "lastWordIndex": 24,
+          "wordCount": 14,
+          "start": 5.42,
+          "end": 11.07,
+          "duration": 5.65
+        },
+        {
+          "id": "M04.10.s03",
+          "text": "Calcium also leaves the cell, especially through the sodium-calcium exchanger.",
+          "firstWordIndex": 25,
+          "lastWordIndex": 35,
+          "wordCount": 11,
+          "start": 11.68,
+          "end": 16.36,
+          "duration": 4.68
+        },
+        {
+          "id": "M04.10.s04",
+          "text": "As calcium dissociates from troponin, tropomyosin again limits actin-myosin interaction.",
+          "firstWordIndex": 36,
+          "lastWordIndex": 46,
+          "wordCount": 11,
+          "start": 16.78,
+          "end": 23.17,
+          "duration": 6.39
+        },
+        {
+          "id": "M04.10.s05",
+          "text": "The sodium-potassium pump supports the gradients that make this system possible.",
+          "firstWordIndex": 47,
+          "lastWordIndex": 58,
+          "wordCount": 12,
+          "start": 23.68,
+          "end": 27.98,
+          "duration": 4.3
+        },
+        {
+          "id": "M04.10.s06",
+          "text": "Relaxation is an active, energy-dependent process, not simply the absence of an electrical wave.",
+          "firstWordIndex": 59,
+          "lastWordIndex": 73,
+          "wordCount": 15,
+          "start": 28.5,
+          "end": 35.19,
+          "duration": 6.69
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "sodium potassium pump",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s05",
+              "firstWordIndex": 48,
+              "lastWordIndex": 50,
+              "start": 23.76,
+              "end": 25.13
+            }
+          ]
+        },
+        {
+          "phrase": "sarcoplasmic reticulum",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s02",
+              "firstWordIndex": 16,
+              "lastWordIndex": 17,
+              "start": 6.94,
+              "end": 8.49
+            }
+          ]
+        },
+        {
+          "phrase": "troponin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s04",
+              "firstWordIndex": 40,
+              "lastWordIndex": 40,
+              "start": 18.61,
+              "end": 19.25
+            }
+          ]
+        },
+        {
+          "phrase": "tropomyosin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s04",
+              "firstWordIndex": 41,
+              "lastWordIndex": 41,
+              "start": 19.53,
+              "end": 20.45
+            }
+          ]
+        },
+        {
+          "phrase": "actin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s04",
+              "firstWordIndex": 44,
+              "lastWordIndex": 44,
+              "start": 21.35,
+              "end": 21.8
+            }
+          ]
+        },
+        {
+          "phrase": "myosin",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s04",
+              "firstWordIndex": 45,
+              "lastWordIndex": 45,
+              "start": 21.8,
+              "end": 22.38
+            }
+          ]
+        },
+        {
+          "phrase": "A T P",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s02",
+              "firstWordIndex": 20,
+              "lastWordIndex": 22,
+              "start": 9.02,
+              "end": 10.14
+            }
+          ]
+        },
+        {
+          "phrase": "calcium concentration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 5,
+              "start": 1.77,
+              "end": 3.1
+            }
+          ]
+        },
+        {
+          "phrase": "sodium calcium exchanger",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s03",
+              "firstWordIndex": 33,
+              "lastWordIndex": 35,
+              "start": 14.66,
+              "end": 16.36
+            }
+          ]
+        },
+        {
+          "phrase": "relaxation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.10.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 1,
+              "start": 0.22,
+              "end": 1.17
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M04.10.s06",
+              "firstWordIndex": 59,
+              "lastWordIndex": 59,
+              "start": 28.5,
+              "end": 29.46
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.10.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "removal",
+            "sweep": true,
+            "anchorAudio": 0,
+            "endAudio": 23.17
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.67,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.10.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 10
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.10.s02",
+          "at": 5.42,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "removal-visible",
+            "sweep": true,
+            "anchorAudio": 5.42,
+            "endAudio": 23.17
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.07,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.10.s02",
+            "firstWordIndex": 11,
+            "lastWordIndex": 24
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.10.s03",
+          "at": 11.68,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "removal-visible",
+            "sweep": true,
+            "anchorAudio": 5.42,
+            "endAudio": 23.17
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.36,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.10.s03",
+            "firstWordIndex": 25,
+            "lastWordIndex": 35
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.10.s04",
+          "at": 16.78,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "removal-visible",
+            "sweep": true,
+            "anchorAudio": 5.42,
+            "endAudio": 23.17
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.17,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.10.s04",
+            "firstWordIndex": 36,
+            "lastWordIndex": 46
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.10.s05",
+          "at": 23.68,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.10.s05",
+            "firstWordIndex": 47,
+            "lastWordIndex": 58
+          },
+          "organ": "explanation",
+          "explanationTitle": "Pump maintenance of ion gradients"
+        },
+        {
+          "id": "M04.10.s06",
+          "at": 28.5,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "relaxed",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 35.19,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.10.s06",
+            "firstWordIndex": 59,
+            "lastWordIndex": 73
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    },
+    {
+      "id": "M04.11",
+      "sentences": [
+        {
+          "id": "M04.11.s01",
+          "text": "Ions are atoms or molecules carrying an electrical charge.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 8,
+          "wordCount": 9,
+          "start": 0,
+          "end": 4.02,
+          "duration": 4.02
+        },
+        {
+          "id": "M04.11.s02",
+          "text": "Sodium, potassium, calcium, and magnesium are positive ions; chloride is a negative ion.",
+          "firstWordIndex": 9,
+          "lastWordIndex": 21,
+          "wordCount": 13,
+          "start": 4.46,
+          "end": 11.15,
+          "duration": 6.69
+        },
+        {
+          "id": "M04.11.s03",
+          "text": "Different concentrations inside and outside the cell, together with selective membrane permeability, create electrical and chemical gradients.",
+          "firstWordIndex": 22,
+          "lastWordIndex": 38,
+          "wordCount": 17,
+          "start": 11.69,
+          "end": 20.4,
+          "duration": 8.71
+        },
+        {
+          "id": "M04.11.s04",
+          "text": "The sodium-potassium pump uses A T P to move three sodium ions out and two potassium ions in.",
+          "firstWordIndex": 39,
+          "lastWordIndex": 57,
+          "wordCount": 19,
+          "start": 20.87,
+          "end": 28.51,
+          "duration": 7.64
+        },
+        {
+          "id": "M04.11.s05",
+          "text": "This maintains gradients over time and indirectly supports calcium handling; channels carry the rapid currents of each action potential.",
+          "firstWordIndex": 58,
+          "lastWordIndex": 76,
+          "wordCount": 19,
+          "start": 29.13,
+          "end": 37.9,
+          "duration": 8.77
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "action potential",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.11.s05",
+              "firstWordIndex": 75,
+              "lastWordIndex": 76,
+              "start": 36.9,
+              "end": 37.9
+            }
+          ]
+        },
+        {
+          "phrase": "sodium potassium pump",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.11.s04",
+              "firstWordIndex": 40,
+              "lastWordIndex": 42,
+              "start": 20.95,
+              "end": 22.39
+            }
+          ]
+        },
+        {
+          "phrase": "A T P",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.11.s04",
+              "firstWordIndex": 44,
+              "lastWordIndex": 46,
+              "start": 22.87,
+              "end": 23.83
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.11.s01",
+          "at": 0,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.02,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.11.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          },
+          "organ": "explanation",
+          "explanationTitle": "What is an ion?"
+        },
+        {
+          "id": "M04.11.s02",
+          "at": 4.46,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.15,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.11.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 21
+          },
+          "organ": "explanation",
+          "explanationTitle": "Positive and negative ions"
+        },
+        {
+          "id": "M04.11.s03",
+          "at": 11.69,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 20.4,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.11.s03",
+            "firstWordIndex": 22,
+            "lastWordIndex": 38
+          },
+          "organ": "explanation",
+          "explanationTitle": "Electrical and chemical gradients"
+        },
+        {
+          "id": "M04.11.s04",
+          "at": 20.87,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.51,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.11.s04",
+            "firstWordIndex": 39,
+            "lastWordIndex": 57
+          },
+          "organ": "explanation",
+          "explanationTitle": "Sodium-potassium pump: three out, two in"
+        },
+        {
+          "id": "M04.11.s05",
+          "at": 29.13,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 37.9,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.11.s05",
+            "firstWordIndex": 58,
+            "lastWordIndex": 76
+          },
+          "organ": "explanation",
+          "explanationTitle": "Gradient maintenance versus rapid channel currents"
+        }
+      ]
+    },
+    {
+      "id": "M04.12",
+      "sentences": [
+        {
+          "id": "M04.12.s01",
+          "text": "During the refractory period, cardiac muscle cannot respond normally to another stimulus.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 11,
+          "wordCount": 12,
+          "start": 0,
+          "end": 5.31,
+          "duration": 5.31
+        },
+        {
+          "id": "M04.12.s02",
+          "text": "Early in recovery, a new propagated response cannot be triggered normally; later, a sufficiently strong premature stimulus may trigger one.",
+          "firstWordIndex": 12,
+          "lastWordIndex": 31,
+          "wordCount": 20,
+          "start": 5.87,
+          "end": 14.72,
+          "duration": 8.85
+        },
+        {
+          "id": "M04.12.s03",
+          "text": "These cellular periods do not have one exact boundary on every surface T wave.",
+          "firstWordIndex": 32,
+          "lastWordIndex": 45,
+          "wordCount": 14,
+          "start": 15.52,
+          "end": 20.51,
+          "duration": 4.99
+        },
+        {
+          "id": "M04.12.s04",
+          "text": "Put the sequence in order: impulse spread, calcium release, cross-bridge force, calcium removal, and relaxation.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 61,
+          "wordCount": 16,
+          "start": 21,
+          "end": 29.25,
+          "duration": 8.25
+        },
+        {
+          "id": "M04.12.s05",
+          "text": "Then return to the original heart and trace S A node to Purkinje fibers.",
+          "firstWordIndex": 62,
+          "lastWordIndex": 75,
+          "wordCount": 14,
+          "start": 29.86,
+          "end": 34.71,
+          "duration": 4.85
+        }
+      ],
+      "phraseAnchors": [
+        {
+          "phrase": "S A node",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s05",
+              "firstWordIndex": 70,
+              "lastWordIndex": 72,
+              "start": 32.1,
+              "end": 33.25
+            }
+          ]
+        },
+        {
+          "phrase": "Purkinje fibers",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s05",
+              "firstWordIndex": 74,
+              "lastWordIndex": 75,
+              "start": 33.41,
+              "end": 34.71
+            }
+          ]
+        },
+        {
+          "phrase": "calcium release",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s04",
+              "firstWordIndex": 53,
+              "lastWordIndex": 54,
+              "start": 23.95,
+              "end": 24.99
+            }
+          ]
+        },
+        {
+          "phrase": "relaxation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s04",
+              "firstWordIndex": 61,
+              "lastWordIndex": 61,
+              "start": 28.28,
+              "end": 29.25
+            }
+          ]
+        },
+        {
+          "phrase": "refractory period",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 3,
+              "start": 0.42,
+              "end": 1.61
+            }
+          ]
+        },
+        {
+          "phrase": "impulse spread",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s04",
+              "firstWordIndex": 51,
+              "lastWordIndex": 52,
+              "start": 22.72,
+              "end": 23.75
+            }
+          ]
+        },
+        {
+          "phrase": "cross bridge force",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s04",
+              "firstWordIndex": 55,
+              "lastWordIndex": 57,
+              "start": 25.26,
+              "end": 26.36
+            }
+          ]
+        },
+        {
+          "phrase": "calcium removal",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M04.12.s04",
+              "firstWordIndex": 58,
+              "lastWordIndex": 59,
+              "start": 26.66,
+              "end": 27.78
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M04.12.s01",
+          "at": 0,
+          "selected": "lv",
+          "route": "routeC",
+          "stage": "ventricular",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "voltage-plateau"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.31,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 11
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.s02",
+          "at": 5.87,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.72,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s02",
+            "firstWordIndex": 12,
+            "lastWordIndex": 31
+          },
+          "organ": "explanation",
+          "explanationTitle": "Refractory periods and premature stimuli"
+        },
+        {
+          "id": "M04.12.s03",
+          "at": 15.52,
+          "selected": null,
+          "route": null,
+          "stage": null,
+          "simulation": null,
+          "alignment": {
+            "kind": "sentence",
+            "end": 20.51,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s03",
+            "firstWordIndex": 32,
+            "lastWordIndex": 45
+          },
+          "organ": "explanation",
+          "explanationTitle": "Cellular refractoriness versus surface T waves"
+        },
+        {
+          "id": "M04.12.s04",
+          "at": 21,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.25,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s04",
+            "firstWordIndex": 46,
+            "lastWordIndex": 61
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.4.impulse-spread",
+          "at": 22.72,
+          "selected": "his",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 23.75,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s04",
+            "phrase": "impulse spread",
+            "firstWordIndex": 51,
+            "lastWordIndex": 52
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.4.calcium-release",
+          "at": 23.95,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 24.99,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s04",
+            "phrase": "calcium release",
+            "firstWordIndex": 53,
+            "lastWordIndex": 54
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.4.cross-bridge-force",
+          "at": 25.26,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "phase",
+            "phase": "ejection",
+            "side": "left"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 26.36,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s04",
+            "phrase": "cross bridge force",
+            "firstWordIndex": 55,
+            "lastWordIndex": 57
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.4.calcium-removal",
+          "at": 26.66,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "removal-visible"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 27.78,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s04",
+            "phrase": "calcium removal",
+            "firstWordIndex": 58,
+            "lastWordIndex": 59
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.4.relaxation",
+          "at": 28.28,
+          "selected": "lv",
+          "route": "routeB",
+          "stage": "filaments",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "relaxed",
+            "occurrence": "last"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 29.25,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s04",
+            "phrase": "relaxation",
+            "firstWordIndex": 61,
+            "lastWordIndex": 61
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.s05",
+          "at": 29.86,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "speed": 0.1,
+            "anchorAudio": 29.86
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 34.71,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s05",
+            "firstWordIndex": 62,
+            "lastWordIndex": 75
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.5.s-a-node",
+          "at": 32.1,
+          "selected": "sa",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 33.25,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s05",
+            "phrase": "S A node",
+            "firstWordIndex": 70,
+            "lastWordIndex": 72
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        },
+        {
+          "id": "M04.12.phrase.5.purkinje-fibers",
+          "at": 33.41,
+          "selected": "purkinje",
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "Purkinje-myocardium"
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 34.71,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M04.12.s05",
+            "phrase": "Purkinje fibers",
+            "firstWordIndex": 74,
+            "lastWordIndex": 75
+          },
+          "organ": "heart",
+          "explanationTitle": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1329 @@
+{
+  "schema": "guided-study.M08-bindings.v1",
+  "fullScenes": true,
+  "nativeExecutionVerified": false,
+  "firstCuePolicy": "Intentional readiness pose at zero; measuredStart preserves actual audio anchor. Later sentences use actual measured starts.",
+  "scope": "All scenes are explicit explanation cards; no ECG/trainer adapter or strip/caliper/rate tool is implied.",
+  "lessons": [
+    {
+      "id": "M08.01",
+      "cues": [
+        {
+          "id": "M08.01.s01",
+          "at": 0,
+          "text": "Check calibration before measuring.",
+          "title": "Check calibration before measuring.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Check speed and gain",
+            "text": "Check calibration before measuring.",
+            "source": "Owner-approved adapted M08.01 narration · source script lines 426-441 · course PDF physical pp228,230–231,234–235",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 1.92,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 3
+          }
+        },
+        {
+          "id": "M08.01.s02",
+          "at": 2.69,
+          "text": "At a paper speed of twenty-five millimeters per second, one small horizontal box represents zero point zero four seconds.",
+          "title": "At a paper speed of twenty-five millimeters per second, one small horizontal box represents zero point zero four seconds.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Small horizontal box: 0.04 seconds",
+            "text": "At a paper speed of twenty-five millimeters per second, one small horizontal box represents zero point zero four seconds.",
+            "source": "Owner-approved adapted M08.01 narration · source script lines 426-441 · course PDF physical pp228,230–231,234–235",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 2.69,
+            "end": 10.25,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.01.s02",
+            "firstWordIndex": 4,
+            "lastWordIndex": 23
+          }
+        },
+        {
+          "id": "M08.01.s03",
+          "at": 10.76,
+          "text": "One large box represents zero point two zero seconds.",
+          "title": "One large box represents zero point two zero seconds.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Large horizontal box: 0.20 seconds",
+            "text": "One large box represents zero point two zero seconds.",
+            "source": "Owner-approved adapted M08.01 narration · source script lines 426-441 · course PDF physical pp228,230–231,234–235",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 10.76,
+            "end": 14.39,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.01.s03",
+            "firstWordIndex": 24,
+            "lastWordIndex": 32
+          }
+        },
+        {
+          "id": "M08.01.s04",
+          "at": 14.92,
+          "text": "At the usual gain of ten millimeters per millivolt, one small vertical box represents zero point one millivolt.",
+          "title": "At the usual gain of ten millimeters per millivolt, one small vertical box represents zero point one millivolt.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Small vertical box: 0.1 millivolt",
+            "text": "At the usual gain of ten millimeters per millivolt, one small vertical box represents zero point one millivolt.",
+            "source": "Owner-approved adapted M08.01 narration · source script lines 426-441 · course PDF physical pp228,230–231,234–235",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 14.92,
+            "end": 22.11,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.01.s04",
+            "firstWordIndex": 33,
+            "lastWordIndex": 50
+          }
+        },
+        {
+          "id": "M08.01.s05",
+          "at": 22.82,
+          "text": "Different speed or gain changes these relationships.",
+          "title": "Different speed or gain changes these relationships.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Changed speed or gain changes the scale",
+            "text": "Different speed or gain changes these relationships.",
+            "source": "Owner-approved adapted M08.01 narration · source script lines 426-441 · course PDF physical pp228,230–231,234–235",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 22.82,
+            "end": 25.98,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.01.s05",
+            "firstWordIndex": 51,
+            "lastWordIndex": 57
+          }
+        },
+        {
+          "id": "M08.01.s06",
+          "at": 26.36,
+          "text": "A whole cardiac cycle is not always zero point eight seconds; its duration changes with rate.",
+          "title": "A whole cardiac cycle is not always zero point eight seconds; its duration changes with rate.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Cycle length varies with rate",
+            "text": "A whole cardiac cycle is not always zero point eight seconds; its duration changes with rate.",
+            "source": "Owner-approved adapted M08.01 narration · source script lines 426-441 · course PDF physical pp228,230–231,234–235",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Standard 25 mm/s and 10 mm/mV values are textual teaching relationships. No calibrated grid or standardization pulse is displayed. Approved narration corrects the source p231 fixed 0.8-second-cycle shorthand."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 26.36,
+            "end": 32.59,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.01.s06",
+            "firstWordIndex": 58,
+            "lastWordIndex": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.02",
+      "cues": [
+        {
+          "id": "M08.02.s01",
+          "at": 0,
+          "text": "The P wave represents atrial depolarization.",
+          "title": "The P wave represents atrial depolarization.",
+          "scene": {
+            "organ": "explanation",
+            "title": "P wave: atrial depolarization",
+            "text": "The P wave represents atrial depolarization.",
+            "source": "Owner-approved adapted M08.02 narration · source script lines 480-505;575-584 · course PDF physical pp271–275,415",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 2.95,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M08.02.s02",
+          "at": 3.48,
+          "text": "In a typical sinus rhythm in lead two, it is upright and similar from beat to beat.",
+          "title": "In a typical sinus rhythm in lead two, it is upright and similar from beat to beat.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Typical sinus P wave in lead II",
+            "text": "In a typical sinus rhythm in lead two, it is upright and similar from beat to beat.",
+            "source": "Owner-approved adapted M08.02 narration · source script lines 480-505;575-584 · course PDF physical pp271–275,415",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 3.48,
+            "end": 8.66,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.02.s02",
+            "firstWordIndex": 6,
+            "lastWordIndex": 22
+          }
+        },
+        {
+          "id": "M08.02.s03",
+          "at": 9.19,
+          "text": "The P R interval runs from the beginning of the P wave to the beginning of the Q R S complex.",
+          "title": "The P R interval runs from the beginning of the P wave to the beginning of the Q R S complex.",
+          "scene": {
+            "organ": "explanation",
+            "title": "PR: beginning of P to beginning of QRS",
+            "text": "The P R interval runs from the beginning of the P wave to the beginning of the Q R S complex.",
+            "source": "Owner-approved adapted M08.02 narration · source script lines 480-505;575-584 · course PDF physical pp271–275,415",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.19,
+            "end": 15.7,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.02.s03",
+            "firstWordIndex": 23,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M08.02.s04",
+          "at": 16.06,
+          "text": "A common adult reference is zero point one two to zero point two zero seconds.",
+          "title": "A common adult reference is zero point one two to zero point two zero seconds.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Adult PR reference range",
+            "text": "A common adult reference is zero point one two to zero point two zero seconds.",
+            "source": "Owner-approved adapted M08.02 narration · source script lines 480-505;575-584 · course PDF physical pp271–275,415",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 16.06,
+            "end": 21.78,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.02.s04",
+            "firstWordIndex": 44,
+            "lastWordIndex": 58
+          }
+        },
+        {
+          "id": "M08.02.s05",
+          "at": 22.04,
+          "text": "It includes atrial depolarization and conduction toward the ventricles, including the A V nodal delay.",
+          "title": "It includes atrial depolarization and conduction toward the ventricles, including the A V nodal delay.",
+          "scene": {
+            "organ": "explanation",
+            "title": "PR includes more than AV delay",
+            "text": "It includes atrial depolarization and conduction toward the ventricles, including the A V nodal delay.",
+            "source": "Owner-approved adapted M08.02 narration · source script lines 480-505;575-584 · course PDF physical pp271–275,415",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 22.04,
+            "end": 29.09,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.02.s05",
+            "firstWordIndex": 59,
+            "lastWordIndex": 73
+          }
+        },
+        {
+          "id": "M08.02.s06",
+          "at": 29.53,
+          "text": "It is not the duration of that delay alone.",
+          "title": "It is not the duration of that delay alone.",
+          "scene": {
+            "organ": "explanation",
+            "title": "PR is not AV delay alone",
+            "text": "It is not the duration of that delay alone.",
+            "source": "Owner-approved adapted M08.02 narration · source script lines 480-505;575-584 · course PDF physical pp271–275,415",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. P-wave and PR definitions are source-linked explanations. PR is not solely AV-nodal delay; no lead-II recording or actual interval is displayed/measured."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 29.53,
+            "end": 32.41,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.02.s06",
+            "firstWordIndex": 74,
+            "lastWordIndex": 82
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.03",
+      "cues": [
+        {
+          "id": "M08.03.s01",
+          "at": 0,
+          "text": "The Q R S complex represents ventricular depolarization.",
+          "title": "The Q R S complex represents ventricular depolarization.",
+          "scene": {
+            "organ": "explanation",
+            "title": "QRS: ventricular depolarization",
+            "text": "The Q R S complex represents ventricular depolarization.",
+            "source": "Owner-approved adapted M08.03 narration · source script lines 480-505;585-592 · course PDF physical pp276–278,420",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The J point is QRS end/ST start. No live caliper, QRS-width measurement or source strip is presented. Wide QRS is not assigned a single origin."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 3.85,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 7
+          }
+        },
+        {
+          "id": "M08.03.s02",
+          "at": 4.35,
+          "text": "Measure from its beginning to its end, at the transition into the S T segment called the J point.",
+          "title": "Measure from its beginning to its end, at the transition into the S T segment called the J point.",
+          "scene": {
+            "organ": "explanation",
+            "title": "J point: QRS end and ST start",
+            "text": "Measure from its beginning to its end, at the transition into the S T segment called the J point.",
+            "source": "Owner-approved adapted M08.03 narration · source script lines 480-505;585-592 · course PDF physical pp276–278,420",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The J point is QRS end/ST start. No live caliper, QRS-width measurement or source strip is presented. Wide QRS is not assigned a single origin."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 4.35,
+            "end": 10.99,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.03.s02",
+            "firstWordIndex": 8,
+            "lastWordIndex": 26
+          }
+        },
+        {
+          "id": "M08.03.s03",
+          "at": 11.56,
+          "text": "A duration below zero point one two seconds is usually described as narrow in adult rhythm teaching.",
+          "title": "A duration below zero point one two seconds is usually described as narrow in adult rhythm teaching.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Narrow QRS reference",
+            "text": "A duration below zero point one two seconds is usually described as narrow in adult rhythm teaching.",
+            "source": "Owner-approved adapted M08.03 narration · source script lines 480-505;585-592 · course PDF physical pp276–278,420",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The J point is QRS end/ST start. No live caliper, QRS-width measurement or source strip is presented. Wide QRS is not assigned a single origin."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 11.56,
+            "end": 18.03,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.03.s03",
+            "firstWordIndex": 27,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M08.03.s04",
+          "at": 18.49,
+          "text": "Not every complex contains a visible Q, R, and S wave.",
+          "title": "Not every complex contains a visible Q, R, and S wave.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Q, R and S need not all be visible",
+            "text": "Not every complex contains a visible Q, R, and S wave.",
+            "source": "Owner-approved adapted M08.03 narration · source script lines 480-505;585-592 · course PDF physical pp276–278,420",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The J point is QRS end/ST start. No live caliper, QRS-width measurement or source strip is presented. Wide QRS is not assigned a single origin."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 18.49,
+            "end": 23.05,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.03.s04",
+            "firstWordIndex": 44,
+            "lastWordIndex": 54
+          }
+        },
+        {
+          "id": "M08.03.s05",
+          "at": 23.68,
+          "text": "A wide complex can reflect ventricular origin, but also bundle-branch block, aberrant conduction, pre-excitation, pacing, or other causes.",
+          "title": "A wide complex can reflect ventricular origin, but also bundle-branch block, aberrant conduction, pre-excitation, pacing, or other causes.",
+          "scene": {
+            "organ": "explanation",
+            "title": "A wide complex has several possible causes",
+            "text": "A wide complex can reflect ventricular origin, but also bundle-branch block, aberrant conduction, pre-excitation, pacing, or other causes.",
+            "source": "Owner-approved adapted M08.03 narration · source script lines 480-505;585-592 · course PDF physical pp276–278,420",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The J point is QRS end/ST start. No live caliper, QRS-width measurement or source strip is presented. Wide QRS is not assigned a single origin."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 23.68,
+            "end": 34.27,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.03.s05",
+            "firstWordIndex": 55,
+            "lastWordIndex": 74
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.04",
+      "cues": [
+        {
+          "id": "M08.04.s01",
+          "at": 0,
+          "text": "The S T segment extends from the J point to the start of the T wave.",
+          "title": "The S T segment extends from the J point to the start of the T wave.",
+          "scene": {
+            "organ": "explanation",
+            "title": "ST: J point to T-wave start",
+            "text": "The S T segment extends from the J point to the start of the T wave.",
+            "source": "Owner-approved adapted M08.04 narration · source script lines 480-505 · course PDF physical pp273,276,279–280",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Electrical events and mechanical effects remain distinct. ST changes and U-wave explanations do not establish a clinical diagnosis."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 4.21,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 15
+          }
+        },
+        {
+          "id": "M08.04.s02",
+          "at": 4.7,
+          "text": "The T wave represents ventricular repolarization.",
+          "title": "The T wave represents ventricular repolarization.",
+          "scene": {
+            "organ": "explanation",
+            "title": "T wave: ventricular repolarization",
+            "text": "The T wave represents ventricular repolarization.",
+            "source": "Owner-approved adapted M08.04 narration · source script lines 480-505 · course PDF physical pp273,276,279–280",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Electrical events and mechanical effects remain distinct. ST changes and U-wave explanations do not establish a clinical diagnosis."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 4.7,
+            "end": 7.77,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.04.s02",
+            "firstWordIndex": 16,
+            "lastWordIndex": 21
+          }
+        },
+        {
+          "id": "M08.04.s03",
+          "at": 8.14,
+          "text": "Atrial repolarization is usually obscured by the much larger Q R S complex.",
+          "title": "Atrial repolarization is usually obscured by the much larger Q R S complex.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Atrial repolarization can be obscured",
+            "text": "Atrial repolarization is usually obscured by the much larger Q R S complex.",
+            "source": "Owner-approved adapted M08.04 narration · source script lines 480-505 · course PDF physical pp273,276,279–280",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Electrical events and mechanical effects remain distinct. ST changes and U-wave explanations do not establish a clinical diagnosis."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 8.14,
+            "end": 13.6,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.04.s03",
+            "firstWordIndex": 22,
+            "lastWordIndex": 34
+          }
+        },
+        {
+          "id": "M08.04.s04",
+          "at": 13.98,
+          "text": "A U wave may follow the T wave, but is not always visible.",
+          "title": "A U wave may follow the T wave, but is not always visible.",
+          "scene": {
+            "organ": "explanation",
+            "title": "U wave may be absent",
+            "text": "A U wave may follow the T wave, but is not always visible.",
+            "source": "Owner-approved adapted M08.04 narration · source script lines 480-505 · course PDF physical pp273,276,279–280",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Electrical events and mechanical effects remain distinct. ST changes and U-wave explanations do not establish a clinical diagnosis."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 13.98,
+            "end": 17.43,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.04.s04",
+            "firstWordIndex": 35,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M08.04.s05",
+          "at": 17.98,
+          "text": "S T elevation or depression can have several causes; a single teaching strip does not establish infarction or ischemia without the full clinical and lead context.",
+          "title": "S T elevation or depression can have several causes; a single teaching strip does not establish infarction or ischemia without the full clinical and lead context.",
+          "scene": {
+            "organ": "explanation",
+            "title": "ST changes require full context",
+            "text": "S T elevation or depression can have several causes; a single teaching strip does not establish infarction or ischemia without the full clinical and lead context.",
+            "source": "Owner-approved adapted M08.04 narration · source script lines 480-505 · course PDF physical pp273,276,279–280",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Electrical events and mechanical effects remain distinct. ST changes and U-wave explanations do not establish a clinical diagnosis."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 17.98,
+            "end": 27.59,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.04.s05",
+            "firstWordIndex": 48,
+            "lastWordIndex": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.05",
+      "cues": [
+        {
+          "id": "M08.05.s01",
+          "at": 0,
+          "text": "The Q T interval runs from the start of the Q R S complex to the end of the T wave.",
+          "title": "The Q T interval runs from the start of the Q R S complex to the end of the T wave.",
+          "scene": {
+            "organ": "explanation",
+            "title": "QT: QRS start to T-wave end",
+            "text": "The Q T interval runs from the start of the Q R S complex to the end of the T wave.",
+            "source": "Owner-approved adapted M08.05 narration · source script lines 480-505;593-602 · course PDF physical pp281,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The half-RR rule is qualified as a rough screen. No QT endpoint is measured and no QTc formula/result is generated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 5.51,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M08.05.s02",
+          "at": 5.91,
+          "text": "It spans ventricular depolarization and repolarization.",
+          "title": "It spans ventricular depolarization and repolarization.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Depolarization and repolarization",
+            "text": "It spans ventricular depolarization and repolarization.",
+            "source": "Owner-approved adapted M08.05 narration · source script lines 480-505;593-602 · course PDF physical pp281,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The half-RR rule is qualified as a rough screen. No QT endpoint is measured and no QTc formula/result is generated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 5.91,
+            "end": 9.44,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.05.s02",
+            "firstWordIndex": 21,
+            "lastWordIndex": 26
+          }
+        },
+        {
+          "id": "M08.05.s03",
+          "at": 9.87,
+          "text": "Q T changes with heart rate, so interpretation often uses a corrected value, called Q T c.",
+          "title": "Q T changes with heart rate, so interpretation often uses a corrected value, called Q T c.",
+          "scene": {
+            "organ": "explanation",
+            "title": "QT varies with heart rate",
+            "text": "Q T changes with heart rate, so interpretation often uses a corrected value, called Q T c.",
+            "source": "Owner-approved adapted M08.05 narration · source script lines 480-505;593-602 · course PDF physical pp281,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The half-RR rule is qualified as a rough screen. No QT endpoint is measured and no QTc formula/result is generated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.87,
+            "end": 16.63,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.05.s03",
+            "firstWordIndex": 27,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M08.05.s04",
+          "at": 17.06,
+          "text": "The half-R-R rule is only a rough screening shortcut, not a substitute for proper correction and context.",
+          "title": "The half-R-R rule is only a rough screening shortcut, not a substitute for proper correction and context.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Half-RR is a rough screen",
+            "text": "The half-R-R rule is only a rough screening shortcut, not a substitute for proper correction and context.",
+            "source": "Owner-approved adapted M08.05 narration · source script lines 480-505;593-602 · course PDF physical pp281,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The half-RR rule is qualified as a rough screen. No QT endpoint is measured and no QTc formula/result is generated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 17.06,
+            "end": 23.74,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.05.s04",
+            "firstWordIndex": 44,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M08.05.s05",
+          "at": 24.39,
+          "text": "Different correction formulas have limitations, especially at very fast or slow rates.",
+          "title": "Different correction formulas have limitations, especially at very fast or slow rates.",
+          "scene": {
+            "organ": "explanation",
+            "title": "QT correction formulas have limits",
+            "text": "Different correction formulas have limitations, especially at very fast or slow rates.",
+            "source": "Owner-approved adapted M08.05 narration · source script lines 480-505;593-602 · course PDF physical pp281,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The half-RR rule is qualified as a rough screen. No QT endpoint is measured and no QTc formula/result is generated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 24.39,
+            "end": 29.5,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.05.s05",
+            "firstWordIndex": 63,
+            "lastWordIndex": 74
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.06",
+      "cues": [
+        {
+          "id": "M08.06.s01",
+          "at": 0,
+          "text": "Use the same method on every strip.",
+          "title": "Use the same method on every strip.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Use a consistent method",
+            "text": "Use the same method on every strip.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 1.75,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 6
+          }
+        },
+        {
+          "id": "M08.06.s02",
+          "at": 2.25,
+          "text": "First, assess regularity.",
+          "title": "First, assess regularity.",
+          "scene": {
+            "organ": "explanation",
+            "title": "1 · Assess regularity",
+            "text": "First, assess regularity.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 2.25,
+            "end": 4.06,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s02",
+            "firstWordIndex": 7,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M08.06.s03",
+          "at": 4.6,
+          "text": "Second, calculate atrial and ventricular rates when possible.",
+          "title": "Second, calculate atrial and ventricular rates when possible.",
+          "scene": {
+            "organ": "explanation",
+            "title": "2 · Calculate atrial and ventricular rates",
+            "text": "Second, calculate atrial and ventricular rates when possible.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 4.6,
+            "end": 8.14,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s03",
+            "firstWordIndex": 10,
+            "lastWordIndex": 17
+          }
+        },
+        {
+          "id": "M08.06.s04",
+          "at": 8.57,
+          "text": "Third, examine P waves and their relationship to Q R S complexes.",
+          "title": "Third, examine P waves and their relationship to Q R S complexes.",
+          "scene": {
+            "organ": "explanation",
+            "title": "3 · Examine P waves and QRS relationship",
+            "text": "Third, examine P waves and their relationship to Q R S complexes.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 8.57,
+            "end": 13.34,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s04",
+            "firstWordIndex": 18,
+            "lastWordIndex": 29
+          }
+        },
+        {
+          "id": "M08.06.s05",
+          "at": 13.86,
+          "text": "Fourth, measure P R intervals and look for patterns.",
+          "title": "Fourth, measure P R intervals and look for patterns.",
+          "scene": {
+            "organ": "explanation",
+            "title": "4 · Measure PR and patterns",
+            "text": "Fourth, measure P R intervals and look for patterns.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 13.86,
+            "end": 17.35,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s05",
+            "firstWordIndex": 30,
+            "lastWordIndex": 38
+          }
+        },
+        {
+          "id": "M08.06.s06",
+          "at": 17.81,
+          "text": "Fifth, measure Q R S duration and compare shapes.",
+          "title": "Fifth, measure Q R S duration and compare shapes.",
+          "scene": {
+            "organ": "explanation",
+            "title": "5 · Measure QRS and compare shape",
+            "text": "Fifth, measure Q R S duration and compare shapes.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 17.81,
+            "end": 21.65,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s06",
+            "firstWordIndex": 39,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M08.06.s07",
+          "at": 22.04,
+          "text": "Sixth, evaluate Q T where the strip permits it.",
+          "title": "Sixth, evaluate Q T where the strip permits it.",
+          "scene": {
+            "organ": "explanation",
+            "title": "6 · Evaluate QT when possible",
+            "text": "Sixth, evaluate Q T where the strip permits it.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 22.04,
+            "end": 25.23,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s07",
+            "firstWordIndex": 48,
+            "lastWordIndex": 56
+          }
+        },
+        {
+          "id": "M08.06.s08",
+          "at": 25.79,
+          "text": "Describe the evidence before choosing a rhythm name.",
+          "title": "Describe the evidence before choosing a rhythm name.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Describe evidence before the name",
+            "text": "Describe the evidence before choosing a rhythm name.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 25.79,
+            "end": 28.32,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s08",
+            "firstWordIndex": 57,
+            "lastWordIndex": 64
+          }
+        },
+        {
+          "id": "M08.06.s09",
+          "at": 28.83,
+          "text": "Electrical rate does not necessarily equal an effective pulse rate.",
+          "title": "Electrical rate does not necessarily equal an effective pulse rate.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Electrical rate differs from effective pulse",
+            "text": "Electrical rate does not necessarily equal an effective pulse rate.",
+            "source": "Owner-approved adapted M08.06 narration · source script lines 539-602 · course PDF physical pp376,392,394,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Six-step observation method is a study checklist, not a scored strip interpretation or a generated rhythm classification."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 28.83,
+            "end": 32.5,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.06.s09",
+            "firstWordIndex": 65,
+            "lastWordIndex": 74
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.07",
+      "cues": [
+        {
+          "id": "M08.07.s01",
+          "at": 0,
+          "text": "Compare successive R to R intervals for ventricular regularity and P to P intervals for atrial regularity.",
+          "title": "Compare successive R to R intervals for ventricular regularity and P to P intervals for atrial regularity.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Compare RR and PP spacing",
+            "text": "Compare successive R to R intervals for ventricular regularity and P to P intervals for atrial regularity.",
+            "source": "Owner-approved adapted M08.07 narration · source script lines 551-562 · course PDF physical pp376",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The cited course page supports regularity comparison; ectopic/premature/escape distinctions follow the approved adapted narration. No calipers, ectopic waveform or pause strip are displayed."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 8.67,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.07.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 16
+          }
+        },
+        {
+          "id": "M08.07.s02",
+          "at": 9.04,
+          "text": "Calipers or a marked strip can help.",
+          "title": "Calipers or a marked strip can help.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Calipers and marked strips",
+            "text": "Calipers or a marked strip can help.",
+            "source": "Owner-approved adapted M08.07 narration · source script lines 551-562 · course PDF physical pp376",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The cited course page supports regularity comparison; ectopic/premature/escape distinctions follow the approved adapted narration. No calipers, ectopic waveform or pause strip are displayed."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.04,
+            "end": 11.38,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.07.s02",
+            "firstWordIndex": 17,
+            "lastWordIndex": 23
+          }
+        },
+        {
+          "id": "M08.07.s03",
+          "at": 11.68,
+          "text": "An early atrial, junctional, or ventricular beat may interrupt an otherwise regular rhythm.",
+          "title": "An early atrial, junctional, or ventricular beat may interrupt an otherwise regular rhythm.",
+          "scene": {
+            "organ": "explanation",
+            "title": "An early beat can interrupt a rhythm",
+            "text": "An early atrial, junctional, or ventricular beat may interrupt an otherwise regular rhythm.",
+            "source": "Owner-approved adapted M08.07 narration · source script lines 551-562 · course PDF physical pp376",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The cited course page supports regularity comparison; ectopic/premature/escape distinctions follow the approved adapted narration. No calipers, ectopic waveform or pause strip are displayed."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 11.68,
+            "end": 17.82,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.07.s03",
+            "firstWordIndex": 24,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M08.07.s04",
+          "at": 18.21,
+          "text": "Describe the underlying rhythm and then the premature complex.",
+          "title": "Describe the underlying rhythm and then the premature complex.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Name the underlying rhythm and premature beat",
+            "text": "Describe the underlying rhythm and then the premature complex.",
+            "source": "Owner-approved adapted M08.07 narration · source script lines 551-562 · course PDF physical pp376",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The cited course page supports regularity comparison; ectopic/premature/escape distinctions follow the approved adapted narration. No calipers, ectopic waveform or pause strip are displayed."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 18.21,
+            "end": 21.76,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.07.s04",
+            "firstWordIndex": 37,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M08.07.s05",
+          "at": 22.28,
+          "text": "Ectopic means originating outside the usual pacemaker site; not every ectopic event is premature, because escape beats arise late when higher pacing fails.",
+          "title": "Ectopic means originating outside the usual pacemaker site; not every ectopic event is premature, because escape beats arise late when higher pacing fails.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Ectopic does not always mean premature",
+            "text": "Ectopic means originating outside the usual pacemaker site; not every ectopic event is premature, because escape beats arise late when higher pacing fails.",
+            "source": "Owner-approved adapted M08.07 narration · source script lines 551-562 · course PDF physical pp376",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. The cited course page supports regularity comparison; ectopic/premature/escape distinctions follow the approved adapted narration. No calipers, ectopic waveform or pause strip are displayed."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 22.28,
+            "end": 33.13,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.07.s05",
+            "firstWordIndex": 46,
+            "lastWordIndex": 68
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.08",
+      "cues": [
+        {
+          "id": "M08.08.s01",
+          "at": 0,
+          "text": "On a six-second strip, count Q R S complexes and multiply by ten for an estimated ventricular rate.",
+          "title": "On a six-second strip, count Q R S complexes and multiply by ten for an estimated ventricular rate.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Six seconds: count QRS and multiply by 10",
+            "text": "On a six-second strip, count Q R S complexes and multiply by ten for an estimated ventricular rate.",
+            "source": "Owner-approved adapted M08.08 narration · source script lines 563-574 · course PDF physical pp392,394,399–402",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Three large boxes equal fifteen small boxes and 100 bpm; eighteen small boxes produce about 83 bpm. The source p400 conflicting counts are not treated as measurements of the same interval. All examples are arithmetic, not measured image findings."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 7.07,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.08.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M08.08.s02",
+          "at": 7.47,
+          "text": "For a regular rhythm at standard speed, divide three hundred by the number of large boxes between consecutive R waves, or fifteen hundred by the small-box count.",
+          "title": "For a regular rhythm at standard speed, divide three hundred by the number of large boxes between consecutive R waves, or fifteen hundred by the small-box count.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Regular rhythm: 300 or 1500 methods",
+            "text": "For a regular rhythm at standard speed, divide three hundred by the number of large boxes between consecutive R waves, or fifteen hundred by the small-box count.",
+            "source": "Owner-approved adapted M08.08 narration · source script lines 563-574 · course PDF physical pp392,394,399–402",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Three large boxes equal fifteen small boxes and 100 bpm; eighteen small boxes produce about 83 bpm. The source p400 conflicting counts are not treated as measurements of the same interval. All examples are arithmetic, not measured image findings."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 7.47,
+            "end": 16.68,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.08.s02",
+            "firstWordIndex": 19,
+            "lastWordIndex": 46
+          }
+        },
+        {
+          "id": "M08.08.s03",
+          "at": 17.23,
+          "text": "Three large boxes equal fifteen small boxes, so both calculations give one hundred beats per minute.",
+          "title": "Three large boxes equal fifteen small boxes, so both calculations give one hundred beats per minute.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Three large boxes equal fifteen small boxes",
+            "text": "Three large boxes equal fifteen small boxes, so both calculations give one hundred beats per minute.",
+            "source": "Owner-approved adapted M08.08 narration · source script lines 563-574 · course PDF physical pp392,394,399–402",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Three large boxes equal fifteen small boxes and 100 bpm; eighteen small boxes produce about 83 bpm. The source p400 conflicting counts are not treated as measurements of the same interval. All examples are arithmetic, not measured image findings."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 17.23,
+            "end": 23.66,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.08.s03",
+            "firstWordIndex": 47,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M08.08.s04",
+          "at": 23.92,
+          "text": "Eighteen small boxes give about eighty-three.",
+          "title": "Eighteen small boxes give about eighty-three.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Eighteen small boxes: about 83 bpm",
+            "text": "Eighteen small boxes give about eighty-three.",
+            "source": "Owner-approved adapted M08.08 narration · source script lines 563-574 · course PDF physical pp392,394,399–402",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Three large boxes equal fifteen small boxes and 100 bpm; eighteen small boxes produce about 83 bpm. The source p400 conflicting counts are not treated as measurements of the same interval. All examples are arithmetic, not measured image findings."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 23.92,
+            "end": 26.51,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.08.s04",
+            "firstWordIndex": 63,
+            "lastWordIndex": 69
+          }
+        },
+        {
+          "id": "M08.08.s05",
+          "at": 26.82,
+          "text": "Those are different intervals, not competing answers for the same spacing.",
+          "title": "Those are different intervals, not competing answers for the same spacing.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Different spacing explains different answers",
+            "text": "Those are different intervals, not competing answers for the same spacing.",
+            "source": "Owner-approved adapted M08.08 narration · source script lines 563-574 · course PDF physical pp392,394,399–402",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Three large boxes equal fifteen small boxes and 100 bpm; eighteen small boxes produce about 83 bpm. The source p400 conflicting counts are not treated as measurements of the same interval. All examples are arithmetic, not measured image findings."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 26.82,
+            "end": 30.6,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.08.s05",
+            "firstWordIndex": 70,
+            "lastWordIndex": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "M08.09",
+      "cues": [
+        {
+          "id": "M08.09.s01",
+          "at": 0,
+          "text": "If a verified practice strip is available in the website, work through it now.",
+          "title": "If a verified practice strip is available in the website, work through it now.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Practice requires an actual verified strip",
+            "text": "If a verified practice strip is available in the website, work through it now.",
+            "source": "Owner-approved adapted M08.09 narration · source script lines 575-602 · course PDF physical pp376,392,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Conditional practice checkpoint. This lesson displays no strip or marking/caliper tool and records no answers. Existing ECG practice remains separately learner controlled; unseen numbered course figures are not recreated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 4.11,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.09.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M08.09.s02",
+          "at": 4.71,
+          "text": "Mark P waves, measure the P R interval, measure Q R S duration, and compare R to R spacing.",
+          "title": "Mark P waves, measure the P R interval, measure Q R S duration, and compare R to R spacing.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Measurements require visible landmarks",
+            "text": "Mark P waves, measure the P R interval, measure Q R S duration, and compare R to R spacing.",
+            "source": "Owner-approved adapted M08.09 narration · source script lines 575-602 · course PDF physical pp376,392,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Conditional practice checkpoint. This lesson displays no strip or marking/caliper tool and records no answers. Existing ECG practice remains separately learner controlled; unseen numbered course figures are not recreated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 4.71,
+            "end": 12.33,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.09.s02",
+            "firstWordIndex": 14,
+            "lastWordIndex": 32
+          }
+        },
+        {
+          "id": "M08.09.s03",
+          "at": 12.79,
+          "text": "If atrial activity is not visible, say so rather than inventing a P wave.",
+          "title": "If atrial activity is not visible, say so rather than inventing a P wave.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Do not invent absent atrial activity",
+            "text": "If atrial activity is not visible, say so rather than inventing a P wave.",
+            "source": "Owner-approved adapted M08.09 narration · source script lines 575-602 · course PDF physical pp376,392,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Conditional practice checkpoint. This lesson displays no strip or marking/caliper tool and records no answers. Existing ECG practice remains separately learner controlled; unseen numbered course figures are not recreated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 12.79,
+            "end": 17.83,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.09.s03",
+            "firstWordIndex": 33,
+            "lastWordIndex": 46
+          }
+        },
+        {
+          "id": "M08.09.s04",
+          "at": 18.26,
+          "text": "Record what can and cannot be measured.",
+          "title": "Record what can and cannot be measured.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Record what can and cannot be measured",
+            "text": "Record what can and cannot be measured.",
+            "source": "Owner-approved adapted M08.09 narration · source script lines 575-602 · course PDF physical pp376,392,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Conditional practice checkpoint. This lesson displays no strip or marking/caliper tool and records no answers. Existing ECG practice remains separately learner controlled; unseen numbered course figures are not recreated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 18.26,
+            "end": 20.47,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.09.s04",
+            "firstWordIndex": 47,
+            "lastWordIndex": 53
+          }
+        },
+        {
+          "id": "M08.09.s05",
+          "at": 20.93,
+          "text": "A strip's label must come from the actual image and measurements; the audiobook's references to unseen numbered figures are not enough to recreate their answers.",
+          "title": "A strip's label must come from the actual image and measurements; the audiobook's references to unseen numbered figures are not enough to recreate their answers.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Labels must come from the actual strip",
+            "text": "A strip's label must come from the actual image and measurements; the audiobook's references to unseen numbered figures are not enough to recreate their answers.",
+            "source": "Owner-approved adapted M08.09 narration · source script lines 575-602 · course PDF physical pp376,392,409,415,420,428",
+            "qualification": "EXPLANATION ONLY · No ECG strip, calibrated drawing, caliper, measured interval, calculated QTc or scored rhythm answer is displayed. Conditional practice checkpoint. This lesson displays no strip or marking/caliper tool and records no answers. Existing ECG practice remains separately learner controlled; unseen numbered course figures are not recreated."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 20.93,
+            "end": 30.07,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M08.09.s05",
+            "firstWordIndex": 54,
+            "lastWordIndex": 78
+          }
+        }
+      ]
+    }
+  ]
+}

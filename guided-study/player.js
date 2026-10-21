@@ -13,7 +13,7 @@
     if (doc.getElementById('guidedStudyPlayer')) throw Error('Guided player is already mounted');
     var lessons = options.lessons || [], byId = new Map(lessons.map(function (l) { return [l.id, l]; }));
     var disposed = false, initialized = false, playPending = false, localError = '', frame = 0, ticking = false, session;
-    var listeners = [], renderedLesson = null, renderedCue = null;
+    var listeners = [], renderedLesson = null, renderedCue = null, clip = null;
     function node(tag, text, attrs, parent) {
       var el = doc.createElement(tag);
       if (text != null) el.textContent = text;
@@ -43,7 +43,20 @@
     var panel = node('div', null, { class: 'gs-panel' }, card);
     var lessonSelect = field('Lesson', 'select', { 'data-guided-lesson': '', 'aria-label': 'Guided lesson' }, panel);
     node('option', 'Choose a lesson', { value: '' }, lessonSelect);
-    lessons.forEach(function (l) { node('option', l.title || l.id, { value: l.id }, lessonSelect); });
+    var catalog = options.catalog, listed = new Set();
+    if (catalog && Array.isArray(catalog.segments)) catalog.segments.forEach(function (item) {
+      var l = byId.get(item.id); listed.add(item.id);
+      node('option', item.id + ' · ' + (l && l.title || item.title || item.id) + (l ? '' : ' · not integrated'), l ? { value: l.id } : { value: item.id, disabled: '' }, lessonSelect);
+    });
+    lessons.forEach(function (l) { if (!listed.has(l.id)) node('option', l.id + ' · ' + (l.title || l.id), { value: l.id }, lessonSelect); });
+    var sectionControls = node('div', null, { class: 'gs-row', role: 'group', 'aria-label': 'Lesson sections' }, panel);
+    var previousSection = button('Previous section', 'previous-section', sectionControls), nextSection = button('Next section', 'next-section', sectionControls);
+    var availableSections = lessons.filter(function (l) { return l.audio; }).slice().sort(function (a, b) { return a.id.localeCompare(b.id); });
+    if (catalog) {
+      var rollout = node('details', null, { class: 'gs-transcript' }, panel);
+      node('summary', 'Course availability and visual limits', null, rollout);
+      node('p', availableSections.length + ' audio sections are integrated in this private candidate. Other course sections remain disabled until their audio and scene bindings are integrated. Each scene identifies model reconstructions or explanation-only content. The source draft records ' + catalog.declaredGapClips + ' clips with capability gaps; loaded metadata alone does not resolve those gaps. Listening, physical iPad and specialist review remain pending.', { class: 'gs-note', 'data-guided-rollout': '' }, rollout);
+    }
     var modes = node('div', null, { class: 'gs-row', role: 'group', 'aria-label': 'Learning mode' }, panel);
     var guidedButton = button('Open Guided (paused)', 'guided', modes), exploreButton = button('Explore', 'explore', modes);
     var modeNote = node('p', 'Guided controls the scene with narration. Explore gives you control without losing your guided place.', { class: 'gs-note', 'data-guided-mode-note': '' }, panel);
@@ -77,6 +90,9 @@
       if (disposed) return;
       var l = byId.get(state.lessonId), cues = l && l.cues || [], cue = cues[state.cueIndex], isGuided = state.mode === 'guided', ready = initialized && !!l;
       lessonSelect.value = state.lessonId || '';
+      var sectionIndex = availableSections.findIndex(function (item) { return item.id === state.lessonId; });
+      previousSection.disabled = state.busy || sectionIndex <= 0;
+      nextSection.disabled = state.busy || sectionIndex < 0 || sectionIndex >= availableSections.length - 1;
       guidedButton.disabled = !l || state.busy;
       guidedButton.textContent = !initialized ? 'Open Guided (paused)' : isGuided ? 'Guided' : 'Return to Guided (paused)';
       guidedButton.setAttribute('aria-pressed', String(isGuided && initialized));
@@ -144,7 +160,40 @@
     }
     var storage = options.storage;
     if (storage === undefined) { try { storage = host.localStorage; } catch (_) { storage = null; } }
-    session = host.GuidedStudySession.create({ lessons: lessons, audio: audio, adapters: options.adapters, storage: storage, onChange: render });
+    var canResolveAudio = typeof host.fetch === 'function' && host.URL && typeof host.URL.createObjectURL === 'function' && typeof host.URL.revokeObjectURL === 'function';
+    async function resolveAudio(spec, context) {
+      var url = new host.URL(spec.src, doc.baseURI || host.location.href), owned = null;
+      if (url.origin !== host.location.origin) throw Error('Narration media must use a same-origin asset.');
+      if (clip && clip.key === url.href) return context.isCurrent() && !disposed ? clip.url : null;
+      try {
+        var response = await host.fetch(url.href, { signal: context.signal, credentials: 'same-origin', mode: 'same-origin' });
+        if (!context.isCurrent() || disposed) return null;
+        if (!response.ok || response.status === 206) throw Error('Narration download failed (HTTP ' + response.status + ').');
+        var blob = await response.blob();
+        if (!context.isCurrent() || disposed) return null;
+        if (!blob || !blob.size) throw Error('Narration download returned an empty clip.');
+        owned = host.URL.createObjectURL(blob);
+        if (!context.isCurrent() || disposed) { host.URL.revokeObjectURL(owned); owned = null; return null; }
+        var candidate = owned, settled = false;
+        owned = null;
+        // Attachment adopts this lease synchronously. A cancellation between
+        // resolution and attachment can release only its own candidate URL.
+        return { src: candidate, commit: function () {
+          if (settled) return;
+          settled = true;
+          var prior = clip;
+          clip = { key: url.href, url: candidate };
+          if (prior) host.URL.revokeObjectURL(prior.url);
+        }, release: function () {
+          if (!settled) { settled = true; host.URL.revokeObjectURL(candidate); }
+        } };
+      } catch (e) {
+        if (owned) host.URL.revokeObjectURL(owned);
+        if (!context.isCurrent() || disposed) return null;
+        throw e;
+      }
+    }
+    session = host.GuidedStudySession.create({ lessons: lessons, audio: audio, adapters: options.adapters, storage: storage, onChange: render, resolveAudio: canResolveAudio ? resolveAudio : undefined });
     listen(lessonSelect, 'change', function () { if (lessonSelect.value) load(lessonSelect.value); });
     listen(guidedButton, 'click', function () {
       if (initialized && session.inspect().mode === 'guided') return;
@@ -160,15 +209,25 @@
     });
     listen(backButton, 'click', function () { action(function () { return session.back(); }); });
     listen(nextButton, 'click', function () { action(function () { return session.next(); }); });
+    function adjacentSection(offset) {
+      var index = availableSections.findIndex(function (item) { return item.id === session.inspect().lessonId; });
+      var item = availableSections[index + offset];
+      if (index >= 0 && item) load(item.id);
+    }
+    listen(previousSection, 'click', function () { adjacentSection(-1); });
+    listen(nextSection, 'click', function () { adjacentSection(1); });
     listen(replayButton, 'click', function () { action(function () { return session.replay(); }); });
     listen(cueSelect, 'change', function () { action(function () { return session.seekCue(cueSelect.value); }); });
     listen(seek, 'input', function () { action(function () { return session.seek(Number(seek.value)); }); });
     function manual(event) {
       if (!event.isTrusted || disposed || !session.inspect().lessonId || session.inspect().mode !== 'guided') return;
       var target = event.target;
-      if (!target || card.contains(target) || !target.closest || !target.closest('#heartV3Study, #cardiorespiratoryStudy')) return;
+      if (!target || card.contains(target) || !target.closest) return;
+      var simulator = target.closest('#heartV3Study, #cardiorespiratoryStudy, #leadPlacementHome');
+      var navigation = target.closest('button, a[href], select, input[type="button"], input[type="submit"], [role="button"], [onclick], [onchange]');
+      if (!simulator && (!navigation || navigation.disabled || !navigation.closest('#home, #quiz, #results, header'))) return;
       if (event.type === 'keydown' && ['Shift', 'Control', 'Alt', 'Meta', 'Tab', 'Escape'].includes(event.key)) return;
-      // Capture phase releases Guided ownership before the simulator handles the gesture.
+      // Release before simulator input or global navigation can close its scene.
       session.enterExplore();
     }
     ['pointerdown', 'keydown', 'change'].forEach(function (type) { listen(doc, type, manual, true); });
@@ -180,7 +239,9 @@
       if (disposed) return;
       disposed = true;
       if (frame) host.cancelAnimationFrame(frame);
-      frame = 0; listeners.forEach(function (off) { off(); }); session.dispose(); card.remove();
+      frame = 0; listeners.forEach(function (off) { off(); }); session.dispose();
+      if (clip) { audio.removeAttribute('src'); if (typeof audio.load === 'function') audio.load(); host.URL.revokeObjectURL(clip.url); clip = null; }
+      card.remove();
     }
     render(session.inspect());
     return { element: card, audio: audio, session: session, ready: Promise.resolve(true), load: load, inspect: function () { return session.inspect(); }, dispose: dispose };

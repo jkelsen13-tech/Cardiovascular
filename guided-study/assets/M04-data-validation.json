@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "module": "M04",
+  "lessons": 12,
+  "cues": 83,
+  "sentenceCues": 67,
+  "phraseCues": 16,
+  "explanationCards": 17,
+  "heartCues": 66,
+  "sweeps": 22,
+  "unchangedAudioHashes": 12,
+  "durationSeconds": 399.202877,
+  "audioBytes": 6590490,
+  "preservedPriorLessons": 21,
+  "fullAppendCount": 33,
+  "uniqueReload": true,
+  "sessionCoreConstruction": true,
+  "nodalHandoff": {
+    "measuredAudioBoundary": 11.93,
+    "driftWindow": {
+      "start": 0.2,
+      "end": 0.8,
+      "time": 0.49950000000000006
+    },
+    "upstrokeWindow": {
+      "start": 0.035,
+      "end": 0.08,
+      "time": 0.057
+    },
+    "beforeVoltage": -41.13385826771653,
+    "afterVoltage": -40
+  },
+  "sercaNcxMovingCueThresholdChecked": true,
+  "sequence": [
+    {
+      "id": "M04.12.phrase.4.impulse-spread",
+      "modelTime": 0.20700000000000002,
+      "calcium": 0,
+      "activation": 0,
+      "phase": "atrial-contraction"
+    },
+    {
+      "id": "M04.12.phrase.4.calcium-release",
+      "modelTime": 0.258,
+      "calcium": 0.5066666666666665,
+      "activation": 0.09549150281252639,
+      "phase": "isovolumetric-contraction"
+    },
+    {
+      "id": "M04.12.phrase.4.cross-bridge-force",
+      "modelTime": 0.35800000000000004,
+      "calcium": 0.7576923076923074,
+      "activation": 1,
+      "phase": "ejection"
+    },
+    {
+      "id": "M04.12.phrase.4.calcium-removal",
+      "modelTime": 0.47050000000000003,
+      "calcium": 0.3249999999999994,
+      "activation": 0.8362536109472621,
+      "phase": "isovolumetric-relaxation"
+    },
+    {
+      "id": "M04.12.phrase.4.relaxation",
+      "modelTime": 0.677,
+      "calcium": 0,
+      "activation": 0,
+      "phase": "passive-filling"
+    }
+  ],
+  "completeCellularCycle": true,
+  "allTargetsResolved": 64,
+  "alignmentQAFlagsPreserved": 1,
+  "lessonsSha256": "7daf751a283b420db3444adcd817a6ccc93521bb69ceb330a8223b15168654f0",
+  "limits": "CPU source/data/model-state verification only. Native adapter rendering, browser integration, audio listening/pronunciation, iPad and performance acceptance remain pending."
+}

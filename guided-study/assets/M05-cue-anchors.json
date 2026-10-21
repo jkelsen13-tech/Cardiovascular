@@ -1,0 +1,4554 @@
+{
+  "schema": "guided-study.M05-cue-anchors.v1",
+  "units": "seconds from delivered clip start",
+  "machineMeasured": true,
+  "humanListeningQA": false,
+  "frameGranularitySeconds": 0.01,
+  "accuracyClaim": null,
+  "clips": [
+    {
+      "id": "M05.01",
+      "sentences": [
+        {
+          "id": "M05.01.s01",
+          "text": "Trace the air pathway.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 3,
+          "wordCount": 4,
+          "start": 0,
+          "end": 1.58,
+          "duration": 1.58
+        },
+        {
+          "id": "M05.01.s02",
+          "text": "Air enters through the nose or mouth.",
+          "firstWordIndex": 4,
+          "lastWordIndex": 10,
+          "wordCount": 7,
+          "start": 1.88,
+          "end": 4.16,
+          "duration": 2.28
+        },
+        {
+          "id": "M05.01.s03",
+          "text": "The nasal cavity filters, warms, and humidifies air.",
+          "firstWordIndex": 11,
+          "lastWordIndex": 18,
+          "wordCount": 8,
+          "start": 4.48,
+          "end": 8.22,
+          "duration": 3.74
+        },
+        {
+          "id": "M05.01.s04",
+          "text": "The pharynx has named regions: the nasopharynx behind the nasal cavity, the oropharynx behind the oral cavity, and the laryngopharynx farther down.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 40,
+          "wordCount": 22,
+          "start": 8.48,
+          "end": 18.56,
+          "duration": 10.08
+        },
+        {
+          "id": "M05.01.s05",
+          "text": "These regions are not simply alternate names for the nose and mouth.",
+          "firstWordIndex": 41,
+          "lastWordIndex": 52,
+          "wordCount": 12,
+          "start": 19.1,
+          "end": 22.98,
+          "duration": 3.88
+        },
+        {
+          "id": "M05.01.s06",
+          "text": "The airway shares part of its route with the digestive pathway before the routes separate.",
+          "firstWordIndex": 53,
+          "lastWordIndex": 67,
+          "wordCount": 15,
+          "start": 23.48,
+          "end": 28.51,
+          "duration": 5.03
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "air pathway",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 3,
+              "start": 0.61,
+              "end": 1.58
+            }
+          ]
+        },
+        {
+          "phrase": "nose or mouth",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s02",
+              "firstWordIndex": 8,
+              "lastWordIndex": 10,
+              "start": 3,
+              "end": 4.16
+            }
+          ]
+        },
+        {
+          "phrase": "nasal cavity",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s03",
+              "firstWordIndex": 12,
+              "lastWordIndex": 13,
+              "start": 4.55,
+              "end": 5.47
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.01.s04",
+              "firstWordIndex": 28,
+              "lastWordIndex": 29,
+              "start": 12.39,
+              "end": 13.41
+            }
+          ]
+        },
+        {
+          "phrase": "pharynx",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s04",
+              "firstWordIndex": 20,
+              "lastWordIndex": 20,
+              "start": 8.56,
+              "end": 9.07
+            }
+          ]
+        },
+        {
+          "phrase": "nasopharynx",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s04",
+              "firstWordIndex": 25,
+              "lastWordIndex": 25,
+              "start": 10.82,
+              "end": 11.79
+            }
+          ]
+        },
+        {
+          "phrase": "oropharynx",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s04",
+              "firstWordIndex": 31,
+              "lastWordIndex": 31,
+              "start": 13.85,
+              "end": 14.65
+            }
+          ]
+        },
+        {
+          "phrase": "laryngopharynx",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.01.s04",
+              "firstWordIndex": 38,
+              "lastWordIndex": 38,
+              "start": 16.64,
+              "end": 17.71
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.01.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Airway pathway overview",
+            "text": "Trace the air pathway.",
+            "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 1.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 3
+          }
+        },
+        {
+          "id": "M05.01.s02",
+          "at": 1.88,
+          "scene": {
+            "organ": "explanation",
+            "title": "Nose and mouth",
+            "text": "Air enters through the nose or mouth.",
+            "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.16,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.01.s02",
+            "firstWordIndex": 4,
+            "lastWordIndex": 10
+          }
+        },
+        {
+          "id": "M05.01.s03",
+          "at": 4.48,
+          "scene": {
+            "organ": "explanation",
+            "title": "Nasal cavity functions",
+            "text": "The nasal cavity filters, warms, and humidifies air.",
+            "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.01.s03",
+            "firstWordIndex": 11,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M05.01.s04",
+          "at": 8.48,
+          "scene": {
+            "organ": "explanation",
+            "title": "Pharyngeal regions",
+            "text": "The pharynx has named regions: the nasopharynx behind the nasal cavity, the oropharynx behind the oral cavity, and the laryngopharynx farther down.",
+            "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.56,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.01.s04",
+            "firstWordIndex": 19,
+            "lastWordIndex": 40
+          }
+        },
+        {
+          "id": "M05.01.s05",
+          "at": 19.1,
+          "scene": {
+            "organ": "explanation",
+            "title": "Pharynx terminology",
+            "text": "These regions are not simply alternate names for the nose and mouth.",
+            "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.98,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.01.s05",
+            "firstWordIndex": 41,
+            "lastWordIndex": 52
+          }
+        },
+        {
+          "id": "M05.01.s06",
+          "at": 23.48,
+          "scene": {
+            "organ": "explanation",
+            "title": "Airway and digestive pathway",
+            "text": "The airway shares part of its route with the digestive pathway before the routes separate.",
+            "source": "Owner-approved adapted M05.01 narration · source script lines 116-121;134-147 · course PDF physical pp55–57",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 28.51,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.01.s06",
+            "firstWordIndex": 53,
+            "lastWordIndex": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.02",
+      "sentences": [
+        {
+          "id": "M05.02.s01",
+          "text": "The larynx contains the vocal folds and connects the pharynx to the trachea.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 12,
+          "wordCount": 13,
+          "start": 0,
+          "end": 4.26,
+          "duration": 4.26
+        },
+        {
+          "id": "M05.02.s02",
+          "text": "During swallowing, coordinated movements protect the airway; the epiglottis helps cover the laryngeal opening.",
+          "firstWordIndex": 13,
+          "lastWordIndex": 26,
+          "wordCount": 14,
+          "start": 4.86,
+          "end": 11.49,
+          "duration": 6.63
+        },
+        {
+          "id": "M05.02.s03",
+          "text": "The trachea then carries air toward the lungs.",
+          "firstWordIndex": 27,
+          "lastWordIndex": 34,
+          "wordCount": 8,
+          "start": 11.97,
+          "end": 14.81,
+          "duration": 2.84
+        },
+        {
+          "id": "M05.02.s04",
+          "text": "Definitions of the upper-lower airway boundary differ among courses, so this lesson will name the actual structures rather than make the boundary itself a physiological rule.",
+          "firstWordIndex": 35,
+          "lastWordIndex": 61,
+          "wordCount": 27,
+          "start": 15.54,
+          "end": 25.67,
+          "duration": 10.13
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "pharynx",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.02.s01",
+              "firstWordIndex": 9,
+              "lastWordIndex": 9,
+              "start": 2.92,
+              "end": 3.43
+            }
+          ]
+        },
+        {
+          "phrase": "larynx",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.02.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 1,
+              "start": 0.16,
+              "end": 0.67
+            }
+          ]
+        },
+        {
+          "phrase": "vocal folds",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.02.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 5,
+              "start": 1.32,
+              "end": 2.26
+            }
+          ]
+        },
+        {
+          "phrase": "trachea",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.02.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 12,
+              "start": 3.65,
+              "end": 4.26
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.02.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 12.05,
+              "end": 12.62
+            }
+          ]
+        },
+        {
+          "phrase": "epiglottis",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.02.s02",
+              "firstWordIndex": 21,
+              "lastWordIndex": 21,
+              "start": 8.87,
+              "end": 9.56
+            }
+          ]
+        },
+        {
+          "phrase": "laryngeal opening",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.02.s02",
+              "firstWordIndex": 25,
+              "lastWordIndex": 26,
+              "start": 10.3,
+              "end": 11.49
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.02.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Larynx and vocal folds",
+            "text": "The larynx contains the vocal folds and connects the pharynx to the trachea.",
+            "source": "Owner-approved adapted M05.02 narration · source script lines 116-133 · course PDF physical pp57–60,69",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.26,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 12
+          }
+        },
+        {
+          "id": "M05.02.s02",
+          "at": 4.86,
+          "scene": {
+            "organ": "explanation",
+            "title": "Swallowing and epiglottis",
+            "text": "During swallowing, coordinated movements protect the airway; the epiglottis helps cover the laryngeal opening.",
+            "source": "Owner-approved adapted M05.02 narration · source script lines 116-133 · course PDF physical pp57–60,69",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.49,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.02.s02",
+            "firstWordIndex": 13,
+            "lastWordIndex": 26
+          }
+        },
+        {
+          "id": "M05.02.s03",
+          "at": 11.97,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "trachea",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 14.81,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.02.s03",
+            "firstWordIndex": 27,
+            "lastWordIndex": 34
+          }
+        },
+        {
+          "id": "M05.02.s04",
+          "at": 15.54,
+          "scene": {
+            "organ": "explanation",
+            "title": "Upper/lower airway definitions",
+            "text": "Definitions of the upper-lower airway boundary differ among courses, so this lesson will name the actual structures rather than make the boundary itself a physiological rule.",
+            "source": "Owner-approved adapted M05.02 narration · source script lines 116-133 · course PDF physical pp57–60,69",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 25.67,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.02.s04",
+            "firstWordIndex": 35,
+            "lastWordIndex": 61
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.03",
+      "sentences": [
+        {
+          "id": "M05.03.s01",
+          "text": "The trachea divides into the right and left main bronchi.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 9,
+          "wordCount": 10,
+          "start": 0,
+          "end": 3.06,
+          "duration": 3.06
+        },
+        {
+          "id": "M05.03.s02",
+          "text": "Inside the lungs, branches become smaller bronchi and bronchioles.",
+          "firstWordIndex": 10,
+          "lastWordIndex": 18,
+          "wordCount": 9,
+          "start": 3.58,
+          "end": 8.22,
+          "duration": 4.64
+        },
+        {
+          "id": "M05.03.s03",
+          "text": "The right lung normally has three lobes, and the left has two.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 30,
+          "wordCount": 12,
+          "start": 8.63,
+          "end": 12.69,
+          "duration": 4.06
+        },
+        {
+          "id": "M05.03.s04",
+          "text": "The conducting airways transport air.",
+          "firstWordIndex": 31,
+          "lastWordIndex": 35,
+          "wordCount": 5,
+          "start": 13.24,
+          "end": 15.74,
+          "duration": 2.5
+        },
+        {
+          "id": "M05.03.s05",
+          "text": "Farther along, the respiratory zone includes respiratory bronchioles, alveolar ducts, and alveoli.",
+          "firstWordIndex": 36,
+          "lastWordIndex": 47,
+          "wordCount": 12,
+          "start": 16.25,
+          "end": 23.86,
+          "duration": 7.61
+        },
+        {
+          "id": "M05.03.s06",
+          "text": "Follow the route rather than treating the pleura or diaphragm as structures that air passes through.",
+          "firstWordIndex": 48,
+          "lastWordIndex": 63,
+          "wordCount": 16,
+          "start": 24.43,
+          "end": 30.6,
+          "duration": 6.17
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "alveoli",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s05",
+              "firstWordIndex": 47,
+              "lastWordIndex": 47,
+              "start": 22.93,
+              "end": 23.86
+            }
+          ]
+        },
+        {
+          "phrase": "trachea",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 1,
+              "start": 0.17,
+              "end": 0.68
+            }
+          ]
+        },
+        {
+          "phrase": "right and left main bronchi",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 9,
+              "start": 1.48,
+              "end": 3.06
+            }
+          ]
+        },
+        {
+          "phrase": "bronchi",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s01",
+              "firstWordIndex": 9,
+              "lastWordIndex": 9,
+              "start": 2.54,
+              "end": 3.06
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.03.s02",
+              "firstWordIndex": 16,
+              "lastWordIndex": 16,
+              "start": 6.54,
+              "end": 7.05
+            }
+          ]
+        },
+        {
+          "phrase": "bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s02",
+              "firstWordIndex": 18,
+              "lastWordIndex": 18,
+              "start": 7.22,
+              "end": 8.22
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.03.s05",
+              "firstWordIndex": 43,
+              "lastWordIndex": 43,
+              "start": 19.7,
+              "end": 20.67
+            }
+          ]
+        },
+        {
+          "phrase": "right lung",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s03",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 8.7,
+              "end": 9.35
+            }
+          ]
+        },
+        {
+          "phrase": "left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s01",
+              "firstWordIndex": 7,
+              "lastWordIndex": 7,
+              "start": 1.9,
+              "end": 2.22
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.03.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 11.46,
+              "end": 11.9
+            }
+          ]
+        },
+        {
+          "phrase": "conducting airways",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s04",
+              "firstWordIndex": 32,
+              "lastWordIndex": 33,
+              "start": 13.34,
+              "end": 14.6
+            }
+          ]
+        },
+        {
+          "phrase": "respiratory zone",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s05",
+              "firstWordIndex": 39,
+              "lastWordIndex": 40,
+              "start": 17.26,
+              "end": 18.41
+            }
+          ]
+        },
+        {
+          "phrase": "respiratory bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s05",
+              "firstWordIndex": 42,
+              "lastWordIndex": 43,
+              "start": 19,
+              "end": 20.67
+            }
+          ]
+        },
+        {
+          "phrase": "alveolar ducts",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s05",
+              "firstWordIndex": 44,
+              "lastWordIndex": 45,
+              "start": 21,
+              "end": 22.41
+            }
+          ]
+        },
+        {
+          "phrase": "diaphragm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.03.s06",
+              "firstWordIndex": 57,
+              "lastWordIndex": 57,
+              "start": 27.26,
+              "end": 28.05
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.03.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "trachea",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 3.06,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M05.03.phrase.1.right",
+          "at": 1.48,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "primary",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 1.78,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s01",
+            "phrase": "right",
+            "firstWordIndex": 5,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M05.03.phrase.1.left",
+          "at": 1.9,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "primary",
+            "segment": "left-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 2.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s01",
+            "phrase": "left",
+            "firstWordIndex": 7,
+            "lastWordIndex": 7
+          }
+        },
+        {
+          "id": "M05.03.s02",
+          "at": 3.58,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "smaller",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s02",
+            "firstWordIndex": 10,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M05.03.phrase.2.bronchioles",
+          "at": 7.22,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "bronchioles",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 8.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s02",
+            "phrase": "bronchioles",
+            "firstWordIndex": 18,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M05.03.s03",
+          "at": 8.63,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "rightlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.69,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s03",
+            "firstWordIndex": 19,
+            "lastWordIndex": 30
+          }
+        },
+        {
+          "id": "M05.03.phrase.3.left",
+          "at": 11.46,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "left-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "leftlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 11.9,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s03",
+            "phrase": "left",
+            "firstWordIndex": 28,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M05.03.s04",
+          "at": 13.24,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "trachea",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.74,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s04",
+            "firstWordIndex": 31,
+            "lastWordIndex": 35
+          }
+        },
+        {
+          "id": "M05.03.s05",
+          "at": 16.25,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "respiratory",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.86,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s05",
+            "firstWordIndex": 36,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M05.03.phrase.5.alveolar-ducts",
+          "at": 21,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "ducts",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 22.41,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s05",
+            "phrase": "alveolar ducts",
+            "firstWordIndex": 44,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M05.03.phrase.5.alveoli",
+          "at": 22.93,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "alveoli",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 23.86,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s05",
+            "phrase": "alveoli",
+            "firstWordIndex": 47,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M05.03.s06",
+          "at": 24.43,
+          "scene": {
+            "organ": "explanation",
+            "title": "Pleura and diaphragm are outside the air pathway",
+            "text": "Follow the route rather than treating the pleura or diaphragm as structures that air passes through.",
+            "source": "Owner-approved adapted M05.03 narration · source script lines 122-147 · course PDF physical pp60–62,74–75",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.6,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.03.s06",
+            "firstWordIndex": 48,
+            "lastWordIndex": 63
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.04",
+      "sentences": [
+        {
+          "id": "M05.04.s01",
+          "text": "Terminal bronchioles are the final part of the conducting zone.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 9,
+          "wordCount": 10,
+          "start": 0,
+          "end": 3.7,
+          "duration": 3.7
+        },
+        {
+          "id": "M05.04.s02",
+          "text": "They do not contain the alveoli needed for ordinary gas exchange.",
+          "firstWordIndex": 10,
+          "lastWordIndex": 20,
+          "wordCount": 11,
+          "start": 4.2,
+          "end": 8.76,
+          "duration": 4.56
+        },
+        {
+          "id": "M05.04.s03",
+          "text": "Respiratory bronchioles, which come after them, have alveoli in their walls and begin the respiratory zone.",
+          "firstWordIndex": 21,
+          "lastWordIndex": 36,
+          "wordCount": 16,
+          "start": 9.25,
+          "end": 16.62,
+          "duration": 7.37
+        },
+        {
+          "id": "M05.04.s04",
+          "text": "Anatomical dead space is air in conducting passages that does not participate in gas exchange.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 51,
+          "wordCount": 15,
+          "start": 17.31,
+          "end": 23.81,
+          "duration": 6.5
+        },
+        {
+          "id": "M05.04.s05",
+          "text": "Physiological dead space also includes ventilated alveoli that receive too little blood flow for effective exchange.",
+          "firstWordIndex": 52,
+          "lastWordIndex": 67,
+          "wordCount": 16,
+          "start": 24.34,
+          "end": 32.26,
+          "duration": 7.92
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "alveoli",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s02",
+              "firstWordIndex": 15,
+              "lastWordIndex": 15,
+              "start": 5.53,
+              "end": 6.2
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.04.s03",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 12.75,
+              "end": 13.46
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M05.04.s05",
+              "firstWordIndex": 58,
+              "lastWordIndex": 58,
+              "start": 27.63,
+              "end": 28.61
+            }
+          ]
+        },
+        {
+          "phrase": "bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 1,
+              "start": 0.5,
+              "end": 1.33
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.04.s03",
+              "firstWordIndex": 22,
+              "lastWordIndex": 22,
+              "start": 10.03,
+              "end": 10.93
+            }
+          ]
+        },
+        {
+          "phrase": "respiratory zone",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s03",
+              "firstWordIndex": 35,
+              "lastWordIndex": 36,
+              "start": 15.36,
+              "end": 16.62
+            }
+          ]
+        },
+        {
+          "phrase": "respiratory bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s03",
+              "firstWordIndex": 21,
+              "lastWordIndex": 22,
+              "start": 9.25,
+              "end": 10.93
+            }
+          ]
+        },
+        {
+          "phrase": "terminal bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s01",
+              "firstWordIndex": 0,
+              "lastWordIndex": 1,
+              "start": 0,
+              "end": 1.33
+            }
+          ]
+        },
+        {
+          "phrase": "conducting zone",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 2.65,
+              "end": 3.7
+            }
+          ]
+        },
+        {
+          "phrase": "gas exchange",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s02",
+              "firstWordIndex": 19,
+              "lastWordIndex": 20,
+              "start": 7.51,
+              "end": 8.76
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.04.s04",
+              "firstWordIndex": 50,
+              "lastWordIndex": 51,
+              "start": 22.68,
+              "end": 23.81
+            }
+          ]
+        },
+        {
+          "phrase": "anatomical dead space",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s04",
+              "firstWordIndex": 37,
+              "lastWordIndex": 39,
+              "start": 17.31,
+              "end": 18.93
+            }
+          ]
+        },
+        {
+          "phrase": "physiological dead space",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.04.s05",
+              "firstWordIndex": 52,
+              "lastWordIndex": 54,
+              "start": 24.34,
+              "end": 25.9
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.04.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "terminal",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 3.7,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M05.04.s02",
+          "at": 4.2,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "terminal",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.76,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.04.s02",
+            "firstWordIndex": 10,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M05.04.s03",
+          "at": 9.25,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "respiratory",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.62,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.04.s03",
+            "firstWordIndex": 21,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M05.04.s04",
+          "at": 17.31,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "terminal",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.81,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.04.s04",
+            "firstWordIndex": 37,
+            "lastWordIndex": 51
+          }
+        },
+        {
+          "id": "M05.04.s05",
+          "at": 24.34,
+          "scene": {
+            "organ": "explanation",
+            "title": "Physiological dead space and perfusion",
+            "text": "Physiological dead space also includes ventilated alveoli that receive too little blood flow for effective exchange.",
+            "source": "Owner-approved adapted M05.04 narration · source script lines 122-133;148-175 · course PDF physical pp61–62,71,77,84–85",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.26,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.04.s05",
+            "firstWordIndex": 52,
+            "lastWordIndex": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.05",
+      "sentences": [
+        {
+          "id": "M05.05.s01",
+          "text": "The visceral pleura covers the lung surface.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 6,
+          "wordCount": 7,
+          "start": 0,
+          "end": 2.43,
+          "duration": 2.43
+        },
+        {
+          "id": "M05.05.s02",
+          "text": "The parietal pleura lines the inside of the thoracic wall.",
+          "firstWordIndex": 7,
+          "lastWordIndex": 16,
+          "wordCount": 10,
+          "start": 2.85,
+          "end": 6.7,
+          "duration": 3.85
+        },
+        {
+          "id": "M05.05.s03",
+          "text": "A thin fluid layer between them reduces friction and helps the lungs follow movements of the chest wall.",
+          "firstWordIndex": 17,
+          "lastWordIndex": 34,
+          "wordCount": 18,
+          "start": 7.09,
+          "end": 12.94,
+          "duration": 5.85
+        },
+        {
+          "id": "M05.05.s04",
+          "text": "This is normally a potential space, not a large air-filled gap.",
+          "firstWordIndex": 35,
+          "lastWordIndex": 46,
+          "wordCount": 12,
+          "start": 13.46,
+          "end": 17.4,
+          "duration": 3.94
+        },
+        {
+          "id": "M05.05.s05",
+          "text": "Air or excess fluid entering the pleural space can interfere with expansion.",
+          "firstWordIndex": 47,
+          "lastWordIndex": 58,
+          "wordCount": 12,
+          "start": 17.91,
+          "end": 22.71,
+          "duration": 4.8
+        },
+        {
+          "id": "M05.05.s06",
+          "text": "Keep the pleura separate from the branching airway route.",
+          "firstWordIndex": 59,
+          "lastWordIndex": 67,
+          "wordCount": 9,
+          "start": 23.2,
+          "end": 26.02,
+          "duration": 2.82
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "visceral pleura",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.05.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 2,
+              "start": 0.16,
+              "end": 1.05
+            }
+          ]
+        },
+        {
+          "phrase": "parietal pleura",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.05.s02",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 2.93,
+              "end": 4.05
+            }
+          ]
+        },
+        {
+          "phrase": "pleural space",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.05.s05",
+              "firstWordIndex": 53,
+              "lastWordIndex": 54,
+              "start": 20.04,
+              "end": 21
+            }
+          ]
+        },
+        {
+          "phrase": "lung surface",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.05.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 6,
+              "start": 1.53,
+              "end": 2.43
+            }
+          ]
+        },
+        {
+          "phrase": "thoracic wall",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.05.s02",
+              "firstWordIndex": 15,
+              "lastWordIndex": 16,
+              "start": 5.51,
+              "end": 6.7
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.05.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Visceral pleura",
+            "text": "The visceral pleura covers the lung surface.",
+            "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 2.43,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 6
+          }
+        },
+        {
+          "id": "M05.05.s02",
+          "at": 2.85,
+          "scene": {
+            "organ": "explanation",
+            "title": "Parietal pleura",
+            "text": "The parietal pleura lines the inside of the thoracic wall.",
+            "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 6.7,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.05.s02",
+            "firstWordIndex": 7,
+            "lastWordIndex": 16
+          }
+        },
+        {
+          "id": "M05.05.s03",
+          "at": 7.09,
+          "scene": {
+            "organ": "explanation",
+            "title": "Pleural fluid and coupling",
+            "text": "A thin fluid layer between them reduces friction and helps the lungs follow movements of the chest wall.",
+            "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.94,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.05.s03",
+            "firstWordIndex": 17,
+            "lastWordIndex": 34
+          }
+        },
+        {
+          "id": "M05.05.s04",
+          "at": 13.46,
+          "scene": {
+            "organ": "explanation",
+            "title": "Pleural potential space",
+            "text": "This is normally a potential space, not a large air-filled gap.",
+            "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 17.4,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.05.s04",
+            "firstWordIndex": 35,
+            "lastWordIndex": 46
+          }
+        },
+        {
+          "id": "M05.05.s05",
+          "at": 17.91,
+          "scene": {
+            "organ": "explanation",
+            "title": "Air or fluid in pleural space",
+            "text": "Air or excess fluid entering the pleural space can interfere with expansion.",
+            "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.71,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.05.s05",
+            "firstWordIndex": 47,
+            "lastWordIndex": 58
+          }
+        },
+        {
+          "id": "M05.05.s06",
+          "at": 23.2,
+          "scene": {
+            "organ": "explanation",
+            "title": "Pleura versus airway route",
+            "text": "Keep the pleura separate from the branching airway route.",
+            "source": "Owner-approved adapted M05.05 narration · source script lines 122-133 · course PDF physical pp64",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 26.02,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.05.s06",
+            "firstWordIndex": 59,
+            "lastWordIndex": 67
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.06",
+      "sentences": [
+        {
+          "id": "M05.06.s01",
+          "text": "Watch inspiration.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 1,
+          "wordCount": 2,
+          "start": 0,
+          "end": 1.61,
+          "duration": 1.61
+        },
+        {
+          "id": "M05.06.s02",
+          "text": "The diaphragm contracts and moves downward, becoming flatter.",
+          "firstWordIndex": 2,
+          "lastWordIndex": 9,
+          "wordCount": 8,
+          "start": 2.19,
+          "end": 5.76,
+          "duration": 3.57
+        },
+        {
+          "id": "M05.06.s03",
+          "text": "External intercostal muscles help lift and expand the rib cage.",
+          "firstWordIndex": 10,
+          "lastWordIndex": 19,
+          "wordCount": 10,
+          "start": 6.27,
+          "end": 10.48,
+          "duration": 4.21
+        },
+        {
+          "id": "M05.06.s04",
+          "text": "Thoracic volume increases, the lungs expand, and alveolar pressure briefly falls below atmospheric pressure.",
+          "firstWordIndex": 20,
+          "lastWordIndex": 33,
+          "wordCount": 14,
+          "start": 10.87,
+          "end": 18.11,
+          "duration": 7.24
+        },
+        {
+          "id": "M05.06.s05",
+          "text": "Air moves inward down that pressure gradient.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 40,
+          "wordCount": 7,
+          "start": 18.81,
+          "end": 21.49,
+          "duration": 2.68
+        },
+        {
+          "id": "M05.06.s06",
+          "text": "The diaphragm does not pull air directly through a tube; its movement changes the dimensions and pressure relationships of the thorax.",
+          "firstWordIndex": 41,
+          "lastWordIndex": 61,
+          "wordCount": 21,
+          "start": 22.23,
+          "end": 29.92,
+          "duration": 7.69
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "inspiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 1,
+              "start": 0.62,
+              "end": 1.61
+            }
+          ]
+        },
+        {
+          "phrase": "diaphragm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s02",
+              "firstWordIndex": 3,
+              "lastWordIndex": 3,
+              "start": 2.26,
+              "end": 2.9
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.06.s06",
+              "firstWordIndex": 42,
+              "lastWordIndex": 42,
+              "start": 22.33,
+              "end": 23.05
+            }
+          ]
+        },
+        {
+          "phrase": "external intercostal muscles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s03",
+              "firstWordIndex": 10,
+              "lastWordIndex": 12,
+              "start": 6.27,
+              "end": 8.13
+            }
+          ]
+        },
+        {
+          "phrase": "rib cage",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s03",
+              "firstWordIndex": 18,
+              "lastWordIndex": 19,
+              "start": 9.65,
+              "end": 10.48
+            }
+          ]
+        },
+        {
+          "phrase": "thoracic volume",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s04",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 10.87,
+              "end": 11.9
+            }
+          ]
+        },
+        {
+          "phrase": "alveolar pressure",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s04",
+              "firstWordIndex": 27,
+              "lastWordIndex": 28,
+              "start": 14.43,
+              "end": 15.59
+            }
+          ]
+        },
+        {
+          "phrase": "atmospheric pressure",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s04",
+              "firstWordIndex": 32,
+              "lastWordIndex": 33,
+              "start": 16.94,
+              "end": 18.11
+            }
+          ]
+        },
+        {
+          "phrase": "pressure gradient",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.06.s05",
+              "firstWordIndex": 39,
+              "lastWordIndex": 40,
+              "start": 20.55,
+              "end": 21.49
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.06.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 5.76
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 1.61,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.06.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 1
+          }
+        },
+        {
+          "id": "M05.06.s02",
+          "at": 2.19,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 5.76
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.76,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.06.s02",
+            "firstWordIndex": 2,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M05.06.s03",
+          "at": 6.27,
+          "scene": {
+            "organ": "explanation",
+            "title": "External intercostal muscles",
+            "text": "External intercostal muscles help lift and expand the rib cage.",
+            "source": "Owner-approved adapted M05.06 narration · source script lines 148-175 · course PDF physical pp65,73–76,82–83",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 10.48,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.06.s03",
+            "firstWordIndex": 10,
+            "lastWordIndex": 19
+          }
+        },
+        {
+          "id": "M05.06.s04",
+          "at": 10.87,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "rightlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 10.87,
+              "endAudio": 29.92
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.11,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.06.s04",
+            "firstWordIndex": 20,
+            "lastWordIndex": 33
+          }
+        },
+        {
+          "id": "M05.06.s05",
+          "at": 18.81,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "trachea",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 10.87,
+              "endAudio": 29.92
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.49,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.06.s05",
+            "firstWordIndex": 34,
+            "lastWordIndex": 40
+          }
+        },
+        {
+          "id": "M05.06.s06",
+          "at": 22.23,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 10.87,
+              "endAudio": 29.92
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.92,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.06.s06",
+            "firstWordIndex": 41,
+            "lastWordIndex": 61
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.07",
+      "sentences": [
+        {
+          "id": "M05.07.s01",
+          "text": "During quiet expiration, the diaphragm relaxes and the elastic recoil of the respiratory system helps reduce lung volume.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 17,
+          "wordCount": 18,
+          "start": 0,
+          "end": 7.82,
+          "duration": 7.82
+        },
+        {
+          "id": "M05.07.s02",
+          "text": "Alveolar pressure briefly rises above atmospheric pressure, and air moves out.",
+          "firstWordIndex": 18,
+          "lastWordIndex": 28,
+          "wordCount": 11,
+          "start": 8.57,
+          "end": 13.6,
+          "duration": 5.03
+        },
+        {
+          "id": "M05.07.s03",
+          "text": "Quiet expiration is usually passive.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 33,
+          "wordCount": 5,
+          "start": 14.14,
+          "end": 16.61,
+          "duration": 2.47
+        },
+        {
+          "id": "M05.07.s04",
+          "text": "Forced breathing can recruit additional muscles, including abdominal and accessory inspiratory muscles.",
+          "firstWordIndex": 34,
+          "lastWordIndex": 45,
+          "wordCount": 12,
+          "start": 17.14,
+          "end": 23.69,
+          "duration": 6.55
+        },
+        {
+          "id": "M05.07.s05",
+          "text": "One breath contains an inspiratory phase and an expiratory phase; count a complete cycle, not each movement as a separate breath.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 66,
+          "wordCount": 21,
+          "start": 24.23,
+          "end": 32.76,
+          "duration": 8.53
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "diaphragm",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s01",
+              "firstWordIndex": 4,
+              "lastWordIndex": 4,
+              "start": 1.62,
+              "end": 2.23
+            }
+          ]
+        },
+        {
+          "phrase": "alveolar pressure",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s02",
+              "firstWordIndex": 18,
+              "lastWordIndex": 19,
+              "start": 8.57,
+              "end": 9.53
+            }
+          ]
+        },
+        {
+          "phrase": "atmospheric pressure",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s02",
+              "firstWordIndex": 23,
+              "lastWordIndex": 24,
+              "start": 10.81,
+              "end": 11.99
+            }
+          ]
+        },
+        {
+          "phrase": "quiet expiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s01",
+              "firstWordIndex": 1,
+              "lastWordIndex": 2,
+              "start": 0.32,
+              "end": 1.55
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.07.s03",
+              "firstWordIndex": 29,
+              "lastWordIndex": 30,
+              "start": 14.14,
+              "end": 15.26
+            }
+          ]
+        },
+        {
+          "phrase": "elastic recoil",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s01",
+              "firstWordIndex": 8,
+              "lastWordIndex": 9,
+              "start": 3.64,
+              "end": 4.81
+            }
+          ]
+        },
+        {
+          "phrase": "lung volume",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s01",
+              "firstWordIndex": 16,
+              "lastWordIndex": 17,
+              "start": 6.94,
+              "end": 7.82
+            }
+          ]
+        },
+        {
+          "phrase": "forced breathing",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s04",
+              "firstWordIndex": 34,
+              "lastWordIndex": 35,
+              "start": 17.14,
+              "end": 18.01
+            }
+          ]
+        },
+        {
+          "phrase": "inspiratory phase",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s05",
+              "firstWordIndex": 50,
+              "lastWordIndex": 51,
+              "start": 25.49,
+              "end": 26.9
+            }
+          ]
+        },
+        {
+          "phrase": "expiratory phase",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.07.s05",
+              "firstWordIndex": 54,
+              "lastWordIndex": 55,
+              "start": 27.18,
+              "end": 28.58
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.07.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 16.61
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 7.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.07.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 17
+          }
+        },
+        {
+          "id": "M05.07.s02",
+          "at": 8.57,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "rightlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 16.61
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.6,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.07.s02",
+            "firstWordIndex": 18,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M05.07.s03",
+          "at": 14.14,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 16.61
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 16.61,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.07.s03",
+            "firstWordIndex": 29,
+            "lastWordIndex": 33
+          }
+        },
+        {
+          "id": "M05.07.s04",
+          "at": 17.14,
+          "scene": {
+            "organ": "explanation",
+            "title": "Forced-breathing muscle recruitment",
+            "text": "Forced breathing can recruit additional muscles, including abdominal and accessory inspiratory muscles.",
+            "source": "Owner-approved adapted M05.07 narration · source script lines 148-175 · course PDF physical pp65,73–75,82–83",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 23.69,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.07.s04",
+            "firstWordIndex": 34,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M05.07.s05",
+          "at": 24.23,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 24.23,
+              "endAudio": 27.18
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.76,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.07.s05",
+            "firstWordIndex": 46,
+            "lastWordIndex": 66
+          }
+        },
+        {
+          "id": "M05.07.phrase.5.expiratory-phase",
+          "at": 27.18,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 27.18,
+              "endAudio": 32.76
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 28.58,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.07.s05",
+            "phrase": "expiratory phase",
+            "firstWordIndex": 54,
+            "lastWordIndex": 55
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.08",
+      "sentences": [
+        {
+          "id": "M05.08.s01",
+          "text": "At the alveolus, a very thin barrier separates air from pulmonary capillary blood.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 12,
+          "wordCount": 13,
+          "start": 0,
+          "end": 5.49,
+          "duration": 5.49
+        },
+        {
+          "id": "M05.08.s02",
+          "text": "Oxygen diffuses from alveolar air into blood because its partial pressure is higher in the alveolus.",
+          "firstWordIndex": 13,
+          "lastWordIndex": 28,
+          "wordCount": 16,
+          "start": 6.1,
+          "end": 12.44,
+          "duration": 6.34
+        },
+        {
+          "id": "M05.08.s03",
+          "text": "Carbon dioxide diffuses in the opposite direction because its partial pressure is higher in the arriving blood.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 45,
+          "wordCount": 17,
+          "start": 12.86,
+          "end": 19.39,
+          "duration": 6.53
+        },
+        {
+          "id": "M05.08.s04",
+          "text": "Diffusion itself is passive.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 49,
+          "wordCount": 4,
+          "start": 19.85,
+          "end": 21.78,
+          "duration": 1.93
+        },
+        {
+          "id": "M05.08.s05",
+          "text": "A large surface area, a thin barrier, ventilation, and blood flow all support effective exchange.",
+          "firstWordIndex": 50,
+          "lastWordIndex": 64,
+          "wordCount": 15,
+          "start": 22.21,
+          "end": 29.36,
+          "duration": 7.15
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s02",
+              "firstWordIndex": 13,
+              "lastWordIndex": 13,
+              "start": 6.1,
+              "end": 6.66
+            }
+          ]
+        },
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s03",
+              "firstWordIndex": 29,
+              "lastWordIndex": 30,
+              "start": 12.86,
+              "end": 13.98
+            }
+          ]
+        },
+        {
+          "phrase": "alveolus",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 2,
+              "start": 0.34,
+              "end": 1.19
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.08.s02",
+              "firstWordIndex": 28,
+              "lastWordIndex": 28,
+              "start": 11.57,
+              "end": 12.44
+            }
+          ]
+        },
+        {
+          "phrase": "pulmonary capillary blood",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s01",
+              "firstWordIndex": 10,
+              "lastWordIndex": 12,
+              "start": 3.92,
+              "end": 5.49
+            }
+          ]
+        },
+        {
+          "phrase": "partial pressure",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s02",
+              "firstWordIndex": 22,
+              "lastWordIndex": 23,
+              "start": 9.88,
+              "end": 10.79
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.08.s03",
+              "firstWordIndex": 38,
+              "lastWordIndex": 39,
+              "start": 16.67,
+              "end": 17.61
+            }
+          ]
+        },
+        {
+          "phrase": "diffusion",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s04",
+              "firstWordIndex": 46,
+              "lastWordIndex": 46,
+              "start": 19.85,
+              "end": 20.42
+            }
+          ]
+        },
+        {
+          "phrase": "ventilation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.08.s05",
+              "firstWordIndex": 57,
+              "lastWordIndex": 57,
+              "start": 25.11,
+              "end": 25.96
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.08.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 12.44
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 5.49,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.08.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 12
+          }
+        },
+        {
+          "id": "M05.08.s02",
+          "at": 6.1,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 12.44
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.44,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.08.s02",
+            "firstWordIndex": 13,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M05.08.s03",
+          "at": 12.86,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 12.86,
+              "endAudio": 29.36
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.39,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.08.s03",
+            "firstWordIndex": 29,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M05.08.s04",
+          "at": 19.85,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 12.86,
+              "endAudio": 29.36
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 21.78,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.08.s04",
+            "firstWordIndex": 46,
+            "lastWordIndex": 49
+          }
+        },
+        {
+          "id": "M05.08.s05",
+          "at": 22.21,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 12.86,
+              "endAudio": 29.36
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29.36,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.08.s05",
+            "firstWordIndex": 50,
+            "lastWordIndex": 64
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.09",
+      "sentences": [
+        {
+          "id": "M05.09.s01",
+          "text": "Ventilation means moving air into and out of the lungs.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 9,
+          "wordCount": 10,
+          "start": 0,
+          "end": 3.75,
+          "duration": 3.75
+        },
+        {
+          "id": "M05.09.s02",
+          "text": "Perfusion means blood flow through tissue, including pulmonary capillaries.",
+          "firstWordIndex": 10,
+          "lastWordIndex": 18,
+          "wordCount": 9,
+          "start": 4.16,
+          "end": 8.67,
+          "duration": 4.51
+        },
+        {
+          "id": "M05.09.s03",
+          "text": "External respiration is gas exchange between alveoli and blood.",
+          "firstWordIndex": 19,
+          "lastWordIndex": 27,
+          "wordCount": 9,
+          "start": 9.29,
+          "end": 13.64,
+          "duration": 4.35
+        },
+        {
+          "id": "M05.09.s04",
+          "text": "Internal respiration is exchange between systemic blood and tissues.",
+          "firstWordIndex": 28,
+          "lastWordIndex": 36,
+          "wordCount": 9,
+          "start": 14.07,
+          "end": 18.21,
+          "duration": 4.14
+        },
+        {
+          "id": "M05.09.s05",
+          "text": "Cellular respiration is the chemical process by which cells use energy substrates, often consuming oxygen and producing carbon dioxide.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 55,
+          "wordCount": 19,
+          "start": 18.81,
+          "end": 27.91,
+          "duration": 9.1
+        },
+        {
+          "id": "M05.09.s06",
+          "text": "These ideas connect, but they are not interchangeable names for the same event.",
+          "firstWordIndex": 56,
+          "lastWordIndex": 68,
+          "wordCount": 13,
+          "start": 28.53,
+          "end": 32.75,
+          "duration": 4.22
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "pulmonary capillaries",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s02",
+              "firstWordIndex": 17,
+              "lastWordIndex": 18,
+              "start": 7.24,
+              "end": 8.67
+            }
+          ]
+        },
+        {
+          "phrase": "alveoli",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s03",
+              "firstWordIndex": 25,
+              "lastWordIndex": 25,
+              "start": 12.14,
+              "end": 12.91
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s05",
+              "firstWordIndex": 51,
+              "lastWordIndex": 51,
+              "start": 24.93,
+              "end": 25.57
+            }
+          ]
+        },
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s05",
+              "firstWordIndex": 54,
+              "lastWordIndex": 55,
+              "start": 26.53,
+              "end": 27.91
+            }
+          ]
+        },
+        {
+          "phrase": "capillaries",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s02",
+              "firstWordIndex": 18,
+              "lastWordIndex": 18,
+              "start": 7.79,
+              "end": 8.67
+            }
+          ]
+        },
+        {
+          "phrase": "gas exchange",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s03",
+              "firstWordIndex": 22,
+              "lastWordIndex": 23,
+              "start": 10.72,
+              "end": 11.79
+            }
+          ]
+        },
+        {
+          "phrase": "ventilation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s01",
+              "firstWordIndex": 0,
+              "lastWordIndex": 0,
+              "start": 0,
+              "end": 0.9
+            }
+          ]
+        },
+        {
+          "phrase": "perfusion",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s02",
+              "firstWordIndex": 10,
+              "lastWordIndex": 10,
+              "start": 4.16,
+              "end": 4.78
+            }
+          ]
+        },
+        {
+          "phrase": "external respiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s03",
+              "firstWordIndex": 19,
+              "lastWordIndex": 20,
+              "start": 9.29,
+              "end": 10.57
+            }
+          ]
+        },
+        {
+          "phrase": "internal respiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s04",
+              "firstWordIndex": 28,
+              "lastWordIndex": 29,
+              "start": 14.07,
+              "end": 15.4
+            }
+          ]
+        },
+        {
+          "phrase": "cellular respiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s05",
+              "firstWordIndex": 37,
+              "lastWordIndex": 38,
+              "start": 18.81,
+              "end": 20.11
+            }
+          ]
+        },
+        {
+          "phrase": "moving air",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.09.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 3,
+              "start": 1.22,
+              "end": 1.88
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.09.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "rightlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 2.57
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 3.75,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M05.09.phrase.1.out",
+          "at": 2.57,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "rightlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 2.57,
+              "endAudio": 3.75
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 2.88,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s01",
+            "phrase": "out",
+            "firstWordIndex": 6,
+            "lastWordIndex": 6
+          }
+        },
+        {
+          "id": "M05.09.s02",
+          "at": 4.16,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 4.16,
+              "endAudio": 8.67
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 8.67,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s02",
+            "firstWordIndex": 10,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M05.09.s03",
+          "at": 9.29,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 9.29,
+              "endAudio": 13.64
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 13.64,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s03",
+            "firstWordIndex": 19,
+            "lastWordIndex": 27
+          }
+        },
+        {
+          "id": "M05.09.s04",
+          "at": 14.07,
+          "scene": {
+            "organ": "heart",
+            "selected": "aorta",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "systemic-bed",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "ejection",
+              "side": "left"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.21,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s04",
+            "firstWordIndex": 28,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M05.09.s05",
+          "at": 18.81,
+          "scene": {
+            "organ": "explanation",
+            "title": "Cellular respiration",
+            "text": "Cellular respiration is the chemical process by which cells use energy substrates, often consuming oxygen and producing carbon dioxide.",
+            "source": "Owner-approved adapted M05.09 narration · source script lines 148-175;378-387 · course PDF physical pp75,77,83–84",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 27.91,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s05",
+            "firstWordIndex": 37,
+            "lastWordIndex": 55
+          }
+        },
+        {
+          "id": "M05.09.s06",
+          "at": 28.53,
+          "scene": {
+            "organ": "explanation",
+            "title": "Ventilation, exchange and metabolism",
+            "text": "These ideas connect, but they are not interchangeable names for the same event.",
+            "source": "Owner-approved adapted M05.09 narration · source script lines 148-175;378-387 · course PDF physical pp75,77,83–84",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.75,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.09.s06",
+            "firstWordIndex": 56,
+            "lastWordIndex": 68
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.10",
+      "sentences": [
+        {
+          "id": "M05.10.s01",
+          "text": "Carbon dioxide participates in the bicarbonate buffer system.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 7,
+          "wordCount": 8,
+          "start": 0,
+          "end": 3.28,
+          "duration": 3.28
+        },
+        {
+          "id": "M05.10.s02",
+          "text": "If other factors remain similar, retaining more carbon dioxide tends to lower blood pH, while removing more tends to raise it.",
+          "firstWordIndex": 8,
+          "lastWordIndex": 28,
+          "wordCount": 21,
+          "start": 3.85,
+          "end": 11.65,
+          "duration": 7.8
+        },
+        {
+          "id": "M05.10.s03",
+          "text": "Arterial blood pH is normally tightly regulated around seven point three five to seven point four five.",
+          "firstWordIndex": 29,
+          "lastWordIndex": 45,
+          "wordCount": 17,
+          "start": 12.28,
+          "end": 18.68,
+          "duration": 6.4
+        },
+        {
+          "id": "M05.10.s04",
+          "text": "The lungs and kidneys both contribute to acid-base regulation.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 55,
+          "wordCount": 10,
+          "start": 19.33,
+          "end": 22.82,
+          "duration": 3.49
+        },
+        {
+          "id": "M05.10.s05",
+          "text": "A visible chest rise alone does not tell us whether ventilation is removing carbon dioxide adequately.",
+          "firstWordIndex": 56,
+          "lastWordIndex": 71,
+          "wordCount": 16,
+          "start": 23.32,
+          "end": 29,
+          "duration": 5.68
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.10.s01",
+              "firstWordIndex": 0,
+              "lastWordIndex": 1,
+              "start": 0,
+              "end": 0.99
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.10.s02",
+              "firstWordIndex": 15,
+              "lastWordIndex": 16,
+              "start": 6.49,
+              "end": 7.56
+            },
+            {
+              "occurrence": 3,
+              "sentenceId": "M05.10.s05",
+              "firstWordIndex": 69,
+              "lastWordIndex": 70,
+              "start": 27.14,
+              "end": 28.22
+            }
+          ]
+        },
+        {
+          "phrase": "bicarbonate",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.10.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 5,
+              "start": 1.83,
+              "end": 2.54
+            }
+          ]
+        },
+        {
+          "phrase": "ventilation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.10.s05",
+              "firstWordIndex": 66,
+              "lastWordIndex": 66,
+              "start": 25.9,
+              "end": 26.53
+            }
+          ]
+        },
+        {
+          "phrase": "bicarbonate buffer system",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.10.s01",
+              "firstWordIndex": 5,
+              "lastWordIndex": 7,
+              "start": 1.83,
+              "end": 3.28
+            }
+          ]
+        },
+        {
+          "phrase": "blood pH",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.10.s02",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 8.32,
+              "end": 9.32
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.10.s03",
+              "firstWordIndex": 30,
+              "lastWordIndex": 31,
+              "start": 12.87,
+              "end": 13.82
+            }
+          ]
+        },
+        {
+          "phrase": "acid base regulation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.10.s04",
+              "firstWordIndex": 53,
+              "lastWordIndex": 55,
+              "start": 21.42,
+              "end": 22.82
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.10.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Carbon dioxide and bicarbonate",
+            "text": "Carbon dioxide participates in the bicarbonate buffer system.",
+            "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 3.28,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.10.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 7
+          }
+        },
+        {
+          "id": "M05.10.s02",
+          "at": 3.85,
+          "scene": {
+            "organ": "explanation",
+            "title": "Carbon dioxide retention and pH",
+            "text": "If other factors remain similar, retaining more carbon dioxide tends to lower blood pH, while removing more tends to raise it.",
+            "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 11.65,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.10.s02",
+            "firstWordIndex": 8,
+            "lastWordIndex": 28
+          }
+        },
+        {
+          "id": "M05.10.s03",
+          "at": 12.28,
+          "scene": {
+            "organ": "explanation",
+            "title": "Arterial pH range",
+            "text": "Arterial blood pH is normally tightly regulated around seven point three five to seven point four five.",
+            "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 18.68,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.10.s03",
+            "firstWordIndex": 29,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M05.10.s04",
+          "at": 19.33,
+          "scene": {
+            "organ": "explanation",
+            "title": "Lungs and kidneys in acid-base regulation",
+            "text": "The lungs and kidneys both contribute to acid-base regulation.",
+            "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.10.s04",
+            "firstWordIndex": 46,
+            "lastWordIndex": 55
+          }
+        },
+        {
+          "id": "M05.10.s05",
+          "at": 23.32,
+          "scene": {
+            "organ": "explanation",
+            "title": "Chest rise versus carbon dioxide removal",
+            "text": "A visible chest rise alone does not tell us whether ventilation is removing carbon dioxide adequately.",
+            "source": "Owner-approved adapted M05.10 narration · source script lines 102-115;148-175 · course PDF physical pp53",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.10.s05",
+            "firstWordIndex": 56,
+            "lastWordIndex": 71
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.11",
+      "sentences": [
+        {
+          "id": "M05.11.s01",
+          "text": "Networks in the medulla and pons generate and shape the breathing pattern.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 11,
+          "wordCount": 12,
+          "start": 0,
+          "end": 4.24,
+          "duration": 4.24
+        },
+        {
+          "id": "M05.11.s02",
+          "text": "Central chemoreceptors respond mainly to changes related to carbon dioxide and cerebrospinal-fluid pH.",
+          "firstWordIndex": 12,
+          "lastWordIndex": 25,
+          "wordCount": 14,
+          "start": 4.68,
+          "end": 12.47,
+          "duration": 7.79
+        },
+        {
+          "id": "M05.11.s03",
+          "text": "Peripheral chemoreceptors also respond to oxygen, carbon dioxide, and pH.",
+          "firstWordIndex": 26,
+          "lastWordIndex": 35,
+          "wordCount": 10,
+          "start": 13.01,
+          "end": 19.31,
+          "duration": 6.3
+        },
+        {
+          "id": "M05.11.s04",
+          "text": "Sensory input through nerves, including the vagus, modifies the pattern.",
+          "firstWordIndex": 36,
+          "lastWordIndex": 45,
+          "wordCount": 10,
+          "start": 19.78,
+          "end": 24.7,
+          "duration": 4.92
+        },
+        {
+          "id": "M05.11.s05",
+          "text": "It is too simple to say that chemoreceptors alone initiate every breath or that the vagus always increases breathing rate.",
+          "firstWordIndex": 46,
+          "lastWordIndex": 65,
+          "wordCount": 20,
+          "start": 25.21,
+          "end": 32.37,
+          "duration": 7.16
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s03",
+              "firstWordIndex": 31,
+              "lastWordIndex": 31,
+              "start": 15.81,
+              "end": 16.52
+            }
+          ]
+        },
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s02",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 8.2,
+              "end": 9.5
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.11.s03",
+              "firstWordIndex": 32,
+              "lastWordIndex": 33,
+              "start": 16.76,
+              "end": 17.95
+            }
+          ]
+        },
+        {
+          "phrase": "medulla and pons",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s01",
+              "firstWordIndex": 3,
+              "lastWordIndex": 5,
+              "start": 0.67,
+              "end": 1.92
+            }
+          ]
+        },
+        {
+          "phrase": "central chemoreceptors",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s02",
+              "firstWordIndex": 12,
+              "lastWordIndex": 13,
+              "start": 4.68,
+              "end": 6.03
+            }
+          ]
+        },
+        {
+          "phrase": "peripheral chemoreceptors",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s03",
+              "firstWordIndex": 26,
+              "lastWordIndex": 27,
+              "start": 13.01,
+              "end": 14.57
+            }
+          ]
+        },
+        {
+          "phrase": "cerebrospinal fluid pH",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s02",
+              "firstWordIndex": 23,
+              "lastWordIndex": 25,
+              "start": 9.9,
+              "end": 12.47
+            }
+          ]
+        },
+        {
+          "phrase": "vagus",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.11.s04",
+              "firstWordIndex": 42,
+              "lastWordIndex": 42,
+              "start": 22.42,
+              "end": 23.01
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.11.s05",
+              "firstWordIndex": 61,
+              "lastWordIndex": 61,
+              "start": 30.15,
+              "end": 30.57
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.11.s01",
+          "at": 0,
+          "scene": {
+            "organ": "explanation",
+            "title": "Medulla and pons networks",
+            "text": "Networks in the medulla and pons generate and shape the breathing pattern.",
+            "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 4.24,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.11.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 11
+          }
+        },
+        {
+          "id": "M05.11.s02",
+          "at": 4.68,
+          "scene": {
+            "organ": "explanation",
+            "title": "Central chemoreceptors",
+            "text": "Central chemoreceptors respond mainly to changes related to carbon dioxide and cerebrospinal-fluid pH.",
+            "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 12.47,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.11.s02",
+            "firstWordIndex": 12,
+            "lastWordIndex": 25
+          }
+        },
+        {
+          "id": "M05.11.s03",
+          "at": 13.01,
+          "scene": {
+            "organ": "explanation",
+            "title": "Peripheral chemoreceptors",
+            "text": "Peripheral chemoreceptors also respond to oxygen, carbon dioxide, and pH.",
+            "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 19.31,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.11.s03",
+            "firstWordIndex": 26,
+            "lastWordIndex": 35
+          }
+        },
+        {
+          "id": "M05.11.s04",
+          "at": 19.78,
+          "scene": {
+            "organ": "explanation",
+            "title": "Nerve input and breathing",
+            "text": "Sensory input through nerves, including the vagus, modifies the pattern.",
+            "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 24.7,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.11.s04",
+            "firstWordIndex": 36,
+            "lastWordIndex": 45
+          }
+        },
+        {
+          "id": "M05.11.s05",
+          "at": 25.21,
+          "scene": {
+            "organ": "explanation",
+            "title": "Context for chemoreceptor and vagal effects",
+            "text": "It is too simple to say that chemoreceptors alone initiate every breath or that the vagus always increases breathing rate.",
+            "source": "Owner-approved adapted M05.11 narration · source script lines 148-175 · course PDF physical pp81",
+            "qualification": "Supplemental explanation; no corresponding numerical/3D process or clinical prediction."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 32.37,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.11.s05",
+            "firstWordIndex": 46,
+            "lastWordIndex": 65
+          }
+        }
+      ]
+    },
+    {
+      "id": "M05.12",
+      "sentences": [
+        {
+          "id": "M05.12.s01",
+          "text": "Follow an oxygen molecule from the alveolus into pulmonary blood, through the left atrium and left ventricle, and into the systemic circulation.",
+          "firstWordIndex": 0,
+          "lastWordIndex": 21,
+          "wordCount": 22,
+          "start": 0,
+          "end": 9.22,
+          "duration": 9.22
+        },
+        {
+          "id": "M05.12.s02",
+          "text": "Then follow carbon dioxide in the opposite overall journey, from tissues back to the lungs.",
+          "firstWordIndex": 22,
+          "lastWordIndex": 36,
+          "wordCount": 15,
+          "start": 9.7,
+          "end": 15.82,
+          "duration": 6.12
+        },
+        {
+          "id": "M05.12.s03",
+          "text": "Before continuing, explain the difference between moving air and exchanging gas.",
+          "firstWordIndex": 37,
+          "lastWordIndex": 47,
+          "wordCount": 11,
+          "start": 16.55,
+          "end": 22.5,
+          "duration": 5.95
+        },
+        {
+          "id": "M05.12.s04",
+          "text": "Which muscle drives most quiet inspiration, and why do terminal bronchioles conduct air rather than exchange gases?",
+          "firstWordIndex": 48,
+          "lastWordIndex": 64,
+          "wordCount": 17,
+          "start": 23.09,
+          "end": 30.3,
+          "duration": 7.21
+        }
+      ],
+      "sourcePhraseAnchors": [
+        {
+          "phrase": "left atrium",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 13,
+              "start": 4.91,
+              "end": 5.82
+            }
+          ]
+        },
+        {
+          "phrase": "left ventricle",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 15,
+              "lastWordIndex": 16,
+              "start": 5.94,
+              "end": 6.88
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 2,
+              "start": 0.51,
+              "end": 1.09
+            }
+          ]
+        },
+        {
+          "phrase": "carbon dioxide",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s02",
+              "firstWordIndex": 24,
+              "lastWordIndex": 25,
+              "start": 10.47,
+              "end": 11.72
+            }
+          ]
+        },
+        {
+          "phrase": "systemic circulation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 7.74,
+              "end": 9.22
+            }
+          ]
+        },
+        {
+          "phrase": "bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s04",
+              "firstWordIndex": 58,
+              "lastWordIndex": 58,
+              "start": 26.99,
+              "end": 27.77
+            }
+          ]
+        },
+        {
+          "phrase": "left",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 12,
+              "lastWordIndex": 12,
+              "start": 4.91,
+              "end": 5.3
+            },
+            {
+              "occurrence": 2,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 15,
+              "lastWordIndex": 15,
+              "start": 5.94,
+              "end": 6.24
+            }
+          ]
+        },
+        {
+          "phrase": "terminal bronchioles",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s04",
+              "firstWordIndex": 57,
+              "lastWordIndex": 58,
+              "start": 26.52,
+              "end": 27.77
+            }
+          ]
+        },
+        {
+          "phrase": "inspiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s04",
+              "firstWordIndex": 53,
+              "lastWordIndex": 53,
+              "start": 24.8,
+              "end": 25.62
+            }
+          ]
+        },
+        {
+          "phrase": "alveolus",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 6,
+              "lastWordIndex": 6,
+              "start": 2.01,
+              "end": 2.84
+            }
+          ]
+        },
+        {
+          "phrase": "oxygen molecule",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 2,
+              "lastWordIndex": 3,
+              "start": 0.51,
+              "end": 1.71
+            }
+          ]
+        },
+        {
+          "phrase": "systemic circulation",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s01",
+              "firstWordIndex": 20,
+              "lastWordIndex": 21,
+              "start": 7.74,
+              "end": 9.22
+            }
+          ]
+        },
+        {
+          "phrase": "moving air",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s03",
+              "firstWordIndex": 43,
+              "lastWordIndex": 44,
+              "start": 19.89,
+              "end": 20.85
+            }
+          ]
+        },
+        {
+          "phrase": "exchanging gas",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s03",
+              "firstWordIndex": 46,
+              "lastWordIndex": 47,
+              "start": 21.27,
+              "end": 22.5
+            }
+          ]
+        },
+        {
+          "phrase": "quiet inspiration",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s04",
+              "firstWordIndex": 52,
+              "lastWordIndex": 53,
+              "start": 24.35,
+              "end": 25.62
+            }
+          ]
+        },
+        {
+          "phrase": "exchange gases",
+          "occurrences": [
+            {
+              "occurrence": 1,
+              "sentenceId": "M05.12.s04",
+              "firstWordIndex": 63,
+              "lastWordIndex": 64,
+              "start": 29.06,
+              "end": 30.3
+            }
+          ]
+        }
+      ],
+      "boundCues": [
+        {
+          "id": "M05.12.s01",
+          "at": 0,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 0,
+              "endAudio": 3.17
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 9.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 21
+          }
+        },
+        {
+          "id": "M05.12.phrase.1.pulmonary-blood",
+          "at": 3.17,
+          "scene": {
+            "organ": "heart",
+            "selected": "vein",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "pulmonary-veins",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "passive-filling",
+              "side": "left",
+              "occurrence": "last"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 4.29,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s01",
+            "phrase": "pulmonary blood",
+            "firstWordIndex": 8,
+            "lastWordIndex": 9
+          }
+        },
+        {
+          "id": "M05.12.phrase.1.left-atrium",
+          "at": 4.91,
+          "scene": {
+            "organ": "heart",
+            "selected": "la",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "la",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "passive-filling",
+              "side": "left",
+              "occurrence": "last"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 5.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s01",
+            "phrase": "left atrium",
+            "firstWordIndex": 12,
+            "lastWordIndex": 13
+          }
+        },
+        {
+          "id": "M05.12.phrase.1.left-ventricle",
+          "at": 5.94,
+          "scene": {
+            "organ": "heart",
+            "selected": "lv",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "lv",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "passive-filling",
+              "side": "left",
+              "occurrence": "last"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 6.88,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s01",
+            "phrase": "left ventricle",
+            "firstWordIndex": 15,
+            "lastWordIndex": 16
+          }
+        },
+        {
+          "id": "M05.12.phrase.1.systemic-circulation",
+          "at": 7.74,
+          "scene": {
+            "organ": "heart",
+            "selected": "aorta",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "systemic-arteries",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "ejection",
+              "side": "left"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 9.22,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s01",
+            "phrase": "systemic circulation",
+            "firstWordIndex": 20,
+            "lastWordIndex": 21
+          }
+        },
+        {
+          "id": "M05.12.s02",
+          "at": 9.7,
+          "scene": {
+            "organ": "heart",
+            "selected": "aorta",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "systemic-bed",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "ejection",
+              "side": "left"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 15.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s02",
+            "firstWordIndex": 22,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M05.12.phrase.2.tissues",
+          "at": 13.97,
+          "scene": {
+            "organ": "heart",
+            "selected": "ivc",
+            "mode": "four-chamber",
+            "preset": "four-chamber",
+            "parameters": {
+              "heartRate": 75,
+              "bloodVolume": 5000,
+              "systemicResistance": 1.05,
+              "contractility": 1
+            },
+            "bloodView": "filled",
+            "conductionView": "off",
+            "conductionDisplay": "full-pulse",
+            "wallHighlight": false,
+            "flowStop": "venous-return",
+            "route": null,
+            "stage": null,
+            "simulation": {
+              "kind": "phase",
+              "phase": "passive-filling",
+              "side": "left",
+              "occurrence": "last"
+            },
+            "detail": "This is the registered four-chamber HRA heart with illustrative continuous residual blood plus the existing closed circulation map. Named itinerary stops teach a journey spanning many beats, not a tracked molecule completing a full circuit in one heartbeat. Lung/systemic exchange insets are separate labeled instructional schematics, not gross source anatomy or a measured gas-transport solver. Blood occupancy is qualitative geometry; pressure/flow/volume come from the shared circulation model."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 14.6,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s02",
+            "phrase": "tissues",
+            "firstWordIndex": 32,
+            "lastWordIndex": 32
+          }
+        },
+        {
+          "id": "M05.12.phrase.2.lungs",
+          "at": 15.16,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 15.82,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s02",
+            "phrase": "lungs",
+            "firstWordIndex": 36,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M05.12.s03",
+          "at": 16.55,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "rightlung",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 16.55,
+              "endAudio": 21.27
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 22.5,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s03",
+            "firstWordIndex": 37,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M05.12.phrase.3.exchanging-gas",
+          "at": 21.27,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "membrane",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "expiration",
+              "sweep": true,
+              "anchorAudio": 21.27,
+              "endAudio": 22.5
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 22.5,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s03",
+            "phrase": "exchanging gas",
+            "firstWordIndex": 46,
+            "lastWordIndex": 47
+          }
+        },
+        {
+          "id": "M05.12.s04",
+          "at": 23.09,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "selected": "diaphragm",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration",
+              "sweep": true,
+              "anchorAudio": 23.09,
+              "endAudio": 26.52
+            },
+            "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "sentence",
+            "end": 30.3,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s04",
+            "firstWordIndex": 48,
+            "lastWordIndex": 64
+          }
+        },
+        {
+          "id": "M05.12.phrase.4.terminal-bronchioles",
+          "at": 26.52,
+          "scene": {
+            "organ": "respiratory",
+            "stage": "terminal",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "simulation": {
+              "kind": "phase",
+              "phase": "inspiration"
+            },
+            "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted."
+          },
+          "alignment": {
+            "kind": "phrase",
+            "end": 27.77,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M05.12.s04",
+            "phrase": "terminal bronchioles",
+            "firstWordIndex": 57,
+            "lastWordIndex": 58
+          }
+        }
+      ]
+    }
+  ]
+}

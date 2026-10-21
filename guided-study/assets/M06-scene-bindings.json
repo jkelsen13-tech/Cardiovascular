@@ -1,0 +1,869 @@
+{
+  "schema": "guided-study.M06-bindings.v1",
+  "fullScenes": true,
+  "firstCuePolicy": "Cue zero is an intentional pre-readiness pose; measuredStart retains the real first-word anchor. Later sentence and phrase cues use measured anchors.",
+  "nativeExecutionVerified": false,
+  "lessons": [
+    {
+      "id": "M06.01",
+      "cues": [
+        {
+          "id": "M06.01.s01",
+          "at": 0,
+          "text": "Respiratory rate counts breaths per minute.",
+          "title": "Respiratory rate counts breaths per minute.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Respiratory rate",
+            "text": "Respiratory rate counts breaths per minute.",
+            "source": "Owner-approved adapted M06.01 narration · source script lines 176-211 · course PDF physical pp89,98",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.07,
+            "end": 2.5,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.01.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 5
+          }
+        },
+        {
+          "id": "M06.01.s02",
+          "at": 3.04,
+          "text": "A commonly taught resting adult range is twelve to twenty, but age, activity, and clinical circumstances matter.",
+          "title": "A commonly taught resting adult range is twelve to twenty, but age, activity, and clinical circumstances matter.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Adult reference range in context",
+            "text": "A commonly taught resting adult range is twelve to twenty, but age, activity, and clinical circumstances matter.",
+            "source": "Owner-approved adapted M06.01 narration · source script lines 176-211 · course PDF physical pp89,98",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 3.04,
+            "end": 10.21,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.01.s02",
+            "firstWordIndex": 6,
+            "lastWordIndex": 22
+          }
+        },
+        {
+          "id": "M06.01.s03",
+          "at": 10.71,
+          "text": "Monitors may estimate breathing from changes in electrical impedance between chest electrodes.",
+          "title": "Monitors may estimate breathing from changes in electrical impedance between chest electrodes.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Impedance estimation",
+            "text": "Monitors may estimate breathing from changes in electrical impedance between chest electrodes.",
+            "source": "Owner-approved adapted M06.01 narration · source script lines 176-211 · course PDF physical pp89,98",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 10.71,
+            "end": 16.0,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.01.s03",
+            "firstWordIndex": 23,
+            "lastWordIndex": 34
+          }
+        },
+        {
+          "id": "M06.01.s04",
+          "at": 16.29,
+          "text": "Such estimates can contain artifact or miss important problems.",
+          "title": "Such estimates can contain artifact or miss important problems.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Artifact and missed problems",
+            "text": "Such estimates can contain artifact or miss important problems.",
+            "source": "Owner-approved adapted M06.01 narration · source script lines 176-211 · course PDF physical pp89,98",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 16.29,
+            "end": 20.41,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.01.s04",
+            "firstWordIndex": 35,
+            "lastWordIndex": 43
+          }
+        },
+        {
+          "id": "M06.01.s05",
+          "at": 20.84,
+          "text": "A displayed number is not the same as observing breathing depth, effort, pattern, and the person being monitored.",
+          "title": "A displayed number is not the same as observing breathing depth, effort, pattern, and the person being monitored.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Observe breathing and the person",
+            "text": "A displayed number is not the same as observing breathing depth, effort, pattern, and the person being monitored.",
+            "source": "Owner-approved adapted M06.01 narration · source script lines 176-211 · course PDF physical pp89,98",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 20.84,
+            "end": 27.55,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.01.s05",
+            "firstWordIndex": 44,
+            "lastWordIndex": 61
+          }
+        }
+      ]
+    },
+    {
+      "id": "M06.02",
+      "cues": [
+        {
+          "id": "M06.02.s01",
+          "at": 0,
+          "text": "Pulse oximetry estimates the percentage of hemoglobin binding sites occupied by oxygen in pulsating arterial blood.",
+          "title": "Pulse oximetry estimates the percentage of hemoglobin binding sites occupied by oxygen in pulsating arterial blood.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Estimated arterial oxygen saturation",
+            "text": "Pulse oximetry estimates the percentage of hemoglobin binding sites occupied by oxygen in pulsating arterial blood.",
+            "source": "Owner-approved adapted M06.02 narration · source script lines 176-211 · course PDF physical pp90,92",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 7.39,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.02.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 15
+          }
+        },
+        {
+          "id": "M06.02.s02",
+          "at": 8.0,
+          "text": "The device compares absorption of red and infrared light.",
+          "title": "The device compares absorption of red and infrared light.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Red and infrared light",
+            "text": "The device compares absorption of red and infrared light.",
+            "source": "Owner-approved adapted M06.02 narration · source script lines 176-211 · course PDF physical pp90,92",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 8.0,
+            "end": 11.43,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.02.s02",
+            "firstWordIndex": 16,
+            "lastWordIndex": 24
+          }
+        },
+        {
+          "id": "M06.02.s03",
+          "at": 11.93,
+          "text": "It does not directly measure total oxygen content, ventilation, or carbon dioxide.",
+          "title": "It does not directly measure total oxygen content, ventilation, or carbon dioxide.",
+          "scene": {
+            "organ": "explanation",
+            "title": "What pulse oximetry does not measure",
+            "text": "It does not directly measure total oxygen content, ventilation, or carbon dioxide.",
+            "source": "Owner-approved adapted M06.02 narration · source script lines 176-211 · course PDF physical pp90,92",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 11.93,
+            "end": 17.92,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.02.s03",
+            "firstWordIndex": 25,
+            "lastWordIndex": 36
+          }
+        },
+        {
+          "id": "M06.02.s04",
+          "at": 18.41,
+          "text": "Think of saturation as the fraction of seats occupied on oxygen-carrying buses, not the number of buses available.",
+          "title": "Think of saturation as the fraction of seats occupied on oxygen-carrying buses, not the number of buses available.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Occupied seats and available buses",
+            "text": "Think of saturation as the fraction of seats occupied on oxygen-carrying buses, not the number of buses available.",
+            "source": "Owner-approved adapted M06.02 narration · source script lines 176-211 · course PDF physical pp90,92",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 18.41,
+            "end": 25.48,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.02.s04",
+            "firstWordIndex": 37,
+            "lastWordIndex": 55
+          }
+        },
+        {
+          "id": "M06.02.s05",
+          "at": 25.97,
+          "text": "That is why hemoglobin concentration and blood flow also matter for oxygen delivery.",
+          "title": "That is why hemoglobin concentration and blood flow also matter for oxygen delivery.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Hemoglobin and flow also matter",
+            "text": "That is why hemoglobin concentration and blood flow also matter for oxygen delivery.",
+            "source": "Owner-approved adapted M06.02 narration · source script lines 176-211 · course PDF physical pp90,92",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 25.97,
+            "end": 31.12,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.02.s05",
+            "firstWordIndex": 56,
+            "lastWordIndex": 68
+          }
+        }
+      ]
+    },
+    {
+      "id": "M06.03",
+      "cues": [
+        {
+          "id": "M06.03.s01",
+          "at": 0,
+          "text": "Many healthy people at sea level have readings from ninety-five to one hundred percent.",
+          "title": "Many healthy people at sea level have readings from ninety-five to one hundred percent.",
+          "scene": {
+            "organ": "explanation",
+            "title": "SpO₂ range in context",
+            "text": "Many healthy people at sea level have readings from ninety-five to one hundred percent.",
+            "source": "Owner-approved adapted M06.03 narration · source script lines 176-211 · course PDF physical pp91,93",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 4.21,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.03.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 14
+          }
+        },
+        {
+          "id": "M06.03.s02",
+          "at": 4.87,
+          "text": "One hundred percent is not automatically abnormal, and a pulse-oximeter reading alone does not establish oxygen toxicity.",
+          "title": "One hundred percent is not automatically abnormal, and a pulse-oximeter reading alone does not establish oxygen toxicity.",
+          "scene": {
+            "organ": "explanation",
+            "title": "100% does not prove oxygen toxicity",
+            "text": "One hundred percent is not automatically abnormal, and a pulse-oximeter reading alone does not establish oxygen toxicity.",
+            "source": "Owner-approved adapted M06.03 narration · source script lines 176-211 · course PDF physical pp91,93",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 4.87,
+            "end": 12.69,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.03.s02",
+            "firstWordIndex": 15,
+            "lastWordIndex": 32
+          }
+        },
+        {
+          "id": "M06.03.s03",
+          "at": 13.51,
+          "text": "Motion, poor perfusion, nail products, dyshemoglobins, and device limitations can affect results.",
+          "title": "Motion, poor perfusion, nail products, dyshemoglobins, and device limitations can affect results.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Factors that affect a reading",
+            "text": "Motion, poor perfusion, nail products, dyshemoglobins, and device limitations can affect results.",
+            "source": "Owner-approved adapted M06.03 narration · source script lines 176-211 · course PDF physical pp91,93",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 13.51,
+            "end": 20.69,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.03.s03",
+            "firstWordIndex": 33,
+            "lastWordIndex": 44
+          }
+        },
+        {
+          "id": "M06.03.s04",
+          "at": 21.33,
+          "text": "Accuracy can also differ across skin pigmentation.",
+          "title": "Accuracy can also differ across skin pigmentation.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Skin pigmentation and device accuracy",
+            "text": "Accuracy can also differ across skin pigmentation.",
+            "source": "Owner-approved adapted M06.03 narration · source script lines 176-211 · course PDF physical pp91,93",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 21.33,
+            "end": 24.83,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.03.s04",
+            "firstWordIndex": 45,
+            "lastWordIndex": 51
+          }
+        },
+        {
+          "id": "M06.03.s05",
+          "at": 25.47,
+          "text": "Carbon monoxide exposure can produce misleading readings on ordinary pulse oximeters.",
+          "title": "Carbon monoxide exposure can produce misleading readings on ordinary pulse oximeters.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Carbon monoxide can mislead",
+            "text": "Carbon monoxide exposure can produce misleading readings on ordinary pulse oximeters.",
+            "source": "Owner-approved adapted M06.03 narration · source script lines 176-211 · course PDF physical pp91,93",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 25.47,
+            "end": 31.02,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.03.s05",
+            "firstWordIndex": 52,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M06.03.s06",
+          "at": 31.59,
+          "text": "Interpret the measurement in context, not as a stand-alone assurance.",
+          "title": "Interpret the measurement in context, not as a stand-alone assurance.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Interpret the measurement in context",
+            "text": "Interpret the measurement in context, not as a stand-alone assurance.",
+            "source": "Owner-approved adapted M06.03 narration · source script lines 176-211 · course PDF physical pp91,93",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 31.59,
+            "end": 35.9,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.03.s06",
+            "firstWordIndex": 63,
+            "lastWordIndex": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "M06.04",
+      "cues": [
+        {
+          "id": "M06.04.s01",
+          "at": 0,
+          "text": "Capnography displays carbon dioxide in exhaled gas over time.",
+          "title": "Capnography displays carbon dioxide in exhaled gas over time.",
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "selected": "rightlung",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "monitoringView": "capnography",
+            "simulation": {
+              "kind": "phase",
+              "phase": "plateau"
+            },
+            "detail": "Use the existing “Breathing and linked capnography” panel and its phase buttons/marker. This synthetic trace samples the proximal airway/mouth and has a preset end-tidal value of 40 mmHg. Its phase clock is linked to breathing; CO₂ is independent of mechanics, not measured or model-derived. A lung selection is context, never a capnography measurement. Named phase holds illustrate the trace; no monitoring device, arterial CO₂ calculation or treatment prediction is provided."
+          },
+          "visualStatus": "model-binding",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 4.68,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M06.04.s02",
+          "at": 5.09,
+          "text": "End-tidal carbon dioxide is the value near the end of exhalation.",
+          "title": "End-tidal carbon dioxide is the value near the end of exhalation.",
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "selected": "rightlung",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "monitoringView": "capnography",
+            "simulation": {
+              "kind": "phase",
+              "phase": "endtidal"
+            },
+            "detail": "Use the existing “Breathing and linked capnography” panel and its phase buttons/marker. This synthetic trace samples the proximal airway/mouth and has a preset end-tidal value of 40 mmHg. Its phase clock is linked to breathing; CO₂ is independent of mechanics, not measured or model-derived. A lung selection is context, never a capnography measurement. Named phase holds illustrate the trace; no monitoring device, arterial CO₂ calculation or treatment prediction is provided."
+          },
+          "visualStatus": "model-binding",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 5.09,
+            "end": 9.18,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 20
+          }
+        },
+        {
+          "id": "M06.04.s03",
+          "at": 9.65,
+          "text": "A common reference range in a healthy resting adult is thirty-five to forty-five millimeters of mercury, but the value depends on ventilation, perfusion, metabolism, and equipment.",
+          "title": "A common reference range in a healthy resting adult is thirty-five to forty-five millimeters of mercury, but the value depends on ventilation, perfusion, metabolism, and equipment.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Reference range and influences",
+            "text": "A common reference range in a healthy resting adult is thirty-five to forty-five millimeters of mercury, but the value depends on ventilation, perfusion, metabolism, and equipment.",
+            "source": "Owner-approved adapted M06.04 narration · source script lines 176-211 · course PDF physical pp94–96,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 9.65,
+            "end": 20.51,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s03",
+            "firstWordIndex": 21,
+            "lastWordIndex": 48
+          }
+        },
+        {
+          "id": "M06.04.s04",
+          "at": 20.97,
+          "text": "The waveform changes as exhaled gas moves from conducting-airway gas toward alveolar gas.",
+          "title": "The waveform changes as exhaled gas moves from conducting-airway gas toward alveolar gas.",
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "selected": "rightlung",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "monitoringView": "capnography",
+            "simulation": {
+              "kind": "phase",
+              "phase": "deadspace"
+            },
+            "detail": "Use the existing “Breathing and linked capnography” panel and its phase buttons/marker. This synthetic trace samples the proximal airway/mouth and has a preset end-tidal value of 40 mmHg. Its phase clock is linked to breathing; CO₂ is independent of mechanics, not measured or model-derived. A lung selection is context, never a capnography measurement. Named phase holds illustrate the trace; no monitoring device, arterial CO₂ calculation or treatment prediction is provided."
+          },
+          "visualStatus": "model-binding",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 20.97,
+            "end": 26.84,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s04",
+            "firstWordIndex": 49,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M06.04.p01",
+          "at": 25.44,
+          "text": "The waveform changes as exhaled gas moves from conducting-airway gas toward alveolar gas.",
+          "title": "Mixing at the airway sampling site",
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "selected": "rightlung",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "monitoringView": "capnography",
+            "simulation": {
+              "kind": "phase",
+              "phase": "mixing"
+            },
+            "detail": "Use the existing “Breathing and linked capnography” panel and its phase buttons/marker. This synthetic trace samples the proximal airway/mouth and has a preset end-tidal value of 40 mmHg. Its phase clock is linked to breathing; CO₂ is independent of mechanics, not measured or model-derived. A lung selection is context, never a capnography measurement. Named phase holds illustrate the trace; no monitoring device, arterial CO₂ calculation or treatment prediction is provided."
+          },
+          "visualStatus": "model-binding",
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 25.44,
+            "end": 25.76,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s04",
+            "phrase": "toward",
+            "occurrence": 1,
+            "firstWordIndex": 60,
+            "lastWordIndex": 60
+          }
+        },
+        {
+          "id": "M06.04.p02",
+          "at": 25.76,
+          "text": "The waveform changes as exhaled gas moves from conducting-airway gas toward alveolar gas.",
+          "title": "Predominantly alveolar gas · synthetic plateau",
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "selected": "rightlung",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "monitoringView": "capnography",
+            "simulation": {
+              "kind": "phase",
+              "phase": "plateau"
+            },
+            "detail": "Use the existing “Breathing and linked capnography” panel and its phase buttons/marker. This synthetic trace samples the proximal airway/mouth and has a preset end-tidal value of 40 mmHg. Its phase clock is linked to breathing; CO₂ is independent of mechanics, not measured or model-derived. A lung selection is context, never a capnography measurement. Named phase holds illustrate the trace; no monitoring device, arterial CO₂ calculation or treatment prediction is provided."
+          },
+          "visualStatus": "model-binding",
+          "alignment": {
+            "kind": "phrase",
+            "measuredStart": 25.76,
+            "end": 26.84,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s04",
+            "phrase": "alveolar gas",
+            "occurrence": 1,
+            "firstWordIndex": 61,
+            "lastWordIndex": 62
+          }
+        },
+        {
+          "id": "M06.04.s05",
+          "at": 27.22,
+          "text": "It is not interchangeable with a direct arterial carbon dioxide measurement.",
+          "title": "It is not interchangeable with a direct arterial carbon dioxide measurement.",
+          "scene": {
+            "organ": "explanation",
+            "title": "EtCO₂ differs from arterial CO₂",
+            "text": "It is not interchangeable with a direct arterial carbon dioxide measurement.",
+            "source": "Owner-approved adapted M06.04 narration · source script lines 176-211 · course PDF physical pp94–96,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 27.22,
+            "end": 31.45,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.04.s05",
+            "firstWordIndex": 63,
+            "lastWordIndex": 73
+          }
+        }
+      ]
+    },
+    {
+      "id": "M06.05",
+      "cues": [
+        {
+          "id": "M06.05.s01",
+          "at": 0,
+          "text": "Match each tool to the question it helps answer.",
+          "title": "Match each tool to the question it helps answer.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Match each tool to its question",
+            "text": "Match each tool to the question it helps answer.",
+            "source": "Owner-approved adapted M06.05 narration · source script lines 176-211;422-425 · course PDF physical pp88–95,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. Study matching prompt; no answer is recorded or automatically scored."
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 0.0,
+            "end": 2.96,
+            "initialPoseAtZero": true,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s01",
+            "firstWordIndex": 0,
+            "lastWordIndex": 8
+          }
+        },
+        {
+          "id": "M06.05.s02",
+          "at": 3.78,
+          "text": "Respiratory rate describes frequency.",
+          "title": "Respiratory rate describes frequency.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Respiratory rate: frequency",
+            "text": "Respiratory rate describes frequency.",
+            "source": "Owner-approved adapted M06.05 narration · source script lines 176-211;422-425 · course PDF physical pp88–95,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 3.78,
+            "end": 6.29,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s02",
+            "firstWordIndex": 9,
+            "lastWordIndex": 12
+          }
+        },
+        {
+          "id": "M06.05.s03",
+          "at": 6.96,
+          "text": "Pulse oximetry estimates arterial oxygen saturation.",
+          "title": "Pulse oximetry estimates arterial oxygen saturation.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Pulse oximetry: saturation",
+            "text": "Pulse oximetry estimates arterial oxygen saturation.",
+            "source": "Owner-approved adapted M06.05 narration · source script lines 176-211;422-425 · course PDF physical pp88–95,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 6.96,
+            "end": 10.93,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s03",
+            "firstWordIndex": 13,
+            "lastWordIndex": 18
+          }
+        },
+        {
+          "id": "M06.05.s04",
+          "at": 11.54,
+          "text": "Capnography reflects exhaled carbon dioxide and ventilation-related information.",
+          "title": "Capnography reflects exhaled carbon dioxide and ventilation-related information.",
+          "scene": {
+            "organ": "respiratory",
+            "stage": "whole",
+            "segment": "right-apical-segment",
+            "preset": "front",
+            "selected": "rightlung",
+            "breathing": {
+              "rate": 12,
+              "target": 0.5,
+              "resistance": 2,
+              "compliance": 0.1,
+              "mode": "target"
+            },
+            "ventilation": "spontaneous",
+            "monitoringView": "capnography",
+            "simulation": {
+              "kind": "phase",
+              "phase": "plateau"
+            },
+            "detail": "Use the existing “Breathing and linked capnography” panel and its phase buttons/marker. This synthetic trace samples the proximal airway/mouth and has a preset end-tidal value of 40 mmHg. Its phase clock is linked to breathing; CO₂ is independent of mechanics, not measured or model-derived. A lung selection is context, never a capnography measurement. Named phase holds illustrate the trace; no monitoring device, arterial CO₂ calculation or treatment prediction is provided."
+          },
+          "visualStatus": "model-binding",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 11.54,
+            "end": 17.08,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s04",
+            "firstWordIndex": 19,
+            "lastWordIndex": 27
+          }
+        },
+        {
+          "id": "M06.05.s05",
+          "at": 17.66,
+          "text": "The E C G records electrical activity of the heart.",
+          "title": "The E C G records electrical activity of the heart.",
+          "scene": {
+            "organ": "explanation",
+            "title": "ECG: heart electrical activity",
+            "text": "The E C G records electrical activity of the heart.",
+            "source": "Owner-approved adapted M06.05 narration · source script lines 176-211;422-425 · course PDF physical pp88–95,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 17.66,
+            "end": 21.52,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s05",
+            "firstWordIndex": 28,
+            "lastWordIndex": 37
+          }
+        },
+        {
+          "id": "M06.05.s06",
+          "at": 22.2,
+          "text": "None of these alone proves adequate perfusion or gives a complete assessment.",
+          "title": "None of these alone proves adequate perfusion or gives a complete assessment.",
+          "scene": {
+            "organ": "explanation",
+            "title": "No single signal proves perfusion",
+            "text": "None of these alone proves adequate perfusion or gives a complete assessment.",
+            "source": "Owner-approved adapted M06.05 narration · source script lines 176-211;422-425 · course PDF physical pp88–95,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 22.2,
+            "end": 27.01,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s06",
+            "firstWordIndex": 38,
+            "lastWordIndex": 49
+          }
+        },
+        {
+          "id": "M06.05.s07",
+          "at": 27.48,
+          "text": "This lesson teaches what the signals mean, not how to prescribe oxygen, perform resuscitation, or choose a treatment.",
+          "title": "This lesson teaches what the signals mean, not how to prescribe oxygen, perform resuscitation, or choose a treatment.",
+          "scene": {
+            "organ": "explanation",
+            "title": "Meaning of signals, not treatment",
+            "text": "This lesson teaches what the signals mean, not how to prescribe oxygen, perform resuscitation, or choose a treatment.",
+            "source": "Owner-approved adapted M06.05 narration · source script lines 176-211;422-425 · course PDF physical pp88–95,101",
+            "qualification": "Supplemental explanation; no corresponding anatomical overlay, monitor measurement or clinical prediction. "
+          },
+          "visualStatus": "supplemental-explanation",
+          "alignment": {
+            "kind": "sentence",
+            "measuredStart": 27.48,
+            "end": 35.35,
+            "initialPoseAtZero": false,
+            "machineMeasured": true,
+            "humanListeningQA": false,
+            "sourceSentence": "M06.05.s07",
+            "firstWordIndex": 50,
+            "lastWordIndex": 67
+          }
+        }
+      ]
+    }
+  ]
+}

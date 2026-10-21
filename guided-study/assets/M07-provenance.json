@@ -1,0 +1,256 @@
+{
+  "schema": "guided-study.M07-assets.v1",
+  "scope": "Eight delivered M07 lead-placement lessons; no other module completion implied",
+  "sourcePackageLibraryFileId": "libfile_c0fdd4d3a694819193020179c980f783",
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "bf9358889ea6b46060b01fd38c4f5e374615c60ebfb094603f64f1644831fbcf",
+  "audioPolicy": "Existing delivered MP3 files copied unchanged; no generation, retake, provider, install or new cost during integration.",
+  "alignment": {
+    "manifestSha256": "e116a65098798a10643921d08bb64cde32b03cdbb1109f7e66420d45aa399c32",
+    "provenanceSha256": "0e5741fb54ddc039c02442a11403849e4e3e7964d3ac7eedec577745e38f4b88",
+    "resultSha256": "9bd3d9113a8806e1b0028cc9f30418a52e87b99a4d8fb59c5feae66f0d0c4015",
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "nativeVisualSynchronizationQA": false,
+    "method": "Existing transcript-constrained local word/subword alignment; no transcript-word-rate estimates.",
+    "flags": [
+      {
+        "id": "M07.02",
+        "type": "WORD_DURATION",
+        "index": 58,
+        "word": "a",
+        "start": 21.42,
+        "end": 21.45,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "id": "M07.06",
+        "type": "WORD_DURATION",
+        "index": 12,
+        "word": "a",
+        "start": 5.99,
+        "end": 6.02,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "id": "M07.08",
+        "type": "WORD_DURATION",
+        "index": 68,
+        "word": "a",
+        "start": 29.48,
+        "end": 29.51,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      }
+    ]
+  },
+  "bindings": {
+    "controller": "LeadPlacementLab.guided / GuidedExplanation",
+    "static": true,
+    "fullExplicitScenes": true,
+    "source": "Existing 50 mesh registered BodyParts3D thorax; derived chest positions/landmark guides; external limb labels",
+    "patientOrientation": "Patient-right/left, never viewer-right/left; lead RA/LA are electrode labels, not atria",
+    "polarity": "Existing exact I/II/III and augmented step maps; caller cannot author arbitrary poles",
+    "rlQualification": "Any visible RL “GND” is the existing module’s teaching shorthand: the right-leg electrode commonly provides a common reference/driven-right-leg function; it is not a positive/negative measurement pole or necessarily literal earth ground. The unused RA/LA/LL electrode is never reassigned as ground. ",
+    "chestOrder": [
+      "v1",
+      "v2",
+      "v4",
+      "v3",
+      "v5",
+      "v6"
+    ],
+    "scopeLimits": [
+      "No heart/lungs or full-limb/cable/device geometry in this thorax.",
+      "No contact-impedance, artifact, vector projection, reference-voltage or axis solver.",
+      "No computed tracing, strip/caliper amplitudes, diagnostic inference or automatically graded placement.",
+      "Ordinary runtime/state/quiz preservation and native browser/listening acceptance are separate adapter/integration checks."
+    ],
+    "nativeExecutionVerified": false
+  },
+  "courseTerminologyNotes": {
+    "M07.01": {
+      "physicalPages": "243,248,252,258,263",
+      "note": "Electrode/cable/view distinctions and ten-electrode/twelve-view counts follow the approved adaptation. Cable hardware and measured electrical views are not rendered."
+    },
+    "M07.02": {
+      "physicalPages": "248–250,257–258",
+      "note": "Scientific correction: the unused RA/LA/LL electrode is not reassigned as ground for each bipolar lead, contrary to physical p250. Existing RL GND labels are teaching shorthand for a common reference/driven-right-leg function, not a measurement pole or guaranteed earth ground."
+    },
+    "M07.03": {
+      "physicalPages": "251–258,263",
+      "note": "Traditional unipolar terminology still requires a voltage comparison. Registered polarity annotations are static context, not calculated reference voltages or cutting-plane geometry."
+    },
+    "M07.04": {
+      "physicalPages": "30–33",
+      "note": "The sternal angle identifies rib2, then the second space immediately below it. Twelve PAIRS of ribs corrects the p31 shorthand. All 12 pairs exist in the source thorax; numbered instructional space overlays cover only 2nd–5th."
+    },
+    "M07.05": {
+      "physicalPages": "30–33,263",
+      "note": "Exact V1–V6 placement is an approved narration supplement supported by the existing registered Lead Placement Lab facts/anchors; it is not claimed to be fully spelled out in extracted p263 text. Locate V4 before V3 and keep V4–V6 horizontally level."
+    },
+    "M07.06": {
+      "physicalPages": "243,247–248,257–258,264",
+      "note": "Recording quality, color-standard variation and configuration differences are qualified explanations. No contact impedance, artifact generation, cable hardware or alternative validated electrode configuration is modeled."
+    },
+    "M07.07": {
+      "physicalPages": "244–245,267,338",
+      "note": "Approved correction: positive/negative deflection concerns net projection onto a lead, not a general rule that all electricity flows negative-to-positive; an isoelectric segment does not prove all cells inactive. No vector-to-trace solver is supplied."
+    },
+    "M07.08": {
+      "physicalPages": "262,266,339–345",
+      "note": "Approved correction to the p343 quadrant shortcut: Lead I positive/aVF negative includes0 to−30degrees; Lead II helps distinguish the borderline-normal region. No QRS amplitudes, axis computation or diagnosis is generated."
+    }
+  },
+  "counts": {
+    "lessons": 8,
+    "cues": 58,
+    "sentenceCues": 44,
+    "phraseCues": 14,
+    "leadScenes": 47,
+    "explanationCards": 11,
+    "words": 582,
+    "durationSeconds": 242.259314
+  },
+  "clips": [
+    {
+      "id": "M07.01",
+      "file": "M07_01_adam_multilingual_v2.mp3",
+      "bytes": 412744,
+      "sha256": "547acb4367f94bbe9bb287c8fc1c34e8385cf0c6ca073d0135d773032f793523",
+      "textSha256": "63fcec7c293bbec7d1171dbee4a6fdcd304870e3e825c5e5eea7d5773171eef4",
+      "duration": 24.737938,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 7,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M07.02",
+      "file": "M07_02_adam_multilingual_v2.mp3",
+      "bytes": 424029,
+      "sha256": "75eca12c9794aa2f3e8480871df35548f1e4c98412f41602b5940681c227402c",
+      "textSha256": "084c1e0a7e3c846b34c798ddd660753b937f3b874fac3f9ff669e0eb4bece9e4",
+      "duration": 25.44325,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 58,
+          "word": "a",
+          "start": 21.42,
+          "end": 21.45,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M07.03",
+      "file": "M07_03_adam_multilingual_v2.mp3",
+      "bytes": 521413,
+      "sha256": "d341c835ac3ea7b8c52669d3edc32db6d4f45b6da33222b44bd8341862a5b2e0",
+      "textSha256": "960b2138e4e373822b6c52918dbe425727093c03e2f4559ee9affa93a78d9231",
+      "duration": 31.52975,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 11,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M07.04",
+      "file": "M07_04_adam_multilingual_v2.mp3",
+      "bytes": 437403,
+      "sha256": "f01838bce4cf9332f55335a8d16df5c68f4df1ddf2b8e361ff393234ef4cd7b7",
+      "textSha256": "686940a594cebc108f331c94f890b49bd0d5a3251c3c4618769313f8bfd824f6",
+      "duration": 26.279125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 9,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M07.05",
+      "file": "M07_05_adam_multilingual_v2.mp3",
+      "bytes": 502187,
+      "sha256": "23eb06f7b9b2ef7da537d4e28d72f3776f5d5efbc0072fac4aec0be9179a70a7",
+      "textSha256": "ad17b0c2f2c07f60d91fbad60bf073aede8fc705a5631a8917174d6eeac3d317",
+      "duration": 30.328125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 8,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M07.06",
+      "file": "M07_06_adam_multilingual_v2.mp3",
+      "bytes": 612110,
+      "sha256": "35b849191ea556e6a82e0344c324bb995eac611199576de260321ca12fae4db3",
+      "textSha256": "fda78df857fc032684948feaaad18667f09ffd7dd2e2527a968dd0820c3505e1",
+      "duration": 37.198313,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 12,
+          "word": "a",
+          "start": 5.99,
+          "end": 6.02,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M07.07",
+      "file": "M07_07_adam_multilingual_v2.mp3",
+      "bytes": 515980,
+      "sha256": "7107b356829bd1526fb5d1e5b974828319e63d7f1c46603629bccdd5a2f54012",
+      "textSha256": "670e85b6a13a0eb520be8b3d19b5654ff11a95e923ddbc1b6a8721501ef4f4d7",
+      "duration": 31.190188,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M07.08",
+      "file": "M07_08_adam_multilingual_v2.mp3",
+      "bytes": 585779,
+      "sha256": "11a0d1712883124dd65798bf5773f62567f59f4d063320f30c51b08886f4321b",
+      "textSha256": "a2cc89ab25c4d7ca14806ed2802ce70f2abba4724c18a325612eda39e4d00305",
+      "duration": 35.552625,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 7,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 68,
+          "word": "a",
+          "start": 29.48,
+          "end": 29.51,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    }
+  ]
+}

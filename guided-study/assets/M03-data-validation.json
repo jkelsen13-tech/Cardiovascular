@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "module": "M03",
+  "lessons": 9,
+  "cues": 62,
+  "sentenceCues": 56,
+  "phraseCues": 6,
+  "phaseSweeps": 12,
+  "electricalHolds": 5,
+  "unchangedAudioHashes": 9,
+  "durationSeconds": 297.90018999999995,
+  "preservedPriorLessons": 12,
+  "fullAppendCount": 21,
+  "allFourClosedHolds": true,
+  "postRelaxationRefill": {
+    "namedOccurrence": "last",
+    "modelPhaseStart": 0.541,
+    "modelPhaseEnd": 0.8,
+    "startLVmL": 47.47088125822349,
+    "endLVmL": 84.21427905271487
+  },
+  "electromechanicalCueOrder": true,
+  "alignmentQAFlagsPreserved": 4,
+  "limits": "CPU source/data/model-state verification only; no native browser, audio listening, iPad or performance acceptance."
+}

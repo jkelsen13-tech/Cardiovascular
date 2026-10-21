@@ -1,0 +1,110 @@
+{
+  "scope": "Explicit presentation qualification after initial M02/M03 authoring; source narration/audio/anchors unchanged. Native checks must use current scenes.",
+  "lessons": [
+    {
+      "lesson": "M02.01",
+      "modelCues": 24,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.02",
+      "modelCues": 6,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.03",
+      "modelCues": 8,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.04",
+      "modelCues": 7,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.05",
+      "modelCues": 8,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.06",
+      "modelCues": 10,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.07",
+      "modelCues": 9,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.08",
+      "modelCues": 8,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.09",
+      "modelCues": 0,
+      "supplementalCues": 7
+    },
+    {
+      "lesson": "M02.10",
+      "modelCues": 0,
+      "supplementalCues": 7
+    },
+    {
+      "lesson": "M02.11",
+      "modelCues": 8,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M02.12",
+      "modelCues": 9,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.01",
+      "modelCues": 7,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.02",
+      "modelCues": 7,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.03",
+      "modelCues": 7,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.04",
+      "modelCues": 9,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.05",
+      "modelCues": 7,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.06",
+      "modelCues": 7,
+      "supplementalCues": 0
+    },
+    {
+      "lesson": "M03.07",
+      "modelCues": 0,
+      "supplementalCues": 5
+    },
+    {
+      "lesson": "M03.08",
+      "modelCues": 4,
+      "supplementalCues": 3
+    },
+    {
+      "lesson": "M03.09",
+      "modelCues": 6,
+      "supplementalCues": 0
+    }
+  ]
+}
