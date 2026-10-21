@@ -38,8 +38,8 @@
     },
     {
       "file": "heart-study-v3/renderer.js",
-      "bytes": 26255,
-      "sha256": "97a600558bfaa0e9ee8ecdd2587cdd73fc528447cf7a4a50e91f52da729abdbe"
+      "bytes": 26619,
+      "sha256": "dc0ca1de462086269a12cbfa45467d162f21e43e2f4b535e60d62c02c0fd83e9"
     },
     {
       "file": "heart-study-v3/assets/source-geometry.js",
@@ -88,8 +88,8 @@
     },
     {
       "file": "heart-study-v3/sourced-anatomy.js",
-      "bytes": 61381,
-      "sha256": "9fda2fd9c181d7a1fde04cd79a09897db76771abac3b96736fbc3059bff16941"
+      "bytes": 64837,
+      "sha256": "66080fc30817a94ac45c7cc9c86b6b6949c12e138ca457169f0d30f20e9ddcce"
     },
     {
       "file": "heart-study-v3/course.js",
