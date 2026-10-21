@@ -94,3 +94,5 @@ html.h3-active{scroll-padding-top:calc(64px + var(--h3-pocket-height,0px))}#hear
 #heartV3Study .h3-electrical-state p{margin:0;color:#e9bdff;font-weight:650;flex:1 1 220px;overflow-wrap:anywhere}
 #heartV3Study .h3-electrical-state small{flex-basis:100%;font-size:14px;line-height:1.4;color:#d9ccef}
 #heartV3Study.h3-text-large .h3-electrical-state small{font-size:28px}
+
+#heartV3Study .h3-node-choices{display:flex;gap:5px}#heartV3Study .h3-node-context{order:-8;border:1px solid #a68cc4;border-radius:8px;padding:10px;background:#18263a;line-height:1.4}#heartV3Study .h3-node-context h3{margin:0 0 7px;font-size:17px}#heartV3Study .h3-node-context p{font-size:15px;margin:6px 0}#heartV3Study .h3-node-context button,#heartV3Study .h3-node-context select,#heartV3Study .h3-node-practice summary{min-height:44px}#heartV3Study .h3-node-practice{margin-top:9px}#heartV3Study .h3-node-activity{color:#e6c2ff;font-weight:700}#heartV3Study.h3-text-large .h3-node-context p{font-size:30px}
