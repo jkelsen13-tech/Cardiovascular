@@ -11,3 +11,9 @@ Changes: original node transforms applied; one shared landmark-derived display b
 Internal chambers, cavity measurement surrogates, moving leaflets/annuli, chordae, support attachments, cut faces and gross teaching guides are independently authored representative reconstructions in `../anatomy.js`. They are not scanned HRA interiors or patient-specific microscopic continuity. Mathematical caps close the invisible cavity measurement surrogate only. Source anatomy, numerical circulation, illustrative deformation and representative mechanism animation have separate evidence levels. See `../../docs/HEART-V3-ANATOMY.md`.
 
 The runtime uses the existing local Three.js 0.180.0 subset; its MIT notice remains in `../../ecg-study/vendor/THREE-LICENSE.txt`. No additional runtime library is introduced.
+
+## October21 original-foundation revision
+
+Gross views now use original retained HRA surfaces and their shared transform. No abstract replacement cavity is inserted. A bounded shared illustrative deformation affects tissue and matching vessels; Original source pose is unchanged. Source payload, geometry, indices, inventory and coordinate transform remain unchanged.
+
+Static source valves remain in Original source pose. Teaching views use supplementary leaflets whose insertion contours follow closed source boundary loops. Annular identity, commissures, leaflet mechanics and chordal anatomy remain inferred teaching reconstructions. Supplementary AV chords join original source papillary-tip vertices to representative leaflet margins. Missing separate atrial septum and microscopic details use labeled schematics. Source-edge correspondence is geometric evidence, not specialist anatomical approval.

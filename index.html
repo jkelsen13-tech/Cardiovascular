@@ -2554,7 +2554,7 @@ const BANK = [
     "t": "anatomy",
     "module": 1,
     "unit": 2,
-    "q": "Why is the LEFT ventricle much larger/thicker than the right?",
+    "q": "Why does the LEFT ventricle have a thicker muscular wall than the right?",
     "o": [
       "It receives blood from the lungs",
       "It must pump blood to the entire body (systemic circuit)",
@@ -2562,7 +2562,7 @@ const BANK = [
       "It contains the SA node"
     ],
     "a": 1,
-    "e": "The left ventricle is much larger because it must pump blood through the systemic circuit to the entire body.",
+    "e": "The left ventricle has a thicker muscular wall because it generates the higher pressure needed for the systemic circuit. This does not mean it normally pumps more forward blood than the right ventricle or must have a larger cavity. Course PDF p127 uses size shorthand; wall thickness is the intended distinction.",
     "studyRef": "v018"
   },
   {
@@ -9255,13 +9255,13 @@ const BANK = [
     "unit": 8,
     "q": "Systole vs diastole (arterial pressure and semilunar valves):",
     "o": [
-      "Systole: ventricles contract, semilunar valves OPEN, body receives blood / Diastole: ventricles fill, semilunar valves CLOSED, blood circulates through the heart's own pathway",
+      "Ventricular systole: isovolumetric contraction then ejection through open semilunar valves / Diastole: relaxation then filling",
       "Systole: valves closed / Diastole: valves open",
       "Both have open valves",
       "Diastole is when the body receives blood"
     ],
     "a": 0,
-    "e": "Systole = pressure in the arteries as the ventricles contract; semilunar valves OPEN; blood takes the path of least resistance to the body. Diastole = pressure as the ventricles fill; semilunar valves CLOSED; when the valves close, blood is circulated through the heart's own coronary pathway."
+    "e": "Ventricular systole begins with isovolumetric contraction: both valve pairs are closed. Semilunar valves open for ejection when ventricular pressure exceeds arterial pressure. Diastole begins with isovolumetric relaxation, then AV valves open for filling. Left-coronary flow is greatest during diastole; it is not an on/off pathway created by valve closure. Course PDF p180 summarizes systole/diastole; these phase distinctions clarify that shorthand."
   },
   {
     "t": "twelve",
@@ -10243,6 +10243,7 @@ init();
 <script src="simulation-core/module.js"></script>
 <script src="aspt/mock-bank.js"></script>
 <script src="aspt/mock.js"></script>
+<script src="heart-study-v3/course.js"></script>
 <script src="heart-study-v3/module.js"></script>
 </body>
 </html>

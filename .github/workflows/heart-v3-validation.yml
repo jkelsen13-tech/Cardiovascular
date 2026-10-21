@@ -34,6 +34,7 @@ jobs:
           export CARDIO_BASE_URL="$BASE_URL"
           export HEART_V3_ROUTE_EVIDENCE="$RUNNER_TEMP/heart-v3-routes"
           python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/heart-v3-http.log" 2>&1 &
+          node tools/heart-v3/sourced-anatomy-browser.cjs
           node tools/heart-v3/browser-ui.cjs
           node tools/heart-v3/browser-fallback.cjs
           node tools/heart-v3/browser-lifecycle.cjs

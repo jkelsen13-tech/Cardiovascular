@@ -17,3 +17,7 @@ Controls retain 44px minimum touch targets and opt-in touch rotation/pinch. Narr
 No migration, reset, namespace substitution, domain change or automatic import is performed by this release. Legacy quiz/lesson behavior and original-index answer grading remain. Progress belongs to the same browser origin; the existing main-site URL is preserved. New isolated preview namespaces are not used by the main runtime. Corrupt saved text can be recovered through the existing module controls. Exports/imports validate the module's own schema; explanatory free text uses a disclosed self-check.
 
 Anatomy, diffusion, capnography and model values are instructional, not patient-specific clinical predictions. Physical iPad/Safari/VoiceOver and educator qualification remain outstanding; cloud measurement did not meet the30fps goal. See the public numerical/anatomy notes and asset attributions for exact limitations.
+
+## Original-foundation correction (October21)
+
+Anatomical heart is the preserved source exterior. Four-chamber section uses an oblique source plane; Outflow restores vascular context; Original source pose is static. Four teaching-stage buttons seek the detailed phases. Valve cards, model values, ECG and displayed geometry share one selected time. Supplementary leaflets/chords, attachment rings, missing-structure diagrams and micro scenes are explicitly identified. Course terminology notes cite physical PDF pages. Picking respects visible triangles and clipping. Progress schemas and keys remain unchanged.

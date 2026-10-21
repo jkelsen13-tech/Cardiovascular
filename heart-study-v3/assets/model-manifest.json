@@ -21,25 +21,25 @@
   "sourceBytesUnchangedAt": "ecg-study/assets/model-data.js",
   "derivative": "Shared registration and 1e-6 display-unit quantization; all source triangles retained",
   "sourceUnits": "Not established; display units are not millimeters",
-  "internalRepresentation": "Independent representative teaching reconstruction, not scanned chamber lumens",
-  "modelSeparation": "Numerical blood volume drives a per-chamber display-volume calibration. Molecular/illustrative fields do not compute the circulation solution.",
+  "internalRepresentation": "Original HRA gross surfaces with one shared transform and an in-place oblique teaching section; supplementary boundary-registered valve leaflets/chordae, not measured blood cavities",
+  "modelSeparation": "Numerical blood volume drives a bounded shared illustrative deformation field on original tissue and matching vessels. These surfaces are not calibrated cavity-volume measurements. Molecular fields do not compute circulation.",
   "processingCommand": "node tools/heart-v3/derive-geometry.cjs",
   "validationCommands": [
     "node tools/heart-v3/geometry.cjs",
-    "node tools/heart-v3/geometry-browser.cjs",
+    "node tools/heart-v3/sourced-anatomy-browser.cjs",
     "node tools/heart-v3/geometry-offscreen-browser.cjs",
     "node tools/heart-v3/geometry-profile.cjs"
   ],
   "files": [
     {
       "file": "heart-study-v3/anatomy.js",
-      "bytes": 41409,
-      "sha256": "6fe6edd532808c654f85d8e30ff8eeb56caa85d10fd4bab6b30caf3780943ff1"
+      "bytes": 54291,
+      "sha256": "64108df9991cf925e740c9d46524094a5c9ac8702e862ca4fa4c4d38202f4b4b"
     },
     {
       "file": "heart-study-v3/renderer.js",
-      "bytes": 18322,
-      "sha256": "2700af8cb100bc181ea5ec66e59466e4b4d794e830dbb9603d7cce9149bd2356"
+      "bytes": 20299,
+      "sha256": "f5695b8561e95f268267f028c3196e069cf730bdc81dbd479210521ff66e061c"
     },
     {
       "file": "heart-study-v3/assets/source-geometry.js",
@@ -53,13 +53,23 @@
     },
     {
       "file": "heart-study-v3/assets/ATTRIBUTION.md",
-      "bytes": 2241,
-      "sha256": "5105912ab74b3f7ef0fc2b3db4691d937527a1e76844b3e5144de4486c16c27d"
+      "bytes": 3147,
+      "sha256": "3bc6f59a8df2ff9ef26c730437b940ea8fd8afa27f1eb73642c32f1dc58be901"
     },
     {
       "file": "heart-study-v3/assets/CC-BY-4.0.txt",
-      "bytes": 18657,
-      "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+      "bytes": 18656,
+      "sha256": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94"
+    },
+    {
+      "file": "heart-study-v3/sourced-anatomy.js",
+      "bytes": 32028,
+      "sha256": "eee07e44c9bdeb1cf36f04085f705a925b99754dcf6c5a9e8482c0626b957ca0"
+    },
+    {
+      "file": "heart-study-v3/course.js",
+      "bytes": 4430,
+      "sha256": "724b384f42a64419f032c78bf45488a6461c57f3746fff4e8720cae91f8a73a3"
     }
   ]
 }
