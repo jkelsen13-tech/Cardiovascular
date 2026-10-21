@@ -1,7 +1,7 @@
 {
   "schema": "cardiovascular-anatomical-review-1",
   "scope": "Unpublished original-HRA heart revision; complete platform and existing lungs preserved",
-  "runtimeSnapshotSHA256": "3526146031876452877ee879a70b2221e9d65fb6ab8da2a800410c5ceef257e4",
+  "runtimeSnapshotSHA256": "7712038ac9ae5434ca2431c39598a200f61b5b1d083d8edc4a9a099d14b5d306",
   "runtimeFiles": {
     "COPYRIGHT.md": {
       "bytes": 2048,
@@ -80,8 +80,8 @@
       "sha256": "7458eb455cf2214e9ee1404906b60d63836c7b667a769524b18cb9a9ee473dfd"
     },
     "docs/HEART-V3-INTERFACE.md": {
-      "bytes": 3031,
-      "sha256": "bac12c91853e64b8c6eaaef06eda9c69ec16f13fa5d102994cf46129979aa07a"
+      "bytes": 3417,
+      "sha256": "b8d69249701fdfd12905717c82346544fe7ca865dd42c3fa69615489ed87bcd8"
     },
     "docs/HEART-V3-NUMERICAL-MODEL.md": {
       "bytes": 2114,

@@ -21,3 +21,5 @@ Anatomy, diffusion, capnography and model values are instructional, not patient-
 ## Original-foundation correction (October21)
 
 Anatomical heart is the preserved source exterior. Four-chamber section uses an oblique source plane; Outflow restores vascular context; Original source pose is static. Four teaching-stage buttons seek the detailed phases. Valve cards, model values, ECG and displayed geometry share one selected time. Supplementary leaflets/chords, attachment rings, missing-structure diagrams and micro scenes are explicitly identified. Course terminology notes cite physical PDF pages. Picking respects visible triangles and clipping. Progress schemas and keys remain unchanged.
+
+Exposed wall rims use optional gold highlighting. Gold identifies tissue at a display cut, with the lumen left open; it does not encode measured thickness or valve closure. The original ECG reference viewer has the same vessel-wall teaching toggle. Full cellular cycles (including calcium removal and relaxation) and selection-versus-electrical-activity inspection remain interactive.
