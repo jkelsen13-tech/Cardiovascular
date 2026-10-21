@@ -1,0 +1,929 @@
+/* M11 approved unchanged audio; supplemental cards and qualified existing junctional/SVT examples. */
+(function(root){
+ 'use strict';
+ const lessons=[
+  {
+    "id": "M11.01",
+    "module": "M11",
+    "title": "Junctional activation and retrograde P waves",
+    "text": "A junctional rhythm begins in or near the A V junction. Activation may travel normally toward the ventricles and backward toward the atria. Retrograde P waves may be inverted in inferior leads, appear before or after the Q R S, or be hidden within it. If a retrograde P wave precedes the Q R S, the P R interval is often short. Surface timing alone does not precisely locate the focus within an upper, middle, or lower node.",
+    "transcript": "A junctional rhythm begins in or near the A V junction. Activation may travel normally toward the ventricles and backward toward the atria. Retrograde P waves may be inverted in inferior leads, appear before or after the Q R S, or be hidden within it. If a retrograde P wave precedes the Q R S, the P R interval is often short. Surface timing alone does not precisely locate the focus within an upper, middle, or lower node.",
+    "audio": {
+      "src": "guided-study/assets/M11_01_adam_multilingual_v2.mp3",
+      "duration": 31.111813,
+      "sha256": "8c07c1942493f8690655caba8a92513f0ef46f9f0366286b203f0e4fb01b5d00"
+    },
+    "cues": [
+      {
+        "id": "M11.01.s01",
+        "at": 0,
+        "text": "A junctional rhythm begins in or near the A V junction.",
+        "title": "A junctional rhythm begins in or near the A V junction.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Junctional origin: conceptual explanation",
+          "text": "A junctional rhythm begins in or near the A V junction.",
+          "source": "Owner-approved adapted M11.01 narration · source script lines 715-726 · course PDF physical pp636,639,641–643",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 3.99,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.01.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 10
+        }
+      },
+      {
+        "id": "M11.01.s02",
+        "at": 4.55,
+        "text": "Activation may travel normally toward the ventricles and backward toward the atria.",
+        "title": "Activation may travel normally toward the ventricles and backward toward the atria.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Forward ventricular and retrograde atrial activation",
+          "text": "Activation may travel normally toward the ventricles and backward toward the atria.",
+          "source": "Owner-approved adapted M11.01 narration · source script lines 715-726 · course PDF physical pp636,639,641–643",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 4.55,
+          "end": 9.32,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.01.s02",
+          "firstWordIndex": 11,
+          "lastWordIndex": 22
+        }
+      },
+      {
+        "id": "M11.01.s03",
+        "at": 9.95,
+        "text": "Retrograde P waves may be inverted in inferior leads, appear before or after the Q R S, or be hidden within it.",
+        "title": "Retrograde P waves may be inverted in inferior leads, appear before or after the Q R S, or be hidden within it.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Existing example: post-QRS atrial deflection",
+          "text": "Retrograde P waves may be inverted in inferior leads, appear before or after the Q R S, or be hidden within it.",
+          "source": "Owner-approved adapted M11.01 narration · source script lines 715-726 · course PDF physical pp636,639,641–643",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled.",
+          "illustration": {
+            "src": "ecg/images/k8a473.png",
+            "sha256": "14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408",
+            "alt": "Existing course-supplied junctional escape rhythm teaching strip; limited source features only.",
+            "source": "Known teaching example: Junctional escape rhythm · 08 - Chapter 6 - Junctional Rhythms.pdf, p16. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained source-supported junctional-escape interpretation: regular narrow complexes near 41 bpm, with inverted post-QRS atrial deflections. No preceding pause or late escape onset is documented in this crop; it is not a PJC-versus-escape timing demonstration. Exact focus is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 9.95,
+          "end": 18.17,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.01.s03",
+          "firstWordIndex": 23,
+          "lastWordIndex": 44
+        }
+      },
+      {
+        "id": "M11.01.s04",
+        "at": 18.69,
+        "text": "If a retrograde P wave precedes the Q R S, the P R interval is often short.",
+        "title": "If a retrograde P wave precedes the Q R S, the P R interval is often short.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Existing example: short pre-QRS interval",
+          "text": "If a retrograde P wave precedes the Q R S, the P R interval is often short.",
+          "source": "Owner-approved adapted M11.01 narration · source script lines 715-726 · course PDF physical pp636,639,641–643",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled.",
+          "illustration": {
+            "src": "ecg/images/n6c048.png",
+            "sha256": "34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c",
+            "alt": "Existing course-supplied junctional tachycardia teaching strip; limited source features only.",
+            "source": "Known teaching example: Junctional tachycardia · 08 - Chapter 6 - Junctional Rhythms.pdf, p23. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained source-supported junctional-tachycardia interpretation: regular narrow complexes near 107 bpm with repeated negative pre-QRS atrial deflections and a short interval. Fine PR values and exact pacemaker focus are not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 18.69,
+          "end": 23.97,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.01.s04",
+          "firstWordIndex": 45,
+          "lastWordIndex": 61
+        }
+      },
+      {
+        "id": "M11.01.s05",
+        "at": 25.03,
+        "text": "Surface timing alone does not precisely locate the focus within an upper, middle, or lower node.",
+        "title": "Surface timing alone does not precisely locate the focus within an upper, middle, or lower node.",
+        "scene": {
+          "organ": "explanation",
+          "title": "P-wave timing does not precisely locate the focus",
+          "text": "Surface timing alone does not precisely locate the focus within an upper, middle, or lower node.",
+          "source": "Owner-approved adapted M11.01 narration · source script lines 715-726 · course PDF physical pp636,639,641–643",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 25.03,
+          "end": 30.85,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.01.s05",
+          "firstWordIndex": 62,
+          "lastWordIndex": 77
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "715-726",
+      "audioPackageLibraryFileId": "libfile_5a1bda3f25b48191bd7f9062c799bf76",
+      "standaloneAudioManifestLibraryFileId": "libfile_2b85dbcbfbc48191b4e6787b530f4494",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "636,639,641–643",
+        "terminologyNote": "Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M11.01 narration · source script lines 715-726 · course PDF physical pp636,639,641–643",
+    "sourceUrl": "guided-study/assets/M11-provenance.json",
+    "status": "Approved audio and qualified supplemental junctional/SVT cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M11.02",
+    "module": "M11",
+    "title": "Premature junctional complex",
+    "text": "A premature junctional complex is an early beat arising from the A V junction. Its Q R S is usually narrow if ventricular conduction is normal. A retrograde P wave may be visible before or after the complex, or may be hidden. Compare the beat with the expected timing of the underlying rhythm. Prematurity distinguishes it from a junctional escape beat, which arrives late after a pause or slowing of higher pacemakers.",
+    "transcript": "A premature junctional complex is an early beat arising from the A V junction. Its Q R S is usually narrow if ventricular conduction is normal. A retrograde P wave may be visible before or after the complex, or may be hidden. Compare the beat with the expected timing of the underlying rhythm. Prematurity distinguishes it from a junctional escape beat, which arrives late after a pause or slowing of higher pacemakers.",
+    "audio": {
+      "src": "guided-study/assets/M11_02_adam_multilingual_v2.mp3",
+      "duration": 29.805688,
+      "sha256": "bd2a28a11d1487c422abe4184c6e5ce1e0b7b76fd10400b39eba6c52437f570b"
+    },
+    "cues": [
+      {
+        "id": "M11.02.s01",
+        "at": 0,
+        "text": "A premature junctional complex is an early beat arising from the A V junction.",
+        "title": "A premature junctional complex is an early beat arising from the A V junction.",
+        "scene": {
+          "organ": "explanation",
+          "title": "A premature junctional event",
+          "text": "A premature junctional complex is an early beat arising from the A V junction.",
+          "source": "Owner-approved adapted M11.02 narration · source script lines 727-732 · course PDF physical pp644–645",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 5.21,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.02.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 13
+        }
+      },
+      {
+        "id": "M11.02.s02",
+        "at": 5.66,
+        "text": "Its Q R S is usually narrow if ventricular conduction is normal.",
+        "title": "Its Q R S is usually narrow if ventricular conduction is normal.",
+        "scene": {
+          "organ": "explanation",
+          "title": "QRS is usually narrow with normal conduction",
+          "text": "Its Q R S is usually narrow if ventricular conduction is normal.",
+          "source": "Owner-approved adapted M11.02 narration · source script lines 727-732 · course PDF physical pp644–645",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 5.66,
+          "end": 10.95,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.02.s02",
+          "firstWordIndex": 14,
+          "lastWordIndex": 25
+        }
+      },
+      {
+        "id": "M11.02.s03",
+        "at": 11.38,
+        "text": "A retrograde P wave may be visible before or after the complex, or may be hidden.",
+        "title": "A retrograde P wave may be visible before or after the complex, or may be hidden.",
+        "scene": {
+          "organ": "explanation",
+          "title": "P-wave timing can vary",
+          "text": "A retrograde P wave may be visible before or after the complex, or may be hidden.",
+          "source": "Owner-approved adapted M11.02 narration · source script lines 727-732 · course PDF physical pp644–645",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 11.38,
+          "end": 17.17,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.02.s03",
+          "firstWordIndex": 26,
+          "lastWordIndex": 41
+        }
+      },
+      {
+        "id": "M11.02.s04",
+        "at": 17.57,
+        "text": "Compare the beat with the expected timing of the underlying rhythm.",
+        "title": "Compare the beat with the expected timing of the underlying rhythm.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Compare with the expected underlying rhythm",
+          "text": "Compare the beat with the expected timing of the underlying rhythm.",
+          "source": "Owner-approved adapted M11.02 narration · source script lines 727-732 · course PDF physical pp644–645",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 17.57,
+          "end": 21.06,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.02.s04",
+          "firstWordIndex": 42,
+          "lastWordIndex": 52
+        }
+      },
+      {
+        "id": "M11.02.s05",
+        "at": 21.78,
+        "text": "Prematurity distinguishes it from a junctional escape beat, which arrives late after a pause or slowing of higher pacemakers.",
+        "title": "Prematurity distinguishes it from a junctional escape beat, which arrives late after a pause or slowing of higher pacemakers.",
+        "scene": {
+          "organ": "explanation",
+          "title": "An early PJC differs from a late escape",
+          "text": "Prematurity distinguishes it from a junctional escape beat, which arrives late after a pause or slowing of higher pacemakers.",
+          "source": "Owner-approved adapted M11.02 narration · source script lines 727-732 · course PDF physical pp644–645",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.78,
+          "end": 29.57,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.02.s05",
+          "firstWordIndex": 53,
+          "lastWordIndex": 71
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "727-732",
+      "audioPackageLibraryFileId": "libfile_5a1bda3f25b48191bd7f9062c799bf76",
+      "standaloneAudioManifestLibraryFileId": "libfile_2b85dbcbfbc48191b4e6787b530f4494",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "644–645",
+        "terminologyNote": "A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M11.02 narration · source script lines 727-732 · course PDF physical pp644–645",
+    "sourceUrl": "guided-study/assets/M11-provenance.json",
+    "status": "Approved audio and qualified supplemental junctional/SVT cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M11.03",
+    "module": "M11",
+    "title": "Escape, accelerated, and tachycardic junctional rhythms",
+    "text": "A junctional escape rhythm is usually taught at forty to sixty beats per minute. An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred. Boundaries vary among references. These names combine origin and rate; they do not by themselves describe the person's circulation. Atrial and ventricular timing can vary, and a one-to-one atrial-ventricular relationship is not guaranteed in every junctional rhythm.",
+    "transcript": "A junctional escape rhythm is usually taught at forty to sixty beats per minute. An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred. Boundaries vary among references. These names combine origin and rate; they do not by themselves describe the person's circulation. Atrial and ventricular timing can vary, and a one-to-one atrial-ventricular relationship is not guaranteed in every junctional rhythm.",
+    "audio": {
+      "src": "guided-study/assets/M11_03_adam_multilingual_v2.mp3",
+      "duration": 31.007313,
+      "sha256": "e4a34f15f33306c4572d15d390e3af146680eb03115a9b9e01c6e9bdbfd6edb8"
+    },
+    "cues": [
+      {
+        "id": "M11.03.s01",
+        "at": 0,
+        "text": "A junctional escape rhythm is usually taught at forty to sixty beats per minute.",
+        "title": "A junctional escape rhythm is usually taught at forty to sixty beats per minute.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known junctional escape example",
+          "text": "A junctional escape rhythm is usually taught at forty to sixty beats per minute.",
+          "source": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment.",
+          "illustration": {
+            "src": "ecg/images/k8a473.png",
+            "sha256": "14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408",
+            "alt": "Existing course-supplied junctional escape rhythm teaching strip; limited source features only.",
+            "source": "Known teaching example: Junctional escape rhythm · 08 - Chapter 6 - Junctional Rhythms.pdf, p16. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained source-supported junctional-escape interpretation: regular narrow complexes near 41 bpm, with inverted post-QRS atrial deflections. No preceding pause or late escape onset is documented in this crop; it is not a PJC-versus-escape timing demonstration. Exact focus is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 4.11,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.03.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 13
+        }
+      },
+      {
+        "id": "M11.03.s02",
+        "at": 4.87,
+        "text": "An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred.",
+        "title": "An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known accelerated junctional example",
+          "text": "An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred.",
+          "source": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment.",
+          "illustration": {
+            "src": "ecg/images/m2b695.png",
+            "sha256": "564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed",
+            "alt": "Existing course-supplied accelerated junctional rhythm teaching strip; limited source features only.",
+            "source": "Known teaching example: Accelerated junctional rhythm · 08 - Chapter 6 - Junctional Rhythms.pdf, p20. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained moderate-confidence accelerated-junctional interpretation: regular narrow complexes around 75–80 bpm with no reliably identifiable separate preceding P wave. A hidden P wave or exact focus is not directly observed, and absent P waves alone do not prove junctional origin."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 4.87,
+          "end": 11.68,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.03.s02",
+          "firstWordIndex": 14,
+          "lastWordIndex": 31
+        }
+      },
+      {
+        "id": "M11.03.p01",
+        "at": 8.87,
+        "text": "An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred.",
+        "title": "Junctional tachycardia · measured phrase",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known junctional tachycardia example",
+          "text": "An accelerated junctional rhythm is around sixty to one hundred, and junctional tachycardia is faster than one hundred.",
+          "source": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment.",
+          "illustration": {
+            "src": "ecg/images/n6c048.png",
+            "sha256": "34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c",
+            "alt": "Existing course-supplied junctional tachycardia teaching strip; limited source features only.",
+            "source": "Known teaching example: Junctional tachycardia · 08 - Chapter 6 - Junctional Rhythms.pdf, p23. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained source-supported junctional-tachycardia interpretation: regular narrow complexes near 107 bpm with repeated negative pre-QRS atrial deflections and a short interval. Fine PR values and exact pacemaker focus are not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 8.87,
+          "end": 10.18,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.03.s02",
+          "phrase": "junctional tachycardia",
+          "occurrence": 1,
+          "firstWordIndex": 25,
+          "lastWordIndex": 26
+        }
+      },
+      {
+        "id": "M11.03.s03",
+        "at": 12.34,
+        "text": "Boundaries vary among references.",
+        "title": "Boundaries vary among references.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Rate boundaries vary among references",
+          "text": "Boundaries vary among references.",
+          "source": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 12.34,
+          "end": 14.45,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.03.s03",
+          "firstWordIndex": 32,
+          "lastWordIndex": 35
+        }
+      },
+      {
+        "id": "M11.03.s04",
+        "at": 14.79,
+        "text": "These names combine origin and rate; they do not by themselves describe the person's circulation.",
+        "title": "These names combine origin and rate; they do not by themselves describe the person's circulation.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Origin and rate do not establish circulation",
+          "text": "These names combine origin and rate; they do not by themselves describe the person's circulation.",
+          "source": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 14.79,
+          "end": 20.91,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.03.s04",
+          "firstWordIndex": 36,
+          "lastWordIndex": 50
+        }
+      },
+      {
+        "id": "M11.03.s05",
+        "at": 21.37,
+        "text": "Atrial and ventricular timing can vary, and a one-to-one atrial-ventricular relationship is not guaranteed in every junctional rhythm.",
+        "title": "Atrial and ventricular timing can vary, and a one-to-one atrial-ventricular relationship is not guaranteed in every junctional rhythm.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Atrial and ventricular timing need separate assessment",
+          "text": "Atrial and ventricular timing can vary, and a one-to-one atrial-ventricular relationship is not guaranteed in every junctional rhythm.",
+          "source": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.37,
+          "end": 30.56,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.03.s05",
+          "firstWordIndex": 51,
+          "lastWordIndex": 71
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "733-752",
+      "audioPackageLibraryFileId": "libfile_5a1bda3f25b48191bd7f9062c799bf76",
+      "standaloneAudioManifestLibraryFileId": "libfile_2b85dbcbfbc48191b4e6787b530f4494",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "647–648,651–652,654–655",
+        "terminologyNote": "Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M11.03 narration · source script lines 733-752 · course PDF physical pp647–648,651–652,654–655",
+    "sourceUrl": "guided-study/assets/M11-provenance.json",
+    "status": "Approved audio and qualified supplemental junctional/SVT cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M11.04",
+    "module": "M11",
+    "title": "Supraventricular tachycardia as a category",
+    "text": "Supraventricular tachycardia is a broad category of tachycardias involving tissue above the ventricles, including several different mechanisms. In bedside shorthand, S V T often means a regular narrow-complex tachycardia whose exact mechanism is not yet clear. That shorthand is not the entire formal definition. Some supraventricular rhythms can be irregular, and aberrant conduction can make them wide. Describe the rhythm before assuming a specific mechanism.",
+    "transcript": "Supraventricular tachycardia is a broad category of tachycardias involving tissue above the ventricles, including several different mechanisms. In bedside shorthand, S V T often means a regular narrow-complex tachycardia whose exact mechanism is not yet clear. That shorthand is not the entire formal definition. Some supraventricular rhythms can be irregular, and aberrant conduction can make them wide. Describe the rhythm before assuming a specific mechanism.",
+    "audio": {
+      "src": "guided-study/assets/M11_04_adam_multilingual_v2.mp3",
+      "duration": 33.097125,
+      "sha256": "0fb5184d28f0707b681c5cde39313966201011e2c47a56fab05ab58ab2d3d271"
+    },
+    "cues": [
+      {
+        "id": "M11.04.s01",
+        "at": 0,
+        "text": "Supraventricular tachycardia is a broad category of tachycardias involving tissue above the ventricles, including several different mechanisms.",
+        "title": "Supraventricular tachycardia is a broad category of tachycardias involving tissue above the ventricles, including several different mechanisms.",
+        "scene": {
+          "organ": "explanation",
+          "title": "SVT is a broad category",
+          "text": "Supraventricular tachycardia is a broad category of tachycardias involving tissue above the ventricles, including several different mechanisms.",
+          "source": "Owner-approved adapted M11.04 narration · source script lines 753-768 · course PDF physical pp658,660–662,664",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 8.62,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.04.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 16
+        }
+      },
+      {
+        "id": "M11.04.s02",
+        "at": 9.05,
+        "text": "In bedside shorthand, S V T often means a regular narrow-complex tachycardia whose exact mechanism is not yet clear.",
+        "title": "In bedside shorthand, S V T often means a regular narrow-complex tachycardia whose exact mechanism is not yet clear.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known regular narrow-complex example: mechanism unresolved",
+          "text": "In bedside shorthand, S V T often means a regular narrow-complex tachycardia whose exact mechanism is not yet clear.",
+          "source": "Owner-approved adapted M11.04 narration · source script lines 753-768 · course PDF physical pp658,660–662,664",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination.",
+          "illustration": {
+            "src": "ecg/images/p4d827.png",
+            "sha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+            "alt": "Existing course-supplied regular narrow-complex tachycardia (svt); exact mechanism unresolved teaching strip; limited source features only.",
+            "source": "Known teaching example: Regular narrow-complex tachycardia (SVT); exact mechanism unresolved · 08 - Chapter 6 - Junctional Rhythms.pdf, p31. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained broad regular narrow-complex tachycardia interpretation; exact SVT mechanism is unresolved. Upper R peaks are clipped, so amplitude and complete QRS morphology are not assessed. Rate is approximate in the 150–199 bpm band; the source 180-bpm label is not enforced. Total duration is unlabeled; no six-second count, onset/termination or AVNRT/AVRT mechanism is inferred."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 9.05,
+          "end": 18.14,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.04.s02",
+          "firstWordIndex": 17,
+          "lastWordIndex": 36
+        }
+      },
+      {
+        "id": "M11.04.s03",
+        "at": 18.67,
+        "text": "That shorthand is not the entire formal definition.",
+        "title": "That shorthand is not the entire formal definition.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Bedside shorthand is not the full definition",
+          "text": "That shorthand is not the entire formal definition.",
+          "source": "Owner-approved adapted M11.04 narration · source script lines 753-768 · course PDF physical pp658,660–662,664",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 18.67,
+          "end": 21.44,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.04.s03",
+          "firstWordIndex": 37,
+          "lastWordIndex": 44
+        }
+      },
+      {
+        "id": "M11.04.s04",
+        "at": 21.85,
+        "text": "Some supraventricular rhythms can be irregular, and aberrant conduction can make them wide.",
+        "title": "Some supraventricular rhythms can be irregular, and aberrant conduction can make them wide.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Supraventricular rhythms need not all be regular or narrow",
+          "text": "Some supraventricular rhythms can be irregular, and aberrant conduction can make them wide.",
+          "source": "Owner-approved adapted M11.04 narration · source script lines 753-768 · course PDF physical pp658,660–662,664",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.85,
+          "end": 28.12,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.04.s04",
+          "firstWordIndex": 45,
+          "lastWordIndex": 57
+        }
+      },
+      {
+        "id": "M11.04.s05",
+        "at": 29.37,
+        "text": "Describe the rhythm before assuming a specific mechanism.",
+        "title": "Describe the rhythm before assuming a specific mechanism.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Describe the evidence before choosing a mechanism",
+          "text": "Describe the rhythm before assuming a specific mechanism.",
+          "source": "Owner-approved adapted M11.04 narration · source script lines 753-768 · course PDF physical pp658,660–662,664",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination.",
+          "illustration": {
+            "src": "ecg/images/p4d827.png",
+            "sha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+            "alt": "Existing course-supplied regular narrow-complex tachycardia (svt); exact mechanism unresolved teaching strip; limited source features only.",
+            "source": "Known teaching example: Regular narrow-complex tachycardia (SVT); exact mechanism unresolved · 08 - Chapter 6 - Junctional Rhythms.pdf, p31. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained broad regular narrow-complex tachycardia interpretation; exact SVT mechanism is unresolved. Upper R peaks are clipped, so amplitude and complete QRS morphology are not assessed. Rate is approximate in the 150–199 bpm band; the source 180-bpm label is not enforced. Total duration is unlabeled; no six-second count, onset/termination or AVNRT/AVRT mechanism is inferred."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 29.37,
+          "end": 32.89,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.04.s05",
+          "firstWordIndex": 58,
+          "lastWordIndex": 65
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "753-768",
+      "audioPackageLibraryFileId": "libfile_5a1bda3f25b48191bd7f9062c799bf76",
+      "standaloneAudioManifestLibraryFileId": "libfile_2b85dbcbfbc48191b4e6787b530f4494",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "658,660–662,664",
+        "terminologyNote": "Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M11.04 narration · source script lines 753-768 · course PDF physical pp658,660–662,664",
+    "sourceUrl": "guided-study/assets/M11-provenance.json",
+    "status": "Approved audio and qualified supplemental junctional/SVT cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M11.05",
+    "module": "M11",
+    "title": "Mechanism cannot come from rate alone",
+    "text": "Rates overlap among sinus tachycardia, atrial tachycardia, flutter with conduction, and re-entry tachycardias. Hidden P waves make identification harder. Compare regularity, atrial activity, Q R S shape, and any documented onset or termination. This lesson deliberately does not reproduce the audiobook's medication dose or cardioversion sequence. Those are clinical actions requiring current protocols, trained judgment, and information that a website strip alone cannot supply.",
+    "transcript": "Rates overlap among sinus tachycardia, atrial tachycardia, flutter with conduction, and re-entry tachycardias. Hidden P waves make identification harder. Compare regularity, atrial activity, Q R S shape, and any documented onset or termination. This lesson deliberately does not reproduce the audiobook's medication dose or cardioversion sequence. Those are clinical actions requiring current protocols, trained judgment, and information that a website strip alone cannot supply.",
+    "audio": {
+      "src": "guided-study/assets/M11_05_adam_multilingual_v2.mp3",
+      "duration": 34.0375,
+      "sha256": "31838c80cb2a2c57559d57729c675e1ea16a44c207bd484abe99df6535cdf421"
+    },
+    "cues": [
+      {
+        "id": "M11.05.s01",
+        "at": 0,
+        "text": "Rates overlap among sinus tachycardia, atrial tachycardia, flutter with conduction, and re-entry tachycardias.",
+        "title": "Rates overlap among sinus tachycardia, atrial tachycardia, flutter with conduction, and re-entry tachycardias.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Rate ranges overlap",
+          "text": "Rates overlap among sinus tachycardia, atrial tachycardia, flutter with conduction, and re-entry tachycardias.",
+          "source": "Owner-approved adapted M11.05 narration · source script lines 715-768 · course PDF physical pp658,660–667",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 7.64,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.05.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 13
+        }
+      },
+      {
+        "id": "M11.05.s02",
+        "at": 8.19,
+        "text": "Hidden P waves make identification harder.",
+        "title": "Hidden P waves make identification harder.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Unresolved atrial activity limits identification",
+          "text": "Hidden P waves make identification harder.",
+          "source": "Owner-approved adapted M11.05 narration · source script lines 715-768 · course PDF physical pp658,660–667",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion.",
+          "illustration": {
+            "src": "ecg/images/p4d827.png",
+            "sha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+            "alt": "Existing course-supplied regular narrow-complex tachycardia (svt); exact mechanism unresolved teaching strip; limited source features only.",
+            "source": "Known teaching example: Regular narrow-complex tachycardia (SVT); exact mechanism unresolved · 08 - Chapter 6 - Junctional Rhythms.pdf, p31. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained broad regular narrow-complex tachycardia interpretation; exact SVT mechanism is unresolved. Upper R peaks are clipped, so amplitude and complete QRS morphology are not assessed. Rate is approximate in the 150–199 bpm band; the source 180-bpm label is not enforced. Total duration is unlabeled; no six-second count, onset/termination or AVNRT/AVRT mechanism is inferred."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 8.19,
+          "end": 10.71,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.05.s02",
+          "firstWordIndex": 14,
+          "lastWordIndex": 19
+        }
+      },
+      {
+        "id": "M11.05.s03",
+        "at": 11.19,
+        "text": "Compare regularity, atrial activity, Q R S shape, and any documented onset or termination.",
+        "title": "Compare regularity, atrial activity, Q R S shape, and any documented onset or termination.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Compare what is actually visible and documented",
+          "text": "Compare regularity, atrial activity, Q R S shape, and any documented onset or termination.",
+          "source": "Owner-approved adapted M11.05 narration · source script lines 715-768 · course PDF physical pp658,660–667",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion.",
+          "illustration": {
+            "src": "ecg/images/p4d827.png",
+            "sha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+            "alt": "Existing course-supplied regular narrow-complex tachycardia (svt); exact mechanism unresolved teaching strip; limited source features only.",
+            "source": "Known teaching example: Regular narrow-complex tachycardia (SVT); exact mechanism unresolved · 08 - Chapter 6 - Junctional Rhythms.pdf, p31. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained broad regular narrow-complex tachycardia interpretation; exact SVT mechanism is unresolved. Upper R peaks are clipped, so amplitude and complete QRS morphology are not assessed. Rate is approximate in the 150–199 bpm band; the source 180-bpm label is not enforced. Total duration is unlabeled; no six-second count, onset/termination or AVNRT/AVRT mechanism is inferred."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 11.19,
+          "end": 18.87,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.05.s03",
+          "firstWordIndex": 20,
+          "lastWordIndex": 33
+        }
+      },
+      {
+        "id": "M11.05.s04",
+        "at": 19.45,
+        "text": "This lesson deliberately does not reproduce the audiobook's medication dose or cardioversion sequence.",
+        "title": "This lesson deliberately does not reproduce the audiobook's medication dose or cardioversion sequence.",
+        "scene": {
+          "organ": "explanation",
+          "title": "No medication-dose or cardioversion sequence",
+          "text": "This lesson deliberately does not reproduce the audiobook's medication dose or cardioversion sequence.",
+          "source": "Owner-approved adapted M11.05 narration · source script lines 715-768 · course PDF physical pp658,660–667",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 19.45,
+          "end": 24.63,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.05.s04",
+          "firstWordIndex": 34,
+          "lastWordIndex": 46
+        }
+      },
+      {
+        "id": "M11.05.s05",
+        "at": 25.03,
+        "text": "Those are clinical actions requiring current protocols, trained judgment, and information that a website strip alone cannot supply.",
+        "title": "Those are clinical actions requiring current protocols, trained judgment, and information that a website strip alone cannot supply.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Treatment requires information beyond a study strip",
+          "text": "Those are clinical actions requiring current protocols, trained judgment, and information that a website strip alone cannot supply.",
+          "source": "Owner-approved adapted M11.05 narration · source script lines 715-768 · course PDF physical pp658,660–667",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 25.03,
+          "end": 33.16,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M11.05.s05",
+          "firstWordIndex": 47,
+          "lastWordIndex": 64
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automated measurement, rhythm engine, exact junctional focus, new clinical classification or treatment recommendation is provided. Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "715-768",
+      "audioPackageLibraryFileId": "libfile_5a1bda3f25b48191bd7f9062c799bf76",
+      "standaloneAudioManifestLibraryFileId": "libfile_2b85dbcbfbc48191b4e6787b530f4494",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "658,660–667",
+        "terminologyNote": "Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M11.05 narration · source script lines 715-768 · course PDF physical pp658,660–667",
+    "sourceUrl": "guided-study/assets/M11-provenance.json",
+    "status": "Approved audio and qualified supplemental junctional/SVT cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  }
+];
+ const existing=Array.isArray(root.GuidedStudyLessons)?root.GuidedStudyLessons:[];
+ const present=new Set(existing.map(lesson=>lesson.id));
+ root.GuidedStudyLessons=existing.concat(lessons.filter(lesson=>!present.has(lesson.id)));
+ if(typeof module==='object'&&module.exports)module.exports=lessons;
+})(typeof window==='object'?window:globalThis);

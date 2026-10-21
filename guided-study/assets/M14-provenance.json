@@ -1,0 +1,418 @@
+{
+  "schema": "guided-study.M14-assets.v1",
+  "scope": "Eight M14 approved clips with normal source anatomy, inferred conduction, representative calcium/sarcomere and alveolar contexts, and explicit vocabulary cards",
+  "sourcePackageLibraryFileId": "libfile_c6afa6a3665c819194e302daacb4a445",
+  "sourceManifestLibraryFileId": "libfile_ffb83590616081919c51d3a5cca50dec",
+  "sourceIdentityReconciliation": "Parent confirmed distinct Library records: archive versus standalone manifest. Alignment sourceManifest.libraryId names the standalone manifest.",
+  "sourcePackageFileName": "M14_Context_Review_Audio.zip",
+  "sourcePackageSha256": "68a540634f85f50524b0668d2e9eb19f599da956223ea431c96ac003e9296c79",
+  "materializationReceiptSha256": "5311a9c72d28ca79de2897b4ae407c1a4311b117ecf69e00c21598af4108e12d",
+  "materializationReceiptHashAndXattrsVerified": true,
+  "sourcePackageCRCVerified": true,
+  "sourceZipManifestAndMP3HashesVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "6455635459b63a7b9dc0b9f4ea1bf8b1d833324788d116f00e9d90c9c043d646",
+  "audioPolicy": "Approved original MP3 bytes copied unchanged. No provider, generation, retake, external API, dependency or new cost by data worker.",
+  "alignment": {
+    "manifestSha256": "65d40a8225894c71a14975d4955b843e49d71002f692bd5862f790560b4484c1",
+    "provenanceSha256": "6a704dd7cae675d1ec79e5ab3b96906050e0d411d5ba5bb361da79ce7aacf056",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "flags": [
+      {
+        "clip": "M14.01",
+        "type": "WORD_DURATION",
+        "index": 24,
+        "word": "cardiomyopathy",
+        "start": 13.89,
+        "end": 15.12,
+        "duration": 1.23,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.03",
+        "type": "WORD_DURATION",
+        "index": 0,
+        "word": "atherosclerosis",
+        "start": 0.0,
+        "end": 1.49,
+        "duration": 1.49,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.03",
+        "type": "WORD_DURATION",
+        "index": 21,
+        "word": "a",
+        "start": 12.31,
+        "end": 12.34,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.03",
+        "type": "WORD_DURATION",
+        "index": 34,
+        "word": "arteriosclerosis",
+        "start": 18.11,
+        "end": 19.67,
+        "duration": 1.56,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.03",
+        "type": "WORD_DURATION",
+        "index": 52,
+        "word": "lipoproteins",
+        "start": 25.89,
+        "end": 27.18,
+        "duration": 1.29,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.06",
+        "clipId": "M14.06",
+        "word": "einthoven",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/Einthoven",
+        "sourcePronunciation": "ˈīnt-ˌhō-vən; also ˈānt-",
+        "authoredARPABET": "AY N T HH OW V AH N",
+        "reason": "First listed Anglicized pronunciation; Collins also lists Dutch ˈɛɪnthoːvə. Proper name and actual spoken variant require listening review. Actual audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 34,
+        "start": 14.16,
+        "end": 14.79
+      },
+      {
+        "clip": "M14.08",
+        "type": "WORD_DURATION",
+        "index": 49,
+        "word": "a",
+        "start": 25.2,
+        "end": 25.23,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.08",
+        "type": "WORD_DURATION",
+        "index": 69,
+        "word": "a",
+        "start": 33.24,
+        "end": 33.27,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M14.08",
+        "clipId": "M14.08",
+        "word": "nonmodifiable",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/modifiable",
+        "sourcePronunciation": "non- (ˈ)nän + modifiable ¦mä-də-¦fī-ə-bəl",
+        "authoredARPABET": "N AA N M AA D AH F AY AH B AH L",
+        "reason": "Transparent sourced prefix+base composition; whole-word publisher pronunciation not separately retrieved. Actual audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 5,
+        "start": 1.8,
+        "end": 2.82
+      }
+    ]
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "coursePageExtractionSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+  "courseTerminologyNotes": {
+    "M14.01": {
+      "pages": "131–145",
+      "note": "Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+    },
+    "M14.02": {
+      "pages": "111–114,147",
+      "note": "Representative pericardial/myocardial context and the original valve anatomy locate affected structures without displaying inflammation, infection, scar or tissue death. Pericardial layers are authored teaching sections, not separate segmented HRA surfaces. Limited renewal is not zero renewal."
+    },
+    "M14.03": {
+      "pages": "153,155,157,164,179,181",
+      "note": "The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional."
+    },
+    "M14.04": {
+      "pages": "219–221",
+      "note": "Existing normal SA/AV locations and held electrical stages provide anatomical context only. Fixed model parameters do not simulate sympathetic/vagal input, receptor-specific vascular responses or hormonal/renal control. Blanket source vasodilation/constriction shorthand is qualified."
+    },
+    "M14.05": {
+      "pages": "218–219",
+      "note": "Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+    },
+    "M14.06": {
+      "pages": "9,12–18",
+      "note": "Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+    },
+    "M14.07": {
+      "pages": "65,73–77,83–84,123–127,211–216",
+      "note": "Original four-chamber anatomy, inferred conduction teaching geometry, representative cellular/sarcomere mechanisms and qualitative alveolar exchange remain distinct scales/signals. Measured narration windows pace the existing mechanisms; they are not real-time clinical calibration. No verified final-review practice strip or new measurement/classification task is supplied."
+    },
+    "M14.08": {
+      "pages": "142,145–146",
+      "note": "Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference."
+    }
+  },
+  "existingIllustrations": [],
+  "illustrationPolicy": "No paced strip or hardware image is supplied, copied, extracted or generated. No scene has an unsupported illustration field; existing normal model contexts are not disease/drug simulations.",
+  "bindings": {
+    "controller": "GuidedExplanation / HeartV3Study.guided / CardiorespiratoryStudy.guided",
+    "fullScenes": true,
+    "nativeExecutionVerified": false,
+    "protectedECGFilesChanged": false,
+    "existingTrainerTouched": false,
+    "practiceAnswerGateUnchanged": true,
+    "prior103LessonFilesUnchanged": true,
+    "missingExamples": [
+      "disease pathology models",
+      "medication/autonomic/hormonal response solver",
+      "verified final-review practice strip"
+    ],
+    "scope": "Existing normal source anatomy/mechanisms only; no pathology, pharmacology, autonomic/hormonal solver, generated ECG, calibrated practice or individual risk/treatment inference."
+  },
+  "priorLessonFileHashes": {
+    "lessons-m13.js": "2477c81dff46dfdca0fb8ff59cc80d8bb242e61b7b91b48c98b20952b3eaae99",
+    "lessons-m06.js": "7e33fe5ea742dd997c946433fba875cd0253ee064c5b60355ae072eb9257a80b",
+    "lessons-m04.js": "7daf751a283b420db3444adcd817a6ccc93521bb69ceb330a8223b15168654f0",
+    "lessons-m07.js": "3c0e7280e1e630eb5884e246e15e9bdd618ec3620c58992a2bbdcf00f99647e6",
+    "lessons-m08.js": "ba5fa23380c1b94ecc4d163856f72c808d11eebdac7a51216b0e5e5a00fb054f",
+    "lessons.js": "019d421afb2364675e1c9d2590b6ae585f0eb3faba448c9d90505d05c4aa7112",
+    "lessons-m01.js": "3bd5c579becff4d4efddff749b1a0b90cda02feb8655d956ab8dc2633b1e6fe5",
+    "lessons-m10.js": "bd1c2e3d47ba1e08f990724688d22cf1c535799118f4cc61cce65d7078ff03e9",
+    "lessons-m09.js": "62aacbd195d9c9961da5c7c94082b5748d9423bdfc1ecbf6adba648761bf97de",
+    "lessons-m03.js": "007a1cb1b227f38c82da14048ab8280c5ece072e0cedb31ae1395fa9668e2ef9",
+    "lessons-m12.js": "5faf4fdcd6908cd863ff90f25d493411bdf041f460e3d860a71513a4f26b5480",
+    "lessons-m05.js": "cb4f7d7c5a7cad8d60110afef55f48b6afc96eae4d71d8c48786a1b4833a4cef",
+    "lessons-m11.js": "c1fffc202f39b9e99cada1350ef07985128e8d6583bd4d1aefaba2d4ca5a30d2"
+  },
+  "counts": {
+    "lessons": 8,
+    "cues": 52,
+    "sentenceCues": 44,
+    "phraseCues": 8,
+    "explanationCards": 31,
+    "illustratedCues": 0,
+    "uniqueExistingIllustrations": 0,
+    "modelCues": 21,
+    "ecgMeasurementCues": 0
+  },
+  "clips": [
+    {
+      "id": "M14.01",
+      "file": "M14_01_adam_multilingual_v2.mp3",
+      "bytes": 615872,
+      "sha256": "4bbaecc2b15019a2de1742bf39bcd7f762f321df59d11e49041f8bb355f1e592",
+      "duration": 37.433438,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 7,
+      "phraseCues": 0,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 24,
+          "word": "cardiomyopathy",
+          "start": 13.89,
+          "end": 15.12,
+          "duration": 1.23,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M14.02",
+      "file": "M14_02_adam_multilingual_v2.mp3",
+      "bytes": 565299,
+      "sha256": "a94893c049e5e3dbf02353361f0c9dcbddca5193ce78840ce9fe8dfe08d2c302",
+      "duration": 34.272625,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "phraseCues": 0,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M14.03",
+      "file": "M14_03_adam_multilingual_v2.mp3",
+      "bytes": 660176,
+      "sha256": "c6dc41eeb0dc9bd19ea2058a6fa171b4c97dc21c4528720f9c5d76b27175cf08",
+      "duration": 40.202438,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "phraseCues": 0,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 0,
+          "word": "atherosclerosis",
+          "start": 0.0,
+          "end": 1.49,
+          "duration": 1.49,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "type": "WORD_DURATION",
+          "index": 21,
+          "word": "a",
+          "start": 12.31,
+          "end": 12.34,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "type": "WORD_DURATION",
+          "index": 34,
+          "word": "arteriosclerosis",
+          "start": 18.11,
+          "end": 19.67,
+          "duration": 1.56,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "type": "WORD_DURATION",
+          "index": 52,
+          "word": "lipoproteins",
+          "start": 25.89,
+          "end": 27.18,
+          "duration": 1.29,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M14.04",
+      "file": "M14_04_adam_multilingual_v2.mp3",
+      "bytes": 646801,
+      "sha256": "d2df35110fd5df584096d6f51a0235d8a8ed344abae62cd5d1e2efacdf806ffe",
+      "duration": 39.3665,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 5,
+      "phraseCues": 1,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M14.05",
+      "file": "M14_05_adam_multilingual_v2.mp3",
+      "bytes": 539803,
+      "sha256": "f65128e1db593548349aa05438c47e127cf63d0af59eb622c2314eb92ba8902e",
+      "duration": 32.679125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "phraseCues": 0,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M14.06",
+      "file": "M14_06_adam_multilingual_v2.mp3",
+      "bytes": 569061,
+      "sha256": "2188ecda6a5e1da535da135b44bc7ac183c797887495f5b2ca778858fb0649ef",
+      "duration": 34.50775,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "phraseCues": 0,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "clipId": "M14.06",
+          "word": "einthoven",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/Einthoven",
+          "sourcePronunciation": "ˈīnt-ˌhō-vən; also ˈānt-",
+          "authoredARPABET": "AY N T HH OW V AH N",
+          "reason": "First listed Anglicized pronunciation; Collins also lists Dutch ˈɛɪnthoːvə. Proper name and actual spoken variant require listening review. Actual audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 34,
+          "start": 14.16,
+          "end": 14.79
+        }
+      ]
+    },
+    {
+      "id": "M14.07",
+      "file": "M14_07_adam_multilingual_v2.mp3",
+      "bytes": 577838,
+      "sha256": "ed8d596b67912da7911f8a8f3e5204d370abbcc6729110314816c663ed93cd0d",
+      "duration": 35.056313,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 7,
+      "totalCues": 14,
+      "phraseCues": 7,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M14.08",
+      "file": "M14_08_adam_multilingual_v2.mp3",
+      "bytes": 589123,
+      "sha256": "c02281d668589d15a9f784910ecd7fc0196a8e776c98b677687fecabc93dbdcc",
+      "duration": 35.761625,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 4,
+      "phraseCues": 0,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 49,
+          "word": "a",
+          "start": 25.2,
+          "end": 25.23,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "type": "WORD_DURATION",
+          "index": 69,
+          "word": "a",
+          "start": 33.24,
+          "end": 33.27,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "clipId": "M14.08",
+          "word": "nonmodifiable",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/modifiable",
+          "sourcePronunciation": "non- (ˈ)nän + modifiable ¦mä-də-¦fī-ə-bəl",
+          "authoredARPABET": "N AA N M AA D AH F AY AH B AH L",
+          "reason": "Transparent sourced prefix+base composition; whole-word publisher pronunciation not separately retrieved. Actual audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 5,
+          "start": 1.8,
+          "end": 2.82
+        }
+      ]
+    }
+  ]
+}

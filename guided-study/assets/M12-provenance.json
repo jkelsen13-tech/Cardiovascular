@@ -1,0 +1,633 @@
+{
+  "schema": "guided-study.M12-assets.v1",
+  "scope": "Six M12 approved clips with supplemental AV-block cards and three qualified existing source examples",
+  "sourcePackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+  "sourceManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+  "sourceIdentityReconciliation": "Parent confirmed distinct Library records: archive versus standalone manifest. Alignment sourceManifest.libraryId names the standalone manifest.",
+  "sourcePackageFileName": "M12_AV_Blocks_Audio.zip",
+  "sourcePackageSha256": "1728e2d761453233f87b5e0dbf0296a2ebc5b18312588049fa712fca58ee385b",
+  "materializationReceiptSha256": "c03635b5cabd75b5ed2787871ab2848dfb7e7b4103ba4b2815f1093eeb8fda32",
+  "materializationReceiptHashAndXattrsVerified": true,
+  "sourcePackageCRCVerified": true,
+  "sourceZipManifestAndMP3HashesVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "3c06d7d25b89561245c404bb14cd513c9a22a68f1cf64e83f081db68e5be010f",
+  "audioPolicy": "Approved original MP3 bytes copied unchanged. No provider, generation, retake, external API, dependency or new cost by data worker.",
+  "alignment": {
+    "manifestSha256": "8d12caf500005a50a281cbcfba28762b18a9f132583b6a38ceb59a1def74cdca",
+    "provenanceSha256": "f5275032a02797641479a761f54a105d4a28c86a7fbc43c8ddab057b27d52444",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "flags": [
+      {
+        "clip": "M12.03",
+        "clipId": "M12.03",
+        "word": "mobitz",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+        "sourcePronunciation": "moh-bitz",
+        "authoredARPABET": "M OW B IH T S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 3,
+        "start": 0.66,
+        "end": 1.09
+      },
+      {
+        "clip": "M12.03",
+        "clipId": "M12.03",
+        "word": "wenckebach",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/762033/all/Wenckebach__Karel_F_",
+        "sourcePronunciation": "veng′kĕ-bok″",
+        "authoredARPABET": "V EH NG K EH B AA K",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Author mapping from public written phonetics. Retains source initial V and short-e middle syllable; proper-name/Anglicized variants and actual generated pronunciation remain listening-review items. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 36,
+        "start": 13.91,
+        "end": 14.88
+      },
+      {
+        "clip": "M12.03",
+        "clipId": "M12.03",
+        "word": "wenckebach",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/762033/all/Wenckebach__Karel_F_",
+        "sourcePronunciation": "veng′kĕ-bok″",
+        "authoredARPABET": "V EH NG K EH B AA K",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Author mapping from public written phonetics. Retains source initial V and short-e middle syllable; proper-name/Anglicized variants and actual generated pronunciation remain listening-review items. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 75,
+        "start": 30.97,
+        "end": 31.77
+      },
+      {
+        "clip": "M12.04",
+        "clipId": "M12.04",
+        "word": "mobitz",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+        "sourcePronunciation": "moh-bitz",
+        "authoredARPABET": "M OW B IH T S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 1,
+        "start": 0.18,
+        "end": 0.61
+      },
+      {
+        "clip": "M12.04",
+        "clipId": "M12.04",
+        "word": "mobitz",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+        "sourcePronunciation": "moh-bitz",
+        "authoredARPABET": "M OW B IH T S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 57,
+        "start": 22.33,
+        "end": 22.86
+      },
+      {
+        "clip": "M12.04",
+        "clipId": "M12.04",
+        "word": "mobitz",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+        "sourcePronunciation": "moh-bitz",
+        "authoredARPABET": "M OW B IH T S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 60,
+        "start": 23.67,
+        "end": 24.19
+      },
+      {
+        "clip": "M12.04",
+        "clipId": "M12.04",
+        "word": "nonconducted",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/non-",
+        "sourcePronunciation": "non- (ˈ)nän; conduct verb kən-ˈdəkt; conducted listed as its inflection",
+        "authoredARPABET": "N AA N K AH N D AH K T AH D",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Transparent compound of non- plus conducted; retains exact original bundled CMU non N AA N and conducted K AH N D AH K T AH D. Whole compound is not a separately pronounced publisher entry; no original dictionary edits. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 24,
+        "start": 9.08,
+        "end": 9.98
+      },
+      {
+        "clip": "M12.06",
+        "type": "WORD_DURATION",
+        "index": 22,
+        "word": "a",
+        "start": 9.56,
+        "end": 9.59,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M12.06",
+        "clipId": "M12.06",
+        "word": "mobitz",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+        "sourcePronunciation": "moh-bitz",
+        "authoredARPABET": "M OW B IH T S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 26,
+        "start": 11.68,
+        "end": 12.17
+      },
+      {
+        "clip": "M12.06",
+        "clipId": "M12.06",
+        "word": "mobitz",
+        "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+        "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+        "sourcePronunciation": "moh-bitz",
+        "authoredARPABET": "M OW B IH T S",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 39,
+        "start": 17.61,
+        "end": 18.13
+      },
+      {
+        "clip": "M12.06",
+        "clipId": "M12.06",
+        "word": "nonconducted",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/non-",
+        "sourcePronunciation": "non- (ˈ)nän; conduct verb kən-ˈdəkt; conducted listed as its inflection",
+        "authoredARPABET": "N AA N K AH N D AH K T AH D",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Transparent compound of non- plus conducted; retains exact original bundled CMU non N AA N and conducted K AH N D AH K T AH D. Whole compound is not a separately pronounced publisher entry; no original dictionary edits. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 23,
+        "start": 9.59,
+        "end": 10.5
+      },
+      {
+        "clip": "M12.06",
+        "clipId": "M12.06",
+        "word": "nonconducted",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/non-",
+        "sourcePronunciation": "non- (ˈ)nän; conduct verb kən-ˈdəkt; conducted listed as its inflection",
+        "authoredARPABET": "N AA N K AH N D AH K T AH D",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Transparent compound of non- plus conducted; retains exact original bundled CMU non N AA N and conducted K AH N D AH K T AH D. Whole compound is not a separately pronounced publisher entry; no original dictionary edits. Alignment does not establish actual pronunciation correctness.",
+        "humanListeningPerformed": false,
+        "index": 29,
+        "start": 13.35,
+        "end": 14.24
+      }
+    ]
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "coursePageExtractionSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+  "courseTerminologyNotes": {
+    "M12.01": {
+      "pages": "711,734,747,750",
+      "note": "AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided."
+    },
+    "M12.02": {
+      "pages": "711–714",
+      "note": "Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block."
+    },
+    "M12.03": {
+      "pages": "721,724",
+      "note": "The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated."
+    },
+    "M12.04": {
+      "pages": "734,746",
+      "note": "No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis."
+    },
+    "M12.05": {
+      "pages": "747,750–751",
+      "note": "The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block."
+    },
+    "M12.06": {
+      "pages": "714,724,734,746,751",
+      "note": "Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made."
+    }
+  },
+  "existingIllustrations": [
+    {
+      "src": "ecg/images/g3d782.png",
+      "sha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+      "classification": "Sinus rhythm with first-degree AV block",
+      "source": {
+        "file": "09 - Chapter 7 - Heart Blocks.pdf",
+        "page": 10,
+        "evidencePages": [
+          10
+        ],
+        "sha256": "38b44d28f79c0b0673d2a928b9adfc63b8137502cb9efc26490724c1713496de",
+        "embeddedImage": "Image49.jpg",
+        "originalSize": [
+          563,
+          229
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+      },
+      "pixelsInspectedThisTask": true
+    },
+    {
+      "src": "ecg/images/h5e139.png",
+      "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+      "classification": "Second-degree AV block, Mobitz I (Wenckebach)",
+      "source": {
+        "file": "09 - Chapter 7 - Heart Blocks.pdf",
+        "page": 20,
+        "evidencePages": [
+          20
+        ],
+        "sha256": "38b44d28f79c0b0673d2a928b9adfc63b8137502cb9efc26490724c1713496de",
+        "embeddedImage": "Image74.jpg",
+        "originalSize": [
+          563,
+          229
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+      },
+      "pixelsInspectedThisTask": true
+    },
+    {
+      "src": "ecg/images/j1f624.png",
+      "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+      "classification": "Complete (third-degree) AV block",
+      "source": {
+        "file": "09 - Chapter 7 - Heart Blocks.pdf",
+        "page": 50,
+        "evidencePages": [
+          43,
+          50
+        ],
+        "sha256": "38b44d28f79c0b0673d2a928b9adfc63b8137502cb9efc26490724c1713496de",
+        "embeddedImage": "Image152.jpg",
+        "originalSize": [
+          563,
+          229
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Single-lead source example; some P waves overlap QRS/T. Narrow QRS here is not a universal complete-block rule."
+      },
+      "pixelsInspectedThisTask": true
+    }
+  ],
+  "illustrationPolicy": "Only the three root-approved existing AV-block source paths and hashes. No image copies/extraction/generation, open-license claim or trainer state/scoring call. Source, rights and measurement limits appear in each caption.",
+  "bindings": {
+    "controller": "GuidedExplanation",
+    "fullScenes": true,
+    "nativeExecutionVerified": false,
+    "protectedECGFilesChanged": false,
+    "existingTrainerTouched": false,
+    "practiceAnswerGateUnchanged": true,
+    "prior91LessonFilesUnchanged": true,
+    "missingExamples": [
+      "Mobitz-II specimen",
+      "2:1 AV-block specimen",
+      "unreliable or absent escape specimen"
+    ],
+    "scope": "No conduction-block engine, exact lesion locator, calibrated interval measurement or individual risk/treatment inference. Complete-block escape may be slow, unreliable or absent."
+  },
+  "priorLessonFileHashes": {
+    "lessons-m06.js": "7e33fe5ea742dd997c946433fba875cd0253ee064c5b60355ae072eb9257a80b",
+    "lessons-m04.js": "7daf751a283b420db3444adcd817a6ccc93521bb69ceb330a8223b15168654f0",
+    "lessons-m07.js": "3c0e7280e1e630eb5884e246e15e9bdd618ec3620c58992a2bbdcf00f99647e6",
+    "lessons-m08.js": "ba5fa23380c1b94ecc4d163856f72c808d11eebdac7a51216b0e5e5a00fb054f",
+    "lessons.js": "019d421afb2364675e1c9d2590b6ae585f0eb3faba448c9d90505d05c4aa7112",
+    "lessons-m01.js": "3bd5c579becff4d4efddff749b1a0b90cda02feb8655d956ab8dc2633b1e6fe5",
+    "lessons-m10.js": "bd1c2e3d47ba1e08f990724688d22cf1c535799118f4cc61cce65d7078ff03e9",
+    "lessons-m09.js": "62aacbd195d9c9961da5c7c94082b5748d9423bdfc1ecbf6adba648761bf97de",
+    "lessons-m03.js": "007a1cb1b227f38c82da14048ab8280c5ece072e0cedb31ae1395fa9668e2ef9",
+    "lessons-m05.js": "cb4f7d7c5a7cad8d60110afef55f48b6afc96eae4d71d8c48786a1b4833a4cef",
+    "lessons-m11.js": "c1fffc202f39b9e99cada1350ef07985128e8d6583bd4d1aefaba2d4ca5a30d2"
+  },
+  "counts": {
+    "lessons": 6,
+    "cues": 32,
+    "sentenceCues": 32,
+    "phraseCues": 0,
+    "explanationCards": 32,
+    "illustratedCues": 15,
+    "uniqueExistingIllustrations": 3,
+    "modelCues": 0,
+    "ecgMeasurementCues": 0
+  },
+  "clips": [
+    {
+      "id": "M12.01",
+      "file": "M12_01_adam_multilingual_v2.mp3",
+      "bytes": 487141,
+      "sha256": "9d8b792585e237fbf3222deec282483a4ac5ffd808212e5d5b98434e8aaf3dea",
+      "duration": 29.38775,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M12.02",
+      "file": "M12_02_adam_multilingual_v2.mp3",
+      "bytes": 543565,
+      "sha256": "b33c6affc826792d88d83460213933a9ee842322d08115c44aa8a310b0857cf5",
+      "duration": 32.91425,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 3,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M12.03",
+      "file": "M12_03_adam_multilingual_v2.mp3",
+      "bytes": 531026,
+      "sha256": "8861dda3316dc55930582dba2c76a11a8f632af246de0ea62c7d2b1d1698f9d9",
+      "duration": 32.130563,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "illustratedCues": 4,
+      "alignmentFlags": [
+        {
+          "clipId": "M12.03",
+          "word": "mobitz",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+          "sourcePronunciation": "moh-bitz",
+          "authoredARPABET": "M OW B IH T S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 3,
+          "start": 0.66,
+          "end": 1.09
+        },
+        {
+          "clipId": "M12.03",
+          "word": "wenckebach",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/762033/all/Wenckebach__Karel_F_",
+          "sourcePronunciation": "veng′kĕ-bok″",
+          "authoredARPABET": "V EH NG K EH B AA K",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Author mapping from public written phonetics. Retains source initial V and short-e middle syllable; proper-name/Anglicized variants and actual generated pronunciation remain listening-review items. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 36,
+          "start": 13.91,
+          "end": 14.88
+        },
+        {
+          "clipId": "M12.03",
+          "word": "wenckebach",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/762033/all/Wenckebach__Karel_F_",
+          "sourcePronunciation": "veng′kĕ-bok″",
+          "authoredARPABET": "V EH NG K EH B AA K",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Author mapping from public written phonetics. Retains source initial V and short-e middle syllable; proper-name/Anglicized variants and actual generated pronunciation remain listening-review items. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 75,
+          "start": 30.97,
+          "end": 31.77
+        }
+      ]
+    },
+    {
+      "id": "M12.04",
+      "file": "M12_04_adam_multilingual_v2.mp3",
+      "bytes": 586615,
+      "sha256": "e80c8082513716d90dbacfddf0292232cb43f9163d5c596014d6db38ec1e2930",
+      "duration": 35.604875,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 4,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "clipId": "M12.04",
+          "word": "mobitz",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+          "sourcePronunciation": "moh-bitz",
+          "authoredARPABET": "M OW B IH T S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 1,
+          "start": 0.18,
+          "end": 0.61
+        },
+        {
+          "clipId": "M12.04",
+          "word": "mobitz",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+          "sourcePronunciation": "moh-bitz",
+          "authoredARPABET": "M OW B IH T S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 57,
+          "start": 22.33,
+          "end": 22.86
+        },
+        {
+          "clipId": "M12.04",
+          "word": "mobitz",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+          "sourcePronunciation": "moh-bitz",
+          "authoredARPABET": "M OW B IH T S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 60,
+          "start": 23.67,
+          "end": 24.19
+        },
+        {
+          "clipId": "M12.04",
+          "word": "nonconducted",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/non-",
+          "sourcePronunciation": "non- (ˈ)nän; conduct verb kən-ˈdəkt; conducted listed as its inflection",
+          "authoredARPABET": "N AA N K AH N D AH K T AH D",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Transparent compound of non- plus conducted; retains exact original bundled CMU non N AA N and conducted K AH N D AH K T AH D. Whole compound is not a separately pronounced publisher entry; no original dictionary edits. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 24,
+          "start": 9.08,
+          "end": 9.98
+        }
+      ]
+    },
+    {
+      "id": "M12.05",
+      "file": "M12_05_adam_multilingual_v2.mp3",
+      "bytes": 609185,
+      "sha256": "7b4c42648d0119bb8efa0759c028106c928b088ea9647092dd5f86da8e894a31",
+      "duration": 37.0155,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "illustratedCues": 3,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M12.06",
+      "file": "M12_06_adam_multilingual_v2.mp3",
+      "bytes": 577002,
+      "sha256": "6c7db6bd5fb17bbecfd0155097255cbc569ad2edd10b28b5f526849b66070bc7",
+      "duration": 35.004063,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "illustratedCues": 3,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 22,
+          "word": "a",
+          "start": 9.56,
+          "end": 9.59,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "clipId": "M12.06",
+          "word": "mobitz",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+          "sourcePronunciation": "moh-bitz",
+          "authoredARPABET": "M OW B IH T S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 26,
+          "start": 11.68,
+          "end": 12.17
+        },
+        {
+          "clipId": "M12.06",
+          "word": "mobitz",
+          "type": "PROPER_NAME_PRONUNCIATION_REVIEW",
+          "source": "https://www.encyclopedia.com/caregiving/dictionaries-thesauruses-pictures-and-press-releases/mobitz-type-i-and-type-ii",
+          "sourcePronunciation": "moh-bitz",
+          "authoredARPABET": "M OW B IH T S",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Written published reference pronunciation mapped to unstressed ARPABET; proper-name pronunciation varies and actual delivered audio has not been listened to. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 39,
+          "start": 17.61,
+          "end": 18.13
+        },
+        {
+          "clipId": "M12.06",
+          "word": "nonconducted",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/non-",
+          "sourcePronunciation": "non- (ˈ)nän; conduct verb kən-ˈdəkt; conducted listed as its inflection",
+          "authoredARPABET": "N AA N K AH N D AH K T AH D",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Transparent compound of non- plus conducted; retains exact original bundled CMU non N AA N and conducted K AH N D AH K T AH D. Whole compound is not a separately pronounced publisher entry; no original dictionary edits. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 23,
+          "start": 9.59,
+          "end": 10.5
+        },
+        {
+          "clipId": "M12.06",
+          "word": "nonconducted",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/non-",
+          "sourcePronunciation": "non- (ˈ)nän; conduct verb kən-ˈdəkt; conducted listed as its inflection",
+          "authoredARPABET": "N AA N K AH N D AH K T AH D",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Transparent compound of non- plus conducted; retains exact original bundled CMU non N AA N and conducted K AH N D AH K T AH D. Whole compound is not a separately pronounced publisher entry; no original dictionary edits. Alignment does not establish actual pronunciation correctness.",
+          "humanListeningPerformed": false,
+          "index": 29,
+          "start": 13.35,
+          "end": 14.24
+        }
+      ]
+    }
+  ]
+}

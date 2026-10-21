@@ -30,4 +30,10 @@
 #guidedStudyPlayer .gs-transcript{margin-top:12px;border-top:1px solid #d3deeb}
 #guidedStudyPlayer .gs-transcript>summary{cursor:pointer;min-height:44px;padding:11px 0;font-size:.9em;font-weight:650}
 #guidedStudyPlayer .gs-transcript-text{max-height:220px;overflow:auto;white-space:pre-wrap;font-size:.9em;line-height:1.55;padding:4px 2px}
+#guidedExplanationStudy{background:#fff;color:#17263d;border-color:#cbd6e5;overflow-wrap:anywhere}
+#guidedExplanationStudy h2,#guidedExplanationStudy p,#guidedExplanationStudy figcaption{color:inherit;line-height:1.55}
+#guidedExplanationStudy .gs-note{color:#405876}
+#guidedExplanationStudy .sim-badge{background:#e8eff9;color:#243e60;border-color:#98aecb}
+#guidedExplanationStudy button{min-height:44px;padding:9px 12px;font:inherit;background:#f6f9fe;color:#17263d;border:1px solid #98aecb;border-radius:9px}
+#guidedExplanationStudy button:focus-visible{outline:3px solid #9c5400;outline-offset:3px}
 @media(max-width:520px){#guidedStudyPlayer .gs-panel{padding:12px}#guidedStudyPlayer>summary{padding:12px}#guidedStudyPlayer .gs-summary-state{display:block;margin-top:4px}#guidedStudyPlayer .gs-timeline{display:block}#guidedStudyPlayer .gs-timeline output{display:block;padding:0 0 5px}#guidedStudyPlayer .gs-transport button{flex:1 1 calc(50% - 8px)}#guidedStudyPlayer .gs-transport button:first-child{flex-basis:100%}}

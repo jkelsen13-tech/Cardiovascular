@@ -1,0 +1,417 @@
+{
+  "schema": "guided-study.M13-assets.v1",
+  "scope": "Six M13 approved clips with honest supplemental pacing/capture/sensing cards; no verified paced strip is supplied",
+  "sourcePackageLibraryFileId": "libfile_eb1611081d488191ac7b6aa038ba45b4",
+  "sourceManifestLibraryFileId": "libfile_d66909a3c9a08191923d22c4ce8cd2a8",
+  "sourceIdentityReconciliation": "Parent confirmed distinct Library records: archive versus standalone manifest. Alignment sourceManifest.libraryId names the standalone manifest.",
+  "sourcePackageFileName": "M13_Pacing_Audio.zip",
+  "sourcePackageSha256": "62ea3aa63c4c698c04e4f903f7836e81305dacdb72d8ae4428926d34fa40edc8",
+  "materializationReceiptSha256": "1e0aeb02469f78a939eb9d1b4aa5f6d5469a243e92e6235917e5018c3004943e",
+  "materializationReceiptHashAndXattrsVerified": true,
+  "sourcePackageCRCVerified": true,
+  "sourceZipManifestAndMP3HashesVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "cd05bdf46e0396510fb5c41c82b1f3632fed5c77e907c6fda96aea50b989bdb5",
+  "audioPolicy": "Approved original MP3 bytes copied unchanged. No provider, generation, retake, external API, dependency or new cost by data worker.",
+  "alignment": {
+    "manifestSha256": "03c632a906a870532cdbccd9bc75c38912a31389fadaca0490d0ffbf62a74d7a",
+    "provenanceSha256": "c72a5a28849a7b8e81212e63a9200e9cd864d518ac3c02f266a601c2f0900d47",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "flags": [
+      {
+        "clip": "M13.02",
+        "type": "WORD_DURATION",
+        "index": 19,
+        "word": "a",
+        "start": 10.08,
+        "end": 10.11,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M13.03",
+        "type": "WORD_DURATION",
+        "index": 64,
+        "word": "a",
+        "start": 29.15,
+        "end": 29.18,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M13.04",
+        "type": "WORD_DURATION",
+        "index": 63,
+        "word": "atrioventricular",
+        "start": 26.49,
+        "end": 27.77,
+        "duration": 1.28,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M13.05",
+        "clipId": "M13.05",
+        "word": "dyssynchrony",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.collinsdictionary.com/us/dictionary/english/dys",
+        "supportingSources": [
+          "https://www.merriam-webster.com/dictionary/synchrony",
+          "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/730172/all/ventricular_dyssynchrony"
+        ],
+        "sourcePronunciation": "dys- /dɪs/ + synchrony ˈsiŋ-krə-nē",
+        "authoredARPABET": "D IH S S IH NG K R AH N IY",
+        "reason": "Transparent composition of publisher dys- and synchrony. Taber public search result independently lists dis-sing′krŏ-nē; direct entry retrieval returned an internal tool error, no subscriber content accessed. Actual delivered audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 11,
+        "start": 6.71,
+        "end": 7.52
+      },
+      {
+        "clip": "M13.05",
+        "clipId": "M13.05",
+        "word": "resynchronization",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/re-",
+        "supportingSources": [
+          "https://www.merriam-webster.com/dictionary/synchronization"
+        ],
+        "sourcePronunciation": "re- (ˈ)rē + synchronization ˌsiŋ-krə-nə-ˈzā-shən",
+        "authoredARPABET": "R IY S IH NG K R AH N AH Z EY SH AH N",
+        "reason": "Transparent prefix+base composition; exact original bundled synchronization retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 1,
+        "start": 0.6,
+        "end": 1.66
+      },
+      {
+        "clip": "M13.05",
+        "clipId": "M13.05",
+        "word": "resynchronization",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/re-",
+        "supportingSources": [
+          "https://www.merriam-webster.com/dictionary/synchronization"
+        ],
+        "sourcePronunciation": "re- (ˈ)rē + synchronization ˌsiŋ-krə-nə-ˈzā-shən",
+        "authoredARPABET": "R IY S IH NG K R AH N AH Z EY SH AH N",
+        "reason": "Transparent prefix+base composition; exact original bundled synchronization retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 33,
+        "start": 18.46,
+        "end": 19.63
+      },
+      {
+        "clip": "M13.06",
+        "clipId": "M13.06",
+        "word": "oversensing",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/over",
+        "supportingSources": [
+          "https://www.merriam-webster.com/dictionary/sensing"
+        ],
+        "sourcePronunciation": "over ˈō-vər + sense ˈsen(t)s, sensing inflection",
+        "authoredARPABET": "OW V ER S EH N S IH NG",
+        "reason": "Transparent compound; exact original bundled over+sensing pronunciations retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 25,
+        "start": 12.81,
+        "end": 13.56
+      },
+      {
+        "clip": "M13.06",
+        "clipId": "M13.06",
+        "word": "undersensing",
+        "type": "COMPOSED_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/under",
+        "supportingSources": [
+          "https://www.merriam-webster.com/dictionary/sensing"
+        ],
+        "sourcePronunciation": "under ˈən-dər + sense ˈsen(t)s, sensing inflection",
+        "authoredARPABET": "AH N D ER S EH N S IH NG",
+        "reason": "Transparent compound; exact original bundled under+sensing pronunciations retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+        "humanListeningPerformed": false,
+        "index": 18,
+        "start": 8.44,
+        "end": 9.33
+      }
+    ]
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "coursePageExtractionSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+  "courseTerminologyNotes": {
+    "M13.01": {
+      "pages": "807–808,812,816",
+      "note": "Device sensing/stimulation and electrical versus mechanical response are explained. No verified paced ECG, pulse-generator/lead hardware model or pacing simulation is supplied. Leadless systems remain explicitly acknowledged."
+    },
+    "M13.02": {
+      "pages": "809–811",
+      "note": "Device types are identified without recreating source pad placement, currents, thresholds or procedure/programming instructions. No pacing procedure, patient setup or device operation is simulated."
+    },
+    "M13.03": {
+      "pages": "808,812–814",
+      "note": "Approved distinctions between sensing, output, inhibited/asynchronous modes and specific timing rules are retained. Source missed/abnormal-beat shorthand is not used as a universal triggered-mode definition. No device timing engine or settings control is provided."
+    },
+    "M13.04": {
+      "pages": "817–818,820,825–828",
+      "note": "Capture is conditional, conventional ventricular pacing often widens QRS, and dual-chamber systems need not show two visible spikes every cycle. Atrial-only pacing requires appropriate tissue/AV conduction; the source permanent-AF/standstill shorthand is not adopted. No paced strip is fabricated."
+    },
+    "M13.05": {
+      "pages": "829",
+      "note": "CRT/conduction-system pacing are explanatory vocabulary for selected clinical contexts. Spike count/spacing alone does not establish resynchronization. No biventricular activation, dyssynchrony or programming solver is claimed."
+    },
+    "M13.06": {
+      "pages": "830–832",
+      "note": "Electrical capture, mechanical capture, undersensing, oversensing and apparent missing output remain distinct and context dependent. No device failure is diagnosed and no setting is selected from spike position."
+    }
+  },
+  "existingIllustrations": [],
+  "illustrationPolicy": "No paced strip or hardware image is supplied, copied, extracted or generated. All scenes are explicit cards with no unsupported illustration field.",
+  "bindings": {
+    "controller": "GuidedExplanation",
+    "fullScenes": true,
+    "nativeExecutionVerified": false,
+    "protectedECGFilesChanged": false,
+    "existingTrainerTouched": false,
+    "practiceAnswerGateUnchanged": true,
+    "prior97LessonFilesUnchanged": true,
+    "missingExamples": [
+      "atrial paced strip",
+      "ventricular paced strip",
+      "dual-chamber paced strip",
+      "CRT/conduction-system pacing strip",
+      "capture/sensing/output failure strip"
+    ],
+    "scope": "No pacing hardware/anatomy, generated paced trace, numerical device engine, capture/sensing/output solver, programming/settings or individual risk/treatment inference."
+  },
+  "priorLessonFileHashes": {
+    "lessons-m06.js": "7e33fe5ea742dd997c946433fba875cd0253ee064c5b60355ae072eb9257a80b",
+    "lessons-m04.js": "7daf751a283b420db3444adcd817a6ccc93521bb69ceb330a8223b15168654f0",
+    "lessons-m07.js": "3c0e7280e1e630eb5884e246e15e9bdd618ec3620c58992a2bbdcf00f99647e6",
+    "lessons-m08.js": "ba5fa23380c1b94ecc4d163856f72c808d11eebdac7a51216b0e5e5a00fb054f",
+    "lessons.js": "019d421afb2364675e1c9d2590b6ae585f0eb3faba448c9d90505d05c4aa7112",
+    "lessons-m01.js": "3bd5c579becff4d4efddff749b1a0b90cda02feb8655d956ab8dc2633b1e6fe5",
+    "lessons-m10.js": "bd1c2e3d47ba1e08f990724688d22cf1c535799118f4cc61cce65d7078ff03e9",
+    "lessons-m09.js": "62aacbd195d9c9961da5c7c94082b5748d9423bdfc1ecbf6adba648761bf97de",
+    "lessons-m03.js": "007a1cb1b227f38c82da14048ab8280c5ece072e0cedb31ae1395fa9668e2ef9",
+    "lessons-m12.js": "5faf4fdcd6908cd863ff90f25d493411bdf041f460e3d860a71513a4f26b5480",
+    "lessons-m05.js": "cb4f7d7c5a7cad8d60110afef55f48b6afc96eae4d71d8c48786a1b4833a4cef",
+    "lessons-m11.js": "c1fffc202f39b9e99cada1350ef07985128e8d6583bd4d1aefaba2d4ca5a30d2"
+  },
+  "counts": {
+    "lessons": 6,
+    "cues": 31,
+    "sentenceCues": 31,
+    "phraseCues": 0,
+    "explanationCards": 31,
+    "illustratedCues": 0,
+    "uniqueExistingIllustrations": 0,
+    "modelCues": 0,
+    "ecgMeasurementCues": 0
+  },
+  "clips": [
+    {
+      "id": "M13.01",
+      "file": "M13_01_adam_multilingual_v2.mp3",
+      "bytes": 556940,
+      "sha256": "f3c9f6b8910f5b818787a1019b7cde2d2ed1d2d2c5fcc092e89b02b94e049380",
+      "duration": 33.750188,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M13.02",
+      "file": "M13_02_adam_multilingual_v2.mp3",
+      "bytes": 558612,
+      "sha256": "a14a88f48f9aac61a56c7875e9d7dde0f543e71c0d296aab5af4fb8f0ab5a97f",
+      "duration": 33.854688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 19,
+          "word": "a",
+          "start": 10.08,
+          "end": 10.11,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M13.03",
+      "file": "M13_03_adam_multilingual_v2.mp3",
+      "bytes": 534788,
+      "sha256": "c3b43b8053a2eceab0a52629f24b5f4433e142412cfaab1c683c467d63c00801",
+      "duration": 32.365688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 6,
+      "totalCues": 6,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 64,
+          "word": "a",
+          "start": 29.15,
+          "end": 29.18,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M13.04",
+      "file": "M13_04_adam_multilingual_v2.mp3",
+      "bytes": 552342,
+      "sha256": "174678e359bf7bb96bfd05c381e00d86e7e2fa35d6d2e592eb6d01d8992bd664",
+      "duration": 33.462813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 4,
+      "totalCues": 4,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 63,
+          "word": "atrioventricular",
+          "start": 26.49,
+          "end": 27.77,
+          "duration": 1.28,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        }
+      ]
+    },
+    {
+      "id": "M13.05",
+      "file": "M13_05_adam_multilingual_v2.mp3",
+      "bytes": 575748,
+      "sha256": "4727b84cacdfca2d76400c3ce1d93dd68e08f3558a88d5e8582b9cee6d0ea5b2",
+      "duration": 34.925688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "clipId": "M13.05",
+          "word": "dyssynchrony",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.collinsdictionary.com/us/dictionary/english/dys",
+          "supportingSources": [
+            "https://www.merriam-webster.com/dictionary/synchrony",
+            "https://www.tabers.com/tabersonline/view/Tabers-Dictionary/730172/all/ventricular_dyssynchrony"
+          ],
+          "sourcePronunciation": "dys- /dɪs/ + synchrony ˈsiŋ-krə-nē",
+          "authoredARPABET": "D IH S S IH NG K R AH N IY",
+          "reason": "Transparent composition of publisher dys- and synchrony. Taber public search result independently lists dis-sing′krŏ-nē; direct entry retrieval returned an internal tool error, no subscriber content accessed. Actual delivered audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 11,
+          "start": 6.71,
+          "end": 7.52
+        },
+        {
+          "clipId": "M13.05",
+          "word": "resynchronization",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/re-",
+          "supportingSources": [
+            "https://www.merriam-webster.com/dictionary/synchronization"
+          ],
+          "sourcePronunciation": "re- (ˈ)rē + synchronization ˌsiŋ-krə-nə-ˈzā-shən",
+          "authoredARPABET": "R IY S IH NG K R AH N AH Z EY SH AH N",
+          "reason": "Transparent prefix+base composition; exact original bundled synchronization retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 1,
+          "start": 0.6,
+          "end": 1.66
+        },
+        {
+          "clipId": "M13.05",
+          "word": "resynchronization",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/re-",
+          "supportingSources": [
+            "https://www.merriam-webster.com/dictionary/synchronization"
+          ],
+          "sourcePronunciation": "re- (ˈ)rē + synchronization ˌsiŋ-krə-nə-ˈzā-shən",
+          "authoredARPABET": "R IY S IH NG K R AH N AH Z EY SH AH N",
+          "reason": "Transparent prefix+base composition; exact original bundled synchronization retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 33,
+          "start": 18.46,
+          "end": 19.63
+        }
+      ]
+    },
+    {
+      "id": "M13.06",
+      "file": "M13_06_adam_multilingual_v2.mp3",
+      "bytes": 578674,
+      "sha256": "bddbac7aa734a54de7ae7e0d34918f42ab507a599d5f32ae8b578fd45a98fabf",
+      "duration": 35.108563,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 0,
+      "alignmentFlags": [
+        {
+          "clipId": "M13.06",
+          "word": "oversensing",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/over",
+          "supportingSources": [
+            "https://www.merriam-webster.com/dictionary/sensing"
+          ],
+          "sourcePronunciation": "over ˈō-vər + sense ˈsen(t)s, sensing inflection",
+          "authoredARPABET": "OW V ER S EH N S IH NG",
+          "reason": "Transparent compound; exact original bundled over+sensing pronunciations retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 25,
+          "start": 12.81,
+          "end": 13.56
+        },
+        {
+          "clipId": "M13.06",
+          "word": "undersensing",
+          "type": "COMPOSED_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/under",
+          "supportingSources": [
+            "https://www.merriam-webster.com/dictionary/sensing"
+          ],
+          "sourcePronunciation": "under ˈən-dər + sense ˈsen(t)s, sensing inflection",
+          "authoredARPABET": "AH N D ER S EH N S IH NG",
+          "reason": "Transparent compound; exact original bundled under+sensing pronunciations retained. Whole-word pronunciation not separately verified. Actual delivered audio and neighboring anchors require listening review.",
+          "humanListeningPerformed": false,
+          "index": 18,
+          "start": 8.44,
+          "end": 9.33
+        }
+      ]
+    }
+  ]
+}

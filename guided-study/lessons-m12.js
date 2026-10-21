@@ -1,0 +1,1161 @@
+/* M12 approved unchanged audio; supplemental cards and qualified existing AV-block examples. */
+(function(root){
+ 'use strict';
+ const lessons=[
+  {
+    "id": "M12.01",
+    "module": "M12",
+    "title": "AV block is not always at the AV node",
+    "text": "Atrioventricular block means delayed or failed conduction from atria to ventricles. The problem can occur in the A V node or farther down in the His-Purkinje system. Track atrial and ventricular activity separately. Count P waves as well as Q R S complexes, and compare their timing. The phrase heart block does not mean that a coronary artery is blocked, and it does not tell us the anatomical level by itself.",
+    "transcript": "Atrioventricular block means delayed or failed conduction from atria to ventricles. The problem can occur in the A V node or farther down in the His-Purkinje system. Track atrial and ventricular activity separately. Count P waves as well as Q R S complexes, and compare their timing. The phrase heart block does not mean that a coronary artery is blocked, and it does not tell us the anatomical level by itself.",
+    "audio": {
+      "src": "guided-study/assets/M12_01_adam_multilingual_v2.mp3",
+      "duration": 29.38775,
+      "sha256": "9d8b792585e237fbf3222deec282483a4ac5ffd808212e5d5b98434e8aaf3dea"
+    },
+    "cues": [
+      {
+        "id": "M12.01.s01",
+        "at": 0,
+        "text": "Atrioventricular block means delayed or failed conduction from atria to ventricles.",
+        "title": "Atrioventricular block means delayed or failed conduction from atria to ventricles.",
+        "scene": {
+          "organ": "explanation",
+          "title": "AV block: delayed or failed atrioventricular conduction",
+          "text": "Atrioventricular block means delayed or failed conduction from atria to ventricles.",
+          "source": "Owner-approved adapted M12.01 narration · source script lines 769-772;795-824 · course PDF physical pp711,734,747,750",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 5.47,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.01.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 10
+        }
+      },
+      {
+        "id": "M12.01.s02",
+        "at": 5.94,
+        "text": "The problem can occur in the A V node or farther down in the His-Purkinje system.",
+        "title": "The problem can occur in the A V node or farther down in the His-Purkinje system.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Block can occur at different levels",
+          "text": "The problem can occur in the A V node or farther down in the His-Purkinje system.",
+          "source": "Owner-approved adapted M12.01 narration · source script lines 769-772;795-824 · course PDF physical pp711,734,747,750",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 5.94,
+          "end": 11.18,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.01.s02",
+          "firstWordIndex": 11,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M12.01.s03",
+        "at": 11.66,
+        "text": "Track atrial and ventricular activity separately.",
+        "title": "Track atrial and ventricular activity separately.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Observe atrial and ventricular activity separately",
+          "text": "Track atrial and ventricular activity separately.",
+          "source": "Owner-approved adapted M12.01 narration · source script lines 769-772;795-824 · course PDF physical pp711,734,747,750",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided.",
+          "illustration": {
+            "src": "ecg/images/j1f624.png",
+            "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+            "alt": "Existing course-supplied complete (third-degree) av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Complete (third-degree) AV block · 09 - Chapter 7 - Heart Blocks.pdf, p50. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained complete-AV-block example: independent atrial/ventricular timing with an approximate narrow-QRS escape rate near 47 bpm. Some P waves overlap QRS/T. This is one specimen with an escape present, not a guarantee: an escape can be slow, unreliable or absent. Narrow QRS is not universal; AV dissociation alone does not prove complete block."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 11.66,
+          "end": 14.93,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.01.s03",
+          "firstWordIndex": 28,
+          "lastWordIndex": 33
+        }
+      },
+      {
+        "id": "M12.01.s04",
+        "at": 15.37,
+        "text": "Count P waves as well as Q R S complexes, and compare their timing.",
+        "title": "Count P waves as well as Q R S complexes, and compare their timing.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Count P waves and QRS complexes separately",
+          "text": "Count P waves as well as Q R S complexes, and compare their timing.",
+          "source": "Owner-approved adapted M12.01 narration · source script lines 769-772;795-824 · course PDF physical pp711,734,747,750",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided.",
+          "illustration": {
+            "src": "ecg/images/j1f624.png",
+            "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+            "alt": "Existing course-supplied complete (third-degree) av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Complete (third-degree) AV block · 09 - Chapter 7 - Heart Blocks.pdf, p50. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained complete-AV-block example: independent atrial/ventricular timing with an approximate narrow-QRS escape rate near 47 bpm. Some P waves overlap QRS/T. This is one specimen with an escape present, not a guarantee: an escape can be slow, unreliable or absent. Narrow QRS is not universal; AV dissociation alone does not prove complete block."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 15.37,
+          "end": 20.44,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.01.s04",
+          "firstWordIndex": 34,
+          "lastWordIndex": 47
+        }
+      },
+      {
+        "id": "M12.01.s05",
+        "at": 21.28,
+        "text": "The phrase heart block does not mean that a coronary artery is blocked, and it does not tell us the anatomical level by itself.",
+        "title": "The phrase heart block does not mean that a coronary artery is blocked, and it does not tell us the anatomical level by itself.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Heart block does not mean coronary obstruction",
+          "text": "The phrase heart block does not mean that a coronary artery is blocked, and it does not tell us the anatomical level by itself.",
+          "source": "Owner-approved adapted M12.01 narration · source script lines 769-772;795-824 · course PDF physical pp711,734,747,750",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.28,
+          "end": 28.71,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.01.s05",
+          "firstWordIndex": 48,
+          "lastWordIndex": 71
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "769-772;795-824",
+      "audioPackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+      "standaloneAudioManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "711,734,747,750",
+        "terminologyNote": "AV conduction can fail at different levels; coronary artery obstruction is a separate concept. Known complete-block examples support separate atrial/ventricular observation only; no conduction-block simulator or exact lesion localization is provided."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M12.01 narration · source script lines 769-772;795-824 · course PDF physical pp711,734,747,750",
+    "sourceUrl": "guided-study/assets/M12-provenance.json",
+    "status": "Approved audio and qualified supplemental AV-block cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M12.02",
+    "module": "M12",
+    "title": "First-degree AV block",
+    "text": "First-degree A V block is prolonged atrioventricular conduction: the P R interval is longer than zero point two zero seconds in adults, and every atrial impulse still conducts. It is a delay rather than an intermittent dropped beat. Identify the underlying rhythm, for example sinus rhythm with first-degree A V block. Q R S duration may be narrow or wide depending on other conduction findings. A prolonged P R does not automatically establish normal cardiac output.",
+    "transcript": "First-degree A V block is prolonged atrioventricular conduction: the P R interval is longer than zero point two zero seconds in adults, and every atrial impulse still conducts. It is a delay rather than an intermittent dropped beat. Identify the underlying rhythm, for example sinus rhythm with first-degree A V block. Q R S duration may be narrow or wide depending on other conduction findings. A prolonged P R does not automatically establish normal cardiac output.",
+    "audio": {
+      "src": "guided-study/assets/M12_02_adam_multilingual_v2.mp3",
+      "duration": 32.91425,
+      "sha256": "b33c6affc826792d88d83460213933a9ee842322d08115c44aa8a310b0857cf5"
+    },
+    "cues": [
+      {
+        "id": "M12.02.s01",
+        "at": 0,
+        "text": "First-degree A V block is prolonged atrioventricular conduction: the P R interval is longer than zero point two zero seconds in adults, and every atrial impulse still conducts.",
+        "title": "First-degree A V block is prolonged atrioventricular conduction: the P R interval is longer than zero point two zero seconds in adults, and every atrial impulse still conducts.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known first-degree example: prolonged PR, every P conducted",
+          "text": "First-degree A V block is prolonged atrioventricular conduction: the P R interval is longer than zero point two zero seconds in adults, and every atrial impulse still conducts.",
+          "source": "Owner-approved adapted M12.02 narration · source script lines 773-782 · course PDF physical pp711–714",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block.",
+          "illustration": {
+            "src": "ecg/images/g3d782.png",
+            "sha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+            "alt": "Existing course-supplied sinus rhythm with first-degree av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Sinus rhythm with first-degree AV block · 09 - Chapter 7 - Heart Blocks.pdf, p10. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained sinus-with-first-degree-AV-block example: fixed prolonged PR, approximately six to seven small boxes (>0.20 s), every visible P conducted and narrow QRS in this specimen. This does not prove normal cardiac output, exact block location or universal narrow QRS."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 12.14,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.02.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 28
+        }
+      },
+      {
+        "id": "M12.02.s02",
+        "at": 12.36,
+        "text": "It is a delay rather than an intermittent dropped beat.",
+        "title": "It is a delay rather than an intermittent dropped beat.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Delay rather than an intermittent dropped beat",
+          "text": "It is a delay rather than an intermittent dropped beat.",
+          "source": "Owner-approved adapted M12.02 narration · source script lines 773-782 · course PDF physical pp711–714",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block.",
+          "illustration": {
+            "src": "ecg/images/g3d782.png",
+            "sha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+            "alt": "Existing course-supplied sinus rhythm with first-degree av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Sinus rhythm with first-degree AV block · 09 - Chapter 7 - Heart Blocks.pdf, p10. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained sinus-with-first-degree-AV-block example: fixed prolonged PR, approximately six to seven small boxes (>0.20 s), every visible P conducted and narrow QRS in this specimen. This does not prove normal cardiac output, exact block location or universal narrow QRS."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 12.36,
+          "end": 15.4,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.02.s02",
+          "firstWordIndex": 29,
+          "lastWordIndex": 38
+        }
+      },
+      {
+        "id": "M12.02.s03",
+        "at": 15.84,
+        "text": "Identify the underlying rhythm, for example sinus rhythm with first-degree A V block.",
+        "title": "Identify the underlying rhythm, for example sinus rhythm with first-degree A V block.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Identify the underlying rhythm",
+          "text": "Identify the underlying rhythm, for example sinus rhythm with first-degree A V block.",
+          "source": "Owner-approved adapted M12.02 narration · source script lines 773-782 · course PDF physical pp711–714",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block.",
+          "illustration": {
+            "src": "ecg/images/g3d782.png",
+            "sha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+            "alt": "Existing course-supplied sinus rhythm with first-degree av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Sinus rhythm with first-degree AV block · 09 - Chapter 7 - Heart Blocks.pdf, p10. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained sinus-with-first-degree-AV-block example: fixed prolonged PR, approximately six to seven small boxes (>0.20 s), every visible P conducted and narrow QRS in this specimen. This does not prove normal cardiac output, exact block location or universal narrow QRS."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 15.84,
+          "end": 21.5,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.02.s03",
+          "firstWordIndex": 39,
+          "lastWordIndex": 52
+        }
+      },
+      {
+        "id": "M12.02.s04",
+        "at": 21.94,
+        "text": "Q R S duration may be narrow or wide depending on other conduction findings.",
+        "title": "Q R S duration may be narrow or wide depending on other conduction findings.",
+        "scene": {
+          "organ": "explanation",
+          "title": "QRS may be narrow or wide",
+          "text": "Q R S duration may be narrow or wide depending on other conduction findings.",
+          "source": "Owner-approved adapted M12.02 narration · source script lines 773-782 · course PDF physical pp711–714",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.94,
+          "end": 27.26,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.02.s04",
+          "firstWordIndex": 53,
+          "lastWordIndex": 66
+        }
+      },
+      {
+        "id": "M12.02.s05",
+        "at": 27.88,
+        "text": "A prolonged P R does not automatically establish normal cardiac output.",
+        "title": "A prolonged P R does not automatically establish normal cardiac output.",
+        "scene": {
+          "organ": "explanation",
+          "title": "PR prolongation does not prove output",
+          "text": "A prolonged P R does not automatically establish normal cardiac output.",
+          "source": "Owner-approved adapted M12.02 narration · source script lines 773-782 · course PDF physical pp711–714",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 27.88,
+          "end": 32.35,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.02.s05",
+          "firstWordIndex": 67,
+          "lastWordIndex": 77
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "773-782",
+      "audioPackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+      "standaloneAudioManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "711–714",
+        "terminologyNote": "Prolonged PR with every P conducted supports first-degree delay in the underlying rhythm. Approved text does not guarantee normal output or always-narrow QRS; the supplied source example is sinus rhythm with first-degree AV block."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M12.02 narration · source script lines 773-782 · course PDF physical pp711–714",
+    "sourceUrl": "guided-study/assets/M12-provenance.json",
+    "status": "Approved audio and qualified supplemental AV-block cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M12.03",
+    "module": "M12",
+    "title": "Mobitz I, or Wenckebach",
+    "text": "In the classic Mobitz one pattern, P R intervals progressively lengthen until a P wave is not followed by a Q R S complex. The sequence then repeats. This creates grouped beating and is often called Wenckebach. The block is commonly within the A V node, but exceptions exist. A narrow Q R S is common, not mandatory. Verify the pattern across enough beats instead of labeling any irregular rhythm with a dropped complex as Wenckebach.",
+    "transcript": "In the classic Mobitz one pattern, P R intervals progressively lengthen until a P wave is not followed by a Q R S complex. The sequence then repeats. This creates grouped beating and is often called Wenckebach. The block is commonly within the A V node, but exceptions exist. A narrow Q R S is common, not mandatory. Verify the pattern across enough beats instead of labeling any irregular rhythm with a dropped complex as Wenckebach.",
+    "audio": {
+      "src": "guided-study/assets/M12_03_adam_multilingual_v2.mp3",
+      "duration": 32.130563,
+      "sha256": "8861dda3316dc55930582dba2c76a11a8f632af246de0ea62c7d2b1d1698f9d9"
+    },
+    "cues": [
+      {
+        "id": "M12.03.s01",
+        "at": 0,
+        "text": "In the classic Mobitz one pattern, P R intervals progressively lengthen until a P wave is not followed by a Q R S complex.",
+        "title": "In the classic Mobitz one pattern, P R intervals progressively lengthen until a P wave is not followed by a Q R S complex.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known Mobitz-I example: progressive PR and a nonconducted P",
+          "text": "In the classic Mobitz one pattern, P R intervals progressively lengthen until a P wave is not followed by a Q R S complex.",
+          "source": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated.",
+          "illustration": {
+            "src": "ecg/images/h5e139.png",
+            "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+            "alt": "Existing course-supplied second-degree av block, mobitz i (wenckebach) teaching strip; limited source features only.",
+            "source": "Known teaching example: Second-degree AV block, Mobitz I (Wenckebach) · 09 - Chapter 7 - Heart Blocks.pdf, p20. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained Mobitz-I example: repeated groups with progressive conducted PR, a nonconducted P and shorter PR after the pause. Ventricular average is roughly 50 bpm. Narrow QRS is a feature of this example, not a requirement for every Mobitz-I case; exact lesion location is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 8.44,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.03.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 23
+        }
+      },
+      {
+        "id": "M12.03.s02",
+        "at": 8.79,
+        "text": "The sequence then repeats.",
+        "title": "The sequence then repeats.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Check that the sequence repeats",
+          "text": "The sequence then repeats.",
+          "source": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated.",
+          "illustration": {
+            "src": "ecg/images/h5e139.png",
+            "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+            "alt": "Existing course-supplied second-degree av block, mobitz i (wenckebach) teaching strip; limited source features only.",
+            "source": "Known teaching example: Second-degree AV block, Mobitz I (Wenckebach) · 09 - Chapter 7 - Heart Blocks.pdf, p20. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained Mobitz-I example: repeated groups with progressive conducted PR, a nonconducted P and shorter PR after the pause. Ventricular average is roughly 50 bpm. Narrow QRS is a feature of this example, not a requirement for every Mobitz-I case; exact lesion location is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 8.79,
+          "end": 10.46,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.03.s02",
+          "firstWordIndex": 24,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M12.03.s03",
+        "at": 10.91,
+        "text": "This creates grouped beating and is often called Wenckebach.",
+        "title": "This creates grouped beating and is often called Wenckebach.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Grouped beating: Wenckebach",
+          "text": "This creates grouped beating and is often called Wenckebach.",
+          "source": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated.",
+          "illustration": {
+            "src": "ecg/images/h5e139.png",
+            "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+            "alt": "Existing course-supplied second-degree av block, mobitz i (wenckebach) teaching strip; limited source features only.",
+            "source": "Known teaching example: Second-degree AV block, Mobitz I (Wenckebach) · 09 - Chapter 7 - Heart Blocks.pdf, p20. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained Mobitz-I example: repeated groups with progressive conducted PR, a nonconducted P and shorter PR after the pause. Ventricular average is roughly 50 bpm. Narrow QRS is a feature of this example, not a requirement for every Mobitz-I case; exact lesion location is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 10.91,
+          "end": 14.88,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.03.s03",
+          "firstWordIndex": 28,
+          "lastWordIndex": 36
+        }
+      },
+      {
+        "id": "M12.03.s04",
+        "at": 15.8,
+        "text": "The block is commonly within the A V node, but exceptions exist.",
+        "title": "The block is commonly within the A V node, but exceptions exist.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Block location has exceptions",
+          "text": "The block is commonly within the A V node, but exceptions exist.",
+          "source": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 15.8,
+          "end": 20.01,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.03.s04",
+          "firstWordIndex": 37,
+          "lastWordIndex": 48
+        }
+      },
+      {
+        "id": "M12.03.s05",
+        "at": 20.27,
+        "text": "A narrow Q R S is common, not mandatory.",
+        "title": "A narrow Q R S is common, not mandatory.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Narrow QRS is common, not mandatory",
+          "text": "A narrow Q R S is common, not mandatory.",
+          "source": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 20.27,
+          "end": 24.0,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.03.s05",
+          "firstWordIndex": 49,
+          "lastWordIndex": 57
+        }
+      },
+      {
+        "id": "M12.03.s06",
+        "at": 24.41,
+        "text": "Verify the pattern across enough beats instead of labeling any irregular rhythm with a dropped complex as Wenckebach.",
+        "title": "Verify the pattern across enough beats instead of labeling any irregular rhythm with a dropped complex as Wenckebach.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Verify enough beats before naming the pattern",
+          "text": "Verify the pattern across enough beats instead of labeling any irregular rhythm with a dropped complex as Wenckebach.",
+          "source": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated.",
+          "illustration": {
+            "src": "ecg/images/h5e139.png",
+            "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+            "alt": "Existing course-supplied second-degree av block, mobitz i (wenckebach) teaching strip; limited source features only.",
+            "source": "Known teaching example: Second-degree AV block, Mobitz I (Wenckebach) · 09 - Chapter 7 - Heart Blocks.pdf, p20. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained Mobitz-I example: repeated groups with progressive conducted PR, a nonconducted P and shorter PR after the pause. Ventricular average is roughly 50 bpm. Narrow QRS is a feature of this example, not a requirement for every Mobitz-I case; exact lesion location is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 24.41,
+          "end": 31.77,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.03.s06",
+          "firstWordIndex": 58,
+          "lastWordIndex": 75
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "783-794",
+      "audioPackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+      "standaloneAudioManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "721,724",
+        "terminologyNote": "The classic progressive-PR/nonconducted-P sequence must be checked across enough beats. AV-node location and narrow QRS are common rather than universal. Known source example is qualified; no block mechanism is simulated."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M12.03 narration · source script lines 783-794 · course PDF physical pp721,724",
+    "sourceUrl": "guided-study/assets/M12-provenance.json",
+    "status": "Approved audio and qualified supplemental AV-block cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M12.04",
+    "module": "M12",
+    "title": "Mobitz II and the 2-to-1 limitation",
+    "text": "In Mobitz two, an occasional P wave fails to conduct despite a stable sinus rate, with unchanged P R intervals before and after the nonconducted P wave. It reflects conduction failure in the His-Purkinje system, and Q R S complexes are often wide, though they can be narrow. A two-to-one pattern alone cannot distinguish Mobitz one from Mobitz two, because there are not consecutive conducted beats to show progressive P R change. Describe it as two-to-one A V block unless additional evidence resolves the type.",
+    "transcript": "In Mobitz two, an occasional P wave fails to conduct despite a stable sinus rate, with unchanged P R intervals before and after the nonconducted P wave. It reflects conduction failure in the His-Purkinje system, and Q R S complexes are often wide, though they can be narrow. A two-to-one pattern alone cannot distinguish Mobitz one from Mobitz two, because there are not consecutive conducted beats to show progressive P R change. Describe it as two-to-one A V block unless additional evidence resolves the type.",
+    "audio": {
+      "src": "guided-study/assets/M12_04_adam_multilingual_v2.mp3",
+      "duration": 35.604875,
+      "sha256": "e80c8082513716d90dbacfddf0292232cb43f9163d5c596014d6db38ec1e2930"
+    },
+    "cues": [
+      {
+        "id": "M12.04.s01",
+        "at": 0,
+        "text": "In Mobitz two, an occasional P wave fails to conduct despite a stable sinus rate, with unchanged P R intervals before and after the nonconducted P wave.",
+        "title": "In Mobitz two, an occasional P wave fails to conduct despite a stable sinus rate, with unchanged P R intervals before and after the nonconducted P wave.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Mobitz-II pattern: explanation without a specimen",
+          "text": "In Mobitz two, an occasional P wave fails to conduct despite a stable sinus rate, with unchanged P R intervals before and after the nonconducted P wave.",
+          "source": "Owner-approved adapted M12.04 narration · source script lines 795-808 · course PDF physical pp734,746",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 10.63,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.04.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 26
+        }
+      },
+      {
+        "id": "M12.04.s02",
+        "at": 11.23,
+        "text": "It reflects conduction failure in the His-Purkinje system, and Q R S complexes are often wide, though they can be narrow.",
+        "title": "It reflects conduction failure in the His-Purkinje system, and Q R S complexes are often wide, though they can be narrow.",
+        "scene": {
+          "organ": "explanation",
+          "title": "His–Purkinje conduction failure and variable QRS width",
+          "text": "It reflects conduction failure in the His-Purkinje system, and Q R S complexes are often wide, though they can be narrow.",
+          "source": "Owner-approved adapted M12.04 narration · source script lines 795-808 · course PDF physical pp734,746",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 11.23,
+          "end": 18.96,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.04.s02",
+          "firstWordIndex": 27,
+          "lastWordIndex": 48
+        }
+      },
+      {
+        "id": "M12.04.s03",
+        "at": 19.74,
+        "text": "A two-to-one pattern alone cannot distinguish Mobitz one from Mobitz two, because there are not consecutive conducted beats to show progressive P R change.",
+        "title": "A two-to-one pattern alone cannot distinguish Mobitz one from Mobitz two, because there are not consecutive conducted beats to show progressive P R change.",
+        "scene": {
+          "organ": "explanation",
+          "title": "A 2:1 pattern alone does not distinguish Mobitz types",
+          "text": "A two-to-one pattern alone cannot distinguish Mobitz one from Mobitz two, because there are not consecutive conducted beats to show progressive P R change.",
+          "source": "Owner-approved adapted M12.04 narration · source script lines 795-808 · course PDF physical pp734,746",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 19.74,
+          "end": 29.71,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.04.s03",
+          "firstWordIndex": 49,
+          "lastWordIndex": 74
+        }
+      },
+      {
+        "id": "M12.04.s04",
+        "at": 30.46,
+        "text": "Describe it as two-to-one A V block unless additional evidence resolves the type.",
+        "title": "Describe it as two-to-one A V block unless additional evidence resolves the type.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Describe unresolved 2:1 AV block honestly",
+          "text": "Describe it as two-to-one A V block unless additional evidence resolves the type.",
+          "source": "Owner-approved adapted M12.04 narration · source script lines 795-808 · course PDF physical pp734,746",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 30.46,
+          "end": 35.25,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.04.s04",
+          "firstWordIndex": 75,
+          "lastWordIndex": 89
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "795-808",
+      "audioPackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+      "standaloneAudioManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "734,746",
+        "terminologyNote": "No verified Mobitz-II or 2:1 specimen is available. The approved 2:1 classification limitation is an explicit explanatory addition, not a reconstructed source figure or an invented diagnosis."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M12.04 narration · source script lines 795-808 · course PDF physical pp734,746",
+    "sourceUrl": "guided-study/assets/M12-provenance.json",
+    "status": "Approved audio and qualified supplemental AV-block cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M12.05",
+    "module": "M12",
+    "title": "Complete AV block",
+    "text": "In complete, or third-degree, A V block, atrial impulses do not conduct to the ventricles. When an escape rhythm is present, atrial and ventricular activation proceed independently. An escape rhythm may be slow, unreliable, or absent. P to P and R to R intervals may each be regular, but there is no consistent P R relationship. The escape rate and Q R S width depend on the focus and conduction system. A V dissociation alone is not always proof of complete block; the full pattern matters.",
+    "transcript": "In complete, or third-degree, A V block, atrial impulses do not conduct to the ventricles. When an escape rhythm is present, atrial and ventricular activation proceed independently. An escape rhythm may be slow, unreliable, or absent. P to P and R to R intervals may each be regular, but there is no consistent P R relationship. The escape rate and Q R S width depend on the focus and conduction system. A V dissociation alone is not always proof of complete block; the full pattern matters.",
+    "audio": {
+      "src": "guided-study/assets/M12_05_adam_multilingual_v2.mp3",
+      "duration": 37.0155,
+      "sha256": "7b4c42648d0119bb8efa0759c028106c928b088ea9647092dd5f86da8e894a31"
+    },
+    "cues": [
+      {
+        "id": "M12.05.s01",
+        "at": 0,
+        "text": "In complete, or third-degree, A V block, atrial impulses do not conduct to the ventricles.",
+        "title": "In complete, or third-degree, A V block, atrial impulses do not conduct to the ventricles.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Complete block: atrial impulses do not conduct",
+          "text": "In complete, or third-degree, A V block, atrial impulses do not conduct to the ventricles.",
+          "source": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 6.04,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.05.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 15
+        }
+      },
+      {
+        "id": "M12.05.s02",
+        "at": 6.51,
+        "text": "When an escape rhythm is present, atrial and ventricular activation proceed independently.",
+        "title": "When an escape rhythm is present, atrial and ventricular activation proceed independently.",
+        "scene": {
+          "organ": "explanation",
+          "title": "When escape is present: separate atrial and ventricular rhythms",
+          "text": "When an escape rhythm is present, atrial and ventricular activation proceed independently.",
+          "source": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block.",
+          "illustration": {
+            "src": "ecg/images/j1f624.png",
+            "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+            "alt": "Existing course-supplied complete (third-degree) av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Complete (third-degree) AV block · 09 - Chapter 7 - Heart Blocks.pdf, p50. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained complete-AV-block example: independent atrial/ventricular timing with an approximate narrow-QRS escape rate near 47 bpm. Some P waves overlap QRS/T. This is one specimen with an escape present, not a guarantee: an escape can be slow, unreliable or absent. Narrow QRS is not universal; AV dissociation alone does not prove complete block."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 6.51,
+          "end": 12.4,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.05.s02",
+          "firstWordIndex": 16,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M12.05.s03",
+        "at": 12.94,
+        "text": "An escape rhythm may be slow, unreliable, or absent.",
+        "title": "An escape rhythm may be slow, unreliable, or absent.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Escape may be slow, unreliable or absent",
+          "text": "An escape rhythm may be slow, unreliable, or absent.",
+          "source": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 12.94,
+          "end": 17.1,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.05.s03",
+          "firstWordIndex": 28,
+          "lastWordIndex": 36
+        }
+      },
+      {
+        "id": "M12.05.s04",
+        "at": 17.61,
+        "text": "P to P and R to R intervals may each be regular, but there is no consistent P R relationship.",
+        "title": "P to P and R to R intervals may each be regular, but there is no consistent P R relationship.",
+        "scene": {
+          "organ": "explanation",
+          "title": "No consistent PR relationship",
+          "text": "P to P and R to R intervals may each be regular, but there is no consistent P R relationship.",
+          "source": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block.",
+          "illustration": {
+            "src": "ecg/images/j1f624.png",
+            "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+            "alt": "Existing course-supplied complete (third-degree) av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Complete (third-degree) AV block · 09 - Chapter 7 - Heart Blocks.pdf, p50. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained complete-AV-block example: independent atrial/ventricular timing with an approximate narrow-QRS escape rate near 47 bpm. Some P waves overlap QRS/T. This is one specimen with an escape present, not a guarantee: an escape can be slow, unreliable or absent. Narrow QRS is not universal; AV dissociation alone does not prove complete block."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 17.61,
+          "end": 24.41,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.05.s04",
+          "firstWordIndex": 37,
+          "lastWordIndex": 56
+        }
+      },
+      {
+        "id": "M12.05.s05",
+        "at": 25.2,
+        "text": "The escape rate and Q R S width depend on the focus and conduction system.",
+        "title": "The escape rate and Q R S width depend on the focus and conduction system.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Escape rate and QRS width depend on context",
+          "text": "The escape rate and Q R S width depend on the focus and conduction system.",
+          "source": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block.",
+          "illustration": {
+            "src": "ecg/images/j1f624.png",
+            "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+            "alt": "Existing course-supplied complete (third-degree) av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Complete (third-degree) AV block · 09 - Chapter 7 - Heart Blocks.pdf, p50. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained complete-AV-block example: independent atrial/ventricular timing with an approximate narrow-QRS escape rate near 47 bpm. Some P waves overlap QRS/T. This is one specimen with an escape present, not a guarantee: an escape can be slow, unreliable or absent. Narrow QRS is not universal; AV dissociation alone does not prove complete block."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 25.2,
+          "end": 30.23,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.05.s05",
+          "firstWordIndex": 57,
+          "lastWordIndex": 71
+        }
+      },
+      {
+        "id": "M12.05.s06",
+        "at": 30.77,
+        "text": "A V dissociation alone is not always proof of complete block; the full pattern matters.",
+        "title": "A V dissociation alone is not always proof of complete block; the full pattern matters.",
+        "scene": {
+          "organ": "explanation",
+          "title": "AV dissociation alone is not proof",
+          "text": "A V dissociation alone is not always proof of complete block; the full pattern matters.",
+          "source": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 30.77,
+          "end": 36.46,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.05.s06",
+          "firstWordIndex": 72,
+          "lastWordIndex": 86
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "809-824",
+      "audioPackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+      "standaloneAudioManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "747,750–751",
+        "terminologyNote": "The approved text corrects the source guaranteed-escape wording: an escape may be slow, unreliable or absent. The known source crop shows one narrow-QRS escape example only; neither narrow QRS nor reliable escape is universal. AV dissociation alone does not establish complete block."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M12.05 narration · source script lines 809-824 · course PDF physical pp747,750–751",
+    "sourceUrl": "guided-study/assets/M12-provenance.json",
+    "status": "Approved audio and qualified supplemental AV-block cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M12.06",
+    "module": "M12",
+    "title": "Block comparison checkpoint",
+    "text": "Compare four patterns. A long constant P R with every P conducted suggests first-degree delay. Progressive P R lengthening followed by a nonconducted P suggests Mobitz one. Sudden nonconducted P waves with constant conducted P R intervals suggest Mobitz two when the pattern supports that diagnosis. Independent atrial and ventricular rhythms raise concern for complete block. Give the evidence, acknowledge limitations, and follow the course's escalation expectations rather than selecting a treatment in this lesson.",
+    "transcript": "Compare four patterns. A long constant P R with every P conducted suggests first-degree delay. Progressive P R lengthening followed by a nonconducted P suggests Mobitz one. Sudden nonconducted P waves with constant conducted P R intervals suggest Mobitz two when the pattern supports that diagnosis. Independent atrial and ventricular rhythms raise concern for complete block. Give the evidence, acknowledge limitations, and follow the course's escalation expectations rather than selecting a treatment in this lesson.",
+    "audio": {
+      "src": "guided-study/assets/M12_06_adam_multilingual_v2.mp3",
+      "duration": 35.004063,
+      "sha256": "6c7db6bd5fb17bbecfd0155097255cbc569ad2edd10b28b5f526849b66070bc7"
+    },
+    "cues": [
+      {
+        "id": "M12.06.s01",
+        "at": 0,
+        "text": "Compare four patterns.",
+        "title": "Compare four patterns.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Compare four patterns with available evidence",
+          "text": "Compare four patterns.",
+          "source": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 1.49,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.06.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 2
+        }
+      },
+      {
+        "id": "M12.06.s02",
+        "at": 1.72,
+        "text": "A long constant P R with every P conducted suggests first-degree delay.",
+        "title": "A long constant P R with every P conducted suggests first-degree delay.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known first-degree example",
+          "text": "A long constant P R with every P conducted suggests first-degree delay.",
+          "source": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made.",
+          "illustration": {
+            "src": "ecg/images/g3d782.png",
+            "sha256": "1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73",
+            "alt": "Existing course-supplied sinus rhythm with first-degree av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Sinus rhythm with first-degree AV block · 09 - Chapter 7 - Heart Blocks.pdf, p10. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained sinus-with-first-degree-AV-block example: fixed prolonged PR, approximately six to seven small boxes (>0.20 s), every visible P conducted and narrow QRS in this specimen. This does not prove normal cardiac output, exact block location or universal narrow QRS."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 1.72,
+          "end": 7.03,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.06.s02",
+          "firstWordIndex": 3,
+          "lastWordIndex": 15
+        }
+      },
+      {
+        "id": "M12.06.s03",
+        "at": 7.26,
+        "text": "Progressive P R lengthening followed by a nonconducted P suggests Mobitz one.",
+        "title": "Progressive P R lengthening followed by a nonconducted P suggests Mobitz one.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known Mobitz-I example",
+          "text": "Progressive P R lengthening followed by a nonconducted P suggests Mobitz one.",
+          "source": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made.",
+          "illustration": {
+            "src": "ecg/images/h5e139.png",
+            "sha256": "74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997",
+            "alt": "Existing course-supplied second-degree av block, mobitz i (wenckebach) teaching strip; limited source features only.",
+            "source": "Known teaching example: Second-degree AV block, Mobitz I (Wenckebach) · 09 - Chapter 7 - Heart Blocks.pdf, p20. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained Mobitz-I example: repeated groups with progressive conducted PR, a nonconducted P and shorter PR after the pause. Ventricular average is roughly 50 bpm. Narrow QRS is a feature of this example, not a requirement for every Mobitz-I case; exact lesion location is not established."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 7.26,
+          "end": 12.64,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.06.s03",
+          "firstWordIndex": 16,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M12.06.s04",
+        "at": 12.97,
+        "text": "Sudden nonconducted P waves with constant conducted P R intervals suggest Mobitz two when the pattern supports that diagnosis.",
+        "title": "Sudden nonconducted P waves with constant conducted P R intervals suggest Mobitz two when the pattern supports that diagnosis.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Mobitz-II comparison: no specimen supplied",
+          "text": "Sudden nonconducted P waves with constant conducted P R intervals suggest Mobitz two when the pattern supports that diagnosis.",
+          "source": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 12.97,
+          "end": 20.95,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.06.s04",
+          "firstWordIndex": 28,
+          "lastWordIndex": 46
+        }
+      },
+      {
+        "id": "M12.06.s05",
+        "at": 21.56,
+        "text": "Independent atrial and ventricular rhythms raise concern for complete block.",
+        "title": "Independent atrial and ventricular rhythms raise concern for complete block.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Known complete-block example",
+          "text": "Independent atrial and ventricular rhythms raise concern for complete block.",
+          "source": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made.",
+          "illustration": {
+            "src": "ecg/images/j1f624.png",
+            "sha256": "f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d",
+            "alt": "Existing course-supplied complete (third-degree) av block teaching strip; limited source features only.",
+            "source": "Known teaching example: Complete (third-degree) AV block · 09 - Chapter 7 - Heart Blocks.pdf, p50. Course-supplied ECG; Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown.",
+            "qualification": "Approximate grid observations follow the course 25 mm/s convention. No readable lead label or gain-calibration pulse is established; original patient/acquisition provenance is unavailable. No calipers or automatic measurement are supplied. This course-supplied asset has no open redistribution license asserted. Retained complete-AV-block example: independent atrial/ventricular timing with an approximate narrow-QRS escape rate near 47 bpm. Some P waves overlap QRS/T. This is one specimen with an escape present, not a guarantee: an escape can be slow, unreliable or absent. Narrow QRS is not universal; AV dissociation alone does not prove complete block."
+          }
+        },
+        "visualStatus": "source-qualified-teaching-illustration",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.56,
+          "end": 26.22,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.06.s05",
+          "firstWordIndex": 47,
+          "lastWordIndex": 56
+        }
+      },
+      {
+        "id": "M12.06.s06",
+        "at": 26.71,
+        "text": "Give the evidence, acknowledge limitations, and follow the course's escalation expectations rather than selecting a treatment in this lesson.",
+        "title": "Give the evidence, acknowledge limitations, and follow the course's escalation expectations rather than selecting a treatment in this lesson.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Give evidence and limits; no treatment selection",
+          "text": "Give the evidence, acknowledge limitations, and follow the course's escalation expectations rather than selecting a treatment in this lesson.",
+          "source": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+          "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 26.71,
+          "end": 34.75,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M12.06.s06",
+          "firstWordIndex": 57,
+          "lastWordIndex": 75
+        }
+      }
+    ],
+    "qualification": "EXPLANATION ONLY · Known labeled source examples, when shown, are separate from the strip trainer. No calibrated practice, caliper, automatic measurement, conduction-block engine, exact lesion localization, new clinical diagnosis or treatment recommendation is provided. Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-card/image review remain pending.",
+    "source": {
+      "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "773-824",
+      "audioPackageLibraryFileId": "libfile_8bbd66acc56481919f8efe4f457aaaa5",
+      "standaloneAudioManifestLibraryFileId": "libfile_08259af8cd8c8191a51a9fc9f7e21082",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "714,724,734,746,751",
+        "terminologyNote": "Unrecorded and unscored feature-comparison checkpoint. First-degree, Mobitz-I and complete-block source examples are available; Mobitz-II/2:1 and unreliable/absent-escape examples are not fabricated. No treatment choice is made."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M12.06 narration · source script lines 773-824 · course PDF physical pp714,724,734,746,751",
+    "sourceUrl": "guided-study/assets/M12-provenance.json",
+    "status": "Approved audio and qualified supplemental AV-block cards; no clinical rhythm engine or calibrated practice binding",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  }
+];
+ const existing=Array.isArray(root.GuidedStudyLessons)?root.GuidedStudyLessons:[];
+ const present=new Set(existing.map(lesson=>lesson.id));
+ root.GuidedStudyLessons=existing.concat(lessons.filter(lesson=>!present.has(lesson.id)));
+ if(typeof module==='object'&&module.exports)module.exports=lessons;
+})(typeof window==='object'?window:globalThis);

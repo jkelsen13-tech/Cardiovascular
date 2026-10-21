@@ -16,7 +16,10 @@
   ['ecg/images/k8a473.png','14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408'],
   ['ecg/images/m2b695.png','564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed'],
   ['ecg/images/n6c048.png','34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c'],
-  ['ecg/images/p4d827.png','9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a']
+  ['ecg/images/p4d827.png','9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a'],
+  ['ecg/images/g3d782.png','1100e00a27e72e2f1c9a814c1c2e6050eb575e40082f752dba0014b981ec0a73'],
+  ['ecg/images/h5e139.png','74b6934dc06107e6483cb9bf0a6377b7f63a270bc288c0f896e7eef9b30aa997'],
+  ['ecg/images/j1f624.png','f0b05fd90fbea0d6adbf64459aed2e052f69d4a63039ff867cf8662dc0efc23d']
  ]);
  heading.tabIndex=-1;text.style.whiteSpace='pre-wrap';qualification.className=source.className='gs-note';back.type='button';back.textContent='All study modes';back.style.minHeight='44px';back.onclick=()=>root.goHome();panel.append(tag,heading,text,figure,qualification,source,back);home.append(panel);
  let current=null,signature=null;

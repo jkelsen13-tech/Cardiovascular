@@ -1,0 +1,396 @@
+{
+  "schema": "guided-study.M11-assets.v1",
+  "scope": "Five M11 approved clips with supplemental junctional/SVT cards; existing source ECGs are limited known feature examples only",
+  "sourcePackageLibraryFileId": "libfile_5a1bda3f25b48191bd7f9062c799bf76",
+  "sourceManifestLibraryFileId": "libfile_2b85dbcbfbc48191b4e6787b530f4494",
+  "sourceIdentityReconciliation": "Parent confirmed distinct Library records: archive versus standalone manifest. Alignment sourceManifest.libraryId names the standalone manifest.",
+  "sourcePackageFileName": "M11_Junctional_SVT_Audio.zip",
+  "sourcePackageSha256": "12e8aea751184c0d7e83dbbcfe575ef2a9ccae78e3882660c03d42fb760c3f86",
+  "materializationReceiptSha256": "19246c7ed1a8f44f4921187e570fa5f5028e68264fac90dd1b2b0f73c84199c2",
+  "materializationReceiptHashAndXattrsVerified": true,
+  "sourcePackageCRCVerified": true,
+  "sourceZipManifestAndMP3HashesVerified": true,
+  "narrationSource": {
+    "libraryFileId": "libfile_8c020d6fe95481918a074614fac6fea1",
+    "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+    "bytes": 127983,
+    "lines": 881,
+    "whitespaceWords": 20398,
+    "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+    "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary."
+  },
+  "approvedNarrationSha256": "d5786a9575939abe74691459abae799c746737397a419636784c220e1f29ab1c",
+  "sourceManifestSha256": "b6d490df4ac0a866c5bc0a3631532779570cf9ab46b93a3c45da2cfb26db9fcb",
+  "audioPolicy": "Approved original MP3 bytes copied unchanged. No provider, generation, retake, external API, dependency or new cost by data worker.",
+  "alignment": {
+    "manifestSha256": "3cf070c253883c615322858b44b46d1d6fbefdb93f31706c466688e11be21c39",
+    "provenanceSha256": "3d4ae0b4f6c96cf0beaa0d9414a86b0339df0830192baf50938de4937e24cc19",
+    "method": "PocketSphinx5.0.4 transcript-constrained forward word alignment followed by subword alignment; same method as M02.01 pilot",
+    "resultStatus": "PASS_STRUCTURAL_CHECKS_WITH_QA_FLAGS",
+    "machineMeasured": true,
+    "humanListeningQA": false,
+    "frameGranularitySeconds": 0.01,
+    "accuracyClaim": null,
+    "flags": [
+      {
+        "clip": "M11.04",
+        "type": "WORD_DURATION",
+        "index": 25,
+        "word": "a",
+        "start": 12.58,
+        "end": 12.61,
+        "duration": 0.03,
+        "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+      },
+      {
+        "clip": "M11.04",
+        "clipId": "M11.04",
+        "word": "tachycardias",
+        "type": "BUNDLED_STEM_PUBLISHER_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/tachycardia",
+        "medicalSourcePronunciation": "ˌtak-i-ˈkärd-ē-ə",
+        "medicalPronunciationAuthoredARPABET": "T AE K IH K AA R D IY AH Z",
+        "bundledSingularStem": "T AA K IY K AA R D IY AH",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Authored regular plural uses publisher medical singular, whose vowels differ from the bundled singular. Alignment cannot establish actual generated pronunciation; word and neighboring anchors need listening review.",
+        "humanListeningPerformed": false,
+        "index": 7,
+        "start": 3.43,
+        "end": 4.32
+      },
+      {
+        "clip": "M11.05",
+        "clipId": "M11.05",
+        "word": "tachycardias",
+        "type": "BUNDLED_STEM_PUBLISHER_PRONUNCIATION_REVIEW",
+        "source": "https://www.merriam-webster.com/dictionary/tachycardia",
+        "medicalSourcePronunciation": "ˌtak-i-ˈkärd-ē-ə",
+        "medicalPronunciationAuthoredARPABET": "T AE K IH K AA R D IY AH Z",
+        "bundledSingularStem": "T AA K IY K AA R D IY AH",
+        "dictionaryDefaultUnchanged": true,
+        "reason": "Authored regular plural uses publisher medical singular, whose vowels differ from the bundled singular. Alignment cannot establish actual generated pronunciation; word and neighboring anchors need listening review.",
+        "humanListeningPerformed": false,
+        "index": 13,
+        "start": 6.71,
+        "end": 7.64
+      }
+    ]
+  },
+  "courseReference": {
+    "libraryFileId": "libfile_b6e5d46286d08191bf94e0d462359071",
+    "fileName": "All Slideshows Combined (01-13).pdf",
+    "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "pageNumbering": "Physical PDF pages, 1-based"
+  },
+  "coursePageExtractionSha256": "8c3ae424973282a10c35d9fc38b01eb4c3dc424adc93e2f800f420c4df73890d",
+  "courseTerminologyNotes": {
+    "M11.01": {
+      "pages": "636,639,641–643",
+      "note": "Approved narration treats retrograde P timing as an observation, not a precise upper/middle/lower nodal-focus locator. Source examples illustrate visible timing only; no retrograde wavefront or new AV-node anatomy is modeled."
+    },
+    "M11.02": {
+      "pages": "644–645",
+      "note": "A PJC is premature and differs from an escape event in timing. No verified PJC or preceding-pause/late-escape sequence is supplied; this lesson remains entirely explanation only."
+    },
+    "M11.03": {
+      "pages": "647–648,651–652,654–655",
+      "note": "Rate labels are teaching conventions with variable boundaries; they do not establish circulation or fixed 1:1 atrial/ventricular timing. Existing known escape/accelerated/tachycardic examples are different recordings, not a controlled rate-change experiment."
+    },
+    "M11.04": {
+      "pages": "658,660–662,664",
+      "note": "Formal SVT is broader than bedside regular narrow-complex shorthand. The clipped existing source example supports only a broad regular narrow-complex tachycardia interpretation, not AVNRT/AVRT, exact atrial focus, calibrated rate, onset or termination."
+    },
+    "M11.05": {
+      "pages": "658,660–667",
+      "note": "Overlapping rates and unavailable atrial activity limit mechanism inference. Medication dosing, cardioversion and treatment escalation from source examples are deliberately omitted. No image supports a clinical action or individual safety/risk conclusion."
+    }
+  },
+  "existingIllustrations": [
+    {
+      "src": "ecg/images/k8a473.png",
+      "sha256": "14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408",
+      "classification": "Junctional escape rhythm",
+      "source": {
+        "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+        "page": 16,
+        "evidencePages": [
+          16
+        ],
+        "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+        "embeddedImage": "Image69.jpg",
+        "originalSize": [
+          563,
+          229
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "14277ad1e7e78ef3bfb24566f9a09075244ddabf02c693c8c4dc1948e2553408",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+      },
+      "pixelsInspectedThisTask": true
+    },
+    {
+      "src": "ecg/images/m2b695.png",
+      "sha256": "564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed",
+      "classification": "Accelerated junctional rhythm",
+      "source": {
+        "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+        "page": 20,
+        "evidencePages": [
+          19,
+          20
+        ],
+        "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+        "embeddedImage": "Image81.jpg",
+        "originalSize": [
+          563,
+          229
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "564b1ffd01550873f2084a15683295647bf037a27972e4725f594257e22d01ed",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "moderate",
+        "limitation": "Moderate-confidence source-supported rhythm classification; a hidden P wave and precise focus are not directly observed."
+      },
+      "pixelsInspectedThisTask": true
+    },
+    {
+      "src": "ecg/images/n6c048.png",
+      "sha256": "34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c",
+      "classification": "Junctional tachycardia",
+      "source": {
+        "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+        "page": 23,
+        "evidencePages": [
+          23
+        ],
+        "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+        "embeddedImage": "Image89.jpg",
+        "originalSize": [
+          563,
+          229
+        ],
+        "crop": [
+          0,
+          0,
+          563,
+          212
+        ],
+        "assetSha256": "34d704a29a4b926d8c99a796af9d0c28153adf1fe802b879b4095ce90a5cfc2c",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "Source raster resolution limits fine interval measurements. Numeric values are approximate; exact QT/QTc and unshown leads are not assessed."
+      },
+      "pixelsInspectedThisTask": true
+    },
+    {
+      "src": "ecg/images/p4d827.png",
+      "sha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+      "classification": "Regular narrow-complex tachycardia (SVT); exact mechanism unresolved",
+      "source": {
+        "file": "08 - Chapter 6 - Junctional Rhythms.pdf",
+        "page": 31,
+        "evidencePages": [
+          25,
+          28,
+          31
+        ],
+        "sha256": "8751bf8ec274938f9438214c3ef9a429e796e3cf2770e9958c1939f73e3530f9",
+        "embeddedImage": "Image114.jpg",
+        "originalSize": [
+          868,
+          192
+        ],
+        "crop": [
+          0,
+          0,
+          868,
+          192
+        ],
+        "assetSha256": "9b38afd840b3fcf2dc8a9aa1f24e5a08166c94eab16bd0235ab957766a56c52a",
+        "pixelIdentityChecked": true,
+        "attribution": "Course-supplied educational ECG. Gail Walraven, Basic Arrhythmias, 8th ed.; Pearson © 2017, 2011, 2006 where shown in the source. Supplied teaching material; no open redistribution license is asserted.",
+        "recordingStatus": "Raster ECG reproduced in the supplied teaching PDF; original patient/acquisition provenance is not supplied."
+      },
+      "verification": {
+        "method": "Independent visual inspection of extracted source waveform, approximate grid counts and atrial/ventricular relationships, then comparison with course context. Not a clinician sign-off.",
+        "reviewDate": "2026-09-09",
+        "confidence": "high for the assessed features",
+        "limitation": "R-peak tops are clipped in the source. Only timing, visible QRS bases and broad SVT interpretation are tested."
+      },
+      "pixelsInspectedThisTask": true
+    }
+  ],
+  "illustrationPolicy": "Only the four root-approved existing junctional/SVT source-image paths and hashes. No image copies/extraction/generation, open-license claim or trainer state/scoring call. Source, rights and measurement limits appear in each caption.",
+  "bindings": {
+    "controller": "GuidedExplanation",
+    "fullScenes": true,
+    "nativeExecutionVerified": false,
+    "protectedECGFilesChanged": false,
+    "existingTrainerTouched": false,
+    "practiceAnswerGateUnchanged": true,
+    "prior86LessonFilesUnchanged": true,
+    "missingExamples": [
+      "premature junctional complex",
+      "documented pause-to-late-junctional-escape sequence",
+      "precisely localized junctional focus",
+      "specific AVNRT/AVRT mechanism"
+    ],
+    "scope": "No new junctional anatomy, retrograde wavefront, numerical rhythm engine, exact focus/mechanism, measured waveform or treatment inference."
+  },
+  "priorLessonFileHashes": {
+    "lessons-m06.js": "7e33fe5ea742dd997c946433fba875cd0253ee064c5b60355ae072eb9257a80b",
+    "lessons-m04.js": "7daf751a283b420db3444adcd817a6ccc93521bb69ceb330a8223b15168654f0",
+    "lessons-m07.js": "3c0e7280e1e630eb5884e246e15e9bdd618ec3620c58992a2bbdcf00f99647e6",
+    "lessons-m08.js": "ba5fa23380c1b94ecc4d163856f72c808d11eebdac7a51216b0e5e5a00fb054f",
+    "lessons.js": "019d421afb2364675e1c9d2590b6ae585f0eb3faba448c9d90505d05c4aa7112",
+    "lessons-m01.js": "3bd5c579becff4d4efddff749b1a0b90cda02feb8655d956ab8dc2633b1e6fe5",
+    "lessons-m10.js": "bd1c2e3d47ba1e08f990724688d22cf1c535799118f4cc61cce65d7078ff03e9",
+    "lessons-m09.js": "62aacbd195d9c9961da5c7c94082b5748d9423bdfc1ecbf6adba648761bf97de",
+    "lessons-m03.js": "007a1cb1b227f38c82da14048ab8280c5ece072e0cedb31ae1395fa9668e2ef9",
+    "lessons-m05.js": "cb4f7d7c5a7cad8d60110afef55f48b6afc96eae4d71d8c48786a1b4833a4cef"
+  },
+  "counts": {
+    "lessons": 5,
+    "cues": 26,
+    "sentenceCues": 25,
+    "phraseCues": 1,
+    "explanationCards": 26,
+    "illustratedCues": 9,
+    "uniqueExistingIllustrations": 4,
+    "modelCues": 0,
+    "ecgMeasurementCues": 0
+  },
+  "clips": [
+    {
+      "id": "M11.01",
+      "file": "M11_01_adam_multilingual_v2.mp3",
+      "bytes": 514726,
+      "sha256": "8c07c1942493f8690655caba8a92513f0ef46f9f0366286b203f0e4fb01b5d00",
+      "duration": 31.111813,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M11.02",
+      "file": "M11_02_adam_multilingual_v2.mp3",
+      "bytes": 493828,
+      "sha256": "bd2a28a11d1487c422abe4184c6e5ce1e0b7b76fd10400b39eba6c52437f570b",
+      "duration": 29.805688,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 0,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M11.03",
+      "file": "M11_03_adam_multilingual_v2.mp3",
+      "bytes": 513054,
+      "sha256": "e4a34f15f33306c4572d15d390e3af146680eb03115a9b9e01c6e9bdbfd6edb8",
+      "duration": 31.007313,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 6,
+      "illustratedCues": 3,
+      "alignmentFlags": []
+    },
+    {
+      "id": "M11.04",
+      "file": "M11_04_adam_multilingual_v2.mp3",
+      "bytes": 546491,
+      "sha256": "0fb5184d28f0707b681c5cde39313966201011e2c47a56fab05ab58ab2d3d271",
+      "duration": 33.097125,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": [
+        {
+          "type": "WORD_DURATION",
+          "index": 25,
+          "word": "a",
+          "start": 12.58,
+          "end": 12.61,
+          "duration": 0.03,
+          "reason": "<=30ms or>1.2s; review flag, not an automatic pass/fail or accuracy estimate."
+        },
+        {
+          "clipId": "M11.04",
+          "word": "tachycardias",
+          "type": "BUNDLED_STEM_PUBLISHER_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/tachycardia",
+          "medicalSourcePronunciation": "ˌtak-i-ˈkärd-ē-ə",
+          "medicalPronunciationAuthoredARPABET": "T AE K IH K AA R D IY AH Z",
+          "bundledSingularStem": "T AA K IY K AA R D IY AH",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Authored regular plural uses publisher medical singular, whose vowels differ from the bundled singular. Alignment cannot establish actual generated pronunciation; word and neighboring anchors need listening review.",
+          "humanListeningPerformed": false,
+          "index": 7,
+          "start": 3.43,
+          "end": 4.32
+        }
+      ]
+    },
+    {
+      "id": "M11.05",
+      "file": "M11_05_adam_multilingual_v2.mp3",
+      "bytes": 561537,
+      "sha256": "31838c80cb2a2c57559d57729c675e1ea16a44c207bd484abe99df6535cdf421",
+      "duration": 34.0375,
+      "unchangedCopyVerified": true,
+      "sentenceCues": 5,
+      "totalCues": 5,
+      "illustratedCues": 2,
+      "alignmentFlags": [
+        {
+          "clipId": "M11.05",
+          "word": "tachycardias",
+          "type": "BUNDLED_STEM_PUBLISHER_PRONUNCIATION_REVIEW",
+          "source": "https://www.merriam-webster.com/dictionary/tachycardia",
+          "medicalSourcePronunciation": "ˌtak-i-ˈkärd-ē-ə",
+          "medicalPronunciationAuthoredARPABET": "T AE K IH K AA R D IY AH Z",
+          "bundledSingularStem": "T AA K IY K AA R D IY AH",
+          "dictionaryDefaultUnchanged": true,
+          "reason": "Authored regular plural uses publisher medical singular, whose vowels differ from the bundled singular. Alignment cannot establish actual generated pronunciation; word and neighboring anchors need listening review.",
+          "humanListeningPerformed": false,
+          "index": 13,
+          "start": 6.71,
+          "end": 7.64
+        }
+      ]
+    }
+  ]
+}
