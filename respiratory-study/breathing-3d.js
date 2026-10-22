@@ -11,7 +11,7 @@ window.RespiratoryBreathing3D={
     const E=RespiratoryExplorer,metadata=RespiratoryAirwayMetadata,parts=Object.fromEntries(metadata.parts.map(p=>[p.sourceName,p]));
     let target=[0,-.4,0],originalSelection='rightlung',initialSync=true,detail=null,detailPromise=null,journey=null,focusAnimation=0,transitionToken=0,lastExplorerIndex=0,originalLocked=false,insetRendered=false;
     const originalCamera={yaw:0,pitch:0,distance:9.5,target:[0,-.4,0]};
-    let disposed=false,suspended=false,cleanupError=null,yaw=0,pitch=0,distance=9.5,touch=false,selected='rightlung',isolate=false,mode='whole',lastState=null,opacity='solid';
+    let disposed=false,suspended=false,cleanupError=null,yaw=0,pitch=0,distance=9.5,touch=false,selected='rightlung',isolate=false,mode='whole',lastState=null,opacity='solid',drawBatchDepth=0,drawPending=false;
     const renderer=new T.WebGLRenderer({antialias:false,alpha:false,powerPreference:'low-power'});
     renderer.setPixelRatio(1);renderer.setClearColor(0x102033);
     const scene=new T.Scene(),camera=new T.PerspectiveCamera(38,1,.01,100),gross=new T.Group(),micro=new T.Group();
@@ -85,7 +85,16 @@ window.RespiratoryBreathing3D={
       line.setAttribute('x1',Math.min(w-12,12+label.offsetWidth/2));line.setAttribute('y1',12+label.offsetHeight);line.setAttribute('x2',x);line.setAttribute('y2',y);dot.setAttribute('cx',x);dot.setAttribute('cy',y);
       host.dataset.anchor=JSON.stringify(point);host.dataset.projectedAnchor=JSON.stringify([x,y]);
     }
-    function draw(){if(disposed||suspended)return;const aim=mode==='whole'&&journey?.state().index>0&&lastState?M.deform(target,lastState.excursion):target;camera.position.set(aim[0]+Math.sin(yaw)*Math.cos(pitch)*distance,aim[1]+Math.sin(pitch)*distance,aim[2]+Math.cos(yaw)*Math.cos(pitch)*distance);camera.lookAt(...aim);camera.updateMatrixWorld();renderer.render(scene,camera);let triangles=renderer.info.render.triangles,calls=renderer.info.render.calls;
+    // Only synchronous work is batched. A returned promise keeps no lease;
+    // its later continuations draw normally, including cancellation/errors.
+    function batchDraw(work){
+      let value,error,failed=false;drawBatchDepth++;try{value=work();}catch(e){failed=true;error=e;}
+      finally{drawBatchDepth--;if(!drawBatchDepth&&drawPending){
+        drawPending=false;try{draw();}catch(e){if(!failed){failed=true;error=e;}}
+      }}
+      if(failed)throw error;return value;
+    }
+    function draw(){if(disposed||suspended)return;if(drawBatchDepth){drawPending=true;return;}const aim=mode==='whole'&&journey?.state().index>0&&lastState?M.deform(target,lastState.excursion):target;camera.position.set(aim[0]+Math.sin(yaw)*Math.cos(pitch)*distance,aim[1]+Math.sin(pitch)*distance,aim[2]+Math.cos(yaw)*Math.cos(pitch)*distance);camera.lookAt(...aim);camera.updateMatrixWorld();renderer.render(scene,camera);let triangles=renderer.info.render.triangles,calls=renderer.info.render.calls;
       const local=mode!=='whole',textSize=parseFloat(getComputedStyle(label).fontSize),inset=local&&!isolate&&box.clientWidth>=560&&textSize<25;insetRendered=inset;host.querySelector('[data-explorer-quick-stage]').textContent=(journey?.state().node?.label||journey?.state().stage.label||'Whole lungs')+' · '+(mode!=='whole'?'Instructional':'HRA source');host.querySelector('[data-explorer-quick-back]').disabled=journey?.state().index===0;host.querySelector('[data-explorer-quick-next]').disabled=journey?.state().index===12;const originCaption=host.querySelector('[data-explorer-inset-label]');originCaption.hidden=!local;if(local)originCaption.textContent='Local instructional view · source origin retained: '+journey.state().origin.label+' · '+journey.state().lobe.replace('-', ' ')+' lobe'+(isolate?' · local view isolated':inset?' · HRA source location shown in inset':' · source inset collapsed for readable labels');
       if(inset){const lungMaterials=gross.children.filter(o=>o.userData.layer==='lungs').map(o=>[o.material,o.material.transparent,o.material.opacity]);for(const [material]of lungMaterials){material.transparent=true;material.opacity=.18;}const w=canvas.width,h=canvas.height,size=Math.min(142,Math.floor(w*.3));gross.visible=true;micro.visible=detailGroup.visible=false;renderer.setScissorTest(true);renderer.setScissor(w-size-6,h-size-35,size,size);renderer.setViewport(w-size-6,h-size-35,size,size);renderer.render(scene,insetCamera);for(const [material,transparent,alpha]of lungMaterials){material.transparent=transparent;material.opacity=alpha;}triangles+=renderer.info.render.triangles;calls+=renderer.info.render.calls;renderer.setScissorTest(false);renderer.setViewport(0,0,w,h);gross.visible=false;micro.visible=mode==='alveolar';detailGroup.visible=mode==='detail';}
       layout();host.dataset.cameraDistance=String(distance);host.dataset.triangles=String(triangles);host.dataset.drawCalls=String(calls);host.dataset.explorerDetailLoaded=String(!!detail);}
@@ -191,9 +200,13 @@ window.RespiratoryBreathing3D={
     }
     async function applyGuidedScene(spec,ctx){
       const current=()=>!disposed&&!suspended&&(!ctx||ctx.isCurrent());if(!current())return false;
-      if(spec.segment){if(!E.bySource[spec.segment]&&!E.nodes.some(n=>n.id===spec.segment))throw Error('Unknown guided airway source.');journeyGo(spec.segment,ctx);}
-      if(spec.stage){if(!E.stages.some(s=>s.id===spec.stage))throw Error('Unknown guided airway stage.');journeyGo(spec.stage,ctx);}
-      await applyJourney(journey.state(),ctx);if(!current())return false;
+      let preparation;batchDraw(()=>{
+        if(spec.segment){if(!E.bySource[spec.segment]&&!E.nodes.some(n=>n.id===spec.segment))throw Error('Unknown guided airway source.');journeyGo(spec.segment,ctx);}
+        if(spec.stage){if(!E.stages.some(s=>s.id===spec.stage))throw Error('Unknown guided airway stage.');journeyGo(spec.stage,ctx);}
+        preparation=applyJourney(journey.state(),ctx);
+      });
+      await preparation;if(!current())return false;
+      return batchDraw(()=>{
       ++transitionToken;cancelAnimationFrame(focusAnimation);const s=journey.state(),part=parts[s.sourceId];
       // These are the existing stage framing rules, applied without a competing
       // camera animation. The source coordinates and microscopic scale stay put.
@@ -204,7 +217,8 @@ window.RespiratoryBreathing3D={
       if(spec.camera?.target?.length===3){const c=spec.camera;if([c.yaw,c.pitch,c.distance,...c.target].every(Number.isFinite)){yaw=c.yaw;pitch=c.pitch;distance=Math.max(.3,Math.min(14,c.distance));target=c.target.slice();}}
       isolate=false;opacity=s.index>0&&s.index<=4?'ghost':'solid';for(const k in layers)layers[k]=true;host.querySelectorAll('[data-layer3d]').forEach(e=>e.checked=true);host.querySelector('[data-breath-context]').value=opacity;
       if(spec.selected)selectStructure(spec.selected);visibility();if(lastState)sync(lastState);return true;
+      });
     }
-    return {applyGuidedScene,sync,dispose,suspend,resume,isUsable:()=>!disposed&&host.__respiratorySceneOwner===owner&&canvas.isConnected&&!renderer.getContext().isContextLost(),selectStructure,refreshLayout:resize,setMode,snapshot,restoreSnapshot,goExplorer:id=>journey.go(id),inspect:()=>({selected,mode,lifecycle:{disposed,suspended,cleanupError,focusAnimationPending:!!focusAnimation},explorer:{...journey.state(),stage:journey.state().stage.id,route:journey.state().path,parentAnchor:parts[journey.state().origin.sourceName]?.center,sourceBoundary:journey.state().provenance,detailLoaded:!!detail,detailBudget:detail?.inspect(),sourceHighlight:{sourceName:sourceHighlight.userData.sourceName,visible:sourceHighlight.visible,indexCount:highlightGeometry.index?.count||0,rendered:sourceHighlight.visible&&(mode==='whole'?gross.visible:insetRendered)},insetRendered,isolate,originalCamera:{...originalCamera,selected:originalSelection}},excursion:lastState?.excursion,vertices:dynamic.map(d=>{const ids=[0];let low=0,high=0;for(let i=0;i<d.rest.length;i+=3){if(d.rest[i+1]<d.rest[low+1])low=i;if(d.rest[i+1]>d.rest[high+1])high=i;}ids.push(low,high,Math.floor(d.rest.length/6)*3);return {name:d.mesh.name,rest:ids.flatMap(i=>Array.from(d.rest.slice(i,i+3))),current:ids.flatMap(i=>Array.from(d.mesh.geometry.attributes.position.array.slice(i,i+3)))};}),anchors,camera:{yaw,pitch,distance,target:target.slice()}})};
+    return {applyGuidedScene,batchDraw,sync,dispose,suspend,resume,isUsable:()=>!disposed&&host.__respiratorySceneOwner===owner&&canvas.isConnected&&!renderer.getContext().isContextLost(),selectStructure,refreshLayout:resize,setMode,snapshot,restoreSnapshot,goExplorer:id=>journey.go(id),inspect:()=>({selected,mode,lifecycle:{disposed,suspended,cleanupError,focusAnimationPending:!!focusAnimation},explorer:{...journey.state(),stage:journey.state().stage.id,route:journey.state().path,parentAnchor:parts[journey.state().origin.sourceName]?.center,sourceBoundary:journey.state().provenance,detailLoaded:!!detail,detailBudget:detail?.inspect(),sourceHighlight:{sourceName:sourceHighlight.userData.sourceName,visible:sourceHighlight.visible,indexCount:highlightGeometry.index?.count||0,rendered:sourceHighlight.visible&&(mode==='whole'?gross.visible:insetRendered)},insetRendered,isolate,originalCamera:{...originalCamera,selected:originalSelection}},excursion:lastState?.excursion,vertices:dynamic.map(d=>{const ids=[0];let low=0,high=0;for(let i=0;i<d.rest.length;i+=3){if(d.rest[i+1]<d.rest[low+1])low=i;if(d.rest[i+1]>d.rest[high+1])high=i;}ids.push(low,high,Math.floor(d.rest.length/6)*3);return {name:d.mesh.name,rest:ids.flatMap(i=>Array.from(d.rest.slice(i,i+3))),current:ids.flatMap(i=>Array.from(d.mesh.geometry.attributes.position.array.slice(i,i+3)))};}),anchors,camera:{yaw,pitch,distance,target:target.slice()}})};
   }
 };

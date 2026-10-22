@@ -999,13 +999,17 @@
   }
   async function guidedRespApply(spec,audioTime,ctx){
     if(!guidedRespCurrent(ctx)||state.system!=='respiratory'||root.classList.contains('hidden'))return false;stop();const signature=JSON.stringify(spec);
-    if(signature!==guidedRespSignature){
+    const changed=signature!==guidedRespSignature;
+    if(changed){
       if(spec.monitoringView!=null&&spec.monitoringView!=='capnography')throw Error('Unsupported respiratory monitoring view.');
       root.querySelectorAll('[data-cue]').forEach(control=>{control.checked=true;});
       const breathing={rate:12,target:.5,resistance:2,compliance:.1,mode:'target',...(spec.breathing||{})},ventilation=spec.ventilation||'spontaneous';
       if(JSON.stringify(breathing)!==JSON.stringify(state.breathing)||ventilation!==state.ventilation){state.breathing=breathing;state.ventilation=ventilation;rebuildMechanics();root.querySelector('[data-mechanics-curves]').innerHTML=mechanicsCurves();}
       state.view=spec.stage==='membrane'||spec.stage==='alveoli'?'exchange':'whole';
       if(view?.applyGuidedScene){await view.applyGuidedScene(spec,ctx);if(!guidedRespCurrent(ctx))return false;}else{if(spec.segment)fallbackExplorer?.go(spec.segment);fallbackExplorer?.go(spec.stage||'whole');}
+    }
+    const finish=()=>{
+      if(changed){
       if(spec.selected)selectStructure(spec.selected);
       const sim=spec.simulation||{kind:'hold',seconds:0};guidedRespWindow=null;if(sim.kind==='phase'){
         if(sim.phase==='expiration')guidedRespAnchor=mechanics.period*.7;
@@ -1016,6 +1020,8 @@
       guidedRespSignature=signature;
     }
     if(!guidedRespCurrent(ctx))return false;const sim=spec.simulation||{kind:'hold',seconds:0};state.time=guidedRespWindow?guidedRespWindow.start+(guidedRespWindow.end-guidedRespWindow.start)*Math.max(0,Math.min(1,(audioTime-guidedRespWindow.audioStart)/(guidedRespWindow.audioEnd-guidedRespWindow.audioStart))):sim.kind==='cycle'?(guidedRespAnchor+Math.max(0,audioTime-(sim.anchorAudio||0))*(sim.speed??1))%mechanics.period:Math.max(0,Math.min(mechanics.period,guidedRespAnchor));updateClock();adoptGuidedRespOwner(ctx);return true;
+    };
+    return view?.batchDraw?view.batchDraw(finish):finish();
   }
   window.CardiorespiratoryStudy = {
     guided:{prepare:guidedRespPrepare,apply:guidedRespApply,capture:guidedRespCapture,restore:guidedRespRestore,pause:stop,suspendForExplanation:guidedRespSuspendForExplanation,releaseGuidedResources},
