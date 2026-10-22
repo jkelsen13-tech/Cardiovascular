@@ -1,0 +1,74 @@
+{
+  "schema": "cardiovascular-authorized-preservation-deltas-1",
+  "restoredCandidate": "452f38904a9302d40069f6fb2af04b7c770443ab",
+  "approvedAnchor": "481319d3a351fa41827b75a1afda5485920f91ff",
+  "approvedAnchorTree": "a8dec4eab7028b021660429741bf43899f065305",
+  "baselineFile": "tools/heart-v3/preservation-baseline.json",
+  "originalContractsRemainUnmodifiedAndFail": true,
+  "approvedProtectedChanges": [
+    {
+      "path": "simulation-core/module.js",
+      "fromRef": "743a0a8169e38ab5bd18f3304b98a81635047d80",
+      "toRef": "481319d3a351fa41827b75a1afda5485920f91ff",
+      "beforeSHA256": "fe578b6c1602269799d4cd32762cbf34c7a6a2db03f9315cd96c591233807b4b",
+      "afterSHA256": "8258e2af1d9499db269693451939a4bf23afd0785331a431f4f499396b2a2255",
+      "patch": "authorized-deltas/simulation-core-module.js.patch",
+      "patchSHA256": "fd86f500b5beb534bfdf9827d0b2342613ec949fd3b4c7d9c001c4a721ef9b62",
+      "provenanceCommits": [
+        "afa23504f0289a2794785451559c7c94be0c91a0",
+        "1250d8b7c09ea135a7ca5f4a1092dfbba072b1e3",
+        "3c2f4818b2950bce41ce90488d8010de1b7e5eb1"
+      ],
+      "disposition": "Public audio-neutral respiratory prepare/apply/capture/restore/pause bridge; latest-wins cancellation and exact Guided/Explore scene state.",
+      "authorization": "Owner-supplied complete private successor and explicit instruction to preserve its Guided/Explore APIs and the 481319d lead correction. Accounting records this authorization; it is not a new independent review."
+    },
+    {
+      "path": "respiratory-study/breathing-3d.js",
+      "fromRef": "743a0a8169e38ab5bd18f3304b98a81635047d80",
+      "toRef": "481319d3a351fa41827b75a1afda5485920f91ff",
+      "beforeSHA256": "8d332bab6e682a64c33fd1d20e9dbc5f130ee57330ddd387ab92ef58659091ee",
+      "afterSHA256": "550c16cf489cf88ab38b94fa8ad76ec88803303ea45e896d32117a568f7ecd76",
+      "patch": "authorized-deltas/respiratory-study-breathing-3d.js.patch",
+      "patchSHA256": "d6960c11deca3c950e5106934c90305d5149771563bfc56a80fd01472f7657ef",
+      "provenanceCommits": [
+        "afa23504f0289a2794785451559c7c94be0c91a0"
+      ],
+      "disposition": "Existing lung scene context ownership, cancellable journey/snapshot restoration, and audio-owned scene application; original anatomical payload retained.",
+      "authorization": "Owner-supplied complete private successor and explicit instruction to preserve its Guided/Explore APIs and the 481319d lead correction. Accounting records this authorization; it is not a new independent review."
+    },
+    {
+      "path": "lead-placement/module.js",
+      "fromRef": "743a0a8169e38ab5bd18f3304b98a81635047d80",
+      "toRef": "481319d3a351fa41827b75a1afda5485920f91ff",
+      "beforeSHA256": "9c4ce6e2d7be6c4148b4f536fc96678f150cd44a4e096acb0e2c7cfc249e21ee",
+      "afterSHA256": "353dc666f4ae4a0d39fc3a1ab9a44f311bccc774990a334d9e800aea007cf23f",
+      "patch": "authorized-deltas/lead-placement-module.js.patch",
+      "patchSHA256": "f2612d9aedfd4fc3b14174b21649a727136bc43a6033a6b8b4e43332f9c1ff74",
+      "provenanceCommits": [
+        "1250d8b7c09ea135a7ca5f4a1092dfbba072b1e3"
+      ],
+      "disposition": "Public guided adapter around the existing 24-step lead UI; retain learner quiz/cards, saved camera, cancellation and source readiness.",
+      "authorization": "Owner-supplied complete private successor and explicit instruction to preserve its Guided/Explore APIs and the 481319d lead correction. Accounting records this authorization; it is not a new independent review."
+    },
+    {
+      "path": "lead-placement/torso-3d.js",
+      "fromRef": "743a0a8169e38ab5bd18f3304b98a81635047d80",
+      "toRef": "481319d3a351fa41827b75a1afda5485920f91ff",
+      "beforeSHA256": "ff84ca8431989e39634173dc29c081194976a9d1a1caa4eaba28485a395b53a9",
+      "afterSHA256": "b16dc9ecb65e1526cafa69c4b249b83c4108c2f5ce78dbb78752424bd9a62fcf",
+      "patch": "authorized-deltas/lead-placement-torso-3d.js.patch",
+      "patchSHA256": "528f795e99d0d94468a350b54f6e79c26e654a510cc63e8f950bf520547cae82",
+      "provenanceCommits": [
+        "1250d8b7c09ea135a7ca5f4a1092dfbba072b1e3",
+        "481319d3a351fa41827b75a1afda5485920f91ff"
+      ],
+      "disposition": "Cancellable mount plus camera snapshot/restore, safe viewport disposal, and 481319d offscreen DOM-label update without offscreen GPU submission.",
+      "authorization": "Owner-supplied complete private successor and explicit instruction to preserve its Guided/Explore APIs and the 481319d lead correction. Accounting records this authorization; it is not a new independent review."
+    }
+  ],
+  "limitations": [
+    "This is explicit accounting of exactly supplied/authorized source changes, not replacement of the original fixed preservation contract.",
+    "Changing this ledger requires reviewing actual patch content and fresh affected behavioral evidence; do not regenerate it from arbitrary working bytes to obtain green.",
+    "Unprotected non-asset application edits are listed for separate review and are not accepted merely because this protected-byte accounting passes."
+  ]
+}

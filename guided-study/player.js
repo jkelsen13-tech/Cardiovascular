@@ -43,12 +43,14 @@
     var panel = node('div', null, { class: 'gs-panel' }, card);
     var lessonSelect = field('Lesson', 'select', { 'data-guided-lesson': '', 'aria-label': 'Guided lesson' }, panel);
     node('option', 'Choose a lesson', { value: '' }, lessonSelect);
+    var previewSelect = lessons.some(function (l) { return !l.audio; }) ? field('Manual scene previews (no audio)', 'select', { 'data-guided-preview': '', 'aria-label': 'Manual scene preview' }, panel) : null;
+    if (previewSelect) node('option', 'Choose a manual preview', { value: '' }, previewSelect);
     var catalog = options.catalog, listed = new Set();
     if (catalog && Array.isArray(catalog.segments)) catalog.segments.forEach(function (item) {
       var l = byId.get(item.id); listed.add(item.id);
-      node('option', item.id + ' · ' + (l && l.title || item.title || item.id) + (l ? '' : ' · not integrated'), l ? { value: l.id } : { value: item.id, disabled: '' }, lessonSelect);
+      node('option', item.id + ' · ' + (l && l.title || item.title || item.id) + (l ? '' : ' · not integrated'), l ? { value: l.id } : { value: item.id, disabled: '' }, l && !l.audio ? previewSelect : lessonSelect);
     });
-    lessons.forEach(function (l) { if (!listed.has(l.id)) node('option', l.id + ' · ' + (l.title || l.id), { value: l.id }, lessonSelect); });
+    lessons.forEach(function (l) { if (!listed.has(l.id)) node('option', l.id + ' · ' + (l.title || l.id), { value: l.id }, l.audio ? lessonSelect : previewSelect); });
     var sectionControls = node('div', null, { class: 'gs-row', role: 'group', 'aria-label': 'Lesson sections' }, panel);
     var previousSection = button('Previous section', 'previous-section', sectionControls), nextSection = button('Next section', 'next-section', sectionControls);
     var availableSections = lessons.filter(function (l) { return l.audio; }).slice().sort(function (a, b) { return a.id.localeCompare(b.id); });
@@ -90,7 +92,8 @@
     function render(state) {
       if (disposed) return;
       var l = byId.get(state.lessonId), cues = l && l.cues || [], cue = cues[state.cueIndex], isGuided = state.mode === 'guided', ready = initialized && !!l;
-      lessonSelect.value = state.lessonId || '';
+      lessonSelect.value = l && l.audio ? l.id : '';
+      if (previewSelect) previewSelect.value = l && !l.audio ? l.id : '';
       var sectionIndex = availableSections.findIndex(function (item) { return item.id === state.lessonId; });
       previousSection.disabled = state.busy || sectionIndex <= 0;
       nextSection.disabled = state.busy || sectionIndex < 0 || sectionIndex >= availableSections.length - 1;
@@ -218,6 +221,7 @@
     }
     session = host.GuidedStudySession.create({ lessons: lessons, audio: audio, adapters: options.adapters, storage: storage, onChange: render, resolveAudio: canResolveAudio ? resolveAudio : undefined });
     listen(lessonSelect, 'change', function () { if (lessonSelect.value) load(lessonSelect.value); });
+    if (previewSelect) listen(previewSelect, 'change', function () { if (previewSelect.value) load(previewSelect.value); });
     listen(guidedButton, 'click', function () {
       if (initialized && session.inspect().mode === 'guided') return;
       action(function () { return session.inspect().mode === 'explore' ? session.returnGuided() : session.load(session.inspect().lessonId); }, true);
