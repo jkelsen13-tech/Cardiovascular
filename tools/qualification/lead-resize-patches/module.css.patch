@@ -1,0 +1,13 @@
+diff --git a/lead-placement/module.css b/lead-placement/module.css
+index 75961e1..12dfd7b 100644
+--- a/lead-placement/module.css
++++ b/lead-placement/module.css
+@@ -113,3 +113,8 @@
+ /* Preserve readable, reachable controls in every mode, including fallback labels. */
+ #leadPlacementHome button,#leadPlacementHome select{min-width:44px;min-height:44px}
+ .lead-3d-anatomy-line{position:absolute;z-index:1;height:2px;background:#5ee7ff;transform-origin:0 50%;pointer-events:none;opacity:.9}
++
++/* Reserve the full two-line ICS2 label before responsive resize callbacks. */
++.lead-3d-anatomy-label[data-lesson-label="ics2"]{min-height:calc(2.4em + 10px)}
++/* Keep intrinsic widths stable and wrap full text within the constrained box. */
++.lead-3d-anatomy-label{width:max-content;overflow-wrap:anywhere}

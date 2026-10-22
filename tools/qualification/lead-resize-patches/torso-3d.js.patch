@@ -1,0 +1,19 @@
+diff --git a/lead-placement/torso-3d.js b/lead-placement/torso-3d.js
+index 12b6fc9..16583ac 100644
+--- a/lead-placement/torso-3d.js
++++ b/lead-placement/torso-3d.js
+@@ -146,10 +146,10 @@ window.LeadTorso3D = (() => {
+         columns[item.label.dataset.side==="left"?"left":"right"].push({item,width:Math.max(54,item.label.offsetWidth),height:Math.max(24,item.label.offsetHeight),x:(p.x*.5+.5)*rect.width,y:(-p.y*.5+.5)*rect.height});
+       }
+       for(const [side,items]of Object.entries(columns)){
+-        if(!items.length)continue;items.sort((a,b)=>a.y-b.y);const width=Math.max(...items.map(item=>item.width)),edge=side==="left"?clamp(Math.min(rect.width/2-8,...items.map(item=>item.x-12)),width+4,rect.width/2-4):clamp(Math.max(rect.width/2+8,...items.map(item=>item.x+12)),rect.width/2+4,rect.width-width-4);
+-        let bottom=40;for(const item of items){item.top=Math.max(bottom,item.y-item.height/2);bottom=item.top+item.height+4;}
+-        let limit=rect.height-8;for(let i=items.length-1;i>=0;i--){items[i].top=Math.min(items[i].top,limit-items[i].height);limit=items[i].top-4;}
+-        if(items[0].top<40){let next=40;for(const item of items){item.top=next;next+=item.height+4;}}
++        if(!items.length)continue;items.sort((a,b)=>a.y-b.y);const gap=Math.max(4,parseFloat(getComputedStyle(items[0].item.label).fontSize)*.5),width=Math.max(...items.map(item=>item.width)),edge=side==="left"?clamp(Math.min(rect.width/2-8,...items.map(item=>item.x-12)),width+4,rect.width/2-4):clamp(Math.max(rect.width/2+8,...items.map(item=>item.x+12)),rect.width/2+4,rect.width-width-4);
++        let bottom=40;for(const item of items){item.top=Math.max(bottom,item.y-item.height/2);bottom=item.top+item.height+gap;}
++        let limit=rect.height-8;for(let i=items.length-1;i>=0;i--){items[i].top=Math.min(items[i].top,limit-items[i].height);limit=items[i].top-gap;}
++        if(items[0].top<40){let next=40;for(const item of items){item.top=next;next+=item.height+gap;}}
+         for(const {item,width,height,x,y,top}of items){
+           const left=side==="left"?edge-width:edge,lineX=side==="left"?left+width:left,lineY=clamp(y,top+4,top+height-4),dx=lineX-x,dy=lineY-y;
+           item.label.style.left=left+"px";item.label.style.top=top+"px";item.label.style.visibility="";item.label.dataset.collision="placed";

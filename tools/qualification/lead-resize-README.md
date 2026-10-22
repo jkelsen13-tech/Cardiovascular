@@ -1,0 +1,7 @@
+This is a separate exact source-accounting extension for the responsive lead-label repair. It does not replace or edit any original assertion, fingerprint, historical contract or earlier accounting ledger.
+
+Run `node tools/qualification/lead-resize-repair.cjs`. The frozen implementation consists of 512 files: all 511 source paths of 7638 plus the focused browser test. Exactly two production paths differ. The complete implementation Git tree binds every file byte, Git blob, mode and inventory; four new support files are SHA256-pinned in the executable. The executable reports its own SHA for binding by the independent review and final candidate commit; it is not recursively self-pinned.
+
+The validator rejects in-memory corruptions, missing/extra source, mode changes and symlinks. It reruns the unchanged strict, historical, frozen481 and frozen lung tools and preserves their failed statuses. The old tools correctly reject postimages outside their frozen source contracts. The new explicit status accounts for this exact repair; it does not turn those original failures green or establish playback, physical-device, listening, Cursor, specialist or clinical qualification.
+
+The two patches are exact 7638-to-implementation diffs. Source geometry, electrode anchors, all 111 recordings, original lead assertions, all old ledger/pin bytes and the application outside these two paths remain bound by the frozen implementation tree. The independent review and full regression remain separate evidence.

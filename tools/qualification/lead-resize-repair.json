@@ -1,0 +1,34 @@
+{
+  "schema": "cardiovascular.exact-lead-resize-repair.v1",
+  "baselineCommit": "7638d041e3dda7689c232f7fee4d1727b5cdeb3e",
+  "implementationCommit": "2d55e719e9e37baaeb2b025ad3ea7558409e7b77",
+  "implementationTree": "589f65b22704ebccc53ee36c1334c815a2ab55f5",
+  "implementationFiles": 512,
+  "scope": "Fix deterministic responsive landmark-label overlap and full-text fit. Preserve wording, font sizes, nodes, camera, source anatomy, electrodes, recordings and progress.",
+  "authorizationContext": "Existing owner request to reproduce and resolve the full legacy lead gate without weakening tests. No publication authority is granted by this file.",
+  "approvedProductionChanges": [
+    {
+      "path": "lead-placement/module.css",
+      "beforeSHA256": "63a2a13934a43e01e30fe4dd3db522fffb0b380f8522747b9b89b77f54fc30ed",
+      "afterSHA256": "21eb85e7cf059ef9d0839bb9edd1cade4120e68d22fe0b045539f7732dcbcc71",
+      "patch": "tools/qualification/lead-resize-patches/module.css.patch",
+      "patchSHA256": "2a9e03485c4af0a97873b00169e8165b0d5b4222e127bdb05e758602741f4a9e"
+    },
+    {
+      "path": "lead-placement/torso-3d.js",
+      "beforeSHA256": "b16dc9ecb65e1526cafa69c4b249b83c4108c2f5ce78dbb78752424bd9a62fcf",
+      "afterSHA256": "91db97fbd4fdaf46d1cea7bc78a3e7ebad1a08c60819176f91e446ceb94e9361",
+      "patch": "tools/qualification/lead-resize-patches/torso-3d.js.patch",
+      "patchSHA256": "3056e64c3ee41638206816d4f9924fb3b408453b480ae7710969f810a9c67b71"
+    }
+  ],
+  "newBehavioralTest": "tools/lead-placement/resize-reservation-browser.cjs",
+  "oldGatesRemainFailures": [
+    "original strict preservation",
+    "historical preservation",
+    "frozen481 accounting",
+    "frozen8abcdc lung accounting"
+  ],
+  "clinicalQualification": false,
+  "actualCursorReview": "PENDING"
+}
