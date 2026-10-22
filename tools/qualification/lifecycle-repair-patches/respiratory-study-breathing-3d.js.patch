@@ -1,0 +1,92 @@
+diff --git a/respiratory-study/breathing-3d.js b/respiratory-study/breathing-3d.js
+index b30870e..cbd09fd 100644
+--- a/respiratory-study/breathing-3d.js
++++ b/respiratory-study/breathing-3d.js
+@@ -11,7 +11,7 @@ window.RespiratoryBreathing3D={
+     const E=RespiratoryExplorer,metadata=RespiratoryAirwayMetadata,parts=Object.fromEntries(metadata.parts.map(p=>[p.sourceName,p]));
+     let target=[0,-.4,0],originalSelection='rightlung',initialSync=true,detail=null,detailPromise=null,journey=null,focusAnimation=0,transitionToken=0,lastExplorerIndex=0,originalLocked=false,insetRendered=false;
+     const originalCamera={yaw:0,pitch:0,distance:9.5,target:[0,-.4,0]};
+-    let disposed=false,yaw=0,pitch=0,distance=9.5,touch=false,selected='rightlung',isolate=false,mode='whole',lastState=null,opacity='solid';
++    let disposed=false,suspended=false,cleanupError=null,yaw=0,pitch=0,distance=9.5,touch=false,selected='rightlung',isolate=false,mode='whole',lastState=null,opacity='solid';
+     const renderer=new T.WebGLRenderer({antialias:false,alpha:false,powerPreference:'low-power'});
+     renderer.setPixelRatio(1);renderer.setClearColor(0x102033);
+     const scene=new T.Scene(),camera=new T.PerspectiveCamera(38,1,.01,100),gross=new T.Group(),micro=new T.Group();
+@@ -85,14 +85,14 @@ window.RespiratoryBreathing3D={
+       line.setAttribute('x1',Math.min(w-12,12+label.offsetWidth/2));line.setAttribute('y1',12+label.offsetHeight);line.setAttribute('x2',x);line.setAttribute('y2',y);dot.setAttribute('cx',x);dot.setAttribute('cy',y);
+       host.dataset.anchor=JSON.stringify(point);host.dataset.projectedAnchor=JSON.stringify([x,y]);
+     }
+-    function draw(){if(disposed)return;const aim=mode==='whole'&&journey?.state().index>0&&lastState?M.deform(target,lastState.excursion):target;camera.position.set(aim[0]+Math.sin(yaw)*Math.cos(pitch)*distance,aim[1]+Math.sin(pitch)*distance,aim[2]+Math.cos(yaw)*Math.cos(pitch)*distance);camera.lookAt(...aim);camera.updateMatrixWorld();renderer.render(scene,camera);let triangles=renderer.info.render.triangles,calls=renderer.info.render.calls;
++    function draw(){if(disposed||suspended)return;const aim=mode==='whole'&&journey?.state().index>0&&lastState?M.deform(target,lastState.excursion):target;camera.position.set(aim[0]+Math.sin(yaw)*Math.cos(pitch)*distance,aim[1]+Math.sin(pitch)*distance,aim[2]+Math.cos(yaw)*Math.cos(pitch)*distance);camera.lookAt(...aim);camera.updateMatrixWorld();renderer.render(scene,camera);let triangles=renderer.info.render.triangles,calls=renderer.info.render.calls;
+       const local=mode!=='whole',textSize=parseFloat(getComputedStyle(label).fontSize),inset=local&&!isolate&&box.clientWidth>=560&&textSize<25;insetRendered=inset;host.querySelector('[data-explorer-quick-stage]').textContent=(journey?.state().node?.label||journey?.state().stage.label||'Whole lungs')+' · '+(mode!=='whole'?'Instructional':'HRA source');host.querySelector('[data-explorer-quick-back]').disabled=journey?.state().index===0;host.querySelector('[data-explorer-quick-next]').disabled=journey?.state().index===12;const originCaption=host.querySelector('[data-explorer-inset-label]');originCaption.hidden=!local;if(local)originCaption.textContent='Local instructional view · source origin retained: '+journey.state().origin.label+' · '+journey.state().lobe.replace('-', ' ')+' lobe'+(isolate?' · local view isolated':inset?' · HRA source location shown in inset':' · source inset collapsed for readable labels');
+       if(inset){const lungMaterials=gross.children.filter(o=>o.userData.layer==='lungs').map(o=>[o.material,o.material.transparent,o.material.opacity]);for(const [material]of lungMaterials){material.transparent=true;material.opacity=.18;}const w=canvas.width,h=canvas.height,size=Math.min(142,Math.floor(w*.3));gross.visible=true;micro.visible=detailGroup.visible=false;renderer.setScissorTest(true);renderer.setScissor(w-size-6,h-size-35,size,size);renderer.setViewport(w-size-6,h-size-35,size,size);renderer.render(scene,insetCamera);for(const [material,transparent,alpha]of lungMaterials){material.transparent=transparent;material.opacity=alpha;}triangles+=renderer.info.render.triangles;calls+=renderer.info.render.calls;renderer.setScissorTest(false);renderer.setViewport(0,0,w,h);gross.visible=false;micro.visible=mode==='alveolar';detailGroup.visible=mode==='detail';}
+       layout();host.dataset.cameraDistance=String(distance);host.dataset.triangles=String(triangles);host.dataset.drawCalls=String(calls);host.dataset.explorerDetailLoaded=String(!!detail);}
+-    function focusTo(point,range,animate=true,ctx=null){cancelAnimationFrame(focusAnimation);const from=target.slice(),startDistance=distance,start=performance.now();if(!animate){target=point.slice();distance=range;draw();return;}function tick(now){if(disposed||(ctx&&!ctx.isCurrent()))return;const f=Math.min(1,(now-start)/350),u=f*f*(3-2*f);target=from.map((x,i)=>x+(point[i]-x)*u);distance=startDistance+(range-startDistance)*u;draw();if(f<1)focusAnimation=requestAnimationFrame(tick);}focusAnimation=requestAnimationFrame(tick);}
+-    function resize(){if(disposed)return;const w=box.clientWidth,h=Math.min(550,Math.max(360,w*.72));renderer.setSize(w,h,false);box.style.height=h+'px';camera.aspect=w/h;camera.updateProjectionMatrix();draw();}
++    function focusTo(point,range,animate=true,ctx=null){cancelAnimationFrame(focusAnimation);focusAnimation=0;if(disposed||suspended||(ctx&&!ctx.isCurrent()))return;const from=target.slice(),startDistance=distance,start=performance.now();if(!animate){target=point.slice();distance=range;draw();return;}function tick(now){focusAnimation=0;if(disposed||suspended||(ctx&&!ctx.isCurrent()))return;const f=Math.min(1,(now-start)/350),u=f*f*(3-2*f);target=from.map((x,i)=>x+(point[i]-x)*u);distance=startDistance+(range-startDistance)*u;draw();if(f<1)focusAnimation=requestAnimationFrame(tick);}focusAnimation=requestAnimationFrame(tick);}
++    function resize(){if(disposed||suspended)return;const w=box.clientWidth;if(!w)return;const h=Math.min(550,Math.max(360,w*.72));renderer.setSize(w,h,false);box.style.height=h+'px';camera.aspect=w/h;camera.updateProjectionMatrix();draw();}
+     function sync(s){
+-      if(disposed)return;if(initialSync){originalSelection=selected;initialSync=false;}lastState=s;const a=s.excursion/.5;
++      if(disposed||suspended)return;if(initialSync){originalSelection=selected;initialSync=false;}lastState=s;const a=s.excursion/.5;
+       for(const d of dynamic){const pos=d.mesh.geometry.attributes.position.array;
+         for(let i=0;i<pos.length;i+=3){let v;
+           if(d.diaphragm)v=M.diaphragmDeform([d.rest[i],d.rest[i+1],d.rest[i+2]],s.excursion);
+@@ -120,7 +120,7 @@ window.RespiratoryBreathing3D={
+     let journeyContext=null;
+     function journeyGo(id,ctx){const prior=journeyContext;journeyContext=ctx;try{return journey.go(id);}finally{journeyContext=prior;}}
+     async function applyJourney(s,ctx){
+-      if(ctx&&!ctx.isCurrent())return;
++      if(disposed||suspended||(ctx&&!ctx.isCurrent()))return;
+       if(s.index>0&&lastExplorerIndex===0&&!originalLocked){Object.assign(originalCamera,{yaw,pitch,distance,target:target.slice()});originalSelection=selected;originalLocked=true;}lastExplorerIndex=s.index;const token=++transitionToken;host.dataset.explorerStage=s.stage.id;host.dataset.explorerSource=s.sourceId||'';host.dataset.explorerSide=s.side;host.dataset.explorerLobe=s.lobe;
+       if(s.index<=4){mode='whole';gross.visible=true;micro.visible=detailGroup.visible=false;selected=s.sourceId||originalSelection;if(s.index>0){opacity='ghost';host.querySelector('[data-breath-context]').value='ghost';}highlight(selected);host.querySelector('[data-breath-select]').value=selected;host.querySelector('[data-breath-mode]').value='whole';host.querySelector('[data-breath-layers]').hidden=false;
+         if(s.index===0){yaw=originalCamera.yaw;pitch=originalCamera.pitch;selected=originalSelection;highlight(null);focusTo(originalCamera.target,originalCamera.distance,false,ctx);}
+@@ -130,9 +130,9 @@ window.RespiratoryBreathing3D={
+       selected=s.origin.sourceName;highlight(selected);host.querySelector('[data-breath-layers]').hidden=true;
+       if(s.index>=11){mode='alveolar';ensureMicro();gross.visible=detailGroup.visible=false;micro.visible=true;host.querySelector('[data-breath-mode]').value='alveolar';focusTo(s.index===12?[0,-.78,.1]:[0,0,0],s.index===12?2.4:4.6,true,ctx);}
+       else{
+-        if(!detailPromise)detailPromise=load('explorer-detail.js',()=>window.RespiratoryExplorerDetail).then(()=>{if(!disposed)detail=RespiratoryExplorerDetail.create(T,detailGroup);});
++        if(!detailPromise)detailPromise=load('explorer-detail.js',()=>window.RespiratoryExplorerDetail);
+         try{await detailPromise;}catch(e){if(!disposed){host.querySelector('[data-breath-status]').textContent='Magnified 3D detail unavailable. The complete connected text route remains available below.';}return;}
+-        if(disposed||token!==transitionToken||(ctx&&!ctx.isCurrent()))return;mode='detail';detail.build(s.stage.id);detail.setIsolated(isolate);gross.visible=micro.visible=false;detailGroup.visible=true;focusTo([0,0,0],4.6,true,ctx);
++        if(disposed||suspended||token!==transitionToken||(ctx&&!ctx.isCurrent()))return;if(!detail)detail=RespiratoryExplorerDetail.create(T,detailGroup);mode='detail';detail.build(s.stage.id);detail.setIsolated(isolate);gross.visible=micro.visible=false;detailGroup.visible=true;focusTo([0,0,0],4.6,true,ctx);
+       }
+       if(lastState)sync(lastState);else draw();
+     }
+@@ -165,15 +165,17 @@ window.RespiratoryBreathing3D={
+     canvas.onpointercancel=canvas.onlostpointercapture=e=>{pointers.delete(e.pointerId);pinch=null;down=null;};
+     canvas.onkeydown=e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','+','-','Home'].includes(e.key))return;e.preventDefault();if(e.key==='Home')return reset();if(e.key==='ArrowLeft')yaw-=.12;if(e.key==='ArrowRight')yaw+=.12;if(e.key==='ArrowUp')pitch=Math.min(1,pitch+.1);if(e.key==='ArrowDown')pitch=Math.max(-1,pitch-.1);if(e.key==='+')distance=Math.max(.3,distance*.9);if(e.key==='-')distance=Math.min(14,distance*1.1);draw();};
+     const observer=new ResizeObserver(resize);observer.observe(box);
+-    function dispose(){if(disposed)return;disposed=true;++transitionToken;cancelAnimationFrame(focusAnimation);detail?.dispose();journey?.dispose();observer.disconnect();document.removeEventListener('fullscreenchange',fullChange);scene.traverse(o=>{o.geometry?.dispose();o.material?.dispose();});renderer.dispose();renderer.forceContextLoss();if(host.__respiratorySceneOwner===owner){delete host.__respiratorySceneOwner;host.replaceChildren();}}
+-    canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();if(!disposed){dispose();onFailure('Moving graphics became unavailable; use complete 2D/text fallback.');}});
++    function suspend(){if(disposed)return false;if(suspended)return true;suspended=true;++transitionToken;cancelAnimationFrame(focusAnimation);focusAnimation=0;observer.disconnect();return true;}
++    function resume(){if(disposed)return false;if(!suspended)return true;suspended=false;observer.observe(box);resize();return true;}
++    function dispose(){if(disposed)return;disposed=true;suspended=false;++transitionToken;cancelAnimationFrame(focusAnimation);focusAnimation=0;let error;const clean=fn=>{try{fn();}catch(e){error=error||e;}};clean(()=>detail?.dispose());clean(()=>journey?.dispose());clean(()=>observer.disconnect());clean(()=>document.removeEventListener('fullscreenchange',fullChange));scene.traverse(o=>{clean(()=>o.geometry?.dispose());clean(()=>o.material?.dispose());});clean(()=>renderer.dispose());clean(()=>renderer.forceContextLoss());if(host.__respiratorySceneOwner===owner){delete host.__respiratorySceneOwner;clean(()=>host.replaceChildren());}if(error){cleanupError=error.message||String(error);throw error;}}
++    canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();if(disposed)return;try{dispose();}catch(e){cleanupError=e.message||String(e);}const message='Moving graphics became unavailable; use complete 2D/text fallback.'+(cleanupError?' Resource cleanup: '+cleanupError:'');try{onFailure(message);}catch(e){cleanupError=cleanupError||e.message||String(e);host.dataset.cleanupError=cleanupError;}});
+     host.dataset.ready='true';host.dataset.dynamic='true';visibility();resize();
+     function snapshot(){return {version:1,camera:{yaw,pitch,distance,target:target.slice()},selected,mode,isolate,opacity,layers:{...layers},journey:{id:journey.state().id,segment:journey.state().segment},originalCamera:{...originalCamera,target:originalCamera.target.slice()},originalSelection,originalLocked,lastExplorerIndex};}
+     async function restoreSnapshot(saved,ctx){
+-      if(!saved||disposed||(ctx&&!ctx.isCurrent()))return;
++      if(!saved||disposed||suspended||(ctx&&!ctx.isCurrent()))return;
+       if(saved.journey?.segment)journeyGo(saved.journey.segment,ctx);
+       if(saved.journey?.id)journeyGo(saved.journey.id,ctx);
+-      await applyJourney(journey.state(),ctx);if(disposed||(ctx&&!ctx.isCurrent()))return;
++      await applyJourney(journey.state(),ctx);if(disposed||suspended||(ctx&&!ctx.isCurrent()))return;
+       ++transitionToken;cancelAnimationFrame(focusAnimation);
+       const c=saved.camera;if(c&&[c.yaw,c.pitch,c.distance,...(c.target||[])].every(Number.isFinite)&&c.target?.length===3){yaw=c.yaw;pitch=c.pitch;distance=Math.max(.3,Math.min(14,c.distance));target=c.target.slice();}
+       if(saved.originalCamera?.target?.length===3)Object.assign(originalCamera,saved.originalCamera,{target:saved.originalCamera.target.slice()});
+@@ -188,7 +190,7 @@ window.RespiratoryBreathing3D={
+       visibility();if(lastState)sync(lastState);
+     }
+     async function applyGuidedScene(spec,ctx){
+-      const current=()=>!disposed&&(!ctx||ctx.isCurrent());if(!current())return false;
++      const current=()=>!disposed&&!suspended&&(!ctx||ctx.isCurrent());if(!current())return false;
+       if(spec.segment){if(!E.bySource[spec.segment]&&!E.nodes.some(n=>n.id===spec.segment))throw Error('Unknown guided airway source.');journeyGo(spec.segment,ctx);}
+       if(spec.stage){if(!E.stages.some(s=>s.id===spec.stage))throw Error('Unknown guided airway stage.');journeyGo(spec.stage,ctx);}
+       await applyJourney(journey.state(),ctx);if(!current())return false;
+@@ -203,6 +205,6 @@ window.RespiratoryBreathing3D={
+       isolate=false;opacity=s.index>0&&s.index<=4?'ghost':'solid';for(const k in layers)layers[k]=true;host.querySelectorAll('[data-layer3d]').forEach(e=>e.checked=true);host.querySelector('[data-breath-context]').value=opacity;
+       if(spec.selected)selectStructure(spec.selected);visibility();if(lastState)sync(lastState);return true;
+     }
+-    return {applyGuidedScene,sync,dispose,selectStructure,refreshLayout:resize,setMode,snapshot,restoreSnapshot,goExplorer:id=>journey.go(id),inspect:()=>({selected,mode,explorer:{...journey.state(),stage:journey.state().stage.id,route:journey.state().path,parentAnchor:parts[journey.state().origin.sourceName]?.center,sourceBoundary:journey.state().provenance,detailLoaded:!!detail,detailBudget:detail?.inspect(),sourceHighlight:{sourceName:sourceHighlight.userData.sourceName,visible:sourceHighlight.visible,indexCount:highlightGeometry.index?.count||0,rendered:sourceHighlight.visible&&(mode==='whole'?gross.visible:insetRendered)},insetRendered,isolate,originalCamera:{...originalCamera,selected:originalSelection}},excursion:lastState?.excursion,vertices:dynamic.map(d=>{const ids=[0];let low=0,high=0;for(let i=0;i<d.rest.length;i+=3){if(d.rest[i+1]<d.rest[low+1])low=i;if(d.rest[i+1]>d.rest[high+1])high=i;}ids.push(low,high,Math.floor(d.rest.length/6)*3);return {name:d.mesh.name,rest:ids.flatMap(i=>Array.from(d.rest.slice(i,i+3))),current:ids.flatMap(i=>Array.from(d.mesh.geometry.attributes.position.array.slice(i,i+3)))};}),anchors,camera:{yaw,pitch,distance,target:target.slice()}})};
++    return {applyGuidedScene,sync,dispose,suspend,resume,isUsable:()=>!disposed&&host.__respiratorySceneOwner===owner&&canvas.isConnected&&!renderer.getContext().isContextLost(),selectStructure,refreshLayout:resize,setMode,snapshot,restoreSnapshot,goExplorer:id=>journey.go(id),inspect:()=>({selected,mode,lifecycle:{disposed,suspended,cleanupError,focusAnimationPending:!!focusAnimation},explorer:{...journey.state(),stage:journey.state().stage.id,route:journey.state().path,parentAnchor:parts[journey.state().origin.sourceName]?.center,sourceBoundary:journey.state().provenance,detailLoaded:!!detail,detailBudget:detail?.inspect(),sourceHighlight:{sourceName:sourceHighlight.userData.sourceName,visible:sourceHighlight.visible,indexCount:highlightGeometry.index?.count||0,rendered:sourceHighlight.visible&&(mode==='whole'?gross.visible:insetRendered)},insetRendered,isolate,originalCamera:{...originalCamera,selected:originalSelection}},excursion:lastState?.excursion,vertices:dynamic.map(d=>{const ids=[0];let low=0,high=0;for(let i=0;i<d.rest.length;i+=3){if(d.rest[i+1]<d.rest[low+1])low=i;if(d.rest[i+1]>d.rest[high+1])high=i;}ids.push(low,high,Math.floor(d.rest.length/6)*3);return {name:d.mesh.name,rest:ids.flatMap(i=>Array.from(d.rest.slice(i,i+3))),current:ids.flatMap(i=>Array.from(d.mesh.geometry.attributes.position.array.slice(i,i+3)))};}),anchors,camera:{yaw,pitch,distance,target:target.slice()}})};
+   }
+ };

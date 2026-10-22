@@ -1,0 +1,178 @@
+{
+  "schema": "cardiovascular-lifecycle-repair-layer-1",
+  "state": "FROZEN_SOURCE_ACCOUNTING_ONLY",
+  "targetPending": false,
+  "predecessorCommit": "5f90d99ac24c2254af886c92d9916025b8d85cec",
+  "predecessorTree": "267c2befd04e27fb7c799ac30ff1c74a3849b719",
+  "historicalAnchor": "481319d3a351fa41827b75a1afda5485920f91ff",
+  "implementationCommit": "8abcdc5398fa38844b8430123f62bd0615faec2f",
+  "implementationTree": "3af489af652087c0a470756243d218700866803b",
+  "implementationFiles": 503,
+  "implementationFileManifest": "lifecycle-repair-files.json",
+  "implementationFileManifestSHA256": "d4cbac96a0f0adc3fc8f4ea4983842eea7b96f7cf5959c29abeca0a8c2c97c05",
+  "historicalLedgerSHA256": "ed21266ea2b9240d0b362cec60ebe14172f2e07a89130df07dabce5676c4a8c2",
+  "historicalAccountingToolSHA256": "0e012f3c5e7f0d08f345ceca80c5c3ae0a5edcadbf143294f6d8edac9eba1ec2",
+  "runtimeRepairs": [
+    {
+      "path": "guided-study/session.js",
+      "protectedByOriginalContract": false,
+      "beforeRef": "5f90d99ac24c2254af886c92d9916025b8d85cec",
+      "beforeBytes": 16599,
+      "beforeSHA256": "ce11c3011c40b40c44330a0aa26adcd5a444c64e05b7d92c85afce4690872b4b",
+      "afterRef": "8abcdc5398fa38844b8430123f62bd0615faec2f",
+      "afterBytes": 17052,
+      "afterSHA256": "7bec0cf30427f49e24a06bafe2b9a5d920e60e3b6726a22e7796bb6426d17904",
+      "patch": "lifecycle-repair-patches/guided-study-session.js.patch",
+      "patchSHA256": "1fc576a5aff83ee071f1dba13c0c30cf6dd4459c22c79e4d384c6080019b1090",
+      "reviewedRegions": [
+        "dispose optional Guided-owned resource release",
+        "drain/schedule request context lessonId metadata"
+      ],
+      "beforeMode": "100644",
+      "beforeBlob": "9cd08c43680daee85d1497ccedd9efd267019032",
+      "afterMode": "100644",
+      "afterBlob": "ec71cdbc41060985c6e08608ec6b695e6cd59f6b",
+      "provenanceCommits": [
+        "4723d7eb813243fa34ff2c28a96bd458796eba77",
+        "8abcdc5398fa38844b8430123f62bd0615faec2f"
+      ]
+    },
+    {
+      "path": "guided-study/explanation.js",
+      "protectedByOriginalContract": false,
+      "beforeRef": "5f90d99ac24c2254af886c92d9916025b8d85cec",
+      "beforeBytes": 4425,
+      "beforeSHA256": "21d4190a3f29284c559757f7a284dc7cec5cebbd4f702078318119bca3924890",
+      "afterRef": "8abcdc5398fa38844b8430123f62bd0615faec2f",
+      "afterBytes": 4655,
+      "afterSHA256": "3f1939e9a150fdb7a7f92d11ac39041c70a0e76e4123c7f83a8446e2af1ef5ad",
+      "patch": "lifecycle-repair-patches/guided-study-explanation.js.patch",
+      "patchSHA256": "ac7807af75012aec155d46bcdeaf9b53e46863fc08b5d35534c5602d84f5e771",
+      "reviewedRegions": [
+        "prepare guarded explanation navigation",
+        "hide current-context-only card release"
+      ],
+      "beforeMode": "100644",
+      "beforeBlob": "19698d5246b4e3e3cc8961bde07f8332f8e043e5",
+      "afterMode": "100644",
+      "afterBlob": "092b7b47db3600436efd90f301abb02567037bf1",
+      "provenanceCommits": [
+        "4723d7eb813243fa34ff2c28a96bd458796eba77"
+      ]
+    },
+    {
+      "path": "simulation-core/module.js",
+      "protectedByOriginalContract": true,
+      "beforeRef": "5f90d99ac24c2254af886c92d9916025b8d85cec",
+      "beforeBytes": 65534,
+      "beforeSHA256": "8258e2af1d9499db269693451939a4bf23afd0785331a431f4f499396b2a2255",
+      "afterRef": "8abcdc5398fa38844b8430123f62bd0615faec2f",
+      "afterBytes": 68751,
+      "afterSHA256": "a771392a3ddbd15631c5f20c2cccdaa6ccf24b20d0e765e7a054d9ade83771de",
+      "patch": "lifecycle-repair-patches/simulation-core-module.js.patch",
+      "patchSHA256": "0dca48f54f4479c566d19afc8078d95b5836f3bcee0f32ffbf9618f1c719bd6b",
+      "reviewedRegions": [
+        "parked scene/navigation lease declarations",
+        "release",
+        "close",
+        "window.goHome",
+        "mountBreathing committed-owner failure handling",
+        "guidedRespSuspendForExplanation",
+        "releaseGuidedResources",
+        "guidedRespPrepare",
+        "public guided API exports",
+        "respiratory view/lesson owner declaration",
+        "adoptGuidedRespOwner",
+        "guidedRespApply ownership adoption",
+        "guidedRespRestore ownership adoption",
+        "release clears exact view/lesson owner"
+      ],
+      "beforeMode": "100644",
+      "beforeBlob": "1e9c34308be887e03e29cf8e6af23509fb0929f3",
+      "afterMode": "100644",
+      "afterBlob": "007db0d65fe7eaf3e29a43f3dbe17d27fd92e9a7",
+      "provenanceCommits": [
+        "4723d7eb813243fa34ff2c28a96bd458796eba77",
+        "8abcdc5398fa38844b8430123f62bd0615faec2f"
+      ]
+    },
+    {
+      "path": "respiratory-study/breathing-3d.js",
+      "protectedByOriginalContract": true,
+      "beforeRef": "5f90d99ac24c2254af886c92d9916025b8d85cec",
+      "beforeBytes": 37519,
+      "beforeSHA256": "550c16cf489cf88ab38b94fa8ad76ec88803303ea45e896d32117a568f7ecd76",
+      "afterRef": "8abcdc5398fa38844b8430123f62bd0615faec2f",
+      "afterBytes": 38798,
+      "afterSHA256": "d348c05c55019f24f0f6d3250d3a1263b915c910e121d5ce4599b49ad04d8c29",
+      "patch": "lifecycle-repair-patches/respiratory-study-breathing-3d.js.patch",
+      "patchSHA256": "12d98697d57d4d422f09d7b645dc7d2da3bd50131addb7ac4757d18e535b0627",
+      "reviewedRegions": [
+        "mount lifecycle fields",
+        "draw/sync suspended guard",
+        "focusTo RAF cancellation",
+        "resize suspended/zero-width guard",
+        "applyJourney current-owner/deferred detail creation",
+        "suspend",
+        "resume",
+        "dispose cleanup continuation",
+        "webglcontextlost callback",
+        "restoreSnapshot/applyGuidedScene lifecycle guards",
+        "public lifecycle API and inspect"
+      ],
+      "beforeMode": "100644",
+      "beforeBlob": "b30870e9c2ea0716f900c6644b5b13738841eb95",
+      "afterMode": "100644",
+      "afterBlob": "cbd09fd35c57fad8a7e565ab512a9a595c431cbb",
+      "provenanceCommits": [
+        "4723d7eb813243fa34ff2c28a96bd458796eba77"
+      ]
+    }
+  ],
+  "newBehavioralTests": [
+    "tools/guided-study/guided-resource-release.cjs",
+    "tools/guided-study/lung-lifecycle-browser.cjs"
+  ],
+  "extensionFiles": [
+    "tools/qualification/lifecycle-repair-README.md",
+    "tools/qualification/lifecycle-repair-files.json",
+    "tools/qualification/lifecycle-repair-ledger.json",
+    "tools/qualification/lifecycle-repair-patches/guided-study-explanation.js.patch",
+    "tools/qualification/lifecycle-repair-patches/guided-study-session.js.patch",
+    "tools/qualification/lifecycle-repair-patches/respiratory-study-breathing-3d.js.patch",
+    "tools/qualification/lifecycle-repair-patches/simulation-core-module.js.patch",
+    "tools/qualification/lung-lifecycle-repair.cjs"
+  ],
+  "authorization": "Owner explicitly authorized diagnosing and repairing existing playback while preserving all anatomy, recordings, Guided/Explore state and original features. This records implementation scope, not completed engineering qualification.",
+  "originalGates": {
+    "strict": "FAIL",
+    "strictAssertions": 39,
+    "historical": "HISTORICAL_DELTA_FAIL",
+    "historicalAssertions": 79,
+    "historicalFailures": 5,
+    "old481Accounting": "UNACCOUNTED_CHANGE_FAIL",
+    "expectedCurrent481BridgeMismatches": [
+      "simulation-core/module.js",
+      "respiratory-study/breathing-3d.js"
+    ]
+  },
+  "qualification": {
+    "staticSourceAccountingOnly": true,
+    "finalLifecycleRuntime": {
+      "coordinatorReported": "PASS8 native lifecycle groups, session18 and resource5",
+      "sourceReceipt": "qualification-playback/lung-lifecycle-final/result.json",
+      "implementationCommit": "8abcdc5398fa38844b8430123f62bd0615faec2f",
+      "qualification": "This source gate independently reruns resource CPU; native browser/runtime receipts remain separate."
+    },
+    "finalMatchedPlayback": "PENDING final natural2 runs on8abcdc; earlier4723 timing is prior experimental evidence only",
+    "finalIndependentInternalReview": "PENDING review of exact final extension bytes and implementation scope",
+    "actualCursorReview": "PENDING; internal GPT review is not Cursor review",
+    "physicalDeviceListeningSpecialist": "UNEXECUTED",
+    "ownershipEdgeReview": "Final source records lessonId request contexts and adoption/clearing of respiratory view+lesson ownership; active old lung must not transfer to a new explanation-first lesson"
+  },
+  "limitations": [
+    "This ledger freezes only the coordinator-named8abcdc immutable source and exact four patches. Source accounting is distinct from final playback/review qualification.",
+    "Original strict/historical gates and the old481 accounting remain unchanged and must retain their raw FAIL statuses.",
+    "A separate repair-accounting pass does not establish actual presentation continuity, 30FPS, GPU/device performance, listening, clinical or specialist qualification."
+  ]
+}

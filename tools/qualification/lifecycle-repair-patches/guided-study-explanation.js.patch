@@ -1,0 +1,14 @@
+diff --git a/guided-study/explanation.js b/guided-study/explanation.js
+index 19698d5..092b7b4 100644
+--- a/guided-study/explanation.js
++++ b/guided-study/explanation.js
+@@ -25,7 +25,7 @@
+  let current=null,signature=null;
+  const clone=v=>JSON.parse(JSON.stringify(v)),owns=ctx=>!ctx||ctx.isCurrent();
+  const oldHome=root.goHome;root.goHome=function(){panel.classList.add('hidden');return oldHome.apply(this,arguments);};
+- async function prepare(scene,ctx){if(!owns(ctx))return false;root.goHome();menu.classList.add('hidden');panel.classList.remove('hidden');return true;}
++ async function prepare(scene,ctx){if(!owns(ctx))return false;const suspended=root.CardiorespiratoryStudy?.guided.suspendForExplanation?.(ctx);if(!owns(ctx))return false;if(!suspended)root.goHome();if(!owns(ctx))return false;menu.classList.add('hidden');panel.classList.remove('hidden');return true;}
+  async function apply(scene,time,ctx){if(!owns(ctx))return false;if(!scene||scene.organ!=='explanation'||!scene.title||!scene.text)throw Error('Supplemental content is unavailable.');const key=JSON.stringify(scene);if(key!==signature){const strip=scene.illustration;if(strip&&(!retainedStrips.has(strip.src)||retainedStrips.get(strip.src)!==strip.sha256||typeof strip.alt!=='string'||!strip.alt||!strip.source||!strip.qualification))throw Error('This lesson strip is not a verified retained course asset.');heading.textContent=scene.title;text.textContent=scene.text;qualification.textContent=scene.qualification||'Readable course explanation. No anatomical highlight, measured process or clinical prediction is represented.';source.textContent=typeof scene.source==='string'?scene.source:'Owner-approved adapted narration; source details in the lesson transcript.';figure.hidden=!strip;if(strip){image.src=strip.src;image.alt=strip.alt;caption.textContent=strip.source+' · '+strip.qualification;}else{image.removeAttribute('src');image.alt='';caption.textContent='';}current=clone(scene);signature=key;}return true;}
+- root.GuidedExplanation={prepare,apply,capture:()=>({version:1,scene:current&&clone(current)}),async restore(saved,ctx){if(saved?.version!==1||!saved.scene)throw Error('Saved supplemental scene is unavailable.');if(!await prepare(saved.scene,ctx)||!owns(ctx))return false;return apply(saved.scene,0,ctx);},pause(){},inspect:()=>({visible:!panel.classList.contains('hidden'),scene:current&&clone(current)})};
++ root.GuidedExplanation={prepare,apply,hide(ctx){if(!owns(ctx))return false;panel.classList.add('hidden');return true;},capture:()=>({version:1,scene:current&&clone(current)}),async restore(saved,ctx){if(saved?.version!==1||!saved.scene)throw Error('Saved supplemental scene is unavailable.');if(!await prepare(saved.scene,ctx)||!owns(ctx))return false;return apply(saved.scene,0,ctx);},pause(){},inspect:()=>({visible:!panel.classList.contains('hidden'),scene:current&&clone(current)})};
+ })(window);
