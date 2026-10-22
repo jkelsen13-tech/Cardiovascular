@@ -73,7 +73,7 @@
   }
   function rebuildMechanics() { mechanics = RespiratoryMechanics.build({...state.breathing,ventilation:state.ventilation}); state.time = Math.min(state.time,mechanics.period); }
   const runtimeMemory = new Map(), sceneSnapshots = new Map();
-  let fallbackExplorer = null,sceneReady=Promise.resolve(),guidedRespSignature=null,guidedRespAnchor=0,guidedRespWindow=null;
+  let fallbackExplorer = null,sceneReady=Promise.resolve(),guidedRespSignature=null,guidedRespAnchor=0,guidedRespWindow=null,guidedParked=null,guidedSuspendNavigation=null;
   let view = null,
     generation = 0,
     raf = 0,
@@ -99,13 +99,14 @@
   }
   function release() {
     generation++;
+    guidedParked=null;
     guidedRespSignature=null;
-    if(view?.snapshot)sceneSnapshots.set(state.system,view.snapshot());
-    const explorer = view?.inspect?.().explorer;
-    if (explorer && fallbackExplorer) { fallbackExplorer.go(explorer.segment); fallbackExplorer.go(explorer.route?.[explorer.index] || explorer.stage); }
-    view?.dispose();
-    view = null;
+    const owned=view;let error;const clean=fn=>{try{fn();}catch(e){error=error||e;}};
+    clean(()=>{if(owned?.snapshot)sceneSnapshots.set(state.system,owned.snapshot());});
+    clean(()=>{const explorer=owned?.inspect?.().explorer;if(explorer&&fallbackExplorer){fallbackExplorer.go(explorer.segment);fallbackExplorer.go(explorer.route?.[explorer.index]||explorer.stage);}});
+    view=null;clean(()=>owned?.dispose());
     for(const selector of ['[data-explorer-fallback]','[data-explorer-breath-state]']){const el=root.querySelector(selector);if(el)el.hidden=false;}
+    if(error)throw error;
   }
   function stop() {
     state.playing = false;
@@ -121,14 +122,21 @@
     if(!root.classList.contains('hidden'))runtimeMemory.set(state.system,{state:{...state,breathing:{...state.breathing}},atlasWanted});
     if(state.system==='respiratory'&&!view&&fallbackExplorer){const route=fallbackExplorer.state();sceneSnapshots.set('respiratory',{...sceneSnapshots.get('respiratory'),journey:{id:route.id,segment:route.segment}});}
     stop();
-    release();
-    root.classList.add("hidden");
+    try{release();}finally{root.classList.add("hidden");}
   }
   const oldHome = window.goHome;
   window.goHome = function () {
-    window.HeartV3Study?.close();
-    close();
-    oldHome();
+    let error;const clean=fn=>{try{fn();}catch(e){error=error||e;}};
+    clean(()=>window.HeartV3Study?.close());
+    const lease=guidedSuspendNavigation;
+    clean(()=>{if(lease&&!lease.used&&lease.view===view&&lease.generation===generation&&guidedRespCurrent(lease.ctx)&&view?.isUsable?.()){
+      lease.used=true;
+      if(!root.classList.contains('hidden'))runtimeMemory.set(state.system,{state:{...state,breathing:{...state.breathing}},atlasWanted});
+      stop();
+      if(view.suspend()){guidedParked={view,generation,lessonId:lease.lessonId};root.classList.add('hidden');}
+      else close();
+    }else close();});
+    clean(()=>oldHome());if(error)throw error;
   };
   function persist() {
     if (corrupt) return;
@@ -347,8 +355,8 @@
   async function mountBreathing(ctx) {
     ctx=typeof ctx?.isCurrent==='function'?ctx:null;const current=()=>!ctx||ctx.isCurrent();if(!current())return;
     const host=root.querySelector('[data-organ-host]');if(!host)return;
-    release();delete host.dataset.dynamic;delete host.dataset.ready;const gen=generation;host.hidden=false;
-    const failure=message=>{if(gen!==generation||!current())return;release();host.hidden=true;root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-load-status]').textContent=message;};
+    release();delete host.dataset.dynamic;delete host.dataset.ready;const gen=generation;let committed=null;host.hidden=false;
+    const failure=message=>{if(committed?view!==committed:gen!==generation||!current())return;let cleanup;try{release();}catch(e){cleanup=e.message||String(e);}host.hidden=true;root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-load-status]').textContent=message+(cleanup?' Resource cleanup: '+cleanup:'');};
     try {
       if (!document.querySelector('[data-explorer-css]')) {
         const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('respiratory-study/explorer.css',base);css.dataset.explorerCss='';document.head.append(css);
@@ -368,7 +376,7 @@
         playing:()=>state.playing,
         current:()=>gen===generation&&current()
       });
-      if(gen!==generation||!current()){instance.dispose();return;}view=instance;view.selectStructure?.(state.selected);view.sync(mechanics.at(state.time));const savedScene=sceneSnapshots.get('respiratory');if(savedScene)await view.restoreSnapshot?.(savedScene,ctx);else{const textRoute=fallbackExplorer?.state();if(textRoute?.index>0){view.goExplorer?.(textRoute.segment);view.goExplorer?.(textRoute.id);}}if(gen!==generation||!current()){instance.dispose();return;}root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-explorer-fallback]').hidden=true;root.querySelector('[data-explorer-breath-state]').hidden=true;
+      if(gen!==generation||!current()){instance.dispose();return;}view=instance;committed=instance;view.selectStructure?.(state.selected);view.sync(mechanics.at(state.time));const savedScene=sceneSnapshots.get('respiratory');if(savedScene)await view.restoreSnapshot?.(savedScene,ctx);else{const textRoute=fallbackExplorer?.state();if(textRoute?.index>0){view.goExplorer?.(textRoute.segment);view.goExplorer?.(textRoute.id);}}if(gen!==generation||!current()){instance.dispose();return;}root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-explorer-fallback]').hidden=true;root.querySelector('[data-explorer-breath-state]').hidden=true;
       root.querySelector('[data-load-status]').textContent='Moving lung derivative loaded. The static atlas remains an optional reference; 2D/text remains available.';
     }catch(e){failure('Moving anatomy unavailable. Complete 2D/text fallback is active. '+e.message);}
   }
@@ -957,7 +965,29 @@
   );
   // Public, audio-neutral adapter around the existing respiratory scene.
   const guidedRespCurrent=ctx=>!ctx||ctx.isCurrent();
-  async function guidedRespPrepare(scene,ctx){if(!guidedRespCurrent(ctx))return false;const cancel=()=>{generation++;};if(ctx)ctx.signal.addEventListener('abort',cancel,{once:true});try{if(state.system!=='respiratory'||root.classList.contains('hidden'))open('respiratory',{guidedContext:ctx});else if(!['explore','guided'].includes(state.tab)){state.tab='explore';render(ctx);}stop();await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();return true;}finally{if(ctx)ctx.signal.removeEventListener('abort',cancel);}}
+  function guidedRespSuspendForExplanation(ctx){
+    if(!ctx||typeof ctx.isCurrent!=='function'||!ctx.isCurrent())return false;
+    const owner=window.GuidedStudy?.session.inspect();
+    if(owner?.mode!=='guided'||!owner.lessonId||state.system!=='respiratory'||atlasWanted||!['explore','guided'].includes(state.tab)||!view?.isUsable?.()||typeof view.suspend!=='function'||(root.classList.contains('hidden')&&!(guidedParked?.view===view&&guidedParked.generation===generation&&guidedParked.lessonId===owner.lessonId)))return false;
+    const lease={ctx,view,generation,lessonId:owner.lessonId,used:false},prior=guidedSuspendNavigation;guidedSuspendNavigation=lease;
+    try{window.goHome();if(!ctx.isCurrent()){if(guidedParked?.view===lease.view&&generation===lease.generation)close();return false;}return lease.used&&guidedParked?.view===lease.view;}
+    catch(e){if(view===lease.view&&generation===lease.generation)try{close();}catch(_){}throw e;}
+    finally{guidedSuspendNavigation=prior;}
+  }
+  function releaseGuidedResources(){if(guidedParked?.view===view)close();}
+  async function guidedRespPrepare(scene,ctx){
+    if(!guidedRespCurrent(ctx))return false;const cancel=()=>{generation++;};if(ctx)ctx.signal.addEventListener('abort',cancel,{once:true});
+    try{
+      const owner=window.GuidedStudy?.session.inspect(),parked=guidedParked;
+      if(parked&&parked.view===view&&parked.generation===generation&&parked.lessonId===owner?.lessonId&&owner.mode==='guided'&&view?.isUsable?.()){
+        if(!window.GuidedExplanation?.hide(ctx))return false;menu.classList.add('hidden');root.classList.remove('hidden');guidedParked=null;stop();
+        try{if(!view.resume())throw Error('The suspended lung scene is unavailable.');}catch(e){close();throw e;}
+        root.querySelector('h2')?.focus();
+      }else if(state.system!=='respiratory'||root.classList.contains('hidden')||(view&&typeof view.isUsable==='function'&&!view.isUsable()))open('respiratory',{guidedContext:ctx});
+      else if(!['explore','guided'].includes(state.tab)){state.tab='explore';render(ctx);}
+      stop();await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();return true;
+    }finally{if(ctx)ctx.signal.removeEventListener('abort',cancel);}
+  }
   function guidedRespCapture(){return JSON.parse(JSON.stringify({version:1,organ:'respiratory',state:{...state,playing:false},scene:view?.snapshot?.()||sceneSnapshots.get('respiratory')||null,fallbackJourney:fallbackExplorer?.state()?.id,signature:guidedRespSignature,anchor:guidedRespAnchor,window:guidedRespWindow}));}
   async function guidedRespRestore(saved,ctx){
     if(saved?.version!==1||saved.organ!=='respiratory'||saved.state?.system!=='respiratory')throw Error('Invalid respiratory lesson scene.');
@@ -986,7 +1016,7 @@
     if(!guidedRespCurrent(ctx))return false;const sim=spec.simulation||{kind:'hold',seconds:0};state.time=guidedRespWindow?guidedRespWindow.start+(guidedRespWindow.end-guidedRespWindow.start)*Math.max(0,Math.min(1,(audioTime-guidedRespWindow.audioStart)/(guidedRespWindow.audioEnd-guidedRespWindow.audioStart))):sim.kind==='cycle'?(guidedRespAnchor+Math.max(0,audioTime-(sim.anchorAudio||0))*(sim.speed??1))%mechanics.period:Math.max(0,Math.min(mechanics.period,guidedRespAnchor));updateClock();return true;
   }
   window.CardiorespiratoryStudy = {
-    guided:{prepare:guidedRespPrepare,apply:guidedRespApply,capture:guidedRespCapture,restore:guidedRespRestore,pause:stop},
+    guided:{prepare:guidedRespPrepare,apply:guidedRespApply,capture:guidedRespCapture,restore:guidedRespRestore,pause:stop,suspendForExplanation:guidedRespSuspendForExplanation,releaseGuidedResources},
     open,
     showLesson(system,index=0) { open(system);state.tab="guided";state.lesson=Math.max(0,Math.min(D.lessons[system].length-1,index));render(); },
     close,

@@ -66,7 +66,9 @@
   }
   function enterExplore(){if(disposed)return Promise.resolve(false);if(state.mode==='explore')return Promise.resolve(true);var l=lesson(),t=currentTime();pauseAudio();pauseAll();var scene=capture();invalidate();state.mode='explore';state.busy=false;state.error=null;if(l){setPosition(position(l,t));guided.scene=scene;}save(true);emit();return Promise.resolve(true);}
   function returnGuided(){pauseAudio();pauseAll();if(disposed||!guided)return Promise.resolve(false);if(state.mode==='explore')captureExplore();var saved=copy(guided),l=lessons.get(saved.lessonId),p=position(l,saved.audioTime,saved.cueIndex);state.mode='guided';setPosition(p);preparedKey=null;return schedule(function(ctx){return apply(p,ctx,saved.scene,true,true);},true,key(p));}
-  function dispose(){if(disposed)return;pauseAudio();pauseAll();invalidate();disposed=true;state.busy=false;emit();}
+  // Optional synchronous cleanup releases only resources still owned by Guided;
+  // it must leave presentation resources transferred to active Explore alone.
+  function dispose(){if(disposed)return;pauseAudio();pauseAll();invalidate();disposed=true;state.busy=false;Object.keys(adapters).forEach(function(id){try{var adapter=adapters[id];if(adapter&&typeof adapter.releaseGuidedResources==='function')adapter.releaseGuidedResources();}catch(e){state.error='Guided resource cleanup failed: '+(e&&e.message||e);}});emit();}
   return{load:load,play:play,pause:pause,tick:tick,seek:seek,seekCue:seekCue,back:function(){return seekCue(Math.max(0,state.cueIndex-1));},next:function(){var l=lesson();return seekCue(l?Math.min(l.cues.length-1,state.cueIndex+1):0);},replay:function(){return seekCue(Math.max(0,state.cueIndex));},enterExplore:enterExplore,returnGuided:returnGuided,inspect:inspect,export:function(){return JSON.stringify(record());},dispose:dispose};
  }
  return{create:create,STORAGE_KEY:STORAGE_KEY};
