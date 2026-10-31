@@ -10,4 +10,4 @@ Project-authored software, explanations and representative geometry are included
 
 Respiratory HRA originals/derivatives and their changes are documented in [respiratory attribution](respiratory-study/assets/ATTRIBUTION.md) and the included CC BY4.0 notice. The registered BodyParts3D thorax remains under its [existing attribution](lead-placement/assets/ATTRIBUTION.md). Different source models are not assumed registered to one another.
 
-Existing study, ECG and ASPT image assets already on the public main site are retained without expansion or relicensing. No new private course PDF, raster course media, private report, evidence archive or recovery material is part of this release.
+Existing study, ECG and ASPT image assets retain their existing notices. Original slideshow text and rendered page images are included with the owner's explicit permission for publication on this website. This does not assign a blanket reuse license or change source authorship. The original PDF, private reports, account/generation receipts and restoration archives are not included.

@@ -31,7 +31,7 @@ const M=require('../../respiratory-study/mechanics.js');
   for(const width of [390,768,1024]){await page.setViewportSize({width,height:900});await page.click('[data-text-size]');await page.locator('.sim-breath-viewport').scrollIntoViewIfNeeded();const bounds=await page.locator('[data-breath-label]').boundingBox(),frame=await page.locator('.sim-breath-viewport').boundingBox();A.ok(bounds.x>=frame.x&&bounds.x+bounds.width<=frame.x+frame.width+1);await page.click('[data-text-size]');}
   await page.click('[data-load-anatomy]');await page.waitForSelector('[data-organ-host][data-ready=true]:not([data-dynamic=true])',{timeout:30000});A.equal(await page.locator('canvas').count(),1);
   await page.click('[data-load-breathing]');await page.waitForSelector('[data-dynamic=true]');A.equal(await page.locator('canvas').count(),1);
-  await page.click('[data-home]');A.equal(await page.locator('canvas').count(),0);await page.click('#heartSimulatorLaunch');A.equal(await page.locator('[data-mechanics]').count(),0);
+  await page.click('[data-home]');A.equal(await page.locator('canvas').count(),0);await page.click('#heartSimulatorLaunch');await page.locator('#heartV3Inspector').evaluate(e=>e.open=true);await page.click('#heartV3Study [data-h3-action="legacy"]');A.equal(await page.locator('[data-mechanics]').count(),0);
   A.deepEqual(errors,[]);A.deepEqual(external,[]);console.log('PASS moving scene: actual nonuniform vertices, diaphragm/ribs, moving anchors, rate/depth/drive effects, capnography boundaries, pressure mode, pause, 3D exchange, touch pinch/unlock, fullscreen exit, labels, one renderer and heart transition.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exitCode=1;});

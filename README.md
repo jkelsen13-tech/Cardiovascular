@@ -109,4 +109,25 @@ The complete main-site experience includes Heart v3's four-chamber section, sign
 
 All modules load local files. Existing URLs and progress namespaces remain; no progress reset or migration occurs. New anatomy assets retain their exact HRA/CC BY4.0 provenance. See [source notices](COPYRIGHT.md), [heart model](docs/HEART-V3-NUMERICAL-MODEL.md), [heart anatomy](docs/HEART-V3-ANATOMY.md), [interface/progress](docs/HEART-V3-INTERFACE.md), and [respiratory explorer](docs/RESPIRATORY-EXPLORER.md). `BUILD-IDENTITY.json` identifies the public runtime snapshot and individual file hashes.
 
-These are instructional models, not validated clinical predictions. Physical iPad/Safari, VoiceOver and educator qualification remain unexecuted. The30fps goal was not met in software-rendered cloud measurements. No private course PDF, new course-image asset, private audit/report/log or restoration archive is published with this update.
+These are instructional models, not validated clinical predictions. Physical iPad/Safari, VoiceOver and educator qualification remain unexecuted. The30fps goal was not met in software-rendered cloud measurements. Original course text and rendered page images are now included with explicit owner publication permission. The raw PDF, private operational reports and restoration archives remain excluded.
+
+
+## Source-ordered narrated course
+
+Choose **Start Full Course** or **Continue Course**. The course retains84 stable
+lessons across11 verified cover-delimited PDF sections,111 original recordings and
+nine additional recorded summaries. The original01–13 file numbering remains
+unresolved; section ordinals do not invent missing source units. Recorded
+summaries do not narrate every slide. Missing videos and unverified sample
+tracings remain disclosed.
+
+G01–G09 use measured audio-clock page anchors. Manual source-page browsing holds
+your chosen page until **Follow narration**; questions require explicit Reveal.
+Pause, Explore/return and reload preserve the saved course place without autoplay.
+Audio playback, transcript review, practice, skips and learner-marked completion
+remain separate. Existing simulation and exam progress namespaces are retained.
+
+The ordinary Heart Simulator entry and the lungs return both open the approved
+Heart v3 experience. Its explicit Heart v2 lessons link preserves the supplementary
+legacy lessons and calculations. Full-recording listening/pronunciation review,
+physical iPad Safari and hardware sound/display timing remain pending.

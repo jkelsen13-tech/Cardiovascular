@@ -5,14 +5,14 @@ const path=require('node:path');
 const {pathToFileURL}=require('node:url');
 const {chromium}=require('playwright');
 (async()=>{
- const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,headless:true,args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  const page=await browser.newPage({viewport:{width:1280,height:1000}});
  const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
  const requests=[];page.on('request',r=>requests.push(r.url()));
  const url=process.env.CARDIO_BASE_URL||pathToFileURL(path.resolve('index.html')).href;
  fs.mkdirSync('review-heart',{recursive:true});
  try{
-  await page.goto(url);
+  await page.goto(process.env.CARDIO_BASE_URL||url);
   assert(!requests.some(s=>/model-data|three-gltf|heart-3d/.test(s)),'3D must be lazy');
   await page.locator('#ecgStudyLaunch').click();
   await page.waitForSelector('#ecg3DHost[data-ready="true"]',{timeout:30000});
@@ -53,6 +53,8 @@ const {chromium}=require('playwright');
   assert((await page.locator('.ecg-3d-label[data-structure="aorta"]').textContent()).includes('BODY'));
   assert.equal(await page.locator('.ecg-3d-label:not([hidden])').count(),labelCap,'expanded blood-flow mode caps readable callouts at eight; all names remain in the accessible list');
   await page.locator('[data-option="valves"]').check();
+  await page.locator('.ecg-3d-viewport').scrollIntoViewIfNeeded();
+  await page.waitForFunction(()=>document.querySelectorAll('.ecg-3d-label[data-kind="valve"]:not([hidden])').length===4);
   assert.equal(await page.locator('.ecg-3d-label[data-kind="valve"]:not([hidden])').count(),4);
   await page.locator('[data-option="label-mode"]').selectOption('conduction');
   assert.equal(await page.locator('#ecg3DHost').getAttribute('data-label-mode'),'conduction');

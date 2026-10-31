@@ -1,0 +1,1993 @@
+/* M14 approved unchanged audio; normal source anatomy/mechanisms plus explicit qualified theory cards. */
+(function(root){
+ 'use strict';
+ const lessons=[
+  {
+    "id": "M14.01",
+    "module": "M14",
+    "title": "Valve disease and myocardial disease",
+    "text": "Connect the anatomy to vocabulary. Stenosis is narrowing that obstructs forward flow. Regurgitation is backward leakage. Atresia is an absent or closed normal opening. Cardiomyopathy affects heart muscle. Heart failure is a clinical syndrome caused by impaired cardiac filling or pumping, which can produce congestion, inadequate circulation, or both. It can occur with reduced or preserved ejection fraction; a normal ejection fraction alone does not diagnose a filling problem or exclude heart failure.",
+    "transcript": "Connect the anatomy to vocabulary. Stenosis is narrowing that obstructs forward flow. Regurgitation is backward leakage. Atresia is an absent or closed normal opening. Cardiomyopathy affects heart muscle. Heart failure is a clinical syndrome caused by impaired cardiac filling or pumping, which can produce congestion, inadequate circulation, or both. It can occur with reduced or preserved ejection fraction; a normal ejection fraction alone does not diagnose a filling problem or exclude heart failure.",
+    "audio": {
+      "src": "guided-study/assets/M14_01_adam_multilingual_v2.mp3",
+      "duration": 37.433438,
+      "sha256": "4bbaecc2b15019a2de1742bf39bcd7f762f321df59d11e49041f8bb355f1e592"
+    },
+    "cues": [
+      {
+        "id": "M14.01.s01",
+        "at": 0,
+        "text": "Connect the anatomy to vocabulary.",
+        "title": "Connect the anatomy to vocabulary.",
+        "scene": {
+          "organ": "heart",
+          "selected": "ra",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Original HRA four-chamber heart, original source coordinates, retained residual blood, four chambers and four valves. Blood occupancy and deformation are instructional, not lumen CFD or a patient-specific circulation. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented. "
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 2.33,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 4
+        }
+      },
+      {
+        "id": "M14.01.s02",
+        "at": 2.68,
+        "text": "Stenosis is narrowing that obstructs forward flow.",
+        "title": "Stenosis is narrowing that obstructs forward flow.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Stenosis: narrowing and obstruction",
+          "text": "Stenosis is narrowing that obstructs forward flow.",
+          "source": "Owner-approved adapted M14.01 narration · source script lines 268-295 · course PDF physical pp131–145",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 2.68,
+          "end": 6.13,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s02",
+          "firstWordIndex": 5,
+          "lastWordIndex": 11
+        }
+      },
+      {
+        "id": "M14.01.s03",
+        "at": 6.57,
+        "text": "Regurgitation is backward leakage.",
+        "title": "Regurgitation is backward leakage.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Regurgitation: backward leakage",
+          "text": "Regurgitation is backward leakage.",
+          "source": "Owner-approved adapted M14.01 narration · source script lines 268-295 · course PDF physical pp131–145",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 6.57,
+          "end": 9.15,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s03",
+          "firstWordIndex": 12,
+          "lastWordIndex": 15
+        }
+      },
+      {
+        "id": "M14.01.s04",
+        "at": 9.59,
+        "text": "Atresia is an absent or closed normal opening.",
+        "title": "Atresia is an absent or closed normal opening.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Atresia: absent or closed opening",
+          "text": "Atresia is an absent or closed normal opening.",
+          "source": "Owner-approved adapted M14.01 narration · source script lines 268-295 · course PDF physical pp131–145",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 9.59,
+          "end": 13.35,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s04",
+          "firstWordIndex": 16,
+          "lastWordIndex": 23
+        }
+      },
+      {
+        "id": "M14.01.s05",
+        "at": 13.89,
+        "text": "Cardiomyopathy affects heart muscle.",
+        "title": "Cardiomyopathy affects heart muscle.",
+        "scene": {
+          "organ": "heart",
+          "selected": "wall",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  No inflammation, infection, cardiomyopathy, scar or injury geometry is displayed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.89,
+          "end": 16.34,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s05",
+          "firstWordIndex": 24,
+          "lastWordIndex": 27
+        }
+      },
+      {
+        "id": "M14.01.s06",
+        "at": 16.91,
+        "text": "Heart failure is a clinical syndrome caused by impaired cardiac filling or pumping, which can produce congestion, inadequate circulation, or both.",
+        "title": "Heart failure is a clinical syndrome caused by impaired cardiac filling or pumping, which can produce congestion, inadequate circulation, or both.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Heart failure is a clinical syndrome",
+          "text": "Heart failure is a clinical syndrome caused by impaired cardiac filling or pumping, which can produce congestion, inadequate circulation, or both.",
+          "source": "Owner-approved adapted M14.01 narration · source script lines 268-295 · course PDF physical pp131–145",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 16.91,
+          "end": 26.54,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s06",
+          "firstWordIndex": 28,
+          "lastWordIndex": 48
+        }
+      },
+      {
+        "id": "M14.01.s07",
+        "at": 27.08,
+        "text": "It can occur with reduced or preserved ejection fraction; a normal ejection fraction alone does not diagnose a filling problem or exclude heart failure.",
+        "title": "It can occur with reduced or preserved ejection fraction; a normal ejection fraction alone does not diagnose a filling problem or exclude heart failure.",
+        "scene": {
+          "organ": "explanation",
+          "title": "EF alone does not diagnose or exclude heart failure",
+          "text": "It can occur with reduced or preserved ejection fraction; a normal ejection fraction alone does not diagnose a filling problem or exclude heart failure.",
+          "source": "Owner-approved adapted M14.01 narration · source script lines 268-295 · course PDF physical pp131–145",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 27.08,
+          "end": 37.16,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.01.s07",
+          "firstWordIndex": 49,
+          "lastWordIndex": 72
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "268-295",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "131–145",
+        "terminologyNote": "Normal source anatomy supplies location context only. No stenosis, regurgitation, atresia, cardiomyopathy or heart-failure state is simulated. Reduced/preserved EF does not by itself diagnose filling dysfunction or exclude heart failure; the source normal-EF shorthand is qualified."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.01 narration · source script lines 268-295 · course PDF physical pp131–145",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.02",
+    "module": "M14",
+    "title": "Inflammation and tissue injury",
+    "text": "Pericarditis affects the sac around the heart. Myocarditis affects the heart muscle. Endocarditis often involves infection of the endocardial surface, especially valves, although noninfectious forms exist. Ischemia means inadequate blood supply relative to tissue needs; infarction means tissue death caused by prolonged inadequate supply. Adult heart muscle has limited regenerative capacity, and significant injury often leaves scar. Avoid the absolute claim that no cardiac cell can ever renew.",
+    "transcript": "Pericarditis affects the sac around the heart. Myocarditis affects the heart muscle. Endocarditis often involves infection of the endocardial surface, especially valves, although noninfectious forms exist. Ischemia means inadequate blood supply relative to tissue needs; infarction means tissue death caused by prolonged inadequate supply. Adult heart muscle has limited regenerative capacity, and significant injury often leaves scar. Avoid the absolute claim that no cardiac cell can ever renew.",
+    "audio": {
+      "src": "guided-study/assets/M14_02_adam_multilingual_v2.mp3",
+      "duration": 34.272625,
+      "sha256": "a94893c049e5e3dbf02353361f0c9dcbddca5193ce78840ce9fe8dfe08d2c302"
+    },
+    "cues": [
+      {
+        "id": "M14.02.s01",
+        "at": 0,
+        "text": "Pericarditis affects the sac around the heart.",
+        "title": "Pericarditis affects the sac around the heart.",
+        "scene": {
+          "organ": "heart",
+          "selected": "wall",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "pericardium",
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  No inflammation, infection, cardiomyopathy, scar or injury geometry is displayed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 2.69,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.02.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 6
+        }
+      },
+      {
+        "id": "M14.02.s02",
+        "at": 3.08,
+        "text": "Myocarditis affects the heart muscle.",
+        "title": "Myocarditis affects the heart muscle.",
+        "scene": {
+          "organ": "heart",
+          "selected": "wall",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "tissue",
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Teaching time follows narration, not real-time clinical monitoring. The original four-chamber HRA source and continuous residual blood are retained in pumping views; geometry/deformation and blood occupancy are instructional, not measured patient mechanics or lumen CFD. Side-specific pressure/valve states share one numerical model; left/right event times can differ. This is an existing representative wall/tissue mechanism, not measured microscopy or literal magnification. The original anatomical source/return view is retained; the main four-chamber display is temporarily replaced by this explicitly labeled scale change. Layer boundaries and pericardial layers are authored teaching sections; epicardium/endocardium/pericardium are not separate segmented HRA surfaces. The layer colors and thicknesses are not calibrated. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  No inflammation, infection, cardiomyopathy, scar or injury geometry is displayed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 3.08,
+          "end": 5.09,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.02.s02",
+          "firstWordIndex": 7,
+          "lastWordIndex": 11
+        }
+      },
+      {
+        "id": "M14.02.s03",
+        "at": 5.6,
+        "text": "Endocarditis often involves infection of the endocardial surface, especially valves, although noninfectious forms exist.",
+        "title": "Endocarditis often involves infection of the endocardial surface, especially valves, although noninfectious forms exist.",
+        "scene": {
+          "organ": "heart",
+          "selected": "mitral",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Original HRA four-chamber heart, original source coordinates, retained residual blood, four chambers and four valves. Blood occupancy and deformation are instructional, not lumen CFD or a patient-specific circulation. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  The normal mitral valve locates an endocardial/valve context; infection, vegetations and a separate segmented endocardial surface are not displayed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 5.6,
+          "end": 13.5,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.02.s03",
+          "firstWordIndex": 12,
+          "lastWordIndex": 25
+        }
+      },
+      {
+        "id": "M14.02.s04",
+        "at": 13.96,
+        "text": "Ischemia means inadequate blood supply relative to tissue needs; infarction means tissue death caused by prolonged inadequate supply.",
+        "title": "Ischemia means inadequate blood supply relative to tissue needs; infarction means tissue death caused by prolonged inadequate supply.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Ischemia and infarction differ",
+          "text": "Ischemia means inadequate blood supply relative to tissue needs; infarction means tissue death caused by prolonged inadequate supply.",
+          "source": "Owner-approved adapted M14.02 narration · source script lines 218-233;284-295 · course PDF physical pp111–114,147",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Representative pericardial/myocardial context and the original valve anatomy locate affected structures without displaying inflammation, infection, scar or tissue death. Pericardial layers are authored teaching sections, not separate segmented HRA surfaces. Limited renewal is not zero renewal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.96,
+          "end": 22.49,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.02.s04",
+          "firstWordIndex": 26,
+          "lastWordIndex": 43
+        }
+      },
+      {
+        "id": "M14.02.s05",
+        "at": 22.97,
+        "text": "Adult heart muscle has limited regenerative capacity, and significant injury often leaves scar.",
+        "title": "Adult heart muscle has limited regenerative capacity, and significant injury often leaves scar.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Limited regeneration and scar",
+          "text": "Adult heart muscle has limited regenerative capacity, and significant injury often leaves scar.",
+          "source": "Owner-approved adapted M14.02 narration · source script lines 218-233;284-295 · course PDF physical pp111–114,147",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Representative pericardial/myocardial context and the original valve anatomy locate affected structures without displaying inflammation, infection, scar or tissue death. Pericardial layers are authored teaching sections, not separate segmented HRA surfaces. Limited renewal is not zero renewal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 22.97,
+          "end": 28.97,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.02.s05",
+          "firstWordIndex": 44,
+          "lastWordIndex": 56
+        }
+      },
+      {
+        "id": "M14.02.s06",
+        "at": 29.72,
+        "text": "Avoid the absolute claim that no cardiac cell can ever renew.",
+        "title": "Avoid the absolute claim that no cardiac cell can ever renew.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Limited renewal is not zero renewal",
+          "text": "Avoid the absolute claim that no cardiac cell can ever renew.",
+          "source": "Owner-approved adapted M14.02 narration · source script lines 218-233;284-295 · course PDF physical pp111–114,147",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Representative pericardial/myocardial context and the original valve anatomy locate affected structures without displaying inflammation, infection, scar or tissue death. Pericardial layers are authored teaching sections, not separate segmented HRA surfaces. Limited renewal is not zero renewal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 29.72,
+          "end": 33.88,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.02.s06",
+          "firstWordIndex": 57,
+          "lastWordIndex": 67
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Representative pericardial/myocardial context and the original valve anatomy locate affected structures without displaying inflammation, infection, scar or tissue death. Pericardial layers are authored teaching sections, not separate segmented HRA surfaces. Limited renewal is not zero renewal. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "218-233;284-295",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "111–114,147",
+        "terminologyNote": "Representative pericardial/myocardial context and the original valve anatomy locate affected structures without displaying inflammation, infection, scar or tissue death. Pericardial layers are authored teaching sections, not separate segmented HRA surfaces. Limited renewal is not zero renewal."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.02 narration · source script lines 218-233;284-295 · course PDF physical pp111–114,147",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.03",
+    "module": "M14",
+    "title": "Atherosclerosis and coronary supply",
+    "text": "Atherosclerosis is a complex inflammatory plaque process involving lipids, cells, fibrous tissue, and sometimes calcium in artery walls. Plaque can narrow a vessel; disruption can trigger local clot formation and acute loss of flow. Arteriosclerosis is the broader term for arterial thickening and stiffening. H D L and L D L are lipoproteins, not simply good and bad fats. Tissue injury depends on blood supply, demand, duration, and collateral flow, not a claim that everything below one clot immediately dies.",
+    "transcript": "Atherosclerosis is a complex inflammatory plaque process involving lipids, cells, fibrous tissue, and sometimes calcium in artery walls. Plaque can narrow a vessel; disruption can trigger local clot formation and acute loss of flow. Arteriosclerosis is the broader term for arterial thickening and stiffening. H D L and L D L are lipoproteins, not simply good and bad fats. Tissue injury depends on blood supply, demand, duration, and collateral flow, not a claim that everything below one clot immediately dies.",
+    "audio": {
+      "src": "guided-study/assets/M14_03_adam_multilingual_v2.mp3",
+      "duration": 40.202438,
+      "sha256": "c6dc41eeb0dc9bd19ea2058a6fa171b4c97dc21c4528720f9c5d76b27175cf08"
+    },
+    "cues": [
+      {
+        "id": "M14.03.s01",
+        "at": 0,
+        "text": "Atherosclerosis is a complex inflammatory plaque process involving lipids, cells, fibrous tissue, and sometimes calcium in artery walls.",
+        "title": "Atherosclerosis is a complex inflammatory plaque process involving lipids, cells, fibrous tissue, and sometimes calcium in artery walls.",
+        "scene": {
+          "organ": "heart",
+          "selected": "lca",
+          "mode": "whole",
+          "preset": "front",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "anatomy",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Original HRA external coronary vessel regions; no coronary flow waveform or capillary transport is computed in this view. Major named source surfaces retain their source location. Branch names and diastolic perfusion are explained in narration; finer coronary physiology remains an explicitly representative separate teaching lesson. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  The normal external coronary surface identifies artery location only: no plaque, clot, wall cross-section, obstruction, ischemia or infarction is displayed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 10.78,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.03.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 17
+        }
+      },
+      {
+        "id": "M14.03.s02",
+        "at": 11.3,
+        "text": "Plaque can narrow a vessel; disruption can trigger local clot formation and acute loss of flow.",
+        "title": "Plaque can narrow a vessel; disruption can trigger local clot formation and acute loss of flow.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Plaque disruption and clot: explanation",
+          "text": "Plaque can narrow a vessel; disruption can trigger local clot formation and acute loss of flow.",
+          "source": "Owner-approved adapted M14.03 narration · source script lines 310-317;322-339;348-355 · course PDF physical pp153,155,157,164,179,181",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 11.3,
+          "end": 17.55,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.03.s02",
+          "firstWordIndex": 18,
+          "lastWordIndex": 33
+        }
+      },
+      {
+        "id": "M14.03.s03",
+        "at": 18.11,
+        "text": "Arteriosclerosis is the broader term for arterial thickening and stiffening.",
+        "title": "Arteriosclerosis is the broader term for arterial thickening and stiffening.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Arteriosclerosis is a broader term",
+          "text": "Arteriosclerosis is the broader term for arterial thickening and stiffening.",
+          "source": "Owner-approved adapted M14.03 narration · source script lines 310-317;322-339;348-355 · course PDF physical pp153,155,157,164,179,181",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 18.11,
+          "end": 23.16,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.03.s03",
+          "firstWordIndex": 34,
+          "lastWordIndex": 43
+        }
+      },
+      {
+        "id": "M14.03.s04",
+        "at": 23.7,
+        "text": "H D L and L D L are lipoproteins, not simply good and bad fats.",
+        "title": "H D L and L D L are lipoproteins, not simply good and bad fats.",
+        "scene": {
+          "organ": "explanation",
+          "title": "HDL and LDL are lipoproteins",
+          "text": "H D L and L D L are lipoproteins, not simply good and bad fats.",
+          "source": "Owner-approved adapted M14.03 narration · source script lines 310-317;322-339;348-355 · course PDF physical pp153,155,157,164,179,181",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 23.7,
+          "end": 29.35,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.03.s04",
+          "firstWordIndex": 44,
+          "lastWordIndex": 58
+        }
+      },
+      {
+        "id": "M14.03.s05",
+        "at": 29.81,
+        "text": "Tissue injury depends on blood supply, demand, duration, and collateral flow, not a claim that everything below one clot immediately dies.",
+        "title": "Tissue injury depends on blood supply, demand, duration, and collateral flow, not a claim that everything below one clot immediately dies.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Injury depends on supply, demand and time",
+          "text": "Tissue injury depends on blood supply, demand, duration, and collateral flow, not a claim that everything below one clot immediately dies.",
+          "source": "Owner-approved adapted M14.03 narration · source script lines 310-317;322-339;348-355 · course PDF physical pp153,155,157,164,179,181",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 29.81,
+          "end": 39.97,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.03.s05",
+          "firstWordIndex": 59,
+          "lastWordIndex": 79
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "310-317;322-339;348-355",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "153,155,157,164,179,181",
+        "terminologyNote": "The retained external coronary region locates an artery only; no plaque, clot, stenosis or ischemic injury is present in that mesh. Atherosclerosis is more than calcium/cholesterol deposits, HDL/LDL are lipoproteins, and downstream tissue injury is conditional."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.03 narration · source script lines 310-317;322-339;348-355 · course PDF physical pp153,155,157,164,179,181",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.04",
+    "module": "M14",
+    "title": "Autonomic and hormonal modulation",
+    "text": "Sympathetic activity generally increases heart rate, conduction, and contractile force. Parasympathetic activity through the vagus mainly slows sinus rate and A V nodal conduction. Vascular responses depend on receptor type and tissue; sympathetic activity does not simply dilate every vessel, and parasympathetic activity does not universally constrict them. Hormones also affect circulation: vasopressin promotes water retention, aldosterone promotes sodium retention, and atrial natriuretic peptide promotes sodium and water excretion.",
+    "transcript": "Sympathetic activity generally increases heart rate, conduction, and contractile force. Parasympathetic activity through the vagus mainly slows sinus rate and A V nodal conduction. Vascular responses depend on receptor type and tissue; sympathetic activity does not simply dilate every vessel, and parasympathetic activity does not universally constrict them. Hormones also affect circulation: vasopressin promotes water retention, aldosterone promotes sodium retention, and atrial natriuretic peptide promotes sodium and water excretion.",
+    "audio": {
+      "src": "guided-study/assets/M14_04_adam_multilingual_v2.mp3",
+      "duration": 39.3665,
+      "sha256": "d2df35110fd5df584096d6f51a0235d8a8ed344abae62cd5d1e2efacdf806ffe"
+    },
+    "cues": [
+      {
+        "id": "M14.04.s01",
+        "at": 0,
+        "text": "Sympathetic activity generally increases heart rate, conduction, and contractile force.",
+        "title": "Sympathetic activity generally increases heart rate, conduction, and contractile force.",
+        "scene": {
+          "organ": "heart",
+          "selected": "sa",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.09,
+          "end": 6.13,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.04.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 9
+        }
+      },
+      {
+        "id": "M14.04.s02",
+        "at": 6.87,
+        "text": "Parasympathetic activity through the vagus mainly slows sinus rate and A V nodal conduction.",
+        "title": "Parasympathetic activity through the vagus mainly slows sinus rate and A V nodal conduction.",
+        "scene": {
+          "organ": "heart",
+          "selected": "sa",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 6.87,
+          "end": 13.33,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.04.s02",
+          "firstWordIndex": 10,
+          "lastWordIndex": 23
+        }
+      },
+      {
+        "id": "M14.04.p01",
+        "at": 11.63,
+        "text": "Parasympathetic activity through the vagus mainly slows sinus rate and A V nodal conduction.",
+        "title": "A V nodal conduction · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "avnode",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 11.63,
+          "end": 13.33,
+          "initialPoseAtZero": false,
+          "phrase": "A V nodal conduction",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.04.s02",
+          "firstWordIndex": 20,
+          "lastWordIndex": 23
+        }
+      },
+      {
+        "id": "M14.04.s03",
+        "at": 14.02,
+        "text": "Vascular responses depend on receptor type and tissue; sympathetic activity does not simply dilate every vessel, and parasympathetic activity does not universally constrict them.",
+        "title": "Vascular responses depend on receptor type and tissue; sympathetic activity does not simply dilate every vessel, and parasympathetic activity does not universally constrict them.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Vascular responses depend on receptor and tissue",
+          "text": "Vascular responses depend on receptor type and tissue; sympathetic activity does not simply dilate every vessel, and parasympathetic activity does not universally constrict them.",
+          "source": "Owner-approved adapted M14.04 narration · source script lines 406-417 · course PDF physical pp219–221",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Existing normal SA/AV locations and held electrical stages provide anatomical context only. Fixed model parameters do not simulate sympathetic/vagal input, receptor-specific vascular responses or hormonal/renal control. Blanket source vasodilation/constriction shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 14.02,
+          "end": 25.74,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.04.s03",
+          "firstWordIndex": 24,
+          "lastWordIndex": 47
+        }
+      },
+      {
+        "id": "M14.04.s04",
+        "at": 26.3,
+        "text": "Hormones also affect circulation: vasopressin promotes water retention, aldosterone promotes sodium retention, and atrial natriuretic peptide promotes sodium and water excretion.",
+        "title": "Hormones also affect circulation: vasopressin promotes water retention, aldosterone promotes sodium retention, and atrial natriuretic peptide promotes sodium and water excretion.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Hormonal and renal vocabulary",
+          "text": "Hormones also affect circulation: vasopressin promotes water retention, aldosterone promotes sodium retention, and atrial natriuretic peptide promotes sodium and water excretion.",
+          "source": "Owner-approved adapted M14.04 narration · source script lines 406-417 · course PDF physical pp219–221",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Existing normal SA/AV locations and held electrical stages provide anatomical context only. Fixed model parameters do not simulate sympathetic/vagal input, receptor-specific vascular responses or hormonal/renal control. Blanket source vasodilation/constriction shorthand is qualified."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 26.3,
+          "end": 39.12,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.04.s04",
+          "firstWordIndex": 48,
+          "lastWordIndex": 68
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Existing normal SA/AV locations and held electrical stages provide anatomical context only. Fixed model parameters do not simulate sympathetic/vagal input, receptor-specific vascular responses or hormonal/renal control. Blanket source vasodilation/constriction shorthand is qualified. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "406-417",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "219–221",
+        "terminologyNote": "Existing normal SA/AV locations and held electrical stages provide anatomical context only. Fixed model parameters do not simulate sympathetic/vagal input, receptor-specific vascular responses or hormonal/renal control. Blanket source vasodilation/constriction shorthand is qualified."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.04 narration · source script lines 406-417 · course PDF physical pp219–221",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.05",
+    "module": "M14",
+    "title": "Medication vocabulary, not prescribing",
+    "text": "Some medicines change heart rate, conduction, ion currents, or contractile force. Examples include beta blockers, selected calcium-channel blockers, antiarrhythmic drugs, and digoxin. Their effects differ by drug and tissue, so a class label is not a complete prediction of a tracing. Digoxin inhibits the sodium-potassium pump, indirectly affecting calcium handling. This is mechanism vocabulary for study, not guidance to start, stop, select, or dose a medication.",
+    "transcript": "Some medicines change heart rate, conduction, ion currents, or contractile force. Examples include beta blockers, selected calcium-channel blockers, antiarrhythmic drugs, and digoxin. Their effects differ by drug and tissue, so a class label is not a complete prediction of a tracing. Digoxin inhibits the sodium-potassium pump, indirectly affecting calcium handling. This is mechanism vocabulary for study, not guidance to start, stop, select, or dose a medication.",
+    "audio": {
+      "src": "guided-study/assets/M14_05_adam_multilingual_v2.mp3",
+      "duration": 32.679125,
+      "sha256": "f65128e1db593548349aa05438c47e127cf63d0af59eb622c2314eb92ba8902e"
+    },
+    "cues": [
+      {
+        "id": "M14.05.s01",
+        "at": 0,
+        "text": "Some medicines change heart rate, conduction, ion currents, or contractile force.",
+        "title": "Some medicines change heart rate, conduction, ion currents, or contractile force.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Medication effects: mechanism vocabulary",
+          "text": "Some medicines change heart rate, conduction, ion currents, or contractile force.",
+          "source": "Owner-approved adapted M14.05 narration · source script lines 402-405;871-881 · course PDF physical pp218–219",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 5.65,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.05.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 10
+        }
+      },
+      {
+        "id": "M14.05.s02",
+        "at": 6.04,
+        "text": "Examples include beta blockers, selected calcium-channel blockers, antiarrhythmic drugs, and digoxin.",
+        "title": "Examples include beta blockers, selected calcium-channel blockers, antiarrhythmic drugs, and digoxin.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Examples have different actions",
+          "text": "Examples include beta blockers, selected calcium-channel blockers, antiarrhythmic drugs, and digoxin.",
+          "source": "Owner-approved adapted M14.05 narration · source script lines 402-405;871-881 · course PDF physical pp218–219",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 6.04,
+          "end": 12.99,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.05.s02",
+          "firstWordIndex": 11,
+          "lastWordIndex": 22
+        }
+      },
+      {
+        "id": "M14.05.s03",
+        "at": 13.48,
+        "text": "Their effects differ by drug and tissue, so a class label is not a complete prediction of a tracing.",
+        "title": "Their effects differ by drug and tissue, so a class label is not a complete prediction of a tracing.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Drug class does not predict a complete tracing",
+          "text": "Their effects differ by drug and tissue, so a class label is not a complete prediction of a tracing.",
+          "source": "Owner-approved adapted M14.05 narration · source script lines 402-405;871-881 · course PDF physical pp218–219",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.48,
+          "end": 19.0,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.05.s03",
+          "firstWordIndex": 23,
+          "lastWordIndex": 41
+        }
+      },
+      {
+        "id": "M14.05.s04",
+        "at": 19.76,
+        "text": "Digoxin inhibits the sodium-potassium pump, indirectly affecting calcium handling.",
+        "title": "Digoxin inhibits the sodium-potassium pump, indirectly affecting calcium handling.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Digoxin and calcium handling",
+          "text": "Digoxin inhibits the sodium-potassium pump, indirectly affecting calcium handling.",
+          "source": "Owner-approved adapted M14.05 narration · source script lines 402-405;871-881 · course PDF physical pp218–219",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 19.76,
+          "end": 24.84,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.05.s04",
+          "firstWordIndex": 42,
+          "lastWordIndex": 51
+        }
+      },
+      {
+        "id": "M14.05.s05",
+        "at": 25.51,
+        "text": "This is mechanism vocabulary for study, not guidance to start, stop, select, or dose a medication.",
+        "title": "This is mechanism vocabulary for study, not guidance to start, stop, select, or dose a medication.",
+        "scene": {
+          "organ": "explanation",
+          "title": "No medication selection or dosing guidance",
+          "text": "This is mechanism vocabulary for study, not guidance to start, stop, select, or dose a medication.",
+          "source": "Owner-approved adapted M14.05 narration · source script lines 402-405;871-881 · course PDF physical pp218–219",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 25.51,
+          "end": 32.43,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.05.s05",
+          "firstWordIndex": 52,
+          "lastWordIndex": 67
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "402-405;871-881",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "218–219",
+        "terminologyNote": "Medication mechanisms remain qualified vocabulary. No dose, prescription, drug-response trace, ion-current effect, individual diagnosis or treatment selection is provided. Digoxin inhibition of the sodium-potassium pump is distinguished from a direct calcium-pump claim."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.05 narration · source script lines 402-405;871-881 · course PDF physical pp218–219",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.06",
+    "module": "M14",
+    "title": "ECG history and professional context",
+    "text": "E C G and E K G name the same type of recording. The electrocardiograph is the instrument; the electrocardiogram is the recording. Augustus Waller published a human electrocardiogram in eighteen eighty-seven. Willem Einthoven developed the string-galvanometer method in the early nineteen hundreds and received the nineteen twenty-four Nobel Prize. Monitoring work requires careful observation, communication, and facility-specific training. Workload, pay, shifts, and certification requirements vary, so the source's examples are not universal facts.",
+    "transcript": "E C G and E K G name the same type of recording. The electrocardiograph is the instrument; the electrocardiogram is the recording. Augustus Waller published a human electrocardiogram in eighteen eighty-seven. Willem Einthoven developed the string-galvanometer method in the early nineteen hundreds and received the nineteen twenty-four Nobel Prize. Monitoring work requires careful observation, communication, and facility-specific training. Workload, pay, shifts, and certification requirements vary, so the source's examples are not universal facts.",
+    "audio": {
+      "src": "guided-study/assets/M14_06_adam_multilingual_v2.mp3",
+      "duration": 34.50775,
+      "sha256": "2188ecda6a5e1da535da135b44bc7ac183c797887495f5b2ca778858fb0649ef"
+    },
+    "cues": [
+      {
+        "id": "M14.06.s01",
+        "at": 0,
+        "text": "E C G and E K G name the same type of recording.",
+        "title": "E C G and E K G name the same type of recording.",
+        "scene": {
+          "organ": "explanation",
+          "title": "ECG and EKG name the same recording",
+          "text": "E C G and E K G name the same type of recording.",
+          "source": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.05,
+          "end": 3.78,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.06.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 12
+        }
+      },
+      {
+        "id": "M14.06.s02",
+        "at": 4.45,
+        "text": "The electrocardiograph is the instrument; the electrocardiogram is the recording.",
+        "title": "The electrocardiograph is the instrument; the electrocardiogram is the recording.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Instrument versus recording",
+          "text": "The electrocardiograph is the instrument; the electrocardiogram is the recording.",
+          "source": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 4.45,
+          "end": 8.44,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.06.s02",
+          "firstWordIndex": 13,
+          "lastWordIndex": 22
+        }
+      },
+      {
+        "id": "M14.06.s03",
+        "at": 9.06,
+        "text": "Augustus Waller published a human electrocardiogram in eighteen eighty-seven.",
+        "title": "Augustus Waller published a human electrocardiogram in eighteen eighty-seven.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Waller: human recording in 1887",
+          "text": "Augustus Waller published a human electrocardiogram in eighteen eighty-seven.",
+          "source": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 9.06,
+          "end": 13.34,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.06.s03",
+          "firstWordIndex": 23,
+          "lastWordIndex": 32
+        }
+      },
+      {
+        "id": "M14.06.s04",
+        "at": 13.84,
+        "text": "Willem Einthoven developed the string-galvanometer method in the early nineteen hundreds and received the nineteen twenty-four Nobel Prize.",
+        "title": "Willem Einthoven developed the string-galvanometer method in the early nineteen hundreds and received the nineteen twenty-four Nobel Prize.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Einthoven and the 1924 Nobel Prize",
+          "text": "Willem Einthoven developed the string-galvanometer method in the early nineteen hundreds and received the nineteen twenty-four Nobel Prize.",
+          "source": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.84,
+          "end": 20.89,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.06.s04",
+          "firstWordIndex": 33,
+          "lastWordIndex": 52
+        }
+      },
+      {
+        "id": "M14.06.s05",
+        "at": 21.32,
+        "text": "Monitoring work requires careful observation, communication, and facility-specific training.",
+        "title": "Monitoring work requires careful observation, communication, and facility-specific training.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Observation, communication and local training",
+          "text": "Monitoring work requires careful observation, communication, and facility-specific training.",
+          "source": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.32,
+          "end": 27.06,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.06.s05",
+          "firstWordIndex": 53,
+          "lastWordIndex": 62
+        }
+      },
+      {
+        "id": "M14.06.s06",
+        "at": 27.48,
+        "text": "Workload, pay, shifts, and certification requirements vary, so the source's examples are not universal facts.",
+        "title": "Workload, pay, shifts, and certification requirements vary, so the source's examples are not universal facts.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Work conditions and requirements vary",
+          "text": "Workload, pay, shifts, and certification requirements vary, so the source's examples are not universal facts.",
+          "source": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 27.48,
+          "end": 34.2,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.06.s06",
+          "firstWordIndex": 63,
+          "lastWordIndex": 77
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "10-41;66-97",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "9,12–18",
+        "terminologyNote": "Instrument and recording are distinguished. The retained course pages include conflicting Waller dates and a mistaken Nobel-Peace-Prize label; the owner-approved adaptation uses 1887 and Nobel Prize in 1924. Source workload/pay/shift/certification examples are not universal."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.06 narration · source script lines 10-41;66-97 · course PDF physical pp9,12–18",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.07",
+    "module": "M14",
+    "title": "Integrative final review",
+    "text": "Finish by connecting the levels. Trace blood through four chambers and four valves. Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart. Explain how calcium permits sarcomere force and how its removal permits relaxation. Follow air to the alveolus and oxygen into pulmonary blood. When a verified practice strip is available, apply the six-step method to it. When evidence is missing, name the uncertainty instead of guessing.",
+    "transcript": "Finish by connecting the levels. Trace blood through four chambers and four valves. Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart. Explain how calcium permits sarcomere force and how its removal permits relaxation. Follow air to the alveolus and oxygen into pulmonary blood. When a verified practice strip is available, apply the six-step method to it. When evidence is missing, name the uncertainty instead of guessing.",
+    "audio": {
+      "src": "guided-study/assets/M14_07_adam_multilingual_v2.mp3",
+      "duration": 35.056313,
+      "sha256": "ed8d596b67912da7911f8a8f3e5204d370abbcc6729110314816c663ed93cd0d"
+    },
+    "cues": [
+      {
+        "id": "M14.07.s01",
+        "at": 0,
+        "text": "Finish by connecting the levels.",
+        "title": "Finish by connecting the levels.",
+        "scene": {
+          "organ": "heart",
+          "selected": "ra",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "hold",
+            "seconds": 0
+          },
+          "detail": "Original HRA four-chamber heart, original source coordinates, retained residual blood, four chambers and four valves. Blood occupancy and deformation are instructional, not lumen CFD or a patient-specific circulation. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented. "
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 1.68,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 4
+        }
+      },
+      {
+        "id": "M14.07.s02",
+        "at": 2.13,
+        "text": "Trace blood through four chambers and four valves.",
+        "title": "Trace blood through four chambers and four valves.",
+        "scene": {
+          "organ": "heart",
+          "selected": "ra",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "cycle",
+            "seconds": 0,
+            "speed": 0.12,
+            "anchorAudio": 2.13
+          },
+          "detail": "Original HRA four-chamber heart, original source coordinates, retained residual blood, four chambers and four valves. Blood occupancy and deformation are instructional, not lumen CFD or a patient-specific circulation. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented. "
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 2.13,
+          "end": 4.81,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s02",
+          "firstWordIndex": 5,
+          "lastWordIndex": 12
+        }
+      },
+      {
+        "id": "M14.07.s03",
+        "at": 5.27,
+        "text": "Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart.",
+        "title": "Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart.",
+        "scene": {
+          "organ": "heart",
+          "selected": "sa",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "SA-node"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 5.27,
+          "end": 13.3,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s03",
+          "firstWordIndex": 13,
+          "lastWordIndex": 32
+        }
+      },
+      {
+        "id": "M14.07.p01",
+        "at": 7.68,
+        "text": "Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart.",
+        "title": "A V node · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "avnode",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "AV-delay"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 7.68,
+          "end": 8.64,
+          "initialPoseAtZero": false,
+          "phrase": "A V node",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s03",
+          "firstWordIndex": 20,
+          "lastWordIndex": 22
+        }
+      },
+      {
+        "id": "M14.07.p02",
+        "at": 9.02,
+        "text": "Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart.",
+        "title": "His bundle · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "his",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "His-bundle"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 9.02,
+          "end": 9.76,
+          "initialPoseAtZero": false,
+          "phrase": "His bundle",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s03",
+          "firstWordIndex": 23,
+          "lastWordIndex": 24
+        }
+      },
+      {
+        "id": "M14.07.p03",
+        "at": 9.94,
+        "text": "Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart.",
+        "title": "branches · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "his",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "bundle-branches"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 9.94,
+          "end": 10.6,
+          "initialPoseAtZero": false,
+          "phrase": "branches",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s03",
+          "firstWordIndex": 25,
+          "lastWordIndex": 25
+        }
+      },
+      {
+        "id": "M14.07.p04",
+        "at": 11.01,
+        "text": "Trace the impulse through S A node, A V node, His bundle, branches, and Purkinje fibers on the same heart.",
+        "title": "Purkinje fibers · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "purkinje",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "pulse",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": null,
+          "stage": null,
+          "simulation": {
+            "kind": "electrical",
+            "stage": "Purkinje-myocardium"
+          },
+          "detail": "The registered HRA heart retains its original coordinates and four-chamber/residual-blood context. Green pathways indicate inferred route location, yellow pulse/violet nodes indicate current activity, and white inspection is separate. Paths/nodes are inferred teaching geometry, not segmented conduction tissue, measured fibers or conduction velocity. Atrial spread routes are parallel; AV delay is localized, not distributed evenly. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Held normal electrical stage locates the named pathway; no autonomic modulation, neural input or drug effect is computed."
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 11.01,
+          "end": 12.34,
+          "initialPoseAtZero": false,
+          "phrase": "Purkinje fibers",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s03",
+          "firstWordIndex": 27,
+          "lastWordIndex": 28
+        }
+      },
+      {
+        "id": "M14.07.s04",
+        "at": 13.89,
+        "text": "Explain how calcium permits sarcomere force and how its removal permits relaxation.",
+        "title": "Explain how calcium permits sarcomere force and how its removal permits relaxation.",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release",
+            "sweep": true,
+            "anchorAudio": 13.89,
+            "endAudio": 15.63
+          },
+          "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Fixed filament lengths and qualitative calcium/force/removal signals belong to the existing representative mechanism. Audio sweeps stretch a named normal model interval to measured narration bounds; no measured microscopy or direct chamber-pressure calculation is claimed.",
+          "signalMode": "all"
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.89,
+          "end": 19.52,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s04",
+          "firstWordIndex": 33,
+          "lastWordIndex": 44
+        }
+      },
+      {
+        "id": "M14.07.p05",
+        "at": 15.63,
+        "text": "Explain how calcium permits sarcomere force and how its removal permits relaxation.",
+        "title": "sarcomere force · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "sarcomere",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "release",
+            "sweep": true,
+            "anchorAudio": 15.63,
+            "endAudio": 17.5
+          },
+          "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Fixed filament lengths and qualitative calcium/force/removal signals belong to the existing representative mechanism. Audio sweeps stretch a named normal model interval to measured narration bounds; no measured microscopy or direct chamber-pressure calculation is claimed.",
+          "signalMode": "all"
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 15.63,
+          "end": 16.75,
+          "initialPoseAtZero": false,
+          "phrase": "sarcomere force",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s04",
+          "firstWordIndex": 37,
+          "lastWordIndex": 38
+        }
+      },
+      {
+        "id": "M14.07.p06",
+        "at": 17.5,
+        "text": "Explain how calcium permits sarcomere force and how its removal permits relaxation.",
+        "title": "removal permits relaxation · spoken phrase",
+        "scene": {
+          "organ": "heart",
+          "selected": "lv",
+          "mode": "four-chamber",
+          "preset": "four-chamber",
+          "parameters": {
+            "heartRate": 75,
+            "bloodVolume": 5000,
+            "systemicResistance": 1.05,
+            "contractility": 1
+          },
+          "bloodView": "filled",
+          "conductionView": "off",
+          "conductionDisplay": "full-pulse",
+          "wallHighlight": false,
+          "flowStop": null,
+          "route": "routeB",
+          "stage": "cell",
+          "simulation": {
+            "kind": "cellular",
+            "stage": "removal-visible",
+            "sweep": true,
+            "anchorAudio": 17.5,
+            "endAudio": 19.52
+          },
+          "detail": "This existing enlarged cell/tissue/filament view is representative, not measured microscopy, a traced enlargement or an ion-channel/molecular solver. It retains the original heart return context. Cell membrane voltage, qualitative Ca²⁺ cue, regional mechanical activation and surface ECG are different signals; microgeometry does not calculate chamber pressure. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Fixed filament lengths and qualitative calcium/force/removal signals belong to the existing representative mechanism. Audio sweeps stretch a named normal model interval to measured narration bounds; no measured microscopy or direct chamber-pressure calculation is claimed.",
+          "signalMode": "all"
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 17.5,
+          "end": 19.52,
+          "initialPoseAtZero": false,
+          "phrase": "removal permits relaxation",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s04",
+          "firstWordIndex": 42,
+          "lastWordIndex": 44
+        }
+      },
+      {
+        "id": "M14.07.s05",
+        "at": 20.2,
+        "text": "Follow air to the alveolus and oxygen into pulmonary blood.",
+        "title": "Follow air to the alveolus and oxygen into pulmonary blood.",
+        "scene": {
+          "organ": "respiratory",
+          "stage": "whole",
+          "segment": "right-apical-segment",
+          "preset": "front",
+          "breathing": {
+            "rate": 12,
+            "target": 0.5,
+            "resistance": 2,
+            "compliance": 0.1,
+            "mode": "target"
+          },
+          "ventilation": "spontaneous",
+          "selected": "airways",
+          "simulation": {
+            "kind": "phase",
+            "phase": "inspiration",
+            "sweep": true,
+            "anchorAudio": 20.2,
+            "endAudio": 21.21
+          },
+          "detail": "The named trachea/primary/lobar/segmental anatomy and lung lobes come from the retained HRA source in its shared coordinates. Gross surface continuity, physical units and front orientation remain qualified; this is not an airway cast, CFD or a patient-specific respiratory rig. Source-derived lung motion and fitted diaphragm/rib context are instructional; mesh displacement does not measure thoracic volume. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Gross airway navigation and the explicitly representative alveolar membrane are different scales. Separate qualitative oxygen/carbon-dioxide cues are not a measured trajectory, transport rate, saturation or capnogram.",
+          "monitoringView": null
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 20.2,
+          "end": 24.31,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s05",
+          "firstWordIndex": 45,
+          "lastWordIndex": 54
+        }
+      },
+      {
+        "id": "M14.07.p07",
+        "at": 21.21,
+        "text": "Follow air to the alveolus and oxygen into pulmonary blood.",
+        "title": "alveolus · spoken phrase",
+        "scene": {
+          "organ": "respiratory",
+          "stage": "membrane",
+          "segment": "right-apical-segment",
+          "preset": "front",
+          "breathing": {
+            "rate": 12,
+            "target": 0.5,
+            "resistance": 2,
+            "compliance": 0.1,
+            "mode": "target"
+          },
+          "ventilation": "spontaneous",
+          "simulation": {
+            "kind": "phase",
+            "phase": "inspiration",
+            "sweep": true,
+            "anchorAudio": 21.21,
+            "endAudio": 24.31
+          },
+          "detail": "Magnified instructional reconstruction, not a measured enlargement or continuous microscopic continuation of the HRA segment. The retained segment marker is a navigation anchor. Bulk airflow remains within airway/alveolar airspaces; blood cells stay in capillaries. Separate cyan O₂ cues move air→blood and gold CO₂ cues blood→air during both breathing phases. Diffusion/perfusion particles are qualitative and do not solve partial pressures, transport rates or V/Q. Normal spontaneous breathing uses the existing single-compartment pressure/flow model at12breaths/min and0.5L target excursion. Measured audio sweeps pace its actual inspiration/expiration interval; narration time is teaching time. Diaphragm/ribs are fitted instructional context, not measured muscles. The model has fast passive pressure/flow decay and is not a clinical prediction. No positive-pressure mode is substituted. Normal instructional anatomy/mechanism context only; no patient-specific process, clinical diagnosis or treatment response is represented.  Gross airway navigation and the explicitly representative alveolar membrane are different scales. Separate qualitative oxygen/carbon-dioxide cues are not a measured trajectory, transport rate, saturation or capnogram.",
+          "selected": "rightlung",
+          "monitoringView": null
+        },
+        "visualStatus": "existing-qualified-model-context",
+        "alignment": {
+          "kind": "phrase",
+          "measuredStart": 21.21,
+          "end": 22.03,
+          "initialPoseAtZero": false,
+          "phrase": "alveolus",
+          "occurrence": 1,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s05",
+          "firstWordIndex": 49,
+          "lastWordIndex": 49
+        }
+      },
+      {
+        "id": "M14.07.s06",
+        "at": 25.09,
+        "text": "When a verified practice strip is available, apply the six-step method to it.",
+        "title": "When a verified practice strip is available, apply the six-step method to it.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Practice requires a verified strip",
+          "text": "When a verified practice strip is available, apply the six-step method to it.",
+          "source": "Owner-approved adapted M14.07 narration · source script lines 66-97;134-211;234-247;322-377;539-870 · course PDF physical pp65,73–77,83–84,123–127,211–216",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Original four-chamber anatomy, inferred conduction teaching geometry, representative cellular/sarcomere mechanisms and qualitative alveolar exchange remain distinct scales/signals. Measured narration windows pace the existing mechanisms; they are not real-time clinical calibration. No verified final-review practice strip or new measurement/classification task is supplied."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 25.09,
+          "end": 29.81,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s06",
+          "firstWordIndex": 55,
+          "lastWordIndex": 68
+        }
+      },
+      {
+        "id": "M14.07.s07",
+        "at": 30.33,
+        "text": "When evidence is missing, name the uncertainty instead of guessing.",
+        "title": "When evidence is missing, name the uncertainty instead of guessing.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Name missing evidence and uncertainty",
+          "text": "When evidence is missing, name the uncertainty instead of guessing.",
+          "source": "Owner-approved adapted M14.07 narration · source script lines 66-97;134-211;234-247;322-377;539-870 · course PDF physical pp65,73–77,83–84,123–127,211–216",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Original four-chamber anatomy, inferred conduction teaching geometry, representative cellular/sarcomere mechanisms and qualitative alveolar exchange remain distinct scales/signals. Measured narration windows pace the existing mechanisms; they are not real-time clinical calibration. No verified final-review practice strip or new measurement/classification task is supplied."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 30.33,
+          "end": 34.78,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.07.s07",
+          "firstWordIndex": 69,
+          "lastWordIndex": 78
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Original four-chamber anatomy, inferred conduction teaching geometry, representative cellular/sarcomere mechanisms and qualitative alveolar exchange remain distinct scales/signals. Measured narration windows pace the existing mechanisms; they are not real-time clinical calibration. No verified final-review practice strip or new measurement/classification task is supplied. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "66-97;134-211;234-247;322-377;539-870",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "65,73–77,83–84,123–127,211–216",
+        "terminologyNote": "Original four-chamber anatomy, inferred conduction teaching geometry, representative cellular/sarcomere mechanisms and qualitative alveolar exchange remain distinct scales/signals. Measured narration windows pace the existing mechanisms; they are not real-time clinical calibration. No verified final-review practice strip or new measurement/classification task is supplied."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.07 narration · source script lines 66-97;134-211;234-247;322-377;539-870 · course PDF physical pp65,73–77,83–84,123–127,211–216",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  },
+  {
+    "id": "M14.08",
+    "module": "M14",
+    "title": "Risk and symptom vocabulary",
+    "text": "Heart-disease risk reflects both nonmodifiable factors, such as age and inherited background, and modifiable factors, such as smoking, blood pressure, cholesterol, and activity patterns. Conditions can have overlapping symptoms, including breathlessness, fatigue, swelling, palpitations, or chest discomfort. A symptom list does not identify one disease or prove that a rhythm is its cause. In this lesson, connect the vocabulary to anatomy and function without making a diagnosis from a model, a strip, or a checklist.",
+    "transcript": "Heart-disease risk reflects both nonmodifiable factors, such as age and inherited background, and modifiable factors, such as smoking, blood pressure, cholesterol, and activity patterns. Conditions can have overlapping symptoms, including breathlessness, fatigue, swelling, palpitations, or chest discomfort. A symptom list does not identify one disease or prove that a rhythm is its cause. In this lesson, connect the vocabulary to anatomy and function without making a diagnosis from a model, a strip, or a checklist.",
+    "audio": {
+      "src": "guided-study/assets/M14_08_adam_multilingual_v2.mp3",
+      "duration": 35.761625,
+      "sha256": "c02281d668589d15a9f784910ecd7fc0196a8e776c98b677687fecabc93dbdcc"
+    },
+    "cues": [
+      {
+        "id": "M14.08.s01",
+        "at": 0,
+        "text": "Heart-disease risk reflects both nonmodifiable factors, such as age and inherited background, and modifiable factors, such as smoking, blood pressure, cholesterol, and activity patterns.",
+        "title": "Heart-disease risk reflects both nonmodifiable factors, such as age and inherited background, and modifiable factors, such as smoking, blood pressure, cholesterol, and activity patterns.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Risk includes several kinds of factors",
+          "text": "Heart-disease risk reflects both nonmodifiable factors, such as age and inherited background, and modifiable factors, such as smoking, blood pressure, cholesterol, and activity patterns.",
+          "source": "Owner-approved adapted M14.08 narration · source script lines 268-295 · course PDF physical pp142,145–146",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 0.0,
+          "end": 12.67,
+          "initialPoseAtZero": true,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.08.s01",
+          "firstWordIndex": 0,
+          "lastWordIndex": 24
+        }
+      },
+      {
+        "id": "M14.08.s02",
+        "at": 13.22,
+        "text": "Conditions can have overlapping symptoms, including breathlessness, fatigue, swelling, palpitations, or chest discomfort.",
+        "title": "Conditions can have overlapping symptoms, including breathlessness, fatigue, swelling, palpitations, or chest discomfort.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Symptoms can overlap",
+          "text": "Conditions can have overlapping symptoms, including breathlessness, fatigue, swelling, palpitations, or chest discomfort.",
+          "source": "Owner-approved adapted M14.08 narration · source script lines 268-295 · course PDF physical pp142,145–146",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 13.22,
+          "end": 21.22,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.08.s02",
+          "firstWordIndex": 25,
+          "lastWordIndex": 37
+        }
+      },
+      {
+        "id": "M14.08.s03",
+        "at": 21.74,
+        "text": "A symptom list does not identify one disease or prove that a rhythm is its cause.",
+        "title": "A symptom list does not identify one disease or prove that a rhythm is its cause.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Symptoms do not establish a rhythm cause",
+          "text": "A symptom list does not identify one disease or prove that a rhythm is its cause.",
+          "source": "Owner-approved adapted M14.08 narration · source script lines 268-295 · course PDF physical pp142,145–146",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 21.74,
+          "end": 26.72,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.08.s03",
+          "firstWordIndex": 38,
+          "lastWordIndex": 53
+        }
+      },
+      {
+        "id": "M14.08.s04",
+        "at": 27.18,
+        "text": "In this lesson, connect the vocabulary to anatomy and function without making a diagnosis from a model, a strip, or a checklist.",
+        "title": "In this lesson, connect the vocabulary to anatomy and function without making a diagnosis from a model, a strip, or a checklist.",
+        "scene": {
+          "organ": "explanation",
+          "title": "Connect vocabulary without making a diagnosis",
+          "text": "In this lesson, connect the vocabulary to anatomy and function without making a diagnosis from a model, a strip, or a checklist.",
+          "source": "Owner-approved adapted M14.08 narration · source script lines 268-295 · course PDF physical pp142,145–146",
+          "qualification": "EXPLANATION ONLY · This card supplies source-qualified vocabulary. No corresponding disease, medication, autonomic/hormonal, diagnostic or treatment simulation, fabricated ECG strip, caliper or calibrated measurement is displayed. Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference."
+        },
+        "visualStatus": "supplemental-explanation",
+        "alignment": {
+          "kind": "sentence",
+          "measuredStart": 27.18,
+          "end": 35.5,
+          "initialPoseAtZero": false,
+          "machineMeasured": true,
+          "humanListeningQA": false,
+          "sourceSentence": "M14.08.s04",
+          "firstWordIndex": 54,
+          "lastWordIndex": 75
+        }
+      }
+    ],
+    "qualification": "Qualified existing normal anatomy/mechanisms and explicit supplemental vocabulary cards. Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference. Original approved MP3 reused unchanged. Forced alignment has 10 ms frame granularity, not a 10 ms accuracy bound. Actual listening/pronunciation and native advanced-model/card review remain pending.",
+    "source": {
+      "fileName": "Complete Audiobook Script - All 10 Slideshows (Speechify)(1).md",
+      "bytes": 127983,
+      "lines": 881,
+      "whitespaceWords": 20398,
+      "sha256": "7e3e99bb55ec291d61dd4924ac0195590d9971c9dd4128af12284e846c208ce0",
+      "observedCompleteness": "Ten numbered parts plus appendix; introduction and two closing passages saying four presentations are stale, not a content boundary.",
+      "sourceLines": "268-295",
+      "approvedAdaptation": "Website_Guided_Cardiorespiratory_Lesson_Draft.md / adaptation-v1",
+      "courseReference": {
+        "fileName": "All Slideshows Combined (01-13).pdf",
+        "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+        "pageNumbering": "Physical PDF pages, 1-based",
+        "physicalPages": "142,145–146",
+        "terminologyNote": "Risk factors and overlapping symptoms do not identify a disease or prove a rhythm is causal. The source vocabulary is retained without an individual diagnosis or checklist-based inference."
+      }
+    },
+    "sourceLabel": "Owner-approved adapted M14.08 narration · source script lines 268-295 · course PDF physical pp142,145–146",
+    "sourceUrl": "guided-study/assets/audio-inventory.json",
+    "status": "Approved audio with existing normal source anatomy/mechanisms and qualified supplemental context cards; no disease/drug/clinical engine",
+    "audioStatus": "Delivered MP3 reused byte-for-byte; no new generation",
+    "alignmentStatus": "Machine-measured 10 ms frame grid; actual listening QA pending"
+  }
+];
+ const existing=Array.isArray(root.GuidedStudyLessons)?root.GuidedStudyLessons:[];
+ const present=new Set(existing.map(lesson=>lesson.id));
+ root.GuidedStudyLessons=existing.concat(lessons.filter(lesson=>!present.has(lesson.id)));
+ if(typeof module==='object'&&module.exports)module.exports=lessons;
+})(typeof window==='object'?window:globalThis);

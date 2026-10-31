@@ -1,0 +1,66 @@
+/* Wider layouts retain their original DOM positions and styling. */
+@media(max-width:850px){
+  .ml-options{border:1px solid #647d96;border-radius:9px;padding:0 10px;margin:12px 0;background:#112238}
+  .ml-options>summary{font-weight:650;cursor:pointer;min-height:44px;padding:10px 0;color:#edf4ff}
+  .ml-options[open]{padding-bottom:10px}
+  .ml-options button,.ml-options select,.ml-options input{max-width:100%}
+  #home>.ml-options{background:#f7faff;color:#19314d;border-color:#b8cbe0;padding:0 12px}
+  #home>.ml-options>summary{color:inherit}
+  #home>.ml-options>.src-note{margin:8px 0}
+  #heartV3Study.ml-heart{padding:10px;margin-top:8px}
+  #heartV3Study.ml-heart .h3-heading{align-items:flex-start;gap:8px}
+  #heartV3Study.ml-heart .h3-heading h2{font-size:1.12em}
+  #heartV3Study.ml-heart .h3-pocket-state{display:none!important}
+  #heartV3Study.ml-heart .h3-teaching-grid{display:block;margin-top:6px}
+  #heartV3Study.ml-heart .h3-stage{height:clamp(280px,42svh,400px);min-height:0}
+  #heartV3Study.ml-heart .ml-current-phase{font-size:.9em;margin:5px 0 8px;line-height:1.35}
+  #heartV3Study.ml-heart .h3-transport{display:block;margin:8px 0;padding:8px}
+  #heartV3Study.ml-heart .h3-transport .h3-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}
+  #heartV3Study.ml-heart .h3-transport button{padding:6px 3px;font-size:.82em;text-align:center}
+  #heartV3Study.ml-heart .h3-scrub-label{display:grid;grid-template-columns:auto minmax(40px,1fr) auto;margin:4px 0 0}
+  #heartV3Study.ml-heart .h3-live-panel{display:flex;gap:8px;margin-top:8px;padding:10px}
+  #heartV3Study.ml-heart .h3-live-phase:empty{display:none}
+  #heartV3Study.ml-heart:not(.h3-text-large) .h3-chamber-panel p{margin:4px 0}
+  #heartV3Study.ml-heart .h3-chamber-panel .h3-chamber-actions{display:flex;gap:6px;flex-wrap:wrap}
+  #heartV3Study.ml-heart .h3-valve-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px}
+  #heartV3Study.ml-heart .h3-valve-cards button{display:flex;justify-content:space-between;gap:4px;padding:6px 8px;min-height:44px}
+  #heartV3Study.ml-heart .h3-teaching-figure figcaption span{white-space:nowrap}
+  #heartV3Study.ml-heart .ml-options .h3-viewbar{display:block}
+  #heartV3Study.ml-heart .ml-options .h3-selected-context{margin:8px 0}
+  #heartV3Study.ml-heart .ml-options .h3-cycle-groups{margin:10px 0}
+  #heartV3Study.ml-heart .ml-options .h3-phase-tools{display:block}
+  #heartV3Study.ml-heart .ml-options .h3-phase-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  #heartV3Study.ml-heart .ml-options .h3-valve-views{margin-top:8px}
+  #cardiorespiratoryStudy.ml-respiratory{padding:10px}
+  #cardiorespiratoryStudy.ml-respiratory .sim-head h2{font-size:1.2em}
+  #cardiorespiratoryStudy.ml-respiratory .sim-head .sim-controls{gap:5px}
+  #cardiorespiratoryStudy.ml-respiratory .sim-head button{font-size:.88em}
+  #cardiorespiratoryStudy.ml-respiratory .sim-grid{display:block}
+  #cardiorespiratoryStudy.ml-respiratory .sim-breath-canvas{min-height:280px;height:clamp(280px,40svh,400px)}
+  #cardiorespiratoryStudy.ml-respiratory .sim-breath-transport{padding:8px}
+  #cardiorespiratoryStudy.ml-respiratory .sim-breath-transport .sim-controls{gap:5px}
+  #cardiorespiratoryStudy.ml-respiratory .sim-breath-transport label{margin:4px 0}
+  #cardiorespiratoryStudy.ml-respiratory .sim-breath-transport p{margin:4px 0}
+  #cardiorespiratoryStudy.ml-respiratory .sim-card{padding:10px;margin:10px 0}
+  #cardiorespiratoryStudy.ml-respiratory .sim-mechanics-figure{margin:12px 0}
+  #cardiorespiratoryStudy.ml-respiratory .sim-mechanics-figure figcaption{font-weight:600;margin-bottom:4px}
+  #cardiorespiratoryStudy.ml-respiratory .sim-mechanics-figure svg{display:block;width:100%;height:auto;margin:0}
+  #cardiorespiratoryStudy.ml-respiratory .sim-mechanics-figure svg text{font-size:17px}
+  @media(min-width:650px) and (max-height:520px){
+    #heartV3Study.ml-heart .h3-teaching-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,1fr);gap:10px}
+    #heartV3Study.ml-heart .h3-live-panel{margin-top:0}
+    #heartV3Study.ml-heart .h3-stage{height:300px}
+  }
+}
+
+/* Only duplicate core transport is conditional on native fullscreen; technical
+   tuners and mechanics plots are removed from their source templates. */
+.sim-breath-viewport:not(:fullscreen) .sim-breath-transport{display:none}
+.course-capnogram text{font-size:24px}
+.h3-course-view select{max-width:100%}
+
+@media(max-width:480px){
+  .sim-breath-journey-toolbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sim-breath-journey-toolbar strong{grid-column:1/-1;grid-row:1;min-width:0}
+  .sim-breath-journey-toolbar button{width:100%}
+}

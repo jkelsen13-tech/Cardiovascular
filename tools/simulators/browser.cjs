@@ -28,7 +28,7 @@ const { chromium } = require("playwright"),
     await page.evaluate(() =>
       localStorage.setItem("regression-sentinel", "preserved"),
     );
-    await page.locator("#heartSimulatorLaunch").click();
+    await page.locator("#heartSimulatorLaunch").click();await page.locator('#heartV3Inspector').evaluate(e=>e.open=true);await page.click('#heartV3Study [data-h3-action="legacy"]');
     await page.locator('[data-heart-phase="2"]').click();
     assert.match(
       await page.locator("[data-heart-clock]").textContent(),

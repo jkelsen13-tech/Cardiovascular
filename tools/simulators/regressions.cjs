@@ -12,7 +12,7 @@ const { chromium } = require("playwright"),
   const p = await browser.newPage({ viewport: { width: 390, height: 844 } });
   try {
     await p.goto("http://127.0.0.1:8765/");
-    await p.click("#heartSimulatorLaunch");
+    await p.click("#heartSimulatorLaunch");await p.locator('#heartV3Inspector').evaluate(e=>e.open=true);await p.click('#heartV3Study [data-h3-action="legacy"]');
     await p.click("[data-tab=practice]");
     await p.click('[data-session="5"]');
     await p.click("[data-home]");
@@ -26,7 +26,7 @@ const { chromium } = require("playwright"),
       ),
     );
     await p.click("[data-home]");
-    await p.click("#heartSimulatorLaunch");
+    await p.click("#heartSimulatorLaunch");await p.locator('#heartV3Inspector').evaluate(e=>e.open=true);await p.click('#heartV3Study [data-h3-action="legacy"]');
     await p.click("[data-load-anatomy]");
     await p.waitForSelector("[data-organ-host][data-ready=true]");
     await p.locator("[data-clock]").evaluate((el) => {

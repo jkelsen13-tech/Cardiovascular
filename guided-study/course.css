@@ -1,0 +1,26 @@
+#guidedCourse{margin:16px auto;padding:14px;border:1px solid #9aafc8;border-radius:12px;background:#f3f7ff;color:#172e4a;max-width:1050px;scroll-margin-top:65px}
+#guidedCourse[hidden],#guidedCourseDock[hidden]{display:none!important}
+#guidedCourse header{display:flex;align-items:center;justify-content:space-between;gap:10px}
+#guidedCourse p{margin:8px 0;line-height:1.45}
+#guidedCourse .gc-controls{display:flex;flex-wrap:wrap;gap:7px}
+#guidedCourse button,#guidedCourse select{min-height:44px;padding:8px 12px;font:inherit;border:1px solid #7087a4;border-radius:8px;background:white;color:#173d69}
+#guidedCourse button:disabled{opacity:.6}
+#guidedCourse .gc-seek{display:flex;align-items:center;gap:10px;margin:10px 0}
+#guidedCourse input[type=range]{min-width:40px;flex:1;min-height:32px}
+#guidedCourse output{white-space:nowrap;font-variant-numeric:tabular-nums}
+#guidedCourse summary{min-height:44px;padding:10px 0;cursor:pointer;font-weight:650}
+#guidedCourse details label{display:block;margin:8px 0}
+#guidedCourse select{display:block;width:100%;max-width:100%}
+#guidedCourse [data-course-transcript]{white-space:pre-wrap;line-height:1.6}
+#guidedCourse .gc-error{color:#87230e;border-left:3px solid;padding-left:9px}
+#guidedCourse button:focus-visible,#guidedCourse summary:focus-visible,#guidedCourseDock button:focus-visible{outline:3px solid #12a8ac;outline-offset:2px}
+#guidedCourseDock{position:fixed;right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));z-index:10020;display:flex;gap:8px;align-items:center;max-width:calc(100vw - 24px)}
+#guidedCourseDock button{font:inherit;color:#173d69;border:1px solid #8ba1bf;background:white;border-radius:12px;padding:9px 12px;min-height:56px}
+#guidedCourseDock [data-course-show]{max-width:240px;display:grid;text-align:left}
+#guidedCourseDock span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#guidedCourseDock small{font-size:12px}
+#guidedCourseDock .gc-circle{width:56px;height:56px;flex:none;border-radius:50%;background:#1f5598;color:white;font-size:24px;padding:0}
+body.guided-course-active{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+#guidedCourseExplanation{max-width:950px;margin:16px auto;padding:18px;background:#f5f8fc;color:#17304c;border:1px solid #a8b8cc;border-radius:12px;line-height:1.6}
+#guidedCourseExplanation button{min-height:44px}
+@media(max-width:600px){#guidedCourse{margin:8px;padding:10px}#guidedCourse header{font-size:.92rem}#guidedCourse .gc-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}#guidedCourse .gc-controls button{padding:6px 3px;font-size:.85rem}#guidedCourse .gc-seek{flex-wrap:wrap;font-size:.85rem}#guidedCourseDock [data-course-show]{max-width:calc(100vw - 100px)}#guidedCourseExplanation{margin:10px;padding:12px}}

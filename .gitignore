@@ -1,0 +1,5 @@
+.private-course/
+__pycache__/
+*.pyc
+review-*/
+node_modules/

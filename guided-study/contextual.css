@@ -1,0 +1,66 @@
+#contextualAudio[hidden]{display:none!important}
+#contextualAudio{box-sizing:border-box;width:min(100%,780px);margin:12px auto 20px;padding:16px;border:1px solid #c8d5e7;border-radius:12px;background:#f7faff;color:#19314d;font:15px/1.5 system-ui,sans-serif;overflow-wrap:anywhere}
+#contextualAudio *{box-sizing:border-box}
+#contextualAudio h2{margin:0 0 3px;font-size:1.1rem;color:inherit}
+#contextualAudio p{margin:5px 0 10px;color:inherit}
+#contextualAudio .ca-context{font-weight:650}
+#contextualAudio label{display:block;font-weight:600}
+#contextualAudio select,#contextualAudio button{min-height:44px;font:inherit;border:1px solid #8ca6c7;border-radius:8px}
+#contextualAudio select{width:100%;padding:8px;background:white;color:#19314d;margin:5px 0 10px}
+#contextualAudio button{padding:8px 16px;background:white;color:#19314d;cursor:pointer}
+#contextualAudio [data-context-audio-action=play]{background:#1d559b;color:white;border-color:#1d559b;min-width:142px}
+#contextualAudio button:disabled{opacity:.55;cursor:default}
+#contextualAudio .ca-controls{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+#contextualAudio .ca-position{display:flex;gap:12px;align-items:center}
+#contextualAudio input[type=range]{min-width:0;flex:1;width:100%;min-height:44px;accent-color:#1d559b}
+#contextualAudio output{white-space:nowrap;font-variant-numeric:tabular-nums}
+#contextualAudio details{border-top:1px solid #d4dfed;margin-top:10px;padding-top:10px}
+#contextualAudio summary{cursor:pointer;min-height:36px;font-weight:600}
+#contextualAudio .ca-transcript{white-space:pre-wrap;margin-top:10px;max-height:260px;overflow:auto;font-weight:400}
+#contextualAudio .ca-note{font-size:.88rem}
+#contextualAudio .ca-warning{border-left:3px solid #a56c20;padding-left:9px}
+#contextualAudio [role=alert]{color:#942c24}
+#contextualAudio :focus-visible{outline:3px solid #9b5e12;outline-offset:3px}
+@media(max-width:520px){#contextualAudio{padding:12px;margin:8px 0 14px}#contextualAudio .ca-position{display:block}#contextualAudio output{display:block}#contextualAudio .ca-controls button{flex:1}}
+
+/* A single audio element feeds both the inline player and this disclosure. */
+#contextualAudioDock[hidden],#contextualAudioDock [hidden]{display:none!important}
+#contextualAudioDock{--ca-dock-bottom:12px;position:fixed;z-index:100010;right:calc(12px + env(safe-area-inset-right,0px));bottom:calc(var(--ca-dock-bottom) + env(safe-area-inset-bottom,0px));width:min(360px,calc(100vw - 24px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)));font:14px/1.4 system-ui,sans-serif;color:#19314d;pointer-events:none}
+#contextualAudioDock *{box-sizing:border-box}
+#contextualAudioDock button,#contextualAudioDock select{font:inherit;color:inherit;min-height:44px;border:1px solid #8ca6c7;background:#fff;cursor:pointer}
+#contextualAudioDock button:disabled{opacity:.6;cursor:default}
+#contextualAudioDock .ca-float-bar{display:flex;justify-content:flex-end;align-items:center;gap:8px}
+#contextualAudioDock .ca-float-toggle{position:relative;text-align:left;max-width:calc(100% - 64px);width:224px;min-height:56px;padding:7px 32px 7px 12px;border-radius:12px;box-shadow:0 3px 14px #132c4940;pointer-events:auto}
+#contextualAudioDock [data-audio-dock-title]{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:650}
+#contextualAudioDock [data-audio-dock-state]{display:block;font-size:.85em;color:#435b76}
+#contextualAudioDock .ca-float-chevron{position:absolute;right:12px;top:17px;font-size:20px}
+#contextualAudioDock [aria-expanded=true] .ca-float-chevron{transform:rotate(180deg)}
+#contextualAudioDock .ca-float-play{display:grid;place-items:center;flex:0 0 56px;width:56px;height:56px;padding:0;border-radius:50%;border-color:#1d559b;background:#1d559b;color:#fff;font-size:23px;box-shadow:0 3px 14px #132c4955;pointer-events:auto}
+#contextualAudioDock [data-audio-dock-icon]{display:block;position:relative;width:24px;height:24px}
+#contextualAudioDock [data-symbol=play]::before{content:"";position:absolute;left:6px;top:2px;border-left:17px solid currentColor;border-top:10px solid transparent;border-bottom:10px solid transparent}
+#contextualAudioDock [data-symbol=pause]::before{content:"";position:absolute;left:4px;top:2px;width:6px;height:20px;background:currentColor;box-shadow:10px 0 currentColor}
+#contextualAudioDock [data-symbol=reload]::before{content:"↻";position:absolute;inset:0;font:26px/24px system-ui,sans-serif}
+#contextualAudioDock .ca-float-panel{position:absolute;bottom:calc(100% + 10px);right:0;width:100%;max-height:min(420px,calc(100dvh - var(--ca-dock-bottom) - 86px - env(safe-area-inset-bottom,0px)));overflow:auto;overscroll-behavior:contain;background:#f7faff;border:1px solid #8ca6c7;border-radius:12px;padding:12px;box-shadow:0 5px 24px #132c4940;pointer-events:auto;overflow-wrap:anywhere}
+#contextualAudioDock .ca-float-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+#contextualAudioDock h2{font-size:1rem;margin:0}
+#contextualAudioDock [data-audio-dock-close]{flex:0 0 44px;border-radius:8px;padding:8px}
+#contextualAudioDock p{margin:8px 0}
+#contextualAudioDock label{display:block;font-weight:600}
+#contextualAudioDock select{display:block;width:100%;border-radius:8px;margin:6px 0;padding:8px}
+#contextualAudioDock .ca-float-note{font-size:.88em}
+#contextualAudioDock .ca-float-warning{border-left:3px solid #a56c20;padding-left:8px;font-size:.9em}
+#contextualAudioDock [role=alert]{color:#942c24}
+#contextualAudioDock :focus-visible{outline:3px solid #9b5e12;outline-offset:3px}
+body.contextual-audio-present::after{content:"";display:block;height:calc(88px + env(safe-area-inset-bottom,0px));pointer-events:none}
+/* Keep the native enlarged-view exit button reachable at the lower corner. */
+#contextualAudioDock.ca-in-fullscreen,body:has(.h3-expanded) #contextualAudioDock{--ca-dock-bottom:76px}
+/* Keep the existing full player on larger screens. The mobile disclosure never
+   contains the audio element, so opening it does not interrupt playback. */
+#contextualAudio>.ca-inline-disclosure{border:0;padding:0;margin:0;background:transparent}
+#contextualAudio>.ca-inline-disclosure>summary{display:none}
+#contextualAudio>.ca-inline-disclosure>summary:focus{display:list-item}
+@media(max-width:850px){
+  #contextualAudio{padding:8px 12px;margin:8px 0}
+  #contextualAudio>.ca-inline-disclosure>summary{display:list-item;cursor:pointer;min-height:44px;padding:10px 0;font-weight:650}
+  #contextualAudio .ca-inline-body{padding-top:6px}
+}

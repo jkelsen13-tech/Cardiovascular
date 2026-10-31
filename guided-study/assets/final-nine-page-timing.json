@@ -1,0 +1,484 @@
+{
+  "version": 1,
+  "method": "Measured known-text acoustic alignment of unchanged actual recordings; native audio clock; no duration-proportional times",
+  "humanListeningReview": false,
+  "physicalDeviceReview": false,
+  "clips": [
+    {
+      "id": "G01",
+      "scriptSHA256": "c2056658197ab573777ad60981493b1d91a5010ad91524d019a6b931698e9e62",
+      "audioSHA256": "eb12981097a53b4a5dc56a29eedc66722246f92e7073f12c1d8a047d4fb3f0b2",
+      "bindings": [
+        {
+          "id": "G01.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 1,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G01.boundary.02",
+          "atNativeMP3Time": 6.11,
+          "effectivePage": 3,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G01.boundary.03",
+          "atNativeMP3Time": 11.32,
+          "effectivePage": 4,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G01.boundary.04",
+          "atNativeMP3Time": 13.38,
+          "effectivePage": 5,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G01.boundary.05",
+          "atNativeMP3Time": 35.27,
+          "effectivePage": 7,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G01.boundary.06",
+          "atNativeMP3Time": 51.26,
+          "effectivePage": 7,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G01.boundary.07",
+          "atNativeMP3Time": 58.44,
+          "effectivePage": 7,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G02",
+      "scriptSHA256": "9e574957803158d9861f1d88329a11593889a1c8e21bd3c6c76550b84358b3b1",
+      "audioSHA256": "829a2918e70e992152fcb4da8069e4538c5e10d857bf2752b37893628120eb8f",
+      "bindings": [
+        {
+          "id": "G02.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 67,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.02",
+          "atNativeMP3Time": 6.34,
+          "effectivePage": 67,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.03",
+          "atNativeMP3Time": 11.45,
+          "effectivePage": 68,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.04",
+          "atNativeMP3Time": 14.72,
+          "effectivePage": 69,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.05",
+          "atNativeMP3Time": 19.6,
+          "effectivePage": 70,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.06",
+          "atNativeMP3Time": 22.68,
+          "effectivePage": 71,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.07",
+          "atNativeMP3Time": 26.2,
+          "effectivePage": 72,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G02.boundary.08",
+          "atNativeMP3Time": 39.41,
+          "effectivePage": 72,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G03",
+      "scriptSHA256": "e7e8c9462506eb20611a7d2075e4096676e31ad8ccfaf603abbdd50e1d41aa45",
+      "audioSHA256": "b5e87b885d2c5a622d0e9c221416e5017f161778d56612a1afcd86a0b7c1d252",
+      "bindings": [
+        {
+          "id": "G03.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 162,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.02",
+          "atNativeMP3Time": 38.05,
+          "effectivePage": 163,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.03",
+          "atNativeMP3Time": 41.45,
+          "effectivePage": 163,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.04",
+          "atNativeMP3Time": 44.98,
+          "effectivePage": 168,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.05",
+          "atNativeMP3Time": 47.24,
+          "effectivePage": 165,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.06",
+          "atNativeMP3Time": 50.96,
+          "effectivePage": 164,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.07",
+          "atNativeMP3Time": 55.77,
+          "effectivePage": 166,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.08",
+          "atNativeMP3Time": 60.43,
+          "effectivePage": 167,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G03.boundary.09",
+          "atNativeMP3Time": 63.34,
+          "effectivePage": 170,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G04",
+      "scriptSHA256": "c595672db09c4ba56354b52035cd77d6fe9cac56a2403a33013163717a8194de",
+      "audioSHA256": "a753e03b3b592474e75fbc0abe00cc0076a6f2c43c32ec385706a9cafb28ad17",
+      "bindings": [
+        {
+          "id": "G04.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 848,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G04.boundary.02",
+          "atNativeMP3Time": 7.67,
+          "effectivePage": 849,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G04.boundary.03",
+          "atNativeMP3Time": 30.21,
+          "effectivePage": 850,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G04.boundary.04",
+          "atNativeMP3Time": 52.56,
+          "effectivePage": 851,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G05",
+      "scriptSHA256": "a4e98f9494863243fafeeb123e3c0e650e2be6305719f6110ec57b6f6db093dd",
+      "audioSHA256": "b592dcea9b144c13f87614d2e183ad859fa31833036e0a83b7143bd072da77cf",
+      "bindings": [
+        {
+          "id": "G05.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 852,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G05.boundary.02",
+          "atNativeMP3Time": 14.48,
+          "effectivePage": 854,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G05.boundary.03",
+          "atNativeMP3Time": 24.41,
+          "effectivePage": 856,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G05.boundary.04",
+          "atNativeMP3Time": 36.23,
+          "effectivePage": 856,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G05.boundary.05",
+          "atNativeMP3Time": 48.97,
+          "effectivePage": 856,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G05.boundary.06",
+          "atNativeMP3Time": 67.33,
+          "effectivePage": 858,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G06",
+      "scriptSHA256": "6d540bda87ecd265ddb5f66189ea10be86f62b5e83b7e5128f3f70d235795120",
+      "audioSHA256": "5de2ee1920bad46ff2b6caa11af50f5e86032b55549e662eb0a3d62d53727b0c",
+      "bindings": [
+        {
+          "id": "G06.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 859,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.02",
+          "atNativeMP3Time": 7.21,
+          "effectivePage": 859,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.03",
+          "atNativeMP3Time": 11.84,
+          "effectivePage": 863,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.04",
+          "atNativeMP3Time": 22.86,
+          "effectivePage": 867,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.05",
+          "atNativeMP3Time": 41.82,
+          "effectivePage": 867,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.06",
+          "atNativeMP3Time": 61.85,
+          "effectivePage": 865,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.07",
+          "atNativeMP3Time": 64.21,
+          "effectivePage": 866,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G06.boundary.08",
+          "atNativeMP3Time": 70.07,
+          "effectivePage": 867,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G07",
+      "scriptSHA256": "9a8632816179bd508cfa0e13b3a9bb24200294d96008b87f3330b7563603042c",
+      "audioSHA256": "f247d400ecaff2deb3b00b9b392afce14e4c687793963118cd3d3065c553deb5",
+      "bindings": [
+        {
+          "id": "G07.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 868,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G07.boundary.02",
+          "atNativeMP3Time": 4.64,
+          "effectivePage": 869,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G07.boundary.03",
+          "atNativeMP3Time": 11.86,
+          "effectivePage": 870,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G07.boundary.04",
+          "atNativeMP3Time": 30.56,
+          "effectivePage": 870,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G07.boundary.05",
+          "atNativeMP3Time": 69.27,
+          "effectivePage": 873,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G07.boundary.06",
+          "atNativeMP3Time": 86.67,
+          "effectivePage": 873,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G07.boundary.07",
+          "atNativeMP3Time": 91.54,
+          "effectivePage": 881,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G08",
+      "scriptSHA256": "fa08d339328fac158b5effc7694719542b0644092343531fc5af7d034bd15520",
+      "audioSHA256": "f82139317faacc7fa4066f7fb1f0cd432ddf8c401284046c07643492cbab9f04",
+      "bindings": [
+        {
+          "id": "G08.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 882,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G08.boundary.02",
+          "atNativeMP3Time": 48.3,
+          "effectivePage": 885,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G08.boundary.03",
+          "atNativeMP3Time": 63.55,
+          "effectivePage": 886,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G08.boundary.04",
+          "atNativeMP3Time": 72.22,
+          "effectivePage": 886,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G08.boundary.05",
+          "atNativeMP3Time": 87.03,
+          "effectivePage": 887,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G08.boundary.06",
+          "atNativeMP3Time": 93.89,
+          "effectivePage": 888,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        }
+      ]
+    },
+    {
+      "id": "G09",
+      "scriptSHA256": "c274280df7a463f73e5b35d3bb0caafedaf78718c4166d94c560d90b9571b8b7",
+      "audioSHA256": "d3cc97438767a86eef05faf72a41195c773ab79a3ca05eca1c68484a0c8a3d0d",
+      "bindings": [
+        {
+          "id": "G09.boundary.01",
+          "atNativeMP3Time": 0,
+          "effectivePage": 889,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G09.boundary.02",
+          "atNativeMP3Time": 25.04,
+          "effectivePage": 892,
+          "holdCurrentPage": false,
+          "answerReveal": false
+        },
+        {
+          "id": "G09.boundary.03",
+          "atNativeMP3Time": 55.61,
+          "effectivePage": 892,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        },
+        {
+          "id": "G09.boundary.04",
+          "atNativeMP3Time": 62.87,
+          "effectivePage": 892,
+          "holdCurrentPage": true,
+          "answerReveal": false
+        }
+      ]
+    }
+  ]
+}
