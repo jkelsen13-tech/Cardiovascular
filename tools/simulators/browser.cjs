@@ -18,7 +18,8 @@ const { chromium } = require("playwright"),
   page.on("request", (r) => {
     if (
       !r.url().startsWith("http://127.0.0.1:8765/") &&
-      !r.url().startsWith("data:")
+      !r.url().startsWith("data:") &&
+      !(r.url().startsWith("blob:") && new URL(r.url()).origin === "http://127.0.0.1:8765")
     )
       external.push(r.url());
   });
