@@ -25,7 +25,7 @@ const { chromium } = require("playwright"),
   });
   fs.mkdirSync("review-simulators", { recursive: true });
   try {
-    await page.goto("http://127.0.0.1:8765/");
+    require('../heart-v3/test-controls.cjs').presentationControls(page);await page.goto("http://127.0.0.1:8765/");
     await page.evaluate(() =>
       localStorage.setItem("regression-sentinel", "preserved"),
     );

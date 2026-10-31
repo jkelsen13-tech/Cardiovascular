@@ -11,7 +11,7 @@ const { chromium } = require("playwright"),
   });
   const p = await browser.newPage({ viewport: { width: 390, height: 844 } });
   try {
-    await p.goto("http://127.0.0.1:8765/");
+    require('../heart-v3/test-controls.cjs').presentationControls(p);await p.goto("http://127.0.0.1:8765/");
     await p.click("#heartSimulatorLaunch");await p.locator('#heartV3Inspector').evaluate(e=>e.open=true);await p.click('#heartV3Study [data-h3-action="legacy"]');
     await p.click("[data-tab=practice]");
     await p.click('[data-session="5"]');

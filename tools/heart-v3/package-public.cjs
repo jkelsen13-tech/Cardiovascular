@@ -75,6 +75,7 @@ function adapt(inputs) {
     source = exact(source, "${window.CardiorespiratoryStudy?button('Heart v2 · lessons & 30 questions','legacy')+button('Lungs · resume location','lungs'):''}", '', 'remove legacy launch controls');
     source = exact(source, "else if(a==='legacy'){close();window.CardiorespiratoryStudy?.open('heart');}else if(a==='lungs'){close();window.CardiorespiratoryStudy?.open('respiratory',{resume:true});}", '', 'remove legacy handlers');
     source = exact(source, "button('All study modes','home')", "button('Preview menu','home')", 'preview home label');
+    source = exact(source, 'The Heart v2 cardiac-output example remains available below.', 'These relationships are explained by the working heart model.', 'standalone pump explanation');
     return exact(source,
       'ASPT outline and supplied course clarification remain in the preserved Heart v2 lessons. The new microscopic routes are labeled deeper mechanism, with sources at each stage. This educational model has no diagnostic or patient-specific claim.',
       'The four connected routes use independently authored teaching reconstructions, with public scientific citations at each stage. This heart-only educational model has no diagnostic or patient-specific claim.',
