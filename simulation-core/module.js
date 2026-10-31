@@ -104,7 +104,7 @@
     guidedRespSignature=null;
     const owned=view;let error;const clean=fn=>{try{fn();}catch(e){error=error||e;}};
     clean(()=>{if(owned?.snapshot)sceneSnapshots.set(state.system,owned.snapshot());});
-    clean(()=>{const explorer=owned?.inspect?.().explorer;if(explorer&&fallbackExplorer){fallbackExplorer.go(explorer.segment);fallbackExplorer.go(explorer.route?.[explorer.index]||explorer.stage);}});
+    clean(()=>{const explorer=owned?.inspect?.()?.explorer;if(explorer&&fallbackExplorer){fallbackExplorer.go(explorer.segment);fallbackExplorer.go(explorer.route?.[explorer.index]||explorer.stage);}});
     view=null;clean(()=>owned?.dispose());
     for(const selector of ['[data-explorer-fallback]','[data-explorer-breath-state]']){const el=root.querySelector(selector);if(el)el.hidden=false;}
     if(error)throw error;

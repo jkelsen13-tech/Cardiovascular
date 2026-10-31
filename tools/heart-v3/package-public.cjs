@@ -151,7 +151,8 @@ function staticCheck(directory) {
   vm.runInNewContext(fs.readFileSync(path.join(directory, 'heart-study-v3/content.js'), 'utf8'), sandbox);
   const content = sandbox.module.exports;
   assert.deepEqual(Array.from(content.routes, route => route.id), ['routeA', 'routeB', 'routeC', 'routeD']);
-  assert.equal(content.routes.reduce((sum, route) => sum + route.stages.length, 0), 26);
+  assert.equal(content.routes.reduce((sum, route) => sum + route.stages.length, 0), 20);
+  assert.equal(content.mainElectricalLessons.length, 6, 'Six preserved electrical lessons are registered on the working heart');
   assert.ok(!content.sources['h3-aspt'] && !content.sources['h3-course']);
   for (const stage of content.routes.flatMap(route => Array.from(route.stages))) for (const ref of stage.sourceRefs) assert.match(content.sources[ref]?.url || '', /^https:\/\//, 'Public source for ' + stage.id);
   const attribution = fs.readFileSync(path.join(directory, 'heart-study-v3/assets/ATTRIBUTION.md'), 'utf8');
@@ -228,7 +229,7 @@ async function browserCheck(directory) {
     page.on('pageerror', error => errors.push(error.message));
     page.on('requestfailed', request => failures.push({ url: request.url(), error: request.failure()?.errorText }));
     page.on('response', response => { if (response.status() >= 400) responses.push({ url: response.url(), status: response.status() }); });
-    await page.goto(base, { waitUntil: 'load' });
+    require('./test-controls.cjs').presentationControls(page);await page.goto(base, { waitUntil: 'load' });
     assert.equal(await page.locator('#heartV3Launch').count(), 1);
     await page.locator('#heartV3Launch').click();
     await page.waitForFunction(() => !!window.HeartV3Study?.inspect().renderer, null, { timeout: 45000 });
@@ -236,7 +237,7 @@ async function browserCheck(directory) {
     assert.equal(await page.locator('[data-h3-action="legacy"],[data-h3-action="lungs"]').count(), 0);
     await page.locator('[data-h3-inspector]').evaluate(e => e.open = true);
     await page.selectOption('[data-h3-select]', 'rv');
-    await page.locator('[data-h3-preset="right"]').click();
+    await page.locator('[data-h3-rotation]').check();await page.locator('#heartV3Study canvas').focus();await page.keyboard.press('ArrowRight');
     await page.locator('[data-h3-scrub]').evaluate(input => { input.value = '.36'; input.dispatchEvent(new Event('input', { bubbles: true })); });
     const retained = await page.evaluate(() => ({ camera: HeartV3Study.inspect().camera, time: HeartV3Study.getState().time }));
     const host = page.locator('[data-h3-explorer-host]'), journeys = [];

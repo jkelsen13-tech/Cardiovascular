@@ -22,6 +22,6 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Static course and direct-heart navigation
         run: |
-          export CHROMIUM_PATH="$(node -p "require('playwright').chromium.executablePath()")"
+          export PLAYWRIGHT_CHANNEL=chrome
           python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/course-http.log" 2>&1 &
           CARDIO_BASE_URL=http://127.0.0.1:8765/ node tools/sequential-course/public-runtime.cjs

@@ -23,7 +23,10 @@ jobs:
           npm install --no-save --package-lock=false playwright@1.55.1
           npx playwright install --with-deps chromium
       - run: node tools/ecg-study/verify.cjs
-      - run: node tools/ecg-study/verify-heart.cjs
+      - name: Verify anatomical heart on website transport
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/ecg-heart-http.log" 2>&1 &
+          CARDIO_BASE_URL=http://127.0.0.1:8765/ node tools/ecg-study/verify-heart.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

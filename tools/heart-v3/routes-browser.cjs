@@ -8,12 +8,12 @@ const {chromium}=require('playwright'),A=require('node:assert/strict'),fs=requir
  const inspect=()=>page.evaluate(()=>HeartV3Study.inspect());
  async function stage(key){await page.waitForFunction(key=>HeartV3Study.inspect().detail?.stage===key,key);await page.locator('[data-h3-render-host]').scrollIntoViewIfNeeded();await page.waitForFunction(key=>HeartV3Study.inspect().renderer?.lastRenderedDetailStage===key,key);await page.waitForTimeout(100);const s=await inspect();A.equal(s.explorer.stage.key,key);A.equal(s.detail.rendererAllocated,false);A.equal(s.renderer.activeRendererCount,1);return s;}
  try{
-  await page.goto(process.env.CARDIO_BASE_URL||'http://127.0.0.1:8790/');
+  require('./test-controls.cjs').presentationControls(page);await page.goto(process.env.CARDIO_BASE_URL||'http://127.0.0.1:8790/');
   await page.evaluate(()=>{for(const [key,value]of Object.entries({'legacy-route-sentinel':'keep','cmt.aspt.mock.v1':'mock-sentinel','cmt.simulators.progress.v1':'sim-sentinel'}))localStorage.setItem(key,value);});
   await page.click('#heartV3Launch');await page.waitForFunction(()=>HeartV3Study.inspect().renderer);
   A.equal((await inspect()).state.playing,false);A.ok(!requests.some(x=>x.endsWith('/detail.js')));
   await page.locator('[data-h3-inspector]').evaluate(e=>e.open=true);
-  await page.selectOption('[data-h3-select]','rv');await page.click('[data-h3-preset="right"]');
+  await page.selectOption('[data-h3-select]','rv');await page.locator('[data-h3-rotation]').check();await page.locator('#heartV3Study canvas').focus();await page.keyboard.press('ArrowRight');
   const canvas=page.locator('#heartV3Study canvas');await canvas.focus();await page.keyboard.press('ArrowRight');await page.keyboard.press('ArrowUp');await page.keyboard.press('+');
   await page.locator('[data-h3-scrub]').evaluate(el=>{el.value='.36';el.dispatchEvent(new Event('input',{bubbles:true}));});
   const before=await inspect(),time=before.state.time,original=before.camera;

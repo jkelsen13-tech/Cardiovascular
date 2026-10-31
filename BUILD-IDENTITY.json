@@ -2,7 +2,7 @@
   "schema": "cardiovascular-main-runtime-2",
   "scope": "Existing study platform with source-ordered course,120recordings,measured page following and corrected direct3Dheart entry",
   "sourceCandidate": "1b87c70b456f8db9c0ce4d0c4610468d091d4074",
-  "runtimeSnapshotSHA256": "7f10651f10eb39ffdf3e543281651d1bbfbf2e73813d1bffcf8d9c45da3e0ec2",
+  "runtimeSnapshotSHA256": "0619fabe0ec170915759763dfbfc68d32c18af84314ff579703b5adc954016a3",
   "sourceLessons": 84,
   "recordings": 120,
   "sourceImages": 911,
@@ -4718,8 +4718,8 @@
       "sha256": "7fe9e390c9041198bd590950181c9cf997647e04f3b242f110ec25a017eb0df4"
     },
     "simulation-core/module.js": {
-      "bytes": 65423,
-      "sha256": "58fbc03c2bcc6c104729e3d9573b60179a04acbb97e4efaf3b85b7ded712f6f8"
+      "bytes": 65424,
+      "sha256": "136d81af4a45c1e784e3f2c2eeabbb59a111af143594d87207884e6de922aeb4"
     },
     "simulation-core/progress.js": {
       "bytes": 2328,

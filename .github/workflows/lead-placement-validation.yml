@@ -22,7 +22,10 @@ jobs:
         run: |
           npm install --no-save --package-lock=false playwright@1.55.1
           npx playwright install --with-deps chromium
-      - run: node tools/lead-placement/verify.cjs
+      - name: Verify lead lab on website transport
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/lead-http.log" 2>&1 &
+          CARDIO_BASE_URL=http://127.0.0.1:8765/ node tools/lead-placement/verify.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

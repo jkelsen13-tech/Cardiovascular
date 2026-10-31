@@ -131,3 +131,5 @@ The ordinary Heart Simulator entry and the lungs return both open the approved
 Heart v3 experience. Its explicit Heart v2 lessons link preserves the supplementary
 legacy lessons and calculations. Full-recording listening/pronunciation review,
 physical iPad Safari and hardware sound/display timing remain pending.
+
+The narrated course and source-page access use the website or an HTTP server. Direct HTML file opening remains available for the original self-contained quiz; it is not the supported transport for the new media course.
