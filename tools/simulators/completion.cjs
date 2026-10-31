@@ -16,8 +16,8 @@ const { chromium } = require("playwright"),
   const errors = [];
   p.on("pageerror", (e) => errors.push(e.message));
   try {
-    await p.goto("http://127.0.0.1:8765");
-    await p.click("#heartSimulatorLaunch");
+    require('../heart-v3/test-controls.cjs').presentationControls(p);await p.goto("http://127.0.0.1:8765");
+    await p.click("#heartSimulatorLaunch");await p.locator('#heartV3Inspector').evaluate(e=>e.open=true);await p.click('#heartV3Study [data-h3-action="legacy"]');
     await p.click("[data-load-anatomy]");
     await p.waitForSelector("[data-organ-host][data-ready=true]");
     const route = [
@@ -131,6 +131,7 @@ const { chromium } = require("playwright"),
     for (const system of ["heart", "respiratory"]) {
       await p.click("[data-home]");
       await p.click("#" + system + "SimulatorLaunch");
+      if(system==="heart"){await p.locator("#heartV3Inspector").evaluate(e=>e.open=true);await p.click("#heartV3Study [data-h3-action=legacy]");}
       const base = await p
         .locator("[data-load-status]")
         .evaluate((e) => parseFloat(getComputedStyle(e).fontSize));

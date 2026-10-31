@@ -113,7 +113,7 @@ const server = http.createServer((req, res) => {
 (async () => {
   await new Promise((r) => server.listen(0, '127.0.0.1', r));
   const url = 'http://127.0.0.1:' + server.address().port;
-  const browser = await chromium.launch({headless: true});
+  const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,headless: true});
   try {
     const page = await browser.newPage({viewport: {width: 1280, height: 900}});
     const errors = [];
@@ -138,7 +138,7 @@ const server = http.createServer((req, res) => {
       assert(sa.x < av.x, 'SA node belongs in the right atrium (viewer left)');
 
       assert.equal(await page.locator('#ecgStageCaption').innerText(), D.stages[0].caption);
-      const headerBox = await page.locator('header').boundingBox();
+      const headerBox = await page.locator('body > header').boundingBox();
       const instBox = await page.locator('#ecgInstrument').boundingBox();
       assert(headerBox && instBox);
       assert(instBox.y + 4 >= headerBox.y + headerBox.height, 'ECG tracing must sit below the sticky header');
@@ -173,7 +173,7 @@ const server = http.createServer((req, res) => {
       await page.locator('#ecgLandmarksToggle').check();
       assert(await page.locator('#ecgLandmarkBox').isVisible());
       const instAfterLand = await page.locator('#ecgInstrument').boundingBox();
-      const headerAfterLand = await page.locator('header').boundingBox();
+      const headerAfterLand = await page.locator('body > header').boundingBox();
       assert(instAfterLand.y + 4 >= headerAfterLand.y + headerAfterLand.height, 'landmarks tracing must sit below the sticky header');
       const land = await page.locator('#ecgLandmarkBox').innerText();
       for (const needle of ['PR interval', 'PR segment', 'QT interval', 'ST segment', 'J point', 'QRS duration', 'U wave', 'TP segment', '0.12–0.20', '< 0.12', 'J junction']) {

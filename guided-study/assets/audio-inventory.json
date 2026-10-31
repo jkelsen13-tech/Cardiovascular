@@ -1,0 +1,1206 @@
+{
+  "recordings": [
+    {
+      "id": "M02.01",
+      "title": "The four chambers",
+      "audio": {
+        "src": "guided-study/assets/M02_01_adam_multilingual_v2.mp3",
+        "duration": 49.266938,
+        "sha256": "fbef2ef3dd5da65b9284880d772f6b0f51e899d461b720dd92e0d41f217183fa"
+      },
+      "transcriptSHA256": "a3250a28c3ed4a8c0a750b9b2adb5eb7643f319adf27b9d2bcf5ad47103a3e33"
+    },
+    {
+      "id": "M02.02",
+      "title": "Systemic venous return",
+      "audio": {
+        "src": "guided-study/assets/M02_02_adam_multilingual_v2.mp3",
+        "duration": 24.26775,
+        "sha256": "f9c86e20509e10fe120c4b68c5a36c61440e270c3f37873a78855760121e5cb3"
+      },
+      "transcriptSHA256": "6d97d6a5656b38d94eb4022ef058066a03cdbb4e7b4a21125858a7ed4d0b5e71"
+    },
+    {
+      "id": "M02.03",
+      "title": "Tricuspid valve and right ventricle",
+      "audio": {
+        "src": "guided-study/assets/M02_03_adam_multilingual_v2.mp3",
+        "duration": 30.119125,
+        "sha256": "c526f07d1f4c3a27047d0d6858cc28849b5388c77496f027bd601fc4db3ca890"
+      },
+      "transcriptSHA256": "30f7904fc4c7d27df9aafe3a43182c82657dca482566b4ba372bcd9328c984f3"
+    },
+    {
+      "id": "M02.04",
+      "title": "Pulmonary valve and pulmonary arteries",
+      "audio": {
+        "src": "guided-study/assets/M02_04_adam_multilingual_v2.mp3",
+        "duration": 31.190188,
+        "sha256": "49504a9a48d970e357fad3fd62f8bf7e28c116d0dc2f91f1f95ee945170d2c4e"
+      },
+      "transcriptSHA256": "bc806fd310515bf983568e5cf795b6e671154f9059412807c925eb2ad90300b5"
+    },
+    {
+      "id": "M02.05",
+      "title": "Pulmonary capillaries and return",
+      "audio": {
+        "src": "guided-study/assets/M02_05_adam_multilingual_v2.mp3",
+        "duration": 31.164063,
+        "sha256": "b507d69d57670266eae5a95240ec7dddb1a4ea038d72806aa8f2d560471ebd59"
+      },
+      "transcriptSHA256": "0fc45cb0c466d3c29806d2a1bc8ab16c3a61a06677a618705687932361da7d3a"
+    },
+    {
+      "id": "M02.06",
+      "title": "Mitral valve and left ventricle",
+      "audio": {
+        "src": "guided-study/assets/M02_06_adam_multilingual_v2.mp3",
+        "duration": 28.029375,
+        "sha256": "143a7a31579e45da24a51fccac751d63c47b863191f9b832f4c66e5137abd9b5"
+      },
+      "transcriptSHA256": "d23beff4ef3bfcf326f6595751ee23e8e76cf4712629a682c4b0556ef3b401a3"
+    },
+    {
+      "id": "M02.07",
+      "title": "Aortic valve and systemic arteries",
+      "audio": {
+        "src": "guided-study/assets/M02_07_adam_multilingual_v2.mp3",
+        "duration": 27.533063,
+        "sha256": "ad47b2d030321f96b740db3dfcec9ff8bed5bc48831fe214910c1155db685b40"
+      },
+      "transcriptSHA256": "24c0b4a6cb3e1d31a559d450d55ebaa6559d156fce40461470f289eb5b2cd62e"
+    },
+    {
+      "id": "M02.08",
+      "title": "Two circuits, one continuous route",
+      "audio": {
+        "src": "guided-study/assets/M02_08_adam_multilingual_v2.mp3",
+        "duration": 29.07425,
+        "sha256": "03e7ce937e75eb411565fd5dbb00600376cd452e117c0b22406ffd89109a4b3e"
+      },
+      "transcriptSHA256": "520e5d790adb1abb6e8540e5c906caa01fdfa893324f250adaaf690220a559b4"
+    },
+    {
+      "id": "M02.09",
+      "title": "Vessels and their walls",
+      "audio": {
+        "src": "guided-study/assets/M02_09_adam_multilingual_v2.mp3",
+        "duration": 32.444063,
+        "sha256": "cc3fe7c770edbc3de833d0beb2b1d5b57b7680d93366c34f8c7885852f71e1cf"
+      },
+      "transcriptSHA256": "d811a853e1ee38e906d04744c3e029e9e203ecf48c1113f8021cd94ff00ab9ff"
+    },
+    {
+      "id": "M02.10",
+      "title": "What blood carries",
+      "audio": {
+        "src": "guided-study/assets/M02_10_adam_multilingual_v2.mp3",
+        "duration": 34.168125,
+        "sha256": "c101159ed411d6f31824a8ac4db53aa99edcf999823f66505083688c2b08f6cd"
+      },
+      "transcriptSHA256": "dec2f4cc748ff7d88c49c36e2aecd6f7570a66aa5db36d494a856985ba8e214c"
+    },
+    {
+      "id": "M02.11",
+      "title": "Coronary circulation",
+      "audio": {
+        "src": "guided-study/assets/M02_11_adam_multilingual_v2.mp3",
+        "duration": 33.149375,
+        "sha256": "08a8f55ac18e39c6a39cac0dedcadf9d8d18cb2d9bdb7a43d62a6e5b22d521b6"
+      },
+      "transcriptSHA256": "2429a2b6b8c104aacfdec6cb49d20b2e516280d77809133323d908214e84076c"
+    },
+    {
+      "id": "M02.12",
+      "title": "Trace the complete route",
+      "audio": {
+        "src": "guided-study/assets/M02_12_adam_multilingual_v2.mp3",
+        "duration": 28.656313,
+        "sha256": "2abbde222d8448e9d2e815cdb7d57884dab0118dc41a0d6a2c0dde0bf32899ca"
+      },
+      "transcriptSHA256": "52ff251bd5d1db7ca5b8abb7728f2f9a8e067887e856536beb7830f069f91d91"
+    },
+    {
+      "id": "M01.01",
+      "title": "How to use this lesson",
+      "audio": {
+        "src": "guided-study/assets/M01_01_adam_multilingual_v2.mp3",
+        "duration": 30.275875,
+        "sha256": "60bb5df72dec4044ab6a903994061c67223a7c958ff9b78d9f5f0f44ca3a5d70"
+      },
+      "transcriptSHA256": "ac39c3adcf22cd9bc3804dd1396cf87691d541361881c81d0624e48e11118bdd"
+    },
+    {
+      "id": "M01.02",
+      "title": "One connected transport system",
+      "audio": {
+        "src": "guided-study/assets/M01_02_adam_multilingual_v2.mp3",
+        "duration": 31.373063,
+        "sha256": "4c4c2561af2cb2ad545564db5b9abc5859636c865f7e89604ca299339044c834"
+      },
+      "transcriptSHA256": "1f4adb9b27404d0c755bdd400092c439ef44b93b64a3d6894ae7805ef32e7e9f"
+    },
+    {
+      "id": "M01.03",
+      "title": "Patient orientation and body planes",
+      "audio": {
+        "src": "guided-study/assets/M01_03_adam_multilingual_v2.mp3",
+        "duration": 29.857938,
+        "sha256": "c7775930e6409d11d245c8e0b3e9c7817d72d64f5d9791de139c6d1e95d5e9cb"
+      },
+      "transcriptSHA256": "756a6b10ddc0cfa7df44be5bce855b4c988ea1b9dedd341b358cef09d0e39e9e"
+    },
+    {
+      "id": "M01.04",
+      "title": "Finding the heart in the chest",
+      "audio": {
+        "src": "guided-study/assets/M01_04_adam_multilingual_v2.mp3",
+        "duration": 27.350188,
+        "sha256": "f62b43bd145f5fa44855b3bc7c8b1e5f81a6a35e3dcc60317abd63d6b09f14cc"
+      },
+      "transcriptSHA256": "af8b7468c3e8106bd30d4b77d30a20f1e90df8091b12879dc3d94e6338a10003"
+    },
+    {
+      "id": "M01.05",
+      "title": "Additional directional terms",
+      "audio": {
+        "src": "guided-study/assets/M01_05_adam_multilingual_v2.mp3",
+        "duration": 29.622813,
+        "sha256": "a5cc68424b96b5974772005d5e4baa36ef3a6ba68538d13cf3cdd8c7bc32f601"
+      },
+      "transcriptSHA256": "09a5b133fc93d8aa6dd0f9f6e24799805f161a6c4c76f5c244fc90947a642b2f"
+    },
+    {
+      "id": "M01.06",
+      "title": "Orientation checkpoint",
+      "audio": {
+        "src": "guided-study/assets/M01_06_adam_multilingual_v2.mp3",
+        "duration": 20.48,
+        "sha256": "306b1cef61509f03705fa9bafac229fa74a94baac266e2666d926fbeac4e8a84"
+      },
+      "transcriptSHA256": "9874bf1b15936db6879122a8a0d35542a85595ef35f7201da83293a1de96f22a"
+    },
+    {
+      "id": "M03.01",
+      "title": "Heart wall and protective sac",
+      "audio": {
+        "src": "guided-study/assets/M03_01_adam_multilingual_v2.mp3",
+        "duration": 27.611375,
+        "sha256": "9baedd974a485cfc5dfe44ce7646b79c4387736d8d47409e54a7f44e0c55b377"
+      },
+      "transcriptSHA256": "19e1a283203353c80a04e922e1f632da84712835d3b1739372cb38d693c43529"
+    },
+    {
+      "id": "M03.02",
+      "title": "Cardiac muscle cells work together",
+      "audio": {
+        "src": "guided-study/assets/M03_02_adam_multilingual_v2.mp3",
+        "duration": 37.0155,
+        "sha256": "4f5018217c51959a6a53580e007dca24d263fb83515ec5fbcb955316c2fe0c1a"
+      },
+      "transcriptSHA256": "72e7e08984f14293fe53215681680af2af6fdb30e8c7d158eab8a188263e0198"
+    },
+    {
+      "id": "M03.03",
+      "title": "Filling and atrial systole",
+      "audio": {
+        "src": "guided-study/assets/M03_03_adam_multilingual_v2.mp3",
+        "duration": 37.564063,
+        "sha256": "d48fe1beee4eb1e095b87a9480eb8ea334751da57c36ecdc3929c88e1be0243d"
+      },
+      "transcriptSHA256": "2abb5d5a47c0a38a9eee42528588f0feed49f62763acabdea1aaf3f1681a7a6e"
+    },
+    {
+      "id": "M03.04",
+      "title": "Pressure rises before ejection",
+      "audio": {
+        "src": "guided-study/assets/M03_04_adam_multilingual_v2.mp3",
+        "duration": 33.01875,
+        "sha256": "6c9673bb9deb09e784915c14e92218d627ea38d9c483d9a199ce9798c436de2a"
+      },
+      "transcriptSHA256": "da6548ce07c890d6772cfb136960923ebccfe5b41426610b6e85fde0adafa9f8"
+    },
+    {
+      "id": "M03.05",
+      "title": "Ventricular ejection",
+      "audio": {
+        "src": "guided-study/assets/M03_05_adam_multilingual_v2.mp3",
+        "duration": 29.257125,
+        "sha256": "3a0042710f37a822d24c72214380d09ed00e2e29ba918cffd7f9dc09e161117a"
+      },
+      "transcriptSHA256": "0f385dc449dcd68883a0eaec181c83b98c510660aaab72d2d3401c1311ceba8c"
+    },
+    {
+      "id": "M03.06",
+      "title": "Relaxation and the next cycle",
+      "audio": {
+        "src": "guided-study/assets/M03_06_adam_multilingual_v2.mp3",
+        "duration": 37.564063,
+        "sha256": "524bcfa144629999d9589d67487fd27d0727b37772a2af61b6581f7290091588"
+      },
+      "transcriptSHA256": "84a019b8c003feabc5a9ff7c7cc7d0a131a0e06dbc6e331ca12d9950ce028c2b"
+    },
+    {
+      "id": "M03.07",
+      "title": "Rate, stroke volume, and output",
+      "audio": {
+        "src": "guided-study/assets/M03_07_adam_multilingual_v2.mp3",
+        "duration": 28.604063,
+        "sha256": "3b3cf4348f7b09ef1a408727e93f68679665eba8578ef59913b1230c737590ae"
+      },
+      "transcriptSHA256": "6727698efa1cd9afa33fb42f2e6db33b38323224ddf6499ffa8a14bf76a0e820"
+    },
+    {
+      "id": "M03.08",
+      "title": "Preload, afterload, and ejection fraction",
+      "audio": {
+        "src": "guided-study/assets/M03_08_adam_multilingual_v2.mp3",
+        "duration": 36.022813,
+        "sha256": "c22009951063f67997b4a361e2efb0bd8e68d75a7f32028545c8652684c63712"
+      },
+      "transcriptSHA256": "3290ef7b20294cfda1b279c4799f94d186f9de6d43feb74cb5a5d1328e92ab42"
+    },
+    {
+      "id": "M03.09",
+      "title": "Pressure and mechanical checkpoint",
+      "audio": {
+        "src": "guided-study/assets/M03_09_adam_multilingual_v2.mp3",
+        "duration": 31.242438,
+        "sha256": "c3c635a36520f2959e5644a6c7694bdfa9bbf6e3023b8ad246a20f176c96f125"
+      },
+      "transcriptSHA256": "5211be539e395f4deff4583ad61b00e03c5c34b08dab10ea9e2b2d2f208b56e0"
+    },
+    {
+      "id": "M04.01",
+      "title": "Conduction on the same heart",
+      "audio": {
+        "src": "guided-study/assets/M04_01_adam_multilingual_v2.mp3",
+        "duration": 37.8775,
+        "sha256": "f3da8d663b59db1f4012decedd1afc82bc604c23d2c8ec38a01745a449c893b2"
+      },
+      "transcriptSHA256": "1037ac29d78a0d5d6060afdaac5698914fee9660ca9ab672ab9fa84958668de8"
+    },
+    {
+      "id": "M04.02",
+      "title": "The sinoatrial node",
+      "audio": {
+        "src": "guided-study/assets/M04_02_adam_multilingual_v2.mp3",
+        "duration": 27.89875,
+        "sha256": "6ff64b30952b30aa15e6e602af245cd43383b6fb38133dc2e32646e24935e5c2"
+      },
+      "transcriptSHA256": "98bc97d0c5ce2fb971185ad04de165ca5a0a17d1999fa00ffb1563b2dc7fd861"
+    },
+    {
+      "id": "M04.03",
+      "title": "Atrial spread and AV delay",
+      "audio": {
+        "src": "guided-study/assets/M04_03_adam_multilingual_v2.mp3",
+        "duration": 29.570563,
+        "sha256": "548558f3fb827cce7e4330c193dcbbe1fe7a6825fea3b4b012d4340b3d534655"
+      },
+      "transcriptSHA256": "fc07f7142ec598d215808ce161df2623cd2bd6a27adb13e45700765612ff767c"
+    },
+    {
+      "id": "M04.04",
+      "title": "His, branches, and Purkinje fibers",
+      "audio": {
+        "src": "guided-study/assets/M04_04_adam_multilingual_v2.mp3",
+        "duration": 30.275875,
+        "sha256": "7db06e2bc3242508116f024e0d64d865becf23bc9789a63407a919ae11d9fb94"
+      },
+      "transcriptSHA256": "6f291be4eaf65f0bfc8af443a5f2a7aaab29a63712c27c5d7424341dcd99d7c4"
+    },
+    {
+      "id": "M04.05",
+      "title": "Backup pacemakers and conduction speed",
+      "audio": {
+        "src": "guided-study/assets/M04_05_adam_multilingual_v2.mp3",
+        "duration": 32.862,
+        "sha256": "0b98be54911d178f0132b04ef3d1a4f133c4e4f4dcc73bf2a99b53d14aca80bb"
+      },
+      "transcriptSHA256": "7e9bc2a13974bb25075460b803604e0487276b82c316f8a0dacb6c992e60df10"
+    },
+    {
+      "id": "M04.06",
+      "title": "Working-cell action potential",
+      "audio": {
+        "src": "guided-study/assets/M04_06_adam_multilingual_v2.mp3",
+        "duration": 30.772188,
+        "sha256": "dbd0a36af0607db2f047b18a32d947ae42bdb2518260a57ac8aeaf5047b26c4d"
+      },
+      "transcriptSHA256": "312f686c86331672e39e8e0190ceaa94001629640ba733868fe8c6baa89dd20e"
+    },
+    {
+      "id": "M04.07",
+      "title": "Pacemaker cells are different",
+      "audio": {
+        "src": "guided-study/assets/M04_07_adam_multilingual_v2.mp3",
+        "duration": 31.346938,
+        "sha256": "811c5d9aad217063dee8885891731ae20b44635175b2e9b879765afc9f56c3c4"
+      },
+      "transcriptSHA256": "1a89ee4e3c29f366ca1104a5ad1921d93986c5724094fc582b12fe6cac57783e"
+    },
+    {
+      "id": "M04.08",
+      "title": "Calcium couples signal to contraction",
+      "audio": {
+        "src": "guided-study/assets/M04_08_adam_multilingual_v2.mp3",
+        "duration": 30.171375,
+        "sha256": "31a4e0cdbf490c38a14bf6a9c098d29d5411cf96d7074259598943915be93260"
+      },
+      "transcriptSHA256": "66ab7d232ecb0261344c699d3102b7f544714b479cf2ffa611dce1148bcf1a22"
+    },
+    {
+      "id": "M04.09",
+      "title": "The sarcomere shortens",
+      "audio": {
+        "src": "guided-study/assets/M04_09_adam_multilingual_v2.mp3",
+        "duration": 39.549375,
+        "sha256": "f6e6df3e439e8458d13a4f88f1e12dd37dce817d4101971ef7d7ccfec222ed69"
+      },
+      "transcriptSHA256": "48af37935f14f216065cbb27df7514a994beb3040ac546c70e974d0a24e6672d"
+    },
+    {
+      "id": "M04.10",
+      "title": "Calcium removal permits relaxation",
+      "audio": {
+        "src": "guided-study/assets/M04_10_adam_multilingual_v2.mp3",
+        "duration": 35.47425,
+        "sha256": "308df712605904b22b0f9666bb8bde1685a696300e9fd56ff7e487e72c3cb2d9"
+      },
+      "transcriptSHA256": "c0e3038f7c4cc364b6676762c6a880a0f2f30950f83ca90462819e875b46dc7a"
+    },
+    {
+      "id": "M04.11",
+      "title": "Ions and the sodium-potassium pump",
+      "audio": {
+        "src": "guided-study/assets/M04_11_adam_multilingual_v2.mp3",
+        "duration": 38.217125,
+        "sha256": "b853a3fe4b45015ec2b68232b83273eed4bfafa908284f6d12147f506066fe8e"
+      },
+      "transcriptSHA256": "9cff6425fef41fb2656d0475c377d58e47bb9e6b02fa9d3d629f428b23e92c37"
+    },
+    {
+      "id": "M04.12",
+      "title": "Refractory periods and checkpoint",
+      "audio": {
+        "src": "guided-study/assets/M04_12_adam_multilingual_v2.mp3",
+        "duration": 35.186938,
+        "sha256": "9ac3c08ae9fb09f4b100e24bfa14d507fbeb9215fc2e1220ac10569f9c4af84a"
+      },
+      "transcriptSHA256": "85389850fd7bd1d120e90cd5de49a0c48ced325cdd051737fe8e77b29e52a2fe"
+    },
+    {
+      "id": "M05.01",
+      "title": "From nose and mouth to pharynx",
+      "audio": {
+        "src": "guided-study/assets/M05_01_adam_multilingual_v2.mp3",
+        "duration": 28.734688,
+        "sha256": "cdbc31a4690fa49a525bb1cf0767b29df8e1324d21cece52fafe162597494817"
+      },
+      "transcriptSHA256": "50a7e291c2b3898faf88ba88dd39518485768c08e51d6d111998b9f23a0f7d33"
+    },
+    {
+      "id": "M05.02",
+      "title": "Larynx, epiglottis, and trachea",
+      "audio": {
+        "src": "guided-study/assets/M05_02_adam_multilingual_v2.mp3",
+        "duration": 26.51425,
+        "sha256": "7bf2c41c9f3bdb92230a47935fda026cea8a2e28e308a8ceb30bd1fbb09152a6"
+      },
+      "transcriptSHA256": "69756c45e1e360055dba7190f353cfdef1202a72b881f3520fd40ddb7733c203"
+    },
+    {
+      "id": "M05.03",
+      "title": "Branching airways and lung lobes",
+      "audio": {
+        "src": "guided-study/assets/M05_03_adam_multilingual_v2.mp3",
+        "duration": 30.824438,
+        "sha256": "3969859343a47e414fe9400b0732392423cf6d59bff8cd5a9755c0916a722a8e"
+      },
+      "transcriptSHA256": "40d5e7b49477c586517b9c7b83c7b646f82486548c10d54b1f99aad02f827b29"
+    },
+    {
+      "id": "M05.04",
+      "title": "Conducting zone and dead space",
+      "audio": {
+        "src": "guided-study/assets/M05_04_adam_multilingual_v2.mp3",
+        "duration": 32.496313,
+        "sha256": "301b02a0ffafa08be6cba2b5d23099e23abf6d87053eb8b318c2827d609d2b96"
+      },
+      "transcriptSHA256": "45090fed35e87bcb5eaf1ec0a33cdb91b40d93eea9b52a9a8fee031b30021388"
+    },
+    {
+      "id": "M05.05",
+      "title": "Pleura couples chest and lungs",
+      "audio": {
+        "src": "guided-study/assets/M05_05_adam_multilingual_v2.mp3",
+        "duration": 26.279125,
+        "sha256": "50400ec1e1e446e1f9d5bd859bbd85eb094e3a1469fa879757e7adf21cd808a4"
+      },
+      "transcriptSHA256": "ff4c8080376e391db75c84364f083e96a4a21a943b63326ba93570ef13f6499a"
+    },
+    {
+      "id": "M05.06",
+      "title": "Diaphragm and ribs during inspiration",
+      "audio": {
+        "src": "guided-study/assets/M05_06_adam_multilingual_v2.mp3",
+        "duration": 30.119125,
+        "sha256": "ae10fe598b200c32eff4332f9ea8c3e6c2ad41f536921b5b5370bcd8309e90ec"
+      },
+      "transcriptSHA256": "a4135788d05901aed5aae3370247c6b1b16f6960dd3a6a249bacba6f0d151749"
+    },
+    {
+      "id": "M05.07",
+      "title": "Quiet expiration and forced breathing",
+      "audio": {
+        "src": "guided-study/assets/M05_07_adam_multilingual_v2.mp3",
+        "duration": 33.515063,
+        "sha256": "84c77e5f054f7a3379bb461008f08c49a3131c94b2f106a0b5e514646c4cd43b"
+      },
+      "transcriptSHA256": "3ae4c31b8b3b84aa9ba6dc428f665c356b44a4fe2e55dbd57570c05031dea51e"
+    },
+    {
+      "id": "M05.08",
+      "title": "Alveolus meets pulmonary capillary",
+      "audio": {
+        "src": "guided-study/assets/M05_08_adam_multilingual_v2.mp3",
+        "duration": 29.622813,
+        "sha256": "cddf36190619663e9a71674e3eb982cabf7597f9bacf221d6dcdcc96806087de"
+      },
+      "transcriptSHA256": "a07da38484af4b4e539bca86747d72bebbdc612eb49957a9945c4408a439af84"
+    },
+    {
+      "id": "M05.09",
+      "title": "Ventilation, perfusion, and respiration",
+      "audio": {
+        "src": "guided-study/assets/M05_09_adam_multilingual_v2.mp3",
+        "duration": 33.149375,
+        "sha256": "afce999bfad53d7849cca817fc6e8876e5b4f4c7eb306d6d8f67c0c98658f6e1"
+      },
+      "transcriptSHA256": "bc88fe30844626e8f20f0a07b9e7b9867a88bb490d5d9fbb05480991f01ddb6f"
+    },
+    {
+      "id": "M05.10",
+      "title": "Carbon dioxide and pH",
+      "audio": {
+        "src": "guided-study/assets/M05_10_adam_multilingual_v2.mp3",
+        "duration": 29.204875,
+        "sha256": "e2d79dd913b90e2f3aed4c7b72b5dc4701df58d54a0ba43f67061785d6eb2062"
+      },
+      "transcriptSHA256": "800ebc81c159a6c9fa982f4d53ae24b9855d6b1f34fd290ae4907ae9fb6532f1"
+    },
+    {
+      "id": "M05.11",
+      "title": "Control of breathing",
+      "audio": {
+        "src": "guided-study/assets/M05_11_adam_multilingual_v2.mp3",
+        "duration": 32.626938,
+        "sha256": "ad4e89ac1099f05fc2a75fcca5b0f1235c00a69bfe2640d712c356f52c923dec"
+      },
+      "transcriptSHA256": "256fc7799f2cef9279db7867e118025b3924d2ed8d595a5896a3b488586bbcf6"
+    },
+    {
+      "id": "M05.12",
+      "title": "Connect the lungs back to the heart",
+      "audio": {
+        "src": "guided-study/assets/M05_12_adam_multilingual_v2.mp3",
+        "duration": 30.511,
+        "sha256": "a6697f1933a88b080385981123093ca6af09da6281bcdfbe14fc19e05d63725a"
+      },
+      "transcriptSHA256": "15964e6caf967df1ce36c50506c0153c806f3e6e6282ac0fe00b8e91401c45fb"
+    },
+    {
+      "id": "M06.01",
+      "title": "Respiratory rate",
+      "audio": {
+        "src": "guided-study/assets/M06_01_adam_multilingual_v2.mp3",
+        "duration": 27.768125,
+        "sha256": "8e2fca2fa051db276d05b7924e60f09e6105c7dbc88a361b6c6804f699010009"
+      },
+      "transcriptSHA256": "eb9b48592345f4a3d7396cdd70d66a4caf11c2581fa4656826b8dfe1e89d0aa5"
+    },
+    {
+      "id": "M06.02",
+      "title": "Pulse oximetry measures saturation",
+      "audio": {
+        "src": "guided-study/assets/M06_02_adam_multilingual_v2.mp3",
+        "duration": 31.373063,
+        "sha256": "301a579b3ca52eff39c2b143fa2f60e5555622ca4b81ca41752f0995036f6a83"
+      },
+      "transcriptSHA256": "15f6e4dbbafdbd26fadc84dba0fdeb85c77d6aad09b3951be539e6130b6d4fe3"
+    },
+    {
+      "id": "M06.03",
+      "title": "Pulse oximetry limitations",
+      "audio": {
+        "src": "guided-study/assets/M06_03_adam_multilingual_v2.mp3",
+        "duration": 36.205688,
+        "sha256": "cbf6227f9ee4476b03244d8fe64691147e9fc1498a80678c6245535110b24e1d"
+      },
+      "transcriptSHA256": "2d11efcf6d67f45759eb7eedfe5244a7316ca237cc5f44cd7fecca233d392ed4"
+    },
+    {
+      "id": "M06.04",
+      "title": "Capnography and end-tidal carbon dioxide",
+      "audio": {
+        "src": "guided-study/assets/M06_04_adam_multilingual_v2.mp3",
+        "duration": 31.712625,
+        "sha256": "4d5bb1aefb37333f899f5d2c0683de8d45687c85e5076631aac4037277d98993"
+      },
+      "transcriptSHA256": "3cd6f574399302ea2be4645b375f138aea1dcd728b044494182c78c5db3f5576"
+    },
+    {
+      "id": "M06.05",
+      "title": "What each monitor can and cannot say",
+      "audio": {
+        "src": "guided-study/assets/M06_05_adam_multilingual_v2.mp3",
+        "duration": 35.84,
+        "sha256": "33f49bad3a061953efc60e7c180e7491b03ec6e121eff930c8f5c817e090c30b"
+      },
+      "transcriptSHA256": "3656bb28ddc077d8339bfc9d3f4ca4b72f83072393543d66226fe2cdc873853d"
+    },
+    {
+      "id": "M08.01",
+      "title": "Paper calibration",
+      "audio": {
+        "src": "guided-study/assets/M08_01_adam_multilingual_v2.mp3",
+        "duration": 33.201625,
+        "sha256": "b00e3ce6e8d91da2601d2a176d1bd6629cbca4638bb40b051a64f6db098031cb"
+      },
+      "transcriptSHA256": "74ad7e89a3d4314b72c88e3a413d1bdfe8e3ff76f3c842ebe8f083ed2eb46c56"
+    },
+    {
+      "id": "M08.02",
+      "title": "P wave and PR interval",
+      "audio": {
+        "src": "guided-study/assets/M08_02_adam_multilingual_v2.mp3",
+        "duration": 32.626938,
+        "sha256": "a228aedd56b67794ddc37fb3422e1e4d9ec25ed0b3ccd850e155f64f61f0fa09"
+      },
+      "transcriptSHA256": "b3370cf3dc956d6376a12ea7441d9ab47e3c7ea562d3aee27db19d4e0b2a3ba3"
+    },
+    {
+      "id": "M08.03",
+      "title": "QRS complex and J point",
+      "audio": {
+        "src": "guided-study/assets/M08_03_adam_multilingual_v2.mp3",
+        "duration": 34.690563,
+        "sha256": "231d067d9f4430c35cc20086fae8c6428bdb026460de6a39e00504ee3cf0d817"
+      },
+      "transcriptSHA256": "686e2899a3d6a54b0d22d4b9301e4ab29b061a6ace743d0d67a05d26183d91e9"
+    },
+    {
+      "id": "M08.04",
+      "title": "ST segment, T wave, and U wave",
+      "audio": {
+        "src": "guided-study/assets/M08_04_adam_multilingual_v2.mp3",
+        "duration": 27.8465,
+        "sha256": "3ab8401f76ad601a235b358ff765ce585e0cb34d7a2fa7ecc527e493a6620f00"
+      },
+      "transcriptSHA256": "c5e193ec8448ff891e58adef793272a7ff38990e517ff53a65e8098abd4db3d2"
+    },
+    {
+      "id": "M08.05",
+      "title": "QT interval and rate correction",
+      "audio": {
+        "src": "guided-study/assets/M08_05_adam_multilingual_v2.mp3",
+        "duration": 30.040813,
+        "sha256": "b93c28477c84f0380fdf50a0470cb394ad5fadd7587b3911c1468aba04fc816d"
+      },
+      "transcriptSHA256": "d0af68ce187484187e12a98d51c0ebf9b177fb895f45167a41532a252c8c73c6"
+    },
+    {
+      "id": "M08.06",
+      "title": "Six-step rhythm method",
+      "audio": {
+        "src": "guided-study/assets/M08_06_adam_multilingual_v2.mp3",
+        "duration": 32.783625,
+        "sha256": "ef69cb4d141ad342f073dcda71718a3f78c631aba5ae9f1dcee7fbf870c7f333"
+      },
+      "transcriptSHA256": "c80c1ec989c3d8f51150bfe5eccfc9c26dbbfc86b4c52b105ebce304a4e2008c"
+    },
+    {
+      "id": "M08.07",
+      "title": "Regularity and ectopic beats",
+      "audio": {
+        "src": "guided-study/assets/M08_07_adam_multilingual_v2.mp3",
+        "duration": 33.880813,
+        "sha256": "09ccf2b72aec9d1b8713d11e640975bded3e82e877ea5ecac0e137fa10513872"
+      },
+      "transcriptSHA256": "00a5625a5474d5f4ab849afa9ff59cdf5db8943257ca083c348d2216569c4fd8"
+    },
+    {
+      "id": "M08.08",
+      "title": "Calculate rate and check consistency",
+      "audio": {
+        "src": "guided-study/assets/M08_08_adam_multilingual_v2.mp3",
+        "duration": 30.876688,
+        "sha256": "b646aa9447c080adfb26e96c571cedb44c704b02f8b17e36d0fd8ed29ba1af44"
+      },
+      "transcriptSHA256": "ab0bb8140cfe2ef0e43b2650abb99a882855cb365db56c2031993da98487eaeb"
+    },
+    {
+      "id": "M08.09",
+      "title": "Measure, describe, then interpret",
+      "audio": {
+        "src": "guided-study/assets/M08_09_adam_multilingual_v2.mp3",
+        "duration": 30.537125,
+        "sha256": "3a0032d709b7b6933873bab6ac6477cb12a6b365d622dc9e7f0adf233c14052f"
+      },
+      "transcriptSHA256": "ee211b4c3cf08876c6954f6e3006269a9a5f0481ef8c22ffb5b23a2b70788225"
+    },
+    {
+      "id": "M07.01",
+      "title": "Electrodes, cables, and leads",
+      "audio": {
+        "src": "guided-study/assets/M07_01_adam_multilingual_v2.mp3",
+        "duration": 24.737938,
+        "sha256": "547acb4367f94bbe9bb287c8fc1c34e8385cf0c6ca073d0135d773032f793523"
+      },
+      "transcriptSHA256": "63fcec7c293bbec7d1171dbee4a6fdcd304870e3e825c5e5eea7d5773171eef4"
+    },
+    {
+      "id": "M07.02",
+      "title": "The three bipolar limb views",
+      "audio": {
+        "src": "guided-study/assets/M07_02_adam_multilingual_v2.mp3",
+        "duration": 25.44325,
+        "sha256": "75eca12c9794aa2f3e8480871df35548f1e4c98412f41602b5940681c227402c"
+      },
+      "transcriptSHA256": "084c1e0a7e3c846b34c798ddd660753b937f3b874fac3f9ff669e0eb4bece9e4"
+    },
+    {
+      "id": "M07.03",
+      "title": "Augmented and chest views",
+      "audio": {
+        "src": "guided-study/assets/M07_03_adam_multilingual_v2.mp3",
+        "duration": 31.52975,
+        "sha256": "d341c835ac3ea7b8c52669d3edc32db6d4f45b6da33222b44bd8341862a5b2e0"
+      },
+      "transcriptSHA256": "960b2138e4e373822b6c52918dbe425727093c03e2f4559ee9affa93a78d9231"
+    },
+    {
+      "id": "M07.04",
+      "title": "Find chest landmarks",
+      "audio": {
+        "src": "guided-study/assets/M07_04_adam_multilingual_v2.mp3",
+        "duration": 26.279125,
+        "sha256": "f01838bce4cf9332f55335a8d16df5c68f4df1ddf2b8e361ff393234ef4cd7b7"
+      },
+      "transcriptSHA256": "686940a594cebc108f331c94f890b49bd0d5a3251c3c4618769313f8bfd824f6"
+    },
+    {
+      "id": "M07.05",
+      "title": "Place V1 through V6",
+      "audio": {
+        "src": "guided-study/assets/M07_05_adam_multilingual_v2.mp3",
+        "duration": 30.328125,
+        "sha256": "23eb06f7b9b2ef7da537d4e28d72f3776f5d5efbc0072fac4aec0be9179a70a7"
+      },
+      "transcriptSHA256": "ad17b0c2f2c07f60d91fbad60bf073aede8fc705a5631a8917174d6eeac3d317"
+    },
+    {
+      "id": "M07.06",
+      "title": "Recording quality and configurations",
+      "audio": {
+        "src": "guided-study/assets/M07_06_adam_multilingual_v2.mp3",
+        "duration": 37.198313,
+        "sha256": "35b849191ea556e6a82e0344c324bb995eac611199576de260321ca12fae4db3"
+      },
+      "transcriptSHA256": "fda78df857fc032684948feaaad18667f09ffd7dd2e2527a968dd0820c3505e1"
+    },
+    {
+      "id": "M07.07",
+      "title": "Why waves point up or down",
+      "audio": {
+        "src": "guided-study/assets/M07_07_adam_multilingual_v2.mp3",
+        "duration": 31.190188,
+        "sha256": "7107b356829bd1526fb5d1e5b974828319e63d7f1c46603629bccdd5a2f54012"
+      },
+      "transcriptSHA256": "670e85b6a13a0eb520be8b3d19b5654ff11a95e923ddbc1b6a8721501ef4f4d7"
+    },
+    {
+      "id": "M07.08",
+      "title": "Frontal axis without the shortcut error",
+      "audio": {
+        "src": "guided-study/assets/M07_08_adam_multilingual_v2.mp3",
+        "duration": 35.552625,
+        "sha256": "11a0d1712883124dd65798bf5773f62567f59f4d063320f30c51b08886f4321b"
+      },
+      "transcriptSHA256": "a2cc89ab25c4d7ca14806ed2802ce70f2abba4724c18a325612eda39e4d00305"
+    },
+    {
+      "id": "M09.01",
+      "title": "Normal sinus rhythm",
+      "audio": {
+        "src": "guided-study/assets/M09_01_adam_multilingual_v2.mp3",
+        "duration": 31.294688,
+        "sha256": "595fa368159faef6679a7c2efad9c86b935f385cc3c1a4d9e6164a3db57f6c37"
+      },
+      "transcriptSHA256": "d1ad7d49b16634c5a7d68ac881fbce798ced6702b574c7aa7922c1d0134d4e0c"
+    },
+    {
+      "id": "M09.02",
+      "title": "Sinus bradycardia",
+      "audio": {
+        "src": "guided-study/assets/M09_02_adam_multilingual_v2.mp3",
+        "duration": 29.022,
+        "sha256": "bb01074e24410330eee39f3233c07766f4bd4013da11cccb1b20aae2633721ce"
+      },
+      "transcriptSHA256": "c30d94ef5999c13853b448bf3968ec88ac8b45db14c439cecc9c87c361de3def"
+    },
+    {
+      "id": "M09.03",
+      "title": "Sinus tachycardia",
+      "audio": {
+        "src": "guided-study/assets/M09_03_adam_multilingual_v2.mp3",
+        "duration": 31.111813,
+        "sha256": "b35d6f8340986e322b3d8db0f71d7667015a9e1b10ec8a95d1ae3e164de22ce1"
+      },
+      "transcriptSHA256": "d1a56ae4d3aa1b17a6f47cb57722d00f985320220d6b219767fd024e435fa024"
+    },
+    {
+      "id": "M09.04",
+      "title": "Respiratory sinus arrhythmia",
+      "audio": {
+        "src": "guided-study/assets/M09_04_adam_multilingual_v2.mp3",
+        "duration": 28.86525,
+        "sha256": "7c90190f3f8b3eded403737658d457d6e0cf730f2d731e5fd3ef426879565dd4"
+      },
+      "transcriptSHA256": "887113724cf2e7282fe8b4d2040444b035aadc5bd1b707dc84f32e7e24ab99ff"
+    },
+    {
+      "id": "M09.05",
+      "title": "Sinus pauses, arrest, and exit block",
+      "audio": {
+        "src": "guided-study/assets/M09_05_adam_multilingual_v2.mp3",
+        "duration": 34.0375,
+        "sha256": "08e003489cc5f8d9d57d019c0941145015bfa271f4f5fd5981572df3cf6806ee"
+      },
+      "transcriptSHA256": "90ddf844a66858d3036a12001a55dd0b24ae22dda6bf28fb7a8357d00af14db7"
+    },
+    {
+      "id": "M09.06",
+      "title": "Sinus family checkpoint",
+      "audio": {
+        "src": "guided-study/assets/M09_06_adam_multilingual_v2.mp3",
+        "duration": 30.537125,
+        "sha256": "8e402b3f942dac04d46faf11cb0a01a2b0f30e7cae6a0e5b7058620663062764"
+      },
+      "transcriptSHA256": "9bd860f710f9d754585d3eab4021e1a2b6306611a34b440297d8b2bdc2a2055c"
+    },
+    {
+      "id": "M10.01",
+      "title": "Wandering atrial pacemaker",
+      "audio": {
+        "src": "guided-study/assets/M10_01_adam_multilingual_v2.mp3",
+        "duration": 30.171375,
+        "sha256": "1ce5968b5cb2d65d28e372a211caa9a935cea28252e408398199103ee66d0fa5"
+      },
+      "transcriptSHA256": "b8cbd5c4c347ee29c500cbaa78885d468e57b86005f73e6ebb2ee7bd8141c1e2"
+    },
+    {
+      "id": "M10.02",
+      "title": "Premature atrial complex",
+      "audio": {
+        "src": "guided-study/assets/M10_02_adam_multilingual_v2.mp3",
+        "duration": 32.365688,
+        "sha256": "454c2339f35eaed917c43cab4fc8f1389e691211a854b69359b23d5eecc1af65"
+      },
+      "transcriptSHA256": "202e38ba51592cca8192ea4d93347e497d1120f5766a0694551d477c06c131e5"
+    },
+    {
+      "id": "M10.03",
+      "title": "Atrial tachycardia",
+      "audio": {
+        "src": "guided-study/assets/M10_03_adam_multilingual_v2.mp3",
+        "duration": 35.761625,
+        "sha256": "7cf267c6c2f5b91db15aae3929f4db46f52166d0d34f2d7a8e030525e10554cb"
+      },
+      "transcriptSHA256": "96bc67b212487cdd43a5a8a76c5ff3935714d7991bcefc2d29a7d5cac6bfe493"
+    },
+    {
+      "id": "M10.04",
+      "title": "Atrial flutter",
+      "audio": {
+        "src": "guided-study/assets/M10_04_adam_multilingual_v2.mp3",
+        "duration": 31.8955,
+        "sha256": "9ce9ad3e8e6fc106809797af4a6a97e096a889a211a07334814d7292f51c04cb"
+      },
+      "transcriptSHA256": "e60192c815de25b383716b210fd6955501794b22cfed17c6d59c7fc57115e9e6"
+    },
+    {
+      "id": "M10.05",
+      "title": "Atrial fibrillation",
+      "audio": {
+        "src": "guided-study/assets/M10_05_adam_multilingual_v2.mp3",
+        "duration": 36.96325,
+        "sha256": "ce466b525030059bbddf35226deeac13bdb5d0c8256e7cc415be0217e7caa5a1"
+      },
+      "transcriptSHA256": "7afe66952b0fb55ad456cf9a9c6e73b9f900c14158fd8cdccacb466894656d8f"
+    },
+    {
+      "id": "M10.06",
+      "title": "Flutter versus fibrillation",
+      "audio": {
+        "src": "guided-study/assets/M10_06_adam_multilingual_v2.mp3",
+        "duration": 31.190188,
+        "sha256": "de39d949a9b96ce58ae0cf03f7f05f5b3b430cff4f20c1158f6f05bac7c98401"
+      },
+      "transcriptSHA256": "1962274f0c3b1fdd8975455915ad5cb581a065b8eb09ed8b41502867052261a4"
+    },
+    {
+      "id": "M10.07",
+      "title": "Atrial rhythm checkpoint",
+      "audio": {
+        "src": "guided-study/assets/M10_07_adam_multilingual_v2.mp3",
+        "duration": 29.936313,
+        "sha256": "cd0d43be03865c5a72b0ed644db029a686ec03d0eec4547fa0e8527e4215ac4d"
+      },
+      "transcriptSHA256": "f10790e525a4f7775a19b378e199d935ca8607a606d4eb0fb5cc93e3e8654a20"
+    },
+    {
+      "id": "M11.01",
+      "title": "Junctional activation and retrograde P waves",
+      "audio": {
+        "src": "guided-study/assets/M11_01_adam_multilingual_v2.mp3",
+        "duration": 31.111813,
+        "sha256": "8c07c1942493f8690655caba8a92513f0ef46f9f0366286b203f0e4fb01b5d00"
+      },
+      "transcriptSHA256": "21bbe1c130bdaeb69a63d1940999d0fc5ec920fc86fee7555a94eb27a2011ddd"
+    },
+    {
+      "id": "M11.02",
+      "title": "Premature junctional complex",
+      "audio": {
+        "src": "guided-study/assets/M11_02_adam_multilingual_v2.mp3",
+        "duration": 29.805688,
+        "sha256": "bd2a28a11d1487c422abe4184c6e5ce1e0b7b76fd10400b39eba6c52437f570b"
+      },
+      "transcriptSHA256": "a14be38f4a4398b408c243711e0aeabf7da4429b0de002a6f79aafe560c3c1cf"
+    },
+    {
+      "id": "M11.03",
+      "title": "Escape, accelerated, and tachycardic junctional rhythms",
+      "audio": {
+        "src": "guided-study/assets/M11_03_adam_multilingual_v2.mp3",
+        "duration": 31.007313,
+        "sha256": "e4a34f15f33306c4572d15d390e3af146680eb03115a9b9e01c6e9bdbfd6edb8"
+      },
+      "transcriptSHA256": "c77629de9b98e1d88e257fcde1aa367816d3ee2bfdc79e8e76bdecd163b5505b"
+    },
+    {
+      "id": "M11.04",
+      "title": "Supraventricular tachycardia as a category",
+      "audio": {
+        "src": "guided-study/assets/M11_04_adam_multilingual_v2.mp3",
+        "duration": 33.097125,
+        "sha256": "0fb5184d28f0707b681c5cde39313966201011e2c47a56fab05ab58ab2d3d271"
+      },
+      "transcriptSHA256": "6cae4c0a5970b5196773923da83c90961d9941ec5573135cc0d0bd09208c43ab"
+    },
+    {
+      "id": "M11.05",
+      "title": "Mechanism cannot come from rate alone",
+      "audio": {
+        "src": "guided-study/assets/M11_05_adam_multilingual_v2.mp3",
+        "duration": 34.0375,
+        "sha256": "31838c80cb2a2c57559d57729c675e1ea16a44c207bd484abe99df6535cdf421"
+      },
+      "transcriptSHA256": "2e4348a8a0860b70738e824c1f98f738a05c9eba527b455470316816f6ce9ddc"
+    },
+    {
+      "id": "M12.01",
+      "title": "AV block is not always at the AV node",
+      "audio": {
+        "src": "guided-study/assets/M12_01_adam_multilingual_v2.mp3",
+        "duration": 29.38775,
+        "sha256": "9d8b792585e237fbf3222deec282483a4ac5ffd808212e5d5b98434e8aaf3dea"
+      },
+      "transcriptSHA256": "6ad3ef25602719537d395c37e9c92969284c0e8177d23accc0a5e2876ed3c6b5"
+    },
+    {
+      "id": "M12.02",
+      "title": "First-degree AV block",
+      "audio": {
+        "src": "guided-study/assets/M12_02_adam_multilingual_v2.mp3",
+        "duration": 32.91425,
+        "sha256": "b33c6affc826792d88d83460213933a9ee842322d08115c44aa8a310b0857cf5"
+      },
+      "transcriptSHA256": "ab1c051edc2e6bbab4332c90313cd90c1ed26cae8bb37fa2e12512855a0233e5"
+    },
+    {
+      "id": "M12.03",
+      "title": "Mobitz I, or Wenckebach",
+      "audio": {
+        "src": "guided-study/assets/M12_03_adam_multilingual_v2.mp3",
+        "duration": 32.130563,
+        "sha256": "8861dda3316dc55930582dba2c76a11a8f632af246de0ea62c7d2b1d1698f9d9"
+      },
+      "transcriptSHA256": "a3f1dae031ffb4a8611ac777b7064dc0d44ba91906b20402a039bd75730cd857"
+    },
+    {
+      "id": "M12.04",
+      "title": "Mobitz II and the 2-to-1 limitation",
+      "audio": {
+        "src": "guided-study/assets/M12_04_adam_multilingual_v2.mp3",
+        "duration": 35.604875,
+        "sha256": "e80c8082513716d90dbacfddf0292232cb43f9163d5c596014d6db38ec1e2930"
+      },
+      "transcriptSHA256": "91e0b45802be7c7ff71d84f505b92bea7540621b22d5e9308300017d50018f6d"
+    },
+    {
+      "id": "M12.05",
+      "title": "Complete AV block",
+      "audio": {
+        "src": "guided-study/assets/M12_05_adam_multilingual_v2.mp3",
+        "duration": 37.0155,
+        "sha256": "7b4c42648d0119bb8efa0759c028106c928b088ea9647092dd5f86da8e894a31"
+      },
+      "transcriptSHA256": "f93317e209a5ad82d94fb72d560e2c3cbfaa5f5661706539549b4b2c2dab720c"
+    },
+    {
+      "id": "M12.06",
+      "title": "Block comparison checkpoint",
+      "audio": {
+        "src": "guided-study/assets/M12_06_adam_multilingual_v2.mp3",
+        "duration": 35.004063,
+        "sha256": "6c7db6bd5fb17bbecfd0155097255cbc569ad2edd10b28b5f526849b66070bc7"
+      },
+      "transcriptSHA256": "07d7fb3fe77cfef9936ffb928efa6b14b5135f62cb8ee264279d867127fa4a0c"
+    },
+    {
+      "id": "M13.01",
+      "title": "What an artificial pacemaker does",
+      "audio": {
+        "src": "guided-study/assets/M13_01_adam_multilingual_v2.mp3",
+        "duration": 33.750188,
+        "sha256": "f3c9f6b8910f5b818787a1019b7cde2d2ed1d2d2c5fcc092e89b02b94e049380"
+      },
+      "transcriptSHA256": "acf79745138cc6c6bba7bc7f692478875ae4c45a732245ba85487bc202460811"
+    },
+    {
+      "id": "M13.02",
+      "title": "Temporary and implanted pacing",
+      "audio": {
+        "src": "guided-study/assets/M13_02_adam_multilingual_v2.mp3",
+        "duration": 33.854688,
+        "sha256": "a14a88f48f9aac61a56c7875e9d7dde0f543e71c0d296aab5af4fb8f0ab5a97f"
+      },
+      "transcriptSHA256": "70aa0bc16d19cb6b62c82b488a8b6f205f872200e3d7df2f6d6d11a8b4c54f91"
+    },
+    {
+      "id": "M13.03",
+      "title": "Sensing, output, and demand behavior",
+      "audio": {
+        "src": "guided-study/assets/M13_03_adam_multilingual_v2.mp3",
+        "duration": 32.365688,
+        "sha256": "c3b43b8053a2eceab0a52629f24b5f4433e142412cfaab1c683c467d63c00801"
+      },
+      "transcriptSHA256": "e091a55e977f8cb684d65e5a3d246800e09f23bf6bccc3e53f25cb2df6a389b7"
+    },
+    {
+      "id": "M13.04",
+      "title": "Atrial, ventricular, and dual-chamber patterns",
+      "audio": {
+        "src": "guided-study/assets/M13_04_adam_multilingual_v2.mp3",
+        "duration": 33.462813,
+        "sha256": "174678e359bf7bb96bfd05c381e00d86e7e2fa35d6d2e592eb6d01d8992bd664"
+      },
+      "transcriptSHA256": "95ab6264cd5364669bc5913993788295d77e7791e947230a01bcddd7fd68e7bc"
+    },
+    {
+      "id": "M13.05",
+      "title": "Resynchronization and pacing limitations",
+      "audio": {
+        "src": "guided-study/assets/M13_05_adam_multilingual_v2.mp3",
+        "duration": 34.925688,
+        "sha256": "4727b84cacdfca2d76400c3ce1d93dd68e08f3558a88d5e8582b9cee6d0ea5b2"
+      },
+      "transcriptSHA256": "f9ff21b56cf659e9ae81e754656aa5d67da4498717dacd359fd28d5b6319428e"
+    },
+    {
+      "id": "M13.06",
+      "title": "Failure to capture, sense, or output",
+      "audio": {
+        "src": "guided-study/assets/M13_06_adam_multilingual_v2.mp3",
+        "duration": 35.108563,
+        "sha256": "bddbac7aa734a54de7ae7e0d34918f42ab507a599d5f32ae8b578fd45a98fabf"
+      },
+      "transcriptSHA256": "5c4a29407fd36f601dd86e1f54a869f60d705fcf0a1295e400bdb533f20aaef6"
+    },
+    {
+      "id": "M14.01",
+      "title": "Valve disease and myocardial disease",
+      "audio": {
+        "src": "guided-study/assets/M14_01_adam_multilingual_v2.mp3",
+        "duration": 37.433438,
+        "sha256": "4bbaecc2b15019a2de1742bf39bcd7f762f321df59d11e49041f8bb355f1e592"
+      },
+      "transcriptSHA256": "9f20c4e714ea254f2a24cec086eb3673e18783b940cae7eaf957b8cce6e48b56"
+    },
+    {
+      "id": "M14.02",
+      "title": "Inflammation and tissue injury",
+      "audio": {
+        "src": "guided-study/assets/M14_02_adam_multilingual_v2.mp3",
+        "duration": 34.272625,
+        "sha256": "a94893c049e5e3dbf02353361f0c9dcbddca5193ce78840ce9fe8dfe08d2c302"
+      },
+      "transcriptSHA256": "88ffcac9064b8a5664404d9f898172364248f622e4cf1ab66c5791114ce4fc2b"
+    },
+    {
+      "id": "M14.03",
+      "title": "Atherosclerosis and coronary supply",
+      "audio": {
+        "src": "guided-study/assets/M14_03_adam_multilingual_v2.mp3",
+        "duration": 40.202438,
+        "sha256": "c6dc41eeb0dc9bd19ea2058a6fa171b4c97dc21c4528720f9c5d76b27175cf08"
+      },
+      "transcriptSHA256": "ce257021b5e6a2d0a95a1d9ee96f0dec3a48dc58318bd48ef23113c58bc36c47"
+    },
+    {
+      "id": "M14.04",
+      "title": "Autonomic and hormonal modulation",
+      "audio": {
+        "src": "guided-study/assets/M14_04_adam_multilingual_v2.mp3",
+        "duration": 39.3665,
+        "sha256": "d2df35110fd5df584096d6f51a0235d8a8ed344abae62cd5d1e2efacdf806ffe"
+      },
+      "transcriptSHA256": "bc9ca2ab08d2c9d726d1022fcc87011a59928d2ffeea567f6aac0bf519ecdab6"
+    },
+    {
+      "id": "M14.05",
+      "title": "Medication vocabulary, not prescribing",
+      "audio": {
+        "src": "guided-study/assets/M14_05_adam_multilingual_v2.mp3",
+        "duration": 32.679125,
+        "sha256": "f65128e1db593548349aa05438c47e127cf63d0af59eb622c2314eb92ba8902e"
+      },
+      "transcriptSHA256": "d95874fcdd13a04646d2af7b73862bb037a0ef26e5741c4b95d4d81ae3add937"
+    },
+    {
+      "id": "M14.06",
+      "title": "ECG history and professional context",
+      "audio": {
+        "src": "guided-study/assets/M14_06_adam_multilingual_v2.mp3",
+        "duration": 34.50775,
+        "sha256": "2188ecda6a5e1da535da135b44bc7ac183c797887495f5b2ca778858fb0649ef"
+      },
+      "transcriptSHA256": "8d509bfe4c8f04f3ae64719feb1d704c4a0346f13300abd3238d4574a9c07f4a"
+    },
+    {
+      "id": "M14.07",
+      "title": "Integrative final review",
+      "audio": {
+        "src": "guided-study/assets/M14_07_adam_multilingual_v2.mp3",
+        "duration": 35.056313,
+        "sha256": "ed8d596b67912da7911f8a8f3e5204d370abbcc6729110314816c663ed93cd0d"
+      },
+      "transcriptSHA256": "53569dd9a53561ba6b8218dd0ba405c2864a707fc916f68b223f090d4830ecb9"
+    },
+    {
+      "id": "M14.08",
+      "title": "Risk and symptom vocabulary",
+      "audio": {
+        "src": "guided-study/assets/M14_08_adam_multilingual_v2.mp3",
+        "duration": 35.761625,
+        "sha256": "c02281d668589d15a9f784910ecd7fc0196a8e776c98b677687fecabc93dbdcc"
+      },
+      "transcriptSHA256": "56078c181e19d282a9c9f7061473539dd0323e76b6867d0e5409b012e6fefb01"
+    },
+    {
+      "id": "G01",
+      "title": "Monitor technician role and course foundations",
+      "audio": {
+        "src": "guided-study/assets/G01_adam_multilingual_v2.mp3",
+        "duration": 70.713438,
+        "sha256": "eb12981097a53b4a5dc56a29eedc66722246f92e7073f12c1d8a047d4fb3f0b2"
+      },
+      "transcriptSHA256": "c2056658197ab573777ad60981493b1d91a5010ad91524d019a6b931698e9e62"
+    },
+    {
+      "id": "G02",
+      "title": "Respiratory anatomy checkpoint prompts",
+      "audio": {
+        "src": "guided-study/assets/G02_adam_multilingual_v2.mp3",
+        "duration": 54.98775,
+        "sha256": "829a2918e70e992152fcb4da8069e4538c5e10d857bf2752b37893628120eb8f"
+      },
+      "transcriptSHA256": "9e574957803158d9861f1d88329a11593889a1c8e21bd3c6c76550b84358b3b1"
+    },
+    {
+      "id": "G03",
+      "title": "Blood pressure and vascular review",
+      "audio": {
+        "src": "guided-study/assets/G03_adam_multilingual_v2.mp3",
+        "duration": 75.311,
+        "sha256": "b5e87b885d2c5a622d0e9c221416e5017f161778d56612a1afcd86a0b7c1d252"
+      },
+      "transcriptSHA256": "e7e8c9462506eb20611a7d2075e4096676e31ad8ccfaf603abbdd50e1d41aa45"
+    },
+    {
+      "id": "G04",
+      "title": "Acute coronary syndrome and the 12 lead analysis format",
+      "audio": {
+        "src": "guided-study/assets/G04_adam_multilingual_v2.mp3",
+        "duration": 91.428563,
+        "sha256": "a753e03b3b592474e75fbc0abe00cc0076a6f2c43c32ec385706a9cafb28ad17"
+      },
+      "transcriptSHA256": "c595672db09c4ba56354b52035cd77d6fe9cac56a2403a33013163717a8194de"
+    },
+    {
+      "id": "G05",
+      "title": "Stable angina unstable angina and NSTEMI",
+      "audio": {
+        "src": "guided-study/assets/G05_adam_multilingual_v2.mp3",
+        "duration": 97.933063,
+        "sha256": "b592dcea9b144c13f87614d2e183ad859fa31833036e0a83b7143bd072da77cf"
+      },
+      "transcriptSHA256": "a4e98f9494863243fafeeb123e3c0e650e2be6305719f6110ec57b6f6db093dd"
+    },
+    {
+      "id": "G06",
+      "title": "STEMI and ST segment changes",
+      "audio": {
+        "src": "guided-study/assets/G06_adam_multilingual_v2.mp3",
+        "duration": 83.2,
+        "sha256": "5de2ee1920bad46ff2b6caa11af50f5e86032b55549e662eb0a3d62d53727b0c"
+      },
+      "transcriptSHA256": "6d540bda87ecd265ddb5f66189ea10be86f62b5e83b7e5128f3f70d235795120"
+    },
+    {
+      "id": "G07",
+      "title": "Lead groups localization and reciprocal changes",
+      "audio": {
+        "src": "guided-study/assets/G07_adam_multilingual_v2.mp3",
+        "duration": 101.407313,
+        "sha256": "f247d400ecaff2deb3b00b9b392afce14e4c687793963118cd3d3065c553deb5"
+      },
+      "transcriptSHA256": "9a8632816179bd508cfa0e13b3a9bb24200294d96008b87f3330b7563603042c"
+    },
+    {
+      "id": "G08",
+      "title": "Other waveform changes bundle branches and voltage",
+      "audio": {
+        "src": "guided-study/assets/G08_adam_multilingual_v2.mp3",
+        "duration": 126.302,
+        "sha256": "f82139317faacc7fa4066f7fb1f0cd432ddf8c401284046c07643492cbab9f04"
+      },
+      "transcriptSHA256": "fa08d339328fac158b5effc7694719542b0644092343531fc5af7d034bd15520"
+    },
+    {
+      "id": "G09",
+      "title": "Right sided and posterior views",
+      "audio": {
+        "src": "guided-study/assets/G09_adam_multilingual_v2.mp3",
+        "duration": 74.527313,
+        "sha256": "d3cc97438767a86eef05faf72a41195c773ab79a3ca05eca1c68484a0c8a3d0d"
+      },
+      "transcriptSHA256": "c274280df7a463f73e5b35d3bb0caafedaf78718c4166d94c560d90b9571b8b7"
+    }
+  ],
+  "fullListeningReview": "pending",
+  "newNineSeconds": 775.81044
+}

@@ -73,7 +73,7 @@
   }
   function rebuildMechanics() { mechanics = RespiratoryMechanics.build({...state.breathing,ventilation:state.ventilation}); state.time = Math.min(state.time,mechanics.period); }
   const runtimeMemory = new Map(), sceneSnapshots = new Map();
-  let fallbackExplorer = null;
+  let fallbackExplorer = null,sceneReady=Promise.resolve(),guidedRespSignature=null,guidedRespAnchor=0,guidedRespWindow=null,guidedRespOwner=null,guidedParked=null,guidedSuspendNavigation=null;
   let view = null,
     generation = 0,
     raf = 0,
@@ -99,12 +99,15 @@
   }
   function release() {
     generation++;
-    if(view?.snapshot)sceneSnapshots.set(state.system,view.snapshot());
-    const explorer = view?.inspect?.().explorer;
-    if (explorer && fallbackExplorer) { fallbackExplorer.go(explorer.segment); fallbackExplorer.go(explorer.route?.[explorer.index] || explorer.stage); }
-    view?.dispose();
-    view = null;
+    guidedParked=null;
+    guidedRespOwner=null;
+    guidedRespSignature=null;
+    const owned=view;let error;const clean=fn=>{try{fn();}catch(e){error=error||e;}};
+    clean(()=>{if(owned?.snapshot)sceneSnapshots.set(state.system,owned.snapshot());});
+    clean(()=>{const explorer=owned?.inspect?.()?.explorer;if(explorer&&fallbackExplorer){fallbackExplorer.go(explorer.segment);fallbackExplorer.go(explorer.route?.[explorer.index]||explorer.stage);}});
+    view=null;clean(()=>owned?.dispose());
     for(const selector of ['[data-explorer-fallback]','[data-explorer-breath-state]']){const el=root.querySelector(selector);if(el)el.hidden=false;}
+    if(error)throw error;
   }
   function stop() {
     state.playing = false;
@@ -120,14 +123,21 @@
     if(!root.classList.contains('hidden'))runtimeMemory.set(state.system,{state:{...state,breathing:{...state.breathing}},atlasWanted});
     if(state.system==='respiratory'&&!view&&fallbackExplorer){const route=fallbackExplorer.state();sceneSnapshots.set('respiratory',{...sceneSnapshots.get('respiratory'),journey:{id:route.id,segment:route.segment}});}
     stop();
-    release();
-    root.classList.add("hidden");
+    try{release();}finally{root.classList.add("hidden");}
   }
   const oldHome = window.goHome;
   window.goHome = function () {
-    window.HeartV3Study?.close();
-    close();
-    oldHome();
+    let error;const clean=fn=>{try{fn();}catch(e){error=error||e;}};
+    clean(()=>window.HeartV3Study?.close());
+    const lease=guidedSuspendNavigation;
+    clean(()=>{if(lease&&!lease.used&&lease.view===view&&lease.generation===generation&&guidedRespCurrent(lease.ctx)&&view?.isUsable?.()){
+      lease.used=true;
+      if(!root.classList.contains('hidden'))runtimeMemory.set(state.system,{state:{...state,breathing:{...state.breathing}},atlasWanted});
+      stop();
+      if(view.suspend()){guidedParked={view,generation,lessonId:lease.lessonId};root.classList.add('hidden');}
+      else close();
+    }else close();});
+    clean(()=>oldHome());if(error)throw error;
   };
   function persist() {
     if (corrupt) return;
@@ -159,15 +169,15 @@
     else sceneSnapshots.delete(system);
     menu.classList.add("hidden");
     root.classList.remove("hidden");
-    render();
+    render(options.guidedContext);
     if(remembered?.state.playing&&!matchMedia('(prefers-reduced-motion: reduce)').matches)root.querySelector('[data-play]')?.click();
     root.querySelector("h2").focus();
   }
   for (const [system, label, description] of [
     [
       "heart",
-      "Heart Simulator v2",
-      "Explore anatomy, mechanical timing, circulation and untimed practice",
+      "Heart Simulator · 3D",
+      "Open the working heart; its lessons and calculations remain available inside",
     ],
     [
       "respiratory",
@@ -183,7 +193,9 @@
     const sm = document.createElement("small");
     sm.textContent = description;
     b.append(sm);
-    b.onclick = () => open(system);
+    b.onclick = () => system === "heart" && window.HeartV3Study
+      ? window.HeartV3Study.open()
+      : open(system);
     menu.append(b);
   }
   const sourceLink = (id) => {
@@ -249,7 +261,7 @@
     return `<div class="sim-controls"><button data-resp-view="whole">Whole organ</button><button data-resp-view="airway">Airway map</button><button data-resp-view="exchange">Magnified exchange</button></div><div data-resp-diagram></div>`;
   }
   function capnography() {
-    return `<section class="sim-card"><h3>Breathing and linked capnography</h3><span class="sim-badge">Synthetic waveform · rate follows breathing clock · EtCO₂ preset 40 mmHg, not model-derived</span><svg class="sim-diagram" viewBox="0 0 600 250" role="img" aria-label="Synthetic capnogram: inspiration, phase 1 dead space, phase 2 rise, phase 3 plateau, end-tidal point"><path d="M55 25V175H575" stroke="#9cafc9" fill="none"/><text x="5" y="25">CO₂ (mmHg)</text><text x="20" y="78">40</text><text x="25" y="175">0</text><text x="220" y="240">Time (seconds)</text>${[0, 1, 2, 3, 4, 5].map((n) => `<text data-cap-tick="${n}" x="${52 + n * 100}" y="195">${(n*mechanics.period/5).toFixed(1)}</text>`).join("")}<path d="M55 75L75 175H305L355 85L555 75" fill="none" stroke="#8fe5ef" stroke-width="4"/><circle data-cap-marker r="7" fill="#ffe19a"/><text x="95" y="120">Inspiration</text><text x="260" y="150">1</text><text x="320" y="120">2</text><text x="430" y="65">3</text><text x="480" y="35">EtCO₂</text>${[
+    return `<section class="sim-card"><h3>Breathing and linked capnography</h3><span class="sim-badge">Synthetic waveform · rate follows breathing clock · EtCO₂ preset 40 mmHg, not model-derived</span><svg class="sim-diagram course-capnogram" viewBox="0 0 600 250" role="img" aria-label="Synthetic capnogram: inspiration, phase 1 dead space, phase 2 rise, phase 3 plateau, end-tidal point"><path d="M55 25V175H575" stroke="#9cafc9" fill="none"/><text x="5" y="25">CO₂ (mmHg)</text><text x="20" y="78">40</text><text x="25" y="175">0</text><text x="220" y="240">Time (seconds)</text>${[0, 1, 2, 3, 4, 5].map((n) => `<text data-cap-tick="${n}" x="${52 + n * 100}" y="195">${(n*mechanics.period/5).toFixed(1)}</text>`).join("")}<path d="M55 75L75 175H305L355 85L555 75" fill="none" stroke="#8fe5ef" stroke-width="4"/><circle data-cap-marker r="7" fill="#ffe19a"/><text x="95" y="120">Inspiration</text><text x="260" y="150">1</text><text x="320" y="120">2</text><text x="430" y="65">3</text><text x="480" y="35">EtCO₂</text>${[
       [0, 55, 250],
       [1, 255, 50],
       [2, 305, 50],
@@ -265,19 +277,12 @@
       )}</svg><div class="sim-controls">${C.respiratoryPhases.map((p, i) => `<button data-resp-phase="${i}">${p.name}</button>`).join("")}</div><div data-resp-clock class="sim-status" role="status"></div><p>Sampling site: proximal airway / mouth. The source highlighted below and waveform marker share this breath clock. The inspiratory downstroke clears the final expired sample; early expired dead-space gas and inspired gas can both be low in CO₂.</p>${sourceLink("capno")}<div class="sim-controls"><label><input data-cue="air" type="checkbox" checked>Air movement cue</label><label><input data-cue="blood" type="checkbox" checked>Perfusion cue</label><label><input data-cue="diffusion" type="checkbox" checked>Diffusion cues</label></div><p>These independent display toggles hide instructional cues. They do not imply a physiological stop. Diffusion can continue during both inspiration and expiration.</p><label>Mechanics scenario <select data-ventilation><option value="spontaneous" ${state.ventilation === "spontaneous" ? "selected" : ""}>Quiet spontaneous breathing</option><option value="positive" ${state.ventilation === "positive" ? "selected" : ""}>Positive-pressure inspiration comparison</option></select></label></section>`;
   }
   function breathingControls() {
-    const p=state.breathing;
-    return `<section class="sim-card"><h3>Breathing mechanics</h3>${playback(mechanics.period)}<p>One physiological clock drives the moving anatomy, flow and curves. Volume is change above an idealized relaxed reference, not total lung volume. Quiet expiration does not empty the lungs.</p><div class="sim-controls"><label>Rate (breaths/min)<input data-mechanics="rate" type="number" min="6" max="30" step="1" value="${p.rate}"></label><label>Depth target (L)<input data-mechanics="target" type="number" min="0.2" max="1" step="0.1" value="${p.target}"></label></div><details><summary>Mechanics laboratory: resistance, compliance and drive</summary><p>Linear single-compartment model. R × C is the time constant in seconds. These parameters are teaching experiments, not diagnoses or ventilator prescriptions.</p><label>Experiment <select data-mechanics="mode"><option value="target" ${p.mode==='target'?'selected':''}>Target tidal excursion: calculate required drive</option><option value="effort" ${p.mode==='effort'?'selected':''}>Fixed effort: depth sets drive, R/C change delivery</option></select></label><label>Resistance (cmH₂O·s/L)<input data-mechanics="resistance" type="number" min="1" max="20" step="1" value="${p.resistance}"></label><label>Lung compliance (L/cmH₂O)<input data-mechanics="compliance" type="number" min="0.04" max="0.2" step="0.01" value="${p.compliance}"></label><p>Drive is an idealized constant inspiratory effort, released at expiration. Its step changes are not measured muscle kinetics; volume remains continuous and flow follows the pressure gradient. Periodic steady state is recomputed after changes, including backward scrubbing.</p></details><div data-mechanics-values role="status"></div><div data-mechanics-curves>${mechanicsCurves()}</div><p>All pressures use ambient = 0 cmH₂O. Airway opening Pao; alveolar Palv; pleural Ppl. Transpulmonary = Palv − Ppl. Trans-respiratory = Pao − body-surface pressure (body surface = 0). Baseline Ppl −5 cmH₂O is illustrative. Target mode adjusts drive; fixed effort never recalibrates it when R or C changes.</p><p><a href="https://www.imagwiki.nibib.nih.gov/physiome/jsim/models/webmodel/NSR/tidalhuman" target="_blank" rel="noopener">NSR Tidal_Human equation reference</a> · ${sourceLink('breathing')}</p></section>`;
+    return `<section class="sim-card" data-course-breathing><h3>Breathing cycle</h3>${playback(mechanics.period)}<p>Follow inspiration and expiration. The diaphragm and chest change thoracic volume; air moves down a pressure gradient. Quiet expiration does not empty the lungs.</p><p data-mechanics-values role="status"></p><div data-mechanics-curves></div><p>${sourceLink('breathing')}</p></section>`;
   }
-  function mechanicsCurves() {
-    const samples=Array.from({length:121},(_,i)=>mechanics.at(i*mechanics.period/120));
-    const rows=[['Volume above reference (L)','volume',0,Math.max(.6,mechanics.maximum*1.1)],['Flow (L/s), + inward','flow',-3,3],['Pressure (cmH₂O): alveolar','alveolar',-12,12],['Pressure (cmH₂O): pleural','pleural',-30,0]];
-    return rows.map(([name,key,min,max],row)=>{min=Math.min(0,...samples.map(s=>s[key]));max=Math.max(0,...samples.map(s=>s[key]));const pad=Math.max(.02,(max-min)*.08);min-=pad;max+=pad;return `<svg class="sim-mechanics-curve" viewBox="0 0 600 110" role="img" aria-label="${name}, synchronized over one breath"><text x="8" y="20">${name}</text><text x="8" y="45">${max.toFixed(1)}</text><text x="8" y="95">${min.toFixed(1)}</text><path d="M60 30V95H585" stroke="#8099b1" fill="none"/><path d="${samples.map((s,i)=>`${i?'L':'M'}${60+i*4.3} ${95-(Math.min(max,Math.max(min,s[key]))-min)/(max-min)*60}`).join(' ')}" stroke="${['#88dfe4','#ffe1a4','#db9dcc','#b8c9ff'][row]}" stroke-width="2.5" fill="none"/><path data-mechanics-marker d="M60 30V95" stroke="#fff" stroke-width="2"/></svg>`;}).join('')+'<p>Horizontal axis: one breath, 0 to '+mechanics.period.toFixed(2)+' physiological seconds. Curve limits are graphical only; exact values are above.</p>';
-  }
-  function updateMechanics(s) {
-    const el=root.querySelector('[data-mechanics-values]');if(!el)return;
-    el.textContent=`${s.phase} · ${state.time.toFixed(2)} / ${s.period.toFixed(2)} s · volume above reference ${s.volume.toFixed(3)} L · delivered excursion ${s.delivered.toFixed(3)} L · flow ${s.flow.toFixed(3)} L/s · Pao ${s.airway.toFixed(2)}, Palv ${s.alveolar.toFixed(2)}, Ppl ${s.pleural.toFixed(2)}, transpulmonary ${s.transpulmonary.toFixed(2)}, trans-respiratory ${s.transrespiratory.toFixed(2)} cmH₂O · required/held drive amplitude ${s.amplitude.toFixed(2)} cmH₂O · R×C ${(state.breathing.resistance*state.breathing.compliance).toFixed(2)} s.`;
-    root.querySelectorAll('[data-mechanics-marker]').forEach(m=>m.setAttribute('d',`M${60+516*state.time/s.period} 30V95`));
-  }
+  // The full mechanics model still drives every anatomy/exchange simulation.
+  // Its tuning inputs and four numerical curves are not student controls.
+  function mechanicsCurves(){return '';}
+  function updateMechanics(s){const el=root.querySelector('[data-mechanics-values]');if(el)el.textContent=s.phase+' · '+state.time.toFixed(2)+' / '+s.period.toFixed(2)+' s';}
   function ventilationLab() {
     return `<section class="sim-card"><h3>Idealized ventilation arithmetic</h3><form data-ventilation-form><div class="sim-controls"><label>RR (/min) <input name="rr" type="number" value="12" step="any" required></label><label>VT (mL) <input name="vt" type="number" value="500" step="any" required></label><label>Assumed VD (mL) <input name="vd" type="number" value="150" step="any" required></label><button>Calculate ventilation</button></div></form><p data-ventilation-result role="status">12 × 500 / 1000 = 6.0 L/min total; 12 × (500 − 150) / 1000 = 4.2 L/min estimated alveolar ventilation.</p><p>VD is assumed, not universal. These values do not predict PaCO₂ or SpO₂.</p>${sourceLink("breathing")}</section>`;
   }
@@ -323,7 +328,7 @@
         "",
       )}<p><a href="${new URL("ecg-study/assets/ATTRIBUTION.md", base)}">Heart attribution</a> · <a href="${new URL("respiratory-study/assets/ATTRIBUTION.md", base)}">Respiratory asset qualification</a> · <a href="${new URL("respiratory-study/assets/model-manifest.json", base)}">Full respiratory mesh inventory and transforms</a> · <a href="${new URL("docs/RESPIRATORY-EXPLORER.md", base)}">Connected airway hierarchy, scale and reconstruction limits</a></p><label>Simulator progress JSON <textarea data-progress-text aria-label="Simulator progress JSON"></textarea></label><div class="sim-controls"><button data-export>Export simulator progress</button><button data-import>Validate and import simulator progress</button><button data-raw>Recover stored text</button><button data-reset>Reset only simulator progress</button></div><p data-progress-result role="status"></p><p>Only cmt.simulators.progress.v1 is read or changed. Other quizzes and saved history are untouched. Import validates fully before replacing this namespace.</p></section>`;
   }
-  function render() {
+  function render(ctx) {
     stop();
     release();
     const learn = state.tab === "explore" || state.tab === "guided";
@@ -339,33 +344,35 @@
       updateRoute();
       updateValve("Normal");
       diagramEquivalents();
-      if (atlasWanted) mountAnatomy();
-      else if (state.system === "respiratory") mountBreathing();
+      if (atlasWanted) sceneReady=mountAnatomy();
+      else if (state.system === "respiratory") sceneReady=mountBreathing(ctx);
     }
   }
-  async function mountBreathing() {
+  async function mountBreathing(ctx) {
+    ctx=typeof ctx?.isCurrent==='function'?ctx:null;const current=()=>!ctx||ctx.isCurrent();if(!current())return;
     const host=root.querySelector('[data-organ-host]');if(!host)return;
-    release();delete host.dataset.dynamic;delete host.dataset.ready;const gen=generation;host.hidden=false;
-    const failure=message=>{if(gen!==generation)return;release();host.hidden=true;root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-load-status]').textContent=message;};
+    release();delete host.dataset.dynamic;delete host.dataset.ready;const gen=generation;let committed=null;host.hidden=false;
+    const failure=message=>{if(committed?view!==committed:gen!==generation||!current())return;let cleanup;try{release();}catch(e){cleanup=e.message||String(e);}host.hidden=true;root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-load-status]').textContent=message+(cleanup?' Resource cleanup: '+cleanup:'');};
     try {
       if (!document.querySelector('[data-explorer-css]')) {
         const css=document.createElement('link');css.rel='stylesheet';css.href=new URL('respiratory-study/explorer.css',base);css.dataset.explorerCss='';document.head.append(css);
       }
       if (!window.RespiratoryExplorer) await script('respiratory-study/explorer.js');
-      if (gen!==generation) return;
+      if (gen!==generation||!current()) return;
       const fallback=root.querySelector('[data-explorer-fallback]');
       if (fallback && !fallbackExplorer) { fallbackExplorer=RespiratoryExplorer.mountFallback(fallback,{onChange:route=>{if(!view)sceneSnapshots.set('respiratory',{...sceneSnapshots.get('respiratory'),journey:{id:route.id,segment:route.segment}});}});const saved=sceneSnapshots.get('respiratory')?.journey;if(saved){fallbackExplorer.go(saved.segment);fallbackExplorer.go(saved.id);}updateClock(); }
       if(!window.EcgThree)await script('ecg-study/vendor/three-gltf.min.js');
       if(!window.RespiratoryTeachingData)await script('respiratory-study/assets/breathing-data.js');
       if(!window.RespiratoryBreathing3D)await script('respiratory-study/breathing-3d.js');
-      if(gen!==generation)return;
+      if(gen!==generation||!current())return;
       const instance=await RespiratoryBreathing3D.mount(host,failure,id=>selectStructure(id,true),{
         toggle:()=>root.querySelector("[data-play]").click(),
         scrub:value=>{const e=root.querySelector("[data-clock]");e.value=value;e.dispatchEvent(new Event("input",{bubbles:true}));},
         parameter:(key,value)=>{const e=root.querySelector(`[data-mechanics="${key}"]`);e.value=value;e.dispatchEvent(new Event("change",{bubbles:true}));},
-        playing:()=>state.playing
+        playing:()=>state.playing,
+        current:()=>gen===generation&&current()
       });
-      if(gen!==generation){instance.dispose();return;}view=instance;view.selectStructure?.(state.selected);view.sync(mechanics.at(state.time));const savedScene=sceneSnapshots.get('respiratory');if(savedScene)await view.restoreSnapshot?.(savedScene);else{const textRoute=fallbackExplorer?.state();if(textRoute?.index>0){view.goExplorer?.(textRoute.segment);view.goExplorer?.(textRoute.id);}}if(gen!==generation){instance.dispose();return;}root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-explorer-fallback]').hidden=true;root.querySelector('[data-explorer-breath-state]').hidden=true;
+      if(gen!==generation||!current()){instance.dispose();return;}view=instance;committed=instance;view.selectStructure?.(state.selected);view.sync(mechanics.at(state.time));const savedScene=sceneSnapshots.get('respiratory');if(savedScene)await view.restoreSnapshot?.(savedScene,ctx);else{const textRoute=fallbackExplorer?.state();if(textRoute?.index>0){view.goExplorer?.(textRoute.segment);view.goExplorer?.(textRoute.id);}}if(gen!==generation||!current()){instance.dispose();return;}root.querySelector('[data-fallback]').hidden=false;root.querySelector('[data-explorer-fallback]').hidden=true;root.querySelector('[data-explorer-breath-state]').hidden=true;
       root.querySelector('[data-load-status]').textContent='Moving lung derivative loaded. The static atlas remains an optional reference; 2D/text remains available.';
     }catch(e){failure('Moving anatomy unavailable. Complete 2D/text fallback is active. '+e.message);}
   }
@@ -952,7 +959,67 @@
     "change",
     stop,
   );
+  // Public, audio-neutral adapter around the existing respiratory scene.
+  const guidedRespCurrent=ctx=>!ctx||ctx.isCurrent();
+  function adoptGuidedRespOwner(ctx){if(ctx&&typeof ctx.lessonId==='string'&&ctx.isCurrent()&&view){if(guidedRespOwner?.view!==view||guidedRespOwner.lessonId!==ctx.lessonId)guidedRespOwner={view,lessonId:ctx.lessonId};}else guidedRespOwner=null;}
+  function guidedRespSuspendForExplanation(ctx){
+    if(!ctx||typeof ctx.isCurrent!=='function'||!ctx.isCurrent())return false;
+    const owner=(window.GuidedCourse?.inspect()||window.GuidedStudy?.session.inspect());
+    if(owner?.mode!=='guided'||!owner.lessonId||ctx.lessonId!==owner.lessonId||guidedRespOwner?.view!==view||guidedRespOwner.lessonId!==owner.lessonId||state.system!=='respiratory'||atlasWanted||!['explore','guided'].includes(state.tab)||!view?.isUsable?.()||typeof view.suspend!=='function'||(root.classList.contains('hidden')&&!(guidedParked?.view===view&&guidedParked.generation===generation&&guidedParked.lessonId===owner.lessonId)))return false;
+    const lease={ctx,view,generation,lessonId:owner.lessonId,used:false},prior=guidedSuspendNavigation;guidedSuspendNavigation=lease;
+    try{window.goHome();if(!ctx.isCurrent()){if(guidedParked?.view===lease.view&&generation===lease.generation)close();return false;}return lease.used&&guidedParked?.view===lease.view;}
+    catch(e){if(view===lease.view&&generation===lease.generation)try{close();}catch(_){}throw e;}
+    finally{guidedSuspendNavigation=prior;}
+  }
+  function releaseGuidedResources(){if(guidedParked?.view===view)close();}
+  async function guidedRespPrepare(scene,ctx){
+    if(!guidedRespCurrent(ctx))return false;const cancel=()=>{generation++;};if(ctx)ctx.signal.addEventListener('abort',cancel,{once:true});
+    try{
+      const owner=(window.GuidedCourse?.inspect()||window.GuidedStudy?.session.inspect()),parked=guidedParked;
+      if(parked&&parked.view===view&&parked.generation===generation&&parked.lessonId===owner?.lessonId&&owner.mode==='guided'&&view?.isUsable?.()){
+        if(!(window.GuidedCourseExplanation||window.GuidedExplanation)?.hide(ctx))return false;menu.classList.add('hidden');root.classList.remove('hidden');guidedParked=null;stop();
+        try{if(!view.resume())throw Error('The suspended lung scene is unavailable.');}catch(e){close();throw e;}
+        root.querySelector('h2')?.focus();
+      }else if(state.system!=='respiratory'||root.classList.contains('hidden')||(view&&typeof view.isUsable==='function'&&!view.isUsable()))open('respiratory',{guidedContext:ctx});
+      else if(!['explore','guided'].includes(state.tab)){state.tab='explore';render(ctx);}
+      stop();await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();return true;
+    }finally{if(ctx)ctx.signal.removeEventListener('abort',cancel);}
+  }
+  function guidedRespCapture(){return JSON.parse(JSON.stringify({version:1,organ:'respiratory',state:{...state,playing:false},scene:view?.snapshot?.()||sceneSnapshots.get('respiratory')||null,fallbackJourney:fallbackExplorer?.state()?.id,signature:guidedRespSignature,anchor:guidedRespAnchor,window:guidedRespWindow}));}
+  async function guidedRespRestore(saved,ctx){
+    if(saved?.version!==1||saved.organ!=='respiratory'||saved.state?.system!=='respiratory')throw Error('Invalid respiratory lesson scene.');
+    if(!await guidedRespPrepare(null,ctx)||!guidedRespCurrent(ctx))return false;Object.assign(state,JSON.parse(JSON.stringify(saved.state)),{playing:false});rebuildMechanics();render(ctx);await sceneReady;if(!guidedRespCurrent(ctx))return false;stop();
+    if(saved.scene&&view?.restoreSnapshot){await view.restoreSnapshot(saved.scene,ctx);if(!guidedRespCurrent(ctx))return false;}else{if(saved.scene?.journey?.segment)fallbackExplorer?.go(saved.scene.journey.segment);if(saved.fallbackJourney||saved.scene?.journey?.id)fallbackExplorer?.go(saved.fallbackJourney||saved.scene.journey.id);}
+    guidedRespSignature=saved.signature||null;guidedRespAnchor=Number(saved.anchor)||0;guidedRespWindow=saved.window||null;updateClock();adoptGuidedRespOwner(ctx);return true;
+  }
+  async function guidedRespApply(spec,audioTime,ctx){
+    if(!guidedRespCurrent(ctx)||state.system!=='respiratory'||root.classList.contains('hidden'))return false;stop();const signature=JSON.stringify(spec);
+    const changed=signature!==guidedRespSignature;
+    if(changed){
+      if(spec.monitoringView!=null&&spec.monitoringView!=='capnography')throw Error('Unsupported respiratory monitoring view.');
+      root.querySelectorAll('[data-cue]').forEach(control=>{control.checked=true;});
+      const breathing={rate:12,target:.5,resistance:2,compliance:.1,mode:'target',...(spec.breathing||{})},ventilation=spec.ventilation||'spontaneous';
+      if(JSON.stringify(breathing)!==JSON.stringify(state.breathing)||ventilation!==state.ventilation){state.breathing=breathing;state.ventilation=ventilation;rebuildMechanics();root.querySelector('[data-mechanics-curves]').innerHTML=mechanicsCurves();}
+      state.view=spec.stage==='membrane'||spec.stage==='alveoli'?'exchange':'whole';
+      if(view?.applyGuidedScene){await view.applyGuidedScene(spec,ctx);if(!guidedRespCurrent(ctx))return false;}else{if(spec.segment)fallbackExplorer?.go(spec.segment);fallbackExplorer?.go(spec.stage||'whole');}
+    }
+    const finish=()=>{
+      if(changed){
+      if(spec.selected)selectStructure(spec.selected);
+      const sim=spec.simulation||{kind:'hold',seconds:0};guidedRespWindow=null;if(sim.kind==='phase'){
+        if(sim.phase==='expiration')guidedRespAnchor=mechanics.period*.7;
+        else if(sim.phase==='inspiration')guidedRespAnchor=mechanics.period*.2;
+        else{const i=C.respiratoryPhases.findIndex(x=>x.id===sim.phase);if(i<0)throw Error('Unsupported guided respiratory phase.');guidedRespAnchor=(C.respiratoryPhases[i].start+(C.respiratoryPhases[i+1]?.start??5))/2/5*mechanics.period;}
+      }else guidedRespAnchor=Number(sim.seconds)||0;
+      if(sim.sweep){if(sim.kind!=='phase'||!['inspiration','expiration'].includes(sim.phase)||!Number.isFinite(sim.anchorAudio)||!Number.isFinite(sim.endAudio)||sim.endAudio<=sim.anchorAudio)throw Error('Respiratory sweeps require a supported phase and measured positive audio bounds.');guidedRespWindow={start:sim.phase==='inspiration'?0:mechanics.Ti+.001,end:sim.phase==='inspiration'?mechanics.Ti-.001:mechanics.period-.001,audioStart:sim.anchorAudio,audioEnd:sim.endAudio};}
+      guidedRespSignature=signature;
+    }
+    if(!guidedRespCurrent(ctx))return false;const sim=spec.simulation||{kind:'hold',seconds:0};state.time=guidedRespWindow?guidedRespWindow.start+(guidedRespWindow.end-guidedRespWindow.start)*Math.max(0,Math.min(1,(audioTime-guidedRespWindow.audioStart)/(guidedRespWindow.audioEnd-guidedRespWindow.audioStart))):sim.kind==='cycle'?(guidedRespAnchor+Math.max(0,audioTime-(sim.anchorAudio||0))*(sim.speed??1))%mechanics.period:Math.max(0,Math.min(mechanics.period,guidedRespAnchor));updateClock();adoptGuidedRespOwner(ctx);return true;
+    };
+    return view?.batchDraw?view.batchDraw(finish):finish();
+  }
   window.CardiorespiratoryStudy = {
+    guided:{prepare:guidedRespPrepare,apply:guidedRespApply,capture:guidedRespCapture,restore:guidedRespRestore,pause:stop,suspendForExplanation:guidedRespSuspendForExplanation,releaseGuidedResources},
     open,
     showLesson(system,index=0) { open(system);state.tab="guided";state.lesson=Math.max(0,Math.min(D.lessons[system].length-1,index));render(); },
     close,

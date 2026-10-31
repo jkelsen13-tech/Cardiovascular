@@ -4,7 +4,7 @@ const {chromium}=require('playwright'),assert=require('node:assert/strict'),fs=r
  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--use-angle=swiftshader','--enable-unsafe-swiftshader']});
  const page=await browser.newPage({viewport:{width:1024,height:900}}),errors=[],results=[];page.on('pageerror',e=>errors.push(e.message));
  try{
-  await page.goto(process.env.BASE_URL||'http://127.0.0.1:8765/');await page.click('#heartV3Launch');await page.waitForFunction(()=>!!HeartV3Study.inspect().renderer);
+  require('./test-controls.cjs').presentationControls(page);await page.goto(process.env.BASE_URL||'http://127.0.0.1:8765/');await page.click('#heartV3Launch');await page.waitForFunction(()=>!!HeartV3Study.inspect().renderer);
   await page.click('[data-h3-action="inspector"]');await page.click('[data-h3-action="route"][data-h3-route="routeD"]');await page.locator('[data-h3-breadcrumbs] [data-h3-stage="exchange"]').click();
   await page.waitForFunction(()=>HeartV3Study.inspect().renderer?.lastRenderedDetailStage==='routeD.exchange');fs.mkdirSync('review-heart-v3',{recursive:true});
   const inventory=await page.locator('[data-h3-detail-identity] option').evaluateAll(es=>es.map(e=>({id:e.value,name:e.textContent})));

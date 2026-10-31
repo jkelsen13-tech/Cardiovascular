@@ -16,7 +16,7 @@ const DEFAULT_OUTPUT = '/workspace/scratch/heart-v3-public-candidate/heart-v3-pr
 const RUNTIME = [
   'heart-study-v3/module.js', 'heart-study-v3/module.css',
   'heart-study-v3/model.js', 'heart-study-v3/flow.js', 'heart-study-v3/anatomy.js',
-  'heart-study-v3/renderer.js', 'heart-study-v3/content.js',
+  'heart-study-v3/renderer.js', 'heart-study-v3/content.js', 'heart-study-v3/course.js', 'heart-study-v3/vendor/shape-utils.min.js', 'heart-study-v3/vendor/THREE-LICENSE.txt', 'heart-study-v3/vendor/EARCUT-LICENSE.txt', 'heart-study-v3/vendor/BUILD.md', 'heart-study-v3/tissue-sections.js', 'heart-study-v3/sourced-anatomy.js',
   'heart-study-v3/explorer.js', 'heart-study-v3/explorer.css',
   'heart-study-v3/detail.js', 'heart-study-v3/assets/source-geometry.js',
   'heart-study-v3/assets/source-inventory.json',
@@ -75,6 +75,7 @@ function adapt(inputs) {
     source = exact(source, "${window.CardiorespiratoryStudy?button('Heart v2 · lessons & 30 questions','legacy')+button('Lungs · resume location','lungs'):''}", '', 'remove legacy launch controls');
     source = exact(source, "else if(a==='legacy'){close();window.CardiorespiratoryStudy?.open('heart');}else if(a==='lungs'){close();window.CardiorespiratoryStudy?.open('respiratory',{resume:true});}", '', 'remove legacy handlers');
     source = exact(source, "button('All study modes','home')", "button('Preview menu','home')", 'preview home label');
+    source = exact(source, 'The Heart v2 cardiac-output example remains available below.', 'These relationships are explained by the working heart model.', 'standalone pump explanation');
     return exact(source,
       'ASPT outline and supplied course clarification remain in the preserved Heart v2 lessons. The new microscopic routes are labeled deeper mechanism, with sources at each stage. This educational model has no diagnostic or patient-specific claim.',
       'The four connected routes use independently authored teaching reconstructions, with public scientific citations at each stage. This heart-only educational model has no diagnostic or patient-specific claim.',
@@ -151,7 +152,8 @@ function staticCheck(directory) {
   vm.runInNewContext(fs.readFileSync(path.join(directory, 'heart-study-v3/content.js'), 'utf8'), sandbox);
   const content = sandbox.module.exports;
   assert.deepEqual(Array.from(content.routes, route => route.id), ['routeA', 'routeB', 'routeC', 'routeD']);
-  assert.equal(content.routes.reduce((sum, route) => sum + route.stages.length, 0), 26);
+  assert.equal(content.routes.reduce((sum, route) => sum + route.stages.length, 0), 20);
+  assert.equal(content.mainElectricalLessons.length, 6, 'Six preserved electrical lessons are registered on the working heart');
   assert.ok(!content.sources['h3-aspt'] && !content.sources['h3-course']);
   for (const stage of content.routes.flatMap(route => Array.from(route.stages))) for (const ref of stage.sourceRefs) assert.match(content.sources[ref]?.url || '', /^https:\/\//, 'Public source for ' + stage.id);
   const attribution = fs.readFileSync(path.join(directory, 'heart-study-v3/assets/ATTRIBUTION.md'), 'utf8');
@@ -228,7 +230,7 @@ async function browserCheck(directory) {
     page.on('pageerror', error => errors.push(error.message));
     page.on('requestfailed', request => failures.push({ url: request.url(), error: request.failure()?.errorText }));
     page.on('response', response => { if (response.status() >= 400) responses.push({ url: response.url(), status: response.status() }); });
-    await page.goto(base, { waitUntil: 'load' });
+    require('./test-controls.cjs').presentationControls(page);await page.goto(base, { waitUntil: 'load' });
     assert.equal(await page.locator('#heartV3Launch').count(), 1);
     await page.locator('#heartV3Launch').click();
     await page.waitForFunction(() => !!window.HeartV3Study?.inspect().renderer, null, { timeout: 45000 });
@@ -236,7 +238,7 @@ async function browserCheck(directory) {
     assert.equal(await page.locator('[data-h3-action="legacy"],[data-h3-action="lungs"]').count(), 0);
     await page.locator('[data-h3-inspector]').evaluate(e => e.open = true);
     await page.selectOption('[data-h3-select]', 'rv');
-    await page.locator('[data-h3-preset="right"]').click();
+    await page.locator('[data-h3-rotation]').check();await page.locator('#heartV3Study canvas').focus();await page.keyboard.press('ArrowRight');
     await page.locator('[data-h3-scrub]').evaluate(input => { input.value = '.36'; input.dispatchEvent(new Event('input', { bubbles: true })); });
     const retained = await page.evaluate(() => ({ camera: HeartV3Study.inspect().camera, time: HeartV3Study.getState().time }));
     const host = page.locator('[data-h3-explorer-host]'), journeys = [];

@@ -18,17 +18,18 @@ const { chromium } = require("playwright"),
   page.on("request", (r) => {
     if (
       !r.url().startsWith("http://127.0.0.1:8765/") &&
-      !r.url().startsWith("data:")
+      !r.url().startsWith("data:") &&
+      !(r.url().startsWith("blob:") && new URL(r.url()).origin === "http://127.0.0.1:8765")
     )
       external.push(r.url());
   });
   fs.mkdirSync("review-simulators", { recursive: true });
   try {
-    await page.goto("http://127.0.0.1:8765/");
+    require('../heart-v3/test-controls.cjs').presentationControls(page);await page.goto("http://127.0.0.1:8765/");
     await page.evaluate(() =>
       localStorage.setItem("regression-sentinel", "preserved"),
     );
-    await page.locator("#heartSimulatorLaunch").click();
+    await page.locator("#heartSimulatorLaunch").click();await page.locator('#heartV3Inspector').evaluate(e=>e.open=true);await page.click('#heartV3Study [data-h3-action="legacy"]');
     await page.locator('[data-heart-phase="2"]').click();
     assert.match(
       await page.locator("[data-heart-clock]").textContent(),

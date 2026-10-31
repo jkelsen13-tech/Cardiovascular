@@ -1,0 +1,27 @@
+name: Source-ordered course verification
+on:
+  push:
+    paths: ['guided-study/**','private-course/**','simulation-core/module.js','tools/sequential-course/**','index.html','cmt-quiz.html','.github/workflows/guided-course-validation.yml']
+  pull_request:
+    paths: ['guided-study/**','private-course/**','simulation-core/module.js','tools/sequential-course/**','index.html','cmt-quiz.html','.github/workflows/guided-course-validation.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tools/sequential-course/verify-public.cjs
+      - name: Install existing browser-test dependency
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Static course and direct-heart navigation
+        run: |
+          export PLAYWRIGHT_CHANNEL=chrome
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/course-http.log" 2>&1 &
+          CARDIO_BASE_URL=http://127.0.0.1:8765/ node tools/sequential-course/public-runtime.cjs

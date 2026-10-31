@@ -4,7 +4,7 @@ let pw;try{pw=require('playwright');}catch(_){pw=require('/workspace/cloud-setup
 const base=(process.env.CARDIO_BASE_URL||'http://127.0.0.1:8765/').replace(/\/$/,'')+'/',out=path.resolve(__dirname,'../../review-heart-v3');
 (async()=>{fs.mkdirSync(out,{recursive:true});const browser=await pw.chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});try{
  const page=await browser.newPage({viewport:{width:1024,height:850},hasTouch:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto(base+'heart-study-v3/model.js');await page.setContent('<body style="margin:0;background:#101c29;color:white;font-family:Arial"><div id="h" style="width:100%"></div></body>');
+ require('./test-controls.cjs').presentationControls(page);await page.goto(base+'heart-study-v3/model.js');await page.setContent('<body style="margin:0;background:#101c29;color:white;font-family:Arial"><div id="h" style="width:100%"></div></body>');
  for(const file of ['ecg-study/vendor/three-gltf.min.js','heart-study-v3/model.js','heart-study-v3/anatomy.js','heart-study-v3/assets/source-geometry.js','heart-study-v3/renderer.js'])await page.addScriptTag({url:base+file});
  await page.evaluate(()=>{window.m=HeartV3Model.build({});window.v=HeartV3Renderer.mount(document.querySelector('#h'));v.sync(m.sample(.16));});
  const sourceMotion=await page.evaluate(()=>{const a=v.projectAnchor('lv');v.sync(m.sample(.36));const b=v.projectAnchor('lv');return Math.hypot(a.x-b.x,a.y-b.y);});assert(sourceMotion>.5,'Source anchor must follow actual exterior deformation');

@@ -63,6 +63,9 @@ const EcgStudy = (() => {
     if (!heartAssets) heartAssets = (async () => {
       if (!window.EcgThree) await scriptFile("vendor/three-gltf.min.js");
       if (!window.EcgHeartModelData) await scriptFile("assets/model-data.js");
+      if (!window.HeartV3ShapeUtils) await scriptFile("../heart-study-v3/vendor/shape-utils.min.js");
+      if (!window.HeartV3TissueSections) await scriptFile("../heart-study-v3/tissue-sections.js");
+      if (!window.EcgWallRims) await scriptFile("wall-rims.js");
       if (!window.EcgHeart3D) await scriptFile("heart-3d.js");
     })().catch(e => { heartAssets = null; throw e; });
     return heartAssets;

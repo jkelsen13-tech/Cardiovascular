@@ -32,7 +32,7 @@ The upstream mapping has conflicting left/right inferior pulmonary vein labels. 
 
 The front basis is derived from RA→LA, orthogonalized against the IVC→SVC superior direction. Viewer-left is patient-right in that front view. Rotation changes screen positions; a persistent orientation note and Reset / front view explain this.
 
-Cutaway uses an uncapped clipping plane: it reveals interior surfaces but does not create a watertight surgical cut. Conduction nodes, bundle branches, Purkinje branches and blood arrows are schematic overlays using chamber/valve landmarks. Overlay depth testing is disabled to keep these teaching paths visible through exterior anatomy.
+The original viewer now adds qualified annular cut faces to static source vessels at display crop planes, leaving the inner lumen open. Gold is a toggleable teaching wall overlay. Myocardial cutaways and ambiguous/solid-only source vessel sections remain uncapped; this is not a watertight surgical specimen. Source geometry is not inflated. Conduction nodes, bundle branches, Purkinje branches and blood arrows are schematic overlays using chamber/valve landmarks. Overlay depth testing is disabled to keep these teaching paths visible through exterior anatomy.
 
 P illustrates atrial depolarization and contraction/filling; PR illustrates AV delay and filling; QRS illustrates His–Purkinje ventricular activation followed by contraction/ejection; ST illustrates continued depolarization/ejection; T illustrates repolarization/relaxation; TP illustrates baseline/passive filling. U has no invented mechanical event.
 

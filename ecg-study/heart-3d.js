@@ -24,7 +24,7 @@ window.EcgHeart3D = (() => {
   renderer.setClearColor(0x141a24,1);
   const canvas=renderer.domElement;canvas.className="ecg-3d-canvas";canvas.tabIndex=0;
   canvas.setAttribute("role","img");canvas.setAttribute("aria-label","Rotatable anatomical heart. Arrow keys rotate; plus and minus zoom. Front view restores patient orientation.");
-  host.innerHTML='<div class="ecg-3d-toolbar"><button type="button" data-action="cut" aria-pressed="false">Cutaway</button><button type="button" data-action="front">Reset / front view</button><button type="button" data-action="in" aria-label="Zoom in">Zoom +</button><button type="button" data-action="out" aria-label="Zoom out">Zoom −</button><button type="button" data-action="touch" aria-pressed="false">Enable touch rotation</button></div><div class="ecg-3d-viewport"><div class="ecg-3d-labels" aria-hidden="true"></div></div><section class="ecg-3d-cycle-readout" aria-labelledby="ecgBloodJourneyTitle"><h4 id="ecgBloodJourneyTitle">Blood journey + ECG timing</h4><p class="ecg-3d-route ecg-3d-route-deoxy"><strong>DEOXYGENATED</strong> Body → SVC / IVC → right atrium → tricuspid valve → right ventricle → pulmonary valve → pulmonary artery → lungs.</p><p class="ecg-3d-oxygenation"><strong>OXYGENATION OCCURS IN THE LUNGS</strong>, outside this heart model—not inside a heart chamber.</p><p class="ecg-3d-route ecg-3d-route-oxy"><strong>OXYGENATED</strong> Lungs → pulmonary veins → left atrium → mitral valve → left ventricle → aortic valve → aorta → body.</p><p class="ecg-3d-flow-state"></p><p class="ecg-3d-valve-state"></p><p class="ecg-3d-node-state"></p></section><div class="ecg-3d-options"><label><input type="checkbox" data-option="conduction" checked>Conduction</label><label><input type="checkbox" data-option="blood" checked>Blood flow</label><label><input type="checkbox" data-option="labels" checked>Labels</label><label>Label mode <select data-option="label-mode" aria-label="Label mode"><option value="clean" selected>Clean</option><option value="conduction">Conduction</option><option value="blood">Blood flow</option><option value="anatomy">Anatomy</option></select></label><label><input type="checkbox" data-option="valves">Show valves</label></div><p class="ecg-3d-help">Mouse drag rotates. Touch scrolls the page by default; enable touch rotation for orbit and pinch, then unlock page scrolling. Arrow keys rotate when the heart has focus. All callouts mark projected landmarks; targets may be internal or behind tissue. Use cutaway to inspect them. Bright paths and arrows are teaching overlays.</p><p class="ecg-3d-direction" role="status"></p><details class="ecg-3d-key"><summary>Structure and flow key</summary><p>RA: right atrium; LA: left atrium; RV: right ventricle; LV: left ventricle. SVC/IVC: superior/inferior vena cava; PA: pulmonary artery; PV: pulmonary veins. In cutaway: TV = tricuspid valve; MV = mitral valve; Pulm V = pulmonary valve; Aortic V = aortic valve.</p><p>Deoxygenated blood: SVC/IVC → RA → tricuspid valve → RV → pulmonary valve → PA. Oxygenated blood: PV → LA → mitral valve → LV → aortic valve → aorta.</p><p>SA → atria → AV → His → right/left bundle branches → Purkinje. Overlays and chamber motion are schematic, not a patient-specific electrophysiology or fluid simulation.</p></details>';
+  host.innerHTML='<div class="ecg-3d-toolbar"><button type="button" data-action="cut" aria-pressed="false">Cutaway</button><button type="button" data-action="front">Reset / front view</button><button type="button" data-action="in" aria-label="Zoom in">Zoom +</button><button type="button" data-action="out" aria-label="Zoom out">Zoom −</button><button type="button" data-action="touch" aria-pressed="false">Enable touch rotation</button></div><div class="ecg-3d-viewport"><div class="ecg-3d-labels" aria-hidden="true"></div></div><section class="ecg-3d-cycle-readout" aria-labelledby="ecgBloodJourneyTitle"><h4 id="ecgBloodJourneyTitle">Blood journey + ECG timing</h4><p class="ecg-3d-route ecg-3d-route-deoxy"><strong>DEOXYGENATED</strong> Body → SVC / IVC → right atrium → tricuspid valve → right ventricle → pulmonary valve → pulmonary artery → lungs.</p><p class="ecg-3d-oxygenation"><strong>OXYGENATION OCCURS IN THE LUNGS</strong>, outside this heart model—not inside a heart chamber.</p><p class="ecg-3d-route ecg-3d-route-oxy"><strong>OXYGENATED</strong> Lungs → pulmonary veins → left atrium → mitral valve → left ventricle → aortic valve → aorta → body.</p><p class="ecg-3d-flow-state"></p><p class="ecg-3d-valve-state"></p><p class="ecg-3d-node-state"></p></section><div class="ecg-3d-options"><label><input type="checkbox" data-option="conduction" checked>Conduction</label><label><input type="checkbox" data-option="blood" checked>Blood flow</label><label><input type="checkbox" data-option="labels" checked>Labels</label><label>Label mode <select data-option="label-mode" aria-label="Label mode"><option value="clean" selected>Clean</option><option value="conduction">Conduction</option><option value="blood">Blood flow</option><option value="anatomy">Anatomy</option></select></label><label><input type="checkbox" data-option="valves">Show valves</label><label><input type="checkbox" data-option="wall-highlight" checked>Highlight exposed wall rims</label></div><p class="ecg-3d-rim-legend">Gold = exposed vessel wall at a display cut. Hollow centers remain open lumens. Gold is a teaching color, not measured thickness or a closed valve.</p><p class="ecg-3d-help">Mouse drag rotates. Touch scrolls the page by default; enable touch rotation for orbit and pinch, then unlock page scrolling. Arrow keys rotate when the heart has focus. All callouts mark projected landmarks; targets may be internal or behind tissue. Use cutaway to inspect them. Bright paths and arrows are teaching overlays.</p><p class="ecg-3d-direction" role="status"></p><details class="ecg-3d-key"><summary>Structure and flow key</summary><p>RA: right atrium; LA: left atrium; RV: right ventricle; LV: left ventricle. SVC/IVC: superior/inferior vena cava; PA: pulmonary artery; PV: pulmonary veins. In cutaway: TV = tricuspid valve; MV = mitral valve; Pulm V = pulmonary valve; Aortic V = aortic valve.</p><p>Deoxygenated blood: SVC/IVC → RA → tricuspid valve → RV → pulmonary valve → PA. Oxygenated blood: PV → LA → mitral valve → LV → aortic valve → aorta.</p><p>SA → atria → AV → His → right/left bundle branches → Purkinje. Overlays and chamber motion are schematic, not a patient-specific electrophysiology or fluid simulation.</p></details>';
   const viewport=host.querySelector(".ecg-3d-viewport");viewport.prepend(canvas);
   const labelLayer=host.querySelector(".ecg-3d-labels"), direction=host.querySelector(".ecg-3d-direction");
   labelLayer.removeAttribute("aria-hidden");
@@ -52,8 +52,9 @@ window.EcgHeart3D = (() => {
   const clipping=new T.Plane(V(0,0,-1),.12);
   const bounds=[new T.Plane(V(1,0,0),1.65),new T.Plane(V(-1,0,0),1.65),new T.Plane(V(0,1,0),1.65),new T.Plane(V(0,-1,0),1.65),new T.Plane(V(0,0,1),1.65),new T.Plane(V(0,0,-1),1.65)];
   const meshes=[],points={},labelItems=[],pivots=[],paths=[],flows=[],valveLabels={},valveMeshes={};
-  let ready=false;
+  let ready=false,wallRims=null,wallHighlight=true;
   function dispose(){
+   wallRims?.dispose();
    if(disposed)return;disposed=true;cancelAnimationFrame(raf);
    observer?.disconnect();inter?.disconnect();document.removeEventListener("visibilitychange",visibility);
    reduced.removeEventListener?.("change",motion);
@@ -104,6 +105,7 @@ window.EcgHeart3D = (() => {
    });
   }
   function draw(time=0){
+   wallRims?.update(cutaway?[...bounds,clipping]:bounds,wallHighlight);
    if(disposed||!ready||document.hidden||!visible)return;
    cancelAnimationFrame(raf);
    camera.position.set(Math.sin(yaw)*Math.cos(pitch)*distance,Math.sin(pitch)*distance,Math.cos(yaw)*Math.cos(pitch)*distance);camera.position.add(focusTarget);camera.lookAt(focusTarget);
@@ -174,7 +176,7 @@ window.EcgHeart3D = (() => {
    else {const a=[...drag.values()];const d=Math.hypot(a[0][0]-a[1][0],a[0][1]-a[1][1]);if(last)distance=clamp(distance*last/d,3.3,8);last=d;}
    draw();
   }
-  canvas.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>6)return;const r=canvas.getBoundingClientRect(),ray=new T.Raycaster();ray.setFromCamera(new T.Vector2((e.clientX-r.left)/r.width*2-1,1-(e.clientY-r.top)/r.height*2),camera);const hits=ray.intersectObjects(meshes).filter(h=>h.object.visible&&(!cutaway||clipping.distanceToPoint(h.point)>=0));if(hits[0]){const id=Object.keys(structureParts).find(id=>matches(hits[0].object,id));if(id)selectStructure(id);}});
+  canvas.addEventListener('pointerup',e=>{if(!down||Math.hypot(e.clientX-down[0],e.clientY-down[1])>6)return;const r=canvas.getBoundingClientRect();if(!r.width||!r.height)return;const direction=V((e.clientX-r.left)/r.width*2-1,1-(e.clientY-r.top)/r.height*2,.5).unproject(camera).sub(camera.position).normalize(),hit=wallRims?.pick(camera.position,direction),hits=hit?[hit]:[];if(hits[0]){const id=Object.keys(structureParts).find(id=>matches(hits[0].object,id));if(id)selectStructure(id);}});
   canvas.addEventListener("pointerdown",pointerDown);canvas.addEventListener("pointermove",pointerMove);
   ["pointerup","pointercancel"].forEach(ev=>canvas.addEventListener(ev,e=>{drag.delete(e.pointerId);last=null;}));
   canvas.addEventListener("wheel",e=>{if(!touchEnabled)return;e.preventDefault();distance=clamp(distance+Math.sign(e.deltaY)*.3,3.3,8);draw();},{passive:false});
@@ -188,11 +190,11 @@ window.EcgHeart3D = (() => {
    draw();
   }));
   host.querySelectorAll("[data-option]").forEach(el=>el.addEventListener("change",()=>{
-   if(el.dataset.option==="conduction")conduction=el.checked;if(el.dataset.option==="blood")blood=el.checked;if(el.dataset.option==="labels")labels=el.checked;if(el.dataset.option==="valves")showValves=el.checked;if(el.dataset.option==="label-mode")labelMode=el.value;host.dataset.labelMode=labelMode;sync({stage,playing,mechanical});
+   if(el.dataset.option==="wall-highlight")wallHighlight=el.checked;if(el.dataset.option==="conduction")conduction=el.checked;if(el.dataset.option==="blood")blood=el.checked;if(el.dataset.option==="labels")labels=el.checked;if(el.dataset.option==="valves")showValves=el.checked;if(el.dataset.option==="label-mode")labelMode=el.value;host.dataset.labelMode=labelMode;sync({stage,playing,mechanical});
   }));
   try {
    const [heart,vessels]=await Promise.all([load(window.EcgHeartModelData.heart),load(window.EcgHeartModelData.vessels)]);
-   if(disposed){[heart,vessels].forEach(s=>s.traverse(o=>{o.geometry?.dispose();o.material?.dispose();}));return {dispose,sync,selectStructures,refreshLayout:resize};}
+   if(disposed){[heart,vessels].forEach(s=>s.traverse(o=>{o.geometry?.dispose();o.material?.dispose();}));return {dispose,sync,selectStructures,refreshLayout:resize,inspect:()=>wallRims?.inspect()||null};}
    model.add(heart,vessels);model.updateMatrixWorld(true);
    const find=part=>{let hit;model.traverse(o=>{if(o.isMesh&&o.name.toLowerCase().includes(part))hit=o;});if(!hit)throw Error("Missing anatomical mesh: "+part);return hit;};
    const center=part=>new T.Box3().setFromObject(find(part)).getCenter(V());
@@ -227,6 +229,7 @@ window.EcgHeart3D = (() => {
    for(const [name,id] of [["TV","tv"],["MV","mv"],["Pulm V","pv"],["Aortic V","av"]])valveLabels[id]=label(structureNames[id],p[id].clone(),"valve",id);
    for(const [name,id] of [["Septum","septum"],["Papillary muscles","papillary"],["Coronary sinus","sinus"],["RA","ra"],["LA","la"],["RV","rv"],["LV","lv"],["SVC","svc"],["IVC","ivc"],["PA","pa"],["Aorta","aorta"],["PV","vein"]])label(structureNames[id]||name,p[id].clone(),"structure",id);
    labelItems.forEach(item=>{const m=meshes.find(m=>matches(m,item.id));if(m){item.mesh=m;item.local=m.worldToLocal(item.point.clone());}});
+   wallRims=window.EcgWallRims?.create(T,scene,meshes);
    host.dataset.ready="true";host.dataset.meshes=String(meshes.length);host.dataset.flowArrows=String(flows.reduce((n,f)=>n+f.arrows.length,0));host.dataset.labelMode=labelMode;
    host.dataset.frontRightLeft=String(p.ra.x<p.la.x);
    document.addEventListener("visibilitychange",visibility);reduced.addEventListener?.("change",motion);
@@ -234,7 +237,7 @@ window.EcgHeart3D = (() => {
    inter=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;cancelAnimationFrame(raf);if(visible)draw();});inter.observe(viewport);
    ready=true;resize();sync(initial);
   }catch(e){dispose();throw e;}
-  return {dispose,sync,selectStructures,refreshLayout:resize};
+  return {dispose,sync,selectStructures,refreshLayout:resize,inspect:()=>wallRims?.inspect()||null};
  }
  return {mount};
 })();
