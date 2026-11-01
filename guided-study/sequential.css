@@ -24,3 +24,15 @@
 
 #guidedCourseDock [data-seq-show]{display:grid;max-width:min(260px,calc(100vw - 100px));min-width:0;text-align:left}
 #guidedCourseDock [data-seq-show] span{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Stable slide-first presentation. A 16:9 viewport contains both 4:3 and 16:9 original pages without stretching. */
+#guidedCourse [data-seq-source-image]{display:block;width:100%;aspect-ratio:16/9;object-fit:contain;background:#f4f6fa}
+#guidedCourse [data-seq-source-image][hidden]{display:none}
+#guidedCourse [data-seq-time]{font-variant-numeric:tabular-nums;white-space:nowrap;min-width:7.5em}
+#guidedCourse .sc-presentation{padding:9px 12px;border-left:3px solid #205d9d;background:#eff6ff;color:#173f70}
+#guidedCourse .sc-slide-text{margin-top:8px}
+#guidedCourse .sc-simulation-lessons{margin:14px 0;padding:10px;border:1px solid #91a4bd;border-radius:8px}
+#guidedCourse .sc-simulation-lessons label{display:grid;gap:6px}
+#guidedCourse .sc-simulation-lessons select{width:100%;max-width:100%;min-width:0;min-height:44px}
+#guidedCourse [data-seq-cue]{line-height:1.5;min-height:4.5em;max-height:4.5em;overflow:auto;overflow-wrap:anywhere}
+#guidedCourse [data-seq-played]{font-variant-numeric:tabular-nums}

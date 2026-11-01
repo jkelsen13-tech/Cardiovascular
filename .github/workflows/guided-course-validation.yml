@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: '22'
       - run: node tools/sequential-course/verify-public.cjs
+      - name: Verify source-only lesson presentation and frozen audio
+        run: node tools/sequential-course/verify-presentations.cjs
       - name: Install existing browser-test dependency
         run: |
           npm install --no-save --package-lock=false playwright@1.55.1
@@ -25,3 +27,15 @@ jobs:
           export PLAYWRIGHT_CHANNEL=chrome
           python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/course-http.log" 2>&1 &
           CARDIO_BASE_URL=http://127.0.0.1:8765/ node tools/sequential-course/public-runtime.cjs
+      - name: All-lesson presentation, actual audio, manual slide and simulation return
+        env:
+          PLAYWRIGHT_CHANNEL: chrome
+          CARDIO_BASE_URL: http://127.0.0.1:8765/
+        run: node tools/sequential-course/presentation-browser.cjs
+      - name: Preserve presentation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: course-presentation-evidence
+          path: course-presentation-evidence/
+          if-no-files-found: ignore
