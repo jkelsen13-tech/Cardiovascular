@@ -1,8 +1,8 @@
 {
   "schema": "cardiovascular-main-runtime-2",
-  "scope": "Existing study platform with source-ordered course,120recordings,measured page following and corrected direct3Dheart entry",
-  "sourceCandidate": "1b87c70b456f8db9c0ce4d0c4610468d091d4074",
-  "runtimeSnapshotSHA256": "0619fabe0ec170915759763dfbfc68d32c18af84314ff579703b5adc954016a3",
+  "scope": "84 source-ordered slide lessons with856reviewedcuebindings,120unchangedrecordings,explicitseparatesimulationlessons,manualholdsandstableimagepresentation",
+  "sourceCandidate": "reconciled-source-presentation-20261101",
+  "runtimeSnapshotSHA256": "b25cb625757e66ebbf16bb3673bf3274fbec214805e955c06f7509a4fbaa4cf7",
   "sourceLessons": 84,
   "recordings": 120,
   "sourceImages": 911,
@@ -78,8 +78,8 @@
       "sha256": "8622b9a2bc8e66506d7579ba99e7957a002ab8e5c7a04b7c2cba29cde38838e0"
     },
     "cmt-quiz.html": {
-      "bytes": 518370,
-      "sha256": "90146c5cdfdfa1d58c550b4e9ff7c43901d3eb11a8ccaecf365d357f100c1efe"
+      "bytes": 518429,
+      "sha256": "a8db1b0c6ca71aba14fe477e39e50ce8fba57827aa2588fdc2f622c2aab0c52c"
     },
     "ecg/images/a6d28f.png": {
       "bytes": 331326,
@@ -846,24 +846,24 @@
       "sha256": "c7f521d7f22185c2a5044964bb58ffc025614b63a7338a03d4a66cbf526d3c3d"
     },
     "guided-study/sequential-map.js": {
-      "bytes": 640457,
-      "sha256": "44454d6454a0280bbc2a634fa90a149a0aad3f9233eb651ec994be68fb5d2e4b"
+      "bytes": 646549,
+      "sha256": "85bce0ae1974c86a9b6db9f056cb9bdd9c65ca14df594d51c7dfaa9902ab921a"
     },
     "guided-study/sequential-narrations.js": {
       "bytes": 68625,
       "sha256": "d17c084d85102bf178b2b96ac08512582920263b3706321a777876a0330a5d1e"
     },
     "guided-study/sequential-player.js": {
-      "bytes": 44257,
-      "sha256": "dd3345666a9c39f93bdfaedcc02dcc82297effb892ca72094c492965bb0e757c"
+      "bytes": 55196,
+      "sha256": "119e4459d8c3ffdd1209cdb1d6a473e93a2c9c63388e8c789f7d5a7ed90f6f58"
     },
     "guided-study/sequential-progress.js": {
       "bytes": 3958,
       "sha256": "8ff03c8aec2f8e7ff478de7882b7a9077502020b4f407f6f67feea472d47482a"
     },
     "guided-study/sequential.css": {
-      "bytes": 2413,
-      "sha256": "238e74fc1ebab7a1416bcb93b0af4d3488cb83e9cb7191a90bc13d23e6d65dbd"
+      "bytes": 3627,
+      "sha256": "7db060e2457f1cd8d1118f67317f4f5511f5ae21dd69c3a46d332813ae937c22"
     },
     "guided-study/session.js": {
       "bytes": 17052,
@@ -958,8 +958,8 @@
       "sha256": "dd6ec23bc387980aa233d076040991427bb5ba9604640d14b987da465e0be81c"
     },
     "index.html": {
-      "bytes": 518370,
-      "sha256": "90146c5cdfdfa1d58c550b4e9ff7c43901d3eb11a8ccaecf365d357f100c1efe"
+      "bytes": 518429,
+      "sha256": "a8db1b0c6ca71aba14fe477e39e50ce8fba57827aa2588fdc2f622c2aab0c52c"
     },
     "lead-placement/assets/ATTRIBUTION.md": {
       "bytes": 6064,
@@ -4868,6 +4868,12 @@
     "study/teaching.js": {
       "bytes": 14438,
       "sha256": "f008ec5108f3013dd3c4c964729fd6a601a71dfe3557de9653e6cb88dfc0e1b1"
+    },
+    "guided-study/sequential-visuals.js": {
+      "bytes": 383039,
+      "sha256": "43745ca126f62f18fe2648e14f467c4dfd3dfea1ba2fa27bb797d8b903589584"
     }
-  }
+  },
+  "publicationParent": "274156612e3a7380721f64292eb08c043dea63f6",
+  "sourceCueBindings": 856
 }

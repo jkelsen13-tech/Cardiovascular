@@ -16,6 +16,8 @@ jobs:
         with:
           node-version: '22'
       - run: node tools/sequential-course/verify-public.cjs
+      - run: node tools/sequential-course/verify-slide-bindings.cjs
+      - run: node tools/sequential-course/presentation-contract.cjs
       - name: Verify source-only lesson presentation and frozen audio
         run: node tools/sequential-course/verify-presentations.cjs
       - name: Install existing browser-test dependency
@@ -32,10 +34,20 @@ jobs:
           PLAYWRIGHT_CHANNEL: chrome
           CARDIO_BASE_URL: http://127.0.0.1:8765/
         run: node tools/sequential-course/presentation-browser.cjs
+      - name: Reviewed complete course cues, interaction and image failure regressions
+        env:
+          PLAYWRIGHT_CHANNEL: chrome
+          CARDIO_BASE_URL: http://127.0.0.1:8765/
+        run: |
+          node tools/sequential-course/slide-runtime.cjs
+          node tools/sequential-course/slide-interactions.cjs
+          node tools/sequential-course/slide-image-failure.cjs
       - name: Preserve presentation evidence
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: course-presentation-evidence
-          path: course-presentation-evidence/
+          path: |
+            course-presentation-evidence/
+            course-slide-evidence/
           if-no-files-found: ignore

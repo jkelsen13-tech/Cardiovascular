@@ -2,7 +2,7 @@
 // Exact production policy, evaluated without a browser. This is not a UI pass.
 const A=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto');
 const map=require('../../guided-study/sequential-map.js'),box={};box.window=box;vm.createContext(box);
-for(const n of ['lessons','lessons-m01','lessons-m03','lessons-m04','lessons-m05','lessons-m06','lessons-m07','lessons-m08','lessons-m09','lessons-m10','lessons-m11','lessons-m12','lessons-m13','lessons-m14','sequential-narrations','sequential-player'])vm.runInContext(fs.readFileSync('guided-study/'+n+'.js','utf8'),box,{filename:n});
+for(const n of ['lessons','lessons-m01','lessons-m03','lessons-m04','lessons-m05','lessons-m06','lessons-m07','lessons-m08','lessons-m09','lessons-m10','lessons-m11','lessons-m12','lessons-m13','lessons-m14','sequential-narrations','sequential-visuals','sequential-player'])vm.runInContext(fs.readFileSync('guided-study/'+n+'.js','utf8'),box,{filename:n});
 const policy=box.SequentialCoursePresentation,all=[...box.GuidedStudyLessons,...box.SequentialCourseNarrations],byId=new Map(all.map(c=>[c.id,c]));
 let checks=0,placements=0,replaced=0,reviewed=0,existingSource=0,overview=0;const check=(x,s)=>{A.ok(x,s);checks++;};
 const sha=x=>crypto.createHash('sha256').update(x).digest('hex'),before=JSON.stringify(all);
@@ -12,7 +12,7 @@ for(const lesson of map.lessons){
  for(const entry of lesson.audio){
   const clip=byId.get(entry.clipId);check(!!clip,'Recording exists '+entry.clipId);
   const out=policy.sourceCues(lesson,clip);
-  check(out.length===clip.cues.length,'No dropped recorded cue '+clip.id);
+  check(out.length===clip.cues.length,'No dropped recorded cue '+clip.id);check(policy.sourceCues(lesson,clip,true).every((q,i)=>q===clip.cues[i]),'Legacy explicit optional sourceCues retains original objects '+clip.id);
   for(let i=0;i<out.length;i++){
    const old=clip.cues[i],cue=out[i];placements++;
    check(cue.scene.organ==='source','No simulator/explanation adapter in source course '+lesson.id+'/'+cue.id);
@@ -30,7 +30,7 @@ check(JSON.stringify(all)===before,'No shared tour/audio metadata mutated');
 const l3=map.lessons.find(x=>x.id==='source.lesson.p0024'),l4=map.lessons.find(x=>x.id==='source.lesson.p0030');
 const pages=(l,id)=>Array.from(policy.sourceCues(l,byId.get(id)),c=>c.scene.page);
 A.deepEqual(pages(l3,'M01.03'),[24,27,27,27,27,28,28,28]);checks++;
-A.deepEqual(pages(l3,'M01.05'),[26,27,27,26,27,27,26]);checks++;
+A.deepEqual(pages(l3,'M01.05'),[27,27,27,26,27,27,27]);checks++;
 A.deepEqual(pages(l4,'M01.04'),[31,31,31,31,31,30]);checks++;
 A.deepEqual(pages(l4,'M07.04'),[30,32,32,32,32,33,34,34,31]);checks++;
 const pulse=byId.get('M01.03').cues[1];check(pulse.at===4.01&&pulse.scene.organ==='respiratory','Baseline defect remains only in explicit adapted tour, not original source route');
