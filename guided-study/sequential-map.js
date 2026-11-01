@@ -1,14 +1,45 @@
-/* Source-ordered course with owner-authorized original slide access. */
+/* Source-ordered course with original slide access and separate simulation activities. */
 (function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory();else root.SequentialCourseMap=factory();})(typeof window==='object'?window:globalThis,function(){return {
-  "version": "source-course-v5-20261031-page-timing",
+  "version": "source-course-v6-20261101-slide-first",
   "schemaVersion": 2,
   "source": {
     "title": "All Slideshows Combined (01-13).pdf",
     "sha256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
     "pages": 911,
-    "boundaryStatus": "11 verified cover-delimited sections; original01–13individual-file numbering remains unresolved. No units are invented.",
+    "boundaryStatus": "11 verified cover-delimited sections; original01\u201313individual-file numbering remains unresolved. No units are invented.",
     "redistribution": "Owner confirmed permission to publish original slideshow text and rendered page images on this website on2026-10-31.",
-    "assets": "private-course/pages.json"
+    "assets": "private-course/pages.json",
+    "pageDispositions": [
+      {
+        "pages": [
+          363,
+          364
+        ],
+        "kind": "blank-source-pages",
+        "disposition": "Retained original PNG/text; noninstructional blank pages between the action-potential lesson and next cover. Not fabricated as a new lesson."
+      },
+      {
+        "pages": [
+          365
+        ],
+        "kind": "noninstructional-source-meme",
+        "disposition": "Original image retained; transition meme, not a narrated instructional lesson or a missing unit."
+      },
+      {
+        "pages": [
+          834,
+          835,
+          836,
+          837,
+          838,
+          839,
+          840,
+          841
+        ],
+        "kind": "blank-pacemakers-templates",
+        "disposition": "Retained and reachable within existing lesson75; eight identical empty title templates are not invented practice strips."
+      }
+    ]
   },
   "units": [
     {
@@ -19,7 +50,7 @@
         1,
         47
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [
         2
       ],
@@ -39,7 +70,7 @@
         48,
         105
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [
         49
       ],
@@ -62,7 +93,7 @@
         106,
         223
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [
         107
       ],
@@ -84,12 +115,12 @@
     {
       "id": "source.section.p0224",
       "order": 3,
-      "title": "Electrophysiology – Leads, Waves and Measurements",
+      "title": "Electrophysiology \u2013 Leads, Waves and Measurements",
       "pages": [
         224,
         365
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [
         225
       ],
@@ -112,7 +143,7 @@
         366,
         452
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [
         367
       ],
@@ -135,7 +166,7 @@
         453,
         529
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [],
       "lessonIds": [
         "source.lesson.p0453",
@@ -155,7 +186,7 @@
         530,
         633
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [],
       "lessonIds": [
         "source.lesson.p0530",
@@ -176,7 +207,7 @@
         634,
         708
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [],
       "lessonIds": [
         "source.lesson.p0634",
@@ -196,7 +227,7 @@
         709,
         805
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [],
       "lessonIds": [
         "source.lesson.p0709",
@@ -216,7 +247,7 @@
         806,
         841
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [],
       "lessonIds": [
         "source.lesson.p0806",
@@ -234,7 +265,7 @@
         842,
         911
       ],
-      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01–13 filename numbering.",
+      "numbering": "Ordinal of verified PDF cover-delimited section, not recovered original01\u201313 filename numbering.",
       "originalOverviewPages": [],
       "lessonIds": [
         "source.lesson.p0842",
@@ -259,7 +290,7 @@
       "sourceTitles": [
         "Cardiovascular",
         "OVERVIEW",
-        "So you wanna be a monitor tech…",
+        "So you wanna be a monitor tech\u2026",
         "Image or diagram without extracted text"
       ],
       "pages": [
@@ -299,12 +330,12 @@
         "headings": [
           "Cardiovascular",
           "OVERVIEW",
-          "So you wanna be a monitor tech…",
+          "So you wanna be a monitor tech\u2026",
           "Image or diagram without extracted text"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 1–7 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 1\u20137 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [
         {
@@ -320,7 +351,8 @@
         "audioSHA256": "eb12981097a53b4a5dc56a29eedc66722246f92e7073f12c1d8a047d4fb3f0b2",
         "duration": 70.713438,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0008",
@@ -330,8 +362,8 @@
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "ECG History",
-        "ECG History 1842 – Dr. Carlo Matteucci",
-        "ECG History 1877 – Augustus Waller",
+        "ECG History 1842 \u2013 Dr. Carlo Matteucci",
+        "ECG History 1877 \u2013 Augustus Waller",
         "ECG History 1902 - Willem Einthoven",
         "TOPOGRAPHIC ANATOMY"
       ],
@@ -396,19 +428,20 @@
         "kind": "source-topic-review",
         "headings": [
           "ECG History",
-          "ECG History 1842 – Dr. Carlo Matteucci",
-          "ECG History 1877 – Augustus Waller",
+          "ECG History 1842 \u2013 Dr. Carlo Matteucci",
+          "ECG History 1877 \u2013 Augustus Waller",
           "ECG History 1902 - Willem Einthoven",
           "TOPOGRAPHIC ANATOMY"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 8–23 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 8\u201323 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
-        "The source history date on p9 differs from the approved narration’s Waller date. Original slide wording and adapted narration remain separately labeled."
+        "The source history date on p9 differs from the approved narration\u2019s Waller date. Original slide wording and adapted narration remain separately labeled."
       ],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0024",
@@ -504,10 +537,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 24–29 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 24\u201329 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0030",
@@ -610,19 +644,20 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 30–34 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 30\u201334 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0035",
       "unitId": "source.section.p0001",
       "order": 4,
-      "label": "Topographic Anatomy – Progress Check",
+      "label": "Topographic Anatomy \u2013 Progress Check",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "TOPOGRAPHIC ANATOMY – Progress Check",
+        "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
         "Questions"
       ],
       "pages": [
@@ -696,15 +731,16 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "TOPOGRAPHIC ANATOMY – Progress Check",
+          "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
           "Questions"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 35–47 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 35\u201347 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0048",
@@ -806,10 +842,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 48–54 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 48\u201354 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0055",
@@ -818,8 +855,8 @@
       "label": "Upper Airway",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Respiratory Anatomy – Upper Airway",
-        "Respiratory Anatomy – The Epiglottis"
+        "Respiratory Anatomy \u2013 Upper Airway",
+        "Respiratory Anatomy \u2013 The Epiglottis"
       ],
       "pages": [
         55,
@@ -901,15 +938,16 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Respiratory Anatomy – Upper Airway",
-          "Respiratory Anatomy – The Epiglottis"
+          "Respiratory Anatomy \u2013 Upper Airway",
+          "Respiratory Anatomy \u2013 The Epiglottis"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 55–59 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 55\u201359 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0060",
@@ -918,7 +956,7 @@
       "label": "Lower Airway and Breathing Structures",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Respiratory Anatomy – Lower Airway",
+        "Respiratory Anatomy \u2013 Lower Airway",
         "Image or diagram without extracted text"
       ],
       "pages": [
@@ -1034,26 +1072,27 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Respiratory Anatomy – Lower Airway",
+          "Respiratory Anatomy \u2013 Lower Airway",
           "Image or diagram without extracted text"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 60–66 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 60\u201366 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Source p62 uses terminal-bronchiole exchange wording; the approved narration separately distinguishes conducting from respiratory zones. Original wording is retained, not silently edited."
       ],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0067",
       "unitId": "source.section.p0048",
       "order": 8,
-      "label": "Respiratory Anatomy – Progress Check",
+      "label": "Respiratory Anatomy \u2013 Progress Check",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Respiratory Anatomy – Progress Check"
+        "Respiratory Anatomy \u2013 Progress Check"
       ],
       "pages": [
         67,
@@ -1103,11 +1142,11 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Respiratory Anatomy – Progress Check"
+          "Respiratory Anatomy \u2013 Progress Check"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 67–72 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 67\u201372 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
       "coverageNote": "Recorded source summary with its exact approved transcript and measured page following. Comparisons without one supported page hold the current page. Manual browsing holds your page until Follow narration. Full-recording listening and physical-device review remain pending; this does not narrate every slide.",
@@ -1117,7 +1156,8 @@
         "audioSHA256": "829a2918e70e992152fcb4da8069e4538c5e10d857bf2752b37893628120eb8f",
         "duration": 54.98775,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0073",
@@ -1292,19 +1332,20 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 73–81 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 73\u201381 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0082",
       "unitId": "source.section.p0048",
       "order": 10,
-      "label": "Respiratory Physiology – Progress Check",
+      "label": "Respiratory Physiology \u2013 Progress Check",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Respiratory Physiology – Progress Check"
+        "Respiratory Physiology \u2013 Progress Check"
       ],
       "pages": [
         82,
@@ -1390,14 +1431,15 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Respiratory Physiology – Progress Check"
+          "Respiratory Physiology \u2013 Progress Check"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 82–87 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 82\u201387 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0088",
@@ -1545,19 +1587,20 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 88–97 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 88\u201397 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0098",
       "unitId": "source.section.p0048",
       "order": 12,
-      "label": "Monitoring Respiratory Status – Progress Check",
+      "label": "Monitoring Respiratory Status \u2013 Progress Check",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Monitoring Respiratory Status – Progress Check",
+        "Monitoring Respiratory Status \u2013 Progress Check",
         "Respiratory Anatomy and Physiology",
         "QUESTIONS"
       ],
@@ -1630,16 +1673,17 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Monitoring Respiratory Status – Progress Check",
+          "Monitoring Respiratory Status \u2013 Progress Check",
           "Respiratory Anatomy and Physiology",
           "QUESTIONS"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 98–105 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 98\u2013105 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0106",
@@ -1650,8 +1694,8 @@
       "sourceTitles": [
         "Cardiovascular",
         "Cardiovascular System Anatomy and Physiology",
-        "• The purpose of the heart is to pump oxygenated",
-        "• The heart is enclosed in a double-walled sac called the"
+        "\u2022 The purpose of the heart is to pump oxygenated",
+        "\u2022 The heart is enclosed in a double-walled sac called the"
       ],
       "pages": [
         106,
@@ -1736,15 +1780,16 @@
         "headings": [
           "Cardiovascular",
           "Cardiovascular System Anatomy and Physiology",
-          "• The purpose of the heart is to pump oxygenated",
-          "• The heart is enclosed in a double-walled sac called the"
+          "\u2022 The purpose of the heart is to pump oxygenated",
+          "\u2022 The heart is enclosed in a double-walled sac called the"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 106–122 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 106\u2013122 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0123",
@@ -1754,8 +1799,8 @@
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Cardiovascular System Anatomy and Physiology",
-        "• The “receiving” chambers",
-        "• The “discharging” chambers"
+        "\u2022 The \u201creceiving\u201d chambers",
+        "\u2022 The \u201cdischarging\u201d chambers"
       ],
       "pages": [
         123,
@@ -1880,15 +1925,16 @@
         "kind": "source-topic-review",
         "headings": [
           "Cardiovascular System Anatomy and Physiology",
-          "• The “receiving” chambers",
-          "• The “discharging” chambers"
+          "\u2022 The \u201creceiving\u201d chambers",
+          "\u2022 The \u201cdischarging\u201d chambers"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 123–127 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 123\u2013127 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0128",
@@ -1975,10 +2021,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 128–131 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 128\u2013131 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0132",
@@ -1990,7 +2037,7 @@
         "Cardiovascular System Anatomy and Physiology",
         "Valves of the Heart",
         "Atrioventricular (AV) Valves",
-        "“HEARTSTRINGS”",
+        "\u201cHEARTSTRINGS\u201d",
         "Semilunar (SL) Valves"
       ],
       "pages": [
@@ -2184,15 +2231,16 @@
           "Cardiovascular System Anatomy and Physiology",
           "Valves of the Heart",
           "Atrioventricular (AV) Valves",
-          "“HEARTSTRINGS”",
+          "\u201cHEARTSTRINGS\u201d",
           "Semilunar (SL) Valves"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 132–140 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 132\u2013140 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0141",
@@ -2203,9 +2251,9 @@
       "sourceTitles": [
         "Causes of heart valve problems may",
         "Some signs and symptoms of heart valve problems may include:",
-        "▪Heart disease refers to various conditions affecting the heart—the",
+        "\u25aaHeart disease refers to various conditions affecting the heart\u2014the",
         "Cardiovascular System Anatomy and Physiology",
-        "▪Causes & Risk Factors"
+        "\u25aaCauses & Risk Factors"
       ],
       "pages": [
         141,
@@ -2327,16 +2375,17 @@
         "headings": [
           "Causes of heart valve problems may",
           "Some signs and symptoms of heart valve problems may include:",
-          "▪Heart disease refers to various conditions affecting the heart—the",
+          "\u25aaHeart disease refers to various conditions affecting the heart\u2014the",
           "Cardiovascular System Anatomy and Physiology",
-          "▪Causes & Risk Factors"
+          "\u25aaCauses & Risk Factors"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 141–147 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 141\u2013147 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0148",
@@ -2458,10 +2507,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 148–161 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 148\u2013161 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0162",
@@ -2526,7 +2576,7 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 162–170 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 162\u2013170 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
       "coverageNote": "Recorded source summary with its exact approved transcript and measured page following. Comparisons without one supported page hold the current page. Manual browsing holds your page until Follow narration. Full-recording listening and physical-device review remain pending; this does not narrate every slide.",
@@ -2536,7 +2586,8 @@
         "audioSHA256": "b5e87b885d2c5a622d0e9c221416e5017f161778d56612a1afcd86a0b7c1d252",
         "duration": 75.311,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0171",
@@ -2704,10 +2755,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 171–181 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 171\u2013181 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0182",
@@ -2716,7 +2768,7 @@
       "label": "Follow Blood Flow and Progress Check",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "▪Let’s follow the flow of a single blood cell through the heart….",
+        "\u25aaLet\u2019s follow the flow of a single blood cell through the heart\u2026.",
         "Cardiovascular System Anatomy and Physiology"
       ],
       "pages": [
@@ -2798,15 +2850,16 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "▪Let’s follow the flow of a single blood cell through the heart….",
+          "\u25aaLet\u2019s follow the flow of a single blood cell through the heart\u2026.",
           "Cardiovascular System Anatomy and Physiology"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 182–202 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 182\u2013202 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0203",
@@ -3002,10 +3055,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 203–207 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 203\u2013207 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. These source pages summarize the pump; they do not contain a separate diagram for every narrated cardiac phase. Choose an optional simulation lesson for a moving phase demonstration.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0208",
@@ -3159,10 +3213,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 208–216 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 208\u2013216 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0217",
@@ -3175,7 +3230,7 @@
         "Nervous System Influence",
         "Hormonal Influence",
         "Cardiovascular System Anatomy and Physiology",
-        "Coming next week…."
+        "Coming next week\u2026."
       ],
       "pages": [
         217,
@@ -3258,14 +3313,15 @@
           "Nervous System Influence",
           "Hormonal Influence",
           "Cardiovascular System Anatomy and Physiology",
-          "Coming next week…."
+          "Coming next week\u2026."
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 217–223 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 217\u2013223 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0224",
@@ -3280,7 +3336,7 @@
         "THE Electrocardiogram (ECG/EKG)",
         "Anatomy of the ECG Paper",
         "ECG Tools",
-        "Let’s PRACTICE"
+        "Let\u2019s PRACTICE"
       ],
       "pages": [
         224,
@@ -3345,14 +3401,15 @@
           "THE Electrocardiogram (ECG/EKG)",
           "Anatomy of the ECG Paper",
           "ECG Tools",
-          "Let’s PRACTICE"
+          "Let\u2019s PRACTICE"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 224–241 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 224\u2013241 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0242",
@@ -3363,11 +3420,11 @@
       "sourceTitles": [
         "ELECTROPHYSIOLOGY",
         "Leads",
-        "Leads – Bipolar (Standard)",
+        "Leads \u2013 Bipolar (Standard)",
         "Leads - UNIPOLAR",
-        "Leads – Unipolar",
-        "Leads – 5 Lead",
-        "Leads – 6 Lead",
+        "Leads \u2013 Unipolar",
+        "Leads \u2013 5 Lead",
+        "Leads \u2013 6 Lead",
         "Right Arm (-)",
         "Cardiac Axis"
       ],
@@ -3575,20 +3632,21 @@
         "headings": [
           "ELECTROPHYSIOLOGY",
           "Leads",
-          "Leads – Bipolar (Standard)",
+          "Leads \u2013 Bipolar (Standard)",
           "Leads - UNIPOLAR",
-          "Leads – Unipolar",
-          "Leads – 5 Lead",
-          "Leads – 6 Lead",
+          "Leads \u2013 Unipolar",
+          "Leads \u2013 5 Lead",
+          "Leads \u2013 6 Lead",
           "Right Arm (-)",
           "Cardiac Axis"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 242–266 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 242\u2013266 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0267",
@@ -3736,12 +3794,13 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 267–285 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 267\u2013285 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Source p282 conflicts with p276/p420 on the J point. The approved narration retains its separately identified scientific clarification; original slide wording is preserved below."
       ],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0286",
@@ -3884,11 +3943,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 286–299 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 286\u2013299 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0300",
@@ -3983,11 +4043,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 300–312 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 300\u2013312 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0313",
@@ -4107,11 +4168,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 313–330 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 313\u2013330 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0331",
@@ -4121,8 +4183,8 @@
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Cardiac Vectors and Leads",
-        "Cardiac Vectors and Leads – Frontal Plane",
-        "Cardiac Vectors and Leads – Transverse Plane",
+        "Cardiac Vectors and Leads \u2013 Frontal Plane",
+        "Cardiac Vectors and Leads \u2013 Transverse Plane",
         "Cardiac Axis",
         "Right Arm"
       ],
@@ -4189,17 +4251,18 @@
         "kind": "source-topic-review",
         "headings": [
           "Cardiac Vectors and Leads",
-          "Cardiac Vectors and Leads – Frontal Plane",
-          "Cardiac Vectors and Leads – Transverse Plane",
+          "Cardiac Vectors and Leads \u2013 Frontal Plane",
+          "Cardiac Vectors and Leads \u2013 Transverse Plane",
           "Cardiac Axis",
           "Right Arm"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 331–345 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 331\u2013345 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0346",
@@ -4347,10 +4410,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 346–362 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 346\u2013362 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Narrated requests to zoom or return to the heart are optional activities; the original slides remain visible until you choose to explore.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0366",
@@ -4429,16 +4493,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 366–375 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 366\u2013375 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0376",
       "unitId": "source.section.p0366",
       "order": 34,
-      "label": "Step One – Regularity",
+      "label": "Step One \u2013 Regularity",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Systematic Approach to Rhythm Interpretation",
@@ -4503,16 +4568,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 376–391 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 376\u2013391 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0392",
       "unitId": "source.section.p0366",
       "order": 35,
-      "label": "Step Two – Rate",
+      "label": "Step Two \u2013 Rate",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Systematic Approach to Rhythm Interpretation"
@@ -4578,16 +4644,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 392–408 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 392\u2013408 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0409",
       "unitId": "source.section.p0366",
       "order": 36,
-      "label": "Step Three – P Wave Analysis",
+      "label": "Step Three \u2013 P Wave Analysis",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Systematic Approach to Rhythm Interpretation"
@@ -4656,17 +4723,18 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 409–414 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 409\u2013414 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0415",
       "unitId": "source.section.p0366",
       "order": 37,
-      "label": "Step Four – PR Interval",
+      "label": "Step Four \u2013 PR Interval",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Systematic Approach to Rhythm Interpretation"
@@ -4734,17 +4802,18 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 415–419 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 415\u2013419 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0420",
       "unitId": "source.section.p0366",
       "order": 38,
-      "label": "Step Five – QRS",
+      "label": "Step Five \u2013 QRS",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Systematic Approach to Rhythm Interpretation",
@@ -4816,11 +4885,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 420–427 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 420\u2013427 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0428",
@@ -4896,10 +4966,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 428–436 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 428\u2013436 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0437",
@@ -5026,11 +5097,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 437–452 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 437\u2013452 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0453",
@@ -5049,7 +5121,7 @@
         "Blood Flow in Sinus Rhtyhm",
         "Clinical Implication",
         "Sinus Rhythm Conduction",
-        "Sinus Rhythm – Monitor View"
+        "Sinus Rhythm \u2013 Monitor View"
       ],
       "pages": [
         453,
@@ -5114,14 +5186,15 @@
           "Blood Flow in Sinus Rhtyhm",
           "Clinical Implication",
           "Sinus Rhythm Conduction",
-          "Sinus Rhythm – Monitor View"
+          "Sinus Rhythm \u2013 Monitor View"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 453–464 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 453\u2013464 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0465",
@@ -5136,7 +5209,7 @@
         "Action of the Heart in Sinus Bradycardia",
         "Blood Flow in Sinus Bradycardia",
         "Clinical Implication of Sinus",
-        "Sinus Bradycardia – Monitor View",
+        "Sinus Bradycardia \u2013 Monitor View",
         "Sinus Bradycardia"
       ],
       "pages": [
@@ -5199,15 +5272,16 @@
           "Action of the Heart in Sinus Bradycardia",
           "Blood Flow in Sinus Bradycardia",
           "Clinical Implication of Sinus",
-          "Sinus Bradycardia – Monitor View",
+          "Sinus Bradycardia \u2013 Monitor View",
           "Sinus Bradycardia"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 465–472 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 465\u2013472 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0473",
@@ -5222,7 +5296,7 @@
         "Action of the Heart in Sinus Tachycardia",
         "Blood Flow in Sinus Tachycardia",
         "Clinical Implication of Sinus",
-        "Sinus Tachycardia – Monitor View",
+        "Sinus Tachycardia \u2013 Monitor View",
         "Sinus Tachycardia"
       ],
       "pages": [
@@ -5286,15 +5360,16 @@
           "Action of the Heart in Sinus Tachycardia",
           "Blood Flow in Sinus Tachycardia",
           "Clinical Implication of Sinus",
-          "Sinus Tachycardia – Monitor View",
+          "Sinus Tachycardia \u2013 Monitor View",
           "Sinus Tachycardia"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 473–481 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 473\u2013481 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0482",
@@ -5311,7 +5386,7 @@
         "Action of the Heart in Sinus Arrhythmia",
         "Blood Flow in Sinus Arrhythmia",
         "Clinical Implication of Sinus",
-        "Sinus Arrhythmia – Monitor View"
+        "Sinus Arrhythmia \u2013 Monitor View"
       ],
       "pages": [
         482,
@@ -5376,14 +5451,15 @@
           "Action of the Heart in Sinus Arrhythmia",
           "Blood Flow in Sinus Arrhythmia",
           "Clinical Implication of Sinus",
-          "Sinus Arrhythmia – Monitor View"
+          "Sinus Arrhythmia \u2013 Monitor View"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 482–491 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 482\u2013491 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0492",
@@ -5457,16 +5533,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 492–499 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 492\u2013499 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0500",
       "unitId": "source.section.p0453",
       "order": 46,
-      "label": "Sinus Source Practice – First Set",
+      "label": "Sinus Source Practice \u2013 First Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "4.1",
@@ -5578,16 +5655,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 500–514 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 500\u2013514 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0515",
       "unitId": "source.section.p0453",
       "order": 47,
-      "label": "Sinus Source Practice – Second Set",
+      "label": "Sinus Source Practice \u2013 Second Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "4.16",
@@ -5708,11 +5786,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 515–529 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 515\u2013529 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0530",
@@ -5792,10 +5871,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 530–537 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 530\u2013537 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0538",
@@ -5873,10 +5953,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 538–543 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 538\u2013543 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0544",
@@ -5890,7 +5971,7 @@
         "Blood Flow in Atrial Tachycardia",
         "Rules for Atrial Tachycardia",
         "Atrial Tachycardia",
-        "Atrial Tachycardia – Monitor View",
+        "Atrial Tachycardia \u2013 Monitor View",
         "Clinical Implication"
       ],
       "pages": [
@@ -5952,15 +6033,16 @@
           "Blood Flow in Atrial Tachycardia",
           "Rules for Atrial Tachycardia",
           "Atrial Tachycardia",
-          "Atrial Tachycardia – Monitor View",
+          "Atrial Tachycardia \u2013 Monitor View",
           "Clinical Implication"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 544–551 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 544\u2013551 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0552",
@@ -5974,7 +6056,7 @@
         "Blood Flow in Atrial Flutter",
         "Rules for Atrial Flutter",
         "Cardiac Depiction of Atrial Flutter",
-        "Atrial Flutter – Monitor View",
+        "Atrial Flutter \u2013 Monitor View",
         "Atrial Flutter",
         "Atrial Flutter with Variable Block (Irregular)",
         "Clinical Implication"
@@ -6039,17 +6121,18 @@
           "Blood Flow in Atrial Flutter",
           "Rules for Atrial Flutter",
           "Cardiac Depiction of Atrial Flutter",
-          "Atrial Flutter – Monitor View",
+          "Atrial Flutter \u2013 Monitor View",
           "Atrial Flutter",
           "Atrial Flutter with Variable Block (Irregular)",
           "Clinical Implication"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 552–561 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 552\u2013561 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0562",
@@ -6065,7 +6148,7 @@
         "Cardiac Depiction of Atrial Fibrillation",
         "Atrial Fibrillation",
         "Clinical Implication",
-        "Atrial Fibrillation – Monitor View"
+        "Atrial Fibrillation \u2013 Monitor View"
       ],
       "pages": [
         562,
@@ -6130,14 +6213,15 @@
           "Cardiac Depiction of Atrial Fibrillation",
           "Atrial Fibrillation",
           "Clinical Implication",
-          "Atrial Fibrillation – Monitor View"
+          "Atrial Fibrillation \u2013 Monitor View"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 562–571 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 562\u2013571 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0572",
@@ -6219,16 +6303,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 572–576 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 572\u2013576 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0577",
       "unitId": "source.section.p0530",
       "order": 54,
-      "label": "Atrial Source Practice – First Set",
+      "label": "Atrial Source Practice \u2013 First Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "5.1",
@@ -6377,16 +6462,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 577–604 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 577\u2013604 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0605",
       "unitId": "source.section.p0530",
       "order": 55,
-      "label": "Atrial Source Practice – Second Set",
+      "label": "Atrial Source Practice \u2013 Second Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "5.29",
@@ -6563,11 +6649,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 605–633 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 605\u2013633 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0634",
@@ -6650,10 +6737,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 634–643 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 634\u2013643 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0644",
@@ -6725,10 +6813,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 644–646 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 644\u2013646 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0647",
@@ -6813,10 +6902,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 647–653 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 647\u2013653 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0654",
@@ -6895,11 +6985,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 654–657 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 654\u2013657 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0658",
@@ -7008,16 +7099,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 658–668 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 658\u2013668 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0669",
       "unitId": "source.section.p0634",
       "order": 61,
-      "label": "Junctional Source Practice – First Set",
+      "label": "Junctional Source Practice \u2013 First Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "6.1",
@@ -7158,17 +7250,18 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 669–688 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 669\u2013688 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0689",
       "unitId": "source.section.p0634",
       "order": 62,
-      "label": "Junctional Source Practice – Second Set",
+      "label": "Junctional Source Practice \u2013 Second Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "6.21",
@@ -7309,11 +7402,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 689–708 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 689\u2013708 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0709",
@@ -7426,16 +7520,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 709–720 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 709\u2013720 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0721",
       "unitId": "source.section.p0709",
       "order": 64,
-      "label": "Wenckebach – Type I Second Degree Heart Block",
+      "label": "Wenckebach \u2013 Type I Second Degree Heart Block",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "Mechanism of Wenckebach (Type I",
@@ -7514,10 +7609,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 721–731 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 721\u2013731 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0732",
@@ -7608,10 +7704,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 732–746 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 732\u2013746 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0747",
@@ -7626,9 +7723,9 @@
         "Rules for Complete Heart Block",
         "Third Degree Atrioventricular Block",
         "Cardiac Depiction of Third-Degree Heart",
-        "A–V Dissociation in CHB (a)",
-        "A–V Dissociation in CHB (b)",
-        "A–V Dissociation in CHB (c)",
+        "A\u2013V Dissociation in CHB (a)",
+        "A\u2013V Dissociation in CHB (b)",
+        "A\u2013V Dissociation in CHB (c)",
         "Image or diagram without extracted text",
         "Complete Heart Block",
         "Clinical Significance"
@@ -7694,19 +7791,20 @@
           "Rules for Complete Heart Block",
           "Third Degree Atrioventricular Block",
           "Cardiac Depiction of Third-Degree Heart",
-          "A–V Dissociation in CHB (a)",
-          "A–V Dissociation in CHB (b)",
-          "A–V Dissociation in CHB (c)",
+          "A\u2013V Dissociation in CHB (a)",
+          "A\u2013V Dissociation in CHB (b)",
+          "A\u2013V Dissociation in CHB (c)",
           "Image or diagram without extracted text",
           "Complete Heart Block",
           "Clinical Significance"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 747–759 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 747\u2013759 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0760",
@@ -7786,16 +7884,17 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 760–764 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 760\u2013764 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0765",
       "unitId": "source.section.p0709",
       "order": 68,
-      "label": "Heart Block Source Practice – First Set",
+      "label": "Heart Block Source Practice \u2013 First Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "7.1",
@@ -7918,17 +8017,18 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 765–785 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 765\u2013785 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0786",
       "unitId": "source.section.p0709",
       "order": 69,
-      "label": "Heart Block Source Practice – Second Set",
+      "label": "Heart Block Source Practice \u2013 Second Set",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "7.22",
@@ -8048,11 +8148,12 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 786–805 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 786\u2013805 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0806",
@@ -8149,10 +8250,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 806–811 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 806\u2013811 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0812",
@@ -8225,10 +8327,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 812–816 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 812\u2013816 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0817",
@@ -8237,7 +8340,7 @@
       "label": "Single Chamber Atrial Pacing",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Pacemakers – Single Chamber Atrial"
+        "Pacemakers \u2013 Single Chamber Atrial"
       ],
       "pages": [
         817,
@@ -8296,14 +8399,15 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Pacemakers – Single Chamber Atrial"
+          "Pacemakers \u2013 Single Chamber Atrial"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 817–824 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 817\u2013824 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0825",
@@ -8312,9 +8416,9 @@
       "label": "Ventricular, Dual Chamber and Biventricular Pacing",
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
-        "Pacemakers – Single Chamber Ventricular",
-        "Pacemakers – Dual Chamber",
-        "Pacemakers – Biventricular"
+        "Pacemakers \u2013 Single Chamber Ventricular",
+        "Pacemakers \u2013 Dual Chamber",
+        "Pacemakers \u2013 Biventricular"
       ],
       "pages": [
         825,
@@ -8368,16 +8472,17 @@
       "recap": {
         "kind": "source-topic-review",
         "headings": [
-          "Pacemakers – Single Chamber Ventricular",
-          "Pacemakers – Dual Chamber",
-          "Pacemakers – Biventricular"
+          "Pacemakers \u2013 Single Chamber Ventricular",
+          "Pacemakers \u2013 Dual Chamber",
+          "Pacemakers \u2013 Biventricular"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 825–829 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 825\u2013829 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0830",
@@ -8390,7 +8495,7 @@
       ],
       "pages": [
         830,
-        833
+        841
       ],
       "sourceFile": "All Slideshows Combined (01-13).pdf",
       "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
@@ -8446,10 +8551,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 830–833 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 830\u2013841 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Original pages834\u2013841 are eight identical blank Pacemakers templates; retained for inspection, not additional practice strips or missing narrated lessons.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0842",
@@ -8566,10 +8672,11 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 842–847 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 842\u2013847 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [],
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example.",
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0848",
@@ -8627,7 +8734,7 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 848–851 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 848\u2013851 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
@@ -8639,7 +8746,8 @@
         "audioSHA256": "a753e03b3b592474e75fbc0abe00cc0076a6f2c43c32ec385706a9cafb28ad17",
         "duration": 91.428563,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0852",
@@ -8701,7 +8809,7 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 852–858 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 852\u2013858 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
@@ -8713,7 +8821,8 @@
         "audioSHA256": "b592dcea9b144c13f87614d2e183ad859fa31833036e0a83b7143bd072da77cf",
         "duration": 97.933063,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0859",
@@ -8773,7 +8882,7 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 859–867 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 859\u2013867 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
@@ -8791,7 +8900,8 @@
         "audioSHA256": "5de2ee1920bad46ff2b6caa11af50f5e86032b55549e662eb0a3d62d53727b0c",
         "duration": 83.2,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0868",
@@ -8801,11 +8911,11 @@
       "labelType": "Platform grouping of contiguous original source pages; original text and titles remain separate.",
       "sourceTitles": [
         "12 Lead ECG Importance",
-        "12 Lead ECG Importance – Classification by",
-        "12 Lead ECG Importance – RCA Involvement",
-        "12 Lead ECG Importance – LCX Involvement",
-        "12 Lead ECG Importance – LAD or LCX",
-        "12 Lead ECG Importance – Widow Maker"
+        "12 Lead ECG Importance \u2013 Classification by",
+        "12 Lead ECG Importance \u2013 RCA Involvement",
+        "12 Lead ECG Importance \u2013 LCX Involvement",
+        "12 Lead ECG Importance \u2013 LAD or LCX",
+        "12 Lead ECG Importance \u2013 Widow Maker"
       ],
       "pages": [
         868,
@@ -8849,15 +8959,15 @@
         "kind": "source-topic-review",
         "headings": [
           "12 Lead ECG Importance",
-          "12 Lead ECG Importance – Classification by",
-          "12 Lead ECG Importance – RCA Involvement",
-          "12 Lead ECG Importance – LCX Involvement",
-          "12 Lead ECG Importance – LAD or LCX",
-          "12 Lead ECG Importance – Widow Maker"
+          "12 Lead ECG Importance \u2013 Classification by",
+          "12 Lead ECG Importance \u2013 RCA Involvement",
+          "12 Lead ECG Importance \u2013 LCX Involvement",
+          "12 Lead ECG Importance \u2013 LAD or LCX",
+          "12 Lead ECG Importance \u2013 Widow Maker"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 868–881 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 868\u2013881 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
@@ -8869,7 +8979,8 @@
         "audioSHA256": "f247d400ecaff2deb3b00b9b392afce14e4c687793963118cd3d3065c553deb5",
         "duration": 101.407313,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0882",
@@ -8880,7 +8991,7 @@
       "sourceTitles": [
         "Miscellaneous Changes in EKG",
         "Various Abnormalities",
-        "Bundle Branch Blocks – Some Causes",
+        "Bundle Branch Blocks \u2013 Some Causes",
         "Right Bundle Branch Blocks",
         "Left Bundle Branch Blocks",
         "Ventricular Enlargement",
@@ -8929,7 +9040,7 @@
         "headings": [
           "Miscellaneous Changes in EKG",
           "Various Abnormalities",
-          "Bundle Branch Blocks – Some Causes",
+          "Bundle Branch Blocks \u2013 Some Causes",
           "Right Bundle Branch Blocks",
           "Left Bundle Branch Blocks",
           "Ventricular Enlargement",
@@ -8937,7 +9048,7 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 882–888 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 882\u2013888 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
@@ -8949,7 +9060,8 @@
         "audioSHA256": "f82139317faacc7fa4066f7fb1f0cd432ddf8c401284046c07643492cbab9f04",
         "duration": 126.302,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0889",
@@ -9009,7 +9121,7 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 889–893 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 889\u2013893 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
@@ -9027,7 +9139,8 @@
         "audioSHA256": "d3cc97438767a86eef05faf72a41195c773ab79a3ca05eca1c68484a0c8a3d0d",
         "duration": 74.527313,
         "alignment": "measured_acoustic_page_anchors_human_listening_pending"
-      }
+      },
+      "presentationType": "source-slides"
     },
     {
       "id": "source.lesson.p0894",
@@ -9041,7 +9154,7 @@
         "Image or diagram without extracted text",
         "Sinus Rhythm - First Degree AV Block",
         "Sinus Bradycardia",
-        "Sinus Rhythm – First Degree AV Block",
+        "Sinus Rhythm \u2013 First Degree AV Block",
         "Sinus Rhythm",
         "Normal Sinus Rhythm",
         "Sinus Tachycardia"
@@ -9121,20 +9234,21 @@
           "Image or diagram without extracted text",
           "Sinus Rhythm - First Degree AV Block",
           "Sinus Bradycardia",
-          "Sinus Rhythm – First Degree AV Block",
+          "Sinus Rhythm \u2013 First Degree AV Block",
           "Sinus Rhythm",
           "Normal Sinus Rhythm",
           "Sinus Tachycardia"
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 894–910 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 894\u2013910 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-practice"
     },
     {
       "id": "source.lesson.p0911",
@@ -9237,13 +9351,14 @@
         ],
         "prompt": "Revisit the original topics above and explain them in your own words. This reflection is a platform suggestion, not an original exam item."
       },
-      "intro": "This learning section keeps the supplied source pages 911–911 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
+      "intro": "This learning section keeps the supplied source pages 911\u2013911 in their original order. Read or listen, optionally inspect/practice, then review and Continue.",
       "clarifications": [
         "Original course wording is shown for study, not converted into a treatment or diagnostic instruction. This pass does not clinically validate every source claim."
       ],
       "closureReuse": true,
       "sourceMediaGaps": [],
-      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip."
+      "coverageNote": "All original static PDF pages remain accessible. Related approved recordings cover selected concepts, not each unique slide/example. Reused audio is a concept summary or general practice prompt; it does not supply answers to every source strip.",
+      "presentationType": "source-slides"
     }
   ],
   "optionalAudio": [
@@ -9326,7 +9441,7 @@
       "page": 3,
       "lessonId": "source.lesson.p0001",
       "unitId": "source.section.p0001",
-      "topicTitle": "So you wanna be a monitor tech…",
+      "topicTitle": "So you wanna be a monitor tech\u2026",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9344,7 +9459,7 @@
       "page": 5,
       "lessonId": "source.lesson.p0001",
       "unitId": "source.section.p0001",
-      "topicTitle": "So you wanna be a monitor tech…",
+      "topicTitle": "So you wanna be a monitor tech\u2026",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9362,7 +9477,7 @@
       "page": 7,
       "lessonId": "source.lesson.p0001",
       "unitId": "source.section.p0001",
-      "topicTitle": "So you wanna be a monitor tech…",
+      "topicTitle": "So you wanna be a monitor tech\u2026",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9389,7 +9504,7 @@
       "page": 10,
       "lessonId": "source.lesson.p0008",
       "unitId": "source.section.p0001",
-      "topicTitle": "ECG History 1842 – Dr. Carlo Matteucci",
+      "topicTitle": "ECG History 1842 \u2013 Dr. Carlo Matteucci",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9398,7 +9513,7 @@
       "page": 11,
       "lessonId": "source.lesson.p0008",
       "unitId": "source.section.p0001",
-      "topicTitle": "ECG History 1842 – Dr. Carlo Matteucci",
+      "topicTitle": "ECG History 1842 \u2013 Dr. Carlo Matteucci",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9407,7 +9522,7 @@
       "page": 12,
       "lessonId": "source.lesson.p0008",
       "unitId": "source.section.p0001",
-      "topicTitle": "ECG History 1842 – Dr. Carlo Matteucci",
+      "topicTitle": "ECG History 1842 \u2013 Dr. Carlo Matteucci",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9416,7 +9531,7 @@
       "page": 13,
       "lessonId": "source.lesson.p0008",
       "unitId": "source.section.p0001",
-      "topicTitle": "ECG History 1877 – Augustus Waller",
+      "topicTitle": "ECG History 1877 \u2013 Augustus Waller",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9425,7 +9540,7 @@
       "page": 14,
       "lessonId": "source.lesson.p0008",
       "unitId": "source.section.p0001",
-      "topicTitle": "ECG History 1877 – Augustus Waller",
+      "topicTitle": "ECG History 1877 \u2013 Augustus Waller",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9434,7 +9549,7 @@
       "page": 15,
       "lessonId": "source.lesson.p0008",
       "unitId": "source.section.p0001",
-      "topicTitle": "ECG History 1877 – Augustus Waller",
+      "topicTitle": "ECG History 1877 \u2013 Augustus Waller",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9614,7 +9729,7 @@
       "page": 35,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9623,7 +9738,7 @@
       "page": 36,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9632,7 +9747,7 @@
       "page": 37,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9641,7 +9756,7 @@
       "page": 38,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9650,7 +9765,7 @@
       "page": 39,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9659,7 +9774,7 @@
       "page": 40,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9668,7 +9783,7 @@
       "page": 41,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9677,7 +9792,7 @@
       "page": 42,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9686,7 +9801,7 @@
       "page": 43,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9695,7 +9810,7 @@
       "page": 44,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9704,7 +9819,7 @@
       "page": 45,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9713,7 +9828,7 @@
       "page": 46,
       "lessonId": "source.lesson.p0035",
       "unitId": "source.section.p0001",
-      "topicTitle": "TOPOGRAPHIC ANATOMY – Progress Check",
+      "topicTitle": "TOPOGRAPHIC ANATOMY \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9794,7 +9909,7 @@
       "page": 55,
       "lessonId": "source.lesson.p0055",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Upper Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Upper Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9803,7 +9918,7 @@
       "page": 56,
       "lessonId": "source.lesson.p0055",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Upper Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Upper Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9812,7 +9927,7 @@
       "page": 57,
       "lessonId": "source.lesson.p0055",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Upper Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Upper Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9821,7 +9936,7 @@
       "page": 58,
       "lessonId": "source.lesson.p0055",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – The Epiglottis",
+      "topicTitle": "Respiratory Anatomy \u2013 The Epiglottis",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9830,7 +9945,7 @@
       "page": 59,
       "lessonId": "source.lesson.p0055",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Upper Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Upper Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9839,7 +9954,7 @@
       "page": 60,
       "lessonId": "source.lesson.p0060",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Lower Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Lower Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9848,7 +9963,7 @@
       "page": 61,
       "lessonId": "source.lesson.p0060",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Lower Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Lower Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9857,7 +9972,7 @@
       "page": 62,
       "lessonId": "source.lesson.p0060",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Lower Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Lower Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9866,7 +9981,7 @@
       "page": 63,
       "lessonId": "source.lesson.p0060",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Lower Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Lower Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9875,7 +9990,7 @@
       "page": 64,
       "lessonId": "source.lesson.p0060",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Lower Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Lower Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9884,7 +9999,7 @@
       "page": 65,
       "lessonId": "source.lesson.p0060",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Lower Airway",
+      "topicTitle": "Respiratory Anatomy \u2013 Lower Airway",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -9902,7 +10017,7 @@
       "page": 67,
       "lessonId": "source.lesson.p0067",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Progress Check",
+      "topicTitle": "Respiratory Anatomy \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9911,7 +10026,7 @@
       "page": 68,
       "lessonId": "source.lesson.p0067",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Progress Check",
+      "topicTitle": "Respiratory Anatomy \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9920,7 +10035,7 @@
       "page": 69,
       "lessonId": "source.lesson.p0067",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Progress Check",
+      "topicTitle": "Respiratory Anatomy \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9929,7 +10044,7 @@
       "page": 70,
       "lessonId": "source.lesson.p0067",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Progress Check",
+      "topicTitle": "Respiratory Anatomy \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9938,7 +10053,7 @@
       "page": 71,
       "lessonId": "source.lesson.p0067",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Progress Check",
+      "topicTitle": "Respiratory Anatomy \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -9947,7 +10062,7 @@
       "page": 72,
       "lessonId": "source.lesson.p0067",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Anatomy – Progress Check",
+      "topicTitle": "Respiratory Anatomy \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10037,7 +10152,7 @@
       "page": 82,
       "lessonId": "source.lesson.p0082",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Physiology – Progress Check",
+      "topicTitle": "Respiratory Physiology \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10046,7 +10161,7 @@
       "page": 83,
       "lessonId": "source.lesson.p0082",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Physiology – Progress Check",
+      "topicTitle": "Respiratory Physiology \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10055,7 +10170,7 @@
       "page": 84,
       "lessonId": "source.lesson.p0082",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Physiology – Progress Check",
+      "topicTitle": "Respiratory Physiology \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10064,7 +10179,7 @@
       "page": 85,
       "lessonId": "source.lesson.p0082",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Physiology – Progress Check",
+      "topicTitle": "Respiratory Physiology \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10073,7 +10188,7 @@
       "page": 86,
       "lessonId": "source.lesson.p0082",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Physiology – Progress Check",
+      "topicTitle": "Respiratory Physiology \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10082,7 +10197,7 @@
       "page": 87,
       "lessonId": "source.lesson.p0082",
       "unitId": "source.section.p0048",
-      "topicTitle": "Respiratory Physiology – Progress Check",
+      "topicTitle": "Respiratory Physiology \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10181,7 +10296,7 @@
       "page": 98,
       "lessonId": "source.lesson.p0098",
       "unitId": "source.section.p0048",
-      "topicTitle": "Monitoring Respiratory Status – Progress Check",
+      "topicTitle": "Monitoring Respiratory Status \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10190,7 +10305,7 @@
       "page": 99,
       "lessonId": "source.lesson.p0098",
       "unitId": "source.section.p0048",
-      "topicTitle": "Monitoring Respiratory Status – Progress Check",
+      "topicTitle": "Monitoring Respiratory Status \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10199,7 +10314,7 @@
       "page": 100,
       "lessonId": "source.lesson.p0098",
       "unitId": "source.section.p0048",
-      "topicTitle": "Monitoring Respiratory Status – Progress Check",
+      "topicTitle": "Monitoring Respiratory Status \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10208,7 +10323,7 @@
       "page": 101,
       "lessonId": "source.lesson.p0098",
       "unitId": "source.section.p0048",
-      "topicTitle": "Monitoring Respiratory Status – Progress Check",
+      "topicTitle": "Monitoring Respiratory Status \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10217,7 +10332,7 @@
       "page": 102,
       "lessonId": "source.lesson.p0098",
       "unitId": "source.section.p0048",
-      "topicTitle": "Monitoring Respiratory Status – Progress Check",
+      "topicTitle": "Monitoring Respiratory Status \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10226,7 +10341,7 @@
       "page": 103,
       "lessonId": "source.lesson.p0098",
       "unitId": "source.section.p0048",
-      "topicTitle": "Monitoring Respiratory Status – Progress Check",
+      "topicTitle": "Monitoring Respiratory Status \u2013 Progress Check",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": true
@@ -10280,7 +10395,7 @@
       "page": 109,
       "lessonId": "source.lesson.p0106",
       "unitId": "source.section.p0106",
-      "topicTitle": "• The purpose of the heart is to pump oxygenated",
+      "topicTitle": "\u2022 The purpose of the heart is to pump oxygenated",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10307,7 +10422,7 @@
       "page": 112,
       "lessonId": "source.lesson.p0106",
       "unitId": "source.section.p0106",
-      "topicTitle": "• The heart is enclosed in a double-walled sac called the",
+      "topicTitle": "\u2022 The heart is enclosed in a double-walled sac called the",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10424,7 +10539,7 @@
       "page": 125,
       "lessonId": "source.lesson.p0123",
       "unitId": "source.section.p0106",
-      "topicTitle": "• The “receiving” chambers",
+      "topicTitle": "\u2022 The \u201creceiving\u201d chambers",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10442,7 +10557,7 @@
       "page": 127,
       "lessonId": "source.lesson.p0123",
       "unitId": "source.section.p0106",
-      "topicTitle": "• The “discharging” chambers",
+      "topicTitle": "\u2022 The \u201cdischarging\u201d chambers",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10514,7 +10629,7 @@
       "page": 135,
       "lessonId": "source.lesson.p0132",
       "unitId": "source.section.p0106",
-      "topicTitle": "“HEARTSTRINGS”",
+      "topicTitle": "\u201cHEARTSTRINGS\u201d",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10523,7 +10638,7 @@
       "page": 136,
       "lessonId": "source.lesson.p0132",
       "unitId": "source.section.p0106",
-      "topicTitle": "“HEARTSTRINGS”",
+      "topicTitle": "\u201cHEARTSTRINGS\u201d",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10586,7 +10701,7 @@
       "page": 143,
       "lessonId": "source.lesson.p0141",
       "unitId": "source.section.p0106",
-      "topicTitle": "▪Heart disease refers to various conditions affecting the heart—the",
+      "topicTitle": "\u25aaHeart disease refers to various conditions affecting the heart\u2014the",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10613,7 +10728,7 @@
       "page": 146,
       "lessonId": "source.lesson.p0141",
       "unitId": "source.section.p0106",
-      "topicTitle": "▪Causes & Risk Factors",
+      "topicTitle": "\u25aaCauses & Risk Factors",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -10937,7 +11052,7 @@
       "page": 182,
       "lessonId": "source.lesson.p0182",
       "unitId": "source.section.p0106",
-      "topicTitle": "▪Let’s follow the flow of a single blood cell through the heart….",
+      "topicTitle": "\u25aaLet\u2019s follow the flow of a single blood cell through the heart\u2026.",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11306,7 +11421,7 @@
       "page": 223,
       "lessonId": "source.lesson.p0217",
       "unitId": "source.section.p0106",
-      "topicTitle": "Coming next week….",
+      "topicTitle": "Coming next week\u2026.",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11468,7 +11583,7 @@
       "page": 241,
       "lessonId": "source.lesson.p0224",
       "unitId": "source.section.p0224",
-      "topicTitle": "Let’s PRACTICE",
+      "topicTitle": "Let\u2019s PRACTICE",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11513,7 +11628,7 @@
       "page": 246,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Bipolar (Standard)",
+      "topicTitle": "Leads \u2013 Bipolar (Standard)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11522,7 +11637,7 @@
       "page": 247,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Bipolar (Standard)",
+      "topicTitle": "Leads \u2013 Bipolar (Standard)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11531,7 +11646,7 @@
       "page": 248,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Bipolar (Standard)",
+      "topicTitle": "Leads \u2013 Bipolar (Standard)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11540,7 +11655,7 @@
       "page": 249,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Bipolar (Standard)",
+      "topicTitle": "Leads \u2013 Bipolar (Standard)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11549,7 +11664,7 @@
       "page": 250,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Bipolar (Standard)",
+      "topicTitle": "Leads \u2013 Bipolar (Standard)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11576,7 +11691,7 @@
       "page": 253,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Unipolar",
+      "topicTitle": "Leads \u2013 Unipolar",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11585,7 +11700,7 @@
       "page": 254,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Unipolar",
+      "topicTitle": "Leads \u2013 Unipolar",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11594,7 +11709,7 @@
       "page": 255,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – Unipolar",
+      "topicTitle": "Leads \u2013 Unipolar",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11639,7 +11754,7 @@
       "page": 260,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – 5 Lead",
+      "topicTitle": "Leads \u2013 5 Lead",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -11648,7 +11763,7 @@
       "page": 261,
       "lessonId": "source.lesson.p0242",
       "unitId": "source.section.p0224",
-      "topicTitle": "Leads – 6 Lead",
+      "topicTitle": "Leads \u2013 6 Lead",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -12323,7 +12438,7 @@
       "page": 336,
       "lessonId": "source.lesson.p0331",
       "unitId": "source.section.p0224",
-      "topicTitle": "Cardiac Vectors and Leads – Frontal Plane",
+      "topicTitle": "Cardiac Vectors and Leads \u2013 Frontal Plane",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -12332,7 +12447,7 @@
       "page": 337,
       "lessonId": "source.lesson.p0331",
       "unitId": "source.section.p0224",
-      "topicTitle": "Cardiac Vectors and Leads – Transverse Plane",
+      "topicTitle": "Cardiac Vectors and Leads \u2013 Transverse Plane",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -13463,7 +13578,7 @@
       "page": 463,
       "lessonId": "source.lesson.p0453",
       "unitId": "source.section.p0453",
-      "topicTitle": "Sinus Rhythm – Monitor View",
+      "topicTitle": "Sinus Rhythm \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -13535,7 +13650,7 @@
       "page": 471,
       "lessonId": "source.lesson.p0465",
       "unitId": "source.section.p0453",
-      "topicTitle": "Sinus Bradycardia – Monitor View",
+      "topicTitle": "Sinus Bradycardia \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -13616,7 +13731,7 @@
       "page": 480,
       "lessonId": "source.lesson.p0473",
       "unitId": "source.section.p0453",
-      "topicTitle": "Sinus Tachycardia – Monitor View",
+      "topicTitle": "Sinus Tachycardia \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -13706,7 +13821,7 @@
       "page": 490,
       "lessonId": "source.lesson.p0482",
       "unitId": "source.section.p0453",
-      "topicTitle": "Sinus Arrhythmia – Monitor View",
+      "topicTitle": "Sinus Arrhythmia \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -14237,7 +14352,7 @@
       "page": 549,
       "lessonId": "source.lesson.p0544",
       "unitId": "source.section.p0530",
-      "topicTitle": "Atrial Tachycardia – Monitor View",
+      "topicTitle": "Atrial Tachycardia \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -14318,7 +14433,7 @@
       "page": 558,
       "lessonId": "source.lesson.p0552",
       "unitId": "source.section.p0530",
-      "topicTitle": "Atrial Flutter – Monitor View",
+      "topicTitle": "Atrial Flutter \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -14426,7 +14541,7 @@
       "page": 570,
       "lessonId": "source.lesson.p0562",
       "unitId": "source.section.p0530",
-      "topicTitle": "Atrial Fibrillation – Monitor View",
+      "topicTitle": "Atrial Fibrillation \u2013 Monitor View",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16082,7 +16197,7 @@
       "page": 754,
       "lessonId": "source.lesson.p0747",
       "unitId": "source.section.p0709",
-      "topicTitle": "A–V Dissociation in CHB (a)",
+      "topicTitle": "A\u2013V Dissociation in CHB (a)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16091,7 +16206,7 @@
       "page": 755,
       "lessonId": "source.lesson.p0747",
       "unitId": "source.section.p0709",
-      "topicTitle": "A–V Dissociation in CHB (b)",
+      "topicTitle": "A\u2013V Dissociation in CHB (b)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16100,7 +16215,7 @@
       "page": 756,
       "lessonId": "source.lesson.p0747",
       "unitId": "source.section.p0709",
-      "topicTitle": "A–V Dissociation in CHB (c)",
+      "topicTitle": "A\u2013V Dissociation in CHB (c)",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16649,7 +16764,7 @@
       "page": 817,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16658,7 +16773,7 @@
       "page": 818,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16667,7 +16782,7 @@
       "page": 819,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16676,7 +16791,7 @@
       "page": 820,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16685,7 +16800,7 @@
       "page": 821,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16694,7 +16809,7 @@
       "page": 822,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16703,7 +16818,7 @@
       "page": 823,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16712,7 +16827,7 @@
       "page": 824,
       "lessonId": "source.lesson.p0817",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Atrial",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Atrial",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16721,7 +16836,7 @@
       "page": 825,
       "lessonId": "source.lesson.p0825",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Ventricular",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Ventricular",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16730,7 +16845,7 @@
       "page": 826,
       "lessonId": "source.lesson.p0825",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Single Chamber Ventricular",
+      "topicTitle": "Pacemakers \u2013 Single Chamber Ventricular",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16739,7 +16854,7 @@
       "page": 827,
       "lessonId": "source.lesson.p0825",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Dual Chamber",
+      "topicTitle": "Pacemakers \u2013 Dual Chamber",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16748,7 +16863,7 @@
       "page": 828,
       "lessonId": "source.lesson.p0825",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Dual Chamber",
+      "topicTitle": "Pacemakers \u2013 Dual Chamber",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -16757,7 +16872,7 @@
       "page": 829,
       "lessonId": "source.lesson.p0825",
       "unitId": "source.section.p0806",
-      "topicTitle": "Pacemakers – Biventricular",
+      "topicTitle": "Pacemakers \u2013 Biventricular",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17118,7 +17233,7 @@
       "page": 870,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – Classification by",
+      "topicTitle": "12 Lead ECG Importance \u2013 Classification by",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17127,7 +17242,7 @@
       "page": 871,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – RCA Involvement",
+      "topicTitle": "12 Lead ECG Importance \u2013 RCA Involvement",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17136,7 +17251,7 @@
       "page": 872,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – RCA Involvement",
+      "topicTitle": "12 Lead ECG Importance \u2013 RCA Involvement",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17145,7 +17260,7 @@
       "page": 873,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – RCA Involvement",
+      "topicTitle": "12 Lead ECG Importance \u2013 RCA Involvement",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17154,7 +17269,7 @@
       "page": 874,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – RCA Involvement",
+      "topicTitle": "12 Lead ECG Importance \u2013 RCA Involvement",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17163,7 +17278,7 @@
       "page": 875,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – LCX Involvement",
+      "topicTitle": "12 Lead ECG Importance \u2013 LCX Involvement",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17172,7 +17287,7 @@
       "page": 876,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – LCX Involvement",
+      "topicTitle": "12 Lead ECG Importance \u2013 LCX Involvement",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17181,7 +17296,7 @@
       "page": 877,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – LAD or LCX",
+      "topicTitle": "12 Lead ECG Importance \u2013 LAD or LCX",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17190,7 +17305,7 @@
       "page": 878,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – LAD or LCX",
+      "topicTitle": "12 Lead ECG Importance \u2013 LAD or LCX",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17199,7 +17314,7 @@
       "page": 879,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – LAD or LCX",
+      "topicTitle": "12 Lead ECG Importance \u2013 LAD or LCX",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17208,7 +17323,7 @@
       "page": 880,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – LAD or LCX",
+      "topicTitle": "12 Lead ECG Importance \u2013 LAD or LCX",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17217,7 +17332,7 @@
       "page": 881,
       "lessonId": "source.lesson.p0868",
       "unitId": "source.section.p0842",
-      "topicTitle": "12 Lead ECG Importance – Widow Maker",
+      "topicTitle": "12 Lead ECG Importance \u2013 Widow Maker",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17244,7 +17359,7 @@
       "page": 884,
       "lessonId": "source.lesson.p0882",
       "unitId": "source.section.p0842",
-      "topicTitle": "Bundle Branch Blocks – Some Causes",
+      "topicTitle": "Bundle Branch Blocks \u2013 Some Causes",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17397,7 +17512,7 @@
       "page": 901,
       "lessonId": "source.lesson.p0894",
       "unitId": "source.section.p0842",
-      "topicTitle": "Sinus Rhythm – First Degree AV Block",
+      "topicTitle": "Sinus Rhythm \u2013 First Degree AV Block",
       "disposition": "source_text_and_image_available",
       "narration": "not_a_per_slide_narration",
       "practiceAnswersHiddenByDefault": false
@@ -17494,7 +17609,7 @@
     }
   ],
   "limitations": [
-    "Source section ordinals are not assumed original01–13 unit numbers.",
+    "Source section ordinals are not assumed original01\u201313 unit numbers.",
     "Lesson chunk labels are platform groupings of contiguous original pages; every page has an explicit disposition.",
     "Original slide text/images are supplied privately; extracted headings are not a new clinical audit.",
     "No full narration, pronunciation, visible-sync, hardware-output or physical iPad/Safari acceptance is claimed."

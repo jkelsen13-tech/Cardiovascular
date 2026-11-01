@@ -19,7 +19,7 @@ const check=(v,name)=>{A.ok(v,name);result.checks.push(name);};
   const lessons=await p.evaluate(()=>GuidedCourse.sequence().map(l=>({id:l.id,pages:l.pages})));
   for(const l of lessons){
    await choose(l.id);let s=await state();
-   check(s.presentation==='slideshow'&&s.applied?.organ==='source','Source-only entry '+l.id);
+   check(s.presentation==='slides'&&s.applied?.organ==='source','Source-only entry '+l.id);
    check(s.sourcePage>=l.pages[0]&&s.sourcePage<=l.pages[1]&&!s.playing,'Bounded silent source '+l.id);
    const times=await p.evaluate(()=>GuidedCourse.presentationCues().map(c=>c.at));
    for(const t of [times[Math.floor(times.length/2)],times.at(-1)]){await seek(t+.01);s=await state();check(s.applied?.organ==='source'&&!s.error,'Source-only seek '+l.id+' @ '+t);}
@@ -36,18 +36,18 @@ const check=(v,name)=>{A.ok(v,name);result.checks.push(name);};
   check(await p.evaluate(()=>slideMutations.length)===0,'Same-page playback does not blank/reassign the source image');
   await p.evaluate(()=>GuidedCourse.pause());await ready();
   await p.locator('[data-seq-source-image]').scrollIntoViewIfNeeded();await p.screenshot({path:path.join(output,'lesson3-directions.png')});
-  await p.selectOption('[data-seq-page]','25');await seek(12);
+  await p.evaluate(()=>document.querySelector('[data-seq-source-details]').open=true);await p.selectOption('[data-seq-page]','25');await seek(12);
   check((await state()).sourcePage===25&&!(await state()).sourceFollow,'Manual slide selection survives narration seek');
   await p.click('[data-seq-follow]');await ready();check((await state()).sourcePage===27,'Follow narration restores directional diagram');
   await seek(20.4);check((await state()).sourcePage===28,'Body-plane explanation automatically shows page28');
   await p.locator('[data-seq-source-image]').scrollIntoViewIfNeeded();await p.screenshot({path:path.join(output,'lesson3-planes.png')});
-  await p.selectOption('[data-seq-page]','25');const before=await state();
+  await p.evaluate(()=>document.querySelector('[data-seq-source-details]').open=true);await p.selectOption('[data-seq-page]','25');const before=await state();
   await p.evaluate(()=>GuidedCourse.enterExplore());await p.evaluate(()=>GuidedCourse.resume());await ready();
   check((await state()).sourcePage===25&&!(await state()).sourceFollow&&Math.abs((await state()).time-before.time)<.03&&!(await state()).playing,'Explore returns exact slide/audio silently');
   // Enrichment is an explicit different lesson type, not an automatic fallback.
   await p.evaluate(()=>GuidedCourse.select('M02.01'));await ready();
   const heartTime=await p.evaluate(()=>GuidedStudyLessons.find(c=>c.id==='M02.01').cues.find(c=>c.scene.organ==='heart').at);await seek(heartTime+.04);
-  check((await state()).presentation==='guided-simulation'&&(await state()).applied.organ==='heart','Explicit simulation still drives the real heart view');
+  check((await state()).presentation==='simulation'&&(await state()).applied.organ==='heart','Explicit simulation still drives the real heart view');
   check(await p.evaluate(()=>webglCalls)>0,'The explicit simulation actually creates a renderer');
   await p.evaluate(()=>GuidedCourse.returnDetour());await ready();
   check((await state()).sourceLessonId===before.sourceLessonId&&(await state()).sourcePage===25&&Math.abs((await state()).time-before.time)<.03&&!(await state()).playing,'Simulation tour returns to the source course without lost position');
@@ -85,7 +85,7 @@ const check=(v,name)=>{A.ok(v,name);result.checks.push(name);};
   const failedContext=await browser.newContext(),failed=await failedContext.newPage();
   await failed.route('**/private-course/page/24.png',r=>r.fulfill({status:404,body:'Missing test image'}));await failed.goto(base);
   await failed.evaluate(()=>GuidedCourse.select('source.lesson.p0024'));await failed.evaluate(()=>GuidedCourse.begin());
-  check(await failed.evaluate(()=>!!GuidedCourse.inspect().error&&!GuidedCourse.inspect().playing&&GuidedCourse.inspect().presentation==='slideshow'),'Image failure pauses safely without a simulator fallback');
+  check(await failed.evaluate(()=>!!GuidedCourse.inspect().error&&!GuidedCourse.inspect().playing&&GuidedCourse.inspect().presentation==='slides'),'Image failure pauses safely without a simulator fallback');
   check((await failed.locator('[data-seq-source-text]').textContent()).includes('anatomic'),'Original text remains available when its image fails');
   await failedContext.close();check(result.errors.length===0,'No page script errors');result.passed=true;
  }catch(e){result.failure=String(e.stack||e);try{await p.screenshot({path:path.join(output,'failure.png')});}catch(_){}throw e;}
