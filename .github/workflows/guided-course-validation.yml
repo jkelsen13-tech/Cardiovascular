@@ -24,6 +24,11 @@ jobs:
         run: |
           npm install --no-save --package-lock=false playwright@1.55.1
           npx playwright install --with-deps chromium
+      - name: Select hosted Chrome for sandboxed layout tests
+        run: |
+          course_chrome_path="$(command -v google-chrome)"
+          test -x "$course_chrome_path"
+          printf 'CHROMIUM_PATH=%s\n' "$course_chrome_path" >> "$GITHUB_ENV"
       - name: Static course and direct-heart navigation
         run: |
           export PLAYWRIGHT_CHANNEL=chrome
