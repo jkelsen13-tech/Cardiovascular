@@ -19,6 +19,8 @@ jobs:
         run: |
           node tools/sequential-course/release-contract.cjs
           node tools/sequential-course/question-first-contract.cjs
+          node tools/sequential-course/lesson-review-contract.cjs
+          node tools/sequential-course/lesson-review-upgrade-contract.cjs
           node tools/sequential-course/display-image-contract.cjs
       - name: Install existing browser-test dependency
         run: |

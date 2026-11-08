@@ -32,8 +32,8 @@
  const policy=host.CoursePresentationPolicy;
  const doc=host.document,map=host.SequentialCourseMap,V=host.SequentialCourseVisuals,P=host.SequentialProgress,C=host.ContextualAudio,home=doc.getElementById('home'),menu=doc.getElementById('homeMenu');
  if(!map||!V||V.sourceSHA256!==map.source.sha256||!P||!C||!home||!menu)return;
- const practice=host.SequentialPractice;
- if(!practice||practice.sourceSHA256!==map.source.sha256)return;
+ const practice=host.SequentialPractice,Review=host.SequentialReview;
+ if(!practice||!Review||practice.sourceSHA256!==map.source.sha256)return;
  const practiceEntries=practice.entries;
  // Page roles cannot release an unchanged recording's previously reviewed hold.
  const recordingHolds=new Map((practice.audioHolds?.recordings||[]).map(r=>[r.id,r]));
@@ -75,6 +75,11 @@
  const choices=doc.createElement('fieldset');choices.dataset.seqChoices='';choices.hidden=true;q('question').after(choices);
  const responseLabel=doc.createElement('label');responseLabel.dataset.seqRecallResponseLabel='';responseLabel.hidden=true;responseLabel.textContent='Your response (saved on this browser)';
  const response=doc.createElement('textarea');response.dataset.seqRecallResponse='';response.rows=3;response.maxLength=6000;responseLabel.append(response);choices.after(responseLabel);
+ const responseFields=doc.createElement('div');responseFields.dataset.seqResponseFields='';choices.after(responseFields);
+ const selfCheck=doc.createElement('fieldset');selfCheck.dataset.seqSelfCheck='';selfCheck.hidden=true;practiceCard.append(selfCheck);
+ const reviewPanel=doc.createElement('section');reviewPanel.className='sc-review-panel';reviewPanel.setAttribute('aria-label','Lesson question review');
+ reviewPanel.innerHTML='<h3 data-seq-review-heading tabindex="-1">Lesson review</h3><p data-seq-review-count role="status"></p><p data-seq-review-note></p><div class="sc-review-actions"><button type="button" data-seq-review-start>Start lesson review</button><button type="button" data-seq-review-prev>Previous Question</button><button type="button" data-seq-review-next>Next Question</button><button type="button" data-seq-review-retake>Retake review</button><button type="button" data-seq-review-exit>Return to source slides</button></div><section data-seq-review-result hidden aria-label="Review score"></section>';
+ sourceStage.prepend(reviewPanel);
  const sourceAnswer=doc.createElement('p');sourceAnswer.dataset.seqSourceAnswer='';sourceAnswer.hidden=true;practiceCard.append(sourceAnswer);
  const practicePlaceholder=doc.createElement('p');practicePlaceholder.dataset.seqSourcePlaceholder='';practicePlaceholder.textContent='Original practice page and any printed answers are held. Attempt the narrated question, then choose Reveal original page / answer when ready.';sourceFrame.append(practicePlaceholder);
  const followNote=doc.createElement('p');followNote.dataset.seqFollowNote='';sourceStage.append(followButton,followNote);
@@ -111,10 +116,51 @@
  // Optional source-strip responses are a separate, unscored owner. It can pause
  // the existing player, but cannot change lesson completion or audio coverage.
  const sourceStrip=host.SourceStripPractice?.mount(sourceStage,{
+  reviewRecord:page=>reviewActive()?reviewItem(page):null,
+  persistReview:()=>save(true)===true,
   pause:()=>{stopAudio();save(true);render();},
   openTrainer:async()=>{await enterExplore();host.showEcg?.();},
   openSource:async page=>{const target=map.lessons.find(l=>page>=l.pages[0]&&page<=l.pages[1]);if(target){await openLesson(byLesson.get(target.id));changePage(page);}}
  });
+
+ function reviewQueue(){return Review.queue(lesson(),practice,host.SourceStripInventory);}
+ function reviewActive(){return !optionalClip&&data.position.reviewActive===true;}
+ function reviewRecord(){const r=P.record(data,lesson().id);return r.review||(r.review=Review.empty());}
+ function reviewItem(page){const a=Review.item(reviewRecord(),page),count=practiceEntries[page]?.questions?.length||0;while(a.answers.length<count)a.answers.push('');while(a.ratings.length<count)a.ratings.push(null);return a;}
+ function answerItem(page){
+  if(reviewActive())return reviewItem(page);
+  const a=questionRecord(page),count=practiceEntries[page]?.questions?.length||0;
+  a.answers||=[];while(a.answers.length<count)a.answers.push('');return a;
+ }
+ function renderReview(){
+  const queue=reviewQueue(),on=reviewActive(),attempt=P.record(data,lesson().id).review,finished=on&&attempt?.finished,index=queue.findIndex(x=>x.page===data.position.sourcePage);
+  reviewPanel.hidden=!!optionalClip;sourceNav.hidden=on;
+  setText(q('review-heading'),finished?'Your review results':'Lesson review');
+  setText(q('review-count'),queue.length?(on&&!finished?'Question '+(index+1)+' of '+queue.length+' · ':'')+queue.length+' source question pages · '+queue.reduce((n,x)=>n+x.prompts,0)+' response fields':'No original source questions are assigned to this lesson.');
+  setText(q('review-note'),!queue.length?'Study the original lesson material directly. No question or answer key has been invented for this lesson.':on?'Use Previous / Next Question here, not the narration slider. Questions printed together stay together so revealing the original slide does not spoil another question. Written answers use your own self-check, not automatic grading.':'Start a review of this lesson’s original source questions. Your answers save on this browser; review and lesson completion are separate.');
+  q('review-start').hidden=on||!queue.length||['explanation','activity'].includes(data.position.stage);q('review-prev').hidden=!on||finished;q('review-next').hidden=!on||finished||index>=queue.length-1;q('review-prev').disabled=index<=0;
+  q('continue').toggleAttribute('data-seq-review-finish',on&&!finished);q('review-retake').hidden=!on||!finished;q('review-exit').hidden=!on;
+  q('review-result').hidden=!finished;
+  if(finished){const result=Review.summary(queue,attempt,practice),box=q('review-result');box.replaceChildren();
+   const add=(tag,text)=>{const e=doc.createElement(tag);e.textContent=text;box.append(e);};add('h4','Attempt '+attempt.attempt);
+   if(result.sourceChoice.total)add('p','Source-keyed multiple-choice score: '+result.sourceChoice.correct+' / '+result.sourceChoice.total+'. Unanswered or unrevealed choices earn no point.');
+   if(result.selfCheck.total)add('p','Self-checked written-answer score: '+result.selfCheck.correct+' / '+result.selfCheck.total+' ('+Math.round(result.selfCheck.correct/result.selfCheck.total*100)+'%). You marked '+result.selfCheck.checked+' answers against the original slides. This is your self-assessment, not automated or clinical grading.');
+   if(!result.sourceChoice.total&&!result.selfCheck.total)add('p','No scored answer key is available for this review.');
+   if(result.unscored.total)add('p',result.unscored.answered+' / '+result.unscored.total+' unscored responses entered. Unanswered recall prompts and provisional ECG interpretations do not receive a correctness score.');
+   add('p',result.blank+' blank response fields. Blank or unchecked written answers earn no point in the self-check total. Review does not mark mastery or complete the lesson.');
+  }
+ }
+ async function startReview(retake=false){
+  const queue=reviewQueue();if(optionalClip||!queue.length)return false;
+  stopAudio();invalidate();delete data.position.checkpointNext;data.position.reviewActive=true;data.position.sourceFollow=false;data.position.stage='activity';sourceRevealed=false;
+  if(retake){const prior=reviewRecord(),next=Review.empty(prior.attempt+1);next.history=[...(prior.history||[]),{attempt:prior.attempt,result:Review.summary(queue,prior,practice)}].slice(-20);P.record(data,lesson().id).review=next;}
+  const attempt=reviewRecord();attempt.finished=false;
+  if(retake||!queue.some(x=>x.page===data.position.sourcePage))data.position.sourcePage=queue[0].page;
+  data.position.scene=null;await showSource();save(true);render();q('review-heading').focus({preventScroll:true});return true;
+ }
+ async function stepReview(offset){const queue=reviewQueue(),i=queue.findIndex(x=>x.page===data.position.sourcePage);if(!reviewActive()||reviewRecord().finished)return false;const next=queue[i+offset];if(!next)return false;stopAudio();invalidate();data.position.sourcePage=next.page;data.position.sourceFollow=false;data.position.scene=null;sourceRevealed=false;await showSource();save(true);render();q('review-heading').focus({preventScroll:true});return true;}
+ function finishReview(){if(!reviewActive())return;stopAudio();invalidate();sourceRevision++;sourceRevealed=false;reviewRecord().finished=true;data.position.stage='recap';resetSourcePresentation();setText(q('source-status'),'Review finished. Original answers are concealed.');sourceStrip?.reset();save(true);render();q('review-heading').focus({preventScroll:true});}
+ function exitReview(){data.position.reviewActive=false;sourceRevealed=false;data.position.sourceFollow=false;showSource();save(true);render();}
 
  let inlineControlsVisible=false;
  // The floating control is useful away from the inline player, but must not
@@ -124,7 +170,7 @@
 
  for(const [i,u]of map.units.entries()){const o=doc.createElement('option');o.value=i;o.textContent=(i+1)+'. '+u.title+' · pp'+u.pages.join('–');q('unit-select').append(o);}
  for(const l of host.GuidedStudyLessons.filter(l=>l.audio)){const o=doc.createElement('option');o.value=l.id;o.textContent=(simulationLessons.has(l.id)?'Simulation lesson · ':'Audio only · ')+l.id+' · '+l.title;q('optional').append(o);}
- function save(force=false){if(!active||storageBlocked)return;if(optionalReturn)data.detour={kind:'optional',returnPosition:copy(optionalReturn)};else if(refresherReturn)data.detour={kind:'refresher',returnPosition:copy(refresherReturn)};else delete data.detour;if(mode==='guided'&&!loading&&attachedClip===clip()?.id){data.position.time=audio.currentTime||0;if(preparedOrgan==='source')data.position.scene=captureScene();}recordPlayback();const now=performance.now();if(!force&&now-lastSave<900)return;try{data.manifestVersion=map.version;localStorage.setItem(P.KEY,JSON.stringify(data));lastSave=now;hasSaved=true;}catch(e){warning='Course progress could not be saved. Export a copy; other study data is unchanged.';}}
+ function save(force=false){if(!active||storageBlocked)return false;if(optionalReturn)data.detour={kind:'optional',returnPosition:copy(optionalReturn)};else if(refresherReturn)data.detour={kind:'refresher',returnPosition:copy(refresherReturn)};else delete data.detour;if(mode==='guided'&&!loading&&attachedClip===clip()?.id){data.position.time=audio.currentTime||0;if(preparedOrgan==='source')data.position.scene=captureScene();}recordPlayback();const now=performance.now();if(!force&&now-lastSave<900)return true;try{data.manifestVersion=map.version;localStorage.setItem(P.KEY,JSON.stringify(data));lastSave=now;hasSaved=true;return true;}catch(e){warning='Course progress could not be saved. Export a copy; other study data is unchanged.';q('error').hidden=false;setText(q('error'),warning);return false;}}
  function recordPlayback(){const l=recordings.get(attachedClip);if(!l||!attachedLedger||attachedData!==data)return;const ranges=[];try{for(let i=0;i<audio.played.length;i++)ranges.push([audio.played.start(i),audio.played.end(i)]);}catch(e){return;}if(ranges.length)P.addPlayback(data,attachedLedger,l.id,ranges,l.audio.duration);}
  function validatePosition(p){
   const i=byLesson.get(p.lessonId);if(!P.validPosition(p)||i==null)throw Error('The saved lesson is not in this manifest. Its record is preserved; no automatic reset or remapping.');
@@ -137,13 +183,14 @@
  function validLoadedProgress(raw){const next=P.validate(raw);validatePosition(next.position);if(next.sourceSHA256!==map.source.sha256)throw Error('The saved source identity differs. Preserve/export the old record before choosing a new route.');if(next.detour){if(!['optional','refresher'].includes(next.detour.kind))throw Error('Invalid saved detour');validatePosition(next.detour.returnPosition);}if(next.manifestVersion!==map.version)warning='Manifest changed; stable source lesson ID and original progress were retained.';return next;}
 
  try{const raw=localStorage.getItem(P.KEY);if(raw){data=validLoadedProgress(JSON.parse(raw));index=byLesson.get(data.position.lessonId);hasSaved=true;if(data.detour?.kind==='optional')optionalReturn=copy(data.detour.returnPosition);if(data.detour?.kind==='refresher')refresherReturn=copy(data.detour.returnPosition);}}catch(e){storageBlocked=true;warning=e.message;}
- function inspect(){return {active,mode,presentation:policy.kind(data.position,optionalClip,recordings.get(optionalClip)),presentationType:presentationType(),lessonId:clip()?.id||null,clipId:clip()?.id||null,sourceLessonId:lesson().id,unitId:unit().id,unitIndex:map.units.indexOf(unit()),index,stage:data.position.stage,sourcePage:data.position.sourcePage,sourceFollow:data.position.sourceFollow!==false,sourceRevealed,sourceStrip:sourceStrip?.inspect()||null,narrationHeld:narrationHeld(),time:mode==='guided'&&!loading&&attachedClip===clip()?.id?audio.currentTime:data.position.time,segment:data.position.segment,playing:mode==='guided'&&!audio.paused&&!audio.ended,loading,busy:running||!!pending,preparing,needsGesture,error,warning,optionalClip,completed:data.routeReachedEnd,applied:copy(applied),preferences:copy(data.preferences),progress:copy(P.record(data,ledgerId()))};}
+ function inspect(){return {active,mode,presentation:policy.kind(data.position,optionalClip,recordings.get(optionalClip)),presentationType:presentationType(),lessonId:clip()?.id||null,clipId:clip()?.id||null,sourceLessonId:lesson().id,unitId:unit().id,unitIndex:map.units.indexOf(unit()),index,stage:data.position.stage,sourcePage:data.position.sourcePage,sourceFollow:data.position.sourceFollow!==false,sourceRevealed,review:reviewActive()?{active:true,finished:reviewRecord().finished,attempt:reviewRecord().attempt,queue:reviewQueue(),summary:Review.summary(reviewQueue(),reviewRecord(),practice)}:null,sourceStrip:sourceStrip?.inspect()||null,narrationHeld:narrationHeld(),time:mode==='guided'&&!loading&&attachedClip===clip()?.id?audio.currentTime:data.position.time,segment:data.position.segment,playing:mode==='guided'&&!audio.paused&&!audio.ended,loading,busy:running||!!pending,preparing,needsGesture,error,warning,optionalClip,completed:data.routeReachedEnd,applied:copy(applied),preferences:copy(data.preferences),progress:copy(P.record(data,ledgerId()))};}
  let renderSignature=null;
  function render(){
   const s=inspect(),l=lesson(),c=clip(),u=unit(),i=map.units.indexOf(u),next=map.lessons[index+1],r=P.record(data,ledgerId());
   const timeLabel=clock(s.time)+' / '+clock(duration());q('seek').value=s.time||0;if(q('time').textContent!==timeLabel)setText(q('time'),timeLabel);
-  const signature=JSON.stringify([active,mode,index,c?.id,s.stage,s.sourcePage,s.sourceFollow,sourceRevealed,s.narrationHeld,s.playing,loading,preparing,needsGesture,error,warning,hasSaved,optionalClip,!!optionalReturn,!!refresherReturn,data.routeReachedEnd,data.position.checkpointNext,data.preferences,P.summary(data,ledgerId()),Object.keys(r.transcripts).length,applied?.cueId,Math.floor(s.time||0)]);
+  const signature=JSON.stringify([active,mode,index,c?.id,s.stage,s.sourcePage,s.sourceFollow,sourceRevealed,s.narrationHeld,s.playing,loading,preparing,needsGesture,error,warning,hasSaved,optionalClip,!!optionalReturn,!!refresherReturn,data.routeReachedEnd,data.position.checkpointNext,data.preferences,P.summary(data,ledgerId()),Object.keys(r.transcripts).length,applied?.cueId,Math.floor(s.time||0),data.position.reviewActive,r.review?.finished,r.review?.attempt]);
   if(renderSignature===signature)return;renderSignature=signature;
+  renderReview();
   presentation.textContent=presentationType()==='simulation'?'Optional simulation lesson · source course is paused. Play narration or step through measured demonstration points; manual inspection remains available.':presentationType()==='audio-only'?'Optional audio-only explanation · source course is paused.':presentationType()==='source-practice'?'Source practice lesson · questions, examples and references keep their reviewed instructional roles.':'Slideshow lesson · original images follow the narration; simulations are separate optional activities.';
   simulationControls.hidden=presentationType()!=='simulation';q('scene-previous').disabled=!c||cueIndexAt(s.time)<=0;q('scene-next').disabled=!c||cueIndexAt(s.time)>=c.cues.length-1;setText(q('scene-position'),c?'Demonstration point '+(cueIndexAt(s.time)+1)+' / '+c.cues.length:'');
   q('source-details').hidden=!!optionalClip;sourceStage.hidden=!!optionalClip||mode!=='guided';
@@ -154,22 +201,22 @@
   const intro='Study '+l.label+' in its original source position (PDF pp'+l.pages.join('–')+'). Read or hear the explanation, optionally inspect or practice, then recap and Continue at your pace.';
   const stageText=s.stage==='intro'?intro:s.stage==='explanation'?(optionalClip?'Optional adapted recording; original source order is paused.':c?'Hear the approved adapted explanation, inspect its matching material, or read the source/transcript.':'No approved narration is mapped here. Read the original source text and diagrams, then Continue; it will not count as audio playback.'):s.stage==='activity'?'Optional activity: inspect the related view or try the source questions. Answers remain hidden until you choose Reveal. You may continue without a quiz or timer.':'Recap: revisit '+l.recap.headings.slice(0,5).join(' · ')+'. '+l.recap.prompt;
   setText(q('stage'),stageText);setText(q('coverage'),optionalClip?(simulationLessons.get(optionalClip)?.description||'Optional existing audio-only explanation; it does not replace or complete your saved source lesson.'):l.coverageNote);
-  setText(q('continue'),s.stage==='intro'?'Begin lesson':s.stage==='explanation'?'Continue to activity':s.stage==='activity'?'Continue to recap':index===map.lessons.length-1?'Mark complete & finish route':next?.unitId!==l.unitId?'Mark complete & Continue to next unit':'Mark complete & Continue');if(Number.isInteger(data.position.checkpointNext))setText(q('continue'),'Continue to next explanation (paused)');if(optionalClip)setText(q('continue'),'Return to saved source lesson');q('continue').disabled=loading;q('source-reviewed').hidden=!!optionalClip;const activityControl=q('open-activity');if(activityControl)activityControl.hidden=!!optionalClip;
+  setText(q('continue'),s.stage==='intro'?'Begin lesson':s.stage==='explanation'?'Continue to activity':s.stage==='activity'?'Continue to recap':index===map.lessons.length-1?'Mark complete & finish route':next?.unitId!==l.unitId?'Mark complete & Continue to next unit':'Mark complete & Continue');if(Number.isInteger(data.position.checkpointNext))setText(q('continue'),'Continue to next explanation (paused)');if(optionalClip)setText(q('continue'),'Return to saved source lesson');q('continue').disabled=loading;if(!optionalClip&&reviewQueue().length){if(s.stage==='explanation'||s.stage==='activity'&&!reviewActive())setText(q('continue'),'Start lesson review');if(reviewActive()&&!reviewRecord().finished)setText(q('continue'),'Finish review & see score');}q('source-reviewed').hidden=!!optionalClip;const activityControl=q('open-activity');if(activityControl){activityControl.hidden=!!optionalClip;setText(activityControl,reviewQueue().length?'Open lesson review':'Inspect / open practice (optional)');}
   setText(q('practice'),r.practiceAttempted?'Practice attempted (recorded)':'Record practice attempted');setText(q('source-reviewed'),r.sourceReviewed?'Source reviewed (recorded)':'Mark source reviewed');q('revisit').setAttribute('aria-pressed',String(r.revisit));
-  card.querySelector('.sc-audio').hidden=!c;setText(q('play'),s.playing?'Pause':needsGesture?'Resume narration':error?'Retry narration':!attachedClip?'Prepare narration':'Play narration');q('play').disabled=!c||mode!=='guided'||loading||s.narrationHeld;q('replay').disabled=!c||mode!=='guided'||loading;if(s.narrationHeld)setText(q('play'),'Narration held for practice');q('rate').value=String(data.preferences.rate);
-  q('seek').disabled=!c||loading||mode!=='guided';q('seek').max=duration();q('seek').value=s.time||0;setText(q('time'),clock(s.time)+' / '+clock(duration()));q('seek').setAttribute('aria-valuetext',clock(s.time)+' of '+clock(duration()));
+  card.querySelector('.sc-audio').hidden=!c;setText(q('play'),s.playing?'Pause':needsGesture?'Resume narration':error?'Retry narration':!attachedClip?'Prepare narration':'Play narration');q('play').disabled=!c||mode!=='guided'||loading||s.narrationHeld;q('replay').disabled=!c||mode!=='guided'||loading||reviewActive();if(s.narrationHeld)setText(q('play'),reviewActive()?'Narration paused for review':'Narration held for practice');q('rate').value=String(data.preferences.rate);
+  q('seek').disabled=!c||loading||mode!=='guided'||reviewActive();q('seek').max=duration();q('seek').value=s.time||0;setText(q('time'),clock(s.time)+' / '+clock(duration()));q('seek').setAttribute('aria-valuetext',clock(s.time)+' of '+clock(duration()));
   setText(q('clip'),c?(optionalClip?'Optional · ':('Recording '+(data.position.segment+1)+' / '+l.audio.length+' · '))+c.id+' · '+c.title:'Narration gap · source reading available');setText(q('cue'),!s.narrationHeld&&c&&applied?.clipId===c.id?c.cues[applied.cueIndex]?.text||'':'');
   const coverage=c?P.coverage(data,ledgerId(),c.id,c.audio.duration):null;setText(q('played'),coverage?'Native media playback recorded: '+Math.round(coverage.portion*100)+'%. This is separate from transcript/source review and learner-marked completion.':'Reading is a valid alternative; no narration is counted as heard.');
   setText(q('transcript'),s.narrationHeld?'This recording has no verified question-only audio boundaries. Its audio and full transcript remain held in this source lesson. Original source material and any reviewed question interactions remain available.':c?.transcript||'No approved audio transcript or recording exists for this source range. Read the original source text and diagrams below. New narration requires script approval; no listening progress is recorded.');setText(q('transcript-note'),'Approved adapted wording, separate from the original slides and any scientific clarifications.');q('transcript-reviewed').disabled=!c||s.narrationHeld;
   q('continuous').checked=data.preferences.continuous;q('text-only').checked=data.preferences.textOnly;q('refresher').disabled=index===0||loading||!!optionalClip;
-  setText(q('status'),mode==='guided'&&s.narrationHeld?'Practice checkpoint: this recording has no verified question-only audio boundaries. Narration and transcript stay held, including after Reveal. Study the source material, attempt any source questions, and Continue. No listening or practice completion is inferred.':mode==='guided'&&!c&&data.preferences.continuous&&s.stage==='explanation'?'Continuous listening stopped here: no approved recording is available. Read the original source text/diagrams below, then choose Continue. Nothing is marked listened.':mode==='explore'?'Exploring. Source lesson, activity, selected view and narration position are saved. Return to Course restores them silently.':data.routeReachedEnd?'You reached the final source lesson. Audio/source review, skips, practice and marked completion remain separate; narration gaps are still disclosed.':preparing?'Preparing the matching view; narration is held at the cue boundary.':loading?'Loading the recording and its first view…':needsGesture?'Playback was refused. Resume narration uses a fresh gesture and keeps the queued place.':s.playing?'Narration is playing. Inspecting a simulator manually pauses and releases the course.':'Learn at my pace · '+s.stage+' · no mandatory quiz, timer or pass threshold.');
+  setText(q('status'),mode==='guided'&&reviewActive()?'Lesson review: narration and its slider are paused. Answer here, reveal the original source when ready, and use Next Question. Finishing shows a score without completing the lesson.':mode==='guided'&&s.narrationHeld?'Practice checkpoint: this recording has no verified question-only audio boundaries. Narration and transcript stay held, including after Reveal. Study the source material, attempt any source questions, and Continue. No listening or practice completion is inferred.':mode==='guided'&&!c&&data.preferences.continuous&&s.stage==='explanation'?'Continuous listening stopped here: no approved recording is available. Read the original source text/diagrams below, then choose Continue. Nothing is marked listened.':mode==='explore'?'Exploring. Source lesson, activity, selected view and narration position are saved. Return to Course restores them silently.':data.routeReachedEnd?'You reached the final source lesson. Audio/source review, skips, practice and marked completion remain separate; narration gaps are still disclosed.':preparing?'Preparing the matching view; narration is held at the cue boundary.':loading?'Loading the recording and its first view…':needsGesture?'Playback was refused. Resume narration uses a fresh gesture and keeps the queued place.':s.playing?'Narration is playing. Inspecting a simulator manually pauses and releases the course.':'Learn at my pace · '+s.stage+' · no mandatory quiz, timer or pass threshold.');
   q('error').hidden=!(error||warning);setText(q('error'),[error,warning].filter(Boolean).join(' '));setText(q('boundary-note'),map.source.boundaryStatus);
   q('unit-select').value=i;
   if(q('lesson-select').dataset.unit!==u.id){q('lesson-select').replaceChildren();for(const id of u.lessonIds){const item=map.lessons[byLesson.get(id)],o=doc.createElement('option');o.value=id;o.textContent=item.label+' · pp'+item.pages.join('–');q('lesson-select').append(o);}q('lesson-select').dataset.unit=u.id;}
   q('lesson-select').value=l.id;
   if(q('page').dataset.lesson!==l.id){q('page').replaceChildren();for(let n=l.pages[0];n<=l.pages[1];n++){const o=doc.createElement('option');o.value=n;o.textContent='PDF page '+n;q('page').append(o);}q('page').dataset.lesson=l.id;}
   q('page').value=data.position.sourcePage;q('page-prev').disabled=data.position.sourcePage===l.pages[0];q('page-next').disabled=data.position.sourcePage===l.pages[1];
-  followButton.hidden=!c?.sourceLessonId||s.sourceFollow;followButton.disabled=loading||mode!=='guided';followNote.hidden=!c?.sourceLessonId;followNote.textContent=s.sourceFollow?'Following narration · use the page controls to hold a page.':'Your page is held · choose Follow narration to rejoin.';
+  followButton.hidden=reviewActive()||!c?.sourceLessonId||s.sourceFollow;followButton.disabled=loading||mode!=='guided';followNote.hidden=reviewActive()||!c?.sourceLessonId;followNote.textContent=s.sourceFollow?'Following narration · use the page controls to hold a page.':'Your page is held · choose Follow narration to rejoin.';
   setText(dq('dock-title'),optionalClip?c?.title||l.label:l.label);setText(dq('dock-state'),'Unit '+(i+1)+' · '+(s.playing?'Playing':s.stage));setText(dq('dock-play'),c?(s.playing?'Ⅱ':'▶'):'→');dq('dock-play').disabled=c?q('play').disabled:loading;dq('dock-play').setAttribute('aria-label',c?(s.playing?'Pause':'Play')+' narration · '+c.title:q('continue').textContent+' · '+l.label);dq('dock-play').setAttribute('aria-pressed',String(s.playing));
  }
  async function readSourcePages(){
@@ -181,10 +228,11 @@
   sourceStrip?.reset();
   q('source-image').hidden=true;q('source-image').removeAttribute('src');q('source-image').alt='';sourceFrame.hidden=true;
   q('source-text').textContent='';q('clarifications').textContent='';q('question-image').hidden=true;q('question-image').removeAttribute('src');
-  practiceCard.hidden=true;choices.hidden=true;responseLabel.hidden=true;sourceAnswer.hidden=true;sourceAnswer.textContent='';if(!keepRevealControl){q('reveal').hidden=true;delete q('reveal').dataset.sourcePage;}practicePlaceholder.hidden=true;
+  practiceCard.hidden=true;choices.hidden=true;responseLabel.hidden=true;responseFields.hidden=true;selfCheck.hidden=true;sourceAnswer.hidden=true;sourceAnswer.textContent='';if(!keepRevealControl){q('reveal').hidden=true;delete q('reveal').dataset.sourcePage;}practicePlaceholder.hidden=true;
  }
  function questionRecord(page){const r=P.record(data,lesson().id);r.questions||={};return r.questions[page]||(r.questions[page]={selectedOption:null,attempts:0,reveals:0,response:''});}
  function renderQuestionInteraction(entry,held){
+  const a=answerItem(entry.page);
   if(entry.kind==='question-choice'){
    choices.hidden=false;
    if(choices.dataset.page!==String(entry.page)){
@@ -192,11 +240,16 @@
     for(const [i,text]of entry.choices.entries()){const label=doc.createElement('label'),input=doc.createElement('input');input.type='radio';input.name='seq-source-choice';input.value=String(i);label.append(input,doc.createTextNode(text));choices.append(label);}
     choices.dataset.page=String(entry.page);
    }
-   const record=P.record(data,lesson().id).questions?.[entry.page];
+   const record=reviewActive()?a:P.record(data,lesson().id).questions?.[entry.page];
    for(const input of choices.querySelectorAll('input')){input.checked=record?.selectedOption===Number(input.value);input.disabled=!held;}
    if(!held){sourceAnswer.hidden=false;sourceAnswer.textContent='Original source marked answer: '+entry.sourceMarkedAnswer+' The original marked slide and source explanation are shown below. This identifies the source’s response; no additional scientific answer key has been supplied.';}
+  }else if(['question-text','question-visual'].includes(entry.kind)){
+   responseFields.hidden=false;const key=lesson().id+'|'+entry.page+'|'+(reviewActive()?'review-'+reviewRecord().attempt:'source');
+   if(responseFields.dataset.key!==key){responseFields.replaceChildren();entry.questions.forEach((question,i)=>{const label=doc.createElement('label'),input=doc.createElement('textarea');label.textContent='Your answer '+(entry.questions.length>1?(i+1):'');input.rows=3;input.maxLength=6000;input.dataset.seqAnswer=String(i);input.setAttribute('aria-label','Your answer '+(i+1)+': '+question);label.append(input);responseFields.append(label);});responseFields.dataset.key=key;}
+   for(const input of responseFields.querySelectorAll('textarea')){if(doc.activeElement!==input)input.value=a.answers[Number(input.dataset.seqAnswer)]||'';input.disabled=!held;}
+   selfCheck.hidden=held||!reviewActive();if(!held&&reviewActive()){selfCheck.replaceChildren();const legend=doc.createElement('legend');legend.textContent='Self-check against the original slide (you decide, not automatic grading)';selfCheck.append(legend);entry.questions.forEach((question,i)=>{const row=doc.createElement('div'),label=doc.createElement('p');label.textContent=entry.questions.length>1?'Answer '+(i+1):'Your answer';row.append(label);for(const [value,text]of [['correct','I got it right'],['incorrect','I need more practice']]){const b=doc.createElement('button');b.type='button';b.textContent=text;b.dataset.seqRating=value;b.dataset.seqAnswerIndex=String(i);b.disabled=!a.answers[i]?.trim();b.setAttribute('aria-pressed',String(a.ratings[i]===value));row.append(b);}selfCheck.append(row);});}
   }else if(entry.kind==='recall-prompt'){
-   responseLabel.hidden=false;response.value=P.record(data,lesson().id).questions?.[entry.page]?.response||'';
+   responseLabel.hidden=false;response.value=reviewActive()?a.answers[0]||'':P.record(data,lesson().id).questions?.[entry.page]?.response||'';
   }
  }
  function sourceTextFor(page){
@@ -212,7 +265,7 @@
   // Keep the same-page toggle mounted and focusable while its image loads.
   // Hiding it even briefly drops keyboard focus to BODY in Chromium.
   const knownPage=sourcePages?.[pageNumber-1],keepRevealControl=!!knownPage&&sourceNeedsReveal(knownPage)&&q('reveal').dataset.sourcePage===String(pageNumber);
-  resetSourcePresentation(keepRevealControl);if(keepRevealControl)configureSourceReveal(knownPage);
+  resetSourcePresentation(keepRevealControl);if(reviewActive()&&reviewRecord().finished){renderReview();return true;}if(keepRevealControl)configureSourceReveal(knownPage);
   const current=()=>rev===sourceRevision&&lesson().id===lessonId&&data.position.sourcePage===pageNumber&&(!parent||parent.isCurrent());
   const ctx={signal:parent?.signal||new AbortController().signal,isCurrent:current};
   try{
@@ -223,10 +276,10 @@
    // Text is independently available from the verified page manifest. A missing
    // image must not erase an ordinary slide or expose an unrevealed answer.
    setText(q('source-text'),sourceTextFor(page));configureSourceReveal(page);
-   if(held||entry?.kind==='question-choice'||entry?.kind==='recall-prompt'){
+   if(held||['question-text','question-visual','question-choice','recall-prompt'].includes(entry?.kind)){
     practiceCard.hidden=false;setText(q('question-reference'),lesson().label+' · PDF page '+page.page+(entry?.safeImagePage&&entry.safeImagePage!==page.page?' · source ECG from PDF page '+entry.safeImagePage:''));
     setText(q('question'),questionText||entry?.inspectionCaption||'This source page contains protected practice material. Its question or safe visual has not yet been verified separately.');
-    setText(q('question-note'),entry?.kind==='question-choice'&&!held?'Original source response shown. Choose Hide Answer / Try Again to make another attempt.':entry?.kind==='recall-prompt'?'Original source recall prompt. No original source answer is supplied. Think through your answer or record your own response; it is not scored.':questionText?'Original source question. Think through your answer, then choose Reveal Answer.':entry?.safeImageRoute?'Inspect the original source visual, then choose Reveal Answer for the full original page. '+(entry.limitation||''):'Source review needed. No question or diagnostic interpretation has been invented. Reveal only when you want the full original material.');
+    setText(q('question-note'),entry?.kind==='question-choice'&&!held?'Original source response shown. Choose Hide Answer / Try Again to make another attempt.':entry?.kind==='recall-prompt'?'Original source recall prompt. No original source answer is supplied. Think through your answer or record your own response; it is not scored.':questionText?(!held?(reviewActive()?'Original answer shown below. Compare it with your written answer, then record your self-check.':'Original answer shown below. Compare it with your written answer. Start lesson review for a separate scored self-check attempt.'):'Original source question. Enter your answer below, then choose Reveal Answer.'):entry?.safeImageRoute?'Inspect the original source visual, then choose Reveal Answer for the full original page. '+(entry.limitation||''):'Source review needed. No question or diagnostic interpretation has been invented. Reveal only when you want the full original material.');
     if(entry)renderQuestionInteraction(entry,held);
     if(entry?.safeImageRoute){q('question-image').src=entry.safeImageRoute;q('question-image').alt='Original answer-free source visual, PDF page '+(entry.safeImagePage||page.page);q('question-image').hidden=false;}
    }
@@ -253,6 +306,7 @@
  }
  function sourceIsHeld(page){return sourceNeedsReveal(page)&&!(page.page===data.position.sourcePage&&sourceRevealed);}
  function narrationHeld(){
+  if(reviewActive())return true;
   if(optionalClip||!clip())return false;
   const l=lesson(),rule=visualLessons.get(l.id)?.revealPolicy||{};
   if(recordingHolds.get(clip().id)?.placements.some(p=>p.id===l.id))return true;
@@ -359,8 +413,8 @@
   if(mode!=='guided'||loading)return false;if(optionalClip)return returnDetour();
   if(Number.isInteger(data.position.checkpointNext)){data.position.segment=data.position.checkpointNext;delete data.position.checkpointNext;data.position.time=0;data.position.stage='explanation';render();return loadRecording({at:0,autoplay:false});}
   if(data.position.stage==='intro')return beginExplanation();
-  if(data.position.stage==='explanation'){await pause();data.position.stage='activity';render();save(true);return true;}
-  if(data.position.stage==='activity'){data.position.stage='recap';render();save(true);return true;}
+  if(data.position.stage==='explanation'){if(reviewQueue().length)return startReview();await pause();data.position.stage='activity';render();save(true);return true;}
+  if(data.position.stage==='activity'){if(reviewActive()){finishReview();return true;}if(reviewQueue().length)return startReview();data.position.stage='recap';render();save(true);return true;}
   P.record(data,lesson().id).markedComplete=true;save(true);
   if(index===map.lessons.length-1){stopAudio();data.routeReachedEnd=true;render();save(true);return true;}
   return openLesson(index+1);
@@ -371,7 +425,7 @@
   return Promise.resolve(p).then(()=>{if(rev!==revision||mode!=='guided'||!playingIntent){audio.pause();return false;}wake();render();return true;},e=>{if(rev===revision){playingIntent=false;needsGesture=true;error='Playback was refused. Resume narration keeps the same queued position. '+e.message;save(true);render();}return false;});
  }
  async function pause(){if(mode!=='guided')return false;const sourceView=preparedOrgan==='source'?captureScene():null;stopAudio();data.position.time=attachedClip===clip()?.id?audio.currentTime||0:data.position.time;invalidate();if(attachedClip){await requestScene(data.position.time,sourceView);data.position.scene=captureScene();}save(true);render();return true;}
- async function seek(seconds){if(mode!=='guided'||loading||!clip()||!Number.isFinite(seconds))return false;stopAudio();invalidate();audio.currentTime=Math.max(0,Math.min(duration(),seconds));data.position.time=audio.currentTime;endedToken=null;const ok=await requestScene(audio.currentTime);data.position.scene=captureScene();save(true);render();return ok;}
+ async function seek(seconds){if(reviewActive())return false;if(mode!=='guided'||loading||!clip()||!Number.isFinite(seconds))return false;stopAudio();invalidate();audio.currentTime=Math.max(0,Math.min(duration(),seconds));data.position.time=audio.currentTime;endedToken=null;const ok=await requestScene(audio.currentTime);data.position.scene=captureScene();save(true);render();return ok;}
  async function tick(){if(ticking)return;ticking=true;try{await advanceTick();}finally{ticking=false;}}
  async function advanceTick(){
   if(!active||mode!=='guided'||loading||audio.paused||preparing||!clip())return;const t=audio.currentTime,c=clip(),ci=cueIndexAt(t),cue=c.cues[ci];if(Math.abs(t-lastTick)<.08)return;lastTick=t;
@@ -387,6 +441,7 @@
   if(optionalClip){data.position.stage='explanation';render();return;}
   if(data.position.segment+1<lesson().audio.length){if(!data.preferences.continuous&&lesson().audio[data.position.segment].checkpointAfter){data.position.checkpointNext=data.position.segment+1;data.position.stage='activity';render();save(true);return;}data.position.segment++;data.position.time=0;await loadRecording({at:0,autoplay:true});return;}
   data.position.stage='activity';render();save(true);
+  if(reviewQueue().length){await startReview();return;}
   if(data.preferences.continuous&&index<map.lessons.length-1){const i=index+1;await openLesson(i);data.position.stage='explanation';render();if(clip())await loadRecording({at:0,autoplay:true});else{q('source-details').open=true;render();save(true);}}
  }
  function enterExplore(){
@@ -394,7 +449,7 @@
  }
  async function resume(){sourceRevealed=false;const p=returnPoint||data.position;optionalClip=p.optionalClip||null;data.position=copy(p);index=byLesson.get(p.lessonId);active=true;mode='guided';claim();render();showSource();if(clip()&&(data.position.stage==='explanation'||p.scene))return loadRecording({at:p.time,restore:p.scene});hideUnrelatedView();return true;}
  async function returnDetour(){const p=optionalReturn||refresherReturn;if(!p)return false;clearClip();optionalReturn=refresherReturn=null;optionalClip=null;index=byLesson.get(p.lessonId);return openLesson(index,{position:p});}
- async function activity(){if(!active)return;data.position.stage='activity';await enterExplore();const dest=lesson().practice.destination;
+ async function activity(){if(!active)return;if(!optionalClip&&reviewQueue().length)return startReview();data.position.stage='activity';await enterExplore();const dest=lesson().practice.destination;
   if(dest==='heart')await host.HeartV3Study.open();else if(dest==='respiratory')host.CardiorespiratoryStudy.open('respiratory');else if(dest==='lead')await LeadPlacementLab.open();else if(dest==='ecg')EcgStudy.open();else if(dest==='rhythm'&&typeof host.showEcg==='function')host.showEcg();render();
  }
  async function openOptional(id,simulation=false){if(!recordings.has(id))return false;const saved=copy(optionalReturn||refresherReturn||point());clearClip();P.begin(data,'optional.audio.'+id);optionalReturn=saved;refresherReturn=null;optionalClip=id;data.position.stage='explanation';data.position.segment=0;data.position.time=0;data.position.optionalClip=id;data.position.presentation=simulation&&policy.canSimulate(recordings.get(id))?'simulation':'reading';delete data.position.checkpointNext;mode='guided';active=true;claim();render();return loadRecording({at:0});}
@@ -410,11 +465,14 @@
  listen(q('unit-select'),'change',()=>openLesson(byLesson.get(map.units[Number(q('unit-select').value)].lessonIds[0])));listen(q('lesson-select'),'change',()=>openLesson(byLesson.get(q('lesson-select').value)));
  async function stepSimulation(offset){if(presentationType()!=='simulation'||!clip())return false;const c=clip(),i=Math.max(0,Math.min(c.cues.length-1,cueIndexAt(audio.currentTime)+offset));return seek(c.cues[i].at);}
  listen(q('scene-previous'),'click',()=>stepSimulation(-1));listen(q('scene-next'),'click',()=>stepSimulation(1));
- function changePage(n){if(narrationHeld())stopAudio();data.position.sourcePage=Math.max(lesson().pages[0],Math.min(lesson().pages[1],n));if(clip()?.sourceLessonId)data.position.sourceFollow=false;sourceRevealed=false;showSource();save(true);render();}
- listen(q('page'),'change',()=>changePage(Number(q('page').value)));listen(q('page-prev'),'click',()=>changePage(data.position.sourcePage-1));listen(q('page-next'),'click',()=>changePage(data.position.sourcePage+1));listen(q('reveal'),'click',()=>{stopAudio();sourceRevealed=!sourceRevealed;const entry=practiceEntries[data.position.sourcePage];if(entry?.kind==='question-choice'){const r=questionRecord(entry.page);if(sourceRevealed)r.reveals++;else r.selectedOption=null;}showSource();save(true);render();});
- listen(choices,'change',event=>{const entry=practiceEntries[data.position.sourcePage],input=event.target;if(entry?.kind!=='question-choice'||sourceRevealed||!input.matches('input[type=radio]'))return;const r=questionRecord(entry.page);r.selectedOption=Number(input.value);r.attempts++;save(true);});
- listen(response,'input',()=>{if(practiceEntries[data.position.sourcePage]?.kind!=='recall-prompt')return;questionRecord(data.position.sourcePage).response=response.value;save(true);});
- listen(followButton,'click',async()=>{if(narrationHeld())stopAudio();sourceRevealed=false;data.position.sourceFollow=true;sourceSceneKey=null;if(attachedClip)await requestScene(audio.currentTime);save(true);render();});
+ function changePage(n){data.position.reviewActive=false;if(narrationHeld())stopAudio();data.position.sourcePage=Math.max(lesson().pages[0],Math.min(lesson().pages[1],n));if(clip()?.sourceLessonId)data.position.sourceFollow=false;sourceRevealed=false;showSource();save(true);render();}
+ listen(q('page'),'change',()=>changePage(Number(q('page').value)));listen(q('page-prev'),'click',()=>changePage(data.position.sourcePage-1));listen(q('page-next'),'click',()=>changePage(data.position.sourcePage+1));listen(q('reveal'),'click',()=>{stopAudio();sourceRevealed=!sourceRevealed;const entry=practiceEntries[data.position.sourcePage];if(entry?.kind==='question-choice'){if(reviewActive()){const a=reviewItem(entry.page);if(sourceRevealed)a.submittedOption=a.selectedOption;}else{const r=questionRecord(entry.page);if(sourceRevealed)r.reveals++;else r.selectedOption=null;}}showSource();save(true);render();});
+ listen(choices,'change',event=>{const entry=practiceEntries[data.position.sourcePage],input=event.target;if(entry?.kind!=='question-choice'||sourceRevealed||!input.matches('input[type=radio]'))return;const a=answerItem(entry.page);a.selectedOption=Number(input.value);a.attempts++;if(reviewActive())a.submittedOption=null;save(true);});
+ listen(response,'input',()=>{if(practiceEntries[data.position.sourcePage]?.kind!=='recall-prompt')return;if(reviewActive())reviewItem(data.position.sourcePage).answers[0]=response.value;else questionRecord(data.position.sourcePage).response=response.value;save(true);});
+ listen(q('review-start'),'click',()=>startReview());listen(q('review-prev'),'click',()=>stepReview(-1));listen(q('review-next'),'click',()=>stepReview(1));listen(q('review-retake'),'click',()=>startReview(true));listen(q('review-exit'),'click',exitReview);
+ listen(responseFields,'input',event=>{const input=event.target;if(!input.matches('textarea[data-seq-answer]')||sourceRevealed)return;const a=answerItem(data.position.sourcePage),i=Number(input.dataset.seqAnswer);a.answers[i]=input.value;if(reviewActive())a.ratings[i]=null;save(true);});
+ listen(selfCheck,'click',event=>{const b=event.target.closest('button[data-seq-rating]');if(!b||!sourceRevealed||!reviewActive())return;const a=reviewItem(data.position.sourcePage),i=Number(b.dataset.seqAnswerIndex);if(!a.answers[i]?.trim())return;a.ratings[i]=b.dataset.seqRating;for(const button of selfCheck.querySelectorAll('button'))if(Number(button.dataset.seqAnswerIndex)===i)button.setAttribute('aria-pressed',String(button===b));save(true);});
+ listen(followButton,'click',async()=>{if(reviewActive())return;if(narrationHeld())stopAudio();sourceRevealed=false;data.position.sourceFollow=true;sourceSceneKey=null;if(attachedClip)await requestScene(audio.currentTime);save(true);render();});
  listen(q('refresher'),'click',()=>{refresherReturn=copy(optionalReturn||refresherReturn||point());optionalReturn=null;openLesson(Math.max(0,index-1));});listen(q('optional'),'change',()=>{if(q('optional').value)openOptional(q('optional').value,policy.canSimulate(recordings.get(q('optional').value)));});
  listen(q('export'),'click',()=>{save(true);q('progress').value=JSON.stringify(data,null,2);setText(q('import-status'),'Export includes only this sequential course namespace.');});listen(q('import'),'click',()=>{try{const next=validLoadedProgress(JSON.parse(q('progress').value));if(active)enterExplore();data=next;index=byLesson.get(data.position.lessonId);optionalClip=data.position.optionalClip||null;optionalReturn=data.detour?.kind==='optional'?copy(data.detour.returnPosition):null;refresherReturn=data.detour?.kind==='refresher'?copy(data.detour.returnPosition):null;returnPoint=null;storageBlocked=false;hasSaved=true;localStorage.setItem(P.KEY,JSON.stringify(data));setText(q('import-status'),active?'Course progress imported. Return to Course restores it silently.':'Course progress imported. Continue Course restores it silently.');render();}catch(e){setText(q('import-status'),'Import rejected; saved progress unchanged. '+e.message);}});
  listen(dq('show'),'click',()=>{card.scrollIntoView({block:'start',behavior:'auto'});q('play').focus({preventScroll:true});});

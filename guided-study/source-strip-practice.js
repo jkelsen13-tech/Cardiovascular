@@ -35,11 +35,11 @@
   let current=null,displayPage=null,generation=0,controller=null,revealed=false,loading=false,storageBlocked=false;
   let saved={version:1,sourceSHA256:inventory.sourceSHA256,entries:{}};
   try{const raw=host.localStorage.getItem(KEY);if(raw)saved=validateSaved(JSON.parse(raw),inventory);}catch(e){storageBlocked=true;status.textContent='Existing strip-response data could not be read. It has not been overwritten. Responses remain available only for this session.';}
-  const record=()=>saved.entries[current.page]||(saved.entries[current.page]={responses:{},attempts:0});
-  function persist(){if(storageBlocked)return false;try{host.localStorage.setItem(KEY,JSON.stringify(saved));return true;}catch(e){storageBlocked=true;return false;}}
+  const record=()=>options.reviewRecord?.(current.page)||saved.entries[current.page]||(saved.entries[current.page]={responses:{},attempts:0});
+  function persist(){if(current&&options.reviewRecord?.(current.page)){return options.persistReview?.()===true;}if(storageBlocked)return false;try{host.localStorage.setItem(KEY,JSON.stringify(saved));return true;}catch(e){storageBlocked=true;return false;}}
   function reset(){generation++;controller?.abort();controller=null;current=null;displayPage=null;revealed=false;loading=false;section.hidden=true;reviewBox.hidden=true;reviewBox.replaceChildren();toggle.disabled=false;toggle.setAttribute('aria-expanded','false');}
   function show(page,sourceRevealed=false){reset();const canonical=inventory.pageAliases?.[page]||page,entry=inventory.entries[canonical];if(!entry)return;current=entry;displayPage=page;section.hidden=false;reference.textContent='Original waveform PDF page '+canonical+(canonical!==page?' · answer source PDF '+page:'')+' · self-study response';
-   for(const [id,input]of inputs)input.value=saved.entries[canonical]?.responses?.[id]||'';
+   for(const [id,input]of inputs)input.value=(options.reviewRecord?.(canonical)||saved.entries[canonical])?.responses?.[id]||'';
    toggle.hidden=!entry.reviewPath||entry.revealOwner==='source';toggle.textContent=entry.reviewStatus==='derived-unvalidated'?'Review provisional measurements':'Review source answers';
    status.textContent=storageBlocked?'Responses are session-only. Existing stored data has not been overwritten.':entry.reviewPath?(entry.revealOwner==='source'?'Your responses save on this browser. Use the existing Reveal Answer button above for the original source comparison.':'Your responses save on this browser. Review stays hidden until you request it.'):'No adjudicated answer key is available for this strip yet. You can save your own response or use the existing 13-strip trainer; no guessed answer or score is supplied.';
    if(entry.revealOwner==='source'&&sourceRevealed)reveal();
