@@ -27,7 +27,17 @@
   const floating=name=>dock.querySelector('[data-audio-dock-'+name+']');
   const floatToggle=floating('toggle'),floatPlay=floating('play'),floatSelect=floating('lesson'),floatPanel=doc.getElementById('contextAudioDockPanel');
   let context=null,current=null,ids=[],revision=0,pending=false,loading=false,error='',scheduled=false,disposed=false,manualPhase=null,priorHeartSelection='',clipUrl=null,controller=null;
-  let courseOwned=false;
+  let courseOwned=false,courseCanPlay=null;
+  // This owner creates the one shared element. Check its current owner's
+  // permission synchronously, before native play can advance the clock or
+  // played ranges. A play-event listener alone is too late for that guarantee.
+  const nativePlay=audio.play.bind(audio);
+  audio.play=function(){
+    let allowed=false;
+    try{allowed=!disposed&&(courseOwned?(typeof courseCanPlay==='function'&&courseCanPlay()===true):!!current&&!loading);}catch(e){}
+    if(!allowed)return Promise.reject(new host.DOMException('The current audio owner is holding playback.','NotAllowedError'));
+    return nativePlay();
+  };
   const listeners=[],observers=[],sectionObservers=new Map();
   const listen=(target,event,handler,options)=>{target.addEventListener(event,handler,options);listeners.push(()=>target.removeEventListener(event,handler,options));};
   listen(inlineMedia,'change',()=>{inline.open=!inlineMedia.matches||inline.contains(doc.activeElement);});
@@ -186,7 +196,7 @@
     observer.observe(target,{attributes:true,attributeFilter:['class','hidden'],attributeOldValue:true});observers.push(observer);
   }
   refresh();
-  function takeForCourse(){courseOwned=true;revision++;controller?.abort();controller=null;pending=false;loading=false;audio.pause();audio.removeAttribute('src');audio.load();if(clipUrl){host.URL.revokeObjectURL(clipUrl);clipUrl=null;}current=null;context=null;card.hidden=true;dock.hidden=true;doc.body.classList.remove('contextual-audio-present');return audio;}
-  function releaseFromCourse(){if(!courseOwned)return;courseOwned=false;context=null;refresh();}
+  function takeForCourse(canPlay=null){courseOwned=true;courseCanPlay=canPlay;revision++;controller?.abort();controller=null;pending=false;loading=false;audio.pause();audio.removeAttribute('src');audio.load();if(clipUrl){host.URL.revokeObjectURL(clipUrl);clipUrl=null;}current=null;context=null;card.hidden=true;dock.hidden=true;doc.body.classList.remove('contextual-audio-present');return audio;}
+  function releaseFromCourse(){if(!courseOwned)return;courseOwned=false;courseCanPlay=null;context=null;refresh();}
   host.ContextualAudio={audio,refresh,takeForCourse,releaseFromCourse,inspect:()=>({courseOwned,context:context&&{page:context.page,key:context.key,label:context.label},lessonId:current?.id||null,availableIds:ids.slice(),playing:!audio.paused&&!audio.ended,time:audio.currentTime,pending,loading,error}),dispose(){disposed=true;revision++;controller?.abort();audio.pause();listeners.forEach(fn=>fn());observers.forEach(o=>o.disconnect());sectionObservers.forEach(o=>o.observer.disconnect());sectionObservers.clear();audio.removeAttribute('src');audio.load();if(clipUrl)host.URL.revokeObjectURL(clipUrl);card.remove();dock.remove();doc.body.classList.remove('contextual-audio-present');}};
 }(window));

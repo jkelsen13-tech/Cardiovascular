@@ -12,6 +12,10 @@
   for(const [id,x]of Object.entries(raw.lessons)){
    if(typeof id!=='string'||!x||!['not_started','in_progress'].includes(x.status)||typeof x.sourceReviewed!=='boolean'||typeof x.skipped!=='boolean'||typeof x.markedComplete!=='boolean'||typeof x.practiceAttempted!=='boolean'||typeof x.revisit!=='boolean'||!x.transcripts||!x.audio||typeof x.audio!=='object')throw Error('Invalid lesson record');
    for(const ranges of Object.values(x.audio)){if(!Array.isArray(ranges)||ranges.length>2000||ranges.some(r=>!Array.isArray(r)||r.length!==2||!r.every(Number.isFinite)||r[0]<0||r[1]<r[0]||r[1]>86400))throw Error('Invalid playback ranges');}
+   if(x.questions!==undefined){
+    if(!x.questions||typeof x.questions!=='object'||Array.isArray(x.questions)||Object.keys(x.questions).length>911)throw Error('Invalid question records');
+    for(const [page,q]of Object.entries(x.questions))if(!/^\d+$/.test(page)||Number(page)<1||Number(page)>911||!q||!(q.selectedOption===null||Number.isInteger(q.selectedOption)&&q.selectedOption>=0&&q.selectedOption<4)||!Number.isSafeInteger(q.attempts)||q.attempts<0||!Number.isSafeInteger(q.reveals)||q.reveals<0||typeof q.response!=='string'||q.response.length>6000)throw Error('Invalid question response');
+   }
   }
   return clone(raw);
  }

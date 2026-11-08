@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "page": 781,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "b462a2435efc36b1951b8c700f241d10c36d608f4ae9d0e485dcc01c3e7981a2",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Only two complete small pointed/negative candidates with larger subsequent waves; other small bumps do not establish more ventricular events. Preserve identity/rate hold.",
+      "basis": "Original PDF page 781; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Reviewer 2 selected complete local examples plus author selected primary scenarios. No whole-strip invariant, event census, sequence or conduction claim. Preserve rate/identity holds on 770, 778 and 781. Selected widths never establish sequence completeness. Course 25 mm/s assumed, not verified per-strip speed Actual upper minor-grid and lower major-grid spans with plus/minus 1px local span uncertainty; five observed minor intervals per major gap Geometric boundary identity is conditional, not established electrical onset or termination Outward .01-second hull is an uncertainty envelope, not a confidence interval or normal/abnormal classification Which visible feature, if any, is atrial, and can its onset and association be established? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Small recurring rounded deflections coexist with infrequent short upright tips, shallow dips and broader upright humps on a slowly rising baseline.",
+      "basis": "New descriptive observation of the original raster, not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, conduction interval or clinical conclusion is assigned. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Atrial identity or specific pairing remains unresolved; no numeric PR answer.",
+    "qrs unresolved: Only two complete small pointed/negative candidates with larger subsequent waves; other small bumps do not establish more ventricular events. Preserve identity/rate hold. Adjudicate atrial origin/pairing separately from first ventricular departure and terminal junction.",
+    "No diagnosis, validated P-wave identity, PR/QRS/QT, scoring or educator-validation claim.",
+    "Rate/sequence timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+    "Private unvalidated educational observations; qualified educator review is outstanding.",
+    "Manual event selection and raster precision do not establish clinical validity.",
+    "Actual bold-grid coordinates detected independently in two trace-free bands; each accepted major interval contains five directly detected minor subdivisions.",
+    "25 mm/s and 0.2 seconds per major interval are assumed, not verified on this strip. Calibration is local only; no whole-strip duration is inferred.",
+    "Original native raster individually inspected. Local pixel extrema refine manually selected comparable windows; no waveform identity classifier is claimed.",
+    "Candidate selection does not establish ventricular identity; rate and regularity are withheld.",
+    "The tip/dip near x 815 has an incomplete recovery at the right boundary and is excluded. Two interior tips are raw candidates only.",
+    "Completeness and event identity remain unresolved; raw candidates must not be projected as confirmed ventricular fiducials.",
+    "No event-rate estimate is projected because identity and completeness are unresolved.",
+    "Rate/sequence timing limitation: All individual-interval rate and seconds projections are withheld.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors.",
+    "Low-amplitude competing phases leave event identity and sequence completeness unresolved; raw candidates cannot support a ventricular rate or regularity claim.",
+    "Withheld: phase identity and completeness are unresolved among low-amplitude competing deflections."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": null,
+    "landmarkType": "positive peak-to-peak raw candidate phase, identity unresolved",
+    "rrPixels": null,
+    "rawCandidateX": [
+      205.0,
+      508.5
+    ],
+    "rawCandidateGapsPixels": [
+      303.5
+    ],
+    "completeVentricularSequenceEstablished": false,
+    "gridSpanPixels": 245,
+    "gridIntervalCount": 10,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": null,
+    "intervalCount": null,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-765-785-provisional.json"
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round8/final-field-decisions.json",
+    "decisionInputSHA256": "e5bee35ad50bc9b6b0d40639adf38de0ec56fa4cf22699ad0e01b71e2278f619",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0781.json",
+    "baselineReviewSHA256": "7daf633d7558a87e6a6256d556decb2f8aaba72e5881402b1e8e56022619ea6c",
+    "sourceImageSHA256": "b462a2435efc36b1951b8c700f241d10c36d608f4ae9d0e485dcc01c3e7981a2",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 781,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "91bba33fa7aaff2f600c5db34f783d6813d2bd565e7d605dc28d15d9e0e8de10",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round8/original-first-pass.json",
+            "sha256": "9f398a20d3d61f627d2a019de493b63c786cd4419a76a467e0bb696deb0dc93f",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/calibrated-review.json",
+            "sha256": "1da64e18c92e94e0cae409d99c3d665593cce191b9eeac43fa3cc8f972bd31c2",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/post-author-review.json",
+            "sha256": "80631a77547cf50e8820179401d265232a0bad52ebf717809122f6e361cd5cfb",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/source-first-grid-corrections.json",
+            "sha256": "368120c22b09633cde2c6dc75cef558617455787351b01c1530964e2fab5ce1e",
+            "selector": "page=781"
+          },
+          {
+            "path": "pages776-785/field-proposals.json",
+            "sha256": "d2de9792716683d52e8b122493d8da6e40ecf338221feff3266b7405c7d47962",
+            "selector": "pages[page=781].p"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Only two complete small pointed/negative candidates with larger subsequent waves; other small bumps do not establish more ventricular events. Preserve identity/rate hold.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Reviewer 2 selected complete local examples plus author selected primary scenarios. No whole-strip invariant, event census, sequence or conduction claim.",
+        "conditions": [
+          "Course 25 mm/s assumed, not verified per-strip speed",
+          "Actual upper minor-grid and lower major-grid spans with plus/minus 1px local span uncertainty; five observed minor intervals per major gap",
+          "Geometric boundary identity is conditional, not established electrical onset or termination",
+          "Outward .01-second hull is an uncertainty envelope, not a confidence interval or normal/abnormal classification"
+        ],
+        "remaining_educator_question": "Which visible feature, if any, is atrial, and can its onset and association be established?",
+        "identity_caveat": "Preserve rate/identity holds on 770, 778 and 781. Selected widths never establish sequence completeness."
+      },
+      {
+        "page": 781,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "91bba33fa7aaff2f600c5db34f783d6813d2bd565e7d605dc28d15d9e0e8de10",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round8/original-first-pass.json",
+            "sha256": "9f398a20d3d61f627d2a019de493b63c786cd4419a76a467e0bb696deb0dc93f",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/calibrated-review.json",
+            "sha256": "1da64e18c92e94e0cae409d99c3d665593cce191b9eeac43fa3cc8f972bd31c2",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/post-author-review.json",
+            "sha256": "80631a77547cf50e8820179401d265232a0bad52ebf717809122f6e361cd5cfb",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/source-first-grid-corrections.json",
+            "sha256": "368120c22b09633cde2c6dc75cef558617455787351b01c1530964e2fab5ce1e",
+            "selector": "page=781"
+          },
+          {
+            "path": "pages776-785/field-proposals.json",
+            "sha256": "d2de9792716683d52e8b122493d8da6e40ecf338221feff3266b7405c7d47962",
+            "selector": "pages[page=781].pr"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Atrial identity or specific pairing remains unresolved; no numeric PR answer.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Reviewer 2 selected complete local examples plus author selected primary scenarios. No whole-strip invariant, event census, sequence or conduction claim.",
+        "conditions": [
+          "Course 25 mm/s assumed, not verified per-strip speed",
+          "Actual upper minor-grid and lower major-grid spans with plus/minus 1px local span uncertainty; five observed minor intervals per major gap",
+          "Geometric boundary identity is conditional, not established electrical onset or termination",
+          "Outward .01-second hull is an uncertainty envelope, not a confidence interval or normal/abnormal classification"
+        ],
+        "remaining_educator_question": "Which visible feature, if any, is atrial, and can its onset and association be established?",
+        "identity_caveat": "Preserve rate/identity holds on 770, 778 and 781. Selected widths never establish sequence completeness."
+      },
+      {
+        "page": 781,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "91bba33fa7aaff2f600c5db34f783d6813d2bd565e7d605dc28d15d9e0e8de10",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round8/original-first-pass.json",
+            "sha256": "9f398a20d3d61f627d2a019de493b63c786cd4419a76a467e0bb696deb0dc93f",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/calibrated-review.json",
+            "sha256": "1da64e18c92e94e0cae409d99c3d665593cce191b9eeac43fa3cc8f972bd31c2",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/post-author-review.json",
+            "sha256": "80631a77547cf50e8820179401d265232a0bad52ebf717809122f6e361cd5cfb",
+            "selector": "page=781"
+          },
+          {
+            "path": "independent-interval-review/round8/source-first-grid-corrections.json",
+            "sha256": "368120c22b09633cde2c6dc75cef558617455787351b01c1530964e2fab5ce1e",
+            "selector": "page=781"
+          },
+          {
+            "path": "pages776-785/field-proposals.json",
+            "sha256": "d2de9792716683d52e8b122493d8da6e40ecf338221feff3266b7405c7d47962",
+            "selector": "pages[page=781].qrs"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Only two complete small pointed/negative candidates with larger subsequent waves; other small bumps do not establish more ventricular events. Preserve identity/rate hold. Adjudicate atrial origin/pairing separately from first ventricular departure and terminal junction.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.04,
+          0.18
+        ],
+        "sample_scope": "Reviewer 2 selected complete local examples plus author selected primary scenarios. No whole-strip invariant, event census, sequence or conduction claim.",
+        "conditions": [
+          "Course 25 mm/s assumed, not verified per-strip speed",
+          "Actual upper minor-grid and lower major-grid spans with plus/minus 1px local span uncertainty; five observed minor intervals per major gap",
+          "Geometric boundary identity is conditional, not established electrical onset or termination",
+          "Outward .01-second hull is an uncertainty envelope, not a confidence interval or normal/abnormal classification"
+        ],
+        "remaining_educator_question": "Only two complete small pointed/negative candidates with larger subsequent waves; other small bumps do not establish more ventricular events. Preserve identity/rate hold. Adjudicate atrial origin/pairing separately from first ventricular departure and terminal junction.",
+        "identity_caveat": "Preserve rate/identity holds on 770, 778 and 781. Selected widths never establish sequence completeness."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0781.json",
+    "baselineReviewSHA256": "67bc7a4484316b4b12acdef06821247c4101485b18d3863bff551fd42a0cd236",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "dd10a3118447e874d800c70e9dc63a6857884c02b3568202b2a3b69ead801c08",
+      "afterOriginal30AddendumSHA256": "dd10a3118447e874d800c70e9dc63a6857884c02b3568202b2a3b69ead801c08",
+      "afterOptionalInterpretationSHA256": "dd10a3118447e874d800c70e9dc63a6857884c02b3568202b2a3b69ead801c08",
+      "afterOptionalStatusSHA256": "dd10a3118447e874d800c70e9dc63a6857884c02b3568202b2a3b69ead801c08"
+    },
+    "optionalPatch": null,
+    "essentialLimitations": [
+      {
+        "original": "Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "replacement": "Rate/sequence timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "originalSHA256": "f0bc4f8041eb63e3fd8190f4bd79c2784f15b66f2b143952363d4dc7b9350bc7",
+        "replacementSHA256": "a71e3f9373b914964deda1f44038b7b8005f7b1a2c6055c61715bebb213e70e2",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "All individual-interval rate and seconds projections are withheld.",
+        "replacement": "Rate/sequence timing limitation: All individual-interval rate and seconds projections are withheld.",
+        "originalSHA256": "8217592b05aec681f23fc09b481a4a6d404f2eba279ab528e79e2bd05055591b",
+        "replacementSHA256": "b72cd1c35d84219240b5798a9c3d3b329cb763fd100fd09e024c5379061cbbef",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

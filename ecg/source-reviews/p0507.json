@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "page": 507,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "88865f43cb6b7e0c2b3b243bf85f8f5355a3307b1e43f534dc26558f07e7e62d",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Approximately regular (provisional)",
+      "basis": "Visually checked ventricular peaks and measured R–R intervals in original PDF 507",
+      "reason": "R–R intervals: 0.756 s, 0.748 s, 0.74 s, 0.74 s, 0.74 s, 0.74 s, 0.724 s. These describe the short displayed sample, not an independently adjudicated rhythm diagnosis."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 81 bpm",
+      "basis": "Assumed course speed of 25 mm/s; independently checked 150 small-square intervals across 738 pixels",
+      "reason": "Mean R–R estimate 81.0 bpm; six-second count estimate 80 bpm. These methods differ with phase at the strip endpoints, especially for irregular rhythms. The strip itself has no printed paper-speed label."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Recurring rounded upward pre-QRS candidates are followed by a small positive ventricular initial component and a dominant negative deflection. Baseline drift does not erase the repeating sequence; polarity alone gives no diagnosis.",
+      "basis": "Original PDF page 507; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.11–0.19 s (conditional, unvalidated)",
+      "basis": "Original PDF page 507; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Conditional on the repeated isolated candidates being P waves; endpoint bounds include manual placement uncertainty. Approximate reader-union envelope, conditional on course speed and candidate P identity. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.07–0.18 s (conditional, unvalidated)",
+      "basis": "Original PDF page 507; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "QRS begins at the small initial positive component, not the dominant negative trough. Offset is where negative recovery becomes the much slower sloping segment. Approximate reader-union envelope, conditional on course speed. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately regular ventricular spacing over this short strip, with a conditional mean rate near 81 bpm and repeated P-like lobes before the predominantly negative complexes. Sinus origin requires confirmation of uniform sinus P waves and a consistent 1:1 P-QRS relationship. Polarity alone is not diagnostic, and the conditional interval envelopes do not establish normal conduction.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "Calibration assumes the course’s 25 mm/s convention (PDF pages 228, 230, 231 and 234). Every image grid was checked separately; the assumption is not a per-strip speed label.",
+    "Peak positions are approximate to about ±2 source pixels; morphology, low-amplitude P waves and boundaries remain uncertain. This is not a statistical confidence interval."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      135,
+      228,
+      320,
+      411,
+      502,
+      593,
+      684,
+      773
+    ],
+    "rrPixels": [
+      93,
+      92,
+      91,
+      91,
+      91,
+      91,
+      89
+    ],
+    "gridSpanPixels": 738,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean RR pixels × 6 / gridSpanPixels)",
+    "runtimeScoringAllowed": false
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0507.json",
+    "baselineReviewSHA256": "701b6a4bc7f042f596e76ef24352531639334137d8f76c9f7dfa4fcc2bf4526e",
+    "sourceImageSHA256": "88865f43cb6b7e0c2b3b243bf85f8f5355a3307b1e43f534dc26558f07e7e62d",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_provisional_observation",
+        "secondsRange": null,
+        "reason": "Recurring rounded upward pre-QRS candidates are followed by a small positive ventricular initial component and a dominant negative deflection. Baseline drift does not erase the repeating sequence; polarity alone gives no diagnosis.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/8"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/7"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/7"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=507]"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.11,
+          0.19
+        ],
+        "reason": "Conditional on the repeated isolated candidates being P waves; endpoint bounds include manual placement uncertainty. Approximate reader-union envelope, conditional on course speed and candidate P identity.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/8"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/7"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/7"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=507]"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.07,
+          0.18
+        ],
+        "reason": "QRS begins at the small initial positive component, not the dominant negative trough. Offset is where negative recovery becomes the much slower sloping segment. Approximate reader-union envelope, conditional on course speed.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/8"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/7"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/7"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=507]"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR and QRS values are withheld because reliable onset/end boundaries have not been established. A narrow/normal interval must not be assumed."
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0507.json",
+    "baselineReviewSHA256": "ef2a534d27c8bc8d05ab392de44ff716e7b5b0ef604e8dba8169592b4b65cf0c",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "ef2a534d27c8bc8d05ab392de44ff716e7b5b0ef604e8dba8169592b4b65cf0c",
+      "afterOriginal30AddendumSHA256": "ef2a534d27c8bc8d05ab392de44ff716e7b5b0ef604e8dba8169592b4b65cf0c",
+      "afterOptionalInterpretationSHA256": "5ae556852c8970118b5b8c087785e72e8c8435322b234a9767ef85dd76bed1ee",
+      "afterOptionalStatusSHA256": "5ae556852c8970118b5b8c087785e72e8c8435322b234a9767ef85dd76bed1ee"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

@@ -1,0 +1,846 @@
+{
+  "version": 1,
+  "page": 798,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "ce00a8199fb731a08dab6ecb10e51dc1299c4b72cf79bb947cb69693e9ba43c1",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Retained peak spacings are similar with small differences across the selected window.",
+      "basis": "Provisional positive peak-to-peak spacing in original PDF 798",
+      "reason": "Selected pixel gaps: 81.5 px, 81.5 px, 83 px, 82 px, 80 px, 79 px, 79.5 px, 80 px. These describe this brief sample, not a validated rhythm classification. The positive extreme of each comparable sharp dominant event is retained consistently. Smaller following shoulders, negative notches and broad humps are not substituted as event phases. Every native original was inspected individually before selecting these windows."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 91 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s (0.2 seconds per major grid interval); 11 detected lines enclose 10 major horizontal intervals across 245 pixels in the observed calibration segment.",
+      "reason": "8 retained positive peak-to-peak intervals have mean spacing 80.81 px, giving 91.0 bpm. Individual-interval rate range withheld in this provisional review. Only the conditional elapsed-window mean is projected. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate. Only the first-to-last retained-event window mean is conditionally projected, with assumed 25 mm/s. It is not a sustained-rate claim. All individual-interval rate and seconds projections are withheld."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small pointed precomplex candidates recur after separately visible broader positive recovery waves. Positive/negative components return toward short sloping shelves.",
+      "basis": "Original PDF page 798; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Do the visible discrete preceding features have atrial origin? Distinguish morphology from electrical identity. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Event-specific PR estimates (conditional, unvalidated): p798-e1: approximately 0.20–0.30 s; p798-e2: approximately 0.22–0.30 s; p798-e3: approximately 0.23–0.30 s. No pooled page-level duration.",
+      "basis": "Original PDF page 798; independently reconciled endpoint bands and two local major-grid spans; assumes course 25 mm/s, 0.2 seconds per observed major cell; major-grid-only timing, with no inferred minor-line count; not a verified per-strip speed",
+      "reason": "Selected discrete preceding-feature onset to the following sharp-complex onset is geometrically measurable. The preceding features are separate from the earlier broad recovery and the following sharp onset. Both identities remain conditional; this is a candidate PR scenario, not an established conduction interval. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Only if the preceding features are P onsets and the following sharp departures are QRS onsets. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Do these discrete preceding features have atrial origin, and do the selected sharp departures mark QRS onset? Establish the association before treating candidate onset-to-onset geometry as PR. PR endpoint roles: candidate P onset to candidate QRS onset; these are not QRS-duration endpoints. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Each event-specific envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Event-specific QRS estimates (conditional, unvalidated): p798-e1: approximately 0.04–0.17 s; p798-e2: approximately 0.04–0.17 s; p798-e3: approximately 0.04–0.17 s. No pooled page-level duration.",
+      "basis": "Original PDF page 798; independently reconciled endpoint bands and two local major-grid spans; assumes course 25 mm/s, 0.2 seconds per observed major cell; major-grid-only timing, with no inferred minor-line count; not a verified per-strip speed",
+      "reason": "Selected initial sharp departures to early return shoulders or shelves provide conditional QRS geometry. Later broad recovery and return to the original baseline are excluded. These endpoints are visible landmarks, not established electrical ventricular onset or termination. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Do the selected initial departures and early return shoulders or shelves mark ventricular onset and termination, rather than intermediate geometric knees? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Each event-specific envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately 91 bpm (conditional mean-interval estimate). Retained peak spacings are similar with small differences across the selected window. Tall upright spikes with small terminal negative notches recur at similar spacing. Small positive features and broader rounded recovery coexist between spikes; selected geometric separation does not identify their origin. No named rhythm, atrial origin or conduction pattern is established. Candidate PR geometry remains event-specific only: p798-e1 0.20-0.30 s, p798-e2 0.22-0.30 s, p798-e3 0.23-0.30 s. No page-level PR range is supplied. These geometric bounds do not establish true P identity, constant or progressive PR, first-degree block or full-strip conduction. QRS candidates remain event-specific only, with no pooled page range or established common morphology.",
+      "basis": "Independently reviewed educational descriptive synthesis of the original raster and conditional source measurements; not a source-authored or educator-validated rhythm answer",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional PR candidate onset-to-onset estimates and QRS onset-to-terminal estimates are restricted to the named sampled events and remain unvalidated; no pooled page-level interval or common morphology is established. Qualified ECG educator review has not occurred. Optional educational description only. Electrical identities remain conditional. Timing is major-grid-only at assumed course 25 mm/s. Endpoint envelopes describe uncertainty, not physiological variability, constant PR, progression, common morphology or a validated width class. Named event ranges remain separate, including null page-level ranges. No source-authored key, clinical certification, scoring eligibility or educator endorsement is supplied."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "No clinical diagnosis, validated P-wave identity, numerical QT, scoring answer or educator validation is supplied. PR has unvalidated conditional endpoint envelopes for the named events only; no page-level range is supplied. QRS has unvalidated conditional endpoint envelopes for the named events only; no page-level range is supplied.",
+    "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+    "Private unvalidated educational observations; qualified educator review is outstanding.",
+    "Manual event selection and raster precision do not establish clinical validity.",
+    "Actual bold-grid coordinates detected independently in two trace-free bands; each accepted major interval contains five directly detected minor subdivisions.",
+    "25 mm/s and 0.2 seconds per major interval are assumed, not verified on this strip. Calibration is local only; no whole-strip duration is inferred.",
+    "The positive extreme of each comparable sharp dominant event is retained consistently. Smaller following shoulders, negative notches and broad humps are not substituted as event phases.",
+    "Every native original was inspected individually before selecting these windows.",
+    "The trace begins and ends outside the retained first-to-last peak window; no duration is assigned to those margins.",
+    "No visible interior dominant event is omitted from the retained window; smaller intervening deflections are not assigned validated wave identity.",
+    "Only the first-to-last retained-event window mean is conditionally projected, with assumed 25 mm/s. It is not a sustained-rate claim.",
+    "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      121.5,
+      203.0,
+      284.5,
+      367.5,
+      449.5,
+      529.5,
+      608.5,
+      688.0,
+      768.0
+    ],
+    "landmarkType": "positive peak-to-peak dominant event phase",
+    "rrPixels": [
+      81.5,
+      81.5,
+      83.0,
+      82.0,
+      80.0,
+      79.0,
+      79.5,
+      80.0
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 245,
+    "gridIntervalCount": 10,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * assumed seconds per observed grid interval / pixels per grid interval)",
+    "intervalCount": 8,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-786-805-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/round9/essential-status-wording.patch.json",
+    "patchSHA256": "71b4cf51d69d912b6911d94ec7510d566df958ce4df4b173c77b3c825f5905da",
+    "priorFieldSHA256": "5ef1ba0a69d24afa4bbc863f31ba36b6a4f9c81bd1e28934039d7efc62fc5f71",
+    "replacementFieldSHA256": "7f62ee0c0e6975a339de84d18e09db30e1de73ccb8ed4ee1669037e906d3cabe",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round9/final-field-decisions.json",
+    "decisionInputSHA256": "15bcf2e0ccedc7a712bf07e9cb8115154b14cf31efb393502a28e1f07b57b844",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0798.json",
+    "baselineReviewSHA256": "452da0c2f42146914266ed8a26f2c46a8f4bf38960513cb64f9612f5396f004f",
+    "sourceImageSHA256": "ce00a8199fb731a08dab6ecb10e51dc1299c4b72cf79bb947cb69693e9ba43c1",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 798,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "5f8bd9db1b0b8a5f56aeacfe0633fe5e03a4b1d010cf2ba2276a5d303963f819",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=798]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=798]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=798"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=798"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=798].p"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-second.json",
+            "sha256": "25cf75e2b68fce999901c2c4b7b581f1dc12aa3bd46cf5fcce7d9a6cd916ab8c",
+            "selector": "page 798 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Small pointed precomplex candidates recur after separately visible broader positive recovery waves. Positive/negative components return toward short sloping shelves.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Do the visible discrete preceding features have atrial origin? Distinguish morphology from electrical identity.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 798,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "5f8bd9db1b0b8a5f56aeacfe0633fe5e03a4b1d010cf2ba2276a5d303963f819",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=798]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=798]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=798"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=798"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=798].pr"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-second.json",
+            "sha256": "25cf75e2b68fce999901c2c4b7b581f1dc12aa3bd46cf5fcce7d9a6cd916ab8c",
+            "selector": "page 798 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_conditional_range",
+        "observation": "Selected discrete preceding-feature onset to the following sharp-complex onset is geometrically measurable. The preceding features are separate from the earlier broad recovery and the following sharp onset. Both identities remain conditional; this is a candidate PR scenario, not an established conduction interval.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.22,
+          0.3
+        ],
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Do these discrete preceding features have atrial origin, and do the selected sharp departures mark QRS onset? Establish the association before treating candidate onset-to-onset geometry as PR.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness.",
+        "endpoint_scenarios": [
+          {
+            "event_id": "p798-e1",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              77,
+              81
+            ],
+            "reviewer_terminal_band": [
+              109,
+              113
+            ],
+            "author_initial_band": [
+              80,
+              83
+            ],
+            "author_terminal_band": [
+              111,
+              114
+            ],
+            "enclosing_initial_band": [
+              77,
+              83
+            ],
+            "enclosing_terminal_band": [
+              109,
+              114
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.20662251655629138,
+              0.2979865771812081
+            ],
+            "seconds_range": [
+              0.2,
+              0.3
+            ]
+          },
+          {
+            "event_id": "p798-e2",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              160,
+              164
+            ],
+            "reviewer_terminal_band": [
+              193,
+              197
+            ],
+            "author_initial_band": [
+              162,
+              165
+            ],
+            "author_terminal_band": [
+              194,
+              197
+            ],
+            "enclosing_initial_band": [
+              160,
+              165
+            ],
+            "enclosing_terminal_band": [
+              193,
+              197
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.22222222222222224,
+              0.29838709677419356
+            ],
+            "seconds_range": [
+              0.22,
+              0.3
+            ]
+          },
+          {
+            "event_id": "p798-e3",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              244,
+              248
+            ],
+            "reviewer_terminal_band": [
+              277,
+              281
+            ],
+            "author_initial_band": [
+              244,
+              247
+            ],
+            "author_terminal_band": [
+              277,
+              280
+            ],
+            "enclosing_initial_band": [
+              244,
+              248
+            ],
+            "enclosing_terminal_band": [
+              277,
+              281
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.23046357615894042,
+              0.2979865771812081
+            ],
+            "seconds_range": [
+              0.23,
+              0.3
+            ]
+          }
+        ],
+        "range_scope": "event-specific-only",
+        "event_specific_seconds_ranges": [
+          {
+            "event_id": "p798-e1",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              77,
+              81
+            ],
+            "reviewer_terminal_band": [
+              109,
+              113
+            ],
+            "author_initial_band": [
+              80,
+              83
+            ],
+            "author_terminal_band": [
+              111,
+              114
+            ],
+            "enclosing_initial_band": [
+              77,
+              83
+            ],
+            "enclosing_terminal_band": [
+              109,
+              114
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.20662251655629138,
+              0.2979865771812081
+            ],
+            "seconds_range": [
+              0.2,
+              0.3
+            ]
+          },
+          {
+            "event_id": "p798-e2",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              160,
+              164
+            ],
+            "reviewer_terminal_band": [
+              193,
+              197
+            ],
+            "author_initial_band": [
+              162,
+              165
+            ],
+            "author_terminal_band": [
+              194,
+              197
+            ],
+            "enclosing_initial_band": [
+              160,
+              165
+            ],
+            "enclosing_terminal_band": [
+              193,
+              197
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.22222222222222224,
+              0.29838709677419356
+            ],
+            "seconds_range": [
+              0.22,
+              0.3
+            ]
+          },
+          {
+            "event_id": "p798-e3",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              244,
+              248
+            ],
+            "reviewer_terminal_band": [
+              277,
+              281
+            ],
+            "author_initial_band": [
+              244,
+              247
+            ],
+            "author_terminal_band": [
+              277,
+              280
+            ],
+            "enclosing_initial_band": [
+              244,
+              248
+            ],
+            "enclosing_terminal_band": [
+              277,
+              281
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.23046357615894042,
+              0.2979865771812081
+            ],
+            "seconds_range": [
+              0.23,
+              0.3
+            ]
+          }
+        ],
+        "candidate_identity_condition": "Only if the preceding features are P onsets and the following sharp departures are QRS onsets."
+      },
+      {
+        "page": 798,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "5f8bd9db1b0b8a5f56aeacfe0633fe5e03a4b1d010cf2ba2276a5d303963f819",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=798]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=798]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=798"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=798"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=798].qrs"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-second.json",
+            "sha256": "25cf75e2b68fce999901c2c4b7b581f1dc12aa3bd46cf5fcce7d9a6cd916ab8c",
+            "selector": "page 798 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_conditional_range",
+        "observation": "Selected initial sharp departures to early return shoulders or shelves provide conditional QRS geometry. Later broad recovery and return to the original baseline are excluded. These endpoints are visible landmarks, not established electrical ventricular onset or termination.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.05,
+          0.17
+        ],
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Do the selected initial departures and early return shoulders or shelves mark ventricular onset and termination, rather than intermediate geometric knees?",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness.",
+        "endpoint_scenarios": [
+          {
+            "event_id": "p798-e1",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              109,
+              113
+            ],
+            "reviewer_terminal_band": [
+              121,
+              129
+            ],
+            "author_initial_band": [
+              111,
+              114
+            ],
+            "author_terminal_band": [
+              120,
+              124
+            ],
+            "enclosing_initial_band": [
+              109,
+              114
+            ],
+            "enclosing_terminal_band": [
+              120,
+              129
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.04768211920529802,
+              0.16107382550335572
+            ],
+            "seconds_range": [
+              0.04,
+              0.17
+            ]
+          },
+          {
+            "event_id": "p798-e2",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              193,
+              197
+            ],
+            "reviewer_terminal_band": [
+              205,
+              213
+            ],
+            "author_initial_band": [
+              194,
+              197
+            ],
+            "author_terminal_band": [
+              203,
+              207
+            ],
+            "enclosing_initial_band": [
+              193,
+              197
+            ],
+            "enclosing_terminal_band": [
+              203,
+              213
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.04761904761904763,
+              0.16129032258064516
+            ],
+            "seconds_range": [
+              0.04,
+              0.17
+            ]
+          },
+          {
+            "event_id": "p798-e3",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              277,
+              281
+            ],
+            "reviewer_terminal_band": [
+              288,
+              297
+            ],
+            "author_initial_band": [
+              277,
+              280
+            ],
+            "author_terminal_band": [
+              287,
+              291
+            ],
+            "enclosing_initial_band": [
+              277,
+              281
+            ],
+            "enclosing_terminal_band": [
+              287,
+              297
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.04768211920529802,
+              0.16107382550335572
+            ],
+            "seconds_range": [
+              0.04,
+              0.17
+            ]
+          }
+        ],
+        "range_scope": "event-specific-only",
+        "event_specific_seconds_ranges": [
+          {
+            "event_id": "p798-e1",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              109,
+              113
+            ],
+            "reviewer_terminal_band": [
+              121,
+              129
+            ],
+            "author_initial_band": [
+              111,
+              114
+            ],
+            "author_terminal_band": [
+              120,
+              124
+            ],
+            "enclosing_initial_band": [
+              109,
+              114
+            ],
+            "enclosing_terminal_band": [
+              120,
+              129
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.04768211920529802,
+              0.16107382550335572
+            ],
+            "seconds_range": [
+              0.04,
+              0.17
+            ]
+          },
+          {
+            "event_id": "p798-e2",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              193,
+              197
+            ],
+            "reviewer_terminal_band": [
+              205,
+              213
+            ],
+            "author_initial_band": [
+              194,
+              197
+            ],
+            "author_terminal_band": [
+              203,
+              207
+            ],
+            "enclosing_initial_band": [
+              193,
+              197
+            ],
+            "enclosing_terminal_band": [
+              203,
+              213
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.04761904761904763,
+              0.16129032258064516
+            ],
+            "seconds_range": [
+              0.04,
+              0.17
+            ]
+          },
+          {
+            "event_id": "p798-e3",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              277,
+              281
+            ],
+            "reviewer_terminal_band": [
+              288,
+              297
+            ],
+            "author_initial_band": [
+              277,
+              280
+            ],
+            "author_terminal_band": [
+              287,
+              291
+            ],
+            "enclosing_initial_band": [
+              277,
+              281
+            ],
+            "enclosing_terminal_band": [
+              287,
+              297
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.04768211920529802,
+              0.16107382550335572
+            ],
+            "seconds_range": [
+              0.04,
+              0.17
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0798.json",
+    "baselineReviewSHA256": "b3a953fa9a3ebc26aaed79c1887d9a013ebb8e8291208c3f18a3c0e6f6b7b034",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "09047ad38ec4d9bddea18d2437465f90e728a31a86e550c3abf675421f5f8f1e",
+      "afterOriginal30AddendumSHA256": "09047ad38ec4d9bddea18d2437465f90e728a31a86e550c3abf675421f5f8f1e",
+      "afterOptionalInterpretationSHA256": "6c51f6b04eef57240f8e2f8b20d052eba81b9c1cd997fb7c77a1a33003824fdb",
+      "afterOptionalStatusSHA256": "6c51f6b04eef57240f8e2f8b20d052eba81b9c1cd997fb7c77a1a33003824fdb"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round9/optional-educational.patch.json",
+      "sha256": "1aa262c103b8df85e406b0d07c0cee7056d7bd6452d00d1c1b6811eda0c318cf",
+      "schemaVariant": "round",
+      "round": 9
+    },
+    "essentialLimitations": [
+      {
+        "original": "Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "replacement": "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "originalSHA256": "f0bc4f8041eb63e3fd8190f4bd79c2784f15b66f2b143952363d4dc7b9350bc7",
+        "replacementSHA256": "1876fdbad61d6f84eae95947098313616f842f76cdb228378fffb85745f76a28",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "All individual-interval rate and seconds projections are withheld.",
+        "replacement": "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+        "originalSHA256": "8217592b05aec681f23fc09b481a4a6d404f2eba279ab528e79e2bd05055591b",
+        "replacementSHA256": "506a3797de5c5004848fa227b505bdc95fb731c6dbda548750e18ca4be7d9501",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "No diagnosis, validated P-wave identity, PR/QRS/QT, scoring or educator-validation claim.",
+        "replacement": "No clinical diagnosis, validated P-wave identity, numerical QT, scoring answer or educator validation is supplied. PR has unvalidated conditional endpoint envelopes for the named events only; no page-level range is supplied. QRS has unvalidated conditional endpoint envelopes for the named events only; no page-level range is supplied.",
+        "originalSHA256": "414b45c00fcbe850f07af76873538b0e0aff9e63490a7f7fa2e3902bfb7d4557",
+        "replacementSHA256": "7859744f6f83c056d2036bfca44adc9f9af8145dc9136df4ad8781ac6d6e2fb5",
+        "origin": "essential-limitations"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

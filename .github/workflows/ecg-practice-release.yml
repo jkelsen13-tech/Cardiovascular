@@ -1,0 +1,43 @@
+name: ECG practice release verification
+on:
+  push:
+    branches: [main, 'release/ecg-practice-bank-*']
+  pull_request:
+    paths: ['guided-study/**', 'ecg/**', 'private-course/**', 'tools/sequential-course/**', 'BUILD-IDENTITY.json', 'index.html', 'cmt-quiz.html', '.github/workflows/ecg-practice-release.yml']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify exact public inventory and provisional review contracts
+        run: |
+          node tools/sequential-course/release-contract.cjs
+          node tools/sequential-course/question-first-contract.cjs
+          node tools/sequential-course/display-image-contract.cjs
+      - name: Install existing browser-test dependency
+        run: |
+          npm install --no-save --package-lock=false playwright@1.55.1
+          npx playwright install --with-deps chromium
+      - name: Real rendered practice, classifications and protected playback
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > "$RUNNER_TEMP/practice-http.log" 2>&1 &
+          export CHROMIUM_PATH="$(command -v google-chrome)"
+          export CARDIO_BASE_URL=http://127.0.0.1:8765/
+          node tools/sequential-course/release-browser.cjs
+          node tools/sequential-course/reviewed-classifications-browser.cjs
+          node tools/sequential-course/preplay-guard-browser.cjs
+      - name: Preserve test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ecg-practice-release-evidence
+          path: |
+            course-classification-evidence/
+            course-preplay-evidence/
+          if-no-files-found: ignore

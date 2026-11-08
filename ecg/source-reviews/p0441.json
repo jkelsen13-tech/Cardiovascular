@@ -1,0 +1,177 @@
+{
+  "version": 1,
+  "page": 441,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "16697232b6adbbbb451fa47732e135e5e38f8b1b55f9f88426a39b00f67c28c6",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Nine trough-to-trough intervals range 107.5–111.5 px, approximately regular with modest variation over this short sample.",
+      "basis": "Provisional comparison of 9 complete negative trough-to-trough intervals in original PDF 441",
+      "reason": "Observed intervals: 109 px, 110.5 px, 111.5 px, 109 px, 109 px, 108 px, 108.5 px, 108 px, 107.5 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 106 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 151 grid lines enclose 150 small horizontal intervals across 1160.5 pixels.",
+      "reason": "9 retained negative trough-to-trough intervals have mean spacing 109.00 px, giving 106.5 bpm. Individual-interval estimates span approximately 104.1–108.0 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small positive bumps appear before the reviewed complexes, but their beginnings rise from the tail of a larger preceding rounded deflection without a clean intervening baseline. They cannot be assigned a dependable atrial onset from this raster.",
+      "basis": "Original PDF page 441; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Ten repeated sharp positive excursions immediately followed by deeper negative troughs, then broad positive humps. A smaller bump is visible before each interior complex. Dominant negative troughs, rather than positive peaks, are the consistent fiducials.",
+      "basis": "New descriptive observation of the original raster; not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: The apparent pre-complex bump merges with the preceding recovery. The candidate onset bands are marked rejected for numeric PR: their beginning could belong to the preceding deflection, and P identity is unconfirmed.",
+    "QRS duration unresolved: The long curved return from the negative trough blends continuously into the following segment. Candidate terminal bands bracket a visual flattening but do not establish a defensible QRS/J-point boundary. Numeric QRS is withheld.",
+    "Smaller pre-complex bumps are visible; no definitive P-wave identity or numerical atrioventricular relationship is assigned.",
+    "The 150-small-interval span would be six seconds only under the assumed course convention. Unlabeled top marks do not independently verify that duration. Only measured horizontal spacing is used for time, not vertical pixel spacing.",
+    "Approximate ±2 source pixels per fiducial and ±0.15 pixels per grid pitch are illustrative sensitivity allowances, not confidence limits. They exclude unknown speed, source distortion and incorrect waveform identification.",
+    "A mean rate can conceal changing spacing. Read the regularity description and individual-interval range; no sustained rate or diagnostic rhythm is inferred.",
+    "Pink occupancy is threshold-sensitive because horizontal grid lines and antialiasing affect projections. Selected clean bands independently resolve matching line sequences, without inserted or imputed lines. Lower thresholds can merge lines; higher thresholds can miss faint lines. Those trial counts are not used as physical interval counts.",
+    "Broad initial hump near x≈44, later broad humps and smaller intervening bumps are not counted as additional ventricular complexes."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      109.0,
+      218.0,
+      328.5,
+      440.0,
+      549.0,
+      658.0,
+      766.0,
+      874.5,
+      982.5,
+      1090.0
+    ],
+    "landmarkType": "dominant negative trough",
+    "rrPixels": [
+      109.0,
+      110.5,
+      111.5,
+      109.0,
+      109.0,
+      108.0,
+      108.5,
+      108.0,
+      107.5
+    ],
+    "gridSpanPixels": 1160.5,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 9,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-437-450-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0441.json",
+    "baselineReviewSHA256": "4fbd7c61d20795da347b95ec670900419824c008754b4ffb318213b5be148b4a",
+    "sourceImageSHA256": "16697232b6adbbbb451fa47732e135e5e38f8b1b55f9f88426a39b00f67c28c6",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Small positive bumps appear before the reviewed complexes, but their beginnings rise from the tail of a larger preceding rounded deflection without a clean intervening baseline. They cannot be assigned a dependable atrial onset from this raster.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=441]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=441"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "The apparent pre-complex bump merges with the preceding recovery. The candidate onset bands are marked rejected for numeric PR: their beginning could belong to the preceding deflection, and P identity is unconfirmed.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=441]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=441"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "The long curved return from the negative trough blends continuously into the following segment. Candidate terminal bands bracket a visual flattening but do not establish a defensible QRS/J-point boundary. Numeric QRS is withheld.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=441]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=441"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR, QRS, QT/QTi and amplitudes are withheld: thick/resampled boundaries, unvalidated atrial identity and absent per-strip timing/gain labels do not justify numerical onset/offset or amplitude values. No diagnostic rhythm label, clinical interpretation or source-authored answer is assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "86806c7e985cf950a7b05d99607253097fec3531ff63d0bbfb748833aeb2e3aa",
+    "priorFieldSHA256": "2bba72652574be08ef4795782e2f5c1144d4db3cd4f8ef86c48f0edae8143ff2",
+    "replacementFieldSHA256": "56c50e63c6b720f2789e403bbc4e25fb3a3629daad3a1192febd13de65e3248e",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

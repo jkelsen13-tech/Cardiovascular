@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "page": 442,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "ffa43b1de90b560b1807d2272153545424139a81f8785b2947d6cf6f8f4c8c78",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Seven measured intervals range 141–144.5 px, approximately regular over this short sample within modest picking and raster variation.",
+      "basis": "Provisional comparison of 7 complete positive peak-to-peak intervals in original PDF 442",
+      "reason": "Observed intervals: 144 px, 142 px, 141.5 px, 144.5 px, 144 px, 141 px, 143.5 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 81 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 151 grid lines enclose 150 small horizontal intervals across 1161 pixels.",
+      "reason": "7 retained positive peak-to-peak intervals have mean spacing 142.93 px, giving 81.2 bpm. Individual-interval estimates span approximately 80.3–82.3 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Only tiny low-amplitude pre-complex undulations are visible in the reviewed regions. Their height is comparable to the dark-stroke/JPEG uncertainty, so no reliable P onset or P absence is established.",
+      "basis": "Original PDF page 442; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.02–0.11 s (conditional, unvalidated)",
+      "basis": "Original PDF page 442; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "The sharp-complex beginning and rapid return-to-flatter-segment transition can be bracketed in four repetitions even though atrial activity is unresolved. The small source-pixel span warrants only a broad conditional range. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "Eight sharp positive peaks on a low-amplitude, slowly undulating intervening trace, with small downward returns. Discrete atrial deflections cannot be confidently separated from baseline irregularity in this raster.",
+      "basis": "New descriptive observation of the original raster; not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: No defensible P-onset band exists. Regions x165–178, 258–270, 349–361 and 441–454 were inspected; tiny wiggles do not separate reliably from baseline and stroke thickness. No P-to-peak or guessed PR is calculated.",
+    "No reliably separable P-wave series is established from the low-amplitude baseline; no absence claim is made.",
+    "The 150-small-interval span would be six seconds only under the assumed course convention. Unlabeled top marks do not independently verify that duration. Only measured horizontal spacing is used for time, not vertical pixel spacing.",
+    "Approximate ±2 source pixels per fiducial and ±0.15 pixels per grid pitch are illustrative sensitivity allowances, not confidence limits. They exclude unknown speed, source distortion and incorrect waveform identification.",
+    "A mean rate can conceal changing spacing. Read the regularity description and individual-interval range; no sustained rate or diagnostic rhythm is inferred.",
+    "Pink occupancy is threshold-sensitive because horizontal grid lines and antialiasing affect projections. Selected clean bands independently resolve matching line sequences, without inserted or imputed lines. Lower thresholds can merge lines; higher thresholds can miss faint lines. Those trial counts are not used as physical interval counts.",
+    "Low baseline undulations are not counted as additional ventricular peaks.",
+    "The final peak near x≈1164.5 is close to the right border, but the peak and return are visible and retained for spacing."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      164.0,
+      308.0,
+      450.0,
+      591.5,
+      736.0,
+      880.0,
+      1021.0,
+      1164.5
+    ],
+    "landmarkType": "positive peak",
+    "rrPixels": [
+      144.0,
+      142.0,
+      141.5,
+      144.5,
+      144.0,
+      141.0,
+      143.5
+    ],
+    "gridSpanPixels": 1161.0,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 7,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-437-450-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0442.json",
+    "baselineReviewSHA256": "10569e603e0f47f322ec308fd62a478ed97532528fcb4fc4a48f0a0b70de2ade",
+    "sourceImageSHA256": "ffa43b1de90b560b1807d2272153545424139a81f8785b2947d6cf6f8f4c8c78",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Only tiny low-amplitude pre-complex undulations are visible in the reviewed regions. Their height is comparable to the dark-stroke/JPEG uncertainty, so no reliable P onset or P absence is established.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=442]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=442"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "No defensible P-onset band exists. Regions x165–178, 258–270, 349–361 and 441–454 were inspected; tiny wiggles do not separate reliably from baseline and stroke thickness. No P-to-peak or guessed PR is calculated.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=442]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=442"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.02,
+          0.11
+        ],
+        "reason": "The sharp-complex beginning and rapid return-to-flatter-segment transition can be bracketed in four repetitions even though atrial activity is unresolved. The small source-pixel span warrants only a broad conditional range. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=442]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=442"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR, QRS, QT/QTi and amplitudes are withheld: thick/resampled boundaries, unvalidated atrial identity and absent per-strip timing/gain labels do not justify numerical onset/offset or amplitude values. No diagnostic rhythm label, clinical interpretation or source-authored answer is assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "2160f2e52a8c92b1ebe2d64b01bfe9ad3e6178071335b4958354c6c32576c3ee",
+    "priorFieldSHA256": "f767526785472d87db815207e6986726a3dd8a02f23c50cf028f28c771c4ca8e",
+    "replacementFieldSHA256": "819f88c43a4f6697fd16bb3d4daf149aa38d0f031cdb006321fca4ebd197c749",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

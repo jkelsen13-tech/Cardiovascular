@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "page": 528,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "e543e316599d96c0129cb01b65a5b4410119c5188bc6fe73af324d0ddee2a355",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Approximately regular (provisional)",
+      "basis": "Visually checked ventricular landmarks on original PDF 528",
+      "reason": "Successive ventricular peak spacings: 171 px, 172 px, 176 px, 163 px. Descriptive judgment from visible spacing, not a validated diagnostic threshold."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 43 bpm",
+      "basis": "Course-standard 25 mm/s assumption; 150 independently detected small-square intervals across 737 pixels",
+      "reason": "Mean R–R estimate 43.2 bpm; six-second count estimate 50 bpm. All seconds/bpm depend on course-standard 25 mm/s. Count estimate assumes 150 small squares = 6 seconds; endpoint phase and partial complexes affect it. On irregular strips the count estimate is not a stable instantaneous rate. Mean RR describes only intervals between observed peaks."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small upright pre-complex lobes repeat on a slightly drifting baseline before broader positive complexes with a descending shoulder. The larger later positive waves are separate. The first lobe may be cropped, so only interior cycles are measured.",
+      "basis": "Original PDF page 528; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Describes visible morphology/association only, not established P identity, atrial origin or conduction. Confirm the pre-complex lobes are atrial P waves and that the final shoulder-to-plateau transition, rather than the first downstroke knee, is QRS offset. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.12–0.26 s (conditional, unvalidated)",
+      "basis": "Original PDF page 528; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Propose broad conditional candidate PR envelope with shallow lobe onset and initial negative departure included as uncertainty bands. Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability. Confirm the pre-complex lobes are atrial P waves and that the final shoulder-to-plateau transition, rather than the first downstroke knee, is QRS offset. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.06–0.20 s (conditional, unvalidated)",
+      "basis": "Original PDF page 528; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Propose broad conditional QRS envelope including the distinct descending shoulder until return to the low plateau; the peak-to-shoulder distance alone is not the QRS duration. Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability. Confirm the pre-complex lobes are atrial P waves and that the final shoulder-to-plateau transition, rather than the first downstroke knee, is QRS offset. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Slow, near-regular ventricular rhythm near 43 bpm by conditional mean RR, with separate P-like lobes before the complete interior complexes. Sinus bradycardia is a teaching possibility only if uniform sinus-compatible P morphology in a known lead and the P-to-QRS relationship are confirmed throughout. The first clipped context remains excluded, and prominent later broad waves are not extra QRS complexes. The broad conditional PR/QRS envelopes do not establish PR constancy, normal conduction, first-degree delay or a widened-QRS mechanism.",
+      "basis": "New independently reviewed educational synthesis of the exact original raster, conditional source measurements and stated course criteria; not a source-authored or educator-validated rhythm answer",
+      "reason": "Qualified ECG educator review has not occurred. Visible-deflection observations are supplied without validated P-wave identity. PR and QRS have unvalidated conditional estimates. Optional educational comparison only, not a source-authored answer or confirmed rhythm diagnosis. A candidate atrial association is not proof of sinus origin. Timing retains the recorded calibration assumptions and holds. Interval envelopes apply to the selected endpoint-review cycles and describe boundary uncertainty, not actual beat-to-beat variability, normal conduction or a full-strip atrial census. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "Independently measured span is 737 px, not 738. Timing calculation uses its measured 150-square span; tick endpoints and grid edges differ slightly due to raster positioning.",
+    "Excluded x154,326,496,672 proposals: T waves.",
+    "P-wave text is a provisional description, not validated atrial identity. PR has an unvalidated conditional endpoint envelope for selected complexes. QRS has an unvalidated conditional endpoint envelope for selected complexes. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+    "Calibration assumes the course’s 25 mm/s convention, not speed metadata printed on each strip. Peak uncertainty is approximately ±2 source pixels, excluding errors in identifying the waveform."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      108,
+      279,
+      451,
+      627,
+      790
+    ],
+    "rrPixels": [
+      171,
+      172,
+      176,
+      163
+    ],
+    "gridSpanPixels": 737,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean RR pixels × 6 / gridSpanPixels)",
+    "runtimeScoringAllowed": false
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "87a6a1cf5cbea7cd7659be171e0089f454ba2a3a517bb7a6c5ae62a83f2ae6d3",
+    "replacementFieldSHA256": "a4ca180bddb8de8fbc94ab99ad99fbf0d4ead23fc90b23937d6017b8fa2ba418",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round3/final-field-decisions.json",
+    "decisionInputSHA256": "4a0b54bb731c829b8e0082dc19e7ab3c6589115151853d577511b1a170a4c9c6",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0528.json",
+    "baselineReviewSHA256": "6fa780d37aedfb84e53dc937a39c2af7785f7d2a3c8d1ca911647da3764abd7f",
+    "sourceImageSHA256": "e543e316599d96c0129cb01b65a5b4410119c5188bc6fe73af324d0ddee2a355",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 528,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=528]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=528] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=528]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=528]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=528] if present"
+          },
+          {
+            "path": "pages520-529/field-proposals.json",
+            "sha256": "236aed838f14740f4511be620557a135e438256853069937a5df94a1291e2a65",
+            "selector": "pages[page=528]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=528] if present"
+          }
+        ],
+        "source_native_sha256": "cb16b9665d07143563085b70d947fe9d115425975c4da66b4cf7f8ad53f7f592",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Small upright pre-complex lobes repeat on a slightly drifting baseline before broader positive complexes with a descending shoulder. The larger later positive waves are separate. The first lobe may be cropped, so only interior cycles are measured.",
+        "seconds_range": null,
+        "identity_caveat": "Describes visible morphology/association only, not established P identity, atrial origin or conduction.",
+        "remaining_educator_question": "Confirm the pre-complex lobes are atrial P waves and that the final shoulder-to-plateau transition, rather than the first downstroke knee, is QRS offset."
+      },
+      {
+        "page": 528,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=528]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=528] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=528]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=528]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=528] if present"
+          },
+          {
+            "path": "pages520-529/field-proposals.json",
+            "sha256": "236aed838f14740f4511be620557a135e438256853069937a5df94a1291e2a65",
+            "selector": "pages[page=528]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=528] if present"
+          }
+        ],
+        "source_native_sha256": "cb16b9665d07143563085b70d947fe9d115425975c4da66b4cf7f8ad53f7f592",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pr",
+        "status": "supported_conditional_range",
+        "observation": "Propose broad conditional candidate PR envelope with shallow lobe onset and initial negative departure included as uncertainty bands.",
+        "seconds_range": [
+          0.12,
+          0.26
+        ],
+        "author_seconds_range": [
+          0.12,
+          0.26
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.15,
+          0.25
+        ],
+        "remaining_educator_question": "Confirm the pre-complex lobes are atrial P waves and that the final shoulder-to-plateau transition, rather than the first downstroke knee, is QRS offset.",
+        "conditions": "Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability."
+      },
+      {
+        "page": 528,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=528]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=528] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=528]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=528]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=528] if present"
+          },
+          {
+            "path": "pages520-529/field-proposals.json",
+            "sha256": "236aed838f14740f4511be620557a135e438256853069937a5df94a1291e2a65",
+            "selector": "pages[page=528]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=528] if present"
+          }
+        ],
+        "source_native_sha256": "cb16b9665d07143563085b70d947fe9d115425975c4da66b4cf7f8ad53f7f592",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "observation": "Propose broad conditional QRS envelope including the distinct descending shoulder until return to the low plateau; the peak-to-shoulder distance alone is not the QRS duration.",
+        "seconds_range": [
+          0.06,
+          0.2
+        ],
+        "author_seconds_range": [
+          0.07,
+          0.2
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.06,
+          0.18
+        ],
+        "remaining_educator_question": "Confirm the pre-complex lobes are atrial P waves and that the final shoulder-to-plateau transition, rather than the first downstroke knee, is QRS offset.",
+        "conditions": "Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0528.json",
+    "baselineReviewSHA256": "75e334dbba01cd71c63ec378872d056da480f1e60b8a815aea6389b8b708a252",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "1896909d69d70f2846117d3ae6def6af13ec290b9798b5c291ccdcf015b6613f",
+      "afterOriginal30AddendumSHA256": "1896909d69d70f2846117d3ae6def6af13ec290b9798b5c291ccdcf015b6613f",
+      "afterOptionalInterpretationSHA256": "4149ea718394f06db9438e0fd1edc8503250ee48b1d78a10935866eb810549af",
+      "afterOptionalStatusSHA256": "4149ea718394f06db9438e0fd1edc8503250ee48b1d78a10935866eb810549af"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round3/optional-educational.patch.json",
+      "sha256": "fb7e496e55780aed960bf53adafe2de2cc59ee78c78c136db772f3d5d678bdb0",
+      "schemaVariant": "round",
+      "round": 3
+    },
+    "essentialLimitations": [
+      {
+        "original": "P-wave, PR and QRS answers are withheld because reliable atrial and QRS boundaries have not been established.",
+        "replacement": "P-wave text is a provisional description, not validated atrial identity. PR has an unvalidated conditional endpoint envelope for selected complexes. QRS has an unvalidated conditional endpoint envelope for selected complexes. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+        "originalSHA256": "3595478cd2a8f8525816e46b26b9f6c19e33ee5d84f5a31ac7b8fd91672274a1",
+        "replacementSHA256": "282e5ccffa4392d3ffdbe3603112e89dccb3581c43f4733c8754137d4b65d454",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "version": 1,
+  "page": 311,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "e39bf9f5e0e7ec3323dc7d3bf0394f21eeaba8df47d403736859ae7fb0a0d715",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Only two complete intervals 347 and 335.5 px; modest shortening (3.4% full spread relative to mean). Too short a sequence to characterize sustained regularity.",
+      "basis": "Provisional comparison of 2 ventricular-fiducial intervals in original PDF 311",
+      "reason": "Observed intervals: 347 px, 335.5 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 61 bpm (conditional estimate)",
+      "basis": "Assumed course speed 25 mm/s; 76 grid lines enclose 75 small horizontal intervals across 1039.5 pixels.",
+      "reason": "Mean fiducial spacing 341.25 px gives 60.9 bpm. 2 complete intervals were retained. The strip has no verified speed label. This is interval-derived, not a six-second count."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small bumps precede three spikes, but low amplitude and thick/wandering baseline leave P identity uncertain. Do not assert definite P waves or a fixed PR.",
+      "basis": "Original PDF page 311; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Three sharp upright complexes of broadly similar form on a wandering baseline with lower following rounded humps. Small low-amplitude preceding bumps are visible; their identity is unvalidated. Left-edge low hump is not counted as a ventricular complex.",
+      "basis": "New descriptive observation of the original raster; not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: P-onset bands are exploratory because a small bump may be baseline variation. Terminal shoulder/negative tail versus new baseline is not distinguishable confidently; an arbitrary QRS end would dominate the answer. Neither exploratory band is accepted for numeric intervals.",
+    "QRS duration unresolved: P-onset bands are exploratory because a small bump may be baseline variation. Terminal shoulder/negative tail versus new baseline is not distinguishable confidently; an arbitrary QRS end would dominate the answer. Neither exploratory band is accepted for numeric intervals.",
+    "P-wave identification, atrial origin and conduction relationship remain unadjudicated. Small preceding contours alone do not establish sinus rhythm.",
+    "The grid is rescaled differently in the horizontal and vertical directions. Only independently checked horizontal spacing is used for time. The 75-square span would be about three seconds only under the course timing assumption; no six-second duration is inferred.",
+    "Landmark picking allowance of about ±2 source pixels is illustrative. Sensitivity calculations perturb average grid pitch by ±0.15 pixels and interval length by ±4 pixels; they are not statistical confidence intervals and exclude unknown speed, resampling distortion and incorrect waveform identification.",
+    "At accepted color/projection threshold, both separated sample bands resolve76 vertical lines, with no doubled/missing interval in the extracted sequence. Individual adjacent center spacings vary by rasterization/line thickness; exact coordinates and local-third spacing checks are retained. Grid is stretched horizontally versus vertically, so only horizontal pitch calibrates time. Higher color/projection thresholds can drop faint lines or split thick lines and must not be used as literal counts."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      379.0,
+      726.0,
+      1061.5
+    ],
+    "landmarkType": "Upper extremum of each dominant upright ventricular deflection.",
+    "rrPixels": [
+      347.0,
+      335.5
+    ],
+    "gridSpanPixels": 1039.5,
+    "gridSmallSquareIntervals": 75,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 2,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-300-312-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0311.json",
+    "baselineReviewSHA256": "35cec86c280d38678bcb70874a5025fa7935d91b1e3bb550cd1687fb2045a063",
+    "sourceImageSHA256": "e39bf9f5e0e7ec3323dc7d3bf0394f21eeaba8df47d403736859ae7fb0a0d715",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Small bumps precede three spikes, but low amplitude and thick/wandering baseline leave P identity uncertain. Do not assert definite P waves or a fixed PR.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=311]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=311"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "P-onset bands are exploratory because a small bump may be baseline variation. Terminal shoulder/negative tail versus new baseline is not distinguishable confidently; an arbitrary QRS end would dominate the answer. Neither exploratory band is accepted for numeric intervals.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=311]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=311"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "P-onset bands are exploratory because a small bump may be baseline variation. Terminal shoulder/negative tail versus new baseline is not distinguishable confidently; an arbitrary QRS end would dominate the answer. Neither exploratory band is accepted for numeric intervals.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=311]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=311"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "Raster thickness, baseline drift and indistinct wave onset/offset prevent defensible interval boundaries; no PR or QRS value assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "4ffa57d3e3fd60752a6fa165f0e4c8f990d94192796b3b9fcdd697b2d280b10b",
+    "priorFieldSHA256": "faa70989ba8e897e49e451d1130efafc4de981875fd94ce2ecd02d136922acd3",
+    "replacementFieldSHA256": "dbc6b23880aa657c421d017ef796613895fa948920a685e5ecd0134829b4c8d6",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

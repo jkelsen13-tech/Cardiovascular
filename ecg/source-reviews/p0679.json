@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "page": 679,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "c3c7ecfae1f1a2951eb73ac13f8d0e6ca83611a7b93d753416f163235208fb06",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "The retained upright apices have approximately even spacing with small pixel-spacing variation.",
+      "basis": "Provisional positive peak-to-peak spacing in original PDF 679",
+      "reason": "Selected pixel gaps: 47.5 px, 46.5 px, 48.5 px, 47 px, 48 px, 46.5 px, 47.5 px, 47 px, 47.5 px, 46.5 px, 47.5 px, 46.5 px, 46 px, 47 px. These describe this brief sample, not a validated rhythm classification. No interior visible dominant event was silently omitted. Smaller intervening deflections are not validated atrial or ventricular identities. Similar dominant contour phase supports provisional comparison; one-pixel raster ambiguity remains."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 156 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s (0.2 seconds per major grid interval); 29 detected lines enclose 28 major horizontal intervals across 686 pixels in the observed calibration segment.",
+      "reason": "14 retained positive peak-to-peak intervals have mean spacing 47.11 px, giving 156.0 bpm. Individual-interval rate range withheld in this provisional review. Only the conditional elapsed-window mean is projected. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate. Conditional first-to-last retained event-window mean only; not a sustained rate or full-strip duration. All individual-interval rate projections withheld. Raster uncertainty, unverified speed and imperfect physiologic phase comparability limit precision."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Positive-negative rapid components return to short sloped shelves before rounded waves; the rounded waves are not automatically P.",
+      "basis": "Original PDF page 679; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Only the three reviewer-bracketed native complexes in post-author-review.json. Author initial hold preserved; post-review author response supports this conditional local scenario. No whole-strip width or event census. Visible morphology is not validated electrical origin. Rate holds on627/631/633 remain unchanged. Course 25 mm/s assumption, not verified per-strip printed speed Native local two-band grid calibration with plus/minus1px span bounds Ventricular component identity and early rapid-to-slow junction remain conditional Range is an endpoint scenario hull, not statistical confidence or physiological variability Which small feature, if any, has atrial origin and a defensible onset, and which ventricular event does it precede? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.07–0.20 s (conditional, unvalidated)",
+      "basis": "Original PDF page 679; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Three native negative rebounds have short shelves before the subsequent slower rounded upstroke. Early plateau scenario is bounded independently across samples; later rounded-wave recovery rejected. Author hold retained as disagreement. Only the three reviewer-bracketed native complexes in post-author-review.json. Author initial hold preserved; post-review author response supports this conditional local scenario. No whole-strip width or event census. Visible morphology is not validated electrical origin. Rate holds on627/631/633 remain unchanged. Course 25 mm/s assumption, not verified per-strip printed speed Native local two-band grid calibration with plus/minus1px span bounds Ventricular component identity and early rapid-to-slow junction remain conditional Range is an endpoint scenario hull, not statistical confidence or physiological variability Positive-negative rapid components return to short sloped shelves before rounded waves; the rounded waves are not automatically P. Determine the first ventricular departure and the early rapid-to-slow terminal junction, or explicitly reject that component assignment. Atrial origin and pairing require separate adjudication. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately 156 bpm (conditional mean-interval estimate). The retained upright apices have approximately even spacing with small pixel-spacing variation. Rapid regular repeated up/down complexes and rounded shoulders; component boundaries and independent P unresolved. No named rhythm or atrial origin is established. PR remains withheld. The selected QRS uncertainty envelope crosses 0.12 s and does not establish a narrow/wide class.",
+      "basis": "New independently reviewed educational synthesis of the exact original raster, conditional source measurements and stated course criteria; not a source-authored or educator-validated rhythm answer",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred. Optional educational comparison only, not a source-authored answer or confirmed rhythm diagnosis. A candidate atrial association is not proof of sinus or retrograde origin. Timing retains the recorded calibration assumptions and holds. Interval envelopes apply to the selected endpoint-review cycles and describe boundary uncertainty, not actual beat-to-beat variability, normal conduction or a full-strip atrial census. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Atrial origin and pairing unresolved; no numeric PR answer.",
+    "diagnosis: No diagnostic label.",
+    "p_wave_identity: Not validated.",
+    "pr_interval: No numeric PR.",
+    "QRS has an unvalidated conditional endpoint envelope for selected complexes. Electrical onset/offset boundaries remain unvalidated.",
+    "qt_interval: No numeric QT.",
+    "individual_interval_rates: Every individual-interval rate projection withheld.",
+    "validated_scoring_answers: Unscored and not educator-reviewed.",
+    "whole_strip_duration: Not inferred.",
+    "Derived, private, unvalidated educational observations only; qualified ECG educator review is required.",
+    "All original source bytes remain unchanged. Numerical speed is not independently verified.",
+    "Actual major lines selected from detected colored vertical peaks in two separate bands. Each adjoining major pair contains five detected minor intervals.",
+    "25 mm/s is assumed, not verified on this strip. Each assumed major interval is 0.2 s and each minor interval 0.04 s. Unlabeled top marks do not establish timing. No full-strip duration is inferred.",
+    "No interior visible dominant event was silently omitted. Smaller intervening deflections are not validated atrial or ventricular identities.",
+    "Similar dominant contour phase supports provisional comparison; one-pixel raster ambiguity remains.",
+    "A left-boundary complex near x 91 has a clipped upright component and is excluded before the retained window.",
+    "No visible interior dominant complex is omitted.",
+    "Conditional first-to-last retained event-window mean only; not a sustained rate or full-strip duration.",
+    "All individual-interval rate projections withheld. Raster uncertainty, unverified speed and imperfect physiologic phase comparability limit precision.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      138.0,
+      185.5,
+      232.0,
+      280.5,
+      327.5,
+      375.5,
+      422.0,
+      469.5,
+      516.5,
+      564.0,
+      610.5,
+      658.0,
+      704.5,
+      750.5,
+      797.5
+    ],
+    "landmarkType": "positive peak-to-peak",
+    "rrPixels": [
+      47.5,
+      46.5,
+      48.5,
+      47.0,
+      48.0,
+      46.5,
+      47.5,
+      47.0,
+      47.5,
+      46.5,
+      47.5,
+      46.5,
+      46.0,
+      47.0
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 686,
+    "gridIntervalCount": 28,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * assumed seconds per observed grid interval / pixels per grid interval)",
+    "intervalCount": 14,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-625-683-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/round6/essential-status-wording.patch.json",
+    "patchSHA256": "3c27f25317c312ebef9a65e9eddd10fd53cee2d1df2d0cd1182c85fba8f8b978",
+    "priorFieldSHA256": "1f8b98eec482d9d0902d8342ecc0ee93e8e2a7e901270991bd0aa77221c99078",
+    "replacementFieldSHA256": "cbfb171e4948fdfc87bc2b625bf56e99dcbbbb91d27cf9444f28a6e21a40e532",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round6/final-field-decisions.json",
+    "decisionInputSHA256": "a5cb8c3504e6b1145f5f2cae580264292ebd7ee420a0106f77513256cc5ec19d",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0679.json",
+    "baselineReviewSHA256": "75eeb2dc0ec9ae8dcf9334bb74110fee669c2f58b198f821f7ebe573ba0f7e33",
+    "sourceImageSHA256": "c3c7ecfae1f1a2951eb73ac13f8d0e6ca83611a7b93d753416f163235208fb06",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 679,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "55e22e9b72a7e24d46ceaccb706e7a76fd2efb62b54ea33aa0061efc6b06664c",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round6/original-first-pass.json",
+            "sha256": "31b1f665d5cc0074c2f9c4f2be95f2553d552f3c17fee2107188ced57cd96f57",
+            "selector": "rows[page=679]"
+          },
+          {
+            "path": "independent-interval-review/round6/calibrated-review.json",
+            "sha256": "e6d10e2920d3e14707db44599002471837e5fa02a33a85def4e2b416f61ee1c3",
+            "selector": "rows[page=679].local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round6/post-author-review.json",
+            "sha256": "f9d53d9528dd6182e5aee873002de2c32602a68249d2ca5df8105eb0783359f4",
+            "selector": "rows[page=679]"
+          },
+          {
+            "path": "pages672-683/field-proposals.json",
+            "sha256": "38c0a0ef2f8955592724f0d4cc7f23dffb2f7efa469a739803d071cff3779268",
+            "selector": "pages[page=679].p"
+          },
+          {
+            "path": "independent-interval-review/round6/author-reconciliation-responses.json",
+            "sha256": "9fdc9291a0ad0987ba6c35ead966d8335831e5e6dd88a0be7c6a9a34f55b04e5",
+            "selector": "responses[pages includes 679]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Positive-negative rapid components return to short sloped shelves before rounded waves; the rounded waves are not automatically P.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Only the three reviewer-bracketed native complexes in post-author-review.json. Author initial hold preserved; post-review author response supports this conditional local scenario. No whole-strip width or event census.",
+        "conditions": [
+          "Course 25 mm/s assumption, not verified per-strip printed speed",
+          "Native local two-band grid calibration with plus/minus1px span bounds",
+          "Ventricular component identity and early rapid-to-slow junction remain conditional",
+          "Range is an endpoint scenario hull, not statistical confidence or physiological variability"
+        ],
+        "remaining_educator_question": "Which small feature, if any, has atrial origin and a defensible onset, and which ventricular event does it precede?",
+        "identity_caveat": "Visible morphology is not validated electrical origin. Rate holds on627/631/633 remain unchanged.",
+        "initial_reader_disagreement": false,
+        "post_review_author_response": "Author accepts the restricted conditional scenario or numeric hold as defensible; initial pinned proposal preserved."
+      },
+      {
+        "page": 679,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "55e22e9b72a7e24d46ceaccb706e7a76fd2efb62b54ea33aa0061efc6b06664c",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round6/original-first-pass.json",
+            "sha256": "31b1f665d5cc0074c2f9c4f2be95f2553d552f3c17fee2107188ced57cd96f57",
+            "selector": "rows[page=679]"
+          },
+          {
+            "path": "independent-interval-review/round6/calibrated-review.json",
+            "sha256": "e6d10e2920d3e14707db44599002471837e5fa02a33a85def4e2b416f61ee1c3",
+            "selector": "rows[page=679].local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round6/post-author-review.json",
+            "sha256": "f9d53d9528dd6182e5aee873002de2c32602a68249d2ca5df8105eb0783359f4",
+            "selector": "rows[page=679]"
+          },
+          {
+            "path": "pages672-683/field-proposals.json",
+            "sha256": "38c0a0ef2f8955592724f0d4cc7f23dffb2f7efa469a739803d071cff3779268",
+            "selector": "pages[page=679].pr"
+          },
+          {
+            "path": "independent-interval-review/round6/author-reconciliation-responses.json",
+            "sha256": "9fdc9291a0ad0987ba6c35ead966d8335831e5e6dd88a0be7c6a9a34f55b04e5",
+            "selector": "responses[pages includes 679]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Atrial origin and pairing unresolved; no numeric PR answer.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Only the three reviewer-bracketed native complexes in post-author-review.json. Author initial hold preserved; post-review author response supports this conditional local scenario. No whole-strip width or event census.",
+        "conditions": [
+          "Course 25 mm/s assumption, not verified per-strip printed speed",
+          "Native local two-band grid calibration with plus/minus1px span bounds",
+          "Ventricular component identity and early rapid-to-slow junction remain conditional",
+          "Range is an endpoint scenario hull, not statistical confidence or physiological variability"
+        ],
+        "remaining_educator_question": "Which small feature, if any, has atrial origin and a defensible onset, and which ventricular event does it precede?",
+        "identity_caveat": "Visible morphology is not validated electrical origin. Rate holds on627/631/633 remain unchanged.",
+        "initial_reader_disagreement": false,
+        "post_review_author_response": "Author accepts the restricted conditional scenario or numeric hold as defensible; initial pinned proposal preserved."
+      },
+      {
+        "page": 679,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "55e22e9b72a7e24d46ceaccb706e7a76fd2efb62b54ea33aa0061efc6b06664c",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round6/original-first-pass.json",
+            "sha256": "31b1f665d5cc0074c2f9c4f2be95f2553d552f3c17fee2107188ced57cd96f57",
+            "selector": "rows[page=679]"
+          },
+          {
+            "path": "independent-interval-review/round6/calibrated-review.json",
+            "sha256": "e6d10e2920d3e14707db44599002471837e5fa02a33a85def4e2b416f61ee1c3",
+            "selector": "rows[page=679].local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round6/post-author-review.json",
+            "sha256": "f9d53d9528dd6182e5aee873002de2c32602a68249d2ca5df8105eb0783359f4",
+            "selector": "rows[page=679]"
+          },
+          {
+            "path": "pages672-683/field-proposals.json",
+            "sha256": "38c0a0ef2f8955592724f0d4cc7f23dffb2f7efa469a739803d071cff3779268",
+            "selector": "pages[page=679].qrs"
+          },
+          {
+            "path": "independent-interval-review/round6/author-reconciliation-responses.json",
+            "sha256": "9fdc9291a0ad0987ba6c35ead966d8335831e5e6dd88a0be7c6a9a34f55b04e5",
+            "selector": "responses[pages includes 679]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_conditional_range",
+        "observation": "Three native negative rebounds have short shelves before the subsequent slower rounded upstroke. Early plateau scenario is bounded independently across samples; later rounded-wave recovery rejected. Author hold retained as disagreement.",
+        "seconds_range": [
+          0.07,
+          0.2
+        ],
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.07,
+          0.2
+        ],
+        "sample_scope": "Only the three reviewer-bracketed native complexes in post-author-review.json. Author initial hold preserved; post-review author response supports this conditional local scenario. No whole-strip width or event census.",
+        "conditions": [
+          "Course 25 mm/s assumption, not verified per-strip printed speed",
+          "Native local two-band grid calibration with plus/minus1px span bounds",
+          "Ventricular component identity and early rapid-to-slow junction remain conditional",
+          "Range is an endpoint scenario hull, not statistical confidence or physiological variability"
+        ],
+        "remaining_educator_question": "Positive-negative rapid components return to short sloped shelves before rounded waves; the rounded waves are not automatically P. Determine the first ventricular departure and the early rapid-to-slow terminal junction, or explicitly reject that component assignment. Atrial origin and pairing require separate adjudication.",
+        "identity_caveat": "Visible morphology is not validated electrical origin. Rate holds on627/631/633 remain unchanged.",
+        "initial_reader_disagreement": true,
+        "post_review_author_response": "Author accepts the restricted conditional scenario or numeric hold as defensible; initial pinned proposal preserved."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0679.json",
+    "baselineReviewSHA256": "b33998ba9956ed5f7f5da0cca416967454e81b5bd1d89ffadf4f2e3ddcb2065f",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "c2c4ec02c0b28554bd2d5c20c372e9527591e11000dd5ca7161812f3767f6c83",
+      "afterOriginal30AddendumSHA256": "c2c4ec02c0b28554bd2d5c20c372e9527591e11000dd5ca7161812f3767f6c83",
+      "afterOptionalInterpretationSHA256": "8fd730885f6b386494814884ec3e98290a749c4040adc43c48e6597709de2051",
+      "afterOptionalStatusSHA256": "8fd730885f6b386494814884ec3e98290a749c4040adc43c48e6597709de2051"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round6/optional-educational.patch.json",
+      "sha256": "1ca19877fdaf78678f7ae4a75e431fd5ac2f883db1838bf3b0ad1672aebb212a",
+      "schemaVariant": "round",
+      "round": 6
+    },
+    "essentialLimitations": [
+      {
+        "original": "qrs_duration: No numeric QRS.",
+        "replacement": "QRS has an unvalidated conditional endpoint envelope for selected complexes. Electrical onset/offset boundaries remain unvalidated.",
+        "originalSHA256": "d97a5b6ef44a92c64e6247fdb67ac66222e25c4bec14cb2ce673b7d72b933f3c",
+        "replacementSHA256": "516368b112ed26fcd59ec4300acccdc32df7ee61dc887be9459faffeee325eca",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

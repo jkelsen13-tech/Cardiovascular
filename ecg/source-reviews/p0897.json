@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "page": 897,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "9838ac555b93d30743f1326cb3e2985bf876eecd532c9aabae7ae9be09cea587",
+  "authority": "source-marked-with-limits",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Original source summary",
+  "notice": "Compare your own observations with the original source summary below. Source-reported findings are not independent clinical adjudication and receive no automatic score.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "48 bpm",
+      "basis": "Original printed summary, PDF page 898",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "pr",
+      "value": "0.24 sec",
+      "basis": "Original printed summary, PDF page 898",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "qrs",
+      "value": "0.10 sec",
+      "basis": "Original printed summary, PDF page 898",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "interpretation",
+      "value": "Marked Sinus Bradycardia with 1st Degree\nHeart Block\nAbnormal EKG",
+      "basis": "Verbatim interpretation lines from original PDF page 898",
+      "reason": "These are the source\u2019s qualified assertions. Preserve terms such as \u201cpossible,\u201d \u201ccannot rule out\u201d and \u201cage undetermined\u201d; they are not independently confirmed diagnoses."
+    }
+  ],
+  "sourceAnswerPages": [
+    {
+      "page": 898,
+      "imageRoute": "private-course/page/898.png",
+      "sha256": "80718dd069478bb4859b1188ec6bb5dd9872d9c01df3cd9348c3f114bc72d605"
+    }
+  ],
+  "limitations": [
+    "The image title omits the bradycardic rate; retain both title and detailed summary.",
+    "Regularity and P-wave fields are not transcribed from a separate printed answer here; do not infer them automatically from a diagnosis label."
+  ]
+}

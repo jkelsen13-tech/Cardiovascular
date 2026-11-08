@@ -1,0 +1,319 @@
+{
+  "version": 1,
+  "page": 694,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "29c69b2e1ec29379bfba64c2e0495d1a6e1a55b89036298940c8bbf045a22d1e",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Selected interior peak gaps are similar, with modest variation.",
+      "basis": "Provisional positive peak-to-peak spacing in original PDF 694",
+      "reason": "Selected pixel gaps: 160 px, 162.5 px, 157.5 px. These describe this brief sample, not a validated rhythm classification. The leftmost event near x 100 has little visible pre-event context and is excluded from the selected interior window. All four interior events retained. Pixel landmarks are descriptive; they do not establish validated physiologic phase identity."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 46 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s (0.2 seconds per major grid interval); 13 detected lines enclose 12 major horizontal intervals across 294 pixels in the observed calibration segment.",
+      "reason": "3 retained positive peak-to-peak intervals have mean spacing 160.00 px, giving 45.9 bpm. Individual-interval rate range withheld in this provisional review. Only the conditional elapsed-window mean is projected. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate. Conditional first-to-last retained-window mean only, not a sustained rate. Every individual-interval seconds and rate projection is withheld. Unknown speed, event identity and morphology limit interpretation."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small positive-negative sharp components on drifting noisy baseline. Early return visible, but low amplitude broadens endpoints.",
+      "basis": "Original PDF page 694; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Reviewer three local contour scenarios plus source-pinned author accepted primary scenarios. No whole-strip invariant, event census, sequence completeness or conduction relationship. Visible morphology is not validated electrical origin. Protected identity/rate holds remain; page693 rejected45.5bpm estimate is not reinstated. Course 25 mm/s assumption, not verified per-strip printed speed Native local two-band grid calibration with plus/minus1px span bounds Initial sharp-contour and early rapid-to-slow junction only; electrical QRS identity and termination remain conditional Scenario hull is not statistical confidence, physiological variability or a diagnostic threshold Which feature, if any, has atrial origin and a defensible onset, and which ventricular event does it precede? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.04–0.14 s (conditional, unvalidated)",
+      "basis": "Original PDF page 694; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Selected early return-to-local-baseline scenarios bound the initial sharp contour. Later low-amplitude curvature is not included; exact electrical termination is not verified. Reviewer three local contour scenarios plus source-pinned author accepted primary scenarios. No whole-strip invariant, event census, sequence completeness or conduction relationship. Visible morphology is not validated electrical origin. Protected identity/rate holds remain; page693 rejected45.5bpm estimate is not reinstated. Course 25 mm/s assumption, not verified per-strip printed speed Native local two-band grid calibration with plus/minus1px span bounds Initial sharp-contour and early rapid-to-slow junction only; electrical QRS identity and termination remain conditional Scenario hull is not statistical confidence, physiological variability or a diagnostic threshold Small positive-negative sharp components on drifting noisy baseline. Early return visible, but low amplitude broadens endpoints. Adjudicate the first ventricular departure and terminal rapid-to-slow junction separately from atrial identity. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Slow selected-complex sequence with similar interior gaps and a conditional mean near 46 bpm over three intervals. Small positive-negative contours lie on a drifting baseline. Atrial origin, PR and QRS-width classification remain unresolved; the rate alone does not select an escape or sinus mechanism.",
+      "basis": "New independently reviewed educational synthesis of the exact original raster, conditional source measurements and stated course criteria; not a source-authored or educator-validated rhythm answer",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred. Optional educational comparison only, not a source-authored answer or confirmed rhythm diagnosis. A candidate atrial association is not proof of sinus or retrograde origin. Timing retains the recorded calibration assumptions and holds. Interval envelopes apply to the selected endpoint-review cycles and describe boundary uncertainty, not actual beat-to-beat variability, normal conduction or a full-strip atrial census. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Atrial origin and pairing unresolved; no numeric PR answer.",
+    "diagnosis: No diagnosis assigned.",
+    "p_wave_identity: Not validated.",
+    "pr_interval: No numeric PR.",
+    "QRS has an unvalidated conditional endpoint envelope for selected complexes. Electrical onset/offset boundaries remain unvalidated.",
+    "qt_interval: No numeric QT.",
+    "individual_interval_rates: All withheld.",
+    "R–R timing limitation: individual_interval_seconds: All withheld.",
+    "validated_scoring_answers: Unscored and not educator-reviewed.",
+    "whole_strip_duration: Not inferred.",
+    "Private derived educational descriptions only. Qualified ECG educator review required.",
+    "Source bytes unchanged; numerical speed is an assumption, not an observed strip label.",
+    "Two clear, separated bands agree on directly detected major lines and five actual minor intervals per major interval.",
+    "25 mm/s assumed, not verified for this strip: 0.2 seconds per major and 0.04 seconds per minor. Unlabeled top marks do not verify speed or timing. No full-strip duration inferred.",
+    "The leftmost event near x 100 has little visible pre-event context and is excluded from the selected interior window. All four interior events retained.",
+    "Pixel landmarks are descriptive; they do not establish validated physiologic phase identity.",
+    "Source x coordinates 95–106 px: Left-edge event excluded conservatively because pre-event context is truncated; not an interior omission.",
+    "Conditional first-to-last retained-window mean only, not a sustained rate.",
+    "R–R timing limitation: Every individual-interval seconds and rate projection is withheld. Unknown speed, event identity and morphology limit interpretation.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      257.5,
+      417.5,
+      580.0,
+      737.5
+    ],
+    "landmarkType": "positive peak-to-peak",
+    "rrPixels": [
+      160.0,
+      162.5,
+      157.5
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 294,
+    "gridIntervalCount": 12,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * assumed seconds per observed grid interval / pixels per grid interval)",
+    "intervalCount": 3,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-684-708-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/round7/essential-status-wording.patch.json",
+    "patchSHA256": "43962dba65c6febdad827603d333d6d532e736f2d420654732651b1e8f962666",
+    "priorFieldSHA256": "5cd77e8452ab79cce6e63bd57385c750ca9c6094983d1ad6f141c38d8aeb726e",
+    "replacementFieldSHA256": "ac4613a5f3456ddf0c10e8434d39d845b98d04f8587e0d416f5468850617fec2",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round7/final-field-decisions.json",
+    "decisionInputSHA256": "39f0a2f7048a67da523fb2c740b53860b979a1c4fd6848c0ff6ef789e772bc3a",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0694.json",
+    "baselineReviewSHA256": "b10d4b9e1499aef034a59d7267987e324f787d2cb3d346febfd6adc4a097fc0c",
+    "sourceImageSHA256": "29c69b2e1ec29379bfba64c2e0495d1a6e1a55b89036298940c8bbf045a22d1e",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 694,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "33c2b982bd73d103189f0de638330d23686fe27ff9888fcc14f46763b29ed1d9",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round7/original-first-pass.json",
+            "sha256": "ab3c3b33a6bf4761f576ecac45f14f3f0dc4860cc898fd5853cfb9bc2df78845",
+            "selector": "rows[page=694]"
+          },
+          {
+            "path": "independent-interval-review/round7/calibrated-review.json",
+            "sha256": "e0dc93e587b4592fb4c002dd68fa98146bd8c0c7d85a28d6934fa6a20e3b4000",
+            "selector": "rows[page=694].local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round7/post-author-review.json",
+            "sha256": "810fabcdc720f0d364ee89737c88cccca3c6b0f150cc3fce91d0122929b8a54b",
+            "selector": "rows[page=694]"
+          },
+          {
+            "path": "pages684-695/field-proposals.json",
+            "sha256": "d7aed739fb7d203fe566ca60fa6291d2c89cef843b5bede3f88dcea42b0392e1",
+            "selector": "pages[page=694].p"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Small positive-negative sharp components on drifting noisy baseline. Early return visible, but low amplitude broadens endpoints.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Reviewer three local contour scenarios plus source-pinned author accepted primary scenarios. No whole-strip invariant, event census, sequence completeness or conduction relationship.",
+        "conditions": [
+          "Course 25 mm/s assumption, not verified per-strip printed speed",
+          "Native local two-band grid calibration with plus/minus1px span bounds",
+          "Initial sharp-contour and early rapid-to-slow junction only; electrical QRS identity and termination remain conditional",
+          "Scenario hull is not statistical confidence, physiological variability or a diagnostic threshold"
+        ],
+        "remaining_educator_question": "Which feature, if any, has atrial origin and a defensible onset, and which ventricular event does it precede?",
+        "identity_caveat": "Visible morphology is not validated electrical origin. Protected identity/rate holds remain; page693 rejected45.5bpm estimate is not reinstated."
+      },
+      {
+        "page": 694,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "33c2b982bd73d103189f0de638330d23686fe27ff9888fcc14f46763b29ed1d9",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round7/original-first-pass.json",
+            "sha256": "ab3c3b33a6bf4761f576ecac45f14f3f0dc4860cc898fd5853cfb9bc2df78845",
+            "selector": "rows[page=694]"
+          },
+          {
+            "path": "independent-interval-review/round7/calibrated-review.json",
+            "sha256": "e0dc93e587b4592fb4c002dd68fa98146bd8c0c7d85a28d6934fa6a20e3b4000",
+            "selector": "rows[page=694].local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round7/post-author-review.json",
+            "sha256": "810fabcdc720f0d364ee89737c88cccca3c6b0f150cc3fce91d0122929b8a54b",
+            "selector": "rows[page=694]"
+          },
+          {
+            "path": "pages684-695/field-proposals.json",
+            "sha256": "d7aed739fb7d203fe566ca60fa6291d2c89cef843b5bede3f88dcea42b0392e1",
+            "selector": "pages[page=694].pr"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Atrial origin and pairing unresolved; no numeric PR answer.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Reviewer three local contour scenarios plus source-pinned author accepted primary scenarios. No whole-strip invariant, event census, sequence completeness or conduction relationship.",
+        "conditions": [
+          "Course 25 mm/s assumption, not verified per-strip printed speed",
+          "Native local two-band grid calibration with plus/minus1px span bounds",
+          "Initial sharp-contour and early rapid-to-slow junction only; electrical QRS identity and termination remain conditional",
+          "Scenario hull is not statistical confidence, physiological variability or a diagnostic threshold"
+        ],
+        "remaining_educator_question": "Which feature, if any, has atrial origin and a defensible onset, and which ventricular event does it precede?",
+        "identity_caveat": "Visible morphology is not validated electrical origin. Protected identity/rate holds remain; page693 rejected45.5bpm estimate is not reinstated."
+      },
+      {
+        "page": 694,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "33c2b982bd73d103189f0de638330d23686fe27ff9888fcc14f46763b29ed1d9",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round7/original-first-pass.json",
+            "sha256": "ab3c3b33a6bf4761f576ecac45f14f3f0dc4860cc898fd5853cfb9bc2df78845",
+            "selector": "rows[page=694]"
+          },
+          {
+            "path": "independent-interval-review/round7/calibrated-review.json",
+            "sha256": "e0dc93e587b4592fb4c002dd68fa98146bd8c0c7d85a28d6934fa6a20e3b4000",
+            "selector": "rows[page=694].local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round7/post-author-review.json",
+            "sha256": "810fabcdc720f0d364ee89737c88cccca3c6b0f150cc3fce91d0122929b8a54b",
+            "selector": "rows[page=694]"
+          },
+          {
+            "path": "pages684-695/field-proposals.json",
+            "sha256": "d7aed739fb7d203fe566ca60fa6291d2c89cef843b5bede3f88dcea42b0392e1",
+            "selector": "pages[page=694].qrs"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_conditional_range",
+        "observation": "Selected early return-to-local-baseline scenarios bound the initial sharp contour. Later low-amplitude curvature is not included; exact electrical termination is not verified.",
+        "seconds_range": [
+          0.04,
+          0.14
+        ],
+        "author_seconds_range": [
+          0.056076999999999995,
+          0.136187
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.04,
+          0.14
+        ],
+        "sample_scope": "Reviewer three local contour scenarios plus source-pinned author accepted primary scenarios. No whole-strip invariant, event census, sequence completeness or conduction relationship.",
+        "conditions": [
+          "Course 25 mm/s assumption, not verified per-strip printed speed",
+          "Native local two-band grid calibration with plus/minus1px span bounds",
+          "Initial sharp-contour and early rapid-to-slow junction only; electrical QRS identity and termination remain conditional",
+          "Scenario hull is not statistical confidence, physiological variability or a diagnostic threshold"
+        ],
+        "remaining_educator_question": "Small positive-negative sharp components on drifting noisy baseline. Early return visible, but low amplitude broadens endpoints. Adjudicate the first ventricular departure and terminal rapid-to-slow junction separately from atrial identity.",
+        "identity_caveat": "Visible morphology is not validated electrical origin. Protected identity/rate holds remain; page693 rejected45.5bpm estimate is not reinstated."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0694.json",
+    "baselineReviewSHA256": "bb25f3bde0d28f99affe239c8cd1efd603ed1e69dfab64411936091c312e8399",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "4d3fea0ada13dd7b10f656bf5080a97c484cb1e493599e1a0317c28a48b9cc69",
+      "afterOriginal30AddendumSHA256": "4d3fea0ada13dd7b10f656bf5080a97c484cb1e493599e1a0317c28a48b9cc69",
+      "afterOptionalInterpretationSHA256": "2b49eb40e8c8898e029d7a1183b8209f2d2a522eaf1a18bce19291b13363fc62",
+      "afterOptionalStatusSHA256": "2b49eb40e8c8898e029d7a1183b8209f2d2a522eaf1a18bce19291b13363fc62"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round7/optional-educational.patch.json",
+      "sha256": "d36697e048142361bb32f757e2701cdbab554bdf2283d57cfae3f5303a308215",
+      "schemaVariant": "round",
+      "round": 7
+    },
+    "essentialLimitations": [
+      {
+        "original": "qrs_duration: No numeric QRS.",
+        "replacement": "QRS has an unvalidated conditional endpoint envelope for selected complexes. Electrical onset/offset boundaries remain unvalidated.",
+        "originalSHA256": "d97a5b6ef44a92c64e6247fdb67ac66222e25c4bec14cb2ce673b7d72b933f3c",
+        "replacementSHA256": "516368b112ed26fcd59ec4300acccdc32df7ee61dc887be9459faffeee325eca",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "individual_interval_seconds: All withheld.",
+        "replacement": "R–R timing limitation: individual_interval_seconds: All withheld.",
+        "originalSHA256": "ef359f5595fcb7201597fd4b2877f57953c684c2f6140cf0a9e850381957698c",
+        "replacementSHA256": "e5430c025e331cccd3bfeeede5b17c96dfef7fbdcd5eece51554ec9d97b6c182",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "Every individual-interval seconds and rate projection is withheld. Unknown speed, event identity and morphology limit interpretation.",
+        "replacement": "R–R timing limitation: Every individual-interval seconds and rate projection is withheld. Unknown speed, event identity and morphology limit interpretation.",
+        "originalSHA256": "7d61c3752cfc57ad760aa45968b1f71f085bbc3cb2355e817d82c943625a9438",
+        "replacementSHA256": "5d0b92c4dce0496b02157031fc0bf336cafb3dca6b6e59bca78cca7865d6b07b",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

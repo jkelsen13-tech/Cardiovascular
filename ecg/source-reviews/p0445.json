@@ -1,0 +1,304 @@
+{
+  "version": 1,
+  "page": 445,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "024de0a5ae30ffa1d0d2a481e68065ed3c42d3d001c030294532952114b90cda",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "The six retained intervals progressively shorten. A mean rate summarizes this measured segment only and conceals substantial within-segment change; it is not a stable rate.",
+      "basis": "Provisional comparison of 6 complete positive peak-to-peak intervals in original PDF 445",
+      "reason": "Observed intervals: 174.5 px, 165 px, 145 px, 139 px, 125 px, 120 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 80 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 151 grid lines enclose 150 small horizontal intervals across 1161 pixels.",
+      "reason": "6 retained positive peak-to-peak intervals have mean spacing 144.75 px, giving 80.2 bpm. Individual-interval estimates span approximately 66.5–96.8 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Four smooth low-amplitude positive pre-complex humps recur. Their leading edges are shallow and blend with baseline drift; identity and exact onset remain less secure than the larger candidates on page 444. One low-amplitude candidate is visible before each of the four selected sharp complexes, but separation of the candidate tail from the initial negative notch is not secure.",
+      "basis": "Original PDF page 445; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Describes visible morphology/association only, not established P identity, atrial origin or conduction. Can the shallow pre-complex humps be identified as P waves and their onsets located? Where does the terminal QRS return end and ST begin on each sloping recovery? Does the small negative pre-spike portion belong to QRS or the preceding waveform? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Ventricular intervals progressively shorten; the conditional mean-interval estimate is about 80 bpm and is not a stable rate. Small pre-complex lobes recur, but atrial identity and PR/QRS boundaries remain unresolved. Sinus arrhythmia cannot be selected without confirming sinus-compatible P morphology, the atrial-to-ventricular sequence and PR behavior throughout; the present strip has no accepted numeric PR or QRS field.",
+      "basis": "New independently reviewed educational synthesis of the exact original raster, conditional source measurements and stated course criteria; not a source-authored or educator-validated rhythm answer",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, conduction interval or clinical conclusion is assigned. Qualified ECG educator review has not occurred. Optional educational comparison only, not a source-authored answer or confirmed rhythm diagnosis. A candidate atrial association is not proof of sinus origin. Timing retains the recorded calibration assumptions and holds. Interval envelopes apply to the selected endpoint-review cycles and describe boundary uncertainty, not actual beat-to-beat variability, normal conduction or a full-strip atrial census. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Independent reviewer could bracket an exploratory range, but author raises this unresolved component-boundary issue: Tiny/shallow preceding candidates and/or competing ventricular onset choices prevent a uniquely supported PR field. The manual endpoint scenarios are retained, not silently converted to PR. Preserve both positions; this is not proof of irreducible unmeasurability.",
+    "qrs unresolved: Independent reviewer could bracket an exploratory range, but author raises this unresolved component-boundary issue: Terminal recovery merges into a continuing sloping contour without a uniquely resolved QRS-ST junction. Both shoulder choices remain scenarios. Preserve both positions; this is not proof of irreducible unmeasurability.",
+    "No strip-specific numeric paper speed or independently labeled time scale.",
+    "Small preceding bumps are described visually, but P-wave identity, atrial origin and atrioventricular relationship are not validated.",
+    "Selected-complex endpoint analysis has been supplied. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. QT and validated electrical endpoints are not established. Qualified educator review remains outstanding.",
+    "The current review provides provisional measurements, descriptive morphology and conditional educational comparisons. It does not assign a clinical diagnosis or a validated rhythm label.",
+    "Seven complete interior deflections are used. Neither visible edge fragment is treated as a complete extra beat.",
+    "The 150-small-interval span would be six seconds only under the assumed course convention. Unlabeled top marks do not independently verify that duration. Only measured horizontal spacing is used for time, not vertical pixel spacing.",
+    "Approximate ±2 source pixels per fiducial and ±0.15 pixels per grid pitch are illustrative sensitivity allowances, not confidence limits. They exclude unknown speed, source distortion and incorrect waveform identification.",
+    "A mean rate can conceal changing spacing. Read the regularity description and individual-interval range; no sustained rate or diagnostic rhythm is inferred.",
+    "Both separated waveform-free bands yield the same continuous sequence; local thirds corroborate pitch. Counts are measured, not inherited from another batch. Lower thresholds can create 3 px spurious split groups; higher thresholds can drop faint lines and create 15–24 px gaps. Selected thresholds retain a coherent sequence in both bands without interpolation.",
+    "Left-edge ventricular deflection is partly clipped; its onset/apex cannot be established completely, so it and adjacent edge interval are excluded.",
+    "Right-edge rising deflection is truncated before a complete apex/return; excluded from fiducial and interval measurements."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      196.5,
+      371.0,
+      536.0,
+      681.0,
+      820.0,
+      945.0,
+      1065.0
+    ],
+    "landmarkType": "Upper extremum of each manually identified complete steep upright ventricular component; median x among darkest apex-row pixels.",
+    "rrPixels": [
+      174.5,
+      165.0,
+      145.0,
+      139.0,
+      125.0,
+      120.0
+    ],
+    "gridSpanPixels": 1161.0,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 6,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-437-450-provisional.json"
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round3/final-field-decisions.json",
+    "decisionInputSHA256": "4a0b54bb731c829b8e0082dc19e7ab3c6589115151853d577511b1a170a4c9c6",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0445.json",
+    "baselineReviewSHA256": "a2522aa06c3b75720910abe956a3364a9b6e4a294fc2fa0a0ba45c449df7e17c",
+    "sourceImageSHA256": "024de0a5ae30ffa1d0d2a481e68065ed3c42d3d001c030294532952114b90cda",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 445,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=445]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=445] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=445]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=445]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=445] if present"
+          },
+          {
+            "path": "pages444-450/field-proposals.json",
+            "sha256": "7584c6c9b1239ebe6512f45d7f20cc1966f55d78c2b4f91ea4ef2de38e4ff816",
+            "selector": "[page=445]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=445] if present"
+          }
+        ],
+        "source_native_sha256": "5ef35ffa6b60b3402993794f316a533ae8a95e8340acbb9a3ef302a211a922d1",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Four smooth low-amplitude positive pre-complex humps recur. Their leading edges are shallow and blend with baseline drift; identity and exact onset remain less secure than the larger candidates on page 444. One low-amplitude candidate is visible before each of the four selected sharp complexes, but separation of the candidate tail from the initial negative notch is not secure.",
+        "seconds_range": null,
+        "identity_caveat": "Describes visible morphology/association only, not established P identity, atrial origin or conduction.",
+        "remaining_educator_question": "Can the shallow pre-complex humps be identified as P waves and their onsets located? Where does the terminal QRS return end and ST begin on each sloping recovery? Does the small negative pre-spike portion belong to QRS or the preceding waveform?"
+      },
+      {
+        "page": 445,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=445]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=445] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=445]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=445]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=445] if present"
+          },
+          {
+            "path": "pages444-450/field-proposals.json",
+            "sha256": "7584c6c9b1239ebe6512f45d7f20cc1966f55d78c2b4f91ea4ef2de38e4ff816",
+            "selector": "[page=445]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=445] if present"
+          }
+        ],
+        "source_native_sha256": "5ef35ffa6b60b3402993794f316a533ae8a95e8340acbb9a3ef302a211a922d1",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Independent reviewer could bracket an exploratory range, but author raises this unresolved component-boundary issue: Tiny/shallow preceding candidates and/or competing ventricular onset choices prevent a uniquely supported PR field. The manual endpoint scenarios are retained, not silently converted to PR. Preserve both positions; this is not proof of irreducible unmeasurability.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.11,
+          0.2
+        ],
+        "remaining_educator_question": "Can the shallow pre-complex humps be identified as P waves and their onsets located? Where does the terminal QRS return end and ST begin on each sloping recovery? Does the small negative pre-spike portion belong to QRS or the preceding waveform?",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      },
+      {
+        "page": 445,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=445]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=445] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=445]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=445]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=445] if present"
+          },
+          {
+            "path": "pages444-450/field-proposals.json",
+            "sha256": "7584c6c9b1239ebe6512f45d7f20cc1966f55d78c2b4f91ea4ef2de38e4ff816",
+            "selector": "[page=445]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=445] if present"
+          }
+        ],
+        "source_native_sha256": "5ef35ffa6b60b3402993794f316a533ae8a95e8340acbb9a3ef302a211a922d1",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Independent reviewer could bracket an exploratory range, but author raises this unresolved component-boundary issue: Terminal recovery merges into a continuing sloping contour without a uniquely resolved QRS-ST junction. Both shoulder choices remain scenarios. Preserve both positions; this is not proof of irreducible unmeasurability.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.05,
+          0.15
+        ],
+        "remaining_educator_question": "Can the shallow pre-complex humps be identified as P waves and their onsets located? Where does the terminal QRS return end and ST begin on each sloping recovery? Does the small negative pre-spike portion belong to QRS or the preceding waveform?",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0445.json",
+    "baselineReviewSHA256": "99e75714662da9db0a15fc323cbc9969c2eb3727ba0b97d2ae79d0a103ae958e",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "3c63474e7b42e75da10a53797a70f8c8c00b59f53d13bcc42751ef0079de88cf",
+      "afterOriginal30AddendumSHA256": "3c63474e7b42e75da10a53797a70f8c8c00b59f53d13bcc42751ef0079de88cf",
+      "afterOptionalInterpretationSHA256": "f7301d47d7904a213cb8b5d8b112d20f704ffdf19a23634dc00f906cabf4e044",
+      "afterOptionalStatusSHA256": "eb4b5cbec90fd44581793bb25251a091bf3e4ea68242e99d12bda58700649701"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round3/optional-educational.patch.json",
+      "sha256": "fb7e496e55780aed960bf53adafe2de2cc59ee78c78c136db772f3d5d678bdb0",
+      "schemaVariant": "round",
+      "round": 3
+    },
+    "essentialLimitations": [
+      {
+        "original": "No defensible wave onset/offset protocol or qualified review for these raster strips. Numeric PR, QRS and QT are withheld.",
+        "replacement": "Selected-complex endpoint analysis has been supplied. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. QT and validated electrical endpoints are not established. Qualified educator review remains outstanding.",
+        "originalSHA256": "1d1dc55ffda07c583bece0e6fdd70d662986ec4c3ade7614eb12bfd4fdaca6d4",
+        "replacementSHA256": "3d08a1cf5d1debcb4fc36ee800d053ef9ad26a2030b2ea78a248456ef9980279",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [
+      {
+        "original": "This pass provides measurement and purely descriptive morphology, not clinical diagnosis or a validated rhythm label.",
+        "replacement": "The current review provides provisional measurements, descriptive morphology and conditional educational comparisons. It does not assign a clinical diagnosis or a validated rhythm label.",
+        "originalSHA256": "bf16aea20864550c51ee9316c1b746c1caa5cb068eda50301a19305ed615285a",
+        "replacementSHA256": "71bba25681b9ea1930a985ab38417c8a15e3fdfe718c308977c2869b90f3312f",
+        "origin": "optional-interpretation-status"
+      }
+    ],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

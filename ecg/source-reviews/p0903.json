@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "page": 903,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "f4cdb8720e82243b892f9bf280ab73b4c1b21c81a694ff75a3000252946172a1",
+  "authority": "source-marked-with-limits",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Original source summary",
+  "notice": "Compare your own observations with the original source summary below. Source-reported findings are not independent clinical adjudication and receive no automatic score.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "76 bpm",
+      "basis": "Original printed summary, PDF page 904",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "pr",
+      "value": "0.20 sec",
+      "basis": "Original printed summary, PDF page 904",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "qrs",
+      "value": "0.08 sec",
+      "basis": "Original printed summary, PDF page 904",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "interpretation",
+      "value": "Normal Sinus Rhythm\nInferior infarct, age undetermined\nAbnormal EKG",
+      "basis": "Verbatim interpretation lines from original PDF page 904",
+      "reason": "These are the source\u2019s qualified assertions. Preserve terms such as \u201cpossible,\u201d \u201ccannot rule out\u201d and \u201cage undetermined\u201d; they are not independently confirmed diagnoses."
+    }
+  ],
+  "sourceAnswerPages": [
+    {
+      "page": 904,
+      "imageRoute": "private-course/page/904.png",
+      "sha256": "6f6909e3cd6131685d1a339a0adedca58c4d5a05ac94fad3273093d2bb251754"
+    }
+  ],
+  "limitations": [
+    "Original image clips the bottom rhythm row. Do not claim a complete recovered strip.",
+    "Normal sinus rhythm is not a normal whole-ECG finding.",
+    "Regularity and P-wave fields are not transcribed from a separate printed answer here; do not infer them automatically from a diagnosis label."
+  ]
+}

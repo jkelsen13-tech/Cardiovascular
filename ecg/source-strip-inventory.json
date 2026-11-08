@@ -1,0 +1,3791 @@
+{
+  "version": 1,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "scope": "Educational source-strip responses and explicitly unscored reviews. Not clinical validation.",
+  "blankSourcePageCount": 196,
+  "entries": {
+    "300": {
+      "page": 300,
+      "sourceImageSHA256": "40a1fbc5f989ee68b9a1a0af42bb7f053797927d4f7d5f13af292cb470ec558b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0300.json",
+      "reviewSHA256": "1ab25eadda0ba6f1a90a65b452063c8df45fbb9a44e3c5190e14d00c40f2fa1b"
+    },
+    "301": {
+      "page": 301,
+      "sourceImageSHA256": "187e99dd7afa8e16686f12b3cfba6081d78721649da81372c107bead5bcb8c84",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0301.json",
+      "reviewSHA256": "7f285a683738c609e05b8218ba394fbe053c7c818c15a46a8f2cf3eef71229f9"
+    },
+    "302": {
+      "page": 302,
+      "sourceImageSHA256": "c167bc4a0b19184d4702c13482197400d9898b73c0e8b6e0fdc8a8857b85b7ca",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0302.json",
+      "reviewSHA256": "94263a7ad4086d2a35702fe35c892043258e4371fbfd6d9a5b6bc3f890b06aeb"
+    },
+    "303": {
+      "page": 303,
+      "sourceImageSHA256": "f4433734d2566df7d92b74d99421ad786ca030e995b298ba63d709f00b6fa30e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0303.json",
+      "reviewSHA256": "61c88a42e85793e30fc3bc7b89dda8100b7fe1d5d4174a64742fa1ce59680e3d"
+    },
+    "304": {
+      "page": 304,
+      "sourceImageSHA256": "8ebfca866e95bf831599a82d749df8db71eb6a3cdd9975fd1c8376e2270b507f",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0304.json",
+      "reviewSHA256": "5d04eb68d77ee034b1f32e0c7263bcb05003f831aba93ad1d22568405e60096d"
+    },
+    "305": {
+      "page": 305,
+      "sourceImageSHA256": "24033d6ee4bb49dd56d3fa80dcc415cb663952812bfe93fecdb6f79db9faa122",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0305.json",
+      "reviewSHA256": "3b728aa6939684e807c0595687e7c7d85544970c1e4b992b05db95b902cdeb96"
+    },
+    "306": {
+      "page": 306,
+      "sourceImageSHA256": "464b13d0c2fbb70f83ac1203cdca7a77f82551efcfab8c3f96df36da9601beec",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0306.json",
+      "reviewSHA256": "4ca2ba476e29d4076e83aebbfa15d9f47a6ad06a34ab463fcf86bb9d297f934d"
+    },
+    "307": {
+      "page": 307,
+      "sourceImageSHA256": "5cf3ab917a0da8114c7ce84b4996f67be248a83b3fe19515e6cfe92e54096fe7",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0307.json",
+      "reviewSHA256": "87819d451b1be16e06f06cee2fdf7da50028edcd5dcefd32f44c00fb6e06b71e"
+    },
+    "308": {
+      "page": 308,
+      "sourceImageSHA256": "06370de747f373214ebe2d28b2da246add71ba18ac4b5e368854518b4cb65fbb",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0308.json",
+      "reviewSHA256": "3f4694c2d6fb2a31950fc6e977135a5f442ddd19712040708104f2ec860bb28e"
+    },
+    "309": {
+      "page": 309,
+      "sourceImageSHA256": "9bd22757540c897fd810cd5e30edc99bd9d7c781c4a748ce9eda036e6ee15222",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0309.json",
+      "reviewSHA256": "892e67309db56ffe78cc538c0fe2725c5ea1abc69ff2a19ad0324515fb48dede"
+    },
+    "310": {
+      "page": 310,
+      "sourceImageSHA256": "ef897b0ac9e6b203bf92f46ee7d68642791ea4fb09125a0aca4999d1fe9991bb",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0310.json",
+      "reviewSHA256": "6205a39e32f613facef37a26053ba260860808f8a2296175b25fcfaf69b668d0"
+    },
+    "311": {
+      "page": 311,
+      "sourceImageSHA256": "e39bf9f5e0e7ec3323dc7d3bf0394f21eeaba8df47d403736859ae7fb0a0d715",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0311.json",
+      "reviewSHA256": "42ce433f68231f533773fcb11745ec280a4f19e74f8f2d349feefec2e93eefc0"
+    },
+    "312": {
+      "page": 312,
+      "sourceImageSHA256": "ba1f429db6acc89700c35f8af46c5a68a6e1df7c567dfc032d6a9b88138bf735",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0312.json",
+      "reviewSHA256": "69a42e26e2178013426e3246c70a0fd87dc4a1bd9f5e29cc112646daa0065dc9"
+    },
+    "429": {
+      "page": 429,
+      "sourceImageSHA256": "0860243f8bd9bd761301c45401310f1b7faedf57134564a8c33c2fdb1e958892",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0429.json",
+      "existingTrainerCase": "a6d28f",
+      "reviewSHA256": "9a3daaeb53dd4ca2050508eb15ebc61fdea0e2a72ed313ef443115eb423c7b42"
+    },
+    "437": {
+      "page": 437,
+      "sourceImageSHA256": "71903a41686d748ff2b7735c8eb9325e11edbc9f55b486265c1d39ba93661ae6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0437.json",
+      "reviewSHA256": "dd83112981d0c8e484a6e6fd0d743450336caaa7fe3a4ba8573861d94dd7bbf5"
+    },
+    "438": {
+      "page": 438,
+      "sourceImageSHA256": "bd6784957f8e568615d7fa21c4be70896a53ba013dc1e194ebd9175a6c11d444",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0438.json",
+      "reviewSHA256": "a72bb4020f95b7af8c769ec2f294e983746fcec3c1b73adfc3ad31a84e18abea"
+    },
+    "439": {
+      "page": 439,
+      "sourceImageSHA256": "94a22e01762779e1eff252c56e7f9c1db61ec44f79909e5a8aedbea1959cbc28",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0439.json",
+      "reviewSHA256": "7297b4fef4c553955bc537efed0f7e8dd32c07dbf30dcb7520fd75c8b4ff54b1"
+    },
+    "440": {
+      "page": 440,
+      "sourceImageSHA256": "4b2c85b1be1bb42723f44bee554fb596afe620802080f4810b7f67422de4d1d0",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0440.json",
+      "reviewSHA256": "ccd0c27c8cc6ce8a78b31c6bbaea08b9c726cb97e77229266689b544f46d887b"
+    },
+    "441": {
+      "page": 441,
+      "sourceImageSHA256": "16697232b6adbbbb451fa47732e135e5e38f8b1b55f9f88426a39b00f67c28c6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0441.json",
+      "reviewSHA256": "96f6791af12c8b9eb80a5840d8fc888632a7cc09d1e0f8805406c92c961f1681"
+    },
+    "442": {
+      "page": 442,
+      "sourceImageSHA256": "ffa43b1de90b560b1807d2272153545424139a81f8785b2947d6cf6f8f4c8c78",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0442.json",
+      "reviewSHA256": "9876a4eaa7296ac29544f7a906671830076ce5f0e6c3d98671361ced8b7aa309"
+    },
+    "443": {
+      "page": 443,
+      "sourceImageSHA256": "f1cf8ac5a11454f6aa76677ae3ba5d7b195f2f881b9edf1ba2b065d19ccfb884",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0443.json",
+      "reviewSHA256": "bc00a0dc513e4584669f72c47e6324d806cc075299994e087d87ea33709237a6"
+    },
+    "444": {
+      "page": 444,
+      "sourceImageSHA256": "8187f972320ffa85a05032fddc0a06606543fce998501894bf1370da3b41e8f9",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0444.json",
+      "reviewSHA256": "713de6f62ace78161251ec148b93c8952d114e30e5095e6f0f427f501ee4ed9d"
+    },
+    "445": {
+      "page": 445,
+      "sourceImageSHA256": "024de0a5ae30ffa1d0d2a481e68065ed3c42d3d001c030294532952114b90cda",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0445.json",
+      "reviewSHA256": "4f4484556ecaa5ec2c47f21a5923e6ccc24128f0d980b8b03836785c183bd3ff"
+    },
+    "446": {
+      "page": 446,
+      "sourceImageSHA256": "0700c4903915d956aa318fcd5be70df071fb96972cd5563dd13bafe80f79309c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0446.json",
+      "reviewSHA256": "478f41869f01ece99789938f3ab9cdaab9ec45332e00dd31e478810dec172610"
+    },
+    "447": {
+      "page": 447,
+      "sourceImageSHA256": "cd683e3e0a85afade8aafb7c0d05ca099f4aac3516320926ef653c5400aef711",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0447.json",
+      "reviewSHA256": "ed9dccb88ff3e368dac9a458b173d89e6519942d01bb9b817c4b5bba4bc03da7"
+    },
+    "448": {
+      "page": 448,
+      "sourceImageSHA256": "9e398fa2b09c0c4fb7474220eae804d530a0f2ddd7efce89ea4c6979f0f8773f",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0448.json",
+      "reviewSHA256": "2432c64f48937bf443ed3858d7f3b88f60a3cde39f506ba0d2e19f8775fb9ed6"
+    },
+    "449": {
+      "page": 449,
+      "sourceImageSHA256": "c71f434601635179d0d9f8e867cc80c88bb053695de40881d6a7d35925af89aa",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0449.json",
+      "reviewSHA256": "34af06ba246e0470e8007f68d99fc99e22d769d3033d119d0f7bf04a88990aa1"
+    },
+    "450": {
+      "page": 450,
+      "sourceImageSHA256": "c2109675febfbe599147424004a1ac4514089018a3318df0294a22753f617ef5",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0450.json",
+      "reviewSHA256": "d12353f977c0f7132d56495f144b5876c24050551fd105c1e8f5bd3c54ea8845"
+    },
+    "500": {
+      "page": 500,
+      "sourceImageSHA256": "984fa5400603fda1e90000f8b98640e66297a925cca0a0ecde7bc078c5bf9f7c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0500.json",
+      "reviewSHA256": "fb1d588ed9f13eb2e2a87b4d5e2a60547aadb5abfb42cb4fb7818e9a1d806b8b"
+    },
+    "501": {
+      "page": 501,
+      "sourceImageSHA256": "330113bad3feced7b80262542229283f17772f386ce971c8571b7f0facf18115",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0501.json",
+      "reviewSHA256": "985ab56f3f043ef29df5694a2dba6fd1bc118ceb10b8c100bcc5e68e65a295c7"
+    },
+    "502": {
+      "page": 502,
+      "sourceImageSHA256": "7dbf6cca708932b218001dc9c5425bbd5fcdd3756e278f6742bfda39b9850783",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0502.json",
+      "reviewSHA256": "21e87da875a9836c4b1b80f43945c41e33bfc5a51c5f1dddf9bac52633114c00"
+    },
+    "503": {
+      "page": 503,
+      "sourceImageSHA256": "0ad68b46c06e975bbcee86fc7bdcc459559c7449a88c29e57df95d80be4a6e0f",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0503.json",
+      "reviewSHA256": "91fb8a857043e4d264451bd665dc96aefd33250d9f98a7574210852ad500950c"
+    },
+    "504": {
+      "page": 504,
+      "sourceImageSHA256": "0b2e4cbd18f33c435f64f779a6754461eb02b387491894dd46f1071c79d034d8",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0504.json",
+      "reviewSHA256": "d5c4c279e774fb4a11cc23fb564bfcecf996c72aaf80b92372cd0b009d004d13"
+    },
+    "505": {
+      "page": 505,
+      "sourceImageSHA256": "178d940aa170f6fcbbe163d7cc768994974fb74eb8e4a0df01ea7a62d1814742",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0505.json",
+      "reviewSHA256": "a85f3f8ab079e3c89586ae90f04af796a939ad43e52055c505348410cbc85cf5"
+    },
+    "506": {
+      "page": 506,
+      "sourceImageSHA256": "93268023cfca83febf768528baed945eefb502deadb8b5aaae3e414f8a2a5fb6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0506.json",
+      "reviewSHA256": "63b12564ddb0ab9d33477ae7f66366718266a34ad05116b36b3619e2e0d1140f"
+    },
+    "507": {
+      "page": 507,
+      "sourceImageSHA256": "88865f43cb6b7e0c2b3b243bf85f8f5355a3307b1e43f534dc26558f07e7e62d",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0507.json",
+      "reviewSHA256": "c4884c908fafaa4f32905cd8e7534d4882489ab241e27cd94598dd33ede0740e"
+    },
+    "508": {
+      "page": 508,
+      "sourceImageSHA256": "9dccb61842d3b1613750fd5cf14c4af6e1e44b943e73d608c5baa6bafc36ed8b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0508.json",
+      "reviewSHA256": "cfcc01dc4a2246721617aeea8962be84f212fe9de8d08d0ab14f7b9677edad25"
+    },
+    "509": {
+      "page": 509,
+      "sourceImageSHA256": "5327bea01464fa0fa4eebf44b5b579dad0163811a6940d4109a5c6b0d189c843",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0509.json",
+      "reviewSHA256": "45a3a6be02b7db62f576a05e3d870dbf8b3028e232c124aa65a3a8149ec0376d"
+    },
+    "510": {
+      "page": 510,
+      "sourceImageSHA256": "e0210130699a1d9d88a90b7db9a9694a1c3f19eba00df85ffc1deb1e7dc5ffdc",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0510.json",
+      "reviewSHA256": "7709dc6e8b9a1ecea97d748293e3ec948480c347727201a01eada7431987040b"
+    },
+    "511": {
+      "page": 511,
+      "sourceImageSHA256": "a80402d274665e21c08b7030c413f292f8735a20d9c1ebbca484d4bb90c2db6e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0511.json",
+      "reviewSHA256": "070bb1f8affca57d70da03dc22ea1077af7a10cf27949dc8abef3bcbdffee0e4"
+    },
+    "512": {
+      "page": 512,
+      "sourceImageSHA256": "b173621f8748c0bb51266fab68735f13b55180cf41f6b0434d72684089b47147",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0512.json",
+      "reviewSHA256": "073fce57a08b1363e1e70f8b148c75f45ba1c59a52ca665c2c4cc20112ac0d0c"
+    },
+    "513": {
+      "page": 513,
+      "sourceImageSHA256": "1b8cd288fb1069b07ec28d56527e3d545aede6db57650f61dedd88b9cbab7aa9",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0513.json",
+      "reviewSHA256": "63beb06ca871dc8f5ad3878218e21ec75e1ab1aa8458197b14b22c8a36bec2cd"
+    },
+    "514": {
+      "page": 514,
+      "sourceImageSHA256": "000f5c4b9631b2ba7721ab4966f6ff1ddde021e58e701d1989892e35d2f3056e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0514.json",
+      "reviewSHA256": "1e713a59815ae4fd5f409d6b951d983716548a5fd8b185855245b4f9f1e5415c"
+    },
+    "515": {
+      "page": 515,
+      "sourceImageSHA256": "40686c9361301b39cc90b2dcdde78e033876c1e449f49114d79a4adf76073165",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0515.json",
+      "reviewSHA256": "4befcd5360b3fdf00489318285f31aef4a42f1d74469e2091b0cd35657de2852"
+    },
+    "516": {
+      "page": 516,
+      "sourceImageSHA256": "3547d757ecc8f335895ba81adf36181c28b4d3a264b51f2a6a1cdc7d8aeff0b1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0516.json",
+      "reviewSHA256": "bcfdd7394ef453f58c0a477b2610c63855b9574f077bc7bdea1bdf1d2b761911"
+    },
+    "517": {
+      "page": 517,
+      "sourceImageSHA256": "e46f095b4fa9471e8299c49f2116c9b5c7d9cac5abae2bc8b7ce2bf13687957e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0517.json",
+      "reviewSHA256": "a1e05d945ea2375128d7015a97b859f09a417c8fb20b6452d752256cb441d6a9"
+    },
+    "518": {
+      "page": 518,
+      "sourceImageSHA256": "3ede48a7483aa04a2cd3022904e477a7e6af3e9f9ed3c1c5b15e72ae5f7bd3ac",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0518.json",
+      "reviewSHA256": "5eaf84087d9bc6046410a5aac1f991e892d17723c2352ffd817296f2ae073303"
+    },
+    "519": {
+      "page": 519,
+      "sourceImageSHA256": "a3717669198228c0ddced29f6ee5ca59b87b0896b4795c3f385a4ba45a804965",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0519.json",
+      "reviewSHA256": "078e2a0ef99920fe0a16dcabf5dd53f938e3216ff0a24de883d03b5478fa98d7"
+    },
+    "520": {
+      "page": 520,
+      "sourceImageSHA256": "79b135442fa92bdb5d475094ab7ac143f1b48273e18b9c92d260b66c484f7d1e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0520.json",
+      "reviewSHA256": "5583ca58344eb045d5bf586e62b7683b559a2e056e30333a4e443a2107605418"
+    },
+    "521": {
+      "page": 521,
+      "sourceImageSHA256": "3eb9007a2fc51d333a8a874f255181232690ab2302ec4423912d12e4f5ea9757",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0521.json",
+      "reviewSHA256": "26470c5ff782a36ce93da56743bbafdaf90926e4accf325d7589425770177682"
+    },
+    "522": {
+      "page": 522,
+      "sourceImageSHA256": "c2d68d579650ba63c3eb01f7de44ae57acbab313950f9291bef1e4e06b6120f8",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0522.json",
+      "reviewSHA256": "375ef243c92d05b1e3dff30705701fc9af628272349c13966438c3345b8758fb"
+    },
+    "523": {
+      "page": 523,
+      "sourceImageSHA256": "637dc1f2b3e338369cf4b0b34122302a749c3f34f05cdbc18af54daea0fd5d69",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0523.json",
+      "reviewSHA256": "f7c3cba8ac5e1baec755351d90b60f22ffeb191a2c828da928703f9bb6dae6bc"
+    },
+    "524": {
+      "page": 524,
+      "sourceImageSHA256": "de1a77841b1dbd10eebf302558a6c2fb4ca97a03c927d5d274988c26a2aed152",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0524.json",
+      "reviewSHA256": "f9d3e5cf3dea31e66c1df415e9a502dd9209a6c7b1e8587293d721460dd54403"
+    },
+    "525": {
+      "page": 525,
+      "sourceImageSHA256": "b33847a01ac7e19c7c6b3cf2e704abbd5d0613a794e648cd70288abddb56d262",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0525.json",
+      "reviewSHA256": "8306ecbb42036d19f3d34083a7b79baf4ecbbcf121db432d9ae5bdeb8b04911a"
+    },
+    "526": {
+      "page": 526,
+      "sourceImageSHA256": "5f17f21c6affc4f24da94ea2aec611c82d6cf771b2a6af8110bca72c500688e1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0526.json",
+      "reviewSHA256": "c4e79536fa38a89182f5d9658ecd1a1fba69678ae1d4d2c5ad5ae846600ce1f2"
+    },
+    "527": {
+      "page": 527,
+      "sourceImageSHA256": "d7e11cb4fb5239eb3d04a4c06d66fbc4477e19021e031548cb5e4259990dd235",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0527.json",
+      "reviewSHA256": "428c7fc1c5118b81942205be96f2b0ad89500eb53377ab20a4d0a1f6c25a2b44"
+    },
+    "528": {
+      "page": 528,
+      "sourceImageSHA256": "e543e316599d96c0129cb01b65a5b4410119c5188bc6fe73af324d0ddee2a355",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0528.json",
+      "reviewSHA256": "450cfbd51a589a49380ee8393a74d0cf644dcaf33d225c721b7fd7b38964e3db"
+    },
+    "529": {
+      "page": 529,
+      "sourceImageSHA256": "34c5df495133cd0508faf86fd8b9c8ba22640d7a5d09bff149e91ba6a3416500",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0529.json",
+      "reviewSHA256": "af7bc33f01edf2019be2980e4abbbb51106c42d3f7d8c60a473348290d88f252"
+    },
+    "577": {
+      "page": 577,
+      "sourceImageSHA256": "2fa3ab341f398cffcca4644df22ec19cdaedbda4043b9916cf1c31fd3c25c175",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0577.json",
+      "reviewSHA256": "58a43707129e9fd00c79e8291e26c52fd00b95ec502eecd897113a35719ece40"
+    },
+    "578": {
+      "page": 578,
+      "sourceImageSHA256": "b1d3c0bd22b69a8f8090e6ba80b4fa7ad9ccca1a6e31026402017f86c1700fc8",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0578.json",
+      "reviewSHA256": "97d3a82c2620c21d27454c8ed8611a5b738bf435b8d2f58cf5f6470a90f7de0c"
+    },
+    "579": {
+      "page": 579,
+      "sourceImageSHA256": "6cf0f5bd39676b786f0dafde975793cfc5ee862235bf0eecf3a59961a846fc31",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0579.json",
+      "reviewSHA256": "e424daf09bae18d01d0cbc045ece07540d8f155c29f836c3788f3b454b2ae41a"
+    },
+    "580": {
+      "page": 580,
+      "sourceImageSHA256": "0afd1f94f031d0eec98e48e95b90b85cfade4876c6dc9a805deba4b7a34d7917",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0580.json",
+      "reviewSHA256": "5de307aa5f86201cafcfd5ff1537ea131e16a13e0fc42fbab77c5408b42695fe"
+    },
+    "581": {
+      "page": 581,
+      "sourceImageSHA256": "48a989de1f991a475327b2423cc99879b8591d505435a762ded67e7108f88a91",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0581.json",
+      "reviewSHA256": "ea1feeb511c19429753db15481aa968c4e4a03b763181728987ef8a7e78b7c6d"
+    },
+    "582": {
+      "page": 582,
+      "sourceImageSHA256": "62e8b3f692d8eb0e58f5127d4cb0555f27bff52b6ea5a1e8366d2d36af7834bd",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0582.json",
+      "reviewSHA256": "dea05f60c7a76028fd981139e2c922a00673c448dd06e3bac51a80fd63f2390b"
+    },
+    "583": {
+      "page": 583,
+      "sourceImageSHA256": "691fb9269781281c940259ec30565b8511454a0ce843f2022a42159ddc1e8732",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0583.json",
+      "reviewSHA256": "92abddb0c3d54dc010a9d531e5eda4ab24ca67b65d06f5a22d317a39f157b0d0"
+    },
+    "584": {
+      "page": 584,
+      "sourceImageSHA256": "0937c41cde5d53805eb2c731330a4e17095d8792e9e708d188cf76b816a59197",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0584.json",
+      "reviewSHA256": "2fb892b8356d8833273b32b2a708ffbaa776c554edcdf32862047851c14394ad"
+    },
+    "585": {
+      "page": 585,
+      "sourceImageSHA256": "ad59a5af2f7b1232d20615116ff50ad74095ac94115dc359b7fb72e91df45a7e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0585.json",
+      "reviewSHA256": "bcfb930278e9410aa11ace1768ec195a9606200f1ba0bd3c233aafdb48564033"
+    },
+    "586": {
+      "page": 586,
+      "sourceImageSHA256": "ed4a46b698200eebbe4c525fd0b7a9acab052d06bf9d8ca42daad0a9ec790e75",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0586.json",
+      "reviewSHA256": "783c6502f7ceed3732e2dbed5b8ad259314efd73a832c8ff4fc733a167ec8b25"
+    },
+    "587": {
+      "page": 587,
+      "sourceImageSHA256": "0754e0812b95df863cfa7e76bcc247bc8d17e10964c480900344777fbdb8f01e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0587.json",
+      "reviewSHA256": "9cbc58052076682f25ce5c23f1d0bc35b35ec9eeed26ffdd5056002ad60f4010"
+    },
+    "588": {
+      "page": 588,
+      "sourceImageSHA256": "9ba76cece108dd0629b03685fcc43bad6f5cec6e847734e2e49e8874b0752157",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0588.json",
+      "reviewSHA256": "cc6436d54373ba2388fadac408d286f067027a96ca469fd4b2d62f84486f7669"
+    },
+    "589": {
+      "page": 589,
+      "sourceImageSHA256": "35ae3ada0b78ec7fffad263ec13482ee0b5981d426a8246c5287f4d4e7e3e5de",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0589.json",
+      "reviewSHA256": "087fecb748d820fb8a4df58a9f951255bdd1e51ad87e8f75b98a098a6d958fde"
+    },
+    "590": {
+      "page": 590,
+      "sourceImageSHA256": "16bcd4c6d3ac3c385e5d6326dce3183f060a84169e498ef84dfdd2425ab31a30",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0590.json",
+      "reviewSHA256": "bf7a9ddfea76914746e59aeb035068ee4f72b2d9fdefbd052219ad3dab19dcad"
+    },
+    "591": {
+      "page": 591,
+      "sourceImageSHA256": "2f0e8ad50f643b935563eec133a9aa6da64c392c2f2c90dfdc487d517513758a",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0591.json",
+      "reviewSHA256": "091d18f48535c124c8df32f22ae1223e9b702271ae7bead7dd62a91cc4078744"
+    },
+    "592": {
+      "page": 592,
+      "sourceImageSHA256": "d1a2cd0251952fd98cf1a1a071346d1c9d2e9a6791757c48e26a20dac6d502e8",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0592.json",
+      "reviewSHA256": "041ffd4f779203a214b755f8c3cf0402130c6aa9fa4191c4facacaa40fd48a31"
+    },
+    "593": {
+      "page": 593,
+      "sourceImageSHA256": "0caef7f3ef2257e472d12eeb8f9ba43ed4c062ca88b324819bc475827a78b23d",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0593.json",
+      "reviewSHA256": "687191917941931c82c875968134d52ec0d61b618734ecdf8bcea29830661042"
+    },
+    "594": {
+      "page": 594,
+      "sourceImageSHA256": "5dfa84f532fea7a91bbd4675577096e9485f99558c1d37e516d12d9cc2a99acb",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0594.json",
+      "reviewSHA256": "664e7e0f403c8f8dcaf2aa1e99f1b2f48b767bce6292099fc1e7e7e37f5978e1"
+    },
+    "595": {
+      "page": 595,
+      "sourceImageSHA256": "90c32189b8bb61b0f7fcaddaae13e10485bf13e97d6a065da426858d2ffc625b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0595.json",
+      "reviewSHA256": "530ac2d99262e4e5169ecfb6e5fce650ef5d9f595f6c27ba0c66bc2d495d3ff3"
+    },
+    "596": {
+      "page": 596,
+      "sourceImageSHA256": "2d7ffb82a508bfa053ab41c04bf7935c2b063a5dff6b0956e4a9494175f78334",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0596.json",
+      "reviewSHA256": "9ade5be1a118a41dd56a16bf688cb0d77996b3e7972e5048c837b6f724e8aa87"
+    },
+    "597": {
+      "page": 597,
+      "sourceImageSHA256": "1f68d111c11e03f31173aded80e5d90edb9163ed2dc88d9ed9c374a4c5541aac",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0597.json",
+      "reviewSHA256": "936d386224e656d5326e49c02a2ed87aca74c0752889246be02a0d9ba5329073"
+    },
+    "598": {
+      "page": 598,
+      "sourceImageSHA256": "57360ff0684d7954b525d5393686615b8cfa22a2b6a466e6dbf25c93578f1204",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0598.json",
+      "reviewSHA256": "5882cf8f338685da080aee5d2535bd9aaf961f35252aa08aab9865ea8029e9e6"
+    },
+    "599": {
+      "page": 599,
+      "sourceImageSHA256": "1f90c80010d86746823f167994a901a27fd7538966f2c50c3d9d78a97f72d20b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0599.json",
+      "reviewSHA256": "550bf9d9b08fbd54d5498fcfbb97c0b601e782798d52fcdc16df894afc3eeccc"
+    },
+    "600": {
+      "page": 600,
+      "sourceImageSHA256": "d659dc7ba8f694b77c08ae6a8695b6019836f370cc60e6fbf36b4e1acae3dbfd",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0600.json",
+      "reviewSHA256": "4595c3b2f6391df4f16984c47376304e26c355d0bfdff26b2f29361afaa10785"
+    },
+    "601": {
+      "page": 601,
+      "sourceImageSHA256": "7d4a62ef6344c271b8cddc2cfa5172a63611a5b216df620ab72542ec6a0cfbd2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0601.json",
+      "reviewSHA256": "c30659fcfe55e693a087df3f0d3346c482ef0be066a9c358ed91de26d2cf3022"
+    },
+    "602": {
+      "page": 602,
+      "sourceImageSHA256": "2c7bb4ff26f8d7b622a249bb643a50860dc19108749cb27e7377f7049808fc28",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0602.json",
+      "reviewSHA256": "d68abc7cc046d9ebb996a666a82b19fec753d94fa122243a08f17950a9d0d1c2"
+    },
+    "603": {
+      "page": 603,
+      "sourceImageSHA256": "00919e136dea1e31c1eb8bb183908a9d1b72479172922126c2d70cac7acb3f98",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0603.json",
+      "reviewSHA256": "ce0a645f4ddcbcac6d190c7bc7845c32959eba0273677aebfcbcbed6b03df073"
+    },
+    "604": {
+      "page": 604,
+      "sourceImageSHA256": "45d85bad3f64faac9a2fe73776038b99750c3a9777cfe56c1c53721d18340e6b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0604.json",
+      "reviewSHA256": "21b9285da2ea4042d715d7fbef2c7c7b3f6240aec13922d3e2a6218b798e5dec"
+    },
+    "605": {
+      "page": 605,
+      "sourceImageSHA256": "81725c8b8cacff75ae5c5e736f9bbcbadd52a2e79ffbe89fa87899d8ee76d07c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0605.json",
+      "reviewSHA256": "a7e8f36fff66ac2d041b06c674fb7268303c55f441995fbe9eeb98c6228d997a"
+    },
+    "606": {
+      "page": 606,
+      "sourceImageSHA256": "0d16e067cb9cfb18692898c7f0d0fb4900bd75924ee469cc442cfc82e4b48669",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0606.json",
+      "reviewSHA256": "d7af0ed0583d427052f2c22c4ecad1945b591cd23a7809fe6a08cf1fddf1d5bb"
+    },
+    "607": {
+      "page": 607,
+      "sourceImageSHA256": "37c4dec35563c6e2f12b45d197a8679bc4a570e94d3a5823b387183775283a50",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0607.json",
+      "reviewSHA256": "5fae8409abbda070e6ab49abf255f4880ed87ec07512c3d57069b787f4a9493a"
+    },
+    "608": {
+      "page": 608,
+      "sourceImageSHA256": "dbdd5f639fde647011109a80fe9b65cbfeb27e872b7e2aaba1961d99657ef0c3",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0608.json",
+      "reviewSHA256": "f44a7cc268f009c3e4436ad5ca59fabdd1322bdb2838ce9724ac1682dc46d6d1"
+    },
+    "609": {
+      "page": 609,
+      "sourceImageSHA256": "4ecc5b2ac5f424e62615320344bb91c080c6cf3149dec61489b784726ab3b1b2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0609.json",
+      "reviewSHA256": "6cc27810e559b8a6d538486410a7cadda36cebf0d1571b82706cc6434cf5584f"
+    },
+    "610": {
+      "page": 610,
+      "sourceImageSHA256": "a0137debd3cb8578f94d0523fc7b0818a619736c2fc41194ea173fa8dc566bf1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0610.json",
+      "reviewSHA256": "3fab9eba285f41ac647a2564bfb27ee03e3a224b958a8410010f6f921e71bb76"
+    },
+    "611": {
+      "page": 611,
+      "sourceImageSHA256": "d8ed8fc84f783ef82806b4ee9d44ee23687e391757ba2b1438c4269b4edaffd7",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0611.json",
+      "reviewSHA256": "022318060cb6821f29df8f56e03a710e47e4764f7debc71b2759b728a3537139"
+    },
+    "612": {
+      "page": 612,
+      "sourceImageSHA256": "8450c4bb66b002442efdf62a2d0628255ff25ae6db1dbca831090c259e2acfc1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0612.json",
+      "reviewSHA256": "ba6cbfd6ebb89b90d41eb7ef58f427d688de2400431c852efcb799790f213107"
+    },
+    "613": {
+      "page": 613,
+      "sourceImageSHA256": "23551142195cf4d5c51d88adc47379a902ad4bdc1c6ff72b8eb1f2a5a2c469b1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0613.json",
+      "reviewSHA256": "0bbce3335f71883b9c542a5695ccbd5186691f973b3dfc75479466d13f84d570"
+    },
+    "614": {
+      "page": 614,
+      "sourceImageSHA256": "9dfc10f6fad788a7ca233abff96493bc743e4437b6b5a6372c95d4b40e2a90f7",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0614.json",
+      "reviewSHA256": "9ef386c1c810daad3431f9f2f8af946f900414c5f94ddacfc9f35a5d09180bd3"
+    },
+    "615": {
+      "page": 615,
+      "sourceImageSHA256": "b86ab65050caa35129adf626fff682c418707c55cb98bc3ef1b81acc4d3b8135",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0615.json",
+      "reviewSHA256": "4354779a4e3d49c1a851d34d07ccd4a2b5aedbfd86071890c721b2fca7495c3d"
+    },
+    "616": {
+      "page": 616,
+      "sourceImageSHA256": "513cba1807f06e10d5d444d4a4fdcd5b0fe557bec0590ece420513eca2fbceda",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0616.json",
+      "reviewSHA256": "880db5c16ecc50ddd897f95dba82b15b2bd87e557ee91a790647f5cedb7f52b2"
+    },
+    "617": {
+      "page": 617,
+      "sourceImageSHA256": "dad20bb68ed27a676456585511831b0368122e3668a6464c3e2dbc60bd42ad76",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0617.json",
+      "reviewSHA256": "66c3873f567d7a662f1f2d8df00ad3e16e1cbe494d6023e6e35354bce9280b1c"
+    },
+    "618": {
+      "page": 618,
+      "sourceImageSHA256": "b70e9dcf7432a5d3f33ad1cbbda81aba27ca03143dd81759bef0ba2f02a175de",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0618.json",
+      "reviewSHA256": "41b1373742ff2341be9aba0f5213e0d9b6f9032155061f67bf63a9ef104d5baf"
+    },
+    "619": {
+      "page": 619,
+      "sourceImageSHA256": "f33bc3c52045d31dd9befece4f54492b4ce88b3c9cde1560369f8934074389f9",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0619.json",
+      "reviewSHA256": "94f2fc5626c79daf58982bae50389a70d5579730ebf3f8e79fce77c559e3d831"
+    },
+    "620": {
+      "page": 620,
+      "sourceImageSHA256": "b1afb54eb0b46685f043776e0189b42f81be0ed5a177ecdf5f61bb243ba05bb6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0620.json",
+      "reviewSHA256": "41b080b42eea84ecb80924757a1de80cc3a5c2ddcd5b7a86317fdaeeb750b5a9"
+    },
+    "621": {
+      "page": 621,
+      "sourceImageSHA256": "a005af21368577f0f993da3d92c6dc7f3675608ce56a84f989f5abf41a4caf45",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0621.json",
+      "reviewSHA256": "b0f4d84e031730209dc77393b7a31c9236827d4fec59fdebaaf863149f526dd1"
+    },
+    "622": {
+      "page": 622,
+      "sourceImageSHA256": "6adc539296fbcb8fd59393617129ff635d73611368e1092f1e6f7c0fb1a249de",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0622.json",
+      "reviewSHA256": "f51649c22420e567bdad58279b455b862a054151de55daea08ecb145c0886326"
+    },
+    "623": {
+      "page": 623,
+      "sourceImageSHA256": "f1c6abe391985ecad08737cad576e7300b676f2a58ee108e32ff3bdbfe453e4d",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0623.json",
+      "reviewSHA256": "6c466120feb51981e4991ec2826ade01b3a71913dc06b282e078d4cbf2fc4d0f"
+    },
+    "624": {
+      "page": 624,
+      "sourceImageSHA256": "3e83e3e8cbef5cac31ed5231587609b4595502df7b2af3cb2868d0f611c017b1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0624.json",
+      "reviewSHA256": "b2ae0e994a8e0a0539f958bf09918390256fa2a54783daa941ef3f9037ee9f47"
+    },
+    "625": {
+      "page": 625,
+      "sourceImageSHA256": "6c6b6f028242ca9d5442b208cbcd3a8b7028dd774661e80a3f471a82c02772a2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0625.json",
+      "reviewSHA256": "6b7532af80e112f1feb53de0aa4152e1adb17f967118ef9b61f88ee04b121b42"
+    },
+    "626": {
+      "page": 626,
+      "sourceImageSHA256": "2c9e8b2bd589a947337a919f4b1dc60f739d10cdbb5b256c9b234244beed8bea",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0626.json",
+      "reviewSHA256": "69e802b8ac616eb6ac817b8a2b245e187da9be77f9708f9ba7cde2940a79dfa7"
+    },
+    "627": {
+      "page": 627,
+      "sourceImageSHA256": "e2f5acba3980701d5477a8eec54f7e948be4cd2f91ca185b28f7d39875bed625",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0627.json",
+      "reviewSHA256": "7c17a8fc1c37d4933526eb5fbc12ad69ca3b11789e1945fc380025b9b565b0a8"
+    },
+    "628": {
+      "page": 628,
+      "sourceImageSHA256": "51c696bbac4ec0d016181060ee0d5140efcf453e37665b341383660a63d30667",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0628.json",
+      "reviewSHA256": "2e9dbb253be469060f0aab5c885d496ebfdc23a31f95c6c4ae3acedd98e65047"
+    },
+    "629": {
+      "page": 629,
+      "sourceImageSHA256": "1cfd338580acbe72f710ca73b9ce0379f267e28cfa4e136c73b9da17f848546e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0629.json",
+      "reviewSHA256": "b95aa800ed8f1f1e1c585615d35d7719147afd2ee041b0424911bc87b20c3110"
+    },
+    "630": {
+      "page": 630,
+      "sourceImageSHA256": "0145618d52c56ff9f3ac5ae7809a7aa59479132e6d86eb5b25fb62bf983d2742",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0630.json",
+      "reviewSHA256": "e188c52b43f40ee35fa9476f9b64edd81f0d6c4ba70e77d64aca0e20259209f7"
+    },
+    "631": {
+      "page": 631,
+      "sourceImageSHA256": "d142327f9949855a4310fac11169b06c470404b990f87cde1ebc2481550088d7",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0631.json",
+      "reviewSHA256": "22fb0e794c05ce2819b3c68c4be94ef0e90beac3da37ba03cf89e6e43d2cc2bb"
+    },
+    "632": {
+      "page": 632,
+      "sourceImageSHA256": "0de53a09ca60231b70a0963e73b356c677d046ab2680a24d8157c99eb8f3c8ff",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0632.json",
+      "reviewSHA256": "73110973aa26e907d493c069d064656daeb9546b68d2055aa772a27a0fdb2ec6"
+    },
+    "633": {
+      "page": 633,
+      "sourceImageSHA256": "b14ca9b539fe5c5be76f89918f9525025afea186a66f3dc1c363767b57ac8d68",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0633.json",
+      "reviewSHA256": "72c8067c988d9abd26489908c04056b8e8adf11b2088de27a62d48c3a8488bfb"
+    },
+    "669": {
+      "page": 669,
+      "sourceImageSHA256": "695360a8e4f02ff54b44c18f6fe9db8c5804b210e4783d0c29e203539759ef9c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0669.json",
+      "reviewSHA256": "96b33be7fd22664c10ded78898256dbffd59230cbdcb8c1d795963ac24d6bcd4"
+    },
+    "670": {
+      "page": 670,
+      "sourceImageSHA256": "012077616088ece11d63e13b3dd3b4599277de4fcb3989af30f4f59062eca885",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0670.json",
+      "reviewSHA256": "c6e72143239692b4edbdbd3e4fef9b24b5c94f6e66a20cb1a91494d05d4b3a61"
+    },
+    "671": {
+      "page": 671,
+      "sourceImageSHA256": "60afabf24bbe177855fdcb0364a09da2b9c423ebb1a1c6d9ba1585477ab930c5",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0671.json",
+      "reviewSHA256": "524926e8ff51545760287a3b58a0beb3e1d8c79e80c3b96fae533be85d0bf1bc"
+    },
+    "672": {
+      "page": 672,
+      "sourceImageSHA256": "c7456733441a8239371efe652381506d6bbf2c26fcce9ea15d4e4ab0dd3792ea",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0672.json",
+      "reviewSHA256": "258f7209d7f66114b4f42b68d063980f0736cabf8ed179f18560e0572cfddd95"
+    },
+    "673": {
+      "page": 673,
+      "sourceImageSHA256": "11956c92e77589bd22f9ad7e04d196593abf8fac10c9b93f91857b370a4a5128",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0673.json",
+      "reviewSHA256": "e70546fa2079ed58f82baf35864e71c284b45ee853c21f6820865e01002b9aa7"
+    },
+    "674": {
+      "page": 674,
+      "sourceImageSHA256": "44388398e838f9fcbf5f9b8c9ba55a2ee045503979741e86a5dfd3bf2905b619",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0674.json",
+      "reviewSHA256": "dfd2b2e5a8fdaff74f29cf216345086e1cfe46168d12363d48bcc2599b6e8941"
+    },
+    "675": {
+      "page": 675,
+      "sourceImageSHA256": "fd99dfc85bb1052b1b7c681c3cb38ac37c86893a6df7feecff3921180e29cd94",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0675.json",
+      "reviewSHA256": "ba137014f8ef215732aac9ba962afbd057dc191946e8795bedaba8e153c9cfac"
+    },
+    "676": {
+      "page": 676,
+      "sourceImageSHA256": "f0fcf1a57dd594733248e2185e12921f899383d9f40de9b243ab77d8af75ad7d",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0676.json",
+      "reviewSHA256": "e86b649a2b8dd1b11ae7e2bcfd48d1fc7a3976a9b593dded1da379edd42a66b0"
+    },
+    "677": {
+      "page": 677,
+      "sourceImageSHA256": "d1da25579be2940e7c0021e99404b354edce3aee924aef463799d6206c822ee2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0677.json",
+      "reviewSHA256": "b476f99a7496f9613a301e6413c5ca1e93deefb790faf076a9abec0694299d90"
+    },
+    "678": {
+      "page": 678,
+      "sourceImageSHA256": "68c4b8fa66b3ed32c49cb8a2265190d67c315f5e60fe91309405d52689774960",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0678.json",
+      "reviewSHA256": "67bc33a0b98ac77fe351ac568006f0b4c0533390299d55150650f093bc4c9bea"
+    },
+    "679": {
+      "page": 679,
+      "sourceImageSHA256": "c3c7ecfae1f1a2951eb73ac13f8d0e6ca83611a7b93d753416f163235208fb06",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0679.json",
+      "reviewSHA256": "c5796e0a4e462af27c1e54537dcba28a0ecd223fe8dcdc0962df9a7bd974571c"
+    },
+    "680": {
+      "page": 680,
+      "sourceImageSHA256": "75a53cf29e5e5983fcfa85f86a2a61fc6c490c6d5287a244c53a1493d1efef66",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0680.json",
+      "reviewSHA256": "25a966d06485befa38f951d648d0c6f43d961f62ef50657da266033b71d60976"
+    },
+    "681": {
+      "page": 681,
+      "sourceImageSHA256": "da692de4873ca90063455e821f0697232e095e8aa915a3e651ed0e23ea83fa65",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0681.json",
+      "reviewSHA256": "f5ee3694a5a7ac999871a6130bf134d0a5685f2f64f3a336903675f3fcaa5ff5"
+    },
+    "682": {
+      "page": 682,
+      "sourceImageSHA256": "a7067a5bd7377c412e9d70347eee9d97ecc753294c6e691c3db68fc418c6c4d7",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0682.json",
+      "reviewSHA256": "74a96571c626e267d77c773432b3ad26de321530a3d3627b58b6fafb2c90ef0f"
+    },
+    "683": {
+      "page": 683,
+      "sourceImageSHA256": "cd163ee3d3175f3faff63cec8e0d4c40604d295e4fa2f7ed5be4c32ddf589de7",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0683.json",
+      "reviewSHA256": "bef6a5c40c9f62e82d7f145c8232dfd5deab605c0b11f75303c8050ffc979176"
+    },
+    "684": {
+      "page": 684,
+      "sourceImageSHA256": "1bd1bf4e0b6c78f228263dc90bbf90f13721492b2881a122b5257c4d9f9a11ef",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0684.json",
+      "reviewSHA256": "42940426eb83839a4c5c087eff1dbbc3b2ecd3bce430818d19ace8102bf9f9c0"
+    },
+    "685": {
+      "page": 685,
+      "sourceImageSHA256": "13ec0215de9132ea86b943411e49a499102e880c1ddb5d0ad16ce8a9b0516861",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0685.json",
+      "reviewSHA256": "6ed3e78620c810831d503d063e9235ed9311b2e6f9d026b0ee28dac698b49e38"
+    },
+    "686": {
+      "page": 686,
+      "sourceImageSHA256": "8d13f189d11475aa6692c2a84d59eb11ddbaead823aadf1eb381e3cd7e222bd9",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0686.json",
+      "reviewSHA256": "0970652fe7ca420ff2b8516129531ea7b9c6e69e4ba2dbad9f6bd310656e1456"
+    },
+    "687": {
+      "page": 687,
+      "sourceImageSHA256": "31012c25ef476bcb9c1a5cb8c321b3f1b658443f53a5cce238804cc4ba765050",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0687.json",
+      "reviewSHA256": "ed502fd1e86c6f1fa72e2267a5d3888798c5a70fc0120f84d51f492377ef53b3"
+    },
+    "688": {
+      "page": 688,
+      "sourceImageSHA256": "dbce9f297d96c218fc186b819ee319ba8e0b6a807756127fa28039a540fb6c80",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0688.json",
+      "reviewSHA256": "9cbfc77e4756c89d9cb8200b7058e67326df83ab1d6363ca9889ebe1632ed560"
+    },
+    "689": {
+      "page": 689,
+      "sourceImageSHA256": "1cf50b4fbc2e98ab0c98dce008dfc8284158cf01e9ab26816805201a5f674145",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0689.json",
+      "reviewSHA256": "b2d55ec041033ffca1ac9f9fb70a87932d6bb581de6b3f3d8d6b3fbb12dbc90f"
+    },
+    "690": {
+      "page": 690,
+      "sourceImageSHA256": "0bc1eed6b738fd0a2adf62677d6a2b49773cfb1f2a843e434ae215daaa3197e2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0690.json",
+      "reviewSHA256": "9172fcd6712adbb39767bde1edeaed212104b8f3357663b9310043e9b6eba8ee"
+    },
+    "691": {
+      "page": 691,
+      "sourceImageSHA256": "542abcabc3d2ddb782678f8ed51120da4bba6e2931d85a9d9c4c8a69d9c86809",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0691.json",
+      "reviewSHA256": "56b896b348d300ce595d374215f40e426ca80060c51816ecd2d236906745045f"
+    },
+    "692": {
+      "page": 692,
+      "sourceImageSHA256": "a2d9e0278fa4bd1f8949215396fed49d7c0811c757b60c4b87f648df89fc99e5",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0692.json",
+      "reviewSHA256": "3a1d8e5c2f7b7d06290b0d331776aa15a43663e695490e542453c60fe3df8b19"
+    },
+    "693": {
+      "page": 693,
+      "sourceImageSHA256": "fa980ffbf9d8808fcf597aefea0d5f00145580246afe19bb70af643144c7da01",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0693.json",
+      "reviewSHA256": "88b612c7a298f1d3ad341489d743ef1f42deab2cf9e54a49e975edbdcc408f61"
+    },
+    "694": {
+      "page": 694,
+      "sourceImageSHA256": "29c69b2e1ec29379bfba64c2e0495d1a6e1a55b89036298940c8bbf045a22d1e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0694.json",
+      "reviewSHA256": "a73cf2ebf52a8a924ac26f3dab1208792ed2d3f686d58bdfb4944df1f8322104"
+    },
+    "695": {
+      "page": 695,
+      "sourceImageSHA256": "4a84e9e0756eb041a0a1445f374576cd64d44f8fbddea8381094e84798a7cb2e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0695.json",
+      "reviewSHA256": "580b011673d60d75f5e1184a4bd259ebe344e9f0ce4197ceb2049f87b6b55f1d"
+    },
+    "696": {
+      "page": 696,
+      "sourceImageSHA256": "282a8b6b0cecc78a2132583eea8594b0b9ba70d3f4c0e7d885b56a749c8f9f71",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0696.json",
+      "reviewSHA256": "c78e7a5fe93201563f4da23ab001c30784bd466ca6abab4d52a032de692cf7b3"
+    },
+    "697": {
+      "page": 697,
+      "sourceImageSHA256": "292612c176ab65dd877c8af9b48d278caba2e0dd65a7a8086e89acda8f54d8fe",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0697.json",
+      "reviewSHA256": "4db020ddd51983eaec0eb1c45c56858ab48b96b02124a116e05721f71902a5bb"
+    },
+    "698": {
+      "page": 698,
+      "sourceImageSHA256": "31a453dcc103850b95b60f110000e9a37b21f10c00d397335b8f725ec27a7c02",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0698.json",
+      "reviewSHA256": "bb926b96b9cb7344517b834c1d511a87db6743463c8fef287fc1ca46a9dcdbe5"
+    },
+    "699": {
+      "page": 699,
+      "sourceImageSHA256": "5ec13494758b29f2c2355f4cfe9f7fa294e812960e1defc4abdec146beaa13f6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0699.json",
+      "reviewSHA256": "fdb1dcea25c7e4ea8c60650183eb392d74fc9aa841644e9a6285163a80542c4c"
+    },
+    "700": {
+      "page": 700,
+      "sourceImageSHA256": "1f1821a36e134c26c7b48eb2c461f079b09722602aa4bb7f8f1357eeeff983f0",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0700.json",
+      "reviewSHA256": "d2683b1ee65e28d03365c4d00c8871eb02a1fc4975c38ecf39a639d67a76deb2"
+    },
+    "701": {
+      "page": 701,
+      "sourceImageSHA256": "46796f9630c9b8d11b9883a34cd40996ce92b3df6a6f856dcfae816688efa38c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0701.json",
+      "reviewSHA256": "9c1ac2e24b69b6d76da3ff9419f00e81030f9c5067de83cc472dd52c06338370"
+    },
+    "702": {
+      "page": 702,
+      "sourceImageSHA256": "6865695be6d8684cef2e689a2670a330093c0b9c373da6dbc334979d3b02808c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0702.json",
+      "reviewSHA256": "a2cd9be9bc9baab2743b5a8a62d48c11fbbeaafdd43befbc9fdad3e71e5c8aae"
+    },
+    "703": {
+      "page": 703,
+      "sourceImageSHA256": "aac46b935698275052cce9f155a0cce8cca156fc93ec9ae4e4019699510fb32b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0703.json",
+      "reviewSHA256": "75eae1fea29a6bd8fb0bea1643c21395489937eb13fe1e916e58d5bc53882d8e"
+    },
+    "704": {
+      "page": 704,
+      "sourceImageSHA256": "b09ec849d9fd702d0762509e653f0c54f694ebe95693335ef5cd6619c7664bae",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0704.json",
+      "reviewSHA256": "67127006785e38c7b8288a5b7769a733b689732d8797515015f459ae923790b8"
+    },
+    "705": {
+      "page": 705,
+      "sourceImageSHA256": "b941f33b492f9f6cc631507fa4b22156adb9ba66ca8d1e5adb8844bc617656ed",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0705.json",
+      "reviewSHA256": "3cd9bf02cd2e065844c8085fd00819489ac3991ed13477a4b09eb28d935d7e2e"
+    },
+    "706": {
+      "page": 706,
+      "sourceImageSHA256": "8451d3337d8854062ac6b37815b128b0d5bf9d7dc0c10184cccbab2bd483c450",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0706.json",
+      "reviewSHA256": "0162e20061b67fb723b9cb660a400df87190a767a75a1ede47a452a2d3f82450"
+    },
+    "707": {
+      "page": 707,
+      "sourceImageSHA256": "512c3d01e1cd827f3da5947412a2aece0559be9e193ddfbdcd8e837472bbf92c",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0707.json",
+      "reviewSHA256": "6a7a3a2d3541618c3a81f50ca8cc61340ee963abd45dbb68b8566c7a17731215"
+    },
+    "708": {
+      "page": 708,
+      "sourceImageSHA256": "1d897d1f0adffb59c104b79661f38b1b2591b0f709b9408a7e585865c984ae0a",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0708.json",
+      "reviewSHA256": "e650283429d61a83bc8c7b5613db58644bc2f709a8b2889942f44eef39eaa759"
+    },
+    "765": {
+      "page": 765,
+      "sourceImageSHA256": "02582a0591f41e1469f00b14327854beae6f6d937793015e59b40b0148eed87e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0765.json",
+      "reviewSHA256": "c88db8e12d0e92bf21cd9dd53a7121be99e7f8634dc77dbcf9fe27cdce673e29"
+    },
+    "766": {
+      "page": 766,
+      "sourceImageSHA256": "71a8b4765a98af9d93157cc2529a81016d2dd454706758d7c5f968312adcbcff",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0766.json",
+      "reviewSHA256": "67ba77fd411a1604dd928a4402118d50d8c5502eafe4424035a69849180d3450"
+    },
+    "767": {
+      "page": 767,
+      "sourceImageSHA256": "d693d0e2166e01c4714cd67a5cf6a71544f5c25e564a4a03503c691808af7d28",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0767.json",
+      "reviewSHA256": "acf7317974ae106d9a2e8e1122a9ef92d20b7a2d41bd4929ed453ee8513ae86f"
+    },
+    "768": {
+      "page": 768,
+      "sourceImageSHA256": "e151b76bc19d2f64f1d9b0dd4cc0fa87637f6c2654bbad3ffca933c36ac3cd9b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0768.json",
+      "reviewSHA256": "4b14f8dc38168fccf172c607c8481601c9b0587a0a00d8dd8ac2f0be57e7e6e9"
+    },
+    "769": {
+      "page": 769,
+      "sourceImageSHA256": "e516529a72494f9104257cf3073df65b15a28c49e7e1c512d491d63d2b5d5961",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0769.json",
+      "reviewSHA256": "9e9cc39dd84e12c66a9ad5968502e65bad09ae3c8a25742ffb11c28afbdb02ce"
+    },
+    "770": {
+      "page": 770,
+      "sourceImageSHA256": "43df5c25bf725db6c61e06027190852f2302bf96adaeb9eff13f3eb363b9cb07",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0770.json",
+      "reviewSHA256": "7b6fa983a43b25dd8e6d6d4bb6fe9f2d396de1b963c694cceaade18c8da533e9"
+    },
+    "771": {
+      "page": 771,
+      "sourceImageSHA256": "3117d7182e3d53cd7265fd3523ee566adc701baeb8e257c1429df751e22c66ab",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0771.json",
+      "reviewSHA256": "673495b597cb94a263aec6cd54240af8eeb076fb5bc6b1d36dcece289ab8f9de"
+    },
+    "772": {
+      "page": 772,
+      "sourceImageSHA256": "763404fef56fc2cf9f41bd59fae4cc51e1f4257bf28f021032f4631035347c59",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0772.json",
+      "reviewSHA256": "536bfbf4691417ada31870fa6e51e1e124045aedc8191f2b59dc7a596106454e"
+    },
+    "773": {
+      "page": 773,
+      "sourceImageSHA256": "a6435d92e5473c1f89a68e87388460395c00e0f9838b8cd1f981fcb4f3541ec6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0773.json",
+      "reviewSHA256": "2894082295dd6f8b1fffcefdea6a6ec7ff2a066dffedbe04df2f87b01541ee5e"
+    },
+    "774": {
+      "page": 774,
+      "sourceImageSHA256": "6fa5bf6ba1b0a24101bfd397d2ea5d87e1f0781096dce7ebf01a22e253bfc6bb",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0774.json",
+      "reviewSHA256": "507294c4ff0b01b8056d220a4792b1e696534d4a79bac927167c2c02dc5bf1eb"
+    },
+    "775": {
+      "page": 775,
+      "sourceImageSHA256": "c72e73acd3f78e7c8084499cd6dba26458ce85974c91d31be31f2ea929ed86ea",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0775.json",
+      "reviewSHA256": "579fae6bd30660a6ff108301f0dc591996cbbee31e5fad3313244a8f75ab0c2c"
+    },
+    "776": {
+      "page": 776,
+      "sourceImageSHA256": "d309d12c6466b09782df5b8a5d59aa0a8f21383aa87a9b05b7e323f1921a80b9",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0776.json",
+      "reviewSHA256": "908cd2a01c9bf28c4735bd54e26816125b8c59148da70afce0fad4aaf4126751"
+    },
+    "777": {
+      "page": 777,
+      "sourceImageSHA256": "8d7164c4d72b4829f6ed7006fbde87f971860f9e527715ba395780a38f7051af",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0777.json",
+      "reviewSHA256": "86c0ff1ab15894e7570b12a5ac292910ae0001e95e06e679ed4893baca8e00bb"
+    },
+    "778": {
+      "page": 778,
+      "sourceImageSHA256": "5cda29e6aecf1f7d8dfe5e770d81aeb8f3d913627fa9bf7d7a1a79152abdcc8d",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0778.json",
+      "reviewSHA256": "06c3cb01245136373ae9ef4eef33ffcef5269bdc5fde56bfb6b3c99fcee9aa9e"
+    },
+    "779": {
+      "page": 779,
+      "sourceImageSHA256": "6adb664f940fd5409db5cd69750e7fcc95574005178ca0fae67a21fe53fe74a6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0779.json",
+      "reviewSHA256": "e8bd310faa8019fcac01b5ab814ada345d6551788f2946bc0ea7bd8e2fbb7d4f"
+    },
+    "780": {
+      "page": 780,
+      "sourceImageSHA256": "0e241aa7273250f43ab3cb70d492e04a85c8470a3436e9e634dc1e11f38fe0b6",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0780.json",
+      "reviewSHA256": "bb181824f06062c91c2437ee89a22e84d8f889219fa0018a6d825d071cfdfe5c"
+    },
+    "781": {
+      "page": 781,
+      "sourceImageSHA256": "b462a2435efc36b1951b8c700f241d10c36d608f4ae9d0e485dcc01c3e7981a2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0781.json",
+      "reviewSHA256": "da6b0671728754cc8adf962ab3490f9cd5f2e47e1ecfd8c6a9a5b88b2e3cd3b4"
+    },
+    "782": {
+      "page": 782,
+      "sourceImageSHA256": "dd18dcfb3be68304183ec4df8dd9f341eb896dff670c65da4296178d615f5370",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0782.json",
+      "reviewSHA256": "c0c1d51e097eb32770973f6880052e2fb1a41f3cc5d5d14f37d6d709ed5392c3"
+    },
+    "783": {
+      "page": 783,
+      "sourceImageSHA256": "5d4b4ab9eae043ec30af094bb237606027f5753a0e0c7e202a2e45e6131e1725",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0783.json",
+      "reviewSHA256": "b8f878dd4b63c67b7cf33c355017086496132edf7873487d3c67f4416e8b26fd"
+    },
+    "784": {
+      "page": 784,
+      "sourceImageSHA256": "4c87bf00c33683eeafd5de4bcd51b1c3d3fd891c18521c3b714ebe7f7134410b",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0784.json",
+      "reviewSHA256": "8fe48f9542e470ee708cbfabb79abcac87ae25e040113205e473a826ae60a17f"
+    },
+    "785": {
+      "page": 785,
+      "sourceImageSHA256": "c3a07880499b70247fc57b9d0089045c3c89ee8977bea25f5f1bf2f3442f343a",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0785.json",
+      "reviewSHA256": "3b17835dbc2b621b30821a35299b8330555928d76e6def2131c83552f8f54638"
+    },
+    "786": {
+      "page": 786,
+      "sourceImageSHA256": "0c97d994ad07c154b0977a82671f7cd321253405ac2d457d74093a635f86a8a9",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0786.json",
+      "reviewSHA256": "ce36abb6dcc926e1903a2e0a689196bb7917c31337e581e890b0f4b97fe24b1b"
+    },
+    "787": {
+      "page": 787,
+      "sourceImageSHA256": "fab31251f42cea912cca761532a047a7720e5313fdb6f4cee182a3a3845fc66a",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0787.json",
+      "reviewSHA256": "59fcccb788d875e8aa37e0e9dd003dd5bdd2cca85faf2e1c729969e7e0ca8bd9"
+    },
+    "788": {
+      "page": 788,
+      "sourceImageSHA256": "05ca8567a90f00af6d3e5392f328f1060bb30f9500ef43353822efb50012f268",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0788.json",
+      "reviewSHA256": "9703a49db9969362b405e4c445a4367081410972316db28740fb41d6eb73634a"
+    },
+    "789": {
+      "page": 789,
+      "sourceImageSHA256": "447ea8df5e3dde7dd7ba571874d766b01563c75abaa97e1a9985e411a6a1a62e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0789.json",
+      "reviewSHA256": "b7f8e1d4eea790a0a7cb0559d05c44ffbd5c246d9ce253b4ecb3eb2ebb7ccf90"
+    },
+    "790": {
+      "page": 790,
+      "sourceImageSHA256": "a1738649dd97f9126d31671cdc1ef9edc139177ced81b5d0f1b888bbe745e168",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0790.json",
+      "reviewSHA256": "5de8bcbc026b932338288ac7e46cc5a83b8ca113610122cf2b178969e8b07654"
+    },
+    "791": {
+      "page": 791,
+      "sourceImageSHA256": "cd316eec09a2f53f1299f805acdc46b7932481f5a5c7f72a481fa08bb7725363",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0791.json",
+      "reviewSHA256": "1cad54b6b7596ea440d9ace81350d7717c25f455683baddea7c2bd2d1fb8af50"
+    },
+    "792": {
+      "page": 792,
+      "sourceImageSHA256": "c02463762380d1f0e013cf4b4a63a626b7ac1875a54caab95e108221fd73ea09",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0792.json",
+      "reviewSHA256": "b59a976463e5ef0e9bb006ca11454d0399277bded9cb5fa873593c34d14da055"
+    },
+    "793": {
+      "page": 793,
+      "sourceImageSHA256": "0aee43fa1482f59e2c463d77d076d8c93f76ce6a2f7c8d00b4dff3f5b5d6c30f",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0793.json",
+      "reviewSHA256": "9d09d72ab28842bc64511f96c004e4ea8005dda442316ffee884d2b9e863c5b5"
+    },
+    "794": {
+      "page": 794,
+      "sourceImageSHA256": "10d7bb5efdaaa15369ccc85341e88089a4b1efe0dde2a08f72c99cb48ad2a30e",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0794.json",
+      "reviewSHA256": "4deb2f9924c091aa6d5f6d9917bbab744e6130c18686581fc8b58dc19aa99cf2"
+    },
+    "795": {
+      "page": 795,
+      "sourceImageSHA256": "d97a8ab2e371c5c9988ea66d20f35da8aa75cbebdb8fb7a7943f191d34e32320",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0795.json",
+      "reviewSHA256": "4bc0087d58dc1243664f7eb569f74a44911595e2b455724b42acbb02a27bb874"
+    },
+    "796": {
+      "page": 796,
+      "sourceImageSHA256": "eca0f2f3a2bf8a833f6b05c86695a245f4fc472dabf6f46cd4cc91950120d686",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0796.json",
+      "reviewSHA256": "ebb9cae8f84d8b8bc2d4d22d9bf14e8cc1b6613ba35c6c951aaa29a2281ecc7e"
+    },
+    "797": {
+      "page": 797,
+      "sourceImageSHA256": "d078c91dc3258f01b6ae7dc7995062ff5b2c84a506bbc83ef500f850da6a88a5",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0797.json",
+      "reviewSHA256": "8e154a2e30a751170f59eea743789ed390bca406d6966d76d6edaf772c8a0f6d"
+    },
+    "798": {
+      "page": 798,
+      "sourceImageSHA256": "ce00a8199fb731a08dab6ecb10e51dc1299c4b72cf79bb947cb69693e9ba43c1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0798.json",
+      "reviewSHA256": "d36af36eb80a9d0540ce70448ad27d5786768c442d23f8a5f01c2861ed0eaf51"
+    },
+    "799": {
+      "page": 799,
+      "sourceImageSHA256": "bf0c8172eb1ff7a463e0e4805d791aadfa8a4c0ce2f33028632836e1222b6ec4",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0799.json",
+      "reviewSHA256": "06df803c87b99d742c563c778bb49f9533d5e220f98ee15d8b35c9b549c42659"
+    },
+    "800": {
+      "page": 800,
+      "sourceImageSHA256": "51f62ccd7a5b360bb2a56805f61fd0d356f3df056e54752064e347f5f59356b3",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0800.json",
+      "reviewSHA256": "4dff0130e31a6183b6d9aaf3e97eaedcbf8a5ad59099e0a5565034fc6a28b8fa"
+    },
+    "801": {
+      "page": 801,
+      "sourceImageSHA256": "20fa944dfc651e4ffc898f3082bb5edaa0b7d130acae2b4863c199fdf371ae05",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0801.json",
+      "reviewSHA256": "86ee36c9cfda9eb869f9ba742e9946a78adf7cac1bac22d26bb201ed6669e999"
+    },
+    "802": {
+      "page": 802,
+      "sourceImageSHA256": "3b4bd64ec81b200c5aafb67b78ed090659988940a2c2f80427273e4df800ae66",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0802.json",
+      "reviewSHA256": "532a90e7b89d17b22afc7fd96bb56c31534f77892bc8e5919ed2d60111c773c0"
+    },
+    "803": {
+      "page": 803,
+      "sourceImageSHA256": "95cd820f542802cf51d59ddf056de23514ad6a4dc3280a60f473e972f77ca5c2",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0803.json",
+      "reviewSHA256": "044ce1bb555278b8f532e94ffff74f6d02179aca99c9e0c9d9486da6443b066b"
+    },
+    "804": {
+      "page": 804,
+      "sourceImageSHA256": "314aea85370d03acb2e5e6bf90d03f32797955c85b87864ff018a903e2cd37c0",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0804.json",
+      "reviewSHA256": "331905803629b2604abd66912863306fb69eac47e1316a46fa097f4bf496ee8c"
+    },
+    "805": {
+      "page": 805,
+      "sourceImageSHA256": "a9434ce10fbf7a6133292e6da5d7af32bf941f365693919caa03796a98174e88",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "derived-unvalidated",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0805.json",
+      "reviewSHA256": "f0bc0b2f5b483f1ba7b97eab6ef4aa758f19880517a1d546005a49d1ea9b34b6"
+    },
+    "895": {
+      "page": 895,
+      "sourceImageSHA256": "cc3deeab40f2d504c3c6851c324b032ceb2e162575c2f6575d7d50e1f882b7bf",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0895.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "982b8fc0e392efa18d68bf37be5fdccd9f8d71832f57ab3015d43ec5ce517e70"
+    },
+    "897": {
+      "page": 897,
+      "sourceImageSHA256": "9838ac555b93d30743f1326cb3e2985bf876eecd532c9aabae7ae9be09cea587",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0897.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "efc6af4efbc1c52e6adac96ba1227fec6c4dd6a64a9d4fe2e6f454d6393a322b"
+    },
+    "899": {
+      "page": 899,
+      "sourceImageSHA256": "76fcc56871ec41ae71cec5a5c4037346f1c74c694429a0d8448857280a855646",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0899.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "3a7bbf9be6052f8f9f026c45e2ad587dfba7dabf4c93c0a1dd9414eaf9892218"
+    },
+    "901": {
+      "page": 901,
+      "sourceImageSHA256": "103862342cc78c336e7f1f40ac95bc127b5e46e933fc6c0ff92a5554ac8c6f30",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0901.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "4238d9578147aba74bc59bb534f8ae7a4ee193c94b2b11499016a8bf60fd2376"
+    },
+    "903": {
+      "page": 903,
+      "sourceImageSHA256": "f4cdb8720e82243b892f9bf280ab73b4c1b21c81a694ff75a3000252946172a1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0903.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "a5a7417661bbb760469bc089ef017eb634e87fc538d73c18f95014a1b19ab950"
+    },
+    "905": {
+      "page": 905,
+      "sourceImageSHA256": "1ceeae580b2a9f87074910eb54a832a0eeaa6421b93957d69a31bb038118c771",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0905.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "7888f860713fba4f8d64eff6ba7e40f8ea65246a2223ad2aca0f69253934d668"
+    },
+    "907": {
+      "page": 907,
+      "sourceImageSHA256": "5bc0f6067458cdcfa1737cacbc414e4620fbcc7631ff7715d89e26ebc1e2dcb1",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0907.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "92d035ed8bba71348be809c03706fa3d74a65b4be8445e6d655d009a57011b4b"
+    },
+    "909": {
+      "page": 909,
+      "sourceImageSHA256": "e11ea7c861e78cc58617a058c13270fc301d1d19476d423ec82453815f4fe450",
+      "fields": [
+        "regularity",
+        "rate",
+        "pWaves",
+        "pr",
+        "qrs",
+        "interpretation"
+      ],
+      "reviewStatus": "source-marked-with-limits",
+      "scoring": "none",
+      "reviewPath": "ecg/source-reviews/p0909.json",
+      "revealOwner": "source",
+      "inventoryGroup": "paired-source-answer",
+      "reviewSHA256": "53c0abcde133e7af4951c0d984801175a14884c44976cfe0e84627970e81e35a"
+    }
+  },
+  "sourceAnswerPairs": [
+    {
+      "questionPage": 429,
+      "answerPages": [
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436
+      ],
+      "overlap": "Also blank inventory page429 and existing trainer a6d28f; count once."
+    },
+    {
+      "questionPage": 895,
+      "answerPages": [
+        896
+      ]
+    },
+    {
+      "questionPage": 897,
+      "answerPages": [
+        898
+      ]
+    },
+    {
+      "questionPage": 899,
+      "answerPages": [
+        900
+      ]
+    },
+    {
+      "questionPage": 901,
+      "answerPages": [
+        902
+      ]
+    },
+    {
+      "questionPage": 903,
+      "answerPages": [
+        904
+      ]
+    },
+    {
+      "questionPage": 905,
+      "answerPages": [
+        906
+      ]
+    },
+    {
+      "questionPage": 907,
+      "answerPages": [
+        908
+      ]
+    },
+    {
+      "questionPage": 909,
+      "answerPages": [
+        910
+      ]
+    }
+  ],
+  "existingTrainer": {
+    "caseCount": 13,
+    "assessedFieldCount": 79,
+    "status": "Retained AI visual/source review; not clinician sign-off.",
+    "runtime": "ecg/trainer.js",
+    "review": "ECG-REVIEW.md",
+    "combinedPageMappings": {
+      "a6d28f": 429,
+      "b9e407": 472,
+      "c2f861": 481,
+      "d7a350": 491,
+      "e4b916": 559,
+      "f8c205": 571,
+      "g3d782": 718,
+      "h5e139": 728,
+      "j1f624": 758,
+      "k8a473": 649,
+      "m2b695": 653,
+      "n6c048": 656,
+      "p4d827": 664
+    },
+    "mappingMethod": "Independent side-by-side source-page and trainer waveform inspection, not chapter offsets alone. Content identity with scaling/crops; not a new embedded-object byte identity claim."
+  },
+  "rights": "Existing supplied course materials retain source attribution. Private educational implementation only; no expanded redistribution rights asserted.",
+  "pairedSourcePageCount": 8,
+  "responsePageCount": 204,
+  "pageAliases": {
+    "896": 895,
+    "898": 897,
+    "900": 899,
+    "902": 901,
+    "904": 903,
+    "906": 905,
+    "908": 907,
+    "910": 909
+  },
+  "batchCoverage": {
+    "sourceMarkedBlankPages": [
+      429
+    ],
+    "derivedReviewPages": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      514,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      525,
+      526,
+      527,
+      528,
+      529,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      680,
+      681,
+      682,
+      683,
+      684,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698,
+      699,
+      700,
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      765,
+      766,
+      767,
+      768,
+      769,
+      770,
+      771,
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      778,
+      779,
+      780,
+      781,
+      782,
+      783,
+      784,
+      785,
+      786,
+      787,
+      788,
+      789,
+      790,
+      791,
+      792,
+      793,
+      794,
+      795,
+      796,
+      797,
+      798,
+      799,
+      800,
+      801,
+      802,
+      803,
+      804,
+      805
+    ],
+    "conditionalRatePages": [
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310,
+      311,
+      312,
+      437,
+      438,
+      439,
+      440,
+      441,
+      442,
+      443,
+      444,
+      445,
+      446,
+      447,
+      448,
+      449,
+      450,
+      500,
+      501,
+      502,
+      503,
+      504,
+      505,
+      506,
+      507,
+      508,
+      509,
+      510,
+      511,
+      512,
+      513,
+      515,
+      516,
+      517,
+      518,
+      519,
+      520,
+      521,
+      522,
+      523,
+      524,
+      526,
+      527,
+      528,
+      529,
+      577,
+      578,
+      579,
+      580,
+      581,
+      582,
+      583,
+      584,
+      585,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      628,
+      629,
+      630,
+      632,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      680,
+      681,
+      682,
+      683,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      692,
+      694,
+      695,
+      697,
+      698,
+      699,
+      700,
+      701,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      765,
+      766,
+      767,
+      768,
+      769,
+      771,
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      779,
+      780,
+      782,
+      783,
+      784,
+      785,
+      786,
+      787,
+      788,
+      789,
+      790,
+      791,
+      792,
+      793,
+      794,
+      795,
+      796,
+      798,
+      799,
+      800,
+      801,
+      802,
+      803,
+      804
+    ],
+    "rateWithheldPages": [
+      514,
+      525,
+      592,
+      627,
+      631,
+      633,
+      684,
+      693,
+      696,
+      702,
+      770,
+      778,
+      781,
+      797,
+      805
+    ],
+    "unadjudicatedBlankPages": [],
+    "newScoredFields": 0
+  }
+}

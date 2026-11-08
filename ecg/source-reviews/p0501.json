@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "page": 501,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "330113bad3feced7b80262542229283f17772f386ce971c8571b7f0facf18115",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Irregular (provisional)",
+      "basis": "Visually checked ventricular peaks and measured R–R intervals in original PDF 501",
+      "reason": "R–R intervals: 0.821 s, 0.667 s, 0.602 s, 1.073 s, 0.919 s, 0.764 s, 0.65 s. These describe the short displayed sample, not an independently adjudicated rhythm diagnosis."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 80 bpm",
+      "basis": "Assumed course speed of 25 mm/s; independently checked 150 small-square intervals across 738 pixels",
+      "reason": "Mean R–R estimate 76.4 bpm; six-second count estimate 80 bpm. These methods differ with phase at the strip endpoints, especially for irregular rhythms. The strip itself has no printed paper-speed label."
+    },
+    {
+      "id": "pWaves",
+      "value": "Atrial identity unresolved: Pre-QRS upward excursions are only approximately 2–4 original pixels high on a drifting baseline. They repeat, but P identity cannot be securely separated from baseline variation at this resolution.",
+      "basis": "Original PDF page 501; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.04–0.14 s (conditional, unvalidated)",
+      "basis": "Original PDF page 501; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Sharp ventricular upstroke and post-downstroke return to local baseline are identifiable. Small Q/S components may be obscured by trace thickness. Approximate reader-union envelope, conditional on course speed. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "Irregular ventricular spacing over this short strip, with a conditional mean rate near 80 bpm. Tiny pre-complex excursions are not securely identified as P waves. Sinus arrhythmia remains one possibility, requiring confirmation of uniform sinus P waves before every QRS. The course pattern also requires constant PR 0.12-0.20 s and QRS under 0.12 s; those interval criteria are not established here. No respiratory relationship or alternative atrial mechanism is established.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "P-wave identity unresolved: Pre-QRS upward excursions are only approximately 2–4 original pixels high on a drifting baseline. They repeat, but P identity cannot be securely separated from baseline variation at this resolution.",
+    "PR interval unresolved: No numeric PR estimate: P identity or its distinct onset remains unresolved. Candidate x bands are search targets only, not measurable P onsets.",
+    "Calibration assumes the course’s 25 mm/s convention (PDF pages 228, 230, 231 and 234). Every image grid was checked separately; the assumption is not a per-strip speed label.",
+    "Peak positions are approximate to about ±2 source pixels; morphology, low-amplitude P waves and boundaries remain uncertain. This is not a statistical confidence interval."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      135,
+      236,
+      318,
+      392,
+      524,
+      637,
+      731,
+      811
+    ],
+    "rrPixels": [
+      101,
+      82,
+      74,
+      132,
+      113,
+      94,
+      80
+    ],
+    "gridSpanPixels": 738,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean RR pixels × 6 / gridSpanPixels)",
+    "runtimeScoringAllowed": false
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0501.json",
+    "baselineReviewSHA256": "1d2fd0819a16a2e833ae0987fc12f4639d3ebbfa7be0189159ceb87f0dd09dfe",
+    "sourceImageSHA256": "330113bad3feced7b80262542229283f17772f386ce971c8571b7f0facf18115",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "unresolved_component_identity",
+        "secondsRange": null,
+        "reason": "Pre-QRS upward excursions are only approximately 2–4 original pixels high on a drifting baseline. They repeat, but P identity cannot be securely separated from baseline variation at this resolution.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/2"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/1"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/1"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=501]"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "No numeric PR estimate: P identity or its distinct onset remains unresolved. Candidate x bands are search targets only, not measurable P onsets.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/2"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/1"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/1"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=501]"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.04,
+          0.14
+        ],
+        "reason": "Sharp ventricular upstroke and post-downstroke return to local baseline are identifiable. Small Q/S components may be obscured by trace thickness. Approximate reader-union envelope, conditional on course speed.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/2"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/1"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/1"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=501]"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR and QRS values are withheld because reliable onset/end boundaries have not been established. A narrow/normal interval must not be assumed."
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0501.json",
+    "baselineReviewSHA256": "cb8c17360ffba6b296c1db49818b1ecb3ac40951b55057f33ee0a714fb8063a8",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "cb8c17360ffba6b296c1db49818b1ecb3ac40951b55057f33ee0a714fb8063a8",
+      "afterOriginal30AddendumSHA256": "cb8c17360ffba6b296c1db49818b1ecb3ac40951b55057f33ee0a714fb8063a8",
+      "afterOptionalInterpretationSHA256": "768f87b47035e2256f7f44f99a4aa3c7fc578b0754ba7612ebb05cac308f4e42",
+      "afterOptionalStatusSHA256": "768f87b47035e2256f7f44f99a4aa3c7fc578b0754ba7612ebb05cac308f4e42"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

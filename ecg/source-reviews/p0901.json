@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "page": 901,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "103862342cc78c336e7f1f40ac95bc127b5e46e933fc6c0ff92a5554ac8c6f30",
+  "authority": "source-marked-with-limits",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Original source summary",
+  "notice": "Compare your own observations with the original source summary below. Source-reported findings are not independent clinical adjudication and receive no automatic score.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "85 bpm",
+      "basis": "Original printed summary, PDF page 902",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "pr",
+      "value": "0.24 sec",
+      "basis": "Original printed summary, PDF page 902",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "qrs",
+      "value": "0.08 sec",
+      "basis": "Original printed summary, PDF page 902",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "interpretation",
+      "value": "Sinus Rhythm with 1st Degree Heart Block\nInferior infarct, age undetermined\nAbnormal EKG",
+      "basis": "Verbatim interpretation lines from original PDF page 902",
+      "reason": "These are the source\u2019s qualified assertions. Preserve terms such as \u201cpossible,\u201d \u201ccannot rule out\u201d and \u201cage undetermined\u201d; they are not independently confirmed diagnoses."
+    }
+  ],
+  "sourceAnswerPages": [
+    {
+      "page": 902,
+      "imageRoute": "private-course/page/902.png",
+      "sha256": "259195c2eb1c68028971e56a2e3fc23012da3c3b600cd3c0ef2c79285c8a27ca"
+    }
+  ],
+  "limitations": [
+    "Age undetermined must remain attached to the infarct statement.",
+    "Regularity and P-wave fields are not transcribed from a separate printed answer here; do not infer them automatically from a diagnosis label."
+  ]
+}

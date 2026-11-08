@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "page": 895,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "cc3deeab40f2d504c3c6851c324b032ceb2e162575c2f6575d7d50e1f882b7bf",
+  "authority": "source-marked-with-limits",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Original source summary",
+  "notice": "Compare your own observations with the original source summary below. Source-reported findings are not independent clinical adjudication and receive no automatic score.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "76 bpm",
+      "basis": "Original printed summary, PDF page 896",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "pr",
+      "value": "0.20 sec",
+      "basis": "Original printed summary, PDF page 896",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "qrs",
+      "value": "0.12 sec",
+      "basis": "Original printed summary, PDF page 896",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "interpretation",
+      "value": "Sinus Arrhythmia with occasional PVCs\nLeft Axis Deviation\nLeft Ventricular Hypertrophy\nCannot rule out Septal infarct\nAbnormal EKG",
+      "basis": "Verbatim interpretation lines from original PDF page 896",
+      "reason": "These are the source\u2019s qualified assertions. Preserve terms such as \u201cpossible,\u201d \u201ccannot rule out\u201d and \u201cage undetermined\u201d; they are not independently confirmed diagnoses."
+    }
+  ],
+  "sourceAnswerPages": [
+    {
+      "page": 896,
+      "imageRoute": "private-course/page/896.png",
+      "sha256": "e91e4e9c862053a92c28557cf374f2a0e14cfde2b5e6ac2bddc1f52cf522a17b"
+    }
+  ],
+  "limitations": [
+    "QRS 0.12 sec is the printed boundary value, not a narrow-QRS assertion.",
+    "Cannot rule out is uncertainty, not a confirmed infarct.",
+    "Regularity and P-wave fields are not transcribed from a separate printed answer here; do not infer them automatically from a diagnosis label."
+  ]
+}

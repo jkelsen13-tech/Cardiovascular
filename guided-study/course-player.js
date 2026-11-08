@@ -82,7 +82,7 @@
   if(next<0||next>=sequence.length)return false;
   playing=false;audio.pause();loadController?.abort();cancelScene();const rev=++revision,controller=new AbortController();loadController=controller;
   active=true;mode='guided';index=next;time=at;completed=false;loading=true;needsGesture=false;error='';applied=null;sceneSnapshot=null;lastTick=-1;lastSaved=-1;
-  contextual.takeForCourse();pauseAdapters();if(clipUrl){host.URL.revokeObjectURL(clipUrl);clipUrl=null;}render();
+  contextual.takeForCourse(()=>active&&mode==='guided'&&!loading&&!!applied);pauseAdapters();if(clipUrl){host.URL.revokeObjectURL(clipUrl);clipUrl=null;}render();
   try{const l=lesson(),url=new URL(l.audio.src,doc.baseURI);if(url.origin!==host.location.origin)throw Error('Recording must come from this site');
    const response=await fetch(url,{signal:controller.signal,credentials:'same-origin',mode:'same-origin'});if(!response.ok||response.status===206)throw Error('Recording returned HTTP '+response.status);const blob=await response.blob();
    if(rev!==revision||mode!=='guided')return false;if(!blob.size)throw Error('Recording is empty');clipUrl=URL.createObjectURL(blob);audio.src=clipUrl;audio.load();await metadata(controller.signal);

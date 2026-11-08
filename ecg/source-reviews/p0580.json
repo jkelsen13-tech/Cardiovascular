@@ -1,0 +1,279 @@
+{
+  "version": 1,
+  "page": 580,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "0afd1f94f031d0eec98e48e95b90b85cfade4876c6dc9a805deba4b7a34d7917",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Nonuniform spacing over this short sample; the first interval is longest and later intervals also vary beyond the illustrative picking envelope.",
+      "basis": "Provisional positive peak-to-peak spacing in original PDF 580",
+      "reason": "Selected pixel gaps: 99.5 px, 80 px, 71 px, 86 px, 81.5 px, 71.5 px, 79 px, 76.5 px. These describe a short sample, not a validated rhythm classification. "
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 91 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 151 detected lines enclose 150 minor horizontal intervals across 735.5 pixels in the observed calibration segment.",
+      "reason": "8 retained positive peak-to-peak intervals have mean spacing 80.62 px, giving 91.2 bpm. Individual-interval estimates span approximately 73.9–103.6 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Only shallow, low-amplitude bumps and baseline shifts are resolved before the selected complexes. The small regions near x=88, 245, 418 and 561 differ in shape and distance from the following complex. The broader post-complex humps are not relabeled as P waves. There is no consistent isolated pre-complex candidate with a defensible matching onset. Recorded small bump windows are exploratory geometry, not proven atrial events.",
+      "basis": "Original PDF page 580; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Descriptive visible morphology only. No validated atrial identity, sinus origin, electrical conduction, absent-P claim or forced one-to-one correspondence. Does any of the shallow pre-complex detail represent P activity? Is the first stable flattening after the negative limb a defensible QRS offset despite baseline drift? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.07–0.22 s (conditional, unvalidated)",
+      "basis": "Original PDF page 580; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "The earliest departure from the local low contour into the tall positive component is bracketed. A later steep-start alternative is retained. The deep negative limb returns sharply to a shallow early shoulder. This early flattening is used, not the later broad positive hump or its recovery. Only the separately listed author and reviewer selected complexes. Not a whole-strip invariant duration or proof of event-sequence completeness. Conditional on course 25 mm/s and correct atrial/ventricular component and onset/terminal-boundary identity. Range is a measurement/scenario envelope, not confidence limits or measured biological variation. Does any of the shallow pre-complex detail represent P activity? Is the first stable flattening after the negative limb a defensible QRS offset despite baseline drift? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Nine complete sharp positive spikes followed by prominent negative descents and gradual returns. The intervening trace slopes and contains low rounded or notched deflections. The baseline level shifts downward early in the strip.",
+      "basis": "New descriptive observation of the original raster, not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Small baseline features have unresolved identity and onset; selecting one per complex would overstate the source.",
+    "Small deflections are described only; atrial identity, absence, count and conduction relationship are not established.",
+    "No validated atrial onset or atrioventricular association; strip speed is not directly labeled.",
+    "No onset/offset adjudication; thick/resampled boundaries and absent strip-specific speed prevent a defensible numerical duration.",
+    "No validated onset/end landmarks or per-strip timing label.",
+    "No gain verification or amplitude landmark adjudication.",
+    "No diagnostic rhythm label or clinical interpretation is derived.",
+    "All derived fields are provisional and unscored. Qualified ECG educator review is required before scoring.",
+    "Only the directly observed horizontal calibration segment is used. Its line count may exclude strip borders; no full-strip duration is inferred from unlabeled marks or a prior page.",
+    "Pixel-picking and grid-sensitivity allowances are illustrative, not confidence intervals. Unknown paper speed, missed events, waveform identity and phase comparability are not bounded by those allowances.",
+    "A mean can conceal changing spacing. No sustained rate or diagnostic rhythm is inferred.",
+    "Two nonoverlapping, wave-free upper bands provide matching complete line sequences within 0.5 px. Their adjacent gaps are consistent with the visually evident ~5 px minor grid. Lower-band detections miss lines and are not used.",
+    "The partial upward stroke at the far right boundary near x=825 is omitted because its full apex/return lie outside the image.",
+    "Low rounded or notched recovery deflections are not counted as additional ventricular complexes.",
+    "The first positive apex is complete and retained; the preceding cycle is not shown."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      102.5,
+      202.0,
+      282.0,
+      353.0,
+      439.0,
+      520.5,
+      592.0,
+      671.0,
+      747.5
+    ],
+    "landmarkType": "sharp_positive_apex",
+    "rrPixels": [
+      99.5,
+      80.0,
+      71.0,
+      86.0,
+      81.5,
+      71.5,
+      79.0,
+      76.5
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 735.5,
+    "gridSmallSquareIntervals": 150,
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * 0.04 / pixels per minor horizontal interval)",
+    "intervalCount": 8,
+    "rawCandidateGapCount": 8,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-577-600-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "40059ec303eb4143c6b570b2ffd1c5b4e32d11a74cac8fbb9b26b0220bbc73ac",
+    "replacementFieldSHA256": "602d13b02d5366378405119a5e6e8370bbab9a5b1fbc1fa38d1d625faa8aa6f0",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round4/final-field-decisions.json",
+    "decisionInputSHA256": "652797397a5fbc32b9ebea28212c7645653022f9e2d2721f273b90fb3787b450",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0580.json",
+    "baselineReviewSHA256": "cf19b1d22c53be816dc354ec2c47cb3cc40656b5f61848884da41f9c080dd769",
+    "sourceImageSHA256": "0afd1f94f031d0eec98e48e95b90b85cfade4876c6dc9a805deba4b7a34d7917",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 580,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "fbcc8bedcd55a09616c0316bb1f2f223a0b70b50194499dae165395bf7deb932",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=580]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=580] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=580]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=580] and changes[page=580]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=580]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages577-588/field-proposals.json",
+            "sha256": "8fe1a91dde0d84af08dfb48f0ab8c887948ef4a6b2d10907e4b6c25cc8168b73",
+            "selector": "[page=580]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Only shallow, low-amplitude bumps and baseline shifts are resolved before the selected complexes. The small regions near x=88, 245, 418 and 561 differ in shape and distance from the following complex. The broader post-complex humps are not relabeled as P waves. There is no consistent isolated pre-complex candidate with a defensible matching onset. Recorded small bump windows are exploratory geometry, not proven atrial events.",
+        "seconds_range": null,
+        "identity_caveat": "Descriptive visible morphology only. No validated atrial identity, sinus origin, electrical conduction, absent-P claim or forced one-to-one correspondence.",
+        "remaining_educator_question": "Does any of the shallow pre-complex detail represent P activity? Is the first stable flattening after the negative limb a defensible QRS offset despite baseline drift?"
+      },
+      {
+        "page": 580,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "fbcc8bedcd55a09616c0316bb1f2f223a0b70b50194499dae165395bf7deb932",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=580]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=580] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=580]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=580] and changes[page=580]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=580]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages577-588/field-proposals.json",
+            "sha256": "8fe1a91dde0d84af08dfb48f0ab8c887948ef4a6b2d10907e4b6c25cc8168b73",
+            "selector": "[page=580]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": false,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Small baseline features have unresolved identity and onset; selecting one per complex would overstate the source.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Only the separately listed author and reviewer selected complexes. Not a whole-strip invariant duration or proof of event-sequence completeness.",
+        "conditions": "No numeric field released. Retain exact source scenarios and targeted adjudication questions.",
+        "remaining_educator_question": "Does any of the shallow pre-complex detail represent P activity? Is the first stable flattening after the negative limb a defensible QRS offset despite baseline drift?"
+      },
+      {
+        "page": 580,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "fbcc8bedcd55a09616c0316bb1f2f223a0b70b50194499dae165395bf7deb932",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=580]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=580] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=580]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=580] and changes[page=580]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=580]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages577-588/field-proposals.json",
+            "sha256": "8fe1a91dde0d84af08dfb48f0ab8c887948ef4a6b2d10907e4b6c25cc8168b73",
+            "selector": "[page=580]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": false,
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "observation": "The earliest departure from the local low contour into the tall positive component is bracketed. A later steep-start alternative is retained. The deep negative limb returns sharply to a shallow early shoulder. This early flattening is used, not the later broad positive hump or its recovery.",
+        "seconds_range": [
+          0.07,
+          0.22
+        ],
+        "author_seconds_range": [
+          0.09,
+          0.19
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.07,
+          0.22
+        ],
+        "sample_scope": "Only the separately listed author and reviewer selected complexes. Not a whole-strip invariant duration or proof of event-sequence completeness.",
+        "conditions": "Conditional on course 25 mm/s and correct atrial/ventricular component and onset/terminal-boundary identity. Range is a measurement/scenario envelope, not confidence limits or measured biological variation.",
+        "remaining_educator_question": "Does any of the shallow pre-complex detail represent P activity? Is the first stable flattening after the negative limb a defensible QRS offset despite baseline drift?"
+      }
+    ]
+  }
+}

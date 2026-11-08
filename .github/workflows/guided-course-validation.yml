@@ -24,6 +24,11 @@ jobs:
         run: |
           npm install --no-save --package-lock=false playwright@1.55.1
           npx playwright install --with-deps chromium
+      - name: Select hosted Chrome for sandboxed layout tests
+        run: |
+          course_chrome_path="$(command -v google-chrome)"
+          test -x "$course_chrome_path"
+          printf 'CHROMIUM_PATH=%s\n' "$course_chrome_path" >> "$GITHUB_ENV"
       - name: Static course and direct-heart navigation
         run: |
           export PLAYWRIGHT_CHANNEL=chrome
@@ -40,8 +45,12 @@ jobs:
           CARDIO_BASE_URL: http://127.0.0.1:8765/
         run: |
           node tools/sequential-course/slide-runtime.cjs
-          node tools/sequential-course/slide-interactions.cjs
+          node tools/sequential-course/layout-interactions.cjs
           node tools/sequential-course/slide-image-failure.cjs
+          node tools/sequential-course/layout-browser.cjs
+          node tools/sequential-course/layout-focus-browser.cjs
+          node tools/sequential-course/layout-residual-taps.cjs
+          node tools/sequential-course/layout-label-browser.cjs
       - name: Preserve presentation evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -50,4 +59,5 @@ jobs:
           path: |
             course-presentation-evidence/
             course-slide-evidence/
+            course-layout-evidence/
           if-no-files-found: ignore

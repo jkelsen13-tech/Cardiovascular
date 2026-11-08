@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "page": 909,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "e11ea7c861e78cc58617a058c13270fc301d1d19476d423ec82453815f4fe450",
+  "authority": "source-marked-with-limits",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Original source summary",
+  "notice": "Compare your own observations with the original source summary below. Source-reported findings are not independent clinical adjudication and receive no automatic score.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "107 bpm",
+      "basis": "Original printed summary, PDF page 910",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "pr",
+      "value": "0.16 sec",
+      "basis": "Original printed summary, PDF page 910",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "qrs",
+      "value": "0.08 sec",
+      "basis": "Original printed summary, PDF page 910",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "interpretation",
+      "value": "Sinus Tachycardia\nLeft Axis Deviation\nPossible Inferior infarct, age undetermined\nAbnormal EKG",
+      "basis": "Verbatim interpretation lines from original PDF page 910",
+      "reason": "These are the source\u2019s qualified assertions. Preserve terms such as \u201cpossible,\u201d \u201ccannot rule out\u201d and \u201cage undetermined\u201d; they are not independently confirmed diagnoses."
+    }
+  ],
+  "sourceAnswerPages": [
+    {
+      "page": 910,
+      "imageRoute": "private-course/page/910.png",
+      "sha256": "791e3b129f2c16599ffa6dd811d89bcfb7a163a0d433061e24433e58be842ffe"
+    }
+  ],
+  "limitations": [
+    "Preserve both Possible and age undetermined.",
+    "Regularity and P-wave fields are not transcribed from a separate printed answer here; do not infer them automatically from a diagnosis label."
+  ]
+}

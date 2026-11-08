@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "page": 525,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "b33847a01ac7e19c7c6b3cf2e704abbd5d0613a794e648cd70288abddb56d262",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Slightly variable pixel spacing; timing withheld (provisional)",
+      "basis": "Visually checked ventricular landmarks on original PDF 525",
+      "reason": "Successive ventricular peak spacings: 79 px, 81 px, 82 px, 84 px, 86 px, 86 px, 87 px, 87 px. Descriptive judgment from visible spacing, not a validated diagnostic threshold."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small upright pre-complex lobes recur before the positive-negative complexes. They are distinct from later broad positive waves, but are not independently validated atrial signals.",
+      "basis": "Original PDF page 525; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Describes visible morphology/association only, not established P identity, atrial origin or conduction. Reconcile the exact native horizontal grid with the original PNG finding of 152 lines/151 intervals and nominal time-mark span. Are there 150 or 151 complete small-square intervals between those marks, or a partial edge square? Obtain source/correct scale confirmation before converting any band to seconds. Then adjudicate the terminal S-recovery/ST boundary. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Small progressive changes in interpeak spacing. Calibration discrepancy prevents time-converted rates; no rhythm diagnosis assigned.",
+      "basis": "New provisional descriptive review, not a publisher answer or definitive rhythm diagnosis",
+      "reason": "Qualified ECG educator review has not occurred. Visible-deflection observations are supplied without validated P-wave identity. Numeric PR and QRS remain withheld."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Hold all seconds-based PR fields: inherited grid-count/time-mark calibration conflict is unresolved. Candidate onset bands and pixel differences are retained only.",
+    "qrs unresolved: Hold all seconds-based QRS fields for the same unresolved calibration. Recovery after the negative terminal excursion is bracketed in pixels; no rate or timing change is proposed.",
+    "Repeated bands y225,240,380,420 detect 152 lines/151 intervals, not expected 151/150. Tick geometry suggests the usual nominal six-second presentation, but grid/count agreement fails. Seconds, bpm and six-second count rates are withheld, not forced to standard calibration.",
+    "P-wave text is a provisional description, not validated atrial identity. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+    "Calibration assumes the course’s 25 mm/s convention, not speed metadata printed on each strip. Peak uncertainty is approximately ±2 source pixels, excluding errors in identifying the waveform."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      102,
+      181,
+      262,
+      344,
+      428,
+      514,
+      600,
+      687,
+      774
+    ],
+    "rrPixels": [
+      79,
+      81,
+      82,
+      84,
+      86,
+      86,
+      87,
+      87
+    ],
+    "gridSpanPixels": 738,
+    "gridSmallSquareIntervals": 151,
+    "rateMethod": null,
+    "runtimeScoringAllowed": false
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "10ddcbfbeed3566c21c29e6a560a5175e1ebc1442421999a528239c7c9da0e89",
+    "replacementFieldSHA256": "571c910aca685b538ebdad3dfc86259ef86349b1b7b69b4e6d116d522bf5e04f",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round3/final-field-decisions.json",
+    "decisionInputSHA256": "4a0b54bb731c829b8e0082dc19e7ab3c6589115151853d577511b1a170a4c9c6",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0525.json",
+    "baselineReviewSHA256": "7515c6634ea30c0ac21074757b7f0801433cde6bcf37917613dab73944d11db4",
+    "sourceImageSHA256": "b33847a01ac7e19c7c6b3cf2e704abbd5d0613a794e648cd70288abddb56d262",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 525,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=525]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=525] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=525]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=525]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=525] if present"
+          },
+          {
+            "path": "pages520-529/field-proposals.json",
+            "sha256": "236aed838f14740f4511be620557a135e438256853069937a5df94a1291e2a65",
+            "selector": "pages[page=525]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=525] if present"
+          }
+        ],
+        "source_native_sha256": "73d784f03831d99900ad600521dc4a1b7d0cf0496151d707f7ba8fc76aa0bc24",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Small upright pre-complex lobes recur before the positive-negative complexes. They are distinct from later broad positive waves, but are not independently validated atrial signals.",
+        "seconds_range": null,
+        "identity_caveat": "Describes visible morphology/association only, not established P identity, atrial origin or conduction.",
+        "remaining_educator_question": "Reconcile the exact native horizontal grid with the original PNG finding of 152 lines/151 intervals and nominal time-mark span. Are there 150 or 151 complete small-square intervals between those marks, or a partial edge square? Obtain source/correct scale confirmation before converting any band to seconds. Then adjudicate the terminal S-recovery/ST boundary."
+      },
+      {
+        "page": 525,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=525]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=525] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=525]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=525]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=525] if present"
+          },
+          {
+            "path": "pages520-529/field-proposals.json",
+            "sha256": "236aed838f14740f4511be620557a135e438256853069937a5df94a1291e2a65",
+            "selector": "pages[page=525]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=525] if present"
+          }
+        ],
+        "source_native_sha256": "73d784f03831d99900ad600521dc4a1b7d0cf0496151d707f7ba8fc76aa0bc24",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Hold all seconds-based PR fields: inherited grid-count/time-mark calibration conflict is unresolved. Candidate onset bands and pixel differences are retained only.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "remaining_educator_question": "Reconcile the exact native horizontal grid with the original PNG finding of 152 lines/151 intervals and nominal time-mark span. Are there 150 or 151 complete small-square intervals between those marks, or a partial edge square? Obtain source/correct scale confirmation before converting any band to seconds. Then adjudicate the terminal S-recovery/ST boundary.",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      },
+      {
+        "page": 525,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=525]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=525] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=525]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=525]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=525] if present"
+          },
+          {
+            "path": "pages520-529/field-proposals.json",
+            "sha256": "236aed838f14740f4511be620557a135e438256853069937a5df94a1291e2a65",
+            "selector": "pages[page=525]"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=525] if present"
+          }
+        ],
+        "source_native_sha256": "73d784f03831d99900ad600521dc4a1b7d0cf0496151d707f7ba8fc76aa0bc24",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Hold all seconds-based QRS fields for the same unresolved calibration. Recovery after the negative terminal excursion is bracketed in pixels; no rate or timing change is proposed.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "remaining_educator_question": "Reconcile the exact native horizontal grid with the original PNG finding of 152 lines/151 intervals and nominal time-mark span. Are there 150 or 151 complete small-square intervals between those marks, or a partial edge square? Obtain source/correct scale confirmation before converting any band to seconds. Then adjudicate the terminal S-recovery/ST boundary.",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0525.json",
+    "baselineReviewSHA256": "491f14d8615f2716ae2e76d428633a2ad21944fec4d516910467008d34168446",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "9ab91e650bae75294baa8d96155458189928897726b8d874ca664f96bc470a08",
+      "afterOriginal30AddendumSHA256": "9ab91e650bae75294baa8d96155458189928897726b8d874ca664f96bc470a08",
+      "afterOptionalInterpretationSHA256": "9ab91e650bae75294baa8d96155458189928897726b8d874ca664f96bc470a08",
+      "afterOptionalStatusSHA256": "9ab91e650bae75294baa8d96155458189928897726b8d874ca664f96bc470a08"
+    },
+    "optionalPatch": null,
+    "essentialLimitations": [
+      {
+        "original": "P-wave, PR and QRS answers are withheld because reliable atrial and QRS boundaries have not been established.",
+        "replacement": "P-wave text is a provisional description, not validated atrial identity. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+        "originalSHA256": "3595478cd2a8f8525816e46b26b9f6c19e33ee5d84f5a31ac7b8fd91672274a1",
+        "replacementSHA256": "8b6dc3933a44a1ff2e87a4f0bb388c265a0ecb2c12459d5f9b74e37e1b83aed0",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

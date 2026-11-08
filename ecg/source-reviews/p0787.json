@@ -1,0 +1,602 @@
+{
+  "version": 1,
+  "page": 787,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "fab31251f42cea912cca761532a047a7720e5313fdb6f4cee182a3a3845fc66a",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Retained upright peak spacing is similar, with a modest shortening toward the right.",
+      "basis": "Provisional positive peak-to-peak spacing in original PDF 787",
+      "reason": "Selected pixel gaps: 114.5 px, 114.5 px, 114 px, 112 px, 111 px, 111 px. These describe this brief sample, not a validated rhythm classification. The same dominant upward peak phase is retained across the visible sequence. Smaller rounded deflections and opposite-polarity components are not counted as additional events. No validated wave identity is assigned."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 65 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s (0.2 seconds per major grid interval); 11 detected lines enclose 10 major horizontal intervals across 245 pixels in the observed calibration segment.",
+      "reason": "6 retained positive peak-to-peak intervals have mean spacing 112.83 px, giving 65.1 bpm. Individual-interval rate range withheld in this provisional review. Only the conditional elapsed-window mean is projected. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate. Only the first-to-last retained-event window mean is conditionally projected, with assumed 25 mm/s. It is not a sustained-rate claim. All individual-interval rate and seconds projections are withheld."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Discrete small pointed precomplex features return to a flat segment before the narrow positive complexes; later broader positive humps are separately visible.",
+      "basis": "Original PDF page 787; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Do the visible discrete preceding features have atrial origin? Distinguish morphology from electrical identity. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.20–0.30 s (conditional, unvalidated)",
+      "basis": "Original PDF page 787; independently reconciled endpoint bands and two local major-grid spans; assumes course 25 mm/s, 0.2 seconds per observed major cell; major-grid-only timing, with no inferred minor-line count; not a verified per-strip speed",
+      "reason": "Selected discrete preceding-feature onset to the following sharp-complex onset is geometrically measurable. The preceding features are separate from the earlier broad recovery and the following sharp onset. Both identities remain conditional; this is a candidate PR scenario, not an established conduction interval. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Only if the preceding features are P onsets and the following sharp departures are QRS onsets. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Do these discrete preceding features have atrial origin, and do the selected sharp departures mark QRS onset? Establish the association before treating candidate onset-to-onset geometry as PR. PR endpoint roles: candidate P onset to candidate QRS onset; these are not QRS-duration endpoints. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.03–0.14 s (conditional, unvalidated)",
+      "basis": "Original PDF page 787; independently reconciled endpoint bands and two local major-grid spans; assumes course 25 mm/s, 0.2 seconds per observed major cell; major-grid-only timing, with no inferred minor-line count; not a verified per-strip speed",
+      "reason": "Selected initial sharp departures to early return shoulders or shelves provide conditional QRS geometry. Later broad recovery and return to the original baseline are excluded. These endpoints are visible landmarks, not established electrical ventricular onset or termination. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Do the selected initial departures and early return shoulders or shelves mark ventricular onset and termination, rather than intermediate geometric knees? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately 65 bpm (conditional mean-interval estimate). Retained upright peak spacing is similar, with a modest shortening toward the right. Low upright sharp spikes recur at similar spacing, with small positive prefeatures and larger positive recovery humps. The last intervals appear a little shorter. No named rhythm, atrial origin or conduction pattern is established. The selected candidate PR envelope is 0.20-0.30 s. These geometric bounds do not establish true P identity, constant or progressive PR, first-degree block or full-strip conduction. The selected QRS uncertainty envelope crosses 0.12 s and establishes no validated narrow/wide class.",
+      "basis": "Independently reviewed educational descriptive synthesis of the original raster and conditional source measurements; not a source-authored or educator-validated rhythm answer",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred. Optional educational description only. Electrical identities remain conditional. Timing is major-grid-only at assumed course 25 mm/s. Endpoint envelopes describe uncertainty, not physiological variability, constant PR, progression, common morphology or a validated width class. Named event ranges remain separate, including null page-level ranges. No source-authored key, clinical certification, scoring eligibility or educator endorsement is supplied."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "No clinical diagnosis, validated P-wave identity, numerical QT, scoring answer or educator validation is supplied. PR has an unvalidated conditional endpoint envelope for selected complexes. QRS has an unvalidated conditional endpoint envelope for selected complexes.",
+    "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+    "Private unvalidated educational observations; qualified educator review is outstanding.",
+    "Manual event selection and raster precision do not establish clinical validity.",
+    "Actual bold-grid coordinates detected independently in two trace-free bands; each accepted major interval contains five directly detected minor subdivisions.",
+    "25 mm/s and 0.2 seconds per major interval are assumed, not verified on this strip. Calibration is local only; no whole-strip duration is inferred.",
+    "The same dominant upward peak phase is retained across the visible sequence. Smaller rounded deflections and opposite-polarity components are not counted as additional events. No validated wave identity is assigned.",
+    "No visible interior dominant event is omitted from the retained window; smaller intervening deflections are not assigned validated wave identity.",
+    "Only the first-to-last retained-event window mean is conditionally projected, with assumed 25 mm/s. It is not a sustained-rate claim.",
+    "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      128.0,
+      242.5,
+      357.0,
+      471.0,
+      583.0,
+      694.0,
+      805.0
+    ],
+    "landmarkType": "positive peak-to-peak dominant event phase",
+    "rrPixels": [
+      114.5,
+      114.5,
+      114.0,
+      112.0,
+      111.0,
+      111.0
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 245,
+    "gridIntervalCount": 10,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * assumed seconds per observed grid interval / pixels per grid interval)",
+    "intervalCount": 6,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-786-805-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/round9/essential-status-wording.patch.json",
+    "patchSHA256": "71b4cf51d69d912b6911d94ec7510d566df958ce4df4b173c77b3c825f5905da",
+    "priorFieldSHA256": "161d777c10302a234fef041ac4b2675e0ad5f1290b6df4aaa34254a43d213241",
+    "replacementFieldSHA256": "6399e994c60154d9b3e9a4a6f0151ceb8ce9c96aef67c452d2aefbd0ba99629a",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round9/final-field-decisions.json",
+    "decisionInputSHA256": "15bcf2e0ccedc7a712bf07e9cb8115154b14cf31efb393502a28e1f07b57b844",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0787.json",
+    "baselineReviewSHA256": "7ea7ee765c003504ffe230d1d86975a042ccdb0dbb5cc860be691b5c91cf1721",
+    "sourceImageSHA256": "fab31251f42cea912cca761532a047a7720e5313fdb6f4cee182a3a3845fc66a",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 787,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "2f01fb55d7c01cc76b4b8a18e1923e15b58eaf1e3588627f5289a818806bfed5",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=787]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=787]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=787"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=787"
+          },
+          {
+            "path": "pages786-795/field-proposals.json",
+            "sha256": "98f9092f56f89afcc409e32ae450bf7713a6c17866047d019695c91517dcd995",
+            "selector": "pages[page=787].p"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-first.json",
+            "sha256": "77bf46df88712b1b8c50ee4dc8441dcbcffa601a9ea43f7786e331d0fea3462f",
+            "selector": "page 787 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Discrete small pointed precomplex features return to a flat segment before the narrow positive complexes; later broader positive humps are separately visible.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Do the visible discrete preceding features have atrial origin? Distinguish morphology from electrical identity.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 787,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "2f01fb55d7c01cc76b4b8a18e1923e15b58eaf1e3588627f5289a818806bfed5",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=787]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=787]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=787"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=787"
+          },
+          {
+            "path": "pages786-795/field-proposals.json",
+            "sha256": "98f9092f56f89afcc409e32ae450bf7713a6c17866047d019695c91517dcd995",
+            "selector": "pages[page=787].pr"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-first.json",
+            "sha256": "77bf46df88712b1b8c50ee4dc8441dcbcffa601a9ea43f7786e331d0fea3462f",
+            "selector": "page 787 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_conditional_range",
+        "observation": "Selected discrete preceding-feature onset to the following sharp-complex onset is geometrically measurable. The preceding features are separate from the earlier broad recovery and the following sharp onset. Both identities remain conditional; this is a candidate PR scenario, not an established conduction interval.",
+        "seconds_range": [
+          0.2,
+          0.3
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.22,
+          0.3
+        ],
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Do these discrete preceding features have atrial origin, and do the selected sharp departures mark QRS onset? Establish the association before treating candidate onset-to-onset geometry as PR.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness.",
+        "endpoint_scenarios": [
+          {
+            "event_id": "p787-e2",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              119,
+              123
+            ],
+            "reviewer_terminal_band": [
+              151,
+              155
+            ],
+            "author_initial_band": [
+              121,
+              124
+            ],
+            "author_terminal_band": [
+              152,
+              154
+            ],
+            "enclosing_initial_band": [
+              119,
+              124
+            ],
+            "enclosing_terminal_band": [
+              151,
+              155
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.2142857142857143,
+              0.2903225806451613
+            ],
+            "seconds_range": [
+              0.21,
+              0.3
+            ]
+          },
+          {
+            "event_id": "p787-e3",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              235,
+              239
+            ],
+            "reviewer_terminal_band": [
+              267,
+              271
+            ],
+            "author_initial_band": [
+              238,
+              241
+            ],
+            "author_terminal_band": [
+              268,
+              270
+            ],
+            "enclosing_initial_band": [
+              235,
+              241
+            ],
+            "enclosing_terminal_band": [
+              267,
+              271
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.20634920634920637,
+              0.2903225806451613
+            ],
+            "seconds_range": [
+              0.2,
+              0.3
+            ]
+          },
+          {
+            "event_id": "p787-e4",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              351,
+              355
+            ],
+            "reviewer_terminal_band": [
+              383,
+              387
+            ],
+            "author_initial_band": [
+              354,
+              357
+            ],
+            "author_terminal_band": [
+              384,
+              386
+            ],
+            "enclosing_initial_band": [
+              351,
+              357
+            ],
+            "enclosing_terminal_band": [
+              383,
+              387
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.20662251655629138,
+              0.28993288590604027
+            ],
+            "seconds_range": [
+              0.2,
+              0.29
+            ]
+          }
+        ],
+        "range_scope": "Selected comparable local morphology only; no whole-strip invariant.",
+        "candidate_identity_condition": "Only if the preceding features are P onsets and the following sharp departures are QRS onsets."
+      },
+      {
+        "page": 787,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "2f01fb55d7c01cc76b4b8a18e1923e15b58eaf1e3588627f5289a818806bfed5",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=787]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=787]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=787"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=787"
+          },
+          {
+            "path": "pages786-795/field-proposals.json",
+            "sha256": "98f9092f56f89afcc409e32ae450bf7713a6c17866047d019695c91517dcd995",
+            "selector": "pages[page=787].qrs"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-first.json",
+            "sha256": "77bf46df88712b1b8c50ee4dc8441dcbcffa601a9ea43f7786e331d0fea3462f",
+            "selector": "page 787 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_conditional_range",
+        "observation": "Selected initial sharp departures to early return shoulders or shelves provide conditional QRS geometry. Later broad recovery and return to the original baseline are excluded. These endpoints are visible landmarks, not established electrical ventricular onset or termination.",
+        "seconds_range": [
+          0.03,
+          0.14
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.03,
+          0.14
+        ],
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Do the selected initial departures and early return shoulders or shelves mark ventricular onset and termination, rather than intermediate geometric knees?",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness.",
+        "endpoint_scenarios": [
+          {
+            "event_id": "p787-e2",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              151,
+              155
+            ],
+            "reviewer_terminal_band": [
+              160,
+              167
+            ],
+            "author_initial_band": [
+              152,
+              154
+            ],
+            "author_terminal_band": [
+              160,
+              164
+            ],
+            "enclosing_initial_band": [
+              151,
+              155
+            ],
+            "enclosing_terminal_band": [
+              160,
+              167
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.03968253968253968,
+              0.12903225806451613
+            ],
+            "seconds_range": [
+              0.03,
+              0.13
+            ]
+          },
+          {
+            "event_id": "p787-e3",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              267,
+              271
+            ],
+            "reviewer_terminal_band": [
+              277,
+              284
+            ],
+            "author_initial_band": [
+              268,
+              270
+            ],
+            "author_terminal_band": [
+              277,
+              281
+            ],
+            "enclosing_initial_band": [
+              267,
+              271
+            ],
+            "enclosing_terminal_band": [
+              277,
+              284
+            ],
+            "major_pitch_bounds": [
+              24.8,
+              25.2
+            ],
+            "unrounded_seconds": [
+              0.04761904761904763,
+              0.1370967741935484
+            ],
+            "seconds_range": [
+              0.04,
+              0.14
+            ]
+          },
+          {
+            "event_id": "p787-e4",
+            "coordinate_space": "Native JPEG pixel centers",
+            "reviewer_initial_band": [
+              383,
+              387
+            ],
+            "reviewer_terminal_band": [
+              392,
+              399
+            ],
+            "author_initial_band": [
+              384,
+              386
+            ],
+            "author_terminal_band": [
+              393,
+              397
+            ],
+            "enclosing_initial_band": [
+              383,
+              387
+            ],
+            "enclosing_terminal_band": [
+              392,
+              399
+            ],
+            "major_pitch_bounds": [
+              24.833333333333332,
+              25.166666666666668
+            ],
+            "unrounded_seconds": [
+              0.03973509933774834,
+              0.12885906040268458
+            ],
+            "seconds_range": [
+              0.03,
+              0.13
+            ]
+          }
+        ],
+        "range_scope": "Selected comparable local morphology only; no whole-strip invariant."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0787.json",
+    "baselineReviewSHA256": "c88118b9072c86514b05b9cca4935f086760acf948e0b89d320d432aa367a0cd",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "c05689e92a0bce5cc7e52b229bbe2e9ee95b061046c3b73c148e556b3bf7f5c5",
+      "afterOriginal30AddendumSHA256": "c05689e92a0bce5cc7e52b229bbe2e9ee95b061046c3b73c148e556b3bf7f5c5",
+      "afterOptionalInterpretationSHA256": "be7ce29597e01aee19b86d6e3a3de44fe29878e17b6c293a63f27980a0fbeb3f",
+      "afterOptionalStatusSHA256": "be7ce29597e01aee19b86d6e3a3de44fe29878e17b6c293a63f27980a0fbeb3f"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round9/optional-educational.patch.json",
+      "sha256": "1aa262c103b8df85e406b0d07c0cee7056d7bd6452d00d1c1b6811eda0c318cf",
+      "schemaVariant": "round",
+      "round": 9
+    },
+    "essentialLimitations": [
+      {
+        "original": "Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "replacement": "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "originalSHA256": "f0bc4f8041eb63e3fd8190f4bd79c2784f15b66f2b143952363d4dc7b9350bc7",
+        "replacementSHA256": "1876fdbad61d6f84eae95947098313616f842f76cdb228378fffb85745f76a28",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "All individual-interval rate and seconds projections are withheld.",
+        "replacement": "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+        "originalSHA256": "8217592b05aec681f23fc09b481a4a6d404f2eba279ab528e79e2bd05055591b",
+        "replacementSHA256": "506a3797de5c5004848fa227b505bdc95fb731c6dbda548750e18ca4be7d9501",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "No diagnosis, validated P-wave identity, PR/QRS/QT, scoring or educator-validation claim.",
+        "replacement": "No clinical diagnosis, validated P-wave identity, numerical QT, scoring answer or educator validation is supplied. PR has an unvalidated conditional endpoint envelope for selected complexes. QRS has an unvalidated conditional endpoint envelope for selected complexes.",
+        "originalSHA256": "414b45c00fcbe850f07af76873538b0e0aff9e63490a7f7fa2e3902bfb7d4557",
+        "replacementSHA256": "5eeeec0abcaeb3410b742e79b175607e232867f7c1f41dd1527b2b8e5e6e6d21",
+        "origin": "essential-limitations"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

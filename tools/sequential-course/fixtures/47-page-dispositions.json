@@ -1,0 +1,457 @@
+{
+  "reviewedHEAD": "66ac396cd6e354fa8d8f9256bd931bb4d7f72cf2",
+  "reviewedTree": "86b00a7e78d3451d80c77d86ebe69e03ea6d34cd",
+  "reviewedAt": "2026-11-07T15:14:37.071886+00:00",
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourcePageCount": 911,
+  "sourcePDFBytes": 65052525,
+  "reviewedPages": [
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    428,
+    451,
+    452,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    572,
+    573,
+    574,
+    575,
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    760,
+    761,
+    762,
+    763,
+    833
+  ],
+  "applicationEdited": false,
+  "records": [
+    {
+      "page": 313,
+      "sourceImageSHA256": "e41a21c884d4a909edd91f9c4f1d6fa35a2af5c5ae4522293c59ca99d6201e8c",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.13: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.13\n"
+    },
+    {
+      "page": 314,
+      "sourceImageSHA256": "ddfb85f71ac0a2b94f5133d37be052fa03ac3a7392cc7a38905ac8abedc29121",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.14: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.14\n"
+    },
+    {
+      "page": 315,
+      "sourceImageSHA256": "d80638046bb2567f8a5c772c13aca6d46bcac68093357ffcbe623a9ef90261cd",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.15: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.15\n"
+    },
+    {
+      "page": 316,
+      "sourceImageSHA256": "66f83a9b5367a3cecce9e4b54b2e144e1ddd23619b9b359ccdab830c5b82a7cd",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.16: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.16\n"
+    },
+    {
+      "page": 317,
+      "sourceImageSHA256": "532770f9afbf2b8c729eecb50ac9169e78af65890f98ec488d3b5755d9b05fed",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.17: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.17\n"
+    },
+    {
+      "page": 318,
+      "sourceImageSHA256": "05cf5b8288158e99c7f5a943ac50c6d3c60e31c30c065a78bb3219ed15e69fb9",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.18: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.18\n"
+    },
+    {
+      "page": 319,
+      "sourceImageSHA256": "053256110ac88e81b11852b09a876086d969f8f3d64e60fb200ddaf41c741c33",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.19: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.19\n"
+    },
+    {
+      "page": 320,
+      "sourceImageSHA256": "ec14f3bb8bbaf042998037f7c82ad7384efeb6e36b3811dfc5e5d15cb5ff2101",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.20: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.20\n"
+    },
+    {
+      "page": 321,
+      "sourceImageSHA256": "95487bc9f93d31ce8c27f0c9f7eb5399b9ce13cc3e110f91a9b1b5393e71becb",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.21: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.21\n"
+    },
+    {
+      "page": 322,
+      "sourceImageSHA256": "a4d7344af7bc7030cb72eaedb6b3e1ddaa2e2c43e51eb48be55beb2a9f7bb875",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.22: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.22\n"
+    },
+    {
+      "page": 323,
+      "sourceImageSHA256": "f601f4ea134840f56745d420e67d28f7be48de47f274600bc2c8169fae4e39af",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.23: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.23\n"
+    },
+    {
+      "page": 324,
+      "sourceImageSHA256": "6ca0c9bcbce9d61265e36949607d370e161cb07fc29c95b6f0e736a95b30e2e7",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.24: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.24\n"
+    },
+    {
+      "page": 325,
+      "sourceImageSHA256": "addbb242f57ef121bf9b0407edb52ed3a37d9c1b7fb03840cc273e717a0b8f63",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.25: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.25\n"
+    },
+    {
+      "page": 326,
+      "sourceImageSHA256": "0a1cf9fa9fd043f1e829e355aa12d113775dc8759a4cad9469b880c1d9e733b0",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.26: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.26\n"
+    },
+    {
+      "page": 327,
+      "sourceImageSHA256": "8fb83daa1aae1841b7724f86b8fee2e9aed630dc32ba478b2312c988ff532113",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.27: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.27\n"
+    },
+    {
+      "page": 328,
+      "sourceImageSHA256": "48c8fbdfe4ca0aeac55c954274ad86e4b3b81938f94549897dd8a7c283402310",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.28: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.28\n"
+    },
+    {
+      "page": 329,
+      "sourceImageSHA256": "8a821da0ca9c016eb8a31ed33af9635941312e70317144717472d0e134bac928",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.29: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.29\n"
+    },
+    {
+      "page": 330,
+      "sourceImageSHA256": "522f192a819e530999e07298b1fe8b99b0d0222583838d9fa94e159530553617",
+      "disposition": "scaffolded measurement illustration",
+      "recommendation": "Numbered illustration 2.30: PRI/QRS magnified waveforms with positioned calipers and target callouts. These expose measurement endpoints, though not numerical durations. No explicit original question is printed. Retain as a worked/scaffolded measurement example; do not claim it is unassisted identification or invent a new question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n2.30\n"
+    },
+    {
+      "page": 428,
+      "sourceImageSHA256": "749eefc71c2735967384b6121c3798b99d2a5ff508fc7eb1389b9e27be65edf1",
+      "disposition": "worked measurement example",
+      "recommendation": "QT/QTc teaching slide with interval markers and complete arithmetic. No original exercise prompt; retain the full worked explanation.",
+      "safeCrop": null,
+      "sourceText": "Systematic Approach to Rhythm Interpretation\nSTEP SIX\n▪QT interval measurement (QTi)\n▪BEGINNING of QRS complex to \nthe END of the T wave\n▪Should be less than half the R – R \nmeasurement\n▪Corrected for HR (QTc)\n▪Bradycardia = longer\n▪Tachycardia =  shorter\n▪A long QT can delay repolarization \nand possibly put patient in danger \nof life-threatening rhythm\nR to R is 19 small blocks, 19 x 0.04 = 0.76 seconds\nQT interval is 10 small blocks, 10 x 0.04 = 0.40 seconds\nQT corrected would be 0.43 seconds\n"
+    },
+    {
+      "page": 451,
+      "sourceImageSHA256": "1c05709c63304c13ead6e35d3d270979b284e9c25df2e6f3670be598b4697491",
+      "disposition": "reference summary",
+      "recommendation": "Rhythm interpretation checklist and labeled conduction-system illustration. All criteria are reference material, not a posed case.",
+      "safeCrop": null,
+      "sourceText": "Systematic Approach to Rhythm Interpretation\n▪Regularity (Rhythm)\n▪Regular\n▪Rate  (6 Seconds)\n▪60 – 100 bpm\n▪P Wave analysis\n▪P, U, U, 1, First\n▪PR interval\n▪0.12 – 0.20 sec\n▪Constant\n▪QRS\n▪< 0.12 sec\n60 – 100 bpm\n40 - 60 bpm\n20 – 40 bpm\n"
+    },
+    {
+      "page": 452,
+      "sourceImageSHA256": "85d19ab9eafb8ea7899c518993cf4929a50df5349ef27cf43dbb84453e00345a",
+      "disposition": "blank continuation template",
+      "recommendation": "Only the Systematic Approach to Rhythm Interpretation heading is printed. Preserve chronology, but do not make an empty question or infer missing content.",
+      "safeCrop": null,
+      "sourceText": "Systematic Approach to Rhythm Interpretation\n"
+    },
+    {
+      "page": 492,
+      "sourceImageSHA256": "7c10142b621638a0395f8423d83235ee26003b426645f6bcdd57af4bd23edda6",
+      "disposition": "reference table",
+      "recommendation": "Sinus-rhythm comparison table with labels and diagnostic criteria. Retain as a reference table.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n"
+    },
+    {
+      "page": 493,
+      "sourceImageSHA256": "698021b4e2438e33ed0b0f3a444044e4a232f75adb6c728c8ab78fbbdc893b73",
+      "disposition": "reference explanation",
+      "recommendation": "Sinus Pause definition, ECG finding, significance and causes. This is source teaching text, not an unanswered question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSinus Pause\n• Definition: A brief delay in the SA node's firing, typically lasting less \nthan 3 seconds. \n• ECG Finding: The next P wave appears on time or with a slight \ndelay, but the overall rhythm is preserved. \n• Clinical Significance: Often benign, especially in young or athletic \nindividuals. May go unnoticed. \n• Cause: Can be due to increased vagal tone, medications (e.g., beta \nblockers), or intrinsic SA node dysfunction. \n"
+    },
+    {
+      "page": 494,
+      "sourceImageSHA256": "7aab7f73dbc7f47bb1f45e615876285e721dee18750b248a800f6d0b0b0fb560",
+      "disposition": "labeled waveform example",
+      "recommendation": "Sinus Pause title plus waveform. Removing the title could create an adapted identification exercise, but no original prompt exists; preserve as a labeled teaching example.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSinus Pause\n"
+    },
+    {
+      "page": 495,
+      "sourceImageSHA256": "95d63b315217a57340b75c62da173a014cec4d5a3b77b4c26473eaf96ad4462d",
+      "disposition": "reference explanation",
+      "recommendation": "Sinus Arrest definition, ECG finding, significance and causes. Preserve as source explanation.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSinus Arrest\n• Definition: A longer and more irregular pause in SA node activity, \nusually greater than 3 seconds.\n• ECG Finding: The next P wave is late or absent, and the pause is \nnot a multiple of the normal P–P interval.\n• Clinical Significance: More serious; may lead to syncope, escape \nrhythms, or even asystole if no backup pacemaker takes over.\n• Cause: Often due to sick sinus syndrome, ischemia, fibrosis, or drug \neffects.\n"
+    },
+    {
+      "page": 496,
+      "sourceImageSHA256": "3a6b74943e4825e3c64404b1664124b45c6706b7419ad1a9fddde651d0e42457",
+      "disposition": "annotated waveform example",
+      "recommendation": "Sinus Arrest title and waveform with red interval bracket and source watermark. Removing the heading alone would not remove the instructional cue. Preserve as an annotated example.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSinus Arrest\n"
+    },
+    {
+      "page": 497,
+      "sourceImageSHA256": "a4851b749b7d2e6a52dc70241267e4ec3d3cd50c9e375e604f62a5f1d4bbded3",
+      "disposition": "sparse continuation template",
+      "recommendation": "Sinus Arrest heading and isolated red line, but no usable ECG grid/strip or question. Preserve original; do not present as an unanswered practice item.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSinus Arrest\n"
+    },
+    {
+      "page": 498,
+      "sourceImageSHA256": "6c0a1eaee86ec0c3e23c9bfb3ca14e46187d571fc89e8e8d78ab6676b9df3fa1",
+      "disposition": "transition illustration",
+      "recommendation": "Humorous WHEN SOMEONE ASKS / WHAT EKG RHYTHM I SEE image. Not an ECG exercise, clinical question, or answer key.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\n"
+    },
+    {
+      "page": 572,
+      "sourceImageSHA256": "b8034c277dedb94d68ddb92e4a0047606c66d1931a6974a1ecd23fcce9c9fa19",
+      "disposition": "annotated comparison",
+      "recommendation": "Labeled atrial-flutter/fibrillation heart and ECG comparisons, colored arrows and rates. The teaching labels and arrow overlays are integral; preserve the comparison.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nAtrial Rate 250-350\nAtrial Rate > 350\nVentricular Rate will vary from normal to very fast\n"
+    },
+    {
+      "page": 573,
+      "sourceImageSHA256": "c956fe838b49273fd784c45077d3808047cfc9d9ec935b46230e7745c65a0550",
+      "disposition": "reference table",
+      "recommendation": "Atrial flutter versus atrial fibrillation criteria with labeled clues. No patient/strip question is posed.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nAtrial Flutter vs Atrial Fibrillation\n \nWhen Atrial Flutter is IRREGULAR\nClues that differentiate\n"
+    },
+    {
+      "page": 574,
+      "sourceImageSHA256": "6f3acb4481a3170d88695dfa34270daae4970003e3e64ef37b739bff14e80075",
+      "disposition": "annotated comparison",
+      "recommendation": "Rhythm comparison has colored arrows, interval marks and No R-R regularity annotation. Preserve as a worked visual comparison.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nAtrial Flutter vs Atrial Fibrillation\n \nWhen Atrial Flutter is IRREGULAR\nNo R-R regularity\n"
+    },
+    {
+      "page": 575,
+      "sourceImageSHA256": "1f93557787e83d972f9c9181dcc2d1f659aa9b66822825413ad4a204115c214a",
+      "disposition": "reference comparison",
+      "recommendation": "When the RATE is too high table and waveform with future-topic teaching note. No actual source question is printed; do not invent a rhythm prompt.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nWhen the RATE is too high\nWe will find that out when we do Junctional Rhythms\n"
+    },
+    {
+      "page": 658,
+      "sourceImageSHA256": "b8f2e9b038a535cc90fe55bb61db5d568a90808a4643d3ce24428a6b3bdfe11f",
+      "disposition": "reference explanation",
+      "recommendation": "SVT definition, highlighted descriptors and labeled origin diagram. This is teaching material.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia\n• Phrase used to describe a rapid, regular \nsupraventricular arrhythmia when more accurate \nidentification is impossible because P waves \naren’t visible and rate is common to other \narrhythmias.\nSUPRA (ABOVE)\nVENTRICLES\nSA Node\nAtrial\nAV Node\n"
+    },
+    {
+      "page": 659,
+      "sourceImageSHA256": "57e769ea408396d7934f32050ac05e1ac55c269d6695f9ad29c6ea44b718695a",
+      "disposition": "original multiple-choice question",
+      "recommendation": "Embedded screenshot contains an authentic question and four choices. Transcribe question and all options verbatim in identical unselected styling; conceal selected green ventricles answer, score/checkmark and explanatory lower diagrams until Reveal. The ordinary PDF text extraction omits the screenshot question.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nThe QRS\nConduction originated above and \nventricular conduction is normal\nConduction originated in the \nventricles\n"
+    },
+    {
+      "page": 660,
+      "sourceImageSHA256": "52daf142f4728b2b85a16d10c33d5074f148f1431d6f12b1330dc0175675b20a",
+      "disposition": "reference explanation",
+      "recommendation": "SVT origin, symptoms and causes. No original exercise prompt.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia\n• Originates ABOVE the ventricles, typically in the \nSA, atria or the atrioventricular (AV) node.\n• SVT can result in palpitations, dizziness, shortness \nof breath, or chest discomfort, and may be \ncharacterized by a sudden onset and termination. \n(Paroxysmal) SVT\n• Causes include:\n– Lifestyle  (Stress, Caffeine, Intense Physical Exercise)\n– Medical Conditions (Structural, Congenital)\n– Electrical Disturbances (Congenital, Medications)\n"
+    },
+    {
+      "page": 661,
+      "sourceImageSHA256": "cd4a5ba9da3e0be3354395058fcd34bec3d2203229736d1915de108c4153cdc0",
+      "disposition": "reference explanation",
+      "recommendation": "SVT waveform/ECG criteria written as teaching statements. No original exercise prompt.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia\n• Regular, narrow complex tachycardia, with QRS \nduration typically less than 0.12 sec.\n• P waves may be absent, buried in the preceding T \nwave, or difficult to distinguish due to the rapid \nrate.\n• The ventricular rate is generally between 150 and \n250 beats per minute.\n"
+    },
+    {
+      "page": 662,
+      "sourceImageSHA256": "ce140d66c38ff5b275019336cc996b8b0870540c3a18a480abc2b0dc52ba9b24",
+      "disposition": "reference table",
+      "recommendation": "Overlapping SVT rate ranges and source cautions. No patient or question is posed.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia\nSVTs with Overlapping Rate Ranges:\nSinus Tachycardia \n100-160 beats/min\nAtrial Tachycardia \n150-250 beats/min\nAtrial Flutter \n150-250 beats/min\nJunctional Tachycardia \n100-180 beats/min\nIrregular Atrial Flutter and Atrial Fibrillation at these rates\nare NOT labeled as SVT\nThey are treated differently\n"
+    },
+    {
+      "page": 663,
+      "sourceImageSHA256": "226923c6a80fd330cfca89bb361d28cc8abc7ae24af0413fe5e33caec667a471",
+      "disposition": "reference tables",
+      "recommendation": "Rate-overlap matrix and labeled rhythm-feature table. Preserve both tables as reference material.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nOverlapping Rates in Supraventricular Tachycardia\n"
+    },
+    {
+      "page": 664,
+      "sourceImageSHA256": "b172632028ce3314aab0867efef6d0efbb5dfd0a286f1b067482cbda96394b0d",
+      "disposition": "worked clinical example",
+      "recommendation": "SVT Treatment Example includes rhythm strip, regularity/rate/interval findings, diagnosis and symptom context. No source prompt; preserve the worked case and do not convert to patient-specific advice.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia \nTreatment Example\nRegular\n180 bpm\nQuestionable, difficult to discern\n0.06 sec\nSVT\nOnly patient complaint is “heart beating fast”\n"
+    },
+    {
+      "page": 665,
+      "sourceImageSHA256": "7f9e5c63110d0f4e2d936e864b87a7dcbe15a04f21c1bcb4475a93830d1ff1d9",
+      "disposition": "worked clinical example",
+      "recommendation": "Same treatment example with treatment text, arrows and temporary-AV-block annotation. Cropping would remove important context. Preserve as historical source teaching, not a quiz or treatment recommendation.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia \nTreatment Example\nAdenosine 6mg IVP\nSVT\nOnly patient complaint is “heart beating fast”\nVagal nerve stimulation unsuccessful\nPatient in this case is STABLE\nNormal VS and no other symptoms\nTemporary AV Block\n"
+    },
+    {
+      "page": 666,
+      "sourceImageSHA256": "2aa9290f18067d0eb21052933c9da0aac4e522d2a040f34d2d2a6e03eb085703",
+      "disposition": "worked clinical example",
+      "recommendation": "Treatment example continuation with waveform and management statements. No original question. Preserve intact as source material.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia \nTreatment Example\nAdditional doses of Adenosine may be given if \nunsuccessful \nIf unsuccessful or patient UNSTABLE - ELECTRIC \n"
+    },
+    {
+      "page": 667,
+      "sourceImageSHA256": "662e1786154b709f17e5f33bb8b856f9ade7af74aa0a0f3dc0aa71f4eb4b6dea",
+      "disposition": "worked clinical example",
+      "recommendation": "Treatment-example outcome with interpretation values, diagnosis and symptoms-resolve statement. Preserve as the worked result.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nSupraventricular Tachycardia \nTreatment Example\nRegular\n120 bpm\nP,U,U,1,F\n0.16 sec\n0.06 sec\nSinus Tachycardia\nSymptoms resolve\n"
+    },
+    {
+      "page": 760,
+      "sourceImageSHA256": "907cda0aedefe25dd6ea5e98134cdbab331d84037a284d4852e12476165217e0",
+      "disposition": "reference summary",
+      "recommendation": "Heart block summary contains named diagnoses, measurement annotations and treatment-related labels. Preserve as a reference, not an unassisted identification prompt.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nHeart Block Summary\n"
+    },
+    {
+      "page": 761,
+      "sourceImageSHA256": "bf112a1a68c78e373f02c618487054561c3345cb945e95e0b924f98583ff927d",
+      "disposition": "reference decision diagram",
+      "recommendation": "Is PRI Constant? is an internal decision-tree node with labeled branches and diagnoses, not a stand-alone original case question. Preserve the entire decision aid.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nThe Heart Blocks\nPRi is > 0.20\nPRi may be normal\nor > 0.20\nPRi progressively\ngets longer then \ngone\nPRi not measurable\nP and QRS NOT 1:1\n"
+    },
+    {
+      "page": 762,
+      "sourceImageSHA256": "98de666d5f3c9ba49da71b202ac633cc474701bf00b29db8d650bb75c00c4c15",
+      "disposition": "external-resource pointer",
+      "recommendation": "Source slide links to a Heart (AV) Blocks interactive animation with quiz. It contains no local question or answer; keep pointer without importing/inventing its external activity. No external link was opened for this review.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nAtrioventricular Heart Blocks - Review\n• Heart (AV) Blocks - INTERACTIVE Animation with \nQuiz.\n"
+    },
+    {
+      "page": 763,
+      "sourceImageSHA256": "c5dd1517375cc54b190b3e6409718c663802fa42a91b96e5b95773dc0ac005ca",
+      "disposition": "reference table",
+      "recommendation": "Named AV-block features in a comparative table. Preserve as reference material.",
+      "safeCrop": null,
+      "sourceText": "Copyright © 2017, 2011, 2006 Pearson Education, Inc. All Rights Reserved\nThe Heart Blocks\n"
+    },
+    {
+      "page": 833,
+      "sourceImageSHA256": "4b46f28cf9d642a7d1817c6d339ba71445dacba1785be67255acbae575237970",
+      "disposition": "original recall prompt without printed answer",
+      "recommendation": "Genuine WHEN IS IT? prompt refers to the relative refractory phase identified above it. No timing answer is printed on this page. Show original context immediately; do not pretend Reveal supplies an answer or add an unapproved clinical answer. Adjacent p834 is a blank template.",
+      "safeCrop": null,
+      "sourceText": "Pacemakers - Problems\nRELATIVE REFRACTORY\nWe DO NOT want to see spikes during this vulnerable phase of conduction\nWHEN IS IT?\n"
+    }
+  ],
+  "question659": {
+    "question": "If a QRS complex measures less than 0.12 sec, you know that it did NOT originate in the:",
+    "options": [
+      "AV junction.",
+      "SA node.",
+      "ventricles.",
+      "atria."
+    ],
+    "originalMarkedChoice": "ventricles.",
+    "provenance": "Visually transcribed from original embedded image PDF xref 3067; no clinical correctness certification",
+    "embeddedImageSHA256": "0cac8e888d21bd54ce6c62b97e76a7742e34042119887e93cf6168b7d796a347"
+  },
+  "question833": {
+    "context": [
+      "RELATIVE REFRACTORY",
+      "We DO NOT want to see spikes during this vulnerable phase of conduction"
+    ],
+    "question": "WHEN IS IT?",
+    "printedAnswerPresent": false
+  },
+  "scope": "47 previously review-needed pages reviewed against original PNG pixels. Supporting original PDF inspected and hash verified. This is source/educational-role review, not a clinical validation or browser/audio listening pass."
+}

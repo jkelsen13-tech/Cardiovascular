@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "page": 508,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "9dccb61842d3b1613750fd5cf14c4af6e1e44b943e73d608c5baa6bafc36ed8b",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Approximately regular (provisional)",
+      "basis": "Visually checked ventricular peaks and measured R–R intervals in original PDF 508",
+      "reason": "R–R intervals: 0.634 s, 0.626 s, 0.618 s, 0.634 s, 0.61 s, 0.626 s, 0.626 s, 0.626 s, 0.618 s. These describe the short displayed sample, not an independently adjudicated rhythm diagnosis."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 96 bpm",
+      "basis": "Assumed course speed of 25 mm/s; independently checked 150 small-square intervals across 738 pixels",
+      "reason": "Mean R–R estimate 96.1 bpm; six-second count estimate 100 bpm. These methods differ with phase at the strip endpoints, especially for irregular rhythms. The strip itself has no printed paper-speed label."
+    },
+    {
+      "id": "pWaves",
+      "value": "Atrial identity unresolved: Two rounded inter-QRS elevations repeat. The later one may represent P, but T/P separation and onset are not established.",
+      "basis": "Original PDF page 508; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately regular ventricular spacing over this short strip, with a conditional mean rate near 96 bpm. Repeated inter-complex elevations remain unresolved as atrial versus repolarization activity after detailed review. PR and QRS boundaries do not support a named rhythm origin or normal-conduction claim.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "This remains a descriptive, unvalidated educational interpretation, not an assigned diagnosis or scored answer. Rate assumes course speed of 25 mm/s, not a verified strip speed. Atrial identity and interval boundaries remain unresolved after detailed review. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "P-wave identity unresolved: Two rounded inter-QRS elevations repeat. The later one may represent P, but T/P separation and onset are not established.",
+    "PR interval unresolved: No numeric PR estimate: P identity or its distinct onset remains unresolved. Candidate x bands are search targets only, not measurable P onsets.",
+    "QRS duration unresolved: Broad ventricular complexes have a sloped terminal limb blending with a prolonged depressed segment. Early knee versus later flattening changes duration; review needed.",
+    "Calibration assumes the course’s 25 mm/s convention (PDF pages 228, 230, 231 and 234). Every image grid was checked separately; the assumption is not a per-strip speed label.",
+    "Peak positions are approximate to about ±2 source pixels; morphology, low-amplitude P waves and boundaries remain uncertain. This is not a statistical confidence interval."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      111,
+      189,
+      266,
+      342,
+      420,
+      495,
+      572,
+      649,
+      726,
+      802
+    ],
+    "rrPixels": [
+      78,
+      77,
+      76,
+      78,
+      75,
+      77,
+      77,
+      77,
+      76
+    ],
+    "gridSpanPixels": 738,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean RR pixels × 6 / gridSpanPixels)",
+    "runtimeScoringAllowed": false
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0508.json",
+    "baselineReviewSHA256": "2ec29a9f3e27694b317330767b567f0561e48534b7ef9bb46814652aea9922cb",
+    "sourceImageSHA256": "9dccb61842d3b1613750fd5cf14c4af6e1e44b943e73d608c5baa6bafc36ed8b",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "unresolved_component_identity",
+        "secondsRange": null,
+        "reason": "Two rounded inter-QRS elevations repeat. The later one may represent P, but T/P separation and onset are not established.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/9"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/8"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/8"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=508]"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "No numeric PR estimate: P identity or its distinct onset remains unresolved. Candidate x bands are search targets only, not measurable P onsets.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/9"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/8"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/8"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=508]"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Broad ventricular complexes have a sloped terminal limb blending with a prolonged depressed segment. Early knee versus later flattening changes duration; review needed.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/original-first-pass.json",
+            "sha256": "006babe82a1f76b2417a2543ae63c0e9a4859420a6a2b85bf95ef0632c3e14c9",
+            "selector": "/rows/9"
+          },
+          {
+            "path": "pages500-509/wave-intervals/proposed-wave-fields.json",
+            "sha256": "891adc9306fb664dfa931f62c2ed8c31b7b15eec5f6831d2d4f1f2d42bb4b7ca",
+            "selector": "/entries/8"
+          },
+          {
+            "path": "independent-interval-review/reconciled-proposals.json",
+            "sha256": "1ec1c53e869146a8b337c741b63d6dd6a1169efccebfe5848a5f848c22ad204c",
+            "selector": "/entries/8"
+          },
+          {
+            "path": "independent-interval-review/final-source-check.json",
+            "sha256": "afad2c5ba4df0d650ba4fe369d2e87b842a1bc8a3396ba4c8f186f7d266b9279",
+            "selector": "checks[page=508]"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR and QRS values are withheld because reliable onset/end boundaries have not been established. A narrow/normal interval must not be assumed."
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0508.json",
+    "baselineReviewSHA256": "59cad6bf3d03d7813f87d8854396b71aaf4154b522cdf1f0c72df129ba27f397",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "59cad6bf3d03d7813f87d8854396b71aaf4154b522cdf1f0c72df129ba27f397",
+      "afterOriginal30AddendumSHA256": "59cad6bf3d03d7813f87d8854396b71aaf4154b522cdf1f0c72df129ba27f397",
+      "afterOptionalInterpretationSHA256": "1ac519119d0a1637ced659fd9370a7c7e924e90b8e31c7b9c61ee3ae2a26f95e",
+      "afterOptionalStatusSHA256": "1ac519119d0a1637ced659fd9370a7c7e924e90b8e31c7b9c61ee3ae2a26f95e"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}
