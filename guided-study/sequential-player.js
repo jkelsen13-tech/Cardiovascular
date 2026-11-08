@@ -117,7 +117,7 @@
  // the existing player, but cannot change lesson completion or audio coverage.
  const sourceStrip=host.SourceStripPractice?.mount(sourceStage,{
   reviewRecord:page=>reviewActive()?reviewItem(page):null,
-  persistReview:()=>save(true),
+  persistReview:()=>{save(true);return !storageBlocked;},
   pause:()=>{stopAudio();save(true);render();},
   openTrainer:async()=>{await enterExplore();host.showEcg?.();},
   openSource:async page=>{const target=map.lessons.find(l=>page>=l.pages[0]&&page<=l.pages[1]);if(target){await openLesson(byLesson.get(target.id));changePage(page);}}

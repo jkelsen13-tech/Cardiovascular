@@ -4,7 +4,7 @@
   "sourceCandidate": "successor of public 9ea7c53d21baef394b0b2ca5bce9459819683459",
   "publicationParent": "9ea7c53d21baef394b0b2ca5bce9459819683459",
   "runtimeSnapshotAlgorithm": "sha256 of UTF-8 concatenation of sorted path + NUL + decimal bytes + NUL + lowercase sha256 + LF",
-  "runtimeSnapshotSHA256": "2ad2fcc6dded1aeb1bb74c33c666b30400e84a65c398cec5d5c241908245a126",
+  "runtimeSnapshotSHA256": "6834b807cdbb53357445e03586c79ac4e88ab47d62a2f3e58df4b2597e149af1",
   "sourceLessons": 84,
   "sourceImages": 911,
   "recordings": 120,
@@ -1679,8 +1679,8 @@
       "sha256": "d17c084d85102bf178b2b96ac08512582920263b3706321a777876a0330a5d1e"
     },
     "guided-study/sequential-player.js": {
-      "bytes": 81857,
-      "sha256": "c73dbcd810cdf95c3f877097bf9b945c11e5ebcee32f4e30d6ca8a79ffcb176b"
+      "bytes": 81883,
+      "sha256": "c5de8263dac0f3d317a2271be93348196bec469158ec6f3efea837494695fd28"
     },
     "guided-study/sequential-practice.js": {
       "bytes": 119775,
@@ -1707,8 +1707,8 @@
       "sha256": "7cbcfb6802b2d8177d41c5448f8767cdd9ebe81f7f242f8d9f22b1fd34d6d78e"
     },
     "guided-study/source-strip-practice.js": {
-      "bytes": 11580,
-      "sha256": "560b28323a1a7c38a52d009cbbc8a09f6f27e847e178c96e3eed0b52b1266f98"
+      "bytes": 11582,
+      "sha256": "dc75b9163653130a0abf5aa261592219de6707a3e43627071104eca695e47c8e"
     },
     "heart-study-v3/anatomy.js": {
       "bytes": 54291,

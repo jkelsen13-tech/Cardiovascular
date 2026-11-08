@@ -36,7 +36,7 @@
   let saved={version:1,sourceSHA256:inventory.sourceSHA256,entries:{}};
   try{const raw=host.localStorage.getItem(KEY);if(raw)saved=validateSaved(JSON.parse(raw),inventory);}catch(e){storageBlocked=true;status.textContent='Existing strip-response data could not be read. It has not been overwritten. Responses remain available only for this session.';}
   const record=()=>options.reviewRecord?.(current.page)||saved.entries[current.page]||(saved.entries[current.page]={responses:{},attempts:0});
-  function persist(){if(current&&options.reviewRecord?.(current.page)){options.persistReview?.();return true;}if(storageBlocked)return false;try{host.localStorage.setItem(KEY,JSON.stringify(saved));return true;}catch(e){storageBlocked=true;return false;}}
+  function persist(){if(current&&options.reviewRecord?.(current.page)){return options.persistReview?.()===true;}if(storageBlocked)return false;try{host.localStorage.setItem(KEY,JSON.stringify(saved));return true;}catch(e){storageBlocked=true;return false;}}
   function reset(){generation++;controller?.abort();controller=null;current=null;displayPage=null;revealed=false;loading=false;section.hidden=true;reviewBox.hidden=true;reviewBox.replaceChildren();toggle.disabled=false;toggle.setAttribute('aria-expanded','false');}
   function show(page,sourceRevealed=false){reset();const canonical=inventory.pageAliases?.[page]||page,entry=inventory.entries[canonical];if(!entry)return;current=entry;displayPage=page;section.hidden=false;reference.textContent='Original waveform PDF page '+canonical+(canonical!==page?' · answer source PDF '+page:'')+' · self-study response';
    for(const [id,input]of inputs)input.value=(options.reviewRecord?.(canonical)||saved.entries[canonical])?.responses?.[id]||'';
