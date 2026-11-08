@@ -1,10 +1,10 @@
 {
   "schema": "cardiovascular-main-runtime-2",
-  "scope": "Question-first guided course, reviewed 47-page classifications, protected practice narration, and 195 unvalidated unscored ECG review cards",
-  "sourceCandidate": "655cc11766f4bcaae364c8337337831c79cdd289",
-  "publicationParent": "0787b8572e2e084ba0bd6ad779035207ae35e0b4",
+  "scope": "Private lesson review navigation, answer entry, explicit self-check scores and retakes; preserved source/ECG/audio protections",
+  "sourceCandidate": "successor of public 9ea7c53d21baef394b0b2ca5bce9459819683459",
+  "publicationParent": "9ea7c53d21baef394b0b2ca5bce9459819683459",
   "runtimeSnapshotAlgorithm": "sha256 of UTF-8 concatenation of sorted path + NUL + decimal bytes + NUL + lowercase sha256 + LF",
-  "runtimeSnapshotSHA256": "bb8809b22b6663ed772e15d5966e57116734ba733b891d8fe26e7db1a44d27af",
+  "runtimeSnapshotSHA256": "2ad2fcc6dded1aeb1bb74c33c666b30400e84a65c398cec5d5c241908245a126",
   "sourceLessons": 84,
   "sourceImages": 911,
   "recordings": 120,
@@ -83,8 +83,8 @@
       "sha256": "8622b9a2bc8e66506d7579ba99e7957a002ab8e5c7a04b7c2cba29cde38838e0"
     },
     "cmt-quiz.html": {
-      "bytes": 518614,
-      "sha256": "1b8e08ba3b45335db97334242d55e539c48faeb5380ff68d56cc13cb4022af8d"
+      "bytes": 518672,
+      "sha256": "3150204298f615c173532005f83c654a4b4c683798a1d1b7a054ed04b193b348"
     },
     "ecg-study/RENDERING-UPSCALING-REVIEW.md": {
       "bytes": 5062,
@@ -1679,24 +1679,24 @@
       "sha256": "d17c084d85102bf178b2b96ac08512582920263b3706321a777876a0330a5d1e"
     },
     "guided-study/sequential-player.js": {
-      "bytes": 71237,
-      "sha256": "a915828973e498e0e6efcec1e4ecbff1b8938fdf89d2f57c64b06333a0a93834"
+      "bytes": 81857,
+      "sha256": "c73dbcd810cdf95c3f877097bf9b945c11e5ebcee32f4e30d6ca8a79ffcb176b"
     },
     "guided-study/sequential-practice.js": {
       "bytes": 119775,
       "sha256": "a47d980d6c809d4fde300324a61556e40f4e843973f17e665ed02b2db948cca0"
     },
     "guided-study/sequential-progress.js": {
-      "bytes": 4563,
-      "sha256": "e437bc37b2f7c5da8aa954458b7721b3536e41d2df52b48c17602baa6ecd51ef"
+      "bytes": 4791,
+      "sha256": "316c54dfe6c89eb7642babd2c8e08243580059e06313731a4408730eb37fb252"
     },
     "guided-study/sequential-visuals.js": {
       "bytes": 383039,
       "sha256": "43745ca126f62f18fe2648e14f467c4dfd3dfea1ba2fa27bb797d8b903589584"
     },
     "guided-study/sequential.css": {
-      "bytes": 16950,
-      "sha256": "1e2725834033987a7e9d17a02c1ae8e77559b3bdaca3777df254d750dbbd8aad"
+      "bytes": 18170,
+      "sha256": "e30bac5bb28489c7fd363d4a9756ad13f2e747f6861d801bca4b666babdc3b08"
     },
     "guided-study/session.js": {
       "bytes": 17052,
@@ -1707,8 +1707,8 @@
       "sha256": "7cbcfb6802b2d8177d41c5448f8767cdd9ebe81f7f242f8d9f22b1fd34d6d78e"
     },
     "guided-study/source-strip-practice.js": {
-      "bytes": 11416,
-      "sha256": "95ec28982f8d76b6a635515b6e809f0f3dc88115539b8f6c3137bc538b2d56c5"
+      "bytes": 11580,
+      "sha256": "560b28323a1a7c38a52d009cbbc8a09f6f27e847e178c96e3eed0b52b1266f98"
     },
     "heart-study-v3/anatomy.js": {
       "bytes": 54291,
@@ -1887,8 +1887,8 @@
       "sha256": "e56b44f186786cfcb8dfc13c20256ead9b3973fa16556448e9e7c3bcaecd7f59"
     },
     "index.html": {
-      "bytes": 518614,
-      "sha256": "1b8e08ba3b45335db97334242d55e539c48faeb5380ff68d56cc13cb4022af8d"
+      "bytes": 518672,
+      "sha256": "3150204298f615c173532005f83c654a4b4c683798a1d1b7a054ed04b193b348"
     },
     "lead-placement/assets/ATTRIBUTION.md": {
       "bytes": 6064,
@@ -5837,6 +5837,15 @@
     "study/teaching.js": {
       "bytes": 14438,
       "sha256": "f008ec5108f3013dd3c4c964729fd6a601a71dfe3557de9653e6cb88dfc0e1b1"
+    },
+    "guided-study/sequential-review.js": {
+      "bytes": 3437,
+      "sha256": "21d3912641322783804287b977432a86c8ee6211ce92d1f484682a5ff48c8256"
     }
+  },
+  "reviewScoring": {
+    "written": "learner self-check, not automatic grading",
+    "multipleChoice": "exact original marked option only",
+    "unansweredAndProvisionalECG": "unscored"
   }
 }
