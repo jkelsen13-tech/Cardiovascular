@@ -11,3 +11,9 @@ Retake creates a fresh attempt for this lesson, keeps up to 20 previous summarie
 Coverage: 22 of 84 source lesson groups contain existing source questions or waveform response activities (259 question pages, 1,283 response fields). The other 62 groups display an explicit absence notice rather than invented questions. Unit 3 Blood Pressure and Progress Check has 8 question pages and 12 written prompts. Other Unit 3 source questions occur in three further groups. No new medical content, question answers or scoring authority was added.
 
 Physical iPad/Safari, actual screen-reader interaction, qualified clinical review and human listening remain unperformed. Contract tests are not rendered-browser qualification.
+
+## Independent-review corrections
+
+The genuine public-baseline progress-export path is a retained regression. Browsing or revealing original source material cannot submit an answer to a separate lesson review. A source-choice point requires a nonblank review choice that matches its submitted choice; incompatible imported submissions are cleared without changing the saved response. Written source responses and review answers are also stored separately.
+
+Finish uses only the existing primary lesson-control button. The review panel keeps Previous/Next Question, Retake and Return to source slides. Primary question controls have explicit high-contrast hover/active colors. Finishing cancels pending answer-image display, hides answers and clears the stale reveal caption. Storage failures retain session responses and report that the write did not succeed.

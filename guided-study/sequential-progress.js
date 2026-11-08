@@ -16,6 +16,7 @@
    if(x.questions!==undefined){
     if(!x.questions||typeof x.questions!=='object'||Array.isArray(x.questions)||Object.keys(x.questions).length>911)throw Error('Invalid question records');
     for(const [page,q]of Object.entries(x.questions))if(!/^\d+$/.test(page)||Number(page)<1||Number(page)>911||!q||!(q.selectedOption===null||Number.isInteger(q.selectedOption)&&q.selectedOption>=0&&q.selectedOption<4)||!Number.isSafeInteger(q.attempts)||q.attempts<0||!Number.isSafeInteger(q.reveals)||q.reveals<0||typeof q.response!=='string'||q.response.length>6000)throw Error('Invalid question response');
+    for(const q of Object.values(x.questions))if(q.answers!==undefined&&(!Array.isArray(q.answers)||q.answers.length>30||q.answers.some(a=>typeof a!=='string'||a.length>6000)))throw Error('Invalid source question response');
    }
   }
   return clone(raw);

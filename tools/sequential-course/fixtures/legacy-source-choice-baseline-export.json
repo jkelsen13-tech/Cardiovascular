@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "manifestVersion": "source-course-v6-20261101-slide-first",
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "position": {
+    "lessonId": "source.lesson.p0658",
+    "stage": "intro",
+    "sourcePage": 659,
+    "segment": 0,
+    "time": 0,
+    "cueId": null,
+    "scene": null,
+    "sourceFollow": false
+  },
+  "preferences": {
+    "continuous": false,
+    "rate": 1,
+    "textOnly": false
+  },
+  "lessons": {
+    "source.lesson.p0001": {
+      "status": "not_started",
+      "sourceReviewed": false,
+      "transcripts": {},
+      "skipped": false,
+      "markedComplete": false,
+      "practiceAttempted": false,
+      "revisit": false,
+      "audio": {}
+    },
+    "source.lesson.p0658": {
+      "status": "in_progress",
+      "sourceReviewed": false,
+      "transcripts": {},
+      "skipped": false,
+      "markedComplete": false,
+      "practiceAttempted": false,
+      "revisit": false,
+      "audio": {},
+      "questions": {
+        "659": {
+          "selectedOption": 2,
+          "attempts": 1,
+          "reveals": 0,
+          "response": ""
+        }
+      }
+    }
+  },
+  "routeReachedEnd": false
+}

@@ -4,7 +4,7 @@
   "sourceCandidate": "successor of public 9ea7c53d21baef394b0b2ca5bce9459819683459",
   "publicationParent": "9ea7c53d21baef394b0b2ca5bce9459819683459",
   "runtimeSnapshotAlgorithm": "sha256 of UTF-8 concatenation of sorted path + NUL + decimal bytes + NUL + lowercase sha256 + LF",
-  "runtimeSnapshotSHA256": "5ebd2f6ea71a1c07802b0a158f530fd3618db1e3908d6a002ff092831cda294d",
+  "runtimeSnapshotSHA256": "43e003f2da5f5a893fea75ce0922ff25ca36bde768f51a3dc91f641bb294e7ea",
   "sourceLessons": 84,
   "sourceImages": 911,
   "recordings": 120,
@@ -1679,24 +1679,24 @@
       "sha256": "d17c084d85102bf178b2b96ac08512582920263b3706321a777876a0330a5d1e"
     },
     "guided-study/sequential-player.js": {
-      "bytes": 82214,
-      "sha256": "bb4ea5c6b41f816a6ac0f5b14eecef1be6e0f390e16d37628fc9a94a3e640fbe"
+      "bytes": 82632,
+      "sha256": "36938804671442c0904ab4b941c6b47eaca245efcabd39022705a5386f9c25d0"
     },
     "guided-study/sequential-practice.js": {
       "bytes": 119775,
       "sha256": "a47d980d6c809d4fde300324a61556e40f4e843973f17e665ed02b2db948cca0"
     },
     "guided-study/sequential-progress.js": {
-      "bytes": 4791,
-      "sha256": "316c54dfe6c89eb7642babd2c8e08243580059e06313731a4408730eb37fb252"
+      "bytes": 5016,
+      "sha256": "1f0d01461bcba56bbe4663414d1232c458e422486ebcdf2fb2963814378dd217"
     },
     "guided-study/sequential-visuals.js": {
       "bytes": 383039,
       "sha256": "43745ca126f62f18fe2648e14f467c4dfd3dfea1ba2fa27bb797d8b903589584"
     },
     "guided-study/sequential.css": {
-      "bytes": 18170,
-      "sha256": "e30bac5bb28489c7fd363d4a9756ad13f2e747f6861d801bca4b666babdc3b08"
+      "bytes": 18511,
+      "sha256": "c3af7c3b4052a7d1a30ee29efa2af543363652f8cd93e2cb5b6dfed1457937d5"
     },
     "guided-study/session.js": {
       "bytes": 17052,
@@ -5839,8 +5839,8 @@
       "sha256": "f008ec5108f3013dd3c4c964729fd6a601a71dfe3557de9653e6cb88dfc0e1b1"
     },
     "guided-study/sequential-review.js": {
-      "bytes": 3456,
-      "sha256": "b979c8f7403ed1e181fd2680bc4b909015fd7e3bc9977bc7ee8daa0138090327"
+      "bytes": 3798,
+      "sha256": "46b02255bf5e65d91730a447a77abf4c12c3cb6a1fa838b3bec656e8d6bc45ce"
     }
   },
   "reviewScoring": {

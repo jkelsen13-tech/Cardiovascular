@@ -194,3 +194,6 @@ body.guided-course-active .wrap{max-width:1240px;padding:10px 18px}
 #guidedCourse [data-seq-self-check] button{margin:3px}
 #guidedCourse [data-seq-self-check] [aria-pressed=true]{background:#dbeaf8;border:2px solid #164979}
 #guidedCourse [data-seq-review-result]{border-top:1px solid #b9ccdf;margin-top:12px;padding-top:8px}
+
+#guidedCourse [data-seq-review-next]:hover:not(:disabled),#guidedCourse [data-seq-review-start]:hover:not(:disabled){background:#103b64;color:#fff;border-color:#103b64}
+#guidedCourse [data-seq-review-next]:active:not(:disabled),#guidedCourse [data-seq-review-start]:active:not(:disabled){background:#0b2f53;color:#fff;border-color:#0b2f53}
