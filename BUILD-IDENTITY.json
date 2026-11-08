@@ -4,7 +4,7 @@
   "sourceCandidate": "successor of public 9ea7c53d21baef394b0b2ca5bce9459819683459",
   "publicationParent": "9ea7c53d21baef394b0b2ca5bce9459819683459",
   "runtimeSnapshotAlgorithm": "sha256 of UTF-8 concatenation of sorted path + NUL + decimal bytes + NUL + lowercase sha256 + LF",
-  "runtimeSnapshotSHA256": "fe9a61c08d382100526e96d1cbba9afca687c32757d384d4b4a0d63f2cb27cf8",
+  "runtimeSnapshotSHA256": "dda293cb00e05458e13c8d19f1f3efba91eaa70b291a0a1c98385c49c70ece3f",
   "sourceLessons": 84,
   "sourceImages": 911,
   "recordings": 120,
@@ -1679,8 +1679,8 @@
       "sha256": "d17c084d85102bf178b2b96ac08512582920263b3706321a777876a0330a5d1e"
     },
     "guided-study/sequential-player.js": {
-      "bytes": 81883,
-      "sha256": "c5de8263dac0f3d317a2271be93348196bec469158ec6f3efea837494695fd28"
+      "bytes": 82049,
+      "sha256": "e7f055f9bd17bfc80f9ba5e82324656900d8567cb9f31e4b274f9e5f4e4fbeb0"
     },
     "guided-study/sequential-practice.js": {
       "bytes": 119775,
