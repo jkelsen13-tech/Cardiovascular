@@ -117,7 +117,7 @@
  // the existing player, but cannot change lesson completion or audio coverage.
  const sourceStrip=host.SourceStripPractice?.mount(sourceStage,{
   reviewRecord:page=>reviewActive()?reviewItem(page):null,
-  persistReview:()=>{save(true);return !storageBlocked;},
+  persistReview:()=>save(true)===true,
   pause:()=>{stopAudio();save(true);render();},
   openTrainer:async()=>{await enterExplore();host.showEcg?.();},
   openSource:async page=>{const target=map.lessons.find(l=>page>=l.pages[0]&&page<=l.pages[1]);if(target){await openLesson(byLesson.get(target.id));changePage(page);}}
@@ -154,7 +154,7 @@
   data.position.scene=null;await showSource();save(true);render();q('review-heading').focus({preventScroll:true});return true;
  }
  async function stepReview(offset){const queue=reviewQueue(),i=queue.findIndex(x=>x.page===data.position.sourcePage);if(!reviewActive()||reviewRecord().finished)return false;const next=queue[i+offset];if(!next)return false;stopAudio();invalidate();data.position.sourcePage=next.page;data.position.sourceFollow=false;data.position.scene=null;sourceRevealed=false;await showSource();save(true);render();q('review-heading').focus({preventScroll:true});return true;}
- function finishReview(){if(!reviewActive())return;stopAudio();invalidate();sourceRevealed=false;reviewRecord().finished=true;data.position.stage='recap';resetSourcePresentation();sourceStrip?.reset();save(true);render();q('review-heading').focus({preventScroll:true});}
+ function finishReview(){if(!reviewActive())return;stopAudio();invalidate();sourceRevision++;sourceRevealed=false;reviewRecord().finished=true;data.position.stage='recap';resetSourcePresentation();setText(q('source-status'),'Review finished. Original answers are concealed.');sourceStrip?.reset();save(true);render();q('review-heading').focus({preventScroll:true});}
  function exitReview(){data.position.reviewActive=false;sourceRevealed=false;data.position.sourceFollow=false;showSource();save(true);render();}
 
  let inlineControlsVisible=false;
@@ -165,7 +165,7 @@
 
  for(const [i,u]of map.units.entries()){const o=doc.createElement('option');o.value=i;o.textContent=(i+1)+'. '+u.title+' · pp'+u.pages.join('–');q('unit-select').append(o);}
  for(const l of host.GuidedStudyLessons.filter(l=>l.audio)){const o=doc.createElement('option');o.value=l.id;o.textContent=(simulationLessons.has(l.id)?'Simulation lesson · ':'Audio only · ')+l.id+' · '+l.title;q('optional').append(o);}
- function save(force=false){if(!active||storageBlocked)return;if(optionalReturn)data.detour={kind:'optional',returnPosition:copy(optionalReturn)};else if(refresherReturn)data.detour={kind:'refresher',returnPosition:copy(refresherReturn)};else delete data.detour;if(mode==='guided'&&!loading&&attachedClip===clip()?.id){data.position.time=audio.currentTime||0;if(preparedOrgan==='source')data.position.scene=captureScene();}recordPlayback();const now=performance.now();if(!force&&now-lastSave<900)return;try{data.manifestVersion=map.version;localStorage.setItem(P.KEY,JSON.stringify(data));lastSave=now;hasSaved=true;}catch(e){warning='Course progress could not be saved. Export a copy; other study data is unchanged.';}}
+ function save(force=false){if(!active||storageBlocked)return false;if(optionalReturn)data.detour={kind:'optional',returnPosition:copy(optionalReturn)};else if(refresherReturn)data.detour={kind:'refresher',returnPosition:copy(refresherReturn)};else delete data.detour;if(mode==='guided'&&!loading&&attachedClip===clip()?.id){data.position.time=audio.currentTime||0;if(preparedOrgan==='source')data.position.scene=captureScene();}recordPlayback();const now=performance.now();if(!force&&now-lastSave<900)return true;try{data.manifestVersion=map.version;localStorage.setItem(P.KEY,JSON.stringify(data));lastSave=now;hasSaved=true;return true;}catch(e){warning='Course progress could not be saved. Export a copy; other study data is unchanged.';q('error').hidden=false;setText(q('error'),warning);return false;}}
  function recordPlayback(){const l=recordings.get(attachedClip);if(!l||!attachedLedger||attachedData!==data)return;const ranges=[];try{for(let i=0;i<audio.played.length;i++)ranges.push([audio.played.start(i),audio.played.end(i)]);}catch(e){return;}if(ranges.length)P.addPlayback(data,attachedLedger,l.id,ranges,l.audio.duration);}
  function validatePosition(p){
   const i=byLesson.get(p.lessonId);if(!P.validPosition(p)||i==null)throw Error('The saved lesson is not in this manifest. Its record is preserved; no automatic reset or remapping.');
