@@ -1,0 +1,292 @@
+{
+  "version": 1,
+  "page": 805,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "a9434ce10fbf7a6133292e6da5d7af32bf941f365693919caa03796a98174e88",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Compound notched and rounded activity has uncertain event identity. Preserve rate and identity hold; selected troughs are not established ventricular events.",
+      "basis": "Original PDF page 805; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "The trace has repeated angular changes and rounded elevations. Some events begin with a downward notch, while others have a broader upward onset. Candidate phases differ enough to prevent a reliable spacing interpretation.",
+      "basis": "New descriptive observation of the original raster, not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, conduction interval or clinical conclusion is assigned. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: No numeric PR answer: Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+    "qrs unresolved: No numeric QRS answer: Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+    "No diagnosis, validated P-wave identity, PR/QRS/QT, scoring or educator-validation claim.",
+    "Rate/sequence timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+    "Private unvalidated educational observations; qualified educator review is outstanding.",
+    "Manual event selection and raster precision do not establish clinical validity.",
+    "Actual bold-grid coordinates detected independently in two trace-free bands; each accepted major interval contains five directly detected minor subdivisions.",
+    "25 mm/s and 0.2 seconds per major interval are assumed, not verified on this strip. Calibration is local only; no whole-strip duration is inferred.",
+    "These positive local extrema are raw candidates only. The positive shoulders beside downward notches and the broader upward events are not established as equivalent fiducial phases.",
+    "One raw positive shoulder touches its local search-window edge and shifts by 8.5 pixels when the dark-pixel threshold changes. This is additional evidence against promoting these candidates to comparable fiducials.",
+    "Activity enters at the left edge and continues beyond the right edge; no endpoint completeness is asserted.",
+    "Completeness and event identity remain unresolved; raw candidates must not be projected as confirmed ventricular fiducials.",
+    "No event-rate estimate is projected because identity and completeness are unresolved.",
+    "Rate/sequence timing limitation: All individual-interval rate and seconds projections are withheld.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors.",
+    "The changing event contour and competing positive and negative phases leave identity and completeness unresolved. Raw candidates cannot support a rate or regularity projection.",
+    "Regularity is withheld because the selected positive candidates do not establish a complete, phase-comparable dominant-event sequence."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": null,
+    "landmarkType": "positive peak-to-peak raw candidate phase, identity unresolved",
+    "rrPixels": null,
+    "rawCandidateX": [
+      172.0,
+      278.0,
+      385.5,
+      492.0,
+      605.5,
+      703.0,
+      808.0
+    ],
+    "rawCandidateGapsPixels": [
+      106.0,
+      107.5,
+      106.5,
+      113.5,
+      97.5,
+      105.0
+    ],
+    "completeVentricularSequenceEstablished": false,
+    "gridSpanPixels": 294,
+    "gridIntervalCount": 12,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": null,
+    "intervalCount": null,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-786-805-provisional.json"
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round9/final-field-decisions.json",
+    "decisionInputSHA256": "15bcf2e0ccedc7a712bf07e9cb8115154b14cf31efb393502a28e1f07b57b844",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0805.json",
+    "baselineReviewSHA256": "f9511a0a43c505ecaae7958aa5375566432bbe7c3c1133093791813a794cd3be",
+    "sourceImageSHA256": "a9434ce10fbf7a6133292e6da5d7af32bf941f365693919caa03796a98174e88",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 805,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "5291ea660b42328b81863842d1af8e6a501e026e826f21857736f1f9b7ed5f10",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=805]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=805]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=805"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=805"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=805].p"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Compound notched and rounded activity has uncertain event identity. Preserve rate and identity hold; selected troughs are not established ventricular events.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 805,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "5291ea660b42328b81863842d1af8e6a501e026e826f21857736f1f9b7ed5f10",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=805]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=805]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=805"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=805"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=805].pr"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No numeric PR answer: Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 805,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "5291ea660b42328b81863842d1af8e6a501e026e826f21857736f1f9b7ed5f10",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=805]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=805]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=805"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=805"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=805].qrs"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No numeric QRS answer: Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.04,
+          0.21
+        ],
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Can any selected compound notched feature be established as ventricular? Preserve rate and identity holds.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0805.json",
+    "baselineReviewSHA256": "8b47db11cfdb42d6346ec498ff239e88541674b920915cd65bad296ff0276e9b",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "24d9d25f29ddde2c00fce3523b41754af613731d7e72f99a9f596fe127b7fbf6",
+      "afterOriginal30AddendumSHA256": "24d9d25f29ddde2c00fce3523b41754af613731d7e72f99a9f596fe127b7fbf6",
+      "afterOptionalInterpretationSHA256": "24d9d25f29ddde2c00fce3523b41754af613731d7e72f99a9f596fe127b7fbf6",
+      "afterOptionalStatusSHA256": "24d9d25f29ddde2c00fce3523b41754af613731d7e72f99a9f596fe127b7fbf6"
+    },
+    "optionalPatch": null,
+    "essentialLimitations": [
+      {
+        "original": "Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "replacement": "Rate/sequence timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "originalSHA256": "f0bc4f8041eb63e3fd8190f4bd79c2784f15b66f2b143952363d4dc7b9350bc7",
+        "replacementSHA256": "a71e3f9373b914964deda1f44038b7b8005f7b1a2c6055c61715bebb213e70e2",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "All individual-interval rate and seconds projections are withheld.",
+        "replacement": "Rate/sequence timing limitation: All individual-interval rate and seconds projections are withheld.",
+        "originalSHA256": "8217592b05aec681f23fc09b481a4a6d404f2eba279ab528e79e2bd05055591b",
+        "replacementSHA256": "b72cd1c35d84219240b5798a9c3d3b329cb763fd100fd09e024c5379061cbbef",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

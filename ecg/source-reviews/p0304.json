@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "page": 304,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "8ebfca866e95bf831599a82d749df8db71eb6a3cdd9975fd1c8376e2270b507f",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Five selected complexes; RR 182–189 px, approximately regular with mild variation.",
+      "basis": "Provisional comparison of 4 ventricular-fiducial intervals in original PDF 304",
+      "reason": "Observed intervals: 185 px, 184 px, 182 px, 189 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 103 bpm (conditional estimate)",
+      "basis": "Assumed course speed 25 mm/s; 76 grid lines enclose 75 small horizontal intervals across 950 pixels.",
+      "reason": "Mean fiducial spacing 185.00 px gives 102.7 bpm. 4 complete intervals were retained. The strip has no verified speed label. This is interval-derived, not a six-second count."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Repeated rounded upright pre-complex lobes are visible before five jagged positive complexes. Their descending limbs merge into negative notches immediately before the positive spikes; attribution of that transition is uncertain.",
+      "basis": "Original PDF page 304; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Near-regular ventricular spacing over this short strip, with a conditional mean rate of about 103 bpm and recurring pre-complex P-like lobes. Sinus origin remains a hypothesis pending atrial identification. The illustrative rate sensitivity spans about 99-106 bpm, crossing 100 bpm; it is not a confidence interval. PR and QRS boundaries remain unresolved, so a sinus-tachycardia classification is not established.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: Potential initial Q versus terminal P/PR baseline descent changes QRS onset and therefore PR. Jagged apex and thick return obscure terminal delimitation.",
+    "QRS duration unresolved: Potential initial Q versus terminal P/PR baseline descent changes QRS onset and therefore PR. Jagged apex and thick return obscure terminal delimitation.",
+    "P-wave identification, atrial origin and conduction relationship remain unadjudicated. Small preceding contours alone do not establish sinus rhythm.",
+    "The grid is rescaled differently in the horizontal and vertical directions. Only independently checked horizontal spacing is used for time. The 75-square span would be about three seconds only under the course timing assumption; no six-second duration is inferred.",
+    "Landmark picking allowance of about ±2 source pixels is illustrative. Sensitivity calculations perturb average grid pitch by ±0.15 pixels and interval length by ±4 pixels; they are not statistical confidence intervals and exclude unknown speed, resampling distortion and incorrect waveform identification.",
+    "Adjacent-spacing variation is raster/line-thickness scale; independent upper/lower bands agree within 1 px. No missing vertical line identified at chosen threshold."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      255.0,
+      440.0,
+      624.0,
+      806.0,
+      995.0
+    ],
+    "landmarkType": "positive peak",
+    "rrPixels": [
+      185.0,
+      184.0,
+      182.0,
+      189.0
+    ],
+    "gridSpanPixels": 950.0,
+    "gridSmallSquareIntervals": 75,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 4,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-300-312-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0304.json",
+    "baselineReviewSHA256": "27e5fe4e63a33f8249f78acbe208ee3b366aab7deaecee0e27c6ff47242743ec",
+    "sourceImageSHA256": "8ebfca866e95bf831599a82d749df8db71eb6a3cdd9975fd1c8376e2270b507f",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Repeated rounded upright pre-complex lobes are visible before five jagged positive complexes. Their descending limbs merge into negative notches immediately before the positive spikes; attribution of that transition is uncertain.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=304]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=304"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Potential initial Q versus terminal P/PR baseline descent changes QRS onset and therefore PR. Jagged apex and thick return obscure terminal delimitation.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=304]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=304"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Potential initial Q versus terminal P/PR baseline descent changes QRS onset and therefore PR. Jagged apex and thick return obscure terminal delimitation.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=304]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/4"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=304"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR and QRS boundaries are not confidently located from the thick/resampled trace without adjudicated onset/offset landmarks; no quantitative durations or normal/abnormal labels assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "1df55a845d53fc94871a893f693b4f2fce0e211052fdb11cbc5bd67042a46e4d",
+    "priorFieldSHA256": "abc2bfdd9904664e91053fb7ba0aa240886cffe2f082ae2845e700c96cb96f9e",
+    "replacementFieldSHA256": "41e6edc9664c6533c1decf9e47605c0964426ab71d25aa4270128db11c55fdb0",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0304.json",
+    "baselineReviewSHA256": "fc940f332a479f49cea02b27ba0bb8ad2495e190738df5208804e3e485acddb1",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "fc940f332a479f49cea02b27ba0bb8ad2495e190738df5208804e3e485acddb1",
+      "afterOriginal30AddendumSHA256": "fc940f332a479f49cea02b27ba0bb8ad2495e190738df5208804e3e485acddb1",
+      "afterOptionalInterpretationSHA256": "867f36d25b31d0f972b47a2c47198e0942ec5ee662aa289b3a4d9f46d3e3e0a3",
+      "afterOptionalStatusSHA256": "867f36d25b31d0f972b47a2c47198e0942ec5ee662aa289b3a4d9f46d3e3e0a3"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

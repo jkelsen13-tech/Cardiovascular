@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "page": 443,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "f1cf8ac5a11454f6aa76677ae3ba5d7b195f2f881b9edf1ba2b065d19ccfb884",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Seven trough-to-trough intervals range 145.5–150 px, approximately regular with small variation over this short sample.",
+      "basis": "Provisional comparison of 7 complete negative trough-to-trough intervals in original PDF 443",
+      "reason": "Observed intervals: 148.5 px, 147.5 px, 148 px, 148.5 px, 145.5 px, 147 px, 150 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 79 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 151 grid lines enclose 150 small horizontal intervals across 1161 pixels.",
+      "reason": "7 retained negative trough-to-trough intervals have mean spacing 147.86 px, giving 78.5 bpm. Individual-interval estimates span approximately 77.4–79.8 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Four interior cycles contain a rounded small positive pre-complex bump, followed by a lower segment before a smaller positive spike and deep negative excursion. The recurring bump is P-like, not independently validated as atrial.",
+      "basis": "Original PDF page 443; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.09–0.21 s (conditional, unvalidated)",
+      "basis": "Original PDF page 443; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "The small pre-complex bump begins separately from the later sharp complex on four interior cycles. Onset bands, including uncertainty in the gradual initial rise of the complex, support only a conditional P-like-onset-to-complex-onset interval. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately regular ventricular spacing over this short strip, with a conditional mean rate near 79 bpm and separate P-like lobes in the reviewed interior cycles. Sinus origin requires confirmation of uniform sinus P waves and a consistent 1:1 P-QRS relationship throughout. The deep negative QRS component alone is not diagnostic, and normal conduction remains unestablished.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "QRS duration unresolved: The initial rising segment and especially the slurred post-trough return merge into adjacent activity. Candidate terminal bands are useful for review, but no uniquely defensible QRS end is established. Numeric QRS remains withheld.",
+    "Small pre-complex bumps are visible, but their atrial identity and interval relationships remain unvalidated.",
+    "The 150-small-interval span would be six seconds only under the assumed course convention. Unlabeled top marks do not independently verify that duration. Only measured horizontal spacing is used for time, not vertical pixel spacing.",
+    "Approximate ±2 source pixels per fiducial and ±0.15 pixels per grid pitch are illustrative sensitivity allowances, not confidence limits. They exclude unknown speed, source distortion and incorrect waveform identification.",
+    "A mean rate can conceal changing spacing. Read the regularity description and individual-interval range; no sustained rate or diagnostic rhythm is inferred.",
+    "Pink occupancy is threshold-sensitive because horizontal grid lines and antialiasing affect projections. Selected clean bands independently resolve matching line sequences, without inserted or imputed lines. Lower thresholds can merge lines; higher thresholds can miss faint lines. Those trial counts are not used as physical interval counts.",
+    "The first complex is near the left border. Its complete negative trough is retained, but the preceding cycle is incomplete.",
+    "Small rounded bumps and broad between-complex deflections are not counted as additional ventricular complexes."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      67.0,
+      215.5,
+      363.0,
+      511.0,
+      659.5,
+      805.0,
+      952.0,
+      1102.0
+    ],
+    "landmarkType": "dominant negative trough",
+    "rrPixels": [
+      148.5,
+      147.5,
+      148.0,
+      148.5,
+      145.5,
+      147.0,
+      150.0
+    ],
+    "gridSpanPixels": 1161.0,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 7,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-437-450-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0443.json",
+    "baselineReviewSHA256": "216a5a6c0b5a8258ad29bb391ffc5367be36b5fd3a7bf48e1b86b9a37d8d8bad",
+    "sourceImageSHA256": "f1cf8ac5a11454f6aa76677ae3ba5d7b195f2f881b9edf1ba2b065d19ccfb884",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Four interior cycles contain a rounded small positive pre-complex bump, followed by a lower segment before a smaller positive spike and deep negative excursion. The recurring bump is P-like, not independently validated as atrial.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=443]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/6"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=443"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.09,
+          0.21
+        ],
+        "reason": "The small pre-complex bump begins separately from the later sharp complex on four interior cycles. Onset bands, including uncertainty in the gradual initial rise of the complex, support only a conditional P-like-onset-to-complex-onset interval. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=443]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/6"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=443"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "The initial rising segment and especially the slurred post-trough return merge into adjacent activity. Candidate terminal bands are useful for review, but no uniquely defensible QRS end is established. Numeric QRS remains withheld.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=443]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/6"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=443"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR, QRS, QT/QTi and amplitudes are withheld: thick/resampled boundaries, unvalidated atrial identity and absent per-strip timing/gain labels do not justify numerical onset/offset or amplitude values. No diagnostic rhythm label, clinical interpretation or source-authored answer is assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "b2446fe635ffb9a9fd73299b9a5730875d415e0149f038f18ad3993d6754dfa5",
+    "priorFieldSHA256": "975620969100748de796fdd1f908ffdeb348c741a3d32e75e317736abfea1b04",
+    "replacementFieldSHA256": "263b7c534e6fdc19e9847cc21ff63728435ae90b63cf0aaed1654d94cc9dab88",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0443.json",
+    "baselineReviewSHA256": "76baee6fa80cb405d48a5508521b22d3bfdb5b70de653d77bc251b636f071234",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "76baee6fa80cb405d48a5508521b22d3bfdb5b70de653d77bc251b636f071234",
+      "afterOriginal30AddendumSHA256": "76baee6fa80cb405d48a5508521b22d3bfdb5b70de653d77bc251b636f071234",
+      "afterOptionalInterpretationSHA256": "87ecb0ea0faebfea4412c659db9e02330a25640e37411bca77425d5609441c6e",
+      "afterOptionalStatusSHA256": "87ecb0ea0faebfea4412c659db9e02330a25640e37411bca77425d5609441c6e"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "page": 310,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "ef897b0ac9e6b203bf92f46ee7d68642791ea4fb09125a0aca4999d1fe9991bb",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "Approximately 46 bpm (conditional estimate from one complete interval only)",
+      "basis": "Assumed course speed 25 mm/s; 76 grid lines enclose 75 small horizontal intervals across 1024 pixels.",
+      "reason": "Mean fiducial spacing 440.50 px gives 46.5 bpm. Only one complete interval is available, so this does not establish a sustained rate or regularity. The strip has no verified speed label. This is interval-derived, not a six-second count."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Two fully shown complexes each have a preceding isolated rounded positive lobe; a third lobe precedes the clipped right-edge complex. P-like activity is supported only descriptively.",
+      "basis": "Original PDF page 310; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.13–0.20 s (conditional, unvalidated)",
+      "basis": "Original PDF page 310; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Approximately [0.13, 0.2] seconds, conditional on candidate P identity and course speed. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.07–0.15 s (conditional, unvalidated)",
+      "basis": "Original PDF page 310; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Approximately [0.07, 0.15] seconds, conditional on course speed. Endpoints bracket the rapid ventricular complex, not later ST/T. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "The one retained complete ventricular interval gives a conditional rate of about 46 bpm. Separate P-like lobes precede the two fully shown complexes. Sinus bradycardia is only a hypothesis pending confirmation of sinus P identity and repeated 1:1 P-QRS association in an adequate sample; this strip does not establish sustained regularity or normal QRS duration.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "P-wave identification, atrial origin and conduction relationship remain unadjudicated. Small preceding contours alone do not establish sinus rhythm.",
+    "The grid is rescaled differently in the horizontal and vertical directions. Only independently checked horizontal spacing is used for time. The 75-square span would be about three seconds only under the course timing assumption; no six-second duration is inferred.",
+    "Landmark picking allowance of about ±2 source pixels is illustrative. Sensitivity calculations perturb average grid pitch by ±0.15 pixels and interval length by ±4 pixels; they are not statistical confidence intervals and exclude unknown speed, resampling distortion and incorrect waveform identification.",
+    "At accepted color/projection threshold, both separated sample bands resolve76 vertical lines, with no doubled/missing interval in the extracted sequence. Individual adjacent center spacings vary by rasterization/line thickness; exact coordinates and local-third spacing checks are retained. Grid is stretched horizontally versus vertically, so only horizontal pitch calibrates time. Higher color/projection thresholds can drop faint lines or split thick lines and must not be used as literal counts.",
+    "Third ventricular complex begins at right border but its peak and following contour are clipped; excluded.",
+    "Regularity is withheld: one complete interval cannot establish a pattern of interval variation."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      225.5,
+      666.0
+    ],
+    "landmarkType": "Upper extremum of the two complete upright ventricular components.",
+    "rrPixels": [
+      440.5
+    ],
+    "gridSpanPixels": 1024.0,
+    "gridSmallSquareIntervals": 75,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 1,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-300-312-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0310.json",
+    "baselineReviewSHA256": "d323f47935e742abc9c7f929db087a54b9eb97ffbbcb2d27f14254e24b38644c",
+    "sourceImageSHA256": "ef897b0ac9e6b203bf92f46ee7d68642791ea4fb09125a0aca4999d1fe9991bb",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Two fully shown complexes each have a preceding isolated rounded positive lobe; a third lobe precedes the clipped right-edge complex. P-like activity is supported only descriptively.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=310]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/3"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=310"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.13,
+          0.2
+        ],
+        "reason": "Approximately [0.13, 0.2] seconds, conditional on candidate P identity and course speed.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=310]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/3"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=310"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.07,
+          0.15
+        ],
+        "reason": "Approximately [0.07, 0.15] seconds, conditional on course speed. Endpoints bracket the rapid ventricular complex, not later ST/T.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=310]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/3"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=310"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "Raster thickness, baseline drift and indistinct wave onset/offset prevent defensible interval boundaries; no PR or QRS value assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "76280588aed81cffe7eb987632ed52dd21e18ef15fde9990978e207d1df72cf7",
+    "priorFieldSHA256": "3ebd2e8147485c7e350ed79411892f08f67636a032079a14322c2e78fe87806d",
+    "replacementFieldSHA256": "b6c515f09734676487ca5b929745d62153db533efdbe3f52d93427d4639d571d",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0310.json",
+    "baselineReviewSHA256": "28d0c23f59aec23668462f586173c4f3ec5656a096f4d84b799de05a9fb9f3ce",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "28d0c23f59aec23668462f586173c4f3ec5656a096f4d84b799de05a9fb9f3ce",
+      "afterOriginal30AddendumSHA256": "28d0c23f59aec23668462f586173c4f3ec5656a096f4d84b799de05a9fb9f3ce",
+      "afterOptionalInterpretationSHA256": "9511e27ca864901c97020a98de822484dc0b2ad47537fbfc2e15371967c11c97",
+      "afterOptionalStatusSHA256": "9511e27ca864901c97020a98de822484dc0b2ad47537fbfc2e15371967c11c97"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

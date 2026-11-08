@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "page": 438,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "bd6784957f8e568615d7fa21c4be70896a53ba013dc1e194ebd9175a6c11d444",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Five measured intervals range 183.5–186 px, consistent with approximately regular spacing over this short sample and the stated picking envelope.",
+      "basis": "Provisional comparison of 5 complete positive peak-to-peak intervals in original PDF 438",
+      "reason": "Observed intervals: 184 px, 183.5 px, 184.5 px, 186 px, 184 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 63 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 151 grid lines enclose 150 small horizontal intervals across 1161 pixels.",
+      "reason": "5 retained positive peak-to-peak intervals have mean spacing 184.40 px, giving 63.0 bpm. Individual-interval estimates span approximately 62.4–63.3 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Four reviewed cycles show a small rounded positive bump before each tall sharp positive complex, with a short low-amplitude segment between them. The repeated relationship is visible; atrial identity remains a review question.",
+      "basis": "Original PDF page 438; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.10–0.19 s (conditional, unvalidated)",
+      "basis": "Original PDF page 438; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "The P-like bump begins gradually, so a 4–5 px onset band is used rather than its apex. Four onset-to-onset geometric ranges are mutually compatible; interpreting them as PR requires educator confirmation of P identity. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.04–0.14 s (conditional, unvalidated)",
+      "basis": "Original PDF page 438; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Four complexes have a visible initial departure and a comparatively reproducible bend into the flatter following segment. Broad endpoint bands allow source-pixel and curved-junction uncertainty; only a conditional range is proposed. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately regular ventricular spacing over this short strip, with a conditional mean rate near 63 bpm and recurring separate P-like lobes. Sinus origin requires confirmation of uniform sinus P waves and a consistent 1:1 P-QRS relationship throughout. Conditional PR and QRS ranges are available, but they do not establish the course normal-sinus interval criteria.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "Repeated small pre-peak bumps are visible. Their atrial identity and conduction relationship remain unvalidated. A conditional PR endpoint envelope is supplied for the four reviewed cycles, subject to candidate P identity and the assumed course timing.",
+    "The 150-small-interval span would be six seconds only under the assumed course convention. Unlabeled top marks do not independently verify that duration. Only measured horizontal spacing is used for time, not vertical pixel spacing.",
+    "Approximate ±2 source pixels per fiducial and ±0.15 pixels per grid pitch are illustrative sensitivity allowances, not confidence limits. They exclude unknown speed, source distortion and incorrect waveform identification.",
+    "A mean rate can conceal changing spacing. Read the regularity description and individual-interval range; no sustained rate or diagnostic rhythm is inferred.",
+    "Pink occupancy is threshold-sensitive because horizontal grid lines and antialiasing affect projections. Selected clean bands independently resolve matching line sequences, without inserted or imputed lines. Lower thresholds can merge lines; higher thresholds can miss faint lines. Those trial counts are not used as physical interval counts.",
+    "Small pre-peak bumps and broad later humps are not counted as ventricular fiducials.",
+    "Terminal small bump near x≈1170 is not followed by a complete tall peak within the image and is not counted as a seventh ventricular complex."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      90.0,
+      274.0,
+      457.5,
+      642.0,
+      828.0,
+      1012.0
+    ],
+    "landmarkType": "positive peak",
+    "rrPixels": [
+      184.0,
+      183.5,
+      184.5,
+      186.0,
+      184.0
+    ],
+    "gridSpanPixels": 1161.0,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 5,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-437-450-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0438.json",
+    "baselineReviewSHA256": "e50b6283d0d134a81eedb0742a2d9ad0cc4cc83e5bf77d1444537a479c4d58a5",
+    "sourceImageSHA256": "bd6784957f8e568615d7fa21c4be70896a53ba013dc1e194ebd9175a6c11d444",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Four reviewed cycles show a small rounded positive bump before each tall sharp positive complex, with a short low-amplitude segment between them. The repeated relationship is visible; atrial identity remains a review question.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=438]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/1"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=438"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.1,
+          0.19
+        ],
+        "reason": "The P-like bump begins gradually, so a 4–5 px onset band is used rather than its apex. Four onset-to-onset geometric ranges are mutually compatible; interpreting them as PR requires educator confirmation of P identity. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=438]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/1"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=438"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.04,
+          0.14
+        ],
+        "reason": "Four complexes have a visible initial departure and a comparatively reproducible bend into the flatter following segment. Broad endpoint bands allow source-pixel and curved-junction uncertainty; only a conditional range is proposed. Final approximate envelope covers both independent readers; not a confidence interval or physiologic variability.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=438]"
+          },
+          {
+            "path": "pages437-443/field-candidates.json",
+            "sha256": "232e79fb1137f5703e0101885af57c04f734426ef70395cf1cafa6fd87a9cf8a",
+            "selector": "/1"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=438"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR, QRS, QT/QTi and amplitudes are withheld: thick/resampled boundaries, unvalidated atrial identity and absent per-strip timing/gain labels do not justify numerical onset/offset or amplitude values. No diagnostic rhythm label, clinical interpretation or source-authored answer is assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "df129f8ab3b3cb868f5712e1a60e8515beb33ce14087f1754a9025f7ee42cb2f",
+    "priorFieldSHA256": "193e348a7fd09f46613a3c4bd624bb457e8ff2121991f5ea001823a63f000a9b",
+    "replacementFieldSHA256": "10b03427c961796bccaf69f0b1cb1db5f87771dc48aaed2cd8940e15c07ac2b5",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0438.json",
+    "baselineReviewSHA256": "adeb43d1956dc46a7a047695d48ddf0f8c710c0f7fa8ca3d0537f8ffd2b80b9e",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "adeb43d1956dc46a7a047695d48ddf0f8c710c0f7fa8ca3d0537f8ffd2b80b9e",
+      "afterOriginal30AddendumSHA256": "574cdc7f8eef5edb7f1f3d1adf10517f2997824a22a097b323b755d486a9c658",
+      "afterOptionalInterpretationSHA256": "cca5822069779deaec7fd57d809610f7e14ee1ec668844bfda3a0f41e65d6d42",
+      "afterOptionalStatusSHA256": "cca5822069779deaec7fd57d809610f7e14ee1ec668844bfda3a0f41e65d6d42"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [
+      {
+        "original": "Repeated small pre-peak bumps are visible; P-wave identity and a numerical PR interval are withheld.",
+        "replacement": "Repeated small pre-peak bumps are visible. Their atrial identity and conduction relationship remain unvalidated. A conditional PR endpoint envelope is supplied for the four reviewed cycles, subject to candidate P identity and the assumed course timing.",
+        "originalSHA256": "bc8fd12b02fffec31a0fa53dcf9dbad4ad1fc6178da1a0ea1454f525e54864fd",
+        "replacementSHA256": "7ba0923ff0ab915a82d5ad0b7e1b5b9d510b7493213fd4e63b7d0ad23e89998e",
+        "origin": "original30-addendum"
+      }
+    ],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

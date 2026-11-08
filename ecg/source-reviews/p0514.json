@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "page": 514,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "000f5c4b9631b2ba7721ab4966f6ff1ddde021e58e701d1989892e35d2f3056e",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Approximately uniform pixel spacing; timing withheld (provisional)",
+      "basis": "Visually checked ventricular landmarks on original PDF 514",
+      "reason": "Successive ventricular peak spacings: 115 px, 113 px, 114 px, 113 px, 111 px, 113 px. Descriptive judgment from visible spacing, not a validated diagnostic threshold."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small low positive pre-QRS candidates recur on the drifting baseline before all seven visible sharp positive-negative complexes. Their identity as P is provisional. Three central candidate-to-complex relationships are documented in native pixels. This is not evidence that the previous time calibration is repaired.",
+      "basis": "Original PDF page 514; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Describes visible morphology/association only, not established P identity, atrial origin or conduction. Reconcile the exact repository-grid false detections x281/284/287 and omitted line between x498 and x508 against the native image and separate clean row bands. Native x about 145.75/148.03/150.32 and 311.33 to 318.96 correspond to those locations. Is there one true grid line near native x315 despite the merged/blurred column? Until every extra/missing detection is independently resolved, preserve the rate and all seconds-based interval hold. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately uniform pixel spacing with recurring small pre-complex candidates. Rhythm origin is unconfirmed, and the calibration hold prevents rate-, PR- or QRS-duration classification. No normal-rate, bradycardic or tachycardic category is assigned.",
+      "basis": "New independently reviewed educational synthesis of the exact original raster, conditional source measurements and stated course criteria; not a source-authored or educator-validated rhythm answer",
+      "reason": "Qualified ECG educator review has not occurred. Visible-deflection observations are supplied without validated P-wave identity. Numeric PR and QRS remain withheld. Optional educational comparison only, not a source-authored answer or confirmed rhythm diagnosis. A candidate atrial association is not proof of sinus origin. Timing retains the recorded calibration assumptions and holds. Interval envelopes apply to the selected endpoint-review cycles and describe boundary uncertainty, not actual beat-to-beat variability, normal conduction or a full-strip atrial census. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Pixel envelope only. No seconds-based PR field is proposed.",
+    "qrs unresolved: Pixel onset/end bands for three complete positive-negative complexes only. No seconds-based QRS field is proposed.",
+    "Grid calibration failed a local-spacing check: detections at x281, x284 and x287 introduce two 3-pixel gaps, while x498 to x508 omits a grid line. A total of 151 detections was coincidental and does not establish 150 small squares. Time-converted R–R, bpm and six-second count rates are withheld. No timing ticks are printed.",
+    "Excluded x99,171,285,399,512,625,737 proposals: pre-QRS/T-wave or baseline features, not additional QRS.",
+    "P-wave text is a provisional description, not validated atrial identity. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+    "Calibration assumes the course’s 25 mm/s convention, not speed metadata printed on each strip. Peak uncertainty is approximately ±2 source pixels, excluding errors in identifying the waveform."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      135,
+      250,
+      363,
+      477,
+      590,
+      701,
+      814
+    ],
+    "rrPixels": [
+      115,
+      113,
+      114,
+      113,
+      111,
+      113
+    ],
+    "gridSpanPixels": 737,
+    "gridSmallSquareIntervals": null,
+    "rateMethod": null,
+    "runtimeScoringAllowed": false,
+    "calibrationStatus": "withheld: inconsistent local grid spacing"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "71f4f16743f9c24649ece377ca354e44083d10e92aebc5683b9d2adc7e1b85f6",
+    "replacementFieldSHA256": "c1a076a8b9e0019dbbbc83bb1c8716662ef28eef15064dac2c1200ecf47580ee",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round3/final-field-decisions.json",
+    "decisionInputSHA256": "4a0b54bb731c829b8e0082dc19e7ab3c6589115151853d577511b1a170a4c9c6",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0514.json",
+    "baselineReviewSHA256": "f9d682f20de02dad1361ec905ba61123f78e29834c01ce8464ac6a44963b3fde",
+    "sourceImageSHA256": "000f5c4b9631b2ba7721ab4966f6ff1ddde021e58e701d1989892e35d2f3056e",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 514,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=514]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=514] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=514]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=514]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=514] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=514]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page514 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=514] if present"
+          }
+        ],
+        "source_native_sha256": "eba15f2a9da4172d15705df391a069801a1113b91e672e07ebdcbc2780cff73a",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Small low positive pre-QRS candidates recur on the drifting baseline before all seven visible sharp positive-negative complexes. Their identity as P is provisional. Three central candidate-to-complex relationships are documented in native pixels. This is not evidence that the previous time calibration is repaired.",
+        "seconds_range": null,
+        "identity_caveat": "Describes visible morphology/association only, not established P identity, atrial origin or conduction.",
+        "remaining_educator_question": "Reconcile the exact repository-grid false detections x281/284/287 and omitted line between x498 and x508 against the native image and separate clean row bands. Native x about 145.75/148.03/150.32 and 311.33 to 318.96 correspond to those locations. Is there one true grid line near native x315 despite the merged/blurred column? Until every extra/missing detection is independently resolved, preserve the rate and all seconds-based interval hold."
+      },
+      {
+        "page": 514,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=514]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=514] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=514]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=514]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=514] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=514]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page514 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=514] if present"
+          }
+        ],
+        "source_native_sha256": "eba15f2a9da4172d15705df391a069801a1113b91e672e07ebdcbc2780cff73a",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Pixel envelope only. No seconds-based PR field is proposed.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "remaining_educator_question": "Reconcile the exact repository-grid false detections x281/284/287 and omitted line between x498 and x508 against the native image and separate clean row bands. Native x about 145.75/148.03/150.32 and 311.33 to 318.96 correspond to those locations. Is there one true grid line near native x315 despite the merged/blurred column? Until every extra/missing detection is independently resolved, preserve the rate and all seconds-based interval hold.",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      },
+      {
+        "page": 514,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=514]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=514] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=514]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=514]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=514] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=514]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page514 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=514] if present"
+          }
+        ],
+        "source_native_sha256": "eba15f2a9da4172d15705df391a069801a1113b91e672e07ebdcbc2780cff73a",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Pixel onset/end bands for three complete positive-negative complexes only. No seconds-based QRS field is proposed.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "remaining_educator_question": "Reconcile the exact repository-grid false detections x281/284/287 and omitted line between x498 and x508 against the native image and separate clean row bands. Native x about 145.75/148.03/150.32 and 311.33 to 318.96 correspond to those locations. Is there one true grid line near native x315 despite the merged/blurred column? Until every extra/missing detection is independently resolved, preserve the rate and all seconds-based interval hold.",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0514.json",
+    "baselineReviewSHA256": "b1689636108f76b680fc328f11b350a2a4aa5f878ec953477f0f51f0c38e381c",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "fc84b5e38995e79f4a6547b7041beb89199682bb21190a04562790f3b99b62fe",
+      "afterOriginal30AddendumSHA256": "fc84b5e38995e79f4a6547b7041beb89199682bb21190a04562790f3b99b62fe",
+      "afterOptionalInterpretationSHA256": "41a22ad4ea03419c1b102d7dbff340171ebd7f38984a34999b591012b7538820",
+      "afterOptionalStatusSHA256": "41a22ad4ea03419c1b102d7dbff340171ebd7f38984a34999b591012b7538820"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round3/optional-educational.patch.json",
+      "sha256": "fb7e496e55780aed960bf53adafe2de2cc59ee78c78c136db772f3d5d678bdb0",
+      "schemaVariant": "round",
+      "round": 3
+    },
+    "essentialLimitations": [
+      {
+        "original": "P-wave, PR and QRS answers are withheld because reliable atrial and QRS boundaries have not been established.",
+        "replacement": "P-wave text is a provisional description, not validated atrial identity. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+        "originalSHA256": "3595478cd2a8f8525816e46b26b9f6c19e33ee5d84f5a31ac7b8fd91672274a1",
+        "replacementSHA256": "8b6dc3933a44a1ff2e87a4f0bb388c265a0ecb2c12459d5f9b74e37e1b83aed0",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

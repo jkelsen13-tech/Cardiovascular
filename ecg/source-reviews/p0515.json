@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "page": 515,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "40686c9361301b39cc90b2dcdde78e033876c1e449f49114d79a4adf76073165",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Approximately regular (provisional)",
+      "basis": "Visually checked ventricular landmarks on original PDF 515",
+      "reason": "Successive ventricular peak spacings: 62 px, 60 px, 62 px, 60 px, 60 px, 59 px, 60 px, 60 px, 62 px, 60 px, 63 px. Descriptive judgment from visible spacing, not a validated diagnostic threshold."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 122 bpm",
+      "basis": "Course-standard 25 mm/s assumption; 150 independently detected small-square intervals across 738 pixels",
+      "reason": "Mean R–R estimate 121.5 bpm; six-second count estimate 120 bpm. All seconds/bpm depend on course-standard 25 mm/s. Count estimate assumes 150 small squares = 6 seconds; endpoint phase and partial complexes affect it. On irregular strips the count estimate is not a stable instantaneous rate. Mean RR describes only intervals between observed peaks."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Between-complex contours are broad and often double-humped. No discrete, repeatable P onset can be separated confidently from the preceding recovery/terminal wave. P presence or absence is unresolved. A repeated hump pattern exists, but which portion is atrial, terminal ventricular recovery or overlap is not established. A one-to-one P-to-QRS claim would overstate the image.",
+      "basis": "Original PDF page 515; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Describes visible morphology/association only, not established P identity, atrial origin or conduction. For the complexes near x104, 166 and 228, is the descent from the preceding plateau part of QRS or the preceding terminal/P-T contour? Is the end of the rapid post-S recovery the J point, or does QRS extend into the subsequent shoulder? An educator must identify both boundaries before a QRS field is released. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Fast, closely spaced complexes with changing surrounding waveform appearance. No atrial origin or conduction diagnosis assigned.",
+      "basis": "New provisional descriptive review, not a publisher answer or definitive rhythm diagnosis",
+      "reason": "Qualified ECG educator review has not occurred. Visible-deflection observations are supplied without validated P-wave identity. Numeric PR and QRS remain withheld."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Withheld as PR: no defensible discrete P onset is selected. The failure is wave identity/overlap, not missing grid calibration.",
+    "qrs unresolved: Competing initial-downstroke versus rapid-upstroke definitions, and early versus later terminal recovery definitions, produce a broad exploratory QRS envelope. Do not turn this into an exact duration or narrow/wide key.",
+    "P-wave text is a provisional description, not validated atrial identity. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+    "Calibration assumes the course’s 25 mm/s convention, not speed metadata printed on each strip. Peak uncertainty is approximately ±2 source pixels, excluding errors in identifying the waveform."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      122,
+      184,
+      244,
+      306,
+      366,
+      426,
+      485,
+      545,
+      605,
+      667,
+      727,
+      790
+    ],
+    "rrPixels": [
+      62,
+      60,
+      62,
+      60,
+      60,
+      59,
+      60,
+      60,
+      62,
+      60,
+      63
+    ],
+    "gridSpanPixels": 738,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean RR pixels × 6 / gridSpanPixels)",
+    "runtimeScoringAllowed": false
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "99262996e2cbaed5776788d7df2944fbb33bcfbbe20af7e26efb9593ad346cc3",
+    "replacementFieldSHA256": "0aadafdfb73233fac1cc65aac99851ee1824bc81461dc96b1d9f37332f464701",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round3/final-field-decisions.json",
+    "decisionInputSHA256": "4a0b54bb731c829b8e0082dc19e7ab3c6589115151853d577511b1a170a4c9c6",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0515.json",
+    "baselineReviewSHA256": "bbafa11144efcbbb764eb84d7038f79971a952ec5f4ae8d4cfe0c43a3f78096a",
+    "sourceImageSHA256": "40686c9361301b39cc90b2dcdde78e033876c1e449f49114d79a4adf76073165",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 515,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=515]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=515] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=515]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=515]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=515] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=515]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page515 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=515] if present"
+          }
+        ],
+        "source_native_sha256": "51f816adcd5e8cc640e26cc1ba9f657ea88ff94847bf60a2b9ec5c0cbd34fe27",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Between-complex contours are broad and often double-humped. No discrete, repeatable P onset can be separated confidently from the preceding recovery/terminal wave. P presence or absence is unresolved. A repeated hump pattern exists, but which portion is atrial, terminal ventricular recovery or overlap is not established. A one-to-one P-to-QRS claim would overstate the image.",
+        "seconds_range": null,
+        "identity_caveat": "Describes visible morphology/association only, not established P identity, atrial origin or conduction.",
+        "remaining_educator_question": "For the complexes near x104, 166 and 228, is the descent from the preceding plateau part of QRS or the preceding terminal/P-T contour? Is the end of the rapid post-S recovery the J point, or does QRS extend into the subsequent shoulder? An educator must identify both boundaries before a QRS field is released."
+      },
+      {
+        "page": 515,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=515]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=515] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=515]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=515]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=515] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=515]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page515 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=515] if present"
+          }
+        ],
+        "source_native_sha256": "51f816adcd5e8cc640e26cc1ba9f657ea88ff94847bf60a2b9ec5c0cbd34fe27",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Withheld as PR: no defensible discrete P onset is selected. The failure is wave identity/overlap, not missing grid calibration.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.12,
+          0.24
+        ],
+        "remaining_educator_question": "For the complexes near x104, 166 and 228, is the descent from the preceding plateau part of QRS or the preceding terminal/P-T contour? Is the end of the rapid post-S recovery the J point, or does QRS extend into the subsequent shoulder? An educator must identify both boundaries before a QRS field is released.",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      },
+      {
+        "page": 515,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=515]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=515] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=515]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=515]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=515] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=515]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page515 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=515] if present"
+          }
+        ],
+        "source_native_sha256": "51f816adcd5e8cc640e26cc1ba9f657ea88ff94847bf60a2b9ec5c0cbd34fe27",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Competing initial-downstroke versus rapid-upstroke definitions, and early versus later terminal recovery definitions, produce a broad exploratory QRS envelope. Do not turn this into an exact duration or narrow/wide key.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.15,
+          0.33
+        ],
+        "remaining_educator_question": "For the complexes near x104, 166 and 228, is the descent from the preceding plateau part of QRS or the preceding terminal/P-T contour? Is the end of the rapid post-S recovery the J point, or does QRS extend into the subsequent shoulder? An educator must identify both boundaries before a QRS field is released.",
+        "conditions": "No numeric answer. Preserve exploratory pixels and specific identity/boundary/calibration question."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0515.json",
+    "baselineReviewSHA256": "3e00e940555832f21245bdaba55309ea799f6d6b4016e2c2403b7477af0c28a9",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "24f799e1f19c3695296a7e817acee3bbbd40e70105fb5c8ff0a934b7bfdee1c4",
+      "afterOriginal30AddendumSHA256": "24f799e1f19c3695296a7e817acee3bbbd40e70105fb5c8ff0a934b7bfdee1c4",
+      "afterOptionalInterpretationSHA256": "24f799e1f19c3695296a7e817acee3bbbd40e70105fb5c8ff0a934b7bfdee1c4",
+      "afterOptionalStatusSHA256": "24f799e1f19c3695296a7e817acee3bbbd40e70105fb5c8ff0a934b7bfdee1c4"
+    },
+    "optionalPatch": null,
+    "essentialLimitations": [
+      {
+        "original": "P-wave, PR and QRS answers are withheld because reliable atrial and QRS boundaries have not been established.",
+        "replacement": "P-wave text is a provisional description, not validated atrial identity. PR remains unresolved with no numerical answer. QRS remains unresolved with no numerical answer. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+        "originalSHA256": "3595478cd2a8f8525816e46b26b9f6c19e33ee5d84f5a31ac7b8fd91672274a1",
+        "replacementSHA256": "8b6dc3933a44a1ff2e87a4f0bb388c265a0ecb2c12459d5f9b74e37e1b83aed0",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

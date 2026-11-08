@@ -1,0 +1,164 @@
+{
+  "version": 1,
+  "page": 312,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "ba1f429db6acc89700c35f8af46c5a68a6e1df7c567dfc032d6a9b88138bf735",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Three retained intervals 229,230.5,229 px are closely matched (0.7% full spread relative to mean). Approximately regular over this brief segment.",
+      "basis": "Provisional comparison of 3 ventricular-fiducial intervals in original PDF 312",
+      "reason": "Observed intervals: 229 px, 230.5 px, 229 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 87 bpm (conditional estimate)",
+      "basis": "Assumed course speed 25 mm/s; 76 grid lines enclose 75 small horizontal intervals across 1002 pixels.",
+      "reason": "Mean fiducial spacing 229.50 px gives 87.3 bpm. 3 complete intervals were retained. The strip has no verified speed label. This is interval-derived, not a six-second count."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Four retained complexes have a low positive bump beforehand, but changing baseline and continuity with prior broad wave make P identity uncertain. Left partial complex excluded.",
+      "basis": "Original PDF page 312; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Four complete repeated complexes each have a pronounced negative deflection then a positive component merging into a broad raised contour; first complex partly clipped at left. Low rounded positive bumps before retained complexes are visible, but their identity and boundaries are uncertain; no conduction diagnosis is assigned.",
+      "basis": "New descriptive observation of the original raster; not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: Reject left partial complex. Pre-complex bumps are not conclusively separable from preceding-wave/baseline effects. Candidate early positive shoulder versus later broad raised contour gives competing QRS ends; no numeric PR/QRS is accepted.",
+    "QRS duration unresolved: Reject left partial complex. Pre-complex bumps are not conclusively separable from preceding-wave/baseline effects. Candidate early positive shoulder versus later broad raised contour gives competing QRS ends; no numeric PR/QRS is accepted.",
+    "P-wave identification, atrial origin and conduction relationship remain unadjudicated. Small preceding contours alone do not establish sinus rhythm.",
+    "The grid is rescaled differently in the horizontal and vertical directions. Only independently checked horizontal spacing is used for time. The 75-square span would be about three seconds only under the course timing assumption; no six-second duration is inferred.",
+    "Landmark picking allowance of about ±2 source pixels is illustrative. Sensitivity calculations perturb average grid pitch by ±0.15 pixels and interval length by ±4 pixels; they are not statistical confidence intervals and exclude unknown speed, resampling distortion and incorrect waveform identification.",
+    "At accepted color/projection threshold, both separated sample bands resolve76 vertical lines, with no doubled/missing interval in the extracted sequence. Individual adjacent center spacings vary by rasterization/line thickness; exact coordinates and local-third spacing checks are retained. Grid is stretched horizontally versus vertically, so only horizontal pitch calibrates time. Higher color/projection thresholds can drop faint lines or split thick lines and must not be used as literal counts.",
+    "First complex is partly clipped by left border; visible trough excluded from interval calculations because onset/identity of whole complex cannot be assessed completely."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      326.5,
+      555.5,
+      786.0,
+      1015.0
+    ],
+    "landmarkType": "Lowest point of the initial negative ventricular component of each of the four complete complexes; S/Q-like trough-to-trough interval, not an upright R-peak measurement.",
+    "rrPixels": [
+      229.0,
+      230.5,
+      229.0
+    ],
+    "gridSpanPixels": 1002.0,
+    "gridSmallSquareIntervals": 75,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 3,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-300-312-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0312.json",
+    "baselineReviewSHA256": "2a36e877a869168ce7c033841d5e33af29eed0b2a469119f7e122fc63809bbf6",
+    "sourceImageSHA256": "ba1f429db6acc89700c35f8af46c5a68a6e1df7c567dfc032d6a9b88138bf735",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Four retained complexes have a low positive bump beforehand, but changing baseline and continuity with prior broad wave make P identity uncertain. Left partial complex excluded.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=312]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=312"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Reject left partial complex. Pre-complex bumps are not conclusively separable from preceding-wave/baseline effects. Candidate early positive shoulder versus later broad raised contour gives competing QRS ends; no numeric PR/QRS is accepted.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=312]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=312"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Reject left partial complex. Pre-complex bumps are not conclusively separable from preceding-wave/baseline effects. Candidate early positive shoulder versus later broad raised contour gives competing QRS ends; no numeric PR/QRS is accepted.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=312]"
+          },
+          {
+            "path": "pages307-312/proposed-fields.json",
+            "sha256": "eb76147749e1ba706fd4f3fc0c97b1ce3c67800135f9d4efa4b70623f04f8858",
+            "selector": "/rows/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=312"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "Raster thickness, baseline drift and indistinct wave onset/offset prevent defensible interval boundaries; no PR or QRS value assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "c5258d00faa6498d9865d812e5315484a7d32c6ab1be5cb966dbfdee871dd29b",
+    "priorFieldSHA256": "a35bffccc57fa3a12f417facc9cfab951b7c112ad979eab80e4c78d5b4e4fae0",
+    "replacementFieldSHA256": "edf1a8c6fb18fda812ac06d48cd70704e38d2c6085b48b575b03e99fd1b11290",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

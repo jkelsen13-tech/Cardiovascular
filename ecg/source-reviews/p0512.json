@@ -1,0 +1,327 @@
+{
+  "version": 1,
+  "page": 512,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "b173621f8748c0bb51266fab68735f13b55180cf41f6b0434d72684089b47147",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Approximately regular (provisional)",
+      "basis": "Visually checked ventricular landmarks on original PDF 512",
+      "reason": "Successive ventricular peak spacings: 149 px, 154 px, 149 px, 148 px. Descriptive judgment from visible spacing, not a validated diagnostic threshold."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 49 bpm",
+      "basis": "Course-standard 25 mm/s assumption; 150 independently detected small-square intervals across 738 pixels",
+      "reason": "Mean R–R estimate 49.2 bpm; six-second count estimate 50 bpm. All seconds/bpm depend on course-standard 25 mm/s. Count estimate assumes 150 small squares = 6 seconds; endpoint phase and partial complexes affect it. On irregular strips the count estimate is not a stable instantaneous rate. Mean RR describes only intervals between observed peaks."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Four complete low positive pre-QRS candidates precede the second through fifth small biphasic ventricular complexes; the first candidate is outside the left edge. The candidates are separated from the broad post-QRS deflections by long baseline intervals. Baseline drift and variable amplitude limit exact onset and identity.",
+      "basis": "Original PDF page 512; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Describes visible morphology/association only, not established P identity, atrial origin or conduction. Confirm that the low pre-QRS bumps are atrial rather than baseline undulation and identify the terminal QRS/ST junction in the low-amplitude biphasic complexes. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "pr",
+      "value": "Approximately 0.12–0.25 s (conditional, unvalidated)",
+      "basis": "Original PDF page 512; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Conditional PR envelope if the discrete small pre-QRS bumps are P; no exact PR is claimed. Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability. Confirm that the low pre-QRS bumps are atrial rather than baseline undulation and identify the terminal QRS/ST junction in the low-amplitude biphasic complexes. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.03–0.14 s (conditional, unvalidated)",
+      "basis": "Original PDF page 512; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Small rapid positive-negative complexes with low-amplitude terminal returns; three comparable complete complexes are measured. Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability. Confirm that the low pre-QRS bumps are atrial rather than baseline undulation and identify the terminal QRS/ST junction in the low-amplitude biphasic complexes. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Slow, approximately regular ventricular rhythm near 49 bpm with separate P-like lobes before the complete interior cycles. Sinus bradycardia is a teaching possibility only if uniform sinus-compatible P morphology in a known lead and a consistent P-to-QRS relationship are confirmed throughout. The broad conditional intervals do not establish PR constancy or the complete course conduction criteria, and the cropped first context remains excluded.",
+      "basis": "New independently reviewed educational synthesis of the exact original raster, conditional source measurements and stated course criteria; not a source-authored or educator-validated rhythm answer",
+      "reason": "Qualified ECG educator review has not occurred. Visible-deflection observations are supplied without validated P-wave identity. PR and QRS have unvalidated conditional estimates. Optional educational comparison only, not a source-authored answer or confirmed rhythm diagnosis. A candidate atrial association is not proof of sinus origin. Timing retains the recorded calibration assumptions and holds. Interval envelopes apply to the selected endpoint-review cycles and describe boundary uncertainty, not actual beat-to-beat variability, normal conduction or a full-strip atrial census. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "Excluded x826 detector proposal: falling strip-edge baseline, not an additional QRS.",
+    "P-wave text is a provisional description, not validated atrial identity. PR has an unvalidated conditional endpoint envelope for selected complexes. QRS has an unvalidated conditional endpoint envelope for selected complexes. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+    "Calibration assumes the course’s 25 mm/s convention, not speed metadata printed on each strip. Peak uncertainty is approximately ±2 source pixels, excluding errors in identifying the waveform."
+  ],
+  "measurementEvidence": {
+    "ventricularPeakX": [
+      111,
+      260,
+      414,
+      563,
+      711
+    ],
+    "rrPixels": [
+      149,
+      154,
+      149,
+      148
+    ],
+    "gridSpanPixels": 738,
+    "gridSmallSquareIntervals": 150,
+    "rateMethod": "60 / (mean RR pixels × 6 / gridSpanPixels)",
+    "runtimeScoringAllowed": false
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "5a625487c3b5fe57da1f7f95604a8bd32277c7b21704c80b7a36db96ed60aed2",
+    "replacementFieldSHA256": "fc72a8712f3a548ee7f68e1f7edfd4ed68fcb090a8b360084fbc756dcc2e28de",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round3/final-field-decisions.json",
+    "decisionInputSHA256": "4a0b54bb731c829b8e0082dc19e7ab3c6589115151853d577511b1a170a4c9c6",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0512.json",
+    "baselineReviewSHA256": "db61558fb6323dff1d58138d12b9866aaf937facf97c12888a623ed0dff55664",
+    "sourceImageSHA256": "b173621f8748c0bb51266fab68735f13b55180cf41f6b0434d72684089b47147",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 512,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=512]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=512] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=512]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=512]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=512] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=512]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page512 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=512] if present"
+          }
+        ],
+        "source_native_sha256": "6a70b704bd86ed9b8a39128242058e365e348b3c542b1cc84276d0dfcbe64816",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Four complete low positive pre-QRS candidates precede the second through fifth small biphasic ventricular complexes; the first candidate is outside the left edge. The candidates are separated from the broad post-QRS deflections by long baseline intervals. Baseline drift and variable amplitude limit exact onset and identity.",
+        "seconds_range": null,
+        "identity_caveat": "Describes visible morphology/association only, not established P identity, atrial origin or conduction.",
+        "remaining_educator_question": "Confirm that the low pre-QRS bumps are atrial rather than baseline undulation and identify the terminal QRS/ST junction in the low-amplitude biphasic complexes."
+      },
+      {
+        "page": 512,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=512]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=512] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=512]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=512]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=512] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=512]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page512 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=512] if present"
+          }
+        ],
+        "source_native_sha256": "6a70b704bd86ed9b8a39128242058e365e348b3c542b1cc84276d0dfcbe64816",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "pr",
+        "status": "supported_conditional_range",
+        "observation": "Conditional PR envelope if the discrete small pre-QRS bumps are P; no exact PR is claimed.",
+        "seconds_range": [
+          0.12,
+          0.25
+        ],
+        "author_seconds_range": [
+          0.12,
+          0.25
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.15,
+          0.25
+        ],
+        "remaining_educator_question": "Confirm that the low pre-QRS bumps are atrial rather than baseline undulation and identify the terminal QRS/ST junction in the low-amplitude biphasic complexes.",
+        "conditions": "Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability."
+      },
+      {
+        "page": 512,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round3/original-first-pass.json",
+            "sha256": "3b5d4bab8d9618dcd4c77b64a3ffe03de537b37d787575b02028249343ce010d",
+            "selector": "rows[page=512]: sampled_beats and grid_checks"
+          },
+          {
+            "path": "independent-interval-review/round3/magnified-original-addendum.json",
+            "sha256": "03d212fcfc6d1c83915fa3ea20dc8604339954ecc36536daae12fac615e13ee7",
+            "selector": "amendments[page=512] if present"
+          },
+          {
+            "path": "independent-interval-review/round3/calibrated-review.json",
+            "sha256": "c409f1dc36bc2c750477f7511b44294636cbe9e1ba033da1997589971234f607",
+            "selector": "rows[page=512]: local_calibrated_beats"
+          },
+          {
+            "path": "independent-interval-review/round3/native-source-check.json",
+            "sha256": "76bd683762132790e7f714c1990c550efaa610f841f1568258f01c3d2fb3bb7f",
+            "selector": "[page=512]: xrefs, SHA256 and placement"
+          },
+          {
+            "path": "independent-interval-review/round3/second-magnified-addendum.json",
+            "sha256": "1dcadab0a9cf55ea2f6bdfe3e7e0c2cc422bdc88e9990e7e900ef1828de0abeb",
+            "selector": "amendments[page=512] if present"
+          },
+          {
+            "path": "pages510-519/field-proposals.json",
+            "sha256": "7f042d78eccdaed5d04e6335fedbf39a6d7b0ff9138fe2a16cdaaadf522434bc",
+            "selector": "entries[page=512]"
+          },
+          {
+            "path": "pages510-519/reconciliation-alternatives.json",
+            "sha256": "c0c1b3775005bb9d65768ed2725b32ac8bb2057199edb24858cbfbee25615a37",
+            "selector": "page512 or unchanged_holds"
+          },
+          {
+            "path": "independent-interval-review/round3/post-author-corrections.json",
+            "sha256": "1159d9798366246d2b3e828dd8046a7e4469003cb62309df9ffa4330e98ae32b",
+            "selector": "amendments[page=512] if present"
+          }
+        ],
+        "source_native_sha256": "6a70b704bd86ed9b8a39128242058e365e348b3c542b1cc84276d0dfcbe64816",
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "observation": "Small rapid positive-negative complexes with low-amplitude terminal returns; three comparable complete complexes are measured.",
+        "seconds_range": [
+          0.03,
+          0.14
+        ],
+        "author_seconds_range": [
+          0.03,
+          0.14
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.03,
+          0.14
+        ],
+        "remaining_educator_question": "Confirm that the low pre-QRS bumps are atrial rather than baseline undulation and identify the terminal QRS/ST junction in the low-amplitude biphasic complexes.",
+        "conditions": "Assumes course 25 mm/s and correct component identity/boundaries. Envelopes describe measurement uncertainty, not actual duration variability."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0512.json",
+    "baselineReviewSHA256": "1e46e21f0744d3ae390cf097a914e1343e62fb7909bf51557ac87490ea28af74",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "b47533458db2338a0f000faf9bedbc1375815793684f79b9a84354466ebb4f96",
+      "afterOriginal30AddendumSHA256": "b47533458db2338a0f000faf9bedbc1375815793684f79b9a84354466ebb4f96",
+      "afterOptionalInterpretationSHA256": "58219a1a1971c5352cd03faec3691553d76e5b26f1c1df9222009099a3533c51",
+      "afterOptionalStatusSHA256": "58219a1a1971c5352cd03faec3691553d76e5b26f1c1df9222009099a3533c51"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round3/optional-educational.patch.json",
+      "sha256": "fb7e496e55780aed960bf53adafe2de2cc59ee78c78c136db772f3d5d678bdb0",
+      "schemaVariant": "round",
+      "round": 3
+    },
+    "essentialLimitations": [
+      {
+        "original": "P-wave, PR and QRS answers are withheld because reliable atrial and QRS boundaries have not been established.",
+        "replacement": "P-wave text is a provisional description, not validated atrial identity. PR has an unvalidated conditional endpoint envelope for selected complexes. QRS has an unvalidated conditional endpoint envelope for selected complexes. Validated electrical boundaries and qualified educator adjudication remain outstanding.",
+        "originalSHA256": "3595478cd2a8f8525816e46b26b9f6c19e33ee5d84f5a31ac7b8fd91672274a1",
+        "replacementSHA256": "282e5ccffa4392d3ffdbe3603112e89dccb3581c43f4733c8754137d4b65d454",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

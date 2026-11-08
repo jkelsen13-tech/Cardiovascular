@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "page": 907,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "5bc0f6067458cdcfa1737cacbc414e4620fbcc7631ff7715d89e26ebc1e2dcb1",
+  "authority": "source-marked-with-limits",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Original source summary",
+  "notice": "Compare your own observations with the original source summary below. Source-reported findings are not independent clinical adjudication and receive no automatic score.",
+  "fields": [
+    {
+      "id": "rate",
+      "value": "124 bpm",
+      "basis": "Original printed summary, PDF page 908",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "pr",
+      "value": "0.20 sec",
+      "basis": "Original printed summary, PDF page 908",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "qrs",
+      "value": "0.08 sec",
+      "basis": "Original printed summary, PDF page 908",
+      "reason": "Transcribed from the original slide image. This is a source-reported value, not a newly validated measurement."
+    },
+    {
+      "id": "interpretation",
+      "value": "Sinus Tachycardia\nST abnormality, possible digitalis effect\nAbnormal EKG",
+      "basis": "Verbatim interpretation lines from original PDF page 908",
+      "reason": "These are the source\u2019s qualified assertions. Preserve terms such as \u201cpossible,\u201d \u201ccannot rule out\u201d and \u201cage undetermined\u201d; they are not independently confirmed diagnoses."
+    }
+  ],
+  "sourceAnswerPages": [
+    {
+      "page": 908,
+      "imageRoute": "private-course/page/908.png",
+      "sha256": "0b0758c9be448ae08c859a4140497f1e5d6a528dd1429b1934a46a69148a0f34"
+    }
+  ],
+  "limitations": [
+    "Possible digitalis effect remains a tentative source statement, not a verified drug effect or medication history.",
+    "Regularity and P-wave fields are not transcribed from a separate printed answer here; do not infer them automatically from a diagnosis label."
+  ]
+}

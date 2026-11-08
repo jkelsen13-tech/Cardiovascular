@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "page": 804,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "314aea85370d03acb2e5e6bf90d03f32797955c85b87864ff018a903e2cd37c0",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "The five retained downward troughs are approximately evenly spaced.",
+      "basis": "Provisional negative trough-to-trough spacing in original PDF 804",
+      "reason": "Selected pixel gaps: 158 px, 157.5 px, 156 px, 156.5 px. These describe this brief sample, not a validated rhythm classification. The deepest local downward point is selected for each event. Upward shoulders are not mixed with the trough phase."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 47 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s (0.2 seconds per major grid interval); 13 detected lines enclose 12 major horizontal intervals across 294 pixels in the observed calibration segment.",
+      "reason": "4 retained negative trough-to-trough intervals have mean spacing 157.00 px, giving 46.8 bpm. Individual-interval rate range withheld in this provisional review. Only the conditional elapsed-window mean is projected. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate. Only the first-to-last retained-event window mean is conditionally projected, with assumed 25 mm/s. It is not a sustained-rate claim. All individual-interval rate and seconds projections are withheld."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Negative sharp excursions rebound into small positive shoulders on a drifting baseline. Earlier positive humps and later low waves are not securely assigned.",
+      "basis": "Original PDF page 804; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent? This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately 47 bpm (conditional mean-interval estimate). The five retained downward troughs are approximately evenly spaced. Five predominantly negative sharp components on curved drifting baseline; small positive bumps at varying offsets and broad low recovery. No named rhythm or atrial origin is established. QRS duration remains withheld. PR remains withheld. ",
+      "basis": "Independently reviewed educational descriptive synthesis of the original raster and conditional source measurements; not a source-authored or educator-validated rhythm answer",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, conduction interval or clinical conclusion is assigned. Qualified ECG educator review has not occurred. Optional educational description only. Electrical identities remain conditional. Timing is major-grid-only at assumed course 25 mm/s. Endpoint envelopes describe uncertainty, not physiological variability, constant PR, progression, common morphology or a validated width class. Named event ranges remain separate, including null page-level ranges. No source-authored key, clinical certification, scoring eligibility or educator endorsement is supplied."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: No numeric PR answer: Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+    "qrs unresolved: No numeric QRS answer: Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+    "No diagnosis, validated P-wave identity, PR/QRS/QT, scoring or educator-validation claim.",
+    "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+    "Private unvalidated educational observations; qualified educator review is outstanding.",
+    "Manual event selection and raster precision do not establish clinical validity.",
+    "Actual bold-grid coordinates detected independently in two trace-free bands; each accepted major interval contains five directly detected minor subdivisions.",
+    "25 mm/s and 0.2 seconds per major interval are assumed, not verified on this strip. Calibration is local only; no whole-strip duration is inferred.",
+    "The deepest local downward point is selected for each event. Upward shoulders are not mixed with the trough phase.",
+    "The five downward events are wholly visible, including the last near the right edge. Smaller boundary activity is not included as an additional downward event.",
+    "No visible interior dominant event is omitted from the retained window; smaller intervening deflections are not assigned validated wave identity.",
+    "Only the first-to-last retained-event window mean is conditionally projected, with assumed 25 mm/s. It is not a sustained-rate claim.",
+    "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      166.0,
+      324.0,
+      481.5,
+      637.5,
+      794.0
+    ],
+    "landmarkType": "negative trough-to-trough dominant event phase",
+    "rrPixels": [
+      158.0,
+      157.5,
+      156.0,
+      156.5
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 294,
+    "gridIntervalCount": 12,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * assumed seconds per observed grid interval / pixels per grid interval)",
+    "intervalCount": 4,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-786-805-provisional.json"
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round9/final-field-decisions.json",
+    "decisionInputSHA256": "15bcf2e0ccedc7a712bf07e9cb8115154b14cf31efb393502a28e1f07b57b844",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0804.json",
+    "baselineReviewSHA256": "da9e7ee39599164dd95408ab9379f144d8722d1fafe36e9cd47ad95ea03e30d7",
+    "sourceImageSHA256": "314aea85370d03acb2e5e6bf90d03f32797955c85b87864ff018a903e2cd37c0",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 804,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "97b01186e1c21bb87b551f23549a5b39ae81df4bb006b9b14b7cbb92ca278eeb",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=804]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=804]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=804"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=804"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=804].p"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-second.json",
+            "sha256": "25cf75e2b68fce999901c2c4b7b581f1dc12aa3bd46cf5fcce7d9a6cd916ab8c",
+            "selector": "page 804 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Negative sharp excursions rebound into small positive shoulders on a drifting baseline. Earlier positive humps and later low waves are not securely assigned.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 804,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "97b01186e1c21bb87b551f23549a5b39ae81df4bb006b9b14b7cbb92ca278eeb",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=804]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=804]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=804"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=804"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=804].pr"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-second.json",
+            "sha256": "25cf75e2b68fce999901c2c4b7b581f1dc12aa3bd46cf5fcce7d9a6cd916ab8c",
+            "selector": "page 804 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No numeric PR answer: Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 804,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "97b01186e1c21bb87b551f23549a5b39ae81df4bb006b9b14b7cbb92ca278eeb",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=804]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=804]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=804"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=804"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=804].qrs"
+          },
+          {
+            "path": "independent-interval-review/round9/author-response-second.json",
+            "sha256": "25cf75e2b68fce999901c2c4b7b581f1dc12aa3bd46cf5fcce7d9a6cd916ab8c",
+            "selector": "page 804 bands and rationale"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No numeric QRS answer: Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.06,
+          0.18
+        ],
+        "sample_scope": "Exactly 3 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Is the small positive rebound shoulder part of the ventricular complex, or later recovery? Which terminal landmark is independent?",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0804.json",
+    "baselineReviewSHA256": "f409051522e66a4130204e0d2562a4966a11046197e431a18cd33511c2f22e79",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "4a841b52e5bf6587d88d3457af7c7ee2107a12e974ad56af9d1fb57fc32d8e70",
+      "afterOriginal30AddendumSHA256": "4a841b52e5bf6587d88d3457af7c7ee2107a12e974ad56af9d1fb57fc32d8e70",
+      "afterOptionalInterpretationSHA256": "9e20431f7b661bdb7b76b371fafa2ad1ead2669f8140e2a2f76624eedfecefcd",
+      "afterOptionalStatusSHA256": "9e20431f7b661bdb7b76b371fafa2ad1ead2669f8140e2a2f76624eedfecefcd"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round9/optional-educational.patch.json",
+      "sha256": "1aa262c103b8df85e406b0d07c0cee7056d7bd6452d00d1c1b6811eda0c318cf",
+      "schemaVariant": "round",
+      "round": 9
+    },
+    "essentialLimitations": [
+      {
+        "original": "Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "replacement": "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "originalSHA256": "f0bc4f8041eb63e3fd8190f4bd79c2784f15b66f2b143952363d4dc7b9350bc7",
+        "replacementSHA256": "1876fdbad61d6f84eae95947098313616f842f76cdb228378fffb85745f76a28",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "All individual-interval rate and seconds projections are withheld.",
+        "replacement": "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+        "originalSHA256": "8217592b05aec681f23fc09b481a4a6d404f2eba279ab528e79e2bd05055591b",
+        "replacementSHA256": "506a3797de5c5004848fa227b505bdc95fb731c6dbda548750e18ca4be7d9501",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "version": 1,
+  "page": 596,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "2d7ffb82a508bfa053ab41c04bf7935c2b063a5dff6b0956e4a9494175f78334",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "The ten retained peak-to-peak intervals vary, with the first two shorter than many later intervals. This sample is not strictly regular.",
+      "basis": "Provisional positive peak-to-peak spacing in original PDF 596",
+      "reason": "Selected pixel gaps: 52 px, 56 px, 77 px, 71 px, 72 px, 60 px, 75 px, 76 px, 67.5 px, 77.5 px. These describe a short sample, not a validated rhythm classification. "
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 108 bpm (conditional mean-interval estimate)",
+      "basis": "Assumed course speed 25 mm/s; 149 detected lines enclose 148 minor horizontal intervals across 726 pixels in the observed calibration segment.",
+      "reason": "10 retained positive peak-to-peak intervals have mean spacing 68.40 px, giving 107.6 bpm. Individual-interval estimates span approximately 94.9–141.5 bpm under the same assumption; this is observed interval variation, not a confidence interval. No numerical speed label or labeled timing duration is verified on this strip. This is interval-derived, not a six-second beat count or a claim of a stable rate."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Unequal small notches and rounded bumps occur throughout an undulating baseline. Several may precede any selected QRS, without a stable isolated candidate contour.",
+      "basis": "Original PDF page 596; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Descriptive visible morphology only. No validated atrial identity, sinus origin, electrical conduction, absent-P claim or forced one-to-one correspondence. Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? How should multiple intercomplex undulations be assigned without imposing a one-to-one P-to-QRS relationship? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.03–0.17 s (conditional, unvalidated)",
+      "basis": "Original PDF page 596; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Sharp upright complexes stand above the smaller baseline movement. Initial negative notches may be background or part of QRS; both onset scenarios remain. Early terminal shoulders are distinguished from later slow baseline waves. Only the separately listed author and reviewer selected complexes. Not a whole-strip invariant duration or proof of event-sequence completeness. Conditional on course 25 mm/s and correct atrial/ventricular component and onset/terminal-boundary identity. Range is a measurement/scenario envelope, not confidence limits or measured biological variation. Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? How should multiple intercomplex undulations be assigned without imposing a one-to-one P-to-QRS relationship? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Eleven sharp positive peaks with variable height are separated by many uneven low-amplitude oscillations. Some peaks have small negative returns. Baseline oscillations are not counted as additional ventricular complexes or named as atrial waves.",
+      "basis": "New descriptive observation of the original raster, not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: Atrial identity and onset are obscured by competing baseline undulations, not by the fact that an earlier pass omitted P/PR.",
+    "No validated atrial identity or conduction relationship is established. Smaller visible deflections do not prove presence or absence of P waves.",
+    "Withheld because atrial identity and reproducible onset boundaries are not established.",
+    "QRS electrical onset/offset boundaries remain unadjudicated. An unvalidated conditional endpoint envelope for selected complexes is now supplied; raster sampling and unverified strip-specific speed remain limitations.",
+    "Withheld because onset/offset identity and strip-specific timing are not established.",
+    "Withheld because per-strip gain is not verified; visual height is not calibrated voltage.",
+    "No diagnostic rhythm name, clinical conclusion, source-authored answer or validated scoring answer is assigned.",
+    "Withheld; unlabeled ticks and displayed width are not independent time evidence.",
+    "Only the directly observed horizontal calibration segment is used. Its line count may exclude strip borders; no full-strip duration is inferred from unlabeled marks or a prior page.",
+    "Pixel-picking and grid-sensitivity allowances are illustrative, not confidence intervals. Unknown paper speed, missed events, waveform identity and phase comparability are not bounded by those allowances.",
+    "A mean can conceal changing spacing. No sustained rate or diagnostic rhythm is inferred.",
+    "Magenta occupancy attempts fail in multiple bands through extra/merged/missing groups. Color-contrast local maxima give two complete, agreeing observed sequences. Page 598 requires different bands and lower prominence because its grid is shifted and softer.",
+    "Multiple irregular baseline oscillations before, between and after the sharp complexes are excluded."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      112.0,
+      164.0,
+      220.0,
+      297.0,
+      368.0,
+      440.0,
+      500.0,
+      575.0,
+      651.0,
+      718.5,
+      796.0
+    ],
+    "landmarkType": "sharp_positive_extremum_of_each_selected_ventricular_complex",
+    "rrPixels": [
+      52.0,
+      56.0,
+      77.0,
+      71.0,
+      72.0,
+      60.0,
+      75.0,
+      76.0,
+      67.5,
+      77.5
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 726.0,
+    "gridSmallSquareIntervals": 148,
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": "60 / (mean retained fiducial spacing pixels * 0.04 / pixels per minor horizontal interval)",
+    "intervalCount": 10,
+    "rawCandidateGapCount": 10,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-577-600-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "d3eb8d41f52b7a00d91b0cc531731a9ee4e1120bf632403f16fad8b1abbcd1d8",
+    "replacementFieldSHA256": "bcd0b4a9dfe8176763eaafa8b255454307389845c6ef7a5a0132ffc2e138d417",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round4/final-field-decisions.json",
+    "decisionInputSHA256": "652797397a5fbc32b9ebea28212c7645653022f9e2d2721f273b90fb3787b450",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0596.json",
+    "baselineReviewSHA256": "d4ca671abc6f6123ddcfebaabc31dab0ebd99fcd664cc93053f5558adc2b5c26",
+    "sourceImageSHA256": "2d7ffb82a508bfa053ab41c04bf7935c2b063a5dff6b0956e4a9494175f78334",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 596,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "82c4e4714f97086588c8548be738b7d5f5fd37631a4dfd03997e5c1e309b8e5d",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=596]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=596] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=596]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=596] and changes[page=596]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=596]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages589-600/field-proposals.json",
+            "sha256": "1d079ad562a7fd39a6724504b13815d3fdab34a8b75af2c305c56dcee68f0e1c",
+            "selector": "pages[page=596]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": false,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Unequal small notches and rounded bumps occur throughout an undulating baseline. Several may precede any selected QRS, without a stable isolated candidate contour.",
+        "seconds_range": null,
+        "identity_caveat": "Descriptive visible morphology only. No validated atrial identity, sinus origin, electrical conduction, absent-P claim or forced one-to-one correspondence.",
+        "remaining_educator_question": "Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? How should multiple intercomplex undulations be assigned without imposing a one-to-one P-to-QRS relationship? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified."
+      },
+      {
+        "page": 596,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "82c4e4714f97086588c8548be738b7d5f5fd37631a4dfd03997e5c1e309b8e5d",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=596]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=596] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=596]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=596] and changes[page=596]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=596]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages589-600/field-proposals.json",
+            "sha256": "1d079ad562a7fd39a6724504b13815d3fdab34a8b75af2c305c56dcee68f0e1c",
+            "selector": "pages[page=596]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": false,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "Atrial identity and onset are obscured by competing baseline undulations, not by the fact that an earlier pass omitted P/PR.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Only the separately listed author and reviewer selected complexes. Not a whole-strip invariant duration or proof of event-sequence completeness.",
+        "conditions": "No numeric field released. Retain exact source scenarios and targeted adjudication questions.",
+        "remaining_educator_question": "Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? How should multiple intercomplex undulations be assigned without imposing a one-to-one P-to-QRS relationship? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified."
+      },
+      {
+        "page": 596,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "82c4e4714f97086588c8548be738b7d5f5fd37631a4dfd03997e5c1e309b8e5d",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=596]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=596] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=596]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=596] and changes[page=596]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=596]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages589-600/field-proposals.json",
+            "sha256": "1d079ad562a7fd39a6724504b13815d3fdab34a8b75af2c305c56dcee68f0e1c",
+            "selector": "pages[page=596]"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": false,
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "observation": "Sharp upright complexes stand above the smaller baseline movement. Initial negative notches may be background or part of QRS; both onset scenarios remain. Early terminal shoulders are distinguished from later slow baseline waves.",
+        "seconds_range": [
+          0.03,
+          0.17
+        ],
+        "author_seconds_range": [
+          0.04,
+          0.13
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.03,
+          0.17
+        ],
+        "sample_scope": "Only the separately listed author and reviewer selected complexes. Not a whole-strip invariant duration or proof of event-sequence completeness.",
+        "conditions": "Conditional on course 25 mm/s and correct atrial/ventricular component and onset/terminal-boundary identity. Range is a measurement/scenario envelope, not confidence limits or measured biological variation.",
+        "remaining_educator_question": "Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? How should multiple intercomplex undulations be assigned without imposing a one-to-one P-to-QRS relationship? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0596.json",
+    "baselineReviewSHA256": "8f26b8ab87c4b31ed09edd78eee10c9b1953125dc16ef7cece8370dd9f9e41a5",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "deb11f537654174bd8db4ce304f60c61de0cf986b848a12c67ceef491afa1418",
+      "afterOriginal30AddendumSHA256": "deb11f537654174bd8db4ce304f60c61de0cf986b848a12c67ceef491afa1418",
+      "afterOptionalInterpretationSHA256": "deb11f537654174bd8db4ce304f60c61de0cf986b848a12c67ceef491afa1418",
+      "afterOptionalStatusSHA256": "deb11f537654174bd8db4ce304f60c61de0cf986b848a12c67ceef491afa1418"
+    },
+    "optionalPatch": null,
+    "essentialLimitations": [
+      {
+        "original": "Withheld because the thick/resampled raster and unverified strip-specific speed do not support an adjudicated onset-to-offset measurement.",
+        "replacement": "QRS electrical onset/offset boundaries remain unadjudicated. An unvalidated conditional endpoint envelope for selected complexes is now supplied; raster sampling and unverified strip-specific speed remain limitations.",
+        "originalSHA256": "53f622054cb567a799003b34a33a60e7854b4bd712648156cb54b2204c013128",
+        "replacementSHA256": "a9bd53855eee717f1551576d4d459574738898d78ab83be7ec0162c5265cf44f",
+        "origin": "essential-limitations"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

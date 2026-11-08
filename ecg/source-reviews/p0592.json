@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "page": 592,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "d1a2cd0251952fd98cf1a1a071346d1c9d2e9a6791757c48e26a20dac6d502e8",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Small and larger undulations vary across the strip. The shallow sharp negative event around native x136 remains unresolved; it is not silently counted or excluded.",
+      "basis": "Original PDF page 592; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Descriptive visible morphology only. No validated atrial identity, sinus origin, electrical conduction, absent-P claim or forced one-to-one correspondence. Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? Is the shallow negative event near native x136/repository x224 ventricular? Do the large negative-rebound complexes have the proposed early junction, or is positive recovery part of another wave? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.03–0.14 s (conditional, unvalidated)",
+      "basis": "Original PDF page 592; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Four conspicuous negative-going events with rapid positive returns have locally identifiable rapid-complex boundaries. Conditional width proposals apply only to those individual events, not to a complete ventricular sequence. The rebound-to-slow-return junction remains an explicit alternative. Only conspicuous individual excursions: author events near native82/182/253/373 and reviewer events near372/463/583. These are sampled alternatives, not an event census. The disputed native136/repository224 event and the event-sequence/rate hold remain unchanged. Conditional on course 25 mm/s and correct atrial/ventricular component and onset/terminal-boundary identity. Range is a measurement/scenario envelope, not confidence limits or measured biological variation. Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? Is the shallow negative event near native x136/repository x224 ventricular? Do the large negative-rebound complexes have the proposed early junction, or is positive recovery part of another wave? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Prominent sharp negative-going events with brief positive rebounds lie on an undulating trace. A smaller sharp feature near repository x224 (native x136) remains unresolved as ventricular or nonventricular, so sequence completeness, rate and rhythm classification stay on hold. Conditional widths of selected larger events do not resolve that hold or establish a QRS-width class.",
+      "basis": "New independently reviewed integrated description of the exact original raster and conditional source measurements; course comparisons are contextual, not a source-authored or educator-validated rhythm key",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred. This is an integrated descriptive educational interpretation, not a selected rhythm diagnosis or source-authored answer. Any named teaching comparisons in the review packet are nonpreferred criteria comparisons, not the answer for this strip. Candidate identity and interval endpoints remain unvalidated. Selected-complex PR/QRS envelopes are measurement alternatives, not physiological variability or whole-strip invariants. All released QRS envelopes cross the course width threshold and establish no narrow/wide class. Existing timing, identity and sequence holds remain. These newly derived observations remain unscored and are not eligible as validated answer keys."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: No unique atrial onset can be paired with the measured large complexes. The smaller event near native x136 also prevents full sequence/rate conclusions.",
+    "No validated atrial identity or atrioventricular relationship; visible bumps/oscillations are described without asserting P-wave presence or absence.",
+    "No secure P onset and conduction relationship, and no verified individual-strip speed.",
+    "Onset/offset boundaries in this resampled raster are not validated; sharpness does not establish a numerical QRS duration.",
+    "Ventricular onset and terminal repolarization boundary are not validated; no correction formula is applied.",
+    "Per-strip gain/calibration is not verified; no quantitative amplitude is assigned.",
+    "Not derived from morphology or rate alone; qualified educator review required.",
+    "All rate fields withheld because sequence completeness is unresolved near x224.",
+    "All derived fields remain provisional and excluded from validated scoring.",
+    "Only the directly observed horizontal calibration segment is used. Its line count may exclude strip borders; no full-strip duration is inferred from unlabeled marks or a prior page.",
+    "Pixel-picking and grid-sensitivity allowances are illustrative, not confidence intervals. Unknown paper speed, missed events, waveform identity and phase comparability are not bounded by those allowances.",
+    "A mean can conceal changing spacing. No sustained rate or diagnostic rhythm is inferred.",
+    "Both independently measured clear bands contain contiguous 4–6 px gaps and corresponding line centers agree within one pixel. find_peaks excludes the x-range endpoints. The line arrays are interior measured calibration spans, not a full-width duration count; page 587 has a different grid phase and a different detected count.",
+    "The eight prominent trough selections are preserved as raw candidates only. The shallow sharp feature near x224 is unresolved and is not silently excluded from a rate calculation. It lies between the candidates near x171.5 and 269; inclusion would split that raw gap. Other smaller oscillations remain unclassified. Sequence completeness, rate, and formal ventricular regularity are withheld.",
+    "Ventricular sequence completeness is unresolved: the small sharp feature near x224 could be an additional complex between x171.5 and 269. Raw selected gaps must not be treated as consecutive RR intervals. No mean, per-gap rate, or time conversion is supplied.",
+    "Withheld: a smaller sharp feature near x224 may be another ventricular event. The raw eight-candidate gaps are not a verified consecutive ventricular sequence.",
+    "The eight retained candidate positions are pixel-only evidence. Their gaps do not establish a consecutive ventricular sequence, rate or formal regularity."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": null,
+    "landmarkType": "prominent negative-going candidate troughs; sequence completeness unresolved",
+    "rrPixels": null,
+    "rawCandidateX": [
+      101.5,
+      171.5,
+      269.0,
+      339.5,
+      456.0,
+      545.0,
+      662.0,
+      757.5
+    ],
+    "rawCandidateGapsPixels": [
+      70.0,
+      97.5,
+      70.5,
+      116.5,
+      89.0,
+      117.0,
+      95.5
+    ],
+    "completeVentricularSequenceEstablished": false,
+    "gridSpanPixels": 726,
+    "gridSmallSquareIntervals": 148,
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": null,
+    "intervalCount": null,
+    "rawCandidateGapCount": 7,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-577-600-provisional.json"
+  },
+  "expansionWordingEvidence": {
+    "patchPath": "docs/ecg-answer-bank/wave-expansion/evidence/future-wave-wording-review/essential-status-wording.patch.json",
+    "patchSHA256": "21e7ff39d22b32670ba2e5c66158576cf544897a3dcf7f52eef411575c38a2eb",
+    "priorFieldSHA256": "a41d6e40570c83fb51347c4c79a275248ae82b85520ef6284c0fc1be00d018b6",
+    "replacementFieldSHA256": "0c08fa8e90a677c76a1e723fd1255a736ad48b3485c855b31042be6e95df7335",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round4/final-field-decisions.json",
+    "decisionInputSHA256": "652797397a5fbc32b9ebea28212c7645653022f9e2d2721f273b90fb3787b450",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0592.json",
+    "baselineReviewSHA256": "84b2a67019b5abf8a2dd198eaa4782380d8b7495ab0905222c51b3163efb4a73",
+    "sourceImageSHA256": "d1a2cd0251952fd98cf1a1a071346d1c9d2e9a6791757c48e26a20dac6d502e8",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 592,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "ebb7c09b1d278865b6fc3b9e7bb6e2a81e9f2d3083b17a388b0b3d31c06b4b6b",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=592]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=592] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=592]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=592] and changes[page=592]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=592]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages589-600/field-proposals.json",
+            "sha256": "1d079ad562a7fd39a6724504b13815d3fdab34a8b75af2c305c56dcee68f0e1c",
+            "selector": "pages[page=592]"
+          },
+          {
+            "path": "independent-interval-review/round4/local592-candidates.json",
+            "sha256": "22df49110c31a355edb978cfbbce90d9fff3b5fe947c961c57823152753a93b9",
+            "selector": "beats and event_sequence_rate_hold"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": true,
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "observation": "Small and larger undulations vary across the strip. The shallow sharp negative event around native x136 remains unresolved; it is not silently counted or excluded.",
+        "seconds_range": null,
+        "identity_caveat": "Descriptive visible morphology only. No validated atrial identity, sinus origin, electrical conduction, absent-P claim or forced one-to-one correspondence.",
+        "remaining_educator_question": "Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? Is the shallow negative event near native x136/repository x224 ventricular? Do the large negative-rebound complexes have the proposed early junction, or is positive recovery part of another wave? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified."
+      },
+      {
+        "page": 592,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "ebb7c09b1d278865b6fc3b9e7bb6e2a81e9f2d3083b17a388b0b3d31c06b4b6b",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=592]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=592] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=592]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=592] and changes[page=592]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=592]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages589-600/field-proposals.json",
+            "sha256": "1d079ad562a7fd39a6724504b13815d3fdab34a8b75af2c305c56dcee68f0e1c",
+            "selector": "pages[page=592]"
+          },
+          {
+            "path": "independent-interval-review/round4/local592-candidates.json",
+            "sha256": "22df49110c31a355edb978cfbbce90d9fff3b5fe947c961c57823152753a93b9",
+            "selector": "beats and event_sequence_rate_hold"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": true,
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No unique atrial onset can be paired with the measured large complexes. The smaller event near native x136 also prevents full sequence/rate conclusions.",
+        "seconds_range": null,
+        "author_seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Only conspicuous individual excursions: author events near native82/182/253/373 and reviewer events near372/463/583. These are sampled alternatives, not an event census. The disputed native136/repository224 event and the event-sequence/rate hold remain unchanged.",
+        "conditions": "No numeric field released. Retain exact source scenarios and targeted adjudication questions.",
+        "remaining_educator_question": "Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? Is the shallow negative event near native x136/repository x224 ventricular? Do the large negative-rebound complexes have the proposed early junction, or is positive recovery part of another wave? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified."
+      },
+      {
+        "page": 592,
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "ebb7c09b1d278865b6fc3b9e7bb6e2a81e9f2d3083b17a388b0b3d31c06b4b6b",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round4/original-first-pass.json",
+            "sha256": "872beee357ab8c99cafad45fbb2ace913961db9534f358459dc166b016f9050e",
+            "selector": "rows[page=592]:original endpoints and grid arrays"
+          },
+          {
+            "path": "independent-interval-review/round4/magnified-original-addendum.json",
+            "sha256": "1a5974400d9f70ab1c23a8f7ddd20ebc1513a8db8bf7f00c2974afaf8a3a6507",
+            "selector": "corrections[page=592] if present"
+          },
+          {
+            "path": "independent-interval-review/round4/calibrated-review.json",
+            "sha256": "fe393ce48bb7516f434cc3aeb61fefa978cc1eaf6b1bf208f7d3efcbef927dd3",
+            "selector": "rows[page=592]:local_calibrated_beats and manual_major_grid if present"
+          },
+          {
+            "path": "independent-interval-review/round4/post-author-review.json",
+            "sha256": "e2dbc786bcd2c9f55e424c88d69a3968b79e1dd0bea65c08f3b09473b72b55d3",
+            "selector": "rows[page=592] and changes[page=592]"
+          },
+          {
+            "path": "independent-interval-review/round4/native-source-check.json",
+            "sha256": "6d6ef2a53d208024cb291cbdd9437071b98f51f31c50ff57ffa5071aadefc7ef",
+            "selector": "[page=592]:native xrefs, SHA256 and placements"
+          },
+          {
+            "path": "pages589-600/field-proposals.json",
+            "sha256": "1d079ad562a7fd39a6724504b13815d3fdab34a8b75af2c305c56dcee68f0e1c",
+            "selector": "pages[page=592]"
+          },
+          {
+            "path": "independent-interval-review/round4/local592-candidates.json",
+            "sha256": "22df49110c31a355edb978cfbbce90d9fff3b5fe947c961c57823152753a93b9",
+            "selector": "beats and event_sequence_rate_hold"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "event_sequence_rate_hold": true,
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "observation": "Four conspicuous negative-going events with rapid positive returns have locally identifiable rapid-complex boundaries. Conditional width proposals apply only to those individual events, not to a complete ventricular sequence. The rebound-to-slow-return junction remains an explicit alternative.",
+        "seconds_range": [
+          0.03,
+          0.14
+        ],
+        "author_seconds_range": [
+          0.04,
+          0.09
+        ],
+        "reviewer_exploratory_range_not_answer": [
+          0.03,
+          0.14
+        ],
+        "sample_scope": "Only conspicuous individual excursions: author events near native82/182/253/373 and reviewer events near372/463/583. These are sampled alternatives, not an event census. The disputed native136/repository224 event and the event-sequence/rate hold remain unchanged.",
+        "conditions": "Conditional on course 25 mm/s and correct atrial/ventricular component and onset/terminal-boundary identity. Range is a measurement/scenario envelope, not confidence limits or measured biological variation.",
+        "remaining_educator_question": "Which of the marked smaller-wave candidates, if any, are atrial, and which are repolarization or baseline components? Is the shallow negative event near native x136/repository x224 ventricular? Do the large negative-rebound complexes have the proposed early junction, or is positive recovery part of another wave? Can the marked primary ventricular onset and early terminal junction be reproduced on the native pixels, or should an explicit alternate be selected? Is 25 mm/s the intended timing for this specific strip? No strip-specific speed label has been verified."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0592.json",
+    "baselineReviewSHA256": "672a8d718f6aea6989215d334a4db14a6c7a4bae75ebaf99c469642b668005f6",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "672a8d718f6aea6989215d334a4db14a6c7a4bae75ebaf99c469642b668005f6",
+      "afterOriginal30AddendumSHA256": "672a8d718f6aea6989215d334a4db14a6c7a4bae75ebaf99c469642b668005f6",
+      "afterOptionalInterpretationSHA256": "df5a78a807ffa2909df2cbb6fe7c320d3f1961e2492d3cacc4c138792adb2071",
+      "afterOptionalStatusSHA256": "df5a78a807ffa2909df2cbb6fe7c320d3f1961e2492d3cacc4c138792adb2071"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/round4/optional-educational.patch.json",
+      "sha256": "386b4ae1f18447da30128aafdd03b6fa8bed66f1c4af10a70d5593a9f05ef112",
+      "schemaVariant": "round",
+      "round": 4
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

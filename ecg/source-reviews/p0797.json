@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "page": 797,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "d078c91dc3258f01b6ae7dc7995062ff5b2c84a506bbc83ef500f850da6a88a5",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Only two conspicuous complete positive/negative events; several other small undulations cannot be substituted for events. Identity and rate hold remain.",
+      "basis": "Original PDF page 797; independently reconciled selected-complex observation",
+      "reason": "Provisional deflection description, not validated atrial identity or a diagnosis. Exactly 2 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim. Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness. Assumed course 25 mm/s; strip speed not independently verified 0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds Major-grid-only timing; no inferred minor-line count Electrical origin and endpoint identity remain conditional Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold. This describes only the selected complexes or restricted subset. It does not establish a whole-strip event census, ventricular sequence completeness, atrial identity, or conduction relationship. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Two large upright deflections, each followed by a deep negative portion and a rounded rise, bracket a long low-amplitude segment with several small bumps.",
+      "basis": "New descriptive observation of the original raster, not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, conduction interval or clinical conclusion is assigned. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "Wave observations and conditional endpoint envelopes remain provisional and unscored. QT/QTc, calibrated amplitudes and clinical diagnosis are not established. Selected-complex widths do not establish sequence certainty.",
+    "pr unresolved: No numeric PR answer: Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+    "qrs unresolved: No numeric QRS answer: Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+    "No diagnosis, validated P-wave identity, PR/QRS/QT, scoring or educator-validation claim.",
+    "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+    "Private unvalidated educational observations; qualified educator review is outstanding.",
+    "Manual event selection and raster precision do not establish clinical validity.",
+    "Actual bold-grid coordinates detected independently in two trace-free bands; each accepted major interval contains five directly detected minor subdivisions.",
+    "25 mm/s and 0.2 seconds per major interval are assumed, not verified on this strip. Calibration is local only; no whole-strip duration is inferred.",
+    "The positive extreme of each comparable sharp dominant event is retained consistently. Smaller following shoulders, negative notches and broad humps are not substituted as event phases.",
+    "Every native original was inspected individually before selecting these windows.",
+    "The trace begins and ends outside the retained first-to-last peak window; no duration is assigned to those margins.",
+    "No visible interior dominant event is omitted from the retained window; smaller intervening deflections are not assigned validated wave identity.",
+    "No event-rate estimate is projected: this page has only one retained gap, so it cannot provide a multi-interval window mean.",
+    "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+    "Calibration uses directly observed segment coordinates, not an inherited total or inferred whole-strip duration. Unlabeled marks do not verify timing.",
+    "Pixel and grid sensitivity allowances are illustrative, not confidence intervals. They do not bound unknown speed, missed events, waveform identity or phase-comparability errors.",
+    "Only one gap between two comparable large events is available. A multi-interval mean is unavailable, and every individual-interval rate projection is withheld.",
+    "Regularity is withheld because only one gap between two comparable large events is available."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      167.0,
+      773.0
+    ],
+    "landmarkType": "positive peak-to-peak dominant event phase",
+    "rrPixels": [
+      606.0
+    ],
+    "rawCandidateX": null,
+    "rawCandidateGapsPixels": null,
+    "completeVentricularSequenceEstablished": true,
+    "gridSpanPixels": 245,
+    "gridIntervalCount": 10,
+    "gridIntervalUnit": "major",
+    "calibrationScope": "observed segment, not asserted whole-strip duration",
+    "rateMethod": null,
+    "intervalCount": null,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-786-805-provisional.json"
+  },
+  "waveExpansionEvidence": {
+    "version": 1,
+    "decisionInputPath": "docs/ecg-answer-bank/wave-expansion/evidence/independent-interval-review/round9/final-field-decisions.json",
+    "decisionInputSHA256": "15bcf2e0ccedc7a712bf07e9cb8115154b14cf31efb393502a28e1f07b57b844",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-expansion/baseline-reviews/p0797.json",
+    "baselineReviewSHA256": "4924ea3f5ec5cd1057dafb5301c70af57a22113124d7cce72d7c810532e86981",
+    "sourceImageSHA256": "d078c91dc3258f01b6ae7dc7995062ff5b2c84a506bbc83ef500f850da6a88a5",
+    "sourcePDFSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "supersededLimitations": [],
+    "dispositions": [
+      {
+        "page": 797,
+        "field": "pWaves",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "e422df4db9c355a35d25a5e03e867fadc3f7dbf06e79ca748eecd6628b9d5a09",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=797]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=797]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=797"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=797"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=797].p"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "supported_candidate_observation_only",
+        "observation": "Only two conspicuous complete positive/negative events; several other small undulations cannot be substituted for events. Identity and rate hold remain.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 2 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 797,
+        "field": "pr",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "e422df4db9c355a35d25a5e03e867fadc3f7dbf06e79ca748eecd6628b9d5a09",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=797]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=797]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=797"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=797"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=797].pr"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No numeric PR answer: Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": null,
+        "sample_scope": "Exactly 2 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      },
+      {
+        "page": 797,
+        "field": "qrs",
+        "operation": "replace_provisional_field_or_add_if_absent",
+        "source_native_sha256": "e422df4db9c355a35d25a5e03e867fadc3f7dbf06e79ca748eecd6628b9d5a09",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round9/original-first-pass.json",
+            "sha256": "5958e704a96dfc30eb9ae654cea463d62e6cb4c9f4eebd68b9fe0e13213819d1",
+            "selector": "rows[page=797]"
+          },
+          {
+            "path": "independent-interval-review/round9/post-author-review.json",
+            "sha256": "e97baf9f2678e2b2ba44ec5445ef586d8bce271f5082966f918c3459025dd2ff",
+            "selector": "rows[page=797]"
+          },
+          {
+            "path": "independent-interval-review/round9/native-source-check.json",
+            "sha256": "8a64e52177e7da2375bea0440132a74d1f62f346da985a393d468fdfb6b78d95",
+            "selector": "page=797"
+          },
+          {
+            "path": "independent-interval-review/round9/failed-grid-trials.json",
+            "sha256": "c9ecd6d160ecec4f525927df30950c6331fddf608fa1f1c6e7116f51ac7e802f",
+            "selector": "page=797"
+          },
+          {
+            "path": "pages796-805/field-proposals.json",
+            "sha256": "1ffb3e15aff785e7474ce456ce034d629b955f05987ac7a314d5329bcf1f9544",
+            "selector": "pages[page=797].qrs"
+          }
+        ],
+        "authority": "AI-derived, independently reviewed; no qualified educator validation",
+        "eligible_for_scoring": false,
+        "qualified_educator_reviewed": false,
+        "preserve_existing_rate_regularity_interpretation": true,
+        "preserve_existing_sequence_calibration_holds": true,
+        "status": "unresolved_no_numeric_answer",
+        "observation": "No numeric QRS answer: Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+        "seconds_range": null,
+        "reviewer_exploratory_range_not_answer": [
+          0.08,
+          0.21
+        ],
+        "sample_scope": "Exactly 2 reviewer-selected complete local examples. No edge-truncated or uncertain extra shapes added. No sequence, rate or whole-strip conduction claim.",
+        "conditions": [
+          "Assumed course 25 mm/s; strip speed not independently verified",
+          "0.2 seconds per observed major cell, using two local bands and plus/minus 1 pixel span bounds",
+          "Major-grid-only timing; no inferred minor-line count",
+          "Electrical origin and endpoint identity remain conditional",
+          "Outward 0.01-second envelope is not statistical confidence, physiological variability or a diagnostic classification"
+        ],
+        "remaining_educator_question": "Which shapes are ventricular and is the sequence complete? Preserve the rate and identity hold.",
+        "identity_caveat": "Preserve rate and identity holds on 797 and 805. Selected widths do not establish sequence completeness."
+      }
+    ]
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0797.json",
+    "baselineReviewSHA256": "ba98d12ec0bcf3382e57fbc7d3f65724de663a64cfe0cd79c7131b756830e458",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "1722b5de43d8b8be2cac8909418cb859f32f4f9f2ebcae905b0f3d421484b594",
+      "afterOriginal30AddendumSHA256": "1722b5de43d8b8be2cac8909418cb859f32f4f9f2ebcae905b0f3d421484b594",
+      "afterOptionalInterpretationSHA256": "1722b5de43d8b8be2cac8909418cb859f32f4f9f2ebcae905b0f3d421484b594",
+      "afterOptionalStatusSHA256": "1722b5de43d8b8be2cac8909418cb859f32f4f9f2ebcae905b0f3d421484b594"
+    },
+    "optionalPatch": null,
+    "essentialLimitations": [
+      {
+        "original": "Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "replacement": "R–R timing limitation: Individual-interval rates and seconds, verified speed, and full-strip duration are withheld.",
+        "originalSHA256": "f0bc4f8041eb63e3fd8190f4bd79c2784f15b66f2b143952363d4dc7b9350bc7",
+        "replacementSHA256": "1876fdbad61d6f84eae95947098313616f842f76cdb228378fffb85745f76a28",
+        "origin": "independent-limitations-review"
+      },
+      {
+        "original": "All individual-interval rate and seconds projections are withheld.",
+        "replacement": "R–R timing limitation: All individual-interval rate and seconds projections are withheld.",
+        "originalSHA256": "8217592b05aec681f23fc09b481a4a6d404f2eba279ab528e79e2bd05055591b",
+        "replacementSHA256": "506a3797de5c5004848fa227b505bdc95fb731c6dbda548750e18ca4be7d9501",
+        "origin": "independent-limitations-review"
+      }
+    ],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

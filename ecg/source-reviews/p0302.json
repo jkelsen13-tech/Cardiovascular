@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "page": 302,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "c167bc4a0b19184d4702c13482197400d9898b73c0e8b6e0fdc8a8857b85b7ca",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Only three complexes; two RR intervals 248.5 and 271 px differ about 9%; do not call strictly regular.",
+      "basis": "Provisional comparison of 2 ventricular-fiducial intervals in original PDF 302",
+      "reason": "Observed intervals: 248.5 px, 271 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 70 bpm (conditional estimate)",
+      "basis": "Assumed course speed 25 mm/s; 76 grid lines enclose 75 small horizontal intervals across 912 pixels.",
+      "reason": "Mean fiducial spacing 259.75 px gives 70.2 bpm. 2 complete intervals were retained. The strip has no verified speed label. This is interval-derived, not a six-second count."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Three very small upright pre-complex bumps recur, separated from the previous broad wave. They are only modestly larger than local baseline irregularities, so preserve candidate P morphology without definitive P identity.",
+      "basis": "Original PDF page 302; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "qrs",
+      "value": "Approximately 0.06–0.12 s (conditional, unvalidated)",
+      "basis": "Original PDF page 302; independently reconciled endpoint bands and horizontal grid; assumes course 25 mm/s (0.04 s per small square), not a verified per-strip speed",
+      "reason": "Approximately [0.06, 0.12] seconds, conditional on course speed. Endpoints bracket the rapid ventricular complex, not later ST/T. This envelope includes reader and endpoint uncertainty; it is not a confidence interval, normal/abnormal classification, or proof of beat-to-beat physiological variation."
+    },
+    {
+      "id": "interpretation",
+      "value": "Low-amplitude sharp positive then negative complexes with broad small positive following humps. Small preceding bumps visible but subtle; P-wave identity and consistent conduction not adjudicated.",
+      "basis": "New descriptive observation of the original raster; not a source-authored rhythm diagnosis",
+      "reason": "No diagnostic rhythm label, validated P-wave identity, validated conduction interval or clinical conclusion is assigned. Conditional interval estimates, where present, remain unvalidated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: PR withheld because small P-like bumps have uncertain atrial identity and onset; sharp biphasic complexes have a bounded return to the local shelf.",
+    "P-wave identification, atrial origin and conduction relationship remain unadjudicated. Small preceding contours alone do not establish sinus rhythm.",
+    "The grid is rescaled differently in the horizontal and vertical directions. Only independently checked horizontal spacing is used for time. The 75-square span would be about three seconds only under the course timing assumption; no six-second duration is inferred.",
+    "Landmark picking allowance of about ±2 source pixels is illustrative. Sensitivity calculations perturb average grid pitch by ±0.15 pixels and interval length by ±4 pixels; they are not statistical confidence intervals and exclude unknown speed, resampling distortion and incorrect waveform identification.",
+    "Adjacent-spacing variation is raster/line-thickness scale; independent upper/lower bands agree within 1 px. No missing vertical line identified at chosen threshold.",
+    "Broad initial hump x≈167 is not a selected ventricular complex."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      342.5,
+      591.0,
+      862.0
+    ],
+    "landmarkType": "positive peak",
+    "rrPixels": [
+      248.5,
+      271.0
+    ],
+    "gridSpanPixels": 912.0,
+    "gridSmallSquareIntervals": 75,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 2,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-300-312-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0302.json",
+    "baselineReviewSHA256": "61eaab30fe81760634f9ba6a622d827669d1a277fbf1384054bfede4eb15edff",
+    "sourceImageSHA256": "c167bc4a0b19184d4702c13482197400d9898b73c0e8b6e0fdc8a8857b85b7ca",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Three very small upright pre-complex bumps recur, separated from the previous broad wave. They are only modestly larger than local baseline irregularities, so preserve candidate P morphology without definitive P identity.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=302]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/2"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=302"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "PR withheld because small P-like bumps have uncertain atrial identity and onset; sharp biphasic complexes have a bounded return to the local shelf.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=302]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/2"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=302"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "supported_conditional_range",
+        "secondsRange": [
+          0.06,
+          0.12
+        ],
+        "reason": "Approximately [0.06, 0.12] seconds, conditional on course speed. Endpoints bracket the rapid ventricular complex, not later ST/T.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=302]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/2"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=302"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR and QRS boundaries are not confidently located from the thick/resampled trace without adjudicated onset/offset landmarks; no quantitative durations or normal/abnormal labels assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "0f5ecc0b4d7d77f6bd5b0b0674f7a626f3b8b2a5c03eb4e4ada82a50755a0b7b",
+    "priorFieldSHA256": "96a1a2583a0f8b7324e0fe0900837d81f3ef9f7268f6ca9fbdd22280e1d49f86",
+    "replacementFieldSHA256": "705f973745e55a612e335838f4a80e8817bab93bf96c7c1040af6ab965b4aecc",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}

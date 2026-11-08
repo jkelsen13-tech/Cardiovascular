@@ -1,0 +1,197 @@
+{
+  "version": 1,
+  "page": 305,
+  "sourceSHA256": "1f27f49db5eea5dfbbb497c499308aed1bc1f6e24f0dd6f800b2acd2b72bf080",
+  "sourceImageSHA256": "24033d6ee4bb49dd56d3fa80dcc415cb663952812bfe93fecdb6f79db9faa122",
+  "authority": "derived-unvalidated",
+  "scoring": "none",
+  "qualifiedEducatorReview": false,
+  "title": "Provisional measurement review",
+  "notice": "These are newly derived, unvalidated educational observations. The source supplies no printed answer key for this exercise. They are unscored and require qualified ECG educator review.",
+  "fields": [
+    {
+      "id": "regularity",
+      "value": "Five dominant troughs; RR 230.5–241 px, approximately regular with mild variation.",
+      "basis": "Provisional comparison of 4 ventricular-fiducial intervals in original PDF 305",
+      "reason": "Observed intervals: 233.5 px, 240 px, 230.5 px, 241 px. These describe this brief sample, not a validated rhythm classification."
+    },
+    {
+      "id": "rate",
+      "value": "Approximately 85 bpm (conditional estimate)",
+      "basis": "Assumed course speed 25 mm/s; 76 grid lines enclose 75 small horizontal intervals across 1003 pixels.",
+      "reason": "Mean fiducial spacing 236.25 px gives 84.9 bpm. 4 complete intervals were retained. The strip has no verified speed label. This is interval-derived, not a six-second count."
+    },
+    {
+      "id": "pWaves",
+      "value": "Candidate P-wave observation: Interior cycles show low rounded positive pre-complex lobes followed by small positive and dominant negative complexes. First atrial segment is incomplete at left boundary. Positive lobes repeat, but the transition to initial ventricular rise is broad.",
+      "basis": "Original PDF page 305; repeated-complex visual review and independent source comparison",
+      "reason": "Provisional visible-deflection description, not validated atrial identity, atrial origin, or a diagnosis. Qualified ECG educator review is outstanding."
+    },
+    {
+      "id": "interpretation",
+      "value": "Approximately regular ventricular spacing over this short strip, with a conditional mean rate near 85 bpm and repeated P-like lobes before the interior complexes. Sinus origin is a hypothesis requiring confirmation that these are sinus P waves with a consistent 1:1 P-QRS relationship. Predominantly negative complexes alone do not identify the pacemaker or establish abnormal conduction.",
+      "basis": "New unvalidated educational synthesis of the original raster, accepted conditional measurements and course criteria; not a source-authored rhythm answer",
+      "reason": "Any named rhythm is a conditional teaching hypothesis, not an assigned diagnosis or scored answer. Rate and duration estimates assume course speed of 25 mm/s, not a verified strip speed. Candidate P identity, atrial origin and conduction remain unadjudicated. Qualified ECG educator review has not occurred."
+    }
+  ],
+  "sourceAnswerPages": [],
+  "limitations": [
+    "New wave-field estimates remain provisional and unscored. Range width reflects uncertain endpoints and reader disagreement, not a validated diagnostic category. QT/QTc, calibrated amplitudes and clinical diagnosis are not established.",
+    "The exact original PDF was checked. The inspected waveforms are embedded rasters; larger rendering does not add samples. Expert interpretation may still improve unresolved component identification.",
+    "PR interval unresolved: Broad transition from candidate P tail into initial positive component and prolonged negative recovery produce competing onset/end landmarks; exploratory windows are not accepted interval annotations.",
+    "QRS duration unresolved: Broad transition from candidate P tail into initial positive component and prolonged negative recovery produce competing onset/end landmarks; exploratory windows are not accepted interval annotations.",
+    "P-wave identification, atrial origin and conduction relationship remain unadjudicated. Small preceding contours alone do not establish sinus rhythm.",
+    "The grid is rescaled differently in the horizontal and vertical directions. Only independently checked horizontal spacing is used for time. The 75-square span would be about three seconds only under the course timing assumption; no six-second duration is inferred.",
+    "Landmark picking allowance of about ±2 source pixels is illustrative. Sensitivity calculations perturb average grid pitch by ±0.15 pixels and interval length by ±4 pixels; they are not statistical confidence intervals and exclude unknown speed, resampling distortion and incorrect waveform identification.",
+    "Adjacent-spacing variation is raster/line-thickness scale; independent upper/lower bands agree within 1 px. No missing vertical line identified at chosen threshold.",
+    "First complex is near left border; its full preceding atrial segment is not available. It is retained for trough-to-trough intervals because the ventricular trough itself is complete."
+  ],
+  "measurementEvidence": {
+    "ventricularFiducialX": [
+      132.0,
+      365.5,
+      605.5,
+      836.0,
+      1077.0
+    ],
+    "landmarkType": "dominant negative trough",
+    "rrPixels": [
+      233.5,
+      240.0,
+      230.5,
+      241.0
+    ],
+    "gridSpanPixels": 1003.0,
+    "gridSmallSquareIntervals": 75,
+    "rateMethod": "60 / (mean ventricular-fiducial interval pixels * 0.04 / pixels per small square)",
+    "intervalCount": 4,
+    "runtimeScoringAllowed": false,
+    "measurementDocument": "docs/ecg-answer-bank/pages-300-312-provisional.json"
+  },
+  "waveFieldEvidence": {
+    "version": 1,
+    "decisionsPath": "docs/ecg-answer-bank/wave-fields/accepted-decisions.json",
+    "decisionsSHA256": "824614ac543aee4ab53b5e25ef9ca87f88fd631f3a5f3a0b1011232c3e7d27f2",
+    "baselineReviewPath": "docs/ecg-answer-bank/wave-fields/baseline-reviews/p0305.json",
+    "baselineReviewSHA256": "c9c4cdd4d49e597888ca060e3960258b7f08b49ae2630f925fd53e64e4e7f5da",
+    "sourceImageSHA256": "24033d6ee4bb49dd56d3fa80dcc415cb663952812bfe93fecdb6f79db9faa122",
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false,
+    "dispositions": [
+      {
+        "field": "pWaves",
+        "status": "supported_candidate_observation_only",
+        "secondsRange": null,
+        "reason": "Interior cycles show low rounded positive pre-complex lobes followed by small positive and dominant negative complexes. First atrial segment is incomplete at left boundary. Positive lobes repeat, but the transition to initial ventricular rise is broad.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=305]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=305"
+          }
+        ]
+      },
+      {
+        "field": "pr",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Broad transition from candidate P tail into initial positive component and prolonged negative recovery produce competing onset/end landmarks; exploratory windows are not accepted interval annotations.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=305]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=305"
+          }
+        ]
+      },
+      {
+        "field": "qrs",
+        "status": "unresolved_no_numeric_answer",
+        "secondsRange": null,
+        "reason": "Broad transition from candidate P tail into initial positive component and prolonged negative recovery produce competing onset/end landmarks; exploratory windows are not accepted interval annotations.",
+        "evidence": [
+          {
+            "path": "independent-interval-review/round2/original-first-pass.json",
+            "sha256": "022efc621667b334c52cf61ea074d2e7a02dcab41e19b93f6ccdeb6a7d130b9f",
+            "selector": "rows[page=305]"
+          },
+          {
+            "path": "pages300-306/field-proposals.json",
+            "sha256": "886e3cec6d572c0147fe2b6f97afabc217f41fcd67c68dcde15e627bd90b5229",
+            "selector": "/entries/5"
+          },
+          {
+            "path": "independent-interval-review/round2/native-source-check.json",
+            "sha256": "c0296c8ab8931ef2135427d1ed0e3bbff0c31dc6ec3566b47ba18934a9d38c3f",
+            "selector": "page=305"
+          }
+        ]
+      }
+    ],
+    "supersededLimitations": [
+      "PR and QRS boundaries are not confidently located from the thick/resampled trace without adjudicated onset/offset landmarks; no quantitative durations or normal/abnormal labels assigned."
+    ]
+  },
+  "interpretationWordingEvidence": {
+    "stage": "essential-status-correction",
+    "patchPath": "docs/ecg-answer-bank/wording-repair/essential-stale-status.patch.json",
+    "patchSHA256": "924a2836892a2f951f75fff4d3aa76705696ac205fbbd12a5edbf42f48670393",
+    "preconditionFileSHA256": "e31b36a5e1e6bfa423ef2ebeb12dc8ad898fdccc4b327226e4e5365c7b345b23",
+    "priorFieldSHA256": "f99aa093adb2ba560c745cee50aebc06f1f1afb70600383652187bd2ccbd30a8",
+    "replacementFieldSHA256": "e8f22cbf7ed03f26acffa49d3223f0f8c5ee6129f2fa6323975a6e280748c3c9",
+    "newDiagnoses": 0,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  },
+  "reviewedTextEvidence": {
+    "version": 1,
+    "configPath": "docs/ecg-answer-bank/reviewed-text/config.json",
+    "configSHA256": "c011dcc135525bcb46dfc504fcff185dc818616ff7ff6674929e72df723eac80",
+    "baselineReviewPath": "docs/ecg-answer-bank/reviewed-text/baseline-reviews/p0305.json",
+    "baselineReviewSHA256": "b8781631011a291e1d255739c58d880722472e66d01e99535510f8ae3236167e",
+    "stageOrder": [
+      "essential-limitations",
+      "original30-essential-limitations",
+      "optional-interpretations",
+      "optional-limitations-status"
+    ],
+    "stageAnchors": {
+      "afterEssentialLimitationsSHA256": "b8781631011a291e1d255739c58d880722472e66d01e99535510f8ae3236167e",
+      "afterOriginal30AddendumSHA256": "b8781631011a291e1d255739c58d880722472e66d01e99535510f8ae3236167e",
+      "afterOptionalInterpretationSHA256": "05702699c826050a7ac473397956590484c174e5ff716a4668407bb735c42780",
+      "afterOptionalStatusSHA256": "05702699c826050a7ac473397956590484c174e5ff716a4668407bb735c42780"
+    },
+    "optionalPatch": {
+      "path": "interpretation-independent-review/optional-educational.patch.json",
+      "sha256": "bce225cc6fb2072e3fb7d12c0c96c6e2c7355c997066be50d9bb28441d4815df",
+      "schemaVariant": "root",
+      "round": "root"
+    },
+    "essentialLimitations": [],
+    "original30Limitations": [],
+    "optionalLimitations": [],
+    "diagnosisAssigned": false,
+    "runtimeScoringAllowed": false,
+    "qualifiedEducatorReviewed": false
+  }
+}
