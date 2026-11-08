@@ -4,7 +4,7 @@
   "sourceCandidate": "successor of public 9ea7c53d21baef394b0b2ca5bce9459819683459",
   "publicationParent": "9ea7c53d21baef394b0b2ca5bce9459819683459",
   "runtimeSnapshotAlgorithm": "sha256 of UTF-8 concatenation of sorted path + NUL + decimal bytes + NUL + lowercase sha256 + LF",
-  "runtimeSnapshotSHA256": "6834b807cdbb53357445e03586c79ac4e88ab47d62a2f3e58df4b2597e149af1",
+  "runtimeSnapshotSHA256": "fe9a61c08d382100526e96d1cbba9afca687c32757d384d4b4a0d63f2cb27cf8",
   "sourceLessons": 84,
   "sourceImages": 911,
   "recordings": 120,
@@ -5839,8 +5839,8 @@
       "sha256": "f008ec5108f3013dd3c4c964729fd6a601a71dfe3557de9653e6cb88dfc0e1b1"
     },
     "guided-study/sequential-review.js": {
-      "bytes": 3437,
-      "sha256": "21d3912641322783804287b977432a86c8ee6211ce92d1f484682a5ff48c8256"
+      "bytes": 3456,
+      "sha256": "b979c8f7403ed1e181fd2680bc4b909015fd7e3bc9977bc7ee8daa0138090327"
     }
   },
   "reviewScoring": {

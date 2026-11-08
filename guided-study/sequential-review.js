@@ -13,7 +13,7 @@
  function item(attempt,page){return attempt.items[page]||(attempt.items[page]={answers:[],ratings:[],selectedOption:null,submittedOption:null,responses:{},attempts:0});}
  function summary(queue,attempt,practice){
   const s={questionPages:queue.length,totalPrompts:0,sourceChoice:{correct:0,total:0,answered:0},selfCheck:{correct:0,total:0,checked:0,answered:0},unscored:{total:0,answered:0},blank:0};
-  for(const q of queue){const a=attempt.items[q.page]||{},answered=q.kind==='ecg'?Object.values(a.responses||{}).filter(v=>v.trim()).length:q.kind==='question-choice'?(Number.isInteger(a.selectedOption)?1:0):(a.answers||[]).filter(v=>v.trim()).length;
+  for(const q of queue){const a=attempt.items[q.page]||{},answered=q.kind==='ecg'?Object.values(a.responses||{}).filter(v=>v.trim()).length:q.kind==='question-choice'?(Number.isInteger(a.selectedOption)?1:0):(a.answers||[]).slice(0,q.prompts).filter(v=>v.trim()).length;
    s.totalPrompts+=q.prompts;s.blank+=q.prompts-answered;
    if(q.scoring==='source-choice'){s.sourceChoice.total++;s.sourceChoice.answered+=answered;if(Number.isInteger(a.submittedOption)&&practice.entries[q.page].choices[a.submittedOption]===practice.entries[q.page].sourceMarkedAnswer)s.sourceChoice.correct++;}
    else if(q.scoring==='self-check'){s.selfCheck.total+=q.prompts;s.selfCheck.answered+=answered;for(let i=0;i<q.prompts;i++)if(a.answers?.[i]?.trim()&&['correct','incorrect'].includes(a.ratings?.[i])){s.selfCheck.checked++;if(a.ratings[i]==='correct')s.selfCheck.correct++;}}
